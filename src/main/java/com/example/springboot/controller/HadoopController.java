@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -26,5 +27,16 @@ public class HadoopController {
     public Map<String, List<WordResponse.WordEntry>> searchWord(@PathVariable String word)
     {
         return service.search_word(word).Response;
+    }
+
+    @GetMapping("/positive_check/")
+    public Map<Long, String> positiveCheck() {
+        var hadoopResponse = service.positive_check();
+        Map<Long, String> userResponse = new HashMap<>();
+
+        for (var res: hadoopResponse.entrySet())
+            userResponse.put(res.getValue(), res.getKey());
+
+        return userResponse;
     }
 }

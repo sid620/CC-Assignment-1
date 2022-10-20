@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 
 import java.time.Duration;
 import java.time.Instant;
+import java.util.HashMap;
+import java.util.Map;
 
 
 @Service
@@ -26,5 +28,12 @@ public class HadoopService {
         response.AddEntry("f1.txt",item1);
         response.AddEntry("f2.txt",item2);
         return response;
+    }
+
+    public Map<String, Long> positive_check(){
+        return new HashMap<String, Long>() {{
+            put("f1.txt", 5L);
+            put("f2.txt", 20L);
+        }};
     }
 }
