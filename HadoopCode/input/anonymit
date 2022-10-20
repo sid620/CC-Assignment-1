@@ -1,0 +1,778 @@
+     1	From caf-talk Caf Jun  8 19:52:43 1992
+     2	Newsgroups: comp.society
+     3	Subject: Anonymity and privacy on the network
+     4	Message-ID: <92083.072152SOCICOM@auvm.american.edu>
+     5	Date: 23 Mar 92 12:21:52 GMT
+     6	Organization: The American University - University Computing Center
+     7	Lines: 759
+     8	Approved: SOCICOM@AUVM
+     9	
+    10	
+    11	Moderator's note: The following article is a lengthy excerpt from a
+    12	recent issue of FIDONEWS concerning individual privacy and the use of
+    13	aliases or handles in computer-based communications.  It was submitted by
+    14	a comp.society reader who used a handle; because the excerpt is a cross-
+    15	post from another electronic publication, I have taken the liberty of
+    16	viewing the use of a handle by sender as a request for privacy and
+    17	anonymity similar to the request a newspaper editor might receive in a
+    18	letter to the editor.  Thus, while reprinting the submission, the name
+    19	and address of the sender are "withheld upon request."  The article
+    20	raises a number of good points; the submission by a reader using a handle
+    21	to preserve anonymity makes a point; and the editorial action of
+    22	submitting the reader's posting anonymously makes the question current.
+    23	What are the implications of using aliases on the net?
+    24	
+    25	Greg Welsh, moderator, comp.society
+    26	Internet:  Socicom@american.edu
+    27	Bitnet:    Socicom@auvm.bitnet
+    28	
+    29	[begin excerpt]
+    30	F I D O  N E W S --         |        Vol. 9 No. 9 (2 March 1992)
+    31	  The newsletter of the     |
+    32	  FidoNet BBS community     |        Published by:
+    33	          _                 |
+    34	         /  \               |       "FidoNews" BBS
+    35	        /|oo \              |          (415)-863-2739
+    36	       (_|  /_)             |          FidoNet 1:1/1
+    37	        _`@/_ \    _        |          Internet:
+    38	       |     | \   \\       |           fidonews@fidonews.fidonet.org
+    39	       | (*) |  \   ))      |
+    40	       |__U__| /  \//       |        Editors:
+    41	        _//|| _\   /        |          Tom Jennings
+    42	       (_/(_|(____/         |          Tim Pozar
+    43	             (jm)           |
+    44	----------------------------+---------------------------------------
+    45	Published weekly by and for the Members of the FidoNet international
+    46	amateur network. Copyright 1992, Fido Software. All rights reserved.
+    47	Duplication and/or distribution permitted for noncommercial purposes
+    48	only. For use in other circumstances, please contact FidoNews.
+    49	
+    50	Paper price:   . . . . . . . . . . . . . . . . . . . . . . . $5.00US
+    51	Electronic Price:  . . . . . . . . . . . . . . . . . . . . .  free!
+    52	
+    53	For more information about FidoNews refer to the end of this file.
+    54	--------------------------------------------------------------------
+    55	
+    56	
+    57	[...some editing...]
+    58	======================================================================
+    59	                               ARTICLES
+    60	======================================================================
+    61	
+    62	
+    63	The Joy of Handles
+    64	Mahatma Kane Jeeves
+    65	101/138.8
+    66	David Lescohier
+    67	101/138.0
+    68	
+    69	
+    70	
+    71	
+    72	                     THE JOY OF HANDLES
+    73	                     ------------------
+    74	                             or:
+    75	        EVERYTHING YOU ALWAYS WANTED TO KNOW ABOUT ME
+    76	                 (but have no right to ask)
+    77	                 --------------------------
+    78	
+    79	
+    80	                        *  *  *  *  *
+    81	
+    82	
+    83	We should never so entirely avoid danger as to appear
+    84	irresolute and cowardly.  But, at the same time, we should
+    85	avoid unnecessarily exposing ourselves to danger, than
+    86	which nothing can be more foolish.  [Cicero]
+    87	
+    88	
+    89	                        *  *  *  *  *
+    90	
+    91	
+    92	
+    93	Do you trust me?
+    94	
+    95	If you participate in computer conferencing, and you use
+    96	your real name, then you'd better.
+    97	
+    98	"Why?", you ask.  "What can you do with my name?"  To start
+    99	with, given that and your origin line, I can probably look
+   100	you up in your local phone book, and find out where you
+   101	live.  Even if you are unlisted, there are ways to locate
+   102	you based on your name.  If you own any property, or pay any
+   103	utility bills, your address is a matter of public record.
+   104	Do you have children in the public schools?  It would be
+   105	easy to find out.  But that's just the beginning.
+   106	
+   107	Former Chairman of the U.S. Privacy Protection Commission
+   108	David F. Linowes, in his book "Privacy in America" (1989),
+   109	writes of New York private investigator Irwin Blye:
+   110	
+   111	    "Challenged to prove his contention that, given a little
+   112	    time and his usual fee, he could learn all about an
+   113	    individual without even speaking with him, Blye was
+   114	    presented with a subject -- a New Jersey
+   115	    newspaperman....  The result was a five-page, single-
+   116	    spaced, typed report which documented, though not always
+   117	    accurately, a wide sweep of the journalist's past, and
+   118	    was detailed to the point of disclosing his father's
+   119	    income before his retirement."
+   120	
+   121	Who am I?  If I don't post, you might not even know I exist.
+   122	I could be on your local Police Department, or an agent
+   123	working with the IRS, or some federal law-enforcement
+   124	agency.  I could be a member of some fanatical hate group,
+   125	or criminal organization.  I might even be a former Nixon
+   126	White-House staffer!
+   127	
+   128	I could be that pyromaniacal teenager you flamed last
+   129	weekend, for posting a step-by-step description of how he
+   130	made plastic explosive in his high-school chem lab.  He
+   131	seemed kind of mad.
+   132	
+   133	But you're an upstanding citizen; you have nothing to hide.
+   134	So why not use your name on the nets?  Trust me.  There's
+   135	nothing to worry about.
+   136	
+   137	Is there?
+   138	
+   139	                        *  *  *  *  *
+   140	
+   141	                  WHAT'S ALL THIS BROUHAHA?
+   142	                  -------------------------
+   143	
+   144	      Stupidity is evil waiting to happen.  [Clay Bond]
+   145	
+   146	
+   147	Not long ago in Fidonet's BCSNET echo (the Boston Computer
+   148	Society's national conference), the following was posted by
+   149	the conference moderator to a user calling himself "Captain
+   150	Kirk":
+   151	
+   152	      "May we ask dear Captain Kirk that it would be very
+   153	      polite if you could use your real name in an echomail
+   154	      conference? This particular message area is shared
+   155	      with BBS's all across the country and everyone else is
+   156	      using their real name. It is only common courtesy to
+   157	      do so in an echomail conference."
+   158	
+   159	One of us (mkj) responded with a post questioning that
+   160	policy.  Soon the conference had erupted into a heated
+   161	debate!  Although mkj had worried that the subject might be
+   162	dismissed as trivial, it apparently touched a nerve.  It
+   163	brought forth debate over issues and perceptions central to
+   164	computer communications in general, and it revealed profound
+   165	disparities in fundamental values and assumptions among
+   166	participants.
+   167	
+   168	This article is a response to that debate, and to the
+   169	prevailing negative attitudes regarding the use of handles.
+   170	Handles seem to have a bad reputation.  Their use is
+   171	strangely unpopular, and frequently forbidden by network
+   172	authorities.  Many people seem to feel that handles are rude
+   173	or dishonest, or that anyone wishing to conceal his or her
+   174	identity must be up to no good.  It is the primary purpose
+   175	of this article to dispel such prejudices.
+   176	
+   177	Let us make one thing perfectly clear here at the outset: We
+   178	do NOT challenge the need or the right of sysops to know the
+   179	identities of their users!  But we do believe that a sysop
+   180	who collects user names has a serious responsibility to
+   181	protect that information.  This means making sure that no
+   182	one has access to the data without a legal warrant, and it
+   183	certainly means not pressuring users to broadcast their real
+   184	names in widespread public forums such as conferences.
+   185	
+   186	                        *  *  *  *  *
+   187	
+   188	                  SO YOU WANT TO BE A STAR?
+   189	                  -------------------------
+   190	
+   191	         John Lennon died for our sins.  [anonymous]
+   192	
+   193	
+   194	Andy Warhol said that "In the future, everyone will be
+   195	famous for fifteen minutes".  The computer nets, more than
+   196	any other medium, lend credibility to this prediction.  A
+   197	network conference may span the globe more completely than
+   198	even satellite TV, yet be open to anyone who can afford the
+   199	simplest computer and modem. Through our participation in
+   200	conferencing, each of us becomes, if only briefly, a public
+   201	figure of sorts -- often without realizing it, and without
+   202	any contemplation of the implications and possible
+   203	consequences.
+   204	
+   205	Brian Reid (reid@decwrl.DEC.COM) conducts and distributes
+   206	periodic surveys of Usenet conference readership.  His
+   207	statistical results for the end of 1991 show that of the
+   208	1,459 conferences which currently make up Usenet, more than
+   209	fifty percent have over 20,000 readers apiece; the most
+   210	popular conferences are each seen by about 200,000 readers!
+   211	Mr. Reid's estimate of total Usenet readership is nearly TWO
+   212	MILLION people.
+   213	
+   214	Note that Mr. Reid's numbers are for Usenet only; they do
+   215	not include any information on other large public nets such
+   216	as RIME (PC-Relaynet), Fido, or dozens of others, nor do
+   217	they take into account thousands of private networks which
+   218	may have indirect public network connections. The total
+   219	number of users with access to public networks is unknown,
+   220	but informed estimates range to the tens of millions, and
+   221	the number keeps growing at an amazing pace -- in fact, the
+   222	rate of growth of this medium may be greater than any other
+   223	communications medium in history.
+   224	
+   225	The special problems and risks which arise when one deals
+   226	with a large public audience are something about which most
+   227	computer users have little or no experience or
+   228	understanding.  Until recently, those of us involved in
+   229	computer conferencing have comprised a small and rather
+   230	elite community.  The explosion in network participation is
+   231	catching us all a little unprepared.
+   232	
+   233	Among media professionals and celebrities, on the other
+   234	hand, the risks of conducting one's business in front of a
+   235	public audience are all too familiar.  If the size of one's
+   236	audience becomes sufficiently large, one must assume that
+   237	examples of virtually every personality type will be
+   238	included: police and other agents of various governments,
+   239	terrorists, murderers, rapists, religious fanatics, the
+   240	mentally ill, robbers and con artists, et al ad infinitum.
+   241	It must also be assumed that almost anything you do, no
+   242	matter how innocuous, could inspire at least one person,
+   243	somewhere, to harbor ill will toward you.
+   244	
+   245	The near-fatal stabbing of actress Theresa Saldana is a case
+   246	in point. As she was walking to her car one morning near her
+   247	West Hollywood apartment, a voice behind her asked, "Are you
+   248	Theresa Saldana?"; when she turned to answer, a man she had
+   249	never seen before pulled out a kitchen knife and stabbed her
+   250	repeatedly.
+   251	
+   252	After her lengthy and painful recovery, she wrote a book on
+   253	the experience ("Beyond Survival", 1986).  In that book she
+   254	wrote:
+   255	
+   256	
+   257	     [pg 12]  "... Detective Kalas informed me that the
+   258	     assailant, whom he described as a Scottish drifter, had
+   259	     fixated upon me after seeing me in films."
+   260	
+   261	     [pg 28]  "... it was through my work as an actress that
+   262	     the attacker had fixated on me.  Naturally, this made
+   263	     me consider getting out of show business ..."
+   264	
+   265	     [pg 34]  "For security, I adopted an alias and became
+   266	     'Alicia Michaels.'  ... during the months that followed
+   267	     I grew so accustomed to it that, to this day, I still
+   268	     answer reflexively when someone calls the name Alicia!"
+   269	
+   270	Or consider the fate of Denver radio talk show host Alan
+   271	Berg, who in 1984 died outside his home in a hail of
+   272	gunfire.  Police believe he was the victim of a local neo-
+   273	nazi group who didn't like his politics.
+   274	
+   275	We are reminded of the murders of John Lennon and Rebecca
+   276	Shaffer; the Reagan/Hinckley/Foster incident; and a long
+   277	string of other "celebrity attacks" of all sorts, including
+   278	such bizarre events as the occupation of David Letterman's
+   279	home by a strange woman who claimed to be his wife! There is
+   280	probably no one in public life who doesn't receive at least
+   281	the occassional threatening letter.
+   282	
+   283	Of course, ordinary participants in network conferencing may
+   284	never attract quite the attention that other types of
+   285	celebrities attract. But consider the following, rather less
+   286	apocalyptic scenarios:
+   287	
+   288	    --  On Friday night you post a message to a public
+   289	        conference defending an unpopular or controversial
+   290	        viewpoint.  On Monday morning your biggest client
+   291	        cancels a major contract. Or you are kept up all
+   292	        night by repeated telephone calls from someone
+   293	        demanding that you "stop killing babies"!
+   294	
+   295	    --  You buy your teenage son or daughter a computer and
+   296	        modem.  Sometime later you find your lawn littered
+   297	        with beer bottles and dug up with tire marks, or
+   298	        your home vandalized or burglarized.
+   299	
+   300	    --  One day you are nominated to the Supreme Court.  Who
+   301	        are all these strange people on TV claiming to be
+   302	        your friends? How did that fellow know your position
+   303	        on abortion?  Your taste in GIFs?
+   304	
+   305	Celebrities and other professional media personalities
+   306	accept the risks and sacrifices of notoriety, along with the
+   307	benefits, as part of their chosen careers.  Should computer
+   308	conference participants be expected to do the same?  And who
+   309	should be making these decisions?
+   310	
+   311	                        *  *  *  *  *
+   312	
+   313	                         OTHER MEDIA
+   314	                         -----------
+   315	
+   316	  When thou art at Rome, do as they do at Rome  [Cervantes]
+   317	
+   318	
+   319	Older media seem to address the problems of privacy very
+   320	differently than computer media, at least so far.  We are
+   321	not aware of ANY medium or publication, apart from computer
+   322	conferencing, where amateur or even most professional
+   323	participants are required to expose their true names against
+   324	their will.  Even celebrities frequently use "stage names",
+   325	and protect their addresses and phone numbers as best they
+   326	can.
+   327	
+   328	When a medium caters specifically to the general public,
+   329	participants are typically given even greater opportunities
+   330	to protect their privacy. Television talk shows have been
+   331	known to go so far as to employ silhouetting and electronic
+   332	alteration of voices to protect the identities of guests,
+   333	and audience members who participate are certainly not
+   334	required to state their full names before speaking.
+   335	
+   336	The traditional medium most analogous to computer
+   337	conferencing may be talk radio.  Like conferencing, talk
+   338	radio is a group discussion and debate medium oriented
+   339	toward controversy, where emotions can run high. Programs
+   340	often center around a specific topic, and are always run by
+   341	a "host" whose role seems analogous in many respects to that
+   342	of a conference moderator.  It is therefore worth noting
+   343	that in talk radio generally, policy seems to be that
+   344	callers are identified on the air only by their first names
+   345	(unless of course they volunteer more).
+   346	
+   347	Finally, of course, authors have published under "pen names"
+   348	since the dawn of publishing, and newspapers and magazines
+   349	frequently publish letters to the editor with "name and
+   350	address withheld by request" as the signature line. Even
+   351	founding fathers Alexander Hamilton, James Madison and John
+   352	Jay, in authoring the seminal Federalist Papers in 1787 for
+   353	publication in the Letters columns of various New York City
+   354	newspapers, concealed their identities behind the now-famous
+   355	psuedonym "Publius".
+   356	
+   357	What would you think if someone called a radio talk show
+   358	demanding to know the identity of a previous caller?  Such a
+   359	demand would undoubtedly be seen as menacing and
+   360	inappropriate in that context.  Yet that same demand seems
+   361	to arise without much challenge each time a handle shows up
+   362	in a computer conference.  The authors of this article feel
+   363	that such demands should always be looked upon as
+   364	suspicious, and that it would be beneficial for moderators
+   365	to take upon themselves the responsibility of making sure
+   366	that besieged handle-users are aware of their right to
+   367	refuse such inappropriate demands.
+   368	
+   369	It is reasonable to assume that privacy policies in
+   370	traditional media are the result of hard-won wisdom gained
+   371	from long experience.  Are we so arrogant that we cannot
+   372	learn from others?  It is not hard to imagine the sorts of
+   373	problems and experiences which shaped these policies in the
+   374	old media.  Will we have to wait for similar problems to
+   375	occur on the computer networks before we learn?
+   376	
+   377	                        *  *  *  *  *
+   378	
+   379	                  PRIVACY AND SURVEILLANCE
+   380	                  ------------------------
+   381	
+   382	        In an effort to identify people who fail to file tax
+   383	        returns, the Internal Revenue Service is matching
+   384	        its files against available lists of names and
+   385	        addresses of U.S. citizens who have purchased
+   386	        computers for home use. The IRS continues to seek
+   387	        out sources for such information. This information
+   388	        is matched against the IRS master file of taxpayers
+   389	        to see if those who have not filed can be
+   390	        identified.
+   391	                                [COMPUTERWORLD, Sept. 1985]
+   392	
+   393	        Date: Thu, 23 May 91 11:58:07 PDT
+   394	        From: mmm@cup.portal.com
+   395	        Subject: The RISKS of Posting to the Net
+   396	        -
+   397	        I just had an interesting visit from the FBI.  It
+   398	        seems that a posting I made to sci.space several
+   399	        months ago had filtered through channels, caused the
+   400	        FBI to open (or re-open) a file on me, and an agent
+   401	        wanted to interview me, which I did voluntarily...
+   402	        I then went on to tell him about the controversy
+   403	        over Uunet, and their role in supplying archives of
+   404	        Usenet traffic on tape to the FBI...
+   405	        [RISKS Digest]
+   406	
+   407	        Also frequent are instances where computers are
+   408	        seized incident to an unrelated arrest.  For
+   409	        example, on February 28, 1991, following an arrest
+   410	        on charges of rape and battery, the Massachusetts
+   411	        state and local police seized the suspect's computer
+   412	        equipment.  The suspect reportedly operated a 650-
+   413	        subscriber bulletin board called "BEN," which is
+   414	        described as "geared largely to a gay/leather/S&M
+   415	        crowd."  It is not clear what the board's seizure is
+   416	        supposed to have accomplished, but the board is now
+   417	        shut down, and the identities and messages of its
+   418	        users are in the hands of the police.
+   419	                  [CONSTITUTIONAL, LEGAL, AND ETHICAL
+   420	                  CONSIDERATIONS FOR DEALING WITH ELECTRONIC
+   421	                  FILES IN THE AGE OF CYBERSPACE, Harvey A.
+   422	                  Silverglate and Thomas C. Viles]
+   423	
+   424	
+   425	Most of us have been brought up to be grateful for the fact
+   426	that we live in a nation where freedom is sacred.  In other
+   427	countries, we are told as children, people are afraid to
+   428	speak their minds for fear they are being watched.  Thank
+   429	God we live in America!
+   430	
+   431	It would surprise most of us to learn that America is
+   432	currently among the premiere surveillance nations in the
+   433	world, but such, sadly, is indeed the case.  Our leadership
+   434	in technology has helped the U.S. government to amass as
+   435	much information on its citizens as almost any other nation
+   436	in history, totalitarian or otherwise.  And to make matters
+   437	worse, a consumer surveillance behemoth has sprung up
+   438	consisting of huge private data-collection agencies which
+   439	cater to business.
+   440	
+   441	As Evan Hendricks, editor of "Privacy Times" (a Washington
+   442	D.C.-based newsletter) has put it: "You go through life
+   443	dropping bits and pieces of information about yourself
+   444	everywhere.  Most people don't realize there are big vacuum
+   445	cleaners out there sucking it all up."  [Wall Street
+   446	Journal, March 14, 1991].
+   447	
+   448	To get an idea of how much of your privacy has already been
+   449	lost, consider the bits and pieces of information about
+   450	yourself which are already available to investigators, and
+   451	how thoroughly someone might come to know you by these clues
+   452	alone.
+   453	
+   454	A person's lifestyle and personality are largely described,
+   455	for example, by his or her purchases and expenses; from your
+   456	checking account records -- which banks are required by law
+   457	to keep and make available to government investigators -- a
+   458	substantial portrait of your life will emerge. Credit card
+   459	records may reveal much of the same information, and can
+   460	also be used to track your movements. (In a recent case,
+   461	"missing" Massachusetts State Representative Timothy O'Leary
+   462	was tracked by credit-card transactions as he fled across
+   463	the country, and his movements were reported on the nightly
+   464	news!)
+   465	
+   466	Then there are your school records, which include IQ and
+   467	other test results, comments on your "socialization" by
+   468	teachers and others, and may reveal family finances in great
+   469	detail.  Employment and tax records reveal your present
+   470	income, as well as personal comments by employers and co-
+   471	workers.  Your properties are another public record of your
+   472	income and lifestyle, and possibly your social status as
+   473	well. Telephone billing records reveal your personal and
+   474	business associations in more detail. Insurance records
+   475	reveal personal and family health histories and treatments.
+   476	
+   477	All of this information is commonly accessed by government
+   478	and private or corporate investigators.  And this list is
+   479	far from exhaustive!
+   480	
+   481	Now consider how easily the computer networks lend
+   482	themselves to even further erosions of personal privacy. The
+   483	actual contents of our mail and telephone traffic have up to
+   484	now been subjected to deliberate scrutiny only under
+   485	extraordinary conditions. This built-in safety is due
+   486	primarily to the difficulty and expense of conducting
+   487	surveillance in these media, which usually requires extended
+   488	human intervention. But in the medium of computer
+   489	communications, most surveillance can be conducted using
+   490	automated monitoring techniques. Tools currently available
+   491	make it possible and even cost-effective for government and
+   492	other interests to monitor virtually everything which
+   493	happens here.
+   494	
+   495	Why would anyone want to monitor network users?  It is well
+   496	documented that, throughout the 1960s and 1970s, the FBI and
+   497	other agencies of government, in operations such as the
+   498	infamous COINTELPRO among others, spent a great deal of time
+   499	and effort collecting vast lists of names. As Computer
+   500	Underground Digest moderators Jim Thomas and Gordon Meyer
+   501	recalled in a recent commentary (CuD #3.42):
+   502	
+   503	    "A 1977 class action suit against the Michigan State
+   504	    Police learned, through FOIA requests, that state and
+   505	    federal agents would peruse letters to the editor of
+   506	    newspapers and collect clippings of those whose politics
+   507	    they did not like. These news clippings became the basis
+   508	    of files on those persons that found there way into the
+   509	    hands of other agencies and employers."
+   510	
+   511	To get onto one of these government "enemies" lists, you
+   512	often needed to do nothing more than telephone an
+   513	organization under surveillance, or subscribe to the "wrong"
+   514	types of magazines and newspapers. Groups engaged in
+   515	political activism, including environmental and women's
+   516	rights organizations, were commonly infiltrated.  The sort
+   517	of investigative reporting which uncovered these lists and
+   518	surveillances back in the '60s and '70s is now rare, but
+   519	there is little reason to assume that such activities have
+   520	ceased or even slowed.  In fact, progressive computerization
+   521	of local police LEIU activities (Law Enforcement
+   522	Intelligence Units, commonly known as "red squads") suggests
+   523	that such activities may have greatly increased.
+   524	
+   525	Within the realm of computer conferencing especially, there
+   526	is ample reason to believe that systematic monitoring is
+   527	being conducted by government and law-enforcement
+   528	organizations, and perhaps by other hostile interests as
+   529	well.  In a recent issue of Telecom Digest
+   530	(comp.dcom.telecom), Craig Neidorf (knight@EFF.ORG) reported
+   531	on the results of a recent Freedom of Information Act
+   532	request for documents from the Secret Service:
+   533	
+   534	    " ... The documents also show that the Secret Service
+   535	    established a computer database to keep track of
+   536	    suspected computer hackers.  This database contains
+   537	    records of names, aliases, addresses, phone numbers,
+   538	    known associates, a list of activities, and various
+   539	    [conference postings] associated with each individual."
+   540	
+   541	But the privacy issues which surround computer
+   542	communications go far beyond the collection of user lists.
+   543	Both government and industry have long pursued the elusive
+   544	grail of personality profiling on citizens and consumers. Up
+   545	to now, such ambitions have been restrained by the practical
+   546	difficulty and expense of collecting and analyzing large
+   547	amounts of information on large numbers of citizens.  But
+   548	computer communications, more than any other technology,
+   549	seems to hold out the promise that this unholy grail may
+   550	finally be in sight.
+   551	
+   552	To coin a phrase, never has so much been known by so few
+   553	about so many. The information commonly available to
+   554	government and industry investi-gators today is sufficient
+   555	to make reliable predictions about our personalities,
+   556	health, politics, future behavior, our vulnerabilities,
+   557	perhaps even about our innermost thoughts and feelings.  The
+   558	privacy we all take for granted is, in fact, largely an
+   559	illusion; it no longer exists in most walks of life.  If we
+   560	wish to preserve even the most basic minimum of personal
+   561	privacy, it seems clear that we need to take far better care
+   562	on the networks than we have taken elsewhere.
+   563	
+   564	                        *  *  *  *  *
+   565	
+   566	                           FREEDOM
+   567	                           -------
+   568	
+   569	        Human beings are the only species with a history.
+   570	        Whether they also have a future is not so obvious.
+   571	        The answer will lie in the prospects for popular
+   572	        movements, with firm roots among all sectors of the
+   573	        population, dedicated to values that are suppressed
+   574	        or driven to the margins within the existing social
+   575	        and political order...
+   576	                                [Noam Chomsky]
+   577	
+   578	
+   579	In your day-to-day social interactions, as you deal with
+   580	employers, clients, public officials, friends, acquaintances
+   581	and total strangers, how often do you feel you can really
+   582	speak freely?  How comfortable are you discussing
+   583	controversial issues such as religion, taxes, politics,
+   584	racism, sexuality, abortion or AIDS, for example?  Would you
+   585	consider it appropriate or wise to express an honest opinion
+   586	on such an issue to your boss, or a client?  To your
+   587	neighbors?
+   588	
+   589	Most of us confine such candid discussions to certain
+   590	"trusted" social contexts, such as when we are among our
+   591	closest friends.  But when you post to a network conference,
+   592	your boss, your clients, and your neighbors may very well
+   593	read what you post -- if they are not on the nets today,
+   594	they probably will be soon, as will nearly everyone.
+   595	
+   596	If we have to consider each post's possible impact on our
+   597	social and professional reputations, on our job security and
+   598	income, on our family's acceptance and safety in the
+   599	community, it could be reckless indeed to express ourselves
+   600	freely on the nets.  Yet conferences are often geared to
+   601	controversy, and inhibitions on the free expression of
+   602	opinions can reduce traffic to a trickle, killing off an
+   603	important conference topic or distorting a valuable sampling
+   604	of public opinion.
+   605	
+   606	More important still is the role computer networks are
+   607	beginning to play in the free and open dissemination of news
+   608	and information. Democracy is crippled if dissent and
+   609	diversity in the media are compromised; yet even here in the
+   610	U.S., where a "free press" is a cherished tradition, the
+   611	bulk of all the media is owned by a small (and ever-
+   612	shrinking) number of corporations, whose relatively narrow
+   613	culture, interests and perspec-tives largely shape the
+   614	public perception.
+   615	
+   616	Computer communication, on the other hand, is by its nature
+   617	very difficult to control or shape.  Its resources are
+   618	scattered; when one BBS goes bust (or is busted!), three
+   619	others spring up in its place.  The natural resiliency of
+   620	computer communications (and other new, decentral-ized
+   621	information technologies such as fax, consumer camcorders
+   622	and cheap satellite links) is giving rise to a new brand of
+   623	global "guerrilla journalism" which includes everyone, and
+   624	defies efforts at suppression.
+   625	
+   626	The power and value of this new journalistic freedom has
+   627	recently shown itself during the Gulf War, and throughout
+   628	Eastern Europe and the Soviet Union, as well as within the
+   629	U.S.  Just think of the depth and detail of information
+   630	available on the nets regarding the Secret Service's recent
+   631	"Operation Sundevil" and associated activities, compared to
+   632	the grossly distorted, blatantly propagandistic coverage of
+   633	those same activities given to the general public through
+   634	the traditional media.
+   635	
+   636	Historically, established power and wealth have seldom been
+   637	disposed to tolerate uncontrolled media, and recent events
+   638	in this country and elsewhere show that computer media are
+   639	sometimes seen as threats to established interests as well.
+   640	To understand the role of handles in this context, it is
+   641	useful to note the flurries of anti-handle sentiment which
+   642	have arisen in the wake of crackdowns such as Sundevil, or
+   643	the Tom Tcimpidis raid in the early 1980s.  Although few
+   644	charges and fewer convictions have typically resulted from
+   645	such operations, one might be tempted to speculate that the
+   646	real purposes -- to terrorize the nets and chill freedoms of
+   647	speech and assembly thereon -- have been achieved.
+   648	
+   649	In this way, sysops and moderators become unwitting
+   650	accomplices in the supression of freedom on the networks.
+   651	When real name requirements are instituted, anyone who fears
+   652	retaliation of any sort, by any group, will have to fear
+   653	participation in the nets; hence content is effectively
+   654	controlled.  This consideration becomes especially important
+   655	as the nets expand into even more violent and repressive
+   656	countries outside the U.S.
+   657	
+   658	We must decide whether freedom of information and open
+   659	public discussion are in fact among the goals of network
+   660	conferencing, and if so, whether handles have a role in
+   661	achieving these goals.  As access to the networks grows, we
+   662	have a rare opportunity to frustrate the efforts of
+   663	governments and corporations to control the public mind!  In
+   664	this way above all others, computers may have the potential
+   665	to shape the future of all mankind for the better.
+   666	
+   667	                        *  *  *  *  *
+   668	
+   669	                      A CALL TO ACTION
+   670	                      ----------------
+   671	
+   672	
+   673	       The move to electronic communication may be a turning
+   674	       point that history will remember.  Just as in
+   675	       seventeenth and eighteenth century Great Britain and
+   676	       America a few tracts and acts set precedents for
+   677	       print by which we live today, so what we think and do
+   678	       today may frame the information system for a
+   679	       substantial period in the future.
+   680	        [Ithiel de Sola Pool, "Technologies of Freedom", 1983]
+   681	
+   682	
+   683	There was a time when anybody with some gear and a few
+   684	batteries could become a radio broadcaster -- no license
+   685	required.  There was a time when anyone with a sense of
+   686	adventure could buy a plane, and maybe get a contract to
+   687	carry mail.  Those early technological pioneers were
+   688	probably unable to imagine the world as it is today, but
+   689	their influence is strongly felt in current laws,
+   690	regulations and policies with roots in the traditions and
+   691	philosophies they founded and shaped.
+   692	
+   693	Today the new pioneers are knitting the world together with
+   694	computers, and the world is changing faster than ever.  Law
+   695	and ethics are scrambling to keep up.  How far will this
+   696	growth take us?  No one can say for sure.  But you don't
+   697	need a crystal ball to see that computer communications has
+   698	the potential to encompass and surpass all the functionality
+   699	of prior media -- print, post, telegraph, telephone, radio
+   700	and television -- and more.  It seems reasonable to assume
+   701	that computer communications will be at least as ubiquitous
+   702	and important in the lives of our grandchildren as all the
+   703	older media have been in ours.
+   704	
+   705	It will be a world whose outlines we can now make out only
+   706	dimly.  But the foundations of that world are being built
+   707	today by those of us exploring and homesteading on the
+   708	electronic frontier.  We need to look hard at what it will
+   709	take to survive in the information age.
+   710	
+   711	In this article we have attempted to show, for one very
+   712	narrow issue, what some of the stakes may be in this future-
+   713	building game.  But the risks associated with exposing your
+   714	name in a computer conference are not well defined, and
+   715	various people will no doubt assess the importance of these
+   716	risks differently.  After all, most of us take risks every
+   717	day which are probably greater than the risks associated
+   718	with conferencing. We drive on the expressway.  We eat
+   719	sushi.  To some people, the risks of conferencing may seem
+   720	terrifying; to others, insignificant.
+   721	
+   722	But let us not get side-tracked into unresolvable arguments
+   723	on the matter.  The real issue here is not how dangerous
+   724	conferencing may or may not be; it is whether you and I will
+   725	be able to make our own decisions, and protect ourselves (or
+   726	not) as we see fit.  The obvious answer is that users must
+   727	exercise their collective power to advance their own
+   728	interests, and to pressure sysops and moderators to become
+   729	more sensitive to user concerns.
+   730	
+   731	To help in that effort, we would like to recommend the
+   732	following guidelines for user action:
+   733	
+   734	    --  Bear in mind John Perry Barlow's observation that
+   735	        "Liberties are preserved by using them".  Let your
+   736	        sysop know that you would prefer to be using a
+   737	        handle, and use one wherever you can.
+   738	
+   739	    --  Try to support boards and conferences which allow
+   740	        handles, and avoid those which don't.
+   741	
+   742	    --  When using a handle, BEHAVE RESPONSIBLY!  There will
+   743	        always be irresponsible users on the nets, and they
+   744	        will always use handles.  It is important for the
+   745	        rest of us to fight common anti-handle prejudices by
+   746	        showing that handles are NOT always the mark of an
+   747	        irresponsible user!
+   748	
+   749	    --  Educate others about the importance of handles (but
+   750	        NEVER argue or flame anyone about it).
+   751	
+   752	To sysops and moderators: We ask you to bear in mind that
+   753	authority is often used best where it is used least.  Grant
+   754	users the right to engage in any harmless and responsible
+   755	behaviors they choose.  Protect your interests in ways which
+   756	tread as lightly as possible upon the interests of others.
+   757	The liberties you preserve may be your own!
+   758	
+   759	In building the computer forums of today, we are building
+   760	the social fabric of tomorrow.  If we wish to preserve the
+   761	free and open atmosphere which has made computer networking
+   762	a powerful force, while at the same time taking care against
+   763	the risks inherent in such a force, handles seem to be a
+   764	remarkably harmless, entertaining and effective tool to help
+   765	us.  Let's not throw that tool away.
+   766	
+   767	----------------------------------------------------------------------
+   768	[end of excerpt]
+   769	
+   770	
+   771	-- 
+   772	David Collier-Brown,  | davecb@Nexus.YorkU.CA | lethe!dave
+   773	72 Abitibi Ave.,      | 
+   774	Willowdale, Ontario,  | He's so smart he's dumb.
+   775	CANADA. 416-223-8968  |     -- Joyce Collier-Brown
+   776	
+   777	From caf-talk Caf Jun 10 00:17:10 1992
+   778	

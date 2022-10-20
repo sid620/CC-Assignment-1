@@ -1,0 +1,1983 @@
+     1	     UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+     2	     UU                                                  UU
+     3	     UU               BABEL:  A LISTING OF               UU
+     4	     UU   COMPUTER ORIENTED ABBREVIATIONS AND ACRONYMS   UU
+     5	     UU                                                  UU
+     6	     UUUUUUUUUUUUUUUUUUUU Version 92A UUUUUUUUUUUUUUUUUUUUU
+     7	
+     8	Copyright (c) 1989-1992  Irving Kind         All Rights Reserved
+     9	
+    10	
+    11	     Compiled when I became frustrated while reading magazine
+    12	articles, help wanted ads and equipment for sale brochures....all
+    13	pertaining to computers....where the following Abbreviations and
+    14	Acronyms were used and their meanings were either not known to me
+    15	or were not immediately available.  I have actually seen these
+    16	combinations of letters used at one time or another in magazines,
+    17	newspapers or handbooks.  They apply to personal computers,
+    18	mainframes, communications, programming, networking, etc......you
+    19	name it.  This list is free for anyone to use, but with no
+    20	guarantees as to its completeness.  That is why I am now requesting
+    21	your help.  Look over the definitions and let me have your
+    22	feedback.  If you can fill in any of the blanks that I have
+    23	questioned; or, if you have ever seen letter combinations that you
+    24	also did not understand, please drop me a note at the address
+    25	below.
+    26	
+    27	     Also if you find any errors, obsolete information or can
+    28	suggest any additions or deletions, they will be most welcome.  If
+    29	you can help, my thanks in advance. 
+    30	
+    31	     In the meantime, print out a copy of this list and keep it on
+    32	your desk.  I know you will find it useful.  Updates to this
+    33	listing will be issued three times a year; in January, May and
+    34	September.  You may download the latest version of BABEL from your
+    35	favorite Bulletin Board.  If any Bulletin Board SYSOP, Computer
+    36	Club Librarian, Organization or Teacher sends me a formatted disk
+    37	with a disk mailer, stamped with return postage, I will return the
+    38	disk with the latest updated version of BABEL at no charge.  See
+    39	end of listing for additional information about updates.
+    40	                    
+    41	     Letter groups followed with " * " were used before 1965.  
+    42	At some of these, I have noted historical information.
+    43	
+    44	     And please remember to ECAL.
+    45	
+    46	                                        Irving Kind
+    47	                                        c/o K & D
+    48	                                        One Church Lane
+    49	                                        Baltimore, MD  21208 
+    50	
+    51	Jan 1992 version = BABEL92A       Jan 1993 version = BABEL93A
+    52	May 1992 version = BABEL92B       May 1993 version = BABEL93B
+    53	Sep 1992 version = BABEL92C       Sep 1993 version = BABEL93C
+    54	
+    55	     UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+    56	     UU                                                  UU
+    57	     UU               BABEL:  A LISTING OF               UU
+    58	     UU   COMPUTER ORIENTED ABBREVIATIONS AND ACRONYMS   UU
+    59	     UU                                                  UU
+    60	     UUUUUUUUUUUUUUUUUUUU Version 92A UUUUUUUUUUUUUUUUUUUUU
+    61	
+    62	Copyright (c) 1989-1991  Irving Kind        All Rights Reserved
+    63	
+    64	
+    65	AA        Auto Answer
+    66	AAP       Applications Access Point [DEC]
+    67	AASP      ASCII Asynchronous Support Package
+    68	AAT       Average Access Time
+    69	ABEND     Abnormal End
+    70	ABIOS     Advanced BIOS
+    71	ABS       Absolute
+    72	ABT       Abort
+    73	AC        Automatic Computer + Alternating Current 
+    74	ACC       Accumulator
+    75	ACD       Automated Call Distribution
+    76	ACE       Advanced Computing Environment [SCO]
+    77	ACF       Access Control Field
+    78	ACK       Acknowledgment
+    79	ACMS      Application Control Management System
+    80	ACP       Ancillary Control Program + Auxillary Control Process
+    81	ACROSS    Automated Cargo Release and Operations Service System
+    82	ACS       Access + Access Control Set + Access Control System +
+    83	          Asynchronous Communication Server
+    84	ACU       Automatic Calling Unit
+    85	A/D       Analog to Digital
+    86	ADA       Automatic Data Acquisitions +                          
+    87	          (Programming Language named after Agusta Ada Lovelace) 
+    88	ADC       Add with Carry + Analog to Digital Converter
+    89	ADCCP     Advanced Data Communication Control Procedures
+    90	ADF       Automatic Document Feed
+    91	ADL       Address Data Latch
+    92	ADLAT     Adaptive Lattice Filter
+    93	.ADN      Add In Utility (file name extension) [Lotus 1-2-3] [LDC]
+    94	ADP       Automatic Data Processing
+    95	ADPCM     Adaptive Differential Pulse Code Modulation
+    96	ADR       Address
+    97	ADS       Application Development System + 
+    98	          Automatic Distribution System
+    99	ADSC      Address Status Changed
+   100	ADSR      Attack, Decay, Sustain, Release
+   101	ADT       Application Data Types
+   102	ADU       Automatic Dialing Unit
+   103	AE        Above or Equal
+   104	AEB       Analog Expansion Bus [Dialogic]
+   105	AF        Auxilary carry Flag
+   106	AFC       Automatic Font Change
+   107	AGC       Automatic Gain Control
+   108	AI        Analog Input + Artificial Intelligence
+   109	AIA       Applications Integration Architecture [DEC]
+   110	AIIM      Association for Information and Image Management
+   111	AISB      Association of Imaging Service Bureaus
+   112	AISP      Association of Information Systems Professionals
+   113	AIX       Advanced Interactive Executive [IBM]
+   114	ALC       Arithmetic and Logic Circuits + Automatic Level Control
+   115	ALE       Address Latch Enable
+   116	ALGOL     Algorithmic Language (see IAL)
+   117	ALR       Advanced Logic Research, Inc.
+   118	ALT       Alternate (mode)
+   119	ALU       Arithmetic Logic Unit
+   120	AMD       Advanced Micro Devices
+   121	AMMA      Advanced Memory Management Architecture [Everex Systems]
+   122	ANCOVA    Analysis of Covariance
+   123	ANI       Automatic Number Identification
+   124	ANOVA     Analysis Of Variance
+   125	ANSI      American National Standard Institute
+   126	AO        Analog Output
+   127	AOE       Application Operating Environment [AT&T]
+   128	AOS       Add Or Subtract
+   129	AP        Adjunct Processor + Application Processor
+   130	A/P       Accounts Payable
+   131	APA       Arithmetic Processing Accelerator + 
+   132	          All Points Addressable
+   133	APAREN    Address Parity Enable [IBM]
+   134	APCUG     Association of PC User Groups
+   135	API       Application Program Interface +
+   136	          Application Programming Interface
+   137	APL       A Programming Language (Mathematics)
+   138	.APP      Application (file name extension) [R:Base]
+   139	APPC      Advanced Program-to-Program Communication
+   140	APPN      Advanced Peer-to-Peer Networking [IBM]
+   141	APSE      ADA Programming Support Environment
+   142	APT       Address Pass Through +
+   143	          Automatically Programmed Tools
+   144	A/R       Accounts Receivable
+   145	.ARC      Archive (file name extension)
+   146	ARCA      Advanced RISC Computing Architecture
+   147	ARL       Adjusted Ring Length
+   148	ARLL      Advanced Run Length Limited
+   149	ARM       Asynchronous Response Mode
+   150	ARMA      Association of Records Managers and Administrators
+   151	ARP       Address Resolution Protocol [Novell]
+   152	ARPL      Adjust Requested Privilege Level
+   153	ARTIC     A Real-Time Interface Copressor [IBM]
+   154	ARQ       Automatic Repeat Request
+   155	ARU       Audio Response Unit
+   156	ASAP      As Soon As Possible +
+   157	          Automatic Switching And Processing
+   158	.ASC      ASCII text (file name extension)
+   159	ASCII     American Standard Code for Information Interchange
+   160	ASIC      Application-Specific Integrated Circuit
+   161	ASIT      Advanced Security and Identification Technology
+   162	.ASM      Assembler Source Language (file name extension)
+   163	ASP       Association of Shareware Professionals
+   164	ASPS      Advanced Signal Processing System
+   165	ASR       Automatic Send-Receive + Automatic Speech Recognition
+   166	ASYNC     Asynchronous
+   167	AT        Advanced Technology + Attention
+   168	ATA       AT Bus Attachment
+   169	ATDP      Attention Dial Pulse
+   170	ATDT      Attention Dial Tone
+   171	ATE       Automated Test Equipment
+   172	ATG       Advanced Technology Group
+   173	ATH       Attention Hang-Up
+   174	ATM       Adobe Type Manager + Asynchronous Transfer Mode +
+   175	          Automated Teller Machine
+   176	ATR       Automatic Terminal Recognition
+   177	ATS       Administrative Terminal System +
+   178	          Apple Terminal Services
+   179	AT&T      American Telephone and Telegraph
+   180	ATTN      Attention
+   181	ATTRIB    Attribute (also ATR)
+   182	AUDIT     Automated Data Input Terminal
+   183	AUI       Attached Unit Interface
+   184	AUTO      Automatic
+   185	AUX       Auxiliary + (First Serial Port)
+   186	AVA       Audio Visual Authoring [IBM]
+   187	AVC       Audio Visual Connection [IBM]
+   188	AVG       Average
+   189	AVI       Audio Visual Interleaved [Microsoft]
+   190	AX        Architecture Extended + Automatic Transmission 
+   191	BAK       Binary Adaption Kit [Microsoft]
+   192	.BAK      Backup (file name extension)
+   193	BAL       Basic Assembly Language
+   194	BAM       Boyan Action Module
+   195	BARTS     Bell Atlantic Regional Timesharing
+   196	.BAS      Basic Language (file name extension)
+   197	BASIC     Beginner's All-purpose Symbolic Instruction Code
+   198	.BAT      Batch Processing (file name extension)
+   199	BBS       Bulletin Board System
+   200	BCD       Binary Coded Decimal
+   201	BCL       Batch Command Language
+   202	BCPL      Basic Computer Programming Language
+   203	BCR       Byte Count Register
+   204	BDOS      Basic Disk Operating System
+   205	BE        Below or Equal
+   206	BEL       Bell
+   207	BELLCORE  Bell Communications Research
+   208	BF        Bad Flag
+   209	B/F       Background/Foreground
+   210	BGE       Branch if Greater or Equal
+   211	.BGI      Borland Graphic Interface (file name extension)
+   212	BGT       Branch if Greater Than
+   213	BHI       Branch if Higher
+   214	BHIS      Branch if Higher or Same
+   215	BI        Binary Input
+   216	.BIB      Bibliography (file name extension)
+   217	BIM       Beginning of Information Marker
+   218	.BIN      Binary (file name extension)
+   219	BINAC   * Binary Automatic Computer
+   220	BIOS      Basic Input/Output System
+   221	BIS       Business Information System
+   222	BiSYNC    (See BSYNC)
+   223	BIT       Binary digit
+   224	BIX       Byte Information Exchange (BBS)
+   225	.BK!      Backup (file name extension) [WordPerfect]
+   226	BKSP      Backspace
+   227	BL        Backlit
+   228	BLAST     Blocked Asynchronous Transmission (protocol)
+   229	          [Communications Research Group]
+   230	.BLD      BASIC Bload Graphics (file name extension)
+   231	BLE       Branch if Less or Equal
+   232	BLK       Block
+   233	BLMC      Buried Logic Macrocell
+   234	BLOB      Binary Large Object
+   235	BLOS      Branch if Lower Or Same
+   236	BMI       Branch if Minus
+   237	BMIC      BusMaster Interface Controller [Intel]
+   238	BMP       Batch Message Processing Program
+   239	.BMP      Bitmap (file name extension) [Windows]
+   240	BNE       Branch if Not Equal
+   241	BO        Binary Output
+   242	BOM       Beginning Of Message
+   243	BORPQU    Borland Pro Quattro
+   244	BORQU     Borland Quattro
+   245	BOS       Basic Operating System
+   246	BOT       Beginning Of Table + Beginning of Tape
+   247	BP        Base Pointer
+   248	BPB       BIOS Parameter Block
+   249	BPI       Bits Per Inch
+   250	BPL       Branch if Plus
+   251	BPS       Bits Per Second + Bytes Per Second
+   252	BR        Bad Register
+   253	BRI       Basic Rate Interface + Brain Response Interface
+   254	BSAM      Basic Sequential Access Method
+   255	BSC       Binary Synchronous Communication
+   256	.BSC      Boyan Script (file name extension) [Boyan Communications]
+   257	BSCS      Bachelor of Science (Degree) in Computer Science
+   258	BSD       Berkely Standard Distribution
+   259	BSF       Bit Scan Forward
+   260	BSI       British Standards Institute
+   261	BSR       Bit Scan Reverse
+   262	BSV       BASIC Bsave Graphics (file name extension)
+   263	BSY       Busy
+   264	BSYNC     Binary Synchronous Communications (protocol)
+   265	BT        Bit Test
+   266	BTAM      Basic Telecommunications Access Method [IBM]
+   267	BTC       Bit Test and Complement
+   268	BTP       Batch Transfer Program
+   269	BTR       Bit Test and Reset
+   270	BTS       Bit Test and Set
+   271	BUF       Buffer
+   272	BWM       Block-Write Mode
+   273	BYTE      Binary Element String 
+   274	C         C Programming Language
+   275	.C        C source code (file name extension) [C]
+   276	CA        Collision  Avoidance
+   277	CAD       Computer Aided Design
+   278	CADD      Computer Aided Design and Drafting
+   279	CAE       Common Applications Environment +                       
+   280	          Computer Aided Engineering
+   281	CAG       Column Address Generator
+   282	CAI       Computer Aided Instruction
+   283	CAL       Calendar + Computer Aided Learning
+   284	CAM       Common Access Method + Computer Aided Manufacturing +
+   285	          Contents Addressable Memory
+   286	CAN       Cancel
+   287	CAP       Central Arbitration Point +
+   288	          Computer Aided Publishing
+   289	CAPD      Computing To Assist Persons With Disabilities [Johns
+   290	          Hopkins University]
+   291	CAPS      Capitals (Upper Case Letters) +
+   292	          Cassette Programming System
+   293	CAS       Column Address Select +
+   294	          Communicating Applications Specification +
+   295	          Computer Aided Styling
+   296	CASE      Computer Aided Software Engineering
+   297	CASL      Crosstalk Application Scripting Language [DCA]
+   298	CASS      Computer Assisted Search Service
+   299	CASSIS    Classified and Search Support Information System
+   300	CAT       Computer Aided Testing + Computer Aided Tomography +
+   301	          Computer Aided Transcription + Concatenate
+   302	.CAT      Catalog (file name extension)
+   303	CATV      Community Antenna Television
+   304	CAV       Constant Angular Velocity
+   305	CBCR      Channel Byte Count Register
+   306	CBL       Computer Based Learning
+   307	.CBL      COBOL source code (file name extension)
+   308	CBT       Computer Based Training
+   309	CBW       Convert Byte to Word
+   310	CBX       Computer-Controlled Branch Exchange
+   311	CC        Cluster Controller
+   312	CCD       Charged-Coupled Device
+   313	CCFT      Cold Cathode Fluorescent Tube
+   314	CCITT     Consultative Committee for International 
+   315	          Telegraph and Telephone
+   316	CCP       Console Command Processor
+   317	CCS       Common Communications Support
+   318	CD        Carrier Detect + Change Directory +                     
+   319	          Collision Detection + Color Display + Compact Disk
+   320	C/D       Control Data
+   321	CDA       Compound Document Architecture [DEC]
+   322	CDC       Control Data Corporation
+   323	CD_CHRDY  Card Channel Ready [IBM]
+   324	CDE       Complex Data Entry
+   325	.CDF      Comma Delimited Format (file name extension)
+   326	CD-I      Compact Disk - Interactive
+   327	CDOS      Concurrent Disk Operating System
+   328	CDL       Computer Design Language
+   329	CD-RDx    Compact Disk - Read Only Memory Data Exchange Standard
+   330	CD-ROM    Compact Disk - Read Only Memory
+   331	CDR       Call Detail Record + Call Detail Recording
+   332	CDRL      Contract Data Requirements List
+   333	CD-RTOS   Compact Disk - Real Time Operating System
+   334	CDS       Current Directory Structure
+   335	CD-V      Compact Disk - Video
+   336	CE        Cache Enable + Chip Enable + Collision Elimination +    
+   337	          Convert Enable
+   338	CEG       Continuous Edge Graphic
+   339	CEI       Conducted Electromagnetic Interference
+   340	.CFG      Configuration (file name extension)
+   341	CGA       Color Graphics Adapter
+   342	CGI       Computer Generated Images +
+   343	          Computer Graphics Interface
+   344	.CGM      Computer Graphics Metafile (file name extension) +
+   345	          Graph (file name extension) [Lotus 1-2-3] [LDC]
+   346	CHAR      Character
+   347	CHCK      Channel Check
+   348	CHGRP     Change Group
+   349	.CHK      CHKDSK (file name extension)
+   350	CHKDSK    Check Disk
+   351	CHMOD     Change Mode
+   352	CHOWN     Change Owner
+   353	CHP       Chapter
+   354	CHR       Character
+   355	CICS/VS   Customer Information Control System/
+   356	          Virtual Storage [IBM]
+   357	CIM       CompuServe Information Manager +
+   358	          Computer Integrated Manufacturing
+   359	CIOCS     Communication Input/Output Control System
+   360	CIP       Command Interface Port
+   361	CIRC      Circular Reference
+   362	CIS       CompuServe Information Service +
+   363	          Computer Information Systems
+   364	CISC      Complex Instruction Set Computer
+   365	CKD       Count Key Data (device)
+   366	CLAR      Channel Local Address Register
+   367	CLC       Clear Carry Flag
+   368	CLD       Clear Direction Flag
+   369	CLI       Clear Interrupt Flag + Command Line Interface
+   370	CLIST     Command List
+   371	CLK       Clock
+   372	CLNP      Connectionless Network Protocol
+   373	.CLP      Clipboard (file name extension) [Windows]
+   374	CLS       Clear Screen
+   375	CLTS      Clear Task Switch Flag
+   376	CLV       Constant Linear Velocity
+   377	CM        Centimeter + Control Mark + Corrective Maintenance
+   378	CMA       Concert Multi-thread Architecture
+   379	CMC       Communication Mangement Configuration +                 
+   380	          Complement Carry Flag
+   381	.CMD      Command (file name extension)
+   382	CMIP      Common Management Information Protocol
+   383	CMIS      Common Management Information System
+   384	CML       Current Mode Logic
+   385	CMMU      Cache/Memory Management Unit [Motorola]
+   386	CMOS      Complementary Metal-Oxide Semiconductor
+   387	CMP       Compare + Computer
+   388	CMPS      Compare word String      
+   389	CMS       Code Management System + Compiler Monitor System +
+   390	          Conversation Monitor System
+   391	CMY       Cyan-Magenta-Yellow (color model)
+   392	CMYK      Cyan-Magenta-Yellow-Black (color model)
+   393	CNC       Computerized Numerical Control
+   394	.CNF      Configuration (file name extension)
+   395	CNG       Calling (tone)
+   396	CNVT      Convert
+   397	CO        Central Office + Command Output + Convert Out
+   398	.COB      COBAL source code (file name extension)
+   399	COBOL     Common Business-oriented Language (See HLL)
+   400	.COD      Code List (file name extension)
+   401	CODASYL * Conference on Data System Languages (Group that
+   402	          designed COBOL)
+   403	COEM      Commercial Original Equipment Manufacturer
+   404	COGO      Coordinate Geometry (Programming Language)
+   405	COL       Computer Oriented Language
+   406	.COM      Command (file name extension)
+   407	COMDEX    Computer Dealers Exposition
+   408	COM1      First serial Port (asynchronous port)
+   409	COM2      Second serial Port
+   410	COM3      Third serial Port
+   411	COM4      Fourth serial Port
+   412	COMP      Compare + Communications
+   413	COMSAT    Communications Satellite Corporation
+   414	CON       Console (includes Keyboard and Screen)
+   415	CONFIG    Configuration
+   416	COS       Compatible Operating System
+   417	COSMOS    Computer System for Mainframe Operations
+   418	CP        Copy Protected
+   419	CPA       Certified Public Accountant
+   420	CPE       Central Processing Element +
+   421	          Customer Premise Equipment +
+   422	          Customer Provided Equipment
+   423	CPG       Clock Pulse Generator
+   424	CPI       Characters Per Inch + Clock Per Instruction +
+   425	          Common Programming Interface [IBM]
+   426	.CPI      Code Page Information (file name extension) [MS-DOS]
+   427	CPL       Current Privilege Level
+   428	CP/M      Control Program for Microcomputers
+   429	CPS       Characters Per Second + Cycles Per Second
+   430	CPT       Command Pass Through
+   431	CPU       Central Processing Unit
+   432	CR        Carriage Return
+   433	CRC       Cyclic Redundancy Check
+   434	CRF       Cross Reference File
+   435	CR/LF     Carriage Return/Line Feed
+   436	CROM      Control Read Only Memory
+   437	CRT       Cathode Ray Tube
+   438	CRTC      CRT Controller
+   439	CS        Chip Select + Clear to Send + Code Segment
+   440	CSAR      Channel System Address Register
+   441	CSG       Constructive Solid Geometry +
+   442	          Consulting Services Group [Lotus]
+   443	CSL       Computer Sensitive Language
+   444	CSMA      Carrier Sense Multiple Access
+   445	CSP       Commercial Subroutine Package +
+   446	          CompuCom Speed Protocol [CompuCom]
+   447	CSTA      Computer-Supported Telephony Applications
+   448	C&T       Chips and Technologies
+   449	CTOS      Computerized Tomography Operating System
+   450	CTPA      Coax-to-Twisted-Pair Adapter
+   451	CTRL      Control
+   452	CTS       Clear To Send
+   453	CTSS    * Compatible Time Sharing System
+   454	CUA       Common User Access [IBM]
+   455	CUB       Cursor Backward
+   456	CUD       Cursor Down
+   457	CUF       Cursor Forward
+   458	CUI       Common User Interface [IBM]
+   459	CUP       Cursor Position
+   460	CUPID     Completely Universal Processor I/O Design [AST]
+   461	.CUR      Cursor (file name extension)
+   462	CUU       Cursor Up
+   463	CVGA      Color Video Gaphics Array
+   464	CVIA      Computer Virus Industry Association
+   465	CWD       Convert Word to Double Word
+   466	CYL       Cylinder
+   467	CYMK      Cyan-Yellow-Magenta-Black (color model)
+   468	D/A       Digital to Analog
+   469	DAA       Data Access Arrangement +
+   470	          Decimal Adjust for Addition
+   471	DAC       Digital to Analog Converter
+   472	DAL       Data Access Language [Apple Computer] +
+   473	          Disk Access Lockout
+   474	DAM       Data Acquisition and Monitoring
+   475	DAP       Data Access Protocol [DEC]
+   476	DAS       Decimal Adjust for Subtraction
+   477	DASD      Direct Access Storage Device
+   478	DAT       Digital Audio Tape
+   479	.DAT      Data (file name extension)
+   480	DATACOM   Data Communications
+   481	.DBF      Database (file name extension)
+   482	DB        Data Base + Data Buffer
+   483	DBM       Data Base Manager
+   484	DBMS      Data Base Management System
+   485	DBS       Data Base Server
+   486	DB2       Database 2
+   487	DC        Data Collection + Data Communication + Data Control +  
+   488	          Device Control + Direct Current
+   489	DCA       Digital Communications Associates +
+   490	          Document Content Architecture
+   491	DCAF      Distributed Console Access Facility [IBM]
+   492	DCB       Disk Coprocessor Board [Novell]
+   493	DCC       Display Combination Code
+   494	DCD       Data Carrier Detect
+   495	DCE       Data Communications Equipment +
+   496	          Distributed Computing Environment [OSF] +
+   497	          Distributed Computing Equipment
+   498	DCF       Data Communication Facility [IBM] +
+   499	          Data Count Field [IBM]
+   500	DCL       Declaration + DEC Command Language [DEC] +
+   501	          Device Clear + Digital Control Logic +
+   502	          Digital Command Language [Digital] 
+   503	DCS       Data Collection System + Data Control System
+   504	.DCT      Dictionary (file name extension)
+   505	DD        Day + Digital Display + Double Density
+   506	DDD       Direct Distance Dialing
+   507	DDE       Direct Data Entry + Dynamic Data Exchange [Microsoft]
+   508	DDEML     Dynamic Data Exchange Management Library [Microsoft]
+   509	DDL       Data Definition Language + Data Description Language
+   510	DDM       Distributed Data Management
+   511	DDS       Design Data Sheet + Digital Data Storage
+   512	DEC       Decrement + Device Clear +
+   513	          Digital Equipment Corporation
+   514	.DEF      Definitions + Defaults (file name extensions)
+   515	DEL       Delete
+   516	.DEM      Demonstration (file name extension)
+   517	DES       Data Encryption Standard + Data Entry Sheet
+   518	.DES      Description (file name extension)
+   519	DET       Device Execute Trigger
+   520	DEV       Device
+   521	DF        Data Field + Destination Field + Device Flag +
+   522	          Double Flag
+   523	DFC       Data Flow Control
+   524	DFS       Distributed File System
+   525	DFT       Diagnostic Funtion Test + Discrete Fourier Transform +
+   526	          Distributed Function Terminal
+   527	DFU       Data File Utility
+   528	DGIS      Direct Graphics Interface Standard
+   529	DI        Data In + Destination Index
+   530	DIA       Document Interchange Architecture [IBM]
+   531	DIBOL     DEC Business Oriented Language
+   532	.DIC      Dictionary (file name extension)
+   533	DID       Direct Inward Dialing
+   534	DIF       Data Interchange Format
+   535	DIFFSENS  Differential Sense
+   536	DIIP      Direct Interrupt Identification Port
+   537	DIN       Deutsche Industrie Norm (German equivalent of EIA)
+   538	DIO       Data Input-Output
+   539	DIP       Dual In-line Package
+   540	DIR       Directory (file)
+   541	DIS       Dynamic Impedance Stabilization [CompuCom]
+   542	DISP      Displacement (offset)
+   543	DIV       Divide
+   544	DIW       D-Inside Wire [AT&T]
+   545	DL        Download
+   546	DL/1      Data Manipulation Language 1 [IBM]
+   547	DLC       Data Link Control (protocol) [IBM]
+   548	DLE       Data Link Escape
+   549	DLL       Dynamic Link Library
+   550	DLR       DOS LAN Requester
+   551	DMA       Direct Memory Access
+   552	DMAC      DMA Controller
+   553	DME       Distributed Management Environment
+   554	DML       Data Manipulation Language
+   555	DMM       Digital Multimeter
+   556	DMMS      Dynamic Memory Management System
+   557	DMOS      Double-diffused Metal-Oxide Semiconductor
+   558	DMP       Dot Matrix Printer
+   559	DMS       Data Management Software + Data Management System
+   560	DMY       Day Month Year
+   561	DN        Down
+   562	DNC       Direct Numerical Control
+   563	DNIS      Dialed Number Identification Service
+   564	DNS       Domain Naming System
+   565	DO        Data Out
+   566	.DOC      Document + Documentation (file name extensions)
+   567	DOS       Disk Operating System
+   568	DOW       Day Of Week
+   569	DP        Data Processing
+   570	DPA       Demand Protocol Architecture [3Com]
+   571	DPAREN    Data Parity Enable [IBM]
+   572	DPB       Drive Parameter Block
+   573	DPC       Direct Program Control
+   574	DPI       Dots Per Inch
+   575	DPL       Descriptor Privilege Level
+   576	DPM       Digital Panel Meter
+   577	DPMA      Data Processing Management Association
+   578	DPMI      DOS Protected Mode Interface [Microsoft]
+   579	DR        Data Received
+   580	D/R       Direct or Reverse
+   581	DRAM      Dynamic Random Access Memory
+   582	DRAW      Direct Read After Write
+   583	DRDA      Distributed Relational Data Architecture [IBM]
+   584	DRDW      Direct Read During Write
+   585	DRI       Digital Research Incorporated
+   586	DRO       Data Request Output + Destructive Read-Out
+   587	.DRS      WordPerfect Driver Resource (file name extension)
+   588	DRV       Drive
+   589	.DRV      Device Driver (file name extension) (Also see .DVR)
+   590	.DRW      Draw + Drawing (file name extensions) 
+   591	DS        Data Segment + Data Send + Data Server + Double Sided
+   592	DSDD      Double Sided, Double Density (diskette)
+   593	DSE       Data Storage Equipment
+   594	DSEA      Display Station Emulation Adapter
+   595	DSECT     Dummy Control Section
+   596	DSHD      Double Sided, High Density (diskette)
+   597	DSL       Dynamic Simulation Language
+   598	DSP       Digital Signal Processing +
+   599	          Digital Signal Processor
+   600	DSQD      Double Sided, Quad Density (diskette)
+   601	DSR       Data Set Ready + Device Status Register +
+   602	          Device Status Report
+   603	DSS       Decision Support System
+   604	DSTN      Double Supertwisted Nematic
+   605	DSW       Data Status Word + Device Status Word
+   606	D2T2      Dye Diffusion Thermal Transfer (printing)
+   607	DTA       Disk Transfer Area
+   608	.DTA      Data (file name extension)
+   609	DTE       Data Terminal Equipment + Dumb Terminal Emulator
+   610	DTL       Diode-Transistor Logic
+   611	DTMF      Dual Tone Multifrequency
+   612	DTP       Desktop Publishing
+   613	DTR       Data Terminal Ready + Data Transfer Rate
+   614	DU        Disk Usage
+   615	.DV       DESQview Script (file name extension)
+   616	DVI       Digital Video Interactive
+   617	.DVR      Device Driver (file name extension) (Also see .DRV)
+   618	DWG       Drawing
+   619	.DXB      Drawing Interchange Binary (file name extension)
+   620	          [AutoCAD]
+   621	DXC       Data Exchange Control
+   622	DXF       Drawing Interchange Format
+   623	EA        Extended Attribute [OS/2]
+   624	EAROM     Electrically Alterable Read Only Memory
+   625	EARS      Electronic Access to Reference Services
+   626	EATA      Enhanced AT Bus Attachment
+   627	EBC       EISA Bus Controller
+   628	EBCDIC    Extended Binary Coded Decimal Interchange Code [IBM]    
+   629	EBI       Equivalent Background Input +                          
+   630	          Extended Background Investigation
+   631	EBT       Electronic Benefits Transfer
+   632	ECAL      Enjoy Computing And Learn
+   633	ECC       Error Check Code + Error Checking and Correction + 
+   634	          Error Correction Code
+   635	ECD       Enhanced Color Display
+   636	ECL       Emitter Coupled Logic
+   637	ECMA      European Computer Manufacturers Association
+   638	ED        Erase Display
+   639	EDA       Embedded Document Architecture [Go Corporation]
+   640	EDC       Error Detection and Correction
+   641	EDDC      Extended Distance Data Cable
+   642	EDI       Electronic Data Interchange +
+   643	          Electronic Document Interchange [DEC]
+   644	EDIFACT   EDI for Administration Commerce and Transport
+   645	EDLC      Ethernet Data Link Control
+   646	EDLIN     Editor (Line Text)
+   647	EDP       Electronic Data Processing
+   648	EDPM      Electronic Data Processing Machine
+   649	EDSAC   * Electronic Delay Storage Automatic Computer
+   650	EDSI      Enhanced Small Device Interface
+   651	EDVAC   * Electronic Discrete Variable Automatic Computer
+   652	          (First stored-program digital computer)
+   653	EEC       Extended Error Correction
+   654	EEG       Electroencephalogram
+   655	EEM       Extended Memory Management
+   656	EEMS      Enhanced Expanded Memory Specification
+   657	EEPROM    Electrically Erasable Programmable Read-Only Memory
+   658	EFA       Extended File Attribute
+   659	EFI       Electromechanical Frequency Interference +
+   660	          Electronics For Imaging
+   661	EFL       Emitter Follower Logic
+   662	EFTS      Electronic Funds Transfer System
+   663	EGA       Enhanced Graphics Adapter
+   664	EIA       Electronic Industries Association
+   665	EIS       Executive Information System
+   666	EISA      Extended Industry Standard Architecture
+   667	EL        Electroluminescent (display) + Erase Line
+   668	ELF       Extremely Low Frequency
+   669	ELS       Entry Level System
+   670	EM        Electronic Mail + Expanded Memory
+   671	EMA       Enterprise Management Architecture
+   672	E-MAIL    Electronic Mail
+   673	EMB       Extended Memory Blocks [LIM/AST]
+   674	EMC       Electromagnetic Compatibility + Extended Math Coprocessor
+   675	EMI       Electromagnetic Interference
+   676	.EML      Electronic Mail (file name extension)
+   677	EMM       Expanded Memory Manager
+   678	EMR       Electro-Magnetic Radiation
+   679	EMS       Electronic Mail System + Electronic Message Service + 
+   680	          Expanded Memory Specification [LIM]
+   681	.ENC      Encoded (file name extension)
+   682	ENDS      Ends Segment
+   683	ENIAC   * Electronic Numerical Integrator and Computer
+   684	          (First fully electronic digital computer)
+   685	ENQ       Enquiry
+   686	EOA       End of Address
+   687	EOB       End of Block
+   688	EOC       End of Conversion
+   689	EOF       End of File
+   690	EOI       End or Identify
+   691	EOJ       End of Job
+   692	EOL       End of Line + End of List
+   693	EOM       End of Message
+   694	EOR       Exclusive OR (Also XOR)
+   695	EOS       End of String
+   696	EOT       End Of Table + End of Tape (marker) + End of Text +
+   697	          End of Transmission
+   698	EPL       Effective Privilege Level
+   699	EPLD      Electrically Programmable Logic Device
+   700	EPROM     Electrically Programmable Read Only Memory +
+   701	          Erasable Programmable Read Only Memory
+   702	.EPS      Encapsulated PostScript (file name extension)
+   703	EPSF      Encapsulated PostScript Files
+   704	ERLL      Enhanced Run Length Limited
+   705	EROM      Erasable Read Only Memory
+   706	ERR       Error
+   707	ES        Extra Segment
+   708	ESA       European Space Agency
+   709	ESC       Escape
+   710	ESD       Electrostatic Discharge
+   711	ESDI      Enhanced Small Device Interface
+   712	ESI       Enhanced Serial Interface (specification) [Hayes]
+   713	ESP       Enhanced Serial Port [Hayes]
+   714	ESS       Electronic Switching System
+   715	ESU       Electro-Static Unit
+   716	ETB       End of Transmission Block
+   717	ETPL      Endorsed Tempest Products List
+   718	ETS       Econometric Time Series
+   719	ETX       End of Text
+   720	EVGA      Extended Video Graphics Array +
+   721	          Extended Video Graphics Adapter
+   722	.EXE      Executable (file name extension)
+   723	EXE2BIN   Program used to convert an (.EXE) file to binary
+   724	          format (.COM) file
+   725	EXP       Exponent
+   726	EXT       External
+   727	EXTRN     External Reference 
+   728	FAB       Computer-Chip Fabrication Plant
+   729	FAMOS     Floating Gate Avalanche MOS
+   730	FAP       File Access Protocol
+   731	FAT       Fat Allocation Table
+   732	FAX       Facsimile
+   733	.FAX      Fax (file name extension)
+   734	FCB       File Control Block
+   735	FCC       Federal Communications Commission
+   736	FCI       Flux Changes per Inch
+   737	FD        Floppy Disk + Full Duplex
+   738	FDC       Floppy Disk Controller
+   739	FDDI      Fiber Digital Device Interface +
+   740	          Fiber Distributed Data Interface 
+   741	FDISK     Fixed Disk
+   742	FEFO      First-Ended, First-Out
+   743	FEP       Front End Processor
+   744	FET       Field Effect Transistor
+   745	FF        Flip-Flop + Form Feed
+   746	FFT       Fast Fourier Transform
+   747	FIFO      First-In, First-Out
+   748	FILO      First-In, Last-Out
+   749	FIP       File Processor Buffering
+   750	FIR       Finite Impulse Response
+   751	FLD       Field
+   752	FLOPS     Floating Point Operations Per Second
+   753	FMS       Forms Management System
+   754	FMT       Format
+   755	FNT       Font
+   756	FOCUS     Forum of Control Data Users
+   757	FOG       First Osborne Group
+   758	.FON      Phone + Phone Directory (file name extensions)
+   759	.FOR      FORTRAN source code (file name extension)
+   760	FORTH     (Programming Language)(See HLL)
+   761	FORTRAN   Formula Translator (Programming Language)(See HLL)
+   762	FOSE      Federal Office Systems Exposition
+   763	FOSSIL    Fido/Opus/Seadog Standard Interface Layer
+   764	FPGA      Field Programmable Gate-Array
+   765	FPLA      Field Programmable Logic-Array
+   766	FPP       Fixed Path Protocol + Floating Point Processor
+   767	FPS       Frames Per Second
+   768	FPU       Floating Point Processor Unit
+   769	FRAG      Fragment + Fragmentation
+   770	FRAM      Ferroelectric Random-Access Memory
+   771	FRED      Frame Editor
+   772	FRPI      Flux Reversals Per Inch
+   773	.FRS      WordPerfect Graphics Driver (file name extension)
+   774	FSD       File System Driver [OS/2]
+   775	FSK       Frequency Shift Keying
+   776	F/T       Full Time
+   777	FTAM      File Transfer, Access and Management
+   778	FTP       File Transfer Protocol
+   779	FTS       Federal Telecommunication System
+   780	FUNC      Function 
+   781	GAAP      Generally Accepted Accounting Principles
+   782	GAL       Generic Array Logic
+   783	GB        Gigabyte (1,000 megabytes)
+   784	GCR       Group Code Recording
+   785	GDA       Global Data Area
+   786	GDDM      Graphics Data Display Manager
+   787	GDI       Graphics Device Interface
+   788	GDT       Geometric Dimensioning and Tolerancing +
+   789	          Global Descriptor Table
+   790	GEM       Graphics Environment Manager (DRI Program)
+   791	GEOS      Graphic Environment Operating System [Geoworks]
+   792	GET       Get Execute Trigger
+   793	GHZ       Gigahertz
+   794	.GIF      Graphic Interchange Format (file name extension)
+   795	GIGO      Garbage In, Garbage Out
+   796	GIS       Geographical Information System
+   797	GKS       Graphical Kernal System
+   798	G/L       General Ledger
+   799	GLM       General Linear Models
+   800	.GLY      Glossary (file name extension) [Microsoft Word]
+   801	GMT       Greenwich Mean Time
+   802	GND       System Ground
+   803	GOSIP     Government Open Systems Interconnection Profile
+   804	GP        Gas Plasma + General Purpose
+   805	GPI       Graphics Programming Interface
+   806	GPIB      General Purpose Interface Bus
+   807	GPSS    * General Purpose Simulation Language
+   808	GRE       Graphics Engine
+   809	.GRF      Graph (file name extension)
+   810	.GRP      Group (file name extension)
+   811	GUI       Graphical User Interface
+   812	GW-BASIC  Gee Whiz BASIC
+   813	.H        Header (file name extension) [C] 
+   814	HAL       Hard Array Logic + House Programmed Array Logic
+   815	HASP      Houston Automatic Spooling Priority (System)
+   816	HD        Hard Disk + High Density
+   817	HDA       Head Disk Assembly
+   818	HDI       Head to Disk Interference
+   819	HDLC      High-Level Data Link Control
+   820	HDR       Header
+   821	HDSC      High Density Signal Carrier [DEC]
+   822	HDTV      High Definition Television
+   823	HDW       Hardware
+   824	HERC      Hercules
+   825	HEX       Hexadecimal
+   826	HGA       Hercules Graphics Adapter
+   827	HGCP      Hercules Graphics Card Plus
+   828	HH        Hour
+   829	HIL       Human Interface Link [HP]
+   830	HLCO      High Low Close Open
+   831	HLL       High Level Language
+   832	HLLAPI    High Level Language Application Programming Interface
+   833	.HLP      Help (file name extension)
+   834	HLQ       High Level Qualifier
+   835	HLT       Halt
+   836	HMA       High Memory Area [Microsoft]
+   837	HMOS      High Density Metal Oxide Semiconductor +
+   838	          High Speed Metal Oxide Semiconductor
+   839	HP        Hewlett-Packard (Company)
+   840	HPFS      High-Performance File System 
+   841	HPG       Hewlett-Packard Graphics
+   842	HPGL      Hewlett-Packard Graphics Language
+   843	HPIB      Hewlett-Packard Interface Bus
+   844	HPPA      Hewlett-Packard Precision Architecture
+   845	HPPI      High Performance Parallel Interface
+   846	HRIS      Human Resource Information System
+   847	HRG       High Resolution Graphics
+   848	HRMS      Human Resource Management System
+   849	HS        High Speed
+   850	HSC       High Speed Channel
+   851	HSP       High Speed Printer
+   852	HST       High Speed Technology [U.S. Robotics]
+   853	.HST      History + Host (file name extensions)
+   854	HSV       Hue Saturation Value
+   855	HUT       Hopkins Ultraviolet Telescope
+   856	H/V       Horizontal/Vertical
+   857	HVP       Horizontal & Vertical Position
+   858	H/W       Hardware
+   859	HWCP      Hardware Code Page
+   860	HWD       Height-Width-Depth
+   861	.HYP      Hyphenation (file name extension)
+   862	HZ        Hertz
+   863	IAL     * International Algebraic Language
+   864	          (ALGOL was first called IAL)
+   865	IBC       Instrument Bus Computer
+   866	IBM       International Business Machines (Corporation)
+   867	IBM-GL    IBM Graphics Language
+   868	IC        Input Circuit + Integrated Circuit + Interrupt Controller
+   869	ICA       Intra-application Communications Area
+   870	ICAS      Intel Communicating Applications Specifications
+   871	ICCP      Institute for the Certification of Computer Professionals
+   872	ICE       In-Circuit Emulator [Intel]
+   873	ICL       Interface Clear
+   874	ICMP      Internet Control Message Protocol [Novell]
+   875	.ICO      Icon (file name extension)
+   876	ICP       Integrated Channel Processor
+   877	ICR       Intelligent Character Recognition
+   878	ID        Identification + Identifier
+   879	IDA       Integrated Digital Access + Intelligent Disk Array +
+   880	          Intelligent Drive Array
+   881	IDE       Imbedded Drive Electronics +
+   882	          Integrated Development Environment [Borlund] +
+   883	          Integrated Drive Electronics +
+   884	          Intelligent Drive Electronics +
+   885	          Interactive Design and Engineering +
+   886	          Interface Design Enhancement
+   887	IDIV      Integer Divide
+   888	IDMS      Integrated Data Base Management System
+   889	IDP       Integrated Data Processing
+   890	IDT       Interrupt Descriptor Table
+   891	.IDX      Index (file name extension)
+   892	IEEE      Institute of Electrical and Electronics Engineers
+   893	I/F       Interface
+   894	IFD       Image File Directory
+   895	IFS       Installable File System [OS/2]
+   896	IGA       Integrated Graphics Array
+   897	IGC       Integrated Graphics Controller
+   898	IIF       Immediate IF
+   899	IIR       Immediate Impulse Response
+   900	IMDS      Image Data Stream (format) [IBM]
+   901	IMG       Image
+   902	IMP       Interface Message Processor
+   903	IMS       Information Management System +
+   904	          Intermediate Maintenance Standards 
+   905	IMUL      Integer Multiply
+   906	IN        Input
+   907	INC       Increment
+   908	.INF      Information (file name extension)
+   909	.INI      Initialize (file name extension)
+   910	INIT      Initialize
+   911	INS       Input String
+   912	INT       Integer + Internal + Interrupt
+   913	INTA      Interrupt Acknowledge
+   914	INTO      Interrupt if Overflow occurs
+   915	I/O       Input/Output
+   916	IOCS      Input/Output Control System
+   917	IOCTL     Input/Output Control
+   918	IOSGA     Input/Output Support Gate Array
+   919	IP        Instruction Pointer + Internet Protocol
+   920	IPC       Instructions Per Clock + Interprocess Communication
+   921	IPF       Information Presentation Facility
+   922	IPL       Initial Program Load + Initial Program Loader
+   923	IPL     * Information Programming Language
+   924	IPSE      Integrated Project Support Environment
+   925	IPX       Internetwork Packet Exchange [Novell]
+   926	IQL       Interactive Query Language
+   927	IRET      Interrupt Return
+   928	IRL       Interactive Reader Language + Inter-Repeater Link
+   929	IRLED     Infrared Light Emitting Diode
+   930	IRM       Information Resource Management
+   931	IRQ       Interrupt Request
+   932	IRX       Information Retrieval Experiment
+   933	IS        Interrupt Status
+   934	ISA       Industry Standard Architecture
+   935	ISAM      Indexed Sequential-Access Method
+   936	ISC       Instruction Set Computer
+   937	ISD       Image Section Descriptor +
+   938	          Instructional Systems Design
+   939	ISDN      Integrated Services Digital Network
+   940	ISI       Internally Specified Index
+   941	ISL       Interactive System Language
+   942	ISO       International Standards Organization 
+   943	ISP       Interrupt Status Port
+   944	ISPF      Interactive System Programming Facility
+   945	ISR       Information Storage and Retrieval +                    
+   946	          Interrupt Service Routines
+   947	ITB       Information Technology Branch + Intermediate Text Block
+   948	ITC       International Typeface Corporation
+   949	ITU       International Telecommunication Union
+   950	ITX       Intermediate Text Block
+   951	IVIS      Interactive Video Information System
+   952	IVR       Interactive Voice Response
+   953	IVS       Interactive Videodisk System
+   954	IVT       Interrupt Vector Table 
+   955	IV&V      Independent Verification & Validation
+   956	JA        Jump Address + Jump if Above
+   957	JAE       Jump if Above or Equal
+   958	JBE       Jump if Below or Equal
+   959	JC        Jump if Carry set
+   960	JCL       Job Control Language
+   961	JE        Jump if Equal
+   962	JEDEC     Joint Electronic Devices Engineering Council
+   963	JEIDA     Japanese Electronics Industry Development Association
+   964	JES       Job Entry System
+   965	JG        Jump if Greater
+   966	JGE       Jump if Greater or Equal
+   967	JL        Jump if Less 
+   968	JLE       Jump if Less than or Equal to
+   969	JMP       Jump
+   970	JNA       Jump if Not Above
+   971	JNAE      Jump if Not Above or Equal
+   972	JNB       Jump if Not Below
+   973	JNBE      Jump if Not Below or Equal
+   974	JNG       Jump if Not Greater
+   975	JNGE      Jump if Not Greater or Equal
+   976	.JNK      Junk (file name extension)
+   977	JNLE      Jump if Not Less or Equal
+   978	JNO       Jump if No Overflow
+   979	JNP       Jump if No Parity
+   980	JNS       Jump if No Sign
+   981	JPE       Jump if Parity Even
+   982	JPEG      Joint Photographic Experts Group
+   983	JPL       Jet Propulsion Laboratory
+   984	JPO       Jump if Parity Odd
+   985	JS        Jump if Sign
+   986	JZ        Jump if Zero
+   987	JNZ       Jump if Not Zero 
+   988	KB        Keyboard + Kilobyte (1,024 bytes)
+   989	KBD       Keyboard (also KEYB)
+   990	KBPS      Kilo-Bytes Per Second
+   991	KDT       Key Definition Table
+   992	KEYBBE    Foreign language KEYBoard program - Belgium
+   993	KEYBCF    Foreign language KEYBoard program - Canadian-French
+   994	KEYBDF    Foreign language KEYBoard program - Denmark
+   995	KEYBFR    Foreign language KEYBoard program - France
+   996	KEYBGR    Foreign language KEYBoard program - Germany
+   997	KEYBLA    Foreign language KEYBoard program - Latin America
+   998	KEYBNL    Foreign language KEYBoard program - Netherlands
+   999	KEYBNO    Foreign language KEYBoard program - Norway
+  1000	KEYBPO    Foreign language KEYBoard program - Portugal
+  1001	KEYBSF    Foreign language KEYBoard program - Swiss-French
+  1002	KEYBSG    Foreign language KEYBoard program - Swiss-German
+  1003	KEYBSP    Foreign language KEYBoard program - Spain
+  1004	KEYBSU    Foreign language KEYBoard program - Finland
+  1005	KEYBSV    Foreign language KEYBoard program - Sweden
+  1006	KEYBUK    Foreign language KEYBoard program - United Kingdom
+  1007	KSR       Keyboard Send Receive
+  1008	KRS       Knowledge Retrieval System
+  1009	LALL      Longest Allowed Lobe Length
+  1010	LAN       Local Area Network
+  1011	LAPB      Link Access Procedure Balanced (protocol)
+  1012	LAPD      Link Access Procedure Direct (protocol)
+  1013	LAPM      Link Access Procedure for Modems
+  1014	LAR       Load Access Rights
+  1015	LAWN      Local Area Wireless Network
+  1016	LBL       Label
+  1017	LBR       Librarian
+  1018	.LBR      Library (file name extension)
+  1019	LBT       Listen Before Talk
+  1020	LCC       Leadless Chip Carrier
+  1021	LCD       Liquid Crystal Display
+  1022	LCU       Last Cluster Used
+  1023	LDA       Logical Device Address
+  1024	LDC       Lotus Development Corporation
+  1025	LDT       Local Descriptor Table
+  1026	LE        Less or Equal
+  1027	LEA       Load Effective Address
+  1028	LED       Light Emitting Diode
+  1029	LEM       Language Extension Module
+  1030	.LET      Letter (file name extension)
+  1031	LEX       Lexicon
+  1032	LF        Line Feed
+  1033	LFI       Last File Indicator
+  1034	LFU       Least Frequently Used
+  1035	LGDT      Load Global Descriptor Table
+  1036	.LIB      Library (file name extension)
+  1037	LICS      Lotus International Character Set [LDC]
+  1038	LIDT      Load Interrupt Descriptor Table
+  1039	LIFO      Last In First Out
+  1040	LIM       Lotus/Intel/Microsoft
+  1041	LIMS      Library Information Management System
+  1042	LIPS      Logical Interferences Per Second
+  1043	LISP      List Processing (Language)(See HLL)
+  1044	LLC       Logical Link Control
+  1045	LLDT      Load Local Descriptor Table
+  1046	LMI       Local Management Interface
+  1047	LMSW      Load Machine Status Word
+  1048	LM/X      LAN Manager for Unix
+  1049	LN        Logarithm (Natural)
+  1050	LOC       Loop On-Line Control
+  1051	LODSB     Load String Byte
+  1052	LOG       Logarithm (Base 10)
+  1053	LOGO      (Programming Language)(See HLL)
+  1054	LOOPE     Loop while Equal
+  1055	LOOPNE    Loop while Not Equal
+  1056	LOOPNZ    Loop while Not Zero
+  1057	LOOPZ     Loop while Zero
+  1058	LORE      Line Oriented Editor
+  1059	LPD       Line Printer Daemon (protocol) [Berkley]
+  1060	LPI       Lines Per Inch
+  1061	LPL       Lotus Programming Language [Lotus 1-2-3] [LDC]
+  1062	LPM       Lines Per Minute
+  1063	LPN       Logical Page Number
+  1064	LPT       Line Printer
+  1065	LPT1      First Parallel Printer Port
+  1066	LPT2      Second Parallel Printer Port
+  1067	LPT3      Third Parallel Printer Port
+  1068	LQ        Letter Quality
+  1069	LRC       Local Register Cache +
+  1070	          Longitudinal Redundancy Check
+  1071	LRI       Least Recently Loaded
+  1072	.LRS      Language Resource (file name extension) [WordPerfect]
+  1073	LRU       Least Recently Used
+  1074	LSA       Line Sharing Adapter
+  1075	LSB       Least Significant Bit
+  1076	LSC       Least Significant Character
+  1077	LSD       Least Significant Digit
+  1078	LSI       Large Scale Integration
+  1079	LSL       Load Segment Limit
+  1080	LST       List
+  1081	.LST      List (file name extension)
+  1082	LTR       Letter + Load Task Register
+  1083	LU        Logical Unit (Also LUN)
+  1084	LUT       Lookup Table
+  1085	LZW       Lempel-Ziv-Walsh (algorithm)
+  1086	MAC       Medium Access Control
+  1087	.MAC      MacPaint (file name extension) +
+  1088	          Macro (file name extension)
+  1089	.MAI      Mail (file name extension)
+  1090	MAN       Manual + Metropolitan Area Network
+  1091	MAP       Maintenance Analysis Procedures + 
+  1092	          Manufacturing Automation Protocol +
+  1093	          Memory Allocation Map
+  1094	.MAP      Linker Map (file name extension)
+  1095	MAPICS    Manufacturing, Accounting and Production
+  1096	          Information Control System [IBM]
+  1097	MASM      Macro Assembler [Microsoft]
+  1098	MAU       Media Access Unit + Multistation Access Unit
+  1099	MAX       Maximum
+  1100	MB        Megabyte (1,000 kilobytes)
+  1101	MBASIC    Microsoft BASIC
+  1102	MBPS      Megabytes Per Second
+  1103	MCA       Micro Channel Architecture [IBM]
+  1104	MCB       Memory Control Block
+  1105	MCGA      Multicolor Graphics Array
+  1106	MCU       Multi-Chip Unit [DEC]
+  1107	MD        Make Directory + Monochrome Display
+  1108	MDA       Monochrome Display Adapter
+  1109	MDI       Multiple Document Interface
+  1110	MDIC      Manchester Decoder and Interface Chip [AT&T]
+  1111	MDR       Minimum Design Requirement
+  1112	MDY       Month Day Year
+  1113	.ME       Opening Information (file name extension) (As in READ.ME)
+  1114	MEB       Memory Expansion Board
+  1115	MEG       Megabyte
+  1116	.MEN      Menu (file name extension)
+  1117	MFLOPS    Million Floating Point Operations Per Second
+  1118	MFM       Modified Frequency Modulation
+  1119	MFP       Multifunction Peripheral
+  1120	MFS       Magnetic Tape Field Search
+  1121	MFT       Multiprogramming with a Fixed number of Tasks
+  1122	MGA       Monochrome Graphics Adapter
+  1123	MGR       Manager
+  1124	MHS       Message Handling Service + Message Handling System
+  1125	MHZ       Megahertz
+  1126	MICS      Macro Interpretive Commands
+  1127	MIDI      Musical Instrument Digital Interface
+  1128	MII       Microsoft/IBM/Intel
+  1129	MIL       Machine Interface Layer [Go Corporation]
+  1130	MIMD      Multiple Instruction Multiple Data Stream (processor)
+  1131	MIN       Minimum
+  1132	MIPS      Million Instructions Per Second
+  1133	MIS       Management Information System
+  1134	MISC      Miscellaneous
+  1135	MIX       Member Information Exchange
+  1136	MKDIR     Make Directory
+  1137	ML        Machine Language
+  1138	MM        Minutes + Month
+  1139	MMC       Matched Memory Cycle + Microcomputer Marketing Council
+  1140	MMU       Memory Management Unit
+  1141	MNOS      Metal Nitride Oxide Semiconductor
+  1142	MNP       Microcom Networking Protocol
+  1143	.MNU      Menu (fine name extension)
+  1144	MO        Magneto-Optical (disk drive)
+  1145	MODEM     Modulator Demodulator
+  1146	MOHLL     Machine Oriented High Level Language
+  1147	MOV       Metal Oxide Varistor + Move
+  1148	MOVS      Move String
+  1149	MOD       Modem + Modulus
+  1150	MOS       Metal Oxide Semiconductor
+  1151	MOSFET    Metal Oxide Semiconductor Field Effect Transistor
+  1152	MOV       Move
+  1153	MOVS      Move String
+  1154	MPC       Multimedia Personal Computer
+  1155	MPCS      Mission Planning and Control Station (Software)
+  1156	MPEG      Moving Picture Experts Group
+  1157	MPP       Massively Parallel Processing +
+  1158	          Message Processing Program +
+  1159	          Microcom Network Protocol [Microcom]
+  1160	MPR       Multipart Repeater
+  1161	MPT       Mean Repair Time
+  1162	MPU       Microprocessor Unit
+  1163	MR        Modem Ready
+  1164	MRI       Magnetic Resonance Imaging
+  1165	MRO       Multi-Region Operation
+  1166	MRP       Materials Requirement Planning
+  1167	MRPL      Main Ring Path Length
+  1168	MS        Memory System + Microsecond + 
+  1169	          Microsoft Corporation + Millisecond
+  1170	MSB       Most Significant Bit
+  1171	MSD       Mass Storage Device + Most Significant Digit
+  1172	MS-DOS    Microsoft-Disk Operating System
+  1173	MSDR      Multiplexed Streaming Data Request
+  1174	MSG       Message
+  1175	.MSG      Program Message (file name extension)
+  1176	MSI       Medium Scale Integration
+  1177	MSL       Map Specification Library
+  1178	.MSP      Microsoft Paint (file name extension) [Microsoft]
+  1179	MSW       Machine Status Word
+  1180	MTA       Message Transfer Agent + Multiple Terminal Access
+  1181	MTBB      Mean Time Between Breakdowns
+  1182	MTBF      Mean Time Before Failure + Mean Time Between Failures
+  1183	MTBJ      Mean Time Between Jams
+  1184	MTS       Message Transfer Service + Multichannel Television Sound
+  1185	MTTF      Mean Time To Failure
+  1186	MTTR      Mean Time To Repair
+  1187	MUL       Multiply
+  1188	MUMPS     Massachusetts General Hospital Utility
+  1189	          Multi-Programming System (Programming Language)
+  1190	MUX       Multiplexer
+  1191	MVGA      Monochrome Video Graphics Array
+  1192	MVS       Multiple Virtual Storage
+  1193	MVT       Multiprogramming with a Variable number of Tasks 
+  1194	NACD      National Association of Computer Dealers
+  1195	NACS      National Advisory Committee on Semiconductors
+  1196	NAE       Not Above or Equal
+  1197	NAK       Negative Acknowledgment
+  1198	NAPLPS    North American Presentation Level Protocol
+  1199	          Syntax (graphics)
+  1200	NAS       Network Application Support [DEC]
+  1201	NASA      National Aeronautics and Space Administration
+  1202	NASI      NetWare Asynchronous Services Interface [Novell]
+  1203	NBE       Not Below or Equal
+  1204	NBI       Nothing But Initials
+  1205	NBS       National Bureau of Standards
+  1206	NC        No Carry + Numerical Control
+  1207	NCA       Network Communications Adapter
+  1208	NCC       Network Control Center
+  1209	NCGA      National Computer Graphics Association
+  1210	NCIC      National Crime Information Center
+  1211	NCMT    * Numerical Control for Machine Tools
+  1212	NCP       Network Control Processor + Network Control Program +  
+  1213	          Not Copy Protected
+  1214	NCR       National Cash Register (Company)
+  1215	NCSI      Network Communications Services Interface [Novell]
+  1216	NDEF      Not to be Defined
+  1217	NDIS      Network Driver Interface Specification
+  1218	NDP       Numeric Data Processor
+  1219	NDRO      Non-Destructive Read Out
+  1220	.NDX      Index (file name extension)
+  1221	NEC       Nippon Electric Company
+  1222	NEG       Negative + Negate
+  1223	NetBIOS   Network Basic Input/Output System [IBM]
+  1224	NetBEUI   NetBIOS Extended User Interface [IBM]
+  1225	.NEW      New Information (file name extension)
+  1226	NEWS      NetWare Early Warning System [Frye Computer]
+  1227	NFF       No Fault Found
+  1228	NFS       Network File System
+  1229	NG        No Good
+  1230	NGE       Not Greater or Equal
+  1231	NHC       National Hurricane Center
+  1232	NIC       Network Interface Card + Numeric Intensive Computing
+  1233	NICAD     Nickel Cadmium
+  1234	NID       New Interactive Display [NEC] + Next ID
+  1235	NIPS      Network I/Os Per Second
+  1236	NIST      National Institute for Standards and Technology
+  1237	NJE       Network Job Entry (protocol) [IBM]
+  1238	NL        New Line
+  1239	NLE       Not Less or Equal
+  1240	NLM       NetWare Loadable Module
+  1241	NLQ       Near Letter Quality
+  1242	NMI       Non-Maskable Interrupt
+  1243	NMOS      Negative Channel Metal-Oxide Semiconductor
+  1244	NOP       No Operation
+  1245	NOR       Not Or
+  1246	NOS       Network Operating System
+  1247	NPI       Network Printer Interface
+  1248	NRZ       Not Return to Zero
+  1249	NRZI      Non Return to Zero Inverted
+  1250	NS        Nanosecond + Network Supervisor + Non Stop
+  1251	NSA POLY  National Security Agency Polygraph
+  1252	NSF       National Science Foundation
+  1253	NT        New Technology [Microsoft]
+  1254	NTF       No Trouble Found
+  1255	NTSC      National Television Standards Committee
+  1256	NUI       Network User Identification +
+  1257	          Network User Interface +
+  1258	          Notebook User Interface [Go Corporation]
+  1259	NUL       Dummy Device + No Device
+  1260	NV        No Overflow 
+  1261	NVM       Non-Volatile Memory
+  1262	NVRAM     Non-Volatile Random Access Memory
+  1263	OAG       Official Airline Guide
+  1264	OAI       Open Applications Interface
+  1265	OBJ       Object
+  1266	OCL       Operation Control Language + Operator Control Language
+  1267	OCR       Optical Character Recognition
+  1268	ODA       Office Document Architecture
+  1269	ODBMS     Object-Oriented Database Management System
+  1270	ODI       Open Datalink Interface [Novell]
+  1271	OEM       Original Equipment Manufacturer
+  1272	OF        Overflow Flag
+  1273	OFMT      Output Format for Numbers
+  1274	OFS       Output Field Separator
+  1275	OH        Off Hook
+  1276	OIS       Office Information Systems
+  1277	.OLD      Old version (file name extension)
+  1278	OLE       Object Linking and Embedding [Microsoft]
+  1279	OLMC      Output Logic Macrocell
+  1280	OLTP      On-Line Transaction Processing
+  1281	OMF       Object Module Format [Microsoft]
+  1282	OMG       Object Management Group
+  1283	OMNS      Open Network Management System
+  1284	OMR       Optical Mark Recognition
+  1285	OOL       Object-Oriented Language
+  1286	OOPL      Object-Oriented Programming Language
+  1287	OOPS      Object Oriented Programming and Systems
+  1288	OOS       Object-Oriented Systems +
+  1289	          Off-line Operating Simulator
+  1290	OP        Operation + Optical + Output
+  1291	OPC       Optical Photoconductor
+  1292	OP CODE   Operational Code
+  1293	OPD       Operand
+  1294	OPM       Operations Per Minute
+  1295	OPS       Operations
+  1296	.OPT      Options (file name extension)
+  1297	OPUS      Octal Program Updating System
+  1298	ORACLE    On-Line Inquiry and Report Generator (UNIX DB program) 
+  1299	ORS       Output Record Separator
+  1300	OS        Operating System
+  1301	OS/2      Operating System Two [IBM]
+  1302	OSA       Open System Architecture
+  1303	OS/E      Operating System/Environment
+  1304	OSF       Open Software Foundation
+  1305	OSI       Open Systems Interconnection
+  1306	OTF       Open Token Foundation
+  1307	.OUT      Outlines (fine name extension)
+  1308	OUTS      Output String 
+  1309	OV        Overflow 
+  1310	.OVL      Program Overlay (file name extension)
+  1311	.OVR      Program Overlay (file name extension)
+  1312	PABX      Private Automatic Branch Exchange
+  1313	PAD       Packet Assembler/Disassembler
+  1314	PADS      Pen Application Development System [Slate Corporation]
+  1315	PAL       Paradox Applications Language [Borlund] + 
+  1316	          Phase Alternate Line + Programmed Array Logic +
+  1317	          Programming Assembly Language
+  1318	PALS      Principles of the Alphabet Literacy System
+  1319	PAR       Parallel
+  1320	PARA      Paragraph
+  1321	PARC      Palo Alto Research Center [XEROX]
+  1322	.PAS      PASCAL source code (file name extension)
+  1323	PASCAL    (Programming Language named for Blaise Pascal)    
+  1324	.PAT      Patch (file name extension)
+  1325	PBE       Prompt By Example
+  1326	PBX       Private Branch Exchange
+  1327	PC        Personal Computer + Printed Circuit + Program Counter
+  1328	PCB       Printed Circuit Board + Program Control Block
+  1329	PC-DOS    Personal Computer - Disk Operating System               
+  1330	          (IBM version of MSDOS)
+  1331	PC-I/O    Program Controlled I/O
+  1332	PCL       Printer Command Language [HP] + Process Control Language
+  1333	PCM       Pulse Code Modulation
+  1334	PCMCIA    Personal Computer Memory Card International Association
+  1335	PCS       Patchable Control Store + Planning Control Sheet +     
+  1336	          Print Contrast Signal + Process Control Systems +      
+  1337	          Program Counter Store + Project Control System
+  1338	.PCT      Picture (file name extension)
+  1339	.PCX      Picture Image (file name extension)
+  1340	PD        Public Domain
+  1341	PDF       Program Development Facility
+  1342	.PDF      Printer Description (file name extension)[Borlund,Lotus]
+  1343	PDL       Page Description Language + Program Description Language
+  1344	          + Program Design Language
+  1345	PDN       Public Data Network
+  1346	PDP       Progammable Data Processor +
+  1347	          (DEC Computer System Designation, i.e. PDP-8, PDP-11)
+  1348	PDS       Partitioned Data Set
+  1349	PDSS      Post Development and Software Support
+  1350	.PDX      Paradox files (file name extension) [Borlund]
+  1351	PE        Parity Even + Protect Enable
+  1352	PEA       Pocket Ethernet Adapter
+  1353	PEL       Picture Element [IBM]
+  1354	PEP       Packetized Ensemble Protocol [Telebit]
+  1355	PERT      Program Evaluation and Review Technique
+  1356	PES       Positioning Error Signal
+  1357	PFR       Power-Fail Restart
+  1358	PGA       Pin Grid Array + Professional Graphics Adapter [IBM]
+  1359	PGDN      Page Down
+  1360	.PGL      Graphics (file name extension) [Hewlett-Packard]
+  1361	PGM       Program
+  1362	.PGP      ProGram Parameter (file name extension) [AutoCAD]
+  1363	PGUP      Page Up
+  1364	PHIGS     Programmers' Hierarchial Interactive Graphics
+  1365	          Standards
+  1366	.PHO      Phone List (file name extension)
+  1367	PI        Program Interruption
+  1368	PIA       Peripheral Interface Adapter
+  1369	PIC       Priority Interrupt Controller +
+  1370	          Program Interrupt Controller
+  1371	.PIC      Graph (file name extension) [Lotus 1-2-3] [LDC]
+  1372	PID       Process Identification Number
+  1373	PIF       Program Information File
+  1374	PILOT     Programmed Inquiry Learning Or Teaching
+  1375	PIM       Personal Information Manager
+  1376	PIN       Personal Identification Number
+  1377	PIO       Parallel Input/Output + Processor Input/Output +
+  1378	          Programmed Input/Output
+  1379	PIP       Picture In Picture + Programmable Interconnect Point
+  1380	PIPO      Parallel In, Parallel Out
+  1381	PIT       Programmable Interval Timer
+  1382	PIXEL     Picture Element
+  1383	PL        Plus
+  1384	PLA       Programmable Logic-Array
+  1385	PLATO     Programmed Logic for Automatic Teaching Operations
+  1386	PLC       Programmable Logic Controller
+  1387	PLCC      Plastic Leadless Chip Carrier
+  1388	PLD       Programmable Logic Device
+  1389	PLL       Phase Locked Loop
+  1390	.PLL      Prelinked Library (file name extension) [Clipper]
+  1391	PL/M      Programming Language for Micros
+  1392	PLV       Production Level Video
+  1393	PL/1    * Programming Language One
+  1394	PM        Presentation Manager + Preventative Maintenance
+  1395	PMMU      Paged Memory Management Unit
+  1396	PMOS      Positive Channel Metal Oxide Semiconductor
+  1397	PO        Parity Odd
+  1398	POL       Problem Oriented Language
+  1399	POP       Pop from Stack
+  1400	POPA      Pop All Registers
+  1401	POPF      Pop Flags
+  1402	POS       Point Of Sale + Positive + Programmable Object Select
+  1403	POSIX     Portable Oprating System Environment Standard [IEEE]
+  1404	POST      Power-On Self Test
+  1405	POSTNET   Postal Numeric Encoding Technique
+  1406	PPDS      Personal Printer Data Stream [IBM]
+  1407	PPM       Pages Per Minute
+  1408	.PRD      Printer Driver (file name extension) [Word]
+  1409	.PRF      Preferences (file name extension) [Grammatik IV]
+  1410	PROC      Procedure
+  1411	PROG      Program + Programmer
+  1412	PROLOG    Programming In Logic (Programming Language)(See HLL)
+  1413	PROM      Programmable Read Only Memory
+  1414	PRN       Printer
+  1415	PPP       Point-to-Point Protocol
+  1416	.PRS      Printer (file name extension) [WordPerfect]
+  1417	PRTSC     Print Screen
+  1418	.PS       PostScript (file name extension)
+  1419	PS/2      Programming System 2 [IBM]
+  1420	PSC       Product Service Center
+  1421	PSP       Program Segment Prefix
+  1422	P-SRAM    Pseudo-Static Random Access Memory
+  1423	PSW       Program Status Word
+  1424	PT        Page Table
+  1425	P/T       Part Time
+  1426	PTD       Parallel Transfer Disk Drive
+  1427	PUB       Publication + Publish
+  1428	.PUB      Publication (file name extension) [Ventura]
+  1429	PUSHA     Push All Registers
+  1430	PUSHF     Push Flags
+  1431	PVM       Pass-through Virtual Machine (protocol) [IBM]
+  1432	PWB       Printed Wire Board
+  1433	PWR       Power     
+  1434	.PX       Primary Index (file name extension) [Paradox]
+  1435	QA        Quality Assurance
+  1436	QAM       Quadrature Amplitude Modulation
+  1437	QBE       Query By Example
+  1438	QBF       Query by Form
+  1439	QC        Quality Control
+  1440	QDOS      Quick and Dirty Operating System
+  1441	.QDI      Dictionary (file name extension) [Quicken]
+  1442	.QDT      Data (file name extension) [Quicken]
+  1443	QFA       Quick File Access
+  1444	QIC       Quality Information Using Cycle Time [Hewlett-Packard] +
+  1445	          Quarter-Inch Cartridge
+  1446	.QIF      Quicken Interchange Format (file name extension)
+  1447	[Quicken]
+  1448	.QMT      Memorized List (file name extension) [Quicken]
+  1449	.QNX      Indexes to Data (file name extension) [Quicken]
+  1450	QPSK      Quadrature Phase Shift Keying
+  1451	RA        Return Authorization
+  1452	RACF      Resource Access Control Facility
+  1453	RAG       Row Address Generator
+  1454	RAID      Redundant Arrays of Inexpensive Disks
+  1455	RALU      Register Arithmetic Logic Unit
+  1456	RAM       Random Access Memory
+  1457	RAMDAC    Random Access Memory Digital-to-Analog
+  1458	          Converter [Sierra]
+  1459	RAND      Random
+  1460	RAS       Random Access Storage +
+  1461	          Reliability, Availability and Serviceability +
+  1462	          Row Address Select
+  1463	RBBS      Remote Bulletin Board System
+  1464	RCL       Rotate Carry Left
+  1465	RCP       Restore Cursor Position
+  1466	RCR       Rotate Carry Right
+  1467	RCS       Records Communications Switching System
+  1468	RD        Receive Data
+  1469	R&D       Research and Development
+  1470	RDB       Receive Data Buffer
+  1471	RDCLK     Received Timing Clock
+  1472	RDSR      Receiver Data Service Request
+  1473	.REF      Reference (file name extension)
+  1474	REG       Register
+  1475	REGAL     Rigid Epoxy Glass Acrylic Laminate
+  1476	REM       Remark + Remote + Ring Error Monitor
+  1477	REN       Rename
+  1478	REP       Repeat
+  1479	REPE      Repeat while Equal
+  1480	REPNE     Repeat while Not Equal
+  1481	REPNZ     Repeat while Not Zero
+  1482	REPZ      Repeat while Zero
+  1483	REQ       Request
+  1484	RES       Reset + Resolution
+  1485	.RES      Resource (file name extension)
+  1486	RET       Resolution Enhancement Technology [HP] +
+  1487	          Return
+  1488	REX       Relocatable Executable
+  1489	RD        Received Data + Remove Directory
+  1490	RDB       Relational Data Base
+  1491	RDBMS     Relational Data Base Management System
+  1492	RELSECT   Relative Sector
+  1493	RF        Radio Frequency
+  1494	RFP       Request for Proposal
+  1495	RFS       Remote File System
+  1496	RFT       Revisable Form Text + Rich Text Format
+  1497	RFU       Reserved For Future Use
+  1498	RGB       Red-Green-Blue (color model)
+  1499	RIFF      Resource Interschange File Format [Microsoft]
+  1500	RIME      RelayNet International Message Exchange
+  1501	RIP       Raster Image Processor +
+  1502	          Routing Information Protocol [Novell]
+  1503	RISC      Reduced Instruction Set Computer
+  1504	RLE       Run Length Encoded
+  1505	RLL       Run Length Limited
+  1506	RLSD      Received Line Signal Detected
+  1507	RLSI    * Ridiculously Large-Scale Integration
+  1508	RM        Reset Mode
+  1509	RMA       Return Material Authorization +
+  1510	          Return to Manufacturer Authorization
+  1511	RMDIR     Remove Directory
+  1512	RMS       Record Management Services + Root Mean Square
+  1513	RND       Random
+  1514	R-O       Read Only
+  1515	ROL       Rotate Left
+  1516	ROM       Read Only Memory
+  1517	ROR       Rotate Right
+  1518	RPC       Real Procedure Call + Remote Procedure Call
+  1519	RPG       Report Program Generator (Programming Language)
+  1520	RPL       Requested Privilege Level
+  1521	RPPROM    Reprogrammable PROM
+  1522	RPT       Repeat
+  1523	RPQ       Request for Price Quotation
+  1524	RS        Radio Shack + Request to Send +
+  1525	          Recommended Standard (as in RS-232) [EIA]
+  1526	RSP       Required Space Character
+  1527	RST       Reset + Restart
+  1528	RSTS      Resource Sharing Time Sharing [Digital]
+  1529	RSX       Real Time Resource Sharing Executive
+  1530	RT        Real Time + RISC Technology + Run Time
+  1531	RTAM      Remote Terminal Access Method
+  1532	RTC       Real-Time Clock
+  1533	RTL       Register Transfer Language +
+  1534	          Resistor Transistor Logic + Run Time Library
+  1535	RTM       Response Time Monitor
+  1536	RTOS      Real-Time Operating System
+  1537	RTS       Request To Send
+  1538	RTTY      Radio Teletypewriter (Communications)
+  1539	RTV       Real Time Video
+  1540	R/W       Read/Write
+  1541	RWM       Read-Write Memory
+  1542	RX        Receiver
+  1543	RXD       Received Data
+  1544	SAA       Systems Application Architecture [IBM]
+  1545	SAINT   * Symbolic Automatic Integrator
+  1546	SAL       Shift Arithmetic Left
+  1547	SAM       Serial Access Memory +
+  1548	          Sequential Access Method
+  1549	SAP       Second Audio Program + Service Access Point [DEC]
+  1550	SAP     * Symbolic Assembly Program
+  1551	SAR       Shift Arithmetic Right +
+  1552	          Successive Approximation Register
+  1553	SAS       Sales Accounting System + Single Audio System
+  1554	.SAV      Saved (file name extension)
+  1555	SBB       Subtract With Borrow
+  1556	SBC       Single-Board Computer
+  1557	SCAS      Scan String
+  1558	SCB       Subsystem Control Block [IBM]
+  1559	SCC       Serial Communications Controllers +
+  1560	          Synchronous Channel Check [IBM]
+  1561	SCD       Standard Color Display
+  1562	SCF       System Control Facility
+  1563	SCM       Software Configuration Management
+  1564	SCO       Santa Cruz Operation (Software Company)
+  1565	SCP       Save Cursor Position + Subsystem Control Port +
+  1566	          System Control Program
+  1567	SCR       Silicon Controlled Rectifier
+  1568	.SCR      Script (file name extension)
+  1569	SCRN      Screen (video display)
+  1570	SCSI      Small Computer Systems Interface 
+  1571	SD        Send Data
+  1572	SDA       Software Disk Array + Source Data Automation +
+  1573	          System Display Architecture [Digital]
+  1574	.SDF      Standard Data Format (file name extension)
+  1575	SDLC      Synchronous Data Link Control
+  1576	SDK       Software Developer's Kit [Microsoft]
+  1577	SDN       Software Defined Network [AT&T]
+  1578	SDNS      Secure Data Network Service
+  1579	SDR       Streaming Data Request
+  1580	SDS       Sysops Distribution System
+  1581	SD_STB    Streaming Data Strobe [IBM]
+  1582	SEA       Standard Extended Attribute [OS/2]
+  1583	SEAC    * Name of first computer to use transistors, built
+  1584	          by Standard Eastern Automating Computing
+  1585	SEC       Single Error Correction
+  1586	SECAM     Sequential Color And Memory
+  1587	SED       Stream Editor
+  1588	SEG       Segment
+  1589	SEL       Select
+  1590	SEM       Scanning Electron Microscope +
+  1591	          Standard Electronic Module
+  1592	SER       Serial
+  1593	.SET      Driver Set (file name extension) [Lotus 1-2-3] [LDC] +
+  1594	          Image Settings (file name extension) [Paradox]
+  1595	SEU       Smallest Executable Unit
+  1596	SF        Sign Flag
+  1597	SFQL      Structured Full-text Query Language
+  1598	SFT       System Fault Tolerance
+  1599	SFX       Sound Effect(s)
+  1600	SGEN      Signal Generator + System Generator
+  1601	SGDT      Store Global Descriptor Table
+  1602	SGML      Standard Generalized Markup Language
+  1603	SGR       Set Graphics Rendition
+  1604	S/H       Sample and Hold
+  1605	SHL       Shift Logical Left
+  1606	SHR       Shift Logical Right
+  1607	SI        Source Index + System Information     
+  1608	SID       Station Identification [AT&T]
+  1609	SIDT      Store Interrupt Descriptor Table
+  1610	SIG       Special Interest Group
+  1611	SIGCAT    Special Interest Group on CD-ROM Applications
+  1612	          and Technology
+  1613	SIM       Simulator
+  1614	SIMD      Single Instruction Multiple Data Stream (processor)
+  1615	SIMM      Single In-line Memory Module
+  1616	SIMULA    Simulation (language)
+  1617	SIP       Single In-line Package
+  1618	SIPO      Serial In, Parallel Out
+  1619	SIPP      Single In-line Pin Package
+  1620	SIT       Special Information Tones
+  1621	SISO      Serial In, Serial Out
+  1622	SLDT      Store Local Descriptor Table
+  1623	SLMR      Silly Little Modem Reader
+  1624	SLOSH     Sea, Lake and Overland Surge from Hurricane (program)
+  1625	SLSI      Super Large-Scale Integration
+  1626	SM        Set Mode
+  1627	SMB       Server Message Block (protocol) [MII]
+  1628	SMD       Surface Mounted Device
+  1629	SMDS      Switched Multimegabit Data Service
+  1630	SMI       System Management Interrupts [Intel]
+  1631	SMIF      Standard Mechanical Interface
+  1632	SMK       Software Migration Kit [Microsoft]
+  1633	SMP       Symbolic Manipulation Program
+  1634	SMPS      Switching Mode Power Supply
+  1635	SMSW      Store Machine Status Word
+  1636	SMT       Surface-Mount Technology
+  1637	SMTP      Simple Mail Transfer Protocol
+  1638	SMU       System Management Utility
+  1639	SN        Serial Number
+  1640	S/N       Signal-to-Noise
+  1641	SNA       Systems Network Architecture [IBM]
+  1642	SND       Sound
+  1643	SNMP      Simple Network Management Protocol
+  1644	SNOBOL    String Oriented Symbolic Language (Progamming Language)
+  1645	SNP       Serial Number/Password [Omen Technology]
+  1646	SNR       Signal-to-Noise Ratio
+  1647	SOE       Standard Operating Environment
+  1648	SOH       Start of Heading
+  1649	SOL       Simulation Oriented Language
+  1650	SOM       Start of Message
+  1651	SOP       Standard Operating Procedures
+  1652	SOS       Silicon On Sapphire + Standards and Open Systems
+  1653	SOTA      State Of The Art
+  1654	SP        Stack Pointer + System Product
+  1655	SPA       Software Publishers Association
+  1656	SPARC     Scalable Processor Architecture
+  1657	SPC       Small Peripheral Controller + Statistical Process Control
+  1658	SPCL      Spectrum Cellular Corporation
+  1659	SPF       System Programming Facility
+  1660	SPIKE     Science Planning Intelligent Knowledge-Based 
+  1661	          Environment [STScI]
+  1662	SPL       Spooler
+  1663	.SPL      Spell Checker (file name extension)
+  1664	SPOOLING  Simultaneous Peripheral Operations On Line
+  1665	SPS       Standby Power System
+  1666	SPSS      Statistical Package for the Social Sciences
+  1667	SPT       Sectors Per Track
+  1668	SPX       Sequenced Packet Exchange [Novell]
+  1669	SQ        Squeezed (files)
+  1670	SQL       Structured Query Language
+  1671	SQRT      Square Root
+  1672	SR        Shift Register
+  1673	SRAM      Shadow Random Access Memory +
+  1674	          Static Random Access Memory
+  1675	SRO       Sharable and Read Only
+  1676	SRQ       Service Request
+  1677	SRR       Serially Reusable Resource
+  1678	SS        Stack Segment + Single Sided + Seconds
+  1679	SSEC    * Selective Sequence Electronic Calculator [IBM]
+  1680	SSGA      System Suppport Gate Array
+  1681	SSI       Small Scale Integration
+  1682	SST       Spread-Spectrum Technology
+  1683	STA       Spanning Tree Algorithm
+  1684	STB       Strobe
+  1685	STC       Set Carry Flag
+  1686	STD       Set Direction Flag + Standard
+  1687	STDA      StreetTalk Directory Assistance [Banyan]
+  1688	STDAUX    Standard Auxillary
+  1689	STDERR    Standard Error
+  1690	STDIN     Standard Input
+  1691	STDIO.H   Standard Input/Output Header [C]
+  1692	STDOUT    Standard Output
+  1693	STDPRN    Standard Printer
+  1694	.STF      Structured File (file name extension) [Lotus Agenda]
+  1695	STI       Set Interrupt Flag
+  1696	STN       Supertwist Nematic
+  1697	STOS      Store String 
+  1698	STP       Signal Transfer Point
+  1699	STR       Store Task Register + Synchronous Transmitter Receiver
+  1700	STRESS    Structural Engineering System Solver (Programming       
+  1701	          Language)
+  1702	STRUDL    Structural Design Language (Programming Language)
+  1703	STScI     Space Telescope Science Institute
+  1704	STX       Start of Text
+  1705	.STY      Style (file name extension) [Ventura, Word, WordPerfect]
+  1706	SUB       Subroutine + Substitute + Subtract
+  1707	.SUP      Supplemental Dictionary (file name extension)
+  1708	          [WordPerfect]
+  1709	S-VHS     Super VHS
+  1710	S/W       Software
+  1711	SYLK      Symbolic Link
+  1712	.SYN      Synonym (file name extension)
+  1713	SYNC      Synchronous
+  1714	SYS       System
+  1715	.SYS      System Configuration (file name extension) +
+  1716	          System Device Driver (file name extension)
+  1717	SYSGEN    System Generator
+  1718	SYSLOG    System Log
+  1719	SYSMOD    System Modification
+  1720	SYSOP     System Operator
+  1721	TAD       Telephone Answering Device
+  1722	TAPCIS    The Access Program for the CompuServe
+  1723	          Information Service
+  1724	TASM      Turbo Assembler [Borland]
+  1725	TAXI      Transparent Asynchronous Tranceiver Interface
+  1726	TB        Terabyte (1,000 gigabytes)
+  1727	T/B       Top and Bottom
+  1728	TBBS      The Bread Board System (BBS)
+  1729	.TBK      Toolbook (file name extension)
+  1730	TCM       Trellis-Coded Modulation
+  1731	TCP/IP    Transmission Control Protocol/Internet Protocol
+  1732	TD        Transmit Data
+  1733	TDE       Terminal Display Editor
+  1734	TDM       Time Division Multiplexing
+  1735	TDMS      Terminal Display Management System
+  1736	TDSR      Transmitter Data Service Request
+  1737	TDR       Time Domain Reflectometry
+  1738	TEC       Tokyo Electronics Corporation
+  1739	TED       Tiny Editor
+  1740	TEML      Turbo Editor Macro Language [Borlund]
+  1741	TERMPWR   Terminator Power
+  1742	TFEL      Thin-Film Electroluminescent
+  1743	TFT       Thin-Film Transistor
+  1744	.THD      Thread (file name extension)
+  1745	THOR      Tandy High-Performance Optical Recording
+  1746	.THS      Thesaurus (file name extension)
+  1747	TID       Target ID
+  1748	.TIF      Tagged Image File (file name extension)
+  1749	TIFF      Tagged Image File Format
+  1750	TIGA      Texas Instruments Graphics Architecture
+  1751	TIGER     Topologically Integrated Geographic Encoding
+  1752	          and Referencing
+  1753	TIP       Terminal Interface Processor
+  1754	TLB       Translation Lookaside Buffer
+  1755	TLU       Table Lookup
+  1756	.TLX      Telex (file name extension)
+  1757	TM        Trademark
+  1758	TMP       Temporary
+  1759	TN        Twisted Nematic
+  1760	TOP       Technical and Office Protocol
+  1761	TPC       Transaction Processing Performance Council
+  1762	TPI       Tracks Per Inch
+  1763	TPL       Table Producing Language
+  1764	TPORT     Twisted Pair Port Transceiver [AT&T]
+  1765	TPS       Transaction Processing System
+  1766	TR        Terminal Ready
+  1767	TRADIC  * Transistorized Airborne Digital Computer
+  1768	          (Name of first computer to be entirely
+  1769	          transistorized)
+  1770	TRON      The Real-Time Operating System Nucleus
+  1771	TS        Top Secret
+  1772	TSB       Termination Status Block
+  1773	TSO       Time Sharing Option
+  1774	TSR       Terminate and Stay Resident
+  1775	TSS       Task State Segment + Time Sharing System
+  1776	TS/SI     Top Secret/Sensitive Information
+  1777	.TST      Printer Test (file name extension) [WordPerfect]
+  1778	TSTN      Triple Supertwisted Nematic
+  1779	TTL       Transistor-Transistor Logic
+  1780	TTS       Transaction Tracking System
+  1781	TTY       Teletype
+  1782	TUI       Text-Based User Interface [WordPerfect]
+  1783	.TUT      Tutorial (file name extension)
+  1784	TVI       Television Interference
+  1785	TWX       Teletypewriter Exchange Service
+  1786	TXD       Transmitted Data
+  1787	TXT       Text
+  1788	TXT2STF   Text To Structured File [Lotus Agenda]
+  1789	UA        User Agent + User Area
+  1790	UAE       Unrecoverable Application Error
+  1791	UART      Universal Asynchronous Receiver/Transmitter
+  1792	UCL       Universal Communications Language
+  1793	UDP       User Datagram Protocol [Novell]
+  1794	UG        User Group
+  1795	UI        Unix International
+  1796	UID       User Identifier
+  1797	UL        Upload
+  1798	ULA       Uncommitted Logic Array
+  1799	ULSI      Ultra Large Scale Integration
+  1800	UMB       Upper Memory Block [LIM/AST]
+  1801	UNCOL     Universal Computed Oriented Language
+  1802	UNICOM    Universal Integrated Communication (System)
+  1803	UNICOS    Universal Compiler FORTRAN compatible
+  1804	UNIVAC    Universal Automatic Computer
+  1805	UNIX      (AT&T Bell Laboratories Operating System)
+  1806	UNMA      Unified Network Management Architecture
+  1807	UPC       Universal Product Code
+  1808	UPL       User Program Language
+  1809	UPM       User Profile Management [IBM]
+  1810	UPS       Uninterruptible Power Supply + 
+  1811	          Uninterruptible Power System
+  1812	USART     Universal Synchronous-Asynchronous Reciever/Transmitter
+  1813	USERID    User Identification
+  1814	USQ       Unsqueezed (files)
+  1815	USRT      Universal Synchronous Receiver/Transmitter
+  1816	USSA      User Supported Software Association (United Kingdom)
+  1817	UT        User Terminal
+  1818	UTC       Coordinated Universal Time
+  1819	UTI       Universal Text Interchange
+  1820	UTP       Unshielded Twisted-Pair
+  1821	UUCP      Unix-To-Unix Copy
+  1822	UUI       User-To-User Information [AT&T]
+  1823	UV        Ultraviolet
+  1824	VA        Virtual Address
+  1825	VAD       Value Added Dealer
+  1826	VADD      Value Added Disk Driver
+  1827	VAL       Value + Voice Application Language
+  1828	.VAL      Validity Checks (file name extension) [Paradox]
+  1829	VAM       Virtual Access Method
+  1830	VAN       Value Added Network
+  1831	VAP       Value Added Processes
+  1832	VAR       Value Added Reseller + Value Added Retailer + Variable
+  1833	VAX       Virtual Address Extension (Computer System
+  1834	          Designation) [DEC]
+  1835	VB        Variable Block
+  1836	VCPI      Virtual Control Program Interface
+  1837	VCR       Video Cassette Recorder
+  1838	VDISK     Virtual Disk
+  1839	VDS       Virtual DMA Services
+  1840	VDT       Video Display Terminal
+  1841	VDU       Video Display Unit + Visual Display Unit
+  1842	VEGA      Video-7 Enhanced Graphics Adapter [Video-7, Inc.]
+  1843	VER       Verify
+  1844	VERR      Verify Read Access
+  1845	VERW      Verify Write Access
+  1846	VESA      Video Electronics Standards Association
+  1847	VFD       Vacuum Fluorescent Display
+  1848	VGA       Video Graphics Array
+  1849	VGC       Video Graphics Controller
+  1850	VHS       Very High Speed + Virtual Host Storage
+  1851	VHSIC     Very High Speed Integrated Circuit
+  1852	VIO       Video Input/Output + Virtual Input/Output
+  1853	VINES     Virtual Network Operating System [Banyan]
+  1854	VIP       Variable Information Processing
+  1855	VIPER     Verifiable Integrated Processor for
+  1856	          Enhanced Reliability
+  1857	VIS       Voice Information System
+  1858	VLF       Very Low Frequency
+  1859	VLIW      Very Long Instruction Word (machine)
+  1860	VLSI      Very Large Scale Integration
+  1861	VLSIPS    Very Large Scale Immobilized Polymer Synthesis
+  1862	VLT       Variable List Table
+  1863	VM        Virtual Machine
+  1864	VMM       Virtual Memory Manager [Clipper]
+  1865	VMOS      Vertical MOS
+  1866	VMS       Virtual Memory System + Voice Message System
+  1867	VMT       Virtual Memory Technique
+  1868	VOL       Volume
+  1869	VOM       Volt Ohm Meter
+  1870	VOS       Verbal Operating System
+  1871	VR        Voltage Regulator
+  1872	VRAM      Video Random Access Memory
+  1873	VROOMM    Virtual Real-time Object Oriented
+  1874	          Memory Manager [Borlund]
+  1875	.VRS      WordPerfect Graphics Driver (file name extension)
+  1876	VRU       Voice Response Unit
+  1877	VS        Virtual Storage
+  1878	VSAM      Virtual Storage Access Method
+  1879	VSAT      Very Small Aperture Terminal
+  1880	VSE       Virtual Storage Extended
+  1881	VSF       Vertical Scanning Frequency
+  1882	VSLI      Very Large Scale Integration
+  1883	VSM       Virtual Storage Management
+  1884	VSOS      Virtual Storage Operating System
+  1885	VSYNC     Vertical Sync
+  1886	VTAM      Virtual Telecommunications Access Method [IBM]
+  1887	VUI       Video User Interface
+  1888	VMS       Virtual Memory System + Voice Message System
+  1889	W/        With
+  1890	WAITS     Wide-Area Informtion Transfer System
+  1891	WAN       Wide Area Network
+  1892	WATS      Wide Area Telecommunications Service
+  1893	WC        Word Count
+  1894	WELL      Whole Earth Lectronic Link (BBS)
+  1895	WGS       Work Group System
+  1896	.WKB      Workbook (file name extension) [WordPerfect]
+  1897	.WKE      Worksheet (file name extension) [Lotus 1-2-3] [LDC]
+  1898	.WKQ      Spreadsheet (file name extension) [BORQU]
+  1899	.WKS      Worksheet (file name extension) [Lotus 1-2-3] [LDC]
+  1900	.WKZ      Compressed Spreadsheet (file name extension) [BORQU]
+  1901	.WK1      Worksheet (file name extension) [Lotus 1-2-3] [LDC]
+  1902	.WMF      Windows Metafile (file name extension) [Microsoft]
+  1903	WNIC      Wide-Area Network Interface Co-Processor
+  1904	WNIM      Wide-Area Network Interface Module
+  1905	W/O       Without
+  1906	WORM      Write Once, Read Many
+  1907	WP        WordPerfect + Word Processing + Write Protected
+  1908	.WPG      Graphics (file name extension) [WordPerfect]
+  1909	WPHD      Write-Protect Hardd Disk
+  1910	.WPK      Keyboard (file name extension) [WordPerfect]
+  1911	WPM       Words Per Minute
+  1912	.WPM      Macro (file name extension) [WordPerfect]
+  1913	.WQ1      Spreadsheet (file name extension) [BORPQU]
+  1914	.WQ!      Compressed Spreadsheet (file name extension) [BORPQU]
+  1915	WS        WordStar + Workstation
+  1916	WT        Write Through
+  1917	WYSBYGI   What You See Before You Get It
+  1918	WYSIWYG   What You See Is What You Get
+  1919	XA        Extended Architecture + Extended Attribute
+  1920	XCHG      Exchange
+  1921	XCMD      External Command
+  1922	XDR       External Data Representation
+  1923	XFCN      External Function
+  1924	XGA       Extended Graphics Array [IBM]
+  1925	XID       Exchange Identifier
+  1926	XIOS      Extended Input/Output System
+  1927	XLAT      Translate
+  1928	XMIT      Transmit
+  1929	XMM       Extended Memory Manager [LIM/AST]
+  1930	XMS       Extended Memory Specification [LIM/AST]
+  1931	XNS       Xerox Network System (protocol)
+  1932	XOR       Exclusive OR (Also EOR)
+  1933	XSMD      Extended Storage Module Drive (interface)
+  1934	XTAL      Crystal
+  1935	XTCLK     External Transmit Clock
+  1936	YAM       Yet Another Modem [Omen Technology]
+  1937	ZBR       Zone Bit Recording
+  1938	Z-CAV     Zoned Constant Angular Velocity
+  1939	ZIP       Zone Improvement Plan (ZIPcode)
+  1940	.ZIP      Compressed File (file name extension) [PKWare]
+  1941	.ZOO      Compressed File (file name extension) [Dhesi]
+  1942	ZSL       Zero Slot LAN
+  1943	.$$$      Temporary File (file name extension)
+  1944	     UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+  1945	     UU                                                  UU
+  1946	     UU               BABEL:  A LISTING OF               UU
+  1947	     UU   COMPUTER ORIENTED ABBREVIATIONS AND ACRONYMS   UU
+  1948	     UU                                                  UU
+  1949	     UUUUUUUUUUUUUUUUUUUU Version 92A UUUUUUUUUUUUUUUUUUUUU
+  1950	
+  1951	Copyright (c) 1989-1992  Irving Kind        All Rights Reserved
+  1952	        c/o K & D, One Church Lane, Baltimore, MD  21208
+  1953	
+  1954	Jan 1992 version = BABEL92A       Jan 1993 version = BABEL93A
+  1955	May 1992 version = BABEL92B       May 1993 version = BABEL93B
+  1956	Sep 1992 version = BABEL92C       Sep 1993 version = BABEL93C
+  1957	
+  1958	
+  1959	NOTE 1: (To insure that you will receive the latest version)
+  1960	
+  1961	     On receipt of your disk and disk mailer stamped with return
+  1962	postage, the following procedure is followed:
+  1963	
+  1964	     If received during Jan, Feb or Mar; the Jan version will
+  1965	     be sent to you promptly.  If received during Apr, your
+  1966	     disk will be held until the May version is issued.
+  1967	
+  1968	     If received during May, Jun or Jul; the May version will
+  1969	     be sent to you promptly.  If received during Aug, your
+  1970	     disk will be held until the Sep version is issued.
+  1971	
+  1972	     If received during Sep, Oct or Nov; the Sep version will
+  1973	     be sent to you promptly.  If received during Dec, your
+  1974	     disk will be held until the Jan version is issued.
+  1975	
+  1976	
+  1977	NOTE 2:  Any of these disk sizes may be sent for updates:
+  1978	      
+  1979	         5-1/4" DD or HD      3-1/2" DD or HD
+  1980	
+  1981	
+  1982	
+  1983	

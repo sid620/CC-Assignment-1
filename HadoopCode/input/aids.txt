@@ -1,0 +1,50 @@
+     1	
+     2	MARCH 1990
+     3	AIDS TROJAN MARCHES ON
+     4	
+     5	LONDON - It has been almost three
+     6	months since infected Aids Information
+     7	disks started landing on user's desks.
+     8	Despite the high level of publicity,
+     9	users continue to ignore the warnings
+    10	install the disk and allowing the Trojan
+    11	to continue causing damage.
+    12	
+    13	UK-based detective Barry Donovan predicts
+    14	there will be users who will install the
+    15	disk and then forget about it until it
+    16	triggers after 90 or so reboots.  For 
+    17	some users, those 90 reboots are now
+    18	up.
+    19	
+    20	A representative from Michelin Tyres
+    21	in Nigeria contacted PC Business World,
+    22	UK, to request a Clearaid disk because the
+    23	virus had just triggerd on his home PC.  He
+    24	said a significantly large number of disks
+    25	are in circulation in West Africa.
+    26	
+    27	The US arm of Save the Children Fund offices
+    28	in Ethiopia also became a victim of the
+    29	blackmail attempt having PC's "wiped out
+    30	by the Trojan".  Other US-based charities
+    31	with offices in the African continent have
+    32	reported similar attacks, despite local 
+    33	media coverage and warning issued by 
+    34	charities, local police forces, and wide area 
+    35	networks like Usenet.
+    36	
+    37	Joseph Popp, whom FBI agents arrested in 
+    38	connection with the mailing, is still being
+    39	held in an Ohio prison awaiting extradition
+    40	proceedings.  He has made a second court
+    41	appearance to appeal against his continued
+    42	detention in order to be medically examined.
+    43	The court, however, ruled such assessments
+    44	should be conducted in prison.  According to
+    45	Scotland Yard, Popp's extradition hearing will
+    46	be held in early April.
+    47	
+    48	
+    49	
+    50	

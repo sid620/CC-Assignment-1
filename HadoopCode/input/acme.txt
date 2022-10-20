@@ -1,0 +1,63 @@
+     1	BOSTON ... A new series of microprocessor-based uninterruptible power
+     2	systems, designed to protect networks and multiple computer installations,
+     3	has been developed by Acme Electric Corporation.
+     4	
+     5	Acme Electric's new SM Series of UPS units are being introduced in 650, 800
+     6	and 1400 VA power levels to match the requirements of most common LAN
+     7	installations, according to Daniel K. Corwin, vice president and general
+     8	manager of Acme Electric's Electronics Division. The user friendly UPS
+     9	units provide complete backup power protection in support of multiple
+    10	installations and network requirements. All units in the new SM Series are
+    11	compatible with Novell and LAN Manager networks.
+    12	
+    13	Among the features of the Acme Electric SM series is an RS-232 serial
+    14	communication interface for monitoring the UPS unit and the input line
+    15	condition. The units are built with a 20 percent voltage boost capability
+    16	that regulates voltage output during brownouts down to 90 VAC, without
+    17	switching to battery operation. This feature prolongs the life of the
+    18	battery.
+    19	
+    20	Four LEDs indicate whether the unit is "on-line" or "on-backup", if the
+    21	batteries are charged or need to be replaced, if there is an overload
+    22	condition, or if the unit is in the boost mode.
+    23	
+    24	The SM Series also features a Multi-Stage Diagnostics test. In this mode,
+    25	the LED bar graph indicators clearly communicate utility frequency,
+    26	utility voltage, percent of full load on battery, as well as remaining
+    27	"back-up" run time available.
+    28	
+    29	The new UPS units carry one of the most comprehensive warranty policies in
+    30	the industry, with a five year warranty on the transformer, two years on
+    31	the electronics and one year on the internal battery, according to Corwin.
+    32	
+    33	
+    34	               New SAFECON Software
+    35	
+    36	Acme Electric also will demonstrate its recently introduced SAFECOM
+    37	software program at Networld 92 Boston. SAFECOM was developed to provide
+    38	constant monitoring of the UPS units.
+    39	
+    40	Designed to reside in the Novell server, SAFECOM guards against loss of
+    41	data due to power failure and low battery voltage. When a power
+    42	interruption is detected, the software system will safely shutdown the
+    43	file server and allow the network supervisor to close all files and
+    44	disconnect all users. When power is restored, SAFECOM reverts back to
+    45	monitoring the UPS unit.
+    46	
+    47	Founded in 1917, Acme Electric Corporation is a diversified producer of
+    48	electronic and electrical systems for industrial, commercial and aerospace
+    49	applications.
+    50	
+    51	Acme Electric Corporation, 20 Water Street, Cuba, NY, 14727
+    52	716-968-2400.
+    53	
+    54	  +---------------------------------------------------------------+
+    55	  |  From the America On-Line & PC-Link New Product Info Services |
+    56	  +===============================================================+
+    57	  | This information was processed with OmniPage Professional OCR |
+    58	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+    59	  | provided by the above mentioned company. For additional info, |
+    60	  | contact the company at the address or phone# indicated above. |
+    61	  |    All submissions for this service should be addressed to    |
+    62	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+    63	  +---------------------------------------------------------------+

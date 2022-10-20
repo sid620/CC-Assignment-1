@@ -1,0 +1,90 @@
+     1	Prepared by Paul Mayer, author of GRAB Plus.
+     2	
+     3	Sample "boiler-plate" Shareware description and license agreement
+     4	for shareware programs.  Replace all occurrences of *PROGRAM*
+     5	with your program name.  Replace all occurrences of *COMPANY*
+     6	with your name or company name.  Last but not least replace all
+     7	occurrences of *$FEE* with your shareware price.
+     8	-----------------------------------------------------------------
+     9	
+    10	DEFINITION OF SHAREWARE
+    11	
+    12	Shareware distribution gives users a chance to try software
+    13	before buying it. If you try a Shareware program and continue
+    14	using it, you are expected to register. Individual programs
+    15	differ on details -- some request registration while others
+    16	require it, some specify a maximum trial period. With
+    17	registration, you get anything from the simple right to continue
+    18	using the software to an updated program with printed manual.
+    19	
+    20	Copyright laws apply to both Shareware and commercial software,
+    21	and the copyright holder retains all rights, with a few specific
+    22	exceptions as stated below. Shareware authors are accomplished
+    23	programmers, just like commercial authors, and the programs are
+    24	of comparable quality. (In both cases, there are good programs
+    25	and bad ones!) The main difference is in the method of
+    26	distribution. The author specifically grants the right to copy
+    27	and distribute the software, either to all and sundry or to a
+    28	specific group. For example, some authors require written
+    29	permission before a commercial disk vendor may copy their
+    30	Shareware.
+    31	
+    32	Shareware is a distribution method, not a type of software. You
+    33	should find software that suits your needs and pocketbook,
+    34	whether it's commercial or Shareware. The Shareware system makes
+    35	fitting your needs easier, because you can try before you buy.
+    36	And because the overhead is low, prices are low also. Shareware
+    37	has the ultimate money-back guarantee -- if you don't use the
+    38	product, you don't pay for it.
+    39	
+    40	DISCLAIMER - AGREEMENT
+    41	
+    42	Users of *PROGRAM* must accept this disclaimer of warranty:
+    43	"*PROGRAM is supplied as is.  The author disclaims all
+    44	warranties, expressed or implied, including, without limitation,
+    45	the warranties of merchantability and of fitness for any purpose.
+    46	The author assumes no liability for damages, direct or conse-
+    47	quential, which may result from the use of *PROGRAM*."
+    48	
+    49	*PROGRAM* is a "shareware program" and is provided at no charge
+    50	to the user for evaluation.  Feel free to share it with your
+    51	friends, but please do not give it away altered or as part of
+    52	another system.  The essence of "user-supported" software is to
+    53	provide personal computer users with quality software without
+    54	high prices, and yet to provide incentive for programmers to
+    55	
+    56	
+    57	continue to develop new products.  If you find this program
+    58	useful and find that you are using *PROGRAM* and continue to use
+    59	*PROGRAM* after a reasonable trial period, you must make a reg-
+    60	istration payment of *$FEE* to *COMPANY*.  The *$FEE*
+    61	registration fee will license one copy for use on any one
+    62	computer at any one time.  You must treat this software just like
+    63	a book.  An example is that this software may be used by any
+    64	number of people and may be freely moved from one computer
+    65	location to another, so long as there is no possibility of it
+    66	being used at one location while it's being used at another.
+    67	Just as a book cannot be read by two different persons at the
+    68	same time.
+    69	
+    70	Commercial users of *PROGRAM* must register and pay for their
+    71	copies of *PROGRAM* within 30 days of first use or their license
+    72	is withdrawn.  Site-License arrangements may be made by con-
+    73	tacting *COMPANY*.
+    74	
+    75	Anyone distributing *PROGRAM* for any kind of remuneration must
+    76	first contact *COMPANY* at the address below for authorization.
+    77	This authorization will be automatically granted to distributors
+    78	recognized by the (ASP) as adhering to its guidelines for
+    79	shareware distributors, and such distributors may begin offering
+    80	*PROGRAM* immediately (However *COMPANY* must still be advised so
+    81	that the distributor can be kept up-to-date with the latest
+    82	version of *PROGRAM*.).
+    83	
+    84	You are encouraged to pass a copy of *PROGRAM* along to your
+    85	friends for evaluation.  Please encourage them to register their
+    86	copy if they find that they can use it.  All registered users
+    87	will receive a copy of the latest version of the *PROGRAM*
+    88	system.
+    89	
+    90	

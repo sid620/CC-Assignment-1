@@ -1,0 +1,140 @@
+     1	BOSTON, NETWORLD -- February ll, 1992 -- Frye Computer Systems, Inc.,
+     2	publisher of the award winning Frye Utilities for Networks, releases LAN
+     3	Directory, the most powerful automatic hardware and software inventory
+     4	program on the market. LAN Directory features a complete custom report
+     5	writer, more information than any similar product, as well as integration
+     6	with other Frye products under the Frye Utilities Management Platform.
+     7	
+     8	LAN Directory allows computer managers to track all of their PC's and
+     9	MAC's, including stand-alone machines, file servers, printers, external
+    10	disk drives, modems, software, and more. It provides managers with
+    11	extensive details about the products installed on their networks and their
+    12	configurations. A database is maintained that can be set for automatic or
+    13	manual operation in updating LAN configurations, DOS versions, system
+    14	configurations, user names, etc. LAN Directory can also be used to
+    15	troubleshoot problems such as those caused by old or error-prone versions
+    16	of hardware or software. Just run a change report or a version comparison
+    17	report. In addition, it can be used for upgrade management, downtime
+    18	reporting, maintenance, automated inventory reporting, etc. (more)
+    19	
+    20	LAN Directory is the latest of a set of integrated products from Frye for
+    21	Novell NetWare users. These products give network managers complete
+    22	control of their PC LAN's from a central management workstation. Frye will
+    23	release more of these products during the coming months as part of its
+    24	commitment to a high quality network environment.
+    25	
+    26	Inventories Hardware And Software 
+    27	
+    28	LAN workstations and file servers are automatically audited for hundreds of
+    29	hardware and software elements. External devices can be inventoried
+    30	manually. Standalone PCs can be inventoried automatically by running the
+    31	software at each machine.
+    32	
+    33	Catalogs Hundreds of Items Per PC 
+    34	
+    35	LAN Directory gathers almost every detail possible for workstations and
+    36	file servers. Nobody else has this level of detail, especially for NetWare
+    37	3.1 + servers. LAN Directory even stores text start-up files such as
+    38	AUTOEXEC.BAT and CONFIG.SYS. If the information needed is not stored
+    39	automatically, it can be added manually.
+    40	
+    41	Powerful Custom Reporting 
+    42	
+    43	Customized reports can be created using any number of items. Reports are
+    44	also included that can be modified. Use multiple headers and footers. Move
+    45	text around the screen and place titles and data areas anywhere to create
+    46	wide, narrow or custom width reports.
+    47	
+    48	Automatic Operation 
+    49	
+    50	LAN workstation data is gathered automatically at each log-in. No TSRs are
+    51	required.
+    52	
+    53	Support for Novell's NetWare Management System (NMS) 
+    54	
+    55	Frye Computer Systems is participating with Novell in the development of
+    56	advanced network management products for the new NetWare Management System
+    57	platform. Frye is committed to integrating LAN Directory and other
+    58	products into the new platform.
+    59	
+    60	The Frye Utilities for Networks - LAN Directory will be available during
+    61	the week of NetWorld and is priced at $495.
+    62	
+    63	--------------------------------------------------------
+    64	
+    65	BOSTON -- February 3, 1992 -- Frye Computer Systems, Inc., publisher of the
+    66	award winning Frye Utilities for Networks, is participating with Novell in
+    67	the development of advanced network management products for the new
+    68	NetWare Management System platform which is being announced today by
+    69	Novell, Inc. As a Gold level Novell Developer (Novell's highest category),
+    70	Frye has been provided with NMS information for over a year.
+    71	
+    72	"Frye Computer Systems is proud to be participating with Novell in the
+    73	development of advanced network management products for the new NetWare
+    74	Management System platform," said Russell H. Frye, President of Frye
+    75	Computer Systems, Inc. "We believe that the combination of the expertise
+    76	demonstrated in the Frye Utilities along with the support provided by
+    77	Novell's new system will produce a powerful partnership."
+    78	
+    79	IS NOVELL COMPETING WITH ITS OWN 3RD PARTY DEVELOPERS?
+    80	
+    81	Frye has been repeatedly asked if it considers Novell to be a competitor in
+    82	the network management market and would like to take this opportunity to
+    83	set the record straight. "During discussions of the $5,000 NMS platform
+    84	and other management software projects, Novell has promised, time and time
+    85	again, that it will not compete with Frye and similar developers." Mr.
+    86	Frye continues to explain that "Novell has assured us that they will only
+    87	provide a platform for development and a few specific applications that
+    88	are not available from 3rd parties. They have said that they have no
+    89	intention of copying existing products and features to provide similar
+    90	products or features to those of their 3rd party developers."
+    91	
+    92	Novell has always sought to work in close cooperation with its 3rd party
+    93	developers. Historically, it has benefitted enormously from the support
+    94	provided by outside software and hardware firms that have made NetWare the
+    95	most flexible network operating system in the industry. Due to its open
+    96	architecture and generous support for developers, end-users can take
+    97	advantage of a myriad of options to satisfy their network needs. Novell
+    98	appears to wish to maintain its successful heritage.
+    99	
+   100	FRYE AND NMS
+   101	
+   102	Frye plans to release many of its functions in ports to the NMS platform,
+   103	in both Microsoft Windows and IBM OS/2 form. Novell has provided
+   104	developers with hooks for many sets of data that can be used by their
+   105	applications. Frye can supply its industry leading notification and
+   106	response options (from the NetWare Early Warning System) for monitoring
+   107	purposes, as well as its extensive workstation and file server support
+   108	software (from NetWare Management and LAN Directory.) Look for several
+   109	major announcements in coordination with Novell during the coming months.
+   110	
+   111	FRYE'S CURRENT PRODUCTS AND AVAILABILITY
+   112	
+   113	Frye Computer Systems current suite of products includes The Frye Utilities
+   114	for Networks - NetWare Management, NetWare Early Warning System and LAN
+   115	Directory. NetWare Management is a management utility for Novell NetWare
+   116	286 and 386 which includes extensive graphic and reporting functions as
+   117	well as providing for Disaster Recovery support, Enhanced Troubleshooting
+   118	and Diagnostics. NetWare Early Warning System Monitors over 50 NetWare 286
+   119	& 386 critical statistics, Notifies by pager, electronic mail, voice and
+   120	more and Fixes or Responds to events, automatically. These two products
+   121	are available now at a retail price of $495. Frye's newest product, LAN
+   122	Directory, allows computer managers to track all of their PC's and MAC's.
+   123	LAN workstations and file servers as well as stand alone workstations are
+   124	automatically audited for hundreds of hardware and software elements. LAN
+   125	Directory will available during the week of NetWorld Boston (Feb. 11-13)
+   126	at a retail price of $495.
+   127	
+   128	Frye Computer Systems Inc, 19 Temple Place, Boston, MA 02111
+   129	617-247-2300
+   130	
+   131	  +---------------------------------------------------------------+
+   132	  |  From the America On-Line & PC-Link New Product Info Services |
+   133	  +===============================================================+
+   134	  | This information was processed with OmniPage Professional OCR |
+   135	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+   136	  | provided by the above mentioned company. For additional info, |
+   137	  | contact the company at the address or phone# indicated above. |
+   138	  |    All submissions for this service should be addressed to    |
+   139	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+   140	  +---------------------------------------------------------------+

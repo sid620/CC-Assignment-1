@@ -1,0 +1,58 @@
+     1	
+     2	                        Photo/Digital Specifications
+     3	 
+     4	 
+     5	          GIF files can be viewed on many different types of personal
+     6	     computers. These machines have programs available which allow
+     7	     for the viewing and conversion of GIF:
+     8	 
+     9	               Apple Macintosh & Macintosh II
+    10	               Apple ][ GS 
+    11	               Atari 8 Bit and ST
+    12	               Commodore Amiga
+    13	               IBM PC,XT,AT, PS/2 & Compatables
+    14	               Tandy 2000 and Tandy 1000
+    15	               Texas Instruments Professional
+    16	               Tandy Color Computer ][ (Coco)
+    17	               (and the list is growing)
+    18	
+    19	          The image you send us is digitized into the GIF format
+    20	     of your choice.  The resultant digitized images view quite well on
+    21	     all these computers. Apple ][ and Hercules have no color of course,
+    22	     and IBM CGA has only four colors.  But remember that only MS-DOS
+    23	     computers can take advantage of this offer as we do not have
+    24	     computers other than MS-DOS machines.  The GIF image is universal
+    25	     but if you can't read the MS-DOS formated diskette then we can not
+    26	     help you.... unless you make some arrangements with your sysop to
+    27	     download the digitized images.  However, this would cost you about
+    28	     three times the stardard price.
+    29	 
+    30	          Our digitized photographs are available in the following
+    31	     formats: (you make the choice on how you want them digitized.
+    32	     You let us know on the ORDER FORM.
+    33	
+    34	          Resolution       Colors           Format
+    35	          ----------       ------           ------
+    36	          320 X 200          4              CGA
+    37	          640 X 200         16              EGA
+    38	          640 X 350         16              EGA
+    39	          640 X 480         16              EGA
+    40	          320 X 200        256              VGA
+    41	         *HiRes            256              VGA
+    42	 
+    43	*          We also Photo Digitize slides or prints into higher
+    44	        resolution VGA images.  For more information about this
+    45	        high resolution process call 503-777-3595. 
+    46	
+    47	           You can use VGIF.EXE to convert any of your GIF files into
+    48	        any of the following format.  VGIF is found here on this
+    49	        system.
+    50	
+    51	          ZSOFT PC PAINT (.PCX)
+    52	          PICTOR         (EGA OR VGA .PIC)
+    53	          DR HALO        (.CUT and .PIC)
+    54	          RIX EGA PAINT  (.SCR or .SCP)
+    55	
+    56	             Or you can simply use your screen grabber to convert the GIF
+    57	          file into the format of your choice.
+    58	

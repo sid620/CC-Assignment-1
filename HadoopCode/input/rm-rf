@@ -1,0 +1,170 @@
+     1	Then it must be version-dependent.  On this Sun, "cp /bin/rm foo"
+     2	followed by "./foo foo" does not leave a foo behind, and strings
+     3	shows that rm appears not to call rmdir (which makes sense, as it
+     4	can just use unlink()).
+     5	
+     6	In any case, I'm reminded of the following article.  This is a classic
+     7	which, like the story of Mel, has been on the net several times;
+     8	it was in this newsgroup in January.  It was first posted in 1986.
+     9	
+    10	--------------------------------------------------------------------
+    11	
+    12	Have you ever left your terminal logged in, only to find when you came
+    13	back to it that a (supposed) friend had typed "rm -rf ~/*" and was
+    14	hovering over the keyboard with threats along the lines of "lend me
+    15	a fiver 'til Thursday, or I hit return"?  Undoubtedly the person in
+    16	question would not have had the nerve to inflict such a trauma upon
+    17	you, and was doing it in jest.  So you've probably never experienced
+    18	the worst of such disasters....
+    19	
+    20	It was a quiet Wednesday afternoon.  Wednesday, 1st October, 15:15
+    21	BST, to be precise, when Peter, an office-mate of mine, leaned away
+    22	from his terminal and said to me, "Mario, I'm having a little trouble
+    23	sending mail."  Knowing that msg was capable of confusing even the
+    24	most capable of people, I sauntered over to his terminal to see what
+    25	was wrong.  A strange error message of the form (I forget the exact
+    26	details) "cannot access /foo/bar for userid 147" had been issued by
+    27	msg.  My first thought was "Who's userid 147?; the sender of the
+    28	message, the destination, or what?"  So I leant over to another
+    29	terminal, already logged in, and typed
+    30	        grep 147 /etc/passwd
+    31	only to receive the response
+    32	        /etc/passwd: No such file or directory.
+    33	
+    34	Instantly, I guessed that something was amiss.  This was confirmed
+    35	when in response to
+    36	        ls /etc
+    37	I got
+    38	        ls: not found.
+    39	
+    40	I suggested to Peter that it would be a good idea not to try anything
+    41	for a while, and went off to find our system manager.
+    42	
+    43	When I arrived at his office, his door was ajar, and within ten
+    44	seconds I realised what the problem was.  James, our manager, was
+    45	sat down, head in hands, hands between knees, as one whose world has
+    46	just come to an end.  Our newly-appointed system programmer, Neil,
+    47	was beside him, gazing listlessly at the screen of his terminal.
+    48	And at the top of the screen I spied the following lines:
+    49	        # cd
+    50	        # rm -rf *
+    51	
+    52	Oh, shit, I thought.  That would just about explain it.
+    53	
+    54	I can't remember what happened in the succeeding minutes; my memory is
+    55	just a blur.  I do remember trying ls (again), ps, who and maybe a few
+    56	other commands beside, all to no avail.  The next thing I remember was
+    57	being at my terminal again (a multi-window graphics terminal), and
+    58	typing
+    59	        cd /
+    60	        echo *
+    61	I owe a debt of thanks to David Korn for making echo a built-in of
+    62	his shell; needless to say, /bin, together with /bin/echo, had been
+    63	deleted.  What transpired in the next few minutes was that /dev,
+    64	/etc and /lib had also gone in their entirety; fortunately Neil had
+    65	interrupted rm while it was somewhere down below /news, and /tmp,
+    66	/usr and /users were all untouched.
+    67	
+    68	Meanwhile James had made for our tape cupboard and had retrieved
+    69	what claimed to be a dump tape of the root filesystem, taken four
+    70	weeks earlier.  The pressing question was, "How do we recover the
+    71	contents of the tape?".  Not only had we lost /etc/restore, but all
+    72	of the device entries for the tape deck had vanished.  And where
+    73	does mknod live?  You guessed it, /etc.  How about recovery across
+    74	Ethernet of any of this from another VAX?  Well, /bin/tar had gone,
+    75	and thoughtfully the Berkeley people had put rcp in /bin in the
+    76	4.3 distribution.  What's more, none of the Ether stuff wanted to
+    77	know without /etc/hosts at least.  We found a version of cpio in
+    78	/usr/local, but that was unlikely to do us any good without a tape
+    79	deck.
+    80	
+    81	Alternatively, we could get the boot tape out and rebuild the root
+    82	filesystem, but neither James nor Neil had done that before, and we
+    83	weren't sure that the first thing to happen would be that the whole
+    84	disk would be re-formatted, losing all our user files.  (We take dumps
+    85	of the user files every Thursday; by Murphy's Law this had to happen
+    86	on a Wednesday).  Another solution might be to borrow a disk from
+    87	another VAX, boot off that, and tidy up later, but that would have
+    88	entailed calling the DEC engineer out, at the very least.  We had a
+    89	number of users in the final throes of writing up PhD theses and the
+    90	loss of a maybe a weeks' work (not to mention the machine down time)
+    91	was unthinkable.
+    92	
+    93	So, what to do?  The next idea was to write a program to make a device
+    94	descriptor for the tape deck, but we all know where cc, as and ld
+    95	live.  Or maybe make skeletal entries for /etc/passwd, /etc/hosts
+    96	and so on, so that /usr/bin/ftp would work.  By sheer luck, I had a
+    97	gnuemacs still running in one of my windows, which we could use to
+    98	create passwd, etc., but the first step was to create a directory to
+    99	put them in.  Of course /bin/mkdir had gone, and so had /bin/mv, so we
+   100	couldn't rename /tmp to /etc.  However, this looked like a reasonable
+   101	line of attack.
+   102	
+   103	By now we had been joined by Alasdair, our resident UNIX guru, and
+   104	as luck would have it, someone who knows VAX assembler.  So our plan
+   105	became this: write a program in assembler which would either rename
+   106	/tmp to /etc, or make /etc, assemble it on another VAX, uuencode it,
+   107	type in the uuencoded file using my gnu, uudecode it (some bright
+   108	spark had thought to put uudecode in /usr/bin), run it, and hey
+   109	presto, it would all be plain sailing from there.  By yet another
+   110	miracle of good fortune, the terminal from which the damage had been
+   111	done was still su'd to root (su is in /bin, remember?), so at least
+   112	we stood a chance of all this working.
+   113	
+   114	Off we set on our merry way, and within only an hour we had managed
+   115	to concoct the dozen or so lines of assembler to create /etc.  The
+   116	stripped binary was only 76 bytes long, so we converted it to hex
+   117	(slightly more readable than the output of uuencode), and typed it in
+   118	using my editor.  If any of you ever have the same problem, here's the
+   119	hex for future reference:
+   120	        070100002c000000000000000000000000000000000000000000000000000000
+   121	        0000dd8fff010000dd8f27000000fb02ef07000000fb01ef070000000000bc8f
+   122	        8800040000bc012f65746300
+   123	
+   124	I had a handy program around (doesn't everybody?) for converting
+   125	ASCII hex to binary, and the output of /usr/bin/sum tallied with our
+   126	original binary.  But hang on---how do you set execute permission
+   127	without /bin/chmod?  A few seconds thought (which as usual, lasted a
+   128	couple of minutes) suggested that we write the binary on top of an
+   129	already existing binary, owned by me...problem solved.
+   130	
+   131	So along we trotted to the terminal with the root login, carefully
+   132	remembered to set the umask to 0 (so that I could create files in it
+   133	using my gnu), and ran the binary.  So now we had a /etc, writable
+   134	by all.  From there it was but a few easy steps to creating passwd,
+   135	hosts, services, protocols, (etc), and then ftp was willing to play
+   136	ball.  Then we recovered the contents of /bin across the ether (it's
+   137	amazing how much you come to miss ls after just a few, short hours),
+   138	and selected files from /etc.  The key file was /etc/rrestore, with
+   139	which we recovered /dev from the dump tape, and the rest is history.
+   140	
+   141	Now, you're asking yourself (as I am), what's the moral of this story?
+   142	Well, for one thing, you must always remember the immortal words,
+   143	DON'T PANIC.  Our initial reaction was to reboot the machine and try
+   144	everything as single user, but it's unlikely it would have come up
+   145	without /etc/init and /bin/sh.  Rational thought saved us from this
+   146	one.
+   147	
+   148	The next thing to remember is that UNIX tools really can be put to
+   149	unusual purposes.  Even without my gnuemacs, we could have survived
+   150	by using, say, /usr/bin/grep as a substitute for /bin/cat.
+   151	
+   152	And the final thing is, it's amazing how much of the system you can
+   153	delete without it falling apart completely.  Apart from the fact that
+   154	nobody could login (/bin/login?), and most of the useful commands
+   155	had gone, everything else seemed normal.  Of course, some things can't
+   156	stand life without say /etc/termcap, or /dev/kmem, or /etc/utmp, but
+   157	by and large it all hangs together.
+   158	
+   159	I shall leave you with this question: if you were placed in the
+   160	same situation, and had the presence of mind that always comes with
+   161	hindsight, could you have got out of it in a simpler or easier way?
+   162	Answers on a postage stamp to:
+   163	
+   164	Mario Wolczko
+   165	------------------------------------------------------------------------
+   166	Dept. of Computer Science       ARPA:   miw%uk.ac.man.cs.ux@cs.ucl.ac.uk
+   167	The University                  USENET: mcvax!ukc!man.cs.ux!miw
+   168	Manchester M13 9PL              JANET:  miw@uk.ac.man.cs.ux
+   169	U.K.                            061-273 7121 x 5699
+   170	------------------------------------------------------------------------

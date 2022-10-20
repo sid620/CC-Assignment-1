@@ -1,0 +1,272 @@
+     1	ีอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออธ
+     2	ณ  Information on different picture viewing programs  -  Updated 5th Oct 1991 ณ
+     3	ิอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออพ
+     4	
+     5	        The following notes provide a guide to help people
+     6	        choose which picture viewing program to use.
+     7	        All the programs listed below are available for download
+     8	        from the State Of Chaos BBS, Ph (09) 410-3815.
+     9	
+    10	
+    11	CSHOW833.ZIP    -    Cshow v8.33a     -     Latest version at 19-6-91
+    12	
+    13	        This is one of the best known viewing programs.
+    14	        It allows viewing of the following picture types :
+    15	
+    16	              CompuServe GIF      Rix
+    17	              CompuServe RLE      Targa
+    18	              MacPaint            Deluxe Paint LBM, BBM
+    19	              PC Paintbrush PCX   Windows BitMaP
+    20	              PC Paint PIC        TIFF
+    21	              Dr. Halo
+    22	
+    23	        Main Features :
+    24	
+    25	        Supports EMS memory for panning of 1280x1024x256 pictures
+    26	        Microsoft mouse compatibility
+    27	        Tag groups of files for viewing and slideshows
+    28	        Supports most SVGA cards and video modes
+    29	        Scripts for controlling slideshows
+    30	        Images can be scaled to screen size
+    31	        Print pictures on a variety of printers
+    32	
+    33	       *NOTE : I have seen several other copies of Cshow (up to
+    34	        version 8.51) claiming to be the latest. All of these
+    35	        have actually turned out to be quite old versions in spite
+    36	        of the version number. Version 8.33 is the latest as of
+    37	        June 91 and was received direct from the programs authors.
+    38	
+    39	
+    40	GDS109.ZIP      -    Graphics Display System v1.09
+    41	
+    42	        This program is quite new, the 1st release was Feb 91
+    43	        It allows viewing of the following picture types :
+    44	
+    45	              CompuServe GIF      Rix
+    46	              MacPaint            Deluxe Paint LBM, BBM
+    47	              PC Paintbrush PCX
+    48	
+    49	        Gds can alter brightness, contrast, colour, etc and
+    50	        write the changed picture back to disk.
+    51	
+    52	        One especially good feature of Gds is its ability to
+    53	        create visual catalogs by grouping reduced pictures
+    54	        together to create a single picture file.
+    55	        Hundreds of individual pictures can be combined within
+    56	        a single picture.
+    57	
+    58	        Main features :
+    59	
+    60	        Supports EMS memory
+    61	        Uses mouse or keyboard
+    62	        Supports up to 60 rows by 132 columns
+    63	        Tag groups of files for processing
+    64	        Supports most SVGA cards and video modes
+    65	        Slideshows
+    66	        Alter colours, size, shape
+    67	        Zoom and clip sections of pictures
+    68	        Catalog multiple pictures into a single display file
+    69	        High quality image reduction
+    70	        Convert between different picture formats
+    71	        Most options user configurable
+    72	
+    73	
+    74	GRAFWK60.ZIP    -    Graphic Workshop v6.0
+    75	
+    76	        This version is a complete rewrite and represents a great
+    77	        improvement over previous versions I have used.
+    78	        It allows viewing of individual images but is really
+    79	        intended for conversion and manipulation of pictures
+    80	        rather than use as a straight picture viewer.
+    81	        It handles many different formats and is able to
+    82	        convert images between any of them.
+    83	        It can also produce self displaying *.EXE files for
+    84	        splash screens etc in a similar manner to GIFEXE.
+    85	        It allows viewing of the following picture types :
+    86	
+    87	              CompuServe GIF      Ventura GEM/IMG
+    88	              MacPaint            TIFF
+    89	              PC Paintbrush PCX   Deluxe Paint/Amiga IFF/LBM
+    90	              PC Paint Pictor PIC WordPerfect Graphics WPG
+    91	              Windows 3 BMP       Encapsulated PostScript EPS
+    92	              Microsoft Paint MSP Text files
+    93	              Truevision Targa    24-bit files
+    94	
+    95	        Main features :
+    96	
+    97	        Supports Expanded/Extended/Virtual memory
+    98	        Print images on LaserJet, PostScript and other printers
+    99	        Self displaying pictures (doesn't support SVGA)
+   100	        Rotate, Flip and Scale images
+   101	        Produce clip art from colour images
+   102	        Special effects :
+   103	                Colour reduction, Grey scale, Sharpen
+   104	                Soften, Smudge, Posterization
+   105	        Script language
+   106	        Supports many SVGA cards
+   107	        Many options user configurable
+   108	
+   109	
+   110	GIFDES40.ZIP    -    Gif Desk v4.0
+   111	
+   112	        This program allows viewing of individual pictures or
+   113	        alternatively up to 80 Gifs on screen at one time.
+   114	        The multiple Gif mode can be used to create visual catalogs
+   115	        in a similar way to GDS109, however the quality of its
+   116	        image reduction is not as high and it cannot display as
+   117	        many images at once as GDS109.
+   118	
+   119	        Main features :
+   120	
+   121	        Supports most SVGA cards
+   122	        Catalog multiple pictures into a single display file
+   123	        Print pictures on Laserjet compatible printers
+   124	        Allows command files for automated usage.
+   125	
+   126	
+   127	GIFEXE.ZIP      -    Gifexe v1.0
+   128	
+   129	        This program is not a normal picture viewer.
+   130	        It is used to convert any Gif image into a self displaying
+   131	        *.EXE file that can be run from the Dos prompt.
+   132	        This is useful for displaying fancy splash screens before
+   133	        starting up an application program etc.
+   134	
+   135	        Unfortunately the self displaying image is rather slow.
+   136	        The registered version supports SVGA modes.
+   137	
+   138	
+   139	GIFFIE12.ZIP    -    Giffie v1.2
+   140	
+   141	        This program is fairly ordinary but does have a couple of
+   142	        features the others don't - special effects & descriptions.
+   143	        Giffie allows you to choose whether the pictures 'fade in',
+   144	        'zip up/down' or simply replace - only works for 320x200.
+   145	        It can also attach a description to each Gif file to help
+   146	        you keep track of what each picture is.
+   147	
+   148	        Supports mouse and slideshows
+   149	        Print pictures on HP Paintjet or Plotter
+   150	        Supports standard Vga but SVGA support is very limited
+   151	
+   152	
+   153	GIFWARP1.ZIP    -    Gif Warp v1.0
+   154	
+   155	        This program is not actually intended as a viewer.
+   156	        It allows you to display a GIF file and then stretch
+   157	        parts of it to create weird effects.
+   158	
+   159	        If you feel like putting long noses and big ears on
+   160	        people then this is the program to do it.
+   161	        Works with pictures up to 256 colours.
+   162	        Shareware version only works in 320x200 resolution.
+   163	        Registered version supports SVGA.
+   164	        Uses microsoft compatible mouse.
+   165	        Save warped Gifs to disk.
+   166	
+   167	PICEM21.ZIP     -    Picem v2.1
+   168	
+   169	        This program is different to the others mentioned here
+   170	        in that it does not draw the pictures line by line but
+   171	        rather displays the completed image all at once.
+   172	        It allows viewing of the following picture types :
+   173	
+   174	              CompuServe GIF      PC Paintbrush PCX
+   175	              PC Paint PIC
+   176	
+   177	        Main features :
+   178	
+   179	        Tag groups of files for slideshows
+   180	        Alter brightness & contrast
+   181	        Write changed pictures back to disk
+   182	        Scale images to screen size
+   183	        Supports most SVGA modes
+   184	        Can utilize Bios modes specific to your video card
+   185	        Convert between different picture formats
+   186	
+   187	
+   188	VUIMG.ZIP       -    VuImage v2.92
+   189	
+   190	        This program displays both Gif and Tiff files.
+   191	        It can also print both picture types.
+   192	
+   193	        Main features :
+   194	
+   195	        Supports various SVGA cards (external drivers needed)
+   196	        Images can be scaled & zoomed
+   197	        Alter brightness and contrast
+   198	        Tag groups of files for slideshows
+   199	        Many options can be configured via command line switches
+   200	
+   201	
+   202	      ฺฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ
+   203	      ณ So which viewer is best? ณ
+   204	      ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู
+   205	
+   206	        The viewer you choose will depend on what hardware you have
+   207	        and what features you require. The following is therefore
+   208	        my opinion on what I have found suits my requirements best.
+   209	
+   210	        Firstly a quick list of a few areas in which some of the
+   211	        above viewers are lacking or have problems.
+   212	
+   213	        PICEM can't handle very large pictures due to memory constraints
+   214	
+   215	        CSHOW can't save a changed picture although it can save settings
+   216	        in a separate file that it uses when redisplaying a picture
+   217	
+   218	        GIFDESK quality of image reductions is fairly poor, and it
+   219	        can't alter contrast or brightness
+   220	
+   221	        GIFFIE doesn't support very many video cards or SVGA modes
+   222	
+   223	
+   224	        I use 3 of the above programs regularly - CSHOW, GDS & PICEM
+   225	
+   226	        - Cshow is good if you want a general purpose picture viewer
+   227	        that supports more than just the Gif format.
+   228	        It has a convenient mouse & keyboard interface that is easy
+   229	        to use. It handles the largest pictures and all video modes.
+   230	
+   231	        - Picem is the viewer I use most. I find it convenient for
+   232	        quick command line viewing of single images. I also prefer
+   233	        its method of displaying the completed image rather than the
+   234	        line at a time method; this makes it good for slide shows.
+   235	        It also displays images automatically centred on screen.
+   236	
+   237	        - Gds is the program to use if you are into 'patching' Gifs.
+   238	        It has an excellent mouse & keyboard interface. It supports
+   239	        several picture types, both viewing and writing them.
+   240	        Its editing features allow rotating & flipping images. It
+   241	        can alter aspect ratios, clip sections, zoom (magnify),
+   242	        change brightness, contrast, colour saturation etc.
+   243	        The quality of its image reductions is excellent and the
+   244	        cataloging feature is very versatile.
+   245	        I should point out however that some of its features are
+   246	        only available in the registered version.
+   247	
+   248	        I believe that the 3 programs above should cover most users
+   249	        requirements. The other viewing programs, and others I have
+   250	        used but not mentioned here, do not in my opinion possess any
+   251	        worthwhile features not already covered by Cshow, Gds & Picem.
+   252	
+   253	        However I should also make special mention of Graphic Workshop.
+   254	        Although I don't make much use of it myself, it is definitely
+   255	        a quality program. Its image conversion facilities are very
+   256	        good. The self displaying *.EXE files appear much faster than
+   257	        those produced by GIFEXE.
+   258	
+   259	       ีอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออธ
+   260	       ณ For The Highest Quality GIF Pictures, Dial ...              ณ
+   261	       ณ                                                             ณ
+   262	       ณ    Û฿฿ ฿Û฿ Û฿Û ฿Û฿ Û฿฿    Û฿Û Û฿฿    Û฿฿ Û Û Û฿Û Û฿Û Û฿฿    ณ
+   263	       ณ    ฿฿Û  Û  Û฿Û  Û  Û฿     Û Û Û฿     Û   Û฿Û Û฿Û Û Û ฿฿Û    ณ
+   264	       ณ    ฿฿฿  ฿  ฿ ฿  ฿  ฿฿฿    ฿฿฿ ฿      ฿฿฿ ฿ ฿ ฿ ฿ ฿฿฿ ฿฿฿    ณ
+   265	       ณ                                                             ณ
+   266	       ณ                                  Phone (09)-410-3815  24hrs ณ
+   267	       ิอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออพ
+   268	
+   269	       Written, and hopefully updated occasionally,
+   270	       by Geraint Bycroft (Sysop - State Of Chaos)
+   271	
+   272	

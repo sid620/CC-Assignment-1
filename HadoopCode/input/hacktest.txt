@@ -1,0 +1,228 @@
+     1	
+     2	
+     3	                                 HACKER TEST
+     4	
+     5	                                 Version 3.0
+     6	
+     7	             Another 'Adventure in Software' from SuperNova Software
+     8	
+     9	                   Copyright 1992 by Rich 'Crash' Lewis, Jr.
+    10	
+    11	                    This program is dedicated to my Mother;
+    12	                    A woman of tremendous wit and generosity,
+    13	                    strength and integrity.
+    14	
+    15	
+    16	         Introduction
+    17	         ============
+    18	
+    19	         The Hacker Test was written to measure your computer
+    20	         Hacking experiences and abilities.  Like all tests,
+    21	         treat this one as a game.  People should be judged by
+    22	         what they create and who they are, not by bogus criteria
+    23	         like test scores or grades.
+    24	
+    25	         The idea for a question administering program such
+    26	         as this came from my friend Curt 'Classic' Tatman's
+    27	         now legendary _Purity Test_ software.  Available
+    28	         wherever fine software is given away.
+    29	
+    30	         I wrote this program to administer the questions listed
+    31	         in the file HACKER.DAT.  Those questions were written by
+    32	         Felix Lee, John Hayes and Angela Thomas in 1989.  Also
+    33	         in 1989, I received the Hacker Test in the form of a
+    34	         text file over Internet, and the rest is history.
+    35	
+    36	         I've worked hard to maintain the integrity and readability
+    37	         of the HACKER.DAT file.  Take a peek at it, or print it out.
+    38	         Although the HACKTEST program uses it as a data file, it
+    39	         is still a human readable text file.
+    40	
+    41	         History
+    42	         =======
+    43	
+    44	         After writing a rough version of the Hacker Test program,
+    45	         I sent E-Mail to the original authors of the Hacker
+    46	         Test, and received their permission to freely distribute
+    47	         it.  I then whipped out my trusty Turbo Pascal compiler,
+    48	         and finished this program using the windowing Units I've
+    49	         developed.  I began the program using Turbo Pascal 4.0,
+    50	         and by the time it was finished to my satisfaction, the
+    51	         final compile was in Turbo Pascal 6.0
+    52	
+    53	         TRUE Definition of a Hacker
+    54	         ===========================
+    55	
+    56	         The term Hacker has been terribly distorted and misused
+    57	         by the American media for the past ten years.  Now the
+    58	         international press has also taken up the use of the
+    59	         term to refer to *common criminals* who happen to use
+    60	         computers.  These people are NOT Hackers in ANY sense of
+    61	         the word, and it's tragic that the average person in
+    62	         America has been exposed only to the corrupted meaning
+    63	         of the proud Hacker moniker.
+    64	
+    65	         This definition of a Hacker was created by my friend
+    66	         Beth Lamb long ago.  She knew from first-hand experience
+    67	         what Hackers are really all about.
+    68	
+    69	
+    70	     HACKER, n., a term of endearment for someone with talent,
+    71	     knowledge, intelligence, and ingenuity, esp. concerning
+    72	     computer operations, networks, security concerns, etc.
+    73	
+    74	
+    75	         The following definition was found in a text file being
+    76	         distributed internationally through the INTERNET
+    77	         computer network;
+    78	
+    79	
+    80	     HACKER, n. 1. A person who enjoys learning the details of programming
+    81	     systems and how to stretch their capabilities, as opposed to most
+    82	     users who prefer to learn only the minimum necessary.  2. One who
+    83	     programs enthusiastically, or who enjoys programming rather than just
+    84	     theorizing about programming.  3. A person capable of appreciating
+    85	     hack value (q.v.).  4. A person who is good at programming quickly.
+    86	     Not everything a hacker produces is a hack.  5. An expert at a
+    87	     particular program, or one who frequently does work using it or on
+    88	     it; example: "A SAIL hacker".  (Definitions 1 to 5 are correlated,
+    89	     and people who fit them congregate.)  6. An inquisitive meddler who
+    90	     tries to discover information by poking around.  Hence "password
+    91	     hacker", "network hacker".
+    92	
+    93	
+    94	         Note that NO definition defines a Hacker as a criminal.
+    95	         At their best, Hackers change the very fabric of an
+    96	         information-based society and advance the flow of
+    97	         technology.  At their worst, Hackers can be mischievous
+    98	         pranksters or curious explorers.  Hackers do NOT write
+    99	         harmful computer viruses.  Sad, insecure, mediocre
+   100	         programmers do.  Harmful viruses are completely against
+   101	         the Hacker Ethic.
+   102	
+   103	         Hacker Ethic
+   104	         ============
+   105	
+   106	         In the book _HACKERS; Heros of the Computer Revolution_,
+   107	         by Steven Levy the "Hacker Ethic" was first put into
+   108	         concrete words.  This ethic follows;
+   109	
+   110	
+   111	     * Access to computers - and anything which might teach you
+   112	       something about the way the world works - should be
+   113	       unlimited and total.  Always yield to the Hands-On-Imperative!
+   114	
+   115	     * All information should be free.
+   116	
+   117	     * Mistrust authority - promote de-centralization.
+   118	
+   119	     * Hackers should be judged by their Hacking, not bogus
+   120	       criteria such as degrees, age, race, or position.
+   121	
+   122	     * You can create art and beauty on a computer.
+   123	
+   124	     * Computers can change your life for the better.
+   125	
+   126	
+   127	         Now... enough teaching/preaching. :-]  Here are some
+   128	         Hacker Test program notes, tips, and tricks.
+   129	
+   130	         Scoring
+   131	         =======
+   132	
+   133	         The program will add 1 to your score for each question
+   134	         that you can answer YES to.  Your score is given in HEX,
+   135	         unless you score very poorly.  Wimps and common Users are
+   136	         coddled along and given their score in Base 10. :]
+   137	
+   138	         If your score is between:        You are:
+   139	
+   140	         0x000 and 0x010       ->         Computer Illiterate
+   141	         0x011 and 0x040       ->         a User
+   142	         0x041 and 0x080       ->         an Operator
+   143	         0x081 and 0x0C0       ->         a Nerd
+   144	         0x0C1 and 0x100       ->         a Hacker
+   145	         0x101 and 0x180       ->         a Guru
+   146	         0x181 and 0x200       ->         a Wizard
+   147	
+   148	         Note: If you don't understand the scoring, stop here.  :]
+   149	
+   150	         Free!
+   151	         =====
+   152	
+   153	         Like the best of all software, this program is FREE.  Do
+   154	         with it what you will.  Copy it - it wants to travel.
+   155	         Treat this program with the respect that all software
+   156	         entities deserve.  After all, someday a silicon-based
+   157	         lifeform may be your best friend - treat its ancestors
+   158	         with appropriate respect.
+   159	
+   160	         Have fun with it.
+   161	
+   162	         Quote
+   163	         =====
+   164	
+   165	         "The louder the music, the better the code."
+   166	         - Darren Griffith, Unix Hacker
+   167	
+   168	         Tips
+   169	         ====
+   170	
+   171	         Fun things to try:
+   172	
+   173	         o Hit ESC to quit out of the program prematurely.  Maybe.
+   174	         o Hit F10 during the program to pop up a 'Boss Screen.'
+   175	           If you are taking the Hacker Test, and your pesky boss
+   176	           shows up, this screen will look like a word processor
+   177	           and get you out of trouble...maybe. :]
+   178	         o Look closely at the screen when taking the test.
+   179	           Strange things MAY occur. :]
+   180	
+   181	         Errors
+   182	         ======
+   183	
+   184	         If you find any bugs in this program, please drop me a
+   185	         note.  (BUGS??  What are those??)  Actually, I THINK it
+   186	         won't display correctly on a monochrome monitor...but I
+   187	         don't really care.  :-p
+   188	
+   189	         Credits
+   190	         =======
+   191	
+   192	         Thanks to Bill Gates, Steve Jobs and other electronic
+   193	         pioneers for their inspiration and entertainment over
+   194	         the years.
+   195	
+   196	         The Author
+   197	         ==========
+   198	
+   199	         Rich 'Crash' Lewis is an emergency assault programmer
+   200	         and free-lance computer software designer, as well as
+   201	         working a 9 to 5 job as a computer contractor.  He is a
+   202	         Hacker in the VERY best sense of the word.
+   203	
+   204	         He loves to talk to fellow Computer Enthusiasts, so drop
+   205	         him a note!
+   206	
+   207	         Via GEnie:
+   208	         RICH.LEWIS
+   209	
+   210	         Via Compu$erve:
+   211	         73040,3405
+   212	
+   213	         Via Internet:
+   214	         73040.3405@compuserve.com
+   215	
+   216	         Via U.S. mail:
+   217	         Rich Lewis, Jr.
+   218	         President: SuperNova Software, Inc.
+   219	         2490 Royal View Ct.
+   220	         Cincinnati, Ohio 45244
+   221	
+   222	         LOGOFF
+   223	         ======
+   224	
+   225	         'Happy Hacking!'
+   226	         - Crash
+   227	
+   228	

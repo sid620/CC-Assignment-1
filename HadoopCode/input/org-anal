@@ -1,0 +1,1272 @@
+     1	              Organizational Analysis in Computer Science
+     2	
+     3	                               Rob Kling
+     4	              Department of Information & Computer Science
+     5	                                  and
+     6	    Center for Research on Infromation Technology and Organizations
+     7	                  University of California at Irvine,
+     8	                         Irvine, CA 92717, USA
+     9	                    kling@ics.uci.edu (714-856-5955)
+    10	
+    11	                          June 1993 (v. 13.2)
+    12	
+    13	
+    14	Apears in The Information Society, 9(2) (Mar-Jun, 1993):71-87.
+    15	
+    16	
+    17	                            ABSTRACT
+    18	
+    19	Computer Science is hard pressed in the US to show broad utility
+    20	to help justify billion dollar research programs and the value of
+    21	educating well over 40,000 Bachelor of Science  and Master of
+    22	Science specialists annually in the U.S. The Computer Science and
+    23	Telecommunications Board of the U.S. National Research Council
+    24	has recently issued a report, "Computing the Future (Hartmanis
+    25	and Lin, 1992)" which sets a new agenda for Computer Science. The
+    26	report recommends that Computer Scientists broaden their
+    27	conceptions of the discipline to include computing applications
+    28	and domains to help understand them. This short paper argues that
+    29	many Computer Science graduates need some skills in analyzing
+    30	human organizations to help develop appropriate systems
+    31	requirements since they are trying to develop high performance
+    32	computing applications that effectively support higher
+    33	performance human organizations. It is time for academic Computer
+    34	Science to embrace organizational analysis (the field of
+    35	Organizational Informatics) as a key area of research and
+    36	instruction.
+    37	
+    38	
+    39	
+    40	
+    41	
+    42	
+    43	                          INTRODUCTION
+    44	
+    45	Computer Science is being pressed on two sides to show broad
+    46	utility for substantial research and educational support. For
+    47	example, the High Performance Computing Act will provide almost
+    48	two billion dollars for research and advanced development. Its
+    49	advocates justified it with arguments that specific technologies,
+    50	such as parallel computing and wideband nets,  are necessary for
+    51	social and economic development. In the US, Computer Science
+    52	academic programs award well over 30,000 Bachelor of Science (BS)
+    53	and almost 10,000 Master of Science (MS) degrees annually. Some
+    54	of these students enter PhD programs and many work on projects
+    55	which emphasize mathematical Computer Science. But many of these
+    56	graduates also take computing jobs for which they are
+    57	inadequately educated, such as helping to develop high
+    58	performance computing applications to improve the performance of
+    59	human organizations.
+    60	
+    61	These dual pressures challenge leading Computer Scientists to
+    62	broaden their conceptions of the discipline to include an
+    63	understanding of key application domains, including computational
+    64	science and commercial information systems. An important report
+    65	that develops this line of analysis, "Computing the Future" (CTF)
+    66	(Hartmanis and Lin, 1992), was recently issued by the Computer
+    67	Science and Telecommunications Board of the U.S. National
+    68	Research Council.
+    69	
+    70	CTF is a welcome report that argues that academic Computer
+    71	Scientists must acknowledge the driving forces behind the
+    72	substantial Federal research support for the discipline. The
+    73	explosive growth of computing and demand for CS in the last
+    74	decade has been driven by a diverse array of applications and new
+    75	modes of computing in diverse social settings.  CTF takes a
+    76	strong and useful position in encouraging all Computer Scientists
+    77	to broaden our conceptions of the discipline and to examine
+    78	computing in the context of interesting applications.
+    79	
+    80	CTF's authors encourage Computer Scientists to envision new
+    81	technologies in the social contexts in which they will be used.
+    82	They identify numerous examples of computer applications in earth
+    83	science, computational biology, medical care, electronic
+    84	libraries and commercial computing that can provide significant
+    85	value to people and their organizations. These assessments rest
+    86	on concise and tacit analyses of the likely design,
+    87	implementation within organizations, and uses of these
+    88	technologies. For example, CTF's stories of improved
+    89	computational support for modelling are based on rational models
+    90	of organizational behavior. They assume that professionals,
+    91	scientists, and policy-makers use models to help improve their
+    92	decisions. But what if organizations behave differently when they
+    93	use models? For example  suppose policy makers use models to help
+    94	rationalize and legitimize decisions which are made without
+    95	actual reference to the models?
+    96	
+    97	One cannot discriminate between these divergent roles of
+    98	modelling in human organizations based upon the intentions of
+    99	researchers and system designers. The report tacitly requires
+   100	that the CS community develop reliable knowledge, based on
+   101	systematic research, to support effective analysis of the likely
+   102	designs and uses of computerized systems. CTF tacitly requires an
+   103	ability to teach such skills to CS practitioners and students.
+   104	Without a disciplined skill in analyzing human organizations,
+   105	Computer Scientists' claims about the usability and social value
+   106	of specific technologies is mere opinion, and bears a significant
+   107	risk of being misleading. Further, Computer Scientists who do not
+   108	have refined social analytical skills sometimes conceive and
+   109	promote technologies that are far less useful or more costly than
+   110	they claim. Effective CS practitioners who "compute for the
+   111	future" in organizations need some refined skills in
+   112	organizational analysis to understand appropriate systems
+   113	requirements and the conditions that transform high performance
+   114	computing into high performance human organizations. Since CTF
+   115	does not spell out these tacit implications, I'd like to explain
+   116	them here.
+   117	
+   118	                  BROADENING COMPUTER SCIENCE:
+   119	                 FROM COMPUTABILITY TO USABILITY
+   120	
+   121	The usability of systems and software is a key theme in the
+   122	history of CS. We must develop theoretical foundations for the
+   123	discipline that give the deepest insights in to what makes
+   124	systems usable for various people, groups and organizations.
+   125	Traditional computer scientists commonly refer to mathematics as
+   126	the theoretical foundations of CS. However, mathematical
+   127	formulations give us limited insights into understanding why and
+   128	when some computer systems are more usable than others.
+   129	
+   130	Certain applications, such as supercomputing and computational
+   131	science are evolutionary extensions of traditional scientific
+   132	computation, despite their new direction with rich graphical
+   133	front ends for visualizing enormous mounds of data. But other,
+   134	newer modes of computing, such as networking and microcomputing,
+   135	change the distribution of applications. While they support
+   136	traditional numerical computation, albeit in newer formats such
+   137	as spreadsheets, they have also expanded the diversity of
+   138	non-numerical computations. They make digitally represented text
+   139	and graphics accessible to tens of millions of people.
+   140	
+   141	These technological advances are not inconsistent with
+   142	mathematical foundations in CS, such as Turing machine
+   143	formulations. But the value of these formats for computation is
+   144	not well conceptualized by the foundational mathematical models
+   145	of computation. For example, text editing could be conceptualized
+   146	as a mathematical function that transforms an initial text and a
+   147	vector of incremental alterations into a revised text. Text
+   148	formatting can be conceptualized as a complex function mapping
+   149	text strings into spatial arrays. These kinds of formulations
+   150	don't help us grasp why many people find "what you see is what
+   151	you get" editors as much more intuitively appealing than a system
+   152	that links line editors, command-driven formatting languages, and
+   153	text compilers in series.
+   154	
+   155	Nor do our foundational mathematical models provide useful ways
+   156	of conceptualizing some key advances in even more traditional
+   157	elements of computer systems such as operating systems and
+   158	database systems. For example, certain mathematical models
+   159	underlie the major families of database systems. But one can't
+   160	rely on mathematics alone to assess how well networks, relations,
+   161	or object-entities serve as representations for the data stored
+   162	in an airline reservation system. While mathematical analysis can
+   163	help optimize the efficiency of disk space in storing the data,
+   164	they can't do much to help airlines understand the kinds of
+   165	services that will make such systems most useful for
+   166	reservationists, travel agents and even individual travellers. An
+   167	airline reservation system in use is not simply a closed
+   168	technical system. It is an open socio-technical system (Hewitt,
+   169	1986; Kling, 1992). Mathematical analysis can play a central role
+   170	in some areas of CS, and an important role in many areas. But we
+   171	cannot understand important aspects of usability if we limit
+   172	ourselves to mathematical theories.
+   173	
+   174	The growing emphasis of usability is one of the most dominant of
+   175	the diverse trends in computing. The usability tradition has deep
+   176	roots in CS, and has influenced the design of programming
+   177	languages and operating systems for over 25 years. Specific
+   178	topics in each of these areas also rest on mathematical analysis
+   179	which Computer Scientists could point to as "the foundations" of
+   180	the respective subdisciplines. But Computer Scientists envision
+   181	many key advances as design conceptions rather than as
+   182	mathematical theories. For example, integrated programming
+   183	environments ease software development. But their conception and
+   184	popularity is not been based on deeper formal foundations for
+   185	programming languages. However, the growth of non-numerical
+   186	applications for diverse professionals, including text
+   187	processing, electronic mail, graphics, and multimedia should
+   188	place a premium on making computer systems relatively simple to
+   189	use. Human Computer Interaction (HCI) is now considered a core
+   190	subdiscipline of CS.
+   191	
+   192	The integration of HCI into the core of CS requires us to expand
+   193	our conception of the theoretical foundations of the discipline.
+   194	While every computational interface is reducible to a Turing
+   195	computation, the foundational mathematical models of CS do not
+   196	(and could not) provide a sound theoretical basis for
+   197	understanding why some interfaces are more effective for some
+   198	groups of people than others. The theoretical foundations of
+   199	effective computer interfaces must rest on sound theories of
+   200	human behavior and their empirical manifestations (cf. Ehn, 1991,
+   201	Grudin, 1989).
+   202	
+   203	Interfaces also involve capabilities beyond the primary
+   204	information processing features of a technology. They entail ways
+   205	in which people learn about systems and ways to manage the
+   206	diverse data sets that routinely arise in using many computerized
+   207	systems (Kling, 1992). Understanding the diversity and character
+   208	of these interfaces, that are required to make many systems
+   209	usable, rests in an understanding the way that people and groups
+   210	organize their work and expertise with computing. Appropriate
+   211	theories of the diverse interfaces that render many computer
+   212	systems truly useful must rest, in part, on theories of work and
+   213	organization. There is a growing realization, as networks tie
+   214	users together at a rapidly rising rate, that usability cannot
+   215	generally be determined without our considering how computer
+   216	systems are shaped by and also alter interdependencies in groups
+   217	and organizations. The newly-formed subdiscipline of Computer
+   218	Supported Cooperative Work and newly-coined terms "groupware" and
+   219	"coordination theory" are responses to this realization (Greif,
+   220	1988; Galegher, Kraut and Egido, 1990).
+   221	
+   222	
+   223	                  BROADENING COMPUTER SCIENCE:
+   224	                FROM HIGH PERFORMANCE COMPUTING
+   225	                TO HIGH PERFORMANCE ORGANIZATIONS
+   226	
+   227	The arguments of CTF go beyond a focus on usable interface
+   228	designs to claims that computerized systems will improve the
+   229	performance of organizations.  The report argues that the US
+   230	should invest close to a billion dollars a year in CS research
+   231	because of the resulting economic and social gains. These are
+   232	important claims, to which critics can seek systematic evidence.
+   233	For example, one can investigate the claim that 20 years of major
+   234	computing R&D and corporate investment in the US has helped
+   235	provide proportionate economic and social value.
+   236	
+   237	CTF is filled with numerous examples where computer-based systems
+   238	provided value to people and organizations. The tough question is
+   239	whether the overall productive value of these investments is
+   240	worth the overall acquisition and operation costs. While it is
+   241	conventional wisdom that computerization must improve
+   242	productivity, a few researchers began to see systemic
+   243	possibilities of counter-productive computerization in the early
+   244	1980s (King and Kraemer, 1981). In the last few years economists
+   245	have found it hard to give unambiguously affirmative answers to
+   246	this question. The issue has been termed "The Productivity
+   247	Paradox," based on a comment attributed to Nobel laureate Robert
+   248	Solow who remarked that "computers are showing up everywhere
+   249	except in the [productivity] statistics (Dunlop and Kling,
+   250	1991a)."
+   251	
+   252	Economists are still studying the conditions under which
+   253	computerization contributes to organizational productivity, and
+   254	how to measure it [1]. But even if computerization proves to be a
+   255	productive investment, in the net, in most economic sectors,
+   256	there is good reason to believe that many organizations get much
+   257	less value from their computing investments than they could and
+   258	should.
+   259	
+   260	There is no automatic link between computerization and improved
+   261	productivity. While many computer systems have been usable and
+   262	useful, productivity gains require that their value exceed all of
+   263	their costs.
+   264	
+   265	There are numerous potential slips in translating high
+   266	performance computing into cost-effective improvements in
+   267	organizational performance. Some technologies are superb for
+   268	well-trained experts, but are difficult for less experienced
+   269	people or "casual users." Many technologies, such as networks and
+   270	mail systems, often require extensive technical support, thus
+   271	adding hidden costs (Kling, 1992).
+   272	
+   273	Further, a significant body of empirical research shows that the
+   274	social processes by which computer systems are introduced and
+   275	organized makes a substantial difference in their value to
+   276	people, groups and organizations (Lucas, 1981; Kraemer, et. al.
+   277	1985; Orlikowski, 1992). Most seriously, not all presumably
+   278	appropriate computer applications fit a person or group's work
+   279	practices. While they may make sense in a simplified world, they
+   280	can actually complicate or misdirect real work.
+   281	
+   282	Group calendars are but one example of systems that can sound
+   283	useful, but are often useless because they impose burdensome
+   284	record keeping demands (Grudin, 1989). In contrast, electronic
+   285	mail is one of the most popular applications in office support
+   286	systems, even when other capabilities, like group calendars, are
+   287	ignored (Bullen and Bennett, 1991). However, senders are most
+   288	likely to share information with others when the system helps
+   289	provide social feedback about the value of their efforts or they
+   290	have special incentives (Sproull and Kiesler, 1991; Orlikowski,
+   291	1992). Careful attention to the social arrangements or work can
+   292	help Computer Scientists improve some systems designs, or also
+   293	appreciate which applications may not be effective unless work
+   294	arrangements are changed when the system is introduced.
+   295	
+   296	The uses and social value of most computerized systems can not be
+   297	effectively ascertained from precise statements of their basic
+   298	design principles and social purposes. They must be analyzed
+   299	within the social contexts in which they will be used. Effective
+   300	social analyses go beyond accounting for formal tasks and
+   301	purposes to include informal social behavior, available
+   302	resources, and the interdependencies between key groups
+   303	(Cotterman and Senn, 1992).
+   304	
+   305	Many of the BS and MS graduates of CS departments find employment
+   306	on projects where improved computing should enhance the
+   307	performance of specific organizations or industries.
+   308	Unfortunately, few of these CS graduates have developed an
+   309	adequate conceptual basis for understanding when information
+   310	systems will actually improve organizational performance.
+   311	Consequently, many of them are prone to recommend systems-based
+   312	solutions whose structure or implementation within organizations
+   313	would be problematic.
+   314	
+   315	                   ORGANIZATIONAL INFORMATICS
+   316	
+   317	Organizational Informatics denotes a field which studies the
+   318	development and use of computerized information systems and
+   319	communication systems in organizations. It includes studies of
+   320	their conception, design, effective implementation within
+   321	organizations, maintenance, use, organizational value, conditions
+   322	that foster risks of failures, and their effects for people and
+   323	an organization's clients. It is an intellectually rich and
+   324	practical research area.
+   325	
+   326	Organizational Informatics is a relatively new label. In Europe,
+   327	the term Informatics is the name of many academic departments
+   328	which combine both CS and Information Systems. In North America,
+   329	Business Schools are the primary institutional home of
+   330	Information Systems research and teaching. But this location is a
+   331	mixed blessing. It brings IS research closer to organizational
+   332	studies. But the institutional imperatives of business schools
+   333	lead IS researchers to emphasize the development and use of
+   334	systems in a narrow range of organizations -- businesses
+   335	generally, and often service industry firms. It excludes
+   336	information systems in important social sectors such as health
+   337	care, military operations, air-traffic control, libraries, home
+   338	uses, and so on. And Information Systems research tries to avoid
+   339	messy issues which many practicing Computer Scientists encounter:
+   340	developing requirements for effective systems and mitigating the
+   341	major risks to people and organizations who depend upon them.
+   342	
+   343	The emerging field of Organizational Informatics builds upon
+   344	research conducted under rubrics like Information Systems and
+   345	Information Engineering. But it is more wide ranging than either
+   346	of these fields are in practice[2].
+   347	
+   348	Organizational Informatics Research
+   349	
+   350	In the last 20 years a loosely organized community of some dozens
+   351	of researchers have produced a notable body of systematic
+   352	scientific research in Organizational Informatics. These studies
+   353	examine a variety of topics, including:
+   354	     *    how system designers translate people's preferences
+   355	          into requirements;
+   356	     *    the functioning of software development teams in
+   357	          practice;
+   358	     *    the conditions that foster and impede the
+   359	          implementation of computerized systems within
+   360	          organizations;
+   361	     *    the ways that computerized systems simplify or
+   362	          complicate coordination within and between
+   363	          organizations;
+   364	     *    how people and organizations use systems in practice;
+   365	     *    the roles of computerized systems in altering work,
+   366	          group communication, power relationships, and
+   367	          organizational practices.
+   368	Researchers have extensively studied some of these topics, such
+   369	as computerization and changing work, appear in synoptic review
+   370	articles (Kling and Dunlop, in press). In contrast, researchers
+   371	have recently begun to examine other topics, such software design
+   372	(Winograd and Flores, 1986; Kyng and Greenbaum, 1991), and have
+   373	recently begun  to use careful empirical methods (e.g. Suchman,
+   374	1983; Bentley, et. al, 1992; Fish, et. al., 1993). I cannot
+   375	summarize the key theories and rich findings of these diverse
+   376	topics in a few paragraphs. But I would like to comment upon a
+   377	few key aspects of this body of research.
+   378	
+   379	Computer Systems Use in  Social Worlds
+   380	
+   381	Many studies contrast actual patterns of systems design,
+   382	implementation, use or impacts with predictions made by Computer
+   383	Scientists and professional commentators. A remarkable fraction
+   384	of these accounts are infused with a hyper-rational and under-
+   385	socialized view of people, computer systems, organizations and
+   386	social life in general.  Computer Scientists found that rule
+   387	driven conceptions to be powerful ways to abstract domains like
+   388	compilers. But many  Computer Scientists extend them to be a
+   389	tacit organizing frame for understanding whole computer systems,
+   390	their developers, their users and others who live and work with
+   391	them. Organizations are portrayed as generally cooperative
+   392	systems with relatively simple and clear goals. Computer systems
+   393	are portrayed as generally coherent and adequate for the tasks
+   394	for which people use them. People are portrayed as generally
+   395	obedient and cooperative participants in a highly structured
+   396	system with numerous tacit rules to be obeyed, such as doing
+   397	their jobs as they are formally described. Using data that is
+   398	contained in computer systems, and treating it as information or
+   399	knowledge, is a key element of these accounts. Further, computer
+   400	systems are portrayed as powerful, and often central, agents of
+   401	organizational change.
+   402	
+   403	This Systems Rationalist perspective infuses many accounts of
+   404	computer systems design, development, and use in diverse
+   405	application domains, including CASE tools, instructional
+   406	computing, models in support of public policy assessments, expert
+   407	systems, groupware, supercomputing, and network communications
+   408	(Kling, 1980; Kling, Scherson and Allen, 1992).
+   409	
+   410	All conceptual perspectives are limited and distort "reality."
+   411	When Organizational Informatics researchers systematically
+   412	examine the design practices in particular organizations, how
+   413	specific groups develop computer systems, or how various people
+   414	and groups use computerized systems, they find an enormous range
+   415	of fascinating and important human behavior which lies outside
+   416	the predictive frame of Systems Rationalism. Sometimes these
+   417	behaviors are relatively minor in overall importance. But in many
+   418	cases they are so significant as to lead Organizational
+   419	Informatics researchers to radically reconceptualize the
+   420	processes which shape and are shaped by computerization.
+   421	
+   422	There are several alternative frames for reconceptualizing
+   423	computerization as alternatives to Systems Rationalism. The
+   424	alternatives reflect, in part, the paradigmatic diversity of the
+   425	social sciences. But all of these reconceptions situate computer
+   426	systems and organizations in richer social contexts and with more
+   427	complex and multivalent social relations than does systems
+   428	rationalism. Two different kinds of observations help anchor
+   429	these abstractions.
+   430	
+   431	Those who wish to understand the dynamics of model usage in
+   432	public agencies must appreciate the institutional relationships
+   433	which influence the organization's behavior. For example, to
+   434	understand economic forecasting by the US Congress and the U.S.
+   435	Executive branch's Office of Management and Budget, one must
+   436	appreciate the institutional relations between them. They are not
+   437	well described by Systems Rationalist conceptions because they
+   438	were designed  to continually differ with each other in their
+   439	perspectives and preferred policies. That is one meaning of
+   440	"checks and balances" in the fundamental design of the US Federal
+   441	Government. My colleagues, Ken Kraemer and John King, titled
+   442	their book about  Federal economic modelling, DataWars (Kraemer,
+   443	et. al., 1985). Even this title doesn't make much sense within a
+   444	Systems Rationalist framework.
+   445	
+   446	Modelling can be a form of intellectual exploration. It can also
+   447	be a medium of communication, negotiation, and persuasion. The
+   448	social relationships between modelers, people who use them and
+   449	diverse actors in Federal policymaking made these socially
+   450	mediated roles of models sometimes most important. In these
+   451	situations, an alternative view of organizations as coalitions of
+   452	interest groups was a more appropriate conceptualization. And
+   453	within this coalitional view of organizations, a conception of
+   454	econometric models as persuasion support systems rather than as
+   455	decision support systems sometimes is most appropriate.
+   456	Organizational Informatics researchers found that political views
+   457	of organizations and systems developments within them apply to
+   458	many private organizations as well as to explicitly political
+   459	public agencies.
+   460	
+   461	Another major idea to emerge from the broad body of
+   462	Organizational Informatics research is that the social patterns
+   463	which characterize the design, development, uses and consequences
+   464	of computerized systems are dependent on the particular ecology
+   465	of social relationships between participants. This idea may  be
+   466	summarized by saying that the processes and consequences of
+   467	computerization are "context dependent." In practice, this means
+   468	that the analyst must be careful in generalizing from one
+   469	organizational setting to another. While data wars might
+   470	characterize econometric modelling on Capitol Hill, we do not
+   471	conclude that all computer modelling should be interpreted as
+   472	persuasion support systems. In some settings, models are used to
+   473	explore the effects of policy alternatives without immediate
+   474	regard for their support as media for communication, negotiation
+   475	or persuasion. At other times, the same model might be used (or
+   476	abused with cooked data) as a medium of persuasion. The brief
+   477	accounts of models for  global warming in CTF fit a Systems
+   478	Rationalist account. Their uses might appear much less
+   479	"scientific" if they were studied within the actual policy
+   480	processes within which they are typically used.
+   481	
+   482	Computing in a Web of Technological and Social Dependencies:
+   483	                              The Role of Infrastructure
+   484	
+   485	Another key feature of computerized systems is the technological
+   486	and organizational infrastructure required to support their
+   487	effective use (Kling and Scacchi, 1982; Kling, 1987; Kling,
+   488	1992). The information processing models of computerized systems
+   489	focus on the "surface structures," such as information flows
+   490	within a system. For example, one can compare the information
+   491	processing capabilities of computerized modelling systems in
+   492	terms of the complexity and variety of computations that they
+   493	support, the richness of their graphical displays, and so on.
+   494	Text processing systems can be similarly compared by contrasting
+   495	their capabilities for handling footnotes, graphics, fine grained
+   496	text placement, custom dictionaries and so on. From an
+   497	information processing point of view, system A is usually better
+   498	than system B if it offers many more capabilities than system B.
+   499	Information processing conceptions have also fueled much of the
+   500	talk about high performance computing. It is common to talk about
+   501	massively parallel computing in terms of the scale and unit cost
+   502	of computation (Kling, Scherson, and Allen 1992), and the
+   503	discussions of networking in terms of the wide data bandwidths
+   504	that new technologies offer.
+   505	
+   506	If we ask how these technologies improve organizational
+   507	performance, then we have to ask how they can be made usable to
+   508	diverse groups. The most powerful modelling system may be of
+   509	limited utility if it requires sophisticated programming skills
+   510	to create and modify every data transformation. Alternatively,
+   511	such a package can be made more widely useful by having the
+   512	modelling efforts managed by a programming group whihc provides
+   513	added value for added cost.
+   514	
+   515	Few people are capable or interested in primarily using "raw
+   516	computing" for their work. The diverse array of "productivity
+   517	software" -- such as text processing, presentation graphics,
+   518	spreadsheets, databases and so on gain their value when they can
+   519	be provided and maintained in a way that matches the skills and
+   520	available time of people who will use them. Both skill and time
+   521	are scarce resources in most organizations. Skilled time is
+   522	especially expensive.
+   523	
+   524	Similarly, the organizational value of digital libraries can't be
+   525	adequately conceptualized in terms of simple data-centric
+   526	measures, like the number of gigabytes of available files. The
+   527	ease of people accessing useful documents is much more pertinent,
+   528	although much less frequently discussed today.
+   529	
+   530	In each of these cases, the support systems for the focal
+   531	computing system is integral to the effective operation of the
+   532	technology. Infrastructure refers to the set of human and
+   533	organizational resources that help make it simpler and faster for
+   534	skilled people to use computerized systems. Infrastructure should
+   535	be part of the conceptualization. Often the support systems for a
+   536	computing can involve several different organizations, including
+   537	hardware and software vendors, telecommunication support groups,
+   538	divisional systems groups, and local experts (Kling, 1992). It
+   539	can be organizationally very complex and unresponsive in some
+   540	cases and organizationally simpler and more effective in others.
+   541	In any case, the infrastructure for systems support can't be
+   542	ignored when one is interested in improving organizational
+   543	performance.
+   544	
+   545	Repercussions for Systems Design
+   546	
+   547	Even when computerized systems are used as media of intellectual
+   548	exploration, Organizational Informatics researchers find that
+   549	social relationships influence the ways that people use
+   550	computerized systems. Christine Bullen and John Bennett (1991)
+   551	studied 25 organizations that used groupware with diverse
+   552	modeules such as databases, group calendars, text annotating
+   553	facilities and electronic mail. They found that the electronic
+   554	mail modules were almost universally valued, while other system
+   555	facilities were often unused.
+   556	
+   557	In a recent study, Sharyn Ladner and Hope Tillman examined the
+   558	use of the Internet by university and corporate librarians. While
+   559	many of them found data access through databases and file
+   560	transfer to be important services, they also reported that
+   561	electronic mail was perhaps the most critical Internet feature
+   562	for them.
+   563	     The participants in our study tell us something that we
+   564	     may have forgotten in our infatuation with the new
+   565	     forms of information made available through the
+   566	     Internet.  And that is their need for community.  To be
+   567	     sure, our respondents use the Internet to obtain
+   568	     information not available in any other format, to
+   569	     access databases ... that provide new efficiencies in
+   570	     their work, new ways of working.  But their primary use
+   571	     is for communication.  Special librarians tend to be
+   572	     isolated in the workplace -- the only one in their
+   573	     subject specialty (in the case of academe), or the only
+   574	     librarian in their organization (in the case of a
+   575	     corporate library).  Time and time again our
+   576	     respondents expressed this need to talk to someone --
+   577	     to learn what is going on in their profession, to
+   578	     bounce ideas off others, to obtain information from
+   579	     people, not machines.
+   580	     There are tremendous implications from the Internet
+   581	     technology in community formation -- the Internet may
+   582	     indeed provide a way to increase community among
+   583	     scholars, including librarians.  The danger we face at
+   584	     this juncture in time, as we attach library resources
+   585	     to the Internet, is to focus all of our energies on the
+   586	     machine-based resources at the expense of our human-
+   587	     based resources, i.e., ourselves (Ladner and Tillman,
+   588	     1992).
+   589	In these studies, Organizational Informatics researchers have
+   590	developed a socially rich view of work with and around computing,
+   591	of computing within a social world.
+   592	
+   593	These studies have strong repercussions for the design of
+   594	software. A good designer cannot assume that the majority of
+   595	effort should go into the "computational centerpiece" of a
+   596	system, while devoting minor efforts to supporting communication
+   597	facilities. One of my colleagues designed a modelling system for
+   598	managers in a major telephone company, after completing an
+   599	extensive requirements analysis. However, as an afterthought, he
+   600	added a simple mail system in a few days work. He was surprised
+   601	to find that the people who used these systems regularly used his
+   602	crude electronic mail system, while they often ignored
+   603	interesting modelling capabilities. Such balances of attention
+   604	also have significant repercussions. Many people need good mail
+   605	systems, not just crude ones: systems which include facile
+   606	editors, ease in exporting and importing files, and effective
+   607	mail management (Kling and Covi, 1993).
+   608	
+   609	Assessing people's preferences for systems' designs is an
+   610	exercise in social inquiry. While rapid prototyping may help
+   611	improve designs for some systems, it is less readily applicable
+   612	to systems which are used by diverse groups at numerous
+   613	locations. Computer scientists are beginning to develop more
+   614	reliable methods of social inquiry to better understand which
+   615	systems designs will be most useful (Bentley, et. al. 1992; Kyng
+   616	and Greenbaum, 1991). It is particularly helpful to organize
+   617	system designs that help minimize the complexity and cost of its
+   618	infrastructure (Kling, 1992).
+   619	
+   620	Fish and his colleagues (1993) recently reported the way that the
+   621	explicit use of social theory helped them design more effective
+   622	group meeting systems. Unfortunately, these newer methods are
+   623	rarely taught to CS students. When computer specialists build an
+   624	imbalanced system, it should not be a  surprise when the
+   625	resulting organizational value of their efforts is very
+   626	suboptimal.
+   627	
+   628	
+   629	System Security and Reliability
+   630	
+   631	In a simplified engineering model of computing, the reliability
+   632	of products is assured through extensive testing in a development
+   633	lab. The social world of technology use not perceived as shaping
+   634	the reliability of systems, except through irascible human
+   635	factors, such as "operator errors." An interesting and tragic
+   636	illustration of the limitations of this view can be found in some
+   637	recent studies of the causes of death and maiming by an electron
+   638	accelerator which was designed to help cure cancer, the Therac-25
+   639	(Jacky, 1991, Leveson and Turner, 1993).
+   640	
+   641	The Therac-25 was designed and marketed in the mid 1980s by a
+   642	Canadian firm, Atomic Energy of Canada Limited (AECL), as an
+   643	advanced medical technology. It featured complete software
+   644	control over all major functions (supported by a DEC PDP-11),
+   645	among other innovations. Previous machines included electro-
+   646	mechanical interlocks to raise and lower radiation shields.
+   647	Several thousand people were effectively treated with the Therac-
+   648	25 each year. However, between 1985 and 1987 there were six known
+   649	accidents in which several people died in the US. Other were
+   650	seriously maimed or injured [3].
+   651	
+   652	Both studies concur that there were subtle but important flaws in
+   653	the design of the Therac-25's software and hardware. AECL's
+   654	engineers tried to patch the existing hardware and (finally)
+   655	software when they learned of some of the mishaps. But they
+   656	treated each fix as the final repair.
+   657	
+   658	Both studies show how the continuing series of mishaps was
+   659	exacerbated by diverse organizational arrangements. Jacky claims
+   660	that pressures for speedy work by radiological technicians
+   661	coupled with an interface design that did not enhance important
+   662	error messages was one of many causes of the accidents. Leveson
+   663	and Turner differ in downplaying the working conditions of the
+   664	Therac-25's operators and emphasize the flawed social system for
+   665	communicating the seriousness of problems to Federal regulators
+   666	and other hospitals. Both studies observe that it is unlikely for
+   667	the best of companies to develop perfect error-free systems
+   668	without high quality feedback from users. Their recommendations
+   669	differ: Jacky discusses the licensing of system developers and
+   670	the regulation of computerized medical systems to improve minimal
+   671	standards of saftey. Leveson and Turner propose extensive
+   672	education and training of software engineers and more effective
+   673	communication between manufacturers and their customers.
+   674	
+   675	However, both studies indicate that an understanding of the
+   676	safety of computer systems must go beyond the laboratory and
+   677	extend into the organizational settings where it is used. In the
+   678	case of the Therac-25, it required understanding a complex web of
+   679	interorganizational relationships, as well as the technical
+   680	design and operation of the equipment. Nancy Leveson (1992)
+   681	points out that most major disasters technological disasters in
+   682	the last 20 years "involved serious organizational and management
+   683	deficiencies." Hughes, Randall and Shapiro (1992:119) observe
+   684	that British no civil collision in UK air space has been
+   685	attributed to air traffic control failures. But their Mediator
+   686	control system was failing regularly and had no backup during the
+   687	period that they studied it. They observe that the reliability of
+   688	the British air traffic control system resides in totality of the
+   689	relevant social and technical systems, rather than in a single
+   690	component.
+   691	
+   692	The need for this kind of organizational understanding is
+   693	unfortunately slighted in the CS academic world today. CTF
+   694	discusses only those aspects of computer system reliability which
+   695	are amenable to understanding through laboratory-like studies
+   696	(Hartmanis and Lin, 1992:110-111). But cases of safety critical
+   697	systems, like the Therac-25 and British Air Traffic Control,
+   698	indicate why some Computer Scientists must be willing to
+   699	undertake (and teach) organizational analysis.
+   700	
+   701	
+   702	Worldviews and Surprises about Computerization
+   703	
+   704	These few paragraphs barely sketch the highlights of a fertile
+   705	and significant body of research about computer systems in use.
+   706	Perhaps the most important simplification for traditional
+   707	computer scientists is to appreciate how people and their
+   708	organizations are situated in a social world and consequently
+   709	compute within a social world. People act in relationship to
+   710	others in various ways and concerns of belonging, status,
+   711	resources, and power are often central. The web of people's
+   712	relationships extend beyond various formally defined group and
+   713	organizational boundaries (Kling and Scacchi, 1982; Kling, 1987;
+   714	Kling, 1992). People construct their worlds, including the
+   715	meanings and uses of information technologies, through their
+   716	social interactions.
+   717	
+   718	This view is, of course, not new to social scientists. On the
+   719	other hand, there is no specific body of social theory which can
+   720	easily be specialized for "the case of computing," and swiftly
+   721	produce good theories for Organizational Informatics as trivial
+   722	deductions. The best research in Organizational Informatics draws
+   723	upon diverse theoretical and methodological approaches within the
+   724	social sciences with a strong effort to select those which best
+   725	explain diverse aspects of computerization.
+   726	
+   727	       ORGANIZATIONAL INFORMATICS WITHIN COMPUTER SCIENCE
+   728	
+   729	CTF places dual responsibilities on Computer Scientists. One
+   730	responsibility is to produce a significant body of applicable
+   731	research. The other responsibility is to educate a significant
+   732	fraction of CS students to be more effective in conceiving and
+   733	implementing systems that will enhance organizational
+   734	performance. It may be possible to organize research and
+   735	instruction so as to decouple these responsibilities. For
+   736	example, molecular biologists play only a small role in training
+   737	doctors. However, CS departments act like an integrated Medical
+   738	school and Biology department. They are the primary academic
+   739	locations for training degreed computing specialists, and they
+   740	conduct a diverse array of less applicable and more applicable
+   741	research. In practice, the research interests of CS faculty shape
+   742	the range of topics taught in CS departments, especially the 150
+   743	PhD granting departments. CS curricula mirror major areas of CS
+   744	research and the topics which CS faculty understand through their
+   745	own educations and subsequent research. As a consequence, CS
+   746	courses are likely to avoid important CS topics which appear a
+   747	bit foreign to the instructor.
+   748	
+   749	An interesting example of this coupling can be illustrated by
+   750	CTF, in a brief description of public-key encryption systems and
+   751	digital signatures (Hartmanis and Lin, 1992:27). In the simple
+   752	example, Bob and Alice can send messages reliably if each
+   753	maintains a secret key. Nothing is said about the social
+   754	complications of actually keeping keys secret. The practical
+   755	problems are similar to those of managing passwords, although
+   756	some operational details differ because the 100 digit keys may be
+   757	stored on media like magstripe cards rather than paper. In real
+   758	organizations, people lose or forget their password and can lose
+   759	the media which store their keys. Also, some passwords can be
+   760	shared by a group of with shifting membership, and the "secret
+   761	key" can readily become semi-public. The main point is that the
+   762	management of keys is a critical element of cryptographic
+   763	security in practice. But Computer Scientists are prone to teach
+   764	courses on cryptography as exercises in applied mathematics, such
+   765	as number theory and Galois theory, and to skirt the vexing
+   766	practical problems of making encryption a practical
+   767	organizational activity.
+   768	
+   769	Today, most of the 40,000 people who obtain BS and MS degrees in
+   770	CS each year in the U.S. have no opportunities for systematic
+   771	exposure to reliable knowledge about the best design strategies,
+   772	common uses, effective implementation, and assessments of value
+   773	of computing in a social world (Lewis, 1989). Yet a substantial
+   774	fraction of these students go on to work for organizations
+   775	attempting to produce or maintain systems that improve
+   776	organizational performance without a good conceptual basis for
+   777	their work. Consequently, many of them develop systems that
+   778	underperform in organizational terms even when they are
+   779	technically refined. They also recommend ineffective
+   780	implementation procedures and are sometimes even
+   781	counterproductive.
+   782	
+   783	One defensible alternative to my position is that CS departments
+   784	should not take on any form of organizational analysis. They
+   785	should aggressively take a role akin to Biology departments
+   786	rather than taking on any instructional or research roles like
+   787	Medical schools. To be sincere, this position requires a high
+   788	level of restraint by academic Computer Scientists. First and
+   789	foremost, they should cease from talking about the uses, value or
+   790	even problems of computerized systems that would be used in any
+   791	organizational setting. Research proposals would be mute about
+   792	any conceivable application of research results. Further, they
+   793	should make effective efforts to insure that anyone who employs
+   794	their graduates should be aware that they may have no special
+   795	skills in understanding organizational computing. It would take
+   796	an aggressive "truth in advertising" campaign to help make it
+   797	clear that Computer Scientists have no effective methods for
+   798	understanding computerization in the social world. Further,
+   799	Computer Scientists would forsake their commitments to subfields
+   800	like software engineering which tacitly deals with ways to
+   801	support teams of systems developers to work effectively (Curtis,
+   802	et. al. 1988). Computer Scientists, in this view, would remove
+   803	themselves from addressing organizational and human behavior, in
+   804	the same way that molecular biologists are removed from
+   805	professionally commenting on the practices of cardiologists and
+   806	obstetricians. CTF argues that this view would be self-defeating.
+   807	But it would be internally consistent and have a distinctive
+   808	integrity.
+   809	
+   810	In contrast, CS faculty are often reluctant to wholly embrace
+   811	Organizational Informatics. But some CS subfields, such as
+   812	software engineering, depend upon organizational analysis
+   813	(Curtis, et. al., 1988). Further, CS faculty do little to
+   814	advertise the distinctive limitations in the analytical skills of
+   815	our programs' graduates. Part of the dilemma develops because
+   816	many CS faculty are ambivalent about systematic studies of human
+   817	behavior. Applied mathematics and other modes of inquiry which
+   818	seem to yield concise, crisp and concrete results are often the
+   819	most cherished. As a consequence, those who conduct behaviorally
+   820	oriented research in CS departments are often inappropriately
+   821	marginalized. Their students and the discipline suffers as a
+   822	result.
+   823	
+   824	Between 1986 and 1989, the total number of BS and MS CS degrees
+   825	awarded annually in the US declined from about 50,000 to
+   826	approximately 40,000. The number of students majoring in CS
+   827	rapidly declined at a time when computerization was becoming
+   828	widespread in many fields. A significant fraction of the decline
+   829	can be attributed to many students finding CS programs insular
+   830	and indifferent to many exciting forms of computerization. The
+   831	decline of military R&D in the U.S. can amplify these trends or
+   832	stimulate a more cosmopolitan view in CS departments. The decline
+   833	in military R&D is shifting the job market for new CS graduates
+   834	towards a markedly more civilian orientation. This shift, along
+   835	with the trend towards computing distributed into diverse work
+   836	groups, is leading to more job opportunities for people with CS
+   837	education who know Organizational Informatics.
+   838	
+   839	The situation of CS departments has some parallels with
+   840	Statistics departments. Statistics are widely used and taught in
+   841	many academic disciplines. But Statistics departments have often
+   842	maintained a monkish isolation from "applications." Consequently,
+   843	the application of statistics thrives while Statistics
+   844	departments have few students and modest resources. Might the
+   845	status of Statistics indicate a future possibility for an insular
+   846	approach to CS?
+   847	
+   848	The best Organizational Informatics research in North America is
+   849	conducted by faculty in the Information Systems departments in
+   850	business schools and by scattered social scientists (cf. Boland
+   851	and Hirschheim, 1987; Galegher, Kraut and Egido, 1990; Cotterman
+   852	and Senn, 1992; Sproull and Kiesler, 1991). But Computer
+   853	Scientists cannot effectively delegate the research and teaching
+   854	of Organizational Informatics to business Schools or social
+   855	science departments.
+   856	
+   857	Like Computer Scientists, faculty in these other disciplines
+   858	prefer to focus on their own self-defined issues.  Computer
+   859	Scientists are much more likely to ask questions with attention
+   860	to fine grained technological nuances that influence designs. For
+   861	example, the professional discussions of computer risks have been
+   862	best developed through activities sponsored by the ACM's Special
+   863	Interest Group on Software (SIGSOFT). They are outside the
+   864	purview of business school faculty and, at best, only a few
+   865	social scientists are interested in them. Generally, technology
+   866	plays a minor role in social science theorizing. And when social
+   867	scientists study technologies, they see a world of possibilities:
+   868	energy technologies, transportation technologies, communication
+   869	technologies (including television), medicinal drugs and devices,
+   870	and so on. They see little reason to give computer-related
+   871	information technologies a privileged role within this
+   872	cornucopia. As a consequence, the few social scientists who  take
+   873	a keen interest in studying computerization are unfortunately
+   874	placed in marginal positions within their own disciplines. Often
+   875	they must link their studies to mainstream concerns as defined by
+   876	the tastemakers of their own fields, and the resulting
+   877	publications appear irrelevant to Computer Scientists.
+   878	
+   879	Further, faculty in these other disciplines are not organized to
+   880	effectively teach tens of  thousands of CS students, students who
+   881	are steeped in technology and usually very naive about
+   882	organizations, about systems development and use in
+   883	organizations. In North America there is no well developed
+   884	institutional arrangement for educating students who can
+   885	effectively take leadership roles in conceptualizing and
+   886	developing complex organizational computing projects (Lewis,
+   887	1989).
+   888	
+   889	CTF is permeated with interesting claims about the social value
+   890	of recent and emerging computer-based technologies. While many of
+   891	these observations should rest on an empirically grounded
+   892	scientific footing, Computer Scientists have deprived themselves
+   893	of access to such research. For example, the discussion of
+   894	systems risks in the ACM rests on a large and varied collection
+   895	of examples and anecdotes. But there is no significant research
+   896	program to help better understand the conditions under which
+   897	organizations are more likely to develop systems using the best
+   898	risk-reducing practices. There is an interesting body of
+   899	professional lore, but little scholarship to ground it (See
+   900	Appendix).
+   901	
+   902	Computer Scientists have virtually no scholarship to utilize in
+   903	understanding when high performance networks, like the National
+   904	Research and Education Network, will catalyze social value
+   905	proportional to their costs. Consequently, many of the "obvious"
+   906	claims about the value of various computing technologies that we
+   907	Computer Scientists make are more akin to the lore of home
+   908	remedies for curing illness. Some are valid, others are unfounded
+   909	speculation. More seriously, the theoretical bases for
+   910	recommending home medical remedies and new computer technologies
+   911	can not advance without having sound research programs.
+   912	
+   913	                         WHAT IS NEEDED
+   914	
+   915	CTF sets the stage for developing Organizational Informatics as a
+   916	strong subfield within Computer Science. CTF bases the expansion
+   917	of the discipline on a rich array of applications in which many
+   918	of the effective technologies must be conceived in relationship
+   919	to plausible uses in order provide attractive social value for
+   920	multi-billion dollar public investments.
+   921	
+   922	The CS community needs an institutionalized research capability
+   923	to produce a reliable body of knowledge about the usability and
+   924	value of computerized systems and the conditions under which
+   925	computer systems improve organizational performance. In Western
+   926	Europe there are research projects about Organizational
+   927	Informatics in a few Computer Science departments and research
+   928	funding through the EEC's Espirit program (Bubenko, 1992; Iivari,
+   929	1991; Kyng and Greenbaum, 1991). These new research and
+   930	instructional programs in Western Europe give Organizational
+   931	Informatics a significantly more effective place in CS education
+   932	and research than it now has in North America.
+   933	
+   934	The CS community in the U.S. has 30 years of experience in
+   935	institutionalizing research programs, especially through the
+   936	Defense Advanced Research Projects Agency and the National
+   937	Science Foundation (NSF). There are many approaches, including
+   938	establishing national centers, supporting individual investigator
+   939	research grants, supporting short institutes to help train new
+   940	investigators and supporting research workshops for ongoing
+   941	research. All such programs aim to develop and sustain research
+   942	fields with a combination of direct research funds, the education
+   943	of future researchers, and the development of research
+   944	infrastructure. They are all multimillion dollar efforts. Today,
+   945	NSF devotes about $125K annually to Organizational Informatics as
+   946	part of the Information Technology in Organizations program. This
+   947	start is far short of the level of funding required to develop
+   948	this field within CS.
+   949	
+   950	The North American CS curricula must also include opportunities
+   951	for students to learn the most reliable knowledge about the
+   952	social dimensions of systems development and use (Denning, 1992).
+   953	These opportunities, formed as courses, can provide varied levels
+   954	of sophistication. The most elementary courses introduce students
+   955	to some of the key topics in Organizational Informatics and the
+   956	limitations of Systems Rationalism as an organizing frame (for
+   957	example, Dunlop and Kling, 1991a). More advanced courses focus on
+   958	specific topics, such as those I have listed above. They teach
+   959	about substantive problems and theoretical approaches for
+   960	analyzing them. While many of these approaches are anchored in
+   961	the sociological theory of organizations, CS students usually
+   962	won't grasp the importance of the theories without numerous
+   963	computing examples to work with [4]. They also have trouble
+   964	grasping the character of computing in organizations without
+   965	guided opportunities for observing and analyzing computerization
+   966	in practice. Consequently, some courses should offer
+   967	opportunities for studying issues of computerization in actual
+   968	organizations.
+   969	
+   970	Fortunately, a few CS departments offer some courses in
+   971	Organizational Informatics. In addition, some CS faculty who
+   972	research and teach about human behavior in areas like Human-
+   973	Computer Interaction and Software Engineering can help expand the
+   974	range of research and instruction. Curricula would vary, but they
+   975	should include diverse courses for students who seek basic
+   976	exposure to Organizational Informatics and those seek more
+   977	thorough instruction. Unfortunately, only a fraction of the CS
+   978	departments in the US. have faculty who study and teach about
+   979	computing and human behavior.
+   980	
+   981	While the study of Organizational Informatics builds upon both
+   982	the traditional technological foundations of CS and the social
+   983	sciences, the social sciences at most universities will not
+   984	develop it as an effective foundational topic for CS. On specific
+   985	campuses, CS faculty may be able to develop good instructional
+   986	programs along with colleagues in social sciences or Schools of
+   987	Management.
+   988	
+   989	But delegating this inquiry to some other discipline does not
+   990	provide a national scale solution for CS. Other disciplines will
+   991	not do our important work for us. Mathematics departments may be
+   992	willing to teach graph theory for CS students, but the analysis
+   993	of algorithms would be a much weaker field if it could only be
+   994	carried out within Mathematics Departments. For similar reasons,
+   995	it is time for academic Computer Science to embrace
+   996	Organizational Informatics as a key area of research and
+   997	instruction.
+   998	
+   999	
+  1000	
+  1001	
+  1002	
+  1003	
+  1004	
+  1005	
+  1006	
+  1007	
+  1008	                              NOTES
+  1009	
+  1010	[1] See Dunlop and Kling, 1991a for an accessible introduction to
+  1011	these debates. Economic statistics about national level
+  1012	productivity are inexact, and sometimes weak. Baily and Gordon
+  1013	(1988) examined the extent to which measurement problems account
+  1014	for the difficulties of seeing the positive computerization show
+  1015	up in the US national productivity statistics. They concluded
+  1016	that measurements were inexact, and very poor in some sectors
+  1017	like banking, measurement errors were not the primary cause of
+  1018	difficulties.
+  1019	
+  1020	[2] Organizational Informatics is a new term, and I have found
+  1021	that some people instantly like it while others are put off. I've
+  1022	experimented with alternative labels, like Organizational
+  1023	Computing, which has also resulted in strong and mixed reactions.
+  1024	Computing is a more common term than Informatics, but it's too
+  1025	narrow for some researchers. Informatics also can connote
+  1026	"information," which is an important part of this field.
+  1027	Sociological Computer Science would have the virtues of being a
+  1028	parallel construction of Mathematical Computer Science, but
+  1029	doesn't connote information either. I have not yet found a short
+  1030	distinctive label which characterizes the field and whose
+  1031	connotations are rapidly grasped by both outsiders and insiders.
+  1032	
+  1033	[3] Jacky's early study was based on published reports, while
+  1034	Leveson and Turner's more thorough study was based upon a
+  1035	significant body of original documents and interviews with some
+  1036	participants.
+  1037	
+  1038	[4]  One hears similar concerns about teaching mathematics to CS
+  1039	students. CS students are much more motivated to learn graph
+  1040	theory, for example, when they learn those aspects which best
+  1041	illuminate issues of computation and when their teaching includes
+  1042	some good computing examples.
+  1043	                            REFERENCES
+  1044	
+  1045	Baily, Martin Neal and Robert J. Gordon. 1988. "The Productivity
+  1046	     Slowdown, Measurement Issues, and the Explosion of Computer
+  1047	     Power." Brookings Papers on Economic Activity 2:347-431.
+  1048	Bentley, Richard, Tom Rodden, Peter Sawyer, Ian Sommerville, John
+  1049	     Hughes, David Randall and Dan Shapiro.  1992.
+  1050	     "Ethnographically Informed Systems Design for Air Traffic
+  1051	     Control." Proc. Conference on Computer-Supported Cooperative
+  1052	     Work, Jon Turner and Robert Kraut (ed.) New York, ACM Press.
+  1053	Boland, Richard and Rudy Hirschhiem (Ed). 1987.  Critical Issues
+  1054	     in Information Systems, New York: John-Wiley.
+  1055	Bullen, Christine and John Bennett. 1991.  Groupware in Practice:
+  1056	     An Interpretation of Work Experience" in Dunlop and Kling
+  1057	     1991b.
+  1058	Bubenko, Janis. 1992. "On the Evolution of Information Systems
+  1059	     Modeling: A Scandinavian Perspective." in Lyytinen and
+  1060	     Puuronen, 1992.
+  1061	Cotterman, William and James Senn (Eds). 1992. Challenges and
+  1062	     Strategies for Research in Systems Development. New York:
+  1063	     John Wiley.
+  1064	Curtis, Bill, Herb Krasner and Niel Iscoe.  1988. "A Field Study
+  1065	     of the Software Design Process for Large Systems,"
+  1066	     Communications. of the ACM. 31(11):1268-1287.
+  1067	Denning, Peter. 1991. "Computing, Applications, and Computational
+  1068	     Science." Communications of the ACM. (October)
+  1069	     34(10):129-131.
+  1070	Denning, Peter. 1992. "Educating a New Engineer" Communications
+  1071	     of the ACM. (December) 35(12):83-97
+  1072	Dunlop, Charles  and Rob Kling, 1991a. "Introduction to the
+  1073	     Economic and Organizational Dimensions of Computerization."
+  1074	     in Dunlop and Kling, 1991b.
+  1075	Dunlop, Charles and Rob Kling (Ed). 1991b. Computerization and
+  1076	     Controversy: Value Conflicts and Social Choices. Boston:
+  1077	     Academic Press.
+  1078	Ehn, Pelle. 1991. "The Art and Science of Designing Computer
+  1079	     Artifacts." in Dunlop and Kling, 1991.
+  1080	Fish, Robert S., Robert E. Kraut, Robert W. Root, and Ronald E.
+  1081	     Rice. "Video as a Technology for Informed Communication."
+  1082	     Communications of the ACM,36(1)(January 1993):48-61.
+  1083	Galegher, Jolene, Robert Kraut, and Carmen Egido (Ed.) 1990.
+  1084	     Intellectual Teamwork: Social and Intellectual Foundations
+  1085	     of Cooperative Work.  Hillsdale, NJ: Lawrence Erlbaum.
+  1086	Greif, Irene. ed. 1988. Computer Supported Cooperative Work: A
+  1087	     Book of Readings. San Mateo, Ca: Morgan Kaufman.
+  1088	Grudin, Jonathan. 1989. "Why Groupware Applications Fail:
+  1089	     Problems in Design and Evaluation." Office: Technology and
+  1090	     People. 4(3):245-264.
+  1091	Hartmanis, Juris and Herbert Lin (Eds). 1992. Computing the
+  1092	     Future: A Broader Agenda for Computer Science and
+  1093	     Engineering.  Washington, DC. National Academy Press.
+  1094	     [Briefly summarized in Communications of the ACM,35(11)
+  1095	     November 1992]
+  1096	Hewitt, Carl. 1986. "Offices are Open Systems" ACM Transactions
+  1097	     on Office Information Systems. 4(3)(July):271-287.
+  1098	Hughes, John A., David Randall, and Dan Shapiro. 1992. "Faltering
+  1099	     from Ethnography to Design." Proc. Conference on Computer-
+  1100	     Supported Cooperative Work, Jon Turner and Robert Kraut
+  1101	     (ed.) New York, ACM Press.
+  1102	Iivari, J. 1991."A Paradigmatic Analysis of Contemporary Schools
+  1103	     of IS Development." European J. Information Systems
+  1104	     1(4)(Dec): 249-272.
+  1105	Jacky, Jonathan. 1991. "Safety-Critical Computing: Hazards,
+  1106	     Practices, Standards, and Regulation" in Dunlop and Kling
+  1107	     1991b.
+  1108	Jarvinen, Pertti. 1992. "On Research into the Individual and
+  1109	     Computing Systems," in Lyytinen and Puuronen, 1992.
+  1110	King, John L. and Kenneth L. Kraemer. 1981. "Cost as a Social
+  1111	     Impact of Telecommunications and Other Information
+  1112	     Technologies." In Mitchell Moss (Ed.) Telecommunications and
+  1113	     Productivity, New York: Addison-Wesley.
+  1114	Kling, Rob. 1987. "Defining the Boundaries of Computing Across
+  1115	     Complex Organizations." Critical Issues in Information
+  1116	     Systems. edited by Richard Boland and Rudy Hirschheim.
+  1117	     pp:307-362.  London: John Wiley.
+  1118	Kling, Rob. 1992. "Behind the Terminal: The Critical Role of
+  1119	     Computing Infrastructure In Effective Information Systems'
+  1120	     Development and Use." Chapter 10 in Challenges and
+  1121	     Strategies for Research in Systems Development. edited by
+  1122	     William Cotterman and James Senn. Pp. 365-413. New York:
+  1123	     John Wiley.
+  1124	Kling, Rob. 1993."Computing for Our Future in a Social World"
+  1125	     Communications of the ACM, 36(2)(February):15-17.
+  1126	Kling, Rob  and Charles Dunlop. 1993. "Controversies About
+  1127	     Computerization and the Character of White Collar Worklife."
+  1128	     The Information Society. 9(1) (Jan-Feb):1-29.
+  1129	Kling, Rob and Lisa Covi. 1993. Review of Connections by Lee
+  1130	     Sproull and Sara Kiesler. The Information Society, 9(2)
+  1131	     (Mar-June).
+  1132	Kling, Rob, Isaac Scherson, and Jonathan Allen. 1992. "Massively
+  1133	     Parallel Computing and Information Capitalism" in A New Era
+  1134	     of Computing. W. Daniel Hillis and James Bailey  (Ed.), pp:
+  1135	     191-241. Cambrdige, Ma: The MIT Press.
+  1136	Kling, Rob and Walt Scacchi. 1982. "The Web of Computing: Com-
+  1137	     puting Technology as Social Organization", Advances in
+  1138	     Computers. Vol. 21, Academic Press: New York.
+  1139	Kraemer, Kenneth .L., Dickhoven, Siegfried, Fallows-Tierney,
+  1140	     Susan, and King, John L. 1985.  Datawars: The Politics of
+  1141	     Modeling in Federal Policymaking.  New York:  Columbia
+  1142	     University Press.
+  1143	Kyng, Morton and Joan Greenbaum. 1991. Design at Work:
+  1144	     Cooperative Work of Computer Systems. Hillsdale, NJ.:
+  1145	     Lawrence Erlbaum.
+  1146	Ladner, Sharyn and Hope Tillman. 1992. "How Special Librarians
+  1147	     Really Use the Internet: Summary of Findings and
+  1148	     Implications for  the Library of the Future" Canadian
+  1149	     Library Journal, 49(3), 211-216.
+  1150	Leveson, Nancy G. 1992. "High Pressure Steam Engines and Computer
+  1151	     Software." Proc. International Conference on Software
+  1152	     Engineering, Melbourne, Australia. (May).
+  1153	Leveson, Nancy G. and Clark S. Turner. 1993. "An Investigation of
+  1154	     the Therac-25 Accidents." Computer July. (Published in 1992
+  1155	     as Technical Report #92-108. Department of Information and
+  1156	     Computer Science, University of California, Irvine.)
+  1157	Lewis, Philip M. 1989. "Information Systems as an Engineering
+  1158	     Discipline."  Communications of the ACM
+  1159	     32(9)(Sept):1045-1047.
+  1160	Lucas, Henry C. 1981. Implementation : the Key to Successful
+  1161	     Information Systems. New York: Columbia University Press.
+  1162	Lyytinen, Kalle and Seppo Puuronen (Ed.) 1992. Computing in the
+  1163	     Past, Present and Future: Issues and approaches in honor of
+  1164	     the 25th anniversary of the Department of Computer Science
+  1165	     and Information Systems. Jyvaskyla Finland, Dept. of CS and
+  1166	     IS, University of Jyvaskyla.
+  1167	Orlikowski, Wanda. 1992. "Learning from Notes: Organizational
+  1168	     Issues in Groupware Implementation." Proc. Conference on
+  1169	     Computer-Supported Cooperative Work, Jon Turner and Robert
+  1170	     Kraut (Ed.) New York, ACM Press.
+  1171	Poltrock, S.E. and Grudin, J., in press.  Organizational
+  1172	     Obstacles to Interface Design and Development: Two
+  1173	     Participant Observer Studies.  ACM Transactions on Computer
+  1174	     and Human Interaction.
+  1175	Sarmanto, Auvo.  1992. "Can Research and Education in the Field
+  1176	     of Information Sciences Foresee the Future of Development?"
+  1177	     in Lyytinen and Puuronen, 1992.
+  1178	Sproull, Lee and Sara Kiesler. 1991. Connections: New Ways of
+  1179	     Working in the Networked Organization. Cambridge, Mass.: MIT
+  1180	     Press.
+  1181	Suchman, Lucy. 1983. "Office Procedurs as Practical Ation: Models
+  1182	     of Work and System Design."  ACM Transactions on Office
+  1183	     Information Systems. 1(4)(October):320-328.
+  1184	Winograd, Terry and Fernando Flores. 1986. Understanding
+  1185	     Computers and Cognition. Norwood, NJ: Ablex Publishing.
+  1186	
+  1187	
+  1188	
+  1189	                        ACKNOWLEDGEMENTS
+  1190	
+  1191	This paper builds on ideas which I've developed over the last
+  1192	decade. But they have been deepened by some recent events, such
+  1193	as the CTF report. They were also sharpened through a lecture and
+  1194	followon discussion with colleagues at the University of Toronto,
+  1195	including Ron Baeker, Andy Clement, Kelley Gottlieb, and Marilyn
+  1196	Mantei. Rick Weingarten suggested that I write a brief position
+  1197	paper reflecting those ideas. At key points, Peter Denning and
+  1198	Peter Neumann provided helpful encouragement and sage advice. I
+  1199	also appreciate the efforts of numerous other friends and
+  1200	colleagues to help strengthen this paper through their comments
+  1201	and critical assistance. The paper is immeasurably stronger
+  1202	because of the prompt questions and suggestions that I received
+  1203	in response to an evolving manuscript from the following people:
+  1204	Mark Ackerman, Jonathan P. Allen, Bob Anderson, Lisa Covi, Brad
+  1205	Cox, Gordon Davis, Phillip Fites, Simson Garfinkel, Les Gasser,
+  1206	Sy Goodman, Beki Grinter, Jonathan Grudin, Pertti Jarvinen, John
+  1207	King, Heinz Klein, Trond Knudsen, Kenneth Kraemer, Sharyn Ladner,
+  1208	Nancy Leveson, Lars Matthiesen, Colin Potts, Paul Resnick, Larry
+  1209	Rosenberg, Tim Standish, John Tillquist, Carson Woo and Bill
+  1210	Wulf.
+  1211	                             APPENDIX
+  1212	
+  1213	            Published Materials about Computer Risks
+  1214	
+  1215	Unfortunately, there is no single good book or comprehensive
+  1216	review article about the diverse risks of computerized systems
+  1217	to people and organizations, and ways to mitigate them. The
+  1218	Internet board, comp.risks, is the richest archive of diverse
+  1219	episodes and diverse discussions of their causes and cures. While
+  1220	its moderator, Peter Neumann does a superb job of  organizing
+  1221	discussions of specific topics each year and also creates
+  1222	periodic indices, there is no simple way to sift through the
+  1223	megabytes of accumulated comp.risks files.
+  1224	
+  1225	Computerization and  Controversy edited by Charles Dunlop and Rob
+  1226	Kling (1991) includes two major sections on "security and
+  1227	reliability" and "privacy and social control" which identify many
+  1228	key debates and reprint some key articles and book excerpts which
+  1229	reflect different positions.  Another major source is  a series
+  1230	of articles, "Inside Risks, which Peter Neumann edits for
+  1231	Communications of the ACM.
+  1232	
+  1233	This is a list of this series of articles, to date:
+  1234	(All articles are by Peter Neumann unless otherwise indicated.)
+  1235	
+  1236	Jul 90.  1. Some Reflections on a Telephone Switching Problem
+  1237	Aug 90.  2. Insecurity About Security?
+  1238	Sep 90.  3. A Few Old Coincidences
+  1239	Oct 90.  4. Ghosts, Mysteries, and Risks of Uncertainty
+  1240	Nov 90.  5. Risks in computerized elections
+  1241	Dec 90.  6. Computerized medical devices, Jon Jacky
+  1242	Jan 91.  7. The Clock Grows at Midnight
+  1243	Feb 91.  8. Certifying Programmers and Programs
+  1244	Mar 91.  9. Putting on Your Best Interface
+  1245	Apr 91. 10. Interpreting (Mis)information
+  1246	May 91. 11. Expecting the Unexpected Mayday!
+  1247	Jun 91. 12. The Risks With Risk Analysis, Robert N. Charette
+  1248	Jul 91. 13. Computers, Ethics, and Values
+  1249	Aug 91. 14.      Mixed Signals About Social Responsibility, Ronni
+  1250	                    Rosenberg
+  1251	Sep 91. 15. The Not-So-Accidental Holist
+  1252	Oct 91. 16.    A National Debate on Encryption Exportability,
+  1253	               Clark Weissman
+  1254	Nov 91. 17. The Human Element
+  1255	Dec 91. 18. Collaborative Efforts
+  1256	Jan 92. 19. What's in a Name?
+  1257	Feb 92. 20.    Political Activity and International Computer
+  1258	               Networks, Sy Goodman
+  1259	Mar 92. 21. Inside ``Risks of `Risks' ''
+  1260	Apr 92. 22. Privacy Protection, Marc Rotenberg
+  1261	May 92. 23. System Survivability
+  1262	Jun 92. 24.    Leaps and Bounds (Leap-year and distributed system
+  1263	                problems)
+  1264	Jul 92. 25. Aggravation by Computer: Life, Death, and Taxes,
+  1265	Aug 92. 26. Fraud by Computer
+  1266	Sep 92. 27. Accidental Financial Losses
+  1267	Oct 92. 28. Where to Place Trust
+  1268	Nov 92. 29. Voting-Machine Risks, Rebecca Mercuri
+  1269	Dec 92. 30. Avoiding Weak Links
+  1270	Jan 93. 31. Risks Considered Global(ly)
+  1271	Feb 93. 32. Is Dependability Attainable?
+  1272	Mar 93. 33. Risks of Technology

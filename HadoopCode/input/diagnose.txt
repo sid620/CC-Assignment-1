@@ -1,0 +1,416 @@
+     1	              An Introduction to Troubleshooting Your IBM PC
+     2	                                      by
+     3	                                Jerry Schneider
+     4	                             Capital PC User Group
+     5	 
+     6	The IBM PC family of computers (PC, Portable, XT and AT) comes
+     7	 complete with built-in diagnostic procedures to assist a user in
+     8	 identifying many problems that may occur with any of the computer's
+     9	 components.  These diagnostic procedures include:
+    10	 
+    11	     1.  A Power-On Self Test (POST) that is performed whenever a PC is
+    12	          powered up or turned on.
+    13	 
+    14	     2.  General diagnostics testing that the user can perform using
+    15	          the Diagnostics Diskette and accompanying Problem
+    16	          Determination Procedures (PDPs) outlined in the Guide to
+    17	          Operations manual for each system.
+    18	 
+    19	     3.  Optional advanced diagnostics testing that the user can
+    20	          perform using the Advanced Diagnostics Diskette and procedures
+    21	          provided in the Hardware, Maintenance and Service manual.
+    22	 
+    23	
+    24	Power-On Self Test (POST)
+    25	 
+    26	Whenever you start up your computer, a series of tests are
+    27	 automatically performed checking various components in your system.
+    28	 This Power-On Self Test (POST) process provides error or warning
+    29	 messages whenever a faulty component is encountered.  Two types of
+    30	 messages are provided:  audio codes and display screen messages or
+    31	 codes.
+    32	 
+    33	Audio codes consist of variations of sounds or beeps that identify the
+    34	 faulty component.  If your computer is functioning normally, you will
+    35	 hear one short beep when the system is started up.  If a problem is
+    36	 detected, a different series of audio codes will be sounded.  These
+    37	 audio codes and corresponding problem areas are:
+    38	 
+    39	
+    40	     Audio Code                           Problem Area
+    41	 
+    42	  No beep, continuous beep, or            Power Supply
+    43	    repeating short beeps
+    44	 
+    45	  1 long beep and 1 short beep            System Board
+    46	 
+    47	  l long beep and 2 short beeps, or       Monitor adapter card and/or
+    48	    1 short beep and blank or               monitor cable and/or display
+    49	    incorrect display
+    50	 
+    51	  1 short beep and either the             Drive and/or drive adapter
+    52	    red drive LED staying on or             card
+    53	    Personal Computer BASIC statement
+    54	 
+    55	On the XT and AT, the POST procedures also display system memory
+    56	 as it is read.  The last number displayed (640KB, for example) should
+    57	 be the total amount of memory in your system, including system board
+    58	 memory and any expansion memory.
+    59	 
+    60	During the POST procedures, error messages or numeric codes will be
+    61	 displayed whenever a problem is detected.  In most cases, the error
+    62	 code will be a three or four digit number that, when checked against
+    63	 the list provided in Table 1, will help identify the malfunctioning
+    64	 component.
+    65	 
+    66	
+    67	General Diagnostics Testing
+    68	 
+    69	Each IBM computer comes with a Guide to Operations (GTO) manual; this
+    70	 is the manual in the reddish-purple binder.  The GTO includes a
+    71	 Diagnostic diskette to assist you in identifying problems that your
+    72	 computer may be having.
+    73	 
+    74	The Diagnostics diskette and corresponding Problem Determination
+    75	 Procedures (PDPs) section of the GTO manual provide step-by-step
+    76	 instructions to test the various parts of your computer system,
+    77	 including the system unit with installed options, expansion unit,
+    78	 keyboard, display, and printer.  These tests should be performed when
+    79	 you first install your system, at periodic times during the lifetime of
+    80	 the system for precautionary purposes, and, of course, whenever errant
+    81	 behavior is detected or suspected.
+    82	 
+    83	To run the diagnostics tests, place a backup copy of the Diagnostics
+    84	 diskette in your A: drive and turn on your system or, if the system is
+    85	 already on, press the CTRL, ALT, and DEL keys simultaneously to reboot
+    86	 the system.  The main diagnostics menu will be displayed with options
+    87	 similar to the following:
+    88	 
+    89	          0 - SYSTEM CHECKOUT
+    90	           1 - FORMAT DISKETTE
+    91	           2 - COPY DISKETTE
+    92	           3 - PREPARE SYSTEM FOR MOVING
+    93	           4 - SETUP [AT only]
+    94	           9 - END DIAGNOSTICS
+    95	 
+    96	Options 0, 1, and 2 are part of the diagnostics procedures.  Option 3,
+    97	 "Prepare System For Moving", is used to "park" or secure the heads on a
+    98	 hard disk so that the system unit can be safely moved without damaging
+    99	 the disk or its contents; Option 4 is used with the AT to identify
+   100	 installed options when you first set up your system.
+   101	 
+   102	Options 1 and 2 should be used whenever you want to check the operation
+   103	 of your floppy diskette drives or to prepare a diskette for use,
+   104	 without having to reload DOS, when performing the diagnostics
+   105	 procedures.  For general testing, however, you should select Option 0,
+   106	 "System Checkout".  When this option is selected, the system displays
+   107	 a list of installed options for verification and then provides a
+   108	 secondary menu of choices, similar to the following:
+   109	 
+   110	          0 - RUN TESTS ONE TIME
+   111	           1 - RUN TESTS MULTIPLE TIMES
+   112	           2 - LOG UTILITIES
+   113	           3 - END SYSTEM CHECKOUT
+   114	 
+   115	Both Option 0 and 1 walk you through a series of tests that check each
+   116	 component in the system.  During system testing, a three- or four-
+   117	 digit error code will be generated for each component tested.  If no
+   118	 problem is found, the last two digits will be 00, for example 300, 900,
+   119	 or 1700.  Table 1 is a listing of many of the error codes that may be
+   120	 generated during diagnostics testing.
+   121	 
+   122	If an error is detected when running Option 0, it is often advisable to
+   123	 select the Log Utilities Option (2) to list any errors to disk or
+   124	 printer, and then select Option 1, Run Tests Multiple Times.  This will
+   125	 help determine whether the problem is consistent or intermittent.
+   126	 
+   127	While the GTO diagnostics do an excellent job at identifying specific
+   128	 problem areas or problem components, they provide limited assistance to
+   129	 correct the source of the errors.  In fact, the information most
+   130	 frequently provided is to "Have your system unit [or problem device]
+   131	 serviced".
+   132	 
+   133	
+   134	Advanced Diagnostics Testing
+   135	 
+   136	If you are the more adventuresome type, you can purchase the IBM
+   137	 Hardware Maintenance and Service (HMS) manual for your particular unit
+   138	 (prices are around $155).  While the Guide to Operations manual is only
+   139	 good for identifying a problem component, the HMS manual provides
+   140	 information to both isolate and repair any failure of a "Field
+   141	 Replaceable Unit (FRU)", that is, any part or component that has
+   142	 interchangeable replacement parts that are stocked by IBM or the
+   143	 Original Equipment Manufacturer (OEM).
+   144	 
+   145	The HMS includes an Advanced Diagnostics diskette and accompanying
+   146	 Problem Isolation Codes (PICs) instructions to isolate and identify
+   147	 problem components.  To run the Advanced Diagnostics tests, follow the
+   148	 same procedures detailed in the previous section for General
+   149	 Diagnostics testing.
+   150	 
+   151	The tests performed by the Advanced Diagnostics diskette are far more
+   152	 detailed and precise than those of the general Diagnostics diskette in
+   153	 the GTO.  In addition to identifying the problem component, the
+   154	 Advanced Diagnostics further attempt to identify the specific part of
+   155	 the device that is malfunctioning.
+   156	 
+   157	Once a problem is identified, the HMS provides detailed instructions to
+   158	 perform adjustments, preventive maintenance, removal and replacement of
+   159	 the effected part.  To this end, comprehensive hardware and design
+   160	 information is available, including parts lists that specify
+   161	 replacement parts numbers, and internal design specifications.
+   162	 
+   163	
+   164	
+   165	
+   166	
+   167	
+   168	Table 1.     Listing of IBM PC Diagnostic Error Codes
+   169	 
+   170	All personal computer error codes for the Power-On Self Test, general
+   171	 Diagnostics, and Advanced Diagnostics are represented with the device
+   172	 number followed by two digits other than 00.  The device number plus 00
+   173	 indicates successful completion of the test.  This listing is a
+   174	 compilation from various sources, including USENET's Info-IBMPC Digest,
+   175	 IBM Technical Reference Manuals, and IBM Hardware, Maintenance and
+   176	 Service manuals.
+   177	 
+   178	Code   Description
+   179	 
+   180	 01x   Undetermined problem errors.
+   181	  02x   Power supply errors.
+   182	  1xx   System board errors.
+   183	    101   System board error - Interrupt failure.
+   184	    102   System board error - Timer failure.
+   185	    103   System board error - Timer interrupt failure.
+   186	    104   System board error - Protected mode failure.
+   187	    105   System board error - Last 8042 command not accepted.
+   188	    106   System board error - Converting logic test.
+   189	    107   System board error - Hot NMI test.
+   190	    108   System board error - Timer bus test.
+   191	    109   Direct memory access test error.
+   192	    121   Unexpected hardware interrupts occurred.
+   193	    131   Cassette wrap test failed.
+   194	    152
+   195	    161   System Options Error-(Run SETUP) [Battery failure].
+   196	    162   System options not set correctly-(Run SETUP).
+   197	    163   Time and date not set-(Run SETUP).
+   198	    164   Memory size error-(Run SETUP).
+   199	    199   User indicated configuration not correct.
+   200	  2xx   Memory (RAM) errors.
+   201	    201   Memory test failed.
+   202	    202   Memory address error.
+   203	    203   Memory address error.
+   204	  3xx   Keyboard errors.
+   205	    301   Keyboard did not respond to software reset correctly or a
+   206	          stuck key failure was detected.  If a stuck key was detected,
+   207	          the scan code for the key is displayed in hexadecimal.  For
+   208	          example, the error code 49 301 indicates that key 73, the PgUp
+   209	          key has failed (49 Hex = 73 decimal).
+   210	    302   User indicated error from the keyboard test or AT system unit
+   211	          keylock is locked.
+   212	    303   Keyboard or system unit error.
+   213	    304   Keyboard or system unit error; CMOS does not match system.
+   214	  4xx   Monochrome monitor errors.
+   215	    401   Monochrome memory test, horizontal sync frequency test, or
+   216	          video test failed.
+   217	    408   User indicated display attributes failure.
+   218	    416   User indicated character set failure.
+   219	    424   User indicated 80X25 mode failure.
+   220	    432   Parallel port test failed (monochrome adapter).
+   221	  5xx   Color monitor errors.
+   222	    501   Color memory test failed, horizontal sync frequency
+   223	          test, or video test failed.
+   224	    508   User indicated display attribute failure.
+   225	    516   User indicated character set failure.
+   226	    524   User indicated 80X25 mode failure.
+   227	    532   User indicated 40X25 mode failure.
+   228	    540   User indicated 320X200 graphics mode failure.
+   229	    548   User indicated 640X200 graphics mode failure.
+   230	  6xx   Diskette drive errors.
+   231	    601   Diskette power on diagnostics test failed.
+   232	    602   Diskette test failed; boot record is not valid.
+   233	    606   Diskette verify function failed.
+   234	    607   Write protected diskette.
+   235	    608   Bad command diskette status returned.
+   236	    610   Diskette initialization failed.
+   237	    611   Timeout - diskette status returned.
+   238	    612   Bad NEC - diskette status returned.
+   239	    613   Bad DMA - diskette status returned.
+   240	    621   Bad seek - diskette status returned.
+   241	    622   Bad CRC - diskette status returned.
+   242	    623   Record not found - diskette status returned.
+   243	    624   Bad address mark - diskette status returned.
+   244	    625   Bad NEC seek - diskette status returned.
+   245	    626   Diskette data compare error.
+   246	  7xx   8087 or 80287 math coprocessor errors.
+   247	  9xx   Parallel printer adapter errors.
+   248	    901   Parallel printer adapter test failed.
+   249	 10xx   Reserved for parallel printer adapter.
+   250	 11xx   Asynchronous communications adapter errors.
+   251	   1101   Asynchronous communications adapter test failed.
+   252	 12xx   Alternate asynchronous communications adapter errors.
+   253	   1201   Alternate asynchronous communications adapter test failed.
+   254	 13xx   Game control adapter errors.
+   255	   1301   Game control adapter test failed.
+   256	   1302   Joystick test failed.
+   257	 14xx   Printer errors.
+   258	   1401   Printer test failed.
+   259	   1404   Matrix printer failed.
+   260	 15xx   Synchronous data link control (SDLC) communications adapter
+   261	        errors.
+   262	   1510   8255 port B failure.
+   263	   1511   8255 port A failure.
+   264	   1512   8255 port C failure.
+   265	   1513   8253 timer 1 did not reach terminal count.
+   266	   1514   8253 timer 1 stuck on.
+   267	   1515   8253 timer 0 did not reach terminal count.
+   268	   1516   8253 timer 0 stuck on.
+   269	   1517   8253 timer 2 did not reach terminal count.
+   270	   1518   8253 timer 2 stuck on.
+   271	   1519   8273 port B error.
+   272	   1520   8273 port A error.
+   273	   1521   8273 command/read timeout.
+   274	   1522   Interrupt level 4 failure.
+   275	   1523   Ring Indicate stuck on.
+   276	   1524   Receive clock stuck on.
+   277	   1525   Transmit clock stuck on.
+   278	   1526   Test indicate stuck on.
+   279	   1527   Ring indicate not on.
+   280	   1528   Receive clock not on.
+   281	   1529   Transmit clock not on.
+   282	   1530   Test indicate not on.
+   283	   1531   Data set ready not on.
+   284	   1532   Carrier detect not on.
+   285	   1533   Clear to send not on.
+   286	   1534   Data set ready stuck on.
+   287	   1536   Clear to send stuck on.
+   288	   1537   Level 3 interrupt failure.
+   289	   1538   Receive interrupt results error.
+   290	   1539   Wrap data miscompare.
+   291	   1540   DMA channel 1 error.
+   292	   1541   DMA channel 1 error.
+   293	   1542   Error in 8273 error checking or status reporting.
+   294	   1547   Stray interrupt level 4.
+   295	   1548   Stray interrupt level 3.
+   296	   1549   Interrupt presentation sequence timeout.
+   297	 16xx   Display emulation errors (327x, 5520, 525x).
+   298	 17xx   Fixed disk errors.
+   299	   1701   Fixed disk POST error.
+   300	   1702   Fixed disk adapter error.
+   301	   1703   Fixed disk drive error.
+   302	   1704   Fixed disk adapter or drive error.
+   303	   1780   Fixed disk 0 failure.
+   304	   1781   Fixed disk 1 failure.
+   305	   1782   Fixed disk controller failure.
+   306	   1790   Fixed disk 0 error.
+   307	   1791   Fixed disk 1 error.
+   308	 18xx   I/O expansion unit errors.
+   309	   1801   I/O expansion unit POST error.
+   310	   1810   Enable/Disable failure.
+   311	   1811   Extender card warp test failed (disabled).
+   312	   1812   High order address lines failure (disabled).
+   313	   1813   Wait state failure (disabled).
+   314	   1814   Enable/Disable could not be set on.
+   315	   1815   Wait state failure (disabled).
+   316	   1816   Extender card warp test failed (enabled).
+   317	   1817   High order address lines failure (enabled).
+   318	   1818   Disable not functioning.
+   319	   1819   Wait request switch not set correctly.
+   320	   1820   Receiver card wrap test failure.
+   321	   1821   Receiver high order address lines failure.
+   322	 19xx   3270 PC attachment card errors.
+   323	 20xx   Binary synchronous communications (BSC) adapter errors.
+   324	   2010   8255 port A failure.
+   325	   2011   8255 port B failure.
+   326	   2012   8255 port C failure.
+   327	   2013   8253 timer 1 did not reach terminal count.
+   328	   2014   8253 timer 1 stuck on.
+   329	   2016   8253 timer 2 did not reach terminal count or timer 2 stuck on.
+   330	   2017   8251 Data set ready failed to come on.
+   331	   2018   8251 Clear to send not sensed.
+   332	   2019   8251 Data set ready stuck on.
+   333	   2020   8251 Clear to send stuck on.
+   334	   2021   8251 hardware reset failed.
+   335	   2022   8251 software reset failed.
+   336	   2023   8251 software "error reset" failed.
+   337	   2024   8251 transmit ready did not come on.
+   338	   2025   8251 receive ready did not come on.
+   339	   2026   8251 could not force "overrun" error status.
+   340	   2027   Interrupt failure - no timer interrupt.
+   341	   2028   Interrupt failure - transmit, replace card or planar.
+   342	   2029   Interrupt failure - transmit, replace card.
+   343	   2030   Interrupt failure - receive, replace card or planar.
+   344	   2031   Interrupt failure - receive, replace card.
+   345	   2033   Ring indicate stuck on.
+   346	   2034   Receive clock stuck on.
+   347	   2035   Transmit clock stuck on.
+   348	   2036   Test indicate stuck on.
+   349	   2037   Ring indicate stuck on.
+   350	   2038   Receive clock not on.
+   351	   2039   Transmit clock not on.
+   352	   2040   Test indicate not on.
+   353	   2041   Data set ready not on.
+   354	   2042   Carrier detect not on.
+   355	   2043   Clear to send not on.
+   356	   2044   Data set ready stuck on.
+   357	   2045   Carrier detect stuck on.
+   358	   2046   Clear to send stuck on.
+   359	   2047   Unexpected transmit interrupt.
+   360	   2048   Unexpected receive interrupt.
+   361	   2049   Transmit data did not equal receive data.
+   362	   2050   8251 detected overrun error.
+   363	   2051   Lost data set ready during data wrap.
+   364	   2052   Receive timeout during data wrap.
+   365	 21xx   Alternate binary synchronous communications adapter errors.
+   366	   2110   8255 port A failure.
+   367	   2111   8255 port B failure.
+   368	   2112   8255 port C failure.
+   369	   2113   8253 timer 1 did not reach terminal count.
+   370	   2114   8253 timer 1 stuck on.
+   371	   2115   8253 timer 2 did not reach terminal count or timer 2 stuck on.
+   372	   2116   8251 Data set ready failed to come on.
+   373	   2117   8251 Clear to send not sensed.
+   374	   2118   8251 Data set ready stuck on.
+   375	   2119   8251 Clear to send stuck on.
+   376	   2120   8251 hardware reset failed.
+   377	   2121   8251 software reset failed.
+   378	   2122   8251 software "error reset" failed.
+   379	   2123   8251 transmit ready did not come on.
+   380	   2124   8251 receive ready did not come on.
+   381	   2125   8251 could not force "overrun" error status.
+   382	   2126   Interrupt failure - no timer interrupt.
+   383	   2128   Interrupt failure - transmit, replace card or planar.
+   384	   2129   Interrupt failure - transmit, replace card.
+   385	   2130   Interrupt failure - receive, replace card or planar.
+   386	   2131   Interrupt failure - receive, replace card.
+   387	   2133   Ring indicate stuck on.
+   388	   2134   Receive clock stuck on.
+   389	   2135   Transmit clock stuck on.
+   390	   2136   Test indicate stuck on.
+   391	   2137   Ring indicate stuck on.
+   392	   2138   Receive clock not on.
+   393	   2139   Transmit clock not on.
+   394	   2140   Test indicate not on.
+   395	   2141   Data set ready not on.
+   396	   2142   Carrier detect not on.
+   397	   2143   Clear to send not on.
+   398	   2144   Data set ready stuck on.
+   399	   2145   Carrier detect stuck on.
+   400	   2146   Clear to send stuck on.
+   401	   2147   Unexpected transmit interrupt.
+   402	   2148   Unexpected receive interrupt.
+   403	   2149   Transmit data did not equal receive data.
+   404	   2150   8251 detected overrun error.
+   405	   2151   Lost data set ready during data wrap.
+   406	   2152   Receive timeout during data wrap.
+   407	 22xx   Cluster adapter errors.
+   408	 24xx   Enhanced graphics adapter errors.
+   409	 29xx   Color matrix printer errors.
+   410	   2901
+   411	   2902
+   412	   2904
+   413	 33xx   Compact printer errors.
+   414	
+   415	
+   416	                            

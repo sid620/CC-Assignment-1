@@ -1,0 +1,104 @@
+     1	∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+     2	∞∞€€€€€€∞∞€€€€€€∞∞€€∞∞∞€€∞∞€€€€€€∞∞€€€€€€∞∞€€€€€€∞∞∞∞€€€€€€∞∞∞∞€€€€€∞∞∞€€€€€€∞∞∞
+     3	∞∞€€∞∞∞∞∞∞€€∞∞∞€∞∞€€€∞€€€∞∞€€∞∞∞€∞∞€€∞∞∞€∞∞€€∞∞∞€∞∞∞∞∞∞∞∞∞∞€∞∞€€∞∞∞∞€∞∞€€∞∞∞∞∞∞∞
+     4	∞∞€€∞∞∞∞∞∞€€∞∞∞€∞∞€€∞€∞€€∞∞€€∞∞∞€∞∞€€∞∞∞€∞∞€€∞∞∞€∞∞∞∞∞€€€€€∞∞∞∞€€€€€∞∞∞€€€€€€∞∞∞
+     5	∞∞€€∞∞∞∞∞∞€€∞∞∞€∞∞€€∞∞∞€€∞∞€€€€€€∞∞€€€€€€∞∞€€∞∞∞€∞∞∞∞€€∞∞∞∞∞∞∞€€∞∞∞∞€∞∞€€∞∞∞€∞∞∞
+     6	∞∞€€€€€€∞∞€€€€€€∞∞€€∞∞∞€€∞∞€€∞∞∞∞∞∞€€∞∞∞€∞∞€€€€€€€∞∞∞€€€€€€€∞∞€€€€€€€∞∞€€€€€€∞∞∞
+     7	∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+     8	                                        ∞∞∞                                  ∞∞∞
+     9	          Management Overview           ∞∞∞   Review of Compaq DeskPro 286   ∞∞∞
+    10	                                        ∞∞∞                                  ∞∞∞
+    11	The Compaq 286 is  the  latest  in  the ∞∞∞              by                  ∞∞∞
+    12	evolutionary      cycle      of     the ∞∞∞                                  ∞∞∞
+    13	microcomputer.  This current generation ∞∞∞Bob McDuffee, Sysop, Grizzly King ∞∞∞
+    14	machine  utilizes   a   true   16   bit ∞∞∞                                  ∞∞∞
+    15	processor  as  well  as  16/8  bit  bus ∞∞∞         Hardware Review          ∞∞∞
+    16	interface.  This allows the INTEL 80286 ∞∞∞                                  ∞∞∞
+    17	microprocessor chip to perform at least ∞∞∞                                  ∞∞∞
+    18	twice as fast as the  IBM  XT  and  the ∞∞∞                                  ∞∞∞
+    19	Compaq Deskpro series.  The test system ∞∞∞                                  ∞∞∞
+    20	contained a 30 Megabyte hard drive,  10 ∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+    21	Megabyte  tape   backup   unit,   green ∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+    22	text/graphics display monitor,  640K of 
+    23	RAM and a 1.2 Megabyte floppy  disk  drive.  Throughout  the  test  the  machine 
+    24	performed  without  fail.  All  software  currently approved for purchase by the 
+    25	DPIC ran without modification on the 286.  This demonstrates that the machine is 
+    26	fully compatible  with  the  current  installed  base  of  microcomputers  while 
+    27	offering  efficiency  enhancements  (clock speed of 8.00 MHZ compared to 7.2 MHZ 
+    28	for the DeskPro) and,  expanded memory and secondary  storage  options.  Several 
+    29	times  during  the test the high density disk drive was used to format and write 
+    30	the standard 360K diskettes to transfer data  to  an  older  PC,  and  performed 
+    31	flawlessly!  
+    32	  
+    33	                                   Objectives
+    34	 
+    35	Given the desire to off load the VM machine of `non-mainframe' systems  as  much 
+    36	as possible, the need for a machine capable of handling large data files (PC-SAS 
+    37	or  PC-FOCUS  for example) with reasonable speed and yet is compatible with even 
+    38	the first IBM PC's is apparent.  
+    39	  
+    40	                                   Evaluation
+    41	  
+    42	Benchmark testing was performed to allow comparison between the Compaq Deskpro's 
+    43	currently in use at StorageTek and the new generation of Compaq  286  Deskpro's.  
+    44	================================================================================
+    45	                       Data Base Sort and Index Benchmarks
+    46	             Test 1                                     Test2
+    47	Sort 3911 records on one indexed field.  Add five (5) indexes to a file contain- 
+    48	                                         3911 records.
+    49	 Compaq DeskPro          Compaq  286        Compaq DeskPro          Compaq 286
+    50	30 min. 18  sec.       5 min.  23 sec.   2 hrs 9 min. 30 sec.    43 min. 59 sec.
+    51	================================================================================
+    52	               Spreadsheet Load, Recalculate, and View Benchmarks
+    53	                 Test 1                                 Test 2
+    54	Load  a 59136K file from the hard disk.        Recalculate a 59136K file
+    55	                                     
+    56	Compaq  DeskPro           Compaq  286     Compaq DeskPro          Compaq 286
+    57	7 min.  45 sec.          1 min. 43 sec.   4 min. 45 sec.         0 min. 45 sec.
+    58	  
+    59	                                     Test 3 
+    60	                                  View a graph.  
+    61	  
+    62	                     Compaq DeskPro            Compaq 286
+    63	                     0 min. 20 sec.           0 min. 4 sec.  
+    64	================================================================================
+    65	                Word Processor Search and Block Move Benchmark 
+    66	  
+    67	                 Test 1                                 Test 2
+    68	Search for a phrase  located  near the      Block Move in a 26 page document.
+    69	end of a 26 page document.               
+    70	  
+    71	Compaq  DeskPro          Compaq 286      Compaq DeskPro           Compaq 286
+    72	   6.48sec.               4.12 sec.         8.14 sec.              2.59 sec.
+    73	================================================================================
+    74	         File  Operation Benchmarks performed on a file of 578 records.  
+    75	  
+    76	                 Test 1                                 Test 2
+    77	           Random Record Read                      Sequential Read
+    78	   
+    79	Compaq DeskPro           Compaq 286    Compaq DeskPro             Compaq 286
+    80	  21.69  sec.            9.77  sec.       8.78 sec.               4.61  sec.
+    81	  
+    82	                                     Test 3 
+    83	                               Random Record Write 
+    84	
+    85	                       Compaq DeskPro           Compaq 286
+    86	                         12.74 sec.              7.19 sec.
+    87	================================================================================
+    88	
+    89	                             Prime Number Generation
+    90	  
+    91	                       Compaq DeskPro           Compaq 286
+    92	                           13 sec.                7 sec.
+    93	================================================================================
+    94	                                Integer Addition
+    95	  
+    96	                       Compaq DeskPro           Compaq 286
+    97	                         .23 sec.               .07 sec.  
+    98	================================================================================
+    99	                            Floating Point Arithmetic
+   100	  
+   101	                       Compaq DeskPro           Compaq 286  
+   102	                          .50 sec                .29 sec.  
+   103	================================================================================
+   104	               [ TO READ REST OF ARTICLE PRESS CTRL-RIGHT ARROW ]

@@ -1,0 +1,338 @@
+     1	                  ATARI ST Guaranteed Cheat Codes and Strategies:
+     2	                                 Compiled by KTH
+     3	
+     4	This is a collection of cheats and codes taken from seven seperate text files
+     5	from the sewer disk collections.  I have merged them together, removed all
+     6	redundancies and trivial hints, removed all AMIGA ONLY hints, and alphabetized
+     7	them.  All of these hints have been tested, and have also removed all those
+     8	hints where they are either built into our broken versions, or are unnecessary
+     9	due to a 'cheat mode' put into the game by the crackers.
+    10	
+    11	
+    12	***ARKANOID II: REVENGE OF DOH***
+    13	When all your lives are lost and the title screen is desplayed, hit the CAPS
+    14	LOCK and type MAGENTA. Now when you start a new game, press 's' to open up the
+    15	gates either side of the screen so you can progress to the next...But even more
+    16	useful is this: loose all your lives and return to the title screen, hit CAPS
+    17	LOCK and then type MAGENTA again, only this time type in DALEY88 to take you
+    18	right to the last screen.
+    19	
+    20	
+    21	***BAAL***: the coordinates of all the jetpack platforms, in the order you
+    22	should go to them to finish the game. X/Y, X being width and Y being height:
+    23	Level 1: 31/16 (cartridge 2), 02/25, 52/30 (cartridge 3), 51/00, 24/38, 62/13,
+    24	         02/50, 64/49, 33/58 (exit to level 2).
+    25	Level 2: 34/30, 54/12 (cartridge 4), 16/12, 00/24, 03/34, 30/47, 54/12 (exit to
+    26	         level 3).
+    27	The jetpack isn't used on level 3.
+    28	
+    29	
+    30	***BARBARIAN II***: step-by-step walk-thru:
+    31	Level 1: left, left, right seven times, left, right, left, in the cave, and    
+    32	         right. 
+    33	Level 2: right, up, left, up, left, left, right, left three times, up, and     
+    34	         left.
+    35	Level 3: up, right, right, up, left, right, up, right, left, left, up, left,   
+    36	         left, up, up, right, right, left, left, up.
+    37	Level 4: hit the fireballs, then try to leap across. Several low chops will
+    38	destroy it. Next is the Pit Demon; when he reaches out, use an overhead chop to
+    39	hit his arms; repeat until death. Next, Drax himself! Wait until he pauses
+    40	between spells, and hit him with a flying head chop! The End...
+    41	
+    42	
+    43	***BETTER DEAD THAN ALIEN***
+    44	
+    45	LEVEL   PASSWORD     COMMENT        LEVEL   PASSWORD     COMMENT
+    46	-----   --------     -------        -----   --------     -------
+    47	001     ELEKTRA      PRACTICE       014     TRIPTYCH     LUDICROUSE!    
+    48	002     SYZYGY       A DODDLE       015     JABBERWOCKY  ABSURDIS
+    49	003     DRAMBUIE     VERY EASY      016     WHIMSICAL    POSSIBLE??!
+    50	004     PLUG         EASY           017     CORNUCOPIA   DO THIS ON
+    51	005     SOPRANO      QUITE EASY     018     PUNJABI      OK, NOW TH..
+    52	006     MAYONNAISE   AVERAGE        019     TIDDLY POM   STILL HERET?
+    53	007     FAUCET       SOME EFFORT    020     KEWPIE DOLL  BRILLIANT!
+    54	008     POTATO       MUCH EFFORT    021     SEPULCHRE    IMPOSSIBLE
+    55	009     WOOMERA      GREAT EFFORT   022     EUPHEMISM    ..OR WAS I
+    56	010     NARCISSUS    TOTAL EFFORT   023     GRAMMARIAN   THE END.
+    57	011     DEBUTANTE    HARD!          024     CROSSWORD    THE END II
+    58	012     FIRKIN       REAL HARD      025     QUARANTINE   THAT'S IT.  
+    59	013     ACOUSTIC     VERY HARD      
+    60	
+    61	and now here's the cheat mode! Type ELV to activate cheat, then press 
+    62	F1   Scatterbolts   F2   Multiple fire   F3   Auto fire    F4   Armour Missile
+    63	F5   Stun           F6   Neutron Bomb    F7   Clone ship   F8   Sheild
+    64	F9   Skip Level     F10  Extra Power
+    65	
+    66	
+    67	***CARRIER COMMAND***
+    68	1. PAUSE the game and type GROW OLD ALONG WITH ME then press + on the numeric
+    69	keypad for your mantas and walruses to become sheilded. Press - to disable.
+    70	2. PAUSE the game, type "The Best is Yet to Be". A message will be displayed
+    71	that tells you the cheat mode is active. 
+    72	9         Gives current difficulty level
+    73	7         Speeds up game (useful!)
+    74	6         Shows all colors and shades in the game
+    75	
+    76	Try pressing CTRL and M on the main screen for some interesting effects.
+    77	
+    78	
+    79	***ELIMINATOR***
+    80	Press the HELP key once the game is loaded and type in the passwords listed
+    81	below, to progress to your chosen levels.
+    82	
+    83	STAGE     PASSWORD
+    84	02        AMOEBA     03        BLOOOP     04        CHEEKI     05        DOINOK
+    85	06        ENIGMA     07        FLIPME     08        GEEGEE     09        HANDEL
+    86	10        ICICLE     11        JAMMIN     12        KIKONG     13        LAPDOG
+    87	14        MIKADO
+    88	
+    89	On the title screen press HELP and type in HANDEL to put you on stage 9. Now
+    90	when playing, avoid the water to the right and crash into the oncoming alien.
+    91	On the next life, shoot the alien and fall into the water on the right just
+    92	before reaching the first ramp. On your next life, shoot the green alien, jump
+    93	over the ramp and stay in the right-hand lane. If all has gone well, you should
+    94	be shot by a bubble like alien, and you should have-finally-activated the
+    95	infinite lives mode.  
+    96	
+    97	      
+    98	***ENDURO RACER***
+    99	When you first begin to play Enduro Racer, after the countdown type the word
+   100	CHEAT in on the keyboard. Having typed that in, pressing one of the following
+   101	keys will result in a specific effect.
+   102	     T - Gives you an extra 10 seconds to complete the race
+   103	     S - Advances you one checkpoint
+   104	     F - Gives you turbo speed (210 kmh)
+   105	
+   106	
+   107	***FALCON***: when flying a high-ranking mission, pressing Ctrl-X will give you
+   108	              8 AIM9Ls and 500 rounds of ammo for your Vulcan.
+   109	
+   110	
+   111	***FERNANDEZ MUST DIE***: pause the game,type SPINYNORMAN, to get infinite
+   112	                          lives!
+   113	
+   114	
+   115	***FLYING SHARK*** (Unverified)
+   116	When you score high enough to make the high score table, type HSC or KDJ
+   117	(holding down the 5 key as you enter the last letter) <May not be necessary>.
+   118	HSC gives infinite lives
+   119	KDJ gives invulnerability        
+   120	
+   121	
+   122	***GAUNTLET II***  You need 2 keys and 2 locked treasure chests. As you open
+   123	the first chest, hold down the Help key, collect the treasure. Open the second
+   124	chest while holding down Insert. An Ankh will appear and you must collect it.
+   125	You'll hear a gong. You should now have 50,000 health points and 32,000
+   126	reflective super-shots. The shots will vanish once you leave the level, and if
+   127	you pick up an amulet, the counter will be reset to 10 shots.
+   128	
+   129	
+   130	***HELTER SKELTER***
+   131	Here are the passwords for those elusive later levels.
+   132	LEVEL     PASSWORD      LEVEL     PASSWORD     LEVEL     PASSWORD     
+   133	-----     --------      -----     --------     -----     --------
+   134	11        SPIN          21        FLIP         31        BALL
+   135	41        GOAL          51        LEFT         61        TWIN
+   136	71        PLAY
+   137	
+   138	
+   139	***IKARI WARRIORS***
+   140	Type in FREERIDE on the high score table and you'll start the next game with an
+   141	invisible soldier.
+   142	
+   143	
+   144	***INTERNATIONAL KARATE +***
+   145	Codes to type in while playing- 
+   146	FREZ                     Freeze the game
+   147	PAC                      Pacman moves across screen
+   148	FISH                     Makes a fish leap out of water
+   149	BIRD                     Bird flies across screen
+   150	PERI                     periscope rises out of water
+   151	Also, typing FUCK and CUNT results in an interesting message.
+   152	
+   153	
+   154	***LEATHERNECK***
+   155	Start the game and type 'CUTHBERTNECK', then press F3. This will give all
+   156	players protection from enemy fire, but not from your team-mates' bullets. To
+   157	return to normal press F3 once again.
+   158	
+   159	
+   160	***KARATE KID 2***: Press P to go to next level 
+   161	
+   162	
+   163	***MICKEY MOUSE***: After Mickey takes his bow, type 61315688 and a thin white
+   164	line will flicker in the border. Hitting F2 opens the door to the sub-game, F3
+   165	takes you straight to conflict with a witch, F4 refills your water pistol,
+   166	Enter (keypad) quits the sub-game, "." on the keypad completes the sub-game
+   167	successfully.
+   168	
+   169	
+   170	***NEBULUS***: when on the title screen (with the music playing), type
+   171	Helloiamjmp. Now, you can access any tower by simply pressing the appropriate
+   172	function key. You also get infinite lives.
+   173	
+   174	
+   175	***OUTRUN***
+   176	Type in STARION whilst playing the game then select any of the following codes:
+   177	B - Gives extended play
+   178	Q - Gives you info about the program
+   179	T - Adds ten seconds to your time
+   180	S - Takes you through the locations
+   181	D - Saves the screen in DEGAS format
+   182	x - crashes the computer!
+   183	
+   184	
+   185	***PLATOON***
+   186	Type in 'Hamburger' at the title screen. The word 'Cheat' will appear below the
+   187	credits press your joystck button, then (F5) when the jungle screen comes up.
+   188	Your man is now invulnerable to the attacks of the little Commie @#!!$&*s. From
+   189	here (F1) starts you where you are, (F2) puts you at the location of the
+   190	explosives, (F3) takes you to the bridges that you have to blow up, (F4) takes
+   191	you straight to the village where the entrance to the tunnels is hidden in one
+   192	of the huts. From here on the cheat no longer works, the game runs as normal
+   193	and you can die but it certainly gets you further along the track.
+   194	
+   195	
+   196	***QUADRALIEN***: access codes: level 1- 170961, level 2- 010655, level 3-
+   197	610169. And now, some tips: once in the core, you can't quit. So choose droids
+   198	with good lasers, Jack and Spud for example. The Quadralien mother is made up
+   199	of 4 separate pieces grouped together and surrounded by Earthling boxes. The
+   200	mother can only be destroyed by blowing up each box from a different direction.
+   201	From the starting point there are three exit: north, east, and west. Go east
+   202	and destroy the first box, return to the starting point, and go north to
+   203	destroy the second box. You will now have both droids to blow the remaining
+   204	boxes. Go west through the one-way force field, and get the other. Don't forget
+   205	to keep recharging.
+   206	
+   207	
+   208	***RAMBO III*** -  get on the high-score list and type RENEGADE. Pressing 1,2
+   209	and 3 will drop you on the level of your choice. And now for some tips:
+   210	
+   211	1) When inside the 2nd building, wear your IR goggles.
+   212	2) Don't walk in front of soldiers, since it will trigger an alarm and about 8 
+   213	   soldiers will jump you!
+   214	3) If you enter a dark room, use the glow tube.
+   215	4) Never use a gun without a silencer.
+   216	5) Turn off the electric door with the switch located several rooms away.
+   217	6) The mine detector won't work without the generator.
+   218	7) The IR goggles won't work without a battery.
+   219	8) Watch out for IR beams, since they also trigger alarms.
+   220	
+   221	Here's a list of items you can find: arrows, silencer, first aid kit, IR
+   222	goggles, glow tube, battery, key, mine, detector (in 2 pieces), pistol, ammo,
+   223	rubber gloves (you never know when you can be expected to perform major
+   224	surgery!!!)
+   225	
+   226	
+   227	***RAMPAGE***
+   228	If you're on the last building and a cloud of dust appears under it punch in
+   229	any direction and keep your finger on the fire button until the next screen is
+   230	displayed, whereupon you will be ableto climb up an invisible building which is
+   231	in the same place as the last building on the previous screen.
+   232	
+   233	
+   234	***RETURN OF THE JEDI***: enter Darth Vader on the high score list instead of
+   235	your name. Pressing F2 will complete a stage and send you to the next one.
+   236	
+   237	
+   238	***SPACE HARRIER and SPACE HARRIER II***: if you look at disk two, you'll see
+   239	some files called LEVEL2.DAT (for example). If you rename THEEND.DAT (or
+   240	whatever it's called) to LEVEL1.DAT, you will see the end sequence without
+   241	playing the game!
+   242	
+   243	
+   244	***STARGLIDER***: this one is complex, so pay attention!!
+   245	Start the game, slow down completely, press F, and press Backspace. Now, type
+   246	in the following twice: JS(Space)ARG(Backspace)S(Backspace)(Return). Pressing N
+   247	gives you 5000 points, E reboots the disk, M stops all enemy aircraft, P adds
+   248	an extra missile.
+   249	
+   250	
+   251	***STARGLIDER II***
+   252	Select F (for fixed sights) then slow down to a dead stop and pause the game
+   253	(using the backspace key).  Type 'Were on a Mission from God' (with the spaces
+   254	and case also not important) and press '1' on the keyboard.  If the shield and
+   255	energy levels drop to zero the cheat mode has been activated.  Press 'k' to get
+   256	all the weapons (including the neutron bomb!), and when you run out just press
+   257	'k' again.
+   258	
+   259	
+   260	***STAR GOOSE***
+   261	Hit all the function keys (F1 through F10) and you've got unlimited protection.
+   262	
+   263	
+   264	***STARRAY***
+   265	Unfortunately the cheat mode isn't as straightforward as the game play. Here's
+   266	the step by step guide to getting an invincible ship. Make sure your mouse is
+   267	plugged in, but don't use it to move the highlight.
+   268	
+   269	1. Access the OPTIONS SCREEN (ie: press the SPACE BAR).
+   270	2. Move down to the VIEW GAME SCREEN option.
+   271	3. Push the joystick LEFT and press FIRE. The GAME SCREEN should appear.
+   272	4. Centre the joystick and press FIRE again. The OPTIONS SCREEN should
+   273	   reappear.  Move down to the SOUND ON option.
+   274	5. Push the joystick to the RIGHT and press FIRE. If SOUND ON 
+   275	   changes to SOUND OFF, start again from scratch.
+   276	6. Return to the VIEW GAME SCREEN option.
+   277	7. Push the joystick RIGHT and while holding it in this direction, hold down   
+   278	   the RIGHT MOUSE BUTTON.
+   279	8. Press the LEFT MOUSE BUTTON.
+   280	
+   281	The OPTIONS SCREEN should change to CHEAT MODE. Return to RESUME GAME and
+   282	continue play with a shield that never depletes. If this doesn't work, try
+   283	again from a new game.
+   284	
+   285	
+   286	***SUPER HANG-ON***
+   287	On the high-score table enter 207L, which should then be replaced by a row of
+   288	dots (indicating that there's cheating afoot). When the next screen appears,
+   289	press CTRL, ALT, Z and T to get the cheat mode running, allowing you to change
+   290	the strength of the centrifugal force (what a strange cheat!). Zero will allow
+   291	you to whip around the course at top speed without crashing at all, while the
+   292	higher numbers will more than likely send you off the course at every bend.
+   293	
+   294	
+   295	***SUPER SPRINT***
+   296	On track eight, instead of racing, turn around and position your car just
+   297	before the finish line. Point it downwards, and when a drone zooms by,
+   298	accelerate and drive it into the wall. It'll crash but it wont be replaced
+   299	Repeat the process for the other two cars, and you'll be free to drive around
+   300	at leisure, picking up as many spanners and bonus points as you like. Don't
+   301	forget to drive around in the opposite direction, though otherwise you'll
+   302	finish the race.
+   303	
+   304	
+   305	***THUNDERBLADE***
+   306	When on the title screen type in CRASH, causing the screen to flash quickly,
+   307	indicating that the cheat mode is now active. Press UNDO whilst playing to
+   308	advance to the next level.
+   309	
+   310	
+   311	***VETERAN*** : Hitting the HELP key will take you through to the next level.
+   312	
+   313	
+   314	***VIRUS***
+   315	Start the game and hold down ENTER on the keypad. Whilst keeping it depressed,
+   316	press P then O. Now when you thrust a third bar will appear below your fuel and
+   317	altitude bars. Each of the following keys now have different effects...
+   318	L - Gives you an extra missile and hoverplane
+   319	D - Turns demo on/off
+   320	F - Restores your fuel to full
+   321	B - Disables graphics (pretty useless)
+   322	N - Turns cheat mode off
+   323	C - Disables graphics update (just makes a mess) 
+   324	
+   325	
+   326	X-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-X
+   327	 Another file downloaded from:                     The NIRVANAnet(tm) Seven
+   328	
+   329	 & the Temple of the Screaming Electron   Taipan Enigma        510/935-5845
+   330	 Burn This Flag                           Zardoz               408/363-9766
+   331	 realitycheck                             Poindexter Fortran   510/527-1662
+   332	 Lies Unlimited                           Mick Freen           801/278-2699
+   333	 The New Dork Sublime                     Biffnix              415/864-DORK
+   334	 The Shrine                               Rif Raf              206/794-6674
+   335	 Planet Mirth                             Simon Jester         510/786-6560
+   336	
+   337	                          "Raw Data for Raw Nerves"
+   338	X-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-X

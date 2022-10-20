@@ -1,0 +1,154 @@
+     1	
+     2	 An Introduction to Virtual Reality
+     3	
+     4		As computing moves into the '90s, more and more attention is being 
+     5	given to the subject of user interfaces. The interest in the idea of graphic 
+     6	user interfaces clearly indicates that people are looking for ways to work 
+     7	with their machines that are more direct and intuitive. The past year has 
+     8	seen a rise in the number of computer hardware and software producers getting 
+     9	into the fray with was has become known as "multimedia", the integration of 
+    10	sound and visuals with large-scale memory in the form of optical CD-ROM 
+    11	drives. But what lies just around the corner is a quantum leap in thinking 
+    12	about how humans and computers interact, and the fact is, it isn't just 
+    13	around the corner. In a way, it's here already.
+    14		
+    15		Virtual Reality is a term that has been coined to describe the
+    16	concept of immersing the user IN data, rather than just looking at a screen 
+    17	and typing, or using a pointer device such as a mouse or trackball. The idea 
+    18	of "creating worlds" on a personal computer is not entirely new. Most of you
+    19	reading this file probably have a game or two on your hard disk that
+    20	simulates a world of some sort, a flight simulator perhaps, maybe a driving/ 
+    21	auto racing simulator, a space exploration and combat game, even something as
+    22	simple as a chess game that gives you a 3d perspective on a "virtual" 
+    23	chessboard.
+    24	
+    25		Those of you reading this as a result of being in Compuserves
+    26	graphics forums already obviously have an interest in creating images that
+    27	create a visual environment electronically, whether that interest is geared
+    28	toward realistic landscapes in raytracing, or very abstract imagery such as 
+    29	can be created using fractals, raytracing, paint programs and image 
+    30	processors. The topic here is, how can one take that sort of exploration and 
+    31	move it to a new level, where you are so thoroughly immersed in the image 
+    32	that it, for the moment, IS reality! The final step is to take that notion 
+    33	and add dynamics, animation which moves us into four dimensions; height, 
+    34	width, depth, and time.
+    35	
+    36		Much work is being done right now in this new computer discipline, 
+    37	much work has already been done. Soon, no doubt, work that has been strictly 
+    38	the domain of military research, university study, and private enterprise R&D 
+    39	programs will begin to see the light of day. Already, virtual reality systems 
+    40	are being used for things like modeling molecular structures in chemical 
+    41	research, architectural modeling, aerodynamics, and (no suprise here) flight 
+    42	training.
+    43	
+    44		The earliest commercial applications of virtual reality technology 
+    45	will almost certainly emerge first in two widely differing fields: games, and 
+    46	computer aided design. Work is going on at the University of North Carolina, 
+    47	NASA, Autodesk, MIT's Media Lab, and many other places, including many 
+    48	companies started for the sole purpose of developing this new field.
+    49	
+    50		What will go on in this section? Since we are, after all, in the 
+    51	computer art forum, it may already be apparent. As personal computers evolve 
+    52	in leaps and bounds, things that seemed like pure science fiction 15 years 
+    53	ago, as the concept of personal computers was first taking shape, are now 
+    54	real. In the form of Fractint, we have available a program allowing the 
+    55	exploration of the world of mathematics turned into art. Also we have the DKB 
+    56	raytracer developed by David Buck, which is developing into a new version 
+    57	being done as a collaboration among CIS users, much as Fractint is continually 
+    58	being developed. The possibility exists that work of a similar type is 
+    59	possible when this sort of talent and interest is brought to bear on this new 
+    60	field. For example, there is C source code available for interfacing a Mattel 
+    61	Power Glove to IBM-compatible PCs through an RS-232 port. More is needed in 
+    62	the area of hardware to make the world of virtual reality accessible to PC 
+    63	users. For example, what about a head-mounted display, using miniature 
+    64	displays such as those used in pocket-size television sets, in a binocular 
+    65	configuration?
+    66	
+    67		Once hardware is available, software is needed. Anybody out there 
+    68	with game design experience would be helpful in creating a dynamic environment 
+    69	for virtual reality. Those interested in animation may have much to offer.
+    70	The principles involved in fractals and raytracing can be applied to this new 
+    71	field to some extent, and the sort of creative spirit and collaborative 
+    72	efforts present elsewhere in the graphics forums can certainly make progress 
+    73	in this! Anything at all that makes progress into this area is welcome!
+    74	
+    75		If you don't have the ability to make technical contributions, you 
+    76	may be able to offer a great deal anyway. In such new territory, there is 
+    77	always a need for those who have imagination, vision, a sense of direction 
+    78	and purpose for new technology. If you have a suggestion, fire off a message! 
+    79	Somebody out there may have the ability and means to make what may seem 
+    80	outlandish on the surface into reality.   
+    81		
+    82		If you have ideas that are too extensive to fit into a short message,
+    83	by all means, crank up the word processor and write it up, and upload it. 
+    84	This is all fairly new stuff, and things are wide open. Virtual Reality truly 
+    85	is the new frontier of computing, all hype aside. It WILL change the face of 
+    86	computing profoundly. The key word is not IF, but WHEN. It may seem, in the 
+    87	era of VLSI chip technology and multinational electronics corporations, to be 
+    88	impossible for basement experimenters and hobbyists to make advances in 
+    89	computers. In some sense that may be true. However, it is worth noting that 
+    90	personal computers grew out of the efforts of just those sorts of people, 
+    91	roughly 15 years ago. It also is very significant that many of you reading 
+    92	this are not just amateurs and hobbyists, but computer professionals.
+    93	
+    94		This may be one of the best places possible to begin the movement of 
+    95	Virtual Reality systems into the domain of truly personal computing, something 
+    96	available to those without massive financial and technical resources at their 
+    97	disposal. Certainly, the results possible with a 12Mhz 286 DOS-based machine 
+    98	will not equal the potential of a Cray. That doesn't mean work shouldn't begin 
+    99	at that level, however.
+   100	
+   101		It is worth reflecting on the Altair minicomputer which was made 
+   102	available in kit form in the mid '70's. Unimaginably crude and weak by todays 
+   103	standards, it fired the imaginations of thousands. You may well be one of 
+   104	those people. One of the people who, inspired by what would be regarded today 
+   105	as an ugly paperweight, went on to considerably more advanced realms. The 
+   106	computer industry as it is today was largely built on the efforts of people 
+   107	who realized the full ramifications of that Model T of computers. Today, 
+   108	Virtual Reality stands on the beach at Kitty Hawk. It doesn't take much to 
+   109	extrapolate the possible future given the advancement of technology and future 
+   110	economics of computer hardware. The shop project of a pair of bicycle 
+   111	mechanics eventually became the 747, F16, the Learjet. The Altair eventually 
+   112	led to things like 386 and 486 based machines with 1024x768 displays capable 
+   113	of 256 colors, and more with video boards like the Targa; the Macintosh IIci, 
+   114	the Next and Sun workstations.
+   115	
+   116		Work done now, at this level, can have a major effect on the course 
+   117	of development of VR. Not to mention the fact that it could be great fun!
+   118		
+   119		In electronics today, much thought needs to be given to the ideas of
+   120	how standards evolve. What determines what form a medium takes can be 
+   121	influenced heavily by the thoughts and actions of the people most interested 
+   122	in using the technology. Things aren't simply handed down from ivory towers 
+   123	in corporations. Work done here, in a public forum, may well have an effect 
+   124	on the future shape of virtual reality at a home-user level. The fact is, a 
+   125	lot of "major players" are getting involved, or are already involved, in VR 
+   126	work; but there are different levels to technology, and while a lot of the 
+   127	focus of VR work is devoted to things like new ways to access huge amounts of 
+   128	data for businesses and governments, there is also a whole new world to be 
+   129	explored in terms of applications for individuals with PCs.
+   130		
+   131		There is a lot to think about entering the world of "cyberspace", not
+   132	only hardware and software problems, but philisophical questions as well. What
+   133	will we use it for? What IS it exactly? How much of reality is the human
+   134	perception of it? 
+   135	
+   136		The questions ahead are big ones, without a doubt. Too broad to 
+   137	address here. It's like asking "what can computers be used for". Major stuff. 
+   138	The questions are large, but the main purpose here will be to develop
+   139	hardware and software that can be used by the average DOS-based machine. In
+   140	the course of such work, there no doubt will be much discussion of the 
+   141	purpose of it all. This is important. We'll try to keep it all in balance, 
+   142	and keep projects going, I hope. Hopefully, at some point interest and 
+   143	activity will justify moving into a new forum devoted entirely to VR, with 
+   144	different sections devoted to hardware and software projects and files, as 
+   145	well as social and philisophical issues. It all depends on how active this 
+   146	section is, and how much interest it draws.
+   147	
+   148		Jump right in. If you know of people who frequent other forums who 
+   149	may be interested and informative, encourage them to stop by. To start things
+   150	out we need dialog. I hope we can get things going here soon, and start 
+   151	working to bring Virtual Reality to the average computer.
+   152	
+   153		John Eagan  76130,2225
+   154		91-11-02

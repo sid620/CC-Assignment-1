@@ -1,0 +1,82 @@
+     1	DRIVING US CRAZY, BUT FOR A REASON
+     2	by Alan Brenden
+     3	
+     4	 In the early days of the PC, there wasn't much involved with the decision-maki
+     5	ng process when a new hard disk was to be bought or repaired.  The first hard d
+     6	isks used Seagate's ST506 technology and that was your choice.
+     7	
+     8	 Times and technology have changed and today's high-performance systems make it
+     9	 neccessary to match the needs of the system to the storage technology.  In thi
+    10	s article I will try and explain to you just what are these drives that drive u
+    11	s crazy.  -  ESDI, IDE, and SCSI, when and why.
+    12	
+    13	ST506/412 (MFM & RLL)
+    14	 Original the ST506 drives used an encoding method know as Modified Frequency M
+    15	odulation (MFM).  As the need for bigger drives evolved a new encoding method w
+    16	as developed to pack data tighter together.  This method is know as Run Length 
+    17	Limited (RLL).  This method involves looking at groups of 16bits rather then ea
+    18	ch individual bit.  This achieves a kind of compression of the data that allows
+    19	 roughly 50% more on a disk then MFM.  The trade off was that you needed a high
+    20	er grade of media and timing is more critical.  Prices for media have dropped i
+    21	n the last 3 years and RLL drives have just about wiped MFM drives from the mar
+    22	ket place.  ESDI, SCSI, and IDE also use a type of RLL encoding.
+    23	 ST506/412 drives have 2 cables, a 34 pin control cable and a 20 pin data cable
+    24	.  ST506 MFM has a data transfer rate of 625K bytes per second and a storage ca
+    25	pacity of 5MB - 100MB.  ST506 RLL has a data transfer rate of 937K bytes per se
+    26	cond and a storage capacity of 30MB-200MB.
+    27	
+    28	ESDI
+    29	 ESDI (Enhanced Small-Device Interface) was developed to allow faster transfer 
+    30	rates and high disk capacities.  Greater intelligence reduces the amount of com
+    31	munication between the drive and the controller.  The transfer of data between 
+    32	the drive and the controller uses a pulse code that isn't required to return to
+    33	 zero between pulses, as does ST506.  This is know as Non Return to Zero (NRZ) 
+    34	and increases data transfer.
+    35	 ESDI uses the same cables as the ST506 but can never be mixed.  It is CPU cont
+    36	rolled and is suitable for single tasking environments.  ESDI has a data transf
+    37	er rate of 1-3M bytes per second and a storage capacity of 80MB - 2GB.  One con
+    38	troller can handle up to 2 drives with multiple controllers possible.
+    39	
+    40	IDE
+    41	As the name implies, IDE (Integrated Drive Electronics) combines both the disk 
+    42	and the controller on the same unit.  Only a simple interface is needed and typ
+    43	ically it is built directly into the motherboard.  If the interface is not buil
+    44	t into the motherboard a simple paddle-board is used and because so little elec
+    45	tronics are needed an additional serial and parallel port is sometime included.
+    46	  It transfers only data and doesn't need to send format and sector information
+    47	 as does ESDI. Therefore the data transfer rate can be 3-4 times faster then ES
+    48	DI.
+    49	 The IDE drive is not a device level interface and has the ability to lie to th
+    50	e BIOS and give the logical appearance of a know device type, while physically 
+    51	it may be totally different.  You won't see bad tracks on an IDE drive because 
+    52	the drive hides them.  Because of this you can not low level format an IDE driv
+    53	e without specific utilities for that drive.
+    54	 IDE uses a single 40 pin cable.  It is limited to a 2 foot cable and 2 address
+    55	es with no termination needed.  The first drive is configured as the master and
+    56	 the second as the slave.  IDE has a transfer rate of .625MB-2MB bytes per seco
+    57	nd and a storage capacity of 20MB-500MB.
+    58	
+    59	
+    60	SCSI
+    61	 SCSI (Small Computer Systems Interface), pronounced "scuzzy", is a more genera
+    62	l version of the IDE interface.  SCSI hard disks boast the fastest transfer rat
+    63	es of all the discussed technologies, with SCSI 2 having a transfer rate up to 
+    64	40M bytes per second.  SCSI implements 2 ways of boosting transfer rates, fast 
+    65	and wide.  FAST SCSI doubles the clock speed, and WIDE SCSI increases the bus w
+    66	idth.  SCSI also implements other performance features, including controller ba
+    67	sed RAM caching and tag command queuing.  By queuing commands the SCSI controll
+    68	er can free up the CPU to do other tasks while it finishes its task.  SCSI also
+    69	 has the ability to transfer data to another SCSI device without CPU involvemen
+    70	t.
+    71	 SCSI uses a single 50 pin cable with devices daisy chained together and termin
+    72	ated on both ends.  Seven devices can be installed per controller with up to fo
+    73	ur controllers.  SCSI 1 has a data transfer rate of 1-5M bytes per second and a
+    74	 storage capacity of 20MB-1.5GB.  SCSI 2 has a data transfer rate of 1-40M byte
+    75	s per second and a storage capacity of 40MB-3GB.
+    76	
+    77	WHICH IS BEST?
+    78	 Performance isn't without price.  Many applications don't need the performance
+    79	 of SCSI, it is by far the most expensive.  IDE or ESDI will usually suffice fo
+    80	r most applications.  IDE being the cheapest of the three.  SCSI has the added 
+    81	advantage of the greatest expandability, so if you need SCSI the  money is well
+    82	 spent.

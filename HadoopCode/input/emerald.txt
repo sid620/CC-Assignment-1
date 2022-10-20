@@ -1,0 +1,67 @@
+     1	BOSTON, Mass., February 11, 1992 -- Emerald Systems is demonstrating its
+     2	newest network data management software, Xpress Librarian, here this week
+     3	at Booth 2724 during NetWorld '92 Boston.
+     4	
+     5	Xpress Librarian is much more than a traditional backup/restore system.
+     6	Designed for ease of use, it runs under Microsoft Windows in either
+     7	standard or enhanced mode from the administrator's workstation and is the
+     8	first such software with several advanced features, allowing disk
+     9	grooming, file aging and archiving.
+    10	
+    11	With Xpress Librarian, users can select specific files or groups of files
+    12	for off-line archival on the basis of several different user-specified
+    13	criteria. The file-aging feature allows users to set aging criteria using
+    14	a variety of parameters, including access or modification date. Thus,
+    15	files that have been inactive for a given period of time easily can be
+    16	archived to tape.
+    17	
+    18	Xpress Librarian also lets network administrators monitor how the server
+    19	disk space is being used. The file usage utility allows them to search the
+    20	network by individual user to determine how network space is being used --
+    21	and who is using it. This is an important data management and network
+    22	trouble-shooting tool.
+    23	
+    24	When a file needs to be restored, Xpress Librarian will direct the user to
+    25	the exact location of every version of that file -- even if it resides on
+    26	several different tapes. When the desired version is selected, Xpress
+    27	Librarian will prompt the user for the correct tape and begin restoration
+    28	of the file. When used with the Quick File Access feature found in many
+    29	Emerald Systems tape drives, this process usually is completed in less
+    30	than two minutes.
+    31	
+    32	"It's a joy to use," says the computer systems manager for a civil
+    33	engineering and survey company in Grand Rapids, Mich., when asked how he
+    34	liked Xpress Librarian. The network manager for a large department store
+    35	chain headquartered in Seattle said he found Xpress Librarian
+    36	"straightforward and easy to install and use."
+    37	
+    38	"We upgraded to Xpress Librarian primarily because it allows us to find
+    39	files quickly," said the network administrator for an international
+    40	management company in Atlanta, Ga.
+    41	
+    42	As Emerald Systems President and CEO James D. Norrod points out, "Xpress
+    43	Librarian is the premier software product in our migration from being the
+    44	industry's best developer of tape backup products to being the leading
+    45	supplier of network data management solutions."
+    46	
+    47	The new network data management system is designed for mid- to high-range
+    48	networks and supports a variety of hardware platforms, ranging from 250 MB
+    49	1/4" tape to 5.0 GB 8mm systems. Xpress Librarian is compatible with other
+    50	Emerald Systems software products and supports NetWare 2.15 and higher and
+    51	DOS 3.3 and higher. It operates on a 286 or 386 workstation.
+    52	
+    53	Emerald Systems supplies high-quality network backup and data management
+    54	solutions worldwide. For further information about Xpress Librarian,
+    55	contact Emerald Systems, 12230 World Trade Drive, San Diego, CA 92128.
+    56	Telephone (619) 673-2161; FAX, (619) 673-2288.
+    57	
+    58	  +---------------------------------------------------------------+
+    59	  |  From the America On-Line & PC-Link New Product Info Services |
+    60	  +===============================================================+
+    61	  | This information was processed with OmniPage Professional OCR |
+    62	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+    63	  | provided by the above mentioned company. For additional info, |
+    64	  | contact the company at the address or phone# indicated above. |
+    65	  |    All submissions for this service should be addressed to    |
+    66	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+    67	  +---------------------------------------------------------------+

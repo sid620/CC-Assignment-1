@@ -1,0 +1,1063 @@
+     1	"6_2_3_13_5_2.TXT" (9670 bytes) was created on 12-12-88
+     2	
+     3	ORBITAL MANEUVERING SYSTEM
+     4	
+     5	The orbital maneuvering system provides the thrust for orbit
+     6	insertion, orbit circularization, orbit transfer, rendezvous, deorbit,
+     7	abort to orbit and abort once around and can provide up to 1,000
+     8	pounds of propellant to the aft reaction control system.  The OMS is
+     9	housed in two independent pods located on each side of the orbiter's
+    10	aft fuselage.  The pods also house the aft RCS and are referred to as
+    11	the OMS/RCS pods.  Each pod contains one OMS engine and the hardware
+    12	needed to pressurize, store and distribute the propellants to perform
+    13	the velocity maneuvers.  The two pods provide redundancy for the OMS.
+    14	The vehicle velocity required for orbital adjustments is approximately
+    15	2 feet per second for each nautical mile of altitude change.
+    16	
+    17	The ascent profile of a mission determines if one or two OMS thrusting
+    18	periods are used and the interactions of the RCS.  After main engine
+    19	cutoff, the RCS thrusters in the forward and aft RCS pods are used to
+    20	provide attitude hold until external tank separation.  At ET
+    21	separation, the RCS provides a minus (negative) Z translation maneuver
+    22	of about minus 4 feet per second to maneuver the orbiter away from the
+    23	ET.  Upon completion of the translation, the RCS provides orbiter
+    24	attitude hold until time to maneuver to the OMS-1 thrusting attitude.
+    25	The targeting data for the OMS-1 thrusting period is selected before
+    26	launch; however, the target data in the onboard general-purpose
+    27	computers can be modified by the flight crew via the cathode ray tube
+    28	keyboard, if necessary, before the OMS thrusting period.
+    29	
+    30	During the first OMS thrusting period, both OMS engines are used to
+    31	raise the orbiter to a predetermined elliptical orbit.  During the
+    32	thrusting period, vehicle attitude is maintained by gimbaling
+    33	(swiveling) the OMS engines.  The RCS will not normally come into
+    34	operation during an OMS thrusting period.  If, during an OMS thrusting
+    35	period, the OMS gimbal rate or gimbal limits are exceeded, RCS
+    36	attitude control is required.  If only one OMS engine is used during
+    37	an OMS thrusting period, RCS roll control is required.
+    38	
+    39	During the OMS-1 thrusting period, the liquid oxygen and liquid
+    40	hydrogen trapped in the main propulsion system ducts are dumped.  The
+    41	liquid oxygen is dumped out through the space shuttle main engines'
+    42	combustion chambers and the liquid hydrogen is dumped through the
+    43	starboard (right) side T-0 umbilical overboard fill and drain.  This
+    44	velocity was precomputed in conjunction with the OMS-1 thrusting
+    45	period.
+    46	
+    47	Upon completion of the OMS-1 thrusting period, the RCS is used to null
+    48	any residual velocities, if required.  The flight crew uses the
+    49	rotational hand controller and/or translational hand controller to
+    50	command the applicable RCS thrusters to null the residual velocities.
+    51	The RCS then provides attitude hold until time to maneuver to the
+    52	OMS-2 thrusting attitude.
+    53	
+    54	The second OMS thrusting period using both OMS engines occurs near the
+    55	apogee of the orbit established by the OMS-1 thrusting period and is
+    56	used to circularize the predetermined orbit for that mission.  The
+    57	targeting data for the OMS-2 thrusting period is selected before
+    58	launch; however, the target data in the onboard GPCs can be modified
+    59	by the flight crew via the CRT keyboard, if necessary, before the OMS
+    60	thrusting period.
+    61	
+    62	Upon completion of the OMS-2 thrusting period, the RCS is used to null
+    63	any residual velocities, if required, in the same manner as during
+    64	OMS-1.  The RCS is then used to provide attitude hold and minor
+    65	translation maneuvers as required for on-orbit operations.  The flight
+    66	crew can select primary or vernier RCS thrusters for attitude control
+    67	on orbit.  Normally, the vernier RCS thrusters are selected for
+    68	on-orbit attitude hold.
+    69	
+    70	If the ascent profile for a mission uses a single OMS thrusting
+    71	maneuver, it is referred to as direct insertion.  In a
+    72	direct-insertion ascent profile, the OMS-1 thrusting period after main
+    73	engine cutoff is eliminated and is replaced with a 5-feet- per-second
+    74	RCS translation maneuver to facilitate the main propulsion system
+    75	dump.  The RCS provides attitude hold after the translation maneuver.
+    76	The OMS-2 thrusting period is then used to achieve orbit insertion.
+    77	The direct-insertion ascent profile allows the MPS to provide more
+    78	energy to orbit insertion and permits easier use of onboard software.
+    79	
+    80	Additional OMS thrusting periods using both or one OMS engine are
+    81	performed on orbit according to the mission's requirements to modify
+    82	the orbit for rendezvous, payload deployment or transfer to another
+    83	orbit.
+    84	
+    85	The two OMS engines are used to deorbit.  Target data for the deorbit
+    86	maneuver is computed by the ground and loaded in the onboard GPCs via
+    87	uplink.  This data is also voiced to the flight crew for verification
+    88	of loaded values.  After verification of the deorbit data, the flight
+    89	crew initiates an OMS gimbal test on the CRT keyboard unit.
+    90	
+    91	Before the deorbit thrusting period, the flight crew maneuvers the
+    92	spacecraft to the desired deorbit thrusting attitude using the
+    93	rotational hand controller and RCS thrusters.  Upon completion of the
+    94	OMS thrusting period, the RCS is used to null any residual velocities,
+    95	if required.  The spacecraft is then maneuvered to the proper entry
+    96	interface attitude using the RCS.  The remaining propellants aboard
+    97	the forward RCS are dumped by burning the propellants through the
+    98	forward RCS thrusters before the entry interface if it is necessary to
+    99	control the orbiter's center of gravity.
+   100	
+   101	The aft RCS plus X jets can be used to complete any planned OMS
+   102	thrusting period in the event of an OMS engine failure.  In this case,
+   103	the OMS-to-aft-RCS interconnect would feed OMS propellants to the aft
+   104	RCS.
+   105	
+   106	From entry interface at 400,000 feet, the orbiter is controlled in
+   107	roll, pitch and yaw with the aft RCS thrusters.  The orbiter's
+   108	ailerons become effective at a dynamic pressure of 10 pounds per
+   109	square foot, and the aft RCS roll jets are deactivated.  At a dynamic
+   110	pressure of 20 pounds per square foot, the orbiter's elevons become
+   111	effective, and the aft RCS pitch jets are deactivated.  The rudder is
+   112	activated at Mach 3.5, and the aft RCS yaw jets are deactivated at
+   113	Mach 1 and approximately 45,000 feet.
+   114	
+   115	The OMS in each pod consists of a high-pressure gaseous helium storage
+   116	tank, helium isolation valves, dual pressure regulation systems, vapor
+   117	isolation valves for only the oxidizer regulated helium pressure path,
+   118	quad check valves, a fuel tank, an oxidizer tank, a propellant
+   119	distribution system consisting of tank isolation valves, crossfeed
+   120	valves, and an OMS engine.  Each OMS engine also has a gaseous
+   121	nitrogen storage tank, gaseous nitrogen pressure isolation valve,
+   122	gaseous nitrogen accumulator, bipropellant solenoid control valves and
+   123	actuators that control bipropellant ball valves, and purge valves.
+   124	
+   125	In each of the OMS pods, gaseous helium pressure is supplied to helium
+   126	isolation valves and dual pressure regulators, which supply regulated
+   127	helium pressure to the fuel and oxidizer tanks.  The fuel is
+   128	monomethyl hydrazine and the oxidizer is nitrogen tetroxide.  The
+   129	propellants are Earth-storable liquids at normal temperatures.  They
+   130	are pressure-fed to the propellant distribution system through tank
+   131	isolation valves to the OMS engines.  The OMS engine propellant ball
+   132	valves are positioned by the gaseous nitrogen system and control the
+   133	flow of propellants into the engine.  The fuel is directed first
+   134	through the engine combustion chamber walls and provides regenerative
+   135	cooling of the chamber walls; it then flows into the engine injector.
+   136	The oxidizer goes directly to the engine injector.  The propellants
+   137	are sprayed into the combustion chamber, where they atomize and ignite
+   138	upon contact with each other (hypergolic), producing a hot gas and,
+   139	thus, thrust.
+   140	
+   141	The gaseous nitrogen system is also used after the OMS engines are
+   142	shut down to purge residual fuel from the injector and combustion
+   143	chamber, permitting safe restarting of the engines.  The nozzle
+   144	extension of each OMS engine is radiation-cooled and is constructed of
+   145	columbium alloy.
+   146	
+   147	Each OMS engine produces 6,000 pounds of thrust.  The oxidizer-to-fuel
+   148	ratio is 1.65-to-1.  The expansion ratio of the nozzle exit to the
+   149	throat is 55-to-1.  The chamber pressure of the engine is 125 psia.
+   150	The dry weight of each engine is 260 pounds.
+   151	
+   152	Each OMS engine can be reused for 100 missions and is capable of 1,000
+   153	starts and 15 hours of cumulative firing.  The minimum duration of an
+   154	OMS engine firing is two seconds.  The OMS may be utilized to provide
+   155	thrust above 70,000 feet.  For vehicle velocity changes of between 3
+   156	and 6 feet per second, normally only one OMS engine is used.
+   157	
+   158	Each engine has two electromechanical gimbal actuators, which control
+   159	the OMS engine thrust direction in pitch and yaw (thrust vector
+   160	control).  The OMS engines can be used singularly by directing the
+   161	thrust vector through the orbiter center of gravity or together by
+   162	directing the thrust vector of each engine parallel to the other.
+   163	During a two-OMS-engine thrusting period, the RCS will come into
+   164	operation only if the OMS gimbal rate or gimbal limits are exceeded
+   165	and should not normally come into operation during the OMS thrust
+   166	period.  However, during a one-OMS-engine thrusting period, roll RCS
+   167	control is required.  The pitch and yaw actuators are identical except
+   168	for the stroke length and contain redundant electrical channels
+   169	(active and standby), which couple to a common mechanical drive
+   170	assembly.
+   171	
+   172	The OMS/RCS pods are designed to be reused for up to 100 missions with
+   173	only minor repair, refurbishment and maintenance.  The pods are
+   174	removable to facilitate orbiter turnaround, if required.
+   175	
+   176	
+   177	"6_2_3_13_5_3.TXT" (5392 bytes) was created on 12-12-88
+   178	
+   179	HELIUM PRESSURIZATION.
+   180	
+   181	Each pod pressurization system consists of a helium tank, two helium
+   182	isolation valves, two dual pressure regulator assemblies, parallel
+   183	vapor isolation valves on the regulated helium pressure to the
+   184	oxidizer tank only, dual series-parallel check valve assemblies and
+   185	pressure relief valves.
+   186	
+   187	The helium storage tank in each pod has a titanium liner with a
+   188	fiberglass structural overwrap.  This increases safety and decreases
+   189	the weight of the tank 32 percent over that of conventional tanks.
+   190	The helium tank is 40.2 inches in diameter and has a volume of 17.03
+   191	cubic feet minimum.  Its dry weight is 272 pounds.  The helium tank's
+   192	operating pressure range is 4,800 to 460 psia with a maximum operating
+   193	limit of 4,875 psia at 200 F.
+   194	
+   195	A pressure sensor downstream of each helium tank in each pod monitors
+   196	the helium source pressure and transmits it to the N 2 , He , kit He
+   197	switch on panel F7.  When the switch is in the He position, the helium
+   198	pressure of the left and right OMS is displayed on the OMS press left,
+   199	right meters.  This pressure also is transmitted to the CRT and
+   200	displayed.
+   201	
+   202	The two helium pressure isolation valves in each pod permit helium
+   203	source pressure to the propellant tanks or isolate the helium from the
+   204	propellant tanks.  The parallel paths in each pod assure helium flow
+   205	to the propellant tanks of that pod.  The helium valves are
+   206	continuous-duty, solenoid-operated.  They are energized open and
+   207	spring loaded closed.  The OMS He press/vapor isol switches on panel
+   208	O8 permit automatic or manual control of the valves.  With the
+   209	switches in the GPC position, the valves are automatically controlled
+   210	by the general-purpose computer during an engine thrusting sequence.
+   211	The valves are controlled manually by placing the switches to open or
+   212	close.
+   213	
+   214	The pressure regulators reduce the helium source pressure to the
+   215	desired working pressure.  Pressure is regulated by assemblies
+   216	downstream of each helium pressure isolation valve.  Each assembly
+   217	contains primary and secondary regulators in series and a flow
+   218	limiter.  Normally, the primary regulator is the controlling
+   219	regulator.  The secondary regulator is normally open during a dynamic
+   220	flow condition.  It will not become the controlling regulator until
+   221	the primary regulator allows a higher pressure than normal.  All
+   222	regulator assemblies are in reference to a bellows assembly that is
+   223	vented to ambient.  The primary regulator outlet pressure at normal
+   224	flow is 252 to 262 psig and 247 psig minimum at high abort flow, with
+   225	lockup at 266 psig maximum.  The secondary regulator outlet pressure
+   226	at normal flow is 259 to 269 psig and 254 psig minimum at high abort
+   227	flow, with lockup at 273 psig maximum.  The flow limiter restricts the
+   228	flow to a maximum of 1,040 stan dard cubic feet per minute and to a
+   229	minimum of 304 standard cubic feet per minute.
+   230	
+   231	The vapor isolation valves in the oxidizer pressurization line to the
+   232	oxidizer tank prevent oxidizer vapor from migrating upstream and over
+   233	into the fuel system.  These are low-pressure, two-position, two-way,
+   234	solenoid-operated valves that are energized open and spring loaded
+   235	closed.  They can be commanded manually or automatically by the
+   236	positioning of the He press/vapor isol switches on panel O8.  When
+   237	either of the A or B switches is in the open position, both vapor
+   238	isolation valves are energized open; and when both switches are in the
+   239	close position, both vapor isolation valves are closed.  When the
+   240	switches are in the GPC position, the GPC opens and closes the valves
+   241	automatically.
+   242	
+   243	The check valve assembly in each parallel path contains four
+   244	independent check valves connected in a series-parallel configuration
+   245	to provide a positive checking action against a reverse flow of
+   246	propellant liquid or vapor, and the parallel path permits redundant
+   247	paths of helium to be directed to the propellant tanks.  Filters are
+   248	incorporated into the inlet of each check valve assembly.
+   249	
+   250	Two pressure sensors in the helium pressurization line upstream of the
+   251	fuel and oxidizer tanks monitor the regulated tank pressure and
+   252	transmit it to the RCS/OMS press rotary switch on panel O3.  When the
+   253	switch is in the OMS prplnt position, the left and right fuel and
+   254	oxidizer pressure is displayed.  If the tank pressure is lower than
+   255	234 psia or above 284 psia, the left or right OMS red caution and
+   256	warning light on panel F7 will be illuminated.  These pressures also
+   257	are transmitted to the CRT and displayed.
+   258	
+   259	The relief valves in each pressurization path limit excessive pressure
+   260	in the propellant tanks.  Each pressure relief valve also contains a
+   261	burst diaphragm and filter.  If excessive pressure is caused by helium
+   262	or propellant vapor, the diaphragm will rupture and the relief valve
+   263	will open and vent the excessive pressure overboard.  The filter
+   264	prevents particulates from the non-fragmentation-type diaphragm from
+   265	entering the relief valve seat.  The relief valve will close and reset
+   266	after the pressure has returned to the operating level.  The burst
+   267	diaphragm is used to provide a more positive seal of helium and
+   268	propellant vapors than the relief valve.  The diaphragm ruptures
+   269	between 303 and 313 psig.  The relief valve opens at a minimum of 286
+   270	psig and a maximum of 313 psig.  The relief valve's minimum reseat
+   271	pressure is 280 psig.  The maximum flow capacity of the relief valve
+   272	at 60 F and 313 psig is 520 cubic feet per minute.
+   273	
+   274	
+   275	"6_2_3_13_5_4.TXT" (9352 bytes) was created on 12-12-88
+   276	
+   277	PROPELLANT STORAGE AND DISTRIBUTION.
+   278	
+   279	The propellant storage and distribution system consists of one fuel
+   280	tank and one oxidizer tank in each pod.  It also contains propellant
+   281	feed lines, interconnect lines, isolation valves and crossfeed valves.
+   282	
+   283	The OMS propellant tanks of both pods enable the orbiter to reach a
+   284	1,000-foot- per-second velocity change with a 65,000-pound payload in
+   285	the payload bay.  An OMS pod crossfeed line allows the propellants in
+   286	the pods to be used to operate either OMS engine.
+   287	
+   288	The propellant is contained in domed cylindrical titanium tanks within
+   289	each pod.  Each propellant tank is 96.38 inches long with a diameter
+   290	of 49.1 inches and a volume of 89.89 cubic feet unpressurized.  The
+   291	dry weight of each tank is 250 pounds.  The propellant tanks are
+   292	pressurized by the helium system.
+   293	
+   294	Each tank contains a propellant acquisition and retention assembly in
+   295	the aft end and is divided into forward and aft compartments.  The
+   296	propellant acquisition and retention assembly is located in the aft
+   297	compartment and consists of an intermediate bulkhead with
+   298	communication screen and an acquisition system.  The propellant in the
+   299	tank is directed from the forward compartment through the intermediate
+   300	bulkhead through the communication screen into the aft compartment
+   301	during OMS velocity maneuvers.  The communication screen retains
+   302	propellant in the aft compartment during zero-gravity conditions.
+   303	
+   304	The acquisition assembly consists of four stub galleries and a
+   305	collector manifold.  The stub galleries acquire wall-bound propellant
+   306	at OMS start and during RCS velocity maneuvers to prevent gas
+   307	ingestion.  The stub galleries have screens that allow propellant flow
+   308	and prevent gas ingestion.  The collector manifold is connected to the
+   309	stub galleries and also contains a gas arrestor screen to further
+   310	prevent gas ingestion, which permits OMS engine ignition without the
+   311	need of a propellant-settling maneuver employing RCS thrusters.  The
+   312	propellant tank's nominal operating pressure is 250 psi, with a
+   313	maximum operating pressure limit of 313 psia.
+   314	
+   315	A capacitance gauging system in each OMS propellant tank measures the
+   316	propellant in the tank.  The system consists of a forward and aft
+   317	probe and a totalizer.  The forward and aft fuel probes use fuel
+   318	(which is a conductor) as one plate of the capacitor and a glass tube
+   319	that is metallized on the inside as the other.  The forward and aft
+   320	oxidizer probes use two concentric nickel tubes as the capacitor
+   321	plates and oxidizer as the dielectric.  (Helium is also a dielectric,
+   322	but has a different dielectric constant than the oxidizer.) The aft
+   323	probes in each tank contain a resistive temperature-sensing element to
+   324	correct variations in fluid density.  The fluid in the area of the
+   325	communication screens cannot be measured.
+   326	
+   327	The totalizer receives OMS valve operation information and inputs from
+   328	the forward and aft probes in each tank and outputs total and aft
+   329	quantities and a low level quantity.  The inputs from the OMS valves
+   330	allow control logic in the totalizer to determine when an OMS engine
+   331	is thrusting and which tanks are being used.  The totalizer begins an
+   332	engine flow rate/time integration process at the start of the OMS
+   333	thrusting period, which reduces the indicated amount of propellants by
+   334	a preset estimated rate for the first 14.8 seconds.  After 14.8
+   335	seconds of OMS thrusting, which settles the propellant surface, the
+   336	probe capacitance gauging system outputs are enabled, which permits
+   337	the quantity of propellant remaining to be displayed.  The totalizer
+   338	outputs are displayed on the OMS/RCS prplnt qty meters on panel O3
+   339	when the rotary switch is positioned to the OMS fuel or oxid
+   340	positions.
+   341	
+   342	When the wet or dry analog comparator indicates the forward probe is
+   343	dry, the ungaugeable propellant in the region of the intermediate
+   344	bulkhead is added to the aft probe output quantity, decreasing the
+   345	total quantity at a preset rate for 98.15 seconds, and updates from
+   346	the aft probes are inhibited.  After 98.15 seconds of thrusting, the
+   347	aft probe output inhibit is removed, and the aft probe updates the
+   348	total quantity.  When the quantity decreases to 5 percent, the
+   349	low-level signal is output.
+   350	
+   351	Parallel tank isolation valves in each pod located between the
+   352	propellant tanks and the OMS engine and the OMS crossfeed valves
+   353	permit propellant to be supplied to the OMS engine and OMS crossfeed
+   354	valves or isolate the propellant.  The left or right OMS tank
+   355	isolation A switch on panel O8 controls the A fuel and A oxidizer
+   356	valve in that pod, and the B switch controls the B fuel and B oxidizer
+   357	valve in that pod.  When the left or right tank isolation switches in
+   358	a pod are positioned to GPC , pairs of valves are automatically opened
+   359	or closed upon command from the orbiter computer.  When a pair of
+   360	valves is opened, fuel and oxidizer from the corresponding propellant
+   361	tanks are allowed to flow to that OMS engine and OMS crossfeed valves;
+   362	and when that pair of valves is closed, fuel and oxidizer are isolated
+   363	from the OMS engine and OMS crossfeed valves.  The switch positions
+   364	open, GPC and close are permanent-position switches.  Electrical power
+   365	is provided to an electrical motor controller assembly, which supplies
+   366	power to the ac-motor-operated valve actuators.  Once the valve is in
+   367	the commanded position, logic in the motor controller assembly removes
+   368	power from the ac-motor-operated valve actuator.  A talkback indicator
+   369	above each tank isolation switch on panel O8 indicates the status of
+   370	the fuel valve and oxidizer valve.  The talkback indicator is
+   371	controlled by microswitches in each pair of valves.  The talkback
+   372	indicator indicates op when that pair of valves is open, barberpole
+   373	when the valves are in transit or one valve is open or closed, and cl
+   374	when that pair of valves is closed.  The open and close positions of
+   375	each left or right tank isolation A, B switch permits manual control
+   376	of the corresponding pair of valves (one for fuel and one for
+   377	oxidizer).
+   378	
+   379	In each pod, parallel left or right OMS crossfeed valves are
+   380	controlled by the left, right crossfeed A, B switches on panel O8.
+   381	The A switch controls the A fuel and A oxidizer ac-motor-operated
+   382	valve actuators in the pod selected, and the B switch controls the B
+   383	fuel and B oxidizer valve in the pod selected.  When the A or B switch
+   384	in a pod is positioned to GPC , the A or B pair of fuel and oxidizer
+   385	valves is automatically opened or closed upon command from the orbiter
+   386	computer.  For example, when the A or B pair of crossfeed valves in
+   387	the left pod is opened, fuel and oxidizer from the left pod are routed
+   388	to the OMS crossfeed valves of the right pod; thus, a pair of A or B
+   389	crossfeed valves in the right pod must be opened to permit the left
+   390	pod fuel and oxidizer to be directed to the right OMS pod engine.  A
+   391	talkback indicator above the pod crossfeed switches on panel O8
+   392	indicates the status of the selected pair's fuel and oxidizer valves.
+   393	The talkback indicator indicates op when both valves are open,
+   394	barberpole when the valves are in transit or one valve is open and one
+   395	closed, and cl when both valves are closed.  The left, right crossfeed
+   396	A, B open/close switches on panel O8 permit manual control of the
+   397	corresponding pair of fuel and oxidizer valves.
+   398	
+   399	The left and right OMS crossfeed A, B switches also provide the
+   400	capability to supply OMS propellants to the left and right aft RCS
+   401	engines.  The left and right aft RCS will not be used to supply
+   402	propellants to the OMS due to differences in pressures between the OMS
+   403	and RCS.
+   404	
+   405	The OMS crossfeed fuel and oxidizer line pressures are monitored on
+   406	telemetry and are transmitted to the flight deck CRT.
+   407	
+   408	There are 64 ac -motor-operated valve actuators in the OMS/RCS
+   409	nitrogen tetroxide and monomethyl hydrazine propellant systems.  Each
+   410	valve actuator was modified to incorporate a 0.25-inch-diameter
+   411	stainless steel sniff line from the actuator to the mold line of the
+   412	orbiter.  The sniff line permits the monitoring of nitrogen tetroxide
+   413	or monomethyl hydrazine in the electrical portion of each valve
+   414	actuator during ground operations.
+   415	
+   416	There are sniff lines in the 12 ac -motor-operated valve actuators in
+   417	the forward RCS and in the 44 actua tors in the aft left and aft right
+   418	RCS.  The remaining 0.25-inch-diameter sniff lines are in the eight
+   419	OMS tank isolation and crossfeed ac-motor-operated valve actuators in
+   420	the left and right orbital maneuvering systems.  The 44 aft left and
+   421	right RCS sniff lines and the eight OMS left and right sniff lines are
+   422	routed to the respective left and right OMS/RCS pod Y web access
+   423	servicing panels.
+   424	
+   425	During ground operations, an interscan can be connected to the sniff
+   426	ports to check for the presence of nitrogen tetroxide or monomethyl
+   427	hydrazine in the electrical portion of the ac-motor-operated valve
+   428	actuators.
+   429	
+   430	An electrical microswitch in each of the ac-motor-operated valve
+   431	actuators signals the respective valves' position (open or closed) to
+   432	the onboard flight crew displays and controls as well as telemetry.
+   433	An extensive improvement program was implemented to reduce the
+   434	probability of floating particulates in the electrical microswitch
+   435	portion of each ac-motor-operated valve actuator.  Particulates could
+   436	affect the operation of the microswitch in each valve and, thus, the
+   437	position indication of the valves to the onboard displays and controls
+   438	and telemetry.
+   439	
+   440	
+   441	"6_2_3_13_5_5.TXT" (7539 bytes) was created on 12-12-88
+   442	
+   443	ENGINE BIPROPELLANT VALVE ASSEMBLY.
+   444	
+   445	Each OMS engine receives pressure-fed propellants at its bipropellant
+   446	valve assembly.  The bipropellant ball valve assembly is controlled by
+   447	its gaseous nitrogen system.  The nitrogen system consists of a
+   448	storage tank, engine pressure isolation valve, regulator, relief
+   449	valve, check valve, accumulator, engine purge valves, bipropellant
+   450	solenoid control valves and actuators that control the bipropellant
+   451	ball valves.
+   452	
+   453	A gaseous nitrogen spherical storage tank is mounted next to the
+   454	combustion chamber to supply pressure to its engine pressure isolation
+   455	valve.  The tank contains enough nitrogen to operate the ball valves
+   456	and purge the engine 10 times.  Nominal tank capacity is 60 cubic
+   457	inches.  The maximum tank operating pressure is 3,000 psi, with a
+   458	proof pressure of 6,000 psig.
+   459	
+   460	Each tank's pressure is monitored by two pressure sensors.  One sensor
+   461	transmits the tank pressure to the N 2 , He, kit He switch on panel
+   462	F7.  When the switch is positioned to N 2 , tank pressure is displayed
+   463	on the OMS press N 2 tank left, right meters on panel F7.  The other
+   464	sensor transmits pressure to telemetry.
+   465	
+   466	A dual-coil, solenoid-operated engine pressure isolation valve is
+   467	located in each gaseous nitrogen system.  The valve is energized open
+   468	and spring-loaded closed.  The engine pressure isolation valve permits
+   469	gaseous nitrogen flow from the tank to the regulator, accumulator, the
+   470	bipropellant ball valve control valves and purge valves 1 and 2 when
+   471	energized open and isolates the nitrogen tank from the gaseous
+   472	nitrogen supply system when closed.  The engine pressure isolation
+   473	valves in each system are controlled by the OMS eng left, right
+   474	switches on panel C3.  When the OMS eng left switch is placed in the
+   475	arm press position, the left OMS engine pod's pressure isolation valve
+   476	is energized open.  When the OMS eng right switch is placed in the arm
+   477	press position, the right OMS engine pod's pressure isolation valve is
+   478	energized open.  The gaseous nitrogen engine pressure isolation valve,
+   479	when energized open, allows gaseous nitrogen supply pressure to be
+   480	directed into a regulator, through a check valve, an in-line
+   481	accumulator and to a pair of engine bipropellant control valves.  The
+   482	engine bipropellant control valves are controlled by the OMS thrust
+   483	on/off commands from the GPCs.
+   484	
+   485	A single-stage regulator is installed in each gaseous nitrogen
+   486	pneumatic control system between the gaseous nitrogen engine pressure
+   487	isolation valve and the engine bipropellant control valves.  The
+   488	regulator reduces the gaseous nitrogen service pressure to a desired
+   489	working pressure of 315 to 360 psig.
+   490	
+   491	A pressure relief valve downstream of the gaseous nitrogen regulator
+   492	limits the pressure to the engine bipropellant control valves and
+   493	actuators if a gaseous nitrogen regulator malfunctions.  The relief
+   494	valve relieves between 450 and 500 psig and resets at 400 psig
+   495	minimum.
+   496	
+   497	A pressure sensor downstream of the regulator monitors the regulated
+   498	pressure and transmits it to the CRT display and to telemetry.
+   499	
+   500	The check valve located downstream of the gaseous nitrogen regulator
+   501	will close if gaseous nitrogen pressure is lost on the upstream side
+   502	of the check valve and will isolate the remaining gaseous nitrogen
+   503	pressure on the downstream side of the check valve.
+   504	
+   505	The 19-cubic- inch gaseous nitrogen accumulator downstream of the
+   506	check valve and upstream of the bipropellant control valves provides
+   507	enough pressure to operate the engine bipropellant control valves one
+   508	time with the engine pressure isolation valve closed or in the event
+   509	of loss of pressure on the upstream side of the check valve.
+   510	
+   511	Two solenoid-operated, three-way, two-position bipropellant control
+   512	valves on each OMS engine control the bipropellant control valve
+   513	actuators and bipropellant ball valves.  Control valve 1 controls the
+   514	No.  1 actuator and the fuel and oxidizer ball valves.  Control valve
+   515	2 controls the No.  2 actuator and two ball valves, one fuel and
+   516	oxidizer ball valve in series to the No.  1 system.  Each control
+   517	valve contains two solenoid coils, either of which, when energized,
+   518	opens the control valve.
+   519	
+   520	The right OMS engine gaseous nitrogen solenoid control valves 1 and 2
+   521	are energized open by computer commands if the right OMS eng switch on
+   522	panel C3 is in the arm or arm/press position and the right OMS eng vlv
+   523	switch on panel O16 is on; the valves are de-energized normally when
+   524	thrust off is commanded or if the right OMS eng switch is positioned
+   525	to off .  The left OMS engine gaseous nitrogen solenoid control valves
+   526	1 and 2 are controlled in the same manner, but through the left OMS
+   527	eng switch on panel C3 and the left OMS eng vlv switch on panel O14.
+   528	
+   529	When the gaseous nitrogen solenoid control valves are energized open,
+   530	pressure is directed into the two actuators in each engine.  The
+   531	nitrogen acts against the piston in each actuator, overcoming the
+   532	spring force on the opposite side of the actuators.  Each actuator has
+   533	a rack-and-pinion gear; and the linear motion of the actuator
+   534	connecting arm is converted into rotary motion, which drives two ball
+   535	valves, one fuel and one oxidizer, to the open position.  Each pair of
+   536	ball valves opens simultaneously.  Fuel and oxidizer are then directed
+   537	to the combustion chamber of the engine, where the propellants atomize
+   538	and ignite upon contact.  The hypergolic propellants produce a hot
+   539	gas, thus thrust.
+   540	
+   541	The chamber pressure of each engine is monitored by a pressure sensor
+   542	and is transmitted to the OMS press left and right Pc (chamber
+   543	pressure) meter on panel F7.
+   544	
+   545	When the computer commands thrust off or an engine's OMS eng switch on
+   546	panel C3 or eng vlv switch on panel O14/O16 is positioned off, the
+   547	solenoid control valves are de-energized, removing gaseous nitrogen
+   548	pressure from the actuators; and the gaseous nitrogen pressure in the
+   549	actuators is vented overboard through the solenoid control valve.  The
+   550	spring in the actuator forces the actuator's piston to move in the
+   551	opposite direction, and the actuator drives the fuel and oxidizer ball
+   552	valves closed simultaneously.  The series-redundant arrangement of
+   553	ball valves ensures engine thrusting is terminated.
+   554	
+   555	Each actuator incorporates a linear position transducer, which
+   556	supplies ball valve position to a CRT.
+   557	
+   558	Check valves are installed in the vent port outlet of each gaseous
+   559	nitrogen solenoid control valve on the spring pressure side of each
+   560	actuator to protect the seal of these components from atmospheric
+   561	contamination.
+   562	
+   563	Each engine has two gaseous nitrogen purge valves in series.  These
+   564	valves are solenoid-operated open and spring-loaded closed.  They are
+   565	normally energized open after each thrusting period by the GPCs unless
+   566	inhibited by a crew entry on the maneuver CRT display.  The two purge
+   567	valves of an engine are energized open 0.36 second after OMS engine
+   568	thrust off has been commanded and permit gaseous nitrogen to flow
+   569	through the valves and check valve into the fuel line downstream of
+   570	the ball valves and out through the combustion chamber and engine
+   571	injector to space for two seconds.  This purges the residual fuel from
+   572	the combustion chamber and injector of the engine, permitting safe
+   573	engine restart.  The purge valves are then de-energized and
+   574	spring-loaded closed.  When the purge is completed, the gaseous
+   575	nitrogen tank pressure isolation valve is closed by placing the
+   576	respective OMS eng switch (panel C3) to off.  The check valve
+   577	downstream of the purge valves prevents fuel from flowing to the
+   578	engine purge valves during engine thrusting.
+   579	
+   580	
+   581	"6_2_3_13_5_6.TXT" (1082 bytes) was created on 12-12-88
+   582	
+   583	ENGINE THRUST CHAMBER ASSEMBLY.
+   584	
+   585	When the fuel reaches the thrust chamber, it is directed through 102
+   586	coolant channels in the combustion chamber wall, providing
+   587	regenerative cooling to the combustion chamber walls, and then to the
+   588	injector of the engine.  The oxidizer is routed directly to the
+   589	injector.  The platelet injector assembly consists of a stack of
+   590	plates, each with an etched pattern that provides proper distribution
+   591	and propellant injection velocity vector.  The stack is
+   592	diffusion-bonded and welded to the body of the injector.  The fuel and
+   593	oxidizer orifices are positioned so that the propellants will impinge
+   594	and atomize, causing the fuel and oxidizer to ignite because of
+   595	hypergolic reaction.
+   596	
+   597	The contoured nozzle extension is bolted to the aft flange of the
+   598	combustion chamber.  The nozzle extension is made of a columbium alloy
+   599	and is radiantly cooled.
+   600	
+   601	The nominal flow rate of oxidizer and fuel to each engine is 11.93
+   602	pounds per second and 7.23 pounds per second, respectively, producing
+   603	6,000 pounds of thrust at a vacuum specific impulse of 313 seconds.
+   604	
+   605	
+   606	"6_2_3_13_5_7.TXT" (1298 bytes) was created on 12-12-88
+   607	
+   608	OMS THRUSTING SEQUENCE.
+   609	
+   610	The OMS thrusting sequence commands the OMS engines on or off and
+   611	commands the engine purge function.  The flight crew can select, via
+   612	item entry on the maneuver display, a one- or two-engine thrusting
+   613	maneuver and can inhibit the OMS engine purge.
+   614	
+   615	The sequence determines which engines are selected and then provides
+   616	the necessary computer commands to open the appropriate helium vapor
+   617	isolation valves and the engine gaseous nitrogen solenoid control
+   618	valves and sets an engine-on indicator.  The sequence will monitor the
+   619	OMS engine fail flags and, if one or both engines have failed, issue
+   620	the appropriate OMS cutoff commands as soon as the crew has confirmed
+   621	the failure by placing the OMS eng switch in the off position.  This
+   622	will then terminate the appropriate engine's control valve commands.
+   623	
+   624	In a normal OMS thrusting period, when the OMS cutoff flag is true,
+   625	the sequence terminates commands to the helium pressurization, helium
+   626	vapor isolation valves and two gaseous nitrogen engine control valves.
+   627	If the engine purge sequence is not inhibited, the sequence will check
+   628	for the left and right engine arm press signals and after 0.36 second
+   629	open the engine gaseous nitrogen purge valves for two seconds for the
+   630	engines that have the arm press signals present.
+   631	
+   632	
+   633	"6_2_3_13_5_8.TXT" (4929 bytes) was created on 12-12-88
+   634	
+   635	ENGINE THRUST VECTOR CONTROL SYSTEM.
+   636	
+   637	The engine TVC system consists of a gimbal ring assembly, two gimbal
+   638	actuator assemblies and two gimbal actuator controllers.  The engine
+   639	gimbal ring assembly and gimbal actuator assemblies provide OMS TVC by
+   640	gimbaling the engines in pitch and yaw.  Each engine has a pitch
+   641	actuator and a yaw actuator.  Each actuator is extended or retracted
+   642	by one of a pair of dual-redundant electric motors and is actuated by
+   643	general-purpose computer control signals.
+   644	
+   645	The gimbal ring assembly contains two mounting pads to attach the
+   646	engine to the gimbal ring and two pads to attach the gimbal ring to
+   647	the orbiter.  The ring transmits engine thrust to the pod and orbiter.
+   648	
+   649	The pitch and yaw gimbal actuator assembly for each OMS engine
+   650	provides the force to gimbal the engines.  Each actuator contains a
+   651	primary and secondary motor and drive gears.  The primary and
+   652	secondary drive systems are isolated and are not operated
+   653	concurrently.  Each actuator consists of two redundant brushless dc
+   654	motors and gear trains, a single jackscrew and nut-tube assembly and
+   655	redundant linear position feedback transducers.  A GPC position
+   656	command signal from the primary electronic controller energizes the
+   657	primary dc motor, which is coupled with a reduction gear and a no-back
+   658	device.  The output from the primary power train drives the jackscrew
+   659	of the drive assembly, causing the nut-tube to translate (with the
+   660	secondary power train at idle), which causes angular engine movement.
+   661	If the primary power train is inoperative, a GPC position command from
+   662	the secondary electronic controller energizes the secondary dc motor,
+   663	providing linear travel by applying torque to the nut-tube through the
+   664	spline that extends along the nut-tube for the stroke length of the
+   665	unit.  Rotation of the nut-tube about the stationary jackscrew causes
+   666	the nut-tube to move along the screw.  A no-back device in each drive
+   667	system prevents backdriving of the standby system.
+   668	
+   669	The electrical interface, power and electronic control elements for
+   670	active and standby control channels are assembled in separate
+   671	enclosures designated the active actuator controller and standby
+   672	actuator controller.  These are mounted on the OMS/RCS pod structure.
+   673	The active and standby actuator controllers are electrically and
+   674	mechanically interchangeable.
+   675	
+   676	The gimbal assembly provides control angles of plus or minus 6 degrees
+   677	in pitch and plus or minus 7 degrees in yaw with clearance provided
+   678	for an additional 1 degree for snubbing and tolerances.  The engine
+   679	null position is with the engine nozzles up 15 degrees 49 seconds (as
+   680	projected in the orbiter XZ plane) and outboard 6 degrees 30 seconds
+   681	(measured in the 15-degree 49-second plane).
+   682	
+   683	The thrust vector control command subsystem operating program
+   684	processes and outputs pitch and yaw OMS engine actuator commands and
+   685	the actuator power selection discretes.  The OMS TVC command SOP is
+   686	active during operational sequences, orbit insertion (OMS-1 and
+   687	OMS-2), orbit coast, deorbit, deorbit coast and return-to-launch-site
+   688	abort.
+   689	
+   690	The flight crew can select either the primary or the secondary motors
+   691	of the pitch and yaw actuators by item entry on the maneuver display
+   692	or can select actuators off.  The actuator command outputs are
+   693	selected by the TVC command SOP depending on the flag that is present,
+   694	i.e., major modes, deorbit maneuver, orbit coast, and RTLS abort,
+   695	center-of-gravity trim and gimbal check.  The deorbit maneuver coast
+   696	flag causes the TVC command SOP to output I-loaded values to command
+   697	the engines to the entry stowed position.  The presence of the RTLS
+   698	abort and center-of-gravity trim flags causes the engines to be
+   699	commanded to a predefined position with the thrust vector through the
+   700	center of gravity.  The major mode RTLS flag by itself will cause the
+   701	engines to be commanded to a stowed position for return-to-launch-site
+   702	entry.  The gimbal check flag causes the engines to be commanded to
+   703	plus 7 degrees yaw and 6 degrees pitch, then to minus 7 degrees yaw
+   704	and 6 degrees pitch, and back to zero degrees yaw and pitch.  In the
+   705	absence of these flags, the TVC command SOP will output the digital
+   706	autopilot gimbal actuator commands to the engine actuators.  The
+   707	backup flight control system allows only manual TVC during a thrusting
+   708	period, but it is otherwise similar.
+   709	
+   710	The OMS TVC feedback SOP monitors the primary and secondary actuator
+   711	selection discretes from the maneuver display and performs
+   712	compensation on the selected pitch and yaw actuator feedback data.
+   713	This data is output to the OMS actuator fault detection and
+   714	identification and to the maneuver display.  The OMS TVC feedback SOP
+   715	is active during orbit insertion (OMS-1 and OMS-2), orbit coast,
+   716	deorbit maneuver and deorbit maneuver coast.  The present OMS gimbal
+   717	positions can be monitored on the maneuver CRT display when this SOP
+   718	is active and the primary or secondary actuator motors are selected.
+   719	
+   720	
+   721	"6_2_3_13_5_9.TXT" (1561 bytes) was created on 12-12-88
+   722	
+   723	THERMAL CONTROL.
+   724	
+   725	OMS thermal control is achieved by insulation on the interior surface
+   726	of the pods that enclose the OMS hardware components and the use of
+   727	strip heaters.  Wrap around heaters and insulation condition the
+   728	crossfeed lines.  The heaters prevent propellant from freezing in the
+   729	tanks and lines.  The heater system is divided into two areas: the
+   730	OMS/RCS pods and the aft fuselage crossfeed and bleed lines.  Each
+   731	heater system has two redundant heater systems, A and B, and is
+   732	controlled by the RCS/OMS heaters switches on panel A14.
+   733	
+   734	Each OMS/RCS pod is divided into eight heater areas.  Each of the
+   735	heater areas in the pods contains an A and B element, and each element
+   736	has a thermostat that controls the temperature from 55 to 75 F.  These
+   737	heater elements are controlled by the left pod and right pod switches
+   738	on panel A14.  Sensors located throughout the pods supply temperature
+   739	information to the propellant thermal CRT display and telemetry.
+   740	
+   741	The crossfeed line thermal control in the aft fuselage is divided into
+   742	11 heater areas.  Each area is heated in parallel by heater systems A
+   743	and B, and each area has a control thermostat to maintain temperature
+   744	at 55 F minimum to 75 F maximum.  Each circuit also has an
+   745	overtemperature thermostat to protect against a failed-on heater
+   746	switch.  These heater elements are controlled by the respective crsfd
+   747	lines switch on panel A14.  Temperature sensors near the control
+   748	thermostats on the crossfeed and bleed lines supply temperature
+   749	information on the propellant thermal CRT display and telemetry.
+   750	
+   751	
+   752	"6_2_3_13_5_10.TXT" (2112 bytes) was created on 12-12-88
+   753	
+   754	OMS-RCS INTERCONNECT.
+   755	
+   756	An interconnect between the OMS crossfeed line and the aft RCS
+   757	manifolds provides the capability to operate the aft RCS using 1,000
+   758	pounds per pod of OMS propellant for orbital maneuvers.  The aft RCS
+   759	may use OMS propellant from either OMS pod in orbit.
+   760	
+   761	The orbital interconnect sequence is available during orbit operations
+   762	and on-orbit checkout.
+   763	
+   764	The flight crew must first configure the following switches (using a
+   765	feed from the left OMS as an example): (1) posi tion the aft left RCS
+   766	tank isolation 1/2, 3/4/5A and 3/4/5B and aft right RCS tank isolation
+   767	1/2, 3/4/5A and 3/4/5B switches on panel O7 to close; (2) check that
+   768	the talkback indicator above these switches indicates cl, and position
+   769	the aft left RCS crossfeed 1/2, 3/4/5 and aft right RCS crossfeed 1/2,
+   770	3/4/5 switches to open; (3) check that the indicators show op and open
+   771	the left OMS tank isolation A and B valves (panel O8) and verify the
+   772	talkback indicators show op ; (4) open the left OMS crossfeed A and B
+   773	valves and verify the indicators show op ; (5) close the right OMS
+   774	crossfeed A and B valves and verify the indicators show cl; and (6)
+   775	position the left OMS He press/vapor isol valve A switch in the GPC
+   776	position.  The left OMS-to-aft-RCS interconnect sequence can then be
+   777	initiated by item entry on the RCS SPEC display.
+   778	
+   779	The left OMS helium pressure vapor isolation valve A will be commanded
+   780	open when the left OMS tank (ullage) pressure decays to 236 psig, and
+   781	the open commands will be terminated 30 seconds later.  If the left
+   782	OMS tank (ullage) pressure remains below 236 psia, the sequence will
+   783	set an OMS/RCS valve miscompare flag and will set a Class 3 alarm and
+   784	a CRT fault message.  The sequence also will enable the OMS-to-RCS
+   785	gauging sequence at the same time.
+   786	
+   787	The flight crew can terminate the sequence and inhibit the OMS-to-RCS
+   788	gauging sequence by use of the OMS press ena-off item entry on the RCS
+   789	SPEC display.  The valves can then be reconfigured to their normal
+   790	position on panels O7 and O8.  The OMS-to-aft-RCS interconnect
+   791	sequence is not available in the backup flight control system.
+   792	
+   793	
+   794	"6_2_3_13_5_11.TXT" (966 bytes) was created on 12-12-88
+   795	
+   796	OMS-TO-RCS GAUGING SEQUENCE.
+   797	
+   798	The OMS-to-aft-RCS propellant quantities are calculated by burn time
+   799	integration.  Once each cycle, the accumulated aft RCS thruster cycles
+   800	are used to compute the OMS propellant used since the initiation of
+   801	gauging.  The number of RCS thruster cycles is provided by the RCS
+   802	command subsystem operating program to account for minimum-impulse
+   803	firing of the RCS thrusters.  The gauging sequence is initiated by
+   804	item entry of the OMS right or OMS left interconnect on the RCS SPEC
+   805	CRT display and is terminated by the return to normal item entry.
+   806	
+   807	The gauging sequence maintains a cumulative total of left and right
+   808	OMS propellant used during OMS-to-aft-RCS interconnects and displays
+   809	the cumulative totals as percentage of left and right OMS propellant
+   810	on the RCS SPEC display.  The flight crew will be alerted by a Class 3
+   811	alarm and a fault message when the total quantity used from either OMS
+   812	pod exceeds 1,000 pounds or 8.37 percent.
+   813	
+   814	
+   815	"6_2_3_13_5_12.TXT" (6937 bytes) was created on 12-12-88
+   816	
+   817	ABORT CONTROL SEQUENCES.
+   818	
+   819	The abort control sequence is the software that manages, among other
+   820	items, the OMS and aft RCS configuration and thrusting periods during
+   821	ascent aborts to improve performance or to consume OMS and aft RCS
+   822	propellants for orbiter center-of-gravity control.
+   823	
+   824	Premission-determined parameters are provided for the OMS and aft RCS
+   825	thrusting periods during aborts since the propellant loading and
+   826	orbiter center of gravity vary with each mission.
+   827	
+   828	The premission-determined parameters for the abort-to-orbit thrusting
+   829	period are modified during flight, based on the vehicle velocity at
+   830	abort initiation.  The premission-determined parameters for abort once
+   831	around are grouped with different values for early or late AOA.  The
+   832	return-to-launch-site parameters are contained in a single table.
+   833	
+   834	The abort control sequence is available in OPS 1 and 6 and is
+   835	initiated at SRB separation if selected before then or at the time of
+   836	selection if after SRB separation.
+   837	
+   838	ATO and AOA Aborts.  The OMS and aft RCS begin thrusting as soon as an
+   839	ATO or AOA is initiated with one main engine out.
+   840	
+   841	For some aborts, an OMS-to-aft-RCS interconnect is not desired.  A
+   842	parallel aft RCS plus X thrusting period using aft RCS propellant and
+   843	the four aft RCS plus X thrusters will be performed during the OMS-1
+   844	thrusting period to achieve the desired orbit.  If a plus X aft RCS
+   845	thrusting period is required before main engine cutoff, the abort
+   846	control sequence will command the four aft plus X RCS jets on if
+   847	vehicle acceleration is greater than 0.8 g and will monitor the RCS
+   848	cutoff time to terminate the thrusting period.  If an RCS propellant
+   849	dump (burn) is required before MECO and vehicle acceleration is
+   850	greater than 1.8 g, the abort control sequence will command an
+   851	eight-aft-RCS-jet null thrust and monitor the RCS cutoff time to
+   852	terminate the thrusting period.
+   853	
+   854	In other abort cases, an OMS-to-aft-RCS interconnect is desired.  This
+   855	thrusting is performed with the OMS and four aft RCS plus X thrusters
+   856	to consume OMS propellant for orbiter center-of-gravity control.  More
+   857	aft RCS jets can be commanded if needed to increase OMS propellant
+   858	usage.  For example, for an OMS propellant dump (burn), 14 aft RCS
+   859	null jets can be commanded to thrust to improve orbiter
+   860	center-of-gravity location.
+   861	
+   862	If the amount of OMS propellant used before MECO leaves less than 28
+   863	percent of OMS propellants, a 15-second aft RCS ullage thrust is
+   864	performed after MECO to provide a positive OMS propellant feed to
+   865	start the OMS-1 thrusting period.
+   866	
+   867	The OMS-to-aft-RCS interconnect sequence provides for an automatic
+   868	interconnect of the OMS propellant to the aft RCS when required and
+   869	reconfigures the propellant feed from the OMS and aft RCS tanks to
+   870	their normal state after the thrusting periods have ended.  The
+   871	interconnect sequence is initiated by the abort control sequence.
+   872	
+   873	In order to establish a known configuration of the valves, the
+   874	interconnect sequence terminates the GPC commands to the following
+   875	valves if they have not been terminated before honoring a request from
+   876	the abort control sequence: left and right OMS crossfeed A and B
+   877	valves, aft RCS crossfeed valves and aft RCS tank isolation valves.
+   878	
+   879	A request from the abort control sequence for an OMS-to-aft-RCS
+   880	interconnect will sequentially configure the OMS/RCS valves as
+   881	follows: close the left and right aft RCS propellant tank isolation
+   882	valves, open the left and right OMS crossfeed A and B valves, and open
+   883	the left and right aft RCS crossfeed valves.  The OMS-to-aft-RCS
+   884	interconnect complete flag is then set to true.
+   885	
+   886	When the abort control sequence requests a return to normal
+   887	configuration, all affected OMS/RCS propellant valve commands are
+   888	removed to establish a known condition; and the interconnect sequence
+   889	will then sequentially configure the valves as follows: close aft RCS
+   890	crossfeed valves, close left and right OMS crossfeed valves and open
+   891	aft RCS propellant tank isolation valves.  The OMS-to-aft-RCS
+   892	reconfiguration complete flag is then set to false, and the sequence
+   893	is terminated.
+   894	
+   895	Return-to-Launch-Site Abort.  An RTLS abort requires the dumping of
+   896	OMS propellant by burning the OMS propellant through both OMS engines
+   897	and through the 24 aft RCS thrusters to improve abort performance and
+   898	to achieve an acceptable entry orbiter vehicle weight and
+   899	center-of-gravity location.  The thrusting period is
+   900	premission-determined and depends on the OMS propellant load.
+   901	
+   902	The OMS engines start the thrusting sequence; and after the
+   903	OMS-to-aft-RCS interconnect is complete, the aft RCS thrusters are
+   904	commanded on.  The OMS engines and RCS thrusters then continue their
+   905	burn for a predetermined period.  The interconnect sequence is the
+   906	same for ATO and AOA aborts.  The OMS and aft RCS will begin thrusting
+   907	at SRB staging if the abort is initiated during the first stage of
+   908	flight or immediately upon abort initiation during second stage.
+   909	
+   910	Contingency Abort.  A contingency abort is selected automatically at
+   911	the loss of a second main engine or manually by the flight crew using
+   912	an item entry on the RTLS TRAJ or RTLS TRANS CRT displays.  For the
+   913	contingency aborts, the OMS-to-aft-RCS interconnect is performed in a
+   914	modified manner to allow continuous flow of propellants to the aft RCS
+   915	jets for vehicle control and to allow contingency rapid dump (burning)
+   916	of OMS and RCS propellants.  The abort control sequence tracks the
+   917	total time the OMS and aft RCS are on to determine the amount of
+   918	propellants used.
+   919	
+   920	The request for an interconnect will cause the interconnect sequence
+   921	to configure the valves sequentially as follows: open the aft RCS
+   922	crossfeed valves, open the left OMS crossfeed valves A, open the right
+   923	OMS crossfeed valves B, close the left and right aft RCS tank
+   924	isolation valves, open the left OMS crossfeed valves B and open the
+   925	right OMS crossfeed valves A.  The OMS-to-aft-RCS interconnect
+   926	complete flag will then be set to true.
+   927	
+   928	If the rapid dump is selected before MECO, the OMS-to-aft-RCS
+   929	interconnect occurs, and both OMS engines and the 24 aft RCS jets are
+   930	commanded to thrust until the desired amount of propellant has been
+   931	consumed.  The rapid dump will be interrupted during external tank
+   932	separation if the thrusting period is not completed before MECO;
+   933	otherwise, the thrusting period terminates when thrusting time equals
+   934	zero or if the normal acceleration exceeds a threshold value.
+   935	
+   936	Upon completion of the thrusting period, the OMS-to-aft-RCS
+   937	configuration flag will be set to false, and the sequence will be
+   938	terminated.  A return-to-normal-configuration request by the abort
+   939	control sequence will cause the interconnect sequence to configure the
+   940	valves sequentially as follows: open aft RCS propellant tank isolation
+   941	valves, close the aft RCS crossfeed valves, and close the left and
+   942	right OMS crossfeed A and B valves.  The OMS-to-aft-RCS interconnect
+   943	complete flag will be set to false, and the sequence will be
+   944	terminated.
+   945	
+   946	
+   947	"6_2_3_13_5_13.TXT" (2559 bytes) was created on 12-12-88
+   948	
+   949	OMS ENGINE FAULT DETECTION AND IDENTIFICATION.
+   950	
+   951	The OMS engine FDI function detects and identifies off-nominal
+   952	performance of the OMS engine, such as off-failures during OMS
+   953	thrusting periods, on-failures after or before a thrusting period and
+   954	high or low engine chamber pressures.
+   955	
+   956	Redundancy management software performs OMS engine FDI.  It is assumed
+   957	that the flight crew arms only the OMS engine to be used; the OMS
+   958	engine not armed cannot be used for thrusting.  FDI will be
+   959	initialized at SRB ignition and terminated after the OMS-1 thrusting
+   960	period or, in the case of an RTLS abort, at the transition from RTLS
+   961	entry to the RTLS landing sequence program.  The FDI also will be
+   962	initiated before each OMS burn and will be terminated after the OMS
+   963	thrusting period is complete.
+   964	
+   965	The OMS engine FDI uses both a velocity comparison and a chamber
+   966	pressure comparison method to determine a failed-on or failed-off
+   967	engine.  The velocity comparison is used only after MECO since the OMS
+   968	thrust is small compared to main propulsion thrust before MECO.
+   969	
+   970	The measured velocity increment is compared to a predetermined
+   971	one-engine and two-engine acceleration threshold value by the
+   972	redundancy management software to determine the number of engines
+   973	actually firing.  This information, along with the assumption that an
+   974	armed engine is to be used, allows the software to determine if the
+   975	engine has low thrust or has shut down prematurely.
+   976	
+   977	The chamber pressure comparison test compares a predetermined
+   978	threshold chamber pressure level to the measured chamber pressure to
+   979	determine a failed engine (on, off or low thrust).
+   980	
+   981	The engine-on command and the chamber pressure are used before MECO to
+   982	determine a failed engine.  The velocity indication and the chamber
+   983	pressure indication are used after MECO to determine a failed engine.
+   984	If the engine fails the chamber pressure test but passes the velocity
+   985	test after MECO, the engine will be considered failed.  Such a failure
+   986	would illuminate the red right OMS or left OMS caution and warning
+   987	light on panel F7 and the master alarm and produce a fault message.
+   988	In addition, if an engine fails the chamber pressure and velocity
+   989	tests, a down arrow is displayed on the maneuver CRT next to the
+   990	failed engine.
+   991	
+   992	When the flight crew disarms a failed engine by turning the arm/press
+   993	switch on panel C3 to off , a signal is sent to the OMS thrusting
+   994	sequence to shut down the engine and to signal guidance to
+   995	reconfigure.  Guidance reconfigures and downmodes from two OMS
+   996	engines, to one OMS engine, to four plus X RCS jets.
+   997	
+   998	
+   999	"6_2_3_13_5_14.TXT" (3632 bytes) was created on 12-12-88
+  1000	
+  1001	OMS GIMBAL ACTUATOR FDI.
+  1002	
+  1003	The OMS gimbal actuator FDI detects and identifies off-nominal
+  1004	performance of the pitch and yaw gimbal actuators of the OMS engines.
+  1005	
+  1006	The OMS gimbal actuator FDI is divided into two processes.  The first
+  1007	determines if the actuators should move from their present position.
+  1008	If the actuators must move, the second part determines how much they
+  1009	should move and whether the desired movement has occurred.
+  1010	
+  1011	The first part checks the actuators' gimbal deflection error (which is
+  1012	the difference between the commanded new position and the actuators'
+  1013	last known position) and determines whether the actuators should
+  1014	extend or retract or if they are being driven against a stop.  If the
+  1015	actuators are in the desired position or being driven against a stop,
+  1016	the first part of the process will be repeated.  If the first part
+  1017	determines that the actuator should move, the second part of the
+  1018	actuator FDI process is performed.
+  1019	
+  1020	The second part of the actuator FDI process checks the present
+  1021	position of each actuator against its last known position to determine
+  1022	whether the actuators have moved more than a threshold amount.  If the
+  1023	actuators have not moved more than this amount, an actuator failure is
+  1024	incremented by one.  Each time an actuator fails this test, the
+  1025	failure is again incremented by one.  When the actuator failure
+  1026	counter reaches an I-loaded value of four, the actuator is declared
+  1027	failed and a fault message is output.  The actuator failure counter is
+  1028	reset to zero any time the actuator passes the threshold test.
+  1029	
+  1030	The first and second parts of the actuator FDI process continue to
+  1031	perform in this manner.  The actuator FDI process can detect full-off
+  1032	gimbal failures and full-on failures indirectly.  The full-on failure
+  1033	determines that the gimbal has extended or retracted too far and
+  1034	commands reverse motion.  If no motion occurs, the actuator will be
+  1035	declared failed.  The flight crew's response to a failed actuator is
+  1036	to select the secondary actuator electronics by item entry on the
+  1037	maneuver CRT display.
+  1038	
+  1039	The contractors are McDonnell Douglas Astronautics Co., St.  Louis,
+  1040	Mo.  (OMS/RCS pod assembly and integration); Aerojet Tech Systems Co.,
+  1041	Sacramento, Calif.  (OMS engine); Aerojet Manufacturing Co.,
+  1042	Fullerton, Calif.  (OMS propellant tanks); Aircraft Contours, Los
+  1043	Angeles, Calif.  (OMS pod edge member); Brunswick-Wintec, El Segundo,
+  1044	Calif.  (OMS propellant tank acquisition screen assembly);
+  1045	Consolidated Controls, El Segundo, Calif.  (high- and low-pressure
+  1046	solenoid valves and OMS regulators); Fairchild Stratos, Manhattan
+  1047	Beach, Calif.  (hypergolic servicing couplings); Metal Bellows Co.,
+  1048	Chatsworth, Calif.  (alignment bellows); Simmonds Precision Products
+  1049	Inc., Vergennes, Vt.  (OMS propellant gauging system); SSP Products,
+  1050	Burbank, Calif.  (gimbal bellows assembly); Tayco Engineering, Long
+  1051	Beach, Calif.  (electrical heaters); AiResearch Manufacturing Co.,
+  1052	Torrance, Calif.  (gimbal actuators and controllers); Futurecraft
+  1053	Corp., City of Industry, Calif.  (OMS engine valve components); L.A.
+  1054	Gauge, Sun Valley, Calif.  (ball valves); PSM Division of Fansteel,
+  1055	Los Angeles, Calif.  (OMS nozzle extension); Rexnord Inc., Downers
+  1056	Grove, Ill.  (OMS engine bearings); Sterer Engineering and
+  1057	Manufacturing, Pasadena, Calif.  (OMS engine pressure regulator/relief
+  1058	valve assembly); Parker-Hannifin, Irvine, Calif.  (OMS propellant tank
+  1059	isolation valves, relief valves, manifold interconnect valves);
+  1060	Rockwell International, Rocketdyne Division, Canoga Park, Calif.  (OMS
+  1061	check valves); Brunswick, Lincoln, Neb.  (OMS helium tanks);
+  1062	Sundstrand, Rockford, Ill.  (heater thermostats).
+  1063	

@@ -1,0 +1,142 @@
+     1	BATON ROUGE, La., Nov. 18, 1991 -- Fifth Generation Systems, Inc., today
+     2	introduced Untouchable, a new line of anti-virus software that provides
+     3	complete virus protection without the need for frequent virus signature
+     4	updates. Untouchable stand-alone and network products are designed to
+     5	operate on DOS-based PCs, compatibles and networks.
+     6	
+     7	Four features distinguish the Untouchable product line from other
+     8	anti-virus software products on the market:
+     9	
+    10	o a revolutionary product design which eliminates the need 
+    11	  for frequent virus signature updates;
+    12	
+    13	o a patented virus removal technique that guarantees 
+    14	  100 percent restoration of recoverable infected files,
+    15	  including those hit by unknown viruses;
+    16	
+    17	o automatic, load-and-forget protection that ensures the
+    18	  integrity of data without interfering with the work 
+    19	  process; and
+    20	
+    21	o a network version that provides centralized installation
+    22	  and management capabilities.
+    23	
+    24	"Untouchable sets the standard for the next generation of anti-virus
+    25	software," said Barry L. Bellue, Sr., president and CEO of Fifth
+    26	Generation Systems. "This is the virus protection software that corporate
+    27	America has been waiting for," he continued. "It is nearly impossible to
+    28	get 40,000 users at a large corporation to update their software every
+    29	three months. With Untouchable, they will have total protection against
+    30	all existing and future viruses, even if they never buy virus signature
+    31	updates."
+    32	
+    33	PRODUCT DESIGN
+    34	
+    35	Untouchable consists of three distinct anti-virus technologies that
+    36	constantly interact to detect and eradicate known and unknown viruses.
+    37	
+    38	The heart of Untouchable's detection capabilities is the file scanner,
+    39	which incorporates the principal of modification detection. This
+    40	mathematically-proven technique safeguards against known and unknown virus
+    41	threats by making unique use of file signatures rather than the
+    42	commonly-used virus signatures.
+    43	
+    44	During installation, Untouchable fingerprints and registers all files on
+    45	the PC, using proprietary file signature calculations, and stores the
+    46	information in encrypted on-line and off-line databases. Every day,
+    47	Untouchable automatically performs an integrity test of the user's files
+    48	and compares the results of this check to the information initially stored
+    49	in the database.
+    50	
+    51	If a virus is detected, Untouchable uses the database of file signatures as
+    52	a reference to reconstruct infected files to their former. "healthy"
+    53	state. Since the removal methodology does not rely on virus signatures,
+    54	Untouchable can safely restore files struck by an unknown virus.
+    55	
+    56	"No other product available today can offer this degree of protection or
+    57	guarantee 100 percent safe restoration of recoverable files," said
+    58	Bellue.
+    59	
+    60	As a first line of defense, Untouchable uses a TSR monitor that checks
+    61	system memory for known boot sector and partition table viruses. Once
+    62	loaded into memory, it is always on guard against known viruses, scanning
+    63	each file before execution and checking every diskette inserted into the
+    64	floppy drive. Running completely in the background, the TSR monitor
+    65	occupies less than 900 bytes (.9K) when loaded into expanded memory or 5K
+    66	if fully loaded in conventional memory.
+    67	
+    68	Untouchable's second line of defense is a virus scanner/remover that can
+    69	detect and eradicate hundreds of known viruses. The virus scanner is
+    70	automatically run during program installation to verify a clean
+    71	environment and is automatically launched to check all new files and
+    72	programs for viruses before they are added to the database of file
+    73	signatures. The scanner can be manually run from the command line to check
+    74	floppy disks before use. If the scanner detects a known virus, it will
+    75	restore recoverable files to their original state.
+    76	
+    77	UNTOUCHABLE NETWORK
+    78	
+    79	Untouchable Network provides Novell LAN administrators with the ability to
+    80	centrally monitor and control the entire network for viruses.
+    81	
+    82	The program uses the same methods of protection as the stand-alone version,
+    83	but incorporates enhanced LAN management features, including:
+    84	
+    85	o automatic installation and updating from one location;
+    86	
+    87	o transparent, unobtrusive operation at the workstation
+    88	
+    89	o ultimate control over the way the program operates 
+    90	  on every node;
+    91	
+    92	o real-time virus alert mechanisms;
+    93	
+    94	o ongoing status reports on the state of the network 
+    95	  from one central control panel;
+    96	
+    97	o historical logs of all status reports and virus 
+    98	  alerts; and
+    99	
+   100	o the ability to assign "system operators" who receive 
+   101	  the same alert that workstations receive.
+   102	
+   103	Untouchable Network currently provides its enhanced LAN management
+   104	facilities for the Novell Netware operating system. A network saw y
+   105	version of the product, without the LAN management features, is available
+   106	to run on Microsoft LAN Manager, Banyan Vines, 3Com and other PC network
+   107	operating systems. Bellue said, "We will expand Untouchable Network's LAN
+   108	management capabilities to other network operating systems."
+   109	
+   110	Untouchable will be available in mid-November at a suggested retail price
+   111	of $165. An Untouchable Network Starter Kit is available at a suggested
+   112	retail price of $695. The starter kit includes the server package of full
+   113	supervisor documentation and software and ten node license agreements.
+   114	License agreements for additional nodes may be purchased at a suggested
+   115	retail price of $85 per node.
+   116	
+   117	While Untouchable does not require virus signature updates to ensure
+   118	complete protection against undiscovered new viruses, Fifth Generation
+   119	Systems recognizes that some users may want them. The company will provide
+   120	quarterly virus signature updates for the virus scanner and TSR monitor,
+   121	for a service charge of $15 per quarter.
+   122	
+   123	Fifth Generation Systems is one of the leading developers of DOS and
+   124	macintosh utilities software for data security, with Untouchable for virus
+   125	protection, DiskLock for access security and encryption, and FastBack Plus
+   126	for data backup. The privately-held firm also develops software for
+   127	menuing/file management and recovery.
+   128	
+   129	Fifth Generation Systems Inc
+   130	10049 North Reiger Rd, Baton Rouge, LA 70809
+   131	504-291-7221
+   132	
+   133	  +---------------------------------------------------------------+
+   134	  |  From the America On-Line & PC-Link New Product Info Services |
+   135	  +===============================================================+
+   136	  | This information was processed with OmniPage Professional OCR |
+   137	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+   138	  | provided by the above mentioned company. For additional info, |
+   139	  | contact the company at the address or phone# indicated above. |
+   140	  |    All submissions for this service should be addressed to    |
+   141	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+   142	  +---------------------------------------------------------------+

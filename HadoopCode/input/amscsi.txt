@@ -1,0 +1,136 @@
+     1	                             SCSI CONTROLLER
+     2	
+     3	     This is a very preliminary doc. for a SCSI interface for the AMIGA.
+     4	 I know that it is fragmented, but I am trying to get something together
+     5	 quickly. Feel free to send me your comments. 
+     6	 At the present time this design does not support DMA or AUTOCONFIG'ing.
+     7	 The "net-list" also includes parts for an optional 2 meg. memory add-on.
+     8	 At this time the memory does not work! I have to check my equations and
+     9	 analize that section of the board. The memory section does NOT upset the
+    10	 AMIGA or the SCSI interface. There are no special considerations when
+    11	 building the board. It runs off of the AMIGA's power supply and plugs
+    12	 into the EXPANSION PORT .
+    13	   The board uses 1 special part: NCR53C80  (sorry about that.)
+    14	 I used it because it handles most of the SCSI interface, and eliminates
+    15	 alot of "LS" chips. (The NCR53C80 is the CMOS version of the SCSI
+    16	 controller used by APPLE and most other venders!)
+    17	
+    18	    Building the board
+    19	
+    20	WARNING ! This board plugs into the expansion port! That port is directly
+    21	connected to the CPU and other chips in your AMIGA. Care must be taken so
+    22	as not to short anything to +5v or gnd as that may DESTROY your AMIGA.
+    23	   The circuit and design concepts are sound, but YOU are in control of
+    24	your machines destiny.  This project is NOT for the casual hacker.
+    25	REMEMBER, Don't yell at me if you break your machine!!!
+    26	
+    27	   On the lighter side, my board worked the first time it was turned on.
+    28	It must be easy if I didn't make any errors... Just take your time and all
+    29	will be OK !
+    30	
+    31	
+    32	After deciding where to locate all of the parts, use the "net-list" to
+    33	wire it. I suggest doing all of the wiring to the board before installing
+    34	the IC's. Remember that the NCR53C80 is sensitive to static, so be careful.
+    35	Also before installing IC's it is a good practice to check the power and
+    36	gruond pins on all chip sockets.
+    37	
+    38	     PARTS LIST
+    39	      PART#                          LOC               USE
+    40	     74LS688 ....................... Z1 ......... ADDRESS DECODER
+    41	     74LS139 ....................... Z2 ......... ADDRESS & R/W DECODER
+    42	     NCR53C80 ...................... Z3 ......... SCSI INTERFACE
+    43	     7406 .......................... Z4 ......... INTERRUPT BUFFER
+    44	     74LS244 .................... Z6 Z7 Z8 ...... MEMORY ADD. MUX
+    45	     PAL20RA10 ..................... Z5 ......... MEMORY CTRL PAL
+    46	     AMIGA CONNECTOR ............... P1 ......... 86 PIN
+    47	     SCSI CONNECTOR ................ P2 ......... 50 PIN
+    48	     MEMORY CONNECTOR .............. P3 ......... 60 PIN
+    49	
+    50	NOTE: DO NOT INSTALL U4,U5,U6,U7,U8 AT THIS TIME.
+    51	  If you want to wire it, go ahead the DRAM will be comming soon!
+    52	
+    53		CIRCUIT DESCRIPTION
+    54	  The reason for the 74LS688 (8 bit comparitor) is to allow for upgrading
+    55	the board for AUTOCONFIG'ing. I don't plan to do this until I get the
+    56	important work done (DRAM & CLOCK). It is not hard to use this way,
+    57	you have to "install" the board anyway. The advantage of AUTOCONFIG
+    58	is that the AMIGA decides where in the memory the board resides.
+    59	This is not a problem since it is the only board in the system.....
+    60	  The PAL (Z5) is used to control the DRAM. It is not needed at this point
+    61	so don"t worry about it. 
+    62	The 'LS139 is used to decode addresses intofour 16K blocks.
+    63		1:		$800000 is the NCR53C80
+    64		2:		$801000 is the PSEUDO DMA
+    65	 	3:		$802000 is for the CLOCK (not done yet)
+    66		4:		$803000 is not used at this point
+    67	   It may seem like alot of wasted memory but the AMIGA can only
+    68	AUTOCONFIG in 64K blocks. 
+    69	   The second half of the 'LS139 is used to convert the R/W signal
+    70	of the 680x0 to the read & write lines used by the NCR53C80.
+    71	   Z4 -the 7406 will be used as the interrupt driver. I want to
+    72	use INT2* for the NCR's interrupts and INT6* for the DRQ*. DON'T
+    73	install the 7406 untill the real driver is available. Your AMIGA
+    74	won't like getting interrupted by the NCR53C80!
+    75	   That is all there is to the SCSI interface. (Atleast for now)
+    76	It is possible to add DMA capibilities to the board but lets get the 
+    77	thing up and running first!
+    78	 
+    79	
+    80	      READING THE "NET-LIST"
+    81	  The schematic "AMSCSI" was made on an IBM XT using Future-Net software.
+    82	I wish that someone had a good schmatic capture pgm for the AMIGA !
+    83	Anyway to wire a board from the "net-list" ignore the "Path Ref" &
+    84	 the "Symbol Ref" cols.
+    85	
+    86	  EXAMPLE:   Part of the net-list
+    87	
+    88	Signal Desc   Path Ref      Circuit Designator          Symbol Ref    Pin
+    89	--------------------------------------------------------------------------------
+    90	              IGNORE        PART#                       IGNORE        PIN #
+    91	               THIS                                     THIS
+    92	               COL.                                     COL.
+    93	1,(AS)  (This is the signal name)
+    94	              1-1           P1  (part #)                195           74 (pin)
+    95	              1-1           Z1                          191           1
+    96	              1-1           Z5                          196           6
+    97	
+    98	1,(C1)
+    99	              1-1           P1                          195           16
+   100	              1-1           Z5                          196           2
+   101	
+   102	1,(C3)
+   103	              1-1           P1                          195           14
+   104	              1-1           Z5                          196           3
+   105	
+   106	    The signal (AS) should be wired from pin 74 of P1 to Z1 pin 1 and
+   107	Z5 pin 6
+   108	    The signal (C1) should be wired from pin 16 of P1 to Z5 pin 2
+   109	
+   110	  Continue this for the rest of the net list. EASY ISN'T IT.
+   111	
+   112	  It is recommended that the SCSI bus be terminated with 220 ohm / 330 ohm 
+   113	resistors. These are not included on the "net-list". Every SCSI signal
+   114	should have a 220 ohm resistor to +5v, and a 330 ohm resistor to gnd.
+   115	  You might want to try it without the terminators, but leave room for them
+   116	just to be safe..........
+   117	
+   118	  When I get a chance I will make a schematic on Dpaint.
+   119	
+   120	I have included two BASIC programs that will help you test your board.
+   121		1: SCSIMon - 	a small monitor that constantly reads the NCR53C80
+   122				and desplays the reg.s in HEX
+   123		2: SCSIdvr -	a very crude program that "PEEKS & POKES" the
+   124				SCSI . With it you can FORMAT, READ, & WRITE
+   125				a hard disk. It takes about 10-20 sec to read,
+   126				or write 1 sector !! ( Not blazing speed is it?)
+   127	
+   128	I hope to have an assembly (source) language program in the near future.
+   129		It is called------- SCSI68K.asm
+   130	If anyone can help with the DRIVER, PLEASE, let me know!
+   131	
+   132	    I can be reached through AMIGA/INFO BBS @ (215) 430-3969
+   133	
+   134	   GOOD LUCK                                      Rich Frantz
+   135	
+   136				

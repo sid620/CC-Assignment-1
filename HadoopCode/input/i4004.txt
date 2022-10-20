@@ -1,0 +1,68 @@
+     1	Section One: Before the Great Dark Cloud.
+     2	             ---------------------------
+     3	Part I: The Intel 4004 (1972)
+     4	
+     5	    The first single chip CPU was the Intel 4004, a 4-bit processor meant for
+     6	a calculator. It processed data in 4 bits, but its instructions were
+     7	8 bits long. Internally, it featured four 12 bit(?) registers which acted as
+     8	an internal evaluation stack. The Stack Pointer pointed to one of these
+     9	registers, not a memory location (only CALL and RET instructions operated on
+    10	the Stack Pointer). There were also sixteen 4-bit (or eight 8-bit) general
+    11	purpose registers
+    12	    The 4004 had 46 instructions. Intel created an 8-bit version of this, the
+    13	8008 (intended for a terminal controller).
+    14	[for additional information, see Appendix B]
+    15	
+    16	Part II: The Intel 4040 and 8080
+    17	
+    18	    The 4040 was compatible with the 4004 instruction set - the 4040 had 60
+    19	instructions, which included the 46 4004 instructions. The 8080 was similar to
+    20	the 4040, except being 8 bits wide.
+    21	    The 8080 had a 16 bit address bus, and an 8 bit data bus. Internally it
+    22	had seven 8 bit registers (six which could also be combined as three 16 bit
+    23	registers), a 16 bit stack pointer (the stack was stored in memory, not in an
+    24	internal register set), and 16 bit program counter. It also had several I/O
+    25	ports - 256 of them, so I/O devices could be hooked up without taking away or
+    26	interfering with the addressing space.
+    27	
+    28	Appearing in IEEE Computer 1972:
+    29	-------------------------------
+    30	
+    31	NEW
+    32	PRODUCTS
+    33	
+    34	FEATURE PRODUCT
+    35	
+    36	COMPUTER ON A CHIP
+    37	
+    38	   Intel  has  introduced  an  integrated  CPU  complete with
+    39	a 4-bit parallel adder, sixteen 4-bit registers, an accumula-
+    40	tor  and  a  push-down  stack  on  one  chip.  It's  one of a
+    41	family  of  four  new  ICs  which  comprise  the  MCS-4 micro
+    42	computer  system--the  first  system  to  bring the power and
+    43	flexibility  of  a  dedicated general-purpose computer at low
+    44	cost in as few as two dual in-line packages.
+    45	    MSC-4   systems   provide  complete  computing  and  con-
+    46	trol  functions  for  test  systems,  data terminals, billing
+    47	machines,   measuring   systems,   numeric   control  systems
+    48	and process control systems.
+    49	    The  heart  of  any  MSC-4  system  is  a  Type 4004 CPU,
+    50	which  incudes  a  set  of  45  instructions.  Adding  one or
+    51	more   Type   4001   ROMs   for   program  storage  and  data
+    52	tables   gives  a  fully  functioning  micro-programmed  com-
+    53	puter.   Add   Type  4002  RAMs  for  read-write  memory  and
+    54	Type 4003 registers to expand the output ports.
+    55	   Using  no  curcuitry  other  than  ICs from this family of
+    56	four,  a  system  with  4096  8-bit  bytes of ROM storage and
+    57	5120   bits   of  RAM  storage  can  be  created.  For  rapid
+    58	turn-around  or  only  a  few  systems,  Intel's erasable and
+    59	re-programmable   ROM,   Type   1701,   may   be  substituted
+    60	for the Type 4001 mask-programmed ROM.
+    61	    MCS-4   systems  interface  easily  with  switches,  key-
+    62	boards,  displays,  teletypewriters,  printers,  readers, A-D
+    63	converters   and  other  popular  peripherals.   For  further
+    64	information,  circle the reader service card 87 or call Intel
+    65	at (408) 246-7501.
+    66	              Circle 87 on Reader Service Card
+    67	
+    68	            COMPUTER/JANUARY/FEBRUARY 1971/71

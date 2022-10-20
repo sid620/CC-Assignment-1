@@ -1,0 +1,143 @@
+     1	
+     2	
+     3	           U.S. ROBOTICS ANNOUNCES THE LAST MODEM YOU'LL EVER BUY
+     4	        Provides Migration Path to Forthcoming CCITT 28.8 Kbps Standard
+     5	        ---------------------------------------------------------------
+     6	
+     7	     SKOKIE, Ill. -- June 8, 1992 -- U.S. Robotics today announced an upgrade
+     8	program for the CCITT-proposed standard of 28.8 Kbps, previously referred to
+     9	as V.FAST.  The Courier V.32bis, Courier HST Dual Standard and Shared Access
+    10	Modem Sharing Kits are the products currently included in the program. Field
+    11	upgrades will be available for $299 as soon as the CCITT 28.8 Kbps draft
+    12	recommendation is completed. Official approval of the standard is not
+    13	expected until January, 1994.
+    14	     "The CCITT-proposed 28.8 Kbps standard won't be a reality for most
+    15	manufacturers until 1994," said Jonathan Zakin, U.S. Robotics executive vice
+    16	president, sales and marketing.  "By offering modems ready for 28.8 Kbps now,
+    17	we're providing insurance against technical obsolescence.  Customers can
+    18	purchase a Courier high-speed modem or Shared Access Modem Sharing Kit now
+    19	and take advantage of the most updated technology available. When the 28.8
+    20	Kbps standard becomes available later, they'll already have a cost-effective
+    21	upgrade option and won't have to re-invest in new equipment."
+    22	     "Key to the 28.8 Kbps program is the fact that the upgrade to the
+    23	Courier high-speed modems and Shared Access Modem Sharing Kits can be
+    24	completed by the end user at their worksite, which reduces their `down' time
+    25	and eliminates excess costs like shipping and handling," continued Zakin.
+    26	"You may hear about other 28.8 Kbps modems that are available now, but until
+    27	the standard is defined, no one knows what hardware will be needed to comply.
+    28	Our unique modem architecture makes future `field' upgrades a realistic and
+    29	simple procedure."
+    30	     Because of U. S. Robotics' advanced modular modem architecture, the
+    31	company's Courier V.32bis, Courier HST Dual Standard, and Shared Access modems
+    32	are readily upgradable to 28.8Kbps. The modems are made up of a motherboard and
+    33	a smaller daughterboard, which holds the modems' microprocessors and firmware.
+    34	The current, high-speed daughterboard can easily be replaced with a new board
+    35	containing the 28.8 Kbps CCITT standard.  U.S. Robotics is the only modem
+    36	manufacturer to implement this kind of flexible design.
+    37	     "In the CClTT, the previously called `V.FAST' standard has gained
+    38	universal support at the 28.8Kbps speed," said Dale Walsh, U.S. Robotics vice
+    39	president, advanced development and participant in the CCITT committee on the
+    40	28.8 Kbps standard, "This is how our modular architecture works. The data
+    41	pump (which executes the modulation and demodulation of the data), and the
+    42	key controller functions (which perform the data compression, error control
+    43	and the AT command set) are on one board, making upgrades simple. We can
+    44	easily make the data pump faster and upgrade the controller functions to keep
+    45	up with the new speed. It's all in just one small plug-in card."
+    46	     Because compatibility with CCITT standards is crucial, U.S. Robotics'
+    47	availability and implementation of the 28.8Kbps standard will depend on the
+    48	CClTT's progress.  At this time, the standard is expected to define a connect
+    49	speed of 28.8 Kbps, two times faster than V.32bis, the fastest CCITT
+    50	standard now available.
+    51	     U.S. Robotics is one of the first vendors to announce a program for
+    52	28.8Kbps compatibility.  The company has a history of industry "firsts,"
+    53	including the first CCITT V.32bis modem from a major manufacturer, the first
+    54	self-managing modem management system and the first portable CCITT V.32
+    55	modem.
+    56	     U.S. Robotics will upgrade any Modem Sharing Kit to 28.8Kbps. Current
+    57	Courier models, which have the smaller footprint and a higher, 57.6 Kbps DCE
+    58	to DTE (modem-to-computer) interface speed, are also upgradable. The
+    59	company's upgrade program does not include WorldPort and Sportster modems.
+    60	     U. S. Robotics Courier modems offer a wide range of features, including
+    61	fax, remote configuration, and synchronous capabilities. The Shared Access
+    62	Modem Sharing Kits, which began shipping in March, 1992, allow for the
+    63	pooling of modems on a LAN so that a LAN user can access them for dial-in or
+    64	dial-out communications.
+    65	     The following products will be upgradable to 28.8 Kbps:
+    66	
+    67	  Courier V.32 bis, internal and external          (57,600 bps versions only)
+    68	  Courier HST Dual Standard, internal and external (57,600 bps versions only)
+    69	  Courier V.32 bis FAX, internal and external
+    70	  Courier HST Dual Standard FAX, internal and external
+    71	  Shared Access Modem Sharing Kit Single Port and Dual Port
+    72	
+    73	                 THE CCITT 28.8 KBPS STANDARD: SOME BACKGROUND
+    74	                 ---------------------------------------------
+    75	
+    76	     The standard for 28.8 Kbps dial-up communications being developed by the
+    77	CCITT will stretch the limits of dial-up telephone lines.  But don't expect
+    78	to be sending files at top speeds immediately.
+    79	     Dale Walsh,  vice president for advanced development at U.S. Robotics,
+    80	Inc., cautions that most users won't be able to achieve the maximum speeds
+    81	permitted under the standard right away. When the standard is adopted, modems
+    82	that conform should be able to transmit at 19.2 Kbps on lines where a modem
+    83	conforming to V.32bis (the current high-speed standard) can now transmit at
+    84	14.4 Kbs.  But Walsh,  a member of the CCITT committee developing the
+    85	standard, says it is being formulated with the increasing digitization of 
+    86	dial-up phone networks in mind.
+    87	     The improved quality of phone lines, as much as any modem technology
+    88	improvements, has made high speed dial-up communications possible" says
+    89	Walsh. "We are designing the standard keeping in mind that phone networks
+    90	will use more and more digital circuits and digital central office switches."
+    91	     Consequently, speeds in the neighborhood of 28.8 Kbps will be the
+    92	exception, rather than the rule--at least until the public switched
+    93	telephone network becomes completely digital.
+    94	     "I'd say when it's finished in a year or so, the standard will allow
+    95	19.2 Kbps transmissions on 80 percent of all lines, 24 Kbps on 50 percent of
+    96	all lines, and 28.8 Kbps communications on 20 percent of all lines," says
+    97	Walsh, who also helped develop the CCITT V.32bis standard for 14.4 Kbps
+    98	dial-up communications.  "As the phone networks improve, top speeds will be
+    99	more easily achieved, so I think it's more realistic to think of it as a
+   100	19.2 Kbps standard that is sometimes capable of higher speeds.
+   101	     A common misconception is that the coming 28.8 Kbps standard will allow
+   102	speeds of 115.2 Kbps, when combined with V.42bis data compression.  Walsh noted
+   103	that such calculations are based on an assumption that V.42bis allows 4 to 1
+   104	data compression.  Outside the lab, V.42bis allows compression ratios between
+   105	2 to 1 and 3 to 1, meaning that under REAL LIFE conditions, the forthcoming
+   106	standard will allow maximum throughput of about 86.4 Kbps.
+   107	     "It's a mistake to use the 28.8 number and max everything out from that,"
+   108	said Walsh.
+   109	     Not that the 28.8 Kbps standard doesn't have its advantages.  After all,
+   110	19.2 Kbps is an improvement over 14.4 Kbps.  And the forthcoming standard will
+   111	adjust for line conditions, a critical factor in high-speed data
+   112	communications--like no previous standard.  The standard under development
+   113	will include a "probing" function that the modem can use to "sound out" the
+   114	quality of the phone line.  That will allow the modem to optimize transmissions
+   115	to take advantage of available bandwidth.
+   116	     "We are still working on the training sequences," says Walsh.  "But before
+   117	transmission starts, the standard will enable the modem to determine what band-
+   118	width is available and how to best position the signal to match available band-
+   119	width."
+   120	     The standard achieves higher speeds through its ability to use more of a
+   121	line's bandwidth, not just the center portion of the channel used under current
+   122	standards.
+   123	     "It will more closely match the modulation scheme to what's available," 
+   124	says Walsh.  "That way, the modem can shape the transmissions to adapt 
+   125	precisely to the channel, which is very important if you want to transmit at
+   126	high speeds.
+   127	     The most recent committee meeting was held last month.  Still to be 
+   128	agreed upon are such critical issues as training sequences, coding schemes, and
+   129	signaling rates.  Walsh said he expects the committee to reach final agreement
+   130	in 1993, with official CCITT adoption likely in 1994.
+   131	     While some have taken to calling the standard under development V.Last,
+   132	Walsh isn't convinced this will be the final modem standard.  After all, he
+   133	notes, no one thought dial-up phone lines would ever be this noise-free, and
+   134	further advances in that area could make even higher speed dial-up
+   135	communication possible.
+   136	     "I'm certain we'll have at least a fax version of this standard as the
+   137	quality of phone lines keep improving," he said.  "We're trying to be sure that
+   138	this standard will serve users into the year 2000.  But modem standards are
+   139	like wars: you always think it's going to be the last one."
+   140	     U. S. ROBOTICS, INC, (NASDAQ:USRX) (800)DIAL-USR voice for more infor-
+   141	mation.
+   142	
+   143	

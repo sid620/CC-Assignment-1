@@ -1,0 +1,56 @@
+     1	______________________________________________________________________
+     2	STACKER NOTE                          Stac Electronics Technical Note
+     3	
+     4	Subject: Third party defragmentation programs and STACKER 2.0 and 1.x
+     5	
+     6	Tech001 - 2/20/92
+     7	Page 1 of 1 
+     8	______________________________________________________________________    
+     9	Writing to disk can cause file fragmentation over time.  Third party 
+    10	defragmentation programs such as Norton Speedisk, PCtools Compress, and 
+    11	VOPT can remedy this condition on uncompressed drives, but should NOT be 
+    12	run on STACKER drives.  
+    13	
+    14	Q: Why can't I run third party Defragmenters on a STACKER drive?
+    15	A: STACKER's special method of storing compressed data cannot be 
+    16	   interpreted by these programs.  If run on a STACKER drive, they can 
+    17	   actually increase fragmentation.  It is O.K. to run third party 
+    18	   defragmenters on the noncompressed drive.
+    19	
+    20	Q: How do I defragment a STACKER drive?
+    21	A: Stacker version 2.0 includes a defragmentation utility called SDEFRAG.  It 
+    22	   is specifically designed to defragment STACKER drives.  It will not 
+    23	   defragment a noncompressed drive.  To defragment a STACKER version 1.x 
+    24	   drive, it is necessary to back up the data on the drive, delete the data 
+    25	   on the drive, then restore from the backup.  A recommended alternative is 
+    26	   to upgrade to STACKER 2.0 and use SDEFRAG .
+    27	
+    28	Q: What if I accidently ran a third party defragmenter on a STACKER drive?
+    29	A: Your data remains safe, however, the fragmentation may have been 
+    30	   increased.  Run SCHECK /f to correct any errors on the drive.  Then run 
+    31	   SDEFRAG to defragment the drive.
+    32	
+    33	
+    34	
+    35	
+    36	
+    37	
+    38	
+    39	
+    40	
+    41	
+    42	
+    43	
+    44	
+    45	
+    46	
+    47	
+    48	
+    49	
+    50	
+    51	
+    52	_____________________________________________________________________________________
+    53	Copyright * 1992 STAC ELECTRONICS
+    54	
+    55	
+    56	

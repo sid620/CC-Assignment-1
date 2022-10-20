@@ -1,0 +1,57 @@
+     1	How to backup Infocom's ZORK III game:
+     2	
+     3	*Insert DOS disk in drive A
+     4	
+     5	A>DISKCOPY A: B:	  <-- Ignore the errors on tracks 1-3!
+     6	*Place your ZORK III disk in drive A and a blank disk in drive B.
+     7	
+     8	A>
+     9	*Now take out your ZORK III disk and insert your DOS disk in A.
+    10	
+    11	A>DEBUG
+    12	-R CS
+    13	xxxx
+    14	:0000		<-- you enter this
+    15	-R DS
+    16	xxxx
+    17	:0040
+    18	-R IP
+    19	xxxx
+    20	:7C00
+    21	-R ES
+    22	xxxx
+    23	:0000
+    24	-L 0:7C00 0 0 1
+    25	-G =0:7C00 0:7C2A
+    26	-R AX
+    27	xxxx
+    28	:0800
+    29	-G 0:7C63
+    30	-E 800:14E5 B8 08 02
+    31	-E 800:211A 02 08
+    32	-W 800:0000 1 8 18
+    33	-L 0:7C00 0 0 8
+    34	-E 0:7C7C 02 08
+    35	-E 0:7C41 B8 08 02
+    36	-W 0:7C00 1 0 8
+    37	-Q
+    38	
+    39	*Take out your new disk in drive B and write-protect it.
+    40	 It is now DISKCOPY-able.
+    41	*Reboot your system - press ALT-CTRL-DEL.
+    42	
+    43	
+    44	
+    45	X-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-X
+    46	 Another file downloaded from:                     The NIRVANAnet(tm) Seven
+    47	
+    48	 & the Temple of the Screaming Electron   Taipan Enigma        510/935-5845
+    49	 Burn This Flag                           Zardoz               408/363-9766
+    50	 realitycheck                             Poindexter Fortran   510/527-1662
+    51	 Lies Unlimited                           Mick Freen           801/278-2699
+    52	 The New Dork Sublime                     Biffnix              415/864-DORK
+    53	 The Shrine                               Rif Raf              206/794-6674
+    54	 Planet Mirth                             Simon Jester         510/786-6560
+    55	
+    56	                          "Raw Data for Raw Nerves"
+    57	X-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-X

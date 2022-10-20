@@ -1,0 +1,108 @@
+     1	Boston, February 11, 1992 -- Evergreen Systems, makers of the FlexCom
+     2	communication server for Novell LANs, is introducing a new line of
+     3	products that offer dial-in, dial-out and other services for Novell and
+     4	other leading local area networks. The company is unveiling its new
+     5	CAPcard and CAPserver line at NETWORLD, Feb. 11 - 13, 1992 in Boston,
+     6	booth #1416.
+     7	
+     8	Evergreen developed the product line in response to customer demand for a
+     9	remote access; multi-function server with high performance; compatibility
+    10	with all DOS and Windows applications; support for multiple LAN protocols
+    11	and network operating systems; remote management and simplified
+    12	installation. 
+    13	
+    14	                        CAPcard
+    15	
+    16	The CAPcard (Communication/Application Processor card) is a self-contained,
+    17	network "PC-on-a-card" that features a 25 Mhz 386SX CPU, 2-16 MB of RAM,
+    18	VGA video, two high-speed serial ports, parallel port, floppy and IDE disk
+    19	interfaces and an NE2000-compatible Ethernet controller with both 10BaseT
+    20	and thin coax cable connections. The standard product is bundled with
+    21	management and communications software including MS-DOS 5.0 and Norton
+    22	pcANYWHERE, allowing the CAPcard to be used for dial-in and dial-out
+    23	operations with both MS-DOS and MS Windows applications.
+    24	
+    25	The CAPcard uses a direct connection to the network (no bridge or router is
+    26	required). Therefore, it operates at full LAN speeds for file access, and
+    27	can support multiple protocols including IPX, TCP/IP, NetBIOS, OSI and
+    28	others. The card supports serial communications at speeds up to 57,600 bps
+    29	for remote access with today's fastest modems and digital connections.
+    30	
+    31	The CAPcard also features CAPwatch, an on-board microcontroller that
+    32	functions as a "smart" management processor with a number of duties. For
+    33	example, CAPwatch will automatically reset the 386SX CPU if it should hang
+    34	for any reason, an important requirement in LAN dial-in and other
+    35	unattended applications. As this function is firmware-driven, it will work
+    36	with both dial-up and digital type connections. In dial-up use, CAPwatch
+    37	takes the telephone line "off hook" when the card is unavailable for a
+    38	dial-in call, facilitating telephone line "hunt group" operation.
+    39	
+    40	For Ethernet LANs requiring only a few dial-in/dial-out lines, the CAPcard
+    41	can be installed in any ISA/EISA bus computer, in which case it operates
+    42	"passively", drawing only DC power from the AT bus. Modem and Ethernet
+    43	connections (lOBaseT or coax) attach to the rear of the board (a VGA
+    44	monitor and keyboard can also be attached).
+    45	
+    46	Priced at $1,995 with 2 MB RAM CAPcard includes dial-in, dial-out,
+    47	management and MS-DOS 5.0 software. The CAPcard will be available in
+    48	April. An OEM/integrator version of the CAPcard will also be available for
+    49	database, file and print server applications (contact the factory for
+    50	details).
+    51	
+    52	                     CAPserver
+    53	
+    54	For larger installations, up to 18 CAPcards can be installed in the
+    55	Evergreen CAPserver (Communication/Application Processor server) base
+    56	unit, which can be factory-configured as a turnkey system. The CAPserver
+    57	also supports 4 and 16 Mbit Token Ring LANs by allowing each CAPcard to
+    58	drive its own Token-Ring NIC. The unit is available in both desktop tower
+    59	and rack-mount configurations and can accommodate local disk drives for
+    60	the CAPcards, if required.
+    61	
+    62	The CAPcard/CAPserver architecture allows a user to start with a few
+    63	"standalone" cards installed in a PC or fileserver, and then move up to
+    64	the full CAPserver architecture, with its additional features, without
+    65	sacrificing the original hardware investment.
+    66	
+    67	The CAPlink interprocessor communications channel, which is part of the
+    68	CAPserver system, ties the CAPcards together to the system controller for
+    69	management, boot-loading and other applications that are currently in
+    70	development. Multiple CAPservers can be connected together for management
+    71	purposes via CAPlink.
+    72	
+    73	Options for the CAPserver include the NPCC async card for dedicated
+    74	dial-out or local host connection, and an X.25 interface for inbound and
+    75	outbound connections. The CAPserver can also accommodate a wide variety of
+    76	third-party, AT-bus cards including FAX servers, mainframe gateways and
+    77	LAN-to-LAN routers.
+    78	
+    79	The CAPserver system includes a number of software features including a
+    80	complete remote management facility; an enhanced, DES-based security
+    81	system; audit trail logging; and a boot loader for the CAPcards. A network
+    82	license for the Norton pcANYWHERE/LAN (Symantec Corporation)
+    83	communications software is also included.
+    84	
+    85	Priced starting at $3,495, the CAPserver will be available in April for
+    86	Novell-based LANs, with versions for Banyan, MS LAN Manager, OS/2 LAN
+    87	Server and other networks to follow by Q3, 1992.
+    88	
+    89	Evergreen Systems is a leading supplier of products for remote access and
+    90	async communications on Novell and other leading LANs. The company
+    91	develops, manufacturers and distributes communications solutions that
+    92	consist of proprietary software and hardware that feature flexibility,
+    93	compatibility, security and remote management. Based in Novato,
+    94	California, Evergreen was founded in 1989.
+    95	
+    96	Evergreen Systems Inc
+    97	120 Landing Court, Suite A, Novato, CA 94945
+    98	415-897-8888
+    99	  +---------------------------------------------------------------+
+   100	  |  From the America On-Line & PC-Link New Product Info Services |
+   101	  +===============================================================+
+   102	  | This information was processed with OmniPage Professional OCR |
+   103	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+   104	  | provided by the above mentioned company. For additional info, |
+   105	  | contact the company at the address or phone# indicated above. |
+   106	  |    All submissions for this service should be addressed to    |
+   107	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+   108	  +---------------------------------------------------------------+

@@ -1,0 +1,93 @@
+     1	February 11, 1992, Boston, Mass.--Folio MailBag, the first software that
+     2	lets users store and perform full-text retrieval on infobases of
+     3	electronic mail messages, will get its first large-scale public showing
+     4	today, here at NetWorld 92 Boston. MailBag is designed exclusively as an
+     5	add-on to LAN-based e-mail packages running on Novell NetWare. The product
+     6	stores and categorizes messages in a Folio infobase, then utilizes the
+     7	NetWare HELP Utility to instantly retrieve any message by word, phrase or
+     8	category.
+     9	
+    10	MailBag archives mail from most of the popular LANbased e-mail products,
+    11	including Action Technologies The Coordinator, Da Vinci eMAlL, Lotus
+    12	cc:Mail, Microsoft Mail, and WordPerfect Office. MailBag is available now
+    13	priced at US$295 for each 25-users.
+    14	
+    15	About Infobases
+    16	
+    17	An infobase is a repository (file) of electronic information that is
+    18	analogous to a database. However, an infobase is much more effective at
+    19	managing the free-format and semi-structured kinds of information that
+    20	people deal with most often. Folio's line of software products, known as
+    21	infobase management software, is designed to give users various
+    22	capabilities to build and/or manage infobases and the information they
+    23	contain. 
+    24	
+    25	About Folio Corporation
+    26	
+    27	Folio Corporation, a privately held company based in Provo, Utah, is the
+    28	leading developer of infobase management software products, including
+    29	Folio VIEWS, Folio VIEWS Personal Edition, NetWare HELP, and Folio
+    30	MailBag.
+    31	
+    32	Folio software is designed to help users manage vast amounts of free-format
+    33	and semi-structured information that is difficult or impossible to manage
+    34	using traditional database technology. A read-only version of Folio
+    35	software has been bundled with Novell's NetWare for more than three years.
+    36	Currently, that software is available to more than 10 million NetWare
+    37	users, among which are many who have utilized it to create corporate-wide
+    38	systems for managing policy and procedure manuals, customer
+    39	support/technical information, archived records, electronic mail, and
+    40	more.
+    41	
+    42	--------------------------------------------------------
+    43	
+    44	February 11, 1992, Boston, Mass.--For the second consecutive year, Folio
+    45	Corporation was named the recipient of the LAN TIMES Magazine Readers
+    46	Choice award in the Document Management/Text Retrieval category. The award
+    47	winners, chosen by the readers of LAN TIMES, will be publicly announced
+    48	here at NetWorld 92 Boston.
+    49	
+    50	All winners of the award are chosen through means of a mail-in survey which
+    51	is conducted among the magazine's 125,000 readers. This is the fourth year
+    52	that the survey has been conducted and the second in which the Document
+    53	Management/Text Retrieval category has been included. In all, winners are
+    54	announced in 20 categories representing the spectrum of LAN-related
+    55	products.
+    56	
+    57	LAN TIMES is a semi-monthly publication serving LAN buyers-LAN
+    58	administrators, network managers, MIS/DP managers, resellers, and others
+    59	who directly influence the buying of computer products. About Folio
+    60	Corporation
+    61	
+    62	Folio Corporation, a privately held company based in Provo, Utah, is the
+    63	leading developer of infobase management software products, including
+    64	Folio VIEWS, Folio VIEWS Personal Edition, NetWare HELP, and Folio
+    65	MailBag.
+    66	
+    67	Folio software is designed to help users manage vast amounts of free-format
+    68	and semi-structured information that is difficult or impossible to manage
+    69	using traditional database technology. A read-only version of Folio
+    70	software has been bundled with Novell's NetWare for more than three years.
+    71	Currently, that software is available to more than 10 million NetWare
+    72	users, among which are many who have utilized it to create corporate-wide
+    73	systems for managing policy and procedure manuals, customer
+    74	support/technical information, archived records, electronic mail, and
+    75	more.
+    76	
+    77	Last year, Folio VIEWS was also named "Product of the Year" by Today's
+    78	Office Magazine and was also recognized by InfoWorld Magazine as a
+    79	"Recommended Product."
+    80	
+    81	Folio Corp, 2155 N. Freedom Blvd, Suite 150, Provo, UT 84604
+    82	801-375-3700
+    83	
+    84	  +---------------------------------------------------------------+
+    85	  |  From the America On-Line & PC-Link New Product Info Services |
+    86	  +===============================================================+
+    87	  | This information was processed with OmniPage Professional OCR |
+    88	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+    89	  | provided by the above mentioned company. For additional info, |
+    90	  | contact the company at the address or phone# indicated above. |
+    91	  |    All submissions for this service should be addressed to    |
+    92	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+    93	  +---------------------------------------------------------------+

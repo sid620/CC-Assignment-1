@@ -1,0 +1,210 @@
+     1	             Some Thoughts on the Development of Personal Computers
+     2	                      by Duane Bristow, Computer Consultant
+     3	                       The Helping Hand BBS (606) 387-4002
+     4	                             Albany, Kentucky  42602
+     5	                                  June 14, 1991
+     6	
+     7	        Personal Computers were first available on the mass market in 
+     8	        1977.  At that time there were basically three brands widely 
+     9	        available, Apple, Tandy, and Commodore.  I bought a TRS-80 model 
+    10	        I in the fall of that year and began computer consulting the 
+    11	        next spring.  Things have changed a lot in the last 14 years.  
+    12	        These are a few observations on some of the developments and 
+    13	        trends.
+    14	
+    15	        In the early 1980s a man would come to me and say, "I have a 
+    16	        problem in my business.  It concerns efficiency in office 
+    17	        procedures.  I am covered up in writing, bookkeeping, billing, 
+    18	        paying, keeping track of customers, etc.  They said you have 
+    19	        been able to show other businesses how to use computers to solve 
+    20	        these problems.  Please show me."
+    21	
+    22	        I would then analyse his business talking not only to him but 
+    23	        primarily to his secretary and/or bookkeeper(s) to find just how 
+    24	        his business ran, what the problems were, and what was unique 
+    25	        about his business (something almost always was).  I would plan 
+    26	        hardware and develop software designed to work efficiently to 
+    27	        solve his problems and to grow with his business for the next 
+    28	        five or (wistfully) ten years.  I would install the system, 
+    29	        train his employees and support the system with further 
+    30	        modifications, hardware and software maintenance, additional 
+    31	        training, etc. as needed.  This worked well and was always 
+    32	        successful. 
+    33	
+    34	        Now a man comes to me and says, "I have a problem in my 
+    35	        business.  I heard computerizing would solve my problem, so I 
+    36	        read the computer magazines, talked to the computer literacy 
+    37	        instructor at the high school, talked to a number of computer 
+    38	        salesmen, and asked a computer whiz I know who has three 
+    39	        computers and unbelievable games on them (He has the highest 
+    40	        score in town on "Shoot The Martians").  All these people told 
+    41	        me that my problems would be solved if I got a 386 with 4 meg 
+    42	        RAM, 40 meg. hard drive, VGA, laser printer, Windows, Lotus 123, 
+    43	        Dbase and Wordperfect."
+    44	
+    45	        "I bought all these, spent months reading the manuals and 
+    46	        installing it all, and got the computer whiz to come by when 
+    47	        school was out and show my employees how to use it all.   And, 
+    48	        you know, I still have the problem in my business.  As a matter 
+    49	        of fact my employees spend so much time using and learning the 
+    50	        new computer system that I've had to hire an additional employee 
+    51	        to make sure we get the billing out each month.  Now, they say 
+    52	        you have solved business problems for others with computers, so 
+    53	        I am willing to pay you to show me how to use this stuff to 
+    54	        solve my problems."
+    55	
+    56	        I explain to this man that I was able to solve other's problems 
+    57	        by an analysis of their business and by developing or installing 
+    58	        software specifically for that purpose, that this will not use 
+    59	        all the memory, Windows, 123, and Dbase that he has already 
+    60	        installed, that I use cheaper hardware and charge more for 
+    61	        systems analysis and custom programming and that therefore 
+    62	        solving his problems will require an additional investment of 
+    63	        $2,000 or more and that probably $2,000 of his original 
+    64	        investment will be useless to him.  He usually concludes at this 
+    65	        point that I must not know much about computers.  He ends up 
+    66	        using parts of whatever of his software he can and decides that 
+    67	        computers can't really do as much as he had been led to believe 
+    68	        after all. 
+    69	         
+    70	        This problem arises primarily because of the way the computer 
+    71	        industry has marketed computers and software in the last 14 
+    72	        years.  In the first stage the industry said, "Buy a computer!"  
+    73	        John Q. Public said, "Why?" and the industry said, "Because they 
+    74	        can do anything you tell them."  The problem was JQP didn't know 
+    75	        what he wanted them to do and he didn't know how to tell them to 
+    76	        do it anyway.  So a couple of real smart guys wrote Visicalc, 
+    77	        the first spreadsheet program for microcomputers.  JQP found 
+    78	        that for some things that he was already doing on paper 
+    79	        spreadsheets, a computer with VC was much more efficient. If he 
+    80	        knew how to design a spreadsheet on paper, he could do the same 
+    81	        thing on the computer and increase productivity immensely.  He 
+    82	        was programming a computer but he didn't know that.  
+    83	
+    84	        The industry marketing men saw what had happened and changed 
+    85	        their tactic.  They now said, "Buy a computer so you can run 
+    86	        VC."  And a number of accountants and other number crunchers did 
+    87	        just that.  As a matter of fact some of the more savvy salesmen 
+    88	        began giving away pirated copies of VC with each computer sale.  
+    89	        Their profit was on hardware, not software.  Many salesmen who 
+    90	        had never used a paper spreadsheet much less VC told people that 
+    91	        to do anything now they just needed a computer and VC.  When 
+    92	        asked what type of thing they might do the computer salesman 
+    93	        replied that JQP could now balance his checkbook with a 
+    94	        computer.  Never mind that if JQP didn't know how to balance a 
+    95	        checkbook the computer wasn't going to help and if he did he 
+    96	        certainly didn't need a computer for that.
+    97	
+    98	        The next development of interest was the discovery that if one 
+    99	        knew how to type he could increase productivity immensely with a 
+   100	        word processing program.  This then developed much the same way
+   101	        as the VC phenomena.   
+   102	
+   103	        From the beginning the computer marketers and the media had 
+   104	        envisioned a computer in every household.  Problem was that, so 
+   105	        far, computers were selling primarily to accountants and 
+   106	        typists.  Apple computer decided that the thing standing in the 
+   107	        way of more computer sales was the fact that not enough people 
+   108	        knew how to use a spreadsheet or to type.  Hence the GUI 
+   109	        (Graphical Computer Interface) and the mouse.  Theoretically, we 
+   110	        could throw away the keyboard now and everyone could own a 
+   111	        computer.  Of course, since this didn't teach one to do 
+   112	        accounting or use a spreadsheet and since you couldn't write a 
+   113	        document with a mouse there was no reason to buy a computer, but 
+   114	        Apple overlooked that.  As a matter of fact, after the 
+   115	        introduction of the Macintosh, Apple probably would have gone 
+   116	        out of business if not for one further development. 
+   117	
+   118	        Someone, (I don't know who but somebody does) came up with the 
+   119	        idea of using the Macintosh for Desktop Publishing, a quantum 
+   120	        extension of word processing which was ideally suited to a GUI 
+   121	        and a mouse.  (Course, it also required a keyboard but that was 
+   122	        OK.)  This sold so many Macs that Microsoft and IBM took notice 
+   123	        and decided that a GUI must be the way to go.
+   124	
+   125	        Others decided that part of the problem with computer sales was 
+   126	        that computers require programs and JQP could not or was afraid 
+   127	        to program.  So they wrote applications that would help JQP to 
+   128	        write his own programs but would not let him know that he was 
+   129	        doing so.  These took the form of Dbase type programs and a 
+   130	        tremendous increase in the size and complexity of VC which by 
+   131	        now was owned by Lotus and was called 123.  The thing they 
+   132	        didn't tell JQP was that by trying to force a computer to do 
+   133	        something with such a general purpose tool as Dbase or 123, he 
+   134	        was sacrificing efficiency and that if the application became 
+   135	        very complex it could be programmed and would work much more 
+   136	        efficiently and easily in a true programming language like 
+   137	        pascal, or C, or compiled basic or whatever.  They also didn't 
+   138	        tell JQP that a complex application would be just as hard to 
+   139	        program in Dbase or 123 as in a true language even though it 
+   140	        would not work nearly as well. I knew a hospital controller who 
+   141	        tried to run a hospital billing and accounting system with 123.  
+   142	        You can drill a hole with a hammer and nails too, but a drill is 
+   143	        so much more efficient. 
+   144	
+   145	        From the very beginning the problem was that computers could 
+   146	        perform miracles in efficiency but only the systems analysts and 
+   147	        the programmers knew how.  The marketing planners and the 
+   148	        salesmen didn't, so they misled JQP.  Those who most need 
+   149	        computers, mostly businessmen, are not analysts or programmers 
+   150	        and should not be.  There were never enough programmers and 
+   151	        analysts to sell the number of computers the industry wanted to 
+   152	        sell.  Therefore, efficiency was sacrificed by use of general 
+   153	        purpose programs.  Although these usually did not do the job 
+   154	        well (sometimes not at all), they were cheaper than efficient 
+   155	        programs and they were available.  The hoax was that JQP was 
+   156	        never told that use of these programs required a sacrifice of 
+   157	        efficiency but was simply led to believe that the inadequacies 
+   158	        of these programs was intrinsic to computers. 
+   159	
+   160	        Another hoax occurred as the price of computer hardware and 
+   161	        software fell.  It is necessary to charge $3,000 to $5,000 for a 
+   162	        computer system to justify enough profit to support the 
+   163	        industry.  At first, the price could be maintained by simply 
+   164	        selling more powerful and faster hardware and software to JQP 
+   165	        for the same price that he was used to paying.  After a while 
+   166	        though, it became evident that the hardware and software was 
+   167	        already as fast as JQP could ever want to perform most 
+   168	        applications.  The solution was to change the operating system 
+   169	        to OS2 and to GUIs such as Windows that were inefficient in 
+   170	        speed and in use of memory.  By convincing the public that these 
+   171	        were necessary it became possible to sell even faster machines 
+   172	        with increased memory, etc.
+   173	
+   174	        These are my nominations for most significant developments in 
+   175	        microcomputers over the last 14 years with my designation of 
+   176	        each as a right turn or a wrong turn for the industry.
+   177	
+   178	        The microcomputer               Right turn
+   179	        Visicalc                        Right turn
+   180	        Lotus 123                       Wrong turn
+   181	        Dbase                           Wrong turn
+   182	        Hard disk storage               Right turn
+   183	        MSDOS                           Right turn but a UNIX based OS 
+   184	                                             would have been better.
+   185	        Word processors                 Right turn
+   186	        GUI                             Wrong turn
+   187	        Color Monitor & VGA             Right turn
+   188	
+   189	        Hayes standard 
+   190	        high speed modems               Right turn
+   191	        communications software
+   192	        Compuserve and BBSes
+   193	
+   194	        Quickbasic, C, Pascal           Right turn
+   195	
+   196	        The shareware concept           Right turn
+   197	        Desktop publishing              Right turn
+   198	        Laser printers                  Right turn
+   199	
+   200	        Graphics applications
+   201	        scanners, and mouses            Right turn
+   202	
+   203	        Networking                      Right turn
+   204	
+   205	        CDROM drives and applications   Right turn
+   206	
+   207	        Simulations                     Right turn
+   208	
+   209	        Sound applications              Right turn
+   210	

@@ -1,0 +1,176 @@
+     1	                 2 Suspected Bugs in MsDos v4.01
+     2	                             6/5/91
+     3	                               by
+     4	                      William S. Ataras III
+     5	
+     6	
+     7	'Discovered',  tested  and copyrighted 1991 by David M.  Cox  and 
+     8	William S. Ataras III.
+     9	
+    10	See how to contact us at the end of this document.
+    11	
+    12	We  work  with  satellite imagery. This  type  of  work  commonly 
+    13	involves the manipulation of files between 1 and 200 megabytes in 
+    14	size. In the course of writing and copying such data, we  believe 
+    15	we've run across 2 bugs. They are detailed below:
+    16	
+    17	
+    18	---------------------------  Bug #1  ----------------------------
+    19	
+    20	The included program 32MEG.ASM uses the following 4 Dos functions 
+    21	to create, write, and close 32MEG.DAT and exit:
+    22	
+    23	3Ch     - Create file handle.
+    24	40h     - Write BUFSIZE bytes to file handle.
+    25	3Eh     - Close file handle.
+    26	Int 20h - Exit.
+    27	
+    28	BUFSIZE  is  a  symbol equate in 32MEG.ASM.  The  included  files 
+    29	2048.COM and 2000.COM are the compiled versions of 32MEG.ASM with 
+    30	BUFSIZE set to 2048 and 2000 respectively.
+    31	
+    32	The  assembly  source  was compiled  and  linked  with  Borland's 
+    33	assembler TASM v1.01 and linker TLINK v2.0 as follows:
+    34	
+    35	     tasm 32meg
+    36	     tlink /t 32meg
+    37	
+    38	I  tested the programs in the root directory of my C: which is  a 
+    39	Connor  CP-3104 106meg harddrive. There was no  AUTOEXEC.BAT  and 
+    40	the CONFIG.SYS looked like this:
+    41	
+    42	     files     = 30
+    43	     buffers   = 30
+    44	     lastdrive = z
+    45	     shell     = c:\command.com /p /e:1024
+    46	
+    47	My  computer  is a 386 20mhz with 4megs of ram,  3megs  extended. 
+    48	The  same  results occured with a similar test  on  a  completely 
+    49	different 386 machine and different harddrive.
+    50	
+    51	A run of Norton 4.50 DI.EXE produced:
+    52	
+    53	DI-Disk Information, Advanced Edition 4.50, (C) Copr 1987-88, Peter Norton
+    54	
+    55	  Information from DOS         Drive C:       Information from the boot record
+    56	-------------------------------------------------------------------------------
+    57	                               system id             'MSDOS4.0'         
+    58	                        media descriptor (hex)               F8         
+    59	             2               drive number                               
+    60	           512             bytes per sector                 512         
+    61	             4            sectors per cluster                 4         
+    62	             2              number of FATs                    2         
+    63	           512          root directory entries              512         
+    64	           214              sectors per FAT                 214         
+    65	        54,722            number of clusters                            
+    66	                           number of sectors            219,351         
+    67	             1               offset to FAT                    1         
+    68	           429            offset to directory                           
+    69	           461              offset to data                              
+    70	                           sectors per track                 33         
+    71	                                 sides                        8         
+    72	                            hidden sectors                   33         
+    73	
+    74	
+    75	Theoretically, the program should generate a dummy file well over 
+    76	32 megabytes in length. You must have about 41 megs free on  your 
+    77	disk.  It  works  fine  when the  BUFSIZE  equate  is  2048;  the 
+    78	resulting  32MEG.DAT  is  41,943,040 bytes  long.  However,  when 
+    79	BUFSIZE  is  changed to 2000, 2 things happen.  First,  it  takes 
+    80	nearly  twice as long to write the file. Given the fact that  Dos 
+    81	clusters and BIOS disk sectors are always powers of 2, it is  not 
+    82	unreasonable  to  expect that some additional magic  must  happen 
+    83	behind  the  scenes when such abitrary and  rather  inconsiderate 
+    84	byte  counts  are  written.  BUT,  this  was  not  expected;  The 
+    85	resulting  file  should have been 43,008,000 bytes long.  It  was 
+    86	33,554,000 bytes long; the highest even multiple of 2000 below 32 
+    87	megabytes. 
+    88	
+    89	A run of 'CHKDSK /F' produced 'Allocation error in  C:\32MEG.DAT, 
+    90	size  adjusted'.  Another 'DIR' told me the file  was  43,008,000 
+    91	bytes long as it should have originally been.
+    92	
+    93	
+    94	
+    95	
+    96	---------------------------  Bug #2  ----------------------------
+    97	
+    98	This  problem  involves the ramdisk provided by  the  MsDos  4.01 
+    99	driver RAMDRIVE.SYS.
+   100	
+   101	I  tested this in the root directory of my C: which is  a  Connor 
+   102	CP-3104  106meg  harddrive.  There was no  AUTOEXEC.BAT  and  the 
+   103	CONFIG.SYS looked like this:
+   104	
+   105	     device    = c:\dos\ramdrive.sys 2048 128 64 /e
+   106	     files     = 30
+   107	     buffers   = 30
+   108	     lastdrive = z
+   109	     shell     = c:\command.com /p /e:1024
+   110	
+   111	My computer is a 386 20mhz with 4megs of ram, 3megs extended. The 
+   112	same results occured with a completely different 386sx 16mhz with 
+   113	4megs, 3megs extended and different harddrive.
+   114	
+   115	The rawdisk was D:.
+   116	
+   117	A run of Norton 4.50 'DI.EXE D:' produced:
+   118	
+   119	DI-Disk Information, Advanced Edition 4.50, (C) Copr 1987-88, Peter Norton
+   120	
+   121	  Information from DOS         Drive D:       Information from the boot record
+   122	-------------------------------------------------------------------------------
+   123	                               system id             'RDV 1.20'         
+   124	                        media descriptor (hex)               F8         
+   125	             3               drive number                               
+   126	           128             bytes per sector                 128         
+   127	             4            sectors per cluster                 4         
+   128	             1              number of FATs                    1         
+   129	            64          root directory entries               64         
+   130	            48              sectors per FAT                  48         
+   131	         4,079            number of clusters                            
+   132	                           number of sectors             16,384         
+   133	             1               offset to FAT                    1         
+   134	            49            offset to directory                           
+   135	            65              offset to data                              
+   136	                           sectors per track                  1         
+   137	                                 sides                        1         
+   138	                            hidden sectors                    0         
+   139	
+   140	I  had  an  arbitrary image file DATA.DAT in  C:\.  DATA.DAT  was 
+   141	1,300,480  bytes long. Running the following batch file over  and 
+   142	over  produced  random  lost clusters  consistently  on  the  2nd 
+   143	attempt.
+   144	
+   145	     copy data.dat d:
+   146	     del d:data.dat
+   147	     dos\chkdsk d:
+   148	
+   149	Changing the 2048 in CONFIG.SYS to 2047 to look like this...
+   150	
+   151	     device    = c:\dos\ramdrive.sys 2047 128 64 /e
+   152	     files     = 30
+   153	     buffers   = 30
+   154	     lastdrive = z
+   155	     shell     = c:\command.com /p /e:1024
+   156	
+   157	made the bug go away. I was able to run the same batch  'forever' 
+   158	without a hitch (as I should have happened previously).
+   159	
+   160	
+   161	
+   162	---------------------------  Summary  ---------------------------
+   163	
+   164	Feel  free to try these tests on your machine if you  have  MsDos 
+   165	4.01.  I'm sure you'll get similar results. I'd be interested  to 
+   166	know if you didn't.
+   167	
+   168	Contact us by:
+   169	
+   170	Leave a message to Bill Ataras on Ed's BBS at (408)-384-3658.
+   171	
+   172	OR Write:
+   173	
+   174	Bill Ataras
+   175	38 Village Dr. #8
+   176	Carmel Valley, Ca. 93924

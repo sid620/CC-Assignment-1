@@ -1,0 +1,44 @@
+     1	Networld Boston. February, 1992: AVALAN TECHNOLOGY INC., developer of
+     2	Remotely Possible/LAN, the first remote control package supporting Windows
+     3	announces the newest member of its remote control family; Remotely
+     4	Possible/Dial. Utilizing the latest technology in its new WlNDOW-based
+     5	remote control/communications application, Remotely Possible/Dial allows
+     6	full access to a remote personal computer running Microsoft Windows.
+     7	Perfect for all those who work from home and for telecommuters who need an
+     8	important file back at the office, Remotely Possible/Dial improves
+     9	efficiency and saves valuable time.
+    10	
+    11	Excellent Performance Remotely Possible/Dial is a unique product which
+    12	varies from other remote control software. Remotely Possible/Dial contains
+    13	a Windows DLL (dynamic Link Library) that interacts with the Windows 3.X
+    14	GDI (Graphics Device Interface) library. By intercepting the GDI function
+    15	calls from Windows applications, Remotely Possible/Dial is able to offer
+    16	superb performance when controlling Windows 3.X applications via a modem.
+    17	
+    18	Not just remote control In addition to remote control, Remotely
+    19	Possible/Dial supports file transfer and interactive chat between two PCs
+    20	running Windows. It allows full mouse and keyboard support. Remotely
+    21	Possible/Dial includes built-in support for the most widely used modems
+    22	such as Hayes, Multi-Tech, Telebit and U.S. Robotics. Serial port speeds
+    23	up to 57.6k bps are supported. A user may also customize Remotely Possible
+    24	for use with any modem or use a null-modem cable for a direct connection.
+    25	
+    26	Remotely Possible/Dial is priced at $199 and only a single copy is needed
+    27	for both the local and remote PCs. Site licenses are available. AVALAN
+    28	TECHNOLOGY INC. conveniently offers unlimited toll-free technical support
+    29	and a 30 day money back guarantee.
+    30	
+    31	Avalan Technology
+    32	116 Hopping Brook Park, Holliston, MA 01746
+    33	508-429-6482;  800-441-2281;  fax 508-429-3179
+    34	
+    35	  +---------------------------------------------------------------+
+    36	  |  From the America On-Line & PC-Link New Product Info Services |
+    37	  +===============================================================+
+    38	  | This information was processed with OmniPage Professional OCR |
+    39	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+    40	  | provided by the above mentioned company. For additional info, |
+    41	  | contact the company at the address or phone# indicated above. |
+    42	  |    All submissions for this service should be addressed to    |
+    43	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+    44	  +---------------------------------------------------------------+

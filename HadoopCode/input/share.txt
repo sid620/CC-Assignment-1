@@ -1,0 +1,1122 @@
+     1	
+     2	                           THE SHAREWARE USERS GUIDE
+     3	       
+     4	
+     5	
+     6	                  SUMMARY OF TOPICS IN ORDER OF PRESENTATION
+     7	
+     8	       Types of software: shareware, public domain, freeware, commercial
+     9	       Eight easy steps to using shareware FAST!
+    10	       Minimum DOS commands for using shareware
+    11	       Copying the master disk
+    12	       The directory listing of a shareware disk
+    13	       File names and extensions - the keys to the kingdom
+    14	       A turbocharged shortcut
+    15	       Unpacking and installing, including ARCS, ZIPS, LZH and more
+    16	       Configuring the program if necessary
+    17	       Running the program
+    18	       Feedback: either register or send your regrets!
+    19	       Common questions and answers
+    20	       Recommended reading list for shareware users and authors
+    21	       
+    22	       ---------------------------------------------------------------- 
+    23	       
+    24	          SHAREWARE, PUBLIC DOMAIN, FREEWARE AND COMMERCIAL SOFTWARE
+    25	                     
+    26	       ---------------------------------------------------------------- 
+    27	
+    28	       SHAREWARE is software which has been prepared by a variety of
+    29	       individuals and companies. The concept governing shareware is 
+    30	       that you "try before you buy." Shareware is above all a unique
+    31	       marketing experiment which operates on the "honor system."
+    32	       In practice, shareware is frequently of the same quality as 
+    33	       commercial software. However, it uses a different, and somewhat 
+    34	       less expensive method of marketing which involves letting 
+    35	       others freely copy, use and distribute the shareware. What you 
+    36	       receive from your friend at work, computer club, commercial 
+    37	       shareware disk distributor or BBS modem system is a "disk 
+    38	       evaluation copy" which you may use, copy and above all TRY. 
+    39	       
+    40	       Documentation and instructions for program use are usually 
+    41	       contained within special text files on the same disk as the 
+    42	       program and sometimes take a little detective work to locate.
+    43	       Formal printed documentation and instruction books may also
+    44	       be available from the author.
+    45	       
+    46	       If you like what you find and use the program consistently -
+    47	       many shareware authors suggest 30 days, but this is not a 
+    48	       firm rule - then you are expected to register the shareware 
+    49	       by submitting a fee usually by mail to the author which 
+    50	       frequently brings additional benefits sent back to you by 
+    51	       the author of the shareware. Above all, it is legal to copy, 
+    52	       distribute and USE shareware.
+    53	
+    54	       Computers improve the world, shareware improves computers 
+    55	       and registration is what improves and motivates shareware 
+    56	       programmers who are called "authors" in the trade. 
+    57	       
+    58	       If you do not submit a registration fee AT LEAST send a
+    59	       postcard with your thoughts on why improvement is needed.
+    60	       You just might NEED and USE the revised version which is
+    61	       produced due to your funding or critique. Either way, feedback
+    62	       is essential to the shareware process!
+    63	       
+    64	       The registration fee requested by the author is a matter of good 
+    65	       conscience since shareware registration fees are paid by
+    66	       users directly to the author "on the honor system." Paying 
+    67	       an honest registration fee frequently means you will receive 
+    68	       additional disks for the program or further instruction 
+    69	       documents, bonus items or other "inducements" directly from the 
+    70	       author. 
+    71	       
+    72	       Registration is more than this though: on a human scale your 
+    73	       registration fee is supporting a small company or individual 
+    74	       who shows you how to use and understand a computer. A programmer 
+    75	       is a craftsman whose tools are logic and considerable creativity. 
+    76	       Your registration check is a special bond which allows this 
+    77	       quiet "honor system" of submitting your registration fee 
+    78	       for a programming job well done to motivate creative programmers 
+    79	       to produce some rather astonishing products! 
+    80	       
+    81	       The best way to summarize is this: you are not registering a 
+    82	       product, you are helping a person or small company do something 
+    83	       which improves how man uses the computer, most important tool of 
+    84	       this century. Paying a registration fee to the author of the 
+    85	       program rewards technical craftsmanship for providing creative 
+    86	       computer solutions at unbelievably low cost. Good programmers are 
+    87	       rare creatures - a small registration check goes a long way and 
+    88	       means a lot to a small shareware author!               
+    89	
+    90	       PUBLIC DOMAIN software is a second type of computer software 
+    91	       which is NOT copyrighted and has no other legal restrictions
+    92	       as to use by the general public. The author may or may not
+    93	       be identified. Most public domain programs result from the
+    94	       efforts of a programmer who designs a small piece of software 
+    95	       for personal use. The author may not decide to invest 
+    96	       additional time in developing and marketing the software due to 
+    97	       lack of market knowledge or lack time and funds to effectively 
+    98	       develop it into a larger commercial or shareware package.
+    99	       For these and other reasons, the author does not copyright the
+   100	       software and allows it to be copied, used or even incorporated 
+   101	       into other software packages since it is part of the public 
+   102	       domain available for the common good.
+   103	
+   104	       FREEWARE is related to BUT NOT the same as public domain 
+   105	       software. Freeware requires no registration fee or reimbursement 
+   106	       for use by the public but the copyright is RETAINED BY THE 
+   107	       AUTHOR who notes a copyright restriction within the body or
+   108	       documentation of the software. A reason for this subtle
+   109	       difference is that the author may, at a future date, wish to
+   110	       reclaim all or part of the software or modify and reissue
+   111	       the software as shareware or commercial software. The copyright 
+   112	       continues the unique claim of the author to the product.
+   113	
+   114	       COMMERCIAL SOFTWARE is computer software provided by a company 
+   115	       or individual which is generally marketed via retail, wholesale 
+   116	       or other commercial means but does not use or promote a 
+   117	       registration fee concept, a "try before you buy" concept, and
+   118	       does not use or promote sharing copies of the program among 
+   119	       individuals or other enterprises. The user is expected to purchase 
+   120	       the right to use the package BEFORE being allowed to use the 
+   121	       software extensively.
+   122	
+   123	       Note that either purchase or registration of any software 
+   124	       package does not mean you own the package, merely THE RIGHT AND 
+   125	       LICENSE TO USE IT. The author or company which produced it owns 
+   126	       the software programming code and is granting you a LICENSE to use 
+   127	       it in exchange for a fee or other compensation. In essence you 
+   128	       do not buy or own software, you merely license its use. The 
+   129	       author owns it.
+   130	
+   131	       ---------------------------------------------------------------- 
+   132	       
+   133	                      EIGHT EASY STEPS TO USING SHAREWARE
+   134	
+   135	       --------------------------------------------------------------- 
+   136	       
+   137	       Print this section and keep it next to your computer! These 
+   138	       steps are the secrets to using shareware! We will look at each 
+   139	       suggestion in greater detail in just a moment . . .
+   140	       
+   141	       1) Make a copy of the shareware disk, store your original
+   142	          and work with the copy.
+   143	       2) Do a DIRECTORY LISTING of the disk(s) on paper or your
+   144	          monitor screen.
+   145	       3) Determine FILE TYPES using extensions and filename clues.
+   146	       4) Read DOCUMENTATION and TEXT FILES if available on disk.
+   147	       5) Unpack and install the program.
+   148	       6) Configure the program if necessary.
+   149	       7) Run the program.
+   150	       8) Submit a registration fee or at least postcard(s)
+   151	          with your regrets to the author and the disk vendor.
+   152	
+   153	       ---------------------------------------------------------------- 
+   154	       
+   155	                   MINIMUM DOS COMMANDS FOR USING SHAREWARE
+   156	       
+   157	       ---------------------------------------------------------------- 
+   158	       
+   159	       Before we move forward, a brief refresher course in several
+   160	       basic DOS operations without which a shareware disk is useless.
+   161	
+   162	                                DOS SYNTAX
+   163	
+   164	       A DOS command must always use the same syntax illustrated
+   165	       below:
+   166	
+   167	       COMMAND <blank space> WHAT? <space> WHERE? <press return/enter>
+   168	
+   169	       Example: COPY PCLEARN.TXT B:  <press return/enter key>
+   170	       Example: TYPE PCLEARN.DOC     <press return/enter key>
+   171	
+   172	       In the second example DOS assume the WHERE is the screen.
+   173	       In the first example DOS needs to be told that a copy
+   174	       of a file is to be sent to the B: floppy drive.
+   175	
+   176	       NOTE! Generally DOS commands, drive letters and filenames
+   177	       and be typed in upper or lower case or both, since DOS
+   178	       is not fussy in that respect. It is ok to use capital letters, 
+   179	       small letters or any combination.
+   180	
+   181	                                THE DIR COMMAND
+   182	       
+   183	       An essential command which displays the names of the files 
+   184	       on a disk.
+   185	
+   186	       Example: A>DIR <press return/enter>   
+   187	       
+   188	       Lists files on the diskette your are in THE DEFAULT DRIVE, in 
+   189	       this case is A:
+   190	
+   191	       Example: A>DIR B:
+   192	
+   193	       Lists files in the B: drive. We have omitted the <press enter/
+   194	       return> since you already know this is necessary after a DOS
+   195	       command.
+   196	
+   197	       Example: A>DIR /P
+   198	
+   199	       List files in current default drive but pause after each 
+   200	       screenful of information.
+   201	
+   202	       Example: A>DIR B: /P
+   203	
+   204	       Same as above, but list the files on B: drive with a pause.
+   205	
+   206	       Example: A>DIR /W  
+   207	
+   208	       List current default drive but display in wide screen mode
+   209	       for numerous files.
+   210	
+   211	       NOTE! With any DOS operation which rapidly fills and overflows
+   212	       the screen with data, try pressing CTRL-S (control or ctrl key
+   213	       plus the S key together at same time) to pause the screen.
+   214	       Any key touched resumes the scrolling display and CTRL-S
+   215	       repeated pauses again. Very handy!
+   216	
+   217	       NOTE! Switching drives is easy. If you see this:    A>
+   218	       and you want to change the default drive to this:   B>
+   219	       then simply do this:       A>B:   <press return/enter>
+   220	       Switching default drives is an essential skill!
+   221	
+   222	                              THE FORMAT COMMAND
+   223	
+   224	       This prepares a blank disk to receive new information. You must
+   225	       format disks out of the package from the store before you can 
+   226	       use them. Formatting tests a disk and installs magnetic tracks
+   227	       where information will later reside.
+   228	
+   229	       Examples:
+   230	
+   231	       C>FORMAT A:           format floppy in A:
+   232	       A>FORMAT B:           format floppy in B:
+   233	       C>FORMAT B:/S         see below for explanation . . .
+   234	
+   235	       The last example formats the disk in B: drive and also adds the
+   236	       special system files so that the disk can be self starting
+   237	       or self booting. Not essential with most disk you will work 
+   238	       with. You MUST have the special file FORMAT.COM on your disk or 
+   239	       hard drive to able to do this operation since FORMAT.COM normally
+   240	       resides EXTERNALLY on a floppy or in a special area of your hard 
+   241	       drive.
+   242	
+   243	                        THE COPY AND DISKCOPY COMMANDS
+   244	
+   245	       Moves, copies and even renames files as they pass from one
+   246	       disk to another.
+   247	
+   248	       Examples:
+   249	
+   250	       A>COPY *.* B:    Copies ALL files (indicated by *.*) to the
+   251	                        B: floppy drive.
+   252	
+   253	       A>DISKCOPY A: B: 
+   254	
+   255	       This is a variation of the copy command. The above example will
+   256	       copy the ENTIRE contents of the diskette in the A: drive to the
+   257	       B: drive. DISKCOPY.COM is an external file and must be available
+   258	       to be used! The COPY command is an internal command (always 
+   259	       resides in your computer's RAM memory and is thus ALWAYS 
+   260	       AVAILABLE - unlike DISKCOPY.COM)
+   261	       
+   262	       A>DISKCOPY A: A:
+   263	
+   264	       This is a variation of the diskcopy command. The above example will
+   265	       copy the ENTIRE contents of the diskette in the A: drive to the
+   266	       A: drive for those using ONLY a single floppy drive system and
+   267	       perhaps not having a B: or C: drive. In essence, this variation
+   268	       copies the SOURCE diskette into memory, allows you to remove the
+   269	       SOURCE diskette, insert a blank formatted TARGET diskette and 
+   270	       transfer the files to that new floppy. Useful for those having only 
+   271	       a single floppy drive.
+   272	
+   273	       C>COPY A:*.* B:
+   274	
+   275	       Copies all files from A: to B: while still in the C: default
+   276	       directory.
+   277	
+   278	       C>COPY A:HAPPY.DOC B:
+   279	
+   280	       Copies only the file HAPPY.DOC to B:
+   281	
+   282	       NOTE! DISKCOPY is an external command and must be on the disk
+   283	       or in the default directory to work. COPY is an internal command
+   284	       and is always available at the DOS command line. We mentioned 
+   285	       this before, but it is worth repeating . . . 
+   286	
+   287	                                 TYPE COMMAND 
+   288	
+   289	       Lets you view the internal contents of a file on the screen.
+   290	       If the file is in ASCII or english text (same thing) you will be 
+   291	       able to read it. If the file is not ASCII then you will see
+   292	       symbols which are gibberish. Only text or ASCII files are
+   293	       readable for the most part.
+   294	
+   295	       Examples:
+   296	
+   297	       C>TYPE MANUAL.DOC 
+   298	
+   299	       Type the contents of the file MANUAL.DOC to the screen. Remember
+   300	       to use CTRL-S to pause, any key to resume scrolling and
+   301	       CTRL-S to pause again.
+   302	
+   303	       A>TYPE B:MANUAL.DOC
+   304	
+   305	       Type the file MANUAL.DOC which is located on the B: drive to the 
+   306	       screen.
+   307	
+   308	                                 PRINT COMMAND
+   309	
+   310	       There are actually two ways to print text or documentation files 
+   311	       on your printer.
+   312	       
+   313	       Examples:
+   314	
+   315	       C>PRINT EXAMPLE.DOC
+   316	
+   317	       Prints on your printer the contents of the file EXAMPLE.DOC.
+   318	       Note that PRINT command is an external file and must be present
+   319	       in the default drive to be used!
+   320	
+   321	       C>TYPE EXAMPLE.DOC>PRN
+   322	
+   323	       This is a useful alternative method of accomplishing the same 
+   324	       result by using the TYPE command which is an internal command, 
+   325	       always available and redirecting the output to a printer. The small
+   326	       > symbol is found as a shifted period mark on most keyboards
+   327	       and in other locations on your keyboard. Be sure to find and try 
+   328	       the > symbol. 
+   329	
+   330	       NOTE! To stop printing use the CTRL-C key combination to stop the 
+   331	       printing and completely abort. CTRL-C works to abort just about 
+   332	       ANY DOS operation safely.
+   333	
+   334	
+   335	       ---------------------------------------------------------------- 
+   336	       
+   337	                            COPYING THE MASTER DISK
+   338	       
+   339	       ---------------------------------------------------------------- 
+   340	       
+   341	       Now that you know a little DOS, be aware that the first step to 
+   342	       accomplish with any disk of shareware is to copy your original 
+   343	       diskette onto another blank formatted floppy. Then work with the 
+   344	       copy and safely store the original just in case a problem 
+   345	       arises, a file is deleted, or you accidentally copy other files 
+   346	       over the shareware program diskette you need. It's a good idea to
+   347	       also put a write protect tab over the notch of the original disk
+   348	       before you use it so that data cannot accidentally be deleted.
+   349	
+   350	       ---------------------------------------------------------------- 
+   351	       
+   352	                   THE DIRECTORY LISTING OF A SHAREWARE DISK
+   353	       
+   354	       ---------------------------------------------------------------- 
+   355	       
+   356	       The next step is to use the DIR command to list the contents
+   357	       of a disk so you can do a little detective work and determine
+   358	       the disk contents and locate the instruction text files which 
+   359	       are probably contained on the disk.
+   360	
+   361	       We have already given examples for listing a directory to the 
+   362	       screen in our previous DOS lesson. Another option is to print 
+   363	       the directory on your printer and carefully highlight or pencil 
+   364	       notes about the files on the paper which is a good idea for 
+   365	       beginners at first.
+   366	
+   367	       Example for printing a directory of a disk onto paper:
+   368	
+   369	       A>DIR B:>PRN
+   370	
+   371	       Prints the directory of files on the B: floppy drive to your
+   372	       printer.
+   373	
+   374	       ---------------------------------------------------------------- 
+   375	
+   376	              FILE NAMES AND EXTENSIONS - THE KEYS TO THE KINGDOM
+   377	
+   378	       ---------------------------------------------------------------- 
+   379	
+   380	       To the beginner, DOS is a little cryptic in its use of file 
+   381	       names. Study the example directory listing below and the
+   382	       notes to the right of the listing:
+   383	
+   384	       PCPC     EXE    51489   5-03-86   3:36p   ---> PCPC.EXE          
+   385	       PCPR     EXE    21457   5-03-86   3:29p   ---> PCPR.EXE          
+   386	       PCPY     EXE    32017   5-03-86   3:39p   ---> PCPY.EXE          
+   387	       README            128   5-03-86  12:46p   ---> README
+   388	       NOTES565 TXT     1390   7-03-86   8:31a   ---> NOTES565.TXT
+   389	       
+   390	       In each case you will note the REAL file name to the right and 
+   391	       the directory listing version to the left. The point is that
+   392	       in DOS, filenames always have a name, a period or dot and an
+   393	       optional (but highly useful) extension. This is a very important 
+   394	       point!
+   395	       
+   396	                        KEYS TO THE SHAREWARE KINGDOM!
+   397	
+   398	       Study the following list carefully, perhaps print it on paper 
+   399	       and mark it with a colored highlighter. This list contains a 
+   400	       roster of filename extensions which reveals the type of file and 
+   401	       its possible contents and application. 
+   402	
+   403	             FILE EXTENSIONS WHICH PROBABLY CONTAIN DOCUMENTATION,
+   404	                         INSTRUCTIONS OR PRINTED TEXT
+   405	
+   406	       .DOC       ---------> Probable DOCumentation file
+   407	       .TXT       ---------> Probable Text (TXT) file
+   408	       .MAN       ---------> Probable MANual/instruction file
+   409	       .LST       ---------> Probable file containing a LIST.
+   410	       .PRN       ---------> Probable text file from a PRINTED source.
+   411	       .INS       ---------> Probable INSTRUCTIONS in text form.
+   412	       .HLP       ---------> Probable HELP text file.
+   413	       .          ---------> NO, EXTENSION. VERY LIKELY A TEXT FILE!
+   414	       .HST       ---------> Probable text file containing HISTORY of
+   415	                             program revisions
+   416	       
+   417	             FILENAMES (WITH OR WITHOUT EXTENSIONS) WHICH PROBABLY
+   418	                     CONTAIN INSTRUCTIONS OR PRINTED TEXT
+   419	
+   420	       README     ---------> VERY IMPORTANT TEXT FILE
+   421	       READ.ME    ---------> VERY IMPORTANT TEXT FILE
+   422	       READ.1ST   ---------> VERY IMPORTANT TEXT FILE
+   423	       READ       ---------> VERY IMPORTANT TEXT FILE
+   424	       READ.NOW   ---------> VERY IMPORTANT TEXT FILE
+   425	       
+   426	       NOTE! There are so many variations of the "READ..." theme that
+   427	       hopefully you can imagine other variations of this "READ..."
+   428	       concept!
+   429	       
+   430	       If you stop and think about it for a minute, most of these 
+   431	       extensions and filenames offer strong clues about file contents 
+   432	       and phonetically "hint" to you what the file contains. Here are 
+   433	       some examples you might actually see. Note the "clues" that tell 
+   434	       you text or instructions are available inside the file:
+   435	
+   436	             1232XX.TXT            MAKE445.DOC       SYSOPS.       
+   437	             ASEASY.LST            MANUAL.TXT        READ.         
+   438	             DATABASE.DOC          MANUAL.           AUTHOR.       
+   439	             ENTIRE.MAN            FORMFEED.MAN      VENDOR.       
+   440	             MONEY.TXT             HOMEHELP.HLP      README.       
+   441	             README.!!!            HOMEHELP.LST      README.NOW   
+   442	             READSOON.             HOMEHELP.HST      VENDORS.      
+   443	             BBM.PRN               TRY44B.DOC        MANUAL.PRN   
+   444	
+   445	                      OTHER IMPORTANT FILENAME EXTENSIONS
+   446	
+   447	       .EXE       ---------> An EXECUTABLE FILE which starts program
+   448	       .COM       ---------> A COMMAND FILE which starts program
+   449	       .BAT       ---------> BATCH FILE which starts program
+   450	       .BAS       ---------> BASIC file which can be run with
+   451	                             the aid of the GWBASIC interpreter
+   452	                             GWBASIC which is normally on your DOS
+   453	                             disk or hard drive.
+   454	
+   455	                    FILE EXTENSIONS WHICH INDICATE THE FILE 
+   456	         IS "COMPRESSED OR ARCHIVED" AND MUST BE UNPACKED PRIOR TO USE
+   457	
+   458	       .ZIP       ---------> Compressed file, use PKUNZIP to unpack
+   459	       .ARC       ---------> Compressed file, use ARC 
+   460	       .PAK       ---------> Compressed file, use PAK
+   461	       .LZH       ---------> Compressed file, use LHARC
+   462	       .ZOO       ---------> Compressed file, use ZOO
+   463	
+   464	                            OTHER USEFUL EXTENSIONS
+   465	
+   466	       .BAK       --------->  A backup or duplicate file
+   467	       .DAT       --------->  A data file
+   468	       .CFG       --------->  Configuration data for program
+   469	       .WKS       --------->  Spreadsheet file
+   470	       .WK1       --------->  Spreadsheet file
+   471	       .DBF       --------->  Database file in dBase format
+   472	       .ASC       --------->  ASCII file, perhaps a basic program
+   473	                              saved in ASCII format
+   474	       .BIN       --------->  Binary file, file used by a program
+   475	
+   476	       Some disk vendors try to help you by putting their own files 
+   477	       on a disk with a little extra information. The following file 
+   478	       examples might offer help in text or documentation form.
+   479	       An advanced shareware user would guess quickly that these files
+   480	       refer to a disk from a shareware vendor or computer club library
+   481	       and are most probably disk number 565 in a larger set of 
+   482	       programs that vendor or club offers in a library collection.
+   483	
+   484	       NOTES565 TXT     1390   7-03-86   8:31a              
+   485	       FILES565 TXT     1728   7-03-86   8:37a              
+   486	       
+   487	       If you buy a disk from a disk vendor named BEST VALUE SHAREWARE
+   488	       DISTRIBUTORS you might look for files such as the following 
+   489	       which also contain text, BAT, COM or other file startup information.
+   490	       
+   491	       Each vendor might use a different system, but watch for these 
+   492	       patterns as you list directory information on a shareware disk. 
+   493	       With the variety of methods, your best bet is to study filename 
+   494	       extensions for a few minutes and "play detective" which for some 
+   495	       folks is a bit of the interest in using shareware!
+   496	
+   497	                FILES PUT ON A DISK BY A HYPOTHETICAL SHAREWARE
+   498	                  DISK VENDOR NAMED BEST VALUE SHAREWARE INC.
+   499	
+   500	       BESTVAL.COM     1390   7-03-86   8:31a              
+   501	       BESTVAL.BAT     1728   7-03-86   8:37a              
+   502	       BV.COM          5656   7-03-86   8:31a
+   503	       RUNBEST.COM     1777   7-03-86   8:37a
+   504	       BESTVAL.767     8787   8-9-91    9:30P
+   505	
+   506	       ---------------------------------------------------------------- 
+   507	       
+   508	                  COM, EXE AND BAT FILES START PROGRAMS 
+   509	       
+   510	       ---------------------------------------------------------------- 
+   511	       
+   512	       A file ending in EXE or COM is a file which contains a 
+   513	       EXECUTABLE OR "RUNNABLE" program and is a way to start a 
+   514	       software package. 
+   515	       
+   516	       Examples:
+   517	
+   518	       To start PCF.EXE do this    PCF  (then press enter).  
+   519	       For DBFKK.EXE               DBFKK (then press enter.) 
+   520	       
+   521	       Some files which end in BAS will need a basic interpreter such 
+   522	       as GWBASIC.EXE to operate. Example files would be GAME.BAS or 
+   523	       MUSIC.BAS. GWBASIC.EXE is usually included on your DOS disk
+   524	       which came with the computer.
+   525	       
+   526	       Another standard of shareware programs is to use batch files to 
+   527	       start programs. GO.BAT or MENU.BAT or START.BAT or INSTALL.BAT 
+   528	       are "batch files." Simply type the first word at the prompt to 
+   529	       proceed.  
+   530	       
+   531	       Example: for file GO.BAT       GO (then press enter). 
+   532	
+   533	       DOS searches a disk for programs to run in a precise order:
+   534	
+   535	       HELLO.COM  ---------> Run this first if found then try 
+   536	       HELLO.EXE  ---------> to find and run this then
+   537	       HELLO.BAT  ---------> try to find and run this.
+   538	              
+   539	       ---------------------------------------------------------------- 
+   540	       
+   541	                               BASIC DATA FILES
+   542	       
+   543	       ---------------------------------------------------------------- 
+   544	
+   545	       If you find a BASIC program file which ends in .BAS try this
+   546	       per the following example . . .
+   547	
+   548	       For the file HELLO.BAS, first copy both GWBASIC.EXE
+   549	       and HELLO.BAS to a blank formatted diskette. Then issue the 
+   550	       command:
+   551	
+   552	       A>GWBASIC HELLO
+   553	
+   554	       Another alternative is to leave GWBASIC.EXE on your hard drive 
+   555	       and tell it where the basic program is located. 
+   556	
+   557	       Example:     C>GWBASIC A:HELLO
+   558	
+   559	       The above example assumes a copy of GWBASIC.EXE resides on your 
+   560	       hard drive and a floppy containing the basic program HELLO.BAS 
+   561	       is on the A: drive.
+   562	
+   563	       The program will be loaded into GWBASIC and run. If you
+   564	       don't care for the program, try to exit if the program gives
+   565	       you a menu of choices, otherwise press CTRL-BREAK keys
+   566	       at same time which will let GWBASIC exit. You will see an
+   567	       "OK" prompt. Type the word "system" and press the return/enter 
+   568	       key to return you to DOS and leave GWBASIC. 
+   569	
+   570	       Basic is a rather elegant and precise programming system if you 
+   571	       are interested! Pick up a book at your local library and you can 
+   572	       learn how to use GWBASIC.EXE on your DOS disk to write and modify 
+   573	       your own elaborate custom programs! Also investigate the
+   574	       availability of affordable Basic compiler programs which prepare 
+   575	       speedy .EXE free standing programs rather than requiring you to 
+   576	       haul out your GWBASIC.EXE file each time you wish to run the 
+   577	       program.
+   578	
+   579	       ---------------------------------------------------------------- 
+   580	
+   581	                      SOME EXAMPLES - OUR FIRST POP QUIZ!
+   582	
+   583	       ---------------------------------------------------------------- 
+   584	
+   585	       Try to puzzle through this pop quiz! Small stars next to the 
+   586	       filenames indicate an educated guess as to IMPORTANT TEXT 
+   587	       information or documentation contained within. These directory 
+   588	       lists are similar to what you might see on your screen when using 
+   589	       the DIR command when you first explore a new software disk. Brief 
+   590	       notes may follow each directory listing. 
+   591	       
+   592	       ** means high probability documentation is contained within
+   593	       *  means some documentation possibly is contained within
+   594	
+   595	                                                            
+   596	       BRUN10   EXE    58388   7-17-85   1:56p              
+   597	       BUSINESS DAT      384   5-04-86   6:42a              
+   598	       DELXTRA  BAT      128   5-03-86   6:55p              
+   599	       MSG1     TXT      384   5-03-86   7:10p  *            
+   600	       MSG2     TXT      768   5-03-86   7:23a  *            
+   601	       PAY      BAT       16   9-02-85  12:11p              
+   602	       PCPAY    DOC    64512   5-04-86   7:11a  **            
+   603	       PCPC     EXE    51489   5-03-86   3:36p              
+   604	       PCPR     EXE    21457   5-03-86   3:29p              
+   605	       PCPY     EXE    32017   5-03-86   3:39p              
+   606	       PRNTDOC  BAT      128   5-03-86   7:09p              
+   607	       README   BAT      128   5-03-86  12:46p              
+   608	       GO       BAT      668   7-03-86   8:39a              
+   609	       NOTES565 TXT     1390   7-03-86   8:31a *             
+   610	       FILES565 TXT     1728   7-03-86   8:37a *             
+   611	       
+   612	                                                
+   613	       Note that on the above disk the LARGEST file PCPAY.DOC contains
+   614	       64,512 bytes. Its size leads to strong suspicion it contains 
+   615	       the main documentation. Shorter files probably contain other 
+   616	       useful data. The two files at the bottom of the directory listing 
+   617	       make one suspect this disk in number 565 in a club library or 
+   618	       disk vendor collection. Sherlock Holmes would approve of our
+   619	       logic!
+   620	       
+   621	                                                            
+   622	       ASEASY   EXE   205392   7-17-90  10:29a              
+   623	       ASEASY   MSG     9636   7-16-90   6:27p *             
+   624	       ASEASY   CFG      298   1-18-90   7:47p              
+   625	       ASEASY   HLP    58346   4-25-90   9:05a **             
+   626	       HTREE    EXE     9185   4-11-90  12:36a              
+   627	       ASAU400  COM    36610   4-11-90   2:26p              
+   628	       VENDOR   DOC     3784   4-10-90  11:54p *             
+   629	       LICENSE  DOC     4133   4-11-90  12:28a *             
+   630	       ORDER    ME      4301  10-15-89  11:24p *             
+   631	       YESNO    COM       97  10-02-86   9:47p              
+   632	       SETUP    BAT     2873   7-18-90  12:26p              
+   633	       READ     ME     19512   4-12-90  11:53a **             
+   634	       
+   635	
+   636	       The largest file which hints it contains text data would be a 
+   637	       good candidate to examine! The file SETUP.BAT suggests that 
+   638	       some intial setup or configuration of the program is necessary 
+   639	       prior to use.          
+   640	                                                            
+   641	                                                            
+   642	       COMFILES     <DIR>     12-05-89   4:48p              
+   643	       GOODBY            384  10-03-89   2:44p  *            
+   644	       INTRO1            512   1-11-90   8:19a  **            
+   645	       INTRO2            896  10-08-89   7:02p  **            
+   646	       MENU              640  10-03-89   3:41p              
+   647	       NEWPROD          2176  10-03-89   3:40p  *            
+   648	       MANUAL   DOC    77568   2-02-91  11:12a  **            
+   649	       QUICK    DOC    33664   2-02-91  11:10a  **            
+   650	       TUTR     DOC   109696  10-02-89   4:30p  **            
+   651	       SEBFI    COM     2270  12-10-89   2:50p              
+   652	       SEBFI    DOC     5888  12-05-89   8:04p  *            
+   653	       SEBFI    BAT      384  12-02-89   1:25p              
+   654	       LASTMIN  ANN      512  12-08-89   1:45p  *            
+   655	       GO       BAT     1362   1-31-91   6:17p              
+   656	       SEBFIM   BAT      384  12-08-89   3:05p              
+   657	                                                 
+   658	       
+   659	       This is a disk with several important documentation files, but
+   660	       a highly unusual second subdirectory! COMFILES <DIR> contains
+   661	       other file(s) and must ALSO be examined. The DOS CD or
+   662	       change directory command must be used to examine this other
+   663	       subdirectory or file storage area of the disk. See your DOS manual.
+   664	       Most shareware authors try to stay away from using additional
+   665	       subdirectories on a disk which can confuse a beginner. The file
+   666	       LASTMIN.ANN would tell an advanced shareware user that the file
+   667	       contains "last minute announcements" and is most probably 
+   668	       a text file. TUTR.DOC probably means "tutorial document."
+   669	       QUICK.DOC is probably quick startup documentation.
+   670	                  
+   671	                                                            
+   672	       HM       EXE   306347   8-28-90  11:48a              
+   673	
+   674	       
+   675	       This is an odd disk indeed. No documentation? Actually this
+   676	       is a special SELF-EXTRACTING file which is usually copied
+   677	       to a hard drive run with the command HM. The file will proceed 
+   678	       to unpack itself and produce several files containing 
+   679	       documentation, COM or EXE files and more! Most authors would
+   680	       include a small README file on the disk to advise you of this 
+   681	       fact, but this author has omitted even that! If you locate a 
+   682	       large EXE file, copy it to your hard drive (perhaps into
+   683	       a subdirectory named TEMP or temporary) and then run the
+   684	       file to cause it to unpack and produce all the little subfiles
+   685	       which are the main program! Shareware authors do this to 
+   686	       conserve disk space or otherwise compress large programs to
+   687	       fit onto fewer disks.
+   688	                                                            
+   689	                                                            
+   690	       DBATE001 EXE   185785   3-25-90   9:07a              
+   691	       DBATE002 EXE   284884   6-22-90  11:28p              
+   692	       DBATE003 EXE   244771   9-19-90   7:47p              
+   693	       READ1ST  EXE     6267  11-26-90  11:04p **             
+   694	       
+   695	
+   696	       READ1ST.EXE is run since it is a self-extracting EXE file which 
+   697	       probably produces documentation notes. The other three files are 
+   698	       probably self-extracting files which produce three separate 
+   699	       programs. This is a case of multiple self-extracting files! A 
+   700	       clever author is highly compressing his data to save space on 
+   701	       disk! 
+   702	       
+   703	                                                            
+   704	       FUNNELS  EXE    59904   9-21-84   3:01p              
+   705	       FUNNELS  DOC    14713   9-21-84   1:58p **             
+   706	       FUNNELS  INV     2432   9-21-84   3:18p              
+   707	       ATC2     BLD     4096   8-23-84   9:08p              
+   708	       ATC      EXE    50304   7-09-84  11:20a              
+   709	       AUTOEXEC BAT       11   7-12-84  10:29a              
+   710	       ATC      DAT      384   1-01-80   1:04a              
+   711	       EUCHRE   BAS    22784   7-21-84   3:09p              
+   712	       EUCHRE   DOC     3645   7-21-84   3:52p **             
+   713	       CRC      TXT     1123  11-16-84   7:06a *             
+   714	       FUNNELS  SCR      128  11-25-88  10:27a              
+   715	       
+   716	       
+   717	       A relatively simple disk. Text or documentation files indicated.
+   718	       Do you see the single basic BAS file which will require a copy
+   719	       of GWBASIC.EXE?
+   720	
+   721	       Pop quiz part 2: Grab a few loose disks from any random source
+   722	       and repeat this detective process a few times and you will soon
+   723	       be a shareware GURU!
+   724	
+   725	       ---------------------------------------------------------------- 
+   726	       
+   727	                           A TURBOCHARGED SHORTCUT!
+   728	       
+   729	       ---------------------------------------------------------------- 
+   730	       
+   731	       There is always a shortcut to any process if you apply a little 
+   732	       thought and a bit of technology. As mentioned previously, you 
+   733	       need to identify files on a disk containing text or 
+   734	       instruction documentation and then view the contents of the 
+   735	       file. A previous section showed you how to use the DOS TYPE
+   736	       and PRINT commands to print the contents of a suspected text 
+   737	       file to either the screen or paper.
+   738	
+   739	       If DOS commands and structure are not interesting or you don't 
+   740	       have the time to learn DOS, there exist programs called DOS 
+   741	       SHELLS which essentially provide DOS access for routine things 
+   742	       like moving and copying files AND QUICKLY VIEWING THE INTERNAL
+   743	       CONTENTS OF SUSPECTED TEXT FILES; these menu programs hide the 
+   744	       DOS commands behind a series of "point and select" choices 
+   745	       similar to the point and shoot menus you use on game programs 
+   746	       and serious business software. 
+   747	       
+   748	       The typical DOS shell is a package which surrounds DOS (like a 
+   749	       shell, hence the name) and allows you to perform the most common 
+   750	       DOS functions by pressing only one or two keys or moving a 
+   751	       highlighted arrow. Very appealing for beginners! This may be
+   752	       all the DOS control most people need . . .
+   753	
+   754	       Some practical and easy DOS shell packages include: Still River 
+   755	       Shell, DOS2ools, PC Tools, Powermenu, Automenu, Dirmagic and 
+   756	       Directory Freedom. DR.COM and its companion shell programs
+   757	       CO.COM and RN.COM are extremely simple shells suited for
+   758	       beginners which most computer clubs and shareware disk vendors
+   759	       carry. The author of this package uses the Directory Freedom 
+   760	       shell which you may also wish to investigate.
+   761	       
+   762	       If you are beginner and don't want to be troubled learning DOS, 
+   763	       then a shell program is the easiest way to use the PC. And one 
+   764	       of the easier ways to view text files.
+   765	       
+   766	       ---------------------------------------------------------------- 
+   767	
+   768	                           UNPACKING AND INSTALLING 
+   769	                      INCLUDING ARCS, ZIPS, LZH AND MORE
+   770	
+   771	       ---------------------------------------------------------------- 
+   772	
+   773	       Many times a shareware package is quite large and has been 
+   774	       compressed or "archived" to fit on the disk. Another use for 
+   775	       archiving, or packing many files into one highly compressed 
+   776	       file, is to decrease telephone charges and time when transmitting 
+   777	       files by modem. In a previous section we indicated the following 
+   778	       filename extensions as pertaining to compressed or "archived" files:
+   779	
+   780	       .ZIP       ---------> Compressed file, use PKUNZIP to unpack
+   781	       .ARC       ---------> Compressed file, use ARC system 
+   782	       .PAK       ---------> Compressed file, use PAK system
+   783	       .LZH       ---------> Compressed file, use LHARC
+   784	       .ZOO       ---------> Compressed file, use ZOO system
+   785	
+   786	       Let's take a closer look. For example, the file FUN454.ZIP
+   787	       might contain the following files contained within the
+   788	       ZIP archive.
+   789	       
+   790	       FUNNELS  EXE                                         
+   791	       FUNNELS  DOC                                           
+   792	       FUNNELS  INV                                         
+   793	       ATC      DAT                                         
+   794	       FUNNELS  SCR                                         
+   795	       FUNNELS  TXT                            
+   796	       
+   797	       By the way, in the above example, FUN454.ZIP, we are given the
+   798	       probable clue that this might be Version 4.54 of the program.
+   799	       This is another odd but useful convention when dealing with
+   800	       the shareware community and archived or compressed files.
+   801	
+   802	       In the shareware trade, one frequently hears the terms "ARCING, 
+   803	       ZIPPING, UNZIPPING, LHARCING, PAKING" and similar terms. You 
+   804	       can quickly understand that "archive processing" or compressing 
+   805	       and uncompressing disk files is what these terms refer to!
+   806	
+   807	       Not all disks contain archives - some do, some don't. To unpack 
+   808	       the program you need a few blank floppies (or a hard drive) and 
+   809	       a special unpacking utility program to unpack. If your software 
+   810	       needs this utility, it is usually available on one (or several) of 
+   811	       your disks or can be ordered from most computer clubs or shareware 
+   812	       disk vendors. Here is how to unpack an archive file ending in 
+   813	       ZIP. Other files ending in .LZH, .ZOO and other file extensions
+   814	       are quite similar in use.
+   815	       
+   816	       Files which end in .ZIP are unpacked with PKUNZIP.EXE. For our 
+   817	       example let's pretend we are unpacking the file SAMPLE.ZIP. 
+   818	            
+   819	       Start with a BLANK formatted floppy. Copy the program file you 
+   820	       wish to unpack (e.g., SAMPLE.ZIP) and the file PKUNZIP.EXE 
+   821	       onto the blank floppy. Hard drive users may prefer to simply 
+   822	       copy the file to be unpacked and the unpacking utility 
+   823	       PKUNZIP.EXE to their hard drive. For our example, SAMPLE.ZIP and 
+   824	       PKUNZIP.EXE are now on a floppy in the A: drive.                     
+   825	
+   826	       Next we need a place to put the unpacked files! For computers 
+   827	       without a hard drive put a blank formatted floppy in your other 
+   828	       empty B: floppy drive. This is where the unpacked newly expanded 
+   829	       files will go: the DESTINATION OR TARGET drive for the unpacked 
+   830	       software. Hard drive users will probably just unpack to the hard 
+   831	       drive (C:) using a subdirectory on the hard drive as the target 
+   832	       area.
+   833	                                                  
+   834	       Using the examples which follow, type an unpacking command 
+   835	       showing the source drive containing the packed file, the name of 
+   836	       file and the final destination drive; press enter or return key 
+   837	       after typing the unpacking command. Of course, substitute the 
+   838	       name of the file you are using for the file SAMPLE.ZIP. Blank 
+   839	       spaces in the command ARE essential. 
+   840	
+   841	       EXAMPLE:             A>pkunzip A:SAMPLE.ZIP B: 
+   842	
+   843	       Translation: unpack or unzip all files from the packed file 
+   844	       SAMPLE.ZIP contained on the A: floppy drive and send the 
+   845	       unpacked files to the B: floppy drive. Press enter or return key 
+   846	       after typing the command.
+   847	
+   848	       EXAMPLE:             C>pkunzip C:sample.ZIP B: 
+   849	
+   850	       Unpack files from C: hard drive area to a blank floppy on B: 
+   851	       drive. 
+   852	
+   853	       By the way, you can omit the .ZIP file extension for a shortcut.
+   854	
+   855	       EXAMPLE:               C>pkunzip C:sample B:
+   856	
+   857	       Files are now unpacked and ready to use in the conventional 
+   858	       manner - after unpacking you will probably see the readme, text 
+   859	       and documentation files you need. The data is now in a more 
+   860	       familiar DOS file format. The archive can "inflate" more than 
+   861	       200% from its compressed format in some cases! 
+   862	
+   863	       Some programs are very large and may be submitted to you in 
+   864	       several parts. You might find a program which consists of 
+   865	       three or four packed .ZIP, .LZH or other archive file(s) on 
+   866	       several disks.
+   867	
+   868	       NOTE! for hard drive users you are usually wise to unpack each 
+   869	       program to a separate subdirectory on your hard disk. For 
+   870	       example, to use pcwrite you might unpack the files to C:\PCW. Of 
+   871	       course, you must first create a subdirectory called PCW on your 
+   872	       hard drive BEFORE you start. To prepare a subdirectory, use the 
+   873	       DOS md (make directory) command (example  c>md pcw.)  Hard drive 
+   874	       users might wish to delete the original compressed ARC/ZIP files 
+   875	       from their hard drive since the unpacked versions are now ready 
+   876	       and the original floppies serve as your backup copies.    
+   877	
+   878	                    UNPACKING ARCHIVED/COMPRESSED PROGRAMS 
+   879	                 ON SINGLE FLOPPY SYSTEMS LACKING A HARD DRIVE
+   880	       
+   881	       A problem arises trying to uncompress archived programs on 
+   882	       single drive systems. Most computers have at least two drives. 
+   883	       
+   884	       On a single drive system you may need to uncompress your 
+   885	       programs to a special memory area of the computer called a RAM 
+   886	       DRIVE. Your DOS manual covers this option or you can obtain a 
+   887	       shareware package which produces a ram drive and thus allows 
+   888	       your computer to "think" it has two floppy drives. This is 
+   889	       about the only alternative for unpacking software on a single 
+   890	       drive machine. Generally single drive computers may not be fully 
+   891	       IBM compatible with many modern software packages which may need 
+   892	       two drives. Suggest you 1) return disks to vendor for refund or 2) 
+   893	       consider adding a second drive as most modern fully compatible 
+   894	       machines offer or 3) attempt unpacking with a RAM DRIVE then 
+   895	       copy back to disk. Later versions of DOS contain a RAM DRIVE
+   896	       program. You can also obtain RAM DRIVE programs from shareware
+   897	       and other software vendors.
+   898	  
+   899	       ---------------------------------------------------------------- 
+   900	
+   901	                     CONFIGURING THE PROGRAM IF NECESSARY
+   902	  
+   903	       ---------------------------------------------------------------- 
+   904	
+   905	       Many times a software program must be configured prior to being
+   906	       actually used. This means that possibly screen colors, type of 
+   907	       disk drives, optional accessories such as a mouse or modem, 
+   908	       printer types and other features must be activated. Some 
+   909	       software programs allow you to configure this information 
+   910	       directly within the main program. Other programs prefer that
+   911	       you run a separate small "configuration" program first. 
+   912	       
+   913	       The only useful rule in this case is to read the documentation 
+   914	       or at least study the table of contents or index to see if 
+   915	       configuration is a necessary step.
+   916	
+   917	       ---------------------------------------------------------------- 
+   918	
+   919	                           TIME TO RUN THE PROGRAM!
+   920	
+   921	       ---------------------------------------------------------------- 
+   922	
+   923	       From a previous chapter of this tutorial we again offer the
+   924	       reminder that the following file extension relate to a file
+   925	       or program that can be run!
+   926	
+   927	
+   928	       .EXE       ---------> An EXECUTABLE FILE which starts program
+   929	       .COM       ---------> A COMMAND FILE which starts program
+   930	       .BAT       ---------> BATCH FILE which starts program
+   931	       .BAS       ---------> BASIC file which can be run with
+   932	                             the aid of the GWBASIC interpreter
+   933	                             GWBASIC which is normally on your DOS
+   934	                             disk or hard drive.
+   935	
+   936	       Examples: 
+   937	
+   938	       File is HMFAST.EXE. To start, assuming the file is on the C: 
+   939	       hard drive,
+   940	
+   941	       C>HMFAST   <then press enter or return key>   starts program.
+   942	
+   943	       File is ASEASY.COM. To start, assuming the file is on the A:
+   944	       floppy drive,
+   945	
+   946	       A>ASEASY   <then press enter or return key>   starts program.
+   947	
+   948	
+   949	       ---------------------------------------------------------------- 
+   950	
+   951	                FEEDBACK: EITHER REGISTER OR SEND YOUR REGRETS!
+   952	               
+   953	       ---------------------------------------------------------------- 
+   954	       
+   955	       The last step is probably the most important to a shareware 
+   956	       author and for that matter the continued production of ever more 
+   957	       interesting and useful shareware:
+   958	
+   959	       Register the package if it proves truly useful. Send a 19 cent
+   960	       postcard to the author if you don't register with a few observations, 
+   961	       constructive criticisms or at least suggestions. The fact that 
+   962	       you were interested enough in the program to try it means that 
+   963	       it might be VERY close to what you need. Inexpensive postcard 
+   964	       feedback just might result in a program change by the author 
+   965	       which gives you a "perfect fit." You would be surprised how 
+   966	       responsive shareware authors are in revising a program QUICKLY 
+   967	       to meet a customer request. You might even say this is about 
+   968	       the closest thing to having your own personal programmer
+   969	       on the staff as you will ever find!
+   970	
+   971	       ---------------------------------------------------------------- 
+   972	
+   973	                         COMMON QUESTIONS AND ANSWERS
+   974	       
+   975	       ---------------------------------------------------------------- 
+   976	      
+   977	             PROBLEMS USING COLOR SOFTWARE ON MONOCHROME COMPUTERS
+   978	       
+   979	       Some shareware programs (usually games and a few others) require 
+   980	       a color circuit within the computer called CGA, EGA or VGA 
+   981	       color graphics. If you start the program on a monochrome (no 
+   982	       color) computer you may see nothing on the screen! 
+   983	       
+   984	       Solutions: 1) Use an inexpensive software program (e.g., SIMCGA) 
+   985	       which helps monochrome machine pretend (emulate) color 2) Buy a 
+   986	       CGA, VGA or EGA circuit card 3) check the documents which come 
+   987	       with the shareware package to see if it can be switched from color 
+   988	       mode to monochrome. 
+   989	
+   990	       Turn off your computer and restart it if you use a program such
+   991	       as SIMCGA or other software patch to help a monochrome computer
+   992	       emulate a color machine. You don't want the emulation program
+   993	       interfering with other software you may wish to run later.
+   994	
+   995	       Problem: Computer responds with "bad command or filename."
+   996	
+   997	       Solution: Make sure that what you typed at the DOS command line 
+   998	       is EXACTLY the filename you intended to run. This is probably a
+   999	       simple typing mistake.
+  1000	
+  1001	       Problem: Program asks for a file which is not on the disk.
+  1002	
+  1003	       Solution: Do you have ALL of the disks required. Have you 
+  1004	       unpacked all archives? Have you run the configuration program
+  1005	       which creates the missing file?
+  1006	
+  1007	       Problem: Screen goes blank and machine locks up.
+  1008	
+  1009	       Solution: Sounds like this is a color program trying to run on
+  1010	       a monochrome system. See the notes above.
+  1011	
+  1012	       Problem: Incorrect DOS version message.
+  1013	
+  1014	       Solution: Many sophisticated programs cannot use older
+  1015	       DOS versions such as 2.0 or 2.11. Check the documentation.
+  1016	       There might be a way around this that the author suggests 
+  1017	       towards the end of the program instructions.
+  1018	
+  1019	       Problem: Only have one disk drive. 
+  1020	
+  1021	       Solution: Refer to DOS manual or obtain separate standalone
+  1022	       RAM disk software which can create a second drive in your 
+  1023	       computer's RAM memory area. This is still a severe limitation
+  1024	       and you are advised to at least purchase a second floppy drive
+  1025	       which is not terribly expensive, these days.
+  1026	
+  1027	       Problem: Author did not respond to my questions or send anything
+  1028	       for my registration check. 
+  1029	
+  1030	       Solution: Authors can move and change address. Contact a 
+  1031	       shareware disk vendor, obtain the latest version of the program 
+  1032	       and see if the address of the author has changed. Call or write 
+  1033	       again.
+  1034	
+  1035	       Problem: I want to know more about shareware!
+  1036	
+  1037	       Solution: Explore the following . . .
+  1038	
+  1039	       ---------------------------------------------------------------- 
+  1040	
+  1041	           RECOMMENDED READING LIST FOR SHAREWARE USERS AND AUTHORS
+  1042	
+  1043	       ---------------------------------------------------------------- 
+  1044	       
+  1045	       Shareware Magazine. Published by PC-SIG, 1030-D East Duane 
+  1046	       Avenue, Sunnyvale, CA 94086. Voice telephone: 408/730-9291 FAX: 
+  1047	       408/730-2107. Included with membership in PC-SIG, one of the 
+  1048	       largest shareware disk distributors in the world. A bimonthly, 
+  1049	       "light and lively" guide to the shareware market featuring 
+  1050	       reviews and articles on the best and latest in shareware, author 
+  1051	       interviews and discussion and analysis of trends in the 
+  1052	       industry. 
+  1053	
+  1054	       Dr. File Finder's Guide to Shareware by Michael Callahan and 
+  1055	       Nick Anis. ISBN: 0-07-881646-7. A book and disk package teaching 
+  1056	       you how to find and use the best in shareware. Learn about disk 
+  1057	       vendors, computer club sources, details about the very best 
+  1058	       shareware in 20 categories. Disk includes such popular programs 
+  1059	       as Qmodem, Dos line editor, Anarkey, BackMail and more. Two 
+  1060	       additional disks available upon submission of a postcard 
+  1061	       contained in the book. 
+  1062	
+  1063	       Writing & Marketing Shareware. A book, disk and companion 
+  1064	       cassette tape by Steve Hudgik, HomeCraft, P.O. Box 974, 
+  1065	       Tualatin, OR 97062. Tel 503/692-3732. The best book in the 
+  1066	       industry for learning about programming, designing and MARKETING 
+  1067	       shareware for maximum financial return. Shows you how to become a 
+  1068	       successful shareware author who develops WINNING shareware for 
+  1069	       maximum income. Includes mailing list of distributors, equipment 
+  1070	       suppliers, service providers, how to design your shareware and 
+  1071	       more! Combined with the software program SMS in the next 
+  1072	       paragraph, you have a complete reference set on becoming a
+  1073	       financially successful shareware author.
+  1074	
+  1075	       $hareware Marketing $ystem. Two disk set containing tutorials 
+  1076	       and quarterly marketing newsletter for shareware authors plus 
+  1077	       dBase format mailing list on disk of over 3,000 addresses for 
+  1078	       industry contacts: computer clubs, disk vendors, magazine 
+  1079	       writers and more who use, distribute or review shareware. The 
+  1080	       mailing list on disk is ready to import into many database 
+  1081	       packages so you can print mailing labels for your disk mailers! 
+  1082	       By Jim Hood, the author of THIS tutorial you are now reading. 
+  1083	       $25 registration or $90 to subscribe to 4 quarterly issues. 
+  1084	       Also available as an inexpensive evaluation disk set from most
+  1085	       shareware disk vendors, computer clubs and BBS systems, as with 
+  1086	       all shareware. POB 1506, Mercer Island, WA 98040.  206/236-0470. 
+  1087	       Known among shareware authors simply as "SMS."
+  1088	       
+  1089	       Alfred Glossbrenner's Master Guide to Free Software and 
+  1090	       Shareware, c/o FireCrystal Communications, 699 River Rd, 
+  1091	       Yardley, PA 19067. Alfred writes one of the largest and most 
+  1092	       respected guides to shareware in the industry and is a 
+  1093	       contributing editor to several computer industry magazines. 
+  1094	
+  1095	       Tips and Techniques for Using Low-Cost and Public Domain 
+  1096	       Software. John Gliedman. 1988. McGraw-Hill. A thorough guide to 
+  1097	       low cost, effective shareware and public domain programs 
+  1098	       including RAM disks, word processors, batch file systems, hard 
+  1099	       disk managers, tutorials and other topics. 
+  1100	
+  1101	       PC-LEARN is a computer tutorial system for computer beginners 
+  1102	       which features high speed color or monochrome menus, tutorial 
+  1103	       printing on your printer, information searching capabilities 
+  1104	       and much more! PC-LEARN is a training system which includes 
+  1105	       chapters on buying and using a computer, an entertaining history 
+  1106	       of computers, DOS lessons, hard disk drives and tech tips. It 
+  1107	       also includes information on word processing, a suggested reading 
+  1108	       list, software selection, computer clubs, batch files, spreadsheets, 
+  1109	       databases, and even a glossary! PC-LEARN runs on all IBM compatible 
+  1110	       PC-LEARN is shareware. This tutorial was extracted from PC-LEARN.
+  1111	       Submitting $10 to the author of PC-LEARN whose address 
+  1112	       information accompanies this package brings an UNREGISTERED 
+  1113	       evaluation copy of PC-LEARN. Submitting the full $25 
+  1114	       registration fee brings TWO BONUS DISKS and A FULLY REGISTERED 
+  1115	       COPY OF PC-LEARN.
+  1116	
+  1117	       End of file, press escape to return to menu. Have you registered 
+  1118	       to receive your BONUS DISK and update to the computer club 
+  1119	       mailing list?
+  1120	
+  1121	       
+  1122	
