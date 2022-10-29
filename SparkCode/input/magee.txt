@@ -1,0 +1,74 @@
+     1	MAGEE Enterprises, Inc. announced plans today to significantly enhance
+     2	Network H.Q., its software utility designed to survey LAN workstation
+     3	configuration information. The company plans to release the Version 2.0
+     4	enhancement by March 31,1992, and will showcase the software at
+     5	NetWorld/Boston, February 11-13,1992.
+     6	
+     7	Previous versions of Network H.Q. have been Novell NetWare specific, but
+     8	version 2.0 will operate on NetWare, Microsoft LAN Manager, Banyan VINES
+     9	and Hayes LAN/Step' NOS. It will also offer an optional DOS or Windows
+    10	interface.
+    11	
+    12	In addition to the list of hardware components currently tracked, the new
+    13	version will include such information as a more detailed identification of
+    14	PC model numbers, CPU clock speed, EGA/VGA vendor and chipset information.
+    15	It will report workstation environments such as Windows or Desqview', ROM
+    16	BIOS manufacturer and version, NETBIOS version and Bus type. Network H.Q.
+    17	2.0 will also track Macintosh' machines connected to the network, a
+    18	frequent request from current installed base users.
+    19	
+    20	In addition to expanded hardware inventory, Network H.Q. 2.0 will survey
+    21	installed software both on the server and workstation drives. An extensive
+    22	database of packages will be tracked, and custom, site-specific software
+    23	programs may be added to the inventory database. Unlike other software
+    24	inventory packages, Network H.Q. 2.0 does not rely solely on published
+    25	databases such as the commonly used Software Publisher Association's
+    26	database. Instead, MAGEE has custom developed an identification scheme
+    27	that will interrogate several items in a program's directory before making
+    28	positive identification. MAGEE feels this is imperative to ensure
+    29	accuracy.
+    30	
+    31	The software inventory module included in Network H.Q. 2.0 may be run at
+    32	the administrator's discretion, or scheduled to run at specific times. The
+    33	ability to schedule software inventories enables the network administrator
+    34	to prevent annoying delays in user logins.
+    35	
+    36	Other notable enhancements to Network H.Q. 2.0 include the ability for the
+    37	network administrator to collect key workstation files like CONFIG.SYS or
+    38	WIN.INI for updates and maintenance. An improved Report Utility will allow
+    39	Network H.Q. 2.0 report data to be exported in the popular Lotus .WKS and
+    40	dBase .DBF formats, and sort records enabling users to view them in any
+    41	order. Network H.Q. 2.0 will also allow quick queries into a particular
+    42	workstation's configuration file enabling help desk personnel to
+    43	trouble-shoot from a central location.
+    44	
+    45	MAGEE's Network H.Q. 2.0 licensing policy, as well as pricing, is designed
+    46	to appeal to owners of small, medium, and large networks. Version 2.0 will
+    47	be licensed in two ways; per server (unlimited users) and a 100 (limited)
+    48	workstation package. The per server license, at $595 suggested retail
+    49	allows an unlimited number of workstations to be tracked. This license
+    50	acknowledges the prevalence of log-in servers often routing several
+    51	hundred users through a single server at varying times. The Network H.Q.
+    52	pack retails for $395 and imposes a maximum of 100 unique workstations to
+    53	be surveyed by the product. This license is designed for smaller,
+    54	departmental client-server and peer-to-peer networks. Users of previous
+    55	versions of Network H.Q. will be offered the version 2.0 upgrade for a
+    56	reasonable fee.
+    57	
+    58	MAGEE Enterprises, Inc. is the developer and publisher of Automenu. This
+    59	popular DOS menu utility has sold more than one million copies and enjoys
+    60	a 22% market-share among "DOS front ends" according to recently published
+    61	reports. Its products are distributed worldwide through dealers and VARs.
+    62	The company is located at 2909 Langford Road, Suite A600, Norcross,
+    63	Georgia 30071-1506; (404) 446-6611; FAX (404) 36
+    64	
+    65	  +---------------------------------------------------------------+
+    66	  |  From the America On-Line & PC-Link New Product Info Services |
+    67	  +===============================================================+
+    68	  | This information was processed with OmniPage Professional OCR |
+    69	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+    70	  | provided by the above mentioned company. For additional info, |
+    71	  | contact the company at the address or phone# indicated above. |
+    72	  |    All submissions for this service should be addressed to    |
+    73	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+    74	  +---------------------------------------------------------------+

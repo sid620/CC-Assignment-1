@@ -1,0 +1,206 @@
+     1	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+     2	
+     3	Always start a program with a batch file containing [exit] as the first line.
+     4	This is important if you! Let's say you already have shelled to dos from
+     5	windows, dmp or another program. Running two big shells on top of eachother
+     6	really fuck up your memory, and usually requires a reboot. Replace win.exe
+     7	with win.bat and move win.com to winfile.com, and dmp.exe with play.bat and
+     8	dmpfile.exe, just as an example.... | The bat files is to contain lines:
+     9	1 - exit	2-[program].[extension]
+    10	
+    11	-------------------------------------------------------------------------------
+    12	
+    13	If you have 4dos, you can create aliases that replace the programs. Like:
+    14	
+    15	win=exit^win
+    16	
+    17	, etc.......
+    18	
+    19	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    20	
+    21	Your path statement should NOT exceed 127 bytes. Remember that  "path="
+    22	is a part of that environment string.
+    23	
+    24	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    25	
+    26	If you ever need to turn a variable to UPPER CASE, save the path, set the
+    27	path=[the variable], which will make it uppercase, set the original
+    28	variable=[path], and restore the path... This might look like this:
+    29	
+    30	set oldpath=%path%
+    31	set path=%a%
+    32	set %a=%path%
+    33	set path=oldpath
+    34	
+    35	This requires a lot of environment free, depending on you system-configuration.
+    36	
+    37	Suggestions to improvements: Use disk instead of environment to store
+    38	temporary data.
+    39	
+    40	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    41	
+    42	A very simple trick to expand the current path, is to set the path like this:
+    43	
+    44	set path=%path%;[the new directory you want temporarily in your path]
+    45	
+    46	Don't say you wasn't warned! VERY simple!
+    47	
+    48	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    49	
+    50	if you like to have a lot of REM statements in your batch files, use this
+    51	instead:
+    52	
+    53	When you normally-
+    54	
+    55		rem blahblahblahblablahblahblah
+    56		rem blahblahblahblablahblahblah
+    57		rem blahblahblahblablahblahblah
+    58		rem blahblahblahblablahblahblah
+    59	
+    60	replace it with,
+    61	
+    62		goto a
+    63		rem blahblah........
+    64		:a
+    65	
+    66	Which is faster, but not really noticeable on todays fast computers
+    67	Dos really don't know that it's handling a REM line until it has processed
+    68	and read the whole line!
+    69	
+    70	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    71	
+    72	To prevent programs from messing up your autoexec.bat, as a first and only
+    73	line in autoexec.bat, start a new batch file, called, for example,
+    74	autosub.bat. This file would contain your originally autoexec.bat, and
+    75	this way, you can select what lines you want to include.
+    76	
+    77	You might also try to set the read only attribute of the config.sys and
+    78	autoexec.bat files. Not so good solution, but......?
+    79	
+    80	-------------------------------------------------------------------------------
+    81	
+    82	With 4dos you would start the autosub.bat with a CALL autosub.bat.
+    83	With command.com, i dunno, try c:\autosub.bat as a first line...
+    84	
+    85	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    86	
+    87	again, a tip for slow computer, or really, slow text subsystems:
+    88	In the beginning of your config.sys, put a:
+    89	
+    90	ctty nul
+    91	
+    92	which sends all output to the NUL: device
+    93	and then in the end:
+    94	
+    95	ctty con
+    96	
+    97	which restores input from the kbd....
+    98	
+    99	Remember that you can't really press ctrl-break during process
+   100	since you haven't restored the keyb-control, and a ctrl+c will stop
+   101	processing and deny any further processing...
+   102	
+   103	The NUL device is an empty device that points to nothing. This might be useful
+   104	if a program refuses to let you NOT save a file. Type NUL: or NUL as filename,
+   105	and you will never see the file again!
+   106	
+   107	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   108	
+   109	There is an undocumented config.sys feature called "Comment".
+   110	Use it like this:
+   111	
+   112	Comment=[text]
+   113	
+   114	Dos only captures the first to letters of the text, and COMMENT is not
+   115	case-sensitive. After comment, dos ignores all lines that begins with
+   116	the same two letters as the first two letters of [text] was. Let's say you
+   117	don't want any drivers installed, you specify:
+   118	
+   119	Comment=De
+   120	
+   121	,which in turn makes dos NOT install any DEvices.
+   122	
+   123	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   124	
+   125	I found two other undocumented config.sys features. One of which I know the
+   126	meaning of. (See it for yourself, just list io.sys.) The features is:
+   127	
+   128	INSTALLHIGH
+   129	MULTITRACK
+   130	
+   131	Installhigh is like devicehigh and loadhigh, but it INSTALLs high, just like
+   132	dvh and lh. (Installing is for starting exe/com files from config.sys that
+   133	are not really needed for installing here...)
+   134	
+   135	Multitrack...
+   136	I dunno what this is, but I will investigate it further, and get back to you.
+   137	If you know what this is, please contact me.
+   138	
+   139	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   140	
+   141	Sometimes the order of fcbs, stacks, files, etc... DO COUNT!!!
+   142	
+   143	You might run into some RARE problems when the order of these
+   144	"names" is in a certain order. It occoured to me that it was this way, when I
+   145	suddenly had problems when the machine locked up whenever I used the internal
+   146	"copy" !!! I had to rem out every line in autoexec.bat (really autosub.bat),
+   147	and then every line in config.sys, until I suddenly found out that the
+   148	order DO COUNT!
+   149	
+   150	Generally, I put it in this order (at the absolute beginning of config.sys):
+   151	
+   152	files
+   153	buffers
+   154	fcbs
+   155	lastdrive
+   156	stacks
+   157	
+   158	That works ok for me.
+   159	
+   160	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   161	
+   162	Set verify=on when using non-standard devices in dos.
+   163	This helps you PKUNZIP (and arj, lha...) and copy from, for example,
+   164	84track 21sec/track disks. You might think that this isn't a problem, and
+   165	it is very rare indeed... ,But it happens, and the extra time dos uses with
+   166	disk sector verifying is really worth it.
+   167	
+   168	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   169	
+   170	Set break=on to be able to break more often.
+   171	
+   172	Everyone needs a break sometimes....... =*)
+   173	
+   174	The extra speed gained in dos by setting break=off, isn't THAT much, and
+   175	when you set break=on, you can break unwanted processes faster, which makes
+   176	dos sessions go faster.
+   177	
+   178	Have you ever COPYed files to the wrong destination? When break=on, dos checks
+   179	for ctrl+c even when handling disk operations, so you can break relatively
+   180	fast, and recover faster...
+   181	
+   182	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   183	
+   184	Do you need to know if to files is different?
+   185	As far as I know, fc or comp don't leave errorlevels, BUT there is a
+   186	solution!
+   187	
+   188	Try this:
+   189	
+   190	attrib -rsh .\nomatch
+   191	del .\nomatch
+   192	fc %file1% %file2% > .\nomatch
+   193	if exist .\nomatch echo There was a difference!
+   194	
+   195	Nice, eh? Not? =*)
+   196	
+   197	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   198	
+   199	Want to copy disks faster? You COULD check which clusters were occupied, etc..
+   200	BUT if you aren't so keen on writing anything else than bat-files, just copy
+   201	ALL files on you floppy (/S /H) to a temporary directory on your hd, copy
+   202	labels (with LC.btm). Then MOVE them out again to disk, and you are done!
+   203	
+   204	No empty clusters copyed!
+   205	
+   206	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ

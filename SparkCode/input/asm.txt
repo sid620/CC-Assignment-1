@@ -1,0 +1,4138 @@
+     1	@Assembler Programming Topics
+     2	:8086 architecture
+     3	^Intel 8086 Family Architecture
+     4	
+     5	%	General Purpose Registers		Segment Registers
+     6	
+     7		AH/AL  AX  (EAX)  Accumulator		 CS	Code Segment
+     8		BH/BL  BX  (EBX)  Base			 DS	Data Segment
+     9		CH/CL  CX  (ECX)  Counter		 SS	Stack Segment
+    10		DH/DL  DX  (EDX)  Data			 ES	Extra Segment
+    11							(FS)	386 and newer
+    12		(Exx) indicates 386+ 32 bit register 	(GS)	386 and newer
+    13	
+    14	
+    15	%	Pointer Registers			Stack Registers
+    16	
+    17		SI (ESI)  Source Index			SP (ESP)  Stack Pointer
+    18		DI (EDI)  Destination Index		BP (EBP)  Base Pointer
+    19		IP	  Instruction Pointer
+    20	
+    21	%	Status Registers
+    22	
+    23		FLAGS Status Flags   (see ~FLAGS~)
+    24	
+    25	%	Special Registers (386+ only)
+    26	
+    27		CR0	Control Register 0	  DR0	 Debug Register 0
+    28		CR2	Control Register 2	  DR1	 Debug Register 1
+    29		CR3	Control Register 3	  DR2	 Debug Register 2
+    30						  DR3	 Debug Register 3
+    31		TR4	Test Register 4		  DR6	 Debug Register 6
+    32		TR5	Test Register 5		  DR7	 Debug Register 7
+    33		TR6	Test Register 6
+    34		TR7	Test Register 7
+    35		
+    36	%	Register	  Default Segment    Valid Overrides
+    37	
+    38		BP			SS		DS, ES, CS
+    39		SI or DI		DS		ES, SS, CS
+    40		DI strings		ES		None
+    41		SI strings		DS		ES, SS, CS
+    42	
+    43	
+    44		- see  ~CPU~   ~DETECTING~  ~Instruction Timing~
+    45	
+    46	:Instruction Timing
+    47	^Instruction Clock Cycle Calculation
+    48	
+    49	
+    50		Some instructions require additional clock cycles due to a "Next
+    51		Instruction Component" identified by a "+m" in the instruction
+    52		clock cycle listings.  This is due to the prefetch queue being
+    53		purge on a control transfers.	Below is the general rule for
+    54		calculating "m":
+    55	
+    56	
+    57		88/86 not applicable
+    58		286  "m" is the number of bytes in the next instruction
+    59		386  "m" is the number of components in the next instruction
+    60			(the instruction coding (each byte), plus the data and
+    61			the displacement are all considered components)
+    62	
+    63	
+    64	^8088/8086  Effective Address (EA) Calculation
+    65	
+    66	%		   Description				  Clock Cycles
+    67	
+    68		Displacement						6
+    69		Base or Index (BX,BP,SI,DI)				5
+    70		Displacement+(Base or Index)				9
+    71		Base+Index (BP+DI,BX+SI)				7
+    72		Base+Index (BP+SI,BX+DI)				8
+    73		Base+Index+Displacement (BP+DI,BX+SI)		       11
+    74		Base+Index+Displacement (BP+SI+disp,BX+DI+disp)	       12
+    75	
+    76	
+    77		- add 4 cycles for word operands at odd addresses
+    78		- add 2 cycles for segment override
+    79		- 80188/80186 timings differ from those of the 8088/8086/80286
+    80	
+    81	
+    82	%	Task State Calculation
+    83	
+    84		"TS" is defined as switching from VM/486 or 80286 TSS to one of
+    85		the following:
+    86	
+    87	 			ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+    88				³	        New Task		³
+    89				ÃÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄ´
+    90		ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´486 TSS³486 TSS³386 TSS³386 TSS³286 TSS³
+    91		³   Old Task	³ (VM=0)³ (VM=1)³ (VM=0)³ (VM=1)³	³
+    92		ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄ´
+    93		386 TSS (VM=0)	³	³	³  309  ³  226  ³  282  ³
+    94				ÃÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄ´
+    95		386 TSS (VM=1)	³	³	³  314  ³  231  ³  287  ³
+    96				ÃÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄ´
+    97		386 CPU/286 TSS	³	³	³  307  ³  224  ³  280  ³
+    98				ÃÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄ´
+    99		486 CPU/286 TSS	³  199	³  177	³	³	³  180	³
+   100				ÀÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÙ
+   101	
+   102			       	     
+   103	%	Miscellaneous
+   104	
+   105		- all timings are for best case and do not take into account wait
+   106		  states, instruction alignment, the state of the prefetch queue,
+   107		  DMA refresh cycles, cache hits/misses or exception processing.
+   108		- to convert clocks to nanoseconds divide one microsecond by the
+   109		  processor speed in MegaHertz:
+   110	   
+   111	^(1000MHz/(n MHz)) = X nanoseconds
+   112	
+   113	
+   114		- see	~8086 Architecture~
+   115	
+   116	:directives:asm directives
+   117	^Macro Assembler Directives
+   118	
+   119	^Processor Code Generation Directives
+   120	
+   121		.186	enables assembly of 80186 instructions
+   122		.286	enables assembly of non privileged 80286 instructions
+   123		.286C	same as .286
+   124		.286P	enables assembly of all 80286 instructions
+   125		.287	enabled assembly of 80287 instructions
+   126		.386	enabled assembly of non privileged 80386 instructions
+   127			If used before .MODEL segments are defined as 32bits.
+   128			Causes all segments to default to DWORD alignment.
+   129		.386P	enabled assembly of all 80386 instructions (see .386)
+   130		.387	enabled assembly of 80387 instructions
+   131		.8086	default, enables assembly of 8088/8086 instruction
+   132		.8087	default, enables assembly of 8087 instructions
+   133	
+   134	
+   135		These directives must precede the segment they are to effect.
+   136		they cannot occur within a segment.
+   137	
+   138	
+   139	^Memory Model Directives
+   140	
+   141		.CODE  [name]	starts code segment; must follow .MODEL directive
+   142		.CONST		starts a constant data segment with name CONST;
+   143				must follow .MODEL directive; placed in DGROUP
+   144		.DATA		starts a near data segment for initialized data
+   145				with name _DATA; must follow .MODEL directive;
+   146				placed in DGROUP
+   147		.DATA?		starts a near data segment for uninitialized
+   148				data with name _BSS; must follow .MODEL
+   149				directive; placed in DGROUP
+   150		.FARDATA [name]	not placed in any group
+   151		.FARDATA? [name] not placed in any group
+   152		.MODEL model	defines memory model to be one of the following:
+   153				SMALL, COMPACT, MEDIUM, LARGE or HUGE;	must be
+   154				used prior to any other segment directive
+   155		.STACK [size]	indicates start of stack segment named 'STACK'
+   156				with size indicating number of bytes to reserve,
+   157				default is 1k; placed in DGROUP
+   158	
+   159	
+   160	^Segment Definition, Segment Ordering and Linkage Directives
+   161	
+   162		.ALPHA		orders segments alphabetically
+   163		.SEQ		orders segments sequentially (default)
+   164		ASSUME sreg:name [,sreg:name...]   selects default segment
+   165				register to be used by the assembler, not the CPU,
+   166				for addressing all symbols in the segment or group.
+   167				Name must be associated with a SEGMENT or GROUP
+   168				or set to "NOTHING" to indicate no segment register
+   169				is to be associated.
+   170		COMM def [,def...]  defines variables that are both public and
+   171				external (communal).  Can be used in and include
+   172				file to identify it to each source file without
+   173				declaring it in each model as extern.  Actually
+   174				defines data once.  Communal variables cannot be
+   175				initialized, and are not guaranteed to be allocated
+   176				contiguously since these are allocated by the linker.
+   177		DOSSEG		orders segments the same as DOS.  This is Microsoft
+   178				languages default order; causes paragph alignment
+   179		END [name]	marks end of source module and sets program
+   180				start address (CS:IP) if 'name' is present
+   181	   name ENDP		ends procedure 'name'
+   182	   name ENDS		ends a segment or structure
+   183		EXTRN name:type [,name:type...]  defines one or more external symbols
+   184	   name GROUP seg[,seg]
+   185	   name LABEL [NEAR|FAR|PROC]  defines an entry point;	If PROC is specified,
+   186				it's value depends on the current MODEL
+   187		NAME pgmName	ignored since MASM 5.0; used to set module name
+   188	   name PROC [NEAR|FAR]	defines procedure; NEAR/FAR has .MODEL default
+   189		PUBLIC name[,name...]  makes symbol 'name' available to other modules
+   190	   name SEGMENT [align][combine][use]['class']
+   191			align	= BYTE	align on byte address (no alignment)
+   192				= WORD	align on even address
+   193				= DWORD	align on DWORD address
+   194				= PARA	align on next 16 byte paragraph
+   195				= PAGE	align on next 256 byte boundary
+   196			combine = PUBLIC  similar named segments are concatenated (CS)
+   197				= STACK   similar named segments are concatenated (SS)
+   198				= COMMON  similar named segment are overlapped
+   199				= MEMORY  similar names segments are concatenated
+   200				= AT addr segment relative to absolute address
+   201				= nothing segment is private and loaded independent
+   202			use	= USE16   segments will be 16 bits (if .386)
+   203				= USE32   segments will be 32 bits (if .386)
+   204	
+   205	
+   206	^Data Allocation Directives
+   207	
+   208		ALIGN n		aligns next variable or instruction on a boundary
+   209				that is a multiple of "n".  This can speed memory
+   210				fetches on 16 and 32 bit CPU'S if aligned.  New to
+   211				~MASM~ 5.0, previous versions used EVEN.  Can result
+   212				in NOP's added to code.
+   213	 [name]	DB init[,init...]  define byte
+   214	 [name]	DD init[,init...]  define double word (DWORD, 4 bytes)
+   215	 [name]	DF init[,init...]  define far word (FWORD, 386, 6 bytes)
+   216	 [name]	DQ init[,init...]  define quad word (QWORD, 8 bytes)
+   217	 [name]	DT init[,init...]  define temp word (TBYTE, 10 bytes)
+   218	 [name]	DW init[,init...]  define word (WORD, 2 bytes)
+   219	  count	DUP (init[,init...]) duplicate 'init' 'count' times; DUP can be
+   220				nested to 17 levels; DUP'ed initial values
+   221				of (?) don't result in data in the object file
+   222				but instead increment the next data addr
+   223	   name	ENDS		end of structure or segment
+   224		EVEN		same as align 2;  Aligns data on even boundary
+   225		ORG expr	sets location counter to 'expr';  If 'expr'
+   226				is '$' the code is ORG'ed at the current loc.
+   227	   name	RECORD fld[,fld...]  defines a byte or word variable
+   228				consisting of bit fields;  fields have the format:
+   229				fieldname:width[=expr];  the sum of all widths
+   230				must be <= 0
+   231	 [name]	STRUC <[init[,init]]>  defines beginning of a structure; Values
+   232	 			between <> are initializers;  The '<>' symbols
+   233				are required.
+   234	
+   235	
+   236	^Logical and Bit Oriented Directives
+   237	
+   238	  expr1	AND  expr2	returns nonzero if any set bit matches
+   239	  expr1	EQ   expr2	returns (-1) for true or (0) for false
+   240	  expr1	GE   expr2	returns (-1) for true or (0) for false
+   241	  expr1	LE   expr2	returns (-1) for true or (0) for false
+   242	  expr1	LT   expr2	returns (-1) for true or (0) for false
+   243		MASK {fldname|record}  returns bit mask for bits in record
+   244	  expr1	OR   expr2	returns bitwise OR on expr1 and expr2
+   245		NOT  expr	returns 'expr' with all bits reversed
+   246	   expr	SHL  count	returns expr shifted left count times
+   247	   expr	SHR  count	returns expr shifted right count times
+   248		WIDTH {fldname|record}	returns width of field in bit record
+   249	  expr1 XOR expr2	returns bitwise XOR on expr1 and expr2
+   250	
+   251	
+   252	^Other Operators and Directives
+   253	
+   254		[]		index operator, same as addition
+   255		.MSFLOAT	encode floats in Microsoft Real Format
+   256		.TYPE	expr	returns byte defining mode and scope of expr
+   257	   name	EQU 	expr	assigns expression to name. surround text with <>
+   258		HIGH	expr	returns high byte of 'expr'
+   259		INCLUDE filespec  inserts code from 'filespec' into file
+   260		INCLUDELIB filespec  stores link library info in .OBJ file
+   261		LENGTH	var	returns number of data objects in DUPed 'var'
+   262		LOW	expr	returns low byte of 'expr'
+   263	  expr1	MOD	expr2	return remainder of expr1/expr2
+   264		OFFSET	expr	returns offset of expr;   When .MODEL is used
+   265				the offset of a group relative segment refers
+   266				to the end of the segment
+   267	   type	PTR	expr	forces 'expr' to 'type'
+   268		SEG	expr	returns segment of expression
+   269		SHORT		sets type of label to short, less than 128
+   270				bytes from start of next instruction
+   271		SIZE	var	returns # of bytes allocated by DUP directive
+   272		THIS	type	returns an operand of specified type whose
+   273				offset and segment values are equal to the
+   274				current location
+   275		TYPE	expr	returns type of expression
+   276	
+   277	
+   278	%	Program Listing and Documentation Directives
+   279	
+   280		.CREF		restores listing of cross reference symbols
+   281		.LALL		include macro expansion in listings
+   282		.LFCOND		include false conditional blocks in listings
+   283		.LIST		starts listing of statements
+   284		.SALL		suppress listing of all macro expansions
+   285		.SFCOND		suppress false conditional blocks in listings
+   286		.XALL		start listing of macro expansion
+   287		.XCREF [name[,name...]]  suppress symbols in cross reference
+   288		.XLIST		suppress program listing
+   289		COMMENT delimiter [text]
+   290		PAGE   [[len],wid]	sets page length&width or ejects if no parms
+   291		SUBTTL	text	defines program listing subtitle
+   292		TITLE	text	defines program listing title
+   293	
+   294	
+   295	%	Condition Assembly Directives
+   296	
+   297		ELSE		else clause for conditional assembly block
+   298		ENDIF		terminates a conditional assembly block
+   299		IFDEF	name	conditional assembly if name is defined
+   300	
+   301	
+   302	%	Macro Definition Directives
+   303	
+   304		ENDM		terminates a macro block
+   305		EXITM		exit macro expansion immediately
+   306		IRP  parm,<arg[,arg...]> parm in the statements enclosed by the
+   307				IRP and ENDM will be repeated and replaced with the
+   308				values of "arg" for each "arg" in the <>.
+   309		IRPC parm,<string>  parm in the statements enclosed by the IRPC
+   310				and ENDM will be repeated and replaced with the values
+   311				of each char in the "string" for each character
+   312				position in the string.  "string" should be enclosed
+   313				in <> if it contains spaces or other separators.
+   314		LOCAL name[,name...]  defines scope symbol as local to a macro
+   315	   name	MACRO [parm[,parm...]]	defines a macro and it's parameters
+   316		PURGE name[,name]  purges macros from memory
+   317		REPT	expr	repeats all statements through ENDM statement for
+   318				'expr' times
+   319	
+   320	
+   321	%	User Message Directives
+   322	
+   323		.ERR		generates and error
+   324		.ERR1		generates an error on PASS 1
+   325		.ERR2		generates an error on PASS 2
+   326		.ERRB	<arg>	generates an error if 'arg' is blank
+   327		.ERRDEF name	generates an error if 'name' is previously defined
+   328		.ERRDIF[I] <arg1>,<arg2>
+   329		.ERRE	expr	generates and error is 'expr' is false
+   330		%OUT	text	displays 'text' to console
+   331	
+   332	
+   333	%	Predefined Equates (available only if simplified segments are used)
+   334	
+   335		@curseg		contains the current segment
+   336		@filename	current file name without extension
+   337		@code		contains the current code segment
+   338		@codesize	0 for small & compact, 1 for large, medium & huge
+   339		@datasize	0 for small & medium, 1 for compact & large, 2=huge
+   340		@const		contains segment of define by .CONST
+   341		@data		contains segment of define by .DATA
+   342		@data?		contains segment of define by .DATA?
+   343		@fardata	contains segment of define by .FARDATA
+   344		@fardata?	contains segment of define by .FARDATA?
+   345		@stack		contains segment of define by .STACK
+   346	
+   347		Most of these are only available if the simplified segment system
+   348		is used.  @curseg and @filename are available regardless.
+   349	
+   350	
+   351	%	Radix Specifiers
+   352	
+   353		.RADIX expr	sets radix [2..16] for numbers (dec. default)
+   354		B		binary data specifier
+   355		Q		octal data specifier
+   356		O		octal data specifier
+   357		D		decimal data specifier
+   358		H		hexadecimal data specifier
+   359	
+   360	
+   361	:masm options:assembler options
+   362	^Microsoft Assembler Command Line Options
+   363	
+   364	^MASM [options] srcfile[,[objfile][,[lstfile][,[xreffile]]]][;]
+   365	
+   366	%	Options 		Definition
+   367		/A		generate segments in alphabetical order
+   368		/B[size]    	sets I/O buffer size in K bytes (1..63, default 32)
+   369		/C		generate cross reference file with .CRF extension
+   370		/D		generate PASS 1 listing
+   371		/Dsym[=val]	define symbol for use during assembly
+   372		/E		emulate floating point instructions (for use with HLL)
+   373		/H		list options and command syntax
+   374		/Ipath		include-file search path
+   375		/L		generate listing file with .LST extension
+   376		/ML		case sensitive for all symbols
+   377		/MU		upper case all symbols (default)
+   378		/MX		case sensitive in external and public symbols
+   379		/N		suppress symbol tables in listings
+   380		/P		check for impure code in 286 and 386 protected
+   381				mode (invalid CS overrides)
+   382		/S		generate segments in the order they are found (default)
+   383		/T		terse message display; display errors only
+   384		/V		verbose message display; includes # lines and symbols
+   385		/W{0|1|2}	assembly warning level
+   386				    0 = no warnings
+   387				    1 = severe warnings only
+   388				    2 = all warnings enabled
+   389		/X		display complete conditional assembly blocks in
+   390				listing including false conditionals
+   391		/Z		display errors including line numbers to screen
+   392		/ZD		generate line numbers in .OBJ files
+   393		/ZI		generate both symbolic and line number information in
+   394				.OBJ files
+   395	
+   396	%	Environment Variables
+   397	
+   398		INCLUDE		search path for include files
+   399		MASM		default command line options
+   400	:flags register:8086 flags
+   401	^FLAGS - Intel 8086 Family Flags Register
+   402	
+   403	      ³11³10³F³E³D³C³B³A³9³8³7³6³5³4³3³2³1³0³
+   404		³  ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÄ  CF Carry Flag
+   405		³  ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÄ  1
+   406		³  ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÄ  PF Parity Flag
+   407		³  ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÄ  0
+   408		³  ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÄ  AF Auxiliary Flag
+   409		³  ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÄ  0
+   410		³  ³ ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÄ  ZF Zero Flag
+   411		³  ³ ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÄ  SF Sign Flag
+   412		³  ³ ³ ³ ³ ³ ³ ³ ³ ÀÄÄÄ  TF Trap Flag  (Single Step)
+   413		³  ³ ³ ³ ³ ³ ³ ³ ÀÄÄÄ  IF Interrupt Flag
+   414		³  ³ ³ ³ ³ ³ ³ ÀÄÄÄ  DF Direction Flag
+   415		³  ³ ³ ³ ³ ³ ÀÄÄÄ  OF Overflow flag
+   416		³  ³ ³ ³ ÀÄÁÄÄÄ  IOPL I/O Privilege Level  (286+ only)
+   417		³  ³ ³ ÀÄÄÄÄÄ  NT Nested Task Flag  (286+ only)
+   418		³  ³ ÀÄÄÄÄÄ  0
+   419		³  ÀÄÄÄÄÄ  RF Resume Flag (386+ only)
+   420		ÀÄÄÄÄÄÄ  VM  Virtual Mode Flag (386+ only)
+   421	
+   422		- see	~PUSHF~  ~POPF~  ~STI~  ~CLI~  ~STD~  ~CLD~
+   423	:models:segment names
+   424	^Memory Model Programming & Segment Information
+   425	
+   426	%	Model
+   427		TINY	Data and code fit in one 64K segment.  All code and
+   428			data are accessed via near pointers.
+   429		SMALL	64k data segment max and 64k code segment max.	All
+   430			code and data are accessed via near pointers.
+   431		COMPACT	1Mb data segment max and 64K code segment max.	Code
+   432			is accessed via near pointers, data is accessed via
+   433			far pointers.  No array can be greater than 64K
+   434		MEDIUM	64K data segment max and 1Mb code segment max.	Code is
+   435			accessed via far pointers, data is accessed via	near pointers.
+   436		LARGE	1Mb data segment max and 1Mb code segment max.	All
+   437			code and data are accessed via far pointers.  No
+   438			single element can be greater than 64K.
+   439		HUGE	1Mb data segment max and 1Mb code segment max.	All
+   440			code and data are accessed via far pointers.  This is
+   441			the only model where arrays can be larger than 64K.
+   442			In this mode is C will normalize all data pointers
+   443			to avoid segment wrapping.
+   444	
+   445	^Small Memory Model
+   446	
+   447	%	Directive  Segment    Alignment    Combine	Class
+   448		.CODE	    _TEXT	WORD	    PUBLIC	'CODE'
+   449		.DATA	    _DATA	WORD	    PUBLIC	'DATA'
+   450		.CONST	    CONST	WORD	    PUBLIC	'CONST'
+   451		.DATA?	    _BSS	WORD	    PUBLIC	'BSS'
+   452		.STACK	    STACK	PARA	    STACK	'STACK'
+   453	
+   454	
+   455	^Compact Memory Model
+   456	
+   457	%	Directive   Segment    Alignment    Combine	Class
+   458		.CODE	    _TEXT	WORD	    PUBLIC	'CODE'
+   459		.FARDATA    FAR_DATA	PARA	    private	'FAR_DATA'
+   460		.FARDATA?   FAR_BSS	PARA	    private	'FAR_BSS'
+   461		.DATA	    _DATA	WORD	    PUBLIC	'DATA'
+   462		.CONST	    CONST	WORD	    PUBLIC	'CONST'
+   463		.DATA?	    _BSS	WORD	    PUBLIC	'BSS'
+   464		.STACK	    STACK	PARA	    STACK	'STACK'
+   465	
+   466	
+   467	^Medium Memory Model
+   468	
+   469	%	Directive  Segment    Alignment	    Combine	Class
+   470		.CODE	  name_TEXT	WORD	    PUBLIC	'CODE'
+   471		.DATA	    _DATA	WORD	    PUBLIC	'DATA'
+   472		.CONST	    CONST	WORD	    PUBLIC	'CONST'
+   473		.DATA?	    _BSS	WORD	    PUBLIC	'BSS'
+   474		.STACK	    STACK	PARA	    STACK	'STACK'
+   475	
+   476	
+   477	^Large or Huge Memory Models
+   478	
+   479	%	Directive    Segment  Alignment	    Combine	Class
+   480		.CODE	    name_TEXT	WORD	    PUBLIC	'CODE'
+   481		.FARDATA    FAR_DATA	PARA	    private	'FAR_DATA'
+   482		.FARDATA?   FAR_BSS	PARA	    private	'FAR_BSS'
+   483		.DATA	     _DATA	WORD	    PUBLIC	'DATA'
+   484		.CONST	     CONST	WORD	    PUBLIC	'CONST'
+   485		.DATA?	     _BSS	WORD	    PUBLIC	'BSS'
+   486		.STACK	     STACK	PARA	    STACK	'STACK'
+   487	
+   488	
+   489		- all segments fall into DGROUP except for ???_TEXT, FAR_DATA
+   490		  and FAR_BSS
+   491		- see ~MASM DIRECTIVES~
+   492	:msw:machine status word
+   493	^MSW - Machine Status Word (286+ only)
+   494	
+   495	
+   496	      ³31³30-5³4³3³2³1³0³  Machine Status Word
+   497		³   ³  ³ ³ ³ ³ ÀÄÄÄÄ Protection Enable (PE)
+   498		³   ³  ³ ³ ³ ÀÄÄÄÄÄ Math Present (MP)
+   499		³   ³  ³ ³ ÀÄÄÄÄÄÄ Emulation (EM)
+   500		³   ³  ³ ÀÄÄÄÄÄÄÄ Task Switched (TS)
+   501		³   ³  ÀÄÄÄÄÄÄÄÄ Extension Type (ET)
+   502		³   ÀÄÄÄÄÄÄÄÄÄÄ Reserved
+   503		ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ Paging (PG)
+   504	
+   505	
+   506		Bit 0	PE	Protection Enable, switches processor between
+   507				protected and real mode
+   508		Bit 1	MP	Math Present, controls function of the ~WAIT~
+   509				instruction
+   510		Bit 2	EM	Emulation, indicates whether coprocessor functions
+   511				are to be emulated
+   512		Bit 3	TS	Task Switched, set and interrogated by coprocessor
+   513				on task switches and when interpretting coprocessor
+   514				instructions
+   515		Bit 4	ET	Extension Type, indicates type of coprocessor in
+   516				system
+   517		Bits 5-30	Reserved
+   518		bit 31	PG	Paging, indicates whether the processor uses page
+   519				tables to translate linear addresses to physical
+   520				addresses
+   521	
+   522		- see	~SMSW~  ~LMSW~
+   523	:aaa
+   524	^AAA - Ascii Adjust for Addition
+   525	
+   526	
+   527		Usage:	AAA
+   528		Modifies flags: AF CF (OF,PF,SF,ZF undefined)
+   529	
+   530	
+   531		Changes contents of AL to valid unpacked decimal.  The high order
+   532		nibble is zeroed.
+   533	
+   534	
+   535	%				 Clocks			Size
+   536	%	Operands	 808x  286   386   486		Bytes
+   537	
+   538		none		  8	3     4	    3		  1
+   539	
+   540	
+   541		- see ~Instruction Timing~
+   542	
+   543	:aad
+   544	^AAD - Ascii Adjust for Division
+   545	
+   546	
+   547		Usage:	AAD
+   548		Modifies flags: SF ZF PF (AF,CF,OF undefined)
+   549	
+   550	
+   551		Used before dividing unpacked decimal numbers.	 Multiplies AH by
+   552		10 and the adds result into AL.  Sets AH to zero.  This instruction
+   553		is also known to have an undocumented behavior.
+   554	
+   555	
+   556	
+   557	%				 Clocks			Size
+   558	%	Operands	 808x  286   386   486		Bytes
+   559	
+   560		none		  60	14    19    14		  2
+   561	
+   562		- see ~Instruction Timing~
+   563	
+   564	:aam
+   565	^AAM - Ascii Adjust for Multiplication
+   566	
+   567	
+   568		Usage:	AAM
+   569		Modifies flags: PF SF ZF (AF,CF,OF undefined)
+   570	
+   571	
+   572		Used after multiplication of two unpacked decimal numbers, this
+   573		instruction adjusts an unpacked decimal number.  The high order
+   574		nibble of each byte must be zeroed before using this instruction.
+   575		This instruction is also known to have an undocumented behavior.
+   576	
+   577	
+   578	%				 Clocks			Size
+   579	%	Operands	 808x  286   386   486		Bytes
+   580	
+   581		none		  83	16    17    15		  2
+   582	
+   583	
+   584		- see ~Instruction Timing~
+   585	
+   586	:aas
+   587	^AAS - Ascii Adjust for Subtraction
+   588	
+   589	
+   590		Usage:	AAS
+   591		Modifies flags: AF CF (OF,PF,SF,ZF undefined)
+   592	
+   593	
+   594		Corrects result of a previous unpacked decimal subtraction in AL.
+   595		High order nibble is zeroed.
+   596	
+   597	
+   598	%				 Clocks			Size
+   599	%	Operands	 808x  286   386   486		Bytes
+   600	
+   601		none		  8	3     4	    3		  1
+   602	
+   603	
+   604		- see ~Instruction Timing~
+   605	
+   606	:adc
+   607	^ADC - Add With Carry
+   608	
+   609		Usage:	ADC	dest,src
+   610		Modifies flags: AF CF OF SF PF ZF
+   611	
+   612	
+   613		Sums two binary operands placing the result in the destination.
+   614		If CF is set, a 1 is added to the destination.
+   615	
+   616	
+   617	%				Clocks			Size
+   618	%	Operands	 808x  286   386   486		Bytes
+   619	
+   620		reg,reg 	  3	2     2	    1		  2
+   621		mem,reg 	16+EA	7     7	    3		 2-4  (W88=24+EA)
+   622		reg,mem 	 9+EA	7     6	    2		 2-4  (W88=13+EA)
+   623		reg,immed	  4	3     2	    1		 3-4
+   624		mem,immed	17+EA	7     7	    3		 3-6  (W88=23+EA)
+   625		accum,immed	  4	3     2	    1		 2-3
+   626	
+   627	
+   628		- see ~Instruction Timing~
+   629	
+   630	:add
+   631	^ADD - Arithmetic Addition
+   632	
+   633		Usage:	ADD	dest,src
+   634		Modifies flags: AF CF OF PF SF ZF
+   635	
+   636	
+   637		Adds "src" to "dest" and replacing the original contents of "dest".
+   638		Both operands are binary.
+   639	
+   640	
+   641	%				 Clocks			Size
+   642	%	Operands	 808x  286   386   486		Bytes
+   643	
+   644		reg,reg 	  3	2     2	    1		  2
+   645		mem,reg 	16+EA	7     7	    3		 2-4  (W88=24+EA)
+   646		reg,mem 	 9+EA	7     6	    2		 2-4  (W88=13+EA)
+   647		reg,immed	  4	3     2	    1		 3-4
+   648		mem,immed	17+EA	7     7	    3		 3-6  (W88=23+EA)
+   649		accum,immed	  4	3     2	    1		 2-3
+   650	
+   651	
+   652		- see ~Instruction Timing~
+   653	
+   654	:and
+   655	^AND - Logical And
+   656	
+   657		Usage:	AND	dest,src
+   658		Modifies flags: CF OF PF SF ZF (AF undefined)
+   659	
+   660	
+   661		Performs a logical AND of the two operands replacing the destination
+   662		with the result.
+   663	
+   664	
+   665	%				Clocks			Size
+   666	%	Operands	 808x  286   386   486		Bytes
+   667	
+   668		reg,reg 	  3	2     2	    1		  2
+   669		mem,reg 	16+EA	7     7	    3		 2-4  (W88=24+EA)
+   670		reg,mem 	 9+EA	7     6	    1		 2-4  (W88=13+EA)
+   671		reg,immed	  4	3     2	    1		 3-4
+   672		mem,immed	17+EA	7     7	    3		 3-6  (W88=23+EA)
+   673		accum,immed	  4	3     2	    1		 2-3
+   674	
+   675	
+   676		- see ~Instruction Timing~
+   677	
+   678	:arpl
+   679	^ARPL - Adjusted Requested Privilege Level of Selector
+   680	^(286+ protected mode)
+   681	
+   682	
+   683		Usage:	ARPL	dest,src
+   684		Modifies flags: ZF
+   685	
+   686	
+   687		Compares the RPL bits of "dest" against "src".	If the RPL bits
+   688		of "dest" are less than "src", the destination RPL bits are set
+   689		equal to the source RPL bits and the Zero Flag is set.	Otherwise
+   690		the Zero Flag is cleared.
+   691	
+   692	
+   693	%				Clocks			Size
+   694	%	Operands	 808x  286   386   486		Bytes
+   695	
+   696		reg,reg 	  -	10    20    9		  2
+   697		mem,reg 	  -	11    21    9		  4
+   698	
+   699	
+   700		- see ~Instruction Timing~
+   701	
+   702	:bound
+   703	^BOUND - Array Index Bound Check (80188+)
+   704	
+   705	
+   706		Usage:	BOUND	src,limit
+   707		Modifies flags: None
+   708	
+   709	
+   710		Array index in source register is checked against upper and lower
+   711		bounds in memory source.  The first word located at "limit" is
+   712		the lower boundary and the word at "limit+2" is the upper array bound.
+   713		Interrupt 5 occurs if the source value is less than or higher than
+   714		the source.
+   715	
+   716	
+   717	%				 Clocks			Size
+   718	%	Operands	 808x  286   386   486		Bytes
+   719	
+   720		reg16,mem32	  -   nj=13 nj=10   7		  2
+   721		reg32,mem64	  -   nj=13 nj=10   7		  2
+   722	
+   723		- nj = no jump taken
+   724		- see ~Instruction Timing~
+   725	
+   726	:bsf
+   727	^BSF - Bit Scan Forward (386+ only)
+   728	
+   729	
+   730		Usage:	BSF	dest,src
+   731		Modifies flags: ZF
+   732	
+   733	
+   734		Scans source operand for first bit set.  Sets ZF if a bit is found
+   735		set and loads the destination with an index to first set bit.  Clears
+   736		ZF is no bits are found set.  BSF scans forward across bit pattern
+   737		(0-n) while BSR scans in reverse (n-0).
+   738	
+   739	
+   740	%				 Clocks			Size
+   741	%	Operands	 808x  286   386   486		Bytes
+   742	
+   743		reg,reg 	  -	-   10+3n  6-42		  3
+   744		reg,mem 	  -	-   10+3n  7-43		 3-7
+   745		reg32,reg32	  -	-   10+3n  6-42		 3-7
+   746		reg32,mem32	  -	-   10+3n  7-43		 3-7
+   747	
+   748	
+   749		- see ~Instruction Timing~
+   750	
+   751	:bsr
+   752	^BSR - Bit Scan Reverse  (386+ only)
+   753	
+   754	
+   755		Usage:	BSR	dest,src
+   756		Modifies flags: ZF
+   757	
+   758	
+   759		Scans source operand for first bit set.  Sets ZF if a bit is found
+   760		set and loads the destination with an index to first set bit.  Clears
+   761		ZF is no bits are found set.  BSF scans forward across bit pattern
+   762		(0-n) while BSR scans in reverse (n-0).
+   763	
+   764	
+   765	%				 Clocks			Size
+   766	%	Operands	 808x  286   386   486		Bytes
+   767	
+   768		reg,reg 	  -	-   10+3n  6-103	  3
+   769		reg,mem 	  -	-   10+3n  7-104	 3-7
+   770		reg32,reg32	  -	-   10+3n  6-103	 3-7
+   771		reg32,mem32	  -	-   10+3n  7-104	 3-7
+   772	
+   773	
+   774		- see ~Instruction Timing~
+   775	
+   776	:bswap
+   777	^BSWAP - Byte Swap (486+ only)
+   778	
+   779	
+   780		Usage:	BSWAP	reg32
+   781		Modifies flags: none
+   782	
+   783	
+   784		Changes the byte order of a 32 bit register from big endian to
+   785		little endian or vice versa.   Result left in destination register
+   786		is undefined if the operand is a 16 bit register.
+   787	
+   788	
+   789	%				 Clocks			Size
+   790	%	Operands	 808x  286   386   486		Bytes
+   791	
+   792		reg32	 	  -	-     -     1	  	  2
+   793	
+   794	
+   795		- see ~Instruction Timing~
+   796	
+   797	:bt
+   798	^BT - Bit Test	(386+ only)
+   799	
+   800	
+   801		Usage:	BT	dest,src
+   802		Modifies flags: CF
+   803	
+   804	
+   805		The destination bit indexed by the source value is copied into the
+   806		Carry Flag.
+   807	
+   808	
+   809	%				 Clocks			Size
+   810	%	Operands	 808x  286   386   486		Bytes
+   811	
+   812		reg16,immed8	  -	-     3	    3		 4-8
+   813		mem16,immed8	  -	-     6	    6		 4-8
+   814		reg16,reg16	  -	-     3	    3		 3-7
+   815		mem16,reg16	  -	-     12    12		 3-7
+   816	
+   817	
+   818		- see ~Instruction Timing~
+   819	
+   820	:btc
+   821	^BTC - Bit Test with Compliment  (386+ only)
+   822	
+   823	
+   824		Usage:	BTC	dest,src
+   825		Modifies flags: CF
+   826	
+   827	
+   828		The destination bit indexed by the source value is copied into the
+   829		Carry Flag after being complimented (inverted).
+   830	
+   831	
+   832	%				 Clocks			Size
+   833	%	Operands	 808x  286   386   486		Bytes
+   834	
+   835		reg16,immed8	  -	-     6	    6		 4-8
+   836		mem16,immed8	  -	-     8	    8		 4-8
+   837		reg16,reg16	  -	-     6	    6		 3-7
+   838		mem16,reg16	  -	-     13    13		 3-7
+   839	
+   840	
+   841		- see ~Instruction Timing~
+   842	
+   843	:btr
+   844	^BTR - Bit Test with Reset  (386+ only)
+   845	
+   846	
+   847		Usage:	BTR	dest,src
+   848		Modifies flags: CF
+   849	
+   850	
+   851		The destination bit indexed by the source value is copied into the
+   852		Carry Flag and then cleared in the destination.
+   853	
+   854	
+   855	%				 Clocks			Size
+   856	%	Operands	 808x  286   386   486		Bytes
+   857	
+   858		reg16,immed8	  -	-     6	    6		 4-8
+   859		mem16,immed8	  -	-     8	    8		 4-8
+   860		reg16,reg16	  -	-     6	    6		 3-7
+   861		mem16,reg16	  -	-     13    13		 3-7
+   862	
+   863	
+   864		- see ~Instruction Timing~
+   865	
+   866	:bts
+   867	^BTS - Bit Test and Set  (386+ only)
+   868	
+   869	
+   870		Usage:	BTS	dest,src
+   871		Modifies flags: CF
+   872	
+   873	
+   874		The destination bit indexed by the source value is copied into the
+   875		Carry Flag and then set in the destination.
+   876	
+   877	
+   878	%				 Clocks			Size
+   879	%	Operands	 808x  286   386   486		Bytes
+   880	
+   881		reg16,immed8	  -	-     6	    6		 4-8
+   882		mem16,immed8	  -	-     8	    8		 4-8
+   883		reg16,reg16	  -	-     6	    6		 3-7
+   884		mem16,reg16	  -	-     13    13		 3-7
+   885	
+   886	
+   887		- see ~Instruction Timing~
+   888	
+   889	:call
+   890	^CALL - Procedure Call
+   891	
+   892		Usage:	CALL	destination
+   893		Modifies flags: None
+   894	
+   895		Pushes Instruction Pointer (and Code Segment for far calls) onto
+   896		stack and loads Instruction Pointer with the address of proc-name.
+   897		Code continues with execution at CS:IP.
+   898	
+   899	%						         Clocks
+   900	%		   Operands			808x   286     386     486
+   901	
+   902		rel16 (near, IP relative)		 19     7      7+m      3
+   903		rel32 (near, IP relative)		 -	-      7+m      3
+   904	
+   905		reg16 (near, register indirect)		 16     7      7+m      5
+   906		reg32 (near, register indirect)		 -	-      7+m      5
+   907	
+   908		mem16 (near, memory indirect)		 -     21+EA    11    10+m      5
+   909		mem32 (near, memory indirect)		 -   	-     10+m      5
+   910	
+   911		ptr16:16 (far, full ptr supplied)	 28     13    17+m      18
+   912		ptr16:32 (far, full ptr supplied)	 -	-     17+m      18
+   913		ptr16:16 (far, ptr supplied, prot. mode) -	26    34+m      20
+   914		ptr16:32 (far, ptr supplied, prot. mode) -	-     34+m      20
+   915		m16:16 (far, indirect)		       37+EA    16    22+m      17
+   916		m16:32 (far, indirect)			 -	-     22+m      17
+   917		m16:16 (far, indirect, prot. mode)	 -      29    38+m      20
+   918		m16:32 (far, indirect, prot. mode)	 -	-     38+m      20
+   919	
+   920		ptr16:16 (task, via TSS or task gate)	 -     177     TS     37+TS
+   921		m16:16 (task, via TSS or task gate)	 -   180/185  5+TS    37+TS
+   922		m16:32 (task)				 -	-      TS     37+TS
+   923		m16:32 (task)				 -	-     5+TS    37+TS
+   924	
+   925		ptr16:16 (gate, same privilege)		 -      41    52+m      35
+   926		ptr16:32 (gate, same privilege)		 -	-     52+m      35
+   927		m16:16 (gate, same privilege)	       	 -	44    56+m      35
+   928		m16:32 (gate, same privilege)		 -	-     56+m      35
+   929	
+   930		ptr16:16 (gate, more priv, no parm)	 -   	82    86+m      69
+   931		ptr16:32 (gate, more priv, no parm)	 -	-     86+m      69
+   932		m16:16 (gate, more priv, no parm)	 -   	83    90+m      69
+   933		m16:32 (gate, more priv, no parm)	 -	-     90+m      69
+   934	
+   935		ptr16:16 (gate, more priv, x parms)	 -    86+4x  94+4x+m  77+4x
+   936		ptr16:32 (gate, more priv, x parms)	 -	-    94+4x+m  77+4x
+   937		m16:16 (gate, more priv, x parms)	 -    90+4x  98+4x+m  77+4x
+   938		m16:32 (gate, more priv, x parms)	 -	-    98+4x+m  77+4x
+   939	
+   940	
+   941		- see ~Instruction Timing~
+   942	
+   943	:cbw
+   944	^CBW - Convert Byte to Word
+   945	
+   946	
+   947		Usage:	CBW
+   948		Modifies flags: None
+   949	
+   950	
+   951		Converts byte in AL to word Value in AX by extending sign of AL
+   952		throughout register AH.
+   953	
+   954	
+   955	%				 Clocks			Size
+   956	%	Operands	 808x  286   386   486		Bytes
+   957	
+   958		none		  2	2     3	    3		  1
+   959	
+   960	
+   961		- see ~Instruction Timing~
+   962	
+   963	:cdq
+   964	^CDQ - Convert Double to Quad	(386+ only)
+   965	
+   966	
+   967		Usage:	CDQ
+   968		Modifies flags: None
+   969	
+   970	
+   971		Converts signed DWORD in EAX to a signed quad word in EDX:EAX by
+   972		extending the high order bit of EAX throughout EDX
+   973	
+   974	
+   975	%				 Clocks			Size
+   976	%	Operands	 808x  286   386   486		Bytes
+   977	
+   978		none		  -	-     2	    3		  1
+   979	
+   980	
+   981		- see ~Instruction Timing~
+   982	
+   983	:clc
+   984	^CLC - Clear Carry
+   985	
+   986	
+   987		Usage:	CLC
+   988		Modifies flags: CF
+   989	
+   990	
+   991		Clears the Carry Flag.
+   992	
+   993	
+   994	%				 Clocks			Size
+   995	%	Operands	 808x  286   386   486		Bytes
+   996	
+   997		none		  2	2     2	    2		  1
+   998	
+   999	
+  1000		- see ~Instruction Timing~
+  1001	
+  1002	:cld
+  1003	^CLD - Clear Direction Flag
+  1004	
+  1005	
+  1006		Usage:	CLD
+  1007		Modifies flags: DF
+  1008	
+  1009	
+  1010		Clears the Direction Flag causing string instructions to increment
+  1011		the SI and DI index registers.
+  1012	
+  1013	
+  1014	%				 Clocks			Size
+  1015	%	Operands	 808x  286   386   486		Bytes
+  1016	
+  1017		none		  2	2     2	    2		  1
+  1018	
+  1019	
+  1020		- see ~Instruction Timing~
+  1021	
+  1022	:cli
+  1023	^CLI - Clear Interrupt Flag (disable)
+  1024	
+  1025	
+  1026		Usage:	CLI
+  1027		Modifies flags: IF
+  1028	
+  1029	
+  1030		Disables the maskable hardware interrupts by clearing the Interrupt
+  1031		flag.  NMI's and software interrupts are not inhibited.
+  1032	
+  1033	
+  1034	%				 Clocks			Size
+  1035	%	Operands	 808x  286   386   486		Bytes
+  1036	
+  1037		none		  2	2     3	    5		  1
+  1038	
+  1039	
+  1040		- see ~Instruction Timing~
+  1041	
+  1042	:clts
+  1043	^CLTS - Clear Task Switched Flag  (286+ privileged)
+  1044	
+  1045	
+  1046		Usage:	CLTS
+  1047		Modifies flags: None
+  1048	
+  1049	
+  1050		Clears the Task Switched Flag in the Machine Status Register.  This
+  1051		is a privileged operation and is generally used only by operating
+  1052		system code.
+  1053	
+  1054	
+  1055	%				 Clocks			Size
+  1056	%	Operands	 808x  286   386   486		Bytes
+  1057	
+  1058		none		  -	2     5	    7		  2
+  1059	
+  1060	
+  1061		- see ~Instruction Timing~
+  1062	
+  1063	:cmc
+  1064	^CMC - Complement Carry Flag
+  1065	
+  1066	
+  1067		Usage:	CMC
+  1068		Modifies flags: CF
+  1069	
+  1070	
+  1071		Toggles (inverts) the Carry Flag
+  1072	
+  1073	
+  1074	%				 Clocks			Size
+  1075	%	Operands	 808x  286   386   486		Bytes
+  1076	
+  1077		none		  2	2     2	    2		  1
+  1078	
+  1079	
+  1080		- see ~Instruction Timing~
+  1081	
+  1082	:cmp
+  1083	^CMP - Compare
+  1084	
+  1085		Usage:	CMP	dest,src
+  1086		Modifies flags: AF CF OF PF SF ZF
+  1087	
+  1088	
+  1089		Subtracts source from destination and updates the flags but does
+  1090		not save result.  Flags can subsequently be checked for conditions.
+  1091	
+  1092	
+  1093	%				 Clocks			Size
+  1094	%	Operands	 808x  286   386   486		Bytes
+  1095	
+  1096		reg,reg 	  3	2     2	    1		  2
+  1097		mem,reg 	 9+EA	7     5	    2		 2-4  (W88=13+EA)
+  1098		reg,mem 	 9+EA	6     6	    2		 2-4  (W88=13+EA)
+  1099		reg,immed	  4	3     2	    1		 3-4
+  1100		mem,immed	10+EA	6     5	    2		 3-6  (W88=14+EA)
+  1101		accum,immed	  4	3     2	    1		 2-3
+  1102	
+  1103	
+  1104		- see ~Instruction Timing~
+  1105	
+  1106	:cmps:cmpsb:cmpsw:cmpsd
+  1107	^CMPS - Compare String (Byte, Word or Doubleword)
+  1108	
+  1109		Usage:	CMPS	dest,src
+  1110			CMPSB
+  1111			CMPSW
+  1112			CMPSD	(386+ only)
+  1113		Modifies flags: AF CF OF PF SF ZF
+  1114	
+  1115		Subtracts destination value from source without saving results.
+  1116		Updates flags based on the subtraction and  the index registers
+  1117		(E)SI and (E)DI are incremented or decremented depending on the
+  1118		state of the Direction Flag.  CMPSB inc/decrements the index
+  1119		registers by 1, CMPSW inc/decrements by 2, while CMPSD increments
+  1120		or decrements by 4.  The REP prefixes can be used to process
+  1121		entire data items.
+  1122	
+  1123	%				 Clocks			Size
+  1124	%	Operands	 808x  286   386   486		Bytes
+  1125	
+  1126		dest,src	  22	8     10    8		  1  (W88=30)
+  1127	
+  1128	
+  1129		- see ~Instruction Timing~
+  1130	
+  1131	:cmpxchg
+  1132	^CMPXCHG - Compare and Exchange
+  1133	
+  1134		Usage:	CMPXCHG	dest,src  (486+)
+  1135		Modifies flags: AF CF OF PF SF ZF
+  1136	
+  1137	
+  1138		Compares the accumulator (8-32 bits) with "dest".  If equal the
+  1139		"dest" is loaded with "src", otherwise the accumulator is loaded
+  1140		with "dest".
+  1141	
+  1142	
+  1143	%				 Clocks			Size
+  1144	%	Operands	 808x  286   386   486		Bytes
+  1145	
+  1146		reg,reg		  -	-     -     6		  2
+  1147		mem,reg		  -     -     -     7		  2
+  1148	
+  1149	
+  1150		- add 3 clocks if the "mem,reg" comparison fails
+  1151		- see ~Instruction Timing~
+  1152	
+  1153	:cwd
+  1154	^CWD - Convert Word to Doubleword
+  1155	
+  1156	
+  1157		Usage:	CWD
+  1158		Modifies flags: None
+  1159	
+  1160	
+  1161		Extends sign of word in register AX throughout register DX forming
+  1162		a doubleword quantity in DX:AX.
+  1163	
+  1164	
+  1165	%				 Clocks			Size
+  1166	%	Operands	 808x  286   386   486		Bytes
+  1167	
+  1168		none		  5	2     2	    3		  1
+  1169	
+  1170	
+  1171		- see ~Instruction Timing~
+  1172	
+  1173	:cwde
+  1174	^CWDE - Convert Word to Extended Doubleword  (386+ only)
+  1175	
+  1176	
+  1177		Usage:	CWDE
+  1178		Modifies flags: None
+  1179	
+  1180	
+  1181		Converts a signed word in AX to a signed doubleword in EAX by
+  1182		extending the sign bit of AX throughout EAX.
+  1183	
+  1184	%				 Clocks			Size
+  1185	%	Operands	 808x  286   386   486		Bytes
+  1186	
+  1187		none		  -	-     3	    3		  1
+  1188	
+  1189	
+  1190		- see ~Instruction Timing~
+  1191	
+  1192	:daa
+  1193	^DAA - Decimal Adjust for Addition
+  1194	
+  1195	
+  1196		Usage:	DAA
+  1197		Modifies flags: AF CF PF SF ZF (OF undefined)
+  1198	
+  1199	
+  1200		Corrects result (in AL) of a previous BCD addition operation.
+  1201		Contents of AL are changed to a pair of packed decimal digits.
+  1202	
+  1203	
+  1204	%				 Clocks			Size
+  1205	%	Operands	 808x  286   386   486		Bytes
+  1206	
+  1207		none		  4	3     4	    2		  1
+  1208	
+  1209	
+  1210		- see ~Instruction Timing~
+  1211	
+  1212	:das
+  1213	^DAS - Decimal Adjust for Subtraction
+  1214	
+  1215	
+  1216		Usage:	DAS
+  1217		Modifies flags: AF CF PF SF ZF (OF undefined)
+  1218	
+  1219	
+  1220		Corrects result (in AL) of a previous BCD subtraction operation.
+  1221		Contents of AL are changed to a pair of packed decimal digits.
+  1222	
+  1223	
+  1224	%				 Clocks			Size
+  1225	%	Operands	 808x  286   386   486		Bytes
+  1226	
+  1227		none		  4	3     4	    2		  1
+  1228	
+  1229	
+  1230		- see ~Instruction Timing~
+  1231	
+  1232	:dec
+  1233	^DEC - Decrement
+  1234	
+  1235	
+  1236		Usage:	DEC	dest
+  1237		Modifies flags: AF OF PF SF ZF
+  1238	
+  1239	
+  1240		Unsigned binary subtraction of one from the destination.
+  1241	
+  1242	
+  1243	%				 Clocks			Size
+  1244	%	Operands	 808x  286   386   486		Bytes
+  1245	
+  1246		reg8		  3	2     2	    1		  2
+  1247		mem		15+EA	7     6	    3		 2-4
+  1248		reg16/32	  3	2     2	    1		  1
+  1249	
+  1250	
+  1251		- see ~Instruction Timing~
+  1252	
+  1253	:div
+  1254	^DIV - Divide
+  1255	
+  1256		Usage:	DIV	src
+  1257		Modifies flags: (AF,CF,OF,PF,SF,ZF undefined)
+  1258	
+  1259		Unsigned binary division of accumulator by source.  If the source
+  1260		divisor is a byte value then AX is divided by "src" and the quotient
+  1261		is placed in AL and the remainder in AH.  If source operand is a word
+  1262		value, then DX:AX is divided by "src" and the quotient is stored in AX
+  1263		and the remainder in DX.
+  1264	
+  1265	%				 Clocks			Size
+  1266	%	Operands	 808x  286   386   486		Bytes
+  1267	
+  1268		reg8		 80-90	14    14    16		  2
+  1269		reg16		144-162 22    22    24		  2
+  1270		reg32		   -	-     38    40		  2
+  1271		mem8	    (86-96)+EA	17    17    16		 2-4
+  1272		mem16	  (150-168)+EA	25    25    24		 2-4  (W88=158-176+EA)
+  1273		mem32		   -	-     41    40		 2-4
+  1274	
+  1275	
+  1276		- see ~Instruction Timing~
+  1277	
+  1278	:enter
+  1279	^ENTER - Make Stack Frame  (80188+)
+  1280	
+  1281	
+  1282		Usage:	ENTER	locals,level
+  1283		Modifies flags: None
+  1284	
+  1285	
+  1286		Modifies stack for entry to procedure for high level language.
+  1287		Operand "locals" specifies the amount of storage to be allocated
+  1288		on the stack.	"Level" specifies the nesting level of the routine.
+  1289		Paired with the ~LEAVE~ instruction, this is an efficient method of
+  1290		entry and exit to procedures.
+  1291	
+  1292	
+  1293	%				     Clocks			Size
+  1294	%	Operands	 808x	 286	   386	     486	Bytes
+  1295	
+  1296		immed16,0	  -	  11	   10	      14  	  4
+  1297		immed16,1	  -	  15	   12	      17  	  4
+  1298		immed16,immed8	  -   12+4(n-1) 15+4(n-1)    17+3n	  4
+  1299	
+  1300	
+  1301		- see ~Instruction Timing~
+  1302	
+  1303	:esc
+  1304	^ESC - Escape
+  1305	
+  1306	
+  1307		Usage:	ESC	immed,src
+  1308		Modifies flags: None
+  1309	
+  1310	
+  1311		Provides access to the data bus for other resident processors.
+  1312		The CPU treats it as a ~NOP~ but places memory operand on bus.
+  1313	
+  1314	
+  1315	%				 Clocks			Size
+  1316	%	Operands	 808x  286   386   486		Bytes
+  1317	
+  1318		immed,reg	  2   9-20    ?			  2
+  1319		immed,mem	  2   9-20    ?			 2-4
+  1320	
+  1321	
+  1322		- see ~Instruction Timing~
+  1323	
+  1324	:hlt
+  1325	^HLT - Halt CPU
+  1326	
+  1327	
+  1328		Usage:	 HLT
+  1329		Modifies flags: None
+  1330	
+  1331	
+  1332		Halts CPU until RESET line is activated, NMI or maskable interrupt
+  1333		received.  The CPU becomes dormant but retains the current CS:IP
+  1334		for later restart.
+  1335	
+  1336	
+  1337	%				 Clocks			Size
+  1338	%	Operands	 808x  286   386   486		Bytes
+  1339	
+  1340		none		  2	2     5	    4		  1
+  1341	
+  1342	
+  1343		- see ~Instruction Timing~
+  1344	
+  1345	:idiv
+  1346	^IDIV - Signed Integer Division
+  1347	
+  1348		Usage:	 IDIV	src
+  1349		Modifies flags: (AF,CF,OF,PF,SF,ZF undefined)
+  1350	
+  1351		Signed binary division of accumulator by source.  If source is a
+  1352		byte value, AX is divided by "src" and the quotient is stored in
+  1353		AL and the remainder in AH.  If source is a word value, DX:AX is
+  1354		divided by "src", and the quotient is stored in AL and the
+  1355		remainder in DX.
+  1356	%				 Clocks			Size
+  1357	%	Operands	 808x  286   386   486		Bytes
+  1358	
+  1359		reg8	      101-112	17    19    19		  2
+  1360		reg16	      165-184	25    27    27		  2
+  1361		reg32		 -	-     43    43		  2
+  1362		mem8	 (107-118)+EA	20    22    20		 2-4
+  1363		mem16	 (171-190)+EA	38    30    28		 2-4  (W88=175-194)
+  1364		mem32		 -	-     46    44		 2-4
+  1365	
+  1366	
+  1367		- see ~Instruction Timing~
+  1368	
+  1369	:imul
+  1370	^IMUL - Signed Multiply
+  1371	
+  1372		Usage:	IMUL	src
+  1373			IMUL	src,immed  (286+ only)
+  1374			IMUL	dest,src,immed8  (286+ only)
+  1375			IMUL	dest,src  (386+ only)
+  1376		Modifies flags: CF OF (AF,PF,SF,ZF undefined)
+  1377	
+  1378	
+  1379		Signed multiplication of accumulator by "src" with result placed
+  1380		in the accumulator.  If the source operand is a byte value, it
+  1381		is multiplied by AL and the result stored in AX.  If the source
+  1382		operand is a word value it is multiplied by AX and the result is
+  1383		stored in DX:AX.  Other variations of this instruction allow
+  1384		specification of source and destination registers as well as a
+  1385		third immediate factor.
+  1386	
+  1387	%				  Clocks		Size
+  1388	%	Operands	 808x	286   386   486		Bytes
+  1389	
+  1390		reg8		 80-98	 13   9-14  13-18	  2
+  1391		reg16		128-154	 21   9-22  13-26	  2
+  1392		reg32		   -	 -    9-38  12-42	  2
+  1393		mem8		 86-104	 16  12-17  13-18	 2-4
+  1394		mem16		134-160	 24  12-25  13-26	 2-4
+  1395		mem32		   -	 -   12-41  13-42	 2-4
+  1396		reg16,reg16	   -	 -    9-22  13-26	 3-5
+  1397		reg32,reg32	   -	 -    9-38  13-42	 3-5
+  1398		reg16,mem16	   -	 -   12-25  13-26	 3-5
+  1399		reg32,mem32	   -	 -   12-41  13-42	 3-5
+  1400		reg16,immed	   -	 21   9-22  13-26	  3
+  1401		reg32,immed	   -	 21   9-38  13-42	 3-6
+  1402		reg16,reg16,immed  -	 2    9-22  13-26 	 3-6
+  1403		reg32,reg32,immed  -	 21   9-38  13-42	 3-6
+  1404		reg16,mem16,immed  -	 24  12-25  13-26	 3-6
+  1405		reg32,mem32,immed  -	 24  12-41  13-42	 3-6
+  1406	
+  1407	
+  1408		- see ~Instruction Timing~
+  1409	
+  1410	:in
+  1411	^IN - Input Byte or Word From Port
+  1412	
+  1413	
+  1414		Usage:	IN	accum,port
+  1415		Modifies flags: None
+  1416	
+  1417	
+  1418		A byte, word or dword is read from "port" and placed in AL, AX or
+  1419		EAX respectively.  If the port number is in the range of 0-255
+  1420		it can be specified as an immediate, otherwise the port number
+  1421		must be specified in DX.  Valid port ranges on the PC are 0-1024,
+  1422		though values through 65535 may be specified and recognized by
+  1423		third party vendors and PS/2's.
+  1424	
+  1425	
+  1426	%				 Clocks			Size
+  1427	%	Operands	 808x  286   386    486		Bytes
+  1428	
+  1429		accum,immed8	10/14	5     12     14		  2
+  1430		accum,immed8 (PM)	     6/26  8/28/27  	  2
+  1431		accum,DX	 8/12	5     13     14		  1
+  1432		accum,DX (PM)		     7/27  8/28/27  	  1
+  1433	
+  1434	
+  1435		- 386+ protected mode timings depend on privilege levels.
+  1436	
+  1437		  first number is the timing if:    CPL ó IOPL
+  1438		  second number is the timing if:   CPL > IOPL or in VM 86 mode (386)
+  1439		  			     	    CPL ò IOPL  (486)
+  1440		  third number is the timing when:    virtual mode on 486 processor
+  1441		- 486 virtual mode always requires 27 cycles
+  1442	
+  1443		- see ~Instruction Timing~
+  1444	
+  1445	:inc
+  1446	^INC - Increment
+  1447	
+  1448	
+  1449		Usage:	INC	dest
+  1450		Modifies flags: AF OF PF SF ZF
+  1451	
+  1452	
+  1453		Adds one to destination unsigned binary operand.
+  1454	
+  1455	
+  1456	%				 Clocks			Size
+  1457	%	Operands	 808x  286   386   486		Bytes
+  1458	
+  1459		reg8		  3	2     2	    1		  2
+  1460		reg16		  3	2     2	    1		  1
+  1461		reg32		  3	2     2	    1		  1
+  1462		mem		15+EA	7     6	    3		 2-4  (W88=23+EA)
+  1463	
+  1464	
+  1465		- see ~Instruction Timing~
+  1466	
+  1467	:ins:insb:insw:insd
+  1468	^INS - Input String from Port  (80188+)
+  1469	
+  1470	
+  1471		Usage:	INS	dest,port
+  1472			INSB
+  1473			INSW
+  1474			INSD  (386+ only)
+  1475		Modifies flags: None
+  1476	
+  1477		Loads data from port to the destination ES:(E)DI  (even if a
+  1478		destination operand is supplied).  (E)DI is adjusted by the size
+  1479		of the operand and increased if the Direction Flag is cleared and
+  1480		decreased if the Direction Flag is set.  For INSB, INSW, INSD no
+  1481		operands are allowed and the size is determined by the mnemonic.
+  1482	
+  1483	
+  1484	%				 Clocks			Size
+  1485	%	Operands	 808x  286   386    486		Bytes
+  1486	
+  1487		dest,port	  -	5     15     17		  1
+  1488		dest,port (PM)	  -	5    9/29 10/32/30	  1
+  1489		none		  -	5     15     17		  1
+  1490		none (PM)	  -	5    9/29 10/32/30	  1
+  1491	
+  1492	
+  1493		- 386+ protected mode timings depend on privilege levels.
+  1494	
+  1495		  first number is the timing if:    CPL ó IOPL
+  1496		  second number is the timing if:   CPL > IOPL
+  1497		  third number is the timing if:    virtual mode on 486 processor
+  1498	
+  1499		- see ~Instruction Timing~
+  1500	
+  1501	:int
+  1502	^INT - Interrupt
+  1503	
+  1504	
+  1505		Usage:	INT	num
+  1506		Modifies flags: TF IF
+  1507	
+  1508		Initiates a software interrupt by pushing the flags, clearing the
+  1509		Trap and Interrupt Flags, pushing CS followed by IP and loading
+  1510		CS:IP with the value found in the interrupt vector table.  Execution
+  1511		then begins at the location addressed by the new CS:IP
+  1512	
+  1513	
+  1514	%					       Clocks		Size
+  1515	%	    Operands			808x  286   386   486	Bytes
+  1516	
+  1517	 3 (constant)	       		       52/72  23+m   33    26	  2
+  1518	 3 (prot. mode, same priv.)		 -    40+m   59	   44	  2	  
+  1519	 3 (prot. mode, more priv.)		 -    78+m   99	   71	  2
+  1520	 3 (from VM86 to PL 0)			 -     -    119	   82	  2
+  1521	 3 (prot. mode via task gate)		 -   167+m   TS	 37+TS	  2
+  1522	 immed8				       51/71  23+m   37    30 	  1
+  1523	 immed8 (prot. mode, same priv.)	 -    40+m   59	   44	  1
+  1524	 immed8 (prot. mode, more priv.)	 -    78+m   99	   71	  1
+  1525	 immed8 (from VM86 to PL 0)		 -     -    119	   86	  1
+  1526	 immed8 (prot. mode, via task gate)	 -   167+m   TS	 37+TS	  1
+  1527	
+  1528	
+  1529		- see ~Instruction Timing~
+  1530	
+  1531	:into
+  1532	^INTO - Interrupt on Overflow
+  1533	
+  1534	
+  1535		Usage:	INTO
+  1536		Modifies flags: IF TF
+  1537	
+  1538	
+  1539		If the Overflow Flag is set this instruction generates an INT 4
+  1540		which causes the code addressed by 0000:0010 to be executed.
+  1541	
+  1542	
+  1543	%					  Clocks	   Size
+  1544	%	Operands		808x	286   386   486	   Bytes
+  1545	
+  1546		none: jump	       53/73   24+m    35    28	     1
+  1547		      no jump		 4	 3     3     3
+  1548		(prot. mode, same priv.) -	 -     59    46	     1
+  1549		(prot. mode, more priv.) -	 -     99    73	     1
+  1550		(from VM86 to PL 0)	 -	 -    119    84	     1
+  1551		(prot. mode, via task gate)	 -     TS  39+TS     1
+  1552	
+  1553	
+  1554		- see ~Instruction Timing~
+  1555	
+  1556	:invd
+  1557	^INVD - Invalidate Cache  (486+ only)
+  1558	
+  1559	
+  1560		Usage:	INVD
+  1561		Modifies flags: none
+  1562	
+  1563	
+  1564		Flushes CPU internal cache.  Issues special function bus cycle
+  1565		which indicates to flush external caches.   Data in write-back
+  1566		external caches is lost.
+  1567	
+  1568		
+  1569	%				  Clocks		Size
+  1570	%	Operands	 808x	286   386   486		Bytes
+  1571	
+  1572		none		  -	 -     -     4		  2
+  1573	
+  1574	
+  1575		- see ~Instruction Timing~
+  1576	
+  1577	:invlpg
+  1578	^INVLPG - Invalidate Translation Look-Aside Buffer Entry  (486+ only)
+  1579	
+  1580	
+  1581		Usage:	INVLPG
+  1582		Modifies flags: none
+  1583	
+  1584	
+  1585		Invalidates a single page table entry in the Translation
+  1586		Look-Aside Buffer.  Intel warns that this instruction may be
+  1587		implemented differently on future processors.
+  1588	
+  1589		
+  1590	%				  Clocks		Size
+  1591	%	Operands	 808x	286   386   486		Bytes
+  1592	
+  1593		none		  -	 -     -     12		  2
+  1594	
+  1595	
+  1596		- timing is for TLB entry hit only.
+  1597		- see ~Instruction Timing~
+  1598	
+  1599	:iret:iretd
+  1600	^IRET/IRETD - Interrupt Return
+  1601	
+  1602		Usage:	IRET
+  1603			IRETD  (386+ only)
+  1604		Modifies flags: AF CF DF IF PF SF TF ZF
+  1605	
+  1606		Returns control to point of interruption by popping IP, CS
+  1607		and then the Flags from the stack and continues execution at
+  1608		this location.	CPU exception interrupts will return to the
+  1609		instruction that cause the exception because the CS:IP placed
+  1610		on the stack during the interrupt is the address of the offending
+  1611		instruction.
+  1612	
+  1613	%					 Clocks			Size
+  1614	%	    Operands		808x   286   386   486		Bytes
+  1615	
+  1616	    iret		       32/44  17+m    22    15		  1
+  1617	    iret  (prot. mode)	         -    31+m    38    15		  1
+  1618	    iret  (to less privilege)	 -    55+m    82    36		  1
+  1619	    iret  (different task, NT=1) -   169+m    TS  TS+32		  1
+  1620	    iretd			 -	-   22/38   15		  1
+  1621	    iretd (to less privilege)	 -	-     82    36		  1
+  1622	    iretd (to VM86 mode)	 -	-     60    15		  1
+  1623	    iretd (different task, NT=1) -	-     TS  TS+32		  1
+  1624	
+  1625	
+  1626	    - 386 timings are listed as real-mode/protected-mode
+  1627		- see ~Instruction Timing~
+  1628	
+  1629	:j...
+  1630	^Jump Instructions Table
+  1631	
+  1632	%	Mnemonic	      Meaning			 Jump Condition
+  1633	
+  1634		  ~JA~	   Jump if Above			 CF=0 and ZF=0
+  1635		  ~JAE~	   Jump if Above or Equal		 CF=0
+  1636		  ~JB~	   Jump if Below			 CF=1
+  1637		  ~JBE~	   Jump if Below or Equal		 CF=1 or ZF=1
+  1638		  ~JC~	   Jump if Carry			 CF=1
+  1639		  ~JCXZ~   Jump if CX Zero			 CX=0
+  1640		  ~JE~	   Jump if Equal			 ZF=1
+  1641		  ~JG~	   Jump if Greater (signed)		 ZF=0 and SF=OF
+  1642		  ~JGE~	   Jump if Greater or Equal (signed)	 SF=OF
+  1643		  ~JL~	   Jump if Less (signed)		 SF != OF
+  1644		  ~JLE~	   Jump if Less or Equal (signed)	 ZF=1 or SF != OF
+  1645		  ~JMP~	   Unconditional Jump			 unconditional
+  1646		  ~JNA~	   Jump if Not Above			 CF=1 or ZF=1
+  1647		  ~JNAE~   Jump if Not Above or Equal		 CF=1
+  1648		  ~JNB~	   Jump if Not Below			 CF=0
+  1649		  ~JNBE~   Jump if Not Below or Equal		 CF=0 and ZF=0
+  1650		  ~JNC~	   Jump if Not Carry			 CF=0
+  1651		  ~JNE~	   Jump if Not Equal			 ZF=0
+  1652		  ~JNG~	   Jump if Not Greater (signed) 	 ZF=1 or SF != OF
+  1653		  ~JNGE~   Jump if Not Greater or Equal (signed) SF != OF
+  1654		  ~JNL~	   Jump if Not Less (signed)		 SF=OF
+  1655		  ~JNLE~   Jump if Not Less or Equal (signed)	 ZF=0 and SF=OF
+  1656		  ~JNO~	   Jump if Not Overflow (signed)	 OF=0
+  1657		  ~JNP~	   Jump if No Parity			 PF=0
+  1658		  ~JNS~	   Jump if Not Signed (signed)		 SF=0
+  1659		  ~JNZ~	   Jump if Not Zero			 ZF=0
+  1660		  ~JO~	   Jump if Overflow (signed)		 OF=1
+  1661		  ~JP~	   Jump if Parity			 PF=1
+  1662		  ~JPE~	   Jump if Parity Even			 PF=1
+  1663		  ~JPO~	   Jump if Parity Odd			 PF=0
+  1664		  ~JS~	   Jump if Signed (signed)		 SF=1
+  1665		  ~JZ~	   Jump if Zero 			 ZF=1
+  1666	
+  1667	%	      			 Clocks			Size
+  1668	%	Operands	 808x  286   386   486		Bytes
+  1669	
+  1670		Jx: jump	  16   7+m   7+m    3		  2
+  1671		    no jump	   4	3     3	    1
+  1672		Jx  near-label	   -	-    7+m    3		  4
+  1673		    no jump	   -	-     3	    1
+  1674	
+  1675	
+  1676		- It's a good programming practice to organize code so the
+  1677		  expected case is executed without a jump since the actual
+  1678		  jump takes longer to execute than falling through the test.
+  1679		- see	~JCXZ~  and  ~JMP~  for their respective timings
+  1680		- see   ~Instruction Timing~   ~FLAGS~
+  1681	
+  1682	:ja:jnbe
+  1683	^JA/JNBE - Jump Above / Jump Not Below or Equal
+  1684	
+  1685	
+  1686		Usage:	JA	label
+  1687			JNBE	label
+  1688		Modifies flags: None
+  1689	
+  1690	
+  1691		Causes execution to branch to "label" if the Carry Flag and Zero Flag
+  1692		are both clear.  Unsigned comparision.
+  1693	
+  1694	
+  1695	%				 Clocks			Size
+  1696	%	Operands	 808x  286   386   486		Bytes
+  1697	
+  1698		label:	jump	  16   7+m   7+m    3		 2-4
+  1699			no jump	  4	3     3	    1
+  1700	
+  1701	
+  1702		- see ~Instruction Timing~
+  1703	
+  1704	:jae:jnb
+  1705	^JAE/JNB - Jump Above or Equal / Jump on Not Below
+  1706	
+  1707	
+  1708		Usage:	JAE	label
+  1709			JNB	label
+  1710		Modifies flags: None
+  1711	
+  1712	
+  1713		Causes execution to branch to "label" if the Carry Flag is clear.
+  1714		Functionally similar to ~JNC~.  Unsigned comparision.
+  1715	
+  1716	
+  1717	%				 Clocks			Size
+  1718	%	Operands	 808x  286   386   486		Bytes
+  1719	
+  1720		label:	jump	  16   7+m   7+m    3		 2-4
+  1721			no jump	  4	3     3	    1
+  1722	
+  1723	
+  1724		- see ~Instruction Timing~
+  1725	
+  1726	:jb:jnae
+  1727	^JB/JNAE - Jump Below / Jump Not Above or Equal
+  1728	
+  1729	
+  1730		Usage:	JB	label
+  1731			JNAE	label
+  1732		Modifies flags: None
+  1733	
+  1734	
+  1735		Causes execution to branch to "label" if the Carry Flag is set.
+  1736		Functionally similar to ~JC~.  Unsigned comparision.
+  1737	
+  1738	
+  1739	%				 Clocks			Size
+  1740	%	Operands	 808x  286   386   486		Bytes
+  1741	
+  1742		label:	jump	  16   7+m   7+m    3		 2-4
+  1743			no jump	  4	3     3	    1
+  1744	
+  1745	
+  1746		- see ~Instruction Timing~
+  1747	
+  1748	:jbe:jna
+  1749	^JBE/JNA - Jump Below or Equal / Jump Not Above
+  1750	
+  1751	
+  1752		Usage:	JBE	label
+  1753			JNA	label
+  1754		Modifies flags: None
+  1755	
+  1756	
+  1757		Causes execution to branch to "label" if the Carry Flag or
+  1758		the Zero Flag is set.	Unsigned comparision.
+  1759	
+  1760	
+  1761	%				 Clocks			Size
+  1762	%	Operands	 808x  286   386   486		Bytes
+  1763	
+  1764		label:	jump	  16   7+m   7+m    3		 2-4
+  1765			no jump	  4	3     3	    1
+  1766	
+  1767	
+  1768		- see ~Instruction Timing~
+  1769	
+  1770	:jc
+  1771	^JC - Jump on Carry
+  1772	
+  1773	
+  1774		Usage:	JC	label
+  1775		Modifies flags: None
+  1776	
+  1777	
+  1778		Causes execution to branch to "label" if the Carry Flag is set.
+  1779		Functionally similar to ~JB~ and ~JNAE~.  Unsigned comparision.
+  1780	
+  1781	
+  1782	%				 Clocks			Size
+  1783	%	Operands	 808x  286   386   486		Bytes
+  1784	
+  1785		label:	jump	  16   7+m   7+m    3		 2-4
+  1786			no jump	  4	3     3	    1
+  1787	
+  1788	
+  1789		- see ~Instruction Timing~
+  1790	
+  1791	:jcxz:jecxz
+  1792	^JCXZ/JECXZ - Jump if Register (E)CX is Zero
+  1793	
+  1794	
+  1795		Usage:	JCXZ	label
+  1796			JECXZ	label  (386+ only)
+  1797		Modifies flags: None
+  1798	
+  1799	
+  1800		Causes execution to branch to "label" if register CX is zero.  Uses
+  1801		unsigned comparision.
+  1802	
+  1803	%				 Clocks			Size
+  1804	%	Operands	 808x  286   386   486		Bytes
+  1805	
+  1806		label:	jump	  18   8+m   9+m    8		  2
+  1807			no jump	   6	4     5	    5
+  1808	
+  1809	
+  1810		- see ~Instruction Timing~
+  1811	
+  1812	:je:jz
+  1813	^JE/JZ - Jump Equal / Jump Zero
+  1814	
+  1815	
+  1816		Usage:	JE	label
+  1817			JZ	label
+  1818		Modifies flags: None
+  1819	
+  1820	
+  1821		Causes execution to branch to "label" if the Zero Flag is set.	Uses
+  1822		unsigned comparision.
+  1823	
+  1824	%				 Clocks			Size
+  1825	%	Operands	 808x  286   386   486		Bytes
+  1826	
+  1827		label:	jump	  16   7+m   7+m    3		 2-4
+  1828			no jump	  4	3     3	    1
+  1829	
+  1830	
+  1831		- see ~Instruction Timing~
+  1832	
+  1833	:jg:jnle
+  1834	^JG/JNLE - Jump Greater / Jump Not Less or Equal
+  1835	
+  1836	
+  1837		Usage:	JG	label
+  1838			JNLE	label
+  1839		Modifies flags: None
+  1840	
+  1841	
+  1842		Causes execution to branch to "label" if the Zero Flag is clear or
+  1843		the Sign Flag equals the Overflow Flag.  Signed comparision.
+  1844	
+  1845	
+  1846	%				 Clocks			Size
+  1847	%	Operands	 808x  286   386   486		Bytes
+  1848	
+  1849		label:	jump	  16   7+m   7+m    3		 2-4
+  1850			no jump	  4	3     3	    1
+  1851	
+  1852	
+  1853		- see ~Instruction Timing~
+  1854	
+  1855	:jge:jnl
+  1856	^JGE/JNL - Jump Greater or Equal / Jump Not Less
+  1857	
+  1858	
+  1859		Usage:	JGE	label
+  1860			JNL	label
+  1861		Modifies flags: None
+  1862	
+  1863	
+  1864		Causes execution to branch to "label" if the Sign Flag equals
+  1865		the Overflow Flag.  Signed comparision.
+  1866	
+  1867	
+  1868	%				 Clocks			Size
+  1869	%	Operands	 808x  286   386   486		Bytes
+  1870	
+  1871		label:	jump	  16   7+m   7+m    3		 2-4
+  1872			no jump	  4	3     3	    1
+  1873	
+  1874	
+  1875		- see ~Instruction Timing~
+  1876	
+  1877	:jl:jnge
+  1878	^JL/JNGE - Jump Less / Jump Not Greater or Equal
+  1879	
+  1880	
+  1881		Usage:	JL	label
+  1882			JNGE	label
+  1883		Modifies flags: None
+  1884	
+  1885	
+  1886		Causes execution to branch to "label" if the Sign Flag is not equal
+  1887		to Overflow Flag.  Unsigned comparision.
+  1888	
+  1889	
+  1890	%				 Clocks			Size
+  1891	%	Operands	 808x  286   386   486		Bytes
+  1892	
+  1893		label:	jump	  16   7+m   7+m    3		 2-4
+  1894			no jump	  4	3     3	    1
+  1895	
+  1896	
+  1897		- see ~Instruction Timing~
+  1898	
+  1899	:jle:jng
+  1900	^JLE/JNG - Jump Less or Equal / Jump Not Greater
+  1901	
+  1902	
+  1903		Usage:	JLE	label
+  1904			JNG	label
+  1905		Modifies flags: None
+  1906	
+  1907	
+  1908		Causes execution to branch to "label" if the Zero Flag is set or the
+  1909		Sign Flag is not equal to the Overflow Flag.  Signed comparision.
+  1910	
+  1911	
+  1912	%				 Clocks			Size
+  1913	%	Operands	 808x  286   386   486		Bytes
+  1914	
+  1915		label:	jump	  16   7+m   7+m    3		 2-4
+  1916			no jump	  4	3     3	    1
+  1917	
+  1918	
+  1919		- see ~Instruction Timing~
+  1920	
+  1921	:jmp
+  1922	^JMP - Unconditional Jump
+  1923	
+  1924		Usage:	JMP	target
+  1925		Modifies flags: None
+  1926	
+  1927		Unconditionally transfers control to "label".  Jumps by default
+  1928		are within -32768 to 32767 bytes from the instruction following
+  1929		the jump.  NEAR and SHORT jumps cause the IP to be updated while FAR
+  1930		jumps cause CS and IP to be updated.
+  1931	
+  1932	%							Clocks
+  1933	%		   Operands			808x  286    386   486
+  1934	
+  1935		rel8  (relative)		 	15    7+m    7+m    3
+  1936		rel16 (relative)		 	15    7+m    7+m    3
+  1937		rel32 (relative)		 	 -     -     7+m    3
+  1938		reg16 (near, register indirect)		11    7+m    7+m    5
+  1939		reg32 (near, register indirect)		 -     -     7+m    5
+  1940		mem16 (near, mem indirect)	       18+EA  11+m  10+m    5
+  1941		mem32 (near, mem indirect)	       24+EA  15+m  10+m    5
+  1942		ptr16:16 (far, dword immed)		 -     -    12+m    17
+  1943		ptr16:16 (far, PM dword immed)		 -     -    27+m    19
+  1944		ptr16:16 (call gate, same priv.)	 -    38+m  45+m    32
+  1945		ptr16:16 (via TSS)		       	 -   175+m   TS	  42+TS
+  1946		ptr16:16 (via task gate)		 -   180+m   TS	  43+TS
+  1947		mem16:16 (far, indirect)		 -     -    43+m    13
+  1948		mem16:16 (far, PM indirect)		 -     -    31+m    18
+  1949		mem16:16 (call gate, same priv.)	 -    41+m  49+m    31
+  1950		mem16:16 (via TSS)		   	 -   178+m  5+TS  41+TS
+  1951		mem16:16 (via task gate)	   	 -   183+m  5+TS  42+TS
+  1952		ptr16:32 (far, 6 byte immed)		 -     -    12+m    13
+  1953		ptr16:32 (far, PM 6 byte immed)		 -     -    27+m    18
+  1954		ptr16:32 (call gate, same priv.)	 -     -    45+m    31
+  1955		ptr16:32 (via TSS)			 -     -     TS	  42+TS
+  1956		ptr16:32 (via task state) 		 -     -     TS	  43+TS
+  1957		m16:32 (far, address at dword)		 -     -    43+m    13
+  1958		m16:32 (far, address at dword)		 -     -    31+m    18
+  1959		m16:32 (call gate, same priv.)		 -     -    49+m    31
+  1960		m16:32 (via TSS)			 -     -    5+TS  41+TS
+  1961		m16:32 (via task state)			 -     -    5+TS  42+TS
+  1962	
+  1963	 - see ~Instruction Timing~
+  1964	
+  1965	:jnc
+  1966	^JNC - Jump Not Carry
+  1967	
+  1968	
+  1969		Usage:	JNC	label
+  1970		Modifies flags: None
+  1971	
+  1972	
+  1973		Causes execution to branch to "label" if the Carry Flag is clear.
+  1974		Functionally similar to ~JAE~ or ~JNB~.  Unsigned comparision.
+  1975	
+  1976	
+  1977	%				 Clocks			Size
+  1978	%	Operands	 808x  286   386   486		Bytes
+  1979	
+  1980		label:	jump	  16   7+m   7+m    3		 2-4
+  1981			no jump	  4	3     3	    1
+  1982	
+  1983	
+  1984		- see ~Instruction Timing~
+  1985	
+  1986	:jne:jnz
+  1987	^JNE/JNZ - Jump Not Equal / Jump Not Zero
+  1988	
+  1989	
+  1990		Usage:	JNE	label
+  1991			JNZ	label
+  1992		Modifies flags: None
+  1993	
+  1994	
+  1995		Causes execution to branch to "label" if the Zero Flag is clear.
+  1996		Unsigned comparision.
+  1997	
+  1998	%				 Clocks			Size
+  1999	%	Operands	 808x  286   386   486		Bytes
+  2000	
+  2001		label:	jump	  16   7+m   7+m    3		 2-4
+  2002			no jump	  4	3     3	    1
+  2003	
+  2004	
+  2005		- see ~Instruction Timing~
+  2006	
+  2007	:jno
+  2008	^JNO - Jump Not Overflow
+  2009	
+  2010	
+  2011		Usage:	JNO	label
+  2012		Modifies flags: None
+  2013	
+  2014	
+  2015		Causes execution to branch to "label" if the Overflow Flag is clear.
+  2016		Signed comparision.
+  2017	
+  2018	%				 Clocks			Size
+  2019	%	Operands	 808x  286   386   486		Bytes
+  2020	
+  2021		label:	jump	  16   7+m   7+m    3		 2-4
+  2022			no jump	  4	3     3	    1
+  2023	
+  2024	
+  2025		- see ~Instruction Timing~
+  2026	
+  2027	:jns
+  2028	^JNS - Jump Not Signed
+  2029	
+  2030	
+  2031		Usage:	JNS	label
+  2032		Modifies flags: None
+  2033	
+  2034	
+  2035		Causes execution to branch to "label" if the Sign Flag is clear.
+  2036		Signed comparision.
+  2037	
+  2038	%				 Clocks			Size
+  2039	%	Operands	 808x  286   386   486		Bytes
+  2040	
+  2041		label:	jump	  16   7+m   7+m    3		 2-4
+  2042			no jump	  4	3     3	    1
+  2043	
+  2044	
+  2045		- see ~Instruction Timing~
+  2046	
+  2047	:jnp:jpo
+  2048	^JNP/JPO - Jump Not Parity / Jump Parity Odd
+  2049	
+  2050	
+  2051		Usage:	JNP	label
+  2052			JPO	label
+  2053		Modifies flags: None
+  2054	
+  2055	
+  2056		Causes execution to branch to "label" if the Parity Flag is clear.
+  2057		Unsigned comparision.
+  2058	
+  2059	%				 Clocks			Size
+  2060	%	Operands	 808x  286   386   486		Bytes
+  2061	
+  2062		label:	jump	  16   7+m   7+m    3		 2-4
+  2063			no jump	  4	3     3	    1
+  2064	
+  2065	
+  2066		- see ~Instruction Timing~
+  2067	
+  2068	:jo
+  2069	^JO - Jump on Overflow
+  2070	
+  2071	
+  2072		Usage:	JO  label
+  2073		Modifies flags: None
+  2074	
+  2075	
+  2076		Causes execution to branch to "label" if the Overflow Flag is set.
+  2077		Signed comparision.
+  2078	
+  2079	%				 Clocks			Size
+  2080	%	Operands	 808x  286   386   486		Bytes
+  2081	
+  2082		label:	jump	  16   7+m   7+m    3		 2-4
+  2083			no jump	  4	3     3	    1
+  2084	
+  2085	
+  2086		- see ~Instruction Timing~
+  2087	
+  2088	:jp:jpe
+  2089	^JP/JPE - Jump on Parity / Jump on Parity Even
+  2090	
+  2091	
+  2092		Usage:	JP	label
+  2093			JPE	label
+  2094		Modifies flags: None
+  2095	
+  2096	
+  2097		Causes execution to branch to "label" if the Parity Flag is set.
+  2098		Unsigned comparision.
+  2099	
+  2100	%				 Clocks			Size
+  2101	%	Operands	 808x  286   386   486		Bytes
+  2102	
+  2103		label:	jump	  16   7+m   7+m    3		 2-4
+  2104			no jump	  4	3     3	    1
+  2105	
+  2106	
+  2107		- see ~Instruction Timing~
+  2108	
+  2109	:js
+  2110	^JS - Jump Signed
+  2111	
+  2112	
+  2113		Usage:	JS	label
+  2114		Modifies flags: None
+  2115	
+  2116	
+  2117		Causes execution to branch to "label" if the Sign Flag is set.
+  2118		Signed comparision.
+  2119	
+  2120	%				 Clocks			Size
+  2121	%	Operands	 808x  286   386   486		Bytes
+  2122	
+  2123		label:	jump	  16   7+m   7+m    3		 2-4
+  2124			no jump	  4	3     3	    1
+  2125	
+  2126	
+  2127		- see ~Instruction Timing~
+  2128	
+  2129	:lahf
+  2130	^LAHF - Load Register AH From Flags
+  2131	
+  2132	
+  2133		Usage:	LAHF
+  2134		Modifies flags: None
+  2135	
+  2136		Copies bits 0-7 of the flags register into AH.	This includes flags
+  2137		AF, CF, PF, SF and ZF other bits are undefined.
+  2138	
+  2139	
+  2140	%				 Clocks			Size
+  2141	%	Operands	 808x  286   386   486		Bytes
+  2142	
+  2143		none		  4	2     2	    3		  1
+  2144	
+  2145	
+  2146		- see ~Instruction Timing~
+  2147	
+  2148	:lar
+  2149	^LAR - Load Access Rights  (286+ protected)
+  2150	
+  2151	
+  2152		Usage:	LAR	dest,src
+  2153		Modifies flags: ZF
+  2154	
+  2155	
+  2156		The high byte of the of the destination register is overwritten by
+  2157		the value of the access rights byte and the low order byte is zeroed
+  2158		depending on the selection in the source operand.  The Zero Flag is
+  2159		set if the load operation is successful.
+  2160	
+  2161	
+  2162	%				 Clocks			Size
+  2163	%	Operands	 808x  286   386   486		Bytes
+  2164	
+  2165		reg16,reg16	  -	14    15    11		  3
+  2166		reg32,reg32	  -	-     15    11		  3
+  2167		reg16,mem16	  -	16    16    11		 3-7
+  2168		reg32,mem32	  -	-     16    11		 3-7
+  2169	
+  2170	
+  2171		- see ~Instruction Timing~
+  2172	
+  2173	:lds
+  2174	^LDS - Load Pointer Using DS
+  2175	
+  2176		Usage:	LDS	dest,src
+  2177		Modifies flags: None
+  2178	
+  2179	
+  2180		Loads 32-bit pointer from memory source to destination register
+  2181		and DS.  The offset is placed in the destination register and the
+  2182		segment is placed in DS.  To use this instruction the word at the
+  2183		lower memory address must contain the offset and the word at the
+  2184		higher address must contain the segment.  This simplifies the loading
+  2185		of far pointers from the stack and the interrupt vector table.
+  2186	
+  2187	
+  2188	%				 Clocks			Size
+  2189	%	Operands	 808x  286   386   486		Bytes
+  2190	
+  2191		reg16,mem32	16+EA	7     7	    6		 2-4
+  2192		reg,mem (PM)	  -	-     22    12		 5-7
+  2193	
+  2194	
+  2195		- see ~Instruction Timing~
+  2196	
+  2197	:lea
+  2198	^LEA - Load Effective Address
+  2199	
+  2200	
+  2201		Usage:	LEA	dest,src
+  2202		Modifies flags: None
+  2203	
+  2204	
+  2205		Transfers offset address of "src" to the destination register.
+  2206	
+  2207	
+  2208	%				 Clocks			Size
+  2209	%	Operands	 808x  286   386   486		Bytes
+  2210	
+  2211		reg,mem 	 2+EA	3     2	    1		 2-4
+  2212	
+  2213	
+  2214		- see ~Instruction Timing~
+  2215	
+  2216	:leave
+  2217	^LEAVE - Restore Stack for Procedure Exit (80188+)
+  2218	
+  2219	
+  2220		Usage:	LEAVE
+  2221		Modifies flags: None
+  2222	
+  2223	
+  2224		Releases the local variables created by the previous ~ENTER~
+  2225		instruction by restoring SP and BP to their condition before
+  2226		the procedure stack frame was initialized.
+  2227	
+  2228	
+  2229	%				 Clocks			Size
+  2230	%	Operands	 808x  286   386   486		Bytes
+  2231	
+  2232		none		  -	5     4	    5		  1
+  2233	
+  2234	
+  2235		- see ~Instruction Timing~
+  2236	
+  2237	:les
+  2238	^LES - Load Pointer Using ES
+  2239	
+  2240		Usage:	LES	dest,src
+  2241		Modifies flags: None
+  2242	
+  2243	
+  2244		Loads 32-bit pointer from memory source to destination register
+  2245		and ES.  The offset is placed in the destination register and the
+  2246		segment is placed in ES.  To use this instruction the word at the
+  2247		lower memory address must contain the offset and the word at the
+  2248		higher address must contain the segment.  This simplifies the loading
+  2249		of far pointers from the stack and the interrupt vector table.
+  2250	
+  2251	
+  2252	%				 Clocks			Size
+  2253	%	Operands	 808x  286   386   486		Bytes
+  2254	
+  2255		reg,mem 	16+EA	7     7	    6		 2-4  (W88=24+EA)
+  2256		reg,mem (PM)	  -	-     22    12		 5-7
+  2257	
+  2258	
+  2259		- see ~Instruction Timing~
+  2260	
+  2261	:lfs
+  2262	^LFS - Load Pointer Using FS  (386+ only)
+  2263	
+  2264	
+  2265		Usage:	LFS	dest,src
+  2266		Modifies flags: None
+  2267	
+  2268	
+  2269		Loads 32-bit pointer from memory source to destination register
+  2270		and FS.  The offset is placed in the destination register and the
+  2271		segment is placed in FS.  To use this instruction the word at the
+  2272		lower memory address must contain the offset and the word at the
+  2273		higher address must contain the segment.  This simplifies the loading
+  2274		of far pointers from the stack and the interrupt vector table.
+  2275	
+  2276	
+  2277	%				 Clocks			Size
+  2278	%	Operands	 808x  286   386   486		Bytes
+  2279	
+  2280		reg,mem 	  -	-     7	    6		 5-7
+  2281		reg,mem (PM)	  -	-     22    12		 5-7
+  2282	
+  2283	
+  2284		- see ~Instruction Timing~
+  2285	
+  2286	:lgdt
+  2287	^LGDT - Load Global Descriptor Table  (286+ privileged)
+  2288	
+  2289	
+  2290		Usage:	LGDT	src
+  2291		Modifies flags: None
+  2292	
+  2293	
+  2294		Loads a value from an operand into the Global Descriptor Table
+  2295		(~GDT~) register.
+  2296	
+  2297	
+  2298	%				 Clocks			Size
+  2299	%	Operands	 808x  286   386   486		Bytes
+  2300	
+  2301		mem64		  -	11    11    11		  5
+  2302	
+  2303	
+  2304		- see ~Instruction Timing~
+  2305	
+  2306	:lidt
+  2307	^LIDT - Load Interrupt Descriptor Table  (286+ privileged)
+  2308	
+  2309	
+  2310		Usage:	LIDT	src
+  2311		Modifies flags: None
+  2312	
+  2313	
+  2314		Loads a value from an operand into the Interrupt Descriptor Table
+  2315		(IDT) register.
+  2316	
+  2317	
+  2318	%				 Clocks			Size
+  2319	%	Operands	 808x  286   386   486		Bytes
+  2320	
+  2321		mem64		  -	12    11    11		  5
+  2322	
+  2323	
+  2324		- see ~Instruction Timing~
+  2325	
+  2326	:lgs
+  2327	^LGS - Load Pointer Using GS  (386+ only)
+  2328	
+  2329	
+  2330		Usage:	LGS	dest,src
+  2331		Modifies flags: None
+  2332	
+  2333	
+  2334		Loads 32-bit pointer from memory source to destination register
+  2335		and GS.  The offset is placed in the destination register and the
+  2336		segment is placed in GS.  To use this instruction the word at the
+  2337		lower memory address must contain the offset and the word at the
+  2338		higher address must contain the segment.  This simplifies the loading
+  2339		of far pointers from the stack and the interrupt vector table.
+  2340	
+  2341	
+  2342	%				 Clocks			Size
+  2343	%	Operands	 808x  286   386   486		Bytes
+  2344	
+  2345		reg,mem 	  -	-     7	    6		 5-7
+  2346		reg,mem (PM)	  -	-     22    12		 5-7
+  2347	
+  2348	
+  2349		- see ~Instruction Timing~
+  2350	
+  2351	:lldt
+  2352	^LLDT - Load Local Descriptor Table  (286+ privileged)
+  2353	
+  2354	
+  2355		Usage:	LLDT	src
+  2356		Modifies flags: None
+  2357	
+  2358	
+  2359		Loads a value from an operand into the Local Descriptor Table 
+  2360		Register (LDTR).
+  2361	
+  2362	
+  2363	%				 Clocks			Size
+  2364	%	Operands	 808x  286   386   486		Bytes
+  2365	
+  2366		reg16		  -	17    20    11		  3
+  2367		mem16		  -	19    24    11		  5
+  2368	
+  2369	
+  2370		- see ~Instruction Timing~
+  2371	
+  2372	:lmsw
+  2373	^LMSW - Load Machine Status Word  (286+ privileged)
+  2374	
+  2375	
+  2376		Usage:	LMSW	src
+  2377		Modifies flags: None
+  2378	
+  2379	
+  2380		Loads the Machine Status Word (~MSW~) from data found at "src"
+  2381	
+  2382	
+  2383	%				 Clocks			Size
+  2384	%	Operands	 808x  286   386   486		Bytes
+  2385	
+  2386		reg16		  -	3     10    13		  3
+  2387		mem16		  -	6     13    13		  5
+  2388	
+  2389	
+  2390		- see ~Instruction Timing~
+  2391	
+  2392	:lock
+  2393	^LOCK - Lock Bus
+  2394	
+  2395	
+  2396		Usage:	LOCK
+  2397			LOCK: (386+ prefix)
+  2398		Modifies flags: None
+  2399	
+  2400	
+  2401		This instruction is a prefix that causes the CPU assert bus lock
+  2402		signal during the execution of the next instruction.  Used to
+  2403		avoid two processors from updating the same data location.  The
+  2404		286 always asserts lock during an XCHG with memory operands.  This
+  2405		should only be used to lock the bus prior to ~XCHG~, ~MOV~, ~IN~ and
+  2406		~OUT~ instructions.
+  2407	
+  2408	
+  2409	%				 Clocks			Size
+  2410	%	Operands	 808x  286   386   486		Bytes
+  2411	
+  2412		none		  2	0     0	    1		  1
+  2413	
+  2414	
+  2415		- see ~Instruction Timing~
+  2416	
+  2417	:lods:lodsb:lodsw:lodsd
+  2418	^LODS - Load String (Byte, Word or Double)
+  2419	
+  2420	
+  2421		Usage:	LODS	src
+  2422			LODSB
+  2423			LODSW
+  2424			LODSD  (386+ only)
+  2425		Modifies flags: None
+  2426	
+  2427		Transfers string element addressed by DS:SI (even if an operand is
+  2428		supplied) to the accumulator.	SI is incremented based on the size
+  2429		of the operand or based on the instruction used.  If the Direction
+  2430		Flag is set SI is decremented, if the Direction Flag is clear SI
+  2431		is incremented.  Use with REP prefixes.
+  2432	
+  2433	
+  2434	%				 Clocks			Size
+  2435	%	Operands	 808x  286   386   486		Bytes
+  2436	
+  2437		src		12/16	5     5	    5		  1
+  2438	
+  2439	
+  2440		- see ~Instruction Timing~
+  2441	
+  2442	:loop
+  2443	^LOOP - Decrement CX and Loop if CX Not Zero
+  2444	
+  2445	
+  2446		Usage:	LOOP	label
+  2447		Modifies flags: None
+  2448	
+  2449	
+  2450		Decrements CX by 1 and transfers control to "label" if CX is not
+  2451		Zero.  The "label" operand must be within -128 or 127 bytes of the
+  2452		instruction following the loop instruction
+  2453	
+  2454	
+  2455	%				 Clocks			Size
+  2456	%	Operands	 808x  286   386   486		Bytes
+  2457	
+  2458		label:	jump	  18   8+m  11+m    6		  2
+  2459			no jump	   5	4     ?	    2
+  2460	
+  2461	
+  2462		- see ~Instruction Timing~
+  2463	
+  2464	:loope:loopz
+  2465	^LOOPE/LOOPZ - Loop While Equal / Loop While Zero
+  2466	
+  2467	
+  2468		Usage:	LOOPE	label
+  2469			LOOPZ	label
+  2470		Modifies flags: None
+  2471	
+  2472		Decrements CX by 1 (without modifying the flags) and transfers
+  2473		control to "label" if CX != 0 and the Zero Flag is set.  The
+  2474		"label" operand must be within -128 or 127 bytes of the instruction
+  2475		following the loop instruction.
+  2476	
+  2477	
+  2478	%				 Clocks			Size
+  2479	%	Operands	 808x  286   386   486		Bytes
+  2480	
+  2481		label:	jump	  18   8+m  11+m    9		  2
+  2482			no jump	   5	4     ?	    6
+  2483	
+  2484	
+  2485		- see ~Instruction Timing~
+  2486	
+  2487	:loopnz:loopne
+  2488	^LOOPNZ/LOOPNE - Loop While Not Zero / Loop While Not Equal
+  2489	
+  2490	
+  2491		Usage:	LOOPNZ	label
+  2492			LOOPNE	label
+  2493		Modifies flags: None
+  2494	
+  2495		Decrements CX by 1 (without modifying the flags) and transfers
+  2496		control to "label" if CX != 0 and the Zero Flag is clear.  The
+  2497		"label" operand must be within -128 or 127 bytes of the instruction
+  2498		following the loop instruction.
+  2499	
+  2500	
+  2501	%				 Clocks			Size
+  2502	%	Operands	 808x  286   386   486		Bytes
+  2503	
+  2504		label:	jump	  19   8+m  11+m    9		  2
+  2505			no jump	   5	4     ?	    6
+  2506	
+  2507	
+  2508		- see ~Instruction Timing~
+  2509	
+  2510	:lsl
+  2511	^LSL - Load Segment Limit  (286+ protected)
+  2512	
+  2513	
+  2514		Usage:	LSL	dest,src
+  2515		Modifies flags: ZF
+  2516	
+  2517		Loads the segment limit of a selector into the destination register
+  2518		if the selector is valid and visible at the current privilege level.
+  2519		If loading is successful the Zero Flag is set, otherwise it is
+  2520		cleared.
+  2521	
+  2522	
+  2523	%				 Clocks			Size
+  2524	%	Operands	 808x  286   386   486		Bytes
+  2525	
+  2526		reg16,reg16	  -	14  20/25   10		  3
+  2527		reg32,reg32	  -	-   20/25   10		  3
+  2528		reg16,mem16	  -	16  21/26   10		  5
+  2529		reg32,mem32	  -	-   21/26   10		  5
+  2530	
+  2531	
+  2532		- 386 times are listed "byte granular" / "page granular"
+  2533		- see ~Instruction Timing~
+  2534	:lss
+  2535	^LSS - Load Pointer Using SS  (386+ only)
+  2536	
+  2537	
+  2538		Usage:	LSS	dest,src
+  2539		Modifies flags: None
+  2540	
+  2541	
+  2542		Loads 32-bit pointer from memory source to destination register
+  2543		and SS.  The offset is placed in the destination register and the
+  2544		segment is placed in SS.  To use this instruction the word at the
+  2545		lower memory address must contain the offset and the word at the
+  2546		higher address must contain the segment.  This simplifies the loading
+  2547		of far pointers from the stack and the interrupt vector table.
+  2548	
+  2549	
+  2550	%				 Clocks			Size
+  2551	%	Operands	 808x  286   386   486		Bytes
+  2552	
+  2553		reg,mem 	  -	-     7	    6		 5-7
+  2554		reg,mem (PM)	  -	-     22    12		 5-7
+  2555	
+  2556	
+  2557		- see ~Instruction Timing~
+  2558	
+  2559	:ltr
+  2560	^LTR - Load Task Register   (286+ privileged)
+  2561	
+  2562	
+  2563		Usage:	LTR	src
+  2564		Modifies flags: None
+  2565	
+  2566	
+  2567		Loads the current task register with the value specified in "src".
+  2568	
+  2569	
+  2570	%				 Clocks			Size
+  2571	%	Operands	 808x  286   386   486		Bytes
+  2572	
+  2573		reg16		  -	17    23    20		  3
+  2574		mem16		  -	19    27    20		  5
+  2575	
+  2576	
+  2577		- see ~Instruction Timing~
+  2578	
+  2579	:mov
+  2580	^MOV - Move Byte or Word
+  2581	
+  2582		Usage:	MOV	dest,src
+  2583		Modifies flags: None
+  2584	
+  2585		Copies byte or word from the source operand to the destination
+  2586		operand.  If the destination is SS interrupts are disabled except
+  2587		on early buggy 808x CPUs.  Some CPUs disable interrupts if the
+  2588		destination is any of the segment registers
+  2589	
+  2590	%				 Clocks			Size
+  2591	%	Operands	 808x  286   386   486		Bytes
+  2592	
+  2593		reg,reg 	  2	2     2	    1		  2
+  2594		mem,reg 	 9+EA	3     2	    1		 2-4  (W88=13+EA)
+  2595		reg,mem 	 8+EA	5     4	    1		 2-4  (W88=12+EA)
+  2596		mem,immed	10+EA	3     2	    1		 3-6  (W88=14+EA)
+  2597		reg,immed	  4	2     2	    1		 2-3
+  2598		mem,accum	  10	3     2	    1		  3   (W88=14)
+  2599		accum,mem	  10	5     4	    1		  3   (W88=14)
+  2600		segreg,reg16	  2	2     2	    3		  2
+  2601		segreg,mem16	 8+EA	5     5	    9		 2-4  (W88=12+EA)
+  2602		reg16,segreg	  2	2     2	    3		  2
+  2603		mem16,segreg	 9+EA	3     2	    3		 2-4  (W88=13+EA)
+  2604		reg32,CR0/CR2/CR3 -	-     6	    4
+  2605		CR0,reg32	  -	-     10    16
+  2606		CR2,reg32	  -	-     4     4 		  3
+  2607		CR3,reg32	  -	-     5     4 		  3
+  2608		reg32,DR0/DR1/DR2/DR3	-     22   10		  3
+  2609		reg32,DR6/DR7	  -     -     22   10		  3
+  2610		DR0/DR1/DR2/DR3,reg32   -     22   11		  3
+  2611		DR6/DR7,reg32	  -	-     16   11		  3
+  2612		reg32,TR6/TR7 	  -	-     12    4		  3
+  2613		TR6/TR7,reg32 	  -	-     12    4		  3
+  2614		reg32,TR3			    3
+  2615		TR3,reg32			    6
+  2616	
+  2617		- when the 386 special registers are used all operands are 32 bits
+  2618		- see ~Instruction Timing~
+  2619	
+  2620	:movs:movsb:movsw:movsd
+  2621	^MOVS - Move String (Byte or Word)
+  2622	
+  2623		Usage:	MOVS	dest,src
+  2624			MOVSB
+  2625			MOVSW
+  2626			MOVSD  (386+ only)
+  2627		Modifies flags: None
+  2628	
+  2629	
+  2630		Copies data from addressed by DS:SI (even if operands are given) to
+  2631		the location ES:DI destination and updates SI and DI based on the
+  2632		size of the operand or instruction used.  SI and DI are incremented
+  2633		when the Direction Flag is cleared and decremented when the Direction
+  2634		Flag is Set.  Use with ~REP~ prefixes.
+  2635	
+  2636	
+  2637	%				 Clocks			Size
+  2638	%	Operands	 808x  286   386   486		Bytes
+  2639	
+  2640		dest,src	  18	5     7	    7		  1   (W88=26)
+  2641	
+  2642	
+  2643		- see ~Instruction Timing~
+  2644	
+  2645	:movsx
+  2646	^MOVSX - Move with Sign Extend	(386+ only)
+  2647	
+  2648	
+  2649		Usage:	MOVSX	dest,src
+  2650		Modifies flags: None
+  2651	
+  2652	
+  2653		Copies the value of the source operand to the destination register
+  2654		with the sign extended.
+  2655	
+  2656	
+  2657	%				 Clocks			Size
+  2658	%	Operands	 808x  286   386   486		Bytes
+  2659	
+  2660		reg,reg 	  -	-     3	    3		  3
+  2661		reg,mem 	  -	-     6	    3		 3-7
+  2662	
+  2663	
+  2664		- see ~Instruction Timing~
+  2665	
+  2666	:movzx
+  2667	^MOVZX - Move with Zero Extend	(386+ only)
+  2668	
+  2669	
+  2670		Usage:	MOVZX	dest,src
+  2671		Modifies flags: None
+  2672	
+  2673	
+  2674		Copies the value of the source operand to the destination register
+  2675		with the zeroes extended.
+  2676	
+  2677	
+  2678	%				 Clocks			Size
+  2679	%	Operands	 808x  286   386   486		Bytes
+  2680	
+  2681		reg,reg 	  -	-     3	    3		  3
+  2682		reg,mem 	  -	-     6	    3		 3-7
+  2683	
+  2684	
+  2685		- see ~Instruction Timing~
+  2686	
+  2687	:mul
+  2688	^MUL - Unsigned Multiply
+  2689	
+  2690		Usage:	MUL	src
+  2691		Modifies flags: CF OF (AF,PF,SF,ZF undefined)
+  2692	
+  2693		Unsigned multiply of the accumulator by the source.  If "src" is
+  2694		a byte value, then AL is used as the other multiplicand and the
+  2695		result is placed in AX.  If "src" is a word value, then AX is
+  2696		multiplied by "src" and DX:AX receives the result.  If "src" is
+  2697		a double word value, then EAX is multiplied by "src" and EDX:EAX
+  2698		receives the result.  The 386+ uses an early out algorithm which
+  2699		makes multiplying any size value in EAX as fast as in the 8 or 16
+  2700		bit registers.
+  2701	
+  2702	%				 Clocks			Size
+  2703	%	Operands	 808x  286   386   486		Bytes
+  2704	
+  2705		reg8		70-77	13   9-14  13-18	  2
+  2706		reg16	       118-113	21   9-22  13-26	  2
+  2707		reg32		  -	-    9-38  13-42	 2-4
+  2708		mem8	    (76-83)+EA	16  12-17  13-18	 2-4
+  2709		mem16	  (124-139)+EA	24  12-25  13-26	 2-4
+  2710		mem32		  -	-   12-21  13-42	 2-4
+  2711	
+  2712	
+  2713		- see ~Instruction Timing~   ~IMUL~
+  2714	
+  2715	:neg
+  2716	^NEG - Two's Complement Negation
+  2717	
+  2718	
+  2719		Usage:	NEG	dest
+  2720		Modifies flags: AF CF OF PF SF ZF
+  2721	
+  2722	
+  2723		Subtracts the destination from 0 and saves the 2s complement of
+  2724		"dest" back into "dest".
+  2725	
+  2726	
+  2727	%				 Clocks			Size
+  2728	%	Operands	 808x  286   386   486		Bytes
+  2729	
+  2730		reg		  3	2     2	    1		  2
+  2731		mem		16+EA	7     6	    3		 2-4  (W88=24+EA)
+  2732	
+  2733	
+  2734		- see ~Instruction Timing~
+  2735	
+  2736	:nop
+  2737	^NOP - No Operation (90h)
+  2738	
+  2739	
+  2740		Usage:	NOP
+  2741		Modifies flags: None
+  2742	
+  2743	
+  2744		This is a do nothing instruction.  It results in occupation of both
+  2745		space and time and is most useful for patching code segments.
+  2746	
+  2747	
+  2748	%				 Clocks			Size
+  2749	%	Operands	 808x  286   386   486		Bytes
+  2750	
+  2751		none		  3	3     3	    1		  1
+  2752	
+  2753	
+  2754		- see ~Instruction Timing~
+  2755	
+  2756	:not
+  2757	^NOT - One's Compliment Negation (Logical NOT)
+  2758	
+  2759	
+  2760		Usage:	NOT	dest
+  2761		Modifies flags: None
+  2762	
+  2763		Inverts the bits of the "dest" operand forming the 1s complement.
+  2764	
+  2765	
+  2766	%				 Clocks			Size
+  2767	%	Operands	 808x  286   386   486		Bytes
+  2768	
+  2769		reg		  3	2     2	    1		  2
+  2770		mem		16+EA	7     6	    3		 2-4  (W88=24+EA)
+  2771	
+  2772	
+  2773		- see ~Instruction Timing~
+  2774	
+  2775	:or
+  2776	^OR - Inclusive Logical OR
+  2777	
+  2778		Usage:	OR	dest,src
+  2779		Modifies flags: CF OF PF SF ZF (AF undefined)
+  2780	
+  2781		Logical inclusive OR of the two operands returning the result in
+  2782		the destination.  Any bit set in either operand will be set in the
+  2783		destination.
+  2784	
+  2785	%				 Clocks			Size
+  2786	%	Operands	 808x  286   386   486		Bytes
+  2787	
+  2788		reg,reg 	  3	2     2	    1		  2
+  2789		mem,reg 	16+EA	7     7	    3		 2-4  (W88=24+EA)
+  2790		reg,mem 	 9+EA	7     6	    2		 2-4  (W88=13+EA)
+  2791		reg,immed	  4	3     2	    1		 3-4
+  2792		mem8,immed8	17+EA	7     7	    3		 3-6
+  2793		mem16,immed16	25+EA	7     7	    3		 3-6
+  2794		accum,immed	  4	3     2	    1		 2-3
+  2795	
+  2796	
+  2797		- see ~Instruction Timing~
+  2798	
+  2799	:out
+  2800	^OUT - Output Data to Port
+  2801	
+  2802	
+  2803		Usage:	OUT	port,accum
+  2804		Modifies flags: None
+  2805	
+  2806		Transfers byte in AL,word in AX or dword in EAX to the specified
+  2807		hardware port address.  If the port number is in the range of 0-255
+  2808		it can be specified as an immediate.  If greater than 255 then the
+  2809		port number must be specified in DX.  Since the PC only decodes 10
+  2810		bits of the port address, values over 1023 can only be decoded by
+  2811		third party vendor equipment and also map to the port range 0-1023.
+  2812	
+  2813	
+  2814	%				 Clocks			Size
+  2815	%	Operands	 808x  286   386    486		Bytes
+  2816	
+  2817		immed8,accum	10/14	3     10     16		  2
+  2818		immed8,accum (PM) -    	-    4/24 11/31/29	  2
+  2819		DX,accum	 8/12	3     11     16		  1
+  2820		DX,accum (PM)	  -    	-    5/25 10/30/29	  1
+  2821	
+  2822	
+  2823		- 386+ protected mode timings depend on privilege levels.
+  2824	
+  2825		  first number is the timing when:    CPL ó IOPL
+  2826		  second number is the timing when:   CPL > IOPL
+  2827		  third number is the timing when:    virtual mode on 486 processor
+  2828	
+  2829		- see ~Instruction Timing~
+  2830	
+  2831	:outs:outsb:outsw:outsd
+  2832	^OUTS - Output String to Port  (80188+ only)
+  2833	
+  2834	
+  2835		Usage:	OUTS	port,src
+  2836			OUTSB
+  2837			OUTSW
+  2838			OUTSD  (386+ only)
+  2839		Modifies flags: None
+  2840	
+  2841	
+  2842		Transfers a byte, word or doubleword from "src" to the hardware
+  2843		port specified in DX.  For instructions with no operands the "src"
+  2844		is located at DS:SI and SI is incremented or decremented by the
+  2845		size of the operand or the size dictated by the instruction format.
+  2846		When the Direction Flag is set SI is decremented, when clear, SI is
+  2847		incremented.  If the port number is in the range of 0-255 it can
+  2848		be specified as an immediate.  If greater than 255 then the port
+  2849		number must be specified in DX.  Since the PC only decodes 10 bits
+  2850		of the port address, values over 1023 can only be decoded by third
+  2851		party vendor equipment and also map to the port range 0-1023.
+  2852	
+  2853	
+  2854	%				 Clocks			Size
+  2855	%	Operands	 808x  286   386    486		Bytes
+  2856	
+  2857		port,src	  -	5     14     17		  1
+  2858		port,src (PM)	  -	-    8/28 10/32/30	  1
+  2859	
+  2860	
+  2861		- 386+ protected mode timings depend on privilege levels.
+  2862	
+  2863		  first number is the timing when:    CPL ó IOPL
+  2864		  second number is the timing when:   CPL > IOPL
+  2865		  third number is the timing when:    virtual mode on 486 processor
+  2866	
+  2867		- see ~Instruction Timing~
+  2868	
+  2869	:pop
+  2870	^POP - Pop Word off Stack
+  2871	
+  2872	
+  2873		Usage:	POP	dest
+  2874		Modifies flags: None
+  2875	
+  2876	
+  2877		Transfers word at the current stack top (SS:SP) to the destination
+  2878		then increments SP by two to point to the new stack top.  CS is not
+  2879		a valid destination.
+  2880	
+  2881	
+  2882	%				 Clocks			Size
+  2883	%	Operands	 808x  286   386   486		Bytes
+  2884	
+  2885		reg16		  8	5     4     4		  1
+  2886		reg32		  4	-     -	    4		  1
+  2887		segreg		  8	5     7	    3		  1
+  2888		mem16		17+EA	5     5     6		 2-4
+  2889		mem32		  5	-     -	    6		 2-4
+  2890	
+  2891	
+  2892		- see ~Instruction Timing~
+  2893	
+  2894	:popa:popad
+  2895	^POPA/POPAD - Pop All Registers onto Stack  (80188+ only)
+  2896	
+  2897	
+  2898		Usage:	POPA
+  2899			POPAD  (386+ only)
+  2900		Modifies flags: None
+  2901	
+  2902	
+  2903		Pops the top 8 words off the stack into the 8 general purpose 16/32
+  2904		bit registers.	 Registers are popped in the following order: (E)DI,
+  2905		(E)SI, (E)BP, (E)SP, (E)DX, (E)CX and (E)AX.  The (E)SP value popped
+  2906		from the stack is actually discarded.
+  2907	
+  2908	
+  2909	%				 Clocks			Size
+  2910	%	Operands	 808x  286   386   486		Bytes
+  2911	
+  2912		none		  -	19    24    9		  1
+  2913	
+  2914	
+  2915		- see ~Instruction Timing~
+  2916	
+  2917	:popf:popfd
+  2918	^POPF/POPFD - Pop Flags off Stack
+  2919	
+  2920	
+  2921		Usage:	POPF
+  2922			POPFD  (386+ only)
+  2923		Modifies flags: all flags
+  2924	
+  2925	
+  2926		Pops word/doubleword from stack into the Flags Register and then
+  2927		increments SP by 2 (for POPF) or 4 (for POPFD).
+  2928	
+  2929	
+  2930	%				 Clocks			Size
+  2931	%	Operands	 808x  286   386   486		Bytes
+  2932	
+  2933		none		 8/12	5     5	    9		  1  (W88=12)
+  2934		none  (PM)	  -	-     5     6		  1
+  2935	
+  2936	
+  2937		- see ~Instruction Timing~
+  2938	
+  2939	:push
+  2940	^PUSH - Push Word onto Stack
+  2941	
+  2942		Usage:	PUSH	src
+  2943			PUSH	immed	(80188+ only)
+  2944		Modifies flags: None
+  2945	
+  2946	
+  2947		Decrements SP by the size of the operand (two or four, byte values
+  2948		are sign extended) and transfers one word from source to the stack
+  2949		top (SS:SP).
+  2950	
+  2951	%				 Clocks			Size
+  2952	%	Operands	 808x  286   386   486		Bytes
+  2953	
+  2954		reg16	 	11/15	3     2     1		  1
+  2955		reg32	 	  -	-     2     1		  1
+  2956		mem16		16+EA	5     5     4	 	 2-4  (W88=24+EA)
+  2957		mem32	   	  -	-     5     4		 2-4
+  2958		segreg		10/14	3     2     3		  1
+  2959		immed		  -	3     2     1		 2-3
+  2960	
+  2961	
+  2962		- see ~Instruction Timing~
+  2963	
+  2964	:pusha:pushad
+  2965	^PUSHA/PUSHAD - Push All Registers onto Stack  (80188+ only)
+  2966	
+  2967	
+  2968		Usage:	PUSHA
+  2969			PUSHAD	(386+ only)
+  2970		Modifies flags: None
+  2971	
+  2972	
+  2973		Pushes all general purpose registers onto the stack in the following
+  2974		order: (E)AX, (E)CX, (E)DX, (E)BX, (E)SP, (E)BP, (E)SI, (E)DI.	The
+  2975		value of SP is the value before the actual push of SP.
+  2976	
+  2977	
+  2978	%				 Clocks			Size
+  2979	%	Operands	 808x  286   386   486		Bytes
+  2980	
+  2981		none		  -	19    24    11		  1
+  2982	
+  2983	
+  2984		- see ~Instruction Timing~
+  2985	
+  2986	:pushf:pushfd
+  2987	^PUSHF/PUSHFD - Push Flags onto Stack
+  2988	
+  2989	
+  2990		Usage:	PUSHF
+  2991			PUSHFD	(386+ only)
+  2992		Modifies flags: None
+  2993	
+  2994	
+  2995		Transfers the Flags Register onto the stack.  PUSHF saves a 16 bit
+  2996		value while PUSHFD saves a 32 bit value.
+  2997	
+  2998	
+  2999	%				 Clocks			Size
+  3000	%	Operands	 808x  286   386   486		Bytes
+  3001	
+  3002		none		10/14	3     4	    4		  1
+  3003		none  (PM)	  -	-     4	    3		  1
+  3004	
+  3005	
+  3006		- see ~Instruction Timing~
+  3007	
+  3008	:rcl
+  3009	^RCL - Rotate Through Carry Left
+  3010	
+  3011		Usage:	RCL	dest,count
+  3012		Modifies flags: CF OF
+  3013	
+  3014	
+  3015		Rotates the bits in the destination to the left "count" times with
+  3016		all data pushed out the left side re-entering on the right.  The
+  3017		Carry Flag holds the last bit rotated out.
+  3018	
+  3019	%				 Clocks			Size
+  3020	%	Operands	 808x  286   386   486		Bytes
+  3021	
+  3022		reg,1		  2	2     9	    3		 2
+  3023		mem,1		15+EA	7     10    4		2-4  (W88=23+EA)
+  3024		reg,CL		 8+4n  5+n    9	   8-30		 2
+  3025		mem,CL	      20+EA+4n 8+n    10   9-31		2-4  (W88=28+EA+4n)
+  3026		reg,immed8	  -    5+n     9   8-30		 3
+  3027		mem,immed8	  -    8+n    10   9-31		3-5
+  3028	
+  3029	
+  3030		- see ~Instruction Timing~
+  3031	
+  3032	:rcr
+  3033	^RCR - Rotate Through Carry Right
+  3034	
+  3035		Usage:	RCR	dest,count
+  3036		Modifies flags: CF OF
+  3037	
+  3038	
+  3039		Rotates the bits in the destination to the right "count" times with
+  3040		all data pushed out the right side re-entering on the left.  The
+  3041		Carry Flag holds the last bit rotated out.
+  3042	
+  3043	%				 Clocks			Size
+  3044	%	Operands	 808x  286   386   486		Bytes
+  3045	
+  3046		reg,1		  2	2     9	    3		 2
+  3047		mem,1		15+EA	7     10    4		2-4   (W88=23+EA)
+  3048		reg,CL		 8+4n  5+n    9	   8-30		 2
+  3049		mem,CL	      20+EA+4n 8+n    10   9-31		2-4   (W88=28+EA+4n)
+  3050		reg,immed8	  -    5+n    9	   8-30		 3
+  3051		mem,immed8	  -    8+n    10   9-31		3-5
+  3052	
+  3053	
+  3054		- see ~Instruction Timing~
+  3055	
+  3056	:rep
+  3057	^REP - Repeat String Operation
+  3058	
+  3059		Usage:	REP
+  3060		Modifies flags: None
+  3061	
+  3062		Repeats execution of string instructions while CX != 0.  After
+  3063		each string operation, CX is decremented and the Zero Flag is
+  3064		tested.  The combination of a repeat prefix and a segment override
+  3065		on CPU's before the 386 may result in errors if an interrupt occurs
+  3066		before CX=0.  The following code shows code that is susceptible to
+  3067		this and how to avoid it:
+  3068	
+  3069		 again:  rep movs  byte ptr ES:[DI],ES:[SI]   ; vulnerable instr.
+  3070			     jcxz  next 	     ; continue if REP successful
+  3071			     loop  again	     ; interrupt goofed count
+  3072		 next:
+  3073	
+  3074	%				 Clocks			Size
+  3075	%	Operands	 808x  286   386   486		Bytes
+  3076	
+  3077		none		  2	2     2			  1
+  3078	
+  3079	
+  3080		- see ~Instruction Timing~   ~REPE~   ~REPNE~
+  3081	:repe:repz
+  3082	^REPE/REPZ - Repeat Equal / Repeat Zero
+  3083	
+  3084	
+  3085		Usage:	REPE
+  3086			REPZ
+  3087		Modifies flags: None
+  3088	
+  3089	
+  3090		Repeats execution of string instructions while CX != 0 and the Zero
+  3091		Flag is set.  CX is decremented and the Zero Flag tested after
+  3092		each string operation.	 The combination of a repeat prefix and a
+  3093		segment override on processors other than the 386 may result in
+  3094		errors if an interrupt occurs before CX=0.
+  3095	
+  3096	
+  3097	%				 Clocks			Size
+  3098	%	Operands	 808x  286   386   486		Bytes
+  3099	
+  3100		none		  2	2     2			  1
+  3101	
+  3102	
+  3103		- see ~Instruction Timing~
+  3104	
+  3105	:repne:repnz
+  3106	^REPNE/REPNZ - Repeat Not Equal / Repeat Not Zero
+  3107	
+  3108	
+  3109		Usage:	REPNE
+  3110			REPNZ
+  3111		Modifies flags: None
+  3112	
+  3113	
+  3114		Repeats execution of string instructions while CX != 0 and the Zero
+  3115		Flag is clear.	 CX is decremented and the Zero Flag tested after
+  3116		each string operation.	 The combination of a repeat prefix and a
+  3117		segment override on processors other than the 386 may result in
+  3118		errors if an interrupt occurs before CX=0.
+  3119	
+  3120	
+  3121	%				 Clocks			Size
+  3122	%	Operands	 808x  286   386   486		Bytes
+  3123	
+  3124		none		  2	2     2			  1
+  3125	
+  3126	
+  3127		- see ~Instruction Timing~
+  3128	
+  3129	:ret:retf:retn
+  3130	^RET/RETF - Return From Procedure
+  3131	
+  3132		Usage:	RET	nBytes
+  3133			RETF	nBytes
+  3134			RETN	nBytes
+  3135		Modifies flags: None
+  3136	
+  3137		Transfers control from a procedure back to the instruction address
+  3138		saved on the stack.  "n bytes" is an optional number of bytes to
+  3139		release.  Far returns pop the IP followed by the CS, while near
+  3140		returns pop only the IP register.
+  3141	
+  3142	%				 Clocks			Size
+  3143	%	Operands	 808x  286    386   486		Bytes
+  3144	
+  3145		retn		16/20  11+m  10+m    5		  1
+  3146		retn immed	20/24  11+m  10+m    5		  3
+  3147		retf		26/34  15+m  18+m    13		  1
+  3148		retf (PM, same priv.)	-    32+m    18		  1
+  3149		retf (PM, lesser priv.)	-      68    33		  1
+  3150	      	retf immed	25/33  15+m  18+m    14		  3
+  3151		retf immed (PM, same priv.)  32+m    17		  1
+  3152		retf immed (PM, lesser priv.)  68    33		  1
+  3153	
+  3154	
+  3155		- see ~Instruction Timing~
+  3156	
+  3157	:rol
+  3158	^ROL - Rotate Left
+  3159	
+  3160		Usage:	ROL	dest,count
+  3161		Modifies flags: CF OF
+  3162	
+  3163	
+  3164		Rotates the bits in the destination to the left "count" times with
+  3165		all data pushed out the left side re-entering on the right.  The
+  3166		Carry Flag will contain the value of the last bit rotated out.
+  3167	
+  3168	%				 Clocks			Size
+  3169	%	Operands	 808x  286   386   486		Bytes
+  3170	
+  3171		reg,1		  2	2     3	    3		  2
+  3172		mem,1		15+EA	7     7	    4		 2-4  (W88=23+EA)
+  3173		reg,CL		 8+4n  5+n    3	    3		  2
+  3174		mem,CL	      20+EA+4n 8+n    7	    4		 2-4  (W88=28+EA+4n)
+  3175		reg,immed8	  -    5+n    3	    2		  3
+  3176		mem,immed8	  -    8+n    7	    4		 3-5
+  3177	
+  3178	
+  3179		- see ~Instruction Timing~
+  3180	
+  3181	:ror
+  3182	^ROR - Rotate Right
+  3183	
+  3184		Usage:	ROR	dest,count
+  3185		Modifies flags: CF OF
+  3186	
+  3187	
+  3188		Rotates the bits in the destination to the right "count" times with
+  3189		all data pushed out the right side re-entering on the left.  The
+  3190		Carry Flag will contain the value of the last bit rotated out.
+  3191	
+  3192	%				 Clocks			Size
+  3193	%	Operands	 808x  286   386   486		Bytes
+  3194	
+  3195		reg,1		  2	2     3	    3		  2
+  3196		mem,1		15+EA	7     7	    4		 2-4  (W88=23+EA)
+  3197		reg,CL		 8+4n  5+n    3	    3		  2
+  3198		mem,CL	      20+EA+4n 8+n    7	    4		 2-4  (W88=28+EA+4n)
+  3199		reg,immed8	  -    5+n    3	    2		  3
+  3200		mem,immed8	  -    8+n    7	    4		 3-5
+  3201	
+  3202	
+  3203		- see ~Instruction Timing~
+  3204	
+  3205	:sahf
+  3206	^SAHF - Store AH Register into FLAGS
+  3207	
+  3208	
+  3209		Usage:	SAHF
+  3210		Modifies flags: AF CF PF SF ZF
+  3211	
+  3212	
+  3213		Transfers bits 0-7 of AH into the Flags Register.  This includes
+  3214		AF, CF, PF, SF and ZF.
+  3215	
+  3216	
+  3217	%				 Clocks			Size
+  3218	%	Operands	 808x  286   386   486		Bytes
+  3219	
+  3220		none		  4	2     3	    2		  1
+  3221	
+  3222	
+  3223		- see ~Instruction Timing~
+  3224	
+  3225	:sal:shl
+  3226	^SAL/SHL - Shift Arithmetic Left / Shift Logical Left
+  3227	
+  3228		Usage:	SAL	dest,count
+  3229			SHL	dest,count
+  3230		Modifies flags: CF OF PF SF ZF (AF undefined)
+  3231	
+  3232	
+  3233		Shifts the destination left by "count" bits with zeroes shifted
+  3234		in on right.  The Carry Flag contains the last bit shifted out.
+  3235	
+  3236	%				 Clocks			Size
+  3237	%	Operands	 808x  286   386   486		Bytes
+  3238	
+  3239		reg,1		  2	2     3	    3		 2
+  3240		mem,1		15+EA	7     7	    4		2-4  (W88=23+EA)
+  3241		reg,CL		 8+4n  5+n    3	    3		 2
+  3242		mem,CL	      20+EA+4n 8+n    7	    4		2-4  (W88=28+EA+4n)
+  3243		reg,immed8	  -    5+n    3	    2		 3
+  3244		mem,immed8	  -    8+n    7	    4		3-5
+  3245	
+  3246	
+  3247		- see ~Instruction Timing~
+  3248	
+  3249	:sar
+  3250	^SAR - Shift Arithmetic Right
+  3251	
+  3252		Usage:	SAR	dest,count
+  3253		Modifies flags: CF OF PF SF ZF (AF undefined)
+  3254	
+  3255	
+  3256		Shifts the destination right by "count" bits with the current sign
+  3257		bit replicated in the leftmost bit.  The Carry Flag contains the
+  3258		last bit shifted out.
+  3259	
+  3260	%				 Clocks			Size
+  3261	%	Operands	 808x  286   386   486		Bytes
+  3262	
+  3263		reg,1		  2	2     3	    3		  2
+  3264		mem,1		15+EA	7     7	    4		 2-4  (W88=23+EA)
+  3265		reg,CL		 8+4n  5+n    3	    3		  2
+  3266		mem,CL	      20+EA+4n 8+n    7	    4		 2-4  (W88=28+EA+4n)
+  3267		reg,immed8	  -    5+n    3	    2		  3
+  3268		mem,immed8	  -    8+n    7	    4		 3-5
+  3269	
+  3270	
+  3271		- see ~Instruction Timing~
+  3272	
+  3273	:sbb
+  3274	^SBB - Subtract with Borrow
+  3275	
+  3276		Usage:	SBB	dest,src
+  3277		Modifies flags: AF CF OF PF SF ZF
+  3278	
+  3279	
+  3280		Subtracts the source from the destination, and subtracts 1 extra if
+  3281		the Carry Flag is set.	 Results are returned in "dest".
+  3282	
+  3283	
+  3284	%				 Clocks			Size
+  3285	%	Operands	 808x  286   386   486		Bytes
+  3286	
+  3287		reg,reg 	  3	2     2	    1		  2
+  3288		mem,reg 	16+EA	7     6	    3		 2-4  (W88=24+EA)
+  3289		reg,mem 	 9+EA	7     7	    2		 2-4  (W88=13+EA)
+  3290		reg,immed	  4	3     2	    1		 3-4
+  3291		mem,immed	17+EA	7     7	    3		 3-6  (W88=25+EA)
+  3292		accum,immed	  4	3     2	    1		 2-3
+  3293	
+  3294	
+  3295		- see ~Instruction Timing~
+  3296	
+  3297	:scas:scasb:scasw:scasd
+  3298	^SCAS - Scan String  (Byte, Word or Doubleword)
+  3299	
+  3300	
+  3301		Usage:	SCAS	string
+  3302			SCASB
+  3303			SCASW
+  3304			SCASD	(386+ only)
+  3305		Modifies flags: AF CF OF PF SF ZF
+  3306	
+  3307	
+  3308		Compares value at ES:DI (even if operand is specified) from the
+  3309		accumulator and sets the flags similar to a subtraction.  DI is
+  3310		incremented/decremented based on the instruction format (or
+  3311		operand size) and the state of the Direction Flag.  Use with REP
+  3312		prefixes.
+  3313	
+  3314	%				 Clocks			Size
+  3315	%	Operands	 808x  286   386   486		Bytes
+  3316	
+  3317		string		  15	7     7	    6		  1  (W88=19)
+  3318	
+  3319	
+  3320		- see ~Instruction Timing~
+  3321	
+  3322	:setae:setnb
+  3323	^SETAE/SETNB - Set if Above or Equal / Set if Not Below
+  3324	^(unsigned, 386+ only)
+  3325	
+  3326	
+  3327		Usage:	SETAE	dest
+  3328			SETNB	dest
+  3329		Modifies flags: none
+  3330	
+  3331	
+  3332		Sets the byte in the operand to 1 if the Carry Flag is clear
+  3333		otherwise sets the operand to 0.
+  3334	
+  3335	
+  3336	%				 Clocks			Size
+  3337	%	Operands	 808x  286   386   486		Bytes
+  3338	
+  3339		reg8		  -	-     4	    3		  3
+  3340		mem8		  -	-     5	    4		  3
+  3341	
+  3342	
+  3343		- see ~Instruction Timing~
+  3344	
+  3345	:setb:setnae
+  3346	^SETB/SETNAE - Set if Below / Set if Not Above or Equal
+  3347	^(unsigned, 386+ only)
+  3348	
+  3349	
+  3350		Usage:	SETB	dest
+  3351			SETNAE	dest
+  3352		Modifies flags: none
+  3353	
+  3354	
+  3355		Sets the byte in the operand to 1 if the Carry Flag is set
+  3356		otherwise sets the operand to 0.
+  3357	
+  3358	
+  3359	%				 Clocks			Size
+  3360	%	Operands	 808x  286   386   486		Bytes
+  3361	
+  3362		reg8		  -	-     4	    3		  3
+  3363		mem8		  -	-     5	    4		  3
+  3364	
+  3365	
+  3366		- see ~Instruction Timing~
+  3367	
+  3368	:setbe:setna
+  3369	^SETBE/SETNA - Set if Below or Equal / Set if Not Above
+  3370	^(unsigned, 386+ only)
+  3371	
+  3372	
+  3373		Usage:	SETBE	dest
+  3374			SETNA	dest
+  3375		Modifies flags: none
+  3376	
+  3377	
+  3378		Sets the byte in the operand to 1 if the Carry Flag or the Zero
+  3379		Flag is set, otherwise sets the operand to 0.
+  3380	
+  3381	
+  3382	%				 Clocks			Size
+  3383	%	Operands	 808x  286   386   486		Bytes
+  3384	
+  3385		reg8		  -	-     4	    3		  3
+  3386		mem8		  -	-     5	    4		  3
+  3387	
+  3388	
+  3389		- see ~Instruction Timing~
+  3390	
+  3391	:sete:setz
+  3392	^SETE/SETZ - Set if Equal / Set if Zero (386+ only)
+  3393	
+  3394	
+  3395		Usage:	SETE	dest
+  3396			SETZ	dest
+  3397		Modifies flags: none
+  3398	
+  3399	
+  3400		Sets the byte in the operand to 1 if the Zero Flag is set,
+  3401		otherwise sets the operand to 0.
+  3402	
+  3403	
+  3404	%				 Clocks			Size
+  3405	%	Operands	 808x  286   386   486		Bytes
+  3406	
+  3407		reg8		  -	-     4	    3		  3
+  3408		mem8		  -	-     5	    4		  3
+  3409	
+  3410	
+  3411		- see ~Instruction Timing~
+  3412	
+  3413	:setne:setnz
+  3414	^SETNE/SETNZ - Set if Not Equal / Set if Not Zero (386+ only)
+  3415	
+  3416	
+  3417		Usage:	SETNE	dest
+  3418			SETNZ	dest
+  3419		Modifies flags: none
+  3420	
+  3421	
+  3422		Sets the byte in the operand to 1 if the Zero Flag is clear,
+  3423		otherwise sets the operand to 0.
+  3424	
+  3425	
+  3426	%				 Clocks			Size
+  3427	%	Operands	 808x  286   386   486		Bytes
+  3428	
+  3429		reg8		  -	-     4	    3		  3
+  3430		mem8		  -	-     5	    4		  3
+  3431	
+  3432	
+  3433		- see ~Instruction Timing~
+  3434	
+  3435	:setl:setnge
+  3436	^SETL/SETNGE - Set if Less / Set if Not Greater or Equal
+  3437	^(signed, 386+ only)
+  3438	
+  3439	
+  3440		Usage:	SETL	dest
+  3441			SETNGE	dest
+  3442		Modifies flags: none
+  3443	
+  3444	
+  3445		Sets the byte in the operand to 1 if the Sign Flag is not equal
+  3446		to the Overflow Flag, otherwise sets the operand to 0.
+  3447	
+  3448	
+  3449	%				 Clocks			Size
+  3450	%	Operands	 808x  286   386   486		Bytes
+  3451	
+  3452		reg8		  -	-     4	    3		  3
+  3453		mem8		  -	-     5	    4		  3
+  3454	
+  3455	
+  3456		- see ~Instruction Timing~
+  3457	
+  3458	:setge:setnl
+  3459	^SETGE/SETNL - Set if Greater or Equal / Set if Not Less
+  3460	^(signed, 386+ only)
+  3461	
+  3462	
+  3463		Usage:	SETGE	dest
+  3464			SETNL	dest
+  3465		Modifies flags: none
+  3466	
+  3467	
+  3468		Sets the byte in the operand to 1 if the Sign Flag equals the
+  3469		Overflow Flag, otherwise sets the operand to 0.
+  3470	
+  3471	
+  3472	%				 Clocks			Size
+  3473	%	Operands	 808x  286   386   486		Bytes
+  3474	
+  3475		reg8		  -	-     4	    3		  3
+  3476		mem8		  -	-     5	    4		  3
+  3477	
+  3478	
+  3479		- see ~Instruction Timing~
+  3480	
+  3481	:setle:setng
+  3482	^SETLE/SETNG - Set if Less or Equal / Set if Not greater or Equal
+  3483	^(signed, 386+ only)
+  3484	
+  3485	
+  3486		Usage:	SETLE	dest
+  3487			SETNG	dest
+  3488		Modifies flags: none
+  3489	
+  3490	
+  3491		Sets the byte in the operand to 1 if the Zero Flag is set or the
+  3492		Sign Flag is not equal to the Overflow Flag,  otherwise sets the
+  3493		operand to 0.
+  3494	
+  3495	
+  3496	%				 Clocks			Size
+  3497	%	Operands	 808x  286   386   486		Bytes
+  3498	
+  3499		reg8		  -	-     4	    3		  3
+  3500		mem8		  -	-     5	    4		  3
+  3501	
+  3502	
+  3503		- see ~Instruction Timing~
+  3504	
+  3505	:setg:setnle
+  3506	^SETG/SETNLE - Set if Greater / Set if Not Less or Equal
+  3507	^(signed, 386+ only)
+  3508	
+  3509	
+  3510		Usage:	SETG	dest
+  3511			SETNLE	dest
+  3512		Modifies flags: none
+  3513	
+  3514	
+  3515		Sets the byte in the operand to 1 if the Zero Flag is clear or the
+  3516		Sign Flag equals to the Overflow Flag,	otherwise sets the operand
+  3517		to 0.
+  3518	
+  3519	
+  3520	%				 Clocks			Size
+  3521	%	Operands	 808x  286   386   486		Bytes
+  3522	
+  3523		reg8		  -	-     4	    3		  3
+  3524		mem8		  -	-     5	    4		  3
+  3525	
+  3526	
+  3527		- see ~Instruction Timing~
+  3528	
+  3529	:sets
+  3530	^SETS - Set if Signed (386+ only)
+  3531	
+  3532	
+  3533		Usage:	SETS	dest
+  3534		Modifies flags: none
+  3535	
+  3536	
+  3537		Sets the byte in the operand to 1 if the Sign Flag is set, otherwise
+  3538		sets the operand to 0.
+  3539	
+  3540	
+  3541	%				 Clocks			Size
+  3542	%	Operands	 808x  286   386   486		Bytes
+  3543	
+  3544		reg8		  -	-     4	    3		  3
+  3545		mem8		  -	-     5	    4		  3
+  3546	
+  3547	
+  3548		- see ~Instruction Timing~
+  3549	
+  3550	:setns
+  3551	^SETNS - Set if Not Signed (386+ only)
+  3552	
+  3553	
+  3554		Usage:	SETNS	dest
+  3555		Modifies flags: none
+  3556	
+  3557	
+  3558		Sets the byte in the operand to 1 if the Sign Flag is clear,
+  3559		otherwise sets the operand to 0.
+  3560	
+  3561	
+  3562	%				 Clocks			Size
+  3563	%	Operands	 808x  286   386   486		Bytes
+  3564	
+  3565		reg8		  -	-     4	    3		  3
+  3566		mem8		  -	-     5	    4		  3
+  3567	
+  3568	
+  3569		- see ~Instruction Timing~
+  3570	
+  3571	:setc
+  3572	^SETC - Set if Carry (386+ only)
+  3573	
+  3574	
+  3575		Usage:	SETC	dest
+  3576		Modifies flags: none
+  3577	
+  3578	
+  3579		Sets the byte in the operand to 1 if the Carry Flag is set,
+  3580		otherwise sets the operand to 0.
+  3581	
+  3582	
+  3583	%				 Clocks			Size
+  3584	%	Operands	 808x  286   386   486		Bytes
+  3585	
+  3586		reg8		  -	-     4	    3		  3
+  3587		mem8		  -	-     5	    4		  3
+  3588	
+  3589	
+  3590		- see ~Instruction Timing~
+  3591	
+  3592	:setnc
+  3593	^SETNC - Set if Not Carry (386+ only)
+  3594	
+  3595	
+  3596		Usage:	SETNC	dest
+  3597		Modifies flags: none
+  3598	
+  3599	
+  3600		Sets the byte in the operand to 1 if the Carry Flag is clear,
+  3601		otherwise sets the operand to 0.
+  3602	
+  3603	
+  3604	%				 Clocks			Size
+  3605	%	Operands	 808x  286   386   486		Bytes
+  3606	
+  3607		reg8		  -	-     4	    3		  3
+  3608		mem8		  -	-     5	    4		  3
+  3609	
+  3610	
+  3611		- see ~Instruction Timing~
+  3612	
+  3613	:seto
+  3614	^SETO - Set if Overflow (386+ only)
+  3615	
+  3616	
+  3617		Usage:	SETO	dest
+  3618		Modifies flags: none
+  3619	
+  3620	
+  3621		Sets the byte in the operand to 1 if the Overflow Flag is set,
+  3622		otherwise sets the operand to 0.
+  3623	
+  3624	
+  3625	%				 Clocks			Size
+  3626	%	Operands	 808x  286   386   486		Bytes
+  3627	
+  3628		reg8		  -	-     4	    3		  3
+  3629		mem8		  -	-     5	    4		  3
+  3630	
+  3631	
+  3632		- see ~Instruction Timing~
+  3633	
+  3634	:setno
+  3635	^SETNO - Set if Not Overflow (386+ only)
+  3636	
+  3637	
+  3638		Usage:	SETNO	dest
+  3639		Modifies flags: none
+  3640	
+  3641	
+  3642		Sets the byte in the operand to 1 if the Overflow Flag is clear,
+  3643		otherwise sets the operand to 0.
+  3644	
+  3645	
+  3646	%				 Clocks			Size
+  3647	%	Operands	 808x  286   386   486		Bytes
+  3648	
+  3649		reg8		  -	-     4	    3		  3
+  3650		mem8		  -	-     5	    4		  3
+  3651	
+  3652	
+  3653		- see ~Instruction Timing~
+  3654	
+  3655	:setp:setpe
+  3656	^SETP/SETPE - Set if Parity / Set if Parity Even  (386+ only)
+  3657	
+  3658	
+  3659		Usage:	SETP	dest
+  3660			SETPE	dest
+  3661		Modifies flags: none
+  3662	
+  3663	
+  3664		Sets the byte in the operand to 1 if the Parity Flag is set,
+  3665		otherwise sets the operand to 0.
+  3666	
+  3667	
+  3668	%				 Clocks			Size
+  3669	%	Operands	 808x  286   386   486		Bytes
+  3670	
+  3671		reg8		  -	-     4	    3		  3
+  3672		mem8		  -	-     5	    4		  3
+  3673	
+  3674	
+  3675		- see ~Instruction Timing~
+  3676	
+  3677	:setnp:setpo
+  3678	^SETNP/SETPO - Set if No Parity / Set if Parity Odd (386+ only)
+  3679	
+  3680	
+  3681		Usage:	SETNP	dest
+  3682			SETPO	dest
+  3683		Modifies flags: none
+  3684	
+  3685	
+  3686		Sets the byte in the operand to 1 if the Parity Flag is clear,
+  3687		otherwise sets the operand to 0.
+  3688	
+  3689	
+  3690	%				 Clocks			Size
+  3691	%	Operands	 808x  286   386   486		Bytes
+  3692	
+  3693		reg8		  -	-     4	    3		  3
+  3694		mem8		  -	-     5	    4		  3
+  3695	
+  3696	
+  3697		- see ~Instruction Timing~
+  3698	
+  3699	:sgdt
+  3700	^SGDT - Store Global Descriptor Table (286+ privileged)
+  3701	
+  3702	
+  3703		Usage:	SGDT	dest
+  3704		Modifies flags: none
+  3705	
+  3706	
+  3707		Stores the Global Descriptor Table (~GDT~) Register into the
+  3708		specified operand.
+  3709	
+  3710	
+  3711	%				 Clocks			Size
+  3712	%	Operands	 808x  286   386   486		Bytes
+  3713	
+  3714		mem64		  -	11    9	    10		  5
+  3715	
+  3716	
+  3717		- see ~Instruction Timing~
+  3718	
+  3719	:sidt
+  3720	^SIDT - Store Interrupt Descriptor Table (286+ privileged)
+  3721	
+  3722	
+  3723		Usage:	SIDT	dest
+  3724		Modifies flags: none
+  3725	
+  3726	
+  3727		Stores the Interrupt Descriptor Table (IDT) Register into the
+  3728		specified operand.
+  3729	
+  3730	
+  3731	%				 Clocks			Size
+  3732	%	Operands	 808x  286   386   486		Bytes
+  3733	
+  3734		mem64		  -	12    9	    10		  5
+  3735	
+  3736	
+  3737		- see ~Instruction Timing~
+  3738	
+  3739	:shr
+  3740	^SHR - Shift Logical Right
+  3741	
+  3742		Usage:	SHR	dest,count
+  3743		Modifies flags: CF OF PF SF ZF (AF undefined)
+  3744	
+  3745	
+  3746		Shifts the destination right by "count" bits with zeroes shifted
+  3747		in on the left.  The Carry Flag contains the last bit shifted out.
+  3748	
+  3749	
+  3750	%				 Clocks			Size
+  3751	%	Operands	 808x  286   386   486		Bytes
+  3752	
+  3753		reg,1		  2	2     3			  2
+  3754		mem,1		15+EA	7     7			 2-4   (W88=23+EA)
+  3755		reg,CL		 8+4n  5+n    3			  2
+  3756		mem,CL	      20+EA+4n 8+n    7			 2-4   (W88=28+EA+4n)
+  3757		reg,immed8	  -    5+n    3			  3
+  3758		mem,immed8	  -    8+n    7			 3-5
+  3759	
+  3760	
+  3761		- see ~Instruction Timing~
+  3762	
+  3763	:shld:shrd
+  3764	^SHLD/SHRD - Double Precision Shift (386+ only)
+  3765	
+  3766	
+  3767		Usage:	SHLD	dest,src,count
+  3768			SHRD	dest,src,count
+  3769		Modifies flags: CF PF SF ZF (OF,AF undefined)
+  3770	
+  3771	
+  3772		SHLD shifts "dest" to the left "count" times and the bit positions
+  3773		opened are filled with the most significant bits of "src".  SHRD
+  3774		shifts "dest" to the right "count" times and the bit positions
+  3775		opened are filled with the least significant bits of the second
+  3776		operand.  Only the 5 lower bits of "count" are used.
+  3777	
+  3778	
+  3779	%					Clocks			Size
+  3780	%	Operands	 	808x  286   386   486		Bytes
+  3781	
+  3782		reg16,reg16,immed8	 -     -     3	   2		  4
+  3783		reg32,reg32,immed8	 -     -     3	   2		  4
+  3784		mem16,reg16,immed8	 -     -     7	   3		  6
+  3785		mem32,reg32,immed8	 -     -     7	   3		  6
+  3786		reg16,reg16,CL		 -     -     3	   3		  3
+  3787		reg32,reg32,CL		 -     -     3	   3		  3
+  3788		mem16,reg16,CL		 -     -     7	   4		  5
+  3789		mem32,reg32,CL		 -     -     7	   4		  5
+  3790	
+  3791	
+  3792		- see ~Instruction Timing~
+  3793	
+  3794	:sldt
+  3795	^SLDT - Store Local Descriptor Table (286+ privileged)
+  3796	
+  3797	
+  3798		Usage:	SLDT	dest
+  3799		Modifies flags: none
+  3800	
+  3801	
+  3802		Stores the Local Descriptor Table (LDT) Register into the
+  3803		specified operand.
+  3804	
+  3805	
+  3806	%				 Clocks			Size
+  3807	%	Operands	 808x  286   386   486		Bytes
+  3808	
+  3809		reg16		  -	2     2	    2		  3
+  3810		mem16		  -	2     2	    3		  5
+  3811	
+  3812	
+  3813		- see ~Instruction Timing~
+  3814	
+  3815	:smsw
+  3816	^SMSW - Store Machine Status Word (286+ privileged)
+  3817	
+  3818	
+  3819		Usage:	SMSW	dest
+  3820		Modifies flags: none
+  3821	
+  3822	
+  3823		Store Machine Status Word (~MSW~) into "dest".
+  3824	
+  3825	
+  3826	%				 Clocks			Size
+  3827	%	Operands	 808x  286   386   486		Bytes
+  3828	
+  3829		reg16		  -	2     10    2		  3
+  3830		mem16		  -	3     3	    3		  5
+  3831	
+  3832	
+  3833		- see ~Instruction Timing~
+  3834	
+  3835	:stc
+  3836	^STC - Set Carry
+  3837	
+  3838	
+  3839		Usage:	STC
+  3840		Modifies flags: CF
+  3841	
+  3842	
+  3843		Sets the Carry Flag to 1.
+  3844	
+  3845	
+  3846	%				 Clocks			Size
+  3847	%	Operands	 808x  286   386   486		Bytes
+  3848	
+  3849		none		  2	2     2	    2		  1
+  3850	
+  3851	
+  3852		- see ~Instruction Timing~
+  3853	
+  3854	:std
+  3855	^STD - Set Direction Flag
+  3856	
+  3857	
+  3858		Usage:	STD
+  3859		Modifies flags: DF
+  3860	
+  3861	
+  3862		Sets the Direction Flag to 1 causing string instructions to
+  3863		auto-decrement SI and DI instead of auto-increment.
+  3864	
+  3865	
+  3866	%				 Clocks			Size
+  3867	%	Operands	 808x  286   386   486		Bytes
+  3868	
+  3869		none		  2	2     2	    2		  1
+  3870	
+  3871	
+  3872		- see ~Instruction Timing~
+  3873	
+  3874	:sti
+  3875	^STI - Set Interrupt Flag  (Enable Interrupts)
+  3876	
+  3877	
+  3878		Usage:	STI
+  3879		Modifies flags: IF
+  3880	
+  3881	
+  3882		Sets the Interrupt Flag to 1, enabling recognition of all CPU
+  3883		hardware interrupts.
+  3884	
+  3885	
+  3886	%				 Clocks			Size
+  3887	%	Operands	 808x  286   386   486		Bytes
+  3888	
+  3889		none		  2	2     2	    5		  1
+  3890	
+  3891	
+  3892		- see ~Instruction Timing~
+  3893	
+  3894	:stos:stosb:stosw:stosd
+  3895	^STOS - Store String  (Byte, Word or Doubleword)
+  3896	
+  3897	
+  3898		Usage:	STOS	dest
+  3899			STOSB
+  3900			STOSW
+  3901			STOSD
+  3902		Modifies flags: None
+  3903	
+  3904	
+  3905		Stores value in accumulator to location at ES:(E)DI (even if operand
+  3906		is given).  (E)DI is incremented/decremented based on the size of
+  3907		the operand (or instruction format) and the state of the Direction
+  3908		Flag.	Use with ~REP~ prefixes.
+  3909	
+  3910	
+  3911	%				 Clocks			Size
+  3912	%	Operands	 808x  286   386   486		Bytes
+  3913	
+  3914		dest		  11	3     4	    5		  1  (W88=15)
+  3915	
+  3916	
+  3917		- see ~Instruction Timing~
+  3918	
+  3919	:str
+  3920	^STR - Store Task Register (286+ privileged)
+  3921	
+  3922	
+  3923		Usage:	STR	dest
+  3924		Modifies flags: None
+  3925	
+  3926	
+  3927		Stores the current Task Register to the specified operand.
+  3928	
+  3929	
+  3930	%				 Clocks			Size
+  3931	%	Operands	 808x  286   386   486		Bytes
+  3932	
+  3933		reg16		  -	2     2	    2		  3
+  3934		mem16		  -	3     2	    3		  5
+  3935	
+  3936	
+  3937		- see ~Instruction Timing~
+  3938	
+  3939	:sub
+  3940	^SUB - Subtract
+  3941	
+  3942		Usage:	SUB	dest,src
+  3943		Modifies flags: AF CF OF PF SF ZF
+  3944	
+  3945	
+  3946		The source is subtracted from the destination and the result is
+  3947		stored in the destination.
+  3948	
+  3949	%				 Clocks			Size
+  3950	%	Operands	 808x  286   386   486		Bytes
+  3951	
+  3952		reg,reg 	  3	2     2	    1		  2
+  3953		mem,reg 	16+EA	7     6	    3		 2-4  (W88=24+EA)
+  3954		reg,mem 	 9+EA	7     7	    2		 2-4  (W88=13+EA)
+  3955		reg,immed	  4	3     2	    1		 3-4
+  3956		mem,immed	17+EA	7     7	    3		 3-6  (W88=25+EA)
+  3957		accum,immed	  4	3     2	    1		 2-3
+  3958	
+  3959	
+  3960		- see ~Instruction Timing~
+  3961	
+  3962	:test
+  3963	^TEST - Test For Bit Pattern
+  3964	
+  3965		Usage:	TEST	dest,src
+  3966		Modifies flags: CF OF PF SF ZF (AF undefined)
+  3967	
+  3968	
+  3969		Performs a logical ~AND~ of the two operands updating the flags
+  3970		register without saving the result.
+  3971	
+  3972	
+  3973	%				 Clocks			Size
+  3974	%	Operands	 808x  286   386   486		Bytes
+  3975	
+  3976		reg,reg 	  3	2     1	    1		  2
+  3977		reg,mem 	 9+EA	6     5	    1		 2-4  (W88=13+EA)
+  3978		mem,reg 	 9+EA	6     5	    2		 2-4  (W88=13+EA)
+  3979		reg,immed	  5	3     2	    1		 3-4
+  3980		mem,immed	11+EA	6     5	    2		 3-6
+  3981		accum,immed	  4	3     2	    1		 2-3
+  3982	
+  3983	
+  3984		- see ~Instruction Timing~
+  3985	
+  3986	:verr
+  3987	^VERR - Verify Read (286+ protected)
+  3988	
+  3989	
+  3990		Usage:	VERR	src
+  3991		Modifies flags: ZF
+  3992	
+  3993	
+  3994		Verifies the specified segment selector is valid and is readable
+  3995		at the current privilege level.  If the segment is readable,
+  3996		the Zero Flag is set, otherwise it is cleared.
+  3997	
+  3998	
+  3999	%				 Clocks			Size
+  4000	%	Operands	 808x  286   386   486		Bytes
+  4001	
+  4002		reg16		  -	14    10    11		  3
+  4003		mem16		  -	16    11    11		  5
+  4004	
+  4005	
+  4006		- see ~Instruction Timing~
+  4007	
+  4008	:verw
+  4009	^VERW - Verify Write (286+ protected)
+  4010	
+  4011	
+  4012		Usage:	VERW	src
+  4013		Modifies flags: ZF
+  4014	
+  4015	
+  4016		Verifies the specified segment selector is valid and is ratable
+  4017		at the current privilege level.  If the segment is writable,
+  4018		the Zero Flag is set, otherwise it is cleared.
+  4019	
+  4020	
+  4021	%				 Clocks			Size
+  4022	%	Operands	 808x  286   386   486		Bytes
+  4023	
+  4024		reg16		  -	14    15    11		  3
+  4025		mem16		  -	16    16    11		  5
+  4026	
+  4027	
+  4028		- see ~Instruction Timing~
+  4029	
+  4030	:wait:fwait
+  4031	^WAIT/FWAIT - Event Wait
+  4032	
+  4033	
+  4034		Usage:	WAIT
+  4035			FWAIT
+  4036		Modifies flags: None
+  4037	
+  4038	
+  4039		CPU enters wait state until the coprocessor signals it has finished
+  4040		it's operation.  This instruction is used to prevent the CPU from
+  4041		accessing memory that may be temporarily in use by the coprocessor.
+  4042		WAIT and FWAIT are identical.
+  4043	
+  4044	
+  4045	%				 Clocks			Size
+  4046	%	Operands	 808x  286   386   486		Bytes
+  4047	
+  4048		none		  4	3     6+   1-3		  1
+  4049	
+  4050	
+  4051		- see ~Instruction Timing~
+  4052	
+  4053	:wbinvd
+  4054	^WBINVD - Write-Back and Invalidate Cache
+  4055	
+  4056	
+  4057		Usage:	WBINVD
+  4058		Modifies flags: None
+  4059	
+  4060	
+  4061		Flushes internal cache, then signals the external cache to write
+  4062		back current data followed by a signal to flush the external cache.
+  4063	
+  4064	%				 Clocks			Size
+  4065	%	Operands	 808x  286   386   486		Bytes
+  4066	
+  4067		none		  -	-     -     5		  2
+  4068	
+  4069	
+  4070		- see ~Instruction Timing~
+  4071	
+  4072	:xchg
+  4073	^XCHG - Exchange
+  4074	
+  4075	
+  4076		Usage:	XCHG	dest,src
+  4077		Modifies flags: None
+  4078	
+  4079	
+  4080		Exchanges contents of source and destination.
+  4081	
+  4082	
+  4083	%				 Clocks			Size
+  4084	%	Operands	 808x  286   386   486		Bytes
+  4085	
+  4086		reg,reg		  4	3     3	    3		  2
+  4087		mem,reg 	17+EA	5     5	    5		 2-4  (W88=25+EA)
+  4088		reg,mem 	17+EA	5     5	    3		 2-4  (W88=25+EA)
+  4089		accum,reg	  3	3     3	    3		  1
+  4090		reg,accum	  3	3     3	    3		  1
+  4091	
+  4092	
+  4093		- see ~Instruction Timing~
+  4094	
+  4095	:xlat:xlatb
+  4096	^XLAT/XLATB - Translate
+  4097	
+  4098	
+  4099		Usage:	XLAT	translation-table
+  4100			XLATB	(masm 5.x)
+  4101		Modifies flags: None
+  4102	
+  4103	
+  4104		Replaces the byte in AL with byte from a user table addressed by
+  4105		BX.  The original value of AL is the index into the translate table.
+  4106	
+  4107	
+  4108	%				 Clocks			Size
+  4109	%	Operands	 808x  286   386   486		Bytes
+  4110	
+  4111		table		  11	5     5	    4		  1
+  4112	
+  4113	
+  4114		- see ~Instruction Timing~
+  4115	
+  4116	:xor
+  4117	^XOR - Exclusive OR
+  4118	
+  4119		Usage:	XOR	dest,src
+  4120		Modifies flags: CF OF PF SF ZF (AF undefined)
+  4121	
+  4122	
+  4123		Performs a bitwise exclusive OR of the operands and returns
+  4124		the result in the destination.
+  4125	
+  4126	
+  4127	%				 Clocks			Size
+  4128	%	Operands	 808x  286   386   486		Bytes
+  4129	
+  4130		reg,reg 	  3	2     2	    1		  2
+  4131		mem,reg 	16+EA	7     6	    3		 2-4  (W88=24+EA)
+  4132		reg,mem 	 9+EA	7     7	    2		 2-4  (W88=13+EA)
+  4133		reg,immed	  4	3     2	    1		 3-4
+  4134		mem,immed	17+EA	7     7	    3		 3-6  (W88=25+EA)
+  4135		accum,immed	  4	3     2	    1		 2-3
+  4136	
+  4137	
+  4138		- see ~Instruction Timing~

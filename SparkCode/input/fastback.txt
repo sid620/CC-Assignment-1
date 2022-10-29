@@ -1,0 +1,131 @@
+     1	BATON ROUGE, La., February 4, 1992 -- Fifth Generation Systems today
+     2	announced the release of FastBack Plus Windows and FastBack Plus Network,
+     3	the latest additions to its industry-standard FastBack Plus high-speed
+     4	backup product line.
+     5	
+     6	"Our goal is to provide users across multiple platforms the same
+     7	reliability and ease of use associated with FastBack for DOS," said Barry
+     8	L. Bellue, president and chief executive officer of Fifth Generation
+     9	Systems. "With our Windows and network additions, we've taken the
+    10	market-leading backup utility and made it faster and easier to use in any
+    11	operating environment: DOS, Windows, Macintosh and a variety of common
+    12	network operating systems." FastBack Windows
+    13	
+    14	FastBack Plus Windows Version 1.0 runs under Microsoft Windows version 3.0
+    15	or higher, allowing the user to back up files on hard disk(s) in the
+    16	background while other Windows applications are being run.
+    17	
+    18	"A user can begin a backup using FastBack Plus Windows, minimize the
+    19	window, and then proceed to work on other tasks such as spreadsheets or
+    20	word processing applications," said Sandra Lyle, FastBack Plus product
+    21	marketing manager. "Users will only notice FastBack Plus Windows'
+    22	non-obtrusive operation when they are prompted to insert additional disks
+    23	for the backup."
+    24	
+    25	"This is the fastest Windows-based backup utility available today," said
+    26	Ryc Brownrigg, director of product development. "Rather than porting our
+    27	product to Windows, we've developed FastBack Plus Windows to operate as
+    28	fast in Windows' multitasking mode as it does in a dedicated DOS system."
+    29	
+    30	Besides the technical superiority of the product, FastBack Plus Windows has
+    31	been aesthetically designed to take full advantage of Windows' visual user
+    32	interface.
+    33	
+    34	"The developers have done a great job creating graphics that are true
+    35	visual representations of each feature. The icons are exceptionally
+    36	well-conceived and allow even the most inexperienced user to rapidly make
+    37	the transition from the simple Express Menu to the more complex backup
+    38	functions," Lyle said.
+    39	
+    40	Other features of FastBack Plus Windows include:
+    41	
+    42	o EXPRESS MENU -- Easy-to-use, one-step process for quickly backing up
+    43	files and programs.
+    44	
+    45	o QUICK TAG -- Mouse-based pointer for selecting files and directories to
+    46	backup.
+    47	
+    48	o AUTO-FORMAT -- Disks or tapes do not need to be formatted prior to
+    49	backup.
+    50	
+    51	o ADAPTIVE DATA COMPRESSION -- Compresses data 20 to 80 percent, depending
+    52	on the file type and compression method, greatly reducing the number of
+    53	backup data disks required.
+    54	
+    55	o ALTERNATE DEVICES -- Allows backing up of files to more than one disk
+    56	drive, if available, greatly reducing total backup time since disks can be
+    57	replaced on one drive while the other is receiving the data from the
+    58	backup files.
+    59	
+    60	o FILE ENCRYPTION -- Data can be encrypted at various levels, including
+    61	government-approved DES, to assure data integrity and security.
+    62	
+    63	o INTER-PLATFORM COMPATIBILITY -- Files backed up under Windows can be
+    64	restored on a Macintosh or DOS system; files backed up under DOS or
+    65	Macintosh can be restored under Windows.
+    66	
+    67	o ADVANCED ERROR CORRECTION -- Recovers data from heavily damaged backup
+    68	diskettes. 
+    69	
+    70	o ON-LINE HELP -- Complete on-line help functions.
+    71	
+    72	o MULTIPLE DEVICE COMPATIBLE -- Ability to backup to any DOS device,
+    73	including removable hard drives, Bernoulli cartridges and optical media.
+    74	
+    75	FastBack Plus Windows is available at a suggested retail price of $189.
+    76	Site licenses are also available. FastBack Plus Windows for systems
+    77	running Microsoft Windows 3.0 or higher will be available through the
+    78	dealers on February 19.
+    79	
+    80	FastBack Plus Network 
+    81	
+    82	FastBack Plus Network, Version 1.0, facilitates automated backup of the
+    83	network server to large-capacity SCSI (Small Computer Systems Interface)
+    84	drives at any scheduled time. This enables backup when the server is not
+    85	being used by other systems on the network. Fastback Plus Network has all
+    86	of the features of FastBack Plus Windows, except for the graphical Windows
+    87	interface and background processing capabilities, and works on Novell
+    88	Netware, Banyan Vines or any other PC-based network operating system.
+    89	FastBack Plus Network is available at a suggested retail price of $225.
+    90	The product is currently shipping. Like all products from Fifth Generation
+    91	Systems, FastBack Plus Windows and FastBack Plus Network are backed by the
+    92	Five Points Pledge:
+    93	
+    94	* Fully staffed technical support provided toll-free 
+    95	  to registered users 24-hours per day, seven days a week.
+    96	* One-year, money-back guarantee if not completely satisfied
+    97	  with the product. 
+    98	* Unconditional guarantee to perform as promised.
+    99	* Individuals purchasing four Fifth Generation Systems
+   100	  products will receive a fifth product, free.
+   101	* Any problems not addressed to a customer's satisfaction
+   102	  will be personally handled by the chief executive officer,
+   103	  Barry Bellue.
+   104	
+   105	FastBack Plus is the industry-standard backup utility software for DOS and
+   106	Macintosh systems. FastBack Plus has won best product awards from nearly
+   107	every major trade publication. It is consistently ranked as one of the
+   108	top-ten best-selling PC and Macintosh software programs by independent
+   109	retail and magazine surveys. FastBack Plus is currently in Version 3.04
+   110	for DOS and Version 2.61 for the Macintosh.
+   111	
+   112	Fifth Generation Systems is one of the leading developers of DOS and
+   113	Macintosh utility software for backup, security, menuing/file management
+   114	and recovery. In addition to Fastback Plus, other popular Fifth Generation
+   115	Systems products include Direct Access, Suitcase and SuperLaserSpool. The
+   116	company was founded in 1984 and is based in Baton Rouge, La.
+   117	
+   118	Fifth Generation Systems Inc
+   119	10049 North Reiger Rd, Baton Rouge, LA 70809
+   120	504-291-7221
+   121	
+   122	  +---------------------------------------------------------------+
+   123	  |  From the America On-Line & PC-Link New Product Info Services |
+   124	  +===============================================================+
+   125	  | This information was processed with OmniPage Professional OCR |
+   126	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+   127	  | provided by the above mentioned company. For additional info, |
+   128	  | contact the company at the address or phone# indicated above. |
+   129	  |    All submissions for this service should be addressed to    |
+   130	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+   131	  +---------------------------------------------------------------+

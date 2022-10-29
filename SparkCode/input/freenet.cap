@@ -1,0 +1,239 @@
+     1	The Concept of Community Computing
+     2	
+     3	     Since 1985, Case Western Reserve University has been experimenting
+     4	with free, open-access, community computer systems as a new communications
+     5	and information medium. 
+     6	
+     7	     In effect, these systems represent a new application in computing. A 
+     8	multi-user computer is established at a central location in a given area 
+     9	and the machine is connected to the telephone system through a series of 
+    10	devices called modems. Running on the machine is a computer program 
+    11	that provides its users with everything from electronic mail services to 
+    12	information about health care, education, technology, government, 
+    13	recreation, or just about anything else the host operators would like to 
+    14	place on the machine.
+    15	
+    16	     Anyone in the community with access to a home, office, or school 
+    17	computer and a modem can contact the system any time, 24 hours a day. 
+    18	They simply dial a central phone number, make connection, and a series of 
+    19	menus appears on the screen which allows them to select the information 
+    20	or communication services they would like. All of it is free and all of it 
+    21	can easily be accomplished by a first-time user.
+    22	
+    23	     The key to the economics of operating a community computer system is 
+    24	the fact that the system is literally run by the community itself. 
+    25	Everything that appears on one of these machines is there because there 
+    26	are individuals or organizations in the community who are prepared to 
+    27	contribute their time, effort, and expertise to place it there and operate it 
+    28	over time. This, of course, is in contrast to the commercial services 
+    29	which have very high personnel and information-acquisition costs and 
+    30	must pass those costs on to the consumer.
+    31	
+    32	     Couple this volunteerism with the rapidly-dropping costs of computing 
+    33	power, the use of inexpensive transmission technology, and the fact that 
+    34	the necessary software to operate these systems is available for low
+    35	cost--and public access computing becomes an economically-viable entity.
+    36	
+    37	Case Reserve's Involvement in Community Computing
+    38	
+    39	     The University's involvement in the development of community 
+    40	computer systems has its origins in an experiment conducted in the School 
+    41	of Medicine in the fall of 1984. Dr. Tom Grundner of the Department of 
+    42	Family Medicine, set up a single phone line, computerized, "Bulletin Board" 
+    43	system called "St. Silicon's Hospital and Information Dispensary" to test 
+    44	the efficacy of using this medium as a means of delivering general health 
+    45	information to the public. The heart of the system was an interactive area 
+    46	where lay people could call in using their home, school, or business 
+    47	computers, leave medically-related questions, and have them answered by 
+    48	a physician within 24 hours. The experiment proved so successful that it 
+    49	attracted the attention of the Information Systems Division of AT&T and 
+    50	the Ohio Bell Telephone Company, who supported a larger project to expand 
+    51	and develop this interactive concept.
+    52	
+    53	     Based on these donations, Dr. Grundner began work on a full-scale 
+    54	"community computer system" on an AT&T 3B2/400 computer with 10 
+    55	incoming phone lines. This pilot project was designed to serve as a 
+    56	community information resource in areas as diverse as law, medicine, 
+    57	education, arts, sciences, and government--including free electronic mail 
+    58	services for the citizens of northeast Ohio. On July 16, 1986, this system, 
+    59	called the Cleveland Free-Net was opened by Ohio Governor Richard 
+    60	Celeste and Cleveland Mayor George Voinovich and the project was 
+    61	officially underway.
+    62	
+    63	     During its prototype stage, the Cleveland Free-Net gathered over 7000 
+    64	registered users from throughout the Cleveland metropolitan area and 
+    65	handled between 500-600 calls per day on 10 incoming phone lines. In 
+    66	1989, however, it moved out of prototype in a big way.
+    67	
+    68	     A new system was designed around six IBM-RT (Model 135) computers 
+    69	which would be linked together so that, from the user's standpoint, they 
+    70	would appear as one big machine. This new system would provide the 
+    71	Cleveland Free-Net  with 96 megabytes of RAM (96 million characters of 
+    72	Random Access Memory), 2.3 gigabytes of hard disk storage (2.3 billion 
+    73	characters of hard disk), and would be capable of supporting up to 360 
+    74	simultaneous users.
+    75	
+    76	     In August of 1989 the Cleveland supersystem opened with 32 phone 
+    77	lines on its way to a projected 96 lines by the end of the year. In August 
+    78	also, the Free-Net was connected to the CWRUNET fiber-optic campus 
+    79	network. This merger of a community computer system with a campus 
+    80	network is yet another first and provides an entirely new model for 
+    81	campus network development.
+    82	
+    83	     By the end of 1992 the Cleveland Free-Net had grown to over 36,000
+    84	active accounts handling over 11,000 logins a day.
+    85	
+    86	Development of the Concept
+    87	
+    88	     As a result of the experience we have gained in working with and 
+    89	developing these systems, several conclusions regarding community 
+    90	computing can be drawn.
+    91	
+    92	     First, it is clear that these community computers represent the leading 
+    93	edge of what can only be described as a new telecommunications medium. 
+    94	Telecomputing is not radio, not television, not print, but has 
+    95	characteristics of all three plus some additional ones of its own. This 
+    96	fact alone will inevitably lead to developments and uses that we cannot 
+    97	now even begin to imagine.
+    98	
+    99	     Second, experience in northeast Ohio indicates that a critical mass of 
+   100	people now exist who are prepared to utilize this new medium. As more 
+   101	and more modem-equipped microcomputers penetrate the home and 
+   102	especially the work environment, the utility of public-access 
+   103	computerized information services goes up. We have no doubt that this 
+   104	consumer interest and ability to utilize this technology exists at least as 
+   105	much in other parts of the country as it does in northeast Ohio.
+   106	
+   107	    Third, there is a certain sense of inevitability to the development of 
+   108	community computing. Simply stated, given the directions now being taken 
+   109	by the computer and communications industry, we find ourselves unable to 
+   110	imagine a 21st century in which we do NOT have community computer 
+   111	systems, just as this century has its public libraries. Moreover, we 
+   112	believe that the community computer, as a resource, will have at least as 
+   113	much impact on the next century as the public library has had on ours.
+   114	
+   115	     There currently exists an entire generation in our secondary schools 
+   116	and colleges, for example, that have come to know the microcomputer as a 
+   117	routine personal productivity tool. By the turn of the century, these people 
+   118	will be in a work place where microcomputers and computerized 
+   119	information retrieval will be ubiquitous. This, in turn, cannot help but lead 
+   120	to a demand for similar functions in the home, even as the telephone 
+   121	migrated from being primarily a business tool to a home utility. The 
+   122	process, in effect, feeds on itself. Indeed, several sources are predicting 
+   123	that by the year 2000, over 32,000,000 households (40% of all households) 
+   124	will have some kind of in-home computing technology or information 
+   125	service.
+   126	
+   127	     But perhaps the best way to illustrate the development of community 
+   128	computing is by analogy to the development of the public library system in 
+   129	our country. In the middle of the last century there was no such thing as 
+   130	the free public library. Eventually the literacy rate increased enough (and 
+   131	the cost of books decreased enough) that the public library became 
+   132	feasible. In this century, we believe we have reached the point where 
+   133	computer "literacy" has increased enough (and the cost of equipment 
+   134	decreased enough) that a similar demand has formed for free, public-
+   135	access, community computer systems. 
+   136	
+   137	A Civic Utility: Potential Impact on the Community
+   138	
+   139	     Who, exactly, benefits from community computing? To cite just a few 
+   140	examples:
+   141	
+   142	     % The Citizens: First and foremost, these community computer systems 
+   143	open up information services to very large populations that would 
+   144	otherwise not be able to afford it. The cost of utilizing a Free-Net 
+   145	community computer consists of the cost of having standard telephone 
+   146	service in the home or business, plus the price of the equipment needed to 
+   147	get online. This equipment is now well under $200 virtually anywhere, and 
+   148	that is assuming the person purchases new. If a person wishes to attend a 
+   149	few garage sales, flea markets, or computer fairs, it could be 
+   150	considerably less.
+   151	
+   152	     % Public and Private Schools: Via community computers, school 
+   153	systems finally have a cost-effective way to teach telecomputing to their 
+   154	students, thereby sending a new generation of information-literate 
+   155	citizens into the work force. In addition, these systems allow students, 
+   156	teachers, parents, and administrators to communicate with each other and 
+   157	have access to information bases of interest and importance.
+   158	                                                                     
+   159	     % Government: Community computers provide citizens with an 
+   160	inexpensive and rapid way to make contact with their elected 
+   161	representatives at the city, county, state, and national levels--contacts 
+   162	which include everything from obtaining information on governmental 
+   163	services to providing access to tax-payer supported, governmentally-
+   164	produced databases. It should also be pointed out that these 
+   165	communications are not one way. Elected representatives and other 
+   166	officials also have the ability to electronically communicate with their 
+   167	constituents.
+   168	
+   169	     % Small- and Medium-sized Businesses: Most major corporations have 
+   170	electronic mail and other computer-driven information services at their 
+   171	disposal. Most small- and medium-sized businesses do not. With a Free-
+   172	Net system in place, these smaller enterprises are finally able to afford 
+   173	to link their operations together via the free electronic mail services 
+   174	found on these systems and have access to a variety of useful business 
+   175	databases--something that cannot help but improve the business 
+   176	infrastructure of any city.
+   177	
+   178	     % The Agricultural Community: Among the segments in our society that 
+   179	were the first to embrace computing were our farmers. The reason was 
+   180	obvious. Farmers are business people too, but they have the disadvantages 
+   181	of, in general, being dispersed over wide geographic areas. A Free-Net 
+   182	system in a central location in a county allows the agricultural 
+   183	community to access common information bases, share solutions to farm-
+   184	related problems, access up-to-date crop and price information, and make 
+   185	electronic connection with the County Agent and each other--all without 
+   186	ever leaving home.
+   187	
+   188	     % The Telecommunications and Videotex Industry: For years the 
+   189	commercial videotex industry has been dividing, sub-dividing, and sub-sub-
+   190	dividing essentially the same "up-scale" demographic group: $50,000+ 
+   191	yearly household incomes, very well educated, overwhelmingly white, and 
+   192	overwhelmingly male. If the industry is to survive and flourish, however, 
+   193	it is going to have to find a way to penetrate the middle class with its 
+   194	services. Free-Net community computers do exactly that. On the Cleveland 
+   195	system, for example, we draw as many users out of the demographically 
+   196	blue collar areas of the city as we do out of the wealthier sections. 
+   197	Demographic penetration such as this, on a nationwide basis, is vital if 
+   198	the telecomputing and videotex industry is to survive into the 21st 
+   199	century. It is also important to the telephone industry, which has spent 
+   200	millions of dollars on "intelligent gateway" technology, that videotex 
+   201	flourish and that their services be used.
+   202	
+   203	     % Community Organizations and Institutions: Each Free-Net is set up 
+   204	using an "Electronic City" motif. That motif was not selected by accident. 
+   205	To one degree or another, virtually every institution in society has an 
+   206	information dissemination function of some kind--a need to tell others 
+   207	about itself and share its knowledge. The Free-Net makes it possible for 
+   208	any and all of them to utilize a new medium to accomplish that goal. From 
+   209	artistic and cultural organizations to medical institutions to hobbyists of 
+   210	all kinds, all can find a place on a community computer.
+   211	
+   212	                THE CLEVELAND FREE-NET COMPUTER COMPLEX:
+   213	
+   214	   The Cleveland Free-Net is not a single computer.  It is a collection
+   215	of more than a dozen machines all operating in coordination with
+   216	each other, and all maintained on the campus of Case Western Reserve
+   217	University by CWRU's Information Network Services group.
+   218	
+   219	   At the heart of the system are machines from several different vendors.
+   220	These machines have been linked together via an ethernet connection
+   221	so that, from the users standpoint, they appear as one large machine.
+   222	
+   223	   Access to the Free-Net is provided via three methods.  The first 
+   224	is via asynchronous modem where phone lines are available for 
+   225	community access.  More phone lines and modems may be added as
+   226	community demand increases. The second method is via both the
+   227	fiber-optic lines and modems of CWRUnet, the university's new
+   228	campus information network.
+   229	
+   230	   The Free-Net is also available to users around the world via the
+   231	university's connection to the Internet.  The Internet is a collection
+   232	of thousands of computer systems located in almost every part of the
+   233	world.
+   234	
+   235	[note: all references to which vendors we are using and how many phone
+   236	 lines we have were deleted because things are growing so fast we can't
+   237	 keep this document up to date]
+   238	
+   239	

@@ -1,0 +1,647 @@
+     1	 #$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@
+     2	  $%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#%$&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#
+     3	  %&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$
+     4	  &@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%
+     5	  @#$%&                                                                 @#$%&
+     6	  #$%&@                The New Tesla Electromagnetics and               #$%&@
+     7	  $%&@#               The Secrets of Free Electrical Energy             $%&@#
+     8	  %&@#$                                                                 %&@#$
+     9	  &@#$%                   (Part 1)  by T. E. Bearden                    &@#$%
+    10	  @#$%&                                                                 @#$%&
+    11	  #$%&@   Retyped Without Permission, 7/13/86, by (_>Shadow Hawk 1<_)   #$%&@
+    12	  $%&@#                                                                 $%&@#
+    13	  %&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$
+    14	  &@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%
+    15	  @#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&
+    16	  #$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@#$%&@
+    17	
+    18	
+    19	
+    20	
+    21	
+    22	                Comments on the New Tesla Electromagnetics
+    23	                  ------------------------------------------
+    24	                    A:Discrepancies in Present EM Theory
+    25	
+    26	  There are at least twenty-two major discrepancies presently existing in
+    27	conventional electromagnetics theory. This paper presends a summary of those
+    28	flaws, and is a further commentary on my discussion of scalar longitudinal
+    29	waves in a previous paper, "Solutions to Tesla's Secrets and the Soviet Tesla
+    30	Weapons," Tesla Book Company, 1981 and 1982.
+    31	
+    32	  I particularly wish to express my deep appreciation to two of my friends and
+    33	colleagues who at this time, I believe, wish to remain anonymous. One of the
+    34	two is an experimental genius who  can produce items that do not work by ortho-
+    35	dox theory. The second is a master of materials science and electromagnetics
+    36	theory. I thank them both for their exceptional contributions and stimuli
+    37	regarding potential shortcoming in present electromagnetics theory, and their
+    38	forbearance with the many discussions we have held on this and related 
+    39	subjects.
+    40	
+    41	  It goes without saying that any etrors in this paper are strictly my own, and
+    42	not the fault of either of my distinguished colleagues.
+    43	
+    44	
+    45	
+    46	  (1) In present electromagnetics theory, charge and charged mass are falsely
+    47	made identical. Actually, on a charged particle, the "charge" is the flux of
+    48	virtual particles on the "bare particle" of observable mass. The charged part-
+    49	icle is thus a "system" of true massless charge coupled to a bare chargeless
+    50	mass. The observable "mass" is static, three-dimensional and totally spatial.
+    51	"Charge" is dynamic, four-dimensional or more, virtual and spatiotemporal.
+    52	Further, the charge and observable mass can be de-coupled, contrary to present
+    53	theory. Decoupled charge -- that is, the absence of mass -- is simply what we
+    54	presently refer to as "Vacuum." Vacuum, spacetime, and massless charge are all
+    55	identical. Rigorously, we should utilize any of these three as an "ether," as
+    56	suggested for vacuum by Einstein himself (see Max Born, Einstiein's Theory of
+    57	Relativity, Revised Edition, Dover Publications, New York, 1965, p. 224). And
+    58	all three of them are identically anenergy -- not energy, but more fundamental
+    59	components of energy.
+    60	
+    61	  (2) Electrostatic potential is regarded as a purely 3-dimensional spatial
+    62	stress. Instead, it is the intensity of a many-dimensional (at least four-
+    63	dimensional) virtual flux and a stress on all four dimensions of spacetime. 
+    64	This is easily seen, once one recognizes that spacetime is identically masless
+    65	charged. (It is not "filled" with charge; rather, it is charge!) Just as, in
+    66	a gas under pressure, the accumulation of additional gas further stresses the
+    67	gas, the accumulation of charge (spacetime) stresses charge (spacetime).
+    68	Further, if freed from its attachment to mass, charge can flow exclusively
+    69	in time, exclusively in space, or in any combination of the two. Tesla waves --
+    70	which are scalar waves in pure massless charge flux itself -- thus can exhibit
+    71	extraordinary characteristics that ordinary vector waves do not possess. And
+    72	Tesla waves have extra dimensional degrees of freedom in which to move, as
+    73	compared to vector waves. Indeed, one way to visualize a tesla scalar wave is
+    74	to regard it as a pure oscillation of time itself.
+    75	
+    76	  (3) Voltage and potential are often confused in the electrostatic case, or at
+    77	least thought of as "composed of the same thing." For that reason, voltage is
+    78	regarded as "potential drop." This also is not true. Rigorously, the potential
+    79	is the intensity of the virtual particle flux at a single point -- whether or
+    80	not there is any mass at the point -- and both the pressure and the point
+    81	itself are spatiotemporal (4-dimensional) and not spatial (3-dimensional) as
+    82	presently  assumed.  Voltage  represents  the  spatial  intersection  of  the
+    83	difference in  potential between  two seperated spatial  points, and always
+    84	implies at least a miniscule flow of mass current (that is what makes it
+    85	spatial!). "Voltage" is spatial and depends upon the presence of observable
+    86	mass flow, while scalar electrostatic potential is spatiotemporal and depends
+    87	upon the absence of observable mass flow. The two are not even of the same
+    88	dimensionality.
+    89	
+    90	  (4) The charge of vacuum spacetime is assumed to be zero, when in fact it is
+    91	a very high value. Vacuum has no mass, but it has great massless charge and
+    92	virtual particle charge flux. For proof that a charged vacuum is the seat of
+    93	something in motion, see G. M. Graham and D. G. Lahoz, "Observation of static
+    94	electromagnetic angular momentum in vacuo," Nature, Vol. 285, 15 May 1980, pp.
+    95	154-155. In fact, vacuum IS charge, identically, and it is also spacetime, and
+    96	at least four-dimensional.
+    97	
+    98	  (5) Contrary to its present usage, zero is dimensional and relative in its
+    99	context. A three-dimensional spatial hole, for example, exists in time. If we
+   100	model time as a dimension, then the spatial hole has one dimension in 4-space.
+   101	So a spatial absence is a spatiotemporal presence. In the vacuum 4-space, a
+   102	spatial nothing is still a something. The "virtual" concept and mathematical
+   103	concept of a derivative are simply two present ways of unconsciously addressing
+   104	this fundamental problem of the dimensional relativity of zero.
+   105	
+   106	  (6) The concepts of "space" and "time" imply that spacetime (vacuum) has been
+   107	seperated into two parts. We can only think of a space as "continuing to exist
+   108	in time."  To separate  vacuum spacetime  into two  pieces,  an operation  is
+   109	continually required. The operator that accomplishes this splitting operation
+   110	is the photon interaction, the interaction of vector electromagnetic energy or
+   111	waves with mass. I have already strongly pointed out this effect and presented
+   112	a "raindrop model" or first-order physical change itself in my book, The
+   113	Excalibur Briefing, Strawberry Hill Press,  San Francisco, 1980, pp. 128-130.
+   114	
+   115	  (7) "Vector magnetic potential" is assumed to be always an aspect of (and
+   116	connected to) the magnetic field. In fact it is a separate, fundamental field
+   117	of nature and it can be entirely disconnected from the magnetic field. See
+   118	Richard P. Feynman et al, The Feynman Lectures on Physics, Addison-Wesley
+   119	Publishing Co., New York, 1964, Vol. II, pp. 15-8 to 15-14. Curiously, this
+   120	fact has been proven for years, yet it has been almost completely ignored in
+   121	the West. The "(triangle)x" operator, when applied to the A-field, makes
+   122	B-field. If the (triangle)x operator is not applied, the "freed" A-field
+   123	possesses much-expanded characteristics from those presently allowed in the
+   124	"bound" theory. Specifically, it becomes a scalar or "shadow vector" field;
+   125	it is not a normal vector field.
+   126	
+   127	  (8) The speed of light in vacuum is assumed to be a fundamental constant of
+   128	nature. Instead it is a function of the intensity of the massless charge flux
+   129	(that is, of the magnitude of the electrostatic potential) of the vacuum in
+   130	which it moves. (Indeed, since vacuum and masless charge are one and the same,
+   131	one may say that the speed of light is a function of the intensity of the
+   132	spatiotemporal vacuum!). The higher the flux intensity (charge) of the vacuum,
+   133	the faster the speed of light in it. This is an observed fact and already shown
+   134	by hardcore measurements. For example, distinct differences actually exist in 
+   135	the speed of light in vacuo, when measured on the surface of the earth as
+   136	compared to measurements in space away from planetary masses. In a vacuum on
+   137	the surface of the earth, light moves significantly faster. For a discussion
+   138	and the statistics, see B. N. Belyaev, "On Random Fluctuations of the Velocity
+   139	of Light in Vacuum," Soviet Physics Journal, No. 11, Nov. 1980, pp. 37-42 
+   140	(original in Russian, translation by Plenum Publishing Corporation.) The
+   141	Russians have used this knowledge for over two decades in their strategic
+   142	psychotronics (energetics) program; yet hardly a single U.S. scientist is aware
+   143	of the measured variation of c in vacuo. In fact, most Western scientists
+   144	simply cannot believe it when it is pointed out to them!
+   145	
+   146	  (9) Energy is considered fundamental and equivalent to work. In fact, energy
+   147	arises from vector processes, and it can be disassembled into more fundamental
+   148	(anenergy) scalar components, since the vectors can. These scalar components
+   149	individually can be moved to a distant location without expending work, since
+   150	one is not moving force vectors. There the scalar components can be joined and
+   151	reassembled into vectors to provide "free energy" appearing at a distance,
+   152	with no loss in between the initial and distant points. For proof that a vector
+   153	field can be replaced by (and considered to be composed of) two scalar fields,
+   154	see E. T. Whittaker, Proceedings of the London Mathematical Society, Volume 1,
+   155	1903, p. 367. By extension, any vector wave can be replaced by two coupled
+   156	scalar waves.
+   157	
+   158	  (10) The classical Poynting vector predicts no longitudinal wave of energy
+   159	from a time-varying, electrically charged source. In fact, an exact solution of
+   160	the problem does allow this longitudinal wave. See T. D. Keech and J. F. Corum,
+   161	"A New Derivation for the Field of a Time-Varying Charge in Einsteins Theory,"
+   162	International Journal of Theoretical Physics, Vol. 20, No. 1, 1981, pp. 63-68
+   163	for the proof.
+   164	
+   165	  (11) The present concepts of vector and scalar are severely limited, and do
+   166	not permit the explicit consideration of the internal, finer-grained structures
+   167	of a  vector or  a scalar.  That is, a  fundamental problem  exists with  the
+   168	basic assumptions in the vector mathematics itself. The "space" of a vector
+   169	field, for example, does not have inter-nested sublevels (subspaces) containing
+   170	finer "shadow vectors" or "virtual vectors." Yet particle physics has already
+   171	discovered that electrical reality is built that way. Thus one should actually
+   172	use a "hypernumber" theory after the manner of Charles Muses. A scalar is
+   173	filled with (and composed of) nested levels of other "spaces" containing
+   174	vectors, where these sum to "zero" in the ordinary observable frame without an
+   175	observable vector resultant. In Muses' mathematics, for example, zero has real
+   176	roots. Real physical devices can be -- and have been -- constructed in
+   177	accordance with Muses' theory. For an introduction to Muses' profound
+   178	hypernumberss approach, see Charles Muses' forward to Jerome Rothstein,
+   179	Communication, Ogranization and Science, The Falcon's Wing Press, Indian Hills,
+   180	Colorado, 1958. See also Charles Muses', "Applied Hypernumbers: Computational
+   181	Convepts," Applied Mathematics and Computation, Vol. 3, 1976. See also Charles
+   182	Muses' "Hypernumbers II", Aoplied Mathematics and Computation, Janurary 1978.
+   183	
+   184	  (12) With the expanded Tesla electromagnetics, a new conservation of energy
+   185	law is required. Let us recapitulate for a moment. The oldest law called for
+   186	the conservation of mass. The present law calls for the conservation of "mass
+   187	and energy", but not each separately. If mass is regarded as simply another
+   188	aspect of energy, then the present law calls for the conservation of energy.
+   189	However, this assumes that energy is a basic, fundamental concept. Since the
+   190	energy concept is tied to work and the movement of vector forces, it implicitly
+   191	assumes "vector movement2 to be a "most fundamental" and irreducible concept.
+   192	But as we pointed out, Whittaker showed that vectors can always be further
+   193	broken down into more fundamental coupled scalar components. Further, Tesla
+   194	discovered that these "coupled components" of "energy" can be individually
+   195	separated, transmitted, processed, rejoined, etc. This directly implies that
+   196	energy per se need not be conserved. The new law therefore calls for the
+   197	conservation of anenergy, the components of energy. These components may be
+   198	coupled into energy, and the energy may be further compacted into mass. It is
+   199	the sum total of the (anenergy) components -- coupled and uncoupled -- that is
+   200	conserved, not the matter or the energy per se. Further, this conservation of
+   201	anenergy is not spatial; rather it is spatiotemporal in a spacetime of at least
+   202	four or more dimensions.
+   203	
+   204	  (13) Relativity is presently regarded as a theory or statement about
+   205	fundamental physical reality. In fact, it is only a statement about FIRST ORDER
+   206	reality  --  the  reality  that  emerges  from  the  vector  interaction  of
+   207	electromagnetic energy with matter. When we break down the vectors into scalars
+   208	(shadow vectors or hypervectors), we immediatly enter a vastly different, far
+   209	more fundamental reality. In this reality superluminal velocity, multiple
+   210	universes, travel back and forth in time, higher dimensions, variation of all
+   211	"fundamental constants" of nature, materialization and dematerialization, and
+   212	violation of the "conservation of energy" are all involved. Even our present
+   213	Aristotlean logic -- fitted to the photon interaction by vector light as the
+   214	fundamental observation mechanism -- is incapable of describing or modeling
+   215	this more fundamental reality. Using scalar waves and scalar interactions as
+   216	much subtler, far less limited observation/detection mechanisms, we must have a
+   217	new "superrelativity" to describe the expanded electromagnetic reality
+   218	uncovered by Nikola Tesla.
+   219	
+   220	  (14) "Charge" is assumed to be quantized, in addition to always occuring with
+   221	 -- and locked to -- mass. Indeed, charge is not necessarily quantized, just as
+   222	it is not necessarily locked to mass. Ehrenhaft discovered and reported
+   223	fractional charges for years, in the 30's and 40's, and was ignored. See P.A.M.
+   224	Dirac, "Development of the Physicist's Conception of Nature", Sumposium on the
+   225	Development of the Physicist's Conception of Nature, ed. Jagdish Merha, D.
+   226	Reidel, Boston, 1973, pp. 12-14 for a presentation of some of Ehrenhaft's
+   227	results. Within the last few years Stanford University researchers have also
+   228	positively demonstrated the existence of "fractional charge." For a layman's
+   229	description of their work, see "A Spector Haunting Physics," Science News, Vol.
+   230	119, January 31, 1981, pp. 68-69. Indeed, Dirac in his referenced article
+   231	points out that Millikan himself -- in his original oildrop experiments --
+   232	reported one measurement of fractional charge, but discounted it as probably
+   233	due to error.
+   234	
+   235	  (15) Presently, things are always regarded as traveling through normal space.
+   236	Thus we use or model only the most elementary type of motion -- that performed
+   237	by vector electromagnetic energy. We do not allow for things to "travel inside
+   238	the vector flow itself." Yet, actually, there is a second, more subtle flow
+   239	inside the first, and a third, even more subtle flow inside the second, and
+   240	so on. We may operate inside, onto, into, and out of energy itself -- and any
+   241	anenergy component of energy. There are hypervectors and hyperscalars unlimited
+   242	, within the ordinary vectors and scalars we already know. Further, these
+   243	"interlan flows" can be engineered and utilized, allowing physical reality
+   244	itself to be directly engineered, almost without limits.
+   245	
+   246	  (16) We always assume everything exists in time. Actually, nothing presently
+   247	measured exists in time, because the physicical detection/measurement process
+   248	of our present instruments destroys time, ripping it off and tossing it away --
+   249	and thereby "collapsing the wave function." Present scientific methodology thus
+   250	is seriously flawed. It does not yield fundamental (spacetime) truth, but only
+   251	a partial (spatial) truth. This in turn leads to great scientific oversights.
+   252	For example. mass does not exist in time, but mass x time (masstime) does. A
+   253	fundamental constant does not exist in time, but "constant x time" does. Energy
+   254	does not exist in time, but energy x time (action) does. Even space itself does
+   255	not exist in time -- spacetime does. We are almost always one dimension short
+   256	in every observable we model. Yet we persist in thinking spatially, and we have
+   257	developed instruments that detect and measure spatially only. Such instruments
+   258	can never measure and detect the phenomenology of the nested substrata of time.
+   259	By using scalar technology, however, less limited instruments can indeed be
+   260	constructed -- and they have been. With such new instruments, the phenomenology
+   261	of the new electromagnetics can be explored and an engineering technology
+   262	developed.
+   263	
+   264	  (17) We do not recognize the connection between nested levels of virtual
+   265	state (particle physics) and orthogonally rotated frames (hyperspaces).
+   266	Actually, the two are identical, as I showed in the appendix to my book, The
+   267	Excalibur Briefing, Strawberry Hills Press, San Francisco, 1980, pp. 233-235. A
+   268	virtual particle in the laborotory frame is an observable particle in a
+   269	hyperspatial frame rotated more than one orthogonal turn away. This of course
+   270	implies that the hyperspatial velocity of all virtual particles is greater than
+   271	the speed of light. The particle physicist is already deeply involved in
+   272	hyperspaces and hyperspatial charge fluxes without realizing it. In other words
+   273	, he is using tachyons (particles that move faster than light) without
+   274	realizing it.
+   275	
+   276	  (18) Presently quantum mechanics rigorously states that time is not an
+   277	observable, and therefore it cannot be measured or detected. According to this
+   278	assumption, one must always infer time from spatial measurements, because all
+   279	detections and measurements are spatial. With this assumption, our scientists
+   280	prejudice themselves against looking for finer, subquantal measurement
+   281	methodologies and instrumentation. Actually this present limitation is the
+   282	result of the type of electromagnetics we presently know, where all instruments
+   283	(the "measurers") have been interacted with by vector electromagnetic energy
+   284	(light). Every mass that has temperature (and all masses do!) is continually
+   285	absorbing and emitting photons, and in the process they are continually
+   286	connecting to time and disconnecting from time. If time is continually being
+   287	carried away from the detector itself by its emitted photons, then the detector
+   288	cannot  hold  and  "detect"  that  which  it  has  just  lost.  With  Tesla
+   289	electromagnetics, however, the fundamental limitation of our present instru-
+   290	ments need not apply. With finer instruments, we can show there are an infinite
+   291	number of levels to "time", and it is only the "quantum level time" which is
+   292	continually being lost by vector light (photon) interaction. By using
+   293	subquantal scalar waves, instruments can move to deeper levels of time -- in
+   294	which case the upper levels of time ARE measureable and detectable, in
+   295	contradistinction to present assumptions.
+   296	
+   297	  (19) In the present physics, time is modeled as, and considered to be, a
+   298	continuous dimension such as length. This is only a gross approximation. Indeed
+   299	, time is not like a continuous "dimension," but more like a series of
+   300	"stiches," each of which is individually made and then ripped out before the
+   301	next stitch appears. "Vector light" photons interact one at a time, and it is
+   302	this interaction with mass that creates quantum change itself. The absorbtion
+   303	of a photon -- which is energy x time -- by a spatial mass converts it to
+   304	masstime: the time was added by the photon. The emission of a photon tears away
+   305	the time, leaving behind again a spatial mass. It is not accidental, then, that
+   306	time flows at the speed of light, for it is light which contains and carries
+   307	time. It is also not accidental that the photon IS the individual quantum.
+   308	Since all our instruments presently are continually absorbing and emitting
+   309	photons, they are all "quantized," and they accordingly "quantize" their
+   310	detections. This is true because all detection is totally internal to the
+   311	detector, and the instruments only detect only their own internal changes.
+   312	Since these detections are on a totally granular quantized background, the
+   313	detections themselves are quantized. The Minkowski model is fundamentally
+   314	erroneous in its modeling of time, and for that reason relativity and quantum
+   315	mechanics continue to resist all attempts to successfully combine them, quantum
+   316	field theory notwithstanding.
+   317	
+   318	  (20) Presently, gravitational field and electrical field are considered
+   319	mutually exclusive. Actually this is also untrue. In 1974, for example,
+   320	Santilli proved that electrical field and gravitational fiend indeed are not
+   321	mutually exclusive. In that case one is left with two possibilities:
+   322	(a) they are totally the same thing, or (b) they are partially the same thing.
+   323	For the proof, see R. M. Santilli, "Partons and Gravitation: Some Puzzling
+   324	Questions," Annals of Physics, Vol. 83, No. 1, March 1974. With the new Tesla
+   325	electromagnetics, pure scalar waves in time itself can be produced electrically
+   326	, and electrostatics (when the charge has been seperated from the mass) becomes
+   327	a "magic" tool capable of directly affecting anything that exists in time --
+   328	including the gravitational field. Antigravity and the intertial drive are 
+   329	immediate and direct consequences of the new electromagnetics.
+   330	
+   331	  (21) Presently, mind is considered metaphysical, not a part of physics, and
+   332	not affected by physical means. Literally, the prevailing belief of Western
+   333	scientists is that man is a mechanical robot -- even though relativity depends
+   334	entirely upon the idea of the idea of the "observer." Western science today
+   335	thus has essentially become dogmatic, and in this respect borders on a religion.
+   336	Since this "religion," so to speak, is now fairly well entrenched in its power
+   337	in the state, Western science is turning itself into an oligarchy. But mind
+   338	occupies time, and when we measure and affect time, we can directly measure and
+   339	affect mind itself. In the new electromagnetics, then, Man regains his dignity
+   340	and his humanity by restoring the reality of mind and thought to science. In my
+   341	book, The Excalibur Briefing, I have already pointed out the reality of mind and
+   342	a simplified way in which it can be modeled to the first order. With scalar wave
+   343	instruments, the reality of mind and thought can be measured in the laboratory,
+   344	and parapsychology becomes a working, engineering, scientific discipline.
+   345	
+   346	  (22) Multiple valued basic dimensional functions are either not permitted
+   347	or severely discouraged in the present theory. For one thing, integrals of
+   348	multiple valued derivative functions have the annoying habit of "blowing up" and
+   349	yielding erroneous answers, or none at all. And we certainly do not allow
+   350	multiple types of time! This leads to the absurdity of the present interpretation
+   351	of relativity, which permits only a single observer (and a single observation)
+   352	at a time. So if one believes as "absurd" a thing as the fact that more than
+   353	one person can observe an apple at the same time, the present physics fails. 
+   354	However, the acceptance of such a simple proposition as multiple simultaneous
+   355	observation leads to a physics so bizarre and incredible that most Western
+   356	physicists have been unable to tolerate it, much less examine its consequences.
+   357	In the physics that emerges from multiple simultaneous observation,
+   358	all possibilities are real and physical. There are an infinite number of
+   359	worlds, orthogonal to one another, and each world is continually splitting into
+   360	additional such "worlds" at a stupendous rate. Nonetheless, this physics 
+   361	was worked out by Everett for his doctoral thesis in 1956, and the thesis was
+   362	published in 1957. (See Hugh Everett, III, The Many-Worlds Interpretation of
+   363	Quantum Mechanics: A Fundamental Exposition, with papers by J. A. Wheeler,
+   364	B. S. DeWitt, L. N. Cooper and D. Van Vechten, and N. Graham; eds. Bryce S.
+   365	Dewitt and Neill Graham, Princeton Series in Physics, Princeton University
+   366	Press, 1973.) Even though it is bizarre, Everett's physics is entirely
+   367	consistent with the present experimental
+   368	basis of physics. The present electromagnetic theory is constructed for only
+   369	a single "rodl" or universe -- or "level." The expanded theory, on the other
+   370	hand, contains multiply nested levels of virtual state charge -- and these
+   371	levels are identically the same as orthogonal universes, or "hyperframes."
+   372	Multiple kinds -- and values -- of time also exist. The new concept differs from
+   373	Everett's, however, in that the orthogonal universes intercommunicate in the
+   374	virtual state. That is, an observable in one universe is always a virtual
+   375	quantity in each of the other universes. Thus one can have multi-level
+   376	"continuities" and "discontinuities" simultaneously, without logical conflict.
+   377	It is precisely these levels of charge -- these levels of scalar vacuum --
+   378	that lace together the discontinuous quanta generated by the interaction of
+   379	vector light with mass.
+   380	
+   381	  However, to understand the new electromagnetic reality, one requires a new,
+   382	expanded logic which contains the old Aristotlean logic as a subset. I have
+   383	already pointed out the new logic in my paper, "A Conditional Criterion for
+   384	Identity, Leading to a Fourth Law of Logic," 1979, available from the National
+   385	Technical Information Center, AD-A071032.
+   386	
+   387	  Even as logic is extended, quantum mechanics, quantum electrodynamics, and
+   388	relativity are drastically changed by the Tesla electromagnetics, as I point-
+   389	ed out in my paper, "Solutions to Tesla's Secrets and the Soviet Tesla
+   390	Weapons," Tesla Book Company, 1580 Magnolia, Millbrae, CA, 94030, 1980.
+   391	
+   392	  The  present  electromagnetics  is  just  a  special  case  of  a  much  more
+   393	fundamental electromagnetics discovered by Nikola Tesla, just as Newtonian
+   394	physics is a special case of the relativistic physics. But in the new
+   395	electromagnetics case, the differences between the old and the new are far more
+   396	drastic and profound.
+   397	
+   398	                          Additional References
+   399	                          ---------- ----------
+   400	
+   401	1. Boren, Dr. Lawence Milton, "Discovery of the Fundamental Magnetic Charge
+   402	(Arising from the new Conservation of Magnetic Energy)," 1981/1982 (private
+   403	communication). Dr. Boren has a cogent argument that the positron is the
+   404	fundamental unit of magnetic charge. His theory thus assigns fundamentally
+   405	different natures to positive charge and
+   406	negative charge. In support of Dr. Boren, one should point out that the
+   407	"positive" end of circuits can simply be "less negative" than the "negative"
+   408	end. In other words, the circuit works simply from higher accumulation of
+   409	negative charges (the "negative" end) to a lesser accumulation of negative
+   410	charges (the "positive" end). Nowhere needthere be positive charges (protons,
+   411	positrons, etc.) to make the circuit work. Dr. Borens theory, though dramatic
+   412	at first encounter, nonetheless bears close and meticulous examination -- 
+   413	particularly since he has been able to gather experimental data which support
+   414	his theory and disagree with present theory.
+   415	
+   416	2. Eagle, Albert, "An Alternative Explanation of Relativity Phenomena,"
+   417	philosophical Magazine and Journal of Science, No. 191, December 1939, pp. 694
+   418	-701.
+   419	
+   420	3. Ehrenaft, Felix and Wasser, Emanuel, "Determination of the Size and Weight
+   421	of Single Submicroscopic Spheres of the Order of Magnitude r = 4 x 10(-5) cm.
+   422	to 5 x 10(-6) cm., as well as the Production of Real Images of
+   423	Submicroscopic Particles by means of Ultraviolet Light," Phil. Mag. and
+   424	Jour. of Sci., Vol. II (Seventh Series), No. 7, July 1926, pp. 30-51.
+   425	
+   426	4. Ehrenhaft, Felix and Wasser, Emanuel, "New Evidence of the Existance of Charges
+   427	smaller than the Electron - (a) The Micromagnet; (b) The Law of Resistance;
+   428	(c) The computation of errors of the Method," Phil. Mag. and Jour. of Sci.,
+   429	Vol. V (Seventh Series), No. 28, February 1928, pp. 225-241.
+   430	
+   431	5. See also Ehrenhaft's last paper dealing with the electronic charge, in 
+   432	Philosophy of Science, Vol. 8, 1941, p. 403.
+   433	
+   434	6. McGregor, Donald Rait, The Inertia of the Vacuum: A New Foundation for
+   435	Theoretical Physics, Exposition Press, Smithtown, NY, First Edition, 1981, pp.
+   436	15-20.
+   437	
+   438	7. Ignat'ev, Yu. G. and Balakin, A. B., "Nonliner Gravitational Waves in Plasma,"
+   439	Soviet Physics Journal, Vol. 24, No. 7, July 1981, (U.S. Translation, Consultants
+   440	Bureau, NY, JAnurary 1982), pp. 593-597.
+   441	
+   442	8. Yater, Joseph C., "Relation of the second law of thermodynamics to the power
+   443	conversion of energy fluctuations," Phys. Review A, Vol. 20, no. 4, October
+   444	1979, pp. 1614-1618.
+   445	
+   446	9. DeSantis, Romano M. et al, "On the Analysis of Feedback Systems With a
+   447	Multipower Open Loop Chain," October 1973, available through the Defense
+   448	Technical Information Center (AD 773188).
+   449	
+   450	10. Graneau, Peter, "Electromagnetic Jet-Propulsion in the Direction of current
+   451	flow," Nature, Vol. 295, 28 Janurary 1982, pp. 311-312
+   452	
+   453	11. "Gravity and acceleration aren't always equivalent," New Scientist, 17
+   454	September 1981, p. 723.
+   455	
+   456	12. Gonyaev, V. V., "Experimental Determination of the Free-Fall Acceleration
+   457	of a Relativistic Charged Particle. II. A Cylindrical Solenoid in a Time-
+   458	Independent Field of Inertial Forces," Izvestiya VUZ, Fizika, No. 7, 1979, pp.
+   459	28-32. English Translation: Soviet Physics Journal, No. 7, 1979, pp.
+   460	829-833. If one understands the new, expanded electromagnetics, this Soviet
+   461	paper indicates a means of generating antigravity and pure inertial fields.
+   462	
+   463	13. R. Schaffranke, "The Development of Post-Relativistic Concepts in Physics and
+   464	Advanced Technology Abroad," Energy Unlimited, No. 12, Winter 1981, pp. 15-20.
+   465	
+   466	14. F. K. Preikschat, A Critical look at the theory of Relativity, Library
+   467	of Congress Catalogue No. 77-670044. Extensive compilation of measurements of
+   468	the speed of light. Clearly shows the speed of light is not constant but changes,
+   469	sometimes even daily.
+   470	
+   471	
+   472	           B: The Secret of Electrical Free Energy
+   473	
+   474	Present electromagnetic theory is only a special case of the much more funda-
+   475	mental electromagnetic theory discovered by Nikola Tesla at the turn of
+   476	the century.
+   477	
+   478	Pure vacuum is pure charge flux, without mass. The vacuum has a very high
+   479	electrical potential -- something on the order of 200 million volts, with
+   480	respect to a hypothetical zero charge.
+   481	
+   482	Thus in an ordinary electrical circuit, each point of the "ground" -- which has
+   483	the same potential as the vacuum -- actually has a non-zero absolute potential.
+   484	This circuit ground has a value of zero only with respect to something else
+   485	which has the same absolute electrical potential.
+   486	
+   487	Voltage, which is always associated with a flow of electrical "mass" current
+   488	(even if only a miniscule flow), is, by definition, a difference dropped in
+   489	potential when a charge mass moves between two spatially seperated points. What
+   490	we have termed "electrical current" only flows where there is a suitable
+   491	conducting medium between things which have a difference in absolute potential.
+   492	Furthermore, between any two points in any material, there is considered to be
+   493	a finite resistance -- if we apply a voltage ahd have a mass current flowing
+   494	between the two points! Rigorously, to have one of the three is to have them all.
+   495	To lose one is to lose all three. Immediately we see a major error in present
+   496	theory: One can have a "difference in scalar potential" between two points without
+   497	having a "voltage drop" between them. Specifically, if no mass current flows
+   498	between them, no resistance exists between them, and no voltage drop exists
+   499	between them.
+   500	
+   501	In the same fashion, one can have a "scalar wave" through the vacuum without
+   502	a voltage wave. In that case, the wave has no E-field and no H-field. The only
+   503	reason one has an E field around a statically charged object is because the
+   504	charged electrons accumulated on the object are actually in violent motion. It
+   505	is this motion of the charged masses that produces E-field -- as well as H-field
+   506	whenever that entire E-field ensemble moves through laborotory space.
+   507	
+   508	Now let us reason together the "approximate" manner utilized in present
+   509	electromagnetic theory. For example, let us examine a bird sitting on a high
+   510	tension line.
+   511	
+   512	The bird sits on the high tension line without a flow of mass electricity,
+   513	because there is no significant difference in potential drop between the bird
+   514	and the line. Specifically, between the birds two feet -- each in contact with
+   515	a different portion of the line -- there exists no potential difference. This
+   516	is true even though, with respect to the vacuum, each foot is at a potential
+   517	that would be "100,000 volts higher," were a mass current flowing. And it is true
+   518	even though the absolute potential of each foot may be some 200.1 million
+   519	"volts," were a mass current flowing.
+   520	
+   521	Now an interesting thing happens to the bird when he flies through the air to
+   522	light upon the high tension wire. As he flies towards the wire, he is flying through
+   523	the massless electrostatic potential field of the wire, for that field extends
+   524	an infinite distance away from the wire. The electrostatic potential field --
+   525	pure 0-field -- is actually the spatiotemporal intensity of the massless charge
+   526	at a point. In other words, as the bird flies to the wire, he flies into an
+   527	increasing "massless charge" potential, building up to 100,000 "volts" higher
+   528	than the earth. However, very little (if any) "mass flow" potential difference
+   529	is experienced upon his body in approaching the wire, and so essientially no
+   530	"charged mass currents" are induced in his body. Thus the little flier safely
+   531	navigates into the teeth of a very high electrostatic potential, lights upon the
+   532	wire, and is not "fried" in the process. When he lights on the wire,
+   533	his body has reached the electrostatic potential that each foot's contact
+   534	point has. Again, there is no mass current flow. But his body is immersed
+   535	in an increased flux of massless charge -- which is what the electrostatic
+   536	potential represents. And each "virtual particle" flow in that charge
+   537	represents a "massless (scalar)" electrical current.
+   538	
+   539	The point is, one can have any amount of massless charge flow -- "scalar"
+   540	current -- without any mechanical work being done in the system. All electrical
+   541	work in a circuit is done against the physical mass of the charged masses that
+   542	flow. Rigorously, force is defined as the time rate of charge of momentum.
+   543	Even in the relativistic case where F = ma + v(dm/dt), change of momentum
+   544	requires mass movement. No mechanical work, and hence no energy, is expended by
+   545	massless charge flow.
+   546	
+   547	That is why the vacuum massless charge -- which is composed of a very high flux
+   548	of massless "particles" -- normally does no work on our systems, and expends
+   549	none of its very high "potential energy." It is exactly the same as the bird
+   550	which flew into an increasing scalar field as it approached the high tension
+   551	wire -- no work was done upon the bird by the increasing scalar flux currents
+   552	encountered by its body.
+   553	
+   554	By existing "in the vacuum," so to speak, we (the whole earth) are as birds
+   555	sitting on a high tension line! Until we create a significant differece in
+   556	potential, via our present electromagnetic circuits, no current can flow
+   557	 -- anywhere. Even if we produce potential differences, we must have a conductor
+   558	and charged masses to flow, if we with to produce mechanical work. Presently our
+   559	electromagnetic theory allows us to create a difference in potential within
+   560	different parts of a circuit, but only by moving and shifting charged mass. We
+   561	therefore have to do work on this electrical mass in moving it around,
+   562	and we only get back the work we have put into the circuit. In other words,
+   563	presently all wee do is "pump" electrical mass.
+   564	
+   565	Now notice what would happen to the bird on the line if we substantially
+   566	"pulsed" the potential on the line. Suppose we "pulsed" it such that the
+   567	bird's physical system -- considered as  a circuit containing a capicitance, a
+   568	resistance, an inductance, and many free electrons -- became resonant to
+   569	the pulsing frequency. In that case the "bird system" would resonate, and a
+   570	great deal of electrical mass would surge back and forth in the body of the
+   571	bird. In the birds body, voltage would exist, charged mass current would flow,
+   572	work would be done, and the bird would be electrocuted.
+   573	
+   574	Also, note that, without mass movement, electromagnetic vector fields are not
+   575	produced (and a portion of the difficulty lies with the actual vector mechanics
+   576	itself). Scalar (nonvector) waves continually penetrate the "space" where
+   577	there is no mass movement. This means there can exist a "delta-0" without a
+   578	voltage or an E-field. The present theory does not allow this, because it
+   579	always uses "q" (charge) to be charged mass. Briefly, without belaboring the
+   580	point, let us just say that is the mechanical spin of the individual
+   581	charged particle -- such as the electron -- which "entangles" or "knits
+   582	together" or "couples" independent scalar waves into vector waves. A vector
+   583	wave is simply two coupled scalar waves. The entire force field concept --
+   584	such as the E-field and the B-field -- is operationally Defined in terms of the
+   585	force exhibited on a test particle, or test mass. Rigorusly, an E-field does
+   586	not exist as a force field in a vacuum, but as two coupled scalar 0-fields
+   587	"tumbling about each other." When these two coupled, tumbling fields meet a
+   588	spinning electron, e.g., the force emerges on the electron mass. In short,
+   589	movement of a rotating mass changes delta-0 to "voltage", creating the
+   590	V/I/R triad.
+   591	
+   592	By "accululating charged mass particles" -- such as electrons -- one certainly
+   593	can increase the value of 0, which represents the charge intensity or "scalar
+   594	electrostatic potential." However, that is not the only way to increase it. 
+   595	Resonance and rotation of charged mass can also be appropriately employed to
+   596	vary the vacuum charge potential 0, under proper circumstances.
+   597	
+   598	By the correct application of rotary principles and Tesla electromagnetic
+   599	theory, it is possible to oscillate -- and change the vacuum potential itself,
+   600	in one part of an electrical system. Thus by correct procedures a part of a
+   601	system can be electrically altered so that the absolute value of its "ground"
+   602	(vacuum) potential differs significantly from the normal vacuum-ground
+   603	potential of the remainder of the circuit. In other words, we shift the
+   604	vacuum-ground potential of the part of the circuit by oscillating the massless
+   605	vacuum charge itself, and in doing so we gain a substantial, oscillatory
+   606	electrical difference between that part of the circuit and the normal ground
+   607	potential of the rest of the system.  Then we connect the two parts of the
+   608	system by means of a conductor containing a load in the middle.
+   609	
+   610	In every conductor, a large number of "free electrons" are available. If we
+   611	oscillate the actual vacuum charge itself, unlimited additional free
+   612	electrons also become availabe from the Dirac Sea, since partial "unstripping"
+   613	of the negative energy wells (each containing an electron) occurs. This
+   614	"unstripping" of the potential of the well is due to vacuum potential oscil-
+   615	lation, which oscillates time as well as space. To a negative energy well (
+   616	positive time), the oscillation of its "time stream" increases the well's
+   617	negative potential during one half-cycle and decreases its potential for the
+   618	other half-cycle. Thus during half the oscillatory cycle, negative energy
+   619	electrons may be lifted from the Dirac Sea if the oscillation is sufficiently intense.
+   620	
+   621	Therefore we obtain an attendant voltage and flow of mass current through the
+   622	load. This voltage and current, by the way, are essentially limitless, and are
+   623	free for the asking, assuming the proper "vacuum oscillation" is initiated
+   624	and maintained so that electrons are continually being lifted from the Dirac
+   625	sea by the time oscillations, and fed into the circuit.
+   626	
+   627	Standard electromagnetic theory assumes that the vacuum potential is zero. It
+   628	does not recognize the existence of massless charge, separated from charged
+   629	mass. Therefore, orthodox scientists have never looked for a way to engineer
+   630	the vacuum, because they have not realized it is composed of pure massless
+   631	charge. Electrical physics has almost hopelessly confused charge and charged
+   632	mass, thereby eliminating scalar longitudinal electrostatic waves. Expressed
+   633	in the bird/high tension line analogy, the present electromagnetic theory
+   634	restricts us to walking along the high tension line, laboriously carrying small
+   635	batteries and power units, unaware of the limitless, surging power beneath our
+   636	very feet.
+   637	
+   638	Electromagnetically, we have been rather like one of the five blind men who
+   639	touched an elephant. We have only touched one small portion of the
+   640	electromagnetism "elephant," yet we thought we had grasped the entire beast.
+   641	
+   642	------------------------------------------------------------------------------
+   643	Use this information in any way that you wish; I take no responsibility for
+   644	the results of your actions. This file was presented for "informational use"
+   645	only.
+   646	------------------------------------------------------------------------------
+   647	                                                                                                                                

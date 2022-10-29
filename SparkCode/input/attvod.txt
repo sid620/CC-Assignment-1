@@ -1,0 +1,237 @@
+     1	BROUGHT TO YOU BY TAXMAN / Sc@@pex
+     2	SAY IT WITH A CALLING CARD
+     3	
+     4	
+     5	Subject: NS Video
+     6	
+     7	Content-Length: 11368
+     8	
+     9	
+    10	FOR RELEASE: MONDAY, MAY 4, 1992
+    11	
+    12	     MORRISTOWN, N.J. -- AT&T said today it will provide technology and 
+    13	equipment to companies to help them deliver a host of new entertainment 
+    14	offerings -- including pay-per-view and video-on-demand services -- to 
+    15	their customers.
+    16	
+    17	     Using digital compression technology, AT&T will offer an "end-to-
+    18	end" system -- ranging from equipment used by program providers down to 
+    19	the set-top box in people's homes -- to help speed the delivery of 
+    20	entertainment services to consumers.
+    21	
+    22	     Today's announcement is the latest in a series of offerings 
+    23	reflecting AT&T's commitment to visual communications over a variety of 
+    24	media and through various providers.
+    25	
+    26	     "Digital signal processing is one of AT&T's key strengths," said 
+    27	Robert M. Kavner, group executive, communications products. "AT&T 
+    28	expects to use this strength to become a leader in visual 
+    29	communications, including both transmission products and services for 
+    30	digital standard and high-definition television."
+    31	
+    32	     Working with partners such as the ComStream Corporation and News 
+    33	Datacom, AT&T will provide an integrated system to deliver entertainment 
+    34	programming via satellite to headend locations and then to people's 
+    35	homes, said Bob Stanzione, vice president- transmission systems.
+    36	
+    37	     ComStream Corp., a leading supplier of satellite products and 
+    38	networks, will work with AT&T to provide the equipment needed to 
+    39	transmit compressed channels via satellite to the headend location.
+    40	
+    41	     News Datacom, a subsidiary of The News Corporation Limited, will 
+    42	provide the systems needed to authorize and process customer requests 
+    43	for programs.  The company's encryption/security system uses "Smart 
+    44	Card" technology to give cable operators the highest level of protection 
+    45	against program theft by unauthorized persons.  AT&T initially will 
+    46	provide the satellite program delivery system needed to carry channels 
+    47	from programmers to the "headend" office of cable television service 
+    48	providers.  The system is comprised of compression, transmission and 
+    49	access control network elements at the satellite up-link and down-link 
+    50	sites.
+    51	
+    52	     Following testing later this year, equipment for the satellite 
+    53	delivery system will be available for sale in 1993.
+    54	
+    55	     At the same time, AT&T is exploring potential partnerships for and 
+    56	continuing development of the cable-plant portion of the system -- from 
+    57	the cable headend to consumers' homes.  The company ultimately plans to 
+    58	offer an end-to-end system that will boost the capacity of today's cable 
+    59	networks 3-13 times.
+    60	
+    61	     The digital compression technology underlying today's system 
+    62	announcement is key to paving the way for new entertainment options for 
+    63	people.
+    64	
+    65	     AT&T's video compression algorithm for cable television service is 
+    66	based on the one used in the high-definition television (HDTV) system 
+    67	that AT&T and Zenith Electronics Corp. are asking the Federal 
+    68	Communications Commission (FCC) to adopt as the U.S.  HDTV standard.
+    69	
+    70	     The technology -- an outgrowth of advanced research in Bell 
+    71	Laboratories -- allows programmers to squeeze 4-18 television channels 
+    72	onto a single satellite transponder, and 3-13 digitally compressed 
+    73	channels onto a conventional analog cable channel. Without digital 
+    74	compression, only one channel could be transmitted over a single 
+    75	satellite transponder to the cable headend.
+    76	
+    77	     Bottomline, the technology is expected to have a dramatic impact by 
+    78	making available to consumers hundreds of new entertainment offerings in 
+    79	movies, live-action sports, homeshopping, in-home education services, 
+    80	etc.  Not only that, it will give people the shows and services they 
+    81	want, when they want them.
+    82	
+    83	     AT&T already is working with U S WEST and Tele- Communications, 
+    84	Inc. (TCI) to explore two video entertainment services -- enhanced pay-
+    85	per-view and video-on-demand -- in a market trial set to begin this 
+    86	summer.  The trial, which uses existing technology, is designed to 
+    87	measure customer reaction to and acceptance of these services.
+    88	
+    89	     AT&T's commitment to create innovative visual communications 
+    90	products and services has been demonstrated through several earlier 
+    91	announcements this year.
+    92	
+    93	     In January, AT&T introduced the VideoPhone 2500, which delivers 
+    94	images of calling parties through ordinary phone lines. The company 
+    95	subsequently introduced the AT&T Group Video System, a compact, 
+    96	rollabout system that can extend digital videoconferencing throughout a 
+    97	business.  Global Business Video Services recently expanded its service 
+    98	offerings, and NCR announced a multi-media automatic teller machine 
+    99	(ATM) with video-conferencing capabilities.
+   100	
+   101	     In addition, AT&T Microelectronics introduced a video codec chip 
+   102	set that will permit videoconferencing and full-motion video on 
+   103	equipment as compact as desktop PCs and video telephones, and as varied 
+   104	as teller machines and point-of-sale terminals.
+   105	
+   106	     Digital compression technology will be demonstrated in AT&T's 
+   107	exhibit at the National Cable Television Association (NCTA) convention 
+   108	this week in Dallas, Texas.
+   109	
+   110	     By offering compression technology and equipment to cable and 
+   111	telephone companies, AT&T expects the entire market for visual 
+   112	communications will grow to the benefit of all.
+   113	
+   114	                             # # #
+   115	
+   116	
+   117	                          Backgrounder
+   118	                     on Digital Compression
+   119	                           Technology
+   120	
+   121	
+   122	     Digital compression uses computer and algorithm techniques to 
+   123	compress a video signal from 216 Mb/s (CCIR-601) or 120 Mb/s (NTSC) to 
+   124	between 1.5-8 Mb/s while maintaining good picture quality.  With digital 
+   125	compression, more programs can be squeezed into a single transponder, 
+   126	and more channels can be packed into a 6 Megahertz slot on the broadband 
+   127	cable spectrum.
+   128	
+   129	     The technology promises a host of benefits to cable programmers, 
+   130	operators and subscribers.  For programmers, it means up to 18 programs 
+   131	can be transmitted via a single satellite transponder to the cable 
+   132	headend.  Up until now, a single satellite transponder could only handle 
+   133	one program per channel.
+   134	
+   135	     With this technology, the amount of compression -- also known as 
+   136	the compression ratio -- can be flexibly selected by a service provider 
+   137	to match a particular service offering like pay-per-view movies and 
+   138	video-on-demand, live-action sports, in-home education, homeshopping, 
+   139	etc.
+   140	
+   141	     For example, compressed rates as low as 1.5 Mb/s can be used to 
+   142	provide fairly inexpensive -- but highly compressed -- VCR- quality 
+   143	services from film sources.  On the other hand, an 8 Mb/s compression 
+   144	rate can transmit the most complex video material -- a Superbowl game, 
+   145	for example -- while maintaining the highest "broadcast quality" picture 
+   146	for viewers or other distributors.
+   147	
+   148	     Digital compression not only provides programmers with tremendous 
+   149	savings, it offers spectrum capacity that wasn't previously available 
+   150	for new types of programming.
+   151	
+   152	     Once the technology is fully deployed, it's expected to boost the 
+   153	capacity of today's cable networks 3 to 13 times.  With more programs 
+   154	and channels squeezed into a set amount of space, the technology 
+   155	ultimately will allow hundreds of programs to be transmitted from cable 
+   156	operator "headend" locations to subscribers' homes.
+   157	
+   158	     More channels for cable operators means, of course, new sources of 
+   159	revenues.  For cable TV subscribers, digital compression will provide a 
+   160	wealth of new video services.  Enhanced pay-per-view -- giving people 
+   161	the shows they want, when they want it -- video-on-demand and 
+   162	interactive services are just some of the possibilities.  In fact, the 
+   163	technology promises applications that have yet to be developed or even 
+   164	imagined.
+   165	
+   166	     AT&T's video compression algorithm is based on the one used in the 
+   167	high-definition television (HDTV) system that AT&T and Zenith 
+   168	Electronics Corp.  are asking the Federal Communications Commission 
+   169	(FCC) to adopt as the U.S. HDTV standard.
+   170	
+   171	     AT&T proposed its program delivery system to CableLabs, Inc. 
+   172	(CableLabs), Tele-Communications, Inc. (TCI), Viacom International and 
+   173	the Public Broadcasting System (PBS) last December after the industry 
+   174	consortium asked companies to describe how digital compression 
+   175	technology could be deployed.
+   176	
+   177	                              # # #
+   178	
+   179	
+   180	                Backgrounder on AT&T/TCI/U S WEST
+   181	                      Video Services Trial
+   182	
+   183	
+   184	     This summer, AT&T, Telecommunications, Inc. (TCI) and U S WEST will 
+   185	begin a market test of two services -- enhanced pay-per- view and video-
+   186	on-demand -- in a suburb of Denver, Colo.  The test, which will use 
+   187	current technology, is being conducted to measure customer reaction to 
+   188	and acceptance of "viewer-controlled cable television" (VCTV) services.
+   189	
+   190	     The trial will allow customers to view programming in two ways.  
+   191	Half of the more than 400 customers participating in the test will use a 
+   192	remote control device to select more than 1,000 movies and special 
+   193	events from a printed guide.  Customers will have total control over 
+   194	what to watch and when, without having to leave home.  They'll also be 
+   195	able to "pause" programs for up to 10 minutes at a time.
+   196	
+   197	     The other half of the test group will be able to watch any of 15 
+   198	movies and features a day, at least six of which will be available at 
+   199	any one time.
+   200	
+   201	     About halfway through the test, both groups will receive both 
+   202	services.  In all cases, the services will be offered in addition to 
+   203	TCI's regular cable service.  And Denver-based consumers who do not 
+   204	currently subscribe to cable TV will be able to participate in the test, 
+   205	which is expected to run for between 12-18 months.
+   206	
+   207	     AT&T is participating in the trial to gain insights into customer 
+   208	desires so it can develop and deploy technology that best meets 
+   209	customers' needs.
+   210	
+   211	     Jerrold Communications, a division of General Instrument Corp., 
+   212	will supply the set-top equipment that will be installed in customers' 
+   213	homes for the duration of the test, as well as the modulators, encoders 
+   214	and scramblers for the video source systems.
+   215	
+   216	     Optical Networks International is supplying the AT&T LaserLink II 
+   217	optoelectronics and AT&T fiber-optic cable that TCI and U S WEST will 
+   218	use for their portions of the test network.
+   219	
+   220	     TCI, headquartered in Denver, is the nation's largest cable 
+   221	television company.  It serves 11.3 million cable customers in 48 
+   222	states.
+   223	
+   224	     AT&T Network Systems, headquartered in Morristown, N.J., is among 
+   225	the world's largest suppliers of communications network equipment.  
+   226	AT&T's equipment is designed by AT&T Bell Laboratories, the research and 
+   227	development arm of AT&T.  Its products include digital switching and 
+   228	transmission equipment, fiber-optic and copper cable, operations support 
+   229	and data networking systems, and wireless systems for mobile phone 
+   230	networks.
+   231	
+   232	     U S WEST owns companies involved in communications, marketing, 
+   233	services and financial services, as well as cable and telecommunications 
+   234	operations in the United Kingdom, France, Hungary and Scandinavia.  U S 
+   235	WEST Communications provides telecommunications services to 25 million 
+   236	customers in 14 western states.
+   237	                             # # #

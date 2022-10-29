@@ -1,0 +1,53 @@
+     1	P6 Processor Overview
+     2	
+     3	Intel's P6 family of processors...
+     4	
+     5	  o Ensures complete binary compatibility with previous generations of the 
+     6	    Intel Architecture.
+     7	
+     8	  o Delivers superior performance through an innovation called Dynamic 
+     9	    Execution*.
+    10	
+    11	  o Provides support for enhanced data integrity and reliability feaures: 
+    12	    ECC (Error Checking and Correction), Fault Analysis & Recovery, and 
+    13	    Functional Redundancy Checking.
+    14	
+    15	  o Includes features that will greatly simplify the design of multiprocessing 
+    16	    systems.
+    17	
+    18	The first member of the P6 processor family... 
+    19	
+    20	  o Arrives in desktops and servers in 1995.
+    21	
+    22	  o Integrates about 5.5 million transistors on the chip, compared to 
+    23	    approximately 3.1 million transistors on the Pentium processor.
+    24	
+    25	  o Will operate at 133 MHz with estimated performance at more than 200 
+    26	    SPECint92.
+    27	
+    28	  o Will initially be produced on the same high volume 0.6 micron process 
+    29	    currently used for the 90 and 100 MHz versions of the Pentium processor, 
+    30	    and will then move to a 0.35 micron process.
+    31	  
+    32	  o Delivers performance that will scale up to 1000 MIPS with four processors.
+    33	
+    34	
+    35	* What is Dynamic Execution?
+    36	
+    37	  Dynamic Execution is the unique combination of three processing 
+    38	  techniques the P6 uses to speed up software:
+    39	
+    40	o Multiple Branch prediction:  
+    41	  First, the processor looks multiple steps ahead in the software and 
+    42	  predicts which branches, or groups of instructions, are likely to be 
+    43	  processed next.  This increases the amount of work fed to the processor.
+    44	 
+    45	o Dataflow analysis: 
+    46	  Next, the P6 analyzes which instructions are dependent on each other's 
+    47	  results, or data, to create an optimized schedule of instructions.
+    48	 
+    49	o Speculative Execution: 
+    50	  Instructions are then carried out speculatively based on this optimized 
+    51	  schedule, keeping all the chip's superscalar processing power busy, and 
+    52	  boosting overall software performance.
+    53	  

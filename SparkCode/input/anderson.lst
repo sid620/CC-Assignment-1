@@ -1,0 +1,247 @@
+     1	_C CUSTOMIZED MEMORY ALLOCATORS_
+     2	by Paul Anderson
+     3	
+     4	[LISTING ONE]
+     5	
+     6	
+     7	/* sym1.c - symbol table data types */
+     8	
+     9	#include <stdio.h>
+    10	#include "xalloc.h"
+    11	#include "defs.h"
+    12	
+    13	main()
+    14	{
+    15	   Symbol *p1, *p2;
+    16	   char *ps = "test string";
+    17	   int *p5;
+    18	
+    19	   p1 = (Symbol *) xmalloc(sizeof(struct Symbol));
+    20	   p1->dtype = STRING;
+    21	   p1->val.pstring = xmalloc(strlen(ps) + 1);
+    22	   strcpy(p1->val.pstring, ps);
+    23	
+    24	   p2 = (Symbol *) xmalloc(sizeof(struct Symbol));
+    25	   p2->dtype = DOUBLE;
+    26	   p2->val.pdouble = (double *) xmalloc(sizeof(double));
+    27	   *p2->val.pdouble = 6.7e-13;
+    28	
+    29	   printf("%s\n", p1->val.pstring);
+    30	   printf("%g\n", *p2->val.pdouble);
+    31	
+    32	   p5 = (int *) xmalloc(30000 * sizeof(int));
+    33	}
+    34	
+    35	$ sym1
+    36	test string
+    37	6.7e-13
+    38	file sym1.c - line 26:  malloc error for 60000 bytes
+    39	
+    40	
+    41	[LISTING TWO]
+    42	
+    43	#include <stdio.h>
+    44	#include <malloc.h>
+    45	
+    46	#define MAXBUF 256                /* size of debug buffer */
+    47	static char *dbuf[MAXBUF];        /* debug buffer */
+    48	
+    49	/* ymalloc2.c - front end for malloc()
+    50	                Version 2
+    51	*/
+    52	
+    53	char *ymalloc(file, lineno, nbytes)
+    54	char *file;
+    55	int lineno;
+    56	unsigned int nbytes;
+    57	{
+    58	   char *pheap;
+    59	   void install();
+    60	
+    61	   pheap = malloc(nbytes);
+    62	   if (pheap == (char *) NULL) {
+    63	     fprintf(stderr,"file %s - line %d:  malloc error for %u bytes\n",
+    64	                     file, lineno, nbytes);
+    65	     exit(1);
+    66	   }
+    67	   install(pheap);                  /* place in debug buffer */
+    68	   return pheap;
+    69	}
+    70	
+    71	void install(pheap)               /* store heap pointer in debug buffer */
+    72	char *pheap;
+    73	{
+    74	   register char **pbuf;
+    75	
+    76	   for (pbuf = dbuf; pbuf < dbuf + MAXBUF; pbuf++)
+    77	       if (*pbuf == (char *) NULL) {
+    78	          *pbuf = pheap;
+    79	          return;
+    80	       }
+    81	   fprintf(stderr, "No room left in debug buffer\n");
+    82	   exit(1);
+    83	}
+    84	
+    85	char *yrealloc(file, lineno, oldp, nbytes)
+    86	char *file, *oldp;
+    87	int lineno;
+    88	unsigned int nbytes;
+    89	{
+    90	   char *newp;
+    91	   register char **pbuf;
+    92	   short found = 0;
+    93	
+    94	   if (oldp != (char *) NULL)
+    95	      for (pbuf = dbuf; pbuf < dbuf + MAXBUF; pbuf++)
+    96	          if (*pbuf == oldp) {      /* find oldp's slot */
+    97	             found = 1;
+    98	             break;
+    99	          }
+   100	   if (!found) {
+   101	      fprintf(stderr,"file %s - line %d:  realloc error for address %x\n",
+   102	                     file, lineno, oldp);
+   103	      exit(1);
+   104	   }
+   105	   newp = realloc(oldp, nbytes);
+   106	   if (newp == (char *) NULL) {
+   107	      fprintf(stderr,"file %s - line %d:  realloc error for %u bytes\n",
+   108	                     file, lineno, nbytes);
+   109	      exit(1);
+   110	   }
+   111	   *pbuf = newp;         /* replace in debug buffer's old slot */
+   112	   return newp;
+   113	}
+   114	
+   115	void yfree(file, lineno, pheap)
+   116	char *file, *pheap;
+   117	int lineno;
+   118	{
+   119	   register char **pbuf;
+   120	
+   121	   if (pheap != (char *) NULL)
+   122	      for (pbuf = dbuf; pbuf < dbuf + MAXBUF; pbuf++)
+   123	          if (*pbuf == pheap) {
+   124	             *pbuf = NULL;
+   125	             free(pheap);
+   126	             return;
+   127	          }
+   128	   fprintf(stderr,"file %s - line %d:  free error for address %x\n",
+   129	                     file, lineno, pheap);
+   130	   exit(1);
+   131	}
+   132	
+   133	
+   134	[LISTING THREE]
+   135	
+   136	
+   137	/* sym2.c - more symbol table data types */
+   138	
+   139	#include <stdio.h>
+   140	#include "xalloc.h"
+   141	#include "defs.h"
+   142	
+   143	main()
+   144	{
+   145	   Symbol *p1, *p2;
+   146	   char *ps = "test string";
+   147	   char *ps2 = "much longer test string";
+   148	
+   149	   p1 = (Symbol *) xmalloc(sizeof(struct Symbol));
+   150	   p1->dtype = STRING;
+   151	   p1->val.pstring = xmalloc(strlen(ps) + 1);
+   152	   strcpy(p1->val.pstring, ps);
+   153	
+   154	   p2 = (Symbol *) xmalloc(sizeof(struct Symbol));
+   155	   p2->dtype = DOUBLE;
+   156	   p2->val.pdouble = (double *) xmalloc(sizeof(double));
+   157	   *p2->val.pdouble = 6.7e-13;
+   158	
+   159	   printf("%s\n", p1->val.pstring);
+   160	   printf("%g\n", *p2->val.pdouble);
+   161	
+   162	   p1->val.pstring = xrealloc(p1->val.pstring, strlen(ps2) + 1);
+   163	   strcpy(p1->val.pstring, ps2);
+   164	   printf("%s\n", p1->val.pstring);
+   165	
+   166	   xfree((char *) p2->val.pdouble);
+   167	   xfree(ps2);                      /* free a bad pointer */
+   168	}
+   169	
+   170	$ sym2
+   171	test string
+   172	6.7e-13
+   173	much longer test string
+   174	file sym2.c - line 31:  free error for address 2634
+   175	
+   176	
+   177	
+   178	Example 1: Out of bounds references
+   179	
+   180	/* twzone.c - array out of bounds */
+   181	
+   182	main()
+   183	{
+   184	    int buf[10];
+   185	
+   186	    buf[-4] = 1;             /* negative subscript */
+   187	    buf[10] = 2;             /* one step beyond */
+   188	
+   189	    printf("%d %d\n", *(buf - 4), *(buf + 10));
+   190	}
+   191	
+   192	
+   193	Example 2: Program that demonstartes xcalloc()
+   194	
+   195	
+   196	/* neg.c - negative subscripts with xcalloc */
+   197	
+   198	#include <stdio.h>
+   199	
+   200	main()
+   201	{
+   202	   char *xcalloc();
+   203	   int *p, *q;
+   204	
+   205	   p = (int *) xcalloc(10, sizeof(int));
+   206	   q = (int *) xcalloc(15, sizeof(int));
+   207	
+   208	   fill(p);                            /* fill with 10 numbers */
+   209	   display(p);                         /* print 10 numbers */
+   210	
+   211	   fill(q);                            /* fill with 15 numbers */
+   212	   display(q);                         /* print 15 numbers */
+   213	}
+   214	
+   215	$ neg
+   216	  1  2  3  4  5  6  7  8  9 10
+   217	  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+   218	
+   219	
+   220	 Example 3: xcalloc() routine
+   221	
+   222	
+   223	
+   224	#include <stdio.h>
+   225	#include <malloc.h>
+   226	#include <memory.h>
+   227	
+   228	char *xcalloc(nitems, size)            /* custom calloc() */
+   229	unsigned nitems, size;
+   230	{
+   231	   char *pheap;
+   232	   unsigned blksize;
+   233	
+   234	   blksize = nitems * size;                    /* size of chunk */
+   235	
+   236	   if ((pheap = malloc(blksize + sizeof(int))) == NULL) {
+   237	      fprintf(stderr, "Can't malloc on heap\n");
+   238	      exit(1);
+   239	   }
+   240	   *(int *)pheap = nitems;                     /* store no. of items in heap */
+   241	
+   242	   memset(pheap + sizeof(int), 0, blksize);    /* zero the area */
+   243	
+   244	   return pheap + sizeof(int);                 /* pointer to data */
+   245	}
+   246	
+   247	

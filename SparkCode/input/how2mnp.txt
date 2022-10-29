@@ -1,0 +1,630 @@
+     1	=======
+     2	PREFACE
+     3	=======
+     4	
+     5	If you are reading this, you probably have a modem.
+     6	
+     7	Your modem may be equipped with MNP error correction/compression protocols
+     8	(probably MNP 4 or 5 - will be explained soon).
+     9	
+    10	MNP can help you work faster. In addition to its error-free connection, it has
+    11	features that increase the effective modem speed beyond its rated value.
+    12	
+    13	If you do have MNP, chances are you are NOT using it correctly - you probably
+    14	do not communicate as fast as you can. In other words, you are probably paying
+    15	Bezeq more than you should.
+    16	
+    17	Using MNP correctly requires that you set various options in various locations
+    18	(your modem, your communication program and your file transfer protocols).
+    19	You must set ALL options correctly to make MNP work. Moreover, your
+    20	communicating partner (the BBS) must also set all ITS options correctly. The
+    21	defaults that come with your modem and your software do not help - they are
+    22	usually wrong.
+    23	
+    24	This article is intended to help you determine these settings so that you can
+    25	utilize your modem to its best.
+    26	
+    27	The basic idea is very simple. First, you must get your modem to work in its
+    28	highest speed (in other words, setup MNP correctly); then you must make sure
+    29	that your computer and software do not become a bottleneck and slow the modem
+    30	down. This simple idea is not very easy to implement, however, so read
+    31	carefully.
+    32	 
+    33	One last remark. There are many brands of MNP modems in the market, and even
+    34	more communication programs and file transfer protocols. I cannot cover all
+    35	of them. The modem discussion will be based mainly on the Everex EV-941,
+    36	which I own and know the best. The software part will discuss Telix, Telemate,
+    37	Puma, Bimodem and DSZ. I will mention some other modems and software packages,
+    38	but your favorite one may not be among them. READ ANYHOW: if you understand
+    39	the basic ideas, you will probably be able to implement them for other
+    40	hardware or software items.
+    41	
+    42	
+    43	=================
+    44	SOME MODEM BASICS
+    45	=================
+    46	
+    47	So that we can all understand each other, let me draw some basic facts. They
+    48	are not necessarily exact, but they are good enough for this discussion. If
+    49	you are familiar with these facts, you can skip this and the following
+    50	section.
+    51	
+    52	Let's assume that YOUR computer wants to send some data to MY computer. Here
+    53	is what happens:
+    54	
+    55	Your computer sends the data to its own "Serial Adapter" (or "RS232 card").
+    56	It sends the data in parallel - one full byte at a time (all bits together),
+    57	along with some control information.
+    58	
+    59	Your serial adapter converts the data from parallel to serial representation.
+    60	In other words, the bits that form the byte (which entered your adapter at the
+    61	computer side together) leave it at the connector side one after the other.
+    62	The adapter is asynchronous, which means that it adds a "Start" bit, "Stop"
+    63	bit(s) and perhaps a parity bit to each sequence of bits that form a byte (I
+    64	will not discuss this any further).
+    65	
+    66	Your Serial adapter narrows the eight-bits-per-byte-plus-control computer data
+    67	to a fewer number of lines, but is still creates digital data, which can be
+    68	transmitted over special (and short) lines only. This is why your adapter is
+    69	connected to a modem. The modem translates the digital data to voices that can
+    70	be transmitted over a standard telephone line.
+    71	 
+    72	On the other side of the phone line, my modem listens to the incoming voices,
+    73	translates them to serial bits and feeds the bits into my serial adapter. This
+    74	adapter converts the sequence of bits into parallel bytes, which are read by
+    75	my computer.
+    76	 
+    77	To summarize:
+    78	 
+    79	-     Your computer creates parallel bytes;
+    80	-     Your serial adapter receives parallel bytes and creates serial bits;
+    81	-     Your modem receives serial bits and creates voices;
+    82	-     My modem receives voices and creates serial bits;
+    83	-     My serial adapter receives serial bits and creates parallel bytes;
+    84	-     My computer receives parallel bytes.
+    85	
+    86	(By the way, "internal" modems - such as the Everex EV-941 - combine the
+    87	serial adapter and the modem into a single card: they receive parallel data
+    88	and send voices, and vice versa. This is transparent to the software, since
+    89	the single-card modem emulates a serial adapter connected to an external
+    90	modem, and there is no difference on either the computer or the telephone line
+    91	side).
+    92	
+    93	
+    94	=======================
+    95	SOME MORE MODEM DETAILS
+    96	=======================
+    97	
+    98	Let's get closer and examine some points in higher detail.
+    99	
+   100	Your serial adapter is "Full Duplex", and so is probably your modem. This
+   101	means that they can receive and transmit data at the same time (the serial
+   102	adapter actually has two physical lines - one for outgoing bits, one for
+   103	incoming - as well as some control lines; the modem usually uses two basic
+   104	frequencies, one for transmitting and one for receiving).
+   105	
+   106	Your software, serial adapter and modem must be able to tell when each of them
+   107	is ready to communicate. In other words, there must be a standard method of
+   108	"Handshaking" between all parties. This is done in several methods. 
+   109	
+   110	First, there are several control lines between the serial adapter and the
+   111	modem (these lines can also be set and/or sensed by the software on the
+   112	computer side of the serial adapter). Of these control lines I will mention
+   113	four:
+   114	
+   115	-     DSR (Data Set Ready) - Modem-to-computer: Used by the modem to tell the
+   116	      serial adapter and the computer that the modem is ready (but not
+   117	      necessarily able to receive new data).
+   118	
+   119	-     CTS (Clear To Send) - Modem-to-computer: Used by the modem to tell the
+   120	      serial adapter and the computer that the modem is able to receive new
+   121	      data.
+   122	
+   123	-     DTR (Data Terminal Ready) - Computer-to-modem: Used by the serial
+   124	      adapter to tell the modem that the adapter (and computer) is ready (but
+   125	      not necessarily able to receive new data).
+   126	
+   127	-     RTS (Request To Send) - Computer-to-modem: Used by the serial adapter 
+   128	      to tell the modem that the adapter (and computer) is able to receive new
+   129	      data. 
+   130	
+   131	Not all four lines are used by all modems, but MNP modems usually use all
+   132	four, as I'll explain later.
+   133	
+   134	There is an alternate way of handshaking between the communicating parties.
+   135	Instead of relying on extra hardware lines, this method uses special ASCII
+   136	values that are sent as standard data but have a unique meaning. These values
+   137	are usually XON (hex 11), which means "start", and XOFF (hex 13), which means
+   138	"stop". Using XON/XOFF has several disadvantages: it slows down the
+   139	transmission (because handshaking comes in sequence rather than in parallel
+   140	with the data), and more important - the XON/XOFF characters, being used for
+   141	handshaking, are "swallowed" and cannot be transmitted as part of the normal
+   142	data.
+   143	
+   144	One more thing you should know about modems is that they usually work in two
+   145	modes. In normal mode, everything you send to the modem is transmitted over
+   146	the phone to the other partner. The modem may also operate in "Command" mode;
+   147	in this case, the data you send to the modem is interpreted as modem commands
+   148	(the switch between normal and command mode will not be explained here, since
+   149	it is usually done for you by your communication program). Most modems use the
+   150	Hayes command language, in which all commands start with the characters "AT".
+   151	The Hayes language is not uniform - every manufacturer has its own implement-
+   152	ation of the language, particularly for such exotic things as MNP control,
+   153	which is what this document is all about. I cannot therefore give exact rules
+   154	that match all modems, and you will have to figure out your own commands if
+   155	your modem is different than mine.
+   156	
+   157	
+   158	====================
+   159	COMMUNICATION SPEEDS
+   160	====================
+   161	
+   162	I said "communication speeds" and not "communication speed" on purpose. Each
+   163	modem has a rated maximum speed. This is somewhat misleading, because there
+   164	are several speeds involved, and the final communication speed depends on
+   165	more than one factor.
+   166	
+   167	The modem speed itself is measured in Bits Per Second, or BPS. This is the
+   168	number of bits per second sent or received by the modem over the telephone
+   169	line. The most common speed today is 2400 BPS (1200 is used by older or
+   170	cheaper modems, while 9600 is becoming quite common).
+   171	
+   172	(You may also hear the term "modem Baud rate". IGNORE IT. This measures the
+   173	number of modem status changes per second. 2400 BPS modems have usually a
+   174	Baud rate of only 600, and use special techniques such as frequency shifting
+   175	to squeeze in more bits per change in status).
+   176	
+   177	The modem speed (BPS) refers to the PHONE side of the modem. The speed on the
+   178	other side, between the modem and the computer, is not necessarily the same.
+   179	MNP modems are usually capable of talking to the computer faster than they
+   180	talk between themselves; we'll soon see why this is necessary.
+   181	
+   182	When the modem-to-computer and modem-to-modem speeds are different, some
+   183	handshaking techniques (explained above) must be used to ensure that the
+   184	computer does not "overrun" the modem beyond its actual capabilities and vice
+   185	versa.
+   186	
+   187	To complicate things a little more, the BPS speed measures the actual number
+   188	of bits that flow between modems. MNP effective transfer rate can be faster,
+   189	because less bits are needed to transmit the same amount of data.
+   190	
+   191	There is one thing you must remember. THE ACTUAL TRANSMISSION SPEED IS THE
+   192	SPEED OF THE SLOWEST COMMUNICATING PARTNER. If your modem can talk 2400 and
+   193	my can talk 1200, the actual speed will be 1200: this is straightforward. What
+   194	is less obvious is that if your modem can talk to my modem at an effective
+   195	speed of 3000 (actually 2400 enhanced by MNP) but your (or my) computer-to-
+   196	modem speed is fixed at 2400, the final speed will only be 2400 - and neither
+   197	of us may be aware of it.
+   198	
+   199	Communication is a two-partners game. You may set all your speeds correctly
+   200	on your side, but this is not good enough. I must set my speeds right as well.
+   201	SYSOPS PAY ATTENTION: There is a whole world out there waiting for you to
+   202	setup your communication parameters correctly!
+   203	
+   204	
+   205	===============
+   206	SOME MNP BASICS
+   207	===============
+   208	
+   209	MNP, or Microcom Networking Protocol (today supported by many more brands
+   210	beside Microcom), was originally intended to ensure error-free communication
+   211	between modems regardless of phone line conditions. MNP is divided into
+   212	classes. In the first (and earliest) classes, the error-free communication was
+   213	obtained at a price of reducing the effective speed (which is quite obvious
+   214	if you think about it). Newer classes use special techniques that result in
+   215	error-free data transfer while actually INCREASING the communication speed
+   216	(moderately to considerably).
+   217	
+   218	MNP classes 1 and 2 reduce the transfer speed, and are not worth discussing.
+   219	
+   220	MNP class 3 is the first class that resulted in an increased transfer rate.
+   221	This was done by communicating between the modems using SYNCHRONOUS "packets"
+   222	without start and stop bits, although the data transfer on the other side of
+   223	the modems (between the modems and the computer) is still synchronous. There
+   224	is still some overhead involved, so the effective transfer rate of MNP 3 is
+   225	about 108%, or up to 260 bytes per second for an 2400 BPS modem, compared to
+   226	240 bytes for non-MNP (assuming 1 start bit, 1 stop bit and no parity). These
+   227	speeds, by the way, are ideal and are never reached because of other limiting
+   228	factors, but you can get quite close.
+   229	
+   230	MNP class 4 uses synchronous packets as well, and optimizes these packets by
+   231	eliminating unnecessary data and adjusting to line conditions. The effective
+   232	transfer rate of MNP 4 is up to 120%, or about 260 bytes per second for 2400
+   233	(assuming there are not too many errors - remember that the communication is
+   234	supposed to be error-free as well as faster).
+   235	
+   236	MNP class 5 adds data compression to MNP 4. A real-time adaptive compression
+   237	algorithm is used, which means that the modem adjust the algorithm all the
+   238	time to match the data being transferred. Unlike the previous classes, which
+   239	provide a constant speed factor, compression depends of course on the data
+   240	being transmitted. MNP 5 is considered to have an effective rate of 200%,
+   241	which makes a 2400 BPS modem behave like a 4800. 
+   242	
+   243	There is a catch, however. If your modem does mainly file transfers from a
+   244	BBS, chances are that you will not gain much by compression (to put it in
+   245	other words, if the already-compressed .ZIP or .ICE etc. files in the BBS can
+   246	be squeezed any further, the file compression method should probably be
+   247	changed!). Some publication suggest that you would be better off WITHOUT data
+   248	compression in this case, since compression does have its price, which means
+   249	that you should revoke MNP 5 and go back to using MNP 4. My own experience is
+   250	that MNP 5 does not harm file transfers that much, and you should probably
+   251	keep it on to take care of interactive BBS work, but your case might be
+   252	different - feel free to experiment and let me know the results.
+   253	
+   254	This is as far as I will go. There are several further MNP classes (the latest
+   255	one I heard of is MNP 10, which makes a 2400 BPS modem behave like 19200!),
+   256	but the idea is the same, and modems above MNP 5 are still not that common.
+   257	
+   258	One thing I didn't say, but should be obvious, is that MNP is a two-way
+   259	business - both communicating modems must use the same MNP level when they
+   260	communicate (the modems may negotiate and agree upon a certain level when they
+   261	make the first connection).
+   262	
+   263	
+   264	====================================
+   265	HOW TO SPEED THINGS UP - BASIC IDEAS
+   266	====================================
+   267	
+   268	Enough with the theory - let's start doing something useful.
+   269	
+   270	The things you should do to make your communication faster can be summarized
+   271	as follows:
+   272	
+   273	1.    PURCHASE AN MNP MODEM (at least MNP 4, probably 5).
+   274	
+   275	2.    PURCHASE A FAST-ENOUGH COMMUNICATION PROGRAM, that will not cause a
+   276	      bottleneck on your computer (notice that I said "purchase", not "steal"
+   277	      or "borrow"!).
+   278	
+   279	3.    MAKE YOUR MODEM USE MNP (4 or 5 - as I said, I don't have a good advise
+   280	      here). This is rather easy, but remember that most MNP modems do NOT use
+   281	      MNP as a default, so you have to do some manual work.
+   282	
+   283	4.    MAKE YOUR SERIAL ADAPTER TALK TO THE MODEM AT A HIGHER RATE THAN THE
+   284	      MODEM'S NOMINAL RATE. The manuals suggest 4800 for a 2400 modem; I
+   285	      myself am more optimistic and use 9600.
+   286	
+   287	5.    MAKE SURE YOUR MODEM STAYS AT THE HIGH MODEM-TO-ADAPTER SPEED and does
+   288	      not revert to the modem-to-modem nominal speed when the connection is
+   289	      made.
+   290	
+   291	6.    MAKE SURE YOUR COMMUNICATION PROGRAM STAYS AT THE HIGH SPEED and does
+   292	      not revert to the modem nominal speed when the connection is made.
+   293	
+   294	7.    USE HARDWARE-LEVEL HANDSHAKING (CTS/RTS) between the modem and your
+   295	      communication program. Do NOT use XON/XOFF handshaking.
+   296	
+   297	This is all you have to do, but you must make sure you do EVERYTHING specified
+   298	here. If you do a partial job, you'll end up without any gain in speed (the
+   299	better case) or with unreadable garbage on your screen (the worse case).
+   300	
+   301	
+   302	============================================
+   303	HOW TO SPEED THINGS UP - A PRACTICAL EXAMPLE
+   304	============================================
+   305	
+   306	For the hardware part, let me assume that you have purchased an Everex EV941
+   307	modem with MNP 5 (this is NOT a recommendation - there may be better bargains
+   308	in the market). I'll also discuss some other modem setup possibilities.
+   309	
+   310	For the software part, you may use the communication program that comes
+   311	bundled with your modem (Everex comes with something called "BitCom"), but
+   312	there ARE much better bargains in the market, and some of them are shareware,
+   313	so you can experiment and purchase the one you like. I'll mention two:
+   314	
+   315	-     Telix seems like a fairly good choice. It is FAST, not too large, has
+   316	      built-in ZMODEM and a powerful script language, and is not too annoying
+   317	      to use.
+   318	
+   319	-     Telemate is considered to be a good choice, since it allows a kind of
+   320	      multitasking (you can browse a file while you download so you can decide
+   321	      on-the-fly what to download next). If your computer is slow, Telemate
+   322	      may not be fast enough and may become a bottleneck (something a
+   323	      communication software should never be), and it also eats up too much
+   324	      of your precious RAM, but it is still worth considering.
+   325	
+   326	I have also experimented with some other packages (including Procomm, Procomm
+   327	Plus which is used at my work but is NOT shareware, Boyan, Qmodem and GT1500).
+   328	Most of them can be used quite easily with MNP.
+   329	
+   330	A communication program is not complete without some external file transfer
+   331	protocols. There are about a dozen of them around, but I'll discuss only
+   332	three: Puma, which is fast and elegant; Bimodem, which is quite amazing (it
+   333	is truly full-duplex - allows you to upload and download simultaneously at
+   334	full speed, and even chat with your friend at the same time); and DSZ, which
+   335	contains several protocols including ZMODEM and is preferred by many users.
+   336	
+   337	
+   338	===========
+   339	MODEM SETUP
+   340	===========
+   341	
+   342	In the following lines I'll discuss only those modem settings that are
+   343	important for proper MNP operation. There are more options that I will not
+   344	mention.
+   345	
+   346	Commands that have an alphabetic character immediately following the AT code
+   347	are usually common among all modems. Commands that start with AT& are less
+   348	common, and there are some variations. Commands that start with AT\, AT% or
+   349	AT* are unique, and probably have other codes in other modems.
+   350	
+   351	ATB1        (Mandatory, default). Selects the Bell 212A protocol.
+   352	
+   353	ATE1        (Mandatory, default). Echoes the commands to the screen; some
+   354	            communication programs require it, for others it does no harm.
+   355	
+   356	ATQ0        (Mandatory, default). Suppresses "quiet" modes, and causes command
+   357	            responses to be sent by the modem (most communication programs
+   358	            require it to tell when a communication has been made, etc.).
+   359	
+   360	ATV1        (Recommended, default). Causes command responses to be displayed
+   361	            in English words rather than in numeric codes.
+   362	
+   363	ATX4        (Recommended, default). Causes the modem to wait for dial tone
+   364	            before dialing, and to detect BUSY and NO ANSWER conditions. some
+   365	            modems may not support it.
+   366	
+   367	AT&C1       (Mandatory, default). Causes the modem to indicate Data Carrier
+   368	            Detect (DCD) only when there is actually a modem on the other
+   369	            side (DCD is not explained in this article).
+   370	
+   371	AT&D2       (Mandatory, default). Causes the modem to hang up when the DTR
+   372	            line is down (DTR is explained above).
+   373	
+   374	AT&S1       (Mandatory, NOT default!). Causes the modem to keep the DSR line
+   375	            up only when the modem is active (DSR is explained above). BE
+   376	            CAREFUL: Other modems use AT&S for other things (Motorola 82240,
+   377	            for example, uses it for front switch settings control).
+   378	
+   379	AT\C1       (Mandatory, NOT default!). Enables an internal modem buffer to be
+   380	            used while the modems negotiate MNP. If not used, the first
+   381	            characters in the transmission may be lost.
+   382	
+   383	AT\G0       (Mandatory, default). Disables XON/XOFF flow control between the
+   384	            two modems. Setting AT\G1 will cause problems with some file
+   385	            transfer protocols (such as Bimodem).
+   386	
+   387	AT\J0       (Mandatory, NOT default, VERY important!). Turns "baud adjust"
+   388	            off. The default (AT\J1) causes your modem to adjust the speed by
+   389	            which it communicates with your computer (the RS232 side) to the
+   390	            nominal modem-to-modem speed at connect time, which eliminates all
+   391	            MNP speed gains (your 2400 modem will talk "effective-4800" to the
+   392	            second modem, but only 2400 to your computer!). Setting AT\J0
+   393	            keeps the speed between the modem and the serial port constant
+   394	            (how to set this speed initially is explained below). Other modems
+   395	            use other commands for this, such as AT&I1.
+   396	
+   397	AT\K5       (Mandatory, default). Causes a Break signal to be sent and
+   398	            received in sequence with the data, which is important for file
+   399	            transfers. Other modems use other commands for this, such as
+   400	            AT*Y2.
+   401	
+   402	AT\N3       (Mandatory, NOT default!). Causes the modem to work in "auto-
+   403	            reliable" mode, which means that it will try to use MNP and fall
+   404	            back to non-MNP if the other modem is not compatible. The default
+   405	            (AT\N1) DISABLES MNP altogether. Other modems use other commands
+   406	            for this, such as AT&E4 or AT&E6.
+   407	
+   408	AT\Q3       (Mandatory, NOT default, VERY important!). Causes hardware-level
+   409	            handshaking (RTS/CTS) between your modem and your computer. If the
+   410	            modem and the serial adapter speeds are different (such as when
+   411	            AT\J0 is specified), handshaking MUST be enabled. DO NOT use
+   412	            XON/XOFF handshaking (AT\Q1), because it will cause problems with
+   413	            some file transfer protocols. Other modems use other commands for
+   414	            this, such as AT&K2.
+   415	
+   416	AT\V1       (Recommended, NOT default!). Causes the modem replies to indicate
+   417	            if a reliable (MNP) connection has been made - you should probably
+   418	            want to know what kind of connection you have established.
+   419	
+   420	AT\X1       (Mandatory, NOT default!). Enables XON/XOFF characters to be sent
+   421	            to the other modem as data. The default (AT\X0) will swallow
+   422	            XON/XOFF and will cause problems with some file transfer
+   423	            protocols.
+   424	
+   425	AT%C1       (Up to you - I use it; NOT default). Enables data compression
+   426	            (uses MNP 5 rather than MNP 4). If you can prove that MNP 5 slows
+   427	            down file transfers considerably, I'll be glad (?) to switch back
+   428	            to AT%C0.
+   429	
+   430	ATDT        (Recommended). This has nothing to do with MNP, but you may be
+   431	            able to use touch-tone (DTMF) dialing without being aware of it,
+   432	            and it is a real time saver. Even if you can't, try to ask Bezeq -
+   433	            you may be surprised.
+   434	
+   435	AT&W0       You probably do not want to type all those setup strings every
+   436	            time, so save them once with AT&W0, and indicate to your
+   437	            communication program that your modem initialization string is
+   438	            simply ...
+   439	
+   440	ATZ         Which is easy to remember and use.
+   441	
+   442	AT&V        (View setting). Use this to check your non-MNP modem settings.
+   443	
+   444	ATI6        (Inquire modem). Use this to check your special MNP modem settings
+   445	            (why use two different codes is beyond me).
+   446	
+   447	
+   448	===========
+   449	TELIX SETUP
+   450	===========
+   451	
+   452	If you are using Telix as your favorite communication program, there are
+   453	several things that you should do to make it work properly with MNP.
+   454	
+   455	First, bring up the Telix setup menu (Alt-O), and select "Terminal options".
+   456	
+   457	Within "Terminal options", select option A and set the default baud rate to
+   458	9600 (!) if your modem is 2400 MNP. This will ensure that the serial-adapter-
+   459	to-modem speed is high enough not to cause a bottleneck.
+   460	
+   461	Then select the appropriate options to turn XON/XOFF flow control OFF, CTS/RTS
+   462	flow control ON, and DSR/DTR flow control OFF. Do not use any other
+   463	combination of flow control!
+   464	
+   465	Now go back to the configuration menu and select "Modem and dialing". Set the
+   466	modem initialization string to ATZ^M (provided that you have saved your
+   467	setup!), and set Auto Baud detect to OFF.
+   468	
+   469	Finally, go to your dialing directory and define ALL entries to have a speed
+   470	of 9600 (even if you know for sure they are only 1200 or 2400).
+   471	
+   472	Now start working. You should notice that the speed indication in the status
+   473	line always says 9600, whether you are idle or communicating. If it is (and
+   474	if you manage to work), you probably did everything right.
+   475	
+   476	(What happens is that Telix talks to your modem at a constant speed of 9600
+   477	BPS and uses CTS/RTS flow control to avoid overruns; your modem talks to the
+   478	other modem as fast as it can, taking advantage of MNP if available, and is
+   479	not delayed by your computer's hardware or software).
+   480	
+   481	There is one small problem. If you upload or download with Telix's internal
+   482	protocols, the estimated transfer time will be incorrect, because it will be
+   483	based on the assumption that your modem is actually 9600 BPS. This is a small
+   484	price to pay in order to be able to work faster.
+   485	
+   486	
+   487	==============
+   488	TELEMATE SETUP
+   489	==============
+   490	
+   491	First of all, use Telemate only if your computer is fast enough and has enough
+   492	free memory - writing programs in C using Vermont Views results in very good
+   493	programs but does not contribute to their size and performance.
+   494	
+   495	Go to Telemate's options menu (use your mouse or Alt-O).
+   496	
+   497	Select "Dial setup", and turn "Auto Baud detect" OFF.
+   498	
+   499	Select "Terminal", and turn XON/XOFF flow control OFF and RTS/CTS flow control
+   500	ON.
+   501	
+   502	Select "Communication", and set the modem initialization string to ATZ^M
+   503	(provided that you have saved your setup!). In addition, set the "Baud rate"
+   504	(which by now you know should say BPS, not Baud) to 9600 (!) if your modem is
+   505	2400 MNP. This will ensure that the serial-adapter-to-modem speed is high
+   506	enough not to cause a bottleneck.
+   507	
+   508	Do not forget to save your setup.
+   509	
+   510	Finally, switch to your dialing directory and define ALL entries to have a
+   511	speed of 9600 (even if you know for sure they are only 1200 or 2400).
+   512	
+   513	Now start working. If you left your status line on, you should notice that the
+   514	speed indication in the status line always indicates 9600, whether you are
+   515	idle or communicating. If it is (and if you manage to work), you probably did
+   516	everything right.
+   517	
+   518	Unlike Telix, Telemate adjusts its estimated upload/download times as it
+   519	works. Therefore, only the initial estimated transfer time will be incorrect
+   520	(because it will be based on the assumption that your modem is actually 9600
+   521	BPS), but after a few blocks the estimate will be corrected.
+   522	
+   523	
+   524	==========
+   525	PUMA SETUP
+   526	==========
+   527	
+   528	If you are using Puma as an external protocol, you can have MNP speed AND a
+   529	correct estimate of the file transfer time.
+   530	
+   531	Run PUMASET to configure Puma, and choose "Change default options". In this
+   532	menu, select the following:
+   533	
+   534	-     UART Baud - "current" (assuming you always call Puma when your
+   535	      communication program is operating).
+   536	
+   537	-     Effective Baud - 2400 (assuming your modem is 2400). This figure is used
+   538	      for estimating the file transfer time.
+   539	
+   540	-     CTS/RTS handshake - "fast".
+   541	
+   542	
+   543	=============
+   544	BIMODEM SETUP
+   545	=============
+   546	
+   547	Bimodem is a protocol you cannot live without if you plan on being a honest
+   548	person and upload at least once in a while.
+   549	
+   550	Like Puma, Bimodem can be configured to use MNP and estimate times correctly.
+   551	
+   552	To do this, run BICONFIG (either directly or from BIMENU). Select "Terminal
+   553	options" and set the following:
+   554	
+   555	-     "Baud (yack!) rate to base estimate on" - type here your nominal modem
+   556	      speed (e.g. 2400). This figure is used for estimating the file transfer
+   557	      time. Note that if you use MNP, your effective BPS rate will be faster,
+   558	      and the estimated time will be too long.
+   559	
+   560	-     "CTS/RTS hardware flow control" - set to "Y".
+   561	
+   562	The next time you are asked why you always download and never upload, do not
+   563	use the "I don't have time" or "I don't have money" excuses - they do not work
+   564	well with Bimodem.
+   565	
+   566	
+   567	=========
+   568	DSZ SETUP
+   569	=========
+   570	
+   571	DSZ is a famous yet not-very-user-friendly file transfer package that supports
+   572	several protocols, most importantly ZMODEM. It is a must if you use a
+   573	communication program that does not have internal ZMODEM, and there are those
+   574	out there who use it even with Telix or Telemate, because DSZ is supposed to
+   575	be faster and better (you can try it and judge for yourself).
+   576	
+   577	The following comments are based on the DSZ version dated April 11, 1990
+   578	(known as DSZ0411). They are probably relevant to other versions as well.
+   579	
+   580	DSZ is command-line oriented and does not have a separate setup mode. The DSZ
+   581	documentation has the courtesy of stating that it has a "handshake XX"
+   582	command-line option (which can be abbreviated to "ha"), but it does not
+   583	indicate what values this mysterious XX can take (this is part of the
+   584	package's user-friendliness). If you dig deep enough, you find that the value
+   585	relevant to MNP is "handshake cts". The DSZ command for ZMODEM downloading
+   586	should therefore look something like:
+   587	
+   588	      DSZ ha cts rz -rr <other options>
+   589	
+   590	note that there is no hyphen before "ha", and that you must use lowercase
+   591	characters.
+   592	
+   593	DSX has another option that may be relevant, called "estimate". If you
+   594	indicate the effective BPS rate to DSZ (such as 2400 when using non-MNP or
+   595	2900 when using MNP), DSZ will show a correct estimated transfer time;
+   596	otherwise the estimate will be based on the RS232 speed (9600) and will be
+   597	incorrect. If your file transfer is long enough, you may have enough time to
+   598	locate where exactly on the screen DSZ gives its estimate - somewhere towards
+   599	the end of its numerous line-mode messages.
+   600	 
+   601	
+   602	=======================
+   603	A FINAL WORD FOR SYSOPS
+   604	=======================
+   605	
+   606	As you have probably guessed by now, I am NOT a SYSOP and probably never will
+   607	be (I am too old, too busy and too poor).
+   608	
+   609	I therefore have no idea what to do on your side of the game to make MNP work.
+   610	
+   611	We users can do everything we can, but if you do not setup your end correctly,
+   612	we will never gain speed.
+   613	
+   614	If any of you out there knows what to do with all those Front Doors and Remote
+   615	Accesses an QBBSes and FileDoors and other Buzzwords to make them utilize MNP,
+   616	please share this information with other SYSOPs, so that you and us (who cares
+   617	about you and us? - me!) can save some time and money.
+   618	
+   619	
+   620	========================
+   621	A FINAL WORD TO EVERYONE
+   622	========================
+   623	
+   624	I don't want to have too many mistakes in this document. If you find one, or
+   625	if you want to add your own comments, please let me know.
+   626	
+   627	You spent some money on your equipment - I hope this will help you use it
+   628	cheeper and faster.
+   629	
+   630	

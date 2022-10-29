@@ -1,0 +1,66 @@
+     1	
+     2	
+     3	
+     4	
+     5	 FFFFFFFF   FFFFFFFF  FFFFFFFFF   FFFFFFFF   FFFFFFFF
+     6	FFFFFFFFFF FFFFFFFFFF FFFFFFFFFF FFFFFFFFFF FFFFFFFFFF
+     7	FFF FF FFF FFF    FFF FFF    FFF FFF    FFF FFF FF FFF
+     8	FFF FF FFF FFF    FFF FFF    FFF FFFFF      FFF FF FFF
+     9	FFF F  FFF FFF    FFF FFF    FFF FFF    FFF FFF F  FFF
+    10	FFF    FFF FFFFFFFFFF FFFFFFFFFF FFFFFFFFFF FFF    FFF
+    11	FF     FF   FFFFFFFF  FFFFFFFFF   FFFFFFFF  FF     FF
+    12	
+    13	Specific information........
+    14	
+    15	
+    16	
+    17	
+    18	
+    19	
+    20	
+    21	
+    22	
+    23	
+    24	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    25	
+    26	What is more confusing than Hayes AT-commands? (Init's maybe.......=*)
+    27	
+    28	Let's list the ones I know (the most HANDY though, left out the rest!)
+    29	
+    30	AT	Inform the modem that there is coming information.
+    31	A/	Repeat the previous command.
+    32	
+    33	FROM HERE ON.....ALL COMMANDS LISTED SHOULD HAVE A "AT" DIRECTLY FORE THE
+    34	COMMAND! (Example......"A" would mean "ATA"
+    35	-------------------------------------------------------------------------
+    36	
+    37	A	Answer the phone. An "ath1" and "ata" will also work...sometimes.
+    38	D	Dial the phone.
+    39	H0	Hang up the phone.
+    40	H1	Pick up the phone.
+    41	
+    42	FROM HERE ON, YOU WILL NEED A "D" AFTER "AT". (Example...."P" would be "ATDP")
+    43	------------------------------------------------------------------------------
+    44	
+    45	P	Pulse dial the phone. (slow, and sometimes bugs)
+    46	T	Tone dial the phone. (fast)
+    47	
+    48	MODEM SPEAKER SECTION                                     (standard AT prefix)
+    49	------------------------------------------------------------------------------
+    50	
+    51	L0	Very low speaker volume.
+    52	L1	Low speaker volume.
+    53	L2	Medium speaker volume.
+    54	L3	High speaker volume.
+    55	
+    56	M0	Shut up the speaker!
+    57	M1	Speaker on, but off while carrier/connect.
+    58	M2	Turn on the speaker.
+    59	
+    60	That is the most useful I know. There are SEVERAL others, but we won't
+    61	cover those........................yet. There is also SEVERAL other
+    62	vendor-specific at-commands.....
+    63	
+    64	All..........................later!
+    65	
+    66	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ

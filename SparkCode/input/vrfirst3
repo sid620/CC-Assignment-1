@@ -1,0 +1,1964 @@
+     1	
+     2	
+     3	#: 21212 S13/Virtual Reality
+     4	    08-Nov-91  15:30:58
+     5	Sb: Virtual reality
+     6	Fm: Matt Drury 75300,1610
+     7	To: All
+     8	
+     9	The Virtual Reality section here in the Computer Art Forum has now been opened
+    10	for public use. John Eagan [76130,2225] is the section leader.
+    11	
+    12	The goal of this section is to create, much as the fractals group in area 15
+    13	have, a virtual reality system that can be used on personal computers that are
+    14	readily available. Based on the response I have seen to my public request for
+    15	interested people, and the experience that the people who have contacted me
+    16	have should make this easily possible.
+    17	
+    18	  Matt Drury
+    19	  Graphics Forums Staff
+    20	
+    21	
+    22	
+    23	
+    24	#: 21217 S13/Virtual Reality
+    25	    08-Nov-91  17:09:17
+    26	Sb: #great timing
+    27	Fm: Mike Schoenborn 70010,147
+    28	To: Matt Drury 75300,1610 (X)
+    29	
+    30	The timing for opening this section is just great... my PowerGlove and Sega
+    31	3D glasses projects are just now starting give results.  This will be great
+    32	place to swap notes with others playing (er, working) with the same things.
+    33	 
+    34	It's going to be tough to figure out exactly where to post messages, though,
+    35	when a project involves an Amateur doing a Raytraced 3-D Animation.  (Such
+    36	troubles I can live with!)
+    37	
+    38	
+    39	There are 4 Replies.
+    40	
+    41	#: 21218 S13/Virtual Reality
+    42	    08-Nov-91  17:45:38
+    43	Sb: #21217-#great timing
+    44	Fm: John Eagan 76130,2225
+    45	To: Mike Schoenborn 70010,147 (X)
+    46	
+    47	Mike- Post them here! Welcome to the section, your message is the first
+    48	"non-official" one in the section! How does it feel to be a pioneer?<g> 
+    49	Anything of interest you have, let's see it. The funny thing is, the nature of
+    50	the subject here inherently means that a lot of boundaries will be crossed, so
+    51	don't pick too many nits about "does it really belong here", especially until
+    52	things start taking direction. We can sort that stuff out after some things
+    53	are on the table, as it were.
+    54	
+    55	JLE 
+    56	
+    57	There is 1 Reply.
+    58	
+    59	#: 21220 S13/Virtual Reality
+    60	    08-Nov-91  18:08:55
+    61	Sb: #Welcome!
+    62	Fm: John Eagan 76130,2225
+    63	To: all
+    64	
+    65	Hello, and welcome to the Virtual Reality section of COMART, our newest
+    66	section. I've been drafted as the section head, and hope to be able to help
+    67	guide things along as we work on bringing VR to personal computers in the way
+    68	FRACTINT and DKB and VIVID have brought fractals and raytracing within the
+    69	grasp of people with basic DOS machines. All suggestions are welcome. I've
+    70	uploaded a basic introduction to the section as VRINTRO.ZIP / VRINTRO.DOC .
+    71	Take a look at it and fire away!
+    72	        For a start, it appears that people are working on interfaces for the
+    73	Mattel "Power Glove",if you have any source code and/or executable files for
+    74	such an interface, or anything else relevant to virtual reality, let's see it.
+    75	As things progress we plan to get a work group started somewhat along the same
+    76	philosophy as the the now-legendary<g>   "Stone Soup Group.  I propose that we
+    77	use C as the standard language for our project (projects?) because of its
+    78	popularity, somewhat modular nature, and the fact that I have TurboC++ !
+    79	Obviously, for reasons of speed, assembler code will probably be necessary at
+    80	some point, but that should work out fine with the assembler routines compiled
+    81	into .OBJ files. Myself, I'm a real novice programmer, so if anyone feels up
+    82	to the challenge of heading up a project, step right up and announce yourself.
+    83	My role will be to act as a coordinator and director,   mostly; in fact, my
+    84	hope is to be able to get things rolling to the point where I can sit back and
+    85	concentrate on "overview" mode. Hope to hear from all of you. Let's have some
+    86	fun in cyberspace!
+    87	JLE 
+    88	
+    89	There is 1 Reply.
+    90	
+    91	#: 21222 S13/Virtual Reality
+    92	    08-Nov-91  18:24:03
+    93	Sb: #21217-#great timing
+    94	Fm: Matt Drury 75300,1610
+    95	To: Mike Schoenborn 70010,147 (X)
+    96	
+    97	Mike,
+    98	
+    99	I'm glad to hear you will be actively participating here. If you have any
+   100	plans, results, images, or other work that you wish to share, please feel free
+   101	to upload them to library 2 here and I will copy them to library 14 (as I do
+   102	with the other 'group' areas).
+   103	
+   104	I have spoken with John Eagan, the section leader, and he is ready to go. Make
+   105	sure to see his overview and introduction currently in the library.
+   106	
+   107	
+   108	  Matt Drury
+   109	  Forum Staff
+   110	
+   111	There is 1 Reply.
+   112	
+   113	#: 21223 S13/Virtual Reality
+   114	    08-Nov-91  18:26:00
+   115	Sb: #21220-#Welcome!
+   116	Fm: Matt Drury 75300,1610
+   117	To: John Eagan 76130,2225 (X)
+   118	
+   119	Welcome, John, and good luck. Again, I recommend to anyone interested in VR
+   120	the short task of downloading the introduction and overview that you have
+   121	created and uploaded to this section's library. It is an excellent treatise on
+   122	the VR project here in the Computer Art Forum.
+   123	
+   124	  Matt Drury
+   125	  Forum Staff
+   126	
+   127	There is 1 Reply.
+   128	
+   129	#: 21233 S13/Virtual Reality
+   130	    09-Nov-91  04:49:29
+   131	Sb: #21217-#great timing
+   132	Fm: John Swenson 75300,2136
+   133	To: Mike Schoenborn 70010,147 (X)
+   134	
+   135	Mike,
+   136	speaking of 3D glasses, I take it you are talking about the LCD shutter type?
+   137	I would very much like find out about such things (like how much they cost,
+   138	where do I get them, how they hook up to a PC, how I talk to them etc). What
+   139	I really want to do is write an interface for them into fractint, the 3D
+   140	stuff in fractint fascinates me, but I just can't see the 3D effect from
+   141	red/blue images, other approaches work great though (such as polarization).
+   142	 
+   143	John S.
+   144	       
+   145	
+   146	There are 2 Replies.
+   147	
+   148	#: 21263 S13/Virtual Reality
+   149	    09-Nov-91  18:44:58
+   150	Sb: #21233-great timing
+   151	Fm: John Eagan/VR 76130,2225
+   152	To: John Swenson 75300,2136 (X)
+   153	
+   154	John- That sounds great. Maybe you and Mike can get together and work on a 3d
+   155	glasses interface and get us started with software. something like that, in
+   156	conjunction with animated fractals, would certainly be a good start. I'm
+   157	curious about what Mike is doing, myself.
+   158	
+   159	JLE-VR section 
+   160	
+   161	#: 21264 S13/Virtual Reality
+   162	    09-Nov-91  18:45:09
+   163	Sb: #21217-great timing
+   164	Fm: John Eagan/VR 76130,2225
+   165	To: Mike Schoenborn 70010,147 (X)
+   166	
+   167	Mike- Additional- I'm particularly interested in hearing about the 3D glasses
+   168	project! Can you give us some more details?
+   169	
+   170	JLE-VR section 
+   171	
+   172	#: 21265 S13/Virtual Reality
+   173	    09-Nov-91  18:59:35
+   174	Sb: #conferences
+   175	Fm: John Eagan/VR 76130,2225
+   176	To: all
+   177	
+   178	To everyone- I would like to get conferences going soon in room 13-Virtual
+   179	Reality. Let me know what you think about an appropriate time and day for such
+   180	a conference, to be held weekly. The paint is dry now<g>, let's move in.
+   181	
+   182	JLE-VR section 
+   183	
+   184	There is 1 Reply.
+   185	
+   186	#: 21278 S13/Virtual Reality
+   187	    10-Nov-91  02:40:36
+   188	Sb: #21218-#great timing
+   189	Fm: Mike Schoenborn 70010,147
+   190	To: John Eagan 76130,2225 (X)
+   191	
+   192	First non-official message, eh?  It was quite by accident, actually.  I was
+   193	poking around in the libs and couldn't remember where to find 3D images.
+   194	When I asked for the section names I saw "Virtual Reality" listed, and
+   195	cursed myself for not paying more attention to the Forum Announcements and
+   196	missing out on all the fun.
+   197	 
+   198	Come to think of it, I believe I had the dubious honor of posting the first
+   199	message in the Raytrace Forum.  I'm pretty sure this is a good indication I
+   200	spend *way* too much time on CIS.
+   201	       
+   202	
+   203	There is 1 Reply.
+   204	
+   205	#: 21279 S13/Virtual Reality
+   206	    10-Nov-91  02:40:40
+   207	Sb: #21222-#great timing
+   208	Fm: Mike Schoenborn 70010,147
+   209	To: Matt Drury 75300,1610 (X)
+   210	
+   211	I'm sure I'll have some hardware interface schematic GIFs to upload as time
+   212	goes on.  What is the prefered KEYword to use to indicate the file's final
+   213	resting place should be here in 13?  "VIRTUAL REALITY" is pretty long, maybe
+   214	just "VR"?
+   215	       
+   216	
+   217	There are 2 Replies.
+   218	
+   219	#: 21280 S13/Virtual Reality
+   220	    10-Nov-91  02:40:48
+   221	Sb: #21233-#great timing
+   222	Fm: Mike Schoenborn 70010,147
+   223	To: John Swenson 75300,2136 (X)
+   224	
+   225	John & John -
+   226	 
+   227	The 3D glasses are indeed LCD shutters, sold by Sega to go with their video
+   228	game system.  You can't find them in the stores anymore, but you can order
+   229	them direct from Sega (800-872-7342) for $35 (+ about $2 S&H).  Delivery is
+   230	quoted at 4-6 weeks, but I got mine in about 2.  VISA cheerfully accepted.
+   231	 
+   232	There was a schematic for driving the glasses posted on UseNet back in Jan of
+   233	1990.  (I've been wanting to do this for a -long- time).  The design was for
+   234	interfacing with the Mac serial port, but with some minor mods it seems to
+   235	work just dandy off a PC parallel port.  If you have some CMOS in your junkbox,
+   236	wirewrap tools in your toolbox, and know which end of a soldering iron to hold,
+   237	you're all set.  I would have uploaded the schematic already, but I'll have to
+   238	dig through the accompanying docs for copyright notices, etc.
+   239	 
+   240	The cord from the glasses terminates in a 1/8" stereo plug, which plugs into a
+   241	little "interface block", which plugs into the game (I assume, I've never seen
+   242	the game unit).  The schematic was for interfacing via the plug, and made no
+   243	mention of this block thing.  To save a trip to Radio Shack I was going to
+   244	scavenge the 1/8" jack off the block, but when I opened it up I found a little
+   245	circuit board inside.  The numbers on the chips lead me to believe that this
+   246	itself is the required interface, and the circuit I had just painstakingly
+   247	assembled was redundant.  The block is just crying to be reverse engineered;
+   248	anybody up for it?
+   249	 
+   250	For software, it's just a matter of doing "page flipping" and tickling bits
+   251	on the parallel port.  Yes indeed, 3D FractInt creations, and raytraces,
+   252	look -great- in color.
+   253	       
+   254	
+   255	There are 3 Replies.
+   256	
+   257	#: 21281 S13/Virtual Reality
+   258	    10-Nov-91  02:40:51
+   259	Sb: #21265-#conferences
+   260	Fm: Mike Schoenborn 70010,147
+   261	To: John Eagan/VR 76130,2225 (X)
+   262	
+   263	Hmmm...
+   264	Mon=Raytrace, Tue=sysop?,  Wed=Amateur's,  Thu=Beginner's,  Fri=Nah!,  Sat=Nah!,
+   265	Sun=VR???
+   266	       
+   267	
+   268	There is 1 Reply.
+   269	
+   270	#: 21293 S13/Virtual Reality
+   271	    10-Nov-91  12:19:53
+   272	Sb: #21279-great timing
+   273	Fm: Matt Drury 75300,1610
+   274	To: Mike Schoenborn 70010,147 (X)
+   275	
+   276	Mike,
+   277	
+   278	Let's use VR for now; please upload to area 2 and I will copy files to 13.
+   279	
+   280	  Matt Drury
+   281	  Forum Staff
+   282	
+   283	#: 21297 S13/Virtual Reality
+   284	    10-Nov-91  14:58:47
+   285	Sb: #21278-great timing
+   286	Fm: John Eagan/VR 76130,2225
+   287	To: Mike Schoenborn 70010,147 (X)
+   288	
+   289	No doubt. One of my interests is in auto racing (after music,computers and
+   290	computer graphics), and over in the RACING forum, somebody compiled a list of
+   291	message volume for Oct.,and I was 11th!!  3 of the guys above me were sysops,
+   292	and first place was ALL<g>! So, yeah,I can relate to that. 
+   293	
+   294	#: 21298 S13/Virtual Reality
+   295	    10-Nov-91  14:58:58
+   296	Sb: #21280-#great timing
+   297	Fm: John Eagan/VR 76130,2225
+   298	To: Mike Schoenborn 70010,147 (X)
+   299	
+   300	Mike- Great! I didn't know about these, that's just what we need. You can't
+   301	get them in stores anywhere? That's a shame. Are these color,do I understand
+   302	correctly?    I have,in my hot little hands, C source code for a Mattel
+   303	Powerglove interface, courtesy of Chris Babcock. I plan to upload it, once I'm
+   304	sure about copyright and all (it's a little vague,  although Chris says it's
+   305	OK, I'm guessing he has had contact. It also could use a couple of
+   306	modifications, but Chris also tells me there is updated code on the way. I
+   307	want ot compile and upload it as an executable,along with the source. The
+   308	glove hardware interface uses RS-232. It looks like we have a good start! Once
+   309	we get all the hardware info in the lib here, we can dive into getting it all
+   310	integrated. Then we can work on some software for the thing.  Any ideas in
+   311	particular about what we should actually DO with it,  once we get the hardware
+   312	working?  Another thing about the hardware.  It looks as if maybe,to integrate
+   313	the glove and glasses interfaces,  we might want to work on a design for a
+   314	card to plug in an expansion slot with connections for the glove and glasses.
+   315	We'll have to discuss that. I just got a copy of TurboCAD, so I can help lay
+   316	out a board, rather than messing with wire-wrap (ARG!). Not that laying out a
+   317	board is EASY, but for everyone else, it would be a little easier for everyone
+   318	else if there was a way to get a board made from available artwork.
+   319	JLE-VRsection 
+   320	
+   321	There is 1 Reply.
+   322	
+   323	#: 21299 S13/Virtual Reality
+   324	    10-Nov-91  14:59:04
+   325	Sb: #21281-conferences
+   326	Fm: John Eagan/VR 76130,2225
+   327	To: Mike Schoenborn 70010,147 (X)
+   328	
+   329	Sunday sounds reasonable to me. Anybody else have an opinion on this?
+   330	
+   331	JLE-VRsection 
+   332	
+   333	#: 21302 S13/Virtual Reality
+   334	    10-Nov-91  15:17:10
+   335	Sb: #21279-#great timing
+   336	Fm: Bill Hinkle 75300,2050
+   337	To: Mike Schoenborn 70010,147 (X)
+   338	
+   339	Maybe you should declare an Application Extension block for your schematic
+   340	GIFs -- one that means: HPGL plotter version follows!  Assuming that your
+   341	source for the schematics is a vector draw/CAD package, that is...  A
+   342	plottable version would be nicer than a bitmapped version, for many folks, and
+   343	wouldn't add much to the size of the GIF, I'll bet! <<Bill>>
+   344	
+   345	
+   346	
+   347	There are 2 Replies.
+   348	
+   349	#: 21310 S13/Virtual Reality
+   350	    10-Nov-91  19:28:57
+   351	Sb: #21302-#great timing
+   352	Fm: Mike Schoenborn 70010,147
+   353	To: Bil Hinkle 75300,2050 (X)
+   354	
+   355	I think I have the original schematic in a couple of different formats; GIF
+   356	and PostScript for sure, maybe HPGL, and some stuff hidden in Mac .sit files
+   357	that I can't get to.  As simple as the schematic is, it could probably be done
+   358	in ascii with pluses, dashes, and vertical bars!  (Come to think of it, there
+   359	is an alternate design using just an XOR and a 2N2222 transistor that was
+   360	distributed just that way).
+   361	       
+   362	
+   363	There are 2 Replies.
+   364	
+   365	#: 21317 S13/Virtual Reality
+   366	    10-Nov-91  23:01:03
+   367	Sb: #21310-great timing
+   368	Fm: Bill Hinkle 75300,2050
+   369	To: Mike Schoenborn 70010,147 (X)
+   370	
+   371	<grin> I guess I had the idea there was a little more to the electronics! GIF
+   372	ought to do the trick for something so simple.  <<Bill>>
+   373	
+   374	
+   375	
+   376	#: 21320 S13/Virtual Reality
+   377	    10-Nov-91  23:19:32
+   378	Sb: #21280-#great timing
+   379	Fm: John Eagan/VR 76130,2225
+   380	To: Mike Schoenborn 70010,147 (X)
+   381	
+   382	PS- Just out of curiosity, what exactly was at the other end of this block?
+   383	
+   384	JLE 
+   385	
+   386	There is 1 Reply.
+   387	
+   388	#: 21321 S13/Virtual Reality
+   389	    10-Nov-91  23:19:38
+   390	Sb: #21310-#great timing
+   391	Fm: John Eagan/VR 76130,2225
+   392	To: Mike Schoenborn 70010,147 (X)
+   393	
+   394	As I just mentioned to Bill, I can now handle vector files, so myself,  if you
+   395	could U.L. things in .DXF form, that would be cool.  The more I think about
+   396	it, the more I like the idea of an expansion slot board with a glasses and
+   397	glove interface. Of course, then we're talking about getting this stuff to
+   398	talk directly to the buss,  instead of parallel port and serial port. In the
+   399	case of the RS-232 interface used in the glove code I have from Chris, my
+   400	problem is I only have COM1 and COM2,  I'd have to disconnect the mouse, or
+   401	have the glove fight with the internal modem. Tell me more about what you know
+   402	about the glasses and interface. Is there any conflict with the video board?
+   403	How do you handle this? Can the 2 operate simultaniously?
+   404	
+   405	JLE 
+   406	
+   407	There is 1 Reply.
+   408	
+   409	#: 21322 S13/Virtual Reality
+   410	    10-Nov-91  23:19:52
+   411	Sb: #21302-#great timing
+   412	Fm: John Eagan/VR 76130,2225
+   413	To: Bill Hinkle 75300,2050 (X)
+   414	
+   415	Bill- I think a .DXF version would be very nice. I don't know all the details
+   416	of the process, but I do know that it's possible to get PCB artwork made from
+   417	.DXF vector/AutoCAD files. Good luck getting boards made from GIFs!<g> Of
+   418	course, I'm talking about board layouts,  whereas you guys are talking about
+   419	the schematic, but I'm looking at both right now, I'd really like to be able
+   420	to get a proper printed circuit made; I dread the idea of wire-wrapping a
+   421	board! I work at an electronics manufacturer during the day, I'll have to talk
+   422	to the guys who do board layout and see if I can get things plotted during
+   423	"off" time. I just got a copy of TurboCad ($40,how could I pass it up!!??) so
+   424	I can now handle such files. Timing is everything,eh? <g>
+   425	JLE 
+   426	
+   427	There is 1 Reply.
+   428	
+   429	#: 21324 S13/Virtual Reality
+   430	    10-Nov-91  23:22:49
+   431	Sb: #21298-#great timing
+   432	Fm: Mike Schoenborn 70010,147
+   433	To: John Eagan/VR 76130,2225 (X)
+   434	
+   435	> Are these color, do I understand correctly?
+   436	 
+   437	They're just electronic sunglasses, where each lens can be made clear or opaque,
+   438	quickly, in sync with an image on a crt.  Any color you see comes through the
+   439	lenses from the monitor, not from the glasses themselves.
+   440	 
+   441	I have been having some problems with the C source for the PowerGlove; my
+   442	results are just not as good as what Chris is reporting.  My feeling has
+   443	been that the low-level interface to the glove should be done with a simple
+   444	cpu, as you suggest, to take some of the load off the pc.  With this thought
+   445	in mind, I showed the glove to a friend who programs 8031's for living (simple,
+   446	cheap, single chip computers).  He was impressed, and went out the next day
+   447	and bought a glove for himself.  I next showed the thing to another buddy who
+   448	does circuit board layouts for a living; he bought one too.  I just may turn
+   449	my complete attention to the glasses and sit back and see what these two guys
+   450	come up with.
+   451	 
+   452	Tom Sawyer
+   453	VP, Fence Painting Div.
+   454	       
+   455	
+   456	There is 1 Reply.
+   457	
+   458	#: 21325 S13/Virtual Reality
+   459	    11-Nov-91  00:49:07
+   460	Sb: #21324-#great timing
+   461	Fm: John Eagan/VR 76130,2225
+   462	To: Mike Schoenborn 70010,147 (X)
+   463	
+   464	Mike- You shouldn't have done that! It's too much fun, next they'll want to do
+   465	it for you! <GGG>
+   466	
+   467	ps- I'm somewhat familiar with the 8031, we use it on the system I work on at
+   468	the day job, working on Surface Acoustic Wave touchscreens. It handles all the
+   469	touch stuff in the AC plasma display it's installed in.  Maybe that's the
+   470	ticket (especially if your friend programs them for a living). Keep it up,
+   471	Tom. Let us know when they get near the end of the fence!
+   472	JLE 
+   473	
+   474	There is 1 Reply.
+   475	
+   476	#: 21327 S13/Virtual Reality
+   477	    11-Nov-91  04:09:42
+   478	Sb: #21280-#great timing
+   479	Fm: John Swenson 75300,2136
+   480	To: Mike Schoenborn 70010,147 (X)
+   481	
+   482	You're kidding, $35!! For some reason I thought they cost MONEY. (at that
+   483	price I might just get 2)
+   484	 
+   485	I think I would hook mine up to a PC game port, since I have one on my system
+   486	that I don't use for anything. (I don't have any free slots to put an extra
+   487	parallel port on, although I could get one of those parallel port selector
+   488	switches. (they cost more than the glasses <g>)
+   489	 
+   490	I'll give them a call tomorrow morning and start the ball rolling. (Is that
+   491	an animated raytraced ball in 3D?)
+   492	 
+   493	I could put together a nice little viewer that displays TARGA files in 640 x
+   494	400 x 32k mode in 3D, that would be nifty.
+   495	 
+   496	(And people think I spend too much time in front of the computer already,
+   497	they'll never see me again!)
+   498	 
+   499	John S.
+   500	 
+   501	
+   502	There are 2 Replies.
+   503	
+   504	#: 21333 S13/Virtual Reality
+   505	    11-Nov-91  05:54:31
+   506	Sb: #21325-#great timing
+   507	Fm: John Swenson 75300,2136
+   508	To: John Eagan/VR 76130,2225 (X)
+   509	
+   510	John,
+   511	for a living I design custom chips, we even have an 8031 cell in the library
+   512	<g>. For around $20,000 I could do a custom chip that does EVERYTHING, the
+   513	board would have one chip on it. While we're at it, how about a high
+   514	performance raytrace engine? A JPEG decoding engine? (I have to fill up the
+   515	chip with SOMETHING <g>).
+   516	 
+   517	John S.
+   518	       
+   519	
+   520	There is 1 Reply.
+   521	
+   522	#: 21340 S13/Virtual Reality
+   523	    11-Nov-91  11:20:53
+   524	Sb: #21327-#great timing
+   525	Fm: Tim Wegner 71320,675
+   526	To: John Swenson 75300,2136 (X)
+   527	
+   528	I'm really interested in the $35 3D glasses - if anyone gets it running I want
+   529	to hear. I assume to support it in fractint we would need a paged video mode.
+   530	Those are in short supply at 256 colors, but the tweaked 320x400 mode is a
+   531	good candidate. I wonder if the page flipping is fast enough for the 3D
+   532	glasses.
+   533	
+   534	There are 2 Replies.
+   535	
+   536	#: 21345 S13/Virtual Reality
+   537	    11-Nov-91  12:24:13
+   538	Sb: InterNet
+   539	Fm: Matt Drury 75300,1610
+   540	To: All
+   541	
+   542	VR people,
+   543	
+   544	I am in contact with the co-moderator of the InterNet SCI.VIRTUAL-WORLDS
+   545	newsgroup. I am hoping that we can cross-connect the people here with the
+   546	hundred or so VR people there, and work on exchanging information and
+   547	assistance.
+   548	
+   549	  Matt Drury
+   550	  Forum Staff
+   551	
+   552	
+   553	
+   554	
+   555	#: 21346 S13/Virtual Reality
+   556	    11-Nov-91  12:45:00
+   557	Sb: #21223-#Welcome!
+   558	Fm: John Egenes 76427,3172
+   559	To: Matt Drury 75300,1610 (X)
+   560	
+   561	Matt, (and John)
+   562	       Best wishes on this new section. Although not a programmer, I am very
+   563	much interested in what VR may have to offer. This sounds like it could be one
+   564	of the most exciting forums on CIS. BTW, John, do I see you over on the Midi
+   565	forum, too?
+   566	
+   567	jre
+   568	
+   569	
+   570	
+   571	
+   572	There are 2 Replies.
+   573	
+   574	#: 21348 S13/Virtual Reality
+   575	    11-Nov-91  13:26:45
+   576	Sb: #21321-#great timing
+   577	Fm: Mike Schoenborn 70010,147
+   578	To: John Eagan/VR 76130,2225 (X)
+   579	
+   580	One of the problems with going to an expansion slot card is that it would be
+   581	useful only to those with IBM machines, whereas going with RS232 would open
+   582	things up to all sorts of folks.  The headache of trying to decide which
+   583	COM port to use could be helped by a cheap A-B switchbox.
+   584	 
+   585	Another concern I have is how to design a slot card that won't bump into other
+   586	things, like com ports, parallel ports, video cards, lan cards, music boards,
+   587	John's raytrace accelerator board <g>, etc.  It seems like it would take a lot
+   588	of research to find safe, unused io ports or memory areas that wouldn't cause
+   589	a conflict.  Maybe someone with some pc hardware savvy could dispel my fears
+   590	on this.
+   591	 
+   592	Just playin' devil's advocate.
+   593	       
+   594	
+   595	There is 1 Reply.
+   596	
+   597	#: 21349 S13/Virtual Reality
+   598	    11-Nov-91  13:26:51
+   599	Sb: #21320-great timing
+   600	Fm: Mike Schoenborn 70010,147
+   601	To: John Eagan/VR 76130,2225 (X)
+   602	
+   603	The back side of the block has a piece of circuit board sticking out a couple
+   604	of inches.  The board is 2" wide, with 2 rows of gold plated card edge fingers
+   605	on the end, .1" centers, staggard.  17 contacts on the inside row, 18 on the
+   606	outside.
+   607	             |   v v v v v v v v v v v v v v v v v  |
+   608	             |  v v v v v v v v v v v v v v v v v v |
+   609	             +--------------------------------------+
+   610	 
+   611	BTW, the original circuit design, by Juri Menkki, includes a copyright, so
+   612	I've sent him email requesting permission to post it.  Hopefully the address
+   613	I have for him is current, and the connection to Finland will work.  I'll let
+   614	you know as soon as I hear back from him.
+   615	       
+   616	
+   617	#: 21350 S13/Virtual Reality
+   618	    11-Nov-91  13:26:58
+   619	Sb: #21327-#great timing
+   620	Fm: Mike Schoenborn 70010,147
+   621	To: John Swenson 75300,2136 (X)
+   622	
+   623	Keep in mind these aren't something you'd find in use at JPL; you get what you
+   624	pay for.  Even when the lenses are clear they're as dark as sunglasses.  This
+   625	may be by design, to cut contrast for reducing flicker.  I'm tempted to
+   626	disect them to remove the LCDs and trash the dark plastic, but the plastic
+   627	itself might be polarized and part of the whole scheme of things.  In the mean
+   628	time I just keep the monitor's brightness pegged, and the room lights off.
+   629	 
+   630	Beyond that, they're not terribly comfortable, and look pretty ridiculous when
+   631	worn by an adult (though not as strange as R/B glasses, or for that matter, a
+   632	Power Glove).  But as you say, for $35, get two.  I'm thinking of getting a
+   633	second pair...watching the screen flicker two images back and forth while
+   634	someone else has the glasses on really does cause headaches.
+   635	       
+   636	
+   637	There is 1 Reply.
+   638	
+   639	#: 21351 S13/Virtual Reality
+   640	    11-Nov-91  13:27:05
+   641	Sb: #21340-#great timing
+   642	Fm: Mike Schoenborn 70010,147
+   643	To: Tim Wegner 71320,675 (X)
+   644	
+   645	Speaking of Fractint, I've been using "Stereo: 3=photo" in the 3D Mode
+   646	Selection menu and the images come out filling the screen from edge to edge.
+   647	The Image Crop parameters on the Funny Glasses Parameters only seem to work
+   648	for Red/Blue stereo types 1 & 2 (alternate & superimpose).  As expected the
+   649	3D-ness goes completly out of whack around the edges.  Is there a way to force
+   650	this cropping for type 3?  I guess a piclab script is the way to go for the
+   651	time being, but I'm not sure just how much to crop and where.
+   652	 
+   653	I hope I've been using the term "page flipping" right.  By that do you mean
+   654	getting both images loaded into the vga and fiddling the Start Address
+   655	Register?  If so, yes, it seems to be fast enough, but getting it timed right
+   656	with the LCDs seems to take a little fudging.  Right now I'm just using
+   657	idiot-loop delays tuned from the keyboard, but some accurate msec delays and
+   658	hooks into vertical retrace (or sync, or whatever) might improve things.
+   659	       
+   660	
+   661	There is 1 Reply.
+   662	
+   663	#: 21352 S13/Virtual Reality
+   664	    11-Nov-91  13:34:01
+   665	Sb: #21346-Welcome!
+   666	Fm: Matt Drury 75300,1610
+   667	To: John Egenes 76427,3172 (X)
+   668	
+   669	John,
+   670	
+   671	Welcome to the Computer Art Forum, and to the Virtual Reality section. If you
+   672	have anything related to the field of virtual reality that you would like to
+   673	contribute, you are more than welcome to do so.
+   674	
+   675	  Matt Drury
+   676	  Forum Staff
+   677	
+   678	
+   679	
+   680	
+   681	#: 21375 S13/Virtual Reality
+   682	    11-Nov-91  18:29:35
+   683	Sb: #Virtual Reality Forum
+   684	Fm: Chris 76166,1257
+   685	To: ALL
+   686	
+   687	All, Just noticed the new Virtual Reality forum here and it seems like a ghod
+   688	send <G>. ive been involved heavily in graphics for the past 12 years doing
+   689	everything from programming Video games for some of the Game company's around
+   690	to recently in the past couple years getting heavily involved in Raytracing,
+   691	rendering and compression. Im currently working on a new animation system etc.
+   692	I was wondering what the main focus of this forum was going to be (I.E.
+   693	discussion, design, etc). having only been exposed to Virtual Reality within
+   694	the past 18 Months or so im still a little ignorant. Ive been toying with the
+   695	idea of working on a design for a VR system etc and was wondering if anyone
+   696	had already done preliminary work (Not the $50K plus systems <G>)?
+   697	
+   698	Anyhow hope this forum really takes off as working on Virtual Reality systems
+   699	seems like a natural progression in not only the Game market, but for anything
+   700	that requires almost true to life simulations etc.
+   701	
+   702	Chris Eisnaugle
+   703	
+   704	There is 1 Reply.
+   705	
+   706	#: 21378 S13/Virtual Reality
+   707	    11-Nov-91  18:38:00
+   708	Sb: #21340-#great timing
+   709	Fm: John Swenson 75300,2136
+   710	To: Tim Wegner 71320,675 (X)
+   711	
+   712	Tim,
+   713	I just ordered the glasses, so we'll see what happens when I get them.
+   714	(I suppose $35 is a little much for Mitch to include them in the book <g>).
+   715	Maybe Larry could do the same sort of thing as the red/blue glasses, order a
+   716	big bunch from Sega and make them available to members. (the capital outlay
+   717	would be a bit more expensive though)
+   718	 
+   719	On a "standard" VGA you should be able to do page flipping in 320 x 200 and
+   720	320 x 400 mode. For SVGA boards its quite easy, BUT each one does it
+   721	differently. The code is going to need all that fun autodetect stuff to make
+   722	it work. Hmmm on a 1 meg board you actually have 16 "pages" in 320 x 200
+   723	mode, you could do a little animation in that.
+   724	 
+   725	I know, you can modify the "opening credits" screen so the names are rotating
+   726	on a cylinder when seen through the glasses!
+   727	 
+   728	John S.
+   729	       
+   730	
+   731	There is 1 Reply.
+   732	
+   733	#: 21379 S13/Virtual Reality
+   734	    11-Nov-91  18:38:05
+   735	Sb: #21351-great timing
+   736	Fm: John Swenson 75300,2136
+   737	To: Mike Schoenborn 70010,147 (X)
+   738	
+   739	Mike,
+   740	you definately want to sync up to the vertical retrace signal, I'm sure I'll
+   741	have some code working soon after I get the glasses.
+   742	 
+   743	John S.
+   744	       
+   745	
+   746	#: 21382 S13/Virtual Reality
+   747	    11-Nov-91  19:53:15
+   748	Sb: #21333-great timing
+   749	Fm: John Eagan/VR 76130,2225
+   750	To: John Swenson 75300,2136 (X)
+   751	
+   752	John- OK, I can see it now. We'll use a chip that contains about 50 8031's.
+   753	<ggg>
+   754	
+   755	JLE 
+   756	
+   757	#: 21383 S13/Virtual Reality
+   758	    11-Nov-91  19:53:24
+   759	Sb: #21348-#great timing
+   760	Fm: John Eagan/VR 76130,2225
+   761	To: Mike Schoenborn 70010,147 (X)
+   762	
+   763	Mike- Good points,all. I'm not a hardware designer, but I have enough
+   764	electronics schooling to know that you're very right about designing a card
+   765	that won't be fighting for addresses and interrupts. Big project,  no doubt.
+   766	Plus the added disadvantage that people would have to make, or get made, a
+   767	board, instead of just plugging in! As far as RS-232 vs.  IBM-compatible card
+   768	goes, I'm thinking in terms of us developing software to go with it, for DOS.
+   769	So the "exclusivity"  wouldn't bother me, as far as that is concerned. A
+   770	switch box is a good idea, it would solve my problem at least (I mean, I
+   771	wouldn't use the mouse AND P.G. at the same time,right?)    My concern is that
+   772	if we end up with,say, a system that uses the power glove WITH glasses,  we'd
+   773	be tying up plugs on the machine fast, and most of all, the speed problem. I
+   774	suspect you hardware buddies would come up with a direct-buss interface
+   775	because of speed. If that route is taken (and believe me, the trouble and $$
+   776	of getting a board made would not be a treat) I suppose we'd need some sort of
+   777	"install" software, to negotiate interrupts and addresses and stuff.  Play
+   778	devil's advocate,  we need that.
+   779	JLE 
+   780	
+   781	There are 2 Replies.
+   782	
+   783	#: 21384 S13/Virtual Reality
+   784	    11-Nov-91  19:53:36
+   785	Sb: #21346-#Welcome!
+   786	Fm: John Eagan/VR 76130,2225
+   787	To: John Egenes 76427,3172 (X)
+   788	
+   789	John- Yes, that's me! You probably recognize my name from grousing about my
+   790	problems with my SQ-1. In fact, haven't I addressed you directly at some
+   791	point? I'm hoping it will be back from the shop tomorrow, BTW. I haven't
+   792	checked in over there in over a week, am I missing anything?<g>  Glad to see
+   793	you here! You're certainly welcome to hang out, regardless of whether or not
+   794	you can contribute technically. Any ideas and suggestions and information you
+   795	might have are fair game.  Although I can see people getting our names
+   796	confused.<g>
+   797	
+   798	JLE 
+   799	
+   800	There is 1 Reply.
+   801	
+   802	#: 21393 S13/Virtual Reality
+   803	    11-Nov-91  20:38:43
+   804	Sb: #21378-great timing
+   805	Fm: Tim Wegner 71320,675
+   806	To: John Swenson 75300,2136 (X)
+   807	
+   808	The 3D isn't for the image lab book (as I'm sure you realized :-)), but Mitch
+   809	has a lot of other projects up his sleeve that could use it. I'm definitely
+   810	interested anyway, though until Image Lab is done I'll not be doing anything
+   811	about the 3D glasses.
+   812	
+   813	#: 21397 S13/Virtual Reality
+   814	    11-Nov-91  21:49:16
+   815	Sb: CyberArts conference
+   816	Fm: John Eagan/VR 76130,2225
+   817	To: ALL
+   818	
+   819	To All: This is late notice, if you haven't already heard about it,  but
+   820	KEYBOARD magazine will be presenting "CyberArts International 1991"  November
+   821	14-17 at the Pasadena Center & Civic Auditorium. Many events are scheduled
+   822	including performances and presentations from many involved in the VR field.
+   823	See recent issues of Keyboard for details.  Sorry,incredibly, the information
+   824	I have does not include a voice phone number. FAX:408-446-1088       If you
+   825	ARE ALREADY PLANNING TO ATTEND please let us know, we'd be interested in
+   826	hearing        
+   827	
+   828	#: 21401 S13/Virtual Reality
+   829	    12-Nov-91  01:35:18
+   830	Sb: #21322-great timing
+   831	Fm: Bill Hinkle 75300,2050
+   832	To: John Eagan/VR 76130,2225 (X)
+   833	
+   834	I guess DXF is pretty close to a Rosetta Stone for microcomputer-based CAD
+   835	these days -- maybe that'd do it! <<Bill>>
+   836	
+   837	
+   838	
+   839	#: 21404 S13/Virtual Reality
+   840	    12-Nov-91  07:16:52
+   841	Sb: #21383-#great timing
+   842	Fm: John Swenson 75300,2136
+   843	To: John Eagan/VR 76130,2225 (X)
+   844	
+   845	John,
+   846	I don't know anything about the power glove, so I don't really know its data
+   847	requirements, but I have written  scanner drivers that run on the standard
+   848	serial port and parallel port and they really move along. I don't really see
+   849	why a special board is needed (unless this is running on a 4 Mhz XT <g>).
+   850	 
+   851	John S.
+   852	       
+   853	
+   854	There is 1 Reply.
+   855	
+   856	#: 21408 S13/Virtual Reality
+   857	    12-Nov-91  09:38:27
+   858	Sb: #Posting to SCI.VIRTUAL..
+   859	Fm: Matt Drury 75300,1610
+   860	To: All
+   861	
+   862	Gentlefolk,
+   863	 
+   864	This is an excerpt of a message I have received from Mark, the co-moderator
+   865	and librarian of the InterNet newsgroup, in regards to posting a message on
+   866	the SCI.VIRTUAL-WORLDS newsgroup. Mark will be joining us soon here in the
+   867	VR section, once he gets his account with the service activated.
+   868	 
+   869	 > You mentioned having trouble with posting to sci.virtual-worlds...
+   870	 > if you send your articles to hlab@milton.u.washington.edu, they'll
+   871	 > be automagically posted.  It's probably the easy way to post. :)
+   872	 
+   873	Note that from CompuServe Mail, your address to post to would start with
+   874	>INTERNET: so that the service can route it correctly.
+   875	 
+   876	Mark has also promised me information on how to request placing oneself on
+   877	the SCI.VIRTUAL-WORLDS mailing list, which I will post here when available.
+   878	The mailing list will give you the day's messages in that newsgroup directly
+   879	in your CompuServe Mail box.
+   880	 
+   881	. Matt Drury
+   882	.  Forum Staff
+   883	 
+   884	 
+   885	
+   886	
+   887	There is 1 Reply.
+   888	
+   889	#: 21409 S13/Virtual Reality
+   890	    12-Nov-91  09:38:30
+   891	Sb: #21383-#great timing
+   892	Fm: Matt Drury 75300,1610
+   893	To: John Eagan/VR 76130,2225 (X)
+   894	
+   895	John,
+   896	
+   897	You may consider the use of the parallel port for information. Most systems
+   898	have a spare one lying about, and I have used a TWO-WAY data transfer system
+   899	that uses the supposedly unidirectional parallel port in my machine. Also,
+   900	there's more data lines to play with, and greater flexibility, from my
+   901	novice's point of view.
+   902	
+   903	  Matt Drury
+   904	  Forum Staff
+   905	
+   906	
+   907	
+   908	
+   909	There is 1 Reply.
+   910	
+   911	#: 21416 S13/Virtual Reality
+   912	    12-Nov-91  13:55:42
+   913	Sb: #VR Users Group
+   914	Fm: Alexander Schipal 76137,326
+   915	To: All
+   916	
+   917	Hi, virtual realists
+   918	
+   919	When visiting Computer Graphics 91 in London last week, I got info about the
+   920	Virtual Reality Users Group (VRUG). Their contact address is:
+   921	
+   922	 V.R.U.G.
+   923	 66 Dormney House, Adelaide Rd.
+   924	 London NW3 3PN
+   925	 Phone 071 586 9141
+   926	
+   927	Next group meeting is (probably) sunday, Nov.17th in the Brain Club (11
+   928	Wardour St.) I'll attend and post a message about the goings-on next week.
+   929	
+   930	Are there other VR user/enthusiast/homebrew groups anywhere ?
+   931	
+   932	Alex Schipal
+   933	
+   934	There is 1 Reply.
+   935	
+   936	#: 21418 S13/Virtual Reality
+   937	    12-Nov-91  14:09:59
+   938	Sb: #VR demo received today
+   939	Fm: Matt Drury 75300,1610
+   940	To: All
+   941	
+   942	Gentlefolk,
+   943	
+   944	I've been playing for the last few minutes with the VR demo that John uploaded
+   945	to the library this morning. I strongly recommend it; it's an excellent
+   946	example of what we're trying to achieve.
+   947	
+   948	An idea for the general pool - what of a VR project to interface CompuServe to
+   949	user PCs, much like CIM and TapCIS do now, but in 3D, graphically? Using a
+   950	powerglove would be a most interesting way to manipulate the service.
+   951	
+   952	  Matt Drury
+   953	  Forum Staff
+   954	
+   955	PS: Over in one of the Windows forums is a program that replaces the Program
+   956	Manager with a 'virtual reality' interface. I have been told that it is not
+   957	too good, but could be an idea that could be built on.
+   958	
+   959	
+   960	
+   961	
+   962	There are 3 Replies.
+   963	
+   964	#: 21445 S13/Virtual Reality
+   965	    12-Nov-91  19:21:12
+   966	Sb: #21350-#great timing
+   967	Fm: John Eagan/VR 76130,2225
+   968	To: Mike Schoenborn 70010,147 (X)
+   969	
+   970	Mike- Yes,I'm wondering if the plastic may actually be polaroid. You ought to
+   971	check that out before you rip the suckers apart, although I can't
+   972	think,offhand, why they might be polarized. But I know little about visual
+   973	perception, that might be essential to the whole thing for all I know. BTW,
+   974	speaking of that, if you guys have any good titles of books and magazine
+   975	articles/journals that address subjects like that, or other VR-related areas,
+   976	let me know. I'd like to start building a bibliography for the lib.
+   977	JLE 
+   978	
+   979	There is 1 Reply.
+   980	
+   981	#: 21446 S13/Virtual Reality
+   982	    12-Nov-91  19:21:22
+   983	Sb: #21375-#Virtual Reality Forum
+   984	Fm: John Eagan/VR 76130,2225
+   985	To: Chris 76166,1257 (X)
+   986	
+   987	Chris- Glad to have you with us. We're just getting started here,  this
+   988	section just opened this past weekend! So if you would like to get involved,
+   989	you're certainly in at the ground floor. Sounds like you've got just the
+   990	background we're looking for. We're just discussing some basics right now,
+   991	feeling around for what hardware we can use, etc. I've written a short intro
+   992	available in lib 13 as VRINTR.ZIP (or) VRINTR.DOC , just to give you a feel
+   993	for what we want to do. In short, while there will almost certainly be
+   994	discussion and philisophical ramblings, the main purpose is to try to bring VR
+   995	to the average DOS-based PC.  Definitely NOT $50K-plus systems! e.g.,I have a
+   996	12MHz 286 with 1MB of RAM. No Cray here!! Of course, my machine is pretty
+   997	low-end, but we want to shoot for that sort of level.    Feel free to
+   998	contribute any files you might have, and jump right in to the message threads.
+   999	We already have messages on the board from several people who have been very
+  1000	active on the graphics forums, including the Stone Soup Group, the bunch
+  1001	responsible for FRACTINT. BTW,please go to the "change forum options"  menu
+  1002	and add your last name, so we can keep things clear as the messages pile up.
+  1003	John Eagan-VR section leader 
+  1004	
+  1005	There is 1 Reply.
+  1006	
+  1007	#: 21447 S13/Virtual Reality
+  1008	    12-Nov-91  19:51:17
+  1009	Sb: #21446-#Virtual Reality Forum
+  1010	Fm: Chris Eisnaugle 76166,1257
+  1011	To: John Eagan/VR 76130,2225 (X)
+  1012	
+  1013	John, Sounds Great, def lookig forward to things here. By the way i read a
+  1014	thread about a PC-Board and i tend to agree that this may not be a good idea
+  1015	as it ties it to a particualr machine etc. Has there been any thought when
+  1016	developing the Viewing Helmet (whatever your calling it at the moment <G>) to
+  1017	use something like a 32020 or or i860 for graphics rendering, these offer a
+  1018	tremendous # of primatives (the I860 being a pure risc chip offers fantastic
+  1019	speed) If something like this was integrated into the helmet i think you could
+  1020	really get some great effects and speed. Anhow was just thinking off the top
+  1021	of my head and it may be beyond an initial system etc. or it may be totally
+  1022	the wrong direction <G>.
+  1023	
+  1024	Chris Eisnaugle
+  1025	
+  1026	There is 1 Reply.
+  1027	
+  1028	#: 21454 S13/Virtual Reality
+  1029	    12-Nov-91  21:29:55
+  1030	Sb: #21445-#great timing
+  1031	Fm: Bill Pulver 70405,1152
+  1032	To: John Eagan/VR 76130,2225 (X)
+  1033	
+  1034	John, (& Mike),
+  1035	       DONT rip the suckers apart! Thats exactly how an LCD display works. The
+  1036	incoming light is polarized as it passes thru the active areas of the
+  1037	"crystal". The active areas are either "on" or "off" (obviously <g>). The
+  1038	crystal when "on" polarizes the light 90 deg away from the orientation of the
+  1039	"film" polarizer stuck (with one *tough* adhesive!) to the outside of the
+  1040	cell. Thus when "on" the light is blocked, "off" it is polarized on the way
+  1041	out but still passed, albiet somewhat dimmer. I've ordered a pair too, should
+  1042	have them soon!
+  1043	
+  1044	Later --- Bill
+  1045	
+  1046	
+  1047	
+  1048	
+  1049	There are 2 Replies.
+  1050	
+  1051	#: 21465 S13/Virtual Reality
+  1052	    12-Nov-91  22:59:49
+  1053	Sb: #21409-great timing
+  1054	Fm: John Eagan/VR 76130,2225
+  1055	To: Matt Drury 75300,1610 (X)
+  1056	
+  1057	see my reply to John S. 
+  1058	
+  1059	#: 21466 S13/Virtual Reality
+  1060	    12-Nov-91  22:59:54
+  1061	Sb: #21404-#great timing
+  1062	Fm: John Eagan/VR 76130,2225
+  1063	To: John Swenson 75300,2136 (X)
+  1064	
+  1065	John- OK, you have enough experience in this that I'll accept your word on it,
+  1066	maybe I'll forget the board idea. I wouldn't really want the hassle of that if
+  1067	at all avoidable, and besides, we really don't want to create something that
+  1068	forces people to do too much hardware hacking!
+  1069	
+  1070	JLE 
+  1071	
+  1072	There is 1 Reply.
+  1073	
+  1074	#: 21467 S13/Virtual Reality
+  1075	    12-Nov-91  23:00:05
+  1076	Sb: #21447-#Virtual Reality Forum
+  1077	Fm: John Eagan/VR 76130,2225
+  1078	To: Chris Eisnaugle 76166,1257 (X)
+  1079	
+  1080	Chris- OK, good to have another opinion about "to board or not to board".
+  1081	About the system compatibility issue, I think an important consideration is
+  1082	that we ought to steer activity toward DOS platform.  Mind you, I'm not going
+  1083	to try to discourage general development, and there is room for several
+  1084	different projects here.  But we should think in terms of software. The
+  1085	general goal is to try to get VR working,  which implies more than just pieces
+  1086	of hardware,  but some kind of application as well. Which brings us back to
+  1087	platform. But we're pretty open . Perhaps, what we need is to develop a
+  1088	consensus on a couple of pieces of hardware, and then any software projects
+  1089	could take off from there using a common "standard". DOS machines are the most
+  1090	common, and the work in the forum in general is pretty much DOS based, with
+  1091	few exceptions.  But keep those ideas coming. The co-processor idea is
+  1092	interesting, would you elaborate on any ideas? I saw something about TI
+  1093	graphics processors in May DDJ,  what do you know about them? (TI340XX series)
+  1094	There is, at this point, no formal "viewing helmet" underway,  although that
+  1095	seems to me like a good project, one I'd like to see. If you have a proposal,
+  1096	you can always upload it to the lib, since the message space is kind of small,
+  1097	and also messages go away with age!  After a few weeks of kicking things
+  1098	around, I'll look at what's on the table and offer my two cents about where we
+  1099	seem to be going.
+  1100	JLE 
+  1101	
+  1102	There are 2 Replies.
+  1103	
+  1104	#: 21468 S13/Virtual Reality
+  1105	    12-Nov-91  23:00:15
+  1106	Sb: #21454-great timing
+  1107	Fm: John Eagan/VR 76130,2225
+  1108	To: Bill Pulver 70405,1152 (X)
+  1109	
+  1110	Bill- I guess that answers that question. Thanks, I never actually knew how an
+  1111	LCD works. BTW,glad to see you in here too. The crowd is getting interesting
+  1112	already, and the section is only 5 days old.
+  1113	JLE
+  1114	  
+  1115	
+  1116	#: 21470 S13/Virtual Reality
+  1117	    12-Nov-91  23:57:12
+  1118	Sb: #21418-VR demo received today
+  1119	Fm: John Eagan/VR 76130,2225
+  1120	To: Matt Drury 75300,1610 (X)
+  1121	
+  1122	Matt- That sounds like a pretty good idea. It would be *much* more fun than
+  1123	terminal emulation,or TAPCIS, and far beyond the text-mode graphics of CIM.
+  1124	
+  1125	JLE
+  1126	ps- too bad I don't "do windows"<G>, I would try that one out. 
+  1127	
+  1128	#: 21471 S13/Virtual Reality
+  1129	    12-Nov-91  23:57:19
+  1130	Sb: #21416-VR Users Group
+  1131	Fm: John Eagan/VR 76130,2225
+  1132	To: Alexander Schipal 76137,326 (X)
+  1133	
+  1134	Alex- Thanks! Keep us posted! See Matt Drury's message concerning the internet
+  1135	sci.virtual-worlds newsgroup.
+  1136	
+  1137	JLE 
+  1138	
+  1139	#: 21472 S13/Virtual Reality
+  1140	    12-Nov-91  23:57:32
+  1141	Sb: #21408-#Posting to SCI.VIRTUAL..
+  1142	Fm: John Eagan/VR 76130,2225
+  1143	To: Matt Drury 75300,1610 (X)
+  1144	
+  1145	Matt- That sounds great. So far, the record for number of mail messages
+  1146	waiting for me is 7. I have a sneaking suspicion that the number would
+  1147	increase greatly!
+  1148	
+  1149	JLE 
+  1150	
+  1151	There is 1 Reply.
+  1152	
+  1153	#: 21475 S13/Virtual Reality
+  1154	    13-Nov-91  02:59:40
+  1155	Sb: #21467-#Virtual Reality Forum
+  1156	Fm: Mike Haaland 72300,1433
+  1157	To: John Eagan/VR 76130,2225 (X)
+  1158	
+  1159	
+  1160	To bad on the "steer activity toward a DOS platform".  I've NEVER owned a DOS
+  1161	machine, and probably never will.  What about the Amiga/Mac/Atari/OSK/UNIX
+  1162	types?  There are plenty of those running POVRay.  You mentioned Chris Babcock
+  1163	a few days ago, you know he wrote the Flood fill routine for my OSK box? Be
+  1164	careful when you claim that "the work in the Forum in general is pretty much
+  1165	DOS based, with few exceptions."   I guess you have not been reading all the
+  1166	forum messages.  I think the forum is pretty much for 'portability' these
+  1167	days.  Or maybe because I'm for it, my bias just makes those messages stand
+  1168	out.  I agree Fractint is buried in DOS.  But POV and DKB and AEWire (A wire
+  1169	fram modeller), are not.
+  1170	
+  1171	Anyway, I'd like to be involved with the Powerglove/Glasses stuff too, but If
+  1172	I need a DOS machine to do it, I'll have to pass.  I do understand that when
+  1173	talking GFX, you have to have some machine specific code,  but look at the
+  1174	potential amount of hackers 'steering towards DOS' will leave out or the VR
+  1175	projects.  I just don't like to have the nature of the machine interface rule
+  1176	out any but IBMPC owners.
+  1177	
+  1178	'Nuff said,
+  1179	
+  1180	Mike
+  1181	
+  1182	There are 2 Replies.
+  1183	
+  1184	#: 21480 S13/Virtual Reality
+  1185	    13-Nov-91  05:41:11
+  1186	Sb: #21466-#great timing
+  1187	Fm: John Swenson 75300,2136
+  1188	To: John Eagan/VR 76130,2225 (X)
+  1189	
+  1190	I think one of the best uses of this (particularlyy in the short term) will
+  1191	be the interface for the wireframe modeler being worked on over in POV land.
+  1192	I think you have to be careful that VR be used for something that it is GOOD
+  1193	at, not just as a new fangled interface for something that already works
+  1194	well. For example I personally would NOT go to the trouble to put on gloves
+  1195	and glasses to run TAPCIS (it works fine just the way it is). But it would be
+  1196	the "only game in town" for things like the 3d modeler, specifying the path
+  1197	for a "flyby" of a julibrot etc.
+  1198	 
+  1199	It would also have a great use in scientific analysis software. Displaying
+  1200	and analyzing graphs of many variables is traditionally a very tough job,
+  1201	with VR you could do a true 3D graph, and the user can go right inside the
+  1202	graph and move around in the "graph" space. (business types could also use
+  1203	this alot. I can just see the multi-megabuck version of the hardware being
+  1204	used at the "anual meeting" to show the financial graphs to the stockholders)
+  1205	 
+  1206	This is where I think the initial energies should be focused, on things that
+  1207	cannot be done very well by any of the more "traditional" methods.
+  1208	 
+  1209	Focusing on applications such as the TAPCIS interface is just going to get
+  1210	us labeled as a bunch of crazy fools rather than making significant
+  1211	improvements in the computing environment.
+  1212	 
+  1213	John S.
+  1214	       
+  1215	
+  1216	There are 2 Replies.
+  1217	
+  1218	#: 21481 S13/Virtual Reality
+  1219	    13-Nov-91  05:41:19
+  1220	Sb: #21418-#VR demo received today
+  1221	Fm: John Swenson 75300,2136
+  1222	To: Matt Drury 75300,1610 (X)
+  1223	
+  1224	Oops,
+  1225	I replied to John rather than to you about the TAPCIS connection. See that
+  1226	message for my thoughts on the subject.
+  1227	 
+  1228	I just had another thought on this, looking and working with a thread graph
+  1229	might be an amuzing application of VR technology.
+  1230	 
+  1231	BTW in order to REALLY make this work right we are going to need some way of
+  1232	sensing the users head in relationship to the screen, so the software can do
+  1233	the "looking around an object" bit. Ultrasonic transducers at the corners of
+  1234	the screen and a little microphone on the glasses would probably work quite
+  1235	well. I did a system like this awhile back, on a much larger scale, tracking
+  1236	the position of a person in a room. Given the slow speed of sound, the
+  1237	hardware is quite simple. Send out a pulse and start a counter, when the pulse
+  1238	comes back in from the mic, stop the counter. Of course you have to worry
+  1239	about ambient noise, but that is actually fairly easy to handle with digital
+  1240	phase locked loop apprroaches.
+  1241	 
+  1242	John S.
+  1243	       
+  1244	
+  1245	There are 2 Replies.
+  1246	
+  1247	#: 21487 S13/Virtual Reality
+  1248	    13-Nov-91  07:09:54
+  1249	Sb: #21472-#Posting to SCI.VIRTUAL..
+  1250	Fm: Matt Drury 75300,1610
+  1251	To: John Eagan/VR 76130,2225 (X)
+  1252	
+  1253	I had 16 last evening, but that was due to being placed on the
+  1254	SCI.VIRTUALWORLDS mailing list.
+  1255	
+  1256	* WARNING * -- if you subscribe to this list, everyone, expect one Mail
+  1257	message per message on the newsgroup. I was under the understanding that it
+  1258	was sent in a daily compilation.
+  1259	
+  1260	  Matt Drury
+  1261	  Forum Staff
+  1262	
+  1263	There is 1 Reply.
+  1264	
+  1265	#: 21490 S13/Virtual Reality
+  1266	    13-Nov-91  09:21:27
+  1267	Sb: #21467-#Virtual Reality Forum
+  1268	Fm: Chris Eisnaugle 76166,1257
+  1269	To: John Eagan/VR 76130,2225 (X)
+  1270	
+  1271	John, I agree a lot of development is done on DOS but other machines do lend
+  1272	themselves nicely to graphics developement and def cannot be ignored even in
+  1273	the first go round (I Mean even if they arent developed for at the start they
+  1274	def have to be kept in mind when designing and there strengths and weaknesses
+  1275	addressed as well). As to the TI 320xx chip, about 2 yrs ago i was working on
+  1276	an imaging system and the TI chips were ones we explored for using in a
+  1277	display bored for our system. The chip is really nice in that it offers
+  1278	(32020) about 12-15 mips graphics performance and includes a large set up
+  1279	built in primatives for drawing, scaling, rotatiting, off screen drawing, and
+  1280	just about any other graphic primative you might need. My suggestion into
+  1281	integrating a chip like this into the helmet was not only to give a leg up on
+  1282	primatives for rendering, and drawing but back to the main issue keeping the
+  1283	VR work somewhat system independent. If the helmet was linked via the
+  1284	Parrallel or Serial port and update packets (fromt he host) were sent to the
+  1285	helmet (Which would need to have other chips to run the 320xx and receive data
+  1286	etc) it could render seens pretty much instantly removing the drawing job from
+  1287	the host thus freeing it do go onto the next task it had to perform etc. And
+  1288	software that used a sort of update packet driven scheme could easily be
+  1289	written machine independent. But like i said something like this is  prob in
+  1290	the future or way off base, but thought id throw it into the fray <G>. But you
+  1291	may be right in that initial software (primatives, Libs, and controllers)
+  1292	should be written for prototyping etc. Has there ever been any thought to
+  1293	creating your own glove using motion sensors etc? Also went looking for the
+  1294	powerglove and couldnt find it, did they stop selling it? Also what kind of
+  1295	cost does it incur to purcahse this thing <G>.
+  1296	
+  1297	Anyhow had thought about a helmet before so thought id ask <G>.
+  1298	
+  1299	Chris Eisnaugle
+  1300	
+  1301	There is 1 Reply.
+  1302	
+  1303	#: 21497 S13/Virtual Reality
+  1304	    13-Nov-91  10:12:47
+  1305	Sb: #21480-great timing
+  1306	Fm: Dan Farmer 70703,1632
+  1307	To: John Swenson 75300,2136 (X)
+  1308	
+  1309	John... what a GREAT idea!  A wireframe modeler where you can simply pick up
+  1310	shapes and move them up,down,left,right,back, and forward as though you were
+  1311	hanging bulbs on a Christmas tree!  I love it.
+  1312	    -Dan
+  1313	
+  1314	#: 21498 S13/Virtual Reality
+  1315	    13-Nov-91  10:12:57
+  1316	Sb: #21475-#Virtual Reality Forum
+  1317	Fm: Dan Farmer 70703,1632
+  1318	To: Mike Haaland 72300,1433 (X)
+  1319	
+  1320	I'd have to throw in my vote towards multi-platform design on your projects. 
+  1321	I myself am totally DOS based, but I know from my experience with the PoV
+  1322	group that portability is a great asset.  You will find plenty of help and
+  1323	advice on portability issues over in the Raytracing forum.  David Buck has
+  1324	even written a document outlining the major considerations for portabile
+  1325	graphics programming.  By keeping the platform generic, help will come from
+  1326	experience programmers from all of those platforms and the variety of
+  1327	viewpoints will only enhance the program.
+  1328	
+  1329	I'm excited to see what develops here!
+  1330	    -Dan
+  1331	
+  1332	There is 1 Reply.
+  1333	
+  1334	#: 21509 S13/Virtual Reality
+  1335	    13-Nov-91  13:51:25
+  1336	Sb: #21418-#VR demo received today
+  1337	Fm: Mike Schoenborn 70010,147
+  1338	To: Matt Drury 75300,1610 (X)
+  1339	
+  1340	I second your recommendation on the demo.  At first I thought it was a cute
+  1341	toy, but the more I play with it...
+  1342	 
+  1343	As for a VR interface to CIS, have you been reading _Neuromancer_ at bedtime
+  1344	again lately?
+  1345	       
+  1346	
+  1347	There are 2 Replies.
+  1348	
+  1349	#: 21510 S13/Virtual Reality
+  1350	    13-Nov-91  13:51:29
+  1351	Sb: #21481-VR demo received today
+  1352	Fm: Mike Schoenborn 70010,147
+  1353	To: John Swenson 75300,2136 (X)
+  1354	
+  1355	> Ultrasonic transducers at the corners of the screen and a little microphone
+  1356	> on the glasses...
+  1357	 
+  1358	You can get the hardware you speak of at Toys-R-Us.  Just strap a PowerGlove
+  1359	to your head with duct tape.
+  1360	       
+  1361	
+  1362	#: 21511 S13/Virtual Reality
+  1363	    13-Nov-91  13:51:33
+  1364	Sb: #21487-#Posting to SCI.VIRTUAL..
+  1365	Fm: Mike Schoenborn 70010,147
+  1366	To: Matt Drury 75300,1610 (X)
+  1367	
+  1368	What is the possibility of packaging a week's worth of sci.virtualworlds
+  1369	mailing list messages into a single archive file for the libs?
+  1370	       
+  1371	
+  1372	There is 1 Reply.
+  1373	
+  1374	#: 21512 S13/Virtual Reality
+  1375	    13-Nov-91  13:51:41
+  1376	Sb: #21454-great timing
+  1377	Fm: Mike Schoenborn 70010,147
+  1378	To: Bill Pulver 70405,1152 (X)
+  1379	
+  1380	Bill -
+  1381	 
+  1382	Ever since I was a child I have taken the expression "Don't!" as a call to
+  1383	action, especially when it involved taking things apart. Thanks, I needed that.
+  1384	 
+  1385	The glasses can indeed be taken apart with nothing more than a pocket knife.
+  1386	The 2 LCDs are mounted on a frame stuck in a sunglasses "shell", and can be
+  1387	eaily, carefully, pried out without damage. (There is a contact point on
+  1388	either side, 3 across the top, 2 on the bottom; you'll see what I mean when
+  1389	yours are delivered).  The polarizers are part of the LCDs themselves, not
+  1390	the sunglass plastic.
+  1391	 
+  1392	Without the sunglasses, the lenses pass a *lot* of light.  I don't know the
+  1393	proper terminology to use here, but I want to say it seems like there is now
+  1394	5% attenuation instead of 35.  Color images come through wonderfully without
+  1395	having to max out the brightness control, and you can work much better with
+  1396	room lights on.  The downside is that flicker is very noticible.  Right now I
+  1397	can put up with it to see raytraces in full color 3D (640x480x256x3? :-), but
+  1398	I think when the novelty wears off, the flicker will become quite annoying.
+  1399	 
+  1400	Maybe "flip up" shades and little epoxy will do the trick.
+  1401	       
+  1402	
+  1403	#: 21516 S13/Virtual Reality
+  1404	    13-Nov-91  13:58:38
+  1405	Sb: #21509-VR demo received today
+  1406	Fm: Matt Drury 75300,1610
+  1407	To: Mike Schoenborn 70010,147 (X)
+  1408	
+  1409	Mike,
+  1410	
+  1411	I've read the complete works of Gibson many a time. Let's keep the grimness
+  1412	and _Blade Runner_ feelings out of this project, okay? <g>
+  1413	
+  1414	  Matt Drury
+  1415	  Forum Staff
+  1416	
+  1417	#: 21517 S13/Virtual Reality
+  1418	    13-Nov-91  14:00:00
+  1419	Sb: #21511-Posting to SCI.VIRTUAL..
+  1420	Fm: Matt Drury 75300,1610
+  1421	To: Mike Schoenborn 70010,147 (X)
+  1422	
+  1423	Mike,
+  1424	
+  1425	I don't have access to the newsgroup directly; it can be had in message form
+  1426	as I have described before, and I am pulling it in through my home FidoNet
+  1427	node. I will check with the gentleman who is co-moderator of the newsgroup
+  1428	about posting it from my home collection; if that is all right, I will rig my
+  1429	home system to dump a week's worth into a file, archive it, and place it
+  1430	online.
+  1431	
+  1432	  Matt Drury
+  1433	  Forum Staff
+  1434	
+  1435	#: 21531 S13/Virtual Reality
+  1436	    13-Nov-91  19:28:42
+  1437	Sb: #21480-great timing
+  1438	Fm: John Eagan/VR 76130,2225
+  1439	To: John Swenson 75300,2136 (X)
+  1440	
+  1441	John- Good ideas. The wire-frame modelling is definitely something I've
+  1442	pondered, do you think that it would be possible to work something out with
+  1443	the POV modeller being worked on? I'll have to dig into the messages on that,
+  1444	I confess I haven't kept up on what is happening with POV. What do you think
+  1445	of Chris E.'s suggestions,BTW?
+  1446	
+  1447	JLE
+  1448	ps- *****TO EVERYBODY*******
+  1449	let's think about starting to make threads on the subjects at hand,  so we can
+  1450	keep things clearer for all, instead of extending threads well beyond the
+  1451	original heading
+  1452	  
+  1453	
+  1454	#: 21532 S13/Virtual Reality
+  1455	    13-Nov-91  19:28:50
+  1456	Sb: #21490-Virtual Reality Forum
+  1457	Fm: John Eagan/VR 76130,2225
+  1458	To: Chris Eisnaugle 76166,1257 (X)
+  1459	
+  1460	Chris - See my reply to Mike. I think the helmet is a very interesting idea,
+  1461	keep thinking about it! As I said last msg., there has been no specific
+  1462	proposal for a helmet, we're discussing things in general now,  but that is
+  1463	worth working on, for sure. Not off base at all. The only consideration from
+  1464	my view is that it not be too expensive. Write something up and upload it to
+  1465	the library. Use lib 2,"new images", and Matt Drury will copy it over to
+  1466	section 13. On the helmet again, this is the sort of thing I imagined when
+  1467	starting to think about a VR interface. I like it. Read John Swenson's message
+  1468	about detection systems, maybe the 2 of you can bat some ideas around.
+  1469	JLE 
+  1470	
+  1471	#: 21533 S13/Virtual Reality
+  1472	    13-Nov-91  19:28:56
+  1473	Sb: #21498-#Virtual Reality Forum
+  1474	Fm: John Eagan/VR 76130,2225
+  1475	To: Dan Farmer 70703,1632 (X)
+  1476	
+  1477	Dan- Well put. Glad to see you here,as well. Will you be jumping into the
+  1478	fray? See my reply to Mike Haaland, also.
+  1479	JLE 
+  1480	
+  1481	There is 1 Reply.
+  1482	
+  1483	#: 21534 S13/Virtual Reality
+  1484	    13-Nov-91  19:29:09
+  1485	Sb: #21475-#Virtual Reality Forum
+  1486	Fm: John Eagan/VR 76130,2225
+  1487	To: Mike Haaland 72300,1433 (X)
+  1488	
+  1489	Mike- I won't argue. Personally, I can see many reasons for keeping it broad
+  1490	as far as platform goes, I mean, you could make a good case that the Amiga is
+  1491	the way to go here! I have DKB,for example, which was originally developed FOR
+  1492	the Amiga, and then ported to DOS by Aaron Collins. So I understand, your
+  1493	point is well taken, believe me. I won't sit here trying to tell everyone that
+  1494	DOS is it, like it or leave it.  That would be, quite simply, nothing short of
+  1495	foolish. I do think,  however, that it IS important to remember that DOS is
+  1496	the closest thing there is to a "defacto" OS there is. That's nothing against
+  1497	other platforms, I would like to have an Amiga and a Mac in addition to my
+  1498	286.  Also, please read my opening messages to the section, you will notice I
+  1499	proposed using C for projects. One of the reasons, I don't think it's
+  1500	necessary to point out, is portability of code (up to a point, at least).
+  1501	Relax. No one is going to get left out here. Besides,  the more I think about
+  1502	it, and the more I read in the messages from people who are miles beyond me
+  1503	technically, I think a card is probably unnecessary after all. Using serial
+  1504	and parallel ports will probably do.  When things DO get platform-specific,
+  1505	can I take your message as an offer to help make developing code work on
+  1506	different platforms? There is no reason why we can't have parallel projects
+  1507	going on, anyway; but a little bit of unified effort is important, so we can
+  1508	get the most from our collected resources.  Nothing is fixed yet, so hang in
+  1509	there, and most important, keep telling me what you think.
+  1510	JLE 
+  1511	
+  1512	There is 1 Reply.
+  1513	
+  1514	#: 21535 S13/Virtual Reality
+  1515	    13-Nov-91  19:29:16
+  1516	Sb: #21509-VR demo received today
+  1517	Fm: John Eagan/VR 76130,2225
+  1518	To: Mike Schoenborn 70010,147 (X)
+  1519	
+  1520	Mike- I like walking thrugh walls,myself.<g> BTW,another good one for science
+  1521	fiction VR networking is "Earth"by David Brin.
+  1522	
+  1523	JLE 
+  1524	
+  1525	#: 21536 S13/Virtual Reality
+  1526	    13-Nov-91  19:29:24
+  1527	Sb: #21481-VR demo received today
+  1528	Fm: John Eagan/VR 76130,2225
+  1529	To: John Swenson 75300,2136 (X)
+  1530	
+  1531	John- How exactly does that work? I figured with something like that,  you
+  1532	would need maybe 2 mics, to get directional info. It seems from what you
+  1533	described you can get distance, but not direction. I guess the transmit
+  1534	transducers must be sending out different signals?
+  1535	Or is it some sort of multiplexed setup, where the software keeps track of
+  1536	which transducer is pulsing in time, comparing to received pulses,  and
+  1537	sorting out the difference in times? 
+  1538	
+  1539	#: 21538 S13/Virtual Reality
+  1540	    13-Nov-91  20:54:48
+  1541	Sb: #Position Sensors
+  1542	Fm: Alexander Schipal 76137,326
+  1543	To: All
+  1544	
+  1545	
+  1546	Last year I asked a friend who is an engineer at a British aerospace company
+  1547	about the availability of laser gyros. He smiled and said, yep, they are
+  1548	available, weigh only 20 pounds and cost a mere $100K.
+  1549	
+  1550	A few weeks ago, there was a tiny notice on Business Week's "New Technology"
+  1551	page about an upstart company that makes a cheap ($500) and tiny (2 oz.)
+  1552	gyroscope. Given the size and weight, it MUST be a laser gyro. As a first
+  1553	application, they are doing a 3D mouse. The company's name is Gyration Inc. 
+  1554	No address was given.
+  1555	
+  1556	If this thing works with reasonable speed and precision, it is exactly the
+  1557	kind of position sensor VR needs ! Other than the currently used magnetic and
+  1558	ultrasound sensors, a gyro would not need a transmitter reference point that
+  1559	has a data link to the receiver, and there is NO RANGE LIMITATION.  It could
+  1560	even be used for a mobile/outdoors VR system.
+  1561	
+  1562	Question: Where is Gyration Inc ?
+  1563	
+  1564	There are 3 Replies.
+  1565	
+  1566	#: 21546 S13/Virtual Reality
+  1567	    14-Nov-91  00:05:05
+  1568	Sb: #21384-Welcome!
+  1569	Fm: John Egenes 76427,3172
+  1570	To: John Eagan/VR 76130,2225 (X)
+  1571	
+  1572	John,
+  1573	       Yeah, I think we spoke about various probs. with both your SQ-1 and my
+  1574	VFX. Midi forum is lively as ever.
+  1575	       I'm looking forward to seeing what some of the tech heads here come up
+  1576	with. Should be both entertaining and enlightening. BTW, where will the files
+  1577	for this forum be located?
+  1578	       Sheesh, I *hope* people don't get us mixed up. I know how to use
+  1579	computer stuff, but I sure don't know what's going on under the hood.[g]
+  1580	
+  1581	jre
+  1582	
+  1583	
+  1584	
+  1585	
+  1586	#: 21548 S13/Virtual Reality
+  1587	    14-Nov-91  00:27:29
+  1588	Sb: Popular Mechanics?!
+  1589	Fm: John Eagan/VR 76130,2225
+  1590	To: ALL
+  1591	
+  1592	I stumbled on something interesting today. I was flipping through the NOV
+  1593	issue of Popular Mechanics and found a blurb (with photo!) of the molecular
+  1594	modeling VR system at the University of N.Carolina /Chapel Hill ! Take a look
+  1595	if you get a chance.
+  1596	JLE 
+  1597	
+  1598	#: 21549 S13/Virtual Reality
+  1599	    14-Nov-91  00:36:06
+  1600	Sb: #Rendering Engines
+  1601	Fm: Alexander Schipal 76137,326
+  1602	To: All
+  1603	
+  1604	
+  1605	The VR demo program in the library shows what is probably the best you can do
+  1606	with a standard PC without any hardware accelerator: a few hundred polygons
+  1607	per second, no Gouraud shading, no texturing. Frankly, that isn't very
+  1608	impressive. With this level of performance, VR isn't even good for games.
+  1609	
+  1610	VR needs VERY fast 3D rendering, and a "naked" PC/Amiga/Atari/Mac simply does
+  1611	not have the MIPs that it takes.
+  1612	
+  1613	To get a discussion going, I'll list some possible PC-based rendering engines:
+  1614	
+  1615	1) Intel DVI card Used by Sense8 for the WorldToolKit. The 750 processor seems
+  1616	to be pretty good at texture mapping, but has no FPU. Still no Gouraud shading
+  1617	and low polygon count, but the polygons can be phototextured.  Stuff like a
+  1618	triangle with a "fir tree" texture or a square with an "oriental rug" pattern
+  1619	makes a virtual world look pretty good.  DVI cards are readily available and
+  1620	do double duty as multimedia hardware in Multimedia Windows. They also have a
+  1621	very good audio section.
+  1622	
+  1623	2) Transputer (net) + frame buffer My personal favourite. Transputers are not
+  1624	very popular in the US (not-invented-here syndrome?), but the new T9000 chips
+  1625	are the ONLY way to do fancy stuff like realtime raytracing. A single T9000
+  1626	has about 100 MIPs, and an arbitrary number of T9000s can be connected in
+  1627	multiprocessing transputer nets by four 100mbps packet-switching data links
+  1628	integrated on the chip.Extremely high performance + unlimited scaleabilty !
+  1629	Transputer boards are also easy to layout (few glue chips).
+  1630	
+  1631	3) 80860 + frame buffer Very fast FPU with special 3D-oriented instructions
+  1632	that facilitate shading and Z-buffering.
+  1633	
+  1634	4) Graphics processors Division has an 80860 board that offloads shading to a
+  1635	High Speed Shading Processor (AFAIK, made by Sharp). It is said to shade twice
+  1636	as fast as the 80860. Maybe a HSSP-only board is worth a try.
+  1637	
+  1638	5) ASICs What about a few nifty FPGAs ? Dream on...
+  1639	
+  1640	There are 2 Replies.
+  1641	
+  1642	#: 21550 S13/Virtual Reality
+  1643	    14-Nov-91  01:29:08
+  1644	Sb: #21538-Position Sensors
+  1645	Fm: Mike Schoenborn 70010,147
+  1646	To: Alexander Schipal 76137,326 (X)
+  1647	
+  1648	Alexander -
+  1649	 
+  1650	I think I saw a blurb on that in a recent EDN or Computer Design.  I'll see
+  1651	if the issue is still around.
+  1652	 
+  1653	Mike
+  1654	       
+  1655	
+  1656	#: 21554 S13/Virtual Reality
+  1657	    14-Nov-91  02:34:06
+  1658	Sb: #21534-Virtual Reality Forum
+  1659	Fm: Mike Haaland 72300,1433
+  1660	To: John Eagan/VR 76130,2225
+  1661	
+  1662	
+  1663	Glad to hear the PC board, excuse the pun <g>, probably won't be needed. hehe
+  1664	I just didn't want to see others, that have chosen different OSs and all the
+  1665	Motorola types, left out because something needs to be plugged into a PC slot.
+  1666	
+  1667	I did read your opening messages.  They intrigued me very much.  You proposed
+  1668	using C, good choice, so things could be massaged for different machines. 
+  1669	That's what kinda set me off when I read the "DOS slant" to your message.  You
+  1670	almost said let's make this a DOS specific project.
+  1671	
+  1672	On helping with code,Yessir!  I'll be more than willing to help do code for
+  1673	the platform I have.  Which at the moment is a Signetics 68070 box with a
+  1674	graphics Co-Pro, same chip set as the CD-I machines, running OS-9. (Same OS as
+  1675	CD-I too)
+  1676	
+  1677	I see Dan made a very good point, that programmers from different platforms
+  1678	will jump in and help with code for those different platforms.
+  1679	
+  1680	Looking forward to seeing what develops,
+  1681	
+  1682	Mike
+  1683	
+  1684	#: 21555 S13/Virtual Reality
+  1685	    14-Nov-91  06:02:04
+  1686	Sb: 3D glasses
+  1687	Fm: John Swenson 75300,2136
+  1688	To: Mike Schoenborn 70010,147 (X)
+  1689	
+  1690	Mike,
+  1691	(in accordance with John's message this is now a new thread)
+  1692	Thats great that it can actually be made to transmit a lot more light, I'll
+  1693	have to wait to get mine before I can talk intelligently about them though.
+  1694	 
+  1695	I was thinking about tweaking the VGA timing such that you used as fast a
+  1696	vertical refresh rate as your board and monitor can take. For 640 x 480 and
+  1697	lower on the Ergo that means 90Hz (which is the fastest most monitors can
+  1698	do). That should have considerably less flicker than what you get out of
+  1699	"normal" modes. Another approach would be to use a builtin interlaced mode,
+  1700	and alternate the lines from the two images in the video ram, you wouldn't
+  1701	have to do ANYTHING to the VGA then, just make sure that the glasses are
+  1702	syncronized with the vertical rate. It wouldn't cut down on the flicker, but
+  1703	the software would not need to tweak the VGA.
+  1704	 
+  1705	 
+  1706	I was talking to friend at work about this and he came up with a nice
+  1707	solution which might work. Switch the glasses in two or three places during
+  1708	the drawing of the scan, and interleave the eyes on one image, then have the
+  1709	other image use the oposite eye interleaving. The only problem with this is
+  1710	that the glasses might not change fast enough to "swap" on the fly (it would
+  1711	have to be done during the HORIZONTAL retrace, which isn't all that long
+  1712	<g>.)
+  1713	 
+  1714	John S.
+  1715	       
+  1716	
+  1717	#: 21556 S13/Virtual Reality
+  1718	    14-Nov-91  06:02:13
+  1719	Sb: #21538-Position Sensors
+  1720	Fm: John Swenson 75300,2136
+  1721	To: Alexander Schipal 76137,326 (X)
+  1722	
+  1723	Actually it probably is NOT a laser gyro. All a lazer gyro is, is an almost
+  1724	indestructable accelerometer. There are many other forms of accelerometers
+  1725	which are MUCH cheaper than a laser one (and offer better resolution for
+  1726	small size). I worked on one many years ago (so its probably much better and
+  1727	cheaper today) which consisted of one of those integrated circuit pressure
+  1728	sensors, with a tiny blob of mercury on the sensor surface (kept in place
+  1729	with a little plastic buble). As the whole assembly moved the mercury would
+  1730	push against the sensor, giving a nice proportional voltage to acceleration.
+  1731	We used several of these in a little array to form a gyroscope, and put it in
+  1732	a car and you could basically track it around town. After running around town
+  1733	all day the absolute position error was about about 5 feet. The position
+  1734	accuracy was primarily determined by how good the ADCs were. To get that good
+  1735	in those days needed some awfully expensive ADCs. (the wole thing took up
+  1736	about a cubic inch PLUS electronics of course <g>). I'm not sure if it was
+  1737	sensitive enough for use on a glove though. The entire sensor array cost
+  1738	about $60, but then there were the ADCs and other electronics, including a
+  1739	computer, so the TOTAL cost was pretty high. It could be done a LOT cheaper
+  1740	today. The sensors are a little cheaper, but the rest is much less.
+  1741	 
+  1742	John S.
+  1743	       
+  1744	
+  1745	#: 21557 S13/Virtual Reality
+  1746	    14-Nov-91  06:02:21
+  1747	Sb: #21549-Rendering Engines
+  1748	Fm: John Swenson 75300,2136
+  1749	To: Alexander Schipal 76137,326 (X)
+  1750	
+  1751	Alexander,
+  1752	I work for an ASIC company and have worked on a number of very high
+  1753	performance proprietary graphics chips. The last one I worked on could do
+  1754	150,000 tranformed, shaded 3d polygons per second, not too shabby
+  1755	performance!
+  1756	 
+  1757	The last time I looked at a transputer design (several years ago) the
+  1758	interchip communcations was so slow it killed the system (that was a DSP
+  1759	application), we wound up doing it with an ASIC instead. It sounds like they
+  1760	have improved a LOT since then. (I'm not sure I trust the 100 Mips number
+  1761	though, there is so much specmanship going on its incredible, I also design
+  1762	RISC processors so I'm constantly battling with marketing over ours and the
+  1763	competition's "mips rating"). I think you just got my juices flowing again to
+  1764	look into transputers.
+  1765	 
+  1766	Unfortunately for use by us on this forum, those graphics processor chips
+  1767	have an NRE of $250,000 and unit costs of $300 or so (in volume).
+  1768	 
+  1769	John S.
+  1770	       
+  1771	
+  1772	#: 21562 S13/Virtual Reality
+  1773	    14-Nov-91  08:02:32
+  1774	Sb: #21549-Rendering Engines
+  1775	Fm: Chris Eisnaugle 76166,1257
+  1776	To: Alexander Schipal 76137,326 (X)
+  1777	
+  1778	Alexander, Your thought about not being able to get the throughput etc on a
+  1779	plain machine without some co-processor help mimic mine exactly. Haveing done
+  1780	so many video games and other graphic demos for some pretty sophisticatd
+  1781	stuff, it just dont have it alone. I myself dont think i'd go with DVi
+  1782	although nice. Your transputer idea is very interesting as they rent that
+  1783	expensive and do offer incredible processing power. I had talked with John
+  1784	about some of this and was discussing it last night, there def has to be some
+  1785	sort of viewing device, beyond 3D-glasses, so i had proposed placing the
+  1786	rendering system in the helmet and have the host send updates to it etc. The
+  1787	helmet should be able to be programmed to render based on a set of information
+  1788	etc. Initialy placing it in the helmet may not be cost-effective etc, so we
+  1789	had thought about a co-processor board in the machine with the helmet system
+  1790	connected. I have not had the pleasure of using Transputers yet, but have done
+  1791	something similiar to this with TI chips althought they are much slower.
+  1792	
+  1793	Anyway, think your suggestions are pretty much right on.
+  1794	
+  1795	Chris Eisnaugle
+  1796	
+  1797	#: 21563 S13/Virtual Reality
+  1798	    14-Nov-91  08:09:52
+  1799	Sb: #21538-#Position Sensors
+  1800	Fm: Robert F. O'Connor 70314,2525
+  1801	To: Alexander Schipal 76137,326 (X)
+  1802	
+  1803	Guess what!  Logitech will be marketing a combination 3-button-2D, 5-button-3D
+  1804	mouse (with a little ultrasonic tripod) "2nd quarter '92" and are offering a
+  1805	programmer's interface and prototype mouse right now "in limited quantities." 
+  1806	I've got a press release from them that you can find in the LOGITECH forum,
+  1807	library 6, Announcements, file 3D.TXT.  The description mentions a "head
+  1808	tracker mount" which seems to be included, and a "dual mode" allowing two mice
+  1809	(one head-mounted, one hand-held) to be used simultaneously (it then goes on
+  1810	to say that _four_ mice can be used simultaneously with one tripod--share your
+  1811	VR with a friend!).  Interesting features will include audio in-out and a
+  1812	suspend button that freezes mouse output so that it can be repositioned
+  1813	(equivalent to lifting a 2d mouse off of the pad to reposition it).  It will
+  1814	have both Mac and PC (and whatever) interfaces and only requires a serial port
+  1815	interface.
+  1816	
+  1817	No word on pricing, of course, but I will be calling Logitech later this
+  1818	morning to find out what the development kit is going for.  Hopefully, I can
+  1819	leave a message with their response this evening.  If it's not too expensive
+  1820	this might be an alternative to a homebrew powerglove/head position interface.
+  1821	If Logitech makes enough noise (and they don't seem to be slouches in the
+  1822	marketing area) we might see a lot of third-party support for this (heck, even
+  1823	Microsoft included a LogiMouse driver in Win3 from day one).
+  1824	
+  1825	(I'd upload it here, but haven't done that before on CIS; do I just upload to
+  1826	LIB 2 and email Matt?)
+  1827	
+  1828	-Robert
+  1829	
+  1830	
+  1831	
+  1832	There is 1 Reply.
+  1833	
+  1834	#: 21568 S13/Virtual Reality
+  1835	    14-Nov-91  10:12:56
+  1836	Sb: VR in Carnivals
+  1837	Fm: Matt Drury 75300,1610
+  1838	To: All
+  1839	
+  1840	An article in today's _Orlando Sentinel_ - the business section - mentions
+  1841	"'Virtuality,' a computerized simulation game that takes players through a
+  1842	3-dimensional world."
+  1843	
+  1844	By Richard Burnett of the Sentinel staff, this article goes on to indicate
+  1845	that users of Virtuality "do battle with others using the same system," and
+  1846	that it is made by W. Industries Ltd. of Leicester, England, distributed by
+  1847	Edison Brothers Stores Inc. of St. Louis.
+  1848	
+  1849	"'We've developed a number of applications so far, and we're not even sure yet
+  1850	of all we can do with it,' said Waldren, president of W. Industries. 'But
+  1851	we're sure having fun trying.'"
+  1852	
+  1853	  Matt Drury
+  1854	  Forum Staff
+  1855	
+  1856	
+  1857	
+  1858	
+  1859	#: 21569 S13/Virtual Reality
+  1860	    14-Nov-91  10:13:00
+  1861	Sb: #21563-Position Sensors
+  1862	Fm: Matt Drury 75300,1610
+  1863	To: Robert F. O'Connor 70314,2525
+  1864	
+  1865	Robert,
+  1866	
+  1867	All you need to do is upload the press release - with proper title, keywords
+  1868	(include VR for this section), and description, giving credit to the LOGITECH
+  1869	Forum - to library 2 here, and I will copy it into library 13.
+  1870	
+  1871	  Matt Drury
+  1872	  Forum Staff
+  1873	
+  1874	
+  1875	
+  1876	
+  1877	#: 21572 S13/Virtual Reality
+  1878	    14-Nov-91  10:42:38
+  1879	Sb: Language
+  1880	Fm: Alexander Schipal 76137,326
+  1881	To: All
+  1882	
+  1883	
+  1884	What about doing the software in C++ instead of C ?
+  1885	
+  1886	The C++ 2.0 language definition is stable now, Borland C++ looks OK and
+  1887	Microsoft C/C++ 7.0 will - hopefully - turn up sometime next year.
+  1888	Macs/Ataris/Amigas should have comparable compilers by now.
+  1889	
+  1890	There's nothing more object-oriented than constructing a virtual world !
+  1891	
+  1892	It would also do the C people (including myself) good to do some object
+  1893	oriented programming, because that's where a programmer's money will come from
+  1894	in the next ten years. Learning experience ! Once you know how to handle it,
+  1895	C++ is just more efficient and productive than C.
+  1896	
+  1897	OTOH, C++ certainly has some acceptance problems, not everybody wants to cough
+  1898	up the money for a new compiler, and C++ might just slow down the real work
+  1899	here.
+  1900	
+  1901	Another idea: Some kind of object-oriented database module is necessary for
+  1902	keeping track of all the virtual thingies, their possible behaviour (methods)
+  1903	and interactions. That's a tricky one. Are there some DB gurus around ?
+  1904	
+  1905	One of the most fascinating and daunting characteristics of VR software is
+  1906	it's potentially limitless hierarchy of objects, rules and relationships.
+  1907	Maybe we should open PHILOSOPHY and FLAME threads, eh?
+  1908	
+  1909	#: 21573 S13/Virtual Reality
+  1910	    14-Nov-91  10:53:13
+  1911	Sb: #21533-Virtual Reality Forum
+  1912	Fm: Dan Farmer 70703,1632
+  1913	To: John Eagan/VR 76130,2225
+  1914	
+  1915	Thanks for the welcome, John. Will I be jumping into the fray?  Don't know
+  1916	yet.  I know it took me longer to capture the mail from this area than it did
+  1917	from Fractals and Raytracing combined.  I don't even know if I'll have time to
+  1918	keep up with reading the message base here!
+  1919	
+  1920	    -Dan
+  1921	
+  1922	#: 21581 S13/Virtual Reality
+  1923	    14-Nov-91  11:23:50
+  1924	Sb: #VR in Carnivals
+  1925	Fm: Alexander Schipal 76137,326
+  1926	To: Matt Drury 75300,1610 (X)
+  1927	
+  1928	
+  1929	Matt, the "Virtuality" gear is on display in the Trocadero amusement center at
+  1930	Piccadilly Circus, London. If anybody happens to be in London, this is
+  1931	certainly worth a visit. There are four linked "sitdown" vehiclesimulation
+  1932	type units.  In the current game you control a robot biped and shoot at, or
+  1933	bump into, robots controlled by other players. Neat stuff! The hardware looks
+  1934	very slick and professional. The helmets are quite heavy, but that's okay for
+  1935	a 5 minute arcade game.
+  1936	
+  1937	I've heard there are two linked "standup" units in Covent Garden amusement
+  1938	center that are in plexiglass cages on opposite ends of a restaurant. The
+  1939	eaters have a laugh seeing the players doing strange contortions and groping
+  1940	around in thin air.
+  1941	
+  1942	The company's phone number is 0533 542 127, and the president is one
+  1943	Dr.Walden. They first displayed "Virtuality" at last year's Computer Graphics
+  1944	exhibition in London. It was the first low cost arcade VR system in the world.
+  1945	
+  1946	BTW, I'm going to upload a file with short descriptions, including address and
+  1947	phone #, of companies doing VR systems, components or consulting.
+  1948	
+  1949	There is 1 Reply.
+  1950	
+  1951	#: 21584 S13/Virtual Reality
+  1952	    14-Nov-91  11:58:04
+  1953	Sb: #21581-VR in Carnivals
+  1954	Fm: Matt Drury 75300,1610
+  1955	To: Alexander Schipal 76137,326
+  1956	
+  1957	Alexander,
+  1958	
+  1959	Please feel free to upload any information you have on the company that
+  1960	created "Virtuality."
+  1961	
+  1962	  Matt Drury
+  1963	  Forum Staff
+  1964	

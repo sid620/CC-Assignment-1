@@ -1,0 +1,522 @@
+     1	 Gender Issues in Online Communications
+     2	
+     3	
+     4	
+     5	 By
+     6	 Hoai-An Truong
+     7	
+     8	 with additional writing and editing
+     9	 by Gail Williams, Judi Clark and Anna Couey
+    10	
+    11	 in conjunction with
+    12	 Members of BAWIT -- Bay Area Women in Telecommunications
+    13	
+    14	 Copyright 1993  Written for CFP 93   Version 4.1
+    15	
+    16	
+    17	
+    18	 BAWIT ['bay-wit'], Bay Area Women in Telecommunications, is a group
+    19	 of women working with telecom, organized to discuss women's
+    20	 professional and social issues and computer networking, including
+    21	 industry gender bias. By doing so, BAWIT seeks to advance the state
+    22	 of women who use telecom, to provide a higher profile for women in
+    23	 the industry, and to encourage women and girls in their exploration
+    24	 of computers in general, and in particular, telecom.
+    25	
+    26	 Signed by: Judi Clark, Anna Couey, Lile Elam, Barbara Enzer, Hilarie
+    27	 Gardner, M Normal, Naomi Pierce, Nancy Rhine, Rita Rouvalis, Leslie
+    28	 Regan Shade, Jillaine Smith, Hoai-An Truong, Sue vanHattum, Gail
+    29	 Williams, Donna Zelzer.
+    30	
+    31	
+    32	 The principal author would like to acknowledge members of BAWIT, and
+    33	 Mills College for education on the issues discussed in this paper,
+    34	 and also Judi Clark, who proposed the panel on gender issues and was
+    35	 instrumental in getting the paper off the ground and throughout the
+    36	 process.
+    37	
+    38	 Contact information for Bay Area Women in Telecom
+    39	 e-mail: bawit-request@igc.apc.org
+    40	
+    41	
+    42	 Introduction
+    43	
+    44	 Despite the fact that computer networking systems obscure physical
+    45	 characteristics, many women find that gender follows them into the
+    46	 online community, and sets a tone for their public and private
+    47	 interactions there -- to such an extent that some women purposefully
+    48	 choose gender neutral identities, or refrain from expressing their
+    49	 opinions.
+    50	
+    51	 The experiences of women online are both personal and political. To a
+    52	 certain extent, their causes are rooted in the physical world --
+    53	 economics and social conditioning contribute to the limited numbers
+    54	 of women online. Additionally, online environments are largely
+    55	 determined by the viewpoints of their users and programmers, still
+    56	 predominantly white men.
+    57	
+    58	 If network policies and legislation are going to determine access to
+    59	 information and participation in public media for this and the next
+    60	 generations, it is critical that they reflect and address the
+    61	 perspectives of women and people of color, to avoid further
+    62	 marginalization of these constituencies.  The following is an
+    63	 overview of issues which members of BAWIT feel need to be addressed.
+    64	 We feel that these are situations worthy of further investigation and
+    65	 research.
+    66	
+    67	 Access
+    68	
+    69	 The Clinton administration has placed a priority on developing a
+    70	 National Information Infrastructure, envisioning that computer
+    71	 networks will be the information highways of the future. However, on
+    72	 many systems, women comprise between 10 and 15 percent of the online
+    73	 population. On electronic bulletin boards or BBSs, which are rarely
+    74	 as supervised or monitored as the more well-known online services --
+    75	 such as Compuserve, America_nline and Prodigy -- their numbers tend
+    76	 to be far lower. Why? And what are the implications of inequities in
+    77	 gender representation in the information infrastructure?
+    78	
+    79	 It is likely that economics impact women's online participation to a
+    80	 large degree. On average, women's salaries are 40% lower than men's,
+    81	 leaving women with less disposable income for computers, modems,
+    82	 software, online services and any additional phone charges.
+    83	
+    84	While electronic mail [or e-mail] is fast becoming common in the
+    85	 workplace, it is still predominantly used by those in technical
+    86	 fields, whether in educational institutions or in business; or by
+    87	 those with technical facility or training. Men who use the Internet
+    88	 have a higher likelihood of being in an academic, management, or
+    89	 technical position offering free access as one of the prerequisites
+    90	 of their jobs. Thus, a higher percentage of men have both the
+    91	 technical training and subsidized access to participate online than
+    92	 women do.
+    93	
+    94	 Additional deterrents to online participation may be attributed to
+    95	 women's roles in society. While more women are in the workplace, they
+    96	 often are still primary caretakers for their children, and in a
+    97	 majority of households, women bear the brunt of household chores.
+    98	 Women may find they have less free time to learn to navigate online
+    99	 systems.
+   100	
+   101	 Women in Computer Studies
+   102	
+   103	 Another deterrent to women's entering the computer field or making
+   104	 themselves at home on the net is the negative stereotype of the
+   105	 socially isolated computer nerd. Women may need help overcoming
+   106	 visions of becoming or associating with technology-obsessed nerds and
+   107	 adolescents who are seen as likely to populate online systems. This
+   108	 has had research attention as a significant reason why females
+   109	 students tend to drop out of computer studies.
+   110	
+   111	 Professors tend to call upon and address their remarks to male
+   112	 students more often than female students, as several studies show.
+   113	 Additionally, there are few opportunities for women to be mentored in
+   114	 higher education or in their careers. Executives or professors --
+   115	 often male -- are likely to identify with, encourage and mentor
+   116	 another male, rather than a female. By itself, lack of attention or
+   117	 mentors may not be a deterrent; however, coupled with other social
+   118	 factors and discrimination, it often contributes to feelings of
+   119	 discouragement and isolation, low confidence and feelings of
+   120	 unworthiness, and higher dropout rates.
+   121	
+   122	 Despite the fact that women often use computers in business settings,
+   123	 technical roles -- from programming of telecom software to operating
+   124	 communications systems -- remain predominantly male. Invitations to
+   125	 sysop gatherings addressed "Dear Sir" and including "your wife is
+   126	 welcome," customers who ask for a manager when they hear a female
+   127	 voice on a technical help call, and the popular culture archetypes of
+   128	 computer enthusiasts as male, are continual reminders of common
+   129	 assumptions based on gender. Even when female students do as well or
+   130	 better than their male peers, they tend to feel less competent. In
+   131	 technical fields, the common assumption by both men and by women
+   132	 themselves is that women don't do as well as men. Women are then less
+   133	 likely to take on projects which may either prove their ability or
+   134	 provide additional expertise, because they don't feel qualified.
+   135	
+   136	 Interface
+   137	
+   138	 Access to online communications is not simply a function of
+   139	 economics.  The technical expertise required to establish access to
+   140	 online systems, and the interfaces users encounter when they get
+   141	 there can be significant deterrents to online participation for
+   142	 non-technical users. While graphical user interfaces can
+   143	 significantly ameliorate this problem, they are system specific, a
+   144	 situation which can hamper access for small or $community
+   145	 organizations and lower income individuals who can only afford older
+   146	 and non-standard equipment, if at all.
+   147	
+   148	 Studies have attempted to explain the reasons that fewer girls than
+   149	 boys pursue technical fields. Some studies indicate that gender
+   150	 impacts perception. Network interfaces are typically designed by men;
+   151	 if the studies are correct, it would appear that developing
+   152	 interfaces that rely on women's perceptive skills in addition to
+   153	 men's would impact online participation. Interestingly enough, Les
+   154	 Radke, who teaches a computer class at Richmond High, finds that in
+   155	 his class boys gravitate towards computer games, while girls use
+   156	 e-mail and read USENET.
+   157	
+   158	 Perceived Usefulness
+   159	
+   160	 An even greater deterrent for non-technical users is the perception
+   161	 of usefulness. As BAWIT member Donna Zelzer explains: "...Look at the
+   162	 automobile. It's expensive, it's mechanical... And, if you make a
+   163	 mistake, you can KILL someone. And of course men make fun of women
+   164	 drivers all the time. Yet despite these obstacles, millions of women
+   165	 own cars and drive them every day. Why? Because they see cars as
+   166	 useful and even necessary to their lifestyles. But most women don't
+   167	 feel this way about computers or going online."
+   168	
+   169	 Network systems and projects geared to serving non-technical users
+   170	 find that education is a tremendous part of their work, and that
+   171	 concrete benefits must be demonstrated to overcome a new user's
+   172	 investment of time and money to learn to telecommunicate. And what
+   173	 are the benefits? Network users often describe virtual community as a
+   174	 benefit of being online; professionals and activists find they can
+   175	 gather, access, and disseminate information and viewpoints not
+   176	 readily available from mass media. Yet while the networks can
+   177	 democratize publishing, they also impose additional cost on
+   178	 information. Herbert Schiller's "Culture, Inc.," among information
+   179	 and space. As the nets become increasingly commercialized, they
+   180	 further establish class differentiation between those who can afford
+   181	 the luxury of participating in online systems and those who cannot.
+   182	
+   183	 Social Interaction and Gender-Based Perceptions
+   184	
+   185	 A newly created bulletin board in the Bay Area started up a
+   186	 conference with a posting comparing women to pets that occasionally
+   187	 need to be put to sleep. This type of demeaning communication
+   188	 involving women is quite typical of bulletin boards, which may
+   189	 provide an outlet for males to share humor they would suppress in a
+   190	 mixed setting. This can be a disincentive to participate, especially
+   191	 if this is an initial or persistent online experience.
+   192	
+   193	 People will say things online that they will not say face to face. In
+   194	 addition, missing elements of conversation, such as facial
+   195	 expression, vocal clues, and other conventions have a complex effect
+   196	 on online interactions. Additionally there are unresolved
+   197	 difficulties in the frank discussion and expression of sexuality
+   198	 between men and women, in which intent is often misunderstood.
+   199	
+   200	 An element of this technology is a tradition of sometimes colorful
+   201	 diatribes or "flaming". Since women tend to use language differently
+   202	 then men do, these highly aggressive language patterns may be even
+   203	 more of a barrier to our participation. Styles of communication
+   204	 (sometimes referred to as "debate" and "relate" styles) often
+   205	 complicate messages. While debating and arguing an issue is the
+   206	 normal style for some people, others understand these debates as an
+   207	 attack on them, causing them to pull away from the discussion. Being
+   208	 sensitive to the style of communication can be as important as the
+   209	 actual message being conveyed.
+   210	
+   211	 Deborah Tannen, among other authors and researchers, describes the
+   212	 difference in language use between the genders and between different
+   213	 families and cultures. Tannen identifies a less direct, more
+   214	 inclusive style, designed to avoid arguments and confrontation, as a
+   215	 more typically female method of communication.
+   216	
+   217	 Online Harassment
+   218	
+   219	 Many women who use Internet sites, electronic bulletin boards or
+   220	 other online services, or even internal company-wide networks report
+   221	 receiving invitations and messages of a sexually explicit nature in
+   222	 real-time "chats" or via e-mail. These messages are variously
+   223	 analogous to obscene phone calls or whistles in the street depending
+   224	 on their tone. However, they take on an added annoyance factor for
+   225	 women who are paying to utilize the resources of the online
+   226	 environment. Additionally, these messages may be experienced
+   227	 repeatedly by the same women because there tend to be fewer women on
+   228	 most systems. Women looking for information online are often
+   229	 surprised to see that a female first name can bring a distracting and
+   230	 ultimately expensive volume of unsolicited contact, and give one the
+   231	 sensation of being the first female to have arrived at a frontier
+   232	 since pay dirt was struck. The problem is pervasive and annoying
+   233	 enough that many women choose to switch to non-gender-specific login
+   234	 names, for example, or to post to women-only conferences or mailing
+   235	 lists.
+   236	
+   237	 A major obstacle that women have to deal with is that sexual
+   238	 harassment is a relatively new concept in our society, and that
+   239	 ignoring the situation can be a successful survival strategy in the
+   240	 short run. Women may refrain from reporting perceptions of abuse
+   241	 because of internalized peer pressure, based on observations of other
+   242	 women being labeled "prudes" or otherwise mocked. Or they may hold
+   243	 back due to the fear, or anecdotal evidence that charges are not
+   244	 likely to be taken seriously by management. Women may not know that
+   245	 harassment is by its very nature subjective, and that they may be
+   246	 entitled to more privacy than they get.
+   247	
+   248	 "All of the cases I have seen filed involving e-mail or voice mail
+   249	 were settled out of court, which says something about the strength of
+   250	 the evidence," said Frieda Klein, a sexual harassment consultant, in
+   251	 an article in MacWeek dated Dec. 14, 1992.
+   252	
+   253	 Guidelines for Monitoring Online Harassment
+   254	
+   255	 How can we prevent online harassment? The best way to bring this
+   256	 about is education on the issues and recognizing when harassment
+   257	 occurs. A MUSE role-playing community, Cyberion City at MIT, tries to
+   258	 educate its participants with this definition of the problem:
+   259	
+   260	 "Unwanted advances of hostile or forward nature are unacceptable...
+   261	 If you think someone might be interested in developing a closer
+   262	 personal relationship, it is your responsibility to make absolutely
+   263	 sure of this before saying or doing anything that would be considered
+   264	 inappropriate in real life. Such inappropriate behavior includes, but
+   265	 is not limited to, suggestive remarks; violation of the other
+   266	 person's space; forward, intimate or suggestive conduct."
+   267	
+   268	"People on this system are of all ages and backgrounds... Most are not
+   269	 here specifically to form intimate relationships, and it is
+   270	 inappropriate to assume that someone is so interested unless you have
+   271	 received clear indications of it. If you are unsure whether your
+   272	 behavior is appropriate, STOP, and ASK. Many people are hesitant to
+   273	 say 'go away' in so many words because they do not wish to be rude.
+   274	 It is your responsibility to make sure they are saying 'yes' before
+   275	 pursuing a close personal relationship."
+   276	
+   277	 Virtual or online harassment does not have a distinct legal
+   278	 definition.  Case law has not yet been established for many
+   279	 situations, but preexisting harassment and stalking laws may be used
+   280	 as guidelines.  MacWeek, an industry publication, suggests the
+   281	 following:
+   282	
+   283	 "Companies should print guidelines prohibiting sexual harassment and
+   284	 distribute them to all employees. Those guidelines should be followed
+   285	 up with training."
+   286	
+   287	 "The courts have held that sexually explicit posters hung on walls
+   288	 can create a hostile work environment. Similarly, pornographic
+   289	 computer programs or screen displays, particularly if visible to
+   290	 passers-by, could constitute sexual harassment." "Managers should
+   291	 treat any complaints of sexual harassment seriously. The company
+   292	 should have clearly enunciated policy of progressive discipline,
+   293	 ranging from warnings to terminations, depending on the severity of
+   294	 the offense."
+   295	
+   296	 "After receiving complaints, managers and personnel departments
+   297	 immediately should seek to stop the harassment and educate the
+   298	 employees involved. A company is forbidden by law to retaliate
+   299	 against anyone making a sexual-harassment complaint."
+   300	
+   301	 A company, including the network manager, may be held responsible if
+   302	 harassment occurs or continues to occur in the office. We would do
+   303	 well to find personal definitions in order to identify and address
+   304	 problems which arise. It is vital that company managers educate
+   305	 themselves and their employees, and have a anti-harassment policy
+   306	 that includes online harassment. Awareness of the issue is the best
+   307	 deterrent.
+   308	
+   309	 Increasing Our Participation: Possible Approaches, Future Directions
+   310	
+   311	 In the wake of the Anita Hill-Clarence Thomas hearings, companies and
+   312	 individuals are beginning to address women's issues in a variety of
+   313	 ways.  A Silicon Valley company recently arranged an all-day retreat
+   314	 offsite for its women employees to discuss gender issues faced by
+   315	 women in the computer industry and within the company. Issues
+   316	 discussed included glass ceilings, differences in pay, percentage of
+   317	 women working at the company, how to achieve success in technical
+   318	 fields, and dealing with career and home lives. The dialog continues.
+   319	
+   320	 Across the bay, Berkeley Mac Women, a women's Macintosh users group,
+   321	 formed completely independently within weeks of the creation of
+   322	 BAWIT. At meetings, the all-women format has proven to be a more
+   323	 comfortable environment for women computer users to ask questions.
+   324	
+   325	 Stacy Horn, who runs Echo BBS, wanted to ensure that the board be
+   326	 gender-balanced. Using affirmative action efforts such as telecom
+   327	 tutorials, outreach for women, and creating an environment that women
+   328	 would feel more comfortable in, she brought the number of women users
+   329	 up to about 50 percent. Seniornet, an online network of senior
+   330	 citizens has about a 50-50 ratio of women to men. Online services
+   331	 which stress community such as Seniornet, Echo and the WELL (the WELL
+   332	 has between 15-20% women users) attract higher numbers of women.
+   333	
+   334	Women banded together to support one another on Santa Monica PEN, a
+   335	 city system. This account is from an article called "What's Really
+   336	 Happening in Santa Monica" in the December issue of IMPACT! from the
+   337	 Boston Computer Society Social Impact Group and Public Service
+   338	 Committee, by Pamela Varley:
+   339	
+   340	 "PENners quickly discover[ed] that they must contend with people who
+   341	 feel entitled to hector mercilessly those with whom they
+   342	 disagree....When the system started up, women -- who were greatly
+   343	 outnumbered by men -- had problems with harassment....By the summer
+   344	 of 1989, the few women on line were fed up and ready to drop out."
+   345	
+   346	 "In response to harassment,...the women on PEN banded together in
+   347	 July 1989 to form a support group called PEN Femmes. The group makes
+   348	 a point of welcoming women when they begin to participate in PEN
+   349	 conferences.  Harassment has subsided as more women have become
+   350	 active in conferences."
+   351	
+   352	 System interfaces need to be evaluated in terms of user preferences.
+   353	 Since research indicates that women tend to learn and navigate
+   354	 somewhat differently than men, increased participation of women as
+   355	 software and system interface designers is an important goal.
+   356	
+   357	Simpler interfaces are of benefit to all users, but especially to
+   358	 those without technical training. As the BMUG BBS switched to using a
+   359	 simpler electronic messaging system with a Mac-like interface,
+   360	 enthusiastic users genezFted four times the number of messages as on
+   361	 the old BBS. The familiarity of the new interface attracts women Mac
+   362	 users both with and without technical backgrounds who never or rarely
+   363	 used the old one.
+   364	
+   365	 Rita Rouvalis, a BAWIT member, observes that "a list of Net
+   366	 Celebrities I saw recently included only *3* women -- none of them
+   367	 for technical merit.  Anita Borg, who runs the Systers [electronic
+   368	 mailing] list, was not included. When I was taking computer science
+   369	 courses in college, I knew that Niklaus Wirth wrote Pascal and
+   370	 Modula2 and 3, and that Kernigie and Richie developed C -- but I had
+   371	 no *idea* that Grace Hopper [inventor of COBOL] existed until her
+   372	 death." Remembering women pioneers is one way to transform the
+   373	 stereotypes of computer innovators.
+   374	
+   375	 Managers of communications networks and BBSs have many strategies to
+   376	 try in making women welcome. Employing women as technical support
+   377	 staff, or in other informed customer service roles, and encouraging
+   378	 women to volunteer information to one another can help to take some
+   379	 of the challenge out of learning a new set of skills. Special
+   380	 approaches such as women-only tutorials, information campaigns and
+   381	 rate subsidies are tools which may help systems approach a gender
+   382	 balance.
+   383	
+   384	 Conclusion
+   385	
+   386	 How we address the issue of barriers to wider participation of women
+   387	 has long-ranging impact on other issues such as racial harassment
+   388	 versus inclusion, and the participation of gays, and the disabled.
+   389	 Much is made of the tremendous potential electronic mail and
+   390	 conferencing have to revitalize participatory democracy, but
+   391	 intelligent, motivated affirmative action will be needed if racial
+   392	 and gender barriers are to come tumbling down. Affirmative action can
+   393	 be done on the institutional level, and it can also be done on a
+   394	 grassroots level, by friends.
+   395	
+   396	
+   397	 Suggested Readings
+   398	
+   399	 First of all, read and communicate with women online.
+   400	
+   401	 There is as yet little published about women and telecommunications.
+   402	 Meanwhile, the general experience of women in computing is a backdrop
+   403	 worth exploring. BAWIT has made a commitment to continue assembling a
+   404	 bibliographic collection online.
+   405	
+   406	 Samplings from Available Research
+   407	
+   408	 Benston, Margaret Lowe. "Feminism and System Design: Questions of
+   409	 Control." The Effects of Feminist Approaches on Research
+   410	 Methodologies.  Waterloo, Ont.: Wilfrid Laurier Univ. Press, 1989,
+   411	 pp. 205-223.
+   412	
+   413	 Brusca, F. and Canada, K. "The Technological Gender Gap: Evidence and
+   414	 Recommendations for Educators and Computer-Based Instruction
+   415	 Designers." Educational Technology Research and Development, 1991,
+   416	 39, no. 2:43-51.
+   417	
+   418	 Carmichael, Joan. "In a Different Format: Connecting Women,
+   419	 Computers, and Education Using Gilligan's Framework." Masters thesis.
+   420	 Concordia University, Canada, 1991.
+   421	
+   422	 Durndell, A. "Why Do Female Students Tend to Avoid Computer Studies?"
+   423	 Glasgow College, Scotland: Research in Science & Technological
+   424	 Education, 1990 Vol. 8 (2) p. 163-170.
+   425	
+   426	 Erlich, Reese. "Sexual Harassment an issue on the high-tech
+   427	 frontier." MacWeek, December 14, 1992, p. 20-21.
+   428	
+   429	Edwards. Paul. "The Army and the Microworld: Computers and the
+   430	 Politics of Gender Identity." Signs v.16, n.1 (1990):102-127.
+   431	
+   432	 Edwards, Paul. "Gender and the Cultural Construction of Computing,"
+   433	 adapted from "From 'Impact' to Social Process: Case Studies of
+   434	 Computers in Politics, Society, and Culture, Chapter IV-A," Handbook
+   435	 of Science and Technology Studies (Beverly Hills: Sage Press,
+   436	 forthcoming).
+   437	
+   438	 Fish, Marian C.; Gross, Alan L.; Sanders, Jo S. "The Effect of Equity
+   439	 Strategies on Girls' Computer Usage in School." Computers in Human
+   440	 Behavior. CUNY, Queens College, 1986 Vol. 2(2) 127-134.
+   441	
+   442	 Frissen, Valerie. "Trapped in Electronic Cages?: Gender and New
+   443	 Information Technologies in the Public and Private Domain: an
+   444	 Overview of Research." Media, Culture and Society v. 14 (1992):31-49.
+   445	
+   446	 Greenbaum, Joan. "The Head and the Heart: using Gender Analysis to
+   447	 Study the Social Construction of Computer Systems." Computers &
+   448	 Society v.20, n.2 (June 1990):9-17.
+   449	
+   450	 Halberstam, Judith. "Automating Gender: Postmodern Feminism in the
+   451	 Age of the Intelligent Machine." Feminist Studies v.17, n.3 (Fall
+   452	 1991):439-459.
+   453	
+   454	 Harrington, Susan Marie. "Barriers to Women in Undergraduate Computer
+   455	 Science: the Effects of the Computer Environment on the Success and
+   456	 Continuance of Female Students." Dissertation. Oregon: University of
+   457	 Oregon, 1990.
+   458	
+   459	 Kirk, D. "Gender Issues in Information Technology as Found in
+   460	 Schools:  Authentic/Synthetic/Fantastic?" Educational Technology, Apr
+   461	 1992, 32;$28-31.
+   462	
+   463	 Kirkup, Gill. "The Social Construction of Computers: Hammers or
+   464	 Harpsichords?" Inventing Women: Science, Technology, and Gender. Ed.
+   465	 Kirkup; Keller. Cambridge: Polity Press, 1992, p. 267-281.
+   466	
+   467	 Kramarae, Cheris; Jeanie Taylor. "Electronic Networks: Safe For
+   468	 Women?" The Electronic Salon: Feminism Meets Infotech: in connection
+   469	 with the 11th Annual Gender Studies Symposium. Speech Communication,
+   470	 and Sociology, March 1992. [This is a draft of a paper prepared for
+   471	 the Gender, Technology and Ethics conference to be held in Lulea,
+   472	 Sweden, June 1-2, 1992].
+   473	
+   474	 Kramer, Pamela E.; Sheila Lehman. "Mismeasuring Women: a Critique of
+   475	Research on Computer Ability and Avoidance." Sign3hv.16, n.1
+   476	(1990):158-
+   477	 172.
+   478	
+   479	 Laurel, Brenda. Computers as Theatre. Addison-Wesley, 1991.
+   480	
+   481	 Lawton, George. "The Network is the Medium." MacWeek, December 14,
+   482	 1992, p. 20.
+   483	
+   484	 MIT Computer Science Female Graduate Students and Research Staff.
+   485	 "Barriers to Equality in Academia: Women in Computer Science at MIT."
+   486	 MIT Laboratory for Computer Science and the Artificial Intelligence
+   487	 Laboratory, February 1983.
+   488	
+   489	 Nelson, C. S. and Watson, J. A. "The Computer Gender Gap: Children's
+   490	 Attitudes, Performance, and Socialization." Journal of Education
+   491	 Technology, 4:345-3, 1990-91.
+   492	
+   493	 Ong, Aihwa. "Disassembling Gender in the Electronics Age." Feminist
+   494	 Studies 13 (Fall 1987):609-626.
+   495	
+   496	 Pearl, A.; Pollack, M. E.; Riskin, E.; Thomas, B.; Wolf, E.; Wu, A.
+   497	 "Becoming a Computer Scientist: A Report by the ACM Committee on the
+   498	 Status of Women in Computing Science." Communications of the ACM, Nov
+   499	 1990, v33 n11 p47(11).
+   500	
+   501	 Perry, Ruth; Lisa Greber. "Women and Computers: An Introduction."
+   502	 Signs v. 16, n.1 (1990): 74-101.
+   503	
+   504	 Rakow, Lana. Impact of New Technologies on Women as Producers &
+   505	 Consumers of Communication in the U.S. and Canada. Paris: Unesco,
+   506	 1991.
+   507	
+   508	 Spertus, Ellen. "Why are There so Few Female Computer Scientists?"
+   509	 Artificial Intelligence Laboratory at MIT, 1991.
+   510	
+   511	 Tannen, Deborah. You Just Don't Understand, New York: Ballantine
+   512	 Books, 1990.
+   513	
+   514	 Turkle, Sherry; Seymour Papert. "Epistemological Pluralism: Style and
+   515	 Voices Within the Computer Culture." Signs v. 16, n.1 (1990):128-157.
+   516	
+   517	 van Zoonen, Liesbet. "Feminist Theory and Information Technology."
+   518	 Media, Culture and Society v. 14 (1992):9-29.
+   519	
+   520	 Varley, Pamela. "What's Really Happening in Santa Monica." IMPACT!,
+   521	
+   522	

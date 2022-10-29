@@ -1,0 +1,329 @@
+     1	  ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+     2	  บ                                                                         บ
+     3	  บ          SatisFAXtion Modem/400: Solutions to Common Problems           บ
+     4	  บ                                                                         บ
+     5	  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+     6	
+     7	   CONFLICTS WITH 8514A COMPATIBLE VIDEO BOARDS
+     8	
+     9	     The IBM 8514a and compatible video boards will conflict with any modem
+    10	     or faxmodem you configure as COM4. This is because 8514a and
+    11	     compatible video boards use the I/O address 2E8 which is the I/O
+    12	     address used by COM4.
+    13	
+    14	     If you use an 8514a or compatible video board, DO NOT set your modem
+    15	     or faxmodem to COM4. Neither the video board nor the modem will
+    16	     operate reliably.
+    17	
+    18	     This also applies to video boards based on the S3 chipset.
+    19	
+    20	   S3-BASED VIDEO BOARDS
+    21	
+    22	     Video boards based on the S3 86C911 controller will use the I/O
+    23	     address 2E8 (but won't use IRQ 3). This means you can't address your
+    24	     modem as COM4.
+    25	
+    26	     The S3 controller has several features derived from the IBM 8514/a
+    27	     adapter. Along with these features comes inherent issues with 8-bit
+    28	     devices.
+    29	     The 86C911 is a 16-bit device that uses x2E8h, x6E8, xAE8, xEE8h to
+    30	     access its enhanced more register; all 16 bits are decoded. Since the
+    31	     AT bus decodes only the lower 10 bits of the I/O address, conflicts
+    32	     will occur between the 86C911 and other devices using the same
+    33	     addresses.
+    34	
+    35	   WINFAX PRO LOCKS UP WHEN VIEWING FAILED RECEIVE
+    36	
+    37	     SatisFAXtion/200, /400, and Classic:
+    38	     When running CASMGR 1.40, WinFax Pro may lock up when you view a
+    39	     failed receive event in the WinFax log. Delrina's fix for this problem
+    40	     is now available on CompuServe and the Delrina BBS in an archive file
+    41	     called CAS.EXE. The archive file contains a program named a README
+    42	     file and the program CASFIX.EXE. The README file instructs you to add
+    43	     the CASFIX command immediately following the CASMGR command in your
+    44	     AUTOEXEC.BAT file.
+    45	
+    46	   CONFIGURING YOUR SYSTEM'S MEMORY
+    47	
+    48	     For information on configuring your system's memory for use with
+    49	     SatisFAXtion products, order FaxBACK document 4149.
+    50	
+    51	   HOW TO CREATE LOGO FILES
+    52	
+    53	     For detailed instructions on how to create logo files using various
+    54	     graphics programs, order FaxBACK document 4006.
+    55	
+    56	
+    57	
+    58	
+    59	
+    60	
+    61	
+    62	
+    63	  อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+    64	
+    65	  October 29, 1992           Intel FaxBACK # 4044                      Page 1
+    66	
+    67	  ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+    68	  บ                                                                         บ
+    69	  บ          SatisFAXtion Modem/400: Solutions to Common Problems           บ
+    70	  บ                                                                         บ
+    71	  ศอออออออออออออออออออออออออออออ (continued) อออออออออออออออออออออออออออออออผ
+    72	
+    73	   THE INPUT FILE CONTAINS HP GL/2 COMMANDS...
+    74	
+    75	     ...that are not supported by the emulator. Try setting your
+    76	     application to use an HP LaserJet II printer driver.
+    77	
+    78	     While FAXPOP does support the HPPCL (Hewlett-Packard Printer Control
+    79	     Language) up to and including verison 5, FAXPOP doesn't support the
+    80	     HPGL (Hewlett-Packard Graphics Language). Use a printer driver that
+    81	     doesn't incorporate HPGL commands.
+    82	
+    83	     For WordPerceft 5.1, use either an HP LJIII driver dated 3-92 or
+    84	     earlier or just use an HP LJII driver.
+    85	
+    86	   CAN'T PRINT ON POSTSCRIPT PRINTER
+    87	
+    88	     Version 1.40 of the FAX.EXE program only prints on PostScript printers
+    89	     when you select Print from the View Screen. If you print from any
+    90	     other menu, the computer appears to send the data and the printer
+    91	     appears to accept it. However, the page never actually prints.
+    92	
+    93	     Intel has corrected the problem and an updated MA.UTL file is
+    94	     available on FaxBACK. The MA.UTL file is still version 1.40, but the
+    95	     date on the file is 6-92 or later.
+    96	
+    97	     SatisFAXtion Modem/200 users, order document 0028.
+    98	     SatisFAXtion Modem/400 users, order document 0029.
+    99	
+   100	   MODEM WON'T AUTOANSWER WHEN SLS ENABLED
+   101	
+   102	     If the SatisFAXtion board is set for "Shares phone line, mostly fax
+   103	     calls", "shares phone line, mostly voice calls", or "Shares phoneline,
+   104	     has a distinctive ring", modem callers MUST include the characters  @#
+   105	     at the end of their dialing string. The "@" command tells the calling
+   106	     modem to wait for a period of silence (30 seconds by default). The "#"
+   107	     character tells the answering SatisFAXtion board the call is from a
+   108	     modem.
+   109	
+   110	     Otherwise, if no CNG tone is detected, the SatisFAXtion board will
+   111	     assume the call is a voice call and ring the downline phone. If users
+   112	     truly need the board to arbitrate between fax and modem calls without
+   113	     user intervention, then they must set the SLS setting for "has its own
+   114	     phone line".
+   115	
+   116	   NO DIALTONE ON DOWN-LINE PHONE
+   117	
+   118	     SatisFAXtion/200, SatisFAXtion/400
+   119	     If you get a clicking sound or no dialtone on your down-line phone
+   120	     after selecting one of the "Shares phone line" answering options, try
+   121	     selecting the answering option "Has own phone line".  If you get a
+   122	     dialtone then, check the version number on your DOWNLOAD file. If you
+   123	     have a DOWNLOAD.200 version earlier than 2.04 or a DOWNLOAD.400
+   124	     version earlier than 3.01, call FaxBACK and order the latest DOWNLOAD
+   125	     file for your board.
+   126	
+   127	
+   128	
+   129	  อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+   130	
+   131	  October 29, 1992           Intel FaxBACK # 4044                      Page 2
+   132	
+   133	  ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+   134	  บ                                                                         บ
+   135	  บ          SatisFAXtion Modem/400: Solutions to Common Problems           บ
+   136	  บ                                                                         บ
+   137	  ศอออออออออออออออออออออออออออออ (continued) อออออออออออออออออออออออออออออออผ
+   138	
+   139	     Order 0028 for the Latest DOWNLOAD.200   (SatisFAXtion/200 only)
+   140	     Order 0029 for the latest DOWNLOAD.400   (SatisFAXtion/400 only)
+   141	
+   142	   TROUBLESHOOTING SEND/RECEIVE PROBLEMS
+   143	
+   144	     If you're having trouble sending or receiving, here are some thing you
+   145	     can try:
+   146	
+   147	     þ    Always load a disk cache program BEFORE loading CASMGR.
+   148	
+   149	     þ    Always load network software BEFORE loading CASMGR and FAXPOP.
+   150	
+   151	     þ    Do not load anti-virus software in TSR mode.
+   152	
+   153	     þ    If you use the STACKER program to increace your disk storage
+   154	          space, always load the STACKER drivers BEFORE loading SATISFAX.SYS
+   155	          in your CONFIG.SYS file.
+   156	
+   157	     þ    If you use QEMM 6.0, disable the STEALTH feature. Later versions
+   158	          may or may not have this STEALTH mode problem fixed.
+   159	
+   160	   V.17 14.4KBPS RECEIVE STATUS REPORT
+   161	
+   162	     For the latest status on the SatisFAXtion Modem/400 high-speed receive
+   163	     problem, order FaxBACK document 9983.
+   164	
+   165	   TELENET
+   166	
+   167	     Several customers have reported problems using this service. These
+   168	     range from locking the system to not being able to connect.
+   169	
+   170	     SatisFAXtion/400:
+   171	     SatisFAXtion Modem/400 users should use DOWNLOAD.400 version 3.02 or
+   172	     higher when calling Telenet.
+   173	
+   174	     SatisFAXtion Classic:
+   175	     SatisFAXtion users need software version 1.20 to connect to Telenet.
+   176	     Also please note that you must type  @  then press ENTER to get the
+   177	     Telenet prompt.
+   178	
+   179	   CONFIGURING YOUR COMMUNICATIONS SOFTWARE
+   180	
+   181	     If your communications software doesn't list your SatisFAXtion
+   182	     faxmodem but does list an Intel modem, choose the equivalent Intel
+   183	     modem:
+   184	
+   185	     Intel Modem           SatisFAXtion Faxmodem
+   186	     ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ   ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+   187	     14.4EX                Modem/400, Modem/400e
+   188	     9600EX                Modem/400, Modem/400e  (Set port speed to 57600)
+   189	     2400 MNP/2400EX MNP   Modem/200
+   190	     2400B/2400EX          Modem/100
+   191	
+   192	
+   193	
+   194	
+   195	  อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+   196	
+   197	  October 29, 1992           Intel FaxBACK # 4044                      Page 3
+   198	
+   199	  ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+   200	  บ                                                                         บ
+   201	  บ          SatisFAXtion Modem/400: Solutions to Common Problems           บ
+   202	  บ                                                                         บ
+   203	  ศอออออออออออออออออออออออออออออ (continued) อออออออออออออออออออออออออออออออผ
+   204	
+   205	     If your communications software doesn't list any Intel modems, order
+   206	     the FaxBACK Communications software Index (document 4351). This index
+   207	     will tell you how to find instructions for configuring many popular
+   208	     communications programs.
+   209	
+   210	   MY SOFTWARE DOESN'T LIST THE INTEL MODEM
+   211	
+   212	     If your communications program doesn't list your Intel modem in the
+   213	     setup screen, try selecting a Hayes compatible configuration.  If the
+   214	     problem persists, change the "Initialization String" to match your
+   215	     modem type:
+   216	
+   217	            Intel Modem                  Initialization String
+   218	            ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ            ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+   219	            Intel V.42 modems (1,2)   :  AT&F\N0\Q0\J1\V0"H0-J0
+   220	            Intel 2400B MNP modems (3):  AT&F\N0\Q0\J1\V0
+   221	            Intel non-MNP modems (4)  :  AT&F&C1&D2
+   222	
+   223	   CARBON COPY FOR WINDOWS
+   224	
+   225	     SatisFAxtion/400:
+   226	     You need DOWNLOAD.400 version 3.02 or higher to use Carbon for Windows
+   227	     with a SatisFAXtion Modem/400. Earlier versions didn't implement the
+   228	     Ring Indicator signal which Carbon Copy uses to detect incoming calls.
+   229	
+   230	   I/O AND IRQ CONFLICTS
+   231	
+   232	     When two devices share the same I/O address or IRQ (interrupt), one or
+   233	     the other (or both) devices may not work correctly.  To eliminate the
+   234	     potential for conflicts, make sure each device you add to your
+   235	     computer occupies a unique I/O address and IRQ.
+   236	
+   237	     Standard COM (serial) Port Address/IRQ Settings
+   238	
+   239	                   I/O
+   240	            Port   Address   IRQ
+   241	            ----   -------   ---
+   242	            COM1     3F8      4
+   243	            COM2     2F8      3
+   244	            COM3     3E8      4
+   245	            COM4     2E8      3
+   246	
+   247	     Intel faxmodems and modems come with a program called TESTCOM.EXE that
+   248	     can tell you what I/O address and IRQs are in use. Change to the disk
+   249	     or directory containing TESTCOM.EXE and enter this command:  TESTCOM
+   250	     /S
+   251	
+   252	     If TESTCOM reports that only COM1 is active, set the modem to COM2.
+   253	     If TESTCOM reports both COM1 and COM2 active, disable the COM2 port in
+   254	     your computer (if possible) so that you can set the modem to COM2.
+   255	     See the user's guide for your computer to find out how to disable a
+   256	     COM port.
+   257	
+   258	
+   259	
+   260	
+   261	  อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+   262	
+   263	  October 29, 1992           Intel FaxBACK # 4044                      Page 4
+   264	
+   265	  ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+   266	  บ                                                                         บ
+   267	  บ          SatisFAXtion Modem/400: Solutions to Common Problems           บ
+   268	  บ                                                                         บ
+   269	  ศอออออออออออออออออออออออออออออ (continued) อออออออออออออออออออออออออออออออผ
+   270	
+   271	     If you're using both COM1 and COM2 or can't disable COM2, you may be
+   272	     able to use COM3 or COM4 depending on the devices attached to COM1 and
+   273	     COM2.  A mouse and a modem will not successfully share an IRQ.  A
+   274	     printer and a modem sometimes can share an IRQ.
+   275	
+   276	     The Intel SatisFAXtion faxmodems, Intel internal 2400 baud modems, and
+   277	     the Connection CoProcessor Modem Option allow two additional
+   278	     configurations:
+   279	
+   280	     COM3   3E8   IRQ 5  (works in 286/386/486-based (AT) computers)
+   281	     COM4   2E8   IRQ 2  (works in 8088/8086-based (PC/XT) computers)
+   282	
+   283	     NOTE:      Before configuring your modem for COM3/IRQ 5 or COM4/IRQ 2,
+   284	                make sure your communications software supports these ports.
+   285	
+   286	     NOTE:      Never use IRQ 5 in 8088/8086-based computers because IRQ 5
+   287	                is used by your hard drive. Never use IRQ 2 in 286/386/486-
+   288	                based computers because IRQ 2 is used to "cascade" the two
+   289	                interrupt controllers.
+   290	
+   291	
+   292	
+   293	
+   294	
+   295	
+   296	
+   297	
+   298	
+   299	
+   300	
+   301	
+   302	
+   303	
+   304	
+   305	
+   306	
+   307	
+   308	
+   309	
+   310	
+   311	
+   312	
+   313	
+   314	
+   315	
+   316	
+   317	
+   318	
+   319	
+   320	
+   321	
+   322	
+   323	
+   324	
+   325	
+   326	
+   327	  อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+   328	
+   329	  October 29, 1992           Intel FaxBACK # 4044                      Page 5

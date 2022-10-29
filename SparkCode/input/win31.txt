@@ -1,0 +1,466 @@
+     1	                 GENERAL COMPATIBILITY ISSUES WITH WINDOWS 3.1
+     2	
+     3	The introduction of a new operating environment often changes the interaction
+     4	between applications or utilities and the new environment.  The Windows 3.1
+     5	introduction is no exception.
+     6	
+     7	The new Windows 3.1 has some minor compatibility problems with some Central
+     8	Point programs that were released prior to the release of Windows 3.1.  This
+     9	document addresses several of the main issues, such as:
+    10	
+    11	1.    Windows 3.1 has changed its font handling, and the Windows TSR Manager
+    12	and Scheduler programs in PC Tools may exhibit changed fonts as a result.  Both
+    13	products work correctly otherwise; alerts and scheduled alarms will appear as
+    14	scheduled.
+    15	
+    16	2.    Using PC-Cache with the /WIN parameter in Windows' Standard Mode can
+    17	cause a PC-Cache memory error.  Removing the /WIN parameter will alleviate the
+    18	problem.  Most Windows users will be running in Enhanced Mode; no configuration
+    19	change is required to PC-Cache for Enhanced Mode users.
+    20	
+    21	3.    Central Point Backup Version 7.1 (which ships as both a standalone
+    22	product and as a part of PC Tools 7.1) installs a floppy device driver,
+    23	VFD.386, in the SYSTEM.INI file.  At installation, Windows 3.1 changes that
+    24	driver to its own (called VFD - no 386); as a result, CP Backup will display
+    25	an error message indicating that VFD.386 was not found.  Changing the line in
+    26	SYSTEM.INI that states "DEVICE=*VFD" to "DEVICE=VFD.386" will allow CP Backup
+    27	to run normally.
+    28	
+    29	Central Point Backup, Version 7.2, which is currently shipping, uses a
+    30	different device driver, CPBVXD.386, which Windows 3.1 does not remove at
+    31	installation.
+    32	
+    33	Future Central Point Software products will automatically configure the
+    34	software to work correctly with Windows 3.1.
+    35	
+    36	NOTE:  Much of the information contained herein is based on problems found or
+    37	reported with Windows 3.1 BETA code.  This document will be revised as needed
+    38	to reflect updates or additions to any of this information.
+    39	
+    40	
+    41	              INSTALLING WINDOWS 3.1 WITH VSAFE/VDEFEND RESIDENT
+    42	
+    43	Programs:  VSAFE, VDEFEND           Versions:  7.0, 7.1
+    44	
+    45	SITUATION: 
+    46	Win 3.1 Setup does not run properly when virus detection programs are memory
+    47	resident.
+    48	
+    49	CAUSE:
+    50	Virus detection programs are designed to monitor file integrity and to alert
+    51	the user if a file is about to be changed.  During the installation of a new
+    52	program, new files are written to the hard drive and existing files are
+    53	changed, triggering this warning feature.
+    54	
+    55	SOLUTION:
+    56	Disable VSafe/VDefend for the duration of the installation procedure.  VSafe
+    57	may remain in resident memory, but Option 3 (general write protect), Option 8
+    58	(write protect executables) and especially Option 4 (check executable files)
+    59	should be disabled.  Option 4 triggers the warning messages.  Press Alt-V at
+    60	the DOS prompt, while VSafe is resident, to disable these options.
+    61	
+    62	After Windows Setup has been completed, but before launching Windows for the
+    63	first time, run CPAV to update all CHKLIST.CPS files on the drive.
+    64	
+    65	Alternatively, delete the CHKLIST.CPS files in all Windows directories using
+    66	PC Shell or File Find.
+    67	
+    68	
+    69	                   VSAFE RESIDENT WHILE RUNNING WINDOWS 3.1
+    70	
+    71	Programs:  VSAFE                    Versions:  1.0, 1.1, 1.2
+    72	
+    73	SITUATION:
+    74	Problems running Windows 3.1 while VSafe is resident.
+    75	
+    76	CAUSE:
+    77	Windows uses the hard drive for memory swapping, which means that files are
+    78	frequently written to during normal operation.
+    79	
+    80	WORKAROUND:
+    81	Disable Option 3 (general write protect).  Option 8 (protect executables) can
+    82	also be disabled if WNTSRMAN is issuing too many messages advising that various
+    83	Windows executables (.EXE, .COM, .DLL, etc.) are being changed.  To temporarily
+    84	change VSafe Options, press Alt-V at the DOS prompt while VSafe is resident. 
+    85	To make these changes permanent, change the VSAFE parameters in the CONFIG.SYS
+    86	or AUTOEXEC.BAT to "/1+ /4+ /5+ /6+".  All other options should be off.
+    87	
+    88	WNTSRMAN must be loaded so that the proper messages concerning potential virus
+    89	infections will reach the user through Windows.
+    90	
+    91	
+    92	               WINDOWS 3.1 SETUP FAILS DUE TO LACK OF DISK SPACE
+    93	
+    94	Programs:  DATAMON                  Versions:  7.0, 7.1
+    95	
+    96	SITUATION:
+    97	Setup fails due to insufficient disk space.  A DIR command, typed at the DOS
+    98	prompt, shows that there should be plenty of space available.  Data Monitors
+    99	SENTRY is loaded.
+   100	
+   101	POSSIBLE CAUSE:
+   102	Data Monitor is unable to determine that extra disk space is required so old
+   103	Sentry files will not be purged.
+   104	
+   105	SOLUTION:
+   106	Use the Purge command in the File menu of Undelete to purge as many Delete
+   107	Sentry files as necessary to free up the required space.
+   108	
+   109	If PC Shell or some other method is used to delete the files, unload Datamon
+   110	first or Delete Sentry will capture the deletions in the Delete Sentry
+   111	directory and no additional disk space will be made available.
+   112	
+   113	NOTES:  *.GRP can be added to Delete Sentry's file exclusions list, since many
+   114	of these files are created and deleted during Windows Setup.
+   115	
+   116	
+   117	                   WINDOWS 3.1, SMARTDRIVE AND DATA MONITOR
+   118	
+   119	Programs:  DATAMON                  Versions:  7.0, 7.1
+   120	
+   121	The Windows Help file suggests loading SmartDrive AFTER Data Monitor, which is
+   122	contrary to our advice concerning PC-Cache and Data Monitor, and claims that
+   123	there may be problems if SmartDrive is loaded BEFORE Datamon.
+   124	
+   125	Loading SmartDrive before Datamon should not cause any problems.  We have not
+   126	been able to recreate any problems, nor have we received any problem reports
+   127	from PC Tools users.  This may change after we have had an opportunity to
+   128	perform more extensive testing.
+   129	
+   130	
+   131	                            PC-CACHE AND SMARTDRIVE
+   132	
+   133	Programs:  PC-CACHE                 Versions:  7.0, 7.1
+   134	
+   135	Windows documentation states that both PC-Cache and SmartDrive should not be
+   136	run resident at the same time, which is certainly correct.  It is unwise to run
+   137	two cache programs simultaneously under any conditions.
+   138	
+   139	There are no performance benchmarks running PC-Cache against SmartDrive 4.0,
+   140	and therefore no definitive statement can be made about which cache performs
+   141	better.  We have no reason to believe that data loss situations are likely to
+   142	occur due to the use of PC-Cache with Windows 3.1.
+   143	
+   144	
+   145	             PC-CACHE GIVES MEMORY ERROR ON EXIT FROM WINDOWS 3.1
+   146	
+   147	Programs:  PC-CACHE                 Versions:  7.0, 7.1
+   148	
+   149	SITUATION:
+   150	PC-Cache gives the error "PC-Cache memory error, reboot!" when Windows 3.1 is
+   151	exited.
+   152	
+   153	CAUSE:
+   154	This error will occur when PC-CACHE /WIN is used AND Windows 3.1 is run in
+   155	Standard Mode.
+   156	
+   157	SOLUTION:
+   158	Remove the /WIN parameter (which tells PC-Cache to free up memory for Windows)
+   159	when running Windows in Standard mode.  If the primary environment is Windows,
+   160	reduce the size of the cache.  Either of these options will eliminate the error
+   161	condition.
+   162	
+   163	
+   164	                       WINDOWS 3.1 AND PCT 7.0 GRAPHICS
+   165	
+   166	Programs:  PCTOOLS                  Versions:  7.0
+   167	
+   168	The Windows README.WR1 file warns of possible graphics problems when returning
+   169	to an application from PC Tools programs while in Windows Standard mode.  This
+   170	is true of PC Tools V7.0 but was corrected with V7.1.
+   171	
+   172	Select Text Mode in PC Config/Display to correct the problem in V7.0.
+   173	
+   174	
+   175	                    WINDOWS 3.1 WITH CP BACKUP V7.0 OR V7.1
+   176	
+   177	Programs:  WNBACKUP                 Versions:  7.0, 7.1
+   178	
+   179	To run CP Backup/Win 7.0 or 7.1 under Windows 3.1, substitute "device=VFD.386"
+   180	for the "device=*vfd" driver in the [386enh] section of the SYSTEM.INI file. 
+   181	This is consistent with what is required for Windows 3.0.  If the user is not
+   182	comfortable with editing the SYSTEM.INI, reinstall CP Backup and the Install
+   183	program will automatically make this change to the SYSTEM.INI file and will
+   184	change "device=*vdmad" to "device=vdmad.386" as well.  If there are problems
+   185	with floppy drives after the installation is complete, this last line should
+   186	be returned to the default "device=*vdmad".
+   187	
+   188	CP Backup/Win V7.1 will not save the Include/Exclude list correctly under
+   189	Windows 3.1.  As a result, the default settings and setup files may not select
+   190	files correctly.  The following alternate methods are available:
+   191	
+   192	1.    Upgrade to CP Backup V7.2, which is optimized for Windows 3.1
+   193	
+   194	2.    Create, modify, and save setup files in CP Backup/DOS.  The setup can be
+   195	used in CP Backup/Win under Windows 3.1, but should not be saved in CP
+   196	Backup/Win or the Include/Exclude list will be lost.
+   197	
+   198	3.    Edit the WNBACKUP.INI or *.SET files with any text editor.  This is the
+   199	only way to change the default Include/Exclude settings for CP Backup/Win.
+   200	
+   201	      The Include/Exclude list begins with [INEX0] for line 1; [INEX1] for line
+   202	2, and so on.  A maximum of 16 lines are allowed.  After editing the desired
+   203	file specifications, save as a text file.  All upper case letters are required
+   204	for file specifications in the Include/Exclude list.
+   205	
+   206	4.    Files will be selected if the "Save File Selections" is checked when the
+   207	setup is saved, but this will not save the Include/Exclude list.
+   208	
+   209	There may be some font display problems and screen anomalies that do not affect
+   210	the functionality of the program.
+   211	
+   212	
+   213	                            WINDOWS 3.1 AND DESKTOP
+   214	
+   215	Programs:  DESKTOP                  Versions:  6.0, 7.0, 7.1
+   216	
+   217	The Windows 3.1 SETUP.TXT file refers to problems running Desktop in Windows
+   218	from anything other than a .PIF file (DOS window, etc.).  Because we have not
+   219	been able to duplicate problems in-house, we suspect that this reference is
+   220	related to known problems between SwapDT and Windows.  Following is one such
+   221	scenario:
+   222	
+   223	1.    SwapDT is resident before entering Windows;
+   224	
+   225	2.    Run Desktop in any fashion from within Windows;
+   226	
+   227	3.    Use the hotkey sequence to exit (instead of ESC or Exit from the main
+   228	menu);
+   229	
+   230	4.    The system may lock, the computer may reboot: something unusual happens;
+   231	
+   232	5.    The system may lock on exit from Windows.
+   233	
+   234	If problems are encountered running Desktop from other than a .PIF, try
+   235	unloading SwapDT.
+   236	
+   237	
+   238	                          WINDOWS 3.1 LOCKS ON ENTRY
+   239	
+   240	Programs:  VSAFE                    Versions:  1.0, 1.1, 1.2
+   241	
+   242	SITUATION:
+   243	Windows will lock with the Windows 3.1 logo on the screen, or just prior to
+   244	that point.
+   245	
+   246	POSSIBLE CAUSE:
+   247	Check for VSafe loaded after SMARTDRV.EXE in the AUTOEXEC.BAT file.  Another
+   248	cause may be that the CHKLIST.CPS in the Windows directory file was not
+   249	updated.
+   250	
+   251	SOLUTION:
+   252	1.    Load VSafe before SmartDrive in the AUTOEXEC.BAT or the CONFIG.SYS; OR
+   253	
+   254	2.    Update the CHKLIST.CPS file in the Windows directory;
+   255	
+   256	      a.    Delete the original file and run CPAV to create a new file; OR
+   257	
+   258	      b.    Run CPAV and select Update Checklist files.
+   259	
+   260	      c.    Run CPAV and select Delete All Checklist files.  Then scan the
+   261	      entire drive to create new checklist files.
+   262	
+   263	
+   264	                   DIFFERENCES BETWEEN CP BACKUP V7.1 & V7.2
+   265	
+   266	Programs:  WNBACKUP                 Versions:  7.1, 7.2
+   267	
+   268	QUESTION:
+   269	What are the differences between CP Backup for Windows V7.1 and V7.2?  What
+   270	does V7.2 have that V7.1 doesn't?
+   271	
+   272	ANSWER:
+   273	CP Backup V7.2 is optimized for Windows 3.1 and is intended as an upgrade for
+   274	those who upgrade to Windows 3.1.  Specifically:
+   275	
+   276	1.    It provides support for Windows 3.1 "Drag and Drop" function;
+   277	
+   278	2.    It has slightly different fonts, buttons, and screen displays that are
+   279	more consistent with Windows 3.1 standards;
+   280	
+   281	3.    It handles the Enhanced mode drivers more effectively:
+   282	
+   283	      a.    Setup leaves (or returns to) the default drivers DEVICE=*VFD and
+   284	      DEVICE=*VDMAD;
+   285	
+   286	      b.    V7.1 uses VFD.386 in place of *VFD.  V7.2 uses a unique driver,
+   287	      CPBVXD.386;
+   288	
+   289	      c.    V7.2 does not modify the *VDMAD driver at all as the enhancements
+   290	      are already in Windows 3.1 driver.
+   291	
+   292	CP Backup/Win V7.2 also:
+   293	
+   294	1.    Adds the "Select files for ..." button to make displaying the tree/file
+   295	list and selecting files to Backup/Compare/Restore easier;
+   296	
+   297	2.    Corrects a V7.1/Windows 3.1 compatibility problem where the
+   298	Include/Exclude list will be blanked and no files will be selected if a setup
+   299	file is saved or selections are saved as the default.
+   300	
+   301	Those who upgrade to Windows 3.1 and use Central Point Backup for Windows
+   302	should upgrade to CP Backup/Win V7.2 to take advantage of the new features and
+   303	for the Windows 3.1 problems that have been corrected in V7.2.  Note that there
+   304	is no additional drive tape support with V7.2.
+   305	
+   306	CP Backup/Win 7.1 will work with Windows 3.1 for the most part.  The biggest
+   307	drawback is that it will not save the Include/Exclude Files correctly under
+   308	Windows 3.1, so files will not be selected correctly with any setup files
+   309	created or modified under Windows 3.1.
+   310	
+   311	
+   312	                      GENERAL WINDOWS 3.0 TROUBLESHOOTING
+   313	                        (Not verified for Windows 3.1)
+   314	
+   315	INSTALLATION
+   316	
+   317	Trouble shooting tips for PC Tools programs are included in the "Getting
+   318	Started/Tips for Windows" manual.
+   319	
+   320	1.    Disable autoswitching/autosensing on video card if applicable.
+   321	
+   322	2.    Disable ROM shadowing if applicable.
+   323	
+   324	3.    Boot clean to eliminate TSR's and unnecessary drivers.
+   325	
+   326	4.    Remove old Windows drivers or other OEM setup drivers.
+   327	
+   328	5.    Update outdated BIOS.
+   329	
+   330	6.    Check for IRQ conflicts such as a bus mouse on IRQ 3 with a printer on
+   331	COM2.
+   332	
+   333	
+   334	UNRECOVERABLE APPLICATION ERRORS (UAE'S)
+   335	
+   336	NOTE:  Error is GENERAL PROTECTION FAULT in V3.1
+   337	
+   338	1.    GENERAL DESCRIPTION:
+   339	
+   340	      This generally indicates that some part of the application has mapped to
+   341	an area of memory not allocated to it or allocated to something else.  The
+   342	Windows environment may be very unstable at this point.  Exit and reboot the
+   343	system.  UAE's will only occur with Windows and Windows Applications.  This is
+   344	equivalent to the error message VIOLATED SYSTEM INTEGRITY, which will occur
+   345	only with Non-Windows Applications.  The same procedure should be followed for
+   346	the condition that causes both error messages.
+   347	
+   348	2.    GENERAL TROUBLESHOOTING:
+   349	
+   350	      a.    HIMEM.SYS may not be addressing the system memory correctly, and
+   351	      adding a "/machine" parameter may be required.  Refer to Windows or DOS
+   352	      README.TXT for more information on machine parameters.
+   353	
+   354	      b.    Check the accuracy of hardware selections made during Windows
+   355	      setup.  Run "Setup" from the command line in the Windows directory.
+   356	
+   357	      c.    If installed with APPEND or SUBST statements in AUTOEXEC.BAT, or
+   358	      with incompatible memory drivers in CONFIG.SYS, installation may be
+   359	      corrupt.
+   360	
+   361	      d.    Check for incorrect DOS version.  Windows V3.x requires at least
+   362	      MS DOS 3.1.  When applicable, the correct OEM DOS must be used on the
+   363	      machine.  For example, use Compaq DOS on Compaq machines.
+   364	
+   365	      e.    Check for applications that were written for a previous version of
+   366	      Windows.
+   367	
+   368	      f.    UAE's may be product specific, based on code written for that
+   369	      particular application.  Check with the product manufacturer.
+   370	
+   371	      g.    Confirm the following minimum configuration:
+   372	
+   373	            CONFIG.SYS:
+   374	
+   375	            files=60
+   376	            buffers=30 (if running SMARTDRIVE =10)
+   377	            shell=c:\command.com /p /e:2048
+   378	            device=c:windows\himem.sys
+   379	
+   380	      h.    For testing purposes, substitute Windows standard drivers for
+   381	      drivers supplied by a specific manufacturer.
+   382	
+   383	
+   384	UNABLE TO GO INTO ENHANCED MODE:
+   385	
+   386	1.    First determine if it is possible to go into Standard mode (WIN/S).  If
+   387	not, make sure there is 1 "full" MB of extended memory available.  Check the
+   388	extended memory manager (such as HIMEM.SYS) or other drivers or TSRs that may
+   389	be loading in CONFIG.SYS and AUTOEXEC.BAT.
+   390	
+   391	2.    Refer to steps #1 through #6 under INSTALLATION in this document.  Check
+   392	as many as are applicable to the system.
+   393	
+   394	3.    There may be a conflict in the Upper Memory area (between 640 and 1024k)
+   395	as Windows attempts to establish page frames where other device drivers, such
+   396	as network, video, ROM BIOS, etc., are located.  The easiest way to determine
+   397	if this is the problem is to exclude the entire range by adding a statement to
+   398	the SYSTEM.INI file, [386enh] section, EMMEXCLUDE=A000-EFFF.  If this is the
+   399	problem, then a diagnostics program, such as Quarterdecks' Manifest, will
+   400	determine where the conflict is occurring.  The EMMEXCLUDE statement can be
+   401	modified to encompass only that specific address range.  For testing purposes,
+   402	load a standard memory manager such as HIMEM.SYS.
+   403	
+   404	4.    If on an IDE or SCSI hard drive, it may be necessary to add
+   405	VIRTUALHDIRQ=OFF to the SYSTEM.INI file, [386enh] section.
+   406	
+   407	5.    If unable to go into Standard mode, make sure there is 256k of extended
+   408	memory available and an extended memory manager.  If unable to go into Real
+   409	mode, check the hardware setup.  Refer to #1 below.
+   410	
+   411	
+   412	OTHER TROUBLESHOOTING:
+   413	
+   414	In general, if other erratic behavior occurs, such as dropping to a DOS prompt,
+   415	system locks, etc., try as many of the following as applicable:
+   416	
+   417	1.    Disable any non-essential hardware or swap it out with other hardware for
+   418	testing purposes.  Contact the hardware manufacturer if necessary.
+   419	
+   420	2.    Check system BIOS, video BIOS or keyboard BIOS for the most up to date
+   421	version.  Call the manufacturer if necessary.
+   422	
+   423	3.    For non-FDISK, 3rd party disk partitions, it may be necessary to add the
+   424	following to the SYSTEM.INI file [386enh] section:
+   425	
+   426	      VIRTUALHDIRQ=OFF
+   427	
+   428	      This statement may be needed for IDE and SCSI drives.  It may be
+   429	necessary to disable SMARTDRIVE for drives with more than 1024 cylinders.
+   430	
+   431	4.    Boot clean to eliminate TSRs and unnecessary drivers.
+   432	
+   433	5.    Substitute Windows standard drivers for testing purposes.
+   434	
+   435	6.    Check for file fragmentation, lost clusters, etc.
+   436	
+   437	7.    Make sure there is sufficient free disk space; 2 to 4mb depending on the
+   438	machine and the Windows Application being used.
+   439	
+   440	
+   441	
+   442	FaxBack document #82003, updated Apr 21 1992
+   443	
+   444	
+   445	X-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-X
+   446	
+   447	 Another file downloaded from:                               NIRVANAnet(tm)
+   448	
+   449	 & the Temple of the Screaming Electron   Jeff Hunter          510-935-5845
+   450	 Salted Slug Systems                      Strange              408-454-9368
+   451	 Burn This Flag                           Zardoz               408-363-9766
+   452	 realitycheck                             Poindexter Fortran   415-567-7043
+   453	 Lies Unlimited                           Mick Freen           415-583-4102
+   454	 Tomorrow's 0rder of Magnitude            Finger_Man           415-961-9315
+   455	 My Dog Bit Jesus                         Suzanne D'Fault      510-658-8078
+   456	
+   457	   Specializing in conversations, obscure information, high explosives,
+   458	       arcane knowledge, political extremism, diversive sexuality,
+   459	       insane speculation, and wild rumours. ALL-TEXT BBS SYSTEMS.
+   460	
+   461	  Full access for first-time callers.  We don't want to know who you are,
+   462	   where you live, or what your phone number is. We are not Big Brother.
+   463	
+   464	                          "Raw Data for Raw Nerves"
+   465	
+   466	X-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-X

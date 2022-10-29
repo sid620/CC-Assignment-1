@@ -1,0 +1,268 @@
+     1	BROUGHT TO YOU BY TAXMAN / SCøøPEX
+     2	THANX YOU FOR AB-USING AT&T CARDZ
+     3	
+     4	Subject: Telephone Security Device release
+     5	
+     6	Content-Length: 10971
+     7	
+     8	
+     9	For Immediate Release:  September 10, 1992
+    10	
+    11	
+    12	AT&T INTRODUCES BREAKTHROUGH IN TELEPHONE SECURITY
+    13	
+    14	
+    15	     GREENSBORO, N.C. (September 10, 1992) --  AT&T has brought
+    16	security to the phone you use every day.
+    17	
+    18	     The AT&T Telephone Security Device Model 3600 provides
+    19	advanced encryption technology to standard telephones, allowing
+    20	businesses to discuss sensitive matters without fear that their
+    21	words can be intercepted.
+    22	
+    23	     "The Telephone Security Device is a breakthrough in
+    24	telephone communications," said Ed Hickey, AT&T Vice President
+    25	for Secure Communications Systems.  "It makes your everyday phone
+    26	a secure device, and it makes protecting your conversation as
+    27	easy as making a regular phone call."
+    28	
+    29	     In showing the device to corporate clients, AT&T has
+    30	received an overwhelmingly positive reaction.
+    31	
+    32	     "We've gotten the strongest reaction we've ever seen for a
+    33	secure communications product," Hickey says.  "This is the
+    34	product they've been waiting for."
+    35	
+    36	     The Model 3600 is compatible with both digital and analog
+    37	phones.  Designed for portability and ease of use, it's slightly
+    38	larger than a hand-held calculator and weighs only about 1.5
+    39	pounds.  Its small size and light weight allow it to be carried
+    40	in a briefcase and used in the office, at home and when travel-
+    41	ling.
+    42	
+    43	     To use the device, simply disconnect your handset's cord
+    44	from the phone and plug that cord into the Telephone Security
+    45	Device.  Plug the device's line into your phone and its power
+    46	cord into an outlet, and it's ready to operate.
+    47	
+    48	     To secure a call, simply press a button and the signal is
+    49	automatically encrypted.  An easy-to-read display indicates that
+    50	the call has been secured.
+    51	
+    52	     The Model 3600 uses an advanced encryption algorithm to turn
+    53	the audio signal from your telephone handset into a digital
+    54	stream of encrypted information that can be decrypted only by a
+    55	Telephone Security Device attached to the phone you're calling.
+    56	
+    57	     AT&T Bell Laboratories also designed an advanced voice-
+    58	sampling algorithm that delivers superior voice quality on secure
+    59	calls, rivaling the clarity of regular phone conversations.
+    60	
+    61	     AT&T stands behind the Telephone Security Device with a full
+    62	one-year warranty and optional extensions.
+    63	
+    64	     The device will be shown publicly for the first time Monday
+    65	at the American Society for Industrial Security seminar in San
+    66	Antonio.
+    67	
+    68	     The device retails for $1,195.  It is available directly
+    69	from the AT&T Secure Communications Customer Service Center (1
+    70	800 952-4082).
+    71	
+    72	     For a more detailed look at communications security, the
+    73	growing risks businesses face and AT&T's role in providing secure
+    74	communications to business, call David Arneke, 919 279-7680 or
+    75	Bill Jones, 919 279-6511, at AT&T.
+    76	
+    77	                                 # # #
+    78	
+    79	
+    80	COMMUNICATIONS SECURITY: A GROWING CONCERN FOR BUSINESS
+    81	
+    82	
+    83	     GREENSBORO, N.C. (September 10, 1992) --  How big an issue
+    84	is communications security for businesses?  Far bigger than most
+    85	of the business community realizes.
+    86	
+    87	     Theft of proprietary information is estimated to cost U.S.
+    88	and Canadian businesses $20 billion a year.  Some of the
+    89	largest -- and most technologically sophisticated -- U.S. cor-
+    90	porations have lost billions in the theft of trade secrets.
+    91	
+    92	     But it's not just business competitors that companies have
+    93	to be concerned about.  Many nations are defining their national
+    94	security as economic security, and they're putting their intel-
+    95	ligence agencies into the business of industrial and economic
+    96	espionage.
+    97	
+    98	     "And yet, our experience in the market, and every study
+    99	we've seen, indicates that top executives' awareness of the
+   100	problem is low to non-existent," says Ed Hickey, AT&T Vice
+   101	President, Secure Communications Systems.
+   102	
+   103	     "Most businesses think it just won't happen to them."
+   104	
+   105	     The FBI reports that foreign intelligence agencies already
+   106	are actively spying on businesses to collect U.S. technology and
+   107	proprietary information, posing a major national security threat.
+   108	
+   109	French intelligence agents, for example, have stolen computer
+   110	secrets from IBM and Texas Instruments.  Foreign governments have
+   111	tried to steal fiber optic secrets from Corning.
+   112	
+   113	     "The next war will not be fought with bombs and bullets; it
+   114	will be fought with bits and bytes," Hickey says.
+   115	
+   116	     Communications and computer systems are moving massive
+   117	amounts of information more quickly and routinely, making those
+   118	systems increasingly valuable to spies.  With voice, fax, data
+   119	and video to choose from, businesses can communicate virtually
+   120	any information in any form, even over standard phone lines.
+   121	
+   122	     As businesses depend on their communications systems more
+   123	and more, they use them in more varied ways -- cellular phones to
+   124	link mobile personnel, teleconferences and videoconferences to
+   125	bring remote locations together, LANs and WANs for transmitting
+   126	computer data.
+   127	
+   128	     Those systems are delivering ever-greater volumes of infor-
+   129	mation, much of it proprietary and extremely valuable to com-
+   130	petitors.
+   131	
+   132	     "Any company in a competitive business needs to be aware of
+   133	what it's doing when it communicates sensitive information,"
+   134	Hickey says.
+   135	
+   136	     "When you pick up the phone and talk about new-product
+   137	development, strategic planning, financial transactions or any
+   138	competition-sensitive matter, you need to know that your words
+   139	are reaching only the people you want them to reach.
+   140	
+   141	     Contract negotiations, legal actions and personnel issues
+   142	all require confidentiality.  And they often require discussions
+   143	over the telephone.
+   144	
+   145	     "It's not just extraordinary occasions that require
+   146	security.  How much information do you talk about on the phone
+   147	every day that competitors or third parties could exploit to
+   148	their advantage -- or to your disadvantage?" Hickey asks.
+   149	
+   150	     "The same holds true for faxes, videoconferences, data
+   151	transmission and any other electronic communication.  It doesn't
+   152	take much to tap a line for any of them."
+   153	
+   154	     Interception and penetration technology is racing side by
+   155	side with advances in communications technology.  And the more
+   156	powerful communications systems become, the higher the stakes
+   157	rise.
+   158	
+   159	     But most U.S. businesses are barely aware of the risks.  And
+   160	many business that are aware -- even some that have been vic-
+   161	timized -- are not facing up to those risks.
+   162	
+   163	     "Some businesses are simply unsophisticated. They don't
+   164	realize the danger they're putting themselves in by not protec-
+   165	ting their sensitive communications," Hickey says.
+   166	
+   167	     "But many that are aware of the risks are simply practicing
+   168	denial, choosing to believe that they don't need to do anything,"
+   169	Hickey says.  "Some executives say their work 'isn't important
+   170	enough to protect.'  Others insist that everything is all right
+   171	because they haven't been victimized yet -- as far as they know.
+   172	
+   173	     "And, of course, some just don't think their proprietary
+   174	information is important enough to protect if there's a price
+   175	involved."
+   176	
+   177	     A wide variety of products and services already exist to
+   178	protect communications systems.
+   179	
+   180	     Recognizing the need for businesses to protect their com-
+   181	munications, AT&T began migrating the secure communications
+   182	devices it provides to the government into the commercial market
+   183	in 1991.  The new AT&T Telephone Security Device, which encrypts
+   184	the voice signals of conventional telephones, is the latest
+   185	business product that AT&T has developed.
+   186	
+   187	     "We designed the Telephone Security Device to meet the key
+   188	demands that businesses have for secure communications," says
+   189	Robin Hall, manager of commercial sales for AT&T Secure Com-
+   190	munications Systems.
+   191	
+   192	     "It's easy to use because companies don't want complicated
+   193	equipment that requires time-consuming training or procedures.
+   194	
+   195	     "It works with conventional phones because we've found that
+   196	many companies don't want to part with the equipment they already
+   197	own.
+   198	
+   199	     "And it's a small, portable unit that can be carried easily
+   200	in a briefcase because companies that have a good awareness of
+   201	security realize that secure communications are necessary
+   202	everywhere they do business."
+   203	
+   204	     The Telephone Security Device was designed by AT&T Bell
+   205	Laboratories, which developed the technology for AT&T's highly
+   206	successful secure products for the U.S. government.  Bell
+   207	Laboratories also developed an advanced voice-sampling algorithm
+   208	to raise the secure voice quality of the device to nearly the
+   209	level of toll calls.
+   210	
+   211	     The device joins several other secure products that AT&T has
+   212	introduced to provide end-to-end protection for business com-
+   213	munications.  They include:
+   214	
+   215	     -- The AT&T Model 4100 Secure Voice/Data Terminal, which
+   216	provides secure voice and data communications in one integrated
+   217	package.  It works as a full-featured telephone for voice calls
+   218	and as a smart modem for data applications.
+   219	
+   220	     -- The AT&T Model 4100C Secure Cellular Voice/Data Terminal,
+   221	which provides security wherever cellular coverage exists.
+   222	
+   223	     -- The AT&T Model 4100M Secure MERLIN TM Voice/Data Ter-
+   224	minal,
+   225	compatible with AT&T Merlin telephone systems.
+   226	
+   227	    -- The AT&T Model 4100V Secure Voice/Data/Video Terminal, a
+   228	secure videotelephone that operates over standard telephone
+   229	lines. The AT&T secure videophone provides the ultimate in
+   230	authentication -- real-time, color, motion video.  It also
+   231	transmits high-resolution still images, including photographs,
+   232	maps, documents or virtually any other printed material.
+   233	
+   234	     -- The AT&T Gretacoder line of high-speed data encryptors,
+   235	which protect computer transmissions of up to 2 Megabits per
+   236	second.
+   237	
+   238	     AT&T develops and markets these products through AT&T Secure
+   239	Communications Systems, a business unit headquartered in
+   240	Greensboro, North Carolina.  The organization also provides
+   241	secure systems engineering and integration services.  Its cus-
+   242	tomers include the governments of the United States and other
+   243	nations, and financial institutions and multinational cor-
+   244	porations around the world.
+   245	
+   246	     AT&T Secure Communications Systems also develops products
+   247	through two subsidiary companies highly respected in the secure
+   248	communications field: AT&T Datotek, based in Dallas, Texas, which
+   249	develops products for secure mobile communications; and AT&T
+   250	Gretag Data Systems of Regensdorf, Switzerland, which develops
+   251	high-speed data encryptors.
+   252	
+   253	     "There are pockets of awareness throughout the business
+   254	community," Hickey says.  "Aerospace and other defense-related
+   255	industries, for example, have a much higher awareness of security
+   256	than most because of their work with the Department of Defense.
+   257	
+   258	     "The financial industry is doing better, particularly in
+   259	Europe."
+   260	
+   261	     The State Department's Overseas Security Advisory Council, a
+   262	group of major U.S. corporations, is working to develop greater
+   263	awareness of the risks, particularly for businesses with
+   264	operations outside the United States.
+   265	
+   266	     "But until business in general gets the message, immense
+   267	amounts of sensitive information are at risk."
+   268	

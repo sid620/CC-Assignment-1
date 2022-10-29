@@ -1,0 +1,148 @@
+     1	    ÚÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄ¿ÚÄÄÄÄÄÄÄÄ¿ÚÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄÄ¿ ÚÄÄÄÄ¿ÚÄÄÄÄÄÄÄÄ¿ÚÄÄÄÄÄÄÄ¿   
+     2	    ³   Ú¿  ³ ³      ³³        ³³    Ú¿ ³ ³   Ú¿  ³ ³    ³³        ³³    Ú¿ ³   
+     3	    ³   ³³  ³ ³   ÚÄÄÙÀÄ¿    ÚÄÙ³    ³³ ³ ³   ³³  ³ ³    ³ÀÄ¿    ÚÄÙ³    ³ÀÄÙ   
+     4	    ³   ÀÙ ÚÙ ³   À¿    ³    ³  ³    ÀÙ ³ ³   ÀÙ ÚÙ ³    ³  ³    ³  ³    ÀÄÄ¿   
+     5	    ³   Ú¿ À¿ ³   ÚÙ    ³    ³  ³       ³ ³   Ú¿ À¿ ³    ³  ³    ³  ÀÄÄ¿    ³   
+     6	    ³   ³³  ³ ³   ÀÄÄ¿  ³    ³  ³    Ú¿ ³ ³   ³³  ³ ³    ³  ³    ³  ÚÄ¿³    ³   
+     7	    ³   ÀÙ  ³ ³      ³  ³    ³  ³    ³³ ³ ³   ÀÙ  ³ ³    ³  ³    ³  ³ ÀÙ    ³   
+     8	    ÀÄÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÙ  ÀÄÄÄÄÙ  ÀÄÄÄÄÙÀÄÙ ÀÄÄÄÄÄÄÄÙ ÀÄÄÄÄÙ  ÀÄÄÄÄÙ  ÀÄÄÄÄÄÄÄÙ   
+     9	                   Copyright 1986 Bon Erreur Logiciel, S.A.                     
+    10	                               by Tim Conner, Jr.                               
+    11	Hello and welcome to  Beta  Bits!  This  *** CONTINUED FROM LEFT COLUMN ****    
+    12	area of PC GAZETTE will cover the world  Item      Compaq   IBM    IBM  Modified
+    13	of software.  This includes what is now  Name      PC-Plus  PC/XT   AT   IBM AT 
+    14	available and what is coming out in the  ---------------------------------------
+    15	future.   I  will  be   writing   about  Standards:                             
+    16	software  program being beta tested and                                         
+    17	those programs that are coming out.      Disk Size 10 M.    10 M.  20 M.  20 M. 
+    18	                                         Mem Chip  4.77     4.77   6.22    10   
+    19	As  a  beta  tester  for   five   major                                         
+    20	software companies,  I have the dubious                                         
+    21	honor  of  really   testing   the   new  Ver. 1.3:                              
+    22	software releases before it is released                                         
+    23	to the general public.                   Mem Test  N/A      N/A    N/A     N/A  
+    24	                                         Disk Dir 1'22"    1'52"  58.0"   45.7" 
+    25	You  are probably wondering what a Beta  Opt      5'32"    16'12" 22'23" 14'12" 
+    26	Tester does.  Well,  it is a  group  of                                         
+    27	dedicated users that a software company                                         
+    28	picks   to  have  test  every  possible  Ver. 2.0:                              
+    29	aspect of their products. This includes                                         
+    30	testing of software, read the manual(s)  Mem Test  6.0"     7.2"   3.1"    2.6" 
+    31	for clarity and ease of use.  Also,  to  Disk Dir 1'34"    2'12"  1'2"    58.0" 
+    32	test  each  and  every  item  that  the  Opt      13'42"   13'56" 15'22"  9'42" 
+    33	software company claims to have  fixed,                                         
+    34	added, or changed.  All of this is very                                         
+    35	important to the company  as  that  the  As you can see from  the  above  chart,
+    36	final  software  product will either be  that  this  new version 2.0 will take a
+    37	profitable or a bust!                    bit more time to optimize.  However,  I
+    38	                                         have  not  optimize my hard disk on any
+    39	In  this  premier  column,  I  will  be  of the machines in  over  three  weeks!
+    40	addressing  several new items that I am  When  I  was  using the 1.3 version,  I
+    41	currently beta  testing  and  somewhere  usually had to optimize the hard  drive
+    42	else in this issue is a review of a San  every other day.  Thus, you now see the
+    43	Francisco  company's  two  entries into  savings  in doing an optimization every
+    44	the software market.                     so often.                              
+    45	                                                                                
+    46	One last note,  I am not being paid and  To order release 2.0,  call or write to
+    47	I   am   not   endorsing  any  products  the address below:                     
+    48	appearing in Beta Bits or Quicksilver's                                         
+    49	Review.   All  of  these  reviews   and  Softlogic Solutions, Inc.              
+    50	articles  appearing  in  PC GAZETTE are  530 Chestnut Street                    
+    51	strictly for informing you, the public,  Manchester, New Hampshire 03101        
+    52	of  any  new  items  that   you   might  Toll Free Order Number: (800) 272-9900.
+    53	purchase in the near future.                                                    
+    54	                                                                                
+    55	Now that all of the above is over with,  Expected   release  of  Disk  Optimizer
+    56	let's  take a look of what is happening  version 2.0 will be in two months.     
+    57	out in the world of software.                                                   
+    58	                                         Beta Testing #2:                       
+    59	Quicksilver's Snap Judgments:            ----------------                       
+    60	------------------------------                                                  
+    61	In  the Snap Judgments Department,  you  This  beta  testing   is   actually   a
+    62	may want to wait on  your  purchase  of  preliminary  report  on Borland's Turbo
+    63	Microsoft's   QuickBasic  version  2.0.  Pascal version 4.0.                    
+    64	The reason is that the company is going                                         
+    65	into hi-gear fixing  several  bugs  and  So far,  I have been beta  testing  for
+    66	including  a  debugger  called CodeView  over  two  months on the new release of
+    67	into the package.  The  estimated  time  Turbo Pascal and  I  have  been  really
+    68	table  for  release  3.0  of QuickBasic  impressed by this release. The many new
+    69	will be within the next four months.     features includes the following:       
+    70	                                                                                
+    71	In other news,  those fun loving  folks    1) Ability to connect with other     
+    72	at  Ashton-Tate are hurrying to put out        Borland products such as Turbo   
+    73	a newer version of dBase  III  Plus.  I        Prolog and Turbo Lightning.      
+    74	will   bet   that  even  with  the  new    2) End of the 64k code barrier.      
+    75	release,  that there will be more  bugs    3) A new quick compiler which speeds 
+    76	with  the  software  due to the hurried        up the compiling time.           
+    77	pace.                                                                           
+    78	                                                                                
+    79	Within the next month,  Microsoft  will  As  of  now,  the beta testing is going
+    80	be   releasing  the  new  'C'  language  rather  slowly.  Several  beta  testers
+    81	version 4.0.  If you are  a  registered  have  found  many  bugs  with this test
+    82	user  of  Microsoft's C or Lattice 'C',  version.  Borland is trying to fix  all
+    83	you might want to  get  in  touch  with  of   the  problems  with  another  test
+    84	Microsoft   for  their  newer  version!  version due for  release  to  the  beta
+    85	Version  4.0,  is  very  compatible  to  testers shortly.                       
+    86	either UNIX or XENIX. This version will                                         
+    87	include   the   new   CodeView(R)   for  I  will  be  giving you a full detailed
+    88	debugging.   Microsoft's  phone  number  report on Turbo Pascal Version 4.0 in a
+    89	is:(206) 882-8080.                       future column.                         
+    90	                                                                                
+    91	Beta Testing #1:                                                                
+    92	----------------                         Quicksilver's Pet Pieves:              
+    93	I  am  currently  beta  testing a newer  -------------------------              
+    94	release   of   Disk   Optimizer    from                                         
+    95	SoftLogic Solutions.                     This section is where you get a  chance
+    96	                                         to blow off some steam against software
+    97	This   version   (2.0),   is   a  major  companies.  If you have any complaints,
+    98	enhancement from the old release 1.0 or  questions,   tid-bits,   or   comments,
+    99	1.3.   Many   of   these   enhancements  please  leave  E-MAIL  (address  to Tim
+   100	includes the following items:            Conner)  at  either  Polaris   BBS   or
+   101	                                         InfoLink  Network.  The author reserves
+   102	   1) A preliminary memory test          the right to edit any mail that  I  use
+   103	   2) Verifies  DMA  to  disk  transfer  in  this column.  Please when you leave
+   104	       from all memory                   mail,  leave your full address as I  am
+   105	   3) Performs   READ   AFTER   WRITE    planning  to send any comments (good or
+   106	       verification                      bad) to the software company for  their
+   107	   4) Displays   visual feedback of the  responses.                             
+   108	       process                                                                  
+   109	   5) Sub-directories are no longer      Let's  start  off this section with one
+   110	       sorted                            of my pet pieces.                      
+   111	   6) Does NOT alter any file/directory                                         
+   112	       with an attribute of Hidden or    To  Ashton-Tate:  Where  is  the  dBRUN
+   113	       System                            program  that  you have promised to all
+   114	   7) For DOS 3.x users: Allocates all   of  those  buyers  of  dBase  III  Plus
+   115	       directories as close to the File  package??    Originally,    the   dBRUN
+   116	       Allocation Table as possible      program was due out by May 1986 and  it
+   117	   8) Allocates COM, EXE, SYS, OVL and   has been delayed over four times!!  Get
+   118	       Read Only files to the beginning  on the ball, folks!!                   
+   119	       of the disk, following the                                               
+   120	       directory clusters.               The Final Word:                        
+   121	   9) Allow up to 40 levels of sub-      ---------------                        
+   122	       directory nesting                                                        
+   123	  10) Allow up to 1000 directories       I hope that you enjoy Beta Bits.  Since
+   124	  11) Tolerates file names that begin    this  is  the  first  column,   I  will
+   125	       with a period                     promise to make this column much better
+   126	  12) Displays the full disk statistics  in the future. All comments are greatly
+   127	       at the end                        welcome.  Please send your comments  to
+   128	  13) Displays file names and parent     either Polaris BBS or InfoLink Network.
+   129	       directory or directory name       The  board's  phone  numbers are listed
+   130	       when a read error occurs.         elsewhere in this issue.               
+   131	  14) Recovers unused clusters caused                                           
+   132	       by deleting files from sub-       Within the next few months,  I will  be
+   133	       directories.                      beta  testing several software packages
+   134	                                         from  Microsoft  and  several  software
+   135	So far,  the beta testing is  currently  packages from Europe. Europe??         
+   136	in it's fifth test.  It is about 85-90%                                         
+   137	completed.  Some minor bugs  have  been  Yes,  I  said  Europe.  I will be going
+   138	found  and  I  expect that this will be  over  to  Europe  to   visit   and   to
+   139	remedied within the next test.           interview  the  president of the French
+   140	                                         version  of  Philipe   Kahn's   Borland
+   141	Here are some test  timing  information  International.  I  will  also report on
+   142	utilizing   version  1.3  and  the  new  the   software   industry    and    the
+   143	version 2.0 (test #5).  Remember,  this  availability  of  American software and
+   144	test  is being conducted on 3 different  magazines.  Who knows,  I might get  an
+   145	machines with different set-ups.         exclusive for PC GAZETTE.  I think that
+   146	                                         this  will  be   a   first   for   this
+   147	*** CONTINUED ON RIGHT COLUMN ***        electronic newspaper!!                 
+   148	

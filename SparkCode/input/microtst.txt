@@ -1,0 +1,80 @@
+     1	(Phoenix, Arizona, February 11, 1992)--Computing in the nineties is
+     2	changing fast. With more and more organizations increasing their reliance
+     3	on Local Area Networks (LANs), the expanding popularity of notebook and
+     4	laptop computers, and the growing trend toward telecommuting, effective
+     5	computing no longer just means a PC on your desk in the office.
+     6	
+     7	LANs are taking over the way businesses compute. Studies indicate that
+     8	56.8% of all PCs in use will be connected to a LAN by 1995. International
+     9	Data Corporation (IDC) predicts the demand for LAN-based dial out will
+    10	increase as the number of PCs on LANs worldwide increases.
+    11	
+    12	In addition IDC states that, "the number of portable PCs (including
+    13	notebooks, laptops, and transportables) shipping worldwide will increase
+    14	from 3.9 million in 1991 to 9.6 million in 1995." With this growth in the
+    15	portable PC market comes an increasing need for remote access to the LAN.
+    16	
+    17	Market research firm, Link Resources, says 4.3 million company employees
+    18	work at home now. That figure is expected to increase as companies
+    19	continue to find that higher productivity and employee satisfaction are
+    20	the positive results of their telecommuting policies.
+    21	
+    22	In response to all of these trends and growing user concern with the
+    23	complexity of LAN-to-WAN connectivity, LANMODEM provides a simple
+    24	solution. LANMODEM is a V.32bis/ V.42bis (14.4K baud modem with up to 4x
+    25	data compression) network-attachable modem, which operates at speeds up to
+    26	57.6K baud.
+    27	
+    28	It is an intelligent plug-and-play network modem designed to give users
+    29	high speed access to, from and between Novell LANs. LANMODEM provides a
+    30	direct connection to the LAN cabling, giving remote users the ability to
+    31	log in to their office network from home, their hotel room, or wherever
+    32	they may be. LANMODEM lets them run applications such as E-mail,
+    33	groupware, word processing programs, graphics packages, etc., exactly as
+    34	if they were attached directly to the network. Additionally, remote users
+    35	can transfer files, print documents or..take remote control of a network
+    36	PC.
+    37	
+    38	As the popularity of telecommuting increases, so does the need for
+    39	realistic tools which permit employees to work efficiently and
+    40	effectively, believes David Bolles, company founder and CEO, who designed
+    41	LANMODEM with telecommuting in mind. "I think technology has a
+    42	responsibility to attempt to solve some of our environmental problems.
+    43	More and more, companies are willing to work with their employees to
+    44	permit them to work out of their home. LANMODEM is their easy-to-use
+    45	dial-in solution. Additionally it solves a need for employees traveling on
+    46	business to access their office networks."
+    47	
+    48	LANMODEM attaches directly to the network and allows network users in the
+    49	office to share modems to dial out to electronic information services. In
+    50	addition, LANMODEM features an additional serial port permitting another
+    51	modem to be attached, giving multiple users the ability to dial in and out
+    52	simultaneously, avoiding the need for dedicated modems and extra
+    53	telecommunications lines.
+    54	
+    55	LANMODEM, ($1,995 Ethernet Version), was announced late in 1991, and is
+    56	currently in final beta testing. It will ship in March.
+    57	
+    58	Microtest Inc. designs, manufactures and markets innovative solutions for
+    59	users of computer networks, pioneering several firsts in both network
+    60	diagnostic and connectivity products. Since the introduction of Cable
+    61	Scanner, the first hand-held cable testing tool, in 1988, Microtest's
+    62	products have captured national recognition in the industry, including
+    63	winning several "Product of the Year" awards. The LANPORT connectivity
+    64	product line of dedicated applications servers, introduced in 1989, gave
+    65	network users the ability for the first time to share printers and modems
+    66	without a dedicated computer.
+    67	
+    68	Microtest, 3519 East Shea Blvd, Suite 134, Phoenix, AZ 85028
+    69	602-971-6464
+    70	
+    71	  +---------------------------------------------------------------+
+    72	  |  From the America On-Line & PC-Link New Product Info Services |
+    73	  +===============================================================+
+    74	  | This information was processed with OmniPage Professional OCR |
+    75	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+    76	  | provided by the above mentioned company. For additional info, |
+    77	  | contact the company at the address or phone# indicated above. |
+    78	  |    All submissions for this service should be addressed to    |
+    79	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+    80	  +---------------------------------------------------------------+

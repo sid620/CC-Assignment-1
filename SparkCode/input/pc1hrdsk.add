@@ -1,0 +1,145 @@
+     1	From: vojta@steero.berkeley.edu (Paul Vojta)
+     2	Newsgroups: comp.sys.ibm.pc
+     3	Subject: Old PC's and hard disks (a solution)
+     4	Date: 28 Feb 88 06:57:33 GMT
+     5	
+     6	In the past few weeks I have seen a number of postings concerning the
+     7	problem of installing a hard disk in an old PC-1, given the fact that
+     8	IBM has stopped selling its ROM upgrade (or is still selling it for
+     9	$60, depending on what you read).  In any case, I am writing to share
+    10	with you the solution that I have been using for the past several
+    11	years, which involves creating a floppy with a modified boot record.
+    12	On all PC's, the computer first tries to read and execute a record
+    13	from the floppy drive before trying to boot up from the hard disk.
+    14	Usually this record contains a very small program which reads DOS from
+    15	the floppy and starts it running.  With my special floppy, however,
+    16	the small program on the boot record initializes the hard disk and
+    17	loads DOS from the hard drive instead.
+    18	
+    19	     This modified boot record also has the following feature.  If you
+    20	set your DIP switches to indicate that the computer has only 64K of
+    21	memory, then the boot record will automatically determine how much
+    22	memory your system actually has (up to 640K) and set its internal
+    23	parameters accordingly.  This both avoids a lengthy memory check and
+    24	allows you to expand to 640K (instead of 512K).
+    25	
+    26	     To put this boot record on a given floppy disk, first edit out
+    27	the listing at the end of this posting.  Let's say it's in a file
+    28	called "FOO."  To modify a given floppy, put the diskette into drive
+    29	A: and type "DEBUG <FOO" at the command line.  Oh yes, I forget you
+    30	don't have a hard disk yet.  In that case, DEBUG should be copied to
+    31	the special floppy first, or you could run it from drive B:.  In any
+    32	case, after running DEBUG, that special floppy should be placed into
+    33	the computer each time you turn it on or reboot via Ctrl-Alt-Del.  You
+    34	might want to create several such floppies as backups; there is no
+    35	normal way to copy this boot record.  (These floppies are "special"
+    36	only with respect to booting up the computer; they can still be used
+    37	to hold DOS files.  There is no reason to put DOS itself on them,
+    38	though; you cannot boot DOS directly from these disks but instead must
+    39	use them to boot DOS from elsewhere.)
+    40	
+    41	     This is OK so far, but only if you already have DOS on your hard
+    42	disk, which is unlikely.  In order to put DOS on the hard disk, you
+    43	need to boot DOS from a floppy, yet the hard disk must be already
+    44	initialized so that DOS can run FDISK and FORMAT.  To do this, you
+    45	must use the third feature of this special boot record, which is the
+    46	following.  If you hold down the "Alt" key while booting with this
+    47	specially modified floppy, the computer will initialize the hard disk
+    48	and then pause, enabling you to insert another floppy to boot DOS from
+    49	that second floppy instead of the hard disk.  You can then run FDISK
+    50	and FORMAT as if you had the newer BIOS.
+    51	
+    52	     So, to sum it all up, you do the following:
+    53	
+    54	    1.  Create a special floppy using the enclosed DEBUG script.
+    55	    2.  Reboot the computer using (a) the special floppy while holding the
+    56	        "Alt" key down, followed by (b) a normal DOS floppy.
+    57	    3.  Run FDISK as described in the DOS manual.
+    58	    4.  Repeat step 2.
+    59	    5.  Run FORMAT as described in the DOS manual.
+    60	
+    61	You now have a usable hard disk; you only have to remember always to
+    62	boot from the special floppy created in step 1.  I only wish the
+    63	instructions leading up to this point were easier, but any easier
+    64	description eludes me.
+    65	
+    66	----%<--%<--%<-- CUT HERE -->%-->%-->%----
+    67	l 100 0 0 1
+    68	a 100
+    69	jmp	0136
+    70	
+    71	a 136
+    72	xor	ax,ax
+    73	mov	ds,ax
+    74	mov	ss,ax
+    75	mov	sp,7c00
+    76	sti
+    77	mov	byte ptr [0440],01
+    78	mov	ax,[0413]
+    79	cmp	ax,0040
+    80	jg	016f
+    81	mov	cl,06
+    82	shl	ax,cl
+    83	cmp	ax,a000
+    84	jnb	016f
+    85	mov	es,ax
+    86	xor	di,di
+    87	stosw
+    88	es:
+    89	cmp	ax,[di-02]
+    90	jnz	016f
+    91	mov	cx,01ff
+    92	repz
+    93	stosw
+    94	inc	word ptr [0413]
+    95	add	ax,0040
+    96	jmp	0151
+    97	cmp	byte ptr [004f],c8
+    98	jz	017b
+    99	call	c800:0003
+   100	xor	ax,ax
+   101	mov	ds,ax
+   102	mov	es,ax
+   103	mov	si,7c00
+   104	mov	di,7e00
+   105	mov	cx,0100
+   106	cld
+   107	repz
+   108	movsw
+   109	jmp	0390
+   110	test	byte ptr [0417],08
+   111	jz	01bd
+   112	cld
+   113	mov	si,7edb
+   114	lodsb
+   115	cmp	al,00
+   116	jz	01ab
+   117	mov	ah,0e
+   118	mov	bx,0007
+   119	push	si
+   120	int	10
+   121	pop	si
+   122	jmp	019b
+   123	mov	ah,01
+   124	int	16
+   125	pushf
+   126	mov	ah,00
+   127	int	16
+   128	popf
+   129	jnz	01ab
+   130	mov	word ptr [7ed9],0000
+   131	mov	ax,0201
+   132	mov	bx,7c00
+   133	mov	cx,0001
+   134	mov	dx,[7ed9]
+   135	int	13
+   136	jb	01bd
+   137	in	al,21
+   138	and	al,fe
+   139	out	21,al
+   140	jmp	0000:7c00
+   141	dw	80
+   142	db	'Insert DOS floppy and strike any key when ready.',d,a,0
+   143	
+   144	w 100 0 0 1
+   145	q

@@ -1,0 +1,190 @@
+     1	BASIC INSTALLATION PRODCEDURE for ESDI Drives
+     2	by Ryan Ramsey   --   July 3, 1992
+     3	
+     4	All Micropolis ESDI need to be low-level formatted on the controller you
+     5	intend to use them with. Because of this, and with all ESDI drives, if you
+     6	ever switch the controller, you will also need to back-up your data, and
+     7	low level format the drive again. ESDI drives need a little more attention
+     8	to configuration than SCSI drives do. The major things that must be done
+     9	are setting up your system CMOS, drive addresses, sector size, and termination.
+    10	
+    11	SETTING UP THE CMOS
+    12	-------------------
+    13	
+    14	    In order for your computer to use an ESDI drive, it must first be 
+    15	    denoted in your system CMOS. The first thing you must do is go into
+    16	    your system CMOS and set your drive types accordingly. Most CMOS's
+    17	    allow you to select a type from 0 (not installed) to 47, where 47
+    18	    is a user-defined entry and 1-46 are preset types.
+    19	
+    20	    For all Micropolis ESDI drives, you should set your type to drive
+    21	    type 1. On intelligent BIOS's, it will tell you you only have a 20MB
+    22	    drive, but when it comes time to low level format the drive, this 
+    23	    drive type will indicate to the controller card to pull the parameters
+    24	    off the physical drive and set itself up.
+    25	
+    26	    If your are installing only one drive, then only your DRIVE 0, or 
+    27	    DRIVE C, parameter should be set to drive type 1. If you are setting
+    28	    up two drives, both DRIVE 0/C and DRIVE 1/D must be set to 1, once
+    29	    again, regardless of what the capacity comes out to.
+    30	
+    31	    NOTE: These settings are for ESDI drive only! If for example you have
+    32	    one ESDI drive and one SCSI drive, you will only set DRIVE 0/C to
+    33	    drive type 1. SCSI drives will set themselves up.
+    34	
+    35	    After this is accomplished, the setup should be saved and exited and
+    36	    the system will then reboot.
+    37	
+    38	SETTING DRIVE ADDRESSES
+    39	-----------------------
+    40	
+    41	    In order for your machine bus to be able to tell where it is getting its 
+    42	    information from, it is neccessary for each drive to have a particular
+    43	    drive address. This number, is set with jumpers on the circuit board side
+    44	    of the drive. The jumper block will be labeled as follows: 
+    45	
+    46	                      DA1
+    47	                        |DA2
+    48	                        | | DA3
+    49	             ___________|_|_|_
+    50	            | . . . . . . . . |
+    51	            | . . . . . . . . |
+    52	             -----------------
+    53	              | | | | |
+    54	             W1 | | | |
+    55	               W2 | | |
+    56	                 W3 | |
+    57	                   W4 |
+    58	                     W5
+    59	
+    60	     The first part of this jumper block (The 'W' series) sets your sector
+    61	     size and bytes per track. In most cases it should be set only to W2,
+    62	     which sets it for the factory standard, yielding the most capacity at
+    63	     512-Bytes per Sector. If you are using a very slow machine such as the
+    64	     IBM-XT, you will also want the W1 jumper installed (Write Fault Latch).
+    65	     
+    66	     If another configuration is needed, you find out the sector sizes and 
+    67	     bytes-per-track numbers from your drives specification sheet.
+    68	
+    69	     The next part is to set your drive address, and this is done with the
+    70	     DA jumpers (they could be labeled DS in older models). These jumpers
+    71	     are not only related to your drive (whether it is primary or secondary),
+    72	     but also to your cable. If you have a twisted cable (there is a physical
+    73	     twist in the cable between the first and last nodes), the scheme will be
+    74	     a little bit different. To find out how you should have this section
+    75	     jumpered, follow this basic configuration.
+    76	
+    77	     ONE DRIVE SYSTEM (Primary Drive)
+    78	         The primary drive should always be connected to the last (end) node 
+    79	         of your cable.
+    80	
+    81	              TWISTED CABLE: Jumper on DA2 ONLY.
+    82	                 FLAT CABLE: Jumper on DA1 ONLY.
+    83	
+    84	     TWO DRIVE SYSTEM (Primary and Secondary Drive)
+    85	         Once again, the primary drive should be connected to the last (end)
+    86	         node of your cable, and the secondary drive in the middle (first)
+    87	         node of the cable.
+    88	
+    89	              TWISTED CABLE: Primary at DA2, Secondary at DA2
+    90	                 FLAT CABLE: Primary at DA1, Secondary at DA2
+    91	
+    92	     NOTE: If your cable has the twist CLOSEST to the colored stripe, you 
+    93	           are using a FLOPPY cable, and this will not work!
+    94	
+    95	DRIVE TERMINATION
+    96	-----------------
+    97	
+    98	    Termination is something that causes a lot of undue grief for everyone, but
+    99	    the concept is really simple.
+   100	      
+   101	        "Only the last drive on the CABLE must be terminated, 
+   102	         all others should be un-terminated."
+   103	    
+   104	              and
+   105	
+   106	        "The chain must be terminated on both ends."
+   107	 
+   108	    The controller must be terminated (which is the way it comes from 99.99% 
+   109	    of the manufacturers) AND the very last drive/component on the CABLE 
+   110	    (do not get "the last drive on the cable" confused with the "last drive, 
+   111	    which would be the highest DRIVE ADDRESS"). 
+   112	
+   113	        Therefore, a graphic display would look as follows:
+   114	           ____
+   115	          /    \ 
+   116	         | HOST |=====DEVICE=====DEVICE
+   117	          \____/        |          |
+   118	            |    UN-TERMINATED     |
+   119	            |                      |
+   120	        TERMINATED             TERMINATED
+   121	        (Usually default)
+   122	
+   123	        So once again:
+   124	
+   125	             If you have only one drive, it is to be TERMINATED.
+   126	             If you have more than one drive, all drives must be UN-TERMINATED
+   127	                except for the last PHYSICAL drive on the CABLE which must 
+   128	                be TERMINATED.
+   129	
+   130	
+   131	CABLE INSTALLATION
+   132	------------------
+   133	
+   134	        Once the two above items are checked and configured, all you need to
+   135	        do then is put the drive on the cable (matching the red stripe on the
+   136	        cable to pin one on the controller card) and then power on.
+   137	 
+   138	        NOTE: If you have a twisted cable, if the twist is closest to the
+   139	              COLORED stripe, you will NOT be able to use it because it 
+   140	              is a FLOPPY cable. You must get either a FLAT cable or a
+   141	              TWISTED cable where the twist is furthest away from the colored
+   142	              stripe.
+   143	
+   144	
+   145	TROUBLESHOOTING GUIDE
+   146	---------------------
+   147	
+   148	     PROBLEM
+   149	         Cannot see the drive.
+   150	     REMEDY
+   151	         1.  Did you set your Drive 0 to type 1 in your CMOS?
+   152	         2.  Check your drive address, it may be in the wrong location.
+   153	         3.  Check your sector size. Most computers use 512-bytes per sector 
+   154	             and if your drive is set up otherwise, it may not be able to 
+   155	             see it. Set the drive to the factory default (W2).
+   156	
+   157	     PROBLEM
+   158	         When booting up the system, the machine gets hung up at the bios
+   159	         banner of the controller card.
+   160	     REMEDY
+   161	         There are a few possibilities for this problem.
+   162	          1.  There are two drives with the same drive address.
+   163	              Verify that all drives have different SCSI ID's.
+   164	          3.  There could be a bios conflict.
+   165	              Change the bios address of the controller card to a different
+   166	              memory location.
+   167	          4.  There could be a conflict with add in boards. Check and make sure
+   168	              that there are no memory conflicts with any add in boards or 
+   169	              bios's, check DMA's, IRQ's, and port addresses.
+   170	
+   171	      PROBLEM
+   172	          When you boot up, the computer gives you a message along the lines
+   173	          of "Drive C not found" or "Drive 0 not found".
+   174	      REMEDY
+   175	          Check your drive addressing jumpers, they are most likely set
+   176	          incorrectly. Also, check your cables, they may not be seated 
+   177	          properly.
+   178	
+   179	      If you are experienceing a problem that is not approached in this 
+   180	      document or you continue to have problems, you may do one of the 
+   181	      following:
+   182	
+   183	          1.  Call our Technical Support Line at (818) 709-3325. 
+   184	          2.  Call our BBS at (818) 709-3310 and leave an email to the Sysop.
+   185	          3.  FAX your request to us at (818) 718-5352.
+   186	          4.  Mail your request to:
+   187	                  Micropolis Corporation
+   188	                  Attn: Technical Support
+   189	                  21211 Nordhoff Street
+   190	                  Chatsworth, CA  91311

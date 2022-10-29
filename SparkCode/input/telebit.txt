@@ -1,0 +1,59 @@
+     1	SUNNYVALE, Calif.--January 27,1992--Telebit Corporation (NASDAQ: trading
+     2	symbol TBIT), a pioneer of high-speed modems, dial-up networking, and
+     3	wide-area communications products, introduced today the ModemMizer,
+     4	Telebit's newest member of the ACS (asynchronous communication server)
+     5	product family that functions as a non-dedicated communications server
+     6	solution for Novell Netware and NetBIOS networks.
+     7	
+     8	ModemMizer is a modem-sharing software solution that operates on any
+     9	existing PC workstation and supports up to two modems with port speeds up
+    10	to 38,400bps. Providing both dial-in and dial-out functionality, the
+    11	ModemMizer utilizes dynamic allocation of ports to effectively manage LAN
+    12	modem resources. This insures that no modems or telephone lines are
+    13	inaccessible unless they are actually being used. Since the ModemMizer
+    14	operates in the background of any PC, local and remote users can access
+    15	other applications such as electronic mail and file transfer as well as
+    16	dial-out service providers without interrupting the host PCs activity on
+    17	the network.
+    18	
+    19	ModemMizer also offers comprehensive network management features including
+    20	activity reporting, built-in breakout box, data trace, and remote console
+    21	capabilities that are typically offered only in dedicated communications
+    22	servers. All of these features can be accessed from any local or remote PC
+    23	on the network.
+    24	
+    25	"ModemMizer is the ideal modem-sharing solution for small PC LANs that want
+    26	to maximize the performance of high-speed modems and reduce hardware and
+    27	phone line costs at the same time," said Michael Ballard, President and
+    28	CEO.
+    29	
+    30	The Telebit ModemMizer software package is available immediately for a list
+    31	price of $349 and includes a standard 90 day warranty.
+    32	
+    33	Included with ModemMizer is a two concurrent user license for pcANYWARE
+    34	IV/LAN version 4.5 software and two copies of pcANYWARE IV/Remote
+    35	providing terminal emulation, remote control and support for remote
+    36	Windows. Additionally, ModemMizer operates with other third-party
+    37	communications packages that support either the Telebit APL Interrupt 14
+    38	or NASI workstation interfaces.
+    39	
+    40	Telebit Corporation designs, manufactures and markets advanced highspeed
+    41	products for dial-up networking and wide-area communications. The
+    42	company's digital signal processing technologies provide extremely
+    43	reliable error-free communications across the global switched telephone
+    44	network. Telebit markets its products worldwide through distributors,
+    45	original equipment manufacturers and value-added resellers.
+    46	
+    47	Telebit Corp, 1315 Chesapeake Terrace, Sunnyvale, CA 94089
+    48	408-734-4333
+    49	
+    50	  +---------------------------------------------------------------+
+    51	  |  From the America On-Line & PC-Link New Product Info Services |
+    52	  +===============================================================+
+    53	  | This information was processed with OmniPage Professional OCR |
+    54	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+    55	  | provided by the above mentioned company. For additional info, |
+    56	  | contact the company at the address or phone# indicated above. |
+    57	  |    All submissions for this service should be addressed to    |
+    58	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+    59	  +---------------------------------------------------------------+

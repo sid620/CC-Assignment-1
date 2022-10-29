@@ -1,0 +1,353 @@
+     1	
+     2	
+     3	What is the Filename to read? backdoor.txt
+     4	
+     5	February 20 1989
+     6	
+     7	
+     8	This is  BACKDOR1.arc   ... the first in a series of 
+     9	"back doors" to various games.  The source of this info is
+    10	various magazines, and I have paraphrased the articles.
+    11	
+    12	Note that "back door" refers NOT to regular game hints on
+    13	how to play better, but to a way to CHEAT, usually put
+    14	there by the programmer, sometimes caused by a bug.  Usually
+    15	you'll be made invincible if it's an arcade-type game, or 
+    16	be able to advance quicker if an adventure game. 
+    17	
+    18	Most of these "back door" and "side door" hints are out of
+    19	a GREAT magazine for the Amiga, C64, and C128:  INFO.
+    20	It's a grass-roots, down to earth magazine - the first
+    21	magazine about personal computers to be be entirely done on
+    22	personal computers.  That's "Where It's At".  
+    23	
+    24	You owe it to yourself to subscribe to INFO.
+    25	With the exception of most of the ads, everything including
+    26	color screen shots and photos are digitally created, edited,
+    27	composed, printed, and color separated as complete assembled
+    28	pages on 14 Amiga computers running Professional Page (and
+    29	many many other Amiga software products), and output to a
+    30	Linotronic L300 typesetting device at 1235 dots per inch!
+    31	INFO doesn't cover programming techniques, but in my opinion
+    32	it out-shines all the other Commodore mags for news, honest
+    33	opinion, game reviews, and reviews of all C= software.
+    34	
+    35	George Knochel, Lakewood Colorado
+    36	
+    37	
+    38	
+    39	ALL GAMES:  connect a genlock to the Amiga and leave it on
+    40	while playing games, and they'll play 25% slower, which
+    41	allows you to score high. 
+    42	
+    43	
+    44	
+    45	ARKANOID
+    46	
+    47	Get into the back door this way:  boot and run the game as
+    48	usual, then select a start screen and begin game.  Press the
+    49	space bar to pause, and type in  DSIMAGIC  (no spaces, and 
+    50	don't press Return).  Press the space bar to unpause.
+    51	
+    52	Now a yellow Power capsule named  DS  will fall down.  Catch
+    53	it.  Now you can get any power capsule you want any time.
+    54	Press the first letter of the capsule you want, and it will
+    55	fall down for you to catch: 
+    56	  Break  Catch  Disruption  Expand  Laser  Player  Slow
+    57	Catch some Player capsules first to get extra lives.
+    58	
+    59	You can also use two capsules at the same time, like Disrupt
+    60	the ball into three balls, and use Lasers also.
+    61	
+    62	Pressing the  F  key will send you to the Finsl screen where
+    63	you fight DOH, the Dominion Over Hour monster on the cover
+    64	 of the package.  You'll need lots of lives first.
+    65	
+    66	Skip over any screen by pressing  Enter  on the keypad, or 
+    67	get through the screen fast (with points too) using a Break
+    68	capsule.
+    69	
+    70	
+    71	
+    72	ARKANOID II
+    73	
+    74	On the high score screen, type in the name  DEBBIE S  
+    75	(with the space), and you'll have infinite lives.  
+    76	
+    77	
+    78	
+    79	BARBARIAN
+    80	
+    81	Boot and run the game as usual, but at some point after the
+    82	game has started, type in:  04-08-59   ...It will make the
+    83	Barbarian character almost invincible, but he can still be
+    84	killed by very high falls, and by the flame-hurling horned
+    85	demon in the dungeon deep, pictured on the cover.
+    86	
+    87	After you type  04-08-59  the screen will turn gray, telling
+    88	you that you're invincible.
+    89	
+    90	Once you make it to Necron, you must have a shield.  Face 
+    91	Necron when he turns to face you.  When he throws a fireball
+    92	at you, press the defense button as it hits your shield.
+    93	
+    94	
+    95	
+    96	BARD'S TALE
+    97	
+    98	How to hoard millions in gold without trying:  Load your
+    99	party, go to the stats screen for the first player.  Pool
+   100	all of the party's gold to the first player, then remove
+   101	him from the party, then load him back in.  Then pool the
+   102	gold to another player.  Repeat this for each player.
+   103	
+   104	Then turn off the computer without saving the game.  Reboot
+   105	and ezch player will have gold equal to the TOTAL the party
+   106	had before.  Repeat if you're really greedy !
+   107	
+   108	
+   109	
+   110	BETTER DEAD THAN ALIEN
+   111	
+   112	If you are just about to be hit by an alien or a bomb, press
+   113	the ESC key to pause, move your ship out of the way, then
+   114	press  N  to resume the action.
+   115	
+   116	Type  CHAMP  on the options screen, then press the  HELP
+   117	key.  You'll be shown a list of cheat keys.
+   118	
+   119	
+   120	
+   121	CAPONE
+   122	
+   123	To find the "special bonus", go to the front of the Post
+   124	Office.  Shoot the ball at the top of the flag pole, and 
+   125	your score will go way up.  If you shoot it again, you'll
+   126	see a screen of the programmers!  Shoot again and you'll be
+   127	invincible, standing in the bank.  At the end of that round,
+   128	you will start at the beginning, except you'll be in warp
+   129	speed.
+   130	
+   131	
+   132	
+   133	DEFENDER OF THE CROWN
+   134	
+   135	To get 1,024 Knights:  After conquering a territory, press
+   136	these four keys at the same time, while the drive is still 
+   137	running:  H J K L  ... If you do it just right, you'll have
+   138	1,024 knights both in your home and in your army.  Hey, this
+   139	is good stuff!
+   140	
+   141	Another way was reported in which to get 1,024 Knights, but
+   142	it doesn't seem to work:  After first picking the knight,
+   143	when Robin Hood appears, type PATTERSON over and over until
+   144	the map of England appears.  Don't press the Return key.  
+   145	If this trick doesn't work the first time, try again.  
+   146	I was only able to get this to work most of the time if,
+   147	before typing  PATTERSON  over and over, I first typed in
+   148	my name with no spaces:  GEORGEKNOCHEL   Yep, Twilight Zone!
+   149	
+   150	Another good trick for Defender of the Crown, for sword
+   151	fighting, is to get the PD program called FUN-BUT
+   152	(fun button), which when run lets you press the F1 key
+   153	continuously instead of clicking on the mouse.
+   154	(but then this is a hint, not a back door).
+   155	
+   156	
+   157	
+   158	DRAGON'S LAIR
+   159	
+   160	This will demo the ENTIRE game (about 18 minutes worth or a
+   161	disk I/O error, whichever comes first).  You can't play it,
+   162	just watch the whole game:  After the credits have finished
+   163	loading, and are being displayed (the red light will still
+   164	be on, but no loading is occurring), press the following six
+   165	(6) keys, simultaneously:   <ESC> R / L N 7   
+   166	Yes, all at the same time (use your nose if ya have to -
+   167	just press ESC and hold, then press R and hold, etc.). 
+   168	The screen will flash if you did it right.  THEN PRESS THE
+   169	FIRE BUTTON on your joystick.  Sit back and watch all the
+   170	animation.  (I couldn't - my disk 5 had an I/O error)
+   171	
+   172	
+   173	
+   174	DUNGEON MASTER
+   175	
+   176	To advance Ninjas a level, stand in a hall and throw all
+   177	your weapons, then get them and repeat.  This also works
+   178	with magic and Fighter levels:  cast a spell at the air,
+   179	or slash and bash until you gain a level.
+   180	
+   181	
+   182	
+   183	F/A-18 INTERCEPTOR
+   184	
+   185	Select option "2 Free Flight, no enemy confrontation" from
+   186	the main menu.  Then select zero instead of 1 to 4.  The
+   187	screen will go into a spiral and scroll way south to 34 by
+   188	117 degrees, placing your plane somewhere without a runway.
+   189	To take off you have to use the afterburners.  117 degrees
+   190	is the furthest south you'll be able to fly, but you can go
+   191	in other directions.  (Is there more to this back door? hmm)
+   192	
+   193	
+   194	
+   195	FAERY TALE ADVENTURE
+   196	
+   197	Sometimes you can accumulate all the treasure you want by
+   198	going near the item, press space bar, and keep pressing 'T'.
+   199	You'll receive an infinite supply of that treasure.
+   200	
+   201	Save your position in a dungeon.  Then go through it until
+   202	you don't have anymore keys.  Restore your position.  All 
+   203	doors already opened will still be open, and you'll have a
+   204	new supply of keys.  Repeat if needed.  Also works in cave.
+   205	
+   206	Jump on the turtle and start slashing.  Your bravery points
+   207	will go up to infinity, but doesn't hurt the turtle or you.
+   208	
+   209	On the island with the Crystal Castle, press the right mouse
+   210	button while talking to the Sorceress and your luck will go
+   211	to 65.  "Ask"ing the Sorceress several times will normally
+   212	boost your luck.
+   213	
+   214	If running low on green keys, use a secret entrance for the
+   215	fort - it is on the left side, almost even with the door.
+   216	
+   217	
+   218	HYBRIS
+   219	
+   220	Boot game and don't do anything until the high scores screen
+   221	appears.  Then type COMMANDER and click the fire button.
+   222	When it starts, wait a few moments and press the F10 key.
+   223	If the extensions of your ship get flickery or glimmer,
+   224	you're now invincible and have unlimited expansions and
+   225	smart bombs.  Get to the other 6 levels of expansions by
+   226	pressing F1 through F5 when you're in unexpanded mode, or
+   227	capture the special "capsules" in the usual way.  Move to 
+   228	other game levels (there are three) with the F8 key, and
+   229	turn invincibility off or on with the F10 key.  No High
+   230	scores are collected when you're invincible.
+   231	
+   232	
+   233	
+   234	KARATE KID II
+   235	
+   236	Press the  P  key in single player mode to be taken to the
+   237	next screen.  You can go as far as the Final Encounter.  In
+   238	2-player mode, you can go to the next-to-the-last screen.
+   239	
+   240	
+   241	
+   242	LEISURE SUIT LARRY
+   243	
+   244	Press ALT and X at the same time to bypass the proof-of-age
+   245	questions.
+   246	
+   247	
+   248	
+   249	STARGLIDER  (not Starglider II):
+   250	
+   251	Boot and play as usual until launched and ready to do
+   252	battle.  Then slow down until completely stopped in 
+   253	space.  Press the F1 key to turn on the fixed sight, and
+   254	press the backspace key to pause the game.  Now type:
+   255	    js[space]arg[space]s     You should now be invincible!
+   256	You'll know you're in invincible mode when you can
+   257	repeatedly press the  P  key and get additional missiles (up
+   258	to 9).  If the password didn't take the first time, try
+   259	again.  To may have to dock and re-exit for it to work.
+   260	Once invincible, your fuel will remain constant and shields
+   261	will never be depleted.
+   262	
+   263	Also, a secret built-in 3D object viewer running in the 
+   264	background is available by pressing the  z  key once you've
+   265	entered the invincible mode.  Use the keyboard to pause [p],
+   266	select [, and .] and manipulate objects - use all keys
+   267	except q and ESC.  Use the mouse to change point of view
+   268	and magnification and hold down the right button.  ....
+   269	
+   270	
+   271	
+   272	STARGLIDER II
+   273	
+   274	Once the game has started, press  F  for fixed sights and
+   275	then slow the ship to a halt.  Press BACKSPACE to pause, and
+   276	type the words:  WERE ON A MISSION FROM GOD      (really!)
+   277	(The article did not have the apostrophe  '  in We're ...)
+   278	
+   279	Then press  1  (one) on the keyboard (not keypad).  Your
+   280	shield and energy levels will drop to a fixed point.  Press
+   281	the letter  K  to get all the weapons in the game, including
+   282	the neutron bomb.  If you run low on weapons, you can get
+   283	them all back by repeating the process.  Onward into battle,
+   284	young soldiers!
+   285	
+   286	
+   287	
+   288	SWORD OF SODAN
+   289	
+   290	Type  NANCY  then press RETURN on the high scores screen for
+   291	unlimited lives!
+   292	
+   293	
+   294	
+   295	TEST DRIVE
+   296	
+   297	Holding down the joystick button while going around curves
+   298	prevents you from hitting the wall or going off the cliff.
+   299	
+   300	
+   301	
+   302	THREE STOOGES
+   303	
+   304	To really slow down "the hand" which selects the scenes, do
+   305	the slapping game and pull Curly's ear: pull it continuously
+   306	until the time runs out. 
+   307	
+   308	
+   309	
+   310	XENON
+   311	
+   312	Let yourself be killed off at the beginning of the 2nd stage
+   313	of the 2nd level, and all aliens in the round are destroyed.
+   314	
+   315	
+   316	
+   317	Press [ENTER] to continue...
+   318	
+   319	Call the Terminal Bliss BBS at T-ERM-INA-LBLS.
+   320	
+   321	                  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+   322	                  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+   323	                  \\   home of the dead rock   \\
+   324	                  \\   stars and across the    \\
+   325	                  \\   street from the circle  \\
+   326	                  \\   A its the............   \\
+   327	                  \\                           \\
+   328	                  \\       DEAD ROCK CAFE      \\
+   329	                  \\       415-676-5953        \\
+   330	                  \\    300-1200-2400 BAUD     \\
+   331	                  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+   332	                  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+   333	 
+   334	 
+   335	 
+   336	 
+   337	 
+   338	 
+   339	
+   340	
+   341	X-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-X
+   342	 Another file downloaded from:                     The NIRVANAnet(tm) Seven
+   343	
+   344	 & the Temple of the Screaming Electron   Taipan Enigma        510/935-5845
+   345	 Burn This Flag                           Zardoz               408/363-9766
+   346	 realitycheck                             Poindexter Fortran   510/527-1662
+   347	 Lies Unlimited                           Mick Freen           801/278-2699
+   348	 The New Dork Sublime                     Biffnix              415/864-DORK
+   349	 The Shrine                               Rif Raf              206/794-6674
+   350	 Planet Mirth                             Simon Jester         510/786-6560
+   351	
+   352	                          "Raw Data for Raw Nerves"
+   353	X-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-X

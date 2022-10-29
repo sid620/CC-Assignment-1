@@ -1,0 +1,194 @@
+     1	
+     2	              Mustang Software, Inc. Introduces QmodemPro
+     3	
+     4	     BAKERSFIELD, Calif., October 13, 1992 -- Mustang Software, Inc.
+     5	(MSI), has introduced QmodemPro, the first communications software
+     6	program enabling electronic mail messages to be received and answered
+     7	using one integrated program, regardless of the originating E-mail
+     8	source.
+     9	
+    10	     QmodemPro retrieves E-mail, bringing it in to one PC/compatible
+    11	environment.  The user no longer needs separate programs to handle MCI
+    12	Mail, CompuServe E-mail, BBS messages and other E-mail systems.  In
+    13	addition, QmodemPro can redirect the user's replies to any bulletin
+    14	board system (BBS), E-mail service or FAX machine -- not just the
+    15	original message's source.
+    16	
+    17	     QmodemPro represents a "rewrite from scratch" of the Qmodem
+    18	program, according to Jim Harrer, president/CEO of MSI.  The company
+    19	acquired the original Qmodem program from The Forbin Project, Cedar
+    20	Falls, Iowa, in October 1991.  The product had attracted a large user
+    21	following through its nearly seven years of availability as a shareware
+    22	product.
+    23	
+    24	     "Our goal for Qmodem has always been to produce an outstanding,
+    25	mass-merchandized product that could compete on any retail shelf with
+    26	the major generic communications programs," Harrer said.  "In addition,
+    27	QmodemPro works hand-in-glove with our other retail product line, the
+    28	WILDCAT! BBS software."
+    29	
+    30	Enhanced Off-Line Xpress Mail Reader Heads New Features
+    31	
+    32	     QmodemPro offers more than 75 new features compared to Qmodem
+    33	Version 5, the first version of Qmodem sold under the MSI label,
+    34	unveiled this past January.  Heading the list of new features is an
+    35	enhanced off-line mail reader.  This capability allows users to
+    36	download packets of mail and then read the contents off-line,
+    37	significantly reducing expensive long-distance charges.
+    38	
+    39	     The enhanced off-line mail reader OLX features full mouse support
+    40	with pull-down menus and resizable windows.  Other new features include:
+    41	
+    42	*    Ability to open multiple packets and view multiple conferences at
+    43	     once.
+    44	
+    45	*    No limitations to the size of packets, conferences or message size.
+    46	
+    47	*    More efficient use of memory resources, including EMS and XMS.
+    48	
+    49	*    An integrated message editor with spelling checker and 124,000 word
+    50	     dictionary.  External editors also supported.
+    51	
+    52	*    Full cut, copy and paste between messages, conferences and replies,
+    53	     even across packets.
+    54	
+    55	*    Ability to save messages to folders for reading and action at a
+    56	     later time.
+    57	
+    58	*    Internal address book with full links via QmodemPro to CIS, MCI,
+    59	     FAX and other services.
+    60	
+    61	*    Advanced personal mail handling via an IN BOX with automatic
+    62	     archiving and configurable purging.  Personal mail no longer
+    63	     disappears when a packet is deleted.
+    64	
+    65	*    Redirection of replies and messages to any location, not just the
+    66	     original source system.
+    67	
+    68	Full mouse support and a pull-down menu interface have also been added
+    69	throughout the QmodemPro program.  Other key new features of the
+    70	communications software include:
+    71	
+    72	*    The dialing directory now supports up to 4,095 entries per
+    73	     telephone book, with an unlimited number of books.
+    74	
+    75	*    Ideally suited for working with a BBS, the dialing directory
+    76	     now includes support for up to four alternate telephone numbers
+    77	     per entry.  This allows the user to automatically try a
+    78	     different telephone number if the primary BBS number is busy.
+    79	
+    80	*    Group-dialing support allows users to group-dial telephone book
+    81	     entries as one entry.  When dialing multiple E-mail systems,
+    82	     QmodemPro will download mail from one system and automatically
+    83	     continue on to the next entry in the group.
+    84	
+    85	*    Automatic linking between mail packets created in OLX and dialing
+    86	     directory entries.  This allows sending all pending replies with a
+    87	     single keystroke.
+    88	
+    89	*    QmodemPro includes send FAX ability, supporting both ASCII and .PCX
+    90	     files through any Class 1 or  Class 2 FAX modem.  FAX send
+    91	     integrates with OLX completely making it possible to create and
+    92	     send a FAX and custom cover sheet by simply typing the message to
+    93	     send.
+    94	
+    95	*    MCI Mail and CompuServe E-mail gateway support, enabling users
+    96	     to retrieve or send messages on these popular E-mail accounts.
+    97	
+    98	*    125 pre-configured modem setups for fast installation.
+    99	
+   100	     Xmodem and ASCII.  Up to 10 external protocols can be added,
+   101	     including bi-directional protocols such as BIMODEM and HSLINK.
+   102	
+   103	*    Five new terminal emulations have also been added, including
+   104	     WYSE 50, DEC VT 102, 220, 320 and TVI 925.
+   105	
+   106	Direct orders for QmodemPro are being taken effective 10/13/92.  A
+   107	specific release date cannot be announced since the manuals and
+   108	packaging are still in production.
+   109	
+   110	The retail price for QmodemPro with Off-Line Xpress is $99, and it will
+   111	be available in retail outlets in 6-8 weeks. Orders placed with MSI
+   112	direct will be processed as soon as the packaging is complete.  Allow
+   113	6-8 week for delivery for all orders.  Orders will be shipped on a
+   114	first-in first-out basis.
+   115	
+   116	There are several special offers available.  Review the section below
+   117	for details.  Should an individual be eligible for more than one offer,
+   118	we encourage you to order the one which gives the best pricing
+   119	advantage. Only one special price offer is available per registration.
+   120	
+   121	   *    A special upgrade offer for only $35 + s/h is available to
+   122	        registered users of Qmodem v5.x, and to users of Qmodem 4.x
+   123	        purchased from the Forbin project.  In order to take advantage
+   124	        of this upgrade offer your registration card must be on file
+   125	        with MSI or your name and registration information must be on
+   126	        file in the database of purchasers from the Forbin project.
+   127	
+   128	   *    A special offer is also being extended to registered WILDCAT!
+   129	        sysops for a limited time.  Until December 31, 1992 any WILDCAT!
+   130	        sysop can purchase QmodemPro for only $50 + s/h, a discount of
+   131	        almost 50%.  If you don't own WILDCAT! but want to get it, you
+   132	        can order WILDCAT! between now and December 31 and get QmodemPro
+   133	        at the discount.
+   134	
+   135	Because the new OLX v3 integrates so well with QmodemPro and has
+   136	extra capabilities when used with QmodemPro (such as FAX, CIS, MCI
+   137	etc.), we are also extending special offers to registered users of the
+   138	OLX and SLMR products.
+   139	
+   140	   *    Registered users of OLX v2.2 will be receiving the new OLX v3
+   141	        automatically, provided the registration card has been received
+   142	        at MSI. A special offer is also being extended to these OLX
+   143	        registered users to enable them to receive the full QmodemPro
+   144	        package (including OLX) for only $20 + s/h.  To take advantage
+   145	        of this offer you must place your order by phone with MSI prior
+   146	        to November 1, 1992!  This offer is not good after the free OLX
+   147	        update has been mailed.  You must place your order prior to
+   148	        November 1 so that we can change our system records before we
+   149	        ship your package. After that date you can take a credit for $40
+   150	        toward a purchase of QmodemPro (see last offer).
+   151	
+   152	   *    Registered users of the SLMR program from Technique Computer
+   153	        Systems can upgrade to OLX v3 for $20 + s/h.  They may also
+   154	        purchase QmodemPro with OLX for $40 + s/h if desired.  This
+   155	        offer expires on December 31, 1992.
+   156	
+   157	   *    Registered users of either OLX 2.2 or SLMR may upgrade to
+   158	        QmodemPro at any time by taking a credit of their purchase price
+   159	        ($40 for OLX 2.2 and $20 for SLMR) against the $99 QmodemPro
+   160	        price.
+   161	
+   162	
+   163	Shipping and handling charges for all orders are as follows:
+   164	
+   165	        Continental U.S.                - $10
+   166	        Hawaii, Alaska & Canada         - $15
+   167	        Overseas                        - $35
+   168	
+   169	        Add $5 for all COD orders. CODs must be paid by cashiers check
+   170	        or money order, no personal checks or cash.
+   171	
+   172	Orders are shipped exclusively by Federal Express.
+   173	
+   174	
+   175	Orders can be placed as follows:
+   176	
+   177	    *   Call 1-800-999-9619 to order via VISA, MC, AMEX, Discover or COD.
+   178	
+   179	    *   Order via FAX by calling 805-395-0713.  Please indicate your
+   180	        full shipping address, the name of the product desired, and
+   181	        registration information if taking advantage of an update
+   182	        discount. Also include a daytime phone number for use in the
+   183	        event we need to contact you about your order.
+   184	
+   185	    *   Mail your order information to us at P.O. Box 2264, Bakersfield,
+   186	        CA  93303.  Please indicate your full shipping address, the name
+   187	        of the product desired, and registration information if taking
+   188	        advantage of an update discount. Also include a daytime phone number fo
+   189	        event we need to contact you about your order.
+   190	
+   191	    *   Order via our BBS by calling 805-395-0650 (non-registered lines)
+   192	        or 805-395-0250 (registered lines).
+   193	
+   194	

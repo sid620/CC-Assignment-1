@@ -1,0 +1,107 @@
+     1	EARLYBST.TXT   (All rights reserved)   Wed 13-September-1995
+     2	
+     3	Timo's subjective choice of best PD & SW MS-DOS early material
+     4	--------------------------------------------------------------
+     5	
+     6	Not surprisingly many of the selections that were on my earlier
+     7	versions of the best programs list BESTPROG.TXT were utilities that
+     8	complemented what the earlier MS-DOS versions lacked. I have moved
+     9	the consequently outdated selections in here.
+    10	
+    11	ask.exe         The most important command originally missing from
+    12	                MS-DOS batch programming. Ask comes under many names
+    13	                and has been rewritten by countless programmers.
+    14	                Also I have written my own in ftp://garbo.uwasa.fi
+    15	                /pc/ts/tsbat47.zip. The basic idea of asks is to
+    16	                prompt the user for a choice, and return an
+    17	                errorlevel (or sometimes put a value to an
+    18	                environment variable), which then can be used for a
+    19	                conditional jump in the batch in accordance with the
+    20	                user's choice. My own ask uses the most common ask
+    21	                standard of returning as the errorlevel the ASCII
+    22	                number of the first letter of the user's response,
+    23	                but I also have written an errorlevel version. It is
+    24	                interesting that MicroSoft finally succumbed and
+    25	                introduced a similar command in MS-DOS 6.0 calling
+    26	                it CHOICE. You can find a choice clone choose.exe in
+    27	                tsutlf15.zip if you don't have MS-DOS version 6+.
+    28	                Furthermore, although little known, ordinary batch
+    29	                programming can be used to input the user's response
+    30	                to an environment variable, as explained in
+    31	                tsbat47.zip.
+    32	
+    33	ced10da.zip     Command line editor. This facility lets the user to
+    34	                recall earlier commands, edit the commands, make
+    35	                aliases (synonyms) for the commands, and optionally
+    36	                ignore commands. CED is old, but still extremely
+    37	                useful as such even compared DOSKEY which was
+    38	                introduced with MS-DOS 5.0. Don't go without it, or
+    39	                some other good, alternative command line editor.
+    40	                Despite being old, CED still often features on the
+    41	                best program lists of many computer magazines. The
+    42	                one feature CED unfortunately lacks is file name
+    43	                completion present in some other command line
+    44	                editors. The later versions of CED have gone
+    45	                commercial, as far as I know. For other
+    46	                alternatives, like command line editors with file
+    47	                name completion, see Garbo's /pc/cmdutil directory.
+    48	
+    49	dirw.exe        From my own ftp://garbo.uwasa.fi/pc/ts/tsutil41.zip
+    50	                utility collection. It is like MS-DOS dir /w, but it
+    51	                also shows the file attributes, and it can be made
+    52	                to recurse all the directories. I use it on a daily
+    53	                basis to have a backup list of what my hard disks
+    54	                contain. It is vindicative to note that in DOS 5.0
+    55	                the new DIR command was endowed among other things
+    56	                with abilities what my dirw already had. Yet
+    57	                dirw.exe still has a feature which the MS-DOS dir
+    58	                curiously lacks (at least in MS-DOS 5.0). My
+    59	                dirw.exe displays the size of a disk also if it has
+    60	                no files.
+    61	
+    62	keyrate.exe     From my own ftp://garbo.uwasa.fi/pc/ts/tsutld22.zip
+    63	                utility collection. What it effectively does is that
+    64	                it speeds up the cursor movement. An absolute
+    65	                necessity because the slow default keyrepeat rate
+    66	                makes moving the cursor a real pain in the neck.
+    67	                Mostly found only in commercial packages. Haven't
+    68	                seen many shareware or PD "competitors", but I may
+    69	                be too "optimistic". MS-DOS 5.0 finally introduced
+    70	                this feature into the MODE command, which goes to
+    71	                show that the idea was a good one. - On MS-DOS 3.3 I
+    72	                have in my autoexec.bat "keyrate 0 0". In 5.0 (and
+    73	                6.0) I use "mode con: rate=30 delay=1". Since some
+    74	                programs (e.g. Windows) alter the typemaatic rate, I
+    75	                also have "doskey fast=mode con: rate=32 delay=1" in
+    76	                my AUTOEXEC.BAT.
+    77	
+    78	tlb-v252.zip    The Last Byte MS-DOS Upper Memory Manager by Dan
+    79	                Lewis. It enables loading device drivers and TSRs to
+    80	                high memory. Such a utility becomes a practical
+    81	                necessity when the number of memory-hungry TSRs
+    82	                grows, as happened on my late MS-DOS 3.30 office 386
+    83	                where I had, for example, a network driver to
+    84	                connect to our department's laser printer. None of
+    85	                the upper memory managers are simple to use, but
+    86	                Dan's is not prohibitively difficult as some others.
+    87	                At the time of first introducing this list Dan was
+    88	                upgrading to 2.00 with a new user interface. (I was
+    89	                of the beta testers, and I don't accept such a task
+    90	                easily because of my own time limitations). Last
+    91	                Byte is a typical example of a utility grown out of
+    92	                deficiencies of the earlier MS-DOS versions. The
+    93	                upper memory management was finally introduced in
+    94	                MS-DOS 5.0 with the all important power user's
+    95	                LOADHIGH command. Dan has a mailing list on Internet
+    96	                for TLB users. Last Byte still is a fine program,
+    97	                but has naturally lost practially all its edge with
+    98	                the introduction of MS-DOS' own memory management in
+    99	                version 5.0. But it qualifies on the list "for fine
+   100	                services rendered". As far as I understand, Dan has
+   101	                decided to give up maintaing the progra,
+   102	
+   103	....................................................................
+   104	Prof. Timo Salmi   Co-moderator of news:comp.archives.msdos.announce
+   105	Moderating at ftp:// & http://garbo.uwasa.fi archives  193.166.120.5
+   106	Department of Accounting and Business Finance  ; University of Vaasa
+   107	ts@uwasa.fi http://uwasa.fi/~ts BBS 961-3170972; FIN-65101,  Finland

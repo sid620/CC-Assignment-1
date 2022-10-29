@@ -1,0 +1,441 @@
+     1	       
+     2	       ---------------------------------------------------------------- 
+     3	 
+     4	                  RECHARGEABLE BATTERIES AND LAPTOP COMPUTERS 
+     5	
+     6	       ---------------------------------------------------------------- 
+     7	       
+     8	       No other topic seems to inspire more opinion and comment than 
+     9	       the proper care and handling of rechargeable laptop and notebook 
+    10	       computer batteries. Should you slow or fast charge them? What is 
+    11	       the true life of a rechargeable battery after which it must be 
+    12	       disposed? Do rechargeable batteries have a "memory" effect? Can 
+    13	       nickel-cadmium batteries explode when charging or discharging? 
+    14	
+    15	       Although this tutorial may seem technical in places, try to read 
+    16	       ALL of it since battery power may be your only source of laptop 
+    17	       power on many occasions. 
+    18	
+    19	       For many portable computers a variety of rechargeable battery 
+    20	       options exist today. But frequently it comes down to the old 
+    21	       standby: nickel-cadmium batteries. Ubiquitous in consumer 
+    22	       electronic items such as shavers, flashlights, toothbrushes and 
+    23	       radios, nickel-cadmiums or "nicads" are a reasonable balance of 
+    24	       power, cost and weight and are used by many computer 
+    25	       manufacturers as the portable power source of choice. Let's 
+    26	       scratch the surface on the topic since there is QUITE A BIT the 
+    27	       manufacturer doesn't tell you about nicads.... 
+    28	       
+    29	       Glance at the following chemical equation which is at the heart 
+    30	       of the nickel-cadmium cell reaction. Don't get overly anxious 
+    31	       because high school chemistry was not your favorite subject. 
+    32	       We'll take things slowly.... 
+    33	       
+    34	                           <-----
+    35	       Cd + 2 NiOOH + 2 KOH -----> Cd(OH) + 2NiO + 2 KOH 
+    36	                                        2 
+    37	        
+    38	       In this highly simplified reaction sequence, electricity is 
+    39	       generated when the reaction proceeds in the direction of the 
+    40	       right pointing arrow, the discharge cycle. If the reaction 
+    41	       proceeds in the left direction the cell is charging. 
+    42	       
+    43	       In simplest terms, a nicad cell (a battery is constructed of 
+    44	       several cells hooked together) has a positively charged plate of 
+    45	       nickelic hydroxide and a negative plate of metallic cadmium. The 
+    46	       liquid between the positive and negatives plates which 
+    47	       facilitates this chemical reaction is usually a dilute solution 
+    48	       of potassium hydroxide - similar to lye or the Draino (tm) 
+    49	       solution your pour down the sink to clean your plumbing. When 
+    50	       discharging and thus producing electricity, the nickelic 
+    51	       hydroxide is reduced to nickelous hydroxide as hydroxyl ions 
+    52	       from the potassium hydroxide electrolyte combine with the 
+    53	       cadmium metal of the negative plate of the cell to form cadmium 
+    54	       hydroxide. Cadmium is oxidized when this happens and electrons 
+    55	       are provided into the external circuit, such as your laptop 
+    56	       computer. 
+    57	
+    58	       When charging, the process reverses and hydroxyl ions combine 
+    59	       with the nickel which accepts electrons from the external 
+    60	       charging circuit. Notice that the electrolyte, potassium 
+    61	       hydroxide is unchanged with two atoms or units produced on both 
+    62	       sides of the chemical equation whether charging or discharging. 
+    63	       This is why you do not need to add more water to a nicad battery 
+    64	       which operates as a sealed reaction container. It regenerates 
+    65	       its electrolyte in both the charge and discharge cycles. 
+    66	       
+    67	       All of this is an ideal nicad cell. The real world of computers 
+    68	       and rechargeable batteries is not quite that simple. The first 
+    69	       SERIOUS item to consider is that all nicad cells and batteries 
+    70	       generate gas during both the charging, and to a lesser extent, 
+    71	       discharging cycle. 
+    72	       
+    73	       During recharging, oxygen gas is generated at the positive 
+    74	       electrode while hydrogen gas is produced at the negative 
+    75	       electrode. In other types of rechargeable cells, a standard lead 
+    76	       acid car battery for example, these gasses are usually released 
+    77	       into the atmosphere. The nicad cell does not have this luxury 
+    78	       since it must operate cleanly and with minimum release of gasses 
+    79	       or liquids. To minimize hydrogen gas release, nicad cells 
+    80	       usually have an oversized negative electrode which tends to 
+    81	       reabsorb hydrogen gas. In addition oxygen is recycled by 
+    82	       combining with metallic cadmium to produce cadmium oxide. So 
+    83	       called "fast-charging" nicad cells prevent gas buildup and 
+    84	       dissipate some of the heat generated during the quick charge 
+    85	       cycle by further enlarging the electrodes. Heat and gas buildup 
+    86	       is thus controlled and kept to tolerable limits in quick charge 
+    87	       nicads. 
+    88	
+    89	       The first of several lessons which can be derived from this 
+    90	       technical discussion is that the buildup of hydrogen and oxygen 
+    91	       gas during the charging cycle is normally dissipated unless HIGH 
+    92	       recharging rates are attempted or unusually high temperatures 
+    93	       are produced. If the nicad cell is charged at abnormally high 
+    94	       rates the oxygen gas cannot dissipate and will EXPLOSIVELY 
+    95	       rupture the cell. 
+    96	       
+    97	       A safety system of sorts exists within the design structure of 
+    98	       most nicad cells via a pressure venting system - a plastic 
+    99	       diaphragm membrane at the top of the cell and small external 
+   100	       hole or "exhaust vent." In theory the system safely vents excess 
+   101	       pressure and then reseals. In practice the resealing is never 
+   102	       complete and the cell may continue to ooze caustic electrolyte 
+   103	       or worse the vent may not open soon enough and the cell may 
+   104	       simply explode. The vent is really designed for SEVERE charging 
+   105	       or discharging rates. In normal use it should NEVER activate; if 
+   106	       it does, the battery should be discarded. In cases of massive 
+   107	       overcharge or discharge the safety vent is usually too little 
+   108	       too late and a dangerous battery explosion takes place anyway. 
+   109	       
+   110	       During rapid discharge - short circuiting the nicad cell or 
+   111	       battery with a piece of wire, for example - gas buildup and heat 
+   112	       can be generated and a violent explosion can occur. Another 
+   113	       reason why nicads can explosively burst when short circuited and 
+   114	       forced to discharge quickly is that they have relatively low 
+   115	       "internal resistance" which allows them to dump their electrical 
+   116	       capacity quickly and with explosive force. 
+   117	       
+   118	       Common zinc carbon batteries have a much higher internal 
+   119	       resistance and when shorted may produce serious burns to your 
+   120	       fingers from melting wire but usually will not explode due to 
+   121	       sudden gas buildup. On the point of sudden nicad discharge by 
+   122	       short circuit you might be tempted to say that it would be highly 
+   123	       unlikely with a portable computer battery. Not so. Tales are 
+   124	       told of laptop computer batteries which have exploded when a 
+   125	       careless owner shoved several fully charged nicad batteries in a 
+   126	       travel case with a set of spare keys. If the keys accidentally 
+   127	       contact both the positive and negative poles of the nicad 
+   128	       simultaneously, a violent explosion reaction can occur!   
+   129	       
+   130	       Clearly nicads have some unusual features to be respected and 
+   131	       understood. Be careful with charged nicads and treat them as the 
+   132	       small "hand grenades" which they can become. Heat, sudden short 
+   133	       circuits and high rates of charging are the problem in this 
+   134	       area. 
+   135	       
+   136	       The correct operating temperature for discharging and recharging 
+   137	       nicads is from 65F to 85F, according to most manufacturers. High 
+   138	       and low ranges of from +32F to 115F are possible as upper and 
+   139	       lower limits if nicads MUST be used in extreme environments 
+   140	       although discharge and recharge efficiency may be adversely 
+   141	       affected - it may require more power to fully charge the battery, 
+   142	       charge may not be held for as long on the shelf after charging 
+   143	       and finally discharge may not produce a full three or four hour 
+   144	       computing session at these severe temperature ranges.
+   145	
+   146	       Electrically, individual nicad cells - the units which are 
+   147	       hooked together to produce the final battery - have a charged 
+   148	       voltage of 1.25 volts. Nominally this drops to 1.2 volts under 
+   149	       actual discharge use or "load" in the electrical device. 
+   150	       Individual cells are strung together in "series" with the 
+   151	       positive terminal of one cell touching the negative terminal of 
+   152	       the next cell in sequence to raise the voltage to that suitable 
+   153	       for the electrical device. Thus two cells hooked in "series" as 
+   154	       a battery produce 2 X 1.2 volts = 2.4 volts. Likewise, three 
+   155	       cells connected as a battery produce 3.6 volts. By the way, 
+   156	       ordinary flashlight batteries of the carbon zinc type have a 
+   157	       nominal voltage of 1.5 volts compared to the 1.2 volts of the 
+   158	       nicad cell.
+   159	
+   160	       Nicad batteries have an unusual and highly characteristic 
+   161	       discharge behavior which is best described as "a stable 
+   162	       discharge plateau then sudden voltage drop." Essentially a fully 
+   163	       charged nicad battery provides constant voltage and current 
+   164	       until near its exhaustion at which point the voltage SUDDENLY 
+   165	       DROPS and the cell is, for practical purposes, completely 
+   166	       discharged. 
+   167	       
+   168	       Compare this to standard carbon zinc and alkaline batteries 
+   169	       which gradually drop in voltage and amperage through the 
+   170	       discharge cycle of the battery. In use nicads tend to be stable, 
+   171	       then die suddenly at the end while conventional non-rechargeable 
+   172	       batteries slowly decay in voltage as their power is consumed. 
+   173	       One conclusion you might draw from this is that when your 
+   174	       portable computer beeps that the nicad battery voltage is 
+   175	       nearing exhaustion you literally have only moments of use left! 
+   176	       The good news is that nicads produce dependable power through 
+   177	       their discharge cycle which is highly desirable with digital 
+   178	       data and computer memory devices. 
+   179	
+   180	       The "memory effect" of nicads is perhaps the most discussed and 
+   181	       misunderstood phenomenon associated with nicad cells and 
+   182	       batteries. An undesirable and somewhat unique characteristic of 
+   183	       nicad batteries that they can develop a "memory" which can 
+   184	       decrease either the capacity or voltage of the battery. 
+   185	       
+   186	       The first type of memory problem in nicads - voltage memory - is 
+   187	       caused by sustained charging over many days or months. This 
+   188	       memory effect can be accelerated by high ambient temperature 
+   189	       extreme duration of charge and high rate of charge. In effect 
+   190	       the battery is charged for such a long period of time or at such 
+   191	       a high rate or high temperature that the efficiency of the 
+   192	       chemical reaction is impaired and proper terminal voltage 
+   193	       readings are not achieved. 
+   194	       
+   195	       In the second, more common "memory capacity" problem, the nicad 
+   196	       loses the capability to deliver its full power capacity. One 
+   197	       cause of this peculiar memory problem is the FREQUENT PARTIAL 
+   198	       DISCHARGE of the battery - use for perhaps 30 minutes - and then 
+   199	       full recharge again. In effect the nicad battery "learns" that 
+   200	       only part of its capacity is used and over several cycles of 
+   201	       "partial depletion and then full recharge" that less then full 
+   202	       capacity is needed. It will then be unable to deliver a full 
+   203	       two or three hour standard discharge in normal use. Fortunately 
+   204	       memory effects are usually temporary and can be reversed.
+   205	       
+   206	       The chemical basis for these two memory effects is not fully
+   207	       understood, but may have to do with obscure oxidation reactions 
+   208	       which temporarily coat the internal electrodes of the battery 
+   209	       with thin layers of complex non-reactive chemical compounds 
+   210	       which can be removed by more fully "exercising" a nicad through a 
+   211	       complete charge/discharge cycle. 
+   212	
+   213	       It is claimed by many manufacturers that this odd memory effect 
+   214	       of nicads has been largely eliminated due to modern 
+   215	       manufacturing methods. However to some degree this may in fact 
+   216	       be a result of newer charging systems and the relatively 
+   217	       complete discharge of nicad power by modern laptops. In effect 
+   218	       the batteries are charged and discharged in a more appropriate 
+   219	       manner by most laptop users so memory effects "appear" to be no 
+   220	       longer a problem.
+   221	
+   222	       Both memory problems - voltage memory and capacity memory - are 
+   223	       usually temporary and can be corrected by discharging the 
+   224	       battery to or very near its exhaustion point (optimum drawdown 
+   225	       voltage is about 1.0 to .9 volts for a standard 1.2 volt nicad) 
+   226	       and then recharging it to full capacity. Repeat this discharge-
+   227	       recharge cycle from 2 to five times and frequently the nicad 
+   228	       will lose its memory for the "partial capacity" and again 
+   229	       provide a full 3 or 4 hours of use in most laptops. Actually, 
+   230	       frequent FULL discharge and recharge prolongs the life of a 
+   231	       nicad. The more you use them the longer they last! 
+   232	
+   233	       Most folks who want to completely discharge laptop nicads simply 
+   234	       leave the computer on until it runs down. A much faster method is 
+   235	       to use the following batch file which continuously reads the 
+   236	       directory of a disk and writes the contents to a disk file. 
+   237	       The continuous disk access drains nicad power much faster. If 
+   238	       you are not familiar with batch files, read the batch file 
+   239	       tutorial elsewhere in this program. Here's the three line batch 
+   240	       file. To stop the batch file at any time press the control and 
+   241	       break keys simultaneously. When finished you may wish to erase 
+   242	       both the batch file and the small file named "test" which it 
+   243	       creates.
+   244	
+   245	       :start
+   246	       dir>test
+   247	       goto start
+   248	
+   249	       As an aside, the newer nickel-hydride batteries used in some 
+   250	       laptop and notebook computers do not seem to suffer from memory 
+   251	       effects. But these batteries are more expensive and not in 
+   252	       common use by most laptop manufacturers.
+   253	
+   254	       Nicads do eventually fail. And for various reasons. Temporary or 
+   255	       partial failure due to memory effects was discussed in the 
+   256	       previous paragraphs. 
+   257	       
+   258	       Permanent failure - usually between 3 to 5 years into the life 
+   259	       of a typical nicad can happen due to the growth of 
+   260	       characteristic "whiskers" of conducting chemical compounds which 
+   261	       effectively bridge the internal gap between the positive and 
+   262	       negative electrodes inside the battery. Effectively these small 
+   263	       contamination deposits gradually short circuit the battery 
+   264	       internally which leads to inability to charge or discharge. Some 
+   265	       clever electronic hobbyists build high current "surge" power 
+   266	       supplies which can burn open these internal deposits and reopen 
+   267	       the gap between positive and negative electrodes. A risky 
+   268	       practice at best - given the explosive reputation of nicads - but 
+   269	       "zapping" nicads in this manner has been documented as one way 
+   270	       to add life to an otherwise dying battery. A risky an usually 
+   271	       ill-advised attempt to salvage an otherwise dying battery.
+   272	
+   273	       A different permanent failure can result from premature loss of the 
+   274	       liquid electrolyte from the battery. High temperature and/or 
+   275	       high charging rates are usually the cause here. Quick-charge 
+   276	       batteries frequently fail due to this problem if their charging 
+   277	       circuits are not properly designed. If the top edge of the cell 
+   278	       which contains the fail safe pressure release valve has a 
+   279	       buildup of white corrosion powder this is probably the residue 
+   280	       ot the expelled electrolyte and the cell may be on its way to 
+   281	       failure and should be replaced. Note that you can only see this 
+   282	       corrosion buildup on the top of the SINGLE nicad cells which are 
+   283	       usually encased within a surrounding plastic battery housing. 
+   284	       The plastic housing may show little problem externally. 
+   285	       Generally, however, the average computer user should not attempt 
+   286	       to open the protective plastic case of the battery to examine 
+   287	       each cell. If the manufacturer seals several individual nicad 
+   288	       cells in a plastic battery container it is for GOOD reason and 
+   289	       your own personal safety. As a rule quick charge nicads do not 
+   290	       last as long a regular nicads due to heat build up during the 
+   291	       charging cycle.
+   292	
+   293	       So how long will a nicad battery last before complete failure 
+   294	       occurs? Manufacturers estimate LOW figures between 500 and 1,000 
+   295	       full charge and discharge cycles or about 3 to 5 five years, as 
+   296	       noted above. Some nicads have been known to approach 5,000 to 
+   297	       10,000 charge and discharge cycles before permanent failure. 
+   298	       Excessive quick charging, heat buildup, infrequent use and lack 
+   299	       of full charge all contribute to shortened nicad lifespan. 
+   300	
+   301	       Charging and discharging mathematics... 
+   302	
+   303	       Charging nicads is generally done automatically by a charging 
+   304	       circuit. Two practical pieces of advice: 1) if the battery 
+   305	       becomes VERY hot something could be wrong 2) if the manufacturer 
+   306	       tells you that the battery will be fully charged after a certain 
+   307	       length of time although it can be left charging longer you will 
+   308	       probably do the nicad a favor by removing it after full charge 
+   309	       is reached. Some clever nicad users simply attach an inexpensive 
+   310	       electrical timer - similar to those used to turn lights on and 
+   311	       off in the evening - directly to the nicad charger to prevent 
+   312	       overcharging. 
+   313	       
+   314	       Generally nicads have a proper charging rate which depends on 
+   315	       each manufacturers recommendation. For standard nicads which are 
+   316	       NOT quick charge types the proper slow or "trickle" charge rate 
+   317	       is determined by dividing the ampere hour capacity of the 
+   318	       battery by 10. For example if a nicad has a total capacity of 1 
+   319	       ampere hour, dividing this by ten (1/10) produces a correct 
+   320	       trickle charging rate of .1 amps or 100 milliamps. Quick-charge 
+   321	       nicads can accept a charge rapidly and the suggested charging 
+   322	       rate is determined by dividing the ampere hour capacity of the 
+   323	       battery by 3 rather than by 10. These figures represent the 
+   324	       trickle charge rate which theoretically means the nicad "could" 
+   325	       be safely left charging indefinitely without harm. 
+   326	
+   327	       Higher efficiency chargers are designed not to simply trickle 
+   328	       charge nicads but start a discharged battery at a HIGH rate of 
+   329	       charge and then taper the charging current back quickly to the 
+   330	       safer "trickle" charge rate once full charge is reached. Usually 
+   331	       for regular nicads this "initial surge charge" can be as high as 
+   332	       the ampere hour capacity divided by 3. For quick charge nicads 
+   333	       this "initial surge charge" can be as high as the ampere hour 
+   334	       capacity divided by 1. Obviously these are very high charge 
+   335	       rates and are provided to discharged batteries and then 
+   336	       quickly discontinued once full charge is approached. Clearly a 
+   337	       charging circuit of this sophistication is expensive and may 
+   338	       even contain its own microprocessor to sense the discharge level 
+   339	       of the nicad and calculate the optimum charge rate, time and 
+   340	       trickle charge transition. Since we have previously discussed 
+   341	       the adverse affect of heat on nicads it is essential to note 
+   342	       that NICADS SHOULD BE CHARGED IN A COOL OR ROOM TEMPERATURE 
+   343	       location since they normally generate heat when charged. If you 
+   344	       minimize heat buildup - especially during the charging cycle - 
+   345	       you will prolong the useful life of your nicad battery. 
+   346	       
+   347	       Discharging a nicad - especially if you are trying to remove a 
+   348	       "memory" problem such as that discussed earlier does NOT mean 
+   349	       discharging a cell to zero volts. Usually the correct discharge 
+   350	       voltage is about 1.0 volts. This may seem odd when you consider 
+   351	       that the fully charged cell has a 1.2 volt reading, but in fact 
+   352	       at 1.0 volts a typical nicad cell has released about 90% to 95% 
+   353	       of its energy - another eccentric, but predictable behavior of 
+   354	       nicads given the rapid "voltage drop off" as they near the end 
+   355	       of their three or four hour life in a laptop computer. 
+   356	       
+   357	       Shelf life. While carbon zinc and alkaline batteries can hold 
+   358	       their charge for years, nicads lose their charge relatively 
+   359	       quickly. Although it varies, one quick rule of thumb is that a 
+   360	       typical fully charged nicad will lose roughly 25% to 35% of full 
+   361	       charge in one month. Then another 25% to 35% of THE CHARGE 
+   362	       REMAINING in the next month. And so on and so on. Thus if you 
+   363	       have several nicad batteries you want to charge for a trip you 
+   364	       will be taking in a month, it is probably better to charge ALL 
+   365	       OF THEM the final week just before the trip rather than the 
+   366	       month before. For want of a better phrase, this might be called 
+   367	       "shelf discharge" and is normal with all nicads and has to do 
+   368	       with slight electrical leakage and chemical compound decay 
+   369	       internally within a charged nicad which sits on a shelf. Cooling 
+   370	       or refrigerating the nicad (but NOT freezing) will slow this 
+   371	       "shelf discharge" since you are cooling and slowing the 
+   372	       breakdown reaction. In fact ALL batteries will last longer when 
+   373	       refrigerated until they are used. Simply store them in 
+   374	       individual sealed plastic bags (to minimize moisture 
+   375	       condensation) and place them in the refrigerator. 
+   376	
+   377	       And so we conclude with a little summary....
+   378	       
+   379	       1) Do exactly what the manufacturer suggests for both 
+   380	       discharging and recharging a nicad.
+   381	       
+   382	       2) Keep temperatures - especially during charging - cool or at 
+   383	       normal room temperature.
+   384	       
+   385	       3) Never short circuit a nicad intentionally or accidentally.
+   386	       
+   387	       4) Try cycling a nicad through several COMPLETE discharge and 
+   388	       recharge cycles if it "appears" to be faulty an incapable of 
+   389	       operating your equipment for a normal three or four hour 
+   390	       operating period. 
+   391	       
+   392	       5) Remove nicads from charging circuits or discontinue charging 
+   393	       when full charge has been reached. 
+   394	       
+   395	       6) Watch for white flaky corrosion deposits on the upper edge of 
+   396	       the cell near the pressure vent this can mean impending cell 
+   397	       failure and electrolyte loss.
+   398	       
+   399	       7) Dispose of permanently defective nicads properly - contact 
+   400	       the manufacturer for instructions since cadmium is a dangerous 
+   401	       toxic metal and has been banned from many dump sites. Try 
+   402	       calling your local city hall and ask who can answer a question 
+   403	       about cadmium metal waste disposal. 
+   404	       
+   405	       8) When the nicad battery power begins to drop near the end of a 
+   406	       discharge cycle it will drop VERY QUICKLY due to the rapid 
+   407	       characteristic dropoff of nicads. Prepare for laptop shutdown 
+   408	       quickly. 
+   409	       
+   410	       9) Cycle your nicads through a FULL DEEP discharge and FULL 
+   411	       COMPLETE recharge frequently - they will last LONGER before you 
+   412	       must dispose of them and deliver MORE power when used. 
+   413	       
+   414	       10) Infrequently used nicads should be charged and discharged at 
+   415	       least once or twice every two or three months to prolong their 
+   416	       usable lifetime before permanent failure.
+   417	       
+   418	       11) If your nicads are stated by the manufacturer to be quick 
+   419	       charge type, you can probably prolong their life by slow or 
+   420	       trickle charging them (if your charger provides that option) 
+   421	       since you will minimize heat and gas buildup within the cell. 
+   422	       Just because they can be quick charged does not mean they MUST 
+   423	       be quick charged. Nicads last longer and deliver more power when 
+   424	       not driven to extremes of temperature or overcharging. 
+   425	       
+   426	       Tutorial finished. Be sure to order your FOUR BONUS DISKS which 
+   427	       expand this software package with vital tools, updates and 
+   428	       additional tutorial material for laptop users! Send $20.00 to 
+   429	       Seattle Scientific Photography, Department LAP, PO Box 1506, 
+   430	       Mercer Island, WA 98040. Bonus disks shipped promptly! Some 
+   431	       portions of this software package use sections from the larger 
+   432	       PC-Learn tutorial system which you will also receive with your 
+   433	       order. Modifications, custom program versions, site and LAN 
+   434	       licenses of this package for business or corporate use are 
+   435	       possible, contact the author. This software is shareware - an 
+   436	       honor system which means TRY BEFORE YOU BUY. Press escape key to 
+   437	       return to menu. 
+   438	                                           
+   439	
+   440	
+   441	       

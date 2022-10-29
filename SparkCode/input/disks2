@@ -1,0 +1,297 @@
+     1	
+     2	
+     3	
+     4	
+     5	        ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+     6	        บ                                                              บ
+     7	        บ                       A Hard Disk Drive                      บ
+     8	        บ                              for                             บ
+     9	        บ                     Steve's Dream Machine                    บ
+    10	        บ                                                              บ
+    11	        บ                              by                              บ
+    12	        บ                         Steve Gibson                         บ
+    13	        บ                  GIBSON RESEARCH CORPORATION                 บ
+    14	        บ                                                              บ
+    15	        บ     Portions of this text originally appeared in Steve's     บ
+    16	        บ               InfoWorld Magazine TechTalk Column.            บ
+    17	        บ                                                              บ
+    18	        ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+    19	
+    20	
+    21	
+    22	        I love hard disk storage, it's elegant, amazing, tricky,
+    23	        logical, and completely understandable. So let's begin by
+    24	        discussing one of my favorite aspects of modern personal
+    25	        computer architecture, and some critical components of Steve's
+    26	        Dream Machine... the Hard Disk Storage Sub-System.
+    27	
+    28	        We all want several things from our hard disk systems: High
+    29	        Speed, High Capacity, Low Cost, and High Reliability. I've found
+    30	        a unique combination of hard disk and controller, for any
+    31	        machine with a 16-bit I/O bus, which delivers all four in
+    32	        spades.
+    33	
+    34	        The performance of a hard disk system is determined by two
+    35	        simple and separate things: The average time required to begin a
+    36	        data transfer and the speed of that transfer once it begins.
+    37	
+    38	        In my opinion the world is completely seek-performance crazy.
+    39	        When someone asks "How FAST is that drive?" they're speaking
+    40	        only of the average seek performance. Sure it's a factor, but
+    41	        it's FAR from being the most important issue. What matters much
+    42	        more is the CONTROLLER's data encoding format, minimum
+    43	        achievable sector interleave, head switching behavior, and
+    44	        believe it or not, the number of heads on the drive!
+    45	
+    46	        DOS numbers a disk's sectors sequentially from the outside
+    47	        inward. When it wants to read or write a sector, it first
+    48	        determines where the sector is located on the drive then sends
+    49	        the heads to that location. This means that the issue is not
+    50	        how long it takes a drive to move its heads to cylinder 100, but
+    51	        rather how long it takes to move them to SECTOR NUMBER X.  For
+    52	        different drives these can be very different questions.
+    53	
+    54	        For example, let's take the ubiquitous Seagate ST225 20 megabyte
+    55	        hard disk drive as our baseline. It can't handle RLL encoding,
+    56	        so it's limited to 17 sectors per track. It also has four heads
+    57	        for four tracks per cylinder. Therefore this drives has a
+    58	        CYLINDER DENSITY of 17 times 4, or 68 sectors per cylinder.
+    59	
+    60	        Now let's compare this with the Steve's Dream Machine drive, the
+    61	        MiniScribe 3650. This lovely half-height drive handles RLL
+    62	        encoding without a hiccup for 26 sectors per track, and its 6
+    63	        heads combine to deliver a cylinder density of 156 sectors per
+    64	        cylinder.
+    65	
+    66	        In other words, the 3650 packs 2.29 times more sectors into each
+    67	        cylinder than the ST225. DOS's sector numbering scheme means
+    68	        that the 3650 needs to move its heads 2.29 times less far, or
+    69	        about 44% the distance of the ST225!
+    70	
+    71	        So while the Miniscribe drive might appear to be slow, with its
+    72	        head positioner rated at 61 milliseconds average access time, if
+    73	        we compare apples to apples, using the ST225's 65 millisecond
+    74	        speed as a reference, the 3650 is equivalent to a ST225 drive
+    75	        with a 26 millisecond actuator!
+    76	
+    77	        In order to correctly compare hard drive access times, I
+    78	        designed an index which takes all of these factors into account
+    79	        and which can be used to correctly rate any drive. I call it the
+    80	        Real Sector Access Factor, or RSA Factor.
+    81	
+    82	        To determine it for any drive simply multiply the sectors per
+    83	        track (17 for MFM encoding, 26 for RLL) by the drive's head
+    84	        count, then divide by the drive's average seek time. This yields
+    85	        an index which is completely compensated to account for cylinder
+    86	        density and allows drives to be correctly compared.
+    87	
+    88	        The RSA Factor for the ST225 is 1.04, versus 2.55 for the
+    89	        Miniscribe 3650. The Seagate ST238 with its RLL encoding comes
+    90	        in with a 1.60 and the ST251 with its 40 millisecond average
+    91	        access ranks an RSA Factor of only 1.70. As these numbers
+    92	        demonstrate, it's important to compare apples to apples when
+    93	        evaluating drive specifications. The "sluggish" 3650 even beats
+    94	        out the "swifter" ST251 when compared correctly.
+    95	
+    96	        In the case of average sector access times, the actual distance
+    97	        the heads must move is really determined by the number of
+    98	        sectors the drive and controller are able to stuff onto each
+    99	        cylinder, not by shaving milliseconds from average access times.
+   100	
+   101	        The Miniscribe 3650 is not quite officially RLL certified,
+   102	        though I hear rumors that it's about to be, simply because it
+   103	        works so well. I've tested many of them myself, and the bright
+   104	        boys at Northgate Computer Systems (who turned me on to this
+   105	        drive in
+   106	        the first place) are shipping thousands with RLL controllers in
+   107	        their 286 AT compatibles. They've had no problems. I'm quite
+   108	        comfortable with the 3650 and RLL encoding.
+   109	
+   110	        Finally, the 3650 is rated as having 809 cylinders, though it
+   111	        actually has 852. I've been low-level formatting mine out to 842
+   112	        cylinders. Then, under DOS 3.3 with RLL encoding, you get two
+   113	        MAXIMUM SIZE 33.4 megabyte DOS partitions! They couldn't be any
+   114	        bigger! Sixty-seven fast megabytes in an inexpensive half-height
+   115	        drive is hard to beat!
+   116	
+   117	        Okay, so we've defined the real performance of a hard disk sub-
+   118	        system to be: The average time required to begin a data
+   119	        transfer, and the time required to preform the transfer once it
+   120	        has started. We then examined the first of these terms and saw
+   121	        that the data encoding technology (MFM or RLL) and the drive's
+   122	        head count both dramatically affect the system's actual head
+   123	        seek performance since they determine the average distance the
+   124	        head must move to get to the proper DOS sector. Now we'll examine
+   125	        the second determiner of hard disk system performance, the actual
+   126	        data throughput.
+   127	
+   128	        Many tricky and interacting issues determine a hard disk
+   129	        system's delivered data throughput, but none of them are very
+   130	        tough to understand.
+   131	
+   132	        The raw data that rotates underneath our hard disk's heads
+   133	        moves at quite a clip. Data bits that are encoded with Modified
+   134	        Frequency Modulation (MFM) technology flow to and from the
+   135	        drive's head at 5 million bits per second, and Run Length
+   136	        Limited (RLL) encoding moves its data at 7.5 million bits per
+   137	        second. After subtracting the inter-sector gap intervals and
+   138	        sector addressing overhead, this translates to 522,240 bytes of
+   139	        real data per second for MFM and 798,720 bytes per second for
+   140	        RLL.
+   141	
+   142	        Unfortunately the hard disk controllers and motherboards used in
+   143	        PC, XT, and most current generation AT computers are completely
+   144	        unable to keep up with data flowing at this rate. So the
+   145	        practice known as SECTOR INTERLEAVING was invented to slow
+   146	        things down to a rate which our computers can handle. Sector
+   147	        interleaving spaces successively numbered sectors out around the
+   148	        disk so that our slower hard disk controllers and computers can
+   149	        digest the prior sector before the next one begins. Failing to
+   150	        space the sectors far enough apart incurs the substantial delay
+   151	        of waiting for the disk to spin all the way around again.
+   152	
+   153	        The original IBM XT's hard disk was interleaved at 6-to-1 (6:1)
+   154	        which meant that 1/6th of the track's sectors were read during
+   155	        each revolution of the disk and that six revolutions were
+   156	        required to read a single 17-sector track. This also meant that
+   157	        the original XT's effective data transfer rate was 522,240
+   158	        divided by 6, or 87,040 bytes per second. Not very exciting.
+   159	
+   160	        Even today things are frequently not much better. I have upset
+   161	        Western Digital in the past by reporting that most of the
+   162	        machines I had tested were not fast enough for the default 3:1
+   163	        sector interleave they were using on their MFM controller with
+   164	        the result that only one sector was being transferred for each
+   165	        revolution of the disk. This of course resulted in horrible
+   166	        30,720 byte per second throughput. The fact is that most of
+   167	        today's XT and AT machines are using MFM encoding with an
+   168	        interleave of 3:1 or 4:1 and delivering unexciting throughputs
+   169	        of 174,080 or 130,560 bytes per second respectively.
+   170	
+   171	        When I wrote a series of columns on hard disk performance, I
+   172	        reported that RLL encoding was "not here yet" but that I was sure
+   173	        it would be a good thing and that we were only premature, rather
+   174	        than wrong, about its ultimate viability.  Well, I'm delighted to
+   175	        report that RLL encoding is FINALLY
+   176	        REALLY HERE! The controllers have their acts together and
+   177	        reliable and robust RLL drives are readily available. If
+   178	        horrible experiences set you forever against RLL, I strongly
+   179	        advise you to re-address the issue. As long as you
+   180	        choose your drive and controller carefully, you won't have any
+   181	        trouble.
+   182	
+   183	        Aside from cramming more data into a drive, RLL also increases
+   184	        the real seek performance of any drive. Remember our discussion
+   185	        of Real Sector Access (RSA) Factor. Raising the drive's cylinder
+   186	        density by 150% drops its average seek times to just 66% of what
+   187	        they would be with MFM encoding. And since the drive's data is
+   188	        encoded at 150% density, the raw data rate from the drive is 150%
+   189	        higher.
+   190	
+   191	        However, a higher data rate from the drive doesn't help us much
+   192	        if we must immediately water it down with a large sector
+   193	        interleave. Western Digital's latest 1002A-27X 8-bit RLL
+   194	        controller defaults to an unexciting interleave of 4:1,
+   195	        delivering 199,680 bytes per second throughput which beats an
+   196	        MFM controller with 3:1... but not by much.
+   197	
+   198	        The great news is that we're just beginning to see some really
+   199	        hot (and inexpensive) hard disk controllers which are fully able
+   200	        to keep up with a 1-to-1 interleaved disk for the delivery of
+   201	        screaming 798,720 byte per second data transfer rates! That's
+   202	        just shy of 0.8 megabytes per second!
+   203	
+   204	
+   205	        I've explained my choice of hard disk drive for Steve's Dream
+   206	        Machine. The Miniscribe 3650 is very inexpensive (several booths
+   207	        at a recent Southern California swap meet were selling them for
+   208	        between $290 and $300), it's half height (so you can have a pair
+   209	        of them!), utterly capable of handling RLL encoding, and places
+   210	        six heads under the control of a 61 millisecond (average seek)
+   211	        stepping motor positioner.
+   212	
+   213	        Twenty-six sectors per track and six tracks per cylinder give the
+   214	        3650 a cylinder sector density which is 2.29 times higher than a
+   215	        typical four head MFM drive, so it actually performs like a
+   216	        drive with a 26 millisecond average seek time because the heads
+   217	        only need to move 44% as far to get to the same sector.
+   218	
+   219	        Even though Miniscribe says the drive has only 809 cylinders it
+   220	        actually has 852 physically and I've been formatting all of mine
+   221	        out to 842. Northgate Computer accepted my suggestion and has
+   222	        been doing the same to hundreds of theirs also without hitch, so
+   223	        I'm quite comfortable suggesting this to everyone.
+   224	
+   225	        I run under DOS version 3.3 because it's able to split the drive
+   226	        into two MAXIMUM SIZE 33.4 megabyte partitions WITHOUT the need
+   227	        for any messy third-party partitioning software. This yields a
+   228	        "C" and "D" partition of 33.4 megabytes respectively or 67
+   229	        megabytes overall!
+   230	
+   231	        So what about a hard disk controller? Well in this day and age
+   232	        there's no excuse for NOT going with RLL and a 1:1 sector
+   233	        interleave. So let me make this point quite clear. First, even
+   234	        though disks seem to be spinning quite fast, they're really
+   235	        quite slow. 3600 RPM is only 60 revolutions per second, which is
+   236	        16.67 milliseconds per revolution.
+   237	
+   238	        Now imagine that we wish to read or write a moderate size file
+   239	        of 26K bytes. Since sectors are 512 bytes, 26K bytes requires 52
+   240	        sectors. On an MFM format drive with 17 sectors per track this
+   241	        fills 3 tracks. A typical interleave of 4:1 requires 12 disk
+   242	        revolutions, for a total transfer time of 0.2 seconds. However
+   243	        an RLL controller with 26 sectors per track and 1:1 interleaving
+   244	        moves the same 52 sectors in just two revolutions or 0.033
+   245	        seconds. Two revs versus twelve... or SIX TIMES FASTER!
+   246	
+   247	        I'm delighted to tell you that choosing a hard disk controller
+   248	        was quite simple, because nothing even comes remotely close to
+   249	        Adaptec's model 2372 masterpiece. In the first place, it REALLY
+   250	        handles a SUSTAINED 1:1 interleave. Other 1:1 controllers may
+   251	        grab an entire track in one revolution, but they're then unable
+   252	        to continue with the next track immediately afterward.
+   253	        Consequently the system's performance drops by half to that of a
+   254	        2:1 interleaved drive. The Adaptec sustains 798K bytes per
+   255	        second across multiple tracks.
+   256	
+   257	        Secondly, you don't need a 16 megahertz 386 system. Any AT
+   258	        compatible can achieve screaming 800,000 bytes per second
+   259	        transfers with this controller. It comes in two flavors, the
+   260	        2372 handles two hard drives as well as two high or low density
+   261	        floppy drives and the 2370 just handles two hard drives.
+   262	
+   263	        The built-in low-level formatting software has to be seen to be
+   264	        believed. It's the cleanest and most comprehensive of any I've
+   265	        ever seen. If you want to run with multiple partitions, or a
+   266	        partition larger than 33 megabytes it will actually create the
+   267	        required CONFIG.SYS driver by "downloading" it from its own ROM
+   268	        onto the root directory of the hard disk! Unbelievable.
+   269	
+   270	        Finally, and most incredibly, it is so compatible with the
+   271	        standard AT hard disk MFM-style chip sets that it DOESN'T
+   272	        REQUIRE ANY ROM BIOS WHATSOEVER up there in the high memory
+   273	        "twilight zone!" After booting and initializing itself, the ROM
+   274	        is never again used. This means that the "twilight zone" region
+   275	        is not reduced in size and fragmented. Then utilizing Steve's
+   276	        Dream Machine's memory manager, 386-to-the-Max, 225K of
+   277	        completely free contiguous "twilight zone" memory is available
+   278	        for loading TSRs and other resident software!
+   279	
+   280	        Finally, by using a non-RLL capable Seagate ST225 drive and some
+   281	        ruthless worst-case data pattern testing software I've
+   282	        developed, I was able to quantitatively compare the robustness
+   283	        of the RLL data separators used in all of the contending
+   284	        controllers. The Adaptec 2372 is absolutely up at the top of the
+   285	        heap of RLL reliability because it makes the Seagate ST225,
+   286	        which is totally worthless for RLL in any case, look BETTER than
+   287	        any of the other RLL controllers do. So I'm more confident of
+   288	        the Adaptec with a real RLL drive than I would be with any of the
+   289	        others.
+   290	
+   291	                                   - The End -
+   292	
+   293	
+   294	                     Copyright (c) 1989 by Steven M. Gibson
+   295	                             Laguna Hills, CA 92653
+   296	                            **ALL RIGHTS RESERVED **
+   297	

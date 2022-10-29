@@ -1,0 +1,229 @@
+     1	The Meaning of `Hack' - The Jargon File
+     2	=====================
+     3	
+     4	"The word {hack} doesn't really have 69 different meanings", according
+     5	to Phil Agre, an MIT hacker.  "In fact, {hack} has only one meaning, an
+     6	extremely subtle and profound one which defies articulation.  Which
+     7	connotation is implied by a given use of the word depends in similarly
+     8	profound ways on the context.  Similar remarks apply to a couple of
+     9	other hacker words, most notably {random}."
+    10	
+    11	Hacking might be characterized as "an appropriate application of
+    12	ingenuity".  Whether the result is a quick-and-dirty patchwork job or
+    13	a carefully crafted work of art, you have to admire the cleverness
+    14	that went into it.
+    15	
+    16	An important secondary meaning of {hack} is `a creative practical
+    17	joke'.  This kind of hack is often easier to explain to non-hackers
+    18	than the programming kind.  Accordingly, here are some examples of
+    19	practical joke hacks:
+    20	
+    21	In 1961, students from Caltech (California Institute of Technology in
+    22	Pasadena) hacked the Rose Bowl football game.  One student posed as a
+    23	reporter and `interviewed' the director of the University of
+    24	Washington card stunts (such stunts involve people in the stands who
+    25	hold up colored cards to make pictures).  The reporter learned exactly
+    26	how the stunts were operated, and also that the director would be out
+    27	to dinner later.
+    28	
+    29	While the director was eating, the students (who called themselves the
+    30	`Fiendish Fourteen') picked a lock and stole one of the direction
+    31	sheets for the card stunts.  They then had a printer run off 2300
+    32	copies of the sheet.  The next day they picked the lock again and
+    33	stole the master plans for the stunts, large sheets of graph paper
+    34	colored in with the stunt pictures.  Using these as a guide, they
+    35	carefully made `corrections' for three of the stunts on the
+    36	duplicate instruction sheets.  Finally, they broke in once more,
+    37	replacing the stolen master plans and substituting the stack of
+    38	altered instruction sheets for the original set.
+    39	
+    40	The result was that three of the pictures were totally different.
+    41	Instead of spelling "WASHINGTON", the word "CALTECH" was flashed.
+    42	Another stunt showed the word "HUSKIES", the Washington nickname,
+    43	but spelled it backwards.  And what was supposed to have been a
+    44	picture of a husky instead showed a beaver.  (Both Caltech and MIT use
+    45	the beaver as a mascot.  Beavers are nature's engineers.)
+    46	
+    47	After the game, the Washington faculty athletic representative said,
+    48	"Some thought it ingenious; others were indignant."  The Washington
+    49	student body president remarked, "No hard feelings, but at the time
+    50	it was unbelievable.  We were amazed."
+    51	
+    52	This is now considered a classic hack, particularly because revising
+    53	the direction sheets constituted a form of programming not unlike
+    54	computer programming.
+    55	
+    56	Another classic hack:
+    57	
+    58	Some MIT students once illicitly used a quantity of thermite to weld a
+    59	trolley car to its tracks.  The hack was actually not dangerous, as
+    60	they did this at night to a parked trolley.  It took the transit
+    61	people quite a while to figure out what was wrong with the trolley,
+    62	and even longer to figure out how to fix it.  They ended up putting
+    63	jacks under the trolley and cutting the section of track on either
+    64	side of the wheel with oxyacetylene torches.  Then they unbolted the
+    65	wheel, welded in a new piece of track, bolted on a new wheel, and
+    66	removed the jacks.  The hackers sneaked in the next night and stole the
+    67	piece of track and wheel!
+    68	
+    69	The piece of trolley track with the wheel still welded to it was later
+    70	used as the trophy at the First Annual All-Tech Sing.  They carted it
+    71	in on a very heavy duty dolly up the freight elevator of the Student
+    72	Center.  Six feet of rail and a trolley wheel is a *lot* of
+    73	steel.
+    74	
+    75	A rather similar hack, perpetrated by a fraternity at CMU, cost their
+    76	campus its trolley service.
+    77	
+    78	Though these displayed some cleverness, the side-effect of expensive
+    79	property damage was definitely an esthetic minus.  The best hacks are
+    80	harmless ones.
+    81	
+    82	And another:
+    83	
+    84	One winter, late at night, an MIT fraternity hosed down an underpass
+    85	that is part of a commuter expressway near MIT.  This produced an ice
+    86	slick that `trapped' a couple of small cars: they didn't have the
+    87	momentum or traction to climb out of the underpass.  While it was
+    88	clever to apply some simple science to trap a car, it was also very
+    89	dangerous as it could have caused a collision.  Therefore this was a
+    90	very poor hack overall.
+    91	
+    92	And yet another:
+    93	
+    94	On November 20, 1982, MIT hacked the Harvard-Yale football game.  Just
+    95	after Harvard's second touchdown against Yale in the second quarter, a
+    96	small black ball popped up out of the ground at the 40-yard line, and
+    97	grew bigger, and bigger, and bigger.  The letters "MIT" appeared all
+    98	over the ball.  As the players and officials stood around gawking, the
+    99	ball grew to six feet in diameter and then burst with a bang and a
+   100	cloud of white smoke.
+   101	
+   102	As the Boston Globe later reported, "If you want to know the truth,
+   103	M.I.T. won The Game."
+   104	
+   105	The prank had taken weeks of careful planning by members of MIT's
+   106	Delta Kappa Epsilon fraternity.  The device consisted of a weather
+   107	balloon, a hydraulic ram powered by Freon gas to lift it out of the
+   108	ground, and a vacuum-cleaner motor to inflate it.  They made eight
+   109	separate expeditions to Harvard Stadium between 1 and 5 AM, in which
+   110	they located an unused 110-volt circuit in the stadium, and ran buried
+   111	wiring from the stadium circuit to the 40-yard line, where they buried
+   112	the balloon device.  When the time came to activate the device, two
+   113	fraternity members had merely to flip a circuit breaker and push a
+   114	plug into an outlet.
+   115	
+   116	This stunt had all the earmarks of a perfect hack: surprise,
+   117	publicity, the ingenious use of technology, safety, and harmlessness.
+   118	The use of manual control allowed the prank to be timed so as not to
+   119	disrupt the game (it was set off between plays, so the outcome of the
+   120	game would not be unduly affected).  The perpetrators had even
+   121	thoughtfully attached a note to the balloon explaining that the device
+   122	was not dangerous and contained no explosives.
+   123	
+   124	Harvard president Derek Bok commented: "They have an awful lot of
+   125	clever people down there at MIT, and they did it again."  President
+   126	Paul E. Gray of MIT said, "There is absolutely no truth to the rumor
+   127	that I had anything to do with it, but I wish there were."
+   128	
+   129	Finally, here is a great story about one of the classic computer hacks.
+   130	
+   131	Back in the mid-1970s, several of the system support staff at Motorola
+   132	discovered a relatively simple way to crack system security on the
+   133	Xerox CP-V timesharing system.  Through a simple programming strategy,
+   134	it was possible for a user program to trick the system into running a
+   135	portion of the program in `master mode' (supervisor state), in which
+   136	memory protection does not apply.  The program could then poke a large
+   137	value into its `privilege level' byte (normally write-protected) and
+   138	could then proceed to bypass all levels of security within the
+   139	file-management system, patch the system monitor, and do numerous
+   140	other interesting things.  In short, the barn door was wide open.
+   141	
+   142	Motorola quite properly reported this problem to XEROX via an official
+   143	`level 1 SIDR' (a bug report with a perceived urgency of `needs to be
+   144	fixed yesterday').  Because the text of each SIDR was entered into a
+   145	database that could be viewed by quite a number of people, Motorola
+   146	followed the approved procedure: they simply reported the problem as
+   147	`Security SIDR', and attached all of the necessary documentation,
+   148	ways-to-reproduce, etc. separately.
+   149	
+   150	Xerox sat on their thumbs...they either didn't realize the severity of
+   151	the problem, or didn't assign the necessary operating-system-staff
+   152	resources to develop and distribute an official patch.
+   153	
+   154	Months passed.  The Motorola guys pestered their Xerox field-support
+   155	rep, to no avail.  Finally they decided to take Direct Action, to
+   156	demonstrate to Xerox management just how easily the system could be
+   157	cracked and just how thoroughly the system security systems could be
+   158	subverted.
+   159	
+   160	They dug around in the operating-system listings and devised a
+   161	thoroughly devilish set of patches.  These patches were then
+   162	incorporated into a pair of programs called Robin Hood and Friar Tuck.
+   163	Robin Hood and Friar Tuck were designed to run as `ghost jobs'
+   164	(daemons, in UNIX terminology); they would use the existing loophole
+   165	to subvert system security, install the necessary patches, and then
+   166	keep an eye on one another's statuses in order to keep the system
+   167	operator (in effect, the superuser) from aborting them.
+   168	
+   169	So... one day, the system operator on the main CP-V software
+   170	development system in El Segundo was surprised by a number of unusual
+   171	phenomena.  These included the following:
+   172	
+   173	   * Tape drives would rewind and dismount their tapes in the middle of a
+   174	     job.
+   175	   * Disk drives would seek back and forth so rapidly that they'd attempt
+   176	     to walk across the floor (see {walking drives}).
+   177	   * The card-punch output device would occasionally start up of itself
+   178	     and punch a {lace card} (every hole punched).  These would usually
+   179	     jam in the punch.
+   180	   * The console would print snide and insulting messages from Robin Hood
+   181	     to Friar Tuck, or vice versa.
+   182	   * The Xerox card reader had two output stackers;  it could be
+   183	     instructed to stack into A, stack into B, or stack into A unless a
+   184	     card was unreadable, in which case the bad card was placed into
+   185	     stacker B.  One of the patches installed by the ghosts added some
+   186	     code to the card-reader driver... after reading a card, it would flip
+   187	     over to the opposite stacker.  As a result, card decks would divide
+   188	     themselves in half when they were read, leaving the operator to
+   189	     recollate them manually.
+   190	
+   191	There were some other effects produced, as well.
+   192	
+   193	Naturally, the operator called in the operating-system developers.  They
+   194	found the bandit ghost jobs running, and X'ed them... and were once
+   195	again surprised.  When Robin Hood was X'ed, the following sequence of
+   196	events took place:
+   197	
+   198	     !X id1
+   199	
+   200	     id1: Friar Tuck... I am under attack!  Pray save me!
+   201	     id1: Off (aborted)
+   202	
+   203	     id2: Fear not, friend Robin!  I shall rout the Sheriff of 
+   204	          Nottingham's men!
+   205	
+   206	     id1: Thank you, my good fellow!
+   207	
+   208	Each ghost-job would detect the fact that the other had been killed,
+   209	and would start a new copy of the recently-slain program within a few
+   210	milliseconds.  The only way to kill both ghosts was to kill them
+   211	simultaneously (very difficult) or to deliberately crash the system.
+   212	
+   213	Finally, the system programmers did the latter... only to find that
+   214	the bandits appeared once again when the system rebooted!  It turned
+   215	out that these two programs had patched the boot-time image (the
+   216	/vmunix file, in UNIX terms) and had added themselves to the list of
+   217	programs that were to be started at boot time...
+   218	
+   219	The Robin Hood and Friar Tuck ghosts were finally eradicated when the
+   220	system staff rebooted the system from a clean boot-tape and
+   221	reinstalled the monitor.  Not long thereafter, Xerox released a patch
+   222	for this problem.
+   223	
+   224	It is alleged that Xerox filed a complaint with Motorola's management about
+   225	the merry-prankster actions of the two employees in question.  It is
+   226	not recorded that any serious disciplinary action was taken against
+   227	either of them.
+   228	
+   229	

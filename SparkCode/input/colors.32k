@@ -1,0 +1,205 @@
+     1	
+     2	 > 32,768 Colors! STR Feature   Just keep on ..keeping on.......
+     3	   ==========================
+     4	
+     5	
+     6	
+     7	
+     8	
+     9	                   32,768 Color Support for the Atari ST
+    10	
+    11	
+    12	
+    13	 by Barry Orlando
+    14	
+    15	 Public Domain,  Dated 09-09-89
+    16	
+    17	
+    18	     Here's  a  hardware  modification  for  the  standard  Atari  ST  that
+    19	 increases the color palette from 512 colors to 32,768 colors (32 shades of
+    20	 gray),  while  still  maintaining  compatibility  with  existing  Atari ST
+    21	 software (including SPECTRUM 512).  It  is  software  compatible  with the
+    22	 JRI's  4096C  color  board  and  will also be compatible with the recently
+    23	 announced 4096 color STE (enhanced ST).
+    24	
+    25	     It does this by adding increased bits of resolution so  as to increase
+    26	 the  ST's  16  read/write  colors  palette  hardware  registers from their
+    27	 standard 9 bits each, to 15 bits each. Each of the standard  color palette
+    28	 registers have the following bit arrangement:
+    29	
+    30	                             FEDCBA9876543210
+    31	                             .....RRR.GGG.BBB
+    32	   
+    33	        where, R, G, and B are the red, green, and blue components.
+    34	
+    35	     The higher  the value  for any of these grouped bits, the more intense
+    36	 the resulting color component. The above bits marked '.' are ignored.
+    37	
+    38	     The JRI 4096C color board and the upcoming 4096 color STE add an extra
+    39	 bit of resolution at bit locations 3, 7, and B, however these new bits are
+    40	 least significant bits  so  as  to  maintain  compatibility  with existing
+    41	 software.
+    42	
+    43	     The 32,768  color modification  goes a  step further by adding a fifth
+    44	 (and less significant) bit to each color component at locations  C, D, and
+    45	 E. The new arrangement is then:
+    46	
+    47	                             FEDCBA9876543210
+    48	                             .RGBRRRRGGGGBBBB
+    49	
+    50	     As  with  the  JRI  4096C  color  board,  this  modification  adds  an
+    51	 additional  Shifter  chip.  However  this  modification  is  slightly more
+    52	 involved  in  that  it  uses  three  additional  integrated  circuits, and
+    53	 bypasses 9, 5% tolerance resistors used by the  Shifter chip,  in favor of
+    54	 using 9, 1% tolerance resistors.
+    55	
+    56	                         Disclaimer of Liability 
+    57	   
+    58	     This modification  should not be attempted by anyone except by someone
+    59	 with  experience  repairing  or  building  digital   electronic  circuits.
+    60	 Performing this  modification will  be done  at your own risk and may void
+    61	 the warranty on your computer.
+    62	
+    63	
+    64	
+    65	
+    66	                                Parts List
+    67	                                ==========
+    68	
+    69	      Qty       Description/Source/Cost
+    70	      ---------------------------------
+    71	      1         Component Perfboard (3" x 2.5") cut from Radio Shack 
+    72	                #276-147 ($2.99).
+    73	
+    74	      2         3M Board Mounting Interconnectors (straight single-row
+    75	                male).Digi-Key Part # 929834-08-36 ($2.05 each).
+    76	
+    77	                     Digi-Key Corp.
+    78	                     701 Brooks Ave South
+    79	                     P.O Box 677
+    80	                     Thief River Falls, MN 56701-0677
+    81	                     Phone 1-800-344-4539 for free catalog.
+    82	
+    83	      1         Quad 2 input NAND Gate, High Speed CMOS (74HC00N). Digi-Key
+    84	                Corp., Part # MM74HC00N ($0.28).
+    85	
+    86	      1          Quad  Tri-State Transceiver,  High Speed  CMOS (74HC243N).
+    87	                Digi-Key Corp., Part # MM74HC243N ($0.78).
+    88	
+    89	      1         Octal Tri-State Transceiver, High Speed CMOS (74HC245N).
+    90	                Digi-Key Corp., Part # MM74HC245N ($0.82).
+    91	
+    92	      5 each    3.76K, 7.50K, 15.0K, 30.1K, 60.4K ohm metal film resistors,
+    93	                1%, 1/4 watt. Digi-Key Corp., Part #s 3.76X,  7.50X, 15.0X,
+    94	                30.1X, 60.4X (each value: 5 for $0.50)
+    95	
+    96	      2            3.0K ohm carbon resistors, 5%, 1/4 watt. Digi-Key Corp.,
+    97	                Part # 3.0E (5 for $0.25)
+    98	
+    99	      5         0.1ufd Monolithic Ceramic capacitors, Radial, 50V, 10%, or
+   100	                equivalent substitution, Digi-Key Corp. Part # P4525 ($0.19
+   101	                each)
+   102	
+   103	      2         Shifter Chip, Atari Part # CO25914-38A, one chip is 
+   104	                obtained from  your ST's  motherboard, the  other from your
+   105	                local Atari Authorized Service Center ($30.00)
+   106	
+   107	   
+   108	
+   109	                         Installation of the Board
+   110	
+   111	     Located on  the ST's  motherboard is  mounted a  sheet metal box which
+   112	 houses the Shifter Chip. This box has a  hinged lid  which can  be opened.
+   113	 Inside this box you'll find the Shifter Chip mounted in a 40 pin socket.
+   114	   
+   115	     The board  simply plugs into this socket so that the board is elevated
+   116	 above the ST's motherboard with sufficient clearance to  allow closing the
+   117	 hinged lid.
+   118	
+   119	     Three wires  are installed  from the  color board to three vias (trace
+   120	 thru holes) located nearby on the motherboard.
+   121	
+   122	     Additionally, jumpers are installed  across  each  of  three  3.6K ohm
+   123	 resistors on  the motherboard.  These resistors are easily traced from the
+   124	 Shifter socket pins 21, 24, and 27.
+   125	
+   126	
+   127	
+   128	                             Circuit Schematic
+   129	
+   130	 I was going to  get the  circuit diagram  for this  project digitized, but
+   131	 just didn't  get around  to it (saved you the download). So if you want it
+   132	 send me a self addressed stamped envelope to the following address:
+   133	
+   134	                               Barry Orlando
+   135	                             1120 Deerfield Dr.
+   136	                              Napa, CA 94558
+   137	
+   138	
+   139	                              Board Assembly
+   140	
+   141	     Because the sheet metal box (discussed above) does  not allow  alot of
+   142	 head clearance,  all components  are mounted directly to the perfboard. If
+   143	 you use chip  sockets,  the  hinged  lid  will  not  fit  back  on without
+   144	 modification.
+   145	
+   146	     The diagram  below shows the orientation of components. I soldered all
+   147	 the components to the perfboard then soldered all the connections using 30
+   148	 gauge Kynar wire wrap solid conductor wire (Radio Shack 278-502).  
+   149	
+   150	     There is  a slight  modification to  the circuit  if you  have any RAM
+   151	 chips installed in your ST which are 150 nanosecond (i.e., slower than 120
+   152	 nanosecond).   Pin 1 (DIR) of the 74HC245N must be tided to ground instead
+   153	 of to the R/W line on Shifter. This will only disable the  read capability
+   154	 for bits C, D, and E of each color palette register mentioned above.
+   155	
+   156	                                 Software
+   157	
+   158	     To be  used with  this modification  is a  program to display all gray
+   159	 levels and colors. This is a very crude program but  was intended  to only
+   160	 prove that  the circuit  works.   I have  also included  the C source code
+   161	 which provides the engine for converting basic color  intensities to board
+   162	 compatible bit patterns.
+   163	
+   164	
+   165	
+   166	
+   167	
+   168	  *************************************************************************
+   169	  *                                                                       *
+   170	  *                       Color Board Layout                              *
+   171	  *                                                                       *
+   172	  *               |-----------  2 1/2"  -------------|                    *
+   173	  *           __  ___________________________________                     *
+   174	  *            |  | ________                ________ |                    *
+   175	  *            |  ||        |  |  -==-  |  |        ||                    *
+   176	  *            |  ||   S    |  |  -==-  |  |   S    ||                    *
+   177	  *            |  ||   H    |  |  -==-  |  |   H    ||                    *
+   178	  *            |  ||   I    |  |  -==-  |  |   I    ||                    *
+   179	  *            |  ||   F    |  |  -==-  |  |   F    ||                    *
+   180	  *            |  ||   T    |  |  -==-  |  |   T    ||                    *
+   181	  *            |  ||   E    |  |  -==-  |  |   E    ||                    *
+   182	  *            |  ||   R    |  |  -==-  |  |   R    ||                    *
+   183	  *            |  ||        |  |  -==-  |  |        ||                    *
+   184	  *               ||   1    |  |  -==-  |  |   2    ||                    *
+   185	  *        3 1/2" ||        |  |  -==-  |  |        ||                    *
+   186	  *               ||        |  |  -==-  |  |        ||                    *
+   187	  *            |  ||       *|  |  -==-  |  |       *||                    *
+   188	  *            |  ||________|  |  -==-  |  |________||                    *
+   189	  *            |  |  <>            <>       <>       |                    *
+   190	  *            |  |              ____                |                    *
+   191	  *            |  |      <>     |*   |        <> <------decoupling caps.  *
+   192	  *            |  |    ____     |    |      ____     |                    *
+   193	  *            |  |   |*   |    |    |     |*   |    |                    *
+   194	  *            |  |   |    |    |    |     |    |    |                    *
+   195	  *            |  | ()|    | [] |    | []  |    |    |                    *
+   196	  *            |  | ()|    |    |    |  ^  |    |    |                    *
+   197	  *            |  | ()|    |    |    |  |  |    |<------- 74HC243N        *
+   198	  *            |  |   |____|    |____|  |  |____|    |                    *
+   199	  *           _|_ |_____^_________^_____|____________|                    *
+   200	  *                     |         |     |_________ 3.0K ohm resistors     *
+   201	  *       74HC00N ______|         |_____ 74HC245N                         *
+   202	  *                                                                       *
+   203	  *                                                                       *
+   204	  *                                                                       *
+   205	  *************************************************************************

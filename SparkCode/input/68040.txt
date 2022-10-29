@@ -1,0 +1,251 @@
+     1	68040 Info:
+     2	
+     3	----------------------------
+     4	This new CISC microprocessor
+     5	offers RISC performance
+     6	----------------------------
+     7	 
+     8	Motorola has officially unwrapped its newest 32-bit
+     9	microprocessor, the 68040. Manufactured with 0.8-micron
+    10	high-speed CMOS technology, the 68040 packs 1.2 million
+    11	transistors on a single silicon die. With 900,000 extra
+    12	transistors to work with over the 300,000 transistors in a 68000
+    13	processor, the 68040's designers added new features and boosted
+    14	performance. New features include the following:
+    15	
+    16	
+    17	 
+    18	-- Optimised 68030 integer unit. While retaining object-code
+    19	compatibility with previous 68000-family processors, the IU has
+    20	been optimised to execute instructions in fewer clock cycles
+    21	(i.e., run faster). The claimed boost in performance is three
+    22	times that of a 68030.
+    23	 
+    24	-- Integral FPU. The 68020 and 68030 require external FPU
+    25	coprocessor chips to handle floating-point math. The 68040,
+    26	however, has an FPU built into it, giving it the power to do
+    27	serious number crunching. The FPU's data types are compatible
+    28	with the ANSI/IEEE 754 standard for binary floating-point math,
+    29	and its instruction set is object code-compatible with Motorola's
+    30	68881/68882 FPUs. Like the IU, the 68040's on-chip FPU has been
+    31	optimised to execute frequently used instructions using fewer
+    32	clock cycles. The claimed performance boost is 10 times that of a
+    33	68882.
+    34	 
+    35	-- Large caches. Processor accesses to the system bus are
+    36	minimised by storing the most recently used set of instructions
+    37	or data in on-chip, 4K-byte caches. Both caches operate
+    38	independently but can be accessed at the same time. Bus snoop
+    39	logic is used to maintain cache coherence (i.e., it ensures that
+    40	the cache's contents match those parts of memory corresponding to
+    41	the cache). The bus snooper's design is fine-tuned to support
+    42	multiprocessor systems where one or more bus masters or 68040s
+    43	might share the same section of memory.
+    44	 
+    45	-- Separate memory units for instructions and data. Each memory
+    46	unit consists of a memory management unit, a cache controller,
+    47	and bus snoop logic. The MMUs use a subset of the 68030's MMU
+    48	instruction set. Both memory units function independently of each
+    49	other to improve processor throughput.
+    50	 
+    51	The 68040 ships with an initial clock speed of 25MHz; higher
+    52	speeds are to be available in the future, Motorola says. The
+    53	68040 comes in a 179-pin grid-array package. With the elimination
+    54	of coprocessor function lines (now that the MMU and FPU are
+    55	consolidated onto the processor) and the addition of snoop
+    56	control lines, the 68040 is not pin-compatible with the 68030.
+    57	 
+    58	Because of the 68040's software compatibility with its
+    59	predecessors, it can tap into the existing software base of 680x0
+    60	applications. It does this not only while eliminating a component
+    61	(the FPU) from a computer's design, but also while improving
+    62	performance. In fact, the 68040 executes instructions on the
+    63	average of nearly once per clock cycle -- the same as a RISC
+    64	processor.
+    65	
+    66	 
+    67	Fine-Tuned for Performance
+    68	 
+    69	The 68040 was built on the firm foundation of its
+    70	predecessors. The design team used the experience garnered from
+    71	developing earlier processors to aid in optimising the throughput
+    72	of the 040.
+    73	 
+    74	The 040 was designed from the ground up, Motorola engineers
+    75	said. It incorporates a high degree of parallelism using a number
+    76	of internal buses. An internal Harvard architecture gives the
+    77	processor full access to both instructions and data. Both the IU
+    78	and FPU have separate pipelines and can operate concurrently. For
+    79	example, the FPU can perform floating-point instructions
+    80	independently of the IU. Each stream (instructions or data) has
+    81	its own dedicated cache and MU that function independently of
+    82	each other. A smart bus controller assigns priorities to bus
+    83	traffic to and from the caches.
+    84	 
+    85	There were several key areas where Motorola was able to
+    86	boost performance. The first was in reducing the clock cycles
+    87	needed to execute certain instructions. The next was to ensure
+    88	that the processor funnels instructions and data into itself
+    89	quickly and constantly, lest it stall while waiting on
+    90	information. The processor then gets its results back into the 
+    91	system without interfering with incoming information. Finally, as
+    92	if this wasn't enough, the processor stays off the system bus to
+    93	a greater extent than is the case with other processor designs.
+    94	This lets DMA transfers and other bus masters have use of it.
+    95	
+    96	
+    97	CISC with the Speed of RISC 
+    98	 
+    99	The IU was optimised so that high-usage instructions execute
+   100	in fewer clock cycles, particularly branch instructions. Motorola
+   101	said it performed thousands of code traces using real-world
+   102	applications to determine which instructions were used most
+   103	often. The IU consists of 6 stages: instruction prefetch, decode,
+   104	effective address calculation, operand fetch, execution, and
+   105	writeback (i.e., the result is written to either a register or to
+   106	memory). Each stage works concurrently on the instruction
+   107	pipeline. Dual prefetch and decode units deal with the branch
+   108	instructions: One set processes the instruction taken on the
+   109	branch, and another processes the instruction not taken. In this
+   110	way, no matter what the outcome, the IU has the next instruction
+   111	decoded and ready to go without seriously disrupting the
+   112	pipeline. This complex design has a big pay-off: Motorola has
+   113	determined that the average instruction takes 1.3 clock cycles to
+   114	execute. The ability to execute an instruction once per clock
+   115	cycle is the performance edge of RISC processors -- yet the
+   116	68040's IU accomplishes the same goal while executing
+   117	complex-instruction-set computer (CISC) instructions.
+   118	 
+   119	The FPU adds 11 registers to the 68040 register set: Eight
+   120	of them are 80-bit floating-point registers, and three are
+   121	status, control, and instruction address registers. The FPU has a
+   122	three-stage execution unit, and, like the IU, each stage operates
+   123	concurrently. Load and store instructions (FMOVE) can be
+   124	performed during other arithmetic operations, and a 64- by 8-bit
+   125	hardware multiplication unit speeds many calculations. However,
+   126	the FPU only implements a subset of the 68882 instructions
+   127	on-chip. The transcendental (trigonometric and exponential)
+   128	functions are emulated in software via a software trap. But
+   129	Motorola claims that even these instructions should execute 25%
+   130	to 100% faster on 25MHz 68040 than on a 33MHz 68882 FPU.
+   131	
+   132	
+   133	Boosting Throughput
+   134	 
+   135	In the area of throughput, each stream is managed by a
+   136	separate memory unit that uses an MMU for logical-to-physical
+   137	address translations during bus accesses. These MMUs support
+   138	demand-paged virtual memory. Both MMUs have a four-way
+   139	set-associative address translation cache (ATC) with 4 entries
+   140	(versus 22 entries for the 68030). The ATCs reduce processor
+   141	overhead by storing the most recent address translations. When an
+   142	address translation is required, the ATC is searched, and if it
+   143	contains the address, it is used immediately. Otherwise, a
+   144	combination of high-speed hardware logic and microcode searches
+   145	the translation tables located in main memory.
+   146	 
+   147	Like the PU, these MMUs implement a subset of the 68030's
+   148	MMU instruction set. Gone are the PLOAD and PMOVE instructions,
+   149	because enhanced existing instructions made them superfluous.
+   150	Also, only 2 memory page sizes are supported, 4K and 8K bytes,
+   151	whereas the 68030 MMU supported 8 page sizes ranging from 256
+   152	bytes to 32K bytes. A design tradeoff was made here: A
+   153	performance gain was possible by supporting only the 2 most
+   154	common page sizes. In any case, this change impacts only
+   155	operating-system code, since MMU instructions aren't normally
+   156	used by applications.
+   157	 
+   158	The two on-chip 4K caches improve processor throughput in 2
+   159	ways: They keep the pipelines filled and minimise system bus
+   160	accesses. To see how this is done, you must examine the structure
+   161	of the cache. Each is a four-way set-associative cache composed
+   162	of 64 sets of four lines. A line consists of 4 longwords, or 16
+   163	bytes. Cache lines are read or written rapidly using burst-mode
+   164	access (a type of bus transfer that moves 16 bytes in a minimum
+   165	of clock cycles). For read operations, this fills the cache
+   166	efficiently and, at the same time, loads adjacent instructions or
+   167	data into the cache that could be used in the near future.
+   168	
+   169	 
+   170	Zen and the Art of Cache Maintenance
+   171	 
+   172	As the cache is accessed and data modified, cache-mode bits
+   173	in the ATC determine, on a page-by-page basis, the method by
+   174	which the information is handled. That is, the ATC entry that
+   175	corresponds to the address in main memory whose contents were
+   176	copied into the cache decides how the data will be updated. The
+   177	modes are cacheable write-through, cacheable copyback,
+   178	noncacheable, and noncacheable I/O.
+   179	 
+   180	In the cacheable write-through mode, an update to the data
+   181	cache forces a write to main memory. While this generates
+   182	additional bus activity, this mode is required when working with
+   183	a portion of memory that other processors share. The copyback
+   184	mode updates the cache line but without updating main memory. The
+   185	modified (or "dirty") cache line is copied back into main memory
+   186	only when absolutely necessary. "Noncacheable" indicates that the
+   187	data shouldn't be cached, which is typically the situation for
+   188	shared data structures or for locked accesses (e.g., an operand
+   189	access or a translation table entry update). Noncacheable I/O
+   190	indicates that the data can't be cached and must be read or
+   191	written in the exact order of instruction execution. This mode is
+   192	for memory-mapped I/O devices (typically a serial device) where
+   193	the information's order is crucial.
+   194	 
+   195	The bus snooper is used in multiple bus master situations
+   196	where a noncaching bus master, such as a DMA controller, might
+   197	modify the memory that is mapped into the 68040's cache. The bus
+   198	snooper monitors the external bus and updates the cache as
+   199	required.
+   200	
+   201	Cache validity is handled on a line-by-line basis (i.e., a
+   202	cache miss triggers a burst-mode access that updates 16 bytes
+   203	either in the cache or main memory). The copyback mode minimises
+   204	writes to main memory, and the bus controller prioritises each
+   205	cache's external memory requests. Read requests take priority
+   206	over writes to ensure that the pipelines remain filled.
+   207	 
+   208	The caches are critical to the 040's overall throughput.
+   209	They keep instructions and data moving into the processor while
+   210	satisfying the apparently contradictory role of minimising system
+   211	bus accesses. Motorola estimates that the cache hit rate is about
+   212	93 percent for instruction and data reads and about 94 percent
+   213	for data writes.
+   214	 
+   215	
+   216	A Processor for the 1990's
+   217	 
+   218	It is perhaps appropriate that Motorola has introduced the
+   219	68040 in the first month of the 1990s. The 040 has the power to
+   220	tackle the jobs with large amounts of information that we will be
+   221	dealing with regularly in the next ten or so years.
+   222	 
+   223	Preliminary results have a 68040 weighing in at 20 million
+   224	instructions per second versus the SPARC's 18 MIPS and the
+   225	80486's 15 MIPS, all clocked at 25MHz. On floating-point
+   226	operations, the 68040 antes up 3.5 million floating-point
+   227	operations per second versus the SPARCS's 2.6 MFLOPS and the
+   228	80486's 1 MFLOPS. If these numbers are accurate, then the 68040
+   229	already out performs one RISC processor.
+   230	 
+   231	But the computer industry doesn't stand still. As we move
+   232	into the new decade, we can expect new RISC processors to once
+   233	again take the lead in performance. Still, the 68040 shows that
+   234	owners of CISC systems can have their cake and eat it, too. They
+   235	don't have to forsake their software base or settle for mediocre
+   236	performance. 
+   237	 
+   238	 
+   239	And Motorola is already working on the 68050.
+   240	 
+   241	|-THiS FiLE PASSED THR0UGH --- /\ ---.------ /\ ---*--.- FiDONET 2:200/612 --|
+   242	|                     .  * .  // \        . // \  .      FUJiNeT 7:102/102   |
+   243	| I.C.S Swedish HQ           //   \   +    //   \      .  MeGANeT 66:666/1   |
+   244	|                       +   //  /  \      //     \   +    NeST 90:1101/112   |
+   245	|  Sync World HQ           /\\  \\ /  .  //   \\ /                           |
+   246	|                      .  // \   \/     //    /\/   .    16800 DUAL STANDARD |
+   247	|  +46-451-91002          \\ /   /      \\  \/    +                          |
+   248	|                      *   \\   /  + .   \\  \ .    .  .                     |
+   249	|                        .  \\ /          \\ /                               |
+   250	|- SysOp: Troed ------------ \/ARCASTIC -- \/XISTENCE --- CoSysOp: Zaphod B -|
+   251	< Advertisment added using -=Bad Ad=- 1.91 by Troed/Sync. BBS: +46-451-91002 >

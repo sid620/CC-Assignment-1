@@ -1,0 +1,141 @@
+     1	BOSTON, MA, February 11, 1992 -- In a joint program with Novell, Inc.,
+     2	Emerson Computer Power is demonstrating its comprehensive new AccuMon
+     3	Power Surveillance Software at NetWorld, which opened here today.
+     4	
+     5	The new AccuMon surveillance software is being shown in parallel
+     6	demonstrations in both the Emerson (#1511) and Novell booths (#3322 and
+     7	#2310). AccuMon provides a new, high level of reporting capabilities for
+     8	monitoring the status of a computer's uninterruptible power systems (UPS)
+     9	with Novell's new NetWare 3.11 Network Management Architecture --
+    10	including integration of power status data on LANs and WANs. It features
+    11	highly interactive graphic displays for at-a-glance comprehension of power
+    12	activity and assists with power scheduling for energy conservation and
+    13	equipment protection.
+    14	
+    15	When used with the new Novell architecture, AccuMon gives a network
+    16	administrator full UPS control and monitoring capabilities from any node
+    17	or position in the network or from a remote console. Until now these
+    18	functions could be performed only on a console or dedicated file server.
+    19	
+    20	A Novell Professional Developer, Emerson is one of the first to develop and
+    21	market NetWare Aware UPS software. The program resides on a Novell file
+    22	server and executes as a background task to perform UPS monitoring and
+    23	shutdown. AccuMon is executed as an Novell Loadable Module (NLM) for
+    24	NetWare 3.11.
+    25	
+    26	With its new AccuMon software, Emerson provides three cross-platform levels
+    27	of support to satisfy the needs of virtually any PC or workstation network
+    28	administrator:
+    29	
+    30	* for DOS local UPS monitor and control
+    31	
+    32	* for UNIX remote UPS monitor and control
+    33	
+    34	* and for Novell NetWare Management Agent Architecture. Cross extensibility
+    35	is provided among all three platforms and Emerson products, including its
+    36	AccuPower GOLD series of on-line UPSs and future products. As a result,
+    37	Emerson UPS power protection systems can grow in parallel with a user's
+    38	computer and network configurations, according to Adam Stolinski, Emerson
+    39	director of product management.
+    40	
+    41	"Emerson is the first major UPS manufacturer to offer an integrated family
+    42	of software solutions for all power monitor and control application
+    43	requirements, including status reporting in Novell's NetWare 3.11
+    44	Management Agent environment," Stolinski said.
+    45	
+    46	"The basic AccuMon package will give standalone DOS PC users the ability to
+    47	monitor and control the operation of the Emerson UPS that backs up their
+    48	system," Stolinski explained. "A 'control screen' can be viewed on the
+    49	monitor to check the status of the UPS's input/output voltage,
+    50	temperature, battery charge, etc. The software also allows the storing of
+    51	UPS status and events data on disk for evaluation and reporting
+    52	purposes."
+    53	
+    54	The information can be displayed in either of two ways. When viewed on a
+    55	graphics based workstation in a DOS environment, the display depicts the
+    56	flow of electricity through the system with an intuitive graphic that's
+    57	unique to the Emerson UPS software. On a console in a Novell environment,
+    58	the display conforms to other Novell screens, with more of the information
+    59	communicated textually. Network administrators can switch between the
+    60	two.
+    61	
+    62	AccuMon is also the only UPS software to offer a power scheduling feature.
+    63	It allows the system administrator to direct the UPS to turn itself off
+    64	and to repower at pre-selected times for energy and equipment savings.
+    65	Using it, the system could be automatically powered down at night or over
+    66	weekends. It can also be used to shut down all communications coming into
+    67	a facility while back-ups are underway.
+    68	
+    69	"The data gathering and logging capability is available in DOS and
+    70	UNIX-based versions for standalone PCs, workstations and hosts, and in
+    71	Novell-based versions for network file servers and nodes," Stolinski
+    72	continued.
+    73	
+    74	In addition, he noted, Emerson is currently marketing LAN/UNIX Shutdown
+    75	Interface Kits that reside on the server/host to monitor UPS status. Upon
+    76	loss of AC power, the software sends a one-line "AC POWER OUT" message to
+    77	all nodes in the network so users can prepare for a potential shutdown.
+    78	When the UPS reaches a "LOW BATTERY" condition, the network software
+    79	gracefully shuts down the server/host. When AC utility power is restored,
+    80	the server/host can be restored to operation and all nodes can resume
+    81	activity. The software also stores all activity messages in an error log
+    82	on the server/host for evaluation and reporting purposes.
+    83	
+    84	"The newest members of the AccuMon family let the UPS interact as an
+    85	intelligent member of the network, with a remote interface to it,"
+    86	Stolinski said. "It allows the Novell network manager to communicate
+    87	remotely with UPS equipment across multiple network environments and
+    88	platforms, using Novell's forthcoming NetView host terminal. Ultimately,
+    89	AccuMon will work hand in hand with NetWare 3.11 management functions to
+    90	provide complete monitoring and control of all UPS systems supporting all
+    91	network devices, such as file servers, nodes, bridges, routers, gateways,
+    92	hub concentrators and even printers.
+    93	
+    94	"Network managers will thus be able to check UPS status locally or remotely
+    95	and turn on or off devices connected to any UPS," he continued. "They will
+    96	be able to perform load shedding to extend the battery backup time to ride
+    97	out power losses. This means, for example, that a LAN manager could
+    98	remotely control any network computer to halt print queue operations,
+    99	suspend external communications activities, prohibit new user log-ons or
+   100	even shut down the entire operating system, as needed."
+   101	
+   102	The AccuMon Novell software modules use the UPS communications port and the
+   103	serial port on any 386 file server. An Emerson NLM software module
+   104	provides access to the NetWare Management Agent software on the server,
+   105	which passes UPS status data via NetWare 3.11 to the NetWare Management
+   106	Console. The Novell "network navigator" window will let users click on
+   107	part of a screen map to view any segment of network operations -- from
+   108	analyzing traffic to power status to distributing software remotely.
+   109	
+   110	"Emerson Computer Power, a Novell Professional Developer, is proud to have
+   111	been selected as an initial provider of this 'NetWare Aware' UPS monitor
+   112	and control software for use with Novell's most powerful network
+   113	management system," Stolinski commented.
+   114	
+   115	Emerson's AccuMon Novell module has been co-developed with John Matze, a
+   116	well-known developer of Novell NLM and VAP products, who is currently
+   117	working with Novell in developing standards for UPS monitoring in Novell's
+   118	Network Management Software. It is immediately available and is priced at
+   119	$149.
+   120	
+   121	Emerson Computer Power is the world's largest manufacturer of power
+   122	protection systems for computing applications ranging from single user PCs
+   123	and local area networks to minicomputers and mainframe systems. The
+   124	company has major manufacturing centers in Ohio, California, Mexico,
+   125	England, Malaysia and Italy.
+   126	
+   127	For further information about the AccuMon monitor and control software
+   128	family, contact Ms. Judy Hoag, Marketing Services, Emerson Computer Power,
+   129	9650 Jeronimo Road, Irvine, CA 92718. Telephone: (800) BACK-UPS. In
+   130	California: (714) 457-3704.
+   131	
+   132	  +---------------------------------------------------------------+
+   133	  |  From the America On-Line & PC-Link New Product Info Services |
+   134	  +===============================================================+
+   135	  | This information was processed with OmniPage Professional OCR |
+   136	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+   137	  | provided by the above mentioned company. For additional info, |
+   138	  | contact the company at the address or phone# indicated above. |
+   139	  |    All submissions for this service should be addressed to    |
+   140	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+   141	  +---------------------------------------------------------------+

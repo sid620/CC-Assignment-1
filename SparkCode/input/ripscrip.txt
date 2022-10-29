@@ -1,0 +1,4212 @@
+     1	
+     2	             ------------------------------------------
+     3	              RIPscrip Graphics Protocol Specification
+     4	
+     5	                     "Remote Imaging Protocol"
+     6	
+     7	                      Copyright (c) 1992-1993
+     8	                  TeleGrafix Communications, Inc.
+     9	                        All Rights Reserved
+    10	
+    11	                          Revision 1.53.00
+    12	
+    13	                           May 12th, 1993
+    14	             ------------------------------------------
+    15	
+    16	
+    17	
+    18	
+    19	=====================================================================
+    20	==                           INTRODUCTION                          ==
+    21	=====================================================================
+    22	
+    23	As system operators of many bulletin board systems, we've often
+    24	wished for some form of Graphical User Interface for our boards. Like
+    25	most Sysops, we've come across many solutions.  But they all seemed
+    26	to fall short in one way or another:  inadequate for THIS system,
+    27	incomplete, difficult to implement, too complex, or lacking in
+    28	graphics development tools.  In short, we became frustrated.
+    29	
+    30	So, we decided to write our own Graphical Script Language.
+    31	
+    32	RIPscrip stands for "Remote Imaging Protocol Script" language.  This
+    33	graphical language is our answer to the graphics needs of the BBS
+    34	community and has serious tools for implementation and practical use.
+    35	
+    36	For more information on RIPaint, RIPterm or RIPscrip development
+    37	tools, contact:
+    38	
+    39	     TeleGrafix Communications, Inc.
+    40	     16458 Bolsa Chica #15
+    41	     Huntington Beach, CA  92649
+    42	
+    43	     VOICE: (714) 379-2131
+    44	     FAX  : (714) 379-2132
+    45	     DATA : (714) 379-2133 (ArenaBBS: The Major BBS...32 lines)
+    46	
+    47	
+    48	
+    49	
+    50	
+    51	=====================================================================
+    52	==                     USE OF RIPscrip LANGUAGE                    ==
+    53	=====================================================================
+    54	
+    55	The RIPscrip language is made publicly available and is freely
+    56	licensed by TeleGrafix Communications, Inc.  By freely licensed, we
+    57	mean that the language can be used in the creation of other products.
+    58	It does not mean that RIPscrip is public domain. TeleGrafix maintains
+    59	the copyright of the RIPscrip language.
+    60	
+    61	RIPscrip, RIPaint, RIPdraw, and RIPterm are trademarks of TeleGrafix
+    62	Communications, Inc.  If you make a product that uses RIPscrip, you
+    63	must state in your program's "About Box" and documentation that this
+    64	product uses RIPscrip and the trademark statement.  You may not use
+    65	RIPterm, RIPaint, RIPdraw, or RIPterm in the name of your product.
+    66	
+    67	If you have any questions regarding these issues, contact TeleGrafix
+    68	Communications, Inc. at 714/379-2131.
+    69	
+    70	
+    71	
+    72	
+    73	
+    74	=====================================================================
+    75	==                            DEFINITION                           ==
+    76	=====================================================================
+    77	
+    78	RIPscrip is a text based Script language for displaying online
+    79	graphics.  The script language conforms to 7-bit ASCII, avoiding the
+    80	use of Extended ASCII characters.  This allows transmission over X.25
+    81	networks and other carriers that do not support full 8-bit binary
+    82	transfers easily.  RIPscrip allows RIPscrip graphical statements to
+    83	be mixed with printable ASCII text and [de facto standard]
+    84	ANSI/VT-100 directives.  RIPscrip can dynamically determine what is
+    85	graphics and what is text and display them appropriately in separate
+    86	windows (a graphics window and a text window).  And if you must have
+    87	your own proprietary commands, RIPscrip has room for that too.
+    88	
+    89	
+    90	
+    91	
+    92	=====================================================================
+    93	==                     HOW DOES RIPscrip WORK?                     ==
+    94	=====================================================================
+    95	
+    96	RIPscrip uses a flexible, and very efficient script language for its
+    97	graphical statements.  Its efficiency stems from its compactness and
+    98	developmental planning.  It is entirely Object Oriented instead of
+    99	Raster Oriented for efficient transmission of data and powerful
+   100	editing capabilities (using RIPaint for example).  The language is
+   101	open ended enough so that literally trillions of different graphics
+   102	commands can be implemented as needed.  RIPscrip is not a proprietary
+   103	protocol standard and is open to suggestion from the rest of the
+   104	world.
+   105	
+   106	Earlier Graphical Script Languages (Avatar and Skypix among others),
+   107	utilize special command characters to indicate which graphics command
+   108	is to be executed.  This precludes their use on systems that are
+   109	limited to ASCII printable text.  Traditional script languages use
+   110	English words to accomplish things (eg, "BOX 0,0 100,50").  This kind
+   111	of thing is incredibly bulky, especially when you consider that
+   112	pictures are usually not simple things, but comprised of hundreds or
+   113	thousands of individual graphical operations (eg, line, circles,
+   114	fills, text, etc.).  With this in mind, a human-readable script
+   115	language was completely inappropriate for the relatively limited
+   116	bandwidth of conventional modems.
+   117	
+   118	So, one of our main strategies for this language was to make it as
+   119	efficient as possible without going completely binary.  This allows
+   120	the immediate installation of the protocol onto any ASCII text-based
+   121	host system -- because the language consists entirely of ASCII
+   122	printable characters.  We justify the unreadability of the language
+   123	by pointing out the limitations of today's modems and phone lines --
+   124	the language must be compact.
+   125	
+   126	
+   127	
+   128	
+   129	=====================================================================
+   130	==              RIPscrip PROTOCOL - GENERAL STRUCTURE              ==
+   131	=====================================================================
+   132	
+   133	This document describes RIPscrip commands up through version 1.53.00 of
+   134	the RIPscrip Protocol Specification.
+   135	
+   136	RIPscrip is organized into 10 levels of graphical commands (low Level-0
+   137	to high Level-9).  Level-0 commands are the building blocks of RIPscrip.
+   138	The basic graphics primitives of the system are all Level-0, including
+   139	the commands Line, Rectangle, Circle, Color, Font, etc.  Each level of
+   140	RIPscrip gets progressively higher-level in concept.  For example,
+   141	Level-1 commands use Mouse Regions, Icons, and Formatted Text Regions.
+   142	
+   143	The basic syntax rules are as follows:
+   144	
+   145	1.  A RIPscrip command line starts at the beginning of a line of text.
+   146	    A RIPscrip command line moved to the middle of a line of text is
+   147	    treated as literal text. This prevents people inserting mischievous
+   148	    things in teleconference messages, or similar pranks.  The only
+   149	    exceptions to this rule is stated below under item 6, "continuation
+   150	    of long lines", and item 12 "alternate RIPscrip starting sequences".
+   151	
+   152	2.  A RIPscrip command line begins with an exclamation mark (!).
+   153	
+   154	3.  Every RIPscrip command is preceded by the universal RIPscrip
+   155	    delimiter, vertical-bar (|)
+   156	
+   157	4.  Individual RIPscrip commands may be combined on the same line
+   158	    providing they are separated by the vertical bar delimiter.
+   159	
+   160	5.  RIPscrip commands or command lines may be split across multiple
+   161	    lines with a backslash (\) just before each split.  This helps
+   162	    RIPscrip commands conform to right margins and escape word wrapping.
+   163	
+   164	          An example:
+   165	
+   166	               !|c02|L02030405|P0901020102010201020102\
+   167	               0102010201020102
+   168	
+   169	6.  RIPscrip must allow for normal text to be intermixed with
+   170	    RIPscrip commands.  If unrecognized text appears after a RIPscrip
+   171	    command, on the same line, the text is ignored (the command is not
+   172	    ignored).  A line that does not begin with "!|" is considered raw
+   173	    text and is routed to the TTY text window (see "8" below).
+   174	
+   175	7.  RIPscrip makes provisions for a Graphical Window and a Text
+   176	    Window.  The Graphical Window is where all RIPscrip graphics appear.
+   177	    The Text Window is where raw text appears.  Raw Text includes ANSI
+   178	    color and cursor movement codes (a subset of VT-100 terminal
+   179	    emulation).
+   180	
+   181	8.  The vertical bar (|) of a RIPscrip command can be followed by a
+   182	    level number.  If the 1st character after (|) is a numeric digit
+   183	    (1-9), then that's the RIPscrip Command Level.  If the very 1st
+   184	    character is NOT a digit 1-9, then it is the command type character
+   185	    and the command is a Level-0 command.  If the 1st character is a
+   186	    digit 1-9, and the second character is also a digit, then that
+   187	    defines a sub-level of a RIPscrip level.  For example:
+   188	
+   189	          !|L     RIPscrip Level-0 Command "L"
+   190	         !|1L     RIPscrip Level-1 Command "L"
+   191	        !|15L     RIPscrip Level-1, sub-level 5 Command "L"
+   192	
+   193	    Each of the above examples are unique commands not to be confused
+   194	    with each other.  You may continue the sub-levels up to a maximum
+   195	    level of 9 (e.g., !|123456789<cmd>").
+   196	
+   197	9.  Every RIPscrip command includes a command type character.  In
+   198	    Level-0 commands, this character immediately follows the vertical
+   199	    bar.  At all other levels, it follows the level digits.  The command
+   200	    type character may be any printable non-decimal-digit character.
+   201	
+   202	10. Following the command type character are 0 or more parameters.
+   203	    If the command requires a text-string, it is always the LAST
+   204	    parameter.  Numeric parameters DO NOT have any delimiters (commas,
+   205	    dashes, spaces, etc.).  A variable width numeric parameter may be
+   206	    used as the last parameter.  This allows for maximum efficiency.
+   207	    Numbers are represented in base-36.  This compacts numbers down to
+   208	    roughly 3/5 of their decimal form.  This numbering system,
+   209	    technically called "Hexa-Tri-Decimal", has affectionately been dubbed
+   210	    "MegaNums".  Unlike Hexadecimal which uses 0-9, A-F, MegaNums take
+   211	    advantage of the entire alphabet, using characters 0-9 and A-Z.
+   212	
+   213	11. An exclamation mark (!) or vertical bar (|) character can appear
+   214	    in a RIPscrip text parameter by preceding it with a backslash(\).  A
+   215	    literal backslash is represented with a double-backslash (\\).
+   216	
+   217	12. A RIPscrip sequence CAN begin in a column other than column #0,
+   218	    if the exclamation mark prefix is replaced with a Ctrl-A (Start Of
+   219	    Header [SOH]) character, or Ctrl-B (STX) character.  Since 99.9% of
+   220	    all BBS' do not allow users to enter most control characters, users
+   221	    will be unable to begin RIPscrip sequences in the middle of a command
+   222	    line.  Only the host should be able to do this.  This prevents people
+   223	    from cluttering  teleconference, or other areas of a host with
+   224	    spurious RIPscrip sequences.
+   225	
+   226	
+   227	
+   228	ANSI SEQUENCES
+   229	--------------
+   230	RIPscrip predominantly uses non-ANSI command sequences.  In a couple of
+   231	situations though, an ANSI sequence is allowed to perform a specific
+   232	function.  There are currently three separate ANSI sequences defined in
+   233	the RIPscrip protocol to perform various actions.  They are as follows:
+   234	
+   235	ESC[!     Query RIPscrip version number.  RIPterm will respond with
+   236	          RIPSCRIPxxyyzz where xx is equal to the major version
+   237	          number (zero padded), yy is equal to the minor version
+   238	          number (zero padded), and zz equals the revision code (also
+   239	          zero padded).  For v1.53.00, the returned sequence would be
+   240	          RIPSCRIP015300.  Another example, v1.23.45 would return
+   241	          RIPSCRIP012345.
+   242	
+   243	ESC[0!    Same as ESC [ ! (see above)
+   244	
+   245	ESC[1!    Disables all RIPscrip processing.  Any RIPscrip sequences are
+   246	          interpreted as raw text.
+   247	
+   248	ESC[2!    Enabled RIPscrip processing.  Any RIPscrip sequences will be
+   249	          parsed and processed.
+   250	
+   251	
+   252	
+   253	
+   254	
+   255	
+   256	=====================================================================
+   257	==                    RIPscrip COMMAND REFERENCE                   ==
+   258	=====================================================================
+   259	
+   260	The remainder of this document details the RIPscrip command set.
+   261	Each command has these aspects:
+   262	
+   263	    SYMBOL - the symbolic constant that is referenced in the
+   264	             RIPscrip API Library code.  This is  the universal
+   265	             name for the command.
+   266	
+   267	     LEVEL - The Command Level.  Sub-levels are represented
+   268	             with decimal points (eg, 1.3.5 for Level-1,
+   269	             Sub-level 3, Sub-Sub-level 5).  This is for
+   270	             discussion purposes only.  The decimal points
+   271	             are never part of the actual command.
+   272	
+   273	   COMMAND - The command type character identifying the
+   274	             command
+   275	
+   276	 ARGUMENTS - The arguments or parameters for the command.
+   277	             Commands that do not require any arguments
+   278	             after the command type character are shown
+   279	             here as "<none>".  Each argument is shown in
+   280	             the order it appears in the command, and is
+   281	             represented by a name.  If an argument is
+   282	             numeric, it is followed by a width specifier
+   283	             indicating how many MegaNum digits the
+   284	             argument consists of.  (eg, ":2" means a
+   285	             2-digit MegaNum, or a value between 0 and
+   286	             1295).  If an argument does not have a width
+   287	             specifier, it is by default a text argument,
+   288	             and should be the last argument on the line.
+   289	             If a command is variable length (see POLYGON),
+   290	             then it will appear with ellipses (...)
+   291	
+   292	    FORMAT - This represents the format of the command, with
+   293	             the starting "!|", the level digits, the
+   294	             command type character, and the argument list,
+   295	             with the argument names in angle brackets.
+   296	             (These arguments are spaced apart, but these
+   297	             spaces never appear in the physical commands.)
+   298	
+   299	   EXAMPLE - An actual example of the RIPscrip command.
+   300	
+   301	DRAW COLOR - If YES, then this command uses or affects the
+   302	             current Drawing Color.
+   303	
+   304	LINE PATRN - If YES, then this command uses or affects the
+   305	             current Line Style Pattern.
+   306	
+   307	LINE THICK - If YES, then this command uses or affects the
+   308	             current Line Style Thickness
+   309	
+   310	FILL COLOR - If YES, then this command uses or affects the
+   311	             current Fill Color.
+   312	
+   313	FILL PATRN - If YES, then this command uses or affects the
+   314	             current Fill Pattern.
+   315	
+   316	WRITE MODE - If YES, then this command will take advantage
+   317	             of the current Write Mode (eg, COPY, or XOR).
+   318	
+   319	FONT SIZES - If YES, then this command uses or affects the
+   320	             current Font Size.
+   321	
+   322	
+   323	
+   324	
+   325	
+   326	RIP_TEXT_WINDOW
+   327	---------------
+   328	         Function:  Define the size and location of the Text Window
+   329	            Level:  0
+   330	          Command:  w
+   331	        Arguments:  x0:2, y0:2, x1:2, y1:2, wrap:1, size:1
+   332	           Format:  !|w <x0> <y0> <x1> <y1> <wrap> <size>
+   333	          Example:  !|w00001B0M10
+   334	  Uses Draw Color:  NO
+   335	Uses Line Pattern:  NO
+   336	  Uses Line Thick:  NO
+   337	  Uses Fill Color:  NO
+   338	Uses Fill Pattern:  NO
+   339	  Uses Write Mode:  NO
+   340	  Uses Font Sizes:  NO
+   341	
+   342	This command specifies the dimensions of the virtual TTY window that will
+   343	display all ASCII/ANSI (non-RIPscrip) data coming across the connection.
+   344	(x0,y0) defines the upper-left corner of the window in text-based
+   345	character- cell coordinates.  (x1,y1) defines the lower-right corner of
+   346	the window (inclusive).  There may be two simultaneous windows on the
+   347	screen, one for TTY text, and one for the display of RIPscrip graphics (a
+   348	viewport), and they may overlap.
+   349	
+   350	Bytes received over the modem are first checked for RIPscrip commands.
+   351	All bytes that don't conform to the RIPscrip syntax are treated as
+   352	ANSI/ASCII and displayed in the TTY window (if defined). User keystrokes
+   353	that are echoed by the BBS would also appear in the text window by this
+   354	scheme.
+   355	
+   356	The text window may be made invisible, ignoring all non-RIPscrip bytes,
+   357	by setting all RIP_TEXT_WINDOW parameters to zero (0).  The X and Y
+   358	parameters ranges vary depending on the setting of the <size> parameter
+   359	which governs the font size used for the output text. Valid settings for
+   360	the <size> parameter and the ranges for X/Y values are as follows:
+   361	
+   362	        Size   Font Size   X Range  Y Range
+   363	        ------------------------------------------
+   364	         0     8x8          0-79     0-42
+   365	         1     7x8          0-90     0-42
+   366	         2     8x14         0-79     0-24
+   367	         3     7x14         0-90     0-24
+   368	         4     16x14        0-39     0-24
+   369	
+   370	The <wrap> parameter applies to both the horizontal and vertical
+   371	dimensions.  If <wrap> is set to 1, then any text that extends beyond the
+   372	right margin of the window will wrap to the next line of the window,
+   373	scrolling the window up if necessary.  If <wrap> is 0, then any text
+   374	going beyond the right margin is truncated and no scrolling is performed;
+   375	the cursor remains at the right margin.
+   376	
+   377	NOTE:  If the text window currently being defined is identical to the
+   378	       currently defined text window, the cursor will not be relocated
+   379	       to the upper-left corner of the window. The only aspect of the
+   380	       text window that can be different and still be deemed
+   381	       "identical" is the <wrap> parameter.  For the current and new text
+   382	       windows to be considered identical, the parameters <x0>, <y0>,
+   383	       <x1>, <y1> and <size> must be the same.
+   384	
+   385	
+   386	
+   387	RIP_VIEWPORT
+   388	------------
+   389	         Function:  Define the size and location of the Graphics Window
+   390	            Level:  0
+   391	          Command:  v
+   392	        Arguments:  x0:2, y0:2, x1:2, y1:2
+   393	           Format:  !|v <x0> <y0> <x1> <y1>
+   394	          Example:  !|v00002E1M
+   395	  Uses Draw Color:  NO
+   396	Uses Line Pattern:  NO
+   397	  Uses Line Thick:  NO
+   398	  Uses Fill Color:  NO
+   399	Uses Fill Pattern:  NO
+   400	  Uses Write Mode:  NO
+   401	  Uses Font Sizes:  NO
+   402	
+   403	This command defines the (X,Y) pixel boundaries of the RIPscrip graphics
+   404	window, which will contain all RIPscrip graphics output. ASCII/ANSI text
+   405	will be displayed in the virtual TTY window defined by the
+   406	RIP_TEXT_WINDOW command above.  (x0,y0) defines the upper-left corner of
+   407	the graphics viewport, and (x1,y1) defines the lower-right corner
+   408	(inclusive).  The viewport may be disabled, so RIPscrip graphics commands
+   409	are ignored, by setting all parameters to zero (0).
+   410	
+   411	Graphics displayed in the viewport is "truncated" at this rectangular
+   412	border, meaning if a circle would normally extend outside one of the
+   413	borders, it will be chopped, only displaying the portion of the circle
+   414	that is contained inside the viewport boundaries.
+   415	
+   416	Coordinates are specified based on a 640x350 pixel resolution, meaning X
+   417	can be anywhere from 0 - 639, and Y can be anywhere from 0 - 349. x0 must
+   418	be less than x1 and y0 must be less than y1 unless all parameters are set
+   419	to zero, indicating that the graphics window is disabled.
+   420	
+   421	
+   422	
+   423	RIP_RESET_WINDOWS
+   424	-----------------
+   425	         Function:  Clear Graphics & Text Windows and reset to full screen
+   426	            Level:  0
+   427	          Command:  *
+   428	        Arguments:  <none>
+   429	           Format:  !|*
+   430	          Example:  !|*
+   431	  Uses Draw Color:  NO
+   432	Uses Line Pattern:  NO
+   433	  Uses Line Thick:  NO
+   434	  Uses Fill Color:  NO
+   435	Uses Fill Pattern:  NO
+   436	  Uses Write Mode:  NO
+   437	  Uses Font Sizes:  NO
+   438	
+   439	This command will set the Text Window to a full 80x43 EGA hi-res text
+   440	mode, place the cursor in the upper left corner, clear the screen, and
+   441	zoom the Graphics Window to full 640x350 EGA screen.  Both windows are
+   442	filled with the current graphics background color.  Also, all Mouse
+   443	Regions are deleted and the Clipboard is erased.  A system might use this
+   444	function before entering a text only mode that does not support RIP
+   445	commands.  This command will also restore the default 16-color RIP
+   446	palette (see RIP_SET_PALETTE below).
+   447	
+   448	
+   449	
+   450	RIP_ERASE_WINDOW
+   451	----------------
+   452	         Function:  Clears the Text Window to the current background color
+   453	            Level:  0
+   454	          Command:  e
+   455	        Arguments:  <none>
+   456	           Format:  !|e
+   457	          Example:  !|e
+   458	  Uses Draw Color:  NO
+   459	Uses Line Pattern:  NO
+   460	  Uses Line Thick:  NO
+   461	  Uses Fill Color:  NO
+   462	Uses Fill Pattern:  NO
+   463	  Uses Write Mode:  NO
+   464	  Uses Font Sizes:  NO
+   465	
+   466	This clears the TTY text window to the current graphics background color
+   467	and positions the cursor in the upper-left corner of the window.  If the
+   468	text window is inactive, then this command is ignored.  If the text and
+   469	graphics windows overlap, then this command will clear the overlapping
+   470	portion also.
+   471	
+   472	
+   473	
+   474	RIP_ERASE_VIEW
+   475	--------------
+   476	         Function:  Clear Graphics Window to current background color
+   477	            Level:  0
+   478	          Command:  E
+   479	        Arguments:  <none>
+   480	           Format:  !|E
+   481	          Example:  !|E
+   482	  Uses Draw Color:  NO
+   483	Uses Line Pattern:  NO
+   484	  Uses Line Thick:  NO
+   485	  Uses Fill Color:  NO
+   486	Uses Fill Pattern:  NO
+   487	  Uses Write Mode:  NO
+   488	  Uses Font Sizes:  NO
+   489	
+   490	This command clears the Graphics Viewport to the current graphics
+   491	background color.  If the graphics viewport is not active (if the
+   492	boundaries are 0,0,0,0), then this command is ignored.  If the text and
+   493	graphics windows overlap, then this command will clear the overlapping
+   494	portion also.
+   495	
+   496	
+   497	
+   498	RIP_GOTOXY
+   499	----------
+   500	         Function:  Move text cursor to row & column in Text Window
+   501	            Level:  0
+   502	          Command:  g
+   503	        Arguments:  x:2, y:2
+   504	           Format:  !|g <x> <y>
+   505	          Example:  !|g0509
+   506	  Uses Draw Color:  NO
+   507	Uses Line Pattern:  NO
+   508	  Uses Line Thick:  NO
+   509	  Uses Fill Color:  NO
+   510	Uses Fill Pattern:  NO
+   511	  Uses Write Mode:  NO
+   512	  Uses Font Sizes:  NO
+   513	
+   514	This command sets the position of the text cursor in the TTY Text window,
+   515	if it is active.  If inactive (if the dimensions are 0,0,0,0), then this
+   516	command is ignored.  This command is equivalent to the ANSI/VT-100
+   517	command goto x/y, <Esc>[x;yH, except that the coordinates of that ANSI
+   518	command are 1-based and the coordinates of this RIPscrip command are
+   519	0-based.
+   520	
+   521	
+   522	
+   523	RIP_HOME
+   524	--------
+   525	         Function:  Move cursor to upper-left corner of Text Window
+   526	            Level:  0
+   527	          Command:  H
+   528	        Arguments:  <none>
+   529	           Format:  !|H
+   530	          Example:  !|H
+   531	  Uses Draw Color:  NO
+   532	Uses Line Pattern:  NO
+   533	  Uses Line Thick:  NO
+   534	  Uses Fill Color:  NO
+   535	Uses Fill Pattern:  NO
+   536	  Uses Write Mode:  NO
+   537	  Uses Font Sizes:  NO
+   538	
+   539	This command positions the text cursor to the upper-left corner in the
+   540	TTY Text Window, if it is active.
+   541	
+   542	
+   543	
+   544	RIP_ERASE_EOL
+   545	-------------
+   546	         Function:  Erase current text line from the cursor to end of line
+   547	            Level:  0
+   548	          Command:  >
+   549	        Arguments:  <none>
+   550	           Format:  !|>
+   551	          Example:  !|>
+   552	  Uses Draw Color:  NO
+   553	Uses Line Pattern:  NO
+   554	  Uses Line Thick:  NO
+   555	  Uses Fill Color:  NO
+   556	Uses Fill Pattern:  NO
+   557	  Uses Write Mode:  NO
+   558	  Uses Font Sizes:  NO
+   559	
+   560	This command will erase the current text line in the TTY text window from
+   561	the current cursor location (inclusive) to the end of the line. The
+   562	erased region is filled with the current graphics background color.  This
+   563	differs from the ANSI command ESC[K which clears the area with the
+   564	current ANSI background color.
+   565	
+   566	
+   567	
+   568	RIP_COLOR
+   569	---------
+   570	         Function:  Set the current Drawing Color for graphics primitives
+   571	            Level:  0
+   572	          Command:  c
+   573	        Arguments:  color:2
+   574	           Format:  !|c <color>
+   575	          Example:  !|cA
+   576	  Uses Draw Color:  YES
+   577	Uses Line Pattern:  NO
+   578	  Uses Line Thick:  NO
+   579	  Uses Fill Color:  NO
+   580	Uses Fill Pattern:  NO
+   581	  Uses Write Mode:  NO
+   582	  Uses Font Sizes:  NO
+   583	
+   584	This command sets the color for drawing lines, circles, arcs, rectangles,
+   585	and other graphics primitives, as well as the color for drawing
+   586	graphics-text from the RIP_TEXT class of commands (not from ASCII/ANSI
+   587	text).  This command does not affect Fill colors or Fill Patterns (see
+   588	below).  It does affect the borders of graphic objects, for example the
+   589	border of an ellipse drawn with the RIP_FILLED_OVAL command.  (The
+   590	interior of the ellipse would be drawn according to the most recent
+   591	RIP_FILL_STYLE command.)
+   592	
+   593	This command chooses one of the colors of the 16-color RIP palette
+   594	defined by the RIP_SET_PALETTE.  Here is the default 16-color RIP
+   595	palette:
+   596	
+   597	     Value   Color
+   598	     -------------------------------------------------------
+   599	     00      Black (00 is always the background color)
+   600	     01      Blue
+   601	     02      Green
+   602	     03      Cyan
+   603	     04      Red
+   604	     05      Magenta
+   605	     06      Brown
+   606	     07      Light Gray
+   607	     08      Dark Gray
+   608	     09      Light Blue
+   609	     0A      Light Green
+   610	     0B      Light Cyan
+   611	     0C      Light Red
+   612	     0D      Light Magenta
+   613	     0E      Yellow
+   614	     0F      White
+   615	
+   616	
+   617	
+   618	RIP_SET_PALETTE
+   619	---------------
+   620	         Function:  Set 16-color RIP Palette from master 64-color palette
+   621	            Level:  0
+   622	          Command:  Q
+   623	        Arguments:  c1:2, c2:2, ... c16:2
+   624	           Format:  !|Q <c1> <c2> ... <c16>
+   625	          Example:  !|Q000102030405060708090A0B0C0D0E0F
+   626	  Uses Draw Color:  YES
+   627	Uses Line Pattern:  NO
+   628	  Uses Line Thick:  NO
+   629	  Uses Fill Color:  NO
+   630	Uses Fill Pattern:  NO
+   631	  Uses Write Mode:  NO
+   632	  Uses Font Sizes:  NO
+   633	
+   634	This command modifies the 16-color RIP palette by choosing from the 64
+   635	colors in the master palette.  This allows you to alter the colors in
+   636	your RIPscrip graphics scenes.  Once a Set Palette command is processed,
+   637	any colors on the screen that had their corresponding palette entries
+   638	changed will instantly switch to the new color set. You may obtain color
+   639	cycling effects by using this command.  The default 16-color RIP palette
+   640	is restored by the RIP_RESET_WINDOWS command.  The default 16-color RIP
+   641	palette is:
+   642	
+   643	    16-Color RIP Palette     Master 64-Color EGA
+   644	        Color Code           Palette Color Code       Color
+   645	    ---------------------------------------------------------------
+   646	           00                     0  (00)             Black
+   647	           01                     1  (01)             Blue
+   648	           02                     2  (02)             Green
+   649	           03                     3  (03)             Cyan
+   650	           04                     4  (04)             Red
+   651	           05                     5  (05)             Magenta
+   652	           06                     7  (06)             Brown
+   653	           07                     20 (0K)             Light Gray
+   654	           08                     56 (1K)             Dark Gray
+   655	           09                     57 (1L)             Light Blue
+   656	           0A                     58 (1M)             Light Green
+   657	           0B                     59 (1N)             Light Cyan
+   658	           0C                     60 (1O)             Light Red
+   659	           0D                     61 (1P)             Light Magenta
+   660	           0E                     62 (1Q)             Yellow
+   661	           0F                     63 (1R)             White
+   662	
+   663	Color 00 of the 16-color RIP palette is always the background color
+   664	(which is typically Black, or color 00 of the 64-color EGA palette).
+   665	
+   666	
+   667	
+   668	RIP_ONE_PALETTE
+   669	---------------
+   670	         Function:  Set color of 16-color RIP Palette from Master Palette
+   671	            Level:  0
+   672	          Command:  a
+   673	        Arguments:  color:2 value:2
+   674	           Format:  !|a <color> <value>
+   675	          Example:  !|a051B
+   676	  Uses Draw Color:  YES
+   677	Uses Line Pattern:  NO
+   678	  Uses Line Thick:  NO
+   679	  Uses Fill Color:  NO
+   680	Uses Fill Pattern:  NO
+   681	  Uses Write Mode:  NO
+   682	  Uses Font Sizes:  NO
+   683	
+   684	This command changes one color in the 16-color palette.  The color number
+   685	is sent along with the new color value from the Master Color Palette. The
+   686	color <value> must be in the range of 0-63.  Once a Set One Palette
+   687	command is processed, any colors on the screen that correspond to the
+   688	<color> number will be changed instantly to the new color value.  You may
+   689	obtain color cycling effects by using this command.  The default RIP
+   690	palette is restored when by RIP_RESET_WINDOWS.
+   691	
+   692	    16-Color RIP Palette     Master 64-Color EGA
+   693	        Color Code           Palette Color Code       Color
+   694	    ---------------------------------------------------------------
+   695	           00                     0  (00)             Black
+   696	           01                     1  (01)             Blue
+   697	           02                     2  (02)             Green
+   698	           03                     3  (03)             Cyan
+   699	           04                     4  (04)             Red
+   700	           05                     5  (05)             Magenta
+   701	           06                     7  (06)             Brown
+   702	           07                     20 (0K)             Light Gray
+   703	           08                     56 (1K)             Dark Gray
+   704	           09                     57 (1L)             Light Blue
+   705	           0A                     58 (1M)             Light Green
+   706	           0B                     59 (1N)             Light Cyan
+   707	           0C                     60 (1O)             Light Red
+   708	           0D                     61 (1P)             Light Magenta
+   709	           0E                     62 (1Q)             Yellow
+   710	           0F                     63 (1R)             White
+   711	
+   712	Color 00 of the 16-color RIP palette is always the background color
+   713	(which is typically Black, or color 00 of the 64-color EGA palette).
+   714	
+   715	
+   716	
+   717	RIP_WRITE_MODE
+   718	--------------
+   719	         Function:  Set drawing mode for graphics primitives
+   720	            Level:  0
+   721	          Command:  W
+   722	        Arguments:  mode:2
+   723	           Format:  !|W <mode>
+   724	          Example:  !|W00
+   725	  Uses Draw Color:  NO
+   726	Uses Line Pattern:  NO
+   727	  Uses Line Thick:  NO
+   728	  Uses Fill Color:  NO
+   729	Uses Fill Pattern:  NO
+   730	  Uses Write Mode:  YES
+   731	  Uses Font Sizes:  NO
+   732	
+   733	This command sets the current drawing mode for most of the graphics
+   734	primitives:
+   735	
+   736	     Mode   Description
+   737	     ------------------------------------------
+   738	     00     Normal drawing mode (overwrite)
+   739	     01     XOR (complimentary) mode
+   740	
+   741	In normal mode, things are drawn in the current drawing color over top of
+   742	whatever is in the graphics viewport.  This is the typical mode of
+   743	operation in a GUI environment.
+   744	
+   745	In the XOR mode, instead of changing each pixel to the current drawing
+   746	color, the pixel is inverted (black changes to white, red to green,
+   747	etc.).  Drawing the same item a second time erases it completely.  This
+   748	mode is useful for drawing something temporarily, or for animation.  The
+   749	Rubber Band mode of most paint programs uses a mode like this.
+   750	
+   751	
+   752	
+   753	RIP_MOVE
+   754	--------
+   755	         Function:  Move the current drawing position to (X,Y)
+   756	            Level:  0
+   757	          Command:  m
+   758	        Arguments:  x:2, y:2
+   759	           Format:  !|m <x> <y>
+   760	          Example:  !|m0509
+   761	  Uses Draw Color:  NO
+   762	Uses Line Pattern:  NO
+   763	  Uses Line Thick:  NO
+   764	  Uses Fill Color:  NO
+   765	Uses Fill Pattern:  NO
+   766	  Uses Write Mode:  NO
+   767	  Uses Font Sizes:  NO
+   768	
+   769	This command moves the current graphics drawing cursor to (x,y).  You
+   770	could use this to draw text at a certain point, but you'd probably use
+   771	RIP_TEXT_XY instead.  This command is primarily provided for future
+   772	development which will make use of its ability to relocate the current
+   773	drawing position without physically drawing anything.
+   774	
+   775	
+   776	
+   777	RIP_TEXT
+   778	--------
+   779	         Function:  Draw text in current font/color at current location
+   780	            Level:  0
+   781	          Command:  T
+   782	        Arguments:  text-string
+   783	           Format:  !|T <text-string>
+   784	          Example:  !|Thello world
+   785	  Uses Draw Color:  YES
+   786	Uses Line Pattern:  NO
+   787	  Uses Line Thick:  NO
+   788	  Uses Fill Color:  NO
+   789	Uses Fill Pattern:  NO
+   790	  Uses Write Mode:  YES
+   791	  Uses Font Sizes:  YES
+   792	
+   793	This command displays text at the current location in the graphics
+   794	window, as set with the RIP_MOVE command.  The text is also affected by
+   795	the most recent settings of these commands:
+   796	
+   797	     Command            Description of Command
+   798	     -----------------------------------------------------------------
+   799	     RIP_FONT_STYLE     font style (character set, direction, size)
+   800	     RIP_WRITE_MODE     drawing mode (normal or XOR)
+   801	     RIP_COLOR          drawing color (from the 16-color RIP palette)
+   802	
+   803	The drawing position is placed at the end of the last character drawn.
+   804	
+   805	The current drawing position is set immediately to the right of the drawn
+   806	text.  Subsequent Line, Circle or other such commands will not affect
+   807	this position.  This provides a means so that you can quickly do another
+   808	RIP_TEXT command (presumably in another color) at a later time and have
+   809	the text show up immediately after the previous text.
+   810	
+   811	
+   812	
+   813	RIP_TEXT_XY
+   814	-----------
+   815	         Function:  Draw text in current font/color at specific location
+   816	            Level:  0
+   817	          Command:  @
+   818	        Arguments:  x:2, y:2 and text-string
+   819	           Format:  !|@ <x> <y> <text-string>
+   820	          Example:  !|@0011hello world
+   821	  Uses Draw Color:  YES
+   822	Uses Line Pattern:  NO
+   823	  Uses Line Thick:  NO
+   824	  Uses Fill Color:  NO
+   825	Uses Fill Pattern:  NO
+   826	  Uses Write Mode:  YES
+   827	  Uses Font Sizes:  YES
+   828	
+   829	This command is an efficient combination of RIP_MOVE and RIP_TEXT. The
+   830	text is drawn at the specified location according to the same settings as
+   831	apply to RIP_TEXT (see above).
+   832	
+   833	The current drawing position is set immediately to the right of the drawn
+   834	text.  Subsequent Line, Circle or other such commands will not affect
+   835	this position.  This provides a means so that you can quickly do another
+   836	RIP_TEXT command (presumably in another color) at a later time and have
+   837	the text show up immediately after the previous text.
+   838	
+   839	
+   840	
+   841	RIP_FONT_STYLE
+   842	--------------
+   843	         Function:  Select the current font style, orientation and size
+   844	            Level:  0
+   845	          Command:  Y
+   846	        Arguments:  font:2, direction:2, size:2, res:2
+   847	           Format:  !|Y <font> <direction> <size> <res>
+   848	          Example:  !|Y01000400
+   849	  Uses Draw Color:  NO
+   850	Uses Line Pattern:  NO
+   851	  Uses Line Thick:  NO
+   852	  Uses Fill Color:  NO
+   853	Uses Fill Pattern:  NO
+   854	  Uses Write Mode:  NO
+   855	  Uses Font Sizes:  YES
+   856	
+   857	This command sets the font, direction and size for RIP_TEXT commands.
+   858	
+   859	     Font   Description of Font
+   860	     ---------------------------------------------
+   861	     00     Default 8x8 font            Bit-Mapped
+   862	     01     Triplex Font                Scalable
+   863	     02     Small Font                  Scalable
+   864	     03     Sans Serif Font             Scalable
+   865	     04     Gothic [Old English] Font   Scalable
+   866	     05     Script Font                 Scalable
+   867	     06     Simplex Font                Scalable
+   868	     07     Triplex Script Font         Scalable
+   869	     08     Complex Font                Scalable
+   870	     09     European Font               Scalable
+   871	     0A     Bold Font                   Scalable
+   872	
+   873	For the Direction parameter, use 00 to indicate horizontal and 01 for
+   874	vertical.
+   875	
+   876	For the Size parameter, use 01 for the normal default size, 02 for x2
+   877	magnification, 03 for x3 magnification, ... , and 0A for x10
+   878	magnification.
+   879	
+   880	NOTE:  The Default font is bit-mapped and looks best when drawn in
+   881	       size 1.  In sizes greater than one, the individual pixels are
+   882	       enlarged, giving a jagged look.  This may not be the desired
+   883	       effect.  The fonts 1 - 4 are smooth scalable vector fonts.
+   884	
+   885	
+   886	
+   887	RIP_PIXEL
+   888	---------
+   889	         Function:  Draws a one pixel using current drawing color
+   890	            Level:  0
+   891	          Command:  X
+   892	        Arguments:  x:2, y:2
+   893	           Format:  !|X <x> <y>
+   894	          Example:  !|X1122
+   895	  Uses Draw Color:  YES
+   896	Uses Line Pattern:  NO
+   897	  Uses Line Thick:  NO
+   898	  Uses Fill Color:  NO
+   899	Uses Fill Pattern:  NO
+   900	  Uses Write Mode:  NO
+   901	  Uses Font Sizes:  NO
+   902	
+   903	This command will draw a single pixel in the current drawing color at the
+   904	given (x,y) graphics position.  This command is included for
+   905	completeness, but in practice it would be extremely inefficient to make
+   906	much use of it.
+   907	
+   908	
+   909	
+   910	RIP_LINE
+   911	--------
+   912	         Function:  Draw a line in the current color/line style
+   913	            Level:  0
+   914	          Command:  L
+   915	        Arguments:  x0:2, y0:2, x1:2, y1:2
+   916	           Format:  !|L <x0> <y0> <x1> <y1>
+   917	          Example:  !|L00010A0E
+   918	  Uses Draw Color:  YES
+   919	Uses Line Pattern:  YES
+   920	  Uses Line Thick:  YES
+   921	  Uses Fill Color:  NO
+   922	Uses Fill Pattern:  NO
+   923	  Uses Write Mode:  YES
+   924	  Uses Font Sizes:  NO
+   925	
+   926	This command will draw a line in the current drawing color, using the
+   927	current line style, pattern and thickness.  The line is drawn from (x0,y0)
+   928	to (x1,y1) in the graphics viewport.
+   929	
+   930	
+   931	
+   932	RIP_RECTANGLE
+   933	-------------
+   934	         Function:  Draw a rectangle in current color/line style
+   935	            Level:  0
+   936	          Command:  R
+   937	        Arguments:  x0:2, y0:2, x1:2, y1:2
+   938	           Format:  !|R <x0> <y0> <x1> <y1>
+   939	          Example:  !|R00010A0E
+   940	  Uses Draw Color:  YES
+   941	Uses Line Pattern:  YES
+   942	  Uses Line Thick:  YES
+   943	  Uses Fill Color:  NO
+   944	Uses Fill Pattern:  NO
+   945	  Uses Write Mode:  YES
+   946	  Uses Font Sizes:  NO
+   947	
+   948	This command draws a rectangle in the current drawing color, using the
+   949	current line style, pattern and thickness.  (x0,y0) and (x1,y1) are any
+   950	two opposing corners of the rectangle.  If x0=x1 or y0=y1 then the
+   951	command will draw a single vertical or horizontal line.  The rectangle
+   952	interior is not filled by RIP_RECTANGLE.
+   953	
+   954	
+   955	
+   956	RIP_BAR
+   957	-------
+   958	         Function:  Draw solid, filled rectangle with fill color/pattern
+   959	            Level:  0
+   960	          Command:  B
+   961	        Arguments:  x0:2, y0:2, x1:2, y1:2
+   962	           Format:  !|B <x0> <y0> <x1> <y1>
+   963	          Example:  !|B00010A0E
+   964	  Uses Draw Color:  NO
+   965	Uses Line Pattern:  NO
+   966	  Uses Line Thick:  NO
+   967	  Uses Fill Color:  YES
+   968	Uses Fill Pattern:  YES
+   969	  Uses Write Mode:  NO
+   970	  Uses Font Sizes:  NO
+   971	
+   972	This command fills a rectangular region with the current fill color and
+   973	pattern.  No border is drawn.
+   974	
+   975	
+   976	
+   977	RIP_CIRCLE
+   978	----------
+   979	         Function:  Draw a circle in the current color and line thickness
+   980	            Level:  0
+   981	          Command:  C
+   982	        Arguments:  x_center:2, y_center:2, radius:2
+   983	           Format:  !|C <x_center> <y_center> <radius>
+   984	          Example:  !|C1E180M
+   985	  Uses Draw Color:  YES
+   986	Uses Line Pattern:  NO
+   987	  Uses Line Thick:  YES
+   988	  Uses Fill Color:  NO
+   989	Uses Fill Pattern:  NO
+   990	  Uses Write Mode:  NO
+   991	  Uses Font Sizes:  NO
+   992	
+   993	This command draws a circle in the current drawing color and line
+   994	thickness.  The <radius> is in pixel units.  This command understands
+   995	aspect ratios and will draw a truly circular circle instead of an oblong
+   996	circle (ellipse) like on other graphics systems.  The aspect ratio is
+   997	currently based on the EGA 640x350 resolution and is understood by both
+   998	the GUI designer and the Terminal Program.
+   999	
+  1000	NOTE:  This command uses the line thickness setting, but not the line
+  1001	       patterns.  In other words, you can draw a circle with a thick
+  1002	       or a thin border, but not a dashed or dotted border.
+  1003	
+  1004	
+  1005	
+  1006	RIP_OVAL
+  1007	--------
+  1008	         Function:  Draw elliptical arc in the current color/line style
+  1009	            Level:  0
+  1010	          Command:  O
+  1011	        Arguments:  x:2, y:2, st_ang:2, end_ang:2, x_rad:2, y_rad:2
+  1012	           Format:  !|O <x> <y> <st_ang> <end_ang> <x_rad> <y_rad>
+  1013	          Example:  1E1A18003G150Z
+  1014	  Uses Draw Color:  YES
+  1015	Uses Line Pattern:  NO
+  1016	  Uses Line Thick:  YES
+  1017	  Uses Fill Color:  NO
+  1018	Uses Fill Pattern:  NO
+  1019	  Uses Write Mode:  NO
+  1020	  Uses Font Sizes:  NO
+  1021	
+  1022	This command draws an elliptical arc similar to the circular RIP_ARC
+  1023	command.  The center of the ellipse is (x,y) and the arc is drawn
+  1024	starting from <st_ang> and proceeding counterclockwise to <end_ang> (see
+  1025	RIP_ARC above for details).
+  1026	
+  1027	The X radius is half the full width of the ellipse, the Y radius is half
+  1028	the full height.  The ellipse is drawn according to the current line
+  1029	thickness, but the current line pattern has no effect.
+  1030	
+  1031	
+  1032	
+  1033	RIP_FILLED_OVAL
+  1034	---------------
+  1035	         Function:  Draw filled ellipse using current color/fill pattern
+  1036	            Level:  0
+  1037	          Command:  o
+  1038	        Arguments:  x_center:2, y_center:2, x_rad:2, y_rad:2
+  1039	           Format:  !|o <x_center> <y_center> <x_rad> <y_rad>
+  1040	          Example:  !|o1G2B0M0G
+  1041	  Uses Draw Color:  YES
+  1042	Uses Line Pattern:  NO
+  1043	  Uses Line Thick:  YES
+  1044	  Uses Fill Color:  YES
+  1045	Uses Fill Pattern:  YES
+  1046	  Uses Write Mode:  NO
+  1047	  Uses Font Sizes:  NO
+  1048	
+  1049	This command draws a complete filled ellipse on the screen.  The interior
+  1050	of the ellipse is drawn using the current fill pattern and fill color.
+  1051	The outline of the ellipse is drawn using the current drawing color and
+  1052	line thickness.
+  1053	
+  1054	
+  1055	
+  1056	RIP_ARC
+  1057	-------
+  1058	         Function:  Draw circular arc in current color/line thickness
+  1059	            Level:  0
+  1060	          Command:  A
+  1061	        Arguments:  x:2, y:2, start_ang:2, end_ang:2, radius:2
+  1062	           Format:  !|A <x> <y> <start_ang> <end_ang> <radius>
+  1063	          Example:  !|A1E18003G15
+  1064	  Uses Draw Color:  YES
+  1065	Uses Line Pattern:  NO
+  1066	  Uses Line Thick:  YES
+  1067	  Uses Fill Color:  NO
+  1068	Uses Fill Pattern:  NO
+  1069	  Uses Write Mode:  NO
+  1070	  Uses Font Sizes:  NO
+  1071	
+  1072	This command draws a circular arc, or a segment of a circle.  Drawing
+  1073	begins at <start_ang> and terminates at <end_ang>.  The angles are
+  1074	represented starting at zero for the 3 o'clock position and increasing
+  1075	counterclockwise through a full circle to 360:
+  1076	
+  1077	The arc drawing begins at the <start_angle> and continues counter-
+  1078	clockwise to the <end_angle>.  A full circle will be displayed if
+  1079	<start_ang>=0 and <end_ang>=360.  This command recognizes aspect ratios
+  1080	like the circle command does.  It does not take advantage of line
+  1081	patterns but does comply with line thickness.
+  1082	
+  1083	If both angles are equal, nothing is drawn.
+  1084	
+  1085	
+  1086	
+  1087	RIP_OVAL_ARC
+  1088	------------
+  1089	         Function:  Draw an elliptical arc
+  1090	            Level:  0
+  1091	          Command:  V
+  1092	        Arguments:  x:2, y:2, st_ang:2, e_ang:2, radx:2 rady:2
+  1093	           Format:  !|V <x> <y> <st_ang> <e_ang> <radx> <rady>
+  1094	          Example:  !|V1E18003G151Q
+  1095	  Uses Draw Color:  YES
+  1096	Uses Line Pattern:  NO
+  1097	  Uses Line Thick:  YES
+  1098	  Uses Fill Color:  NO
+  1099	Uses Fill Pattern:  NO
+  1100	  Uses Write Mode:  NO
+  1101	  Uses Font Sizes:  NO
+  1102	
+  1103	This command draws an elliptical arc, or a segment of an ellipse. Drawing
+  1104	begins at <st_ang> and terminates at <e_ang>.  The angles are represented
+  1105	starting at zero for 3 o'clock position and increasing counterclockwise
+  1106	through a full ellipse at 360 degrees:
+  1107	
+  1108	The arc drawing begins at the <st_ang> and continues counterclockwise to
+  1109	the <e_ang>.  A complete ellipse will be displayed if <st_ang>=0 and
+  1110	<e_ang>=360.  This command does not utilize "aspect ratios" because of
+  1111	the nature of an Ellipse.  It does not take advantage of line patterns
+  1112	but does comply with line thickness.
+  1113	
+  1114	
+  1115	
+  1116	RIP_PIE_SLICE
+  1117	-------------
+  1118	         Function:  Draws a circular pie slice
+  1119	            Level:  0
+  1120	          Command:  I
+  1121	        Arguments:  x:2, y:2, start_ang:2, end_ang:2, radius:2
+  1122	           Format:  !|I <x> <y> <start_ang> <end_ang> <radius>
+  1123	          Example:  !|I1E18003G15
+  1124	  Uses Draw Color:  YES
+  1125	Uses Line Pattern:  NO
+  1126	  Uses Line Thick:  YES
+  1127	  Uses Fill Color:  YES
+  1128	Uses Fill Pattern:  YES
+  1129	  Uses Write Mode:  NO
+  1130	  Uses Font Sizes:  NO
+  1131	
+  1132	This command draws a "pie slice".  The slice is circular.  It obeys all of
+  1133	the same commands as the Arc command described above.  The ends of the
+  1134	arc are connected to the Center-Point of the Arc with two straight
+  1135	lines.  These two lines converge at the Center-Point.  The interior of
+  1136	the Slice is filled with the current Fill Color and Pattern.  The
+  1137	exterior (outline) of the Slice is drawn using the current drawing color
+  1138	and line thickness.  The Line Pattern feature does not apply to this
+  1139	command.
+  1140	
+  1141	
+  1142	
+  1143	RIP_OVAL_PIE_SLICE
+  1144	------------------
+  1145	         Function:  Draws an elliptical pie slice
+  1146	            Level:  0
+  1147	          Command:  i
+  1148	        Arguments:  x:2, y:2, st_ang:2, e_ang:2, radx:2 rady:2
+  1149	           Format:  !|i <x> <y> <st_ang> <e_ang> <radx> <rady>
+  1150	          Example:  !|i1E18003G151Q
+  1151	  Uses Draw Color:  YES
+  1152	Uses Line Pattern:  NO
+  1153	  Uses Line Thick:  YES
+  1154	  Uses Fill Color:  YES
+  1155	Uses Fill Pattern:  YES
+  1156	  Uses Write Mode:  NO
+  1157	  Uses Font Sizes:  NO
+  1158	
+  1159	This command draws an  "elliptical pie slice".  It obeys all of the same
+  1160	commands as the Elliptical Arc command described above.  The ends of the
+  1161	arc are connected to the Center-Point of the Arc with two straight lines.
+  1162	These two lines converge at the Center-Point.  The interior of the Slice
+  1163	is filled with the current Fill Color and Pattern.  The exterior
+  1164	(outline) of the Slice is drawn using the current drawing color and line
+  1165	thickness.  The Line Pattern feature does not apply to this command.
+  1166	
+  1167	
+  1168	
+  1169	RIP_BEZIER
+  1170	----------
+  1171	         Function:  Draw a bezier curve
+  1172	            Level:  0
+  1173	          Command:  Z
+  1174	        Arguments:  x1:2 y1:2 x2:2 y2:2 x3:2 y3:2 x4:2 y4:2 cnt:2
+  1175	           Format:  !|Z <x1> <y1> <x2> <y2> <x3> <y3> <x4> <y4> <cnt>
+  1176	          Example:  !|Z0A0B0C0D0E0F0G0H1G
+  1177	  Uses Draw Color:  YES
+  1178	Uses Line Pattern:  YES
+  1179	  Uses Line Thick:  YES
+  1180	  Uses Fill Color:  NO
+  1181	Uses Fill Pattern:  NO
+  1182	  Uses Write Mode:  YES
+  1183	  Uses Font Sizes:  NO
+  1184	
+  1185	This command provides customizable curves.  Four control points are used
+  1186	to create the shape of the curve.  The curves beginning point is at point
+  1187	(x1,y1) and it ends at (x4,y4).  Points (x2,y2) and (x3,y3) are not
+  1188	necessarily on the curve, but are used to pull the curve in their
+  1189	direction.  The diagram below indicates how points 2 and 3 can be
+  1190	utilized to form the desired curve.  Note that points 2 and 3 are not
+  1191	actually on the curve, but points 1 and 4 are.
+  1192	
+  1193	NOTE: Points 2 and 3 are not actually on the curve - points 1 and 4 are.
+  1194	
+  1195	The last parameter of this command is the <cnt> parameter.  This
+  1196	determines how many "segments" the curve should be drawn in.  Each
+  1197	segment is in fact, a straight line.  The more segments you allow, the
+  1198	smoother the curve may be.  If a curve does not have a significant amount
+  1199	of "curviness" then a low "count" can improve performance of the curve
+  1200	drawing.  Bezier Curves use "floating point" math internally for its
+  1201	processing.  All parameters specified for this command are simple
+  1202	integers however.
+  1203	
+  1204	
+  1205	
+  1206	RIP_POLYGON
+  1207	-----------
+  1208	         Function:  Draw a polygon in the current color, line style, thickness
+  1209	            Level:  0
+  1210	          Command:  P
+  1211	        Arguments:  npoints:2, x1:2, y1:2, ... xn:2, yn:2
+  1212	           Format:  !|P <npoints> <x1> <y1> ... <xn> <yn>
+  1213	          Example:  !|P03010105090905
+  1214	  Uses Draw Color:  YES
+  1215	Uses Line Pattern:  YES
+  1216	  Uses Line Thick:  YES
+  1217	  Uses Fill Color:  NO
+  1218	Uses Fill Pattern:  NO
+  1219	  Uses Write Mode:  YES
+  1220	  Uses Font Sizes:  NO
+  1221	
+  1222	This command will draw a multi-sided closed polygon.  The polygon is
+  1223	drawn using the current drawing color, line pattern and thickness. The
+  1224	<npoints> parameter is between 2 and 512 and indicates how many (x,y)
+  1225	coordinate pairs will follow, which is also the number of sides of the
+  1226	polygon.  The polygon interior is not filled by RIP_POLYGON.
+  1227	
+  1228	The polygon is enclosed by the last vertex between xn,yn and x1,y1. In
+  1229	other words, you do not have to connect the end to the beginning - it is
+  1230	automatically done for you.
+  1231	
+  1232	
+  1233	
+  1234	RIP_FILL_POLYGON
+  1235	----------------
+  1236	         Function:  Draw a filled polygon using drawing color & fill settings
+  1237	            Level:  0
+  1238	          Command:  p
+  1239	        Arguments:  npoints:2, x1:2, y1:2, ... xn:2, yn:2
+  1240	           Format:  !|p <npoints> <x1> <y1> ... <xn> <yn>
+  1241	          Example:  !|p03010105050909
+  1242	  Uses Draw Color:  YES
+  1243	Uses Line Pattern:  YES
+  1244	  Uses Line Thick:  YES
+  1245	  Uses Fill Color:  YES
+  1246	Uses Fill Pattern:  YES
+  1247	  Uses Write Mode:  YES
+  1248	  Uses Font Sizes:  NO
+  1249	
+  1250	This command is identical to RIP_POLYGON, except that the interior of the
+  1251	polygon is filled with the current fill color and fill pattern. The actual
+  1252	outline of the polygon is drawn using the current drawing color, line
+  1253	pattern and thickness.
+  1254	
+  1255	NOTE:  You will get unusual effects if the lines of the polygon overlap,
+  1256	       creating a polygon with internal "gaps".  (The rule is this:
+  1257	       regions that are "inside" the polygon an even number of times
+  1258	       due to overlap are NOT filled.)  The interior fill does not utilize
+  1259	       Write Mode, but the outline of the polygon does.
+  1260	
+  1261	
+  1262	
+  1263	RIP_FILL
+  1264	--------
+  1265	         Function:  Flood fill screen area with the current fill settings
+  1266	            Level:  0
+  1267	          Command:  F
+  1268	        Arguments:  x:2, y:2, border:2
+  1269	           Format:  !|F <x> <y> <border>
+  1270	          Example:  !|F25090F
+  1271	  Uses Draw Color:  NO
+  1272	Uses Line Pattern:  NO
+  1273	  Uses Line Thick:  NO
+  1274	  Uses Fill Color:  YES
+  1275	Uses Fill Pattern:  YES
+  1276	  Uses Write Mode:  NO
+  1277	  Uses Font Sizes:  NO
+  1278	
+  1279	This command performs a "flood fill" emanating from the given <x,y>
+  1280	point.  The fill "oozes" in all directions up to <border> color, but the
+  1281	border itself is not changed.  Whatever is inside the border that's not
+  1282	the border color gets changed to the current fill color and fill
+  1283	pattern.  If the border color does not completely enclose the <x,y>
+  1284	point, the fill will continue to the edges of the viewport.
+  1285	
+  1286	
+  1287	
+  1288	RIP_LINE_STYLE
+  1289	--------------
+  1290	         Function:  Defines a line style and thickness
+  1291	            Level:  0
+  1292	          Command:  =
+  1293	        Arguments:  style:2, user_pat:4, thick:2
+  1294	           Format:  !|= <style> <user_pat> <thick>
+  1295	          Example:  !|=01000001
+  1296	  Uses Draw Color:  NO
+  1297	Uses Line Pattern:  YES
+  1298	  Uses Line Thick:  YES
+  1299	  Uses Fill Color:  NO
+  1300	Uses Fill Pattern:  NO
+  1301	  Uses Write Mode:  NO
+  1302	  Uses Font Sizes:  NO
+  1303	
+  1304	This command establishes the current line pattern and thickness for many
+  1305	subsequent graphics primitive commands.  There are four built-in line
+  1306	styles plus provisions for custom line patterns.
+  1307	
+  1308	     Style   Description
+  1309	     --------------------------------------------------------
+  1310	     00      Normal, Solid Line
+  1311	     01      Dotted Line
+  1312	     02      Centered Line
+  1313	     03      Dashed Line
+  1314	     04      Custom Defined line (see about <user_pat> below)
+  1315	
+  1316	     Thick   Description
+  1317	     -------------------------------
+  1318	     01      Lines are 1 pixel wide
+  1319	     03      Lines are 3 pixels wide
+  1320	
+  1321	If the <style> is set to a value of 4 (custom pattern), then the
+  1322	<user_pat> parameter is used as a 16-bit representation of the pixels in
+  1323	the line pattern.  For example:
+  1324	
+  1325	Repeating Pattern     Binary Coding     Hex     Decimal   MegaNum
+  1326	-------------------------------------------------------------------
+  1327	 - - - - - - - -    1010101010101010    AAAA     43690     0XPM
+  1328	 ----    ----       1111000011110000    F0F0     61680     1BLC
+  1329	
+  1330	So, the most-significant-bit of <user_pat> is toward the starting point of
+  1331	the line or border that uses this fill pattern.  If the <style> parameter
+  1332	is not 4, then the <user_pat> parameter is ignored.
+  1333	
+  1334	
+  1335	
+  1336	RIP_FILL_STYLE
+  1337	--------------
+  1338	         Function:  Set current fill style (predefined) and fill color
+  1339	            Level:  0
+  1340	          Command:  S
+  1341	        Arguments:  pattern:2, color:2
+  1342	           Format:  !|S <pattern> <color>
+  1343	          Example:  !|S050F
+  1344	  Uses Draw Color:  NO
+  1345	Uses Line Pattern:  NO
+  1346	  Uses Line Thick:  NO
+  1347	  Uses Fill Color:  YES
+  1348	Uses Fill Pattern:  YES
+  1349	  Uses Write Mode:  NO
+  1350	  Uses Font Sizes:  NO
+  1351	
+  1352	This command defines the current fill pattern and fill color for use in
+  1353	subsequent graphics fill operations.  There are twelve (12) predefined
+  1354	fill patterns.  They are:
+  1355	
+  1356	    Pattern  Description                 Example       Misc
+  1357	    -----------------------------------------------------------------
+  1358	      00     Fill with background color                (color #0)
+  1359	      01     Solid Fill                                (fill color)
+  1360	      02     Line Fill                   -----------   (thick lines)
+  1361	      03     Light Slash Fill            /  /  /  /    (thin lines)
+  1362	      04     Normal Slash Fill           // // // //   (thick lines)
+  1363	      05     Normal Backslash Fill       \\ \\ \\ \\   (thick lines)
+  1364	      06     Light Backslash Fill        \  \  \  \    (thin lines)
+  1365	      07     Light Hatch Fill            ###########   (thin lines)
+  1366	      08     Heavy Cross Hatch Fill      XXXXXXXXXXX   (thin lines)
+  1367	      09     Interleaving Line Fill      +-+-+-+-+-+   (thin lines)
+  1368	      0A     Widely spaced dot fill      . : . : . :   (pixels only)
+  1369	      0B     Closely spaced dot fill     :::::::::::   (pixels only)
+  1370	
+  1371	The <color> parameter is the fill color for subsequent fill commands. The
+  1372	"active" pixels of the pattern become this color.  The "inactive" pixels
+  1373	become the current background color (color 00, typically black).  Fill
+  1374	pattern 00 will set the entire fill area to the background color.  (In
+  1375	this special case, the fill color doesn't matter.)
+  1376	
+  1377	
+  1378	
+  1379	RIP_FILL_PATTERN
+  1380	----------------
+  1381	         Function:  Set user-definable (custom) fill pattern/color
+  1382	            Level:  0
+  1383	          Command:  s
+  1384	        Arguments:  c1:2 c2:2 c3:2 c4:2 c5:2 c6:2 c7:2 c8:2 color:2
+  1385	           Format:  !|s <c1> <c2> <c3> <c4> <c5> <c6> <c7> <c8> <color>
+  1386	          Example:  !|s11223344556677880F
+  1387	  Uses Draw Color:  NO
+  1388	Uses Line Pattern:  NO
+  1389	  Uses Line Thick:  NO
+  1390	  Uses Fill Color:  YES
+  1391	Uses Fill Pattern:  YES
+  1392	  Uses Write Mode:  NO
+  1393	  Uses Font Sizes:  NO
+  1394	
+  1395	This command allows you to specify a user-defined, custom Fill Pattern.
+  1396	This pattern supersedes the predefined patterns of RIP_FILL_STYLE.  A
+  1397	custom fill pattern is an 8x8 pixel array defining which pixels should be
+  1398	drawn in the current fill color (as set by the <color> parameter here).
+  1399	The other pixels in the fill area are set to the current background color
+  1400	(color 00, typically black).
+  1401	
+  1402	Each of the eight parameters of this command, <c1> through <c8> represent
+  1403	bit-patterns for a line of the 8x8 pixel array.  Each line is comprised of
+  1404	8 pixels.  The value of each parameter is the binary representation of
+  1405	these 8 pixels as follows:
+  1406	
+  1407	     Bit     7     6    5    4   3   2   1   0
+  1408	     ----------------------------------------------
+  1409	     c1     128   64   32   16   8   4   2   1
+  1410	     c2     128   64   32   16   8   4   2   1
+  1411	     c3     128   64   32   16   8   4   2   1
+  1412	     c4     128   64   32   16   8   4   2   1
+  1413	     c5     128   64   32   16   8   4   2   1
+  1414	     c6     128   64   32   16   8   4   2   1
+  1415	     c7     128   64   32   16   8   4   2   1
+  1416	     c8     128   64   32   16   8   4   2   1
+  1417	
+  1418	So, c1 is the top, and the most-significant bit is to the left.
+  1419	
+  1420	NOTE:  The RIP_FILL_STYLE (predefined fill patterns) and this
+  1421	       RIP_FILL_PATTERN (custom fill patterns) completely override
+  1422	       each other's effects.
+  1423	
+  1424	
+  1425	
+  1426	RIP_MOUSE
+  1427	---------
+  1428	         Function:  Defines a rectangular hot mouse region
+  1429	            Level:  1
+  1430	          Command:  M
+  1431	        Arguments:  num:2 x0:2 y0:2 x1:2 y1:2 clk:1 clr:1 res:5 text
+  1432	           Format:  !|1M <num> <x0><y0> <x1><y1> <clk><clr><res> <text>
+  1433	          Example:  !|1M00001122331100000host command^M
+  1434	  Uses Draw Color:  NO
+  1435	Uses Line Pattern:  NO
+  1436	  Uses Line Thick:  NO
+  1437	  Uses Fill Color:  NO
+  1438	Uses Fill Pattern:  NO
+  1439	  Uses Write Mode:  NO
+  1440	  Uses Font Sizes:  NO
+  1441	
+  1442	This command ties together three things:
+  1443	
+  1444	     A region on the screen
+  1445	     A mouse-click event
+  1446	     A string of text to be transmitted by the terminal.
+  1447	
+  1448	This command defines a rectangular region on the screen that functions as
+  1449	a "hot" mouse area.  If the user clicks the [left] mouse button while
+  1450	pointing inside the region, then the terminal must transmit the <text>
+  1451	string to the Host.  The (x0,y0) parameter MUST be the upper-left corner,
+  1452	and (x1,y1) MUST be the lower-right corner of the region.
+  1453	
+  1454	The <clk> parameter, if 1, indicates that the region should be visibly
+  1455	inverted while the mouse button is down.  This offers visual feedback. If
+  1456	<clk> is 0, the region will not be inverted while clicked.
+  1457	
+  1458	The <clr> parameter, if 1, will physically zoom the text window to full
+  1459	screen size and clear the screen.  This is useful if the <text> parameter
+  1460	instructs the host to enter an area of the System that doesn't support
+  1461	RIPscrip graphics.
+  1462	
+  1463	The <text> parameter is a Host command that gets sent when the field is
+  1464	clicked.  You may use a caret (^) to represent control characters, (e.g.,
+  1465	^M for carriage return, ^G, ^C, etc.).
+  1466	
+  1467	NOTE:  You are limited to a maximum of 128 Mouse Regions.  In addition,
+  1468	       the 5-byte <res> parameter is RESERVED FOR FUTURE USE, and should
+  1469	       be set to zeros (00000).
+  1470	
+  1471	
+  1472	
+  1473	RIP_KILL_MOUSE_FIELDS
+  1474	---------------------
+  1475	         Function:  Destroys all previously defined hot mouse regions
+  1476	            Level:  1
+  1477	          Command:  K
+  1478	        Arguments:  <none>
+  1479	           Format:  !|1K
+  1480	          Example:  !|1K
+  1481	  Uses Draw Color:  NO
+  1482	Uses Line Pattern:  NO
+  1483	  Uses Line Thick:  NO
+  1484	  Uses Fill Color:  NO
+  1485	Uses Fill Pattern:  NO
+  1486	  Uses Write Mode:  NO
+  1487	  Uses Font Sizes:  NO
+  1488	
+  1489	This command will "forget" all Mouse Regions.  Use it at the beginning of
+  1490	each Scene, so that one scene's Mouse Regions don't get used in another.
+  1491	
+  1492	
+  1493	
+  1494	RIP_BEGIN_TEXT
+  1495	--------------
+  1496	         Function:  Define a rectangular text region
+  1497	            Level:  1
+  1498	          Command:  T
+  1499	        Arguments:  x1:2, y1:2, x2:2, y2:2, res:2
+  1500	           Format:  !|1T <x1> <y1> <x2> <y2> <res>
+  1501	          Example:  !|1T00110011
+  1502	  Uses Draw Color:  NO
+  1503	Uses Line Pattern:  NO
+  1504	  Uses Line Thick:  NO
+  1505	  Uses Fill Color:  NO
+  1506	Uses Fill Pattern:  NO
+  1507	  Uses Write Mode:  NO
+  1508	  Uses Font Sizes:  NO
+  1509	
+  1510	This command defines a rectangular portion of the graphics viewport that
+  1511	is to display text, usually a long stream of text.  Following this
+  1512	command should be a number of RIP_REGION_TEXT commands with the text to
+  1513	be displayed.  The RIP_END_TEXT terminates this stream of text, something
+  1514	like this:
+  1515	
+  1516	RIP_BEGIN_TEXT
+  1517	     RIP_REGION_TEXT
+  1518	     RIP_REGION_TEXT
+  1519	     RIP_REGION_TEXT
+  1520	     :
+  1521	     RIP_REGION_TEXT
+  1522	RIP_END_TEXT
+  1523	
+  1524	There must be at least one RIP_REGION_TEXT command in between the header
+  1525	and the footer.  There may be as many as needed.
+  1526	
+  1527	These commands ignore the current font "direction"; all text is always
+  1528	displayed horizontally.
+  1529	
+  1530	NOTE:  The "res" parameter is two bytes wide and is RESERVED for
+  1531	       future use.
+  1532	
+  1533	
+  1534	
+  1535	RIP_REGION_TEXT
+  1536	---------------
+  1537	         Function:  Display a line of text in the rectangular text region
+  1538	            Level:  1
+  1539	          Command:  t
+  1540	        Arguments:  justify:1 and text-string
+  1541	           Format:  !|1t <justify> <text-string>
+  1542	          Example:  !|1t1This is a text line to be justified
+  1543	  Uses Draw Color:  YES
+  1544	Uses Line Pattern:  NO
+  1545	  Uses Line Thick:  NO
+  1546	  Uses Fill Color:  NO
+  1547	Uses Fill Pattern:  NO
+  1548	  Uses Write Mode:  YES
+  1549	  Uses Font Sizes:  YES
+  1550	
+  1551	A number of these commands may come sandwiched between the RIP_BEGIN_TEXT
+  1552	and RIP_END_TEXT commands.  The <text-string> is already word-wrapped in
+  1553	such a way that it will fit inside the rectangular region based on the
+  1554	current font, font size, and drawing color.
+  1555	
+  1556	There are two possible settings for the <justify> parameter:
+  1557	
+  1558	  Justify   Description
+  1559	  --------------------------------------------------------------------
+  1560	    0       Don't right/left justify.  Left-justify only
+  1561	    1       Perform right/left margin justification of this line of text
+  1562	            except for the last line of a paragraph and sets of indented
+  1563	            lines.
+  1564	
+  1565	If a text line falls off the bottom of the region, it is discarded -- the
+  1566	rectangular Text Region does not scroll.
+  1567	
+  1568	
+  1569	RIP_END_TEXT
+  1570	------------
+  1571	         Function:  End a rectangular text region
+  1572	            Level:  1
+  1573	          Command:  E
+  1574	        Arguments:  <none>
+  1575	           Format:  !|1E
+  1576	          Example:  !|1E
+  1577	  Uses Draw Color:  NO
+  1578	Uses Line Pattern:  NO
+  1579	  Uses Line Thick:  NO
+  1580	  Uses Fill Color:  NO
+  1581	Uses Fill Pattern:  NO
+  1582	  Uses Write Mode:  NO
+  1583	  Uses Font Sizes:  NO
+  1584	
+  1585	This command indicates the end of a formatted text block.  Only one of
+  1586	these "end" commands is necessary for each block.
+  1587	
+  1588	
+  1589	
+  1590	RIP_GET_IMAGE
+  1591	-------------
+  1592	         Function:  Copy rectangular screen image to clipboard (as icon)
+  1593	            Level:  1
+  1594	          Command:  C
+  1595	        Arguments:  x0:2, y0:2, x1:2, y1:2, res:1
+  1596	           Format:  !|1C <x0> <y0> <x1> <y1> <res>
+  1597	          Example:  !|1C001122330
+  1598	  Uses Draw Color:  NO
+  1599	Uses Line Pattern:  NO
+  1600	  Uses Line Thick:  NO
+  1601	  Uses Fill Color:  NO
+  1602	Uses Fill Pattern:  NO
+  1603	  Uses Write Mode:  NO
+  1604	  Uses Font Sizes:  NO
+  1605	
+  1606	This command instructs the terminal program to copy the rectangular
+  1607	region defined by (x0,y0) to (x1,y1) onto an internal Clipboard for
+  1608	future use.  This combined with the Paste Clipboard command can provide
+  1609	an extremely powerful and efficient mechanism to avoid baud-rate
+  1610	bandwidth limitations.  The (x0,y0) parameter MUST specify the upper-left
+  1611	corner of the region and the (x1,y1) parameter MUST specify the
+  1612	lower-right corner.  If the indicated coordinates are in anyway invalid,
+  1613	the command is ignored.  The Clipboard is completely overwritten by this
+  1614	command (the previous contents are lost).
+  1615	
+  1616	NOTE:  The <res> parameter is RESERVED FOR FUTURE USE and
+  1617	       should be set to zero.
+  1618	
+  1619	
+  1620	
+  1621	RIP_PUT_IMAGE
+  1622	-------------
+  1623	         Function:  Pastes the clipboard (icon) contents onto the screen
+  1624	            Level:  1
+  1625	          Command:  P
+  1626	        Arguments:  x:2, y:2, mode:2, res:1
+  1627	           Format:  !|1P <x> <y> <mode> <res>
+  1628	          Example:  !|1P0011010
+  1629	  Uses Draw Color:  NO
+  1630	Uses Line Pattern:  NO
+  1631	  Uses Line Thick:  NO
+  1632	  Uses Fill Color:  NO
+  1633	Uses Fill Pattern:  NO
+  1634	  Uses Write Mode:  NO
+  1635	  Uses Font Sizes:  NO
+  1636	
+  1637	This command takes the contents of the Clipboard (if any) and pastes the
+  1638	image onto the screen starting at the upper-left corner of the image of
+  1639	(x,y).  If the right edge of the image would go off-screen, the paste
+  1640	command is ignored.  The Height and Width of the clipboard image is
+  1641	recorded on the Clipboard, so this command doesn't need to supply it.
+  1642	
+  1643	The <mode> parameter defines "how" the image will be pasted on the
+  1644	screen:
+  1645	
+  1646	  Mode   Description                                          Logical
+  1647	  -------------------------------------------------------------------
+  1648	   00    Paste the image on-screen normally                   (COPY)
+  1649	   01    Exclusive-OR  image with the one already on screen   (XOR)
+  1650	   02    Logically OR  image with the one already on screen   (OR)
+  1651	   03    Logically AND image with the one already on screen   (AND)
+  1652	   04    Paste the inverse of the image on the screen         (NOT)
+  1653	
+  1654	NOTE:  The 1-byte <res> parameter is RESERVED FOR FUTURE USE
+  1655	       and should be set to zero.
+  1656	
+  1657	
+  1658	
+  1659	RIP_WRITE_ICON
+  1660	--------------
+  1661	         Function:  Write contents of the clipboard (icon) to disk
+  1662	            Level:  1
+  1663	          Command:  W
+  1664	        Arguments:  res:1, filename
+  1665	           Format:  !|1W <res> <filename>
+  1666	          Example:  !|1W0filename.icn
+  1667	  Uses Draw Color:  NO
+  1668	Uses Line Pattern:  NO
+  1669	  Uses Line Thick:  NO
+  1670	  Uses Fill Color:  NO
+  1671	Uses Fill Pattern:  NO
+  1672	  Uses Write Mode:  NO
+  1673	  Uses Font Sizes:  NO
+  1674	
+  1675	This command takes the contents of the Clipboard and writes it to a disk
+  1676	file.  This Icon file can be loaded later with a RIP_LOAD_ICON command
+  1677	and stamped on the screen.
+  1678	
+  1679	The command instructs the terminal to store an Icon on the terminal's
+  1680	disk drive, or on some appropriate storage media.  Path or sub-directory
+  1681	information is not allowed in the filename portion of the command.  If
+  1682	the clipboard is nonexistent (i.e., at the beginning of a scene), this
+  1683	command is ignored.  If an Icon by the same name already exists on disk,
+  1684	it is overwritten.
+  1685	
+  1686	NOTE:  The <res> parameter is RESERVED FOR FUTURE USE and
+  1687	       should be set to zero.
+  1688	
+  1689	
+  1690	
+  1691	RIP_LOAD_ICON
+  1692	-------------
+  1693	         Function:  Loads and displays a disk-based icon to the screen
+  1694	            Level:  1
+  1695	          Command:  I
+  1696	        Arguments:  x:2, y:2, mode:2, clipboard:1, res:2, filename
+  1697	           Format:  !|1I <x> <y> <mode> <clipboard> <res> <filename>
+  1698	          Example:  !|1I001101010button.icn
+  1699	  Uses Draw Color:  NO
+  1700	Uses Line Pattern:  NO
+  1701	  Uses Line Thick:  NO
+  1702	  Uses Fill Color:  NO
+  1703	Uses Fill Pattern:  NO
+  1704	  Uses Write Mode:  NO
+  1705	  Uses Font Sizes:  NO
+  1706	
+  1707	This command instructs the terminal to read an Icon from disk and display
+  1708	it at the given upper-left (x,y) location.  If the width or height of the
+  1709	Icon would make it go off the right or left edge of the screen, the Icon
+  1710	will not be displayed.  The <mode> parameter defines the modes in which
+  1711	the Icon will be displayed on the screen.  The modes are identical to the
+  1712	RIP_PUT_IMAGE command, and are as follows:
+  1713	
+  1714	The .ICN file extension does not need to be included as part of the
+  1715	filename.  If omitted, it will automatically be appended to the
+  1716	filename.  If an extension is provided, it will be used verbatim.
+  1717	
+  1718	  Mode   Description                                         Logical
+  1719	  ------------------------------------------------------------------
+  1720	   00    Paste the image on-screen normally                   (COPY)
+  1721	   01    Exclusive-OR  image with the one already on screen   (XOR)
+  1722	   02    Logically OR  image with the one already on screen   (OR)
+  1723	   03    Logically AND image with the one already on screen   (AND)
+  1724	   04    Paste the inverse of the image on the screen         (NOT)
+  1725	
+  1726	If the <clipboard> parameter is 1, then the image pasted on screen AND
+  1727	also copied onto the Clipboard.  If 0, it is simply pasted on the screen.
+  1728	
+  1729	The <filename> parameter must not contain any sub-directory or path
+  1730	information and must specify a valid Icon file name.  If the Icon cannot
+  1731	be located or an error occurs on the disk, then a box should be displayed
+  1732	on screen indicating that the given Icon File could not be loaded.  This
+  1733	visual prompt indicates that something is amiss to the end-user.
+  1734	
+  1735	NOTE:  The 2-byte <res> parameter is RESERVED FOR THE FUTURE
+  1736	       and unlike many other previously mentioned reserved
+  1737	       parameters, should be set to "10".
+  1738	
+  1739	
+  1740	
+  1741	RIP_BUTTON_STYLE
+  1742	----------------
+  1743	         Function:  Button style definition
+  1744	            Level:  1
+  1745	          Command:  B
+  1746	        Arguments:  wid:2 hgt:2 orient:2 flags:4 size:2
+  1747	                    dfore:2 dback:2 bright:2 dark:2 surface:2
+  1748	                    grp_no:2 flags2:2 uline_col:2 corner_col:2
+  1749	                    res:6
+  1750	           Format:  !|1B <wid> <hgt> <orient> <flags>
+  1751	                    <bevsize> <dfore> <dback> <bright> <dark>
+  1752	                    <surface> <grp_no> <flags2> <uline_col>
+  1753	                    <corner_col> <res>
+  1754	          Example:  !|1B0A0A010274030F080F080700010E07000000
+  1755	  Uses Draw Color:  NO
+  1756	Uses Line Pattern:  NO
+  1757	  Uses Line Thick:  NO
+  1758	  Uses Fill Color:  NO
+  1759	Uses Fill Pattern:  NO
+  1760	  Uses Write Mode:  NO
+  1761	  Uses Font Sizes:  NO
+  1762	
+  1763	This RIPscrip command is probably one of the most complex in the entire
+  1764	protocol.  It defines how subsequent RIP_BUTTON commands will be
+  1765	interpreted.  The purpose of this command is to define what a  Button is
+  1766	and how they operate.  Buttons can have many different configurations,
+  1767	flags, and styles.  With the diversity of modes that the Button can take
+  1768	on, complexity is a necessary evil.
+  1769	
+  1770	This command does not actually do anything visibly on the screen.  Simply
+  1771	put, this creates an internal definition for the Button mode which will
+  1772	be used with RIP_BUTTON commands after the definition is  created.
+  1773	
+  1774	Every Button can have an optional text label.  It can appear in several
+  1775	different locations compared to the Button itself.  This is specified in
+  1776	the <orient> parameter.  The actual text of the label is not specified
+  1777	with this command, it is specified when you actually create a Button (see
+  1778	RIP_BUTTON below).  The value that <orient> can be is as follows:
+  1779	
+  1780	        Value   Description of Orientation
+  1781	        -------------------------------------------------
+  1782	         00     Display label above button
+  1783	         01     Display label to the left of button
+  1784	         02     Display label in the center of the button
+  1785	         03     Display label to the right of button
+  1786	         04     Display label beneath the button
+  1787	
+  1788	The <hgt> and <wid> parameters represent the fixed height and width of
+  1789	the Button (applies only to Plain Buttons).  If both values are greater
+  1790	than zero, then this will represent the actual size of the Button (its
+  1791	dimensions are not specified by the RIP_BUTTON command).  If both of
+  1792	these are set to zero, then the actual RIP_BUTTON command will specify
+  1793	the size of the particular Button (dynamic sizing).
+  1794	
+  1795	The <bevsize> parameter is only used if the Bevel flag is specified.
+  1796	When active, this parameter will determine how many pixels thick the
+  1797	bevel should be.  This may be any value greater or equal to zero.
+  1798	
+  1799	There are a large number of flag values that can be combined to achieve a
+  1800	great many effects.  There are two flag parameters for the
+  1801	RIP_BUTTON_STYLE command, <flags> and <flags2>.  They are detailed in the
+  1802	two tables that follow in this Section.  You may combine any of the flags
+  1803	in the first table together simply by adding the "Value" of each one
+  1804	together and representing that number as a MegaNum.  See the Section in
+  1805	this manual for a "Table of MegaNums".
+  1806	
+  1807	The <dfore> and <dback> parameters are used with the text label.  The
+  1808	<dfore> parameter is the foreground color for the text.  It is always used
+  1809	to determine the color of the text label.  The <dback> color is the color
+  1810	of the dropshadow (if any).  This parameter is only used when you have
+  1811	specified the "Dropshadow" flag in the <flags> parameter (see below).
+  1812	
+  1813	The <bright>, <dark> and <surface> parameters are used with Plain Buttons
+  1814	and with the Special Effects styles (see <flags> below).  These colors
+  1815	represent the highlighted color, the shadowed color, and the regular
+  1816	surface color that is used in Special Effects.  Typical color
+  1817	combinations for these colors might be White, Dark-Gray and Light-Gray
+  1818	respectively for a "chiseled steel" appearance.  Each of these values can
+  1819	contain a two-digit value representing any valid color code that may be
+  1820	used in the RIP_COLOR command.
+  1821	
+  1822	In addition to the special effects colors, are two additional colors that
+  1823	can be used, <uline_color> which is used for the color of the underline
+  1824	(in the text label), and <corner_color> which is used to  display the
+  1825	colors of corners for things like the Bevel, Recess, etc.
+  1826	
+  1827	The <grp_no> parameter determines which Button Group subsequent
+  1828	RIP_BUTTON commands will be associated with.  Button Groups are used to
+  1829	maintain groups of Buttons for things like Radio Buttons and/or  Checkbox
+  1830	Buttons.  See the section on the BUTTON COMMAND for more information on
+  1831	these modes, and what Button Groups can offer.  This value can range
+  1832	anywhere from 0-Z (i.e., 0-35).  You should not mix Checkbox and Radio
+  1833	buttons in the same group. -- unpredictable things may happen if you do.
+  1834	
+  1835	Some <flags> are mutually exclusive.  For example, you can only have one
+  1836	of the "Plain", "Icon", or "Clipboard" flags chosen at once.  To better
+  1837	assist you in determining which values can be combined with  each other,
+  1838	the right-most five columns in the next two tables explain if the
+  1839	specific flag can be used under a specific condition.  For example, you
+  1840	cannot choose the "Hot Icon" flag if you are dealing with a Clipboard
+  1841	Button.  Another example is that you cannot underline the hotkey
+  1842	character in the label if it is not a Mouse Button.
+  1843	
+  1844	The following table contains the possible flag values for the <flags>
+  1845	parameter.  Each of these values may be combined to achieve a "composite"
+  1846	group of flags.  See the preceding paragraphs for a more detailed
+  1847	explanation of this method.
+  1848	
+  1849	Value  Description of Flags Field #1     Icon Clip  Plain Mouse No-Mouse
+  1850	------------------------------------------------------------------------
+  1851	    1  Button is a "Clipboard Button"     N     Y     N     Y     Y
+  1852	    2  Button is "Invertable"             Y     Y     Y     Y     N
+  1853	    4  Reset screen after button click    Y     Y     Y     Y     N
+  1854	    8  Display Chisel special effect      Y     Y     Y     Y     Y
+  1855	   16  Display Recessed special effect    Y     Y     Y     Y     Y
+  1856	   32  Dropshadow the label (if any)      Y     Y     Y     Y     Y
+  1857	   64  Auto-stamp image onto Clipboard    Y     Y     Y     Y     Y
+  1858	  128  Button is an "Icon Button"         Y     N     N     Y     Y
+  1859	  256  Button is a "Plain Button"         N     N     Y     Y     Y
+  1860	  512  Display Bevel special effect       Y     Y     Y     Y     Y
+  1861	 1024  Button is a Mouse Button           Y     Y     Y     Y     N
+  1862	 2048  Underline hot-key in label         Y     Y     Y     Y     N
+  1863	 4096  Make Icon Button use Hot Icons     Y     N     N     Y     N
+  1864	 8192  Adjust vertical centering of label Y     Y     Y     Y     Y
+  1865	16384  Button belongs to a Radio Group    Y     Y     Y     Y     N
+  1866	32768  Display Sunken special effect      Y     Y     Y     Y     Y
+  1867	
+  1868	This array defines which characters have descenders (portions of their
+  1869	font that go below the baseline).  This information is used in the
+  1870	vertical centering of button text labels.
+  1871	
+  1872	char low_char[256] =
+  1873	{
+  1874	    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+  1875	    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+  1876	    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+  1877	    0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,
+  1878	    1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,
+  1879	    0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  1880	    1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  1881	    0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+  1882	};
+  1883	
+  1884	struct METRIC
+  1885	{
+  1886	    unsigned char top;    // Scan lines from TOP OF CELL to top of char
+  1887	    unsigned char bow;    // Scan lines from TOC to crest of char
+  1888	    unsigned char base;   // Scan lines from TOC to baseline
+  1889	    unsigned char drop;   // Scan lines from TOC to lowermost pixel
+  1890	};
+  1891	
+  1892	The METRIC structure can be described visually as follows:
+  1893	
+  1894	                      0 --+----------+----------+
+  1895	                          |          |          |
+  1896	                     TOP__|__________|__________|
+  1897	                          | #        |          |
+  1898	                          | #        |          |
+  1899	                          | #        |          |
+  1900	                     BOW__|_#________|___   _ __|
+  1901	                          | # ###    |   ### #  |
+  1902	                          | ##   #   |  #   ##  |
+  1903	                          | #     #  | #     #  |
+  1904	                          | #     #  | #     #  |
+  1905	                          | #     #  | #     #  |
+  1906	                          | #     #  |  #   ##  |
+  1907	                    BASE__|_#_____#__|___###_#__|
+  1908	                          |          |       #  |
+  1909	                          |          |       #  |
+  1910	                          |          |       #  |
+  1911	                          |          |  #   #   |
+  1912	                    DROP__|__________|___###____|
+  1913	                          |          |          |
+  1914	                    END --+----------+----------+
+  1915	                    
+  1916	Notice that the topmost scan line of a font cell is not necessarily the
+  1917	top of the character.  The top field of the structure contains the
+  1918	vertical offset from the top of the cell for all fonts in that set.
+  1919	
+  1920	
+  1921	    Default Font (Font 0)               Triplex Font (Font 1)
+  1922	
+  1923	Size  Top    Bow   Base   Drop     Size   Top   Bow     Base   Drop
+  1924	------------------------------     --------------------------------
+  1925	  1    0      2      6      7        1     6     10      18     22
+  1926	  2    0      4     13     15        2     6     11      20     24
+  1927	  3    0      6     20     23        3     8     13      23     28
+  1928	  4    0      8     27     31        4     10    17      31     38
+  1929	  5    0     10     34     39        5     13    23      41     50
+  1930	  6    0     12     41     47        6     16    28      51     62
+  1931	  7    0     14     48     55        7     20    34      62     76
+  1932	  8    0     16     55     63        8     25    42      77     94
+  1933	  9    0     18     62     71        9     30    51      93    114
+  1934	 10    0     20     69     79       10     40    67     124    152
+  1935	
+  1936	
+  1937	    Small Font (Font 2)                 Sans Serif Font (Font 3)
+  1938	
+  1939	Size  Top    Bow   Base   Drop     Size   Top   Bow     Base   Drop
+  1940	------------------------------     --------------------------------
+  1941	  1    2      3      5      6        1      7    11      19     23
+  1942	  2    2      4      6      7        2      7    12      21     25
+  1943	  3    2      3      6      7        3      9    14      24     29
+  1944	  4    3      5      9     11        4     11    18      32     39
+  1945	  5    4      7     12     14        5     14    24      42     51
+  1946	  6    5      9     15     18        6     18    30      53     64
+  1947	  7    6     10     13     22        7     22    36      64     78
+  1948	  8    7     12     22     27        8     28    45      80     97
+  1949	  9    9     15     27     33        9     33    54      96    117
+  1950	 10   12     20     36     44       10     74   102     158    186
+  1951	
+  1952	
+  1953	
+  1954	     Gothic Font (Font 4)                Script Font (Font 5)
+  1955	
+  1956	Size  Top    Bow   Base   Drop     Size   Top   Bow     Base   Drop
+  1957	------------------------------     --------------------------------
+  1958	  1    7     11     19     23        1     10    17      22     29
+  1959	  2    7     12     21     25        2     10    18      24     32
+  1960	  3    9     14     24     29        3     12    21      27     36
+  1961	  4   11     18     32     39        4     16    28      37     49
+  1962	  5   14     24     42     51        5     21    37      49     65
+  1963	  6   18     30     53     64        6     26    46      61     80
+  1964	  7   22     36     64     78        7     32    56      74     98
+  1965	  8   28     45     80     97        8     40    70      92    122
+  1966	  9   33     54     96    117        9     48    84     111    147
+  1967	 10   44     72    128    156       10     63   111     147    195
+  1968	
+  1969	
+  1970	
+  1971	    Simplex Font (Font 6)            Triplex Script Font (Font 7)
+  1972	
+  1973	Size  Top    Bow   Base   Drop     Size   Top   Bow     Base   Drop
+  1974	------------------------------     --------------------------------
+  1975	  1    9     13     21     25        1      5     9      17     21
+  1976	  2    9     14     23     27        2      5    10      19     23
+  1977	  3   11     16     26     31        3      7    12      22     27
+  1978	  4   14     21     35     42        4      9    16      30     37
+  1979	  5   18     28     46     56        5     12    22      40     49
+  1980	  6   23     35     58     69        6     15    27      50     61
+  1981	  7   28     42     70     84        7     19    33      61     75
+  1982	  8   35     52     87    104        8     24    41      77     93
+  1983	  9   42     63    105    126        9     29    50      92    113
+  1984	 10   56     84    140    168       10     39    67     123    151
+  1985	
+  1986	
+  1987	
+  1988	    Complex Font (Font 8)               European Font (Font 9)
+  1989	
+  1990	Size  Top    Bow   Base   Drop     Size   Top   Bow     Base   Drop
+  1991	------------------------------     --------------------------------
+  1992	  1    8     12     20     24        1      7    14      32     38
+  1993	  2    8     13     22     26        2      7    15      35     41
+  1994	  3   10     15     25     30        3      9    18      40     47
+  1995	  4   13     20     34     41        4     12    24      54     64
+  1996	  5   17     27     45     54        5     16    32      72     85
+  1997	  6   22     34     57     68        6     20    40      96    106
+  1998	  7   27     41     69     83        7     25    49     109    129
+  1999	  8   34     51     86    103        8     31    61     136    161
+  2000	  9   41     62    104    125        9     38    74     164    194
+  2001	 10   54     83    139    167       10     51    99     219    259
+  2002	
+  2003	
+  2004	
+  2005	     Bold Font (Font 10)
+  2006	
+  2007	Size  Top    Bow   Base   Drop
+  2008	------------------------------
+  2009	  1   11     17     35     39
+  2010	  2   13     19     39     43
+  2011	  3   14     22     44     49
+  2012	  4   19     29     59     66
+  2013	  5   27     39     79     88
+  2014	  6   33     49     99    110
+  2015	  7   39     59    119    133
+  2016	  8   49     74    149    166
+  2017	  9   59     89    179    200
+  2018	 10   79    199    239    267
+  2019	
+  2020	The Chisel effect draws a dropshadowed line around the inside of the
+  2021	button.  How far from the borders of the button are determined by this
+  2022	table:
+  2023	
+  2024	        Height of Button     X inset     Y inset
+  2025	        ----------------------------------------
+  2026	            0 - 11              1          1
+  2027	           12 - 24              3          2
+  2028	           25 - 39              4          3
+  2029	           40 - 74              6          5
+  2030	           75 - 149             7          5
+  2031	          150 - 199             8          6
+  2032	          200 - 249            10          7
+  2033	          250 - 299            11          8
+  2034	          300 -                13          9
+  2035	
+  2036	This table describes the possible flag settings for the <flags2>
+  2037	parameter:
+  2038	
+  2039	Value  Description of Flags Field #2         Icon Clip Plain Mouse No-Mouse
+  2040	---------------------------------------------------------------------------
+  2041	  1    Button is in a check box group          Y    Y    Y     Y       N
+  2042	  2    Highlight hotkey character              Y    Y    Y     Y       N
+  2043	  4    Explode (zoom out when clicked)         Y    Y    Y     Y       N
+  2044	  8    Left Justify Label (top/center/bottom)  Y    Y    Y     Y       Y
+  2045	 16    Right Justify Label (top/center/bottom) Y    Y    Y     Y       Y
+  2046	
+  2047	
+  2048	
+  2049	RIP_BUTTON
+  2050	----------
+  2051	         Function:  Define a Mouse Button
+  2052	            Level:  1
+  2053	          Command:  U
+  2054	        Arguments:  x0:2 y0:2 x1:2 y1:2 hotkey:2 flags:1 res:1
+  2055	                    ...text
+  2056	           Format:  !|1U <x0> <y0> <x1> <y1> <hotkey> <flags>
+  2057	                    <res> <text>
+  2058	          Example:  !|1U010100003200iconfile<>Label<>HostCmd^m
+  2059	  Uses Draw Color:  NO
+  2060	Uses Line Pattern:  NO
+  2061	  Uses Line Thick:  NO
+  2062	  Uses Fill Color:  NO
+  2063	Uses Fill Pattern:  NO
+  2064	  Uses Write Mode:  NO
+  2065	  Uses Font Sizes:  YES
+  2066	
+  2067	This command physically creates a new Button using the previously
+  2068	described RIP_BUTTON_STYLE command.  You may have at most 128 different
+  2069	Mouse Buttons (you may have any number of non-Mouse  Buttons).
+  2070	
+  2071	The <x0> and <y0> parameters for this command designate the upper-left
+  2072	corner of the Button.  This (X,Y) location may not be the actual
+  2073	"absolute" corner position of the Button, as it may be adjusted via the
+  2074	Special Effects functions that are part of the RIP_BUTTON_STYLE command
+  2075	(see above).
+  2076	
+  2077	The <x1> and <y1> parameters are only used for Plain Buttons when you
+  2078	have not specified a specific Height and Width in the RIP_BUTTON_STYLE
+  2079	command.  These parameters are used in Dynamically Sized Buttons.  If the
+  2080	Height and Width in the RIP_BUTTON_STYLE are non-zero, then these two
+  2081	parameters are set to zero.
+  2082	
+  2083	The (x0,y0) and (x1,y1) parameters will be modified by the following
+  2084	values for the different special effects:
+  2085	
+  2086	  Effect Type   X0 Modifier   Y0 Modifier   X1 Modifier   Y1 Modifier
+  2087	  -------------------------------------------------------------------
+  2088	  Bevel         -bevel size   -bevel size   +bevel size   +bevel size
+  2089	  Recess            -2            -2            +2            +2
+  2090	  Sunken            0             0             0             0
+  2091	  Chisel            0             0             0             0
+  2092	
+  2093	The <hotkey> parameter is only used with Mouse Buttons.  It is the ASCII
+  2094	code for the keystroke that will activate this Button.  It is represented
+  2095	as a two-digit MegaNum.  If this character exists in the text label, and
+  2096	the Underline flag is enabled in the RIP_BUTTON_STYLE, then the character
+  2097	will be underlined in the label.  Control codes are allowable, and a value
+  2098	of 255 (decimal) corresponds to "any" key.
+  2099	
+  2100	The <flags> parameter provides several different functions for each
+  2101	button.  The possible "combinatorial" flags for this parameter are listed
+  2102	in the following table.  Note that these values may be combined together
+  2103	(by adding their values) to arrive at the final flag parameter's value.
+  2104	
+  2105	        Value  Description
+  2106	        --------------------------------------------------
+  2107	          1    Draw button as already selected
+  2108	          2    Button is "default" when <ENTER> is pressed
+  2109	
+  2110	Using a flag of 1 means that the Button is already "selected".  By
+  2111	selected, we mean that it is already clicked and should be initially
+  2112	drawn as clicked.  This is typically used for Radio Buttons and/or Check
+  2113	Boxes.  This only affects the image.  The Host Command WILL NOT be
+  2114	automatically sent to the host when a selected Button is drawn.  If this
+  2115	parameter is set to 0, then the Button will be drawn in normal,
+  2116	unselected mode.
+  2117	
+  2118	The <text> parameter for this command is somewhat different than those
+  2119	found in previously described RIPscrip commands.  All other RIPscrip
+  2120	commands only have one text parameter.  This command requires  anywhere
+  2121	from 0-3 text parameters.  The way RIPscrip accomplishes this is by
+  2122	separating each block in the <text> parameter with the delimiter "<>".
+  2123	This text parameter delimiter is not needed before the first text block,
+  2124	but is necessary between the 1st and 2nd blocks, and the 2nd and 3rd
+  2125	blocks.  Here is an example of a typical text parameter for this command:
+  2126	
+  2127	     ICONFILE.ICN<>TEXT LABEL<>HOST COMMAND
+  2128	
+  2129	The actual syntax of this text parameter is as follows:
+  2130	
+  2131	     [icon-file][[<>text-label][<>host-command]]
+  2132	
+  2133	The block described as ICONFILE.ICN is actually the Icon Filename that
+  2134	will be used for the Button if it is an Icon Button.  If it is not an
+  2135	Icon Button, then this block will read "<>" all by itself (a "null"
+  2136	block).
+  2137	
+  2138	The .ICN file extension does not need to be included as part of the
+  2139	filename.  If omitted, it will automatically be appended to the
+  2140	filename.  If an extension is provided, it will be used verbatim.
+  2141	
+  2142	The "TEXT LABEL" block is actually the text that will be used to
+  2143	descriptively label the Button.  You may also specify a "null" block for
+  2144	no label (i.e., "<>").
+  2145	
+  2146	The final block of the <text> parameter is the Host Command.  This block
+  2147	contains any text that should be sent to the Host after this Button is
+  2148	clicked.  This may contain any Control Characters, Pick-List definitions,
+  2149	Text Variables or Template Definitions.  This block might be "segmented"
+  2150	into multiple Host Command segments.  See the section entitled HOST
+  2151	COMMANDS in this Manual for additional information on these Host Command
+  2152	features.
+  2153	
+  2154	Not all of the blocks in the <text> parameter need to be specified.  Here
+  2155	are examples of the valid combinations of text blocks:
+  2156	
+  2157	  Parameter Example         Description of the Text Parameter
+  2158	  ---------------------------------------------------------------------
+  2159	  icon<>label<>host_cmd     Specify all three blocks
+  2160	    <>label<>host_cmd       2 blocks specified; no icon
+  2161	      icon<>label<>         2 blocks specified; no host command
+  2162	       icon<>label          2 blocks specified; no host command
+  2163	      <><>host_cmd          1 block specified; no icon or label
+  2164	       <>label<>            1 block specified; no icon or host command
+  2165	        <>label             1 bloc specified; no icon or host command
+  2166	       icon<><>             1 block specified; no label or host command
+  2167	        icon<>              1 block specified; no label or host command
+  2168	         icon               1 block specified; no label or host command
+  2169	        <><><>              A blank text parameter; all blocks omitted
+  2170	         <><>               A blank text parameter; all blocks omitted
+  2171	          <>                A blank text parameter; all blocks omitted
+  2172	
+  2173	NOTE:  The <res> parameter is reserved for future use by TeleGrafix
+  2174	       Communications, Inc..  It should be set to 0 for compatibility
+  2175	       with future releases.
+  2176	
+  2177	
+  2178	
+  2179	RIP_DEFINE
+  2180	----------
+  2181	         Function:  Define a text variable
+  2182	            Level:  1
+  2183	          Command:  D
+  2184	        Arguments:  flags:3 res:2 ...text
+  2185	           Format:  !|1D <flags> <res> <text>
+  2186	          Example:  !|1D00700text_var,60:?question?default data
+  2187	  Uses Draw Color:  NO
+  2188	Uses Line Pattern:  NO
+  2189	  Uses Line Thick:  NO
+  2190	  Uses Fill Color:  NO
+  2191	Uses Fill Pattern:  NO
+  2192	  Uses Write Mode:  NO
+  2193	  Uses Font Sizes:  NO
+  2194	
+  2195	This command is used to create a text variable on the Client system (i.e.,
+  2196	the Terminal system).  A text variable is more fully covered in the HOST
+  2197	COMMANDS section.  Simply put, a text variable is a piece of information
+  2198	assigned to a 1-12 character identifier that can either be saved to a
+  2199	local database file (static variables), or to memory (dynamic
+  2200	variables).  Variable Identifiers can be 1-12 characters in length.  You
+  2201	may use any alphanumeric character and underscores (_) in the
+  2202	identifier.  An underscore cannot be the first character, nor can the
+  2203	first character of an identifier be a number.
+  2204	
+  2205	The <flags> parameter of this command combines three separate values into
+  2206	one MegaNum flag that determines how the variable definition will
+  2207	operate.  Here are the possible flag values:
+  2208	
+  2209	        Value     Description of Flag
+  2210	        ---------------------------------------
+  2211	        001     Save Variable to database
+  2212	        002     Cannot specify a blank response
+  2213	        004     Non-interactive query
+  2214	
+  2215	When a variable is flagged as "Save to Database", it becomes a part of
+  2216	the Client system's actual configuration.  The value is saved
+  2217	indefinitely until either changed, or manually erased.  You may choose
+  2218	not to allow the user to enter a blank response.  This basically requires
+  2219	them to enter some piece of information for the variable.
+  2220	
+  2221	The last flag determines whether the definition is interactive or not. An
+  2222	interactive definition will attempt to define the variable.  If it does
+  2223	exist, it pops the value up on the screen asking the user to confirm if
+  2224	the value is correct.  If it does not exist, a similar pop-up box will
+  2225	appear asking the user to enter some data for the given variable.
+  2226	
+  2227	In a non-interactive situation, the Client system will check to see if
+  2228	the variable exists.  If it does, then nothing happens (unless a default
+  2229	response is specified in this command, whereby the Client's variable is
+  2230	updated with the new information).  If the value is not defined, then
+  2231	this definition becomes interactive by default, since the user actually
+  2232	has to enter something anyway.
+  2233	
+  2234	The <text> parameter for this command is also segmented in nature, much
+  2235	like the RIP_BUTTON command is.  An example of a segmented <text>
+  2236	parameter for the RIP_DEFINE command might be as follows:
+  2237	
+  2238	          FULL_NAME,30:?What is your full name?John Doe
+  2239	
+  2240	The actual syntax of the Variable Define text parameter is as follows:
+  2241	
+  2242	  variable-identifier[,field-width]:[?question-text?][default-value]
+  2243	
+  2244	There are several different segments in this parameter as you can see.
+  2245	The first section is the variable- identifier.  Immediately after it is
+  2246	an optional field-width.  If the field width is omitted, it will default
+  2247	to a value of  60.  You should limit the values of this width from 1-60.
+  2248	
+  2249	Immediately following the identifier field-width parameter is a colon (:).
+  2250	The colon indicates that the variable identifier field is completed and
+  2251	that the remainder of the text parameter is to contain the question
+  2252	and/or the default response (if any).  If no question or default response
+  2253	is provided, the text parameter would read  "TEXT_VAR,width:" with no
+  2254	additional data.
+  2255	
+  2256	The question-text is specified by a question mark (?) followed by the
+  2257	actual text of the question, followed by a trailing question mark.  The
+  2258	basic format of the question segment is as follows:
+  2259	
+  2260	                    ?this is a question?
+  2261	
+  2262	The remainder of the text parameter consists of a default-value for the
+  2263	variable's contents.  It may be omitted if you wish, to make it so that
+  2264	the user must enter his/her own value instead of some "canned response".
+  2265	
+  2266	NOTE:  The <res> parameter is reserved for future use by TeleGrafix
+  2267	       Communications, Inc..  It should be set to 00 for compatibility
+  2268	       with future releases.
+  2269	
+  2270	
+  2271	
+  2272	RIP_QUERY
+  2273	---------
+  2274	         Function:  Query the contents of a text variable
+  2275	            Level:  1
+  2276	          Command:  <escape>
+  2277	        Arguments:  mode:1 res:3 ...text
+  2278	           Format:  !|1<escape> <mode> <res> <text>
+  2279	          Example:  !|1<escape>0000this is a query $COMMAND$^m
+  2280	  Uses Draw Color:  NO
+  2281	Uses Line Pattern:  NO
+  2282	  Uses Line Thick:  NO
+  2283	  Uses Fill Color:  NO
+  2284	Uses Fill Pattern:  NO
+  2285	  Uses Write Mode:  NO
+  2286	  Uses Font Sizes:  NO
+  2287	
+  2288	NOTE:  <escape> is used to indicate the Escape character (ASCII 27 or ESC).
+  2289	
+  2290	The Query Text Variable RIPscrip command instructs the terminal to
+  2291	immediately respond with some piece of information, whether statically
+  2292	stored (i.e., in a database), stored internally in RAM (dynamic
+  2293	information), or pre-defined Text Variables.
+  2294	
+  2295	This command is unique in RIPscrip in the fact that the command character
+  2296	that is used is NOT a printable character.  We use the escape character
+  2297	(ASCII 27) to introduce this command as a measure of security.  Since the
+  2298	query command can query the terminal for some critical (potentially
+  2299	private) information, you would not want a user to be able to query
+  2300	another user's terminal for something like his address information, or
+  2301	something that he wouldn't want to otherwise divulge to unauthorized
+  2302	people.  Since most hosts do not allow the user to enter an escape
+  2303	character, this character is ideal for this purpose.  Using escape allows
+  2304	only the Host (under most circumstances) to be in control of any queries.
+  2305	
+  2306	NOTE:  This command is very flexible in that you can specify control
+  2307	       characters, pick-list definitions, Text Variables, and Host
+  2308	       Command template definitions.  See the section entitled HOST
+  2309	       COMMANDS for a more detailed explanation of these features.
+  2310	
+  2311	Whether the information is transmitted instantly or not is dependent on
+  2312	the <mode> parameter.  The <mode> parameter determines when data queries
+  2313	are processed.  The possible settings for the <mode> parameter are as
+  2314	follows:
+  2315	
+  2316	
+  2317	    Mode     Description
+  2318	    ----------------------------------------------------------------
+  2319	     0    Process the query command NOW (upon receipt)
+  2320	     1    Process when mouse clicked in Graphics Window
+  2321	     2    Process when mouse clicked in Text Window (any text
+  2322	          variables that return X or Y mouse coordinates return TEXT
+  2323	          coordinates, not graphics coordinates in this mode.  These
+  2324	          coordinates are two-digit values instead of the graphical
+  2325	          values that are four digits).
+  2326	
+  2327	Note that modes 1-2 do not return the results of the Query instantly.
+  2328	They query commands are processed when the user clicks the mouse either
+  2329	in the text window, or in the graphics window respectively. These
+  2330	"queries after mouse clicks" are only acted upon if the user is clicking
+  2331	on something other than a Button or a Mouse Field. To disable these two
+  2332	special "deferred" query modes, issue the same command with the query
+  2333	string of $OFF$.  This will disable this mode.  Providing a <text>
+  2334	parameter of anything other than $OFF$ will produce a revised query
+  2335	command (active).
+  2336	
+  2337	Basically put, a Query command will be immediately acted upon by the
+  2338	Terminal program when received.  The Query command's <text> parameter can
+  2339	contain any number of Host Command "segments", which can instruct the
+  2340	terminal "how to" send data to the host, and more specifically, what data
+  2341	to send to the host.
+  2342	
+  2343	Some examples of query statements might be any of the following:
+  2344	
+  2345	                        ^m     Send a carriage return to the BBS now!
+  2346	  My name is $FULL_NAME$^m     Send text "My name is <insert-name-here>"
+  2347	                               followed by a  carriage return to the BBS.
+  2348	                               The <insert-name-here> will be replaced
+  2349	                               with whatever the variable $FULL_NAME$
+  2350	                               contains.
+  2351	
+  2352	See the section entitled HOST COMMANDS for a detailed explanation of Host
+  2353	Commands, and what you can do with the Query command.
+  2354	
+  2355	NOTE:  The <res> parameter is reserved for future use by TeleGrafix
+  2356	       Communications, Inc..  It should be set to 000 for compatibility
+  2357	       with future releases.
+  2358	
+  2359	
+  2360	
+  2361	RIP_COPY_REGION
+  2362	---------------
+  2363	         Function:  Copy screen region up/down
+  2364	            Level:  1
+  2365	          Command:  G
+  2366	        Arguments:  x0:2 y0:2 x1:2 y1:2 res:2 dest_line:2
+  2367	           Format:  !|1G <x0> <y0> <x1> <y1> <res> <dest_line>
+  2368	          Example:  !|1G080G140M0005
+  2369	  Uses Draw Color:  NO
+  2370	Uses Line Pattern:  NO
+  2371	  Uses Line Thick:  NO
+  2372	  Uses Fill Color:  NO
+  2373	Uses Fill Pattern:  NO
+  2374	  Uses Write Mode:  NO
+  2375	  Uses Font Sizes:  NO
+  2376	
+  2377	This command physically "copies" a rectangular region of the graphics
+  2378	screen up or down.  The <dest_line> parameter is the Y position that is
+  2379	the destination scan line to receive the region. The Destination of the
+  2380	copy can overlap the original region, but cannot be on the same line. You
+  2381	cannot move the image area left or right at all.  This command is
+  2382	designated for vertical scrolling of graphical data either up or down.
+  2383	
+  2384	Due to hardware restrictions, the X0 and X1 parameters must be evenly
+  2385	divisible by eight (8) (e.g., 0, 8, 16, etc.).  If the X0 and X1
+  2386	parameters are NOT evenly divisible by eight, then the X0 parameter will
+  2387	be reduced to the next most eight-pixel boundary, and the X1 parameter
+  2388	will be increased to the next eight-pixel boundary.  For example, if
+  2389	X0=14, and X1=38, then X0 would be adjusted DOWN to 8, and X1 would be
+  2390	adjusted UP to 40.  This is to ensure that the desired graphical region
+  2391	is scrolled.
+  2392	
+  2393	The original image area is left on the screen (is not cleared).  So if you
+  2394	wish to perform some kind of scrolling effect, you will have to clear the
+  2395	original area yourself.
+  2396	
+  2397	If the destination region would place the image partially off-screen, then
+  2398	the entire command is ignored!
+  2399	
+  2400	NOTE:  The <res> parameter is reserved for future development by
+  2401	       TeleGrafix.
+  2402	
+  2403	
+  2404	
+  2405	RIP_READ_SCENE
+  2406	--------------
+  2407	         Function:  Playback local .RIP file
+  2408	            Level:  1
+  2409	          Command:  R
+  2410	        Arguments:  res:8 filename...
+  2411	           Format:  !|1R <res> <filename>
+  2412	          Example:  !|1R00000000testfile.rip
+  2413	  Uses Draw Color:  YES
+  2414	Uses Line Pattern:  YES
+  2415	  Uses Line Thick:  YES
+  2416	  Uses Fill Color:  YES
+  2417	Uses Fill Pattern:  YES
+  2418	  Uses Write Mode:  YES
+  2419	  Uses Font Sizes:  YES
+  2420	
+  2421	This command instructs the remote terminal to playback a local .RIP file.
+  2422	The current execution of RIPscrip commands will be temporarily suspended
+  2423	and the contents of the designated RIP file will begin executing.
+  2424	Regardless of whether or not the current RIPscrip code coming across the
+  2425	modem is in the middle of a line or not, the RIP playback file will be
+  2426	assumed to start at the beginning of a line.  Therefore, if a
+  2427	RIP_READ_SCENE command is located in a .RIP file, it must be the very
+  2428	last command on the line, followed by a carriage return instead of a
+  2429	command delimiter (|).  This ensures that the loaded .RIP file will begin
+  2430	executing properly with the correct delimiters found in the correct
+  2431	places.
+  2432	
+  2433	The RIP playback file can alter colors, fonts, or whatever.  Once the
+  2434	playback of the file is complete, the remaining RIPscrip code that was
+  2435	temporarily suspended will be resume execution.  Any changes that
+  2436	appeared in the loaded playback file will remain in effect when the
+  2437	resumed code is processed.  In other words, if you change a color or a
+  2438	font in the playback file and leave them changed, they will remain in
+  2439	effect during the resumed execution.
+  2440	
+  2441	NOTE:  The <res> parameter is reserved for future development by
+  2442	       TeleGrafix.  It should be set to "00000000" for compatibility with
+  2443	       future releases.
+  2444	
+  2445	
+  2446	
+  2447	RIP_FILE_QUERY
+  2448	--------------
+  2449	         Function:  Query existing information on a particular file
+  2450	            Level:  1
+  2451	          Command:  F
+  2452	        Arguments:  mode:2 res:4 filename...
+  2453	           Format:  !|1F <mode> <res> <filename>
+  2454	          Example:  !|1F010000testfile.icn
+  2455	  Uses Draw Color:  NO
+  2456	Uses Line Pattern:  NO
+  2457	  Uses Line Thick:  NO
+  2458	  Uses Fill Color:  NO
+  2459	Uses Fill Pattern:  NO
+  2460	  Uses Write Mode:  NO
+  2461	  Uses Font Sizes:  NO
+  2462	
+  2463	This command queries the existence of a particular file, regardless of
+  2464	type.  It is intended for host systems to determine if a particular Icon
+  2465	or RIP file exists on the terminal;s hard disk.
+  2466	
+  2467	There are a variety of ways you can query for filenames.  The <mode>
+  2468	parameter determines the command's response.  This command instructs the
+  2469	terminal to send a response to the host immediately upon execution.
+  2470	
+  2471	The following table is a listing of the possible values for <mode>:
+  2472	
+  2473	Mode   Description
+  2474	-----------------------------------------------------------------------
+  2475	 00    Simply query the existence of the file.  If it exists, a "1" is
+  2476	       returned.  Otherwise a "0" is returned to the Host (without a
+  2477	       carriage return).
+  2478	 01    Same as 0, except a carriage return is added after the response.
+  2479	 02    Queries the existence of a file.  If it does not exist, a "0" is
+  2480	       returned to the Host followed by a carriage return.  If it does
+  2481	       exist, the returned text is a "1." followed by the file size (in
+  2482	       decimal).  The return sequence is terminated by a carriage
+  2483	       return.  An example of the returned text could be "1.20345".
+  2484	 03    Queries extended return information.  If the file does not
+  2485	       exist, a "0" is returned followed by a carriage return.  If it
+  2486	       does exist, the text returned to the Host is in the Format:
+  2487	       1.size.date.time <cr>.  An example of a return statement could
+  2488	       be "1.20345.01/02/93.03:04:30<cr>"
+  2489	 04    Queries extended return information.  If the file does not
+  2490	       exist, a "0" is returned followed by a carriage return.  If it
+  2491	       does exist, the text returned to the Host is in the Format:
+  2492	       1.filename.size.date.time <cr>. An example of a return statement
+  2493	       could be "1.MYFILE.RIP.20345.01/02/93.03:04:30 <cr>".  Note that
+  2494	       the file extension adds another period into the return text.
+  2495	
+  2496	
+  2497	
+  2498	RIP_ENTER_BLOCK_MODE
+  2499	--------------------
+  2500	         Function:  Enter block transfer mode with host
+  2501	            Level:  9 (system command)
+  2502	          Command:  <escape>
+  2503	        Arguments:  mode:1 proto:1 file_type:2 res:4
+  2504	                    [filename:2] <>
+  2505	           Format:  !|9<escape> <proto> <file_type> <res>
+  2506	                    [filename] <>
+  2507	          Example:  !|9<escape>00010000ICONFILE.ICN<>
+  2508	  Uses Draw Color:  NO
+  2509	Uses Line Pattern:  NO
+  2510	  Uses Line Thick:  NO
+  2511	  Uses Fill Color:  NO
+  2512	Uses Fill Pattern:  NO
+  2513	  Uses Write Mode:  NO
+  2514	  Uses Font Sizes:  NO
+  2515	
+  2516	NOTE:  <escape> is used to indicate the Escape character (ASCII 27 or ESC).
+  2517	
+  2518	This command is used to auto-initiate any desired File Transfer Protocol.
+  2519	The <filename> parameter is optional on downloads, required for uploads,
+  2520	and if omitted must be replaced with a <> parameter (end of string).
+  2521	
+  2522	The <mode> parameter is to specify upload or download.  Use "1" for
+  2523	upload mode, or "0" (zero) for download mode.  A filename is required for
+  2524	uploads.  If the user has Data Security enabled on the terminal, they are
+  2525	prompted to OK the upload before it proceeds.  If the user does not
+  2526	authorize the upload, ten <Ctrl-X>'s (ASCII 24 or CAN) are sent at
+  2527	one-tenth second intervals.  The <filetype> parameter is ignored for
+  2528	uploads.
+  2529	
+  2530	The <proto> parameter is the file transfer protocol specifier. Possible
+  2531	values, and the protocols they refer to are:
+  2532	
+  2533	    Value   Protocol            Filename Required?
+  2534	    ----------------------------------------------
+  2535	      0     Xmodem (checksum)          Yes
+  2536	      1     Xmodem (CRC)               Yes
+  2537	      2     Xmodem-1K                  Yes
+  2538	      3     Xmodem-1K (G)              Yes
+  2539	      4     Kermit                     Yes
+  2540	      5     Ymodem (batch)             No
+  2541	      6     Ymodem-G                   No
+  2542	      7     Zmodem (crash recovery)    No
+  2543	
+  2544	The <file_type> parameter determines what type of files are to be
+  2545	received during the block transfer.  These are the valid parameters:
+  2546	
+  2547	
+  2548	    Value   Description of Block Transfer Contents
+  2549	    ---------------------------------------------------------------
+  2550	      0     RIP file sequence (display it)
+  2551	      1     RIP file sequence (store them)
+  2552	      2     ICN file sequence (store them in proper directories)
+  2553	      3     HLP file sequence (store it, and auto-load if needed)
+  2554	      4     COMPOSITE DYNAMIC file sequence (batch protocols only)
+  2555	      5     ACTIVE DYNAMIC file sequence (batch protocols only)
+  2556	
+  2557	Whether the <filename> is specified or not, this command must have a "<>"
+  2558	sequence after the filename (even if there is none).  Here are examples
+  2559	of how it would look with and without a filename:
+  2560	
+  2561	With a filename, using X-Modem/CRC:
+  2562	
+  2563	     !|9<escape>01010000filename.icn<>
+  2564	
+  2565	Without a filename, using Z-Modem
+  2566	
+  2567	     !|9<escape>06040000<>
+  2568	
+  2569	The special <file_type> of 4 & 5 (COMPOSITE DYNAMIC file sequences) is
+  2570	somewhat different than the non-batch transfer methods.  This allows each
+  2571	file uploaded to be individually processed based on their file extensions.
+  2572	If you use extensions other than .RIP or .ICN, then this mode is not
+  2573	available to you as the necessary files will not be able to be
+  2574	processed.  Any files that are "downloaded" from the Host in DYNAMIC mode
+  2575	are placed into the appropriate sub-directories and no further processing
+  2576	is performed.  .RIP files that are received are "stored" and are not
+  2577	played back in COMPOSITE DYNAMIC mode.  In ACTIVE DYNAMIC mode, they are
+  2578	stored and played back simultaneously.
+  2579	
+  2580	NOTE:  This command must be terminated with a carriage return.  A
+  2581	       vertical bar (|) command delimiter cannot be used to separate
+  2582	       this command from a subsequent one on the same line.  In other
+  2583	       words, this command must be the last command on a line of text.
+  2584	       The protocol must begin on the very next line.
+  2585	
+  2586	
+  2587	
+  2588	RIP_NO_MORE
+  2589	-----------
+  2590	         Function:  End of RIPscrip Scene
+  2591	            Level:  0
+  2592	          Command:  #
+  2593	        Arguments:  <none>
+  2594	           Format:  !|#
+  2595	          Example:  !|#
+  2596	  Uses Draw Color:  NO
+  2597	Uses Line Pattern:  NO
+  2598	  Uses Line Thick:  NO
+  2599	  Uses Fill Color:  NO
+  2600	Uses Fill Pattern:  NO
+  2601	  Uses Write Mode:  NO
+  2602	  Uses Font Sizes:  NO
+  2603	
+  2604	This command indicates that RIPscrip commands are complete.  This allows
+  2605	the terminal program to activate Mouse Regions, or respond to queued up
+  2606	Mouse Clicks without disturbing the natural flow of the script
+  2607	transmission.
+  2608	
+  2609	For noise-immunity, the Host should transmit three or more RIP_NO_MORE
+  2610	command consecutively to make sure the message gets to the terminal.  The
+  2611	terminal should also time-out if no data is received for a while, and
+  2612	assume RIP_NO_MORE.
+  2613	
+  2614	
+  2615	
+  2616	
+  2617	
+  2618	=====================================================================
+  2619	==          HOST COMMANDS - A TUTORIAL & REFERENCE SECTION         ==
+  2620	=====================================================================
+  2621	
+  2622	With Mouse regions, Buttons and Text Variable Query ability, you can
+  2623	control the Terminal/Paint programs and how they react with the BBS
+  2624	in many ways.  To accomplish this, there are several features of
+  2625	RIPscrip that permit you to do special actions based on different
+  2626	circumstances.  In effect, an "action language" of sorts.  The
+  2627	following sections go into the available "action language" features
+  2628	in more detail.
+  2629	
+  2630	Among the various abilities are:
+  2631	
+  2632	     1. Control-Character specification
+  2633	     2. Pre-defined Text Variables & User-defined text variables
+  2634	     3. Pop-up pick-lists
+  2635	     4. A Host Command "Template" system for added intelligence.
+  2636	     5. Query text variable contents (pre-defined & user variables)
+  2637	
+  2638	
+  2639	
+  2640	
+  2641	=====================================================================
+  2642	==                        CONTROL CHARACTERS                       ==
+  2643	=====================================================================
+  2644	
+  2645	Not all BBS'es will allow you to use control characters on their
+  2646	Service.  Regardless of that, the capability to send any Control
+  2647	Character exists for your Host Commands.  The most commonly used
+  2648	Control Characters are:
+  2649	
+  2650	   INDIVIDUAL CONTROL CHARACTERS         SPECIAL KEYSTROKES
+  2651	   ===========================================================
+  2652	   ^G ... Beep                           ^[[A ... Up Arrow
+  2653	   ^L ... Clear Screen (Top of Form)     ^[[B ... Down Arrow
+  2654	   ^M ... Carriage Return                ^[[C ... Right Arrow
+  2655	   ^C ... Break (sometimes)              ^[[D ... Left Arrow
+  2656	   ^H ... Backspace                      ^[[H ... Home Key
+  2657	   ^[ ... Escape character               ^[[K ... End Key
+  2658	   ^S ... Pause data transmission        ^[[L ... Control Home
+  2659	   ^Q ... Resume data transmission
+  2660	
+  2661	Some hosts use the ^ (caret) for their own purposes.  In these
+  2662	cases, you can use the ` (backquote) character instead of the
+  2663	caret.  Some systems allow you to specify the caret symbol as
+  2664	two carets (^^).  Consult your Host Software documentation to
+  2665	determine the best method for your needs.
+  2666	
+  2667	NOTE:  RIPterm uses ^ or ` and a character to represent a control
+  2668	       character.  IT IS NOT A CONTROL CHARACTER BY ITSELF, IT
+  2669	       IS TRANSLATED BY RIPterm.  In other words, ^M does not send
+  2670	       a ^ and then an M, it sends a carriage return (ASCII 13).
+  2671	       Likewise, RIPscrip commands like Query do not use an ^[, an
+  2672	       actual escape character (ASCII 27) is used.
+  2673	
+  2674	
+  2675	
+  2676	=====================================================================
+  2677	==                          TEXT VARIABLES                         ==
+  2678	=====================================================================
+  2679	
+  2680	A special feature of RIPterm allows it to understand what a Text Variable
+  2681	is.  A text variable is a piece of text that both RIPaint and RIPterm
+  2682	know something about.  For example, the Text Variable $DATE$ is known to
+  2683	represent the current Date on your PC.  The host may ask your system what
+  2684	the values of one or more of these variables are, and if your terminal
+  2685	knows these particular Text Variables, it will tell the host.
+  2686	
+  2687	There are three types of Text Variables.
+  2688	
+  2689	-- Built-In Text Variables that RIPscrip products will ALWAYS
+  2690	   know about.  These include Text Variables like date and time
+  2691	   that return a value
+  2692	
+  2693	-- Another type of built-in Text Variable are Active Text Variables,
+  2694	   which perform an action, but return nothing to the host.  These
+  2695	   include turning the status bar on/off, clearing the graphics
+  2696	   screen, and playing some simple sounds.
+  2697	
+  2698	-- Then there are also User Text Variables that can contain a variety
+  2699	   of information depending on what the user entered at the time
+  2700	   the variable was created.  For example, the host might ask you
+  2701	   what the contents of the $FULL_NAME$ variable is, and if
+  2702	   RIPterm doesn't know, it could pop-up a field on the screen and
+  2703	   ask you about it.  From then on, RIPterm will remember that
+  2704	   piece of information for the next time it is needed by a host.
+  2705	
+  2706	You may use either the pre-defined Text Variables, or the User Text
+  2707	Variables at any place that allows Text Variables.
+  2708	
+  2709	The following is a reference of all Built-In and Active Text Variables.
+  2710	
+  2711	
+  2712	
+  2713	
+  2714	
+  2715	The following is a Listing of the Pre-Defined Text Variables:
+  2716	=============================================================
+  2717	
+  2718	
+  2719	
+  2720	
+  2721	$RIPVER$ ... RIPscrip version (e.g., "RIPSCRIP015300")
+  2722	------------------------------------------------------
+  2723	This Text Variable returns a phrase which will identify a
+  2724	RIPscrip-compatible software package.  It is designed to be used by a
+  2725	host to detect what version of RIPscrip graphics your terminal can
+  2726	support.  When this Text Variable is used, it will respond back with
+  2727	"RIPSCRIP" followed by the full Version Number (e.g., 01.53.00), without
+  2728	the periods.
+  2729	
+  2730	     Example:  $RIPVER$
+  2731	     Returns:  RIPSCRIP015300
+  2732	
+  2733	
+  2734	$DATE$ ... Date in short format
+  2735	-------------------------------
+  2736	This Text Variable returns the current date. in the format MM/DD/YY.
+  2737	
+  2738	     Example:  $DATE$
+  2739	     Returns:  12/19/93
+  2740	
+  2741	
+  2742	
+  2743	$MONTH$ ... Month Name
+  2744	----------------------
+  2745	This Text Variable returns the full name of the current month.  It is not
+  2746	abbreviated (e.g., "November" instead of "Nov")
+  2747	
+  2748	     Example:  $MONTH$
+  2749	     Returns:  December
+  2750	
+  2751	
+  2752	
+  2753	$MONTHNUM$ ... Month Number
+  2754	---------------------------
+  2755	This Text Variable returns the number of the current month.  January=01
+  2756	and December=12.
+  2757	
+  2758	     Example:  $MONTHNUM$
+  2759	     Returns:  12
+  2760	
+  2761	
+  2762	
+  2763	$DAY$ ... Day of Month Number
+  2764	-----------------------------
+  2765	This Text Variable returns the current day of the month.  Possible values
+  2766	for this Variable are from 01-31.
+  2767	
+  2768	     Example:  $DAY$
+  2769	     Returns:  05
+  2770	
+  2771	
+  2772	
+  2773	$DOY$ ... Day of year
+  2774	---------------------
+  2775	This Text Variable returns the number of days so far in the year.  A year
+  2776	has 365 days (except leap years which have 366).  $DOY$ can return 001 -
+  2777	366.
+  2778	
+  2779	     Example:  $DOY$
+  2780	     Returns:  214
+  2781	
+  2782	
+  2783	
+  2784	$YEAR$ ... 2 digit year
+  2785	-----------------------
+  2786	This Text Variable returns the two-digit number of the current year.
+  2787	
+  2788	     Example:  $YEAR$
+  2789	     Returns:  93
+  2790	
+  2791	
+  2792	
+  2793	$FYEAR$ ... 4 digit year
+  2794	------------------------
+  2795	This Text Variable returns the four-digit number of the current year.
+  2796	
+  2797	     Example:  $FYEAR$
+  2798	     Returns:  1993
+  2799	
+  2800	
+  2801	
+  2802	$TIME$ ... Time in standard format
+  2803	----------------------------------
+  2804	This Text Variable returns the time in military format (hours from 00 -
+  2805	23).  The format is hours, minutes, and seconds separated by colons.
+  2806	HH:MM:SS
+  2807	
+  2808	     Example:  $TIME$
+  2809	     Returns:  18:09:33
+  2810	
+  2811	
+  2812	
+  2813	$HOUR$ ... Hour (format HH) - normal style
+  2814	------------------------------------------
+  2815	This Text Variable returns the two digit number of the current hour.
+  2816	This variable range from 01 - 12.  This does not use military format.
+  2817	
+  2818	     Example:  $HOUR$
+  2819	     Returns:  11
+  2820	
+  2821	
+  2822	
+  2823	$MHOUR$ ... Hour (format HH) - military style
+  2824	---------------------------------------------
+  2825	This Text Variable returns a two-digit number of the current hour in
+  2826	military format.  This variable may range from 00 - 23.
+  2827	
+  2828	     Example:  $MHOUR$
+  2829	     Returns:  17
+  2830	
+  2831	
+  2832	
+  2833	$MIN$ ... Minutes
+  2834	-----------------
+  2835	This Text Variable returns the two-digit number representing the current
+  2836	minutes in the hour.  Possible values for this variable are 00-59.
+  2837	
+  2838	     Example:  $MIN$
+  2839	     Returns:  45
+  2840	
+  2841	
+  2842	
+  2843	$SEC$ ... Seconds
+  2844	-----------------
+  2845	This Text Variable returns a two-digit number representing the current
+  2846	seconds of the minute.  Possible values for this variable are 00-59.
+  2847	
+  2848	     Example:  $SEC$
+  2849	     Returns:  59
+  2850	
+  2851	
+  2852	
+  2853	$AMPM$ ... Returns AM or PM depending on time
+  2854	---------------------------------------------
+  2855	This Text Variable returns a two-character value of either "AM" or "PM"
+  2856	depending on what time it is.
+  2857	
+  2858	     Example:  $AMPM$
+  2859	     Returns:  PM
+  2860	
+  2861	
+  2862	
+  2863	$DATETIME$ ... Date and Time
+  2864	----------------------------
+  2865	This Text Variable returns a combination date and time.  The format is
+  2866	somewhat different than standard time/date notation.  It is:
+  2867	
+  2868	     DAY-OF-WEEK   MONTH   DAY-OF-MONTH  HH:MM:SS  YEAR
+  2869	
+  2870	     Example:  $DATETIME$
+  2871	     Returns:  Sat Dec 19 14:38:50 1993
+  2872	
+  2873	        NOTE:  This is the standard Unix date/time notation.
+  2874	
+  2875	
+  2876	
+  2877	$TIMEZONE$ ... Time Zone or "NONE" if unknown
+  2878	---------------------------------------------
+  2879	This Text Variable returns a word/phrase that describes the time-zone the
+  2880	terminal is in.  This may be returned as anything like "PST" for Pacific
+  2881	Standard Time, "EST" for Eastern Standard Time, etc.  If the time zone is
+  2882	not set on your PC, this variable will respond with "NONE".
+  2883	
+  2884	     Example:  $TIMEZONE$
+  2885	     Returns:  PST
+  2886	
+  2887	
+  2888	
+  2889	$DOW$ ... Day of week fully spelled out
+  2890	---------------------------------------
+  2891	This Text Variable returns the current day of the week.  The name is
+  2892	fully spelled out.  Possible values are: Sunday, Monday, Tuesday,
+  2893	Wednesday, Thursday, Friday and Saturday.
+  2894	
+  2895	     Example:  $DOW$
+  2896	     Returns:  Saturday
+  2897	
+  2898	
+  2899	
+  2900	$ADOW$ ... Abbreviated Day of Week
+  2901	----------------------------------
+  2902	This Text Variable returns the current day of the week in abbreviated
+  2903	form.  Possible values are: Sun, Mon, Tue, Wed, Thu, Fri and Sat.
+  2904	
+  2905	     Example:  $ADOW$
+  2906	     Returns:  Mon
+  2907	
+  2908	
+  2909	
+  2910	$WDAY$ ... Day of Week
+  2911	----------------------
+  2912	This Text Variable returns a one-digit number representing the day of the
+  2913	week.  Possible values are 0-6, where 0=Sunday (the first day in the
+  2914	week).
+  2915	
+  2916	     Example:  $WDAY$
+  2917	     Returns:  2
+  2918	
+  2919	$WOY$ ... Week of current year 00-53; Sunday=1st Day of Week
+  2920	------------------------------------------------------------
+  2921	This Text Variable returns a number from 00-53, representing the week in
+  2922	the year.  Even though there are 52 weeks in a year, a week might not
+  2923	begin exactly on the first day of the year, so a maximum value for this
+  2924	variable can be 53 under these circumstances.  For this variable, Sunday
+  2925	is considered to be the first day of the week.
+  2926	
+  2927	     Example:  $WOY$
+  2928	     Returns:  32
+  2929	
+  2930	
+  2931	
+  2932	$WOYM$ ... Week of current year 00-53; Monday=1st Day of Week
+  2933	-------------------------------------------------------------
+  2934	This Text Variable returns a number from 00-53, representing the week in
+  2935	the current year.  Even though there are 52 weeks in a year, a week might
+  2936	not begin exactly on the first day of the year, so a maximum value for
+  2937	this variable can be 53 under these circumstances.  For this variable,
+  2938	Monday is considered to be the first day of the week.
+  2939	
+  2940	     Example:  $WOYM$
+  2941	     Returns:  32
+  2942	
+  2943	
+  2944	
+  2945	$BEEP$ ... Beep Sound (ala Ctrl-G)
+  2946	----------------------------------
+  2947	This Active Text Variable beeps the terminal, producing a Ctrl-G sound.
+  2948	
+  2949	The C source code to play this sound is:
+  2950	
+  2951	          sound(1000);   // the Hertz frequency to play
+  2952	          delay(75);     // millisecond delay
+  2953	          nosound();     // turn the sound off
+  2954	          delay(75);     // millisecond delay
+  2955	
+  2956	     Example:  $BEEP$
+  2957	     Returns:  nothing
+  2958	
+  2959	
+  2960	
+  2961	$BLIP$ ... Blipping Sound (like a hitting a barrier)
+  2962	----------------------------------------------------
+  2963	This Active Text Variable is like $BEEP$, except the sound is different.
+  2964	It produces a barrier sound; like you're running into a wall.
+  2965	
+  2966	The C source code to play this sound is:
+  2967	
+  2968	          sound(50);     // the Hertz frequency to play
+  2969	          delay(25);     // millisecond delay
+  2970	          nosound();     // turn the sound off
+  2971	          delay(10);
+  2972	
+  2973	     Example:  $BLIP$
+  2974	     Returns:  nothing
+  2975	
+  2976	
+  2977	
+  2978	$MUSIC$ ... Musical (cheerful) sound
+  2979	------------------------------------
+  2980	This Active Text Variable produces a cheerful sound, indicating success of
+  2981	an action.  This sound is used for successful downloads and dialed
+  2982	connections.
+  2983	
+  2984	The C source code to play this sound is:
+  2985	
+  2986	          for ( i = 0  ;  i < 4  ;  i += 1 )
+  2987	          {
+  2988	               sound(1300);   delay(10);     // the Hertz frequency to play
+  2989	               sound(1200);   delay(10);     // millisecond delay
+  2990	               sound(1100);   delay(10);
+  2991	               sound(1000);   delay(10);
+  2992	               sound(900);    delay(10);
+  2993	               sound(800);    delay(10);
+  2994	               sound(700);    delay(10);
+  2995	               sound(850);    delay(10);
+  2996	               sound(950);    delay(10);
+  2997	          }
+  2998	          nosound();                         // turn the sound off
+  2999	
+  3000	     Example:  $MUSIC$
+  3001	     Returns:  nothing
+  3002	
+  3003	
+  3004	
+  3005	$ALARM$ ... Warning!  This sound indicates failure!
+  3006	---------------------------------------------------
+  3007	This Active Text Variable produces a warning sound, indicating failure of
+  3008	an action.  This sound is used for aborted downloads.
+  3009	
+  3010	The C source code to play this sound is:
+  3011	
+  3012	          for ( i = 0  ;  i < 3  ;  i += 1 )
+  3013	          {
+  3014	               sound(320);  delay(200);     // the Hertz frequency to play
+  3015	               sound(160);  delay(425);     // millisecond delay
+  3016	          }
+  3017	          nosound();                        // turn the sound off
+  3018	
+  3019	     Example:  $ALARM$
+  3020	     Returns:  nothing
+  3021	
+  3022	
+  3023	
+  3024	$PHASER$ ... Fire phasers!
+  3025	--------------------------
+  3026	This Active Text Variable produces a sound like firing your energy
+  3027	weapons in a game.  Now you too blast away with the bset of them.  Trivia
+  3028	question:  What is phaser stand for?  See $REVPHASERS$ for the answers.
+  3029	
+  3030	The C source code to play this sound is:
+  3031	
+  3032	          for ( i = 2500  ;  i >= 50  ;  i -= 20 )
+  3033	          {
+  3034	               sound(i);               // the Hertz frequency to play
+  3035	               delay(2);               // millisecond delay
+  3036	          }
+  3037	          nosound();                   // turn the sound off
+  3038	
+  3039	     Example:  $PHASER$
+  3040	     Returns:  nothing
+  3041	
+  3042	
+  3043	
+  3044	$REVPHASER$ ... Fire phasers!
+  3045	-----------------------------
+  3046	This Active Text Variable produces a sound like firing your energy
+  3047	weapons in a game.  Like $PHASER$ makes an ascending tone, $REVPHASER$
+  3048	makes a descending tone.  Answer to trivia question in $PHASER$: Phaser
+  3049	stands for PHoton Amplification by Stimulated Emission of Radiation.
+  3050	Sound familiar?  Laser is Light Amplification by Stimulated Emission of
+  3051	Radiation, and Maser is Microwave Amplification by Stimulated Emission of
+  3052	Radiation.
+  3053	
+  3054	The C source code to play this sound is:
+  3055	
+  3056	          for ( i = 50  ;  i <= 2500  ;  i += 20 )
+  3057	          {
+  3058	               sound(i);               // the Hertz frequency to play
+  3059	               delay(2);               // millisecond delay
+  3060	          }
+  3061	          nosound();                   // turn the sound off
+  3062	
+  3063	     Example:  $REVPHASER$
+  3064	     Returns:  nothing
+  3065	
+  3066	
+  3067	
+  3068	$X$ ... X Mouse location
+  3069	------------------------
+  3070	This Text Variable returns the current X coordinate of the mouse pointer.
+  3071	This can be used interactively (for example, by on-line games) to
+  3072	determine the location of the mouse pointer.  Only the X value of the
+  3073	mouse (X,Y) is returned.  The value is 0000-9999 depending on what the
+  3074	current position is.
+  3075	
+  3076	     Example:  $X$
+  3077	     Returns:  0523
+  3078	
+  3079	
+  3080	
+  3081	$Y$ ... Y Mouse location
+  3082	------------------------
+  3083	This Text Variable returns the current Y coordinate of the mouse pointer.
+  3084	This can be used interactively (for example, by on-line games) to
+  3085	determine the location of the mouse pointer.  Only the Y value of the
+  3086	Mouse (X,Y) is returned.  The value is 0000-9999 depending on what the
+  3087	current position is.
+  3088	
+  3089	     Example:  $Y$
+  3090	     Returns:  0244
+  3091	
+  3092	
+  3093	
+  3094	$XY$ ... X/Y Mouse Location
+  3095	---------------------------
+  3096	This Text Variable returns both the X and Y coordinates of the mouse
+  3097	pointer.  A colon (:) separates the two values.  The X and Y values may
+  3098	range from 0000-9999.  The format that this value uses is:  XXXX:YYYY
+  3099	
+  3100	     Example:  $XY$
+  3101	     Returns:  0297:0321
+  3102	
+  3103	
+  3104	
+  3105	$XYM$ ... X, Y & button status
+  3106	------------------------------
+  3107	This Text Variable returns the X and Y coordinates of the mouse pointer,
+  3108	and which mouse buttons are pressed (if any).  A colon (:) separates the
+  3109	three values.  The X and Y values may range from 0000-9999.  LMR stands
+  3110	for Left/Middle/Right.  If any of these buttons are depressed (clicked),
+  3111	then the corresponding position will contain a 1.  If a button is NOT
+  3112	depressed, then it will contain a 0.  The format that this value uses
+  3113	is:  XXXX:YYYY:LMR
+  3114	
+  3115	This means that the (X,Y) location of the cursor is (0123,0297), and that
+  3116	the Left and Middle buttons are depressed, but that the Right Mouse
+  3117	Button is not depressed.
+  3118	
+  3119	     Example:  $XYM$
+  3120	     Returns:  0123:0297:110
+  3121	
+  3122	
+  3123	
+  3124	$M$ ... Mouse Button Status: LMR
+  3125	--------------------------------
+  3126	This Text Variable returns a 3-character code representing the status of
+  3127	each mouse button.  This variable works with two button and three button
+  3128	mice.  The format of the code is LMR where L=Left, M=Middle (if any), and
+  3129	R=Right.  If any button is clicked, the code for that button is "1".  If
+  3130	the button is not depressed, it is "0".  "100" would mean the left mouse
+  3131	button is depressed, but none of the others are.
+  3132	
+  3133	     Example:  $M$
+  3134	     Returns:  001
+  3135	
+  3136	
+  3137	
+  3138	$MSTAT$ ... Mouse Status
+  3139	------------------------
+  3140	This Text Variable returns a "YES" if there is a mouse installed on the
+  3141	RIPterm computer.  If no mouse is installed, this variable returns "NO".
+  3142	
+  3143	     Example:  $MSTAT$
+  3144	     Returns:  YES
+  3145	
+  3146	
+  3147	
+  3148	$RESET$ ... Performs RIP_RESET_WINDOWS (Identical to !|*)
+  3149	---------------------------------------------------------
+  3150	This Active Text Variable resets and clears the graphics screen, resets
+  3151	the text window to full screen and clears it, resets the color palette,
+  3152	deletes all mouse fields, and clears the clipboard.
+  3153	
+  3154	     Example:  $RESET$
+  3155	     Returns:  nothing
+  3156	
+  3157	
+  3158	
+  3159	$SAVEALL$ ... Save all screen attributes
+  3160	----------------------------------------
+  3161	This Active Text Variable saves the Text Windows coordinates, save the
+  3162	contents of the clipboard, saves all mouse fields, and saves the contents
+  3163	of the entire screen.  It is the same as doing a "$STW$ $SCB$ $SMF$
+  3164	$SAVE$".
+  3165	
+  3166	     Example:  $SAVEALL$
+  3167	     Returns:  nothing
+  3168	
+  3169	
+  3170	
+  3171	$RESTOREALL$ ... Restore all screen attributes
+  3172	----------------------------------------------
+  3173	This Active Text Variable restores the Text Windows coordinates, restores
+  3174	the contents of the clipboard, restores all mouse fields, and restores
+  3175	the contents of the screen.  It is equal to "$RTW$ $RCB$ $RMF$
+  3176	$RESTORE$".
+  3177	
+  3178	     Example:  $RESTOREALL$
+  3179	     Returns:  nothing
+  3180	
+  3181	
+  3182	
+  3183	$EGW$ ... Erase Graphics Window
+  3184	-------------------------------
+  3185	This Active Text Variable erases the graphics window (much like a Reset
+  3186	Windows command does). This command is useful in Host Commands.  When you
+  3187	click on a Mouse Field, it could erase the graphics window THEN transmit
+  3188	the remainder of the return string (if any) to the host.
+  3189	
+  3190	     Example:  $EGW$
+  3191	     Returns:  nothing
+  3192	
+  3193	
+  3194	
+  3195	$SAVE$ and $SAVEx$ ... Save graphics screen
+  3196	-------------------------------------------
+  3197	The Active Text Variable $SAVE$ saves the contents of the entire graphics
+  3198	screen to a disk file called RIPTERM.SAV.  No Mouse Fields, Text Window
+  3199	locations or Clipboard data are saved - just the graphics screen.  The
+  3200	entire 640x350 region is saved to disk.
+  3201	
+  3202	If you choose the SAVE0 through SAVE9 variations, the filename that is
+  3203	saved to files RIPTERM0.SAV through RIPTERM9.SAV, allowing you to have
+  3204	multiple screens saved simultaneously.
+  3205	
+  3206	If you wish to save the entire state of the RIPterm system, use
+  3207	$SAVEALL$.
+  3208	
+  3209	     Example:  $SAVE7$
+  3210	     Returns:  nothing
+  3211	
+  3212	
+  3213	
+  3214	$RESTORE$ and $RESTOREx$ ... Restore graphics screen
+  3215	----------------------------------------------------
+  3216	The Active Text Variable $RESTORE$ reads the saved file RIPTERM.SAV in
+  3217	from disk and restores the graphics as they were originally saved with
+  3218	the $SAVE$ command.  Only the graphics screen is restored, not the
+  3219	Clipboard, Mouse Fields or Text Window settings.
+  3220	
+  3221	If you choose the RESTORE0 through RESTORE9 variations, the filename that
+  3222	is restored are RIPTERM0.SAV through RIPTERM9.SAV, allowing you to
+  3223	restore from up to ten different saved files.  A slight difference from
+  3224	$RESTORE$ is that $RESTORE0$ - $RESTORE9$ delete the file after the
+  3225	graphics screen is restored.
+  3226	
+  3227	To restore the entire context of the graphics environment $RESTALL$.
+  3228	
+  3229	     Example:  $RESTORE3$
+  3230	     Returns:  nothing
+  3231	
+  3232	
+  3233	
+  3234	$SMF$ ... Save Mouse Fields
+  3235	---------------------------
+  3236	This Active Text Variable saves all defined Mouse Fields and Mouse
+  3237	Buttons to a temporary file for later retrieval.  This is designed
+  3238	especially for the graphical designer who wishes to pop-up a dialog box
+  3239	on the screen with one or more mouse fields, and when finished, to
+  3240	restore the screen and original mouse fields.  This command is intended
+  3241	to be used with the Restore Mouse Fields text variable $RMF$.
+  3242	
+  3243	     Example:  $SMF$
+  3244	     Returns:  nothing
+  3245	
+  3246	
+  3247	
+  3248	$RMF$ ... Restore Mouse Fields
+  3249	------------------------------
+  3250	This Active Text Variable restores any Mouse Fields saved with $SMF$.
+  3251	You may have only one set of mouse fields saved at once.  If no mouse
+  3252	fields were saved, or if the number of fields saved is 0, then no mouse
+  3253	fields are  active.
+  3254	
+  3255	NOTE:  You may restore Mouse Fields more than once is you wish. In
+  3256	       other words, if you do a $SMF$ command, you may execute
+  3257	       $RMF$ one or more times.
+  3258	
+  3259	     Example:  $RMF$
+  3260	     Returns:  nothing
+  3261	
+  3262	
+  3263	
+  3264	$MKILL$ ... Kill Mouse Fields
+  3265	-----------------------------
+  3266	This Active Text Variable deletes all defined Mouse Fields exactly like
+  3267	RIP_KILL_MOUSE_FIELDS does.  The benefit is when the user clicks on a
+  3268	Mouse Fields or Button, the Mouse Fields are removed, but the graphics
+  3269	remain on the screen.  The fields could be subsequently re-defined
+  3270	quickly and easily without having to re-transmit an identical menu over
+  3271	again.
+  3272	
+  3273	     Example:  $MKILL$
+  3274	     Returns:  nothing
+  3275	
+  3276	
+  3277	
+  3278	$ETW$ ... Erase Text Window
+  3279	---------------------------
+  3280	This Active Text Variable erases the Text Window (like a clear screen
+  3281	code does).  This command is useful in Host Commands when you click on a
+  3282	Mouse Field, it could erase the text window THEN transmit the remainder
+  3283	of the Host Command (if any).
+  3284	
+  3285	     Example:  $ETW$
+  3286	     Returns:  nothing
+  3287	
+  3288	
+  3289	
+  3290	$DTW$ ... Disable Text Window
+  3291	-----------------------------
+  3292	This Active Text Variable disables the Text Window (preventing any
+  3293	received text from showing up on screen).  This command is useful in Host
+  3294	Commands when you click on a Mouse Field, it would halt any further
+  3295	output to the text window.
+  3296	
+  3297	     Example:  $DTW$
+  3298	     Returns:  nothing
+  3299	
+  3300	
+  3301	
+  3302	$STW$ ... Save Text Window information
+  3303	--------------------------------------
+  3304	This Active Text Variable stores all of the text window settings.  The
+  3305	window's X/Y dimensions are preserved, as is the current cursor location,
+  3306	ANSI attributes, cursor ON/OFF status and the vertical scrolling margins.
+  3307	Even the current System Font is saved (if necessary).
+  3308	
+  3309	NOTE:  The contents of the Text Window are NOT saved.
+  3310	
+  3311	     Example:  $STW$
+  3312	     Returns:  nothing
+  3313	
+  3314	
+  3315	
+  3316	$RTW$ ... Restore Text Window information
+  3317	-----------------------------------------
+  3318	This Active Text Variable restores the Text Window to the settings active
+  3319	when $STW$ (Save Text Window) was executed. The current cursor location,
+  3320	ANSI attributes, cursor ON/OFF status, vertical scrolling margins, and
+  3321	the System Font are restored.
+  3322	
+  3323	NOTE:  The text contents of the window are not restored.
+  3324	
+  3325	     Example:  $RTW$
+  3326	     Returns:  nothing
+  3327	
+  3328	
+  3329	
+  3330	$TWIN$ ... Text  Window Status
+  3331	------------------------------
+  3332	This Text Variable checks to see if a Text Window exists, and returns YES
+  3333	if there is a Text Window, or returns NO if there is no Text Window or
+  3334	the Text Window has been disabled (with $DTW$).
+  3335	
+  3336	     Example:  $TWIN$
+  3337	     Returns:  YES
+  3338	
+  3339	
+  3340	
+  3341	$TWFONT$ ... Active Text Font
+  3342	-----------------------------
+  3343	This Text Variable returns which of the five Text Window Fonts is active,
+  3344	or 0 (zero) if there is no Text Window.
+  3345	
+  3346	          0 ... No Text Window          3 ... 80x25 font
+  3347	          1 ... 80x43 font              4 ... 91x25 MicroANSI font
+  3348	          2 ... 91x43 MicroANSI font    5 ... 40x25 font
+  3349	
+  3350	     Example:  $TWFONT$
+  3351	     Returns:  1
+  3352	
+  3353	
+  3354	
+  3355	$TWH$ ... Text Window Height
+  3356	----------------------------
+  3357	This Text Variable returns the height of the Text Window, or 0 (zero) if
+  3358	there is no Text Window.  If a text window exists, the minimum value is 1
+  3359	and the maximum value is 43.  This may increase in the future.
+  3360	
+  3361	     Example:  $TWH$
+  3362	     Returns:  25
+  3363	
+  3364	
+  3365	
+  3366	$TWW$ ... Text Window Width
+  3367	---------------------------
+  3368	This Text Variable returns the width of the Text Window, or 0 (zero) if
+  3369	there is no Text Window.  If a text window exists, the minimum value is 1
+  3370	and the maximum value is 91.  This may increase in the future.
+  3371	
+  3372	     Example:  $TWW$
+  3373	     Returns:  80
+  3374	
+  3375	
+  3376	
+  3377	$TWX0$ ... Text Window Upper Left X Coordinate
+  3378	----------------------------------------------
+  3379	This Text Variable is the X coordinate of the upper left corner of the
+  3380	Text Window.  The coordinates given are relative to the upper left of the
+  3381	screen.  The values are given in cells, which is a block the size of one
+  3382	character in the currently selected font.  A good analogy is that a cell
+  3383	is equivalent to a square on a sheet of graph paper.  The cell size may
+  3384	change depending on the font used, but the relative position for that
+  3385	font remains constant.  If there is no Text Window, this returns 0
+  3386	(zero).  However, note that 0 (zero) is also a valid coordinate.  Use
+  3387	$TWIN$ to determine if there is a Text Window.
+  3388	
+  3389	     Example:  $TWX0$
+  3390	     Returns:  0
+  3391	
+  3392	
+  3393	
+  3394	$TWY0$ ... Text Window Upper Left Y Coordinate
+  3395	----------------------------------------------
+  3396	This Text Variable is the Y coordinate of the upper left corner of the
+  3397	Text Window.  See $TWX0$ for an explanation of the coordinate system.
+  3398	
+  3399	     Example:  $TWY0$
+  3400	     Returns:  40
+  3401	
+  3402	
+  3403	
+  3404	$TWX1$ ... Text Window Lower Right X Coordinate
+  3405	-----------------------------------------------
+  3406	This Text Variable is the X coordinate of the lower right corner of the
+  3407	Text Window.  See $TWX0$ for an explanation of the coordinate system.
+  3408	
+  3409	     Example:  $TWX1$
+  3410	     Returns:  80
+  3411	
+  3412	
+  3413	
+  3414	$TWY1$ ... Text Window Lower Right Y Coordinate
+  3415	-----------------------------------------------
+  3416	This Text Variable is the Y coordinate of the lower right corner of the
+  3417	Text Window.  See $TWX0$ for an explanation of the coordinate system.
+  3418	
+  3419	     Example:  $TWY1$
+  3420	     Returns:  43
+  3421	
+  3422	
+  3423	
+  3424	$CURX$ ... Text Cursor X Coordinate
+  3425	-----------------------------------
+  3426	This Text Variable is the X coordinate of the text cursor in the Text
+  3427	Window, relative to the upper left of the Text Window.  See $TWX0$ for an
+  3428	explanation of the coordinate system.
+  3429	
+  3430	     Example:  $CURX$
+  3431	     Returns:  2
+  3432	
+  3433	
+  3434	
+  3435	$CURY$ ... Text Cursor Y Coordinate
+  3436	-----------------------------------
+  3437	This Text Variable is the Y coordinate of the text cursor in the Text
+  3438	Window, relative to the upper left of the Text Window.  See $TWX0$ for an
+  3439	explanation of the coordinate system.
+  3440	
+  3441	     Example:  $CURY$
+  3442	     Returns:  5
+  3443	
+  3444	
+  3445	
+  3446	$CON$ ... Enable the Text Cursor
+  3447	--------------------------------
+  3448	This Active Text Variable turns on the text cursor.
+  3449	
+  3450	     Example:  $CON$
+  3451	     Returns:  nothing
+  3452	
+  3453	
+  3454	
+  3455	$COFF$ ... Disable the Text Cursor
+  3456	----------------------------------
+  3457	This Active Text Variable turns off the text cursor.  This is
+  3458	automatically reset when a Reset Windows command is received.
+  3459	
+  3460	     Example:  $COFF$
+  3461	     Returns:  nothing
+  3462	
+  3463	
+  3464	
+  3465	$CURSOR$ ... Text Cursor Status
+  3466	-------------------------------
+  3467	This Text Variable returns YES if the Text Cursor is enabled, and NO if
+  3468	the Text Cursor is disabled.  If there no Text Window, it returns NO.
+  3469	
+  3470	     Example:  $CURSOR$
+  3471	     Returns:  YES
+  3472	
+  3473	
+  3474	
+  3475	$SCB$ ... Save Clipboard
+  3476	------------------------
+  3477	This Active Text Variable saves the Clipboard to disk for later retrieval
+  3478	by a Query or Host Command.  If the clipboard is empty, the temporary
+  3479	file is deleted so Restore Clipboard knows there shouldn't be a clipboard
+  3480	active.
+  3481	
+  3482	     Example:  $SCB$
+  3483	     Returns:  nothing
+  3484	
+  3485	
+  3486	
+  3487	$RCB$ ... Restore Clipboard
+  3488	---------------------------
+  3489	This Active Text Variable restores the Clipboard from the temporary disk
+  3490	file called RIPCLIB.BRD.  This file is created by $SCB$ (Save
+  3491	Clipboard).  Not only are the clipboard contents saved, but so is the
+  3492	last clipboard location, so Paste Clipboard ($PCB$) restores the
+  3493	clipboard's contents AND location.
+  3494	
+  3495	     Example:  $RCB$
+  3496	     Returns:  nothing
+  3497	
+  3498	
+  3499	
+  3500	$PCB$ ... Paste Clipboard at last location
+  3501	------------------------------------------
+  3502	This Active Text Variable pastes the clipboard at the last location it
+  3503	was clipped from. This also works with icons.  The last location taken
+  3504	used is the location the icon was stamped when it was first loaded.  This
+  3505	text variable is useful if you want to pop up a dialog box (saving the
+  3506	previous area behind the dialog onto the clipboard), and when the user
+  3507	clicks on the "OK" button, restoring the screen contents (by using a
+  3508	$PCB$ in the host command string).
+  3509	
+  3510	     Example:  $PCB$
+  3511	     Returns:  nothing
+  3512	
+  3513	
+  3514	
+  3515	$STATBAR$ ... Status Bar Status
+  3516	-------------------------------
+  3517	This Text Variable returns YES if the Status Bar is visible in the
+  3518	terminal.  If the Status Bar is not visible, then NO is returned.
+  3519	
+  3520	     Example:  $STATBAR$
+  3521	     Returns:  YES
+  3522	
+  3523	
+  3524	
+  3525	$SBARON$ ... Turn ON the Status Bar
+  3526	-----------------------------------
+  3527	This Active Text Variable turns ON the Status Bar in the terminal.
+  3528	
+  3529	     Example:  $SBARON$
+  3530	     Returns:  nothing
+  3531	
+  3532	
+  3533	
+  3534	$SBAROFF$ ... Turn OFF the Status Bar
+  3535	-------------------------------------
+  3536	This Active Text Variable turns OFF the Status Bar in the terminal.
+  3537	
+  3538	     Example:  $SBAROFF$
+  3539	     Returns:  nothing
+  3540	
+  3541	
+  3542	
+  3543	$VT102ON$ ... Turn VT-102 keyboard mode ON
+  3544	------------------------------------------
+  3545	This Active Text Variable enables the VT-102 keystrokes ability.  This
+  3546	makes the following keystrokes send something to the host:
+  3547	
+  3548	                  F1 - ESC [ M
+  3549	                  F2 - ESC [ N
+  3550	                  F3 - ESC [ O
+  3551	                  F4 - ESC [ P
+  3552	                  F5 - ESC [ Q
+  3553	                  F6 - ESC [ R
+  3554	                  F7 - ESC [ S
+  3555	                  F8 - ESC [ T
+  3556	                  F9 - ESC [ U
+  3557	                 F10 - ESC [ V
+  3558	                PGUP - ESC [ I
+  3559	                PGDN - ESC [ G
+  3560	                HOME - ESC [ H
+  3561	                 END - ESC [ F
+  3562	              INSERT - ESC [ L
+  3563	           CURSOR UP - ESC [ A
+  3564	           CURSOR DN - ESC [ B
+  3565	         CURSOR LEFT - ESC [ C
+  3566	        CURSOR RIGHT - ESC [ D
+  3567	
+  3568	This text variable puts the terminal in VT-102 mode automatically, making
+  3569	it simpler for the user.
+  3570	
+  3571	     Example:  $VT102ON$
+  3572	     Returns:  nothing
+  3573	
+  3574	
+  3575	
+  3576	$VT102OFF$ ... Turn VT-102 keyboard mode OFF
+  3577	--------------------------------------------
+  3578	This Active Text Variable disables the VT-102 keystrokes mode, returning
+  3579	your keyboard to the standard keyboard operation.
+  3580	
+  3581	     Example:  $VT102OFF$
+  3582	     Returns:  nothing
+  3583	
+  3584	
+  3585	
+  3586	$DWAYON$ ... Turn Doorway Mode ON
+  3587	---------------------------------
+  3588	This Active Text Variable enables Doorway Mode.  This is intended to be
+  3589	used by a Host system that wishes to take advantage of the Doorway mode
+  3590	available in Marshall Dudley's Doorway (tm) software package.
+  3591	
+  3592	     Example:  $DWAYON$
+  3593	     Returns:  nothing
+  3594	
+  3595	
+  3596	
+  3597	$DWAYOFF$ ... Turn Doorway Mode OFF
+  3598	-----------------------------------
+  3599	This Active Text Variable disables the Doorway keyboard mode.  This will
+  3600	return the keyboard to normal operation.
+  3601	
+  3602	     Example:  $DWAYOFF$
+  3603	     Returns:  nothing
+  3604	
+  3605	
+  3606	
+  3607	$HKEYON$ ... Enable Button Hotkeys
+  3608	----------------------------------
+  3609	This Active Text Variable turns on use of Button Hotkeys.  When enabled,
+  3610	if the user presses a key associated with a button, it is selected just
+  3611	as if it were clicked.  The Scroll Lock light on the keyboard is turned
+  3612	on.
+  3613	
+  3614	     Example:  $HKEYON$
+  3615	     Returns:  nothing
+  3616	
+  3617	
+  3618	
+  3619	$HKEYOFF$ ... Disable Button Hotkeys
+  3620	------------------------------------
+  3621	This Active Text Variable turns off Button Hotkeys.  This should be done
+  3622	when entering a full-screen editor, or any part of the system where the
+  3623	user is entering a string of text.  This is to prevent the user from
+  3624	accidentally selecting a button when typing in text.
+  3625	
+  3626	     Example:  $HKEYOFF$
+  3627	     Returns:  nothing
+  3628	
+  3629	
+  3630	
+  3631	$TABON$ ... Enable TAB key Mouse Field select
+  3632	---------------------------------------------
+  3633	This Active Text Variable turns on the use of the TAB key to jump from
+  3634	one defined Mouse or Button Field to another.
+  3635	
+  3636	     Example:  $TABON$
+  3637	     Returns:  nothing
+  3638	
+  3639	
+  3640	
+  3641	$TABOFF$ ... Disable TAB key Mouse Field select
+  3642	-----------------------------------------------
+  3643	This Active Text Variable turns off the use of the TAB key to jump from
+  3644	one defined Mouse or Button Field to another.  If this command is
+  3645	received when a field is highlighted, it is deselected.  This should be
+  3646	done when entering a full-screen editor so that the user can use the TAB
+  3647	key as a TAB, not a Mouse Field selector.
+  3648	
+  3649	     Example:  $TABOFF$
+  3650	     Returns:  nothing
+  3651	
+  3652	
+  3653	
+  3654	$APP0$ - $APP9$ ... External Application Call
+  3655	-----------------------------------------------
+  3656	This Active Text Variable instructs the terminal to execute an external
+  3657	application.  By recommendation, $APP0$ is the user's text editor.  There
+  3658	are ten external application slots available, numbered 0 - 9.  These are
+  3659	defined in the External menu in RIPterm.
+  3660	
+  3661	     Example:  $APP1$
+  3662	     Returns:  nothing
+  3663	
+  3664	
+  3665	
+  3666	
+  3667	=====================================================================
+  3668	==                 LOCAL RIPscrip FILE PLAYBACK                    ==
+  3669	=====================================================================
+  3670	
+  3671	
+  3672	You can re-play a .RIP file that you have locally on your hard disk
+  3673	from anyplace that allows text variables.  The format of the variable
+  3674	is somewhat different than user variables, or pre-defined text
+  3675	variables.  After the initial dollar sign ($), enter the greater-than
+  3676	symbol (>) followed by the filename (with or without the .RIP
+  3677	extension), then ending in another dollar sign ($).  Several examples
+  3678	of this are as follows:
+  3679	
+  3680	         $>MYFILE.RIP$
+  3681	         $>FILE1$
+  3682	         $>FILE1.RIP$$>FILE2.RIP$$>FILE3$
+  3683	
+  3684	Note in the last example, a file extension other than .RIP was used.
+  3685	You are not limited to playing back local .RIP files.  In fact, you
+  3686	can play-back any file you want.  You could load any simple text
+  3687	file, ANSI picture image, or other such thing.  When loaded, the data
+  3688	is not sent to the host; it is strictly echoed on your local screen.
+  3689	If the file is a .RIP file, it will replay any graphics that were in
+  3690	the file and if any Mouse Regions are defined, it will create those
+  3691	fields for you as well, thus allowing you to pop-up dialog screens or
+  3692	other such things that are not built-in to RIPterm normally.
+  3693	
+  3694	Each "local RIP playback" variable you enter will search for the .RIP
+  3695	file in the current host's icon directory.  If it cannot find the
+  3696	file in that directory, it will check the ICONS\ directory.
+  3697	
+  3698	
+  3699	
+  3700	
+  3701	
+  3702	=====================================================================
+  3703	==                           POP-UP LISTS                          ==
+  3704	=====================================================================
+  3705	
+  3706	Any place that you can use a Text Variable (Queries, Button and Mouse
+  3707	Field return strings, and Keystroke Macros), you can take advantage of a
+  3708	unique feature of RIPscrip - Pop-Up Pick Lists.  A Pop-Up Pick List is
+  3709	simply a list that pops up allowing you to choose from one of several
+  3710	available values.  Whichever entry in the list you choose will insert
+  3711	it's associated command in the Host Command returned back to your host.
+  3712	
+  3713	A list is created by putting the special list instructions inside two sets
+  3714	of parenthesis like this: (( and )).  The list consists of an optional
+  3715	question followed by two colons (::), followed by one or more list
+  3716	entries.  For example, ((Send Email to?::Sysop,Cosysop,Joe)) says to
+  3717	pop-up a list asking you "Send Email to?", giving you the choices of
+  3718	"Sysop", "Cosysop", and "Joe".
+  3719	
+  3720	By default, if you press ESC instead of picking an entry in the list,
+  3721	then nothing will be inserted into the text of your Command. You can
+  3722	indicate that the user must pick an entry by putting an asterisk (*) at
+  3723	the beginning of the question.  For example, ((*Send Mail
+  3724	to?::Sysop,Joe)).  This would make it so that the user must choose either
+  3725	Sysop or Joe.
+  3726	
+  3727	In the previous examples, Sysop and Joe are the text responses that are
+  3728	inserted into your Host Command.  These commands are also the same things
+  3729	that are displayed in the listing.  If you want to use something else in
+  3730	the listing instead of the return text, you can. When you make the list
+  3731	entry, add an @description to the end of it.  For example:
+  3732	
+  3733	     ((Send Mail To?::Sysop@Head Honcho,Cosysop,Joe))
+  3734	
+  3735	...would display a pop-up pick list of Head Honcho, Cosysop, and Joe.
+  3736	
+  3737	One final feature of Pop-Up Pick Lists allows you to specify a hotkey for
+  3738	each entry in the list.  For example, if you wanted the first character
+  3739	of each entry to be highlighted (thus allowing you to select that
+  3740	character to activate the entry), simply put a tilde (~) or an underline
+  3741	(_) before and after the keystroke.  For example "_S_ysop" would
+  3742	highlight the "S" in "Sysop" appearing like this:
+  3743	
+  3744	                       Sysop
+  3745	
+  3746	You can highlight more than one character, but only the first one will be
+  3747	the active hotkey.  If you omit the second tilde or underline, then the
+  3748	remainder of the description will be highlighted.
+  3749	
+  3750	NOTE:  If you use a tilde or an underline in the Text Response (not the
+  3751	       description), then those characters are inserted into your Host
+  3752	       Command when it is transmitted to the host.  You probably
+  3753	       don't want to do this.  Recommendation: only use hotkey
+  3754	       features on list entries where you specify a description!
+  3755	
+  3756	If you do not specify a question, then the list default to the question:
+  3757	
+  3758	               Choose one of the following:
+  3759	
+  3760	You may specify up to twenty entries for any one list.  In RIPterm
+  3761	version 1.52 and earlier, the total length of a pick list was 256 bytes.
+  3762	In version 1.53 and later, this limit has been increased to 1024 bytes.
+  3763	
+  3764	Some characters have special significance in the RIPscrip language. These
+  3765	characters are ! (exclamation mark, or for you Unix-heads, bang), \
+  3766	(backslash), and | (vertical bar).  To use these characters in a Text
+  3767	Response, they must be preceded by a backslash (! becomes \!, \ becomes
+  3768	\\, and | becomes \|).  RIPaint automatically adds these when creating
+  3769	Text Responses.  You need to be aware of this only if you are editing
+  3770	RIPscrip files with a text editor.  The _ (underline) and ~ (tilde)
+  3771	characters used to indicate the hotkey in a Text Response are not able to
+  3772	be preceded by a backslash to be used by themselves.  They will be
+  3773	returned to the host if they exist in a Text Response (not in the
+  3774	description), however everything after the underline or tilde will be
+  3775	underlined, and the first character will be considered the hotkey.
+  3776	
+  3777	  Examples:
+  3778	
+  3779	     ((Send E-Mail to?::Sysop,Joe,Mike))
+  3780	     ((*Send E-Mail to?::Sysop@The Head Honcho,Joe,Mike@My Brother))
+  3781	     ((::Sysop@_T_he Head Honcho,Joe,Mike@My _B_rother))
+  3782	
+  3783	
+  3784	
+  3785	
+  3786	
+  3787	=====================================================================
+  3788	==                     HOST COMMAND "TEMPLATES"                    ==
+  3789	=====================================================================
+  3790	
+  3791	Often you might want a button on your screen to do one thing in one
+  3792	situation, but to do something completely different in another situation.
+  3793	In the past, this required having a separate menu file for each different
+  3794	function that this Button needs.  This cumbersome method is history with
+  3795	Command Templates.
+  3796	
+  3797	Command Templates are probably best described with a brief example. Lets
+  3798	say that you have a menu screen for reading and writing messages in your
+  3799	public message forums.  On this menu, you can have buttons for each forum
+  3800	on your host, and at the same time have buttons for Read, Write, Erase,
+  3801	Modify, etc.  Now, how can you make the Read/Write/etc.  buttons work
+  3802	differently for each forum button clicked?
+  3803	
+  3804	                  Templates!
+  3805	
+  3806	To further refine our example, lets say that you click on the button for
+  3807	Forum #1, it should send the command "S FORUM1" to the host to select
+  3808	that forum.  After that, simply clicking on the Read or Write buttons
+  3809	will read through the current section.  But, what if you want to
+  3810	interactively move about on the menu? Make each of the forum selection
+  3811	buttons define a template.  Each template instructs RIPscrip how to
+  3812	process the other buttons.
+  3813	
+  3814	In the example above, the Forum #1 button would define this template:
+  3815	
+  3816	                S FORUM1 $?$^m
+  3817	
+  3818	This template will return "S FORUM1" followed by the Host Command for
+  3819	whichever button is clicked, followed by a carriage return. The special
+  3820	text variable $?$ is only used in Command Templates, and is used to
+  3821	indicate "insert the text into the template here".  It references the
+  3822	text of some other button that was clicked that is stuffing its data INTO
+  3823	this template.
+  3824	
+  3825	CHARACTERISTICS OF TEMPLATES
+  3826	----------------------------
+  3827	Before you can go about defining templates, you need to know how they
+  3828	work, interact and how other functions interact with templates.
+  3829	
+  3830	You are allowed up to 36 different templates, each of which can be
+  3831	different and active at the same time.  Each template corresponds to a
+  3832	Button Group (see MOUSE FIELDS AND BUTTONS for more detail).  Templates
+  3833	can be defined and/or activated in any order.  In other words, you can
+  3834	have a template #1, 5, 13 and 32, but none of the others defined.
+  3835	Templates remain defined until re-defined by another template.
+  3836	
+  3837	
+  3838	DEFINING A TEMPLATE
+  3839	-------------------
+  3840	To create a template, when asked for a Host Command, simply type in the
+  3841	Template similar to the following:
+  3842	
+  3843	     [5:]S FORUM1 $?$^m
+  3844	
+  3845	The [5:] at the beginning of the command indicates that you wish to
+  3846	create template #5 with the following text as the template.  Remember, a
+  3847	$?$ is considered a "macro" that will insert some text into this template
+  3848	from another source.  Valid template numbers are 0-9, A-Z.  So, with this
+  3849	in mind, all of the following template definitions are valid:
+  3850	
+  3851	     [0:]S FORUM1 $?$^m
+  3852	     [9:]S FORUM2 $?$^m
+  3853	     [G:]S FORUM3 $?$^m
+  3854	
+  3855	
+  3856	USING TEMPLATES
+  3857	---------------
+  3858	When you want to make a button "feed its command" into a template, you do
+  3859	so in a format similar to defining a Template, but with a subtle
+  3860	difference.  Don't include the colon (:) in the template reference.  An
+  3861	example of this would be the following:
+  3862	
+  3863	     [0]HELLO
+  3864	
+  3865	This says, take the text "HELLO" and feed it into template number 0, and
+  3866	send the final result to the host.  Note how simple it is to create and
+  3867	reference templates by either using a colon or omitting it.
+  3868	
+  3869	If you do not specify a Template reference in the format [#] at the
+  3870	beginning of your Host Command, it will be considered to be a Normal Host
+  3871	Command that does not get stuffed into any templates.  For completeness,
+  3872	you may specify []HELLO to send the word "HELLO" to the host without
+  3873	going through any templates (a "null" template).  So in other words,
+  3874	using a [] or using nothing at all is the same thing, don't use any
+  3875	templates for this host command.
+  3876	
+  3877	
+  3878	CHAINING TEMPLATE RESPONSES
+  3879	---------------------------
+  3880	In the preceding examples we showed how you can feed the Host Command of
+  3881	one button through a single Template definition.  This is the simplest
+  3882	case of template processing.  As part of the big picture of templates,
+  3883	you can chain the input of one template into another template, into
+  3884	another, so on and so forth and then transmit the result of all composite
+  3885	template stuffing to the Host as one big command.  After all is said and
+  3886	done with template processing, the text buffer sent to the host can be
+  3887	anywhere from 0-4095 characters in length.
+  3888	
+  3889	To chain one template into another, use a format similar to the
+  3890	following:
+  3891	
+  3892	     [0372]HELLO
+  3893	
+  3894	This feeds the word "HELLO" into template #0, then that result into
+  3895	template #3, then that result into template #7, then finally the result
+  3896	will be stuffed into Template #2. The output from Template #2  will then
+  3897	be transmitted to the host.
+  3898	
+  3899	You may specify from 0-36 different templates in any one chaining
+  3900	operations.  You MAY use the same template more than once in the same
+  3901	chain, like the following:
+  3902	
+  3903	     [0370]HELLO
+  3904	
+  3905	Note, that template #0 is used twice, both at the beginning and the end
+  3906	of the processing.  This feature, potentially dangerous, is provided for
+  3907	completeness and flexibility.
+  3908	
+  3909	
+  3910	EMBEDDED TEMPLATES
+  3911	------------------
+  3912	You can embed the contents of one template into another template (or into
+  3913	a Host Command) by using the special Text Variable $?x$ where "x" is the
+  3914	Template number to insert.  This command functions much like the
+  3915	insert-text variable $?$ does, but gives you a great deal more power and
+  3916	flexibility.
+  3917	
+  3918	If you specify to embed one template inside another, the embedded
+  3919	template can contain text variables, pick-lists and other such things.
+  3920	It can even have another embedded template in it as well, but that sub-
+  3921	embedded template cannot have ANY text variables, or any special
+  3922	commands, not even control characters!
+  3923	
+  3924	To sum it up, an embedded template can have anything you want in it,
+  3925	including other embedded templates.  All text variables in an embedded
+  3926	template are expanded, as are pick lists, control characters and the
+  3927	like.  If you have an embedded template INSIDE an embedded template, the
+  3928	deepest embedded template will have NO text variable processing done on
+  3929	it (i.e., the text is sent to the host verbatim, exactly as it appears in
+  3930	the template).
+  3931	
+  3932	If a template that is referenced is not yet defined, the template embed
+  3933	command will be skipped (i.e., blank) providing that the embedded
+  3934	template doesn't refer to a Radio Group. Radio Groups are "dependencies"
+  3935	in this manner.  Anything that tries to embed a Template from a Radio
+  3936	Group will not be processed if a template in that area hasn't been
+  3937	defined yet.  Embedded templates from Check Box Groups can be skipped if
+  3938	none of the check-boxes are active.
+  3939	
+  3940	
+  3941	LISTS, VARIABLES AND CONTROL CHARACTERS
+  3942	---------------------------------------
+  3943	You may use Text Variables, Pop-Up Pick Lists and Control Characters
+  3944	anywhere in any template definition or reference.  You are limited such
+  3945	that, a text variable is translated to its real value when the template
+  3946	is being processed, not after all templates are processed.  The net
+  3947	result of this is, you cannot use one template to construct another
+  3948	template's pick- list, text variables, or the such.
+  3949	
+  3950	In other words, you cannot nest Text Variable definitions, Pop-Up Pick
+  3951	Lists , or Control Characters.  You can have these commands in any or all
+  3952	templates used in a template chain, but they are independent.
+  3953	
+  3954	
+  3955	TEMPLATE CHAIN EXAMPLES
+  3956	-----------------------
+  3957	Below are several examples of different template setups. These are
+  3958	intended to give you ideas on how templates may be used:
+  3959	
+  3960	  Example #1:
+  3961	
+  3962	     [0:]D $?$ Z^m     ... Used to download a file with Zmodem
+  3963	     [1:]D $?$ X^m     ... Used to download a file with Xmodem
+  3964	
+  3965	     [0]FILENAME.ZIP   ... Use this with #0 to download Zmodem
+  3966	     [1]FILENAME.ZIP   ... Use this with #1 to download Xmodem
+  3967	
+  3968	In this example, template #0 is used for downloading with Zmodem.
+  3969	Template #1 is for downloading with Xmodem.  Depending on which
+  3970	FILENAME.ZIP button you click on, you might download it with one protocol
+  3971	or with another.  It all lies on which template you reference.  The text
+  3972	transmitted to the host if you clicked on the buttons could be either:
+  3973	
+  3974	     D FILENAME.ZIP Z^m
+  3975	
+  3976	          - or -
+  3977	
+  3978	     D FILENAME.ZIP X^m
+  3979	
+  3980	
+  3981	  Example #2:
+  3982	
+  3983	     D $?2$ $?1$^m    ... Make this the "Download Now" button
+  3984	
+  3985	     [1:]X            ... Radio Button #1   (X-Modem)
+  3986	     [1:]Y            ... Radio Button #2   (Y-Modem)
+  3987	     [1:]B            ... Radio Button #3   (Y-Modem Batch)
+  3988	     [1:]Z            ... Radio Button #4   (Z-Modem)
+  3989	
+  3990	     [2:]FILENUM1.ZIP ... Radio Button to download file #1
+  3991	     [2:]FILENUM2.ZIP ... Radio Button to download file #2
+  3992	     [2:]FILENUM3.ZIP ... Radio Button to download file #3
+  3993	
+  3994	This example is a bit more involved.  It brings the concept of Radio
+  3995	Buttons into the picture, which is part of the Button command. A Radio
+  3996	Button is like having a list of options on your screen, only one of which
+  3997	can be selected at any
+  3998	one time.  When using    ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  3999	templates with Radio     º   Protocols            Download which file?  º
+  4000	Buttons, you can quickly º   ÄÄÄÄÄÄÄÄÄ            ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  º
+  4001	and elegantly define a   º   X X-Modem             þ File #1            º
+  4002	menu that can do one     º   þ Y-Modem             X File #2            º
+  4003	thing in one mode, or    º   þ Y-Modem Batch       þ File #3            º
+  4004	something totally        º   þ Z-Modem                                  º
+  4005	different in another     º ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ º
+  4006	mode.  An example of     º ³           Begin Download Now!            ³ º
+  4007	the above menu might be  º ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ º
+  4008	as follows:              ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+  4009	
+  4010	In the preceding example #2, a group of Radio Buttons were used on the
+  4011	right side of the screen to determine which file should be downloaded.
+  4012	In that example, there was no ability to specify an arbitrary filename to
+  4013	download.  You were only allowed to download one of three given files.
+  4014	What would be perfect, would be to have the ability to pop-up a question
+  4015	to the user asking what filename they wanted.  The solution is easy,
+  4016	insert a text-variable that hasn't been defined yet!  To illustrate, the
+  4017	above example could be modified to accommodate this as follows:
+  4018	
+  4019	     D $?2$ $?1$^m    ... Make this the "Download Now" button
+  4020	
+  4021	     [1:]X            ... Radio Button #1   (X-Modem)
+  4022	     [1:]Y            ... Radio Button #2   (Y-Modem)
+  4023	     [1:]B            ... Radio Button #3   (Y-Modem Batch)
+  4024	     [1:]Z            ... Radio Button #4   (Z-Modem)
+  4025	
+  4026	     [2:]FILENUM1.ZIP ... Radio Button to download file #1
+  4027	     [2:]FILENUM2.ZIP ... Radio Button to download file #2
+  4028	     [2:]FILENUM3.ZIP ... Radio Button to download file #3
+  4029	     [2:]$FILENAME$   ... Radio Button to download ANY file
+  4030	
+  4031	The screen might appear something like this:
+  4032	
+  4033	        ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  4034	        º   Protocols            Download which file?  º
+  4035	        º   ÄÄÄÄÄÄÄÄÄ            ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  º
+  4036	        º   X X-Modem             þ File #1            º
+  4037	        º   þ Y-Modem             X File #2            º
+  4038	        º   þ Y-Modem Batch       þ File #3            º
+  4039	        º   þ Z-Modem         ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ º
+  4040	        º                     ³    Enter Filename    ³ º
+  4041	        º                     ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ º
+  4042	        º ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ º
+  4043	        º ³           Begin Download Now!            ³ º
+  4044	        º ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ º
+  4045	        ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+  4046	
+  4047	NOTE:  To get the radio button graphic show above, an Icon Button
+  4048	       must be used.  The empty circle is an icon, and the filled in
+  4049	       circle is a hot icon.  Refer to Section 5.3.7.
+  4050	
+  4051	Note the addition of the Enter Filename button.  If the user clicked on
+  4052	that button, it would first try to replace $FILENAME$ with a text
+  4053	variable.  It will find that such a variable does not exist, and will
+  4054	then pop-up the following question on the screen:
+  4055	
+  4056	       ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  4057	       º                 Enter "FILENAME"                 º
+  4058	       º ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ º
+  4059	       º ³ Û                                            ³ º
+  4060	       º ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ º
+  4061	       ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+  4062	
+  4063	If the user typed in DEMOFILE.TXT, then that filename is inserted where
+  4064	$FILENAME$ was, resulting in (for example):
+  4065	
+  4066	     D DEMOFILE.TXT Z^m
+  4067	
+  4068	This is only an example, your mileage may vary.
+  4069	
+  4070	
+  4071	MORE ABOUT TEMPLATES
+  4072	--------------------
+  4073	When you use the $?$ text variable inside a template definition, you are
+  4074	not limited to using it only once.  In fact, you can use it as many times
+  4075	in your template definition as you wish.  This can be useful under many
+  4076	circumstances where the user might have to enter the same thing twice.
+  4077	
+  4078	
+  4079	
+  4080	
+  4081	
+  4082	=====================================================================
+  4083	==                TEXT VARIABLE CREATION, AND QUERY                ==
+  4084	=====================================================================
+  4085	
+  4086	As mentioned in preceding sections, Text Variables were described as
+  4087	either pre-defined variables, or as User Variables.  Pre-defined
+  4088	variables are variables that RIPscrip products know things about "out of
+  4089	the box".  They will always know what the variables mean, from the day
+  4090	you install the software.  User Variables are variables that the user of
+  4091	RIPscrip products defines, and teach it new things it doesn't already
+  4092	know.
+  4093	
+  4094	
+  4095	WHAT ARE USER VARIABLES?
+  4096	------------------------
+  4097	A User Variable is a Text Variable that RIPscrip doesn't know exists.
+  4098	They are custom-defined text variables that contain information that the
+  4099	terminal user will fill in.  If a variable already contains information,
+  4100	a host will be automatically told (if told to do so) what that variable
+  4101	contains without the user having to intervene (i.e., transparent
+  4102	information exchange).
+  4103	
+  4104	Examples of Text Variables might be:
+  4105	
+  4106	     $FULL_NAME$    ... What is your full name?
+  4107	     $COMPANY_NAME$ ... What company do you work for?
+  4108	     $AGE$          ... How old are you?
+  4109	     $DATEOFBIRTH$  ... What is your Date of Birth?
+  4110	     $PHONENUMBER$  ... What is your Day-time phone number?
+  4111	
+  4112	User Variables will "keep track" of these responses for you, in the
+  4113	terminal program database.  You can tell the terminal to store these
+  4114	values permanently, or they may be active only during the current
+  4115	session, or they may be defined as temporary where they are not stored
+  4116	for more than a brief moment.
+  4117	
+  4118	NOTE:  This ability is configurable so that information exchange can
+  4119	       be either interactive, or automatic.  Automatic transfer of
+  4120	       information does NOT prompt the user with the information
+  4121	       unless the variable has not yet been defined.  If it has not
+  4122	       been defined, a pop-up question will appear asking the user
+  4123	       a particular question, thus defining the text variable.
+  4124	
+  4125	If the exchange is interactive, the data is displayed in a pop-up editor
+  4126	box, asking you if the information is correct.  If it is, press ENTER and
+  4127	the retrieved information is sent to the host for you.  If it is not
+  4128	correct, or it has not been created yet, just type it in and press ENTER
+  4129	and it will be saved automatically, and sent to the host all at once.
+  4130	
+  4131	
+  4132	HOW CAN USER VARIABLES BE IMPORTANT?
+  4133	------------------------------------
+  4134	Lets take an example.  You are the system operator of a large RIPscrip
+  4135	host.  As you have read, RIPscrip can take advantage of database-like
+  4136	ability on the terminal end.  If you can alter your host to ask questions
+  4137	with RIPscrip Text Variables built in, you can have the terminal calling
+  4138	your host automatically fill in questionnaires.  Imagine if a user could
+  4139	sign-up on your host without having to type more than a single keystroke
+  4140	(i.e., "YES, this information is correct").  With User Text Variables,
+  4141	you can do this very thing.
+  4142	
+  4143	
+  4144	CREATING USER VARIABLES
+  4145	-----------------------
+  4146	There are two ways of defining User Text Variables in RIPaint.  You can
+  4147	use either the Define Text Variable command, or you can use Text Variable
+  4148	Queries, as described in the next section.
+  4149	
+  4150	
+  4151	DEFINING TEXT VARIABLES
+  4152	-----------------------
+  4153	The RIPscrip command Define Text Variable is by definition, an
+  4154	interactive command with the user.  The RIPscrip command will attempt to
+  4155	define a User Variable.  This variable is some piece of information that
+  4156	the system operator deems important.  You may specify a question, a
+  4157	default response, and how many characters long the response may be.
+  4158	
+  4159	Once the terminal has received a define command, the terminal pops up an
+  4160	appropriate question box on the user's screen, asking him the desired
+  4161	question that should be saved to a particular Text Variable.  If you did
+  4162	not specify a question, a default question is used (i.e., "Enter <name of
+  4163	text variable>").
+  4164	
+  4165	Once the user has entered his response, it is recorded and saved.  How
+  4166	long it is stored depends on what the host told the terminal.  The host
+  4167	can tell the terminal "save this on your hard disk forever".  The host
+  4168	may also tell the terminal "don't save this to disk, but remember this
+  4169	value until you exit RIPterm".  You also have the option of saying "don't
+  4170	remember this value at all, just pop up a question, and send the value to
+  4171	me NOW" - i.e., don't save it at all, just enter it and send it to the
+  4172	host).
+  4173	
+  4174	
+  4175	QUERYING TEXT VARIABLES
+  4176	-----------------------
+  4177	Now that you know how to define information on the terminal, you need to
+  4178	know the last method of asking the terminal about text variables.  This
+  4179	feature is called "Data Query".
+  4180	
+  4181	Data Query is a generic query command that can ask the terminal one or
+  4182	more questions, and tell it how to transmit the information back to the
+  4183	host.  This command is for use in non-button situations where you do not
+  4184	want to wait until the user clicks on a button to get your data back.
+  4185	
+  4186	Data Query is a special RIPscrip command that can be used to ask the
+  4187	contents of one or more Text Variables.
+  4188	
+  4189	
+  4190	EXAMPLES OF TEXT VARIABLE QUERY
+  4191	-------------------------------
+  4192	Lets take a simple example.  You wanted to ask the terminal program some
+  4193	address information.  You could do this with the following query
+  4194	(remember, the query also tells the terminal HOW to send the data back to
+  4195	the host):
+  4196	
+  4197	     $FULL_NAME$^m$COMPANY$^m$ST_ADDR$^m$CITY$, $STATE$ $ZIP^m
+  4198	
+  4199	This would query the terminal the contents of 6 text variables, and
+  4200	format them in a manner similar to any normal address on an envelope.
+  4201	The results of this query might send the following back to the host :
+  4202	
+  4203	     Joe Sixpack
+  4204	     ACME Corporation
+  4205	     13631 Palindrome Parkway
+  4206	     Surf City, CA 92649
+  4207	
+  4208	If a text variable is queried, and it has not been defined yet, a pop-up
+  4209	question will appear asking the user to fill in the information.
+  4210	
+  4211	
+  4212	

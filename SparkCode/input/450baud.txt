@@ -1,0 +1,125 @@
+     1	
+     2	
+     3	
+     4	                  <<<<< On The Topic of 450 Baud! >>>>>
+     5	                           by Scott Loftesness
+     6	                              May  28, 1983
+     7	
+     8	        Many users have asked about using 450 baud with this RBBS system.
+     9	Typically, they are asking why such an option exists (the N option on the
+    10	main RBBS menu) when their modem and IBM-PC BASIC don't appear to support
+    11	such a speed.
+    12	
+    13	        They are correct about IBM-PC BASIC not supporting 450 baud. In
+    14	fact, the ROM BIOS routines in the PC don't support 450 baud as an option
+    15	either.  It's not that IBM or Microsoft skipped the speed when they developed
+    16	the PC, but the fact that 450 baud is not a standard communications speed
+    17	for the RS-232-C interface.  The next higher 'standard' speed above 300
+    18	baud is 600 baud, followed by 1200 baud, etc.  As a result, 450 baud is
+    19	not supported on most personal computer systems.
+    20	
+    21	        As it turns out, however, most 300 baud modems will run at somewhat
+    22	higher speeds - up to, guess what!, 450 baud in most cases. Although a
+    23	somewhat higher error rate can be expected when you "push" a 300 baud modem
+    24	to 450 baud, the error rate is typically still low enough to not be any
+    25	kind of serious problem to file transfer and message passing operations.
+    26	In fact, using the XMODEM file transfer protocol, errors which do occur
+    27	are normally detected by the check sum error detection scheme used by XMODEM
+    28	and simply force a re-transmission of the block originally received in
+    29	error.
+    30	
+    31	        Since the speed advantage of 450 over 300 baud can be substantial,
+    32	and since we are all interested in doing the most work in the least amount
+    33	of time with the equipment at hand, many users have implemented 450 baud
+    34	as an option which can used with their "home-grown" communications programs.
+    35	(Note that standard IBM-PC communications packages don't support 450 baud
+    36	either - such as PC-Talk III). I'll describe how 450 baud can be
+    37	implemented from a programming standpoint shortly. But first, let's get
+    38	rid of a few erroneous impressions about modem operation.
+    39	
+    40	        Your Hayes 300 baud SmartModem (or a Hayes 1200 running in 300 baud
+    41	mode) is capable of receiving modem commands and data at up to 1200 baud.
+    42	What this means is that the microprocessor in the Hayes is programmed to
+    43	automatically look for the AT command sequence - and performs automatic
+    44	baud rate detection at the speed you happen to be sending the command
+    45	sequence to the modem. This capability, for example, is used in the RBBS
+    46	code to send the various modem commands at 1200 baud - to minimize the time
+    47	spent sending them!
+    48	
+    49	        Your Hayes 300 will even try to send data across the line at 1200
+    50	baud - if you open your communications line at that speed and attempt to
+    51	go to data mode. However, the 300 is not capable of handling data at that
+    52	speed - in fact, it can only transmit and receive data at up to slightly
+    53	more than 450 baud - with any reasonable error rate. Since the Hayes doesn't
+    54	care at what rate is receives data (anything from 1 to 1200 baud is
+    55	acceptable), it is possible to transmit data to the modem and have the
+    56	modem transmit it to the phone line at any of those speeds. However, 450
+    57	baud is the reasonable upper limit for data communications with the Hayes
+    58	300.
+    59	
+    60	        Now that we understand the workings of the Hayes modem, let's talk
+    61	about how we can get the PC to send data from its RS-232-C Asynchronous
+    62	Communications Adapter at 450 baud. As mentioned earlier, 450 is not an
+    63	acceptable option to either the BASIC OPEN statement or to the direct
+    64	BIOS calls for asychronous communications. However, as always, almost
+    65	*anything* is possible using software! The IBM ACA uses an 8250 chip which
+    66	is capable of running at speeds from 1 to 19,600 baud (officially, only
+    67	up to 9600 baud, but that's another discussion!). The 8250 includes an on-chip
+    68	software programmable baud rate generator - which actually determines the
+    69	speed used to send and receive data across the RS-232-C interface. This
+    70	baud rate generator can be programmed to run at *any* baud rate between
+    71	1 and 19,600 baud. The IBM-PC ROM BIOS routines, however, were programmed
+    72	to only support the "standard" RS-232-C speeds. Since BASIC uses the BIOS
+    73	routines, BASIC only supports those same "standard" speeds.
+    74	
+    75	        However, it is possible for you to program the 8250 to run at any
+    76	speed you like. In this case, we are only interested in programming it to
+    77	run at 450 baud. Programming the baud rate generator in the 8250 consists
+    78	of loading the baud rate generator on the chip with a "baud rate divisor"
+    79	- which takes the clock frequency and divides it by the number you provide
+    80	to come up with the baud rate itself. (Those of you with Technical Reference
+    81	manuals for the PC can read all about this on pages 2-135 to 2-137). The
+    82	divisor is a two byte value - which is stored into two one byte registers
+    83	within the 8250 chip. First, we need to determine what the baud rate divisor
+    84	should be for 450 baud operation. Take it from me that the value is X'0100'.
+    85	Next, we need to get this value from a BASIC program into the 8250 itself.
+    86	Fortunately, BASIC includes the OUT statement - which allows us to send
+    87	data to the various I/O ports on the system. The 8250 uses several of these
+    88	ports - for the baud rate divisior, modem control, and for actually
+    89	sending and receiving the data across the RS-232-C interface.
+    90	
+    91	        The baud rate divisor ports are X'3F8' for the least significant
+    92	byte and X'3F9' for the most significant byte - when using the COM1 port.
+    93	(COM2 addresses are X'2F8' and X'2F9' respectively. Before we can load
+    94	these divisor ports, however, we must load another value to another port
+    95	to indicate that we are setting the baud rate divisor. This third port is
+    96	the Line Control Register and is port X'3FB' (X'2FB' for COM2). The high
+    97	order bit (X'80') of the LCR controls access to the baud rate divisor
+    98	registers. When this bit is 1, we can load the baud rate divisors. When it
+    99	is 0, the 8250 resumes operation with the baud rate loaded. The following
+   100	sequence of BASIC statements will load the baud rate divisor registers:
+   101	
+   102	                OUT &H3FB,(INP(&H3FB) AND &H80) 'Enable divisor registers.
+   103	                OUT &H3F8,0 'Low order byte of X'0100'
+   104	                OUT &H3F9,1 'High order byte of X'0100'
+   105	                OUT &H3FB,(INP(&H3FB) OR &H80) 'Disable divisor registers.
+   106	
+   107	        Adding this code to a BASIC program will cause the COM1 port to
+   108	immediately switch to 450 baud operation.
+   109	
+   110	        Switching to other speeds is just as easy. The only thing you
+   111	need to know is the baud rate divisor required for that speed. Here are
+   112	a few of the common divisors (see the full table in the Tech. Ref.):
+   113	
+   114	                300     X'0180'
+   115	                450     X'0100'
+   116	                1200    X'0060'
+   117	
+   118	        I hope this discussion has helped to clarify the subject of 450
+   119	baud operation. Perhaps with this help, you can make some simple changes
+   120	to whatever communications program you're running which will allow you to
+   121	use your Hayes 300 at a speed which will allow up to 50 per cent faster
+   122	communications!
+   123	
+   124	
+   125	                                                                                       

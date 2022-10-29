@@ -1,0 +1,131 @@
+     1	Published in Dec 1992 CyberEdge Journal
+     2		CyberEdge Journal is published by Ben Delaney, bdel@well.sf.ca.us
+     3	
+     4	
+     5	A SUMMARY OF VIRTUAL ENVIRONMENTS RESEARCH AT UNC-CHAPEL HILL
+     6	
+     7	by Mark A. DeLoura, deloura@cs.unc.edu
+     8	
+     9	The University of North Carolina at Chapel Hill's Computer Science
+    10	department has been doing research into immersive head-mounted virtual
+    11	environment systems since 1986, when their first head-mounted display
+    12	prototype was completed.  Since that time, one of the major goals of the
+    13	department has been improving the realism of virtual worlds, by advancing
+    14	the state of the art in both software and hardware systems.
+    15	
+    16	In this article I'll briefly outline UNC's concentrations for the year, as
+    17	well as describe the current system used for developing VR-based
+    18	applications.
+    19	
+    20	Fall 1992 sees the continuation of work on building PixelFlow, the newest
+    21	machine in a line of graphics multicomputers built by members of the
+    22	department.  PixelFlow, detailed in a SIGGRAPH '92 paper by Fuchs and
+    23	Molnar, will combine partial images produced by multiple independent
+    24	rendering pipelines in a high-speed image composition network to produce
+    25	the final image.  Performance of this machine is expected to be linearly
+    26	scalable to well over 10 million anti-aliased, textured polygons per
+    27	second, supporting advanced shading models and multiple shaped light
+    28	sources.  A working prototype of the PixelFlow system is expected to be
+    29	operational by early 1994.
+    30	
+    31	The current rendering machine used by most VR-based applications in the
+    32	department is Pixel-Planes 5.  The Pixel-Planes 5 multicomputer was part of
+    33	the equipment brought to SIGGRAPH '91 by UNC, and was the graphics
+    34	workhorse used in all of the demos that were shown there.  (For more
+    35	information on the SIGGRAPH '91 "Tomorrow's Realities" demos, see CyberEdge
+    36	Journal issue #5.)  Pixel-Planes 5 is programmed in C or C++ with a subset
+    37	of PHIGS+, and can produce in excess of 2 million Phong-shaded, z-buffered
+    38	triangles per second.  VR applications are most commonly built using
+    39	various libraries created by students, such as PPHIGS (graphics), trackerlib
+    40	(tracking mechanisms), adlib (analog/digital devices), and vlib (virtual
+    41	world-specific routines, such as maintenance of standard transformations).
+    42	
+    43	The Tracking group has developed a working optoelectronic tracking ceiling,
+    44	made up of many 2- by 2-foot ceiling tiles with 32 infrared LEDs per tile.
+    45	The special head-mounted display used with this ceiling tracker has four
+    46	cameras attached to it which point at the ceiling-- these provide enough
+    47	information for the computer to resolve the user's position to within 2 mm,
+    48	and orientation to 0.2 degrees.  Update rates depend on the mode the
+    49	ceiling is in, but 50-80 Hz is typical, as is a lag of 15-30 ms.  The
+    50	ceiling is currently 10- by 12-feet, but plans are in the works to increase
+    51	the size of the ceiling to 15- by 30-feet.  Research is underway to
+    52	develop a Self-Tracker, which can determine changes in position and
+    53	orientation by viewing the existing environment.
+    54	
+    55	Head-mounted displays (HMDs) used by the department include a see-through
+    56	prototype, a video-merge HMD, VPL EyePhones, and the Virtual Research
+    57	Flight Helmet.  For more complex user interactions, a variety of
+    58	manipulators are available for use; these include an Argonne Remote
+    59	Manipulator (ARM) force-feedback arm, a billiard ball, a Python joystick, a
+    60	modified bicycle glove, a "wand", and a pair of analog joysticks.  All of
+    61	the hand-held input devices and HMDs (except for the optoelectronic tracking
+    62	ceiling) are tracked by Polhemus 6-D magnetic trackers (3SPACE and FASTRAK
+    63	models).
+    64	
+    65	Work on software for improving the stability of virtual environments this
+    66	year is being led by Gary Bishop and the HMD group.  This year's motto is
+    67	"No Swimming", where swimming refers to the manner in which objects in
+    68	virtual worlds appear to slosh around when the user turns their head.
+    69	Swimming is the visible result of tracker lag, latency in the rendering
+    70	pipeline, and other bottlenecks in the system.  Several different areas are
+    71	being actively worked on to improve the images we see in the head-mounted
+    72	display: motion prediction using Kalman filters, beam-racing and
+    73	"just-in-time-pixel display" to get rid of the inaccuracies due to the
+    74	image-scanout time, examination of static and dynamic jitter in the
+    75	trackers, and correction of the distortion in the HMD due to the optics
+    76	used to achieve a wide field-of-view.
+    77	
+    78	Aside from the war on swimming objects in virtual worlds, there are several
+    79	applications actively being worked on. The three major application projects
+    80	at this time are the Nanomanipulator, the ultrasound volume-visualization
+    81	project, and the architectural walkthrough. 
+    82	
+    83	The Nanomanipulator, Russell Taylor's projected Ph.D dissertation topic, is
+    84	a joint project between the UNC Computer Science Department and the UCLA
+    85	Chemistry Department.  UCLA provided a Scanning-Tunneling Microscope (STM),
+    86	which Russell has created an inclusive interface to so that one can don the
+    87	HMD and actually change the surface of an object on a molecular level, as
+    88	well as feel the forces of the molecules via the ARM.  The display will
+    89	come up on an HMD or projection screen with cross-polarized shutter
+    90	glasses, and the user can interact with either the ARM or the billiard
+    91	ball.  The hand-input device has various modes attached to it, which
+    92	include feeling the surface, zooming in on a certain part of it, or
+    93	altering it.
+    94	
+    95	The ultrasound project was shown in a paper at SIGGRAPH '92.  The
+    96	department has acquired an old ultrasound machine, and the goal is to be
+    97	able to construct a volume-visualization of the object being examined,
+    98	which would then be overlayed on top of live video and viewed with an
+    99	HMD.  This would make it seem as if a person had X-ray vision.  Testing is
+   100	commonly performed on a baby doll lying in an aquarium in the center of the
+   101	graphics lab, but tests with live subjects have been performed as well.
+   102	Closely associated with this project is the difficulty of overlaying
+   103	computer-generated imagery on top of the real world.  The real world is
+   104	inherently real-time, while the computer-generated objects are going to be
+   105	a bit slower due to the various bottlenecks of the tracking and
+   106	image-generation systems.  Different approaches for this application are
+   107	being examined, such as using a see-through HMD instead of viewing the
+   108	image overlayed on live video.
+   109	
+   110	The architectural walkthrough originally was not in the plan for work this
+   111	year, but this decision was changed when it was pointed out as the only
+   112	application being worked on by UNC that made it apparent when
+   113	graphics algorithms were incorrect.  Most people have never seen surfaces
+   114	at a nanometer scale, or complex protein molecules, whereas an indoor scene
+   115	is something which nearly everyone experiences for large durations each day.
+   116	This makes debugging the shading models developed for use on the new
+   117	graphics machines easier to debug, since almost anyone can look at an image
+   118	and tell whether or not it appears realistic.  This year's approach to the
+   119	walkthrough deals largely with modelling details.  Through a cooperation with
+   120	Virtus Corporation, the Walkthrough project team is developing a much more
+   121	intricate model of the upcoming expansion of Fred Brooks' house.  The
+   122	models are created on Virtus Walkthrough software for the Macintosh, and
+   123	they are then uploaded to a Unix machine and converted to a Pixel Planes
+   124	5-specific format.  It is the hope that this new model will also be a great
+   125	test for the upcoming PixelFlow machine.
+   126	
+   127	Other work being pursued at this time includes the addition of Focal Point
+   128	software for producing directional sound, inclusion of TiNi ticklers for
+   129	tactile feedback, expansion of the current 3DM inclusive world-building
+   130	tool, and continued work on Richard Holloway's excellent vlib package.
+   131	 

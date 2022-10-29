@@ -1,0 +1,127 @@
+     1	
+     2	
+     3	
+     4	                  HOOKING A 5.25" DRIVE TO YOUR AMIGA 
+     5	
+     6	                                               by Les Ayling
+     7	
+     8	    |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+     9	
+    10	    Hooking up a standard 80 track, double-sided, 5 1/4" floppy disk drive
+    11	   as drive df2: or df3:
+    12	
+    13	    Looking at the connector from the back side of the external drive, the
+    14	   pin out is as follows:
+    15	
+    16	
+    17	            712  11  10  9   8   7   6   5   4   3   2   1
+    18	
+    19	
+    20	                 23  22  21 20  19  18  17  16  15  14  13
+    21	
+    22	
+    23	    34 Pin edge connector pin-out is as follows:
+    24	
+    25	
+    26	             34 32 30 28 26 24 22 20 18 16 14 12 10  8  6  4  2
+    27	
+    28	
+    29	             33 31 29 27 25 23 21 19 17 15 13 11  9  7  5  3  1
+    30	
+    31	
+    32	
+    33	    Wire a DB25 (RS-232) connector with pins 13 and 25 cut off per the
+    34	   following configuration:
+    35	
+    36	
+    37	              34 Pin     23 Pin
+    38	
+    39	              -----------------
+    40	
+    41	              34 ---------  1
+    42	
+    43	              32 --------- 13
+    44	
+    45	              30 ---------  2
+    46	
+    47	              28 --------- 14
+    48	
+    49	              26 --------- 15
+    50	
+    51	              24 ---7---- 16
+    52	
+    53	              22 --------- 17
+    54	
+    55	              20 --------- 18
+    56	
+    57	              18 --------- 19
+    58	
+    59	              16 ---------
+    60	
+    61	              14 ---------  9
+    62	
+    63	              12 --------- 21
+    64	
+    65	              10 -- tie to ground, keep the motor running all the time
+    66	
+    67	               8 --------- 22
+    68	
+    69	               6 --------- 20
+    70	
+    71	               4 ---------
+    72	
+    73	               2 ---------
+    74	
+    75	   all odd numbered pins of the 34 pin connector should be tied to pins
+    76	   3, 4, 5, 6 & 7 of the 23 Pin connector (grounds).
+    77	
+    78	
+    79	    In addition, pin 11 of the 23 pin connector should be wired to a
+    80	   momentary push-button that can be activated whenever a diskette is
+    81	   removed and replaced with another.  This tells the DOS that a different
+    82	   diskette has been inserted into the drive.  Simply change the diskette,
+    83	   push the button and hold until DOS accesses the drives.  The switch may
+    84	   then be released.  This function is necessary due to the fact that the
+    85	   DOS seems to read the directory of the current diskette into ram, and
+    86	   unless the DOS is told of another diskette being used, it will either
+    87	   ask you to replace the diskette that was in the drive or write to the
+    88	   diskette using parameters from the previous disk.  This, of course, is
+    89	   very undesirable.
+    90	
+    91	
+    92	    Also, note that the drive must be connected when booting DOS or it
+    93	   will not be noted as being on-line.  The diskette does not have to be
+    94	   inserted, just the drive plugged in.
+    95	
+    96	
+    97	    Do not make any connections to the 23 pin connector, pins 23 or pin
+    98	   12.  These pins provide power to the Amiga drive 1 and may not be used
+    99	   to power an external 5 1/4" drive.  An external power supply must be
+   100	   used.
+   101	
+   102	
+   103	    The 5 1/4" drive selection header may be programmed as drive for drive
+   104	   2.  Drive 1 selects as DF2: and drive 2 selects as DF3:.
+   105	
+   106	
+   107	    A motor on latch circuit may be built to eliminate the motor
+   108	   continuously turning, however, the way indicated above is the quickest
+   109	   and simplest method to get another drive on-line.
+   110	
+   111	
+   112	    After this procedure is completed, the 5 1/4" drive may be used just
+   113	   as any normal Amiga drive.
+   114	
+   115	
+   116	    Considering the $295.00 list price of the Amiga drives, versus about
+   117	   $50 dollar price of 5 1/4" drives, it's a real bargain.
+   118	
+   119	
+   120	    *** As always, with any hardware project -
+   121	    (1) - if you are not sure of what I am talking about, get
+   122	   knowledgeable help and
+   123	    (2) - TRIPLE CHECK your work before plugging in the new drive.
+   124	
+   125	
+   126	
+   127	    |||||||||||||||||||||||| END OF ADD_5.25_DRIVE ||||||||||||||||||||||

@@ -1,0 +1,126 @@
+     1	;
+     2	;       This file VENDORS. contains the mapping between the first 3 bytes
+     3	; of a IEEE MAC address into vendors name
+     4	;
+     5	; vyncke@csl.sni.be, Jan 7 93
+     6	;
+     7	00-00-00           OS/9 Network ?
+     8	00-00-02     BBN
+     9	00-00-0C     Cisco
+    10	00-00-0E     Fujitsu
+    11	00-00-0F     NeXT
+    12	00-00-10     Sytek/Hughes LAN Systems
+    13	00-00-11     Tektronics
+    14	00-00-15     Datapoint
+    15	00-00-18     Webster
+    16	00-00-1A     AMD ?
+    17	00-00-1B     Novell/Eagle Technology
+    18	00-00-1D     Cabletron
+    19	00-00-20     Data Industrier AB
+    20	00-00-21     SC&C
+    21	00-00-22     Visual Technology
+    22	00-00-23     ABB 
+    23	00-00-29     IMC
+    24	00-00-2A     TRW
+    25	00-00-3C     Auspex
+    26	00-00-3D     ATT
+    27	00-00-44     Castelle
+    28	00-00-46     Bunker Ramo
+    29	00-00-49     Apricot
+    30	00-00-4B     APT
+    31	00-00-4F     Logicraft
+    32	00-00-51     Hob Electronic
+    33	00-00-52     ODS
+    34	00-00-55     AT&T
+    35	00-00-5A     SK/Xerox
+    36	00-00-5D     RCE
+    37	00-00-5E     IANA (incl. IP multicast)
+    38	00-00-61     Gateway
+    39	00-00-62     Honeywell
+    40	00-00-65     Network General
+    41	00-00-69     Silicon Graphics
+    42	00-00-6B     MIPS
+    43	00-00-6F                 Madge
+    44	00-00-6E     Artisoft
+    45	00-00-77     MIPS/Interphase
+    46	00-00-78     Labtam 
+    47	00-00-7A     Ardent
+    48	00-00-7B     Research Machines
+    49	00-00-7D     Cray Research/Harris
+    50	00-00-7F     Linotronic
+    51	00-00-80     Dowty Network Services
+    52	00-00-81     Synoptics
+    53	00-00-84     Aquila ?
+    54	00-00-86     Gateway
+    55	00-00-89     Cayman Systems
+    56	00-00-8A     Datahouse Information Systems
+    57	00-00-8E     Jupiter ? Solbourne ?
+    58	00-00-93     Proteon
+    59	00-00-94     Asante
+    60	00-00-95     Sony/Tektronics
+    61	00-00-97     Epoch
+    62	00-00-98     CrossCom
+    63	00-00-9F     Ameristar Technology
+    64	00-00-A0     Sanyo Electronics
+    65	00-00-A2     Wellfleet
+    66	00-00-A3     NAT
+    67	00-00-A4     Acorn
+    68	00-00-A5     Compatible Systems Corporation
+    69	00-00-A6     Network General
+    70	00-00-A7     NCD
+    71	00-00-A8     Stratus
+    72	00-00-A9     Network Systems
+    73	00-00-AA     Xerox
+    74	00-00-C0     Western Digital/SMC
+    75	00-00-C6     Eon Systems (HP)
+    76	00-00-C8     Altos
+    77	00-00-C9     Emulex
+    78	00-00-D7     Darthmouth College
+    79	00-00-D8     3Com ? Novell ? [PS/2]
+    80	00-00-DD     Gould
+    81	00-00-DE     Unigraph
+    82	00-00-E2     Acer Counterpoint
+    83	00-00-EF     Atlantec
+    84	00-00-FD     High Level Hardware (Orion, UK)
+    85	00-01-02     BBN
+    86	00-17-00     Kabel
+    87	00-08-2D     Xylogics, Inc. [Annex terminal servers]
+    88	00-08-8C     Frontier Software Development
+    89	00-AA-00     Intel
+    90	00-DD-00     Ungermann-Bass
+    91	00-DD-01     Ungermann-Bass
+    92	02-07-01     MICOM/Interlan [Unibus, Qbus, Apollo]
+    93	02-60-86     Satelcom MegaPac
+    94	02-60-8C     3Com [IBM PC, Imagen, Valid, Cisco]
+    95	02-CF-1F     CMC [Masscomp, SGI, Prime EXL]
+    96	08-00-02     3Com (ex Bridge)
+    97	08-00-05     Symbolics
+    98	08-00-06     Siemens Nixdorf
+    99	08-00-07     Apple
+   100	08-00-09     HP
+   101	08-00-0A     Nestar Systems
+   102	08-00-0B     Unisys
+   103	08-00-10     AT&T
+   104	08-00-11     Tektronics
+   105	08-00-14     Excelan
+   106	08-00-17     NSC
+   107	08-00-1A     Data General
+   108	08-00-1B     Data General
+   109	08-00-1E     Apollo
+   110	08-00-20     Sun
+   111	08-00-26     Norsk Data
+   112	08-00-2B     DEC
+   113	08-00-38     Bull
+   114	08-00-39     Spider
+   115	08-00-46     Sony
+   116	08-00-4E     BICC
+   117	08-00-5A     IBM
+   118	08-00-69     Silicon Graphics
+   119	08-00-6E     Excelan
+   120	08-00-7C     Vitalink
+   121	08-00-80     XIOS
+   122	08-00-86     Imagen
+   123	08-00-87     Xyplex
+   124	08-00-89     Kinetics
+   125	08-00-8B     Pyramid
+   126	08-00-90     Retix

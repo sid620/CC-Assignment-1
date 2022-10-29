@@ -1,0 +1,119 @@
+     1	+-------------------------------------------------------------------------+
+     2	!                                                                         !
+     3	!                 Lightning House Software Co. presents:                  !
+     4	!                         *** XModem protocol ***                         !
+     5	!                                                                         !
+     6	+-------------------------------------------------------------------------+
+     7	
+     8	The XModem protocol in general:
+     9	-------------------------------
+    10	The XModem protocol is generally a simple way to transfer data files with
+    11	minimum errors which may occur due to line static charges etc. The XModem
+    12	protocol takes a file and cuts it into blocks. Each block is 128 bytes, and
+    13	every block has some data added to it like block number and checksum bytes.
+    14	
+    15	A look at XModem's blocks:
+    16	--------------------------
+    17	Well, there arrises the question: what if the receiving computer gets
+    18	garbage before beginning transmission or block? Well, XModem defines one
+    19	character, SOH (01h), as the beginning-of-block sign. This char will be
+    20	referred to as SOH (Start Of Header). Any information sent before
+    21	the SOH is ignored. After this byte, (the SOH), the sender sends the block
+    22	number, beginning with one, as one byte, and after it, a complemenr byte.
+    23	(255-Block #). If the block number is greater than 255 it wraps around back
+    24	to zero.
+    25	 After the SOH, Block # and 255-Block #, 128 bytes of data are sent which
+    26	preceed the checksum (CKSM) byte.
+    27	
+    28	A block should look like this:
+    29	
+    30	-------------------------------------------------
+    31	!     !      !          !                !      !
+    32	! SOH ! Bl # ! 255-Bl # ! 128 data bytes ! CKSM !
+    33	!1    !1     !1         !128             !1     !
+    34	-------------------------------------------------
+    35	(The numbers on the bottom represent the number of bytes.)
+    36	
+    37	The CheckSum byte:
+    38	------------------
+    39	The CKSM byte comes to find if an error has occured. The CKSM is calculated
+    40	by adding together all the 128 bytes of data, and taking the low byte.
+    41	(like doing: cksm = sum AND 255. Thus taking the lowest 8 bits.) If the
+    42	CKSM calculated by the receiver is compared to the one sent, and found
+    43	wrong a NAK is sent by the receiver to Negatively AcKnowledge the block,
+    44	and to ask for retransmission of the block.
+    45	
+    46	Other Errors:
+    47	-------------
+    48	If the block count on the receiving side does not match the one on the
+    49	sending side, a retransmission is requested by sending NAK. If again the
+    50	count does not match, but the block # of the previous block is identical to
+    51	the one on the retransmitted block, then the transmission is aborted by the
+    52	CANcel byte being sent to the sender after the CKSM byte is received. The
+    53	CAN char is equivalent to CTRL-X.
+    54	 If the block number received, and the inverted block number (255-b#), do
+    55	not match, a retransmission is requested by the NAK character.
+    56	 If the receiver gets a CAN while waiting for NAK on the beginning of a
+    57	block, transmission is aborted.
+    58	
+    59	EOT - End Of Transmission:
+    60	--------------------------
+    61	When the sender gets to the end of his file, he sends nulls, Hex 00, to
+    62	fill the 128 byte block, and calculates the CKSM with the nulls. After this
+    63	block the sender sends an EOT char CTRL-D and ends the transmission.
+    64	
+    65	ACKnowledge char:
+    66	-----------------
+    67	The ACK char Hex 06 is sent when a block sent matches the block count,
+    68	CKSM bytes match, inverted and uninverted block # bytes match and receiver
+    69	can do his I/O correctly. This means that if everything is OK, the receiver
+    70	sends ACK to ACKnowledge the block or EOT or CAN.
+    71	If the receiver cannot continue receiving, for any reason what so ever, he
+    72	sends the CAN char and CANcels the transmission.
+    73	
+    74	So what does the receiver do?
+    75	-----------------------------
+    76	The receiver receives the block, checks for the above errors, and
+    77	ACKnowledges or Negatively AcKnowledges the transmission. Also the
+    78	receiving program should take notice that the sender does not CANcel the
+    79	transmission or that his side is OK. If his side is not able of receiving
+    80	the information, he must CANcel the transmissio.
+    81	
+    82	XModem CRC:
+    83	-----------
+    84	The CRC XModem protocol is almost identical. It has only two changes:
+    85	1) The ability to send long blocks of 1024 bytes, by using the STX char as
+    86	   beginning-of-block sign. [STX = CHR$(2)].
+    87	2) The CKSM is not a single byte but two bytes, calculated by a polynomial
+    88	   function.
+    89	The CRC XModem is recognized by the receiver's sending "C" [CHR$(67)]
+    90	instead of NAK as sign of "ready-to-receive".
+    91	
+    92	A diagram of an XModem checksum protocol session (including an error):
+    93	----------------------------------------------------------------------
+    94	
+    95	 SENDER                                      RECEIVER
+    96	--------                                    ----------
+    97	                                               NAK - to signal ready.
+    98	SOH 01 FE Data[128] CKSM
+    99	                                               ACK - to ACKnowledge.
+   100	SOH 02 FD Data[128] CKSM
+   101	                                               NAK - block wrong.
+   102	SOH 02 FD Data[128] CKSM
+   103	                                               ACK
+   104	SOH 03 FC Data[128] CKSM
+   105	                                               ACK
+   106	SOH 04 FB Data[100]+[28 nulls] CKSM
+   107	                                               ACK
+   108	EOT
+   109	                                               ACK
+   110	--------------------------------------------------------------------------
+   111	CANcel char on the sender's side can come instead of the SOH and be ACK'd.
+   112	On the receiver's side, it can come instead of the ACK and be ACK'd by the
+   113	sender.
+   114	
+   115	/************************************************************************\
+   116	*                                                                        *
+   117	*   This has been another presentation of Lightning House Software Co.   *
+   118	*                                                                        *
+   119	\************************************************************************/

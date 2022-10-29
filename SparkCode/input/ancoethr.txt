@@ -1,0 +1,90 @@
+     1	BOSTON, Feb. 11, 1992, NetWorld Booth #4703 -- Anco Corporation today
+     2	expanded its family of Ethernet LAN products with two notebook and laptop
+     3	computer parallel port adapters, 8- and 16-bit NetWare compatible network
+     4	interface cards (NICs) and an 8-port hub. All five products are designed
+     5	for applications requiring highly reliable networking products that are
+     6	also economical to implement.
+     7	
+     8	Parallel Port Adapters for Notebook to Network Communication
+     9	
+    10	Anco is one of few manufacturers offering parallel port adapters that allow
+    11	PC notebook and laptop computers to simultaneously access a local printer
+    12	and communicate with the network. Unlike standard competitive solutions
+    13	that feature only two ports, the E-NET 10Base-T and ENET Coax (10Base-2)
+    14	parallel port adapters provide four connectors; a DB25 male connector for
+    15	attachment to a laptop, a DB25 pass-through port for attachment to a local
+    16	printer or other parallel-port peripheral, a DB15 port for Thicknet
+    17	connection and either an RJ45 port or a BNC port for 10Base-T or 10Base-2
+    18	applications respectively.
+    19	
+    20	"With the emergence of the laptop market, network demands have changed and
+    21	Anco is dedicated to providing reliable low-cost solutions" said John
+    22	Koon, director of product marketing. "Users come in from the field and
+    23	want to connect with their company's network to download data, check their
+    24	E-Mail, etc. They also want to conveniently print their output for the day
+    25	from a local printer or back up their laptop hard drive. New parallel port
+    26	peripherals are being announced every day and Anco's parallel port
+    27	adapters provide affordable and convenient access to these local devices
+    28	while simultaneously allowing communication with the network."
+    29	
+    30	Anco's compact E-NET 10Base-T and E-NET Coax also feature proprietary
+    31	optimized software drivers for Novell NetWare compatibility, LEDs to
+    32	monitor collision, activity and link status for easy diagnostics and slim
+    33	packaging (7"x6.25"x1.5"). The adapters are affordably priced at more than
+    34	40 percent below that of competitive products offered by such companies as
+    35	Xircom.
+    36	
+    37	The Anco E-NET 10Base-T and E-NET Coax parallel port adapters are now
+    38	available in sample quantities. Production units will be available in
+    39	March and retail at a list price of $345. Anco's parallel port adapters
+    40	comply with the IEEE 802.3 standard and carry a two-year warranty.
+    41	
+    42	NE-1000 and NE-2000 Compatible NICs are Built in America
+    43	
+    44	Anco's new adapter cards, the E-NET 10Base-T NE-1000 and NE-2000 compatible
+    45	NICs, also provide a low-cost solution for network communication between
+    46	8-bit (PC/XT/AT bus) and 16-bit (286/386 bus) workstations respectively.
+    47	Both products are socketed for remote boot ROM for use with diskless
+    48	workstations. Designed and manufactured in the United States, these
+    49	products feature the National Semiconductor ST-NIC chip to provide a
+    50	highly reliable yet affordable networking alternative in comparison to
+    51	competitive offerings.
+    52	
+    53	The E-NET 10Base-T NE-1000 and NE-2000 compatible NICs are available and
+    54	retail at a list price of $170 and $180 respectively. The new Anco NICs
+    55	comply with the IEEE 802.3 standard and carry a two-year warranty.
+    56	
+    57	8-Port Hub for Low-Cost Networking
+    58	
+    59	Anco's E-NET 10Base-T 8-Port Hub at $50 per port provides a very low-cost
+    60	solution for small networks or for users who want an inexpensive way to
+    61	expand to sixteen ports with two hubs. Status LEDs show the link status of
+    62	each 10Base-T port and include indicators for collision/partition, link
+    63	integrity, polarity and traffic. The E-NET 10Base-T 8-Port Hub is
+    64	available at a retail price of $450. It complies with the IEEE 802.3
+    65	standard and carries a two-year warranty.
+    66	
+    67	Anco Corporation provides complete networking solutions for
+    68	budget-sensitive applications where reliable, high quality communications
+    69	are required. Anco manufactures hardware for both Ethernet and Token-Ring
+    70	networks. The company has recently expanded its family of products offered
+    71	directly to end users under the Anco Corporation label to complement its
+    72	OEM sales efforts. Multi-station access units (MAUs), hubs, network
+    73	interface cards (NICs), connectors, transceivers, baluns, and filters as
+    74	well as cables, and other networking accessories are available from Anco.
+    75	Established in 1979, Anco Corporation, based in Rancho Cucamonga, Calif.,
+    76	provides sales, distribution and service to customers worldwide. For
+    77	additional information, please call Anco Corporation at 1-800 545-2626.
+    78	
+    79	Anco Corp, 9477 Archibald Ave, Rancho Cucamonga, CA 91730
+    80	
+    81	  +---------------------------------------------------------------+
+    82	  |  From the America On-Line & PC-Link New Product Info Services |
+    83	  +===============================================================+
+    84	  | This information was processed with OmniPage Professional OCR |
+    85	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+    86	  | provided by the above mentioned company. For additional info, |
+    87	  | contact the company at the address or phone# indicated above. |
+    88	  |    All submissions for this service should be addressed to    |
+    89	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+    90	  +---------------------------------------------------------------+

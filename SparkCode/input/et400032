@@ -1,0 +1,112 @@
+     1	                               INFORMATION RELEASE
+     2	
+     3	                               TSENG ET400/W32 CHIP
+     4	
+     5	Date: Sep 4, 1992
+     6	
+     7	Tseng Labs Inc. (PA. USA) has started sampling it's ET4000/W32 Multi-
+     8	processing, Multi-tasking SVGA chips. At the Microsoft Window Hardware
+     9	conference Sept 1 '92, the ET4000/W32 showed a Winmark of 28 million
+    10	pixels/sec - over 60% faster than any other DRAM or VRAM Windows
+    11	accelerator cards shown at the conference. The figure will be further
+    12	improved with newer software drivers.
+    13	
+    14	Windows' performance is not TSENG ET4000/W32's only strength, it offers
+    15	other important advantages :
+    16	
+    17	* Compatibility
+    18	
+    19	        The ET4000/W32 is hardware and software compatible with
+    20	        approximately 5,000,000 ET4000 installations. This
+    21	        compatibility protects users' old investments on software/
+    22	        hardware and offers a very powerful growth path.
+    23	
+    24	* 16-bit/32-bit bus with Video Cache
+    25	
+    26	        ET4000 has been widely recognized for its excellent Local Bus
+    27	        performance due to its video cache technology. The ET4000/W32
+    28	        has a 2nd generation video cache technology which offers better
+    29	        performance and an architecture for future products such as the
+    30	        ET4000/W64.
+    31	
+    32	* Windows acceleration
+    33	
+    34	        ET4000 is designed for improvement of Windows performance and
+    35	        multimedia applications instead of cloning IBM 8514/A or XGA.
+    36	        It out-performs and out functions 8514/A and XGA.
+    37	
+    38	* Imaging Port and hardware Window
+    39	
+    40	        The ET4000/W32 offers an Imaging Port to accept imaging data
+    41	        and can display the image on a hardware window. Hardware Zoom
+    42	        and Video functions will be available on early 1993 with a
+    43	        small ASIC chip complimentary to ET4000/W32.
+    44	
+    45	* Simultaneous multi-processing
+    46	
+    47	        The ET4000/W32's Windows accelerator, CRTC and Imaging Port
+    48	        can operate simultaneously. Most other Windows accelerators
+    49	        can only do one task at the time (Example : When CPU writes
+    50	        to display memory, Windows accelerator has to stop or vice
+    51	        versa).
+    52	
+    53	        It's multi-processing capability will be able to take
+    54	        advantage of multi-thread capability of new operating systems
+    55	        such as Windows NT.
+    56	
+    57	* High color and True color
+    58	
+    59	        ET4000/W32 supports 800x600 in 24-bit true color, and 1280x1024
+    60	        in 16-bit color.
+    61	
+    62	* Low-cost DRAM
+    63	
+    64	        The ET4000/W32 requires only 80ns ot 70ns DRAM to provide high
+    65	        performance and multi-processing capability.
+    66	
+    67	
+    68	Tseng is now delivering 1st-iteration chips which contains some minor
+    69	bugs. "We fully acknowledge and document these bugs. We know the errors
+    70	and their solutions. The 2nd iteration will be available to customers
+    71	at early Oct. 92 and will correct all those bugs. For such a powerful
+    72	and sophisticated chip the achievement of 1st iteration chips of
+    73	ET4000/W32 proves Tseng's technological excellence" said Jack Huang,
+    74	President of TsengLabs International Co., Ltd. at Taipei.
+    75	
+    76	With about 5 million ET4000 chips installations and the new ET4000/W32
+    77	chip, Tseng positions to continue to set standard and paces of PC
+    78	graphics display technology.
+    79	
+    80	
+    81	For more information, please contact :
+    82	
+    83	
+    84	Helena Chie, VP Sales
+    85	TsengLabs International Co., Ltd.
+    86	Tel : 886-(02)-7139974, Fax : 886-(02)-7121075
+    87	Taipei, Taiwan.
+    88	
+    89	
+    90	
+    91	
+    92	
+    93	
+    94	
+    95	
+    96	
+    97	
+    98	
+    99	
+   100	
+   101	
+   102	
+   103	
+   104	
+   105	
+   106	
+   107	
+   108	
+   109	
+   110	
+   111	
+   112	

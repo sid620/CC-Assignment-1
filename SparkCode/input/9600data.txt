@@ -1,0 +1,647 @@
+     1	Filename: 9600DATA.TXT
+     2	Version : 1.2b
+     3	Updated : 1/11/1991
+     4	-------------------------------------------------------------------------------
+     5	
+     6	                      A Comparison of High Speed Modems
+     7	                   Compatibility/Features/Differences/Prices
+     8	
+     9		         Including: HST, V.32, V.32bis, V.42, V.42bis
+    10	
+    11	
+    12			By Mike Ehlert, SysOp: PACIFIC COAST MICRO BBS
+    13	                        USR HST/V.32bis (805) 494-9386
+    14	                        USR HST 14.4k   (805) 497-3456
+    15				CC Speedmodem   (805) 496-7320
+    16	                             FidoNet 1:206/2801
+    17	-------------------------------------------------------------------------------
+    18	
+    19	                          TABLE OF CONTENTS    
+    20	A High Speed Modem
+    21	Disclaimer
+    22	Standards
+    23	The CCITT
+    24	Half-Duplex Vs. Full Duplex
+    25	What is MNP, HST, V.32, V.42 etc.
+    26	What to look for: Throughput, Configurability, UARTS, etc.
+    27	Some Questions to ask: If Considering a generic V.32/V.42.
+    28	Some Questions to ask: If Considering a FAX/Modem.
+    29	Modem Manufacturer Phone Numbers.
+    30	Modem Compatibility Listing.
+    31	Modem Price Comparisons.
+    32	Document Updates.
+    33	-------------------------------------------------------------------------------
+    34	
+    35	                              A High Speed Modem
+    36	                              ==================
+    37	
+    38	Are you thinking of going to a High speed modem?
+    39	
+    40	2400 baud can be very slow for transferring large files.
+    41	Modems advertised as 4800 are really only 2400 with data compression such
+    42	as MNP-5 or even just software data compression. Don't be fooled.
+    43	A 9600 or faster modem will make a tremendous difference on your transfer time.
+    44	Most 9600 Baud users never want to go back to 2400. There is a lot of confusion
+    45	and mis-information about 9600 Baud and faster Modems. I wrote this to help
+    46	clarify and point out the differences between the different modems available
+    47	for MS-DOS machines.
+    48	
+    49	If price is no object, the Best modem to get for BBS use is the US Robotics
+    50	Dual Standard. It is a combination of the HST 14400 Baud modem and a
+    51	V.32/V.42 modem all rolled into one modem.
+    52	
+    53	If price is an Issue, (like it is to most people) then you may want to consider
+    54	a Standard HST 14.4k, or a different Brand if that is also too expensive.
+    55	But if you do not buy a US Robotics Modem, you will not be able to hook up to
+    56	a Standard USR HST 14.4k, which is the most Common BBS Modem.
+    57	
+    58	Other then USR, you could get a V.32 or V.32/V.42 computable modem for about 
+    59	25% less then a Standard HST, or you could get a 9600 FAX/Modem for less then
+    60	half the cost of a V.32  See the price comparisons at the end.
+    61	
+    62	-------------------------------------------------------------------------------
+    63	 
+    64	                                Disclaimer
+    65	                                ==========
+    66	
+    67	This information was obtained from several reputable sources, but none
+    68	of it is guaranteed to be 100% accurate. I am not responsible for any
+    69	incorrect information in this document, nor am I responsible for any
+    70	loss of profits to anyone resulting from reading the information in this
+    71	documentation. Proceed at your own risk.
+    72	 
+    73	-------------------------------------------------------------------------------
+    74	
+    75	                           Corrections and updates
+    76	                           =======================
+    77	                           
+    78	Since new modem brands, models, and new prices are appearing constantly,
+    79	this documentation is going to need a lot of updating. Also some of the Current
+    80	Information may need corrections as well. You are welcome to make changes to
+    81	this information, but please send me a copy of your update so that I can add
+    82	your changes to the current latest version I have. That way all the corrections
+    83	that are made will be added to the latest version, which will also be avail.
+    84	for download on my bbs. 
+    85	
+    86	-------------------------------------------------------------------------------
+    87	
+    88	                                  STANDARDS
+    89					  =========
+    90	
+    91	
+    92	At one Time Hayes was the standard in modems. All other modems tried to be 
+    93	"Hayes Compatible". This is still true with 1200 and 2400 bps modems,
+    94	but NOT when it comes to 9600 or faster modems. Hayes established a Standard
+    95	called the AT command set. Other modem manufacturers quickly adopted this
+    96	standard and the AT commands are still used today (with a few commands added).
+    97	
+    98	Well Along Came USRobotics, and designed the HST, a proprietary 9600 modem
+    99	that quickly became popular, and no one else was allowed to duplicate. 
+   100	Hayes then also came out with a proprietary 9600 modem, but since it could not
+   101	talk to the HST at 9600 it never became popular in the IBM world.
+   102	Next USR improved their HST modem, making it transfer at 14400 bps without
+   103	even using data compression. 
+   104	USR's HST became the standard for MS-DOS computable High Speed modems.
+   105	
+   106	Realizing that the industry needed a "non-proprietary" 9600 standard that
+   107	any manufacturer could use, the CCITT came up with the V.32 specification.
+   108	It took a several years before modem manufactures started finding ways to
+   109	implement this standard at a price competitive to HST, but a few manufactures
+   110	started producing them, including Hayes. Next the CCITT realized that better
+   111	error correction and data compression methods existed, and thus came up with
+   112	the V.42 and .V42 bis standard. They are currently finalizing the V.32bis
+   113	specification, which will also run at 14,000 Baud in full duplex.
+   114	
+   115	Now Modem Manufactures all seem to be jumping on the V.32 Bandwagon,
+   116	Even USR offers V.32/V.42 modems and allows the HAT's to be upgraded to
+   117	a "Dual-Standard" so it can be both HST and V.32/V.42 in one.
+   118	The New Hats also have V.42bis and can be upgraded to the new V.32bis DS.
+   119	The price Difference between the HST and the HST-DS is considerable though,
+   120	which is why Most BBS Sysops still buy the HST without the "DS" option.
+   121	The V.32/V.42 have become the standard in the Macintosh world, and some
+   122	MS-DOS BBS's are now running V.32/V.42 instead of supporting the HST,
+   123	and some are supporting both types, using multiple lines.
+   124	
+   125	Fax Machines have had their own standards, CCITT V.27, V.27ter, and V.29
+   126	define the modulation scheme used for Fax, and T.30 defines a Fax Protocol. 
+   127	Fax Machines nowadays can transfer Faxes at 4800 or 9600 Baud. Most Fax/Modems
+   128	can only transfer files at 2400 Baud. There is now one Fax/Modem which can
+   129	also transfer files at 9600 bps, and is far less expensive then the V.32/V.42s,
+   130	plus offer the benefits of a Fax machine. 
+   131	
+   132	---------------------------------------------------------------------------
+   133	
+   134	                               The CCITT
+   135	        		       =========	
+   136	
+   137	The International Consultive Committee for Telegraph and Telephone (CCITT)
+   138	set the V.32, V.42, and V.42bis Standards in 9600 bps communications.
+   139	They have also set the standards of 1200 and 2400 bps in Europe.
+   140	Unfortunately the V.32 standard is very expensive to implement for the
+   141	modem manufactures, and the HST has already become the industry standard
+   142	in the IBM BBS world. But since any company may manufacture V.32/42 Modems
+   143	without a license or royalty, there is more price-competition going on
+   144	with these then with the HST, which currently has no true competition. 
+   145	
+   146	-----------------------------------------------------------------------------
+   147	
+   148	 			Half Duplex Vs. Full Duplex
+   149	                        ===========================
+   150	
+   151	Half-Duplex is When Data is Transited in one Direction at a time.
+   152	Full-Duplex is both directions at once. 2400 baud modems are Full-Duplex.
+   153	The HST Modem uses an improved form of Half-Duplex, in which one direction is
+   154	transferring at high speed while the other direction is sending ACK/NAK signals
+   155	at a slower speed. A similar method is used on the Speedmodem.
+   156	
+   157	V.32 modems use Full duplex, which in most cases does not improve performance
+   158	when used on a BBS. There is one way to take full advantage of a Full-Duplex
+   159	Modem: By using a protocol called Bimodem to upload and Download as the same
+   160	time at 9600 bps in each direction! Unfortunately Bimodem has not become very
+   161	popular. Most BBS's and users still use one direction transfer protocols such
+   162	as Zmodem or YModem-G.
+   163	
+   164	-------------------------------------------------------------------------------
+   165	
+   166	                        What is MNP, HST, V.32, V.42?
+   167	                        =============================
+   168	
+   169	                                     MNP
+   170						
+   171	MNP (Microcomm Network Protocol) levels 1-4 are methods of error correction
+   172	in which the two modems connected verify the integrity of the data transmitted.
+   173	Error correction is required for several streaming protocols such as Ymodem-G
+   174	in which the protocol sends a constant stream of data and lets the modems do
+   175	the error correction. This requires a clean, noise free line as streaming
+   176	protocols will abort if line noise interferes too much.
+   177	These MNP Levels are used in almost all High Speed Modems Made today, But
+   178	Just because two modems both have MNP it does not ensure that they will both
+   179	talk to each other (at over 2400 baud).
+   180	
+   181	MNP Level 5 is for data compression. Since All BBS's have their files archived
+   182	in ZIP, LZH, GIF or some such compressed format (try to ZIP a LZH file), MNP5
+   183	can actually increase the overhead by attempting to compress the file further.
+   184	Therefore BBS's leave MNP5 turned off, and so should the BBS callers.
+   185	
+   186	-------------------------------------------------------------------------------
+   187	
+   188	                                  HST
+   189	
+   190	HST stands for "High Speed Technology" - a method of communicating at high
+   191	speeds which was developed by US Robotics in 1984. HST is a proprietary
+   192	method so currently only US Robotics is allowed to Make HST Compatible Modems.
+   193	The original HST modems were 9600 bps by using a 9200 bps channel in one
+   194	direction and a 450 bps "back channel" in the other to send ACK/NAK
+   195	signals for confirmation of data - a half duplex mode - often referred to
+   196	as "ping-ponging". In 1989 USR improved the HST to run at 14400 bps by further
+   197	optimizing their proprietary method. All HST's sold now include the 144k
+   198	speed as well as the original 9600 mode. Because the HST 14.4k is a raw speed,
+   199	It allows the HST to transfer pre compressed files such as ZIPs at faster
+   200	speeds then any other 9600 modem: over 1700 Characters per second.
+   201	
+   202	The HST has become the "BBS-Standard" in high-Speed Modems. More BBS's use
+   203	the HST then any other type of modem, including the V.32. 
+   204	
+   205	As of January 1st 1991 all HST modems also include the V.42/V.42bis error
+   206	correction and data compression (not to be confused with V.32).
+   207	
+   208	The HST's can also be upgraded to the HST "Dual Standard" allowing it to also
+   209	be V.32bis compatible. The price is significant for this upgrade however,
+   210	and in very few cases is any speed gained.
+   211	
+   212	-------------------------------------------------------------------------------
+   213	
+   214	                                   V.32 
+   215	
+   216	V.32 is a 9600 Baud standard that was established by the CCITT back in 1984.  
+   217	V.32 is full duplex (9600 bps in both directions at once). Normally this would
+   218	be impossible, but using a technique called "echo cancellation", one modem
+   219	can filter its own tones from the phone line, enabling it to pick out the
+   220	signals from the other modem. However, echo cancellation requires that high
+   221	speed modems include built-in digital signal processor (DSP) chips, which is
+   222	the main reason V.32 and V.42 costs so much. 
+   223	V.32 also includes a fall back to 4800, if line noise becomes a problem at 9600.
+   224	The V.32 standard also provides an optional error-reduction scheme, called
+   225	"trellis-coded modulation (TCM). TCM allows 9600 modems to check for
+   226	transmission errors with a redundancy bit, which results in fewer errors on
+   227	noisy lines. Most V.32's include this option, but some do not.
+   228	
+   229	-------------------------------------------------------------------------------
+   230	
+   231	                                 V.32bis
+   232	
+   233	It was first realized in 1989 that it is feasible to push V.32 up to 14,400
+   234	baud, the same speed as the HST now runs. This requires even better echo
+   235	cancelers and an overall improvement in receiver quality, so it will be 
+   236	more costly to produce than the V.32 to produce. V.32bis has not yet officially been
+   237	finalized CCITT, but as of January 1st US Robotics has started shipping
+   238	a new version of their Dual Standard Modem which includes V.32bis in an early
+   239	but functional form. USR plans to update their DS ROMS when the CCITT actually
+   240	release the completed V.32bis specification, scheduled for mid 1991.
+   241	It's expected that other Modem manufacturers will not be able to offer the
+   242	V.32bis technology until the 4th quarter of 1991.
+   243	
+   244	-------------------------------------------------------------------------------
+   245	
+   246	                                   V.42
+   247	
+   248	V.42 is nothing to do with actual modem speed, but how the error correction
+   249	and data compression schemes interface. When the CCITT approved V.42 in 1988,
+   250	they decided to include two different error correction and data compression
+   251	schemes. The first one is MNP,(short for Microcom Networking Protocol).
+   252	MNP classes 2, 3, & 4 which handle error correction. Note that MNP-5 was not
+   253	included in the V.42 standard because it is only used for data compression.
+   254	MNP was made an official standard due to the large number of modems that
+   255	currently use it. The Second method is the preferred method, known as LAP-M
+   256	(Link Access Protocol-Modem). A modem with only MNP is called "V.42 Compatible"
+   257	and one with LAP-M its known as "V.42 Compliant". If a V.42 Compliant connected
+   258	to a V.42 compatible, it would first try to Handshake with LAP-M, and after it
+   259	realized that the other modem is not Compliant, it would try the MNP Method, and
+   260	they connect.
+   261	
+   262	Most V.42 modems are fully V.32 compatible, but they do NOT have to be,
+   263	according to CCITT guidelines. So when purchasing a V.42, make sure that
+   264	it is really a V.32 Modem that is also V.42 compliant or compatible.
+   265	There are now some 2400 baud modems which are also V.42bis compliant,
+   266	so since the LAP-M gives 4:1 data compression they are advertised as
+   267	"9600 throughput", which really can be misleading and confusing.
+   268	
+   269	-------------------------------------------------------------------------------
+   270	
+   271	                                 V.42bis
+   272	
+   273	V.42bis is a new CCITT standard for data compression techniques, which was
+   274	approved in late 1989. To Support V.42bis, a modem MUST support both LAP-M and
+   275	MNP-5, unlike the Standard V.42 in which LAP-M is only an option. V.42 provides
+   276	a maximum data compression of 4:1, giving a 9600 bps modem a throughput up to
+   277	38400 bps. MNP only offers 2:1 Compression. Like MNP-5, LAP-M and V.42bis will
+   278	not be effective when transferring compressed files from BBS's, such as ZIP
+   279	files. Since V.42 is implemented in firmware, many V.42 compliant modems can
+   280	be upgraded to V.42bis with a new ROM.
+   281	
+   282	-------------------------------------------------------------------------------
+   283	
+   284	                               Speedmodem
+   285	
+   286	A less expensive method of 9600 bps communication can be achieved without
+   287	using the CCITTs method of "echo cancellation", so that the a digital signal
+   288	processor is not needed, making the cost much less expensive.
+   289	This method is used on the Compucom Speedmodem. The Speedmodem also uses
+   290	Dynamic Impedance Stabilization (DIS) to increase the reliability of the
+   291	telephone interfaces signal-to-noise ratio of the telephone line by increasing
+   292	the clarity and power of the signal, and automatically compensating for
+   293	impedance variations on the phone line. This reduces the probability of
+   294	line noise, allowing the Protocols to transfer files with less overhead
+   295	It also has a faster fall back rate of 7200 bps if too much line noise exists
+   296	for 9600 communications. This makes the Speedmodem stand up to worse line
+   297	noise conditions at a faster rate then V.32 can handle.
+   298	The Speedmodem is also a 9600 bps Group III Facsimile, so with this modem,
+   299	you can send document and scanned images as a Fax, as well as receive Faxes.
+   300	It supports BitFAX by Bitcom and any other 3rd party FAX software which 
+   301	uses the standard CCITT AT-FAX command set.
+   302	A Data Compression called CSP (CompuCom Speed Protocol) is used to yield a
+   303	compression of up to 4:1, giving a throughput of up to 38400 bps.
+   304	This however, like MNP5 will not be effective when transferring compressed
+   305	files from BBS's, such as ZIP files.
+   306	
+   307	DIS and CPS are proprietary methods owned by CompuCom, Sunnyvale, CA.
+   308	Because this modem is inexpensive more people can afford to buy it, and since
+   309	its both a FAX and a Modem in one, it should gain popularity quickly. 
+   310	It is still a new product, but hundreds of BBS's are showing support for it.
+   311	
+   312	-----------------------------------------------------------------------------
+   313	                               What Next?
+   314	
+   315	By mid 1991 the V.32bis standard will be finalized, and by that years end
+   316	the several 14,400 Bps full duplex modems will be on the market.
+   317	There is already talk of the CCITT releasing another standard in 1992,
+   318	which will be for 192,000 bps. Since these modems are expected to cost
+   319	considerably more then the V.32s currently on the market, they will be
+   320	out of the price range of most BBS users.
+   321	
+   322	-----------------------------------------------------------------------------
+   323	
+   324	
+   325	                           WHAT TO LOOK FOR
+   326	
+   327	THROUGHPUT:
+   328	==========
+   329	
+   330	You'll see ads claiming that you can attain 19,200 bps or 38,400 bps
+   331	with a 9600 Baud modem - this is true only if you are using MNP5 or other
+   332	form of data compression on an uncompressed data or text file. Any 9600 Baud
+   333	modem using compression will transfer at that effective rate. 
+   334	But for BBS use, where files are already compressed (such as ZIPs, LZHs, GIFs)
+   335	MNP5 will actually slow down throughput by attempting to compress a file that
+   336	is already compressed. Generally when using a modem for BBS transfers, its
+   337	the RAW speed of the Modem and not the throughput which is important.
+   338	
+   339	Figures of around 1700 cps by the HST modems are attained through proprietary
+   340	methods not available on other modems.
+   341	
+   342	
+   343	CONFIGURABILITY:
+   344	================
+   345	In High Speed Modems, there is a lot more to configure than on a 2400 Baud
+   346	modem. Be sure your modem comes with NRAM (Non-volatile Random Access Memory)
+   347	that can store your modem configuration, making long init strings unnecessary.
+   348	Also many modems have dip switches to set the default configuration, which
+   349	also simply things. If you buy an Internal Modem, be sure its fully
+   350	Configurable as far as selecting the com port and IRQ (interrupt request)
+   351	setting. Some modems can be addressed from Com1: up to COM8:
+   352	
+   353	
+   354	UARTS
+   355	=====
+   356	Internal Modems have a serial port built in, and External Modems use an
+   357	existing Serial Port in the computer. A serial port has a UART chip to buffer
+   358	and control the Input/Output (I/O). The XT usually has an 8450 UART which will
+   359	handle up to 9600 Baud. The AT usually has the 16450. If you have an external
+   360	modem you should replace your UART with the 16550 (NS16550AN).
+   361	
+   362	
+   363	INTERNAL or EXTERNAL
+   364	====================
+   365	MS-DOS Users can choose internal modems, that plug in a computers slot,
+   366	or external, which plugs into an existing serial port with a serial cable.
+   367	Internals are usually less expensive, take up less space, have the correct UART
+   368	already installed (see below) and don't need a cable. But the Externals usually
+   369	have a lot of little lights on it that you can stare at, and its easier to move
+   370	to another machine. So which ever you prefer (or is available in some cases). 
+   371	
+   372	
+   373	
+   374	If Considering a USRobotics Modem
+   375	=================================
+   376	You only need to worry about weather you want the HST
+   377	(which can be upgraded later), or the Dual Standard
+   378	which is the same modem with the V.32bis option included.
+   379	
+   380	
+   381	If Considering a V.32/V.42 Modem
+   382	========================================
+   383	Some questions to ask:
+   384	
+   385	Can you afford the USR "DS" instead?
+   386	Is it both V.32 and V.42 compatible?
+   387	Is it V.42 compatible, V.42 compliant, or V.42bis?
+   388	If its not V.42bis or compliant, can it be upgraded?
+   389	Do Local/National BBS's support it?
+   390	Would you rather wait a year for a V.32bis?
+   391	What is the warranty? 5 years?
+   392	
+   393	
+   394	If Considering a FAX/Modem
+   395	==============================
+   396	some questions to ask:
+   397	
+   398	Is it Send and Receive Fax?
+   399	Does it support 3rd party FAX software?
+   400	Is it 4800 or 9600 bps?
+   401	Does it support MNP?
+   402	Does it support other compression?
+   403	Do Local/National BBS's support it?
+   404	What is the Warranty? 5 Years?
+   405	
+   406	---------------------------------------------------------------------------
+   407	
+   408	
+   409	                    Modem Compatibility Listing:
+   410	                    ============================
+   411	
+   412	
+   413	These modems will usually be downwardly compatible with 2400 Baud and slower
+   414	modems, Which means they are also CCITTY V.22bis and Bell 103/212A compatible.
+   415	Most have an auto-fall back mode that will detect the highest negotiable Baud
+   416	rate, which can either through hardware or software configuration. 
+   417	If the modem is V.42 capable, it will fall back to MNP if the other modem is
+   418	not LAP-M  capable, but is MNP capable. Modems supporting MNP will connect
+   419	with data compression/error correction with other MNP modems at the highest
+   420	Baud rate negotiable between the two. The speeds listed here are the actual
+   421	Raw speed, not possible throughput that can be achieved using data compression.
+   422	 
+   423	Listed in alphabetical order by brand name - 
+   424	
+   425	Generic V.32 only
+   426	   Made by a number of companies using the CCITT method of communicating at
+   427	   9600 bps.
+   428	   These are expected to become outdated as V.42 is added to most V.32 modems
+   429	 - Talks to other brand V.32 modems at 9600 Baud.
+   430	
+   431	Generic V.42 Only
+   432	  If a Modem is V.42 or V.42bis only, and not V.32, then it can only talk to
+   433	  other V.42 modems at 2400, (with 9600 throughput using data compression)
+   434	  This is not considered a 9600 Modem and should be avoided.
+   435	- Talks to other brand V.42 modems at 2400 Baud with LAP-M.
+   436	
+   437	Generic V.32/V.42 (and V.42bis)
+   438	   These modems follow BOTH the CCITT V.32 and V.42 standards for
+   439	   communicating at 9600 bps.
+   440	 - Talks to other brand V.32 modems at 9600 Baud.
+   441	 - Talks to other brand V.42 modems at Top Supported Baud.
+   442	
+   443	(Some Generic Brands include: Anderson Jacobson, Codex, Computer Peripherals,
+   444	Digicom, E-Tech, Farallon, Fastcomm, General Datacom, Intel, Magic, Mastercom,
+   445	Microcom, Multi-tech, NEC, Practical Peripherals, Prometheus, Radcal Vadic,
+   446	Shiva, Telebit, Telenetics, USD, and many others just appearing
+   447	Some of these offer LAP-M and V.42bis, and some do not.)
+   448	
+   449	
+   450	 Hayes V-Series:
+   451	   The early Hayes V-Series uses a proprietary method of communicating at
+   452	   9600 bps.
+   453	 - Talks other Hayes V-Series modems at 9600 Baud.
+   454	
+   455	 Hayes V-Series V.42:
+   456	   The Hayes V-Series V.42 uses the proprietary method of communicating at
+   457	   9600 Baud but will incorporate the V.42 data compression and error checking
+   458	 - Talks to other V.42 modems at 2400 with error correction/compression.
+   459	   Talks to other MNP modems at 2400 using error correction/compression.
+   460	   Talks to other Hayes V-Series at 9600.
+   461	
+   462	 Hayes ULTRA:
+   463	   Uses CCITT V.32 and V.42bis method for communicating at 9600 Baud.
+   464	   Has MNP5 abilities.
+   465	   Has LAP-M abilities
+   466	 - Talks to Other V.32 modems at 9600 Baud
+   467	   Talks to other V.42 modems at up to 9600 Baud
+   468	   Talks to other Hayes V-Series at 9600
+   469	
+   470	 Telebit Trailblazer:
+   471	   Uses proprietary PEP method of communicating at 9600 Baud.
+   472	   Has MNP5 abilities.
+   473	 - Talks to other Telebit Trailblazers at 9600.
+   474	   Talks to other MNP modems at 2400 baud with error correction/compression  
+   475	
+   476	 USR Courier V.32:
+   477	   Uses CCITT V.32 and V.42 method of communicating at 9600 Baud.
+   478	   offers MNP5 abilities.
+   479	 - Talks to Other V.32 modems at 9600 Baud.
+   480	   Talks to Other V.42 modems at up to 9600 baud
+   481	 USR Courier HST: (old version)
+   482	   Uses the USR proprietary HST method of communicating at 9600 Baud.
+   483	   Has MNP5 abilities.
+   484	 - Talks to HST type modems at up to 9600 Baud.
+   485	
+   486	 USR Courier HST 14.4:
+   487	   Uses the USR proprietary HST method of communicating at 9600 Baud.
+   488	   Has MNP5 abilities.
+   489	 - Talks to HST DS's at 14,400 Baud
+   490	   Talks to HST 14.4's at 14,400 Baud
+   491	   Talks to HST's at 9600 Baud
+   492	
+   493	 USR Courier HST DS:
+   494	   The Dual Standard incorporates both the proprietary HST method of
+   495	   communicating at 14400 baud and the and the CCITT V.32 & v.42 methods of
+   496	   communicating at 9600 Baud. (and V.32bis after 1/1/1991)
+   497	   Has MNP5 abilities.
+   498	 - Talks to Other V.32 modems at 9600 Baud.
+   499	   Talks to Other V.32bis modems 14,400 Baud.
+   500	   Talks to Other DS's at 14,400 Baud 
+   501	   Talks to 14.4 HST's at 14,400 Baud 
+   502	   Talks to old 9600 HST's at 9600 Baud.
+   503	
+   504	COMPUcom Speedmodem/Fax:
+   505	    Uses the Proprietary DIS at 9600 Baud.
+   506	    Has 7200 and 4800 Baud Fall back
+   507	    Has CCITT FAX V.27ter & V.29
+   508	    Has MNP5 abilities.
+   509	    Has CSP abilities. 
+   510	    Talks to Group III Faxes at 9600.
+   511	   -Talks to Speedmodems at 9600.
+   512	    Talks to other MNP modems at 2400 with error correction/compression
+   513	
+   514	-----------------------------------------------------------------------------
+   515	Manufacturer           Toll Free       Charge Call     Support BBS 
+   516	============          ==============  ==============  ==============
+   517	Anchor                (800) 541-2318
+   518	Anderson Jacobson     (800) 438-8520  (408) 435-8520
+   519	Codex                                 (508) 261-4000 
+   520	Compucom              (800) 228-6648  (408) 732-4500  (408) 738-4990
+   521	Computer Peripherals  (800) 854-7600  (805) 499-5751  (805) 499-9646 
+   522	Digicom               (800) 574-2730
+   523	E-Tech                                (408) 982-0270
+   524	Farallon                              (415) 596-9100
+   525	Fastcomm              (800) 521-2496  (703) 620 3900
+   526	General Datacom       (203) 574-1118
+   527	Hayes                 (800) 241-9625  (404) 441-1617  (800) 874-2937
+   528	Intel                 (800) 538-3373                  (503) 645-6275
+   529	Magic Modems          (800) 622-3475
+   530	Mastercom                             (213) 834-6666
+   531	Microcomm             (800) 822-8224  (617) 551-1000
+   532	Multi-Tech            (800) 328-9717
+   533	NEC                   (800) 222-4632  (408) 433-1250
+   534	Practical Peripherals (800) 442-4774  (818) 706-0333
+   535	Prometheus            (800) 477-3473  (503) 624-0571
+   536	Radcal Vadic          (800) 482-3427  (408) 432-8008
+   537	Radcal Milgo          (800) 327-7909  (305) 846-1601
+   538	Shiva                 (800) 458-3550  (617) 864-8500
+   539	Telebit               (800) 835-3248  (408) 734-4333
+   540	Telenetics            (800) 822-4267  (714) 779-2766
+   541	USD                   (800) 631-4869  (205) 430-8000
+   542	USRobotics            (800) DIAL-USR  (708) 982-5001  (708) 982-5092
+   543	
+   544		
+   545	----------------------------------------------------------------------------
+   546	
+   547	                          Price Comparisons
+   548	                          =================
+   549	
+   550	No Prices have been stated above this Section, because prices often change,
+   551	and I want to keep all the prices together so they could be quickly updated
+   552	as needed. There are 3 types of prices I will cover. First is The Retail price,
+   553	second is the Sysop price, which is only available if you run a BBS.
+   554	
+   555	Many Modem Manufactures offer BBS Sysop special prices directly, at about
+   556	50% off the retail price. First the BBS has to be verified, so the modem
+   557	manufacture knows that is a real BBS that has been running for at least
+   558	6 Months, and has a minimum number of users, etc. Usually the Manufacturer
+   559	will call the BBS once, or twice a few week apart to be sure. Verification
+   560	usually take 3-4 weeks. Then the Sysop has to agree to use the Modem on the
+   561	BBS for some set amount of time.
+   562	
+   563	-----------------------------------------------------------------
+   564	Generic Brands         Retail          Sysop
+   565	
+   566	V.32 Only    EXT       $650-$1,000    ???? 
+   567	V.32/V.42    EXT       $700-$1,000    ????
+   568	V.32/V.42bis EXT       $700-$1,200    $339+
+   569	
+   570	Software Included: Varies
+   571	Warranty: Varies 1-5 years
+   572	-----------------------------------------------------------------
+   573	Hayes                    Retail      Sysop
+   574	
+   575	Ultra V.32/V.42          $1,199      $599
+   576	V-Series V.42 (not V.32)   $999      $499
+   577	V-Series 9600              $799      $399
+   578	
+   579	Software Included: None
+   580	Warranty: 2 years
+   581	-----------------------------------------------------------------
+   582	Compucom                 Retail      Sysop 
+   583	
+   584	SpeedModem/Fax INT         $279      $169
+   585	
+   586	Software included: BitFax
+   587	Warranty: 5 years
+   588	-----------------------------------------------------------------
+   589	Intel                    Retail      Sysop
+   590	
+   591	9600EX                     $799      $399
+   592	
+   593	Software included: None
+   594	Warranty: 5 years
+   595	-----------------------------------------------------------------
+   596	Practical Peripherals    Retail      Sysop
+   597	
+   598	V.32/V.42  EXT             $699      $339
+   599	V.32/V.42  INT              N/A      N/A
+   600	
+   601	Software Included: None
+   602	Warranty: 5 Years
+   603	
+   604	Note: Due to many reports of Incompatibilities/Problems from Owners
+   605	of these new P.P. Modems, I would not currently recommend them, although
+   606	they are currently the lowest priced V.32 I have seen.
+   607	
+   608	------------------------------------------------------------------
+   609	Telebit                   Retail       Sysop
+   610	
+   611	T1000                      ???        ???
+   612	T1500 V.32                 ???        ???
+   613	TrailBlazer INT            ???        ???
+   614	Trailblazer EXT            ???        ???
+   615	T2500 V.32/V.42            ???        ???
+   616	
+   617	Software Included:None
+   618	Warranty: 5 years
+   619	------------------------------------------------------------------
+   620	USRobotics                Retail       SysOp
+   621	
+   622	Courier Dual Standard E   $1,595       $699 
+   623	Courier Dual Standard I   $1,395       $649 
+   624	Courier V.32/V.42 EXT     $1,099       $599   
+   625	Courier V.32/V.42 INT       $949       $577   
+   626	Courier HST 14.4  EXT       $995       $449 
+   627	Courier HST 14.4  INT       $895       $405 
+   628	DS Upgrade Kit for HST EXT  $600       $300 
+   629	DS Upgrade Kit for HST INT  $500       $250
+   630	
+   631	Software included: None
+   632	Warranty: 2 Years
+   633	------------------------------------------------------------------
+   634	Document updates:
+   635	
+   636	Date       Release    Comments
+   637	----       -------    --------
+   638	10/30/90   1.0        Initial Release. Should have run a spell checker!
+   639	11/08/90   1.1        Spelling fixes, V.32bis update, Compucom update 
+   640	01/10/91   1.2        USR V.32bis Update, other minor corrections
+   641	01/11/91   1.2b       Speedmodem Corrections submitted to Remco Treffkorn
+   642	                      for feedback (not for public release)
+   643	01/19/91   1.2c	      Ran the spelling checker through this unbelievable
+   644	                      document.  Some of the spelling is still wrong like
+   645	                      "weather" for "whether."  (T. Rosen)
+   646	
+   647	** End-of-file **

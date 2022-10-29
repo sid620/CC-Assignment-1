@@ -1,0 +1,135 @@
+     1	~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+     2	The following is an article published in "Video Computing (tm)", The
+     3	Journal Of Interactive Video And Optical Storage Application.  Published
+     4	by VideoSoft.  November/December 1988 issue.
+     5	
+     6	~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+     7	
+     8	
+     9	
+    10	                  DISK STORAGE REACHES MOLECULAR LEVEL
+    11	                  ~~~~ ~~~~~~~ ~~~~~~~ ~~~~~~~~~ ~~~~~
+    12	Forget disc capacity as we know it: 550 megabytes on a CD-ROM; 108,000
+    13	frames on a videodisc; 4 gigabytes on a 14-inch optical disc.  These will
+    14	all become insignificant as Martin Marietta's new optical storage system
+    15	works at a terabyte per square centimeter capacity, in half the current
+    16	access time.
+    17	
+    18	OAK RIDGE, Tennessee -- Researchers at Oak Ridge National Laboratory
+    19	(ORNL), have invented a new optical storage technology capable of turning
+    20	a single molecule on an optical disc into a storage point.
+    21		ORNL, part of the Department of Energy and one of the largest
+    22	government research laboratories, is operated by Martin Marietta Energy
+    23	Systems.  The department has transferred the rights to Martin Marietta,
+    24	which is now in the process of patenting and licensing the technology.
+    25	Energy Systems has started to solicit interested companies for possible
+    26	licensing agreements.
+    27		The most common methods for writing on optical discs use lasers
+    28	to burn pits or micron-sized holes or change the polarity of individual
+    29	data points in substrate sandwiched between two layers of polycarbonate.
+    30	The hardware then "reads" the change in the position of the reflected
+    31	laser's beam.  The new system uses a laser or radiation beam similar to
+    32	current systems.  But the unique featurea of ORNL's technology is in its
+    33	ability to go to the molecular level.
+    34		A VIDEO COMPUTING reporter talked with Mr. Guven Yalcintas
+    35	(pronounced Yal*sin*tosh), Martin Marietta's licensing director.
+    36	
+    37	V.C.:  Currently we use lasers to burn pits or blisters into substrate.
+    38	What are you doing that is different?
+    39	
+    40	Mr. Yalcintas:  We will license this technology to one of the companies,
+    41	an American company.  We would like to protect the patentable ideas.  Our
+    42	discussion will take place within that limit.  In today's technology,
+    43	optical disk technology, the lasers are simply burning a hole.  Well, you
+    44	can do that in this technology, too.  What is new is we can write to the
+    45	media without burning the hole.  We can make changes in the molecular
+    46	level.
+    47	
+    48	V.C.:  Are you referring to changes in the polarity?
+    49	
+    50	Mr. Yalcintas:  Yes indeed.  You can change the polarity of the molecule
+    51	or you can identify that molecule as plus or minus, zeroes or ones
+    52	becoming information.
+    53	
+    54	V.C.:  How do you read back the information?
+    55	
+    56	Mr. Yalcintas:  Whatever source we use to change that information at the
+    57	molecular level is the same source that receives it back.
+    58	
+    59	V.C.:  We currently use lasers to do that.  Are you using a laser?
+    60	
+    61	Mr. Yalcintas:  Yes.  In fact, the laser we use has much lower power that
+    62	modifies the molecule.
+    63	
+    64	V.C.:  Is this technology erasable?
+    65	
+    66	Mr. Yalcintas:  This is WORM technology.  You sensitize the substrate and
+    67	place the information covered with the plastic coating and the
+    68	information is going to stay there.
+    69	
+    70	V.C.:  Has anyone talked about the possibility of making it erasable?
+    71	
+    72	Mr. Yalcintas:  No.  Let me go one step back.  ORNL is a government
+    73	laboratory.  It is operated by Martin Marietta for the Department of
+    74	Energy. What goes on over here every day with 5,000 plus scientists is
+    75	basic research.  The research this group of scientists is working on is
+    76	a project to identify a trace amount of organic compounds in order to be
+    77	able to develop a sensor, a detecting system for minute amounts of
+    78	organic compounds.  We have developed very nice operating radiation
+    79	detectors.  While they were working on that research, they figured out
+    80	that they could leave information on a substrate with a laser.  The
+    81	research was not directed at optical discs to store information as
+    82	WORM or erasable.  One day, other research may find some easy way to
+    83	deal with that.  Right now it's not the topic.  Right now we are
+    84	finding out every day that WORM technology is in great demand.  The
+    85	IRS wants WORM technology, the Navy wants WORM technology.  The nuclear
+    86	regulatory commission wants to check data on reactors.  It doesn't want
+    87	that data to be changed.  For one reason, there is no funding for that,
+    88	and second, we don't believe there is any reason to erase.  With this
+    89	volume of storage you don't need to erase, you just keep on storing.
+    90	
+    91	V.C.:  How much data can you store?
+    92	
+    93	Mr. Yalcintas:  Roughly, the size of the molecule is 10 -6E (0.000001)
+    94	centimeters, in one square centimeter you then have 10 12E molecules.
+    95	If each molecule is a potential storage spot for the data, then you
+    96	have 10 12E bytes in one square centimeter (1,000,000,000,000... one
+    97	trillion bytes per centimeter!).  If you pick up a disc with 500 million
+    98	storage spots (present day CD-ROM), in the same size storage disc you are
+    99	going to have probably 500 million times one million storage spots.
+   100	That's why people are really fascinated.
+   101	
+   102	V.C.:  I take it that the technology is at a fundamental level of
+   103	research.  Have you done a "blackbox" yet?
+   104	
+   105	Mr. Yalcintas:  No, and we are probably not going to.  This office
+   106	receives 15 to 20 inventions per month.  We analyze them and try to
+   107	license them.  If there is a stumbling block with industry, we can go
+   108	out one more step to develop.  We have maturation funding we can use
+   109	for further study, but for this project I don't believe it will be
+   110	necessary.  When we show the data, people are fascinated.
+   111	
+   112	V.C.:  Have you licensed the technology yet?
+   113	
+   114	Mr. Yalcintas:  We have been talking to over 40 companies, 15 of which
+   115	requested non-disclosure information.  Four of them have already signed,
+   116	and we have released full information to them.
+   117	
+   118	V.C.:  What are other advantages of your new technology?
+   119	
+   120	Mr. Yalcintas:  You can specify what part of the information can be
+   121	accessed for security purposes.  It can be made secure, so the
+   122	military will be delighted.  You can identify an access frequency for
+   123	someone and he can't read the rest of the disc.  Also, much more
+   124	information can be entered at current optical disc speeds.  The speed
+   125	for current optical discs is identified at somewhere near 1800 to 1900
+   126	rpm.  I have heard of some to 3000 rpm.  Winchesters are somewhere near
+   127	3600 rpm.  This is just a concept, it has not been tried, but we have
+   128	reason to believe very strongly that you can apply two substrates instead
+   129	of one.  With the same laser, or frequency, you will be receiving two
+   130	different signals from two different substrates.  At the same speed at
+   131	the same spot, two sets of information will be coming to you.  Two
+   132	different molecules, with two different signals.
+   133	
+   134	
+   135	Hit [ENTER] to continue

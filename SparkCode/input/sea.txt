@@ -1,0 +1,401 @@
+     1	
+     2	---------------------------------------------------------
+     3	
+     4	SEA vs. PKWARE
+     5	Shareware Company Threatens BBS World That Gave It Life
+     6	  
+     7	---------------------------------------------------------
+     8	  
+     9	  
+    10	Last April, System Enhancement Associates, vendors of the archive
+    11	utility ARC, filed suit against Phil Katz, author of the archive
+    12	programs PKARC and PKXARC, and his company PKWARE.  SEA claimed
+    13	trademark infringement on the name "ARC," and violation of their
+    14	copyright on the "look and feel" of ARC's command-line user-
+    15	interface, in addition to charging Katz with appropriating ARC
+    16	program code.
+    17	
+    18	The company demanded all profits from PKARC and PKXARC, treble
+    19	damages, statutory damages at the highest level allowed, and
+    20	attorney fees.  It also requested that all copies of PKARC and
+    21	PKXARC, from those owned by bulletin board users to those
+    22	licensed by businesses, be impounded, and that Katz be barred
+    23	from ever again selling or distributing the programs.
+    24	  
+    25	In August, SEA and PKWARE settled out of court.  SEA obtained the
+    26	source code for PKARC and PKXARC, and PKWARE's customer list, and 
+    27	Katz was required to pay SEA royalties on the program back to 1985, 
+    28	in addition to attorney's fees and legal expenses--an amount that, 
+    29	according to documents on file at the Milwaukee County Federal
+    30	Courthouse, totals $62,500.
+    31	
+    32	He also agreed not to use the word "arc" in a trademark sense.  
+    33	Under the settlement Katz is permitted to license his PKARC and 
+    34	PKXARC programs (or PKPAK and PKUNPAK, as they are now called) from 
+    35	SEA until January 31, 1989.  (Anyone who licenses PKPAK and/or
+    36	PKUNPAK from Katz prior to then may continue to use those versions
+    37	of the program perpetually, even after January 31, 1989.) 
+    38	  
+    39	Recently SEA filed contempt of court charges against Katz.  While
+    40	the company has kept details of their allegations under seal, they
+    41	appear to be alleging that any use of the word "arc" by Katz, 
+    42	even as a descriptive or generic term (for instance, to refer to the 
+    43	act of achiving a file--whether one is using SEA's ARC or ZOO or
+    44	any other archiving utility--as "arcing" it) is in violation of the 
+    45	settlement.  
+    46	
+    47	SEA has lately been contacting other software developers whose
+    48	products make use of the ARC file format and threatening legal
+    49	action.  Gary Conway, author of NARC, an archive extraction
+    50	utility, was contacted by the company, which tried to pressure him
+    51	to license the ARC format and turn over the source code of NARC.
+    52	Don Kinzer of Polytron received a similar call from Thom
+    53	Henderson of SEA.  Henderson told Kinzer that if a software
+    54	product had the ability to read an ARC file--not create or
+    55	extract it, merely read it--SEA would require the vendor to
+    56	obtain a license from SEA.
+    57	  
+    58	Settlement Issues and Rumor Mongering
+    59	  
+    60	As part of the PKWARE-SEA settlement, both parties agreed to
+    61	refrain from any comment on the settlement.  Not surprisingly,
+    62	unfounded rumors about the settlement have proliferated.  One
+    63	such rumor is that the judge in the PKWARE-SEA case had an outside
+    64	consultant compare SEA's and Katz's source code.  When the
+    65	consultant found plagiarized code in PKARC, the story goes, Katz
+    66	settled quickly to save face.  Not true.  No attorneys for either
+    67	SEA or Katz had ever met with the judge prior to the settlement,
+    68	and at no time did the judge ever retain an expert or himself see
+    69	the source code. 
+    70	
+    71	The real issues in the case were SEA's charges that Katz had copied
+    72	ARC's program code and that he had violated the company's trademark 
+    73	on the word "arc."
+    74	
+    75	In regard to the first complaint, there are only two pieces of
+    76	code in ARC with non-trivial algorithm:  the squeeze code and the
+    77	crunch code.  SEA copied these almost verbatim from public domain
+    78	sources.  Katz's use of the same public domain sources resulted
+    79	in a program that ran four times faster than the then current version
+    80	of SEA's ARC.  No competent programmer could ever conclude that Katz
+    81	had plagiarized SEA code.
+    82	  
+    83	SEA's claim that it owns a trademark on the word "arc" is, as one
+    84	UUCP mail user noted, like Digital Equipment insisting that it
+    85	owns the word "equipment."  The word "arc" as an abbreviation for
+    86	"archive" has been in the public domain long before either SEA or
+    87	PKWARE entered the scene.  Any word which has become a part of
+    88	popular parlance, as "arc" has, cannot be protected as a
+    89	trademark.
+    90	  
+    91	Nevertheless, SEA claims that no one else can use this word to
+    92	describe their archive utilities, and that Katz used it to
+    93	intentionally confuse users and capitalize on the popularity of
+    94	SEA's ARC.
+    95	  
+    96	Finally, SEA claimed in its lawsuit that Katz violated the
+    97	copyright on the "look and feel" of ARC's user-interface.  Anyone
+    98	who has ever used both ARC and PKARC knows that neither touts an
+    99	interface that is anything more than a few commands and switches
+   100	entered at the DOS command line.  There are no menus.  There are
+   101	no full-screen displays.  There is nothing artistic or seminal in
+   102	the interface of either.
+   103	  
+   104	Yet, SEA argued in its suit that Katz "substantially copied and
+   105	plagiarized the entire appearance and user interface and screens
+   106	which result when a computer user interacts with or uses [ARC]."
+   107	By the same logic the author of Fido bulletin board software may
+   108	as well sue the designer of RBBS.
+   109	  
+   110	(Note:  If you have any questions about the SEA suit, please see
+   111	the copy of the complaint filed in that suit which has been
+   112	circulating on bulletin boards and on-line services.  A press
+   113	statement concerning the settlement is also in circulation.)
+   114	
+   115	
+   116	Why You As a User Should Care
+   117	
+   118	  
+   119	Over the past year the popularity of Katz's PKARC/PKXARC programs
+   120	among both bulletin board and business users surpassed that of
+   121	SEA's ARC by a wide margin.  Many consider the suit that SEA
+   122	waged against PKWARE, as well as the company's subsequent legal
+   123	bullying of other shareware archive software developers, as legal
+   124	coercion intended solely to drive its competitors out of
+   125	business--a tactic not unheard of in the computer industry.
+   126	
+   127	Defending your software against a suit such as the one filed by
+   128	SEA against PKWARE can run from $100,000 into the millions, as
+   129	copyright and patent suits are the most costly forms of
+   130	litigation to defend against.  If your product is not grossing
+   131	over a million in sales, you will be advised (nay, forced by
+   132	economics) to seek an early settlement--as Katz did.
+   133	  
+   134	Consider what this means if you're a Dan Bricklin-type
+   135	programmer running a small software operation out of your
+   136	home.  The program you slaved over for months so that it might
+   137	win you emancipation from your 9-to-5 job, you might be forced to
+   138	destroy in a "legal settlement" over a bogus suit.  (Some of us
+   139	know people besides Katz to whom this has happened.)
+   140	  
+   141	Consider what this means if you're a user.  Your choice in
+   142	software is being dictated, not by a software package's intrinsic
+   143	merits, but legal manipulation.  Legal manipulation that favors
+   144	the litigant with the most money as opposed to the one with the
+   145	best product.
+   146	  
+   147	It also means that great programmers are spending their time in
+   148	court when they could be busy creating better products for the
+   149	marketplace.  Unfortunately, legal experts are predicting an
+   150	escalation in such suits over the next decade.
+   151	  
+   152	
+   153	What Can We Do?
+   154	  
+   155	As a user you can stand up and say that you're not going to put
+   156	up with companies that use the courts to strangle their
+   157	competition, that employ lawyers and lawsuits to bully companies
+   158	and independent programmers out of existence, that dish out
+   159	frivolous suits rather than decent products.
+   160	  
+   161	No, you do not have to take it anymore, and yes, you do have the
+   162	power to change things.
+   163	  
+   164	A number of bulletin board operators, to protest SEA's legal
+   165	bullying of its competitors, have stopped using SEA's ARC to
+   166	archive programs on their systems.   Some have pulled SEA 
+   167	products from their file collections.  We suggest that you 
+   168	likewise boycott SEA's ARC, as well as the company's SEADOG 
+   169	mail program, until the company desists its harassment of archive 
+   170	authors.
+   171	  
+   172	But boycotts alone are rarely effective.  We also ask that you
+   173	write to SEA.  Accompanying this file is a "form letter" to SEA
+   174	(in the accompanying file LETTER.TXT) that you can print out, 
+   175	sign your name to, and mail.  Feel free to add to or change 
+   176	anything in the letter.  
+   177	  
+   178	In addition, please upload this file and the accompanying file
+   179	LETTER.TXT onto any bulletin board or on-line system that you
+   180	call.  If you are a sysop who supports this campaign we ask that
+   181	you mention it in your board's introductory screen and ask users
+   182	to download these files.
+   183	  
+   184	If enough of us speak up and let it be known that we are opposed
+   185	to this kind of misuse of the legal system, we will be sending a
+   186	loud message to software vendors that the computer user community
+   187	will not tolerate firms that attempt to drive their competitors
+   188	out of business through legal harassment.
+   189	  
+   190	Remember that together we have built the PC community into the
+   191	most vibrant computer user community in history, and by uniting
+   192	we can make it even better.
+   193	
+   194	
+   195	Matt Anderson
+   196	Sysop, Alaska EMS RBBS
+   197	Fairbanks, Alaska
+   198	907/463-4988
+   199	
+   200	Rod Bowman
+   201	Sysop, PC Spectrum
+   202	San Bernardino-Area, California
+   203	714/945-2612
+   204	
+   205	Ed Branley
+   206	Sysop, Minas Trinith RBBS
+   207	New Orleans, Louisiana
+   208	504/455-8665
+   209	
+   210	Danyaon Coston-Clark
+   211	Sysop, ACCESS: ONLINE BBS
+   212	Malverne, New York
+   213	516/887-5804
+   214	
+   215	Mike Coticchio
+   216	Sysop, Beginnings BBS
+   217	Levittown, New York
+   218	516/796-7296
+   219	
+   220	Juan Davila
+   221	Sysop, Mega-D RBBS-PC
+   222	Puerto Rico or Thereabouts
+   223	809/751-7728
+   224	
+   225	Michael Davis
+   226	Sysop, Horizon RBBS-PC
+   227	Dallas, Texas
+   228	214/881-9346
+   229	
+   230	Ron Fowler
+   231	Author of MEX-PC Communications Program
+   232	Fort Atkinson, Wisconsin  
+   233	
+   234	John Friel III
+   235	Author of Qmodem / Sysop, Qmodem PCBoard
+   236	Cedar Rapids, Iowa 
+   237	319/233-6157
+   238	
+   239	Judy Getts 
+   240	Contributing Editor/Telecommunications
+   241	PC World Magazine
+   242	
+   243	David Gibbs
+   244	Sysop, The Midrange System
+   245	Chicago, Illinois
+   246	312/439-9679
+   247	
+   248	James A. Grettum
+   249	Sysop, RBBS-PC of Fargo
+   250	Fargo, North Dakota
+   251	701/293-5973
+   252	
+   253	Chris Harrower
+   254	Co-Sysop, Lancaster Area BBS
+   255	Lancaster, Pennsylvania
+   256	717/394-1357
+   257	
+   258	Andrew Hoag
+   259	Sysop, Satellite RBBS
+   260	North Dakota
+   261	701/232-3811
+   262	
+   263	Jerry Hunter
+   264	Sysop, DMC Switchboard Network RBBS-PC
+   265	Arkansas
+   266	501/636-2810 
+   267	
+   268	Andy Jones
+   269	Sysop, Everglad RBBS-PC
+   270	Tampa-Area, Florida
+   271	813/992-5993
+   272	
+   273	Bob Jones
+   274	Sysop, BJ's RBBS-PC
+   275	Pasadena-Area, California
+   276	818/248-1087
+   277	
+   278	Loren Jones
+   279	Sysop, RBBS-PC of Chicago
+   280	Chicago, Illinois
+   281	312/352-1005
+   282	
+   283	Henry Kisor
+   284	Sysop, Word Processing BBS
+   285	Chicago, Illinois
+   286	312/491-6995
+   287	
+   288	Jeff Krueger
+   289	Sysop, A Different BBS
+   290	Chicago, Illinois
+   291	312/589-0074
+   292	
+   293	Rick Lawsha
+   294	Sysop, STORK RBBS
+   295	Galesburg-Area, Illinois
+   296	309/342-0637
+   297	
+   298	*.* Loban
+   299	Sysop, Oregon Net
+   300	Anaheim-Area, California
+   301	714/945-2612
+   302	
+   303	Gene Lowry
+   304	Sysop, Bigfoot II RBBS-PC
+   305	Arizona 
+   306	602/886-7943
+   307	
+   308	Robert Mahoney
+   309	Sysop, Exec-PC BBS
+   310	Milwaukee, Wisconsin
+   311	414/964-5160
+   312	
+   313	Sal Manaro
+   314	Sysop, Underdog's Mininet
+   315	Seattle, Washington
+   316	206/725-9233
+   317	
+   318	Jon Martin
+   319	Sysop, Aircomm
+   320	Bay Area, California
+   321	415/689-2090
+   322	
+   323	George Maynard
+   324	Sysop, OBIE RBBS-PC
+   325	Cleveland-Area, Ohio
+   326	216/684-2059
+   327	
+   328	Jim Oswell
+   329	Sysop, The Grapevine RBBS-PC
+   330	Charlotte-Area, North Carolina
+   331	704/364-3632
+   332	
+   333	Michael Part
+   334	Sysop, The Wicked Scherzo
+   335	Pasadena, California
+   336	818/906-8683
+   337	
+   338	Tim Pearson
+   339	Sysop, LANStar RBBS-PC
+   340	Springfield, Missouri
+   341	417/673-2283
+   342	
+   343	Terry Rossi
+   344	Sysop, RTC-BBS
+   345	New Jersey
+   346	609/654-0999
+   347	
+   348	Jerry Shenk
+   349	Co-Sysop, Lancaster Area BBS
+   350	Lancaster, Pennsylvania
+   351	717/394-1357
+   352	
+   353	Don Smith
+   354	Sysop, NorthWest Ohio RBBS
+   355	Toledo, Ohio
+   356	419/448-1421
+   357	
+   358	Phil Stults
+   359	Sysop, The LANS Multi-Node BBS #1
+   360	Gary, Indiana
+   361	219/884-9508
+   362	
+   363	Maurice Thaler
+   364	Sysop, Power Board BBS and Audio Projects BBS
+   365	Madison, Wisconsin
+   366	608/221-8422
+   367	
+   368	Bill Tulles
+   369	Sysop, AV-SYNC
+   370	Atlanta, Georgia
+   371	404/320-6202
+   372	
+   373	Paul Waldinger
+   374	Sysop, Sound of Music BBS
+   375	Oceanside, New York
+   376	516/536-8723
+   377	
+   378	Bob Westcott
+   379	Sysop, Stateline BBS
+   380	New Hampshire
+   381	603/424-5497
+   382	
+   383	Randall Young
+   384	Sysop, ATT-PAC BBS
+   385	The Bay Area, California
+   386	415/829-6062
+   387	
+   388	
+   389	Posted September 5, 1988. 
+   390	
+   391	[Note:  Please do not alter or augment this file.  If you are a sysop 
+   392	or software author and would like to add your name to this list of 
+   393	endorsers, please leave a message containing your name, phone number,
+   394	name of your BBS and/or product, and the name of the city that your
+   395	board resides in, to Judy Getts on one of the following boards:  Exec-PC
+   396	in Milwaukee at 414/964-5160; Loren Jones' RBBS-PC in Chicago at 
+   397	312/352-1035; or the Sound of Music in Oceanside, New York at 
+   398	516/536-8723.  We thank you.] 
+   399	
+   400	---------------------------------------------------------------------------
+   401	

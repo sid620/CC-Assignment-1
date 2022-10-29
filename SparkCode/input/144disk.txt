@@ -1,0 +1,123 @@
+     1	The following is an exerpt from a text file written/complied by one
+     2	A.D. Longton of Rockville, MD. I have omitted the discussion of how
+     3	to make a 1.44M disk from a 720K disk with a soldering iron since I
+     4	don't want to be a party to furthering that practice. I did, however,
+     5	find the remainder of the information quite interesting and have 
+     6	included it here. As You can see, it comes directly from the 
+     7	'brain trust' at Big Blue and may tend to lend some measure of credibility
+     8	to what I've been saying all along. The original file was dated 5/10/89,
+     9	I'm not sure when the information spewed forth from Boca Raton.
+    10	-[Steve]- (tm)
+    11	
+    12	-------------------------------------------------------------------------------
+    13	
+    14	
+    15	
+    16	
+    17	
+    18	                           3.5" DISKETTE FORMATS
+    19	                                Kevin Maier
+    20	                              IBM Corporation
+    21	                            Boca Raton, Florida
+    22	                      "Reprinted by permission of the
+    23	                  IBM Personal Systems Technical Journal."
+    24	                           Page 42, issue 2, 1989
+    25	
+    26	     "The  original recommendations about the proper formatting and use
+    27	     of  PS/2 diskettes have undergone revision.  This article explains
+    28	     why the recommendations have changed.
+    29	
+    30	                            THE ORIGINAL CAUTION
+    31	
+    32	     Personal  System/2 shipping cartons include a sheet of paper  that
+    33	     cautions  users not to format a 2.0 MB diskette to 720 KB, because
+    34	     the diskette becomes unusable and should be discarded.
+    35	
+    36	     This  caution was issued because of the physical properties of 720
+    37	     KB  diskettes versus 1.44 MB diskettes.  The 720 KB format uses  a
+    38	     higher  write current, and the  1.44 MB format uses a lower  write
+    39	     current.   To  accommodate  the  higher write current,  the  oxide
+    40	     coating on a 1.0 MB (720 KB formatted) diskette is denser than the
+    41	     oxide coating on a 2.0 MB (1.44 MB formatted) diskette.
+    42	
+    43	     When  you format a 2.0 MB diskette to 720 KB, you apply the higher
+    44	     write  current  to  the  less dense oxide coating.   The  hardware
+    45	     developers  originally felt that this meant the 720 KB  formatting
+    46	     pattern  is  written too  deeply  into the 2.0 MB  oxide  coating,
+    47	     causing intermittent data errors and unreliable use.  Furthermore,
+    48	     the developers felt that if you attempted to reformat the diskette
+    49	     to 1.44 MB, which uses the lower write current, the 1.44 MB format
+    50	     would  not  completely  write  over  the "deeper" 720  KB  format.
+    51	     Therefore  the developers' recommendation was to discard a 2.0  MB
+    52	     diskette that was formatted to 720 KB.
+    53	
+    54	                          THE SUBSEQUENT FINDINGS
+    55	                             [aka a RETRACTION]
+    56	
+    57	     Since  the time that this caution was issued, the developers  have
+    58	     performed  additional testing, and have concluded that there is no
+    59	     need to discard a 2.0 MB diskette that was formatted to 720 KB.
+    60	
+    61	     It  is still true that a  2.0 MB diskette formated to 720 KB  will
+    62	     cause intermittent data errors.  However, the latest assessment is
+    63	     that  you will be able to reformat the diskette to 1.44 MB and use
+    64	     it reliably after that.
+    65	
+    66	     The  same logic applies to a 1.0 MB diskette formatted to 1.44 MB.
+    67	     You cannot use it with the 1.44 MB format, but you can reformat it
+    68	     to 720 KB and use it reliably after that.
+    69	
+    70	     Therefore,   the  current  recommendation  is:  If  you  format  a
+    71	     diskettte  to  the  wrong  capacity, do not discard  it;  instead,
+    72	     reformat it correctly and use it."
+    73	
+    74	
+    75	     With  all those feelings  and recomendations on those feelings  it
+    76	     makes  me wonder how much experimentation was actually being  done
+    77	     on  a  strictly scientific level.   Note that the one  mention  of
+    78	     formatting  1.0mb disks to 1.44 MB does not say that you will  get
+    79	     errors  if you use them.  What it does say is that if you reformat
+    80	     that  wrongly formatted disk, you can reliably use it at 720  KB.
+    81	     The  implication is that since there were errors with 2.0mb  disks
+    82	     formatted  to 720 KB "logic applies" that there will be errors  if
+    83	     the  reverse is done.  This is not necessarly the case, and we are
+    84	     not told why, we are just told.
+    85	
+    86	     FYI, here are the specifications for the 720 KB, 1.44 MB, and 360k
+    87	     5.25"  disk  drives  as  listed  in the same issue on pages 43-44.
+    88	     Note the large similarity between 360k and 720 KB disks and 720 KB
+    89	     disks and 1.44 MB disks.
+    90	
+    91	                     720 KB and 1.44 MB Diskette Drives
+    92	
+    93	                                  720 KB     1.44 MB     360 KB (5.25")
+    94	     Access time:
+    95	          Track-to-track            6 ms        6 ms       6 ms
+    96	          Head settle time         15 ms       15 ms      15 ms
+    97	          Motor start time        500 ms      500 ms     750 ms^
+    98	
+    99	     Disk rotational speed:       300 rpm     300 rpm    300 rpm
+   100	          Maximum Latency         200 ms      200 ms     200 ms
+   101	     Formatted Characteristics:   720 KB     1.44 MB^    360 KB^
+   102	          Tracks (actual)          80          80         40   ^
+   103	          Tracks per inch         135 tpi     135 tpi     48   ^
+   104	          Sectors per track         9          18   ^      9
+   105	          Bytes per sector        512         512        512
+   106	          Bytes per track        4608        9216   ^   4608
+   107	          Data heads                2           2          2
+   108	          Sector interleave factor  1:1         1:1        1:1
+   109	          Sector skew factor        0           0          0
+   110	          Sectors per cluster       2           1   ^      2
+   111	
+   112	     Transfer rate            250,000     500,000^   250,000
+   113	     (bits per second)
+   114	
+   115	     (All ^'ed numbers are numbers that are different from the 720 KB
+   116	     format.)
+   117	
+   118	             "...if they think you're technical, go crude. ....
+   119	         These days, though, you have to be pretty technical before
+   120	                     you can even aspire to crudeness."
+   121	
+   122	                           --From William Gibson's short story
+   123	                             Johnny Mnemonic

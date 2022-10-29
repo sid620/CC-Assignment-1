@@ -1,0 +1,189 @@
+     1	Table of Errors:
+     2	
+     3	Most of these will prevent the Harddisk from working correctly under DOS, so
+     4	it's not likely that you ever get these errors.
+     5	
+     6	Invalid Rootsector Signature
+     7	  The last two bytes of the rootsector must be 55 AA (hex)
+     8	More than one bootable Partition
+     9	  In the partition table there should only be one partition marked bootable
+    10	  You can override this message with the -omb switch
+    11	Invalid bootable-flag
+    12	  The bootable flag in the partition table should be 80h or 0
+    13	  You can override this message with the -obf switch
+    14	Invalid Start Sector
+    15	  The start sector number of the partition is either 0 or greater than
+    16	  the number of sectors per track
+    17	Invalid End Sector
+    18	  The end sector number of the partition is either 0 or greater than
+    19	  the number of sectors per track
+    20	Invalid Start Head
+    21	  The number of the start head of the partition is greater than the total
+    22	  number of heads of the drive - 1
+    23	Invalid End Head
+    24	  The number of the end head of the partition is greater than the total
+    25	  number of heads of the drive - 1
+    26	Partition Table Corrupt - start
+    27	  The start sector (head/cylinder/sector) does not match the absolute start
+    28	  sector
+    29	Partition Table Corrupt - end
+    30	  The end sector (head/cylinder/sector) does not match the absolute start
+    31	  sector + the number of sectors
+    32	Overlapping Partitions
+    33	  The partition table contains overlapping partitions
+    34	Invalid Jump Instruction in Bootsector
+    35	  The first three bytes of the bootsector must be a 3-byte jump (E9 xx xx)
+    36	  or a 2-byte jump (EB xx 90). Perhaps the partition is not yet formatted.
+    37	  FIPS can only split DOS-formatted partitions.
+    38	Invalid Bootsector
+    39	  The last two bytes of the bootsector must be 55 AA (hex)
+    40	Can't handle number of Bytes per Sector
+    41	  The number of bytes per sector must be 512
+    42	Number of Sectors per Cluster must be a power of 2
+    43	  Only 1, 2, 4, 8, 16, 32, 64 or 128 are allowed
+    44	Partition must have 2 FATs
+    45	  Every DOS partition has 2 copies of the FAT
+    46	Number of Rootdir entries must be multiple of 16
+    47	  One sector of the rootdirectory contains 16 entries
+    48	  You can override this message with the -ore switch
+    49	Number of Rootdir entries must not be zero
+    50	  Sounds reasonable, doesn't it?
+    51	Wrong Media Descriptor Byte in Bootsector
+    52	  The Media Descriptor Byte in the Bootsector should be F8 (hex)
+    53	  You can override this message with the -omd switch
+    54	FAT too large
+    55	  FAT has more than 256 sectors - useless, since 2 bytes * 64K entries =
+    56	  128K = 256 * 512 bytes. If you can access the drive, do not attempt to
+    57	  change this.
+    58	  You can override this message with the -olf switch
+    59	FAT too small
+    60	  The partition has more clusters than the FAT can handle
+    61	  You can override this message with the -osf switch
+    62	Number of hidden sectors incorrect
+    63	  The number of hidden sectors in the bootsector must match the number
+    64	  of the start sector in the partition table
+    65	12-bit FAT not supported
+    66	  FIPS can't split partitions with a 12-bit FAT
+    67	Number of sectors (short) must be zero
+    68	  For partitions with more than 65536 sectors (BIGDOS) the number of sectors
+    69	  (short) must be zero
+    70	Number of sectors (short) does not match Partition Info
+    71	  The number of sectors in the partition table must match the number of
+    72	  sectors in the bootsector
+    73	Number of Sectors (long) does not match Partition Info  
+    74	  The number of sectors in the partition table must match the number of
+    75	  sectors in the bootsector
+    76	
+    77	Invalid Drive number
+    78	  Only the numbers 128 - 255 are valid drive numbers
+    79	Invalid Partition number
+    80	  Only the numbers 1 - 4 are valid partition numbers
+    81	
+    82	Error reading FAT 1
+    83	  Read error - bad sector
+    84	Error reading FAT 2
+    85	  Read error - bad sector
+    86	
+    87	FAT copies differ
+    88	  The two copies of the FAT differ - use CHKDSK
+    89	Wrong Media Descriptor Byte in FAT
+    90	  The first byte of each FAT is the Media Descriptor - it should be F8h
+    91	  You can override this message with the -omd switch
+    92	New Partition not empty
+    93	  The New Partition must be completely empty
+    94	
+    95	Too many drives found
+    96	  FIPS can handle up to 9 drives - that should be enough for most PCs :-)
+    97	No Compatible Harddisk found
+    98	  Hey, where is your drive? Perhaps your Harddisk is not int 13h compatible.
+    99	No valid partition found
+   100	  All partitions in the partition table are empty
+   101	No free partition
+   102	  All four partitions are in use
+   103	
+   104	Error reading Drive Geometry
+   105	  Interrupt 13h 08h returned an error code
+   106	Drive Initialization Failure
+   107	  Interrupt 13h 00h returned an error code
+   108	Error reading Root Sector
+   109	  Read error - bad sector, wrong drive number or incompatible harddrive
+   110	Can't split extended Partitions
+   111	  FIPS can not yet split extended DOS partitions
+   112	Invalid Partition selected
+   113	  The partition selected with the -p switch is empty
+   114	Unknown Filesystem
+   115	  Only DOS partitions can be split (System Indicator Byte must be 4 or 6)
+   116	Error reading Boot Sector
+   117	  Read error - bad sector
+   118	Partition too small - can't split
+   119	  If the partition has only slightly more than 4085 clusters, it can't be
+   120	  split any further without rewriting the FAT to 12 bit.
+   121	Last Cylinder is not free
+   122	  Since the new partition is created at the end of the old one and
+   123	  contains at least one cylinder, the partition can not be split if
+   124	  not at least the very last cylinder is completely free.
+   125	  Probably there is a hidden file like 'image.idx' or 'mirorsav.fil'
+   126	  in the last cylinder - see the doc.
+   127	Invalid new start cylinder
+   128	  The start cylinder chosen with the -c switch is not valid
+   129	Error writing Root Sector
+   130	  Write error - perhaps the disk is write protected?
+   131	Error writing Boot Sector
+   132	  Write error :-( - this will hopefully never happen ...
+   133	
+   134	Too many save files on disk
+   135	  There can only be ten save files on one floppy disk (rootboot.000 to
+   136	  rootboot.009). Delete some or use another floppy disk.
+   137	Can't open file
+   138	  FIPS tried to write the file rootboot.00? to drive A: but an error occured
+   139	  Try using another floppy disk
+   140	Error writing file
+   141	  FIPS tried to write the file rootboot.00? to drive A: but an error occured
+   142	  Try using another floppy disk
+   143	Error closing file
+   144	  FIPS tried to write the file rootboot.00? to drive A: but an error occured
+   145	  Try using another floppy disk
+   146	
+   147	
+   148	Warnings:
+   149	
+   150	These will not cause FIPS to exit, since they are not really errors. If you
+   151	have the possibility to correct the problem, do it; if not, this will not
+   152	affect DOS, so you should be safe.
+   153	
+   154	Invalid Partition entry
+   155	  The partition entry contains data, but the system indicator is 0 (empty).
+   156	  Attention: FIPS will possibly overwrite this entry. Make sure this is no
+   157	  valid Partition (temporarily disabled etc.)
+   158	Partition does not end on Cylinder boundary
+   159	  All partitions should end on a cylinder boundary
+   160	Partition does not begin on Cylinder boundary
+   161	  Normally, all partitions except the first one should begin on head 0,
+   162	  sector 1 of a cylinder. This is not required by DOS, however.
+   163	Free Space between Partitions
+   164	  There is free space on the harddisk that is not covered by a partition
+   165	Number of reserved sectors should be 1
+   166	  The bootsector uses only 1 sector, so the number of reserved sector
+   167	  is usually 1. If you can access your drive, do not attempt to change this.
+   168	Sectors per track incorrect
+   169	  The number of sectors per track in the bootsector does not match the actual
+   170	  drive geometry reported by the BIOS
+   171	Number of drive heads incorrect
+   172	  The number of drive heads in the bootsector does not match the actual
+   173	  drive geometry reported by the BIOS
+   174	Wrong System Indicator Byte
+   175	  For BIGDOS Partitions the System Indicator Byte should be 6; for DOS16
+   176	  Partitions it should be 4
+   177	Wrong Signature
+   178	  Partitions with 32-bit sector numbers (since DOS 4.0+) have an 'extended
+   179	  Bios Parameter Block' in the bootsector, its signature byte is 29h. This
+   180	  is however totally ignored by DOS.
+   181	Drive number in bootsector does not match actual drivenumber
+   182	  The drive number in the bootsector does not match the drive number by which
+   183	  the drive is accessed
+   184	Wrong FAT entries 1 & 2
+   185	  A 16-bit FAT should start with F8 FF FF FF
+   186	Can't open debugfile
+   187	  The debugfile is created in the current directory - make sure it is
+   188	  writable
+   189	
