@@ -1,15 +1,19 @@
 package com.example.springboot.service;
 
+import com.example.springboot.HadoopExecuter;
 import com.example.springboot.Models.PhraseResponse;
 import com.example.springboot.Models.WordResponse;
+import com.example.springboot.PropertiesCache;
 import org.springframework.stereotype.Service;
 
-import java.time.Duration;
-import java.time.Instant;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 
 @Service
@@ -23,11 +27,24 @@ public class HadoopService {
 
     public long buildIndex()
     {
-        var d1 = Instant.now();
-        for (int i = 0; i < 1500; ++i)
-            System.out.println("");
-        var d2 = Instant.now();
-        return Duration.between(d1, d2).toMillis();
+        var propertiesCache = PropertiesCache.getInstance();
+        var executor = new HadoopExecuter(
+                propertiesCache.getProperty("InvertedIndexLoc"),
+                propertiesCache.getProperty("InvertedIndexClass"),
+                propertiesCache.getProperty("InputFiles"),
+                propertiesCache.getProperty("IndexFiles")
+        );
+
+        try
+        {
+            executor.execute();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+
+        return executor.getExecutionTime();
     }
 
     public WordResponse search_word(String word)
