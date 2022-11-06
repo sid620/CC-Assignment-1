@@ -41,7 +41,7 @@ We have built three different microservices as a part of this assignment:
                2. ClassName -`GetLines`
                3. InputDirectory - Directory containing the database files
                4. Output Directory - This directory is created by the code. A file is generated named as "part-r-00000" among other files which has the word and the filenumbers,lineNumbers and positionNumbers ALONG WITH THE TEXT for that line.
-               5. PositionString (args[2]) - This contains the position string for that word obtained from the previous file. The server will read the file generated in previous step in a single String and will truncate the {word} and TAB. The rest of the string is passed as a single argument as the third argument to this jar
+               5. SearchWord File Path (args[2]) - This is the path to the directory that contains the output of the previous map reduce job.
          1. Search a Phrase 
             - Two Processes will have to be run one after the other.\
             The first process searches the phrase using the index file.\
@@ -60,13 +60,13 @@ We have built three different microservices as a part of this assignment:
                2. ClassName -`GetPhraseLines`
                3. InputDirectory - Directory containing the database files
                4. Output Directory - This directory is created by the code. A file is generated named as "part-r-00000" among other files which has the word and the filenumbers,lineNumbers, positionNumbers and words ALONG WITH THE TEXT for that line
-               5. PositionString (args[2]) - This contains the position string for the phrase obtained from the previous file. The server will read the file generated in previous step in a single String. All the TAB('\t') characters have to explicitly changed to two separate characters '\\' and 't'. This is because we cannot pass escape characters directly as an argument to a java file. Similarly all the NEWLINE characters needs to be changed to two characters '\\' and 'n'. The java code then finds occurence of the substring "\t" and replaces these two characters backslash and letter t to a TAB again. Similarly the NEWLINE character is replaced.
+               5. SearchPhrase File Path (args[2]) - This is the path to the directory that contains the output of the previous map reduce job.
          2.  Positive Value For files
              1.  Jar File - `PositiveValue.jar`
              2.  ClassName - `PositiveValue`
              3.  InputDirectory - Directory containing the index file
              4.  Output Directory - This directory is created by the code. A file is generated named as "part-r-00000" among other files which has the entries of the form {fileName}TAB{PositiveValueForThatFile} (PositiveValue denotes the number of positive words found in that file)
-             5.  PositiveWords (args[2]) - Space Separated Single String with all the positive words
+             5.  PositiveWordsFile Job (args[2]) - This is the path to the postiveWords.csv file given as a part of this assignement
    ***
    3. Spark Service\
    For the spark implementation, we have a separate java class for each function i.e

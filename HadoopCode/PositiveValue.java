@@ -4,6 +4,7 @@ import java.util.StringTokenizer;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.nio.ByteBuffer;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -16,7 +17,11 @@ import org.apache.hadoop.mapreduce.JobContext;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
-
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.fs.FileStatus;
+import org.apache.hadoop.io.IOUtils;
+import org.apache.hadoop.fs.FSDataInputStream;
 public class PositiveValue {
 
   public static class PositiveValueMapper
@@ -68,10 +73,34 @@ public class PositiveValue {
       context.write(key, new IntWritable(sum));
     }
   }
-
+  public static String getPositiveWordStringFromRaw(String raw){
+    String positiveWords="";
+    String[] lines = raw.split("\n");
+    for(int i=0;i<lines.length;i++){
+      String line = lines[i];
+      String positiveWord = line.substring(line.indexOf(",")+1).trim();
+      positiveWords = positiveWords + " " + positiveWord;
+    }
+    return positiveWords.trim();
+  }
+  public static String readPositiveWords(String positionFilePath, FileSystem fs) throws IOException{
+    Path path = new Path(positionFilePath);
+    String fileContents = "";
+    FSDataInputStream in = fs.open(path);
+    ByteBuffer buffer = ByteBuffer.allocate(4096);
+    while(in.read(buffer)!=-1){
+      byte[] bufferByteArray = buffer.array();
+      String currentStr = new String(bufferByteArray);
+      fileContents = fileContents + currentStr;
+    }
+    String positiveWordString = getPositiveWordStringFromRaw(fileContents);
+    return positiveWordString;
+  }
   public static void main(String[] args) throws Exception {
     Configuration conf = new Configuration();
-    conf.set("positiveWords", args[2]);
+    FileSystem fs = FileSystem.get(conf);
+    String positiveWordString = readPositiveWords(args[2], fs);
+    conf.set("positiveWords", positiveWordString);
     Job job = Job.getInstance(conf, "positive Value");
     job.setJarByClass(PositiveValue.class);
     job.setMapperClass(PositiveValueMapper.class);
