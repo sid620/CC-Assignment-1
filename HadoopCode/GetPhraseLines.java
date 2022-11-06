@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.nio.ByteBuffer;
 // import java.lang.*;
 import java.util.StringTokenizer;
 import java.util.ArrayList;
@@ -15,6 +16,11 @@ import org.apache.hadoop.mapreduce.JobContext;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.fs.FileStatus;
+import org.apache.hadoop.io.IOUtils;
+import org.apache.hadoop.fs.FSDataInputStream;
 
 public class GetPhraseLines {
 
@@ -88,11 +94,31 @@ public class GetPhraseLines {
     }
   }
 
+  public static String readPositions(String positionFilePath, FileSystem fs) throws IOException{
+    Path path = new Path(positionFilePath);
+    FileStatus[] status = fs.listStatus(path);
+    String fileContents = "";
+    for(int i=0; i<status.length;i++){
+      String filePath = status[i].getPath().toString();
+      if(filePath.contains("part")){
+        System.out.println("filePath "+ filePath);
+        FSDataInputStream in = fs.open(status[i].getPath());
+        ByteBuffer buffer = ByteBuffer.allocate(4096);
+        while(in.read(buffer)!=-1){
+          byte[] bufferByteArray = buffer.array();
+          String currentStr = new String(bufferByteArray);
+          fileContents = fileContents + currentStr;
+        }
+        
+      }
+    }
+    String positions = fileContents.substring(fileContents.indexOf("\t")+1).trim();
+    return positions;
+  }
   public static void main(String[] args) throws Exception {
     Configuration conf = new Configuration();
-    String Positions = args[2];
-    Positions = Positions.replace("\\t", "\t");
-    Positions = Positions.replace("\\n", "\n");
+    FileSystem fs = FileSystem.get(conf);
+    String Positions = readPositions(args[2],fs);
     conf.set("Positions", Positions);
     Job job = Job.getInstance(conf, "get phrase lines");
     job.setJarByClass(GetPhraseLines.class);
