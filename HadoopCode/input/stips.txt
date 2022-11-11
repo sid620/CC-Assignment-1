@@ -1,0 +1,206 @@
+     1	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+     2	
+     3	This text contains some informations and tips regarding dos problems/
+     4	sessions. Some might find this really boring, so if you suspect you already
+     5	know all this, skip this message right away.... If you DON'T know so much
+     6	about dos and it's hazzles, you might want to read this. I found out that
+     7	several I know, haven't figured these tips out already! The tips explained
+     8	here ranges from VERY elementary to a bit technical, so if it's top obvious to
+     9	you, don't say that you haven't been warned!
+    10	
+    11	The purpose of this text is to inform. Most of this information is documented,
+    12	but a few tricks are not. Even the tricks that are documented are often
+    13	hard to find and understand. This guide might help you to get the most
+    14	valuable information, without reading and "decoding" all your manuals.. =*)
+    15	
+    16	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    17	
+    18	Don't blame me for typing-errors. I have NOT put so much resources into
+    19	removing spelling-error, so don't expect the text to be errorfree!
+    20	
+    21	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    22	
+    23	HISTORY:
+    24	
+    25	[blahblah]	-	The contents between []'s are to be replaced with
+    26				something suitable, like a program name...
+    27	%a		-	Internal variable used by dos, replace if already
+    28				in use by dos.
+    29	%%a		-	Also an internal variable, except for the fact that
+    30				%%a is required within a batch file, by lame
+    31				command.com ofcourse. Stick with 4dos.
+    32	;		-	Comments. Not to by typed.
+    33	
+    34	()		-	In the text, this contains comments.
+    35				In the syntax'es, it means that the parameter
+    36				is optional.
+    37	
+    38	{}		-	Only the contents is to be concidered as the
+    39				command line.
+    40	
+    41	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    42	
+    43	I RESERVE MY RIGHT TO [ANYTHING] WITH THIS TEXT.
+    44	
+    45	ALL NAMES MENTIONED WITHIN THIS TEXT ARE PRODUCTS AND/OR NAMES OF THEIR
+    46	RESPECTIVE OWNERS/COMPANIES. BUT, THEY MIGHT ALSO NOT BE...
+    47	
+    48	You might not sell this or blablabla, etc, etc..... =*) You know how it is!
+    49	(If you don't, or are uncertain, delete this package right away...)
+    50	
+    51	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    52	
+    53	Anyway here goes... Scorpio's Universal Tips Guide v1.23! .....................
+    54	
+    55	(Hope you don't mind the spelling errors... I Hope you can live with it...)
+    56	
+    57	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    58	
+    59	If you can't afford hd-floppy disks, and still use floppies, buy
+    60	dd ones, and drill a hole in the upper left corner where the hole for hd
+    61	disks usually is. (old trick)
+    62	
+    63	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    64	
+    65	pressing ctrl+p has a devastating effect on those people that don't own a
+    66	printer. Nothing will happen until you press another key. You might want
+    67	to avoid this.
+    68	
+    69	This is actually turning printer echo on and off. Press ctrl+p, and
+    70	what you type, will appear on the printer. If printer connection is not
+    71	made, some os'es will refuse to turn back to dos!
+    72	
+    73	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    74	
+    75	If your computer uses really long time to check your disks when booting, and
+    76	then i mean REALLY long time, create a program in the boot sector which jumps
+    77	to your hd of your choice. A slight modification allows you to boot from
+    78	different harddisks! If you can't code that, do this:
+    79	
+    80	put a disk in drive a: which you won't need for dos sessions anymore.
+    81	(though you CAN use the rest of the disk as raw storage - tricky, not
+    82	 recommended........)
+    83	
+    84	a:
+    85	c:\dos\debug
+    86	l100 2 0 1
+    87	w100 0 0 1
+    88	q
+    89	
+    90	Of course, this won't have any real impact on machines other than most
+    91	286, 186 and 808[6/8], plus the v30 and other slow machines....
+    92	
+    93	This trick only copies the boot sector of your hd to a fd! Replace the number
+    94	"2" with any number, but not bigger than the number that corresponds with Z
+    95	a=0 b=1 c=2 d=3. (You get the idea?)
+    96	
+    97	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    98	
+    99	a ctrl+[the C button] and a ctrl+[the BREAK button (really the pause)]
+   100	is sometimes treated different. But it's really a general rule,
+   101	if you want normal break of a program, and you want to let it end and clean
+   102	up normal, you press ctrl+c. If you want INSTANT break, press ctrl+[break]
+   103	rapidly, which sometimes is more powerful than the normal ctrl+c...
+   104	
+   105	Some programs even let you break the break process! This is a tricky bug,
+   106	that usually appears in dos programs that exploit DPMI. Remember to press
+   107	ctrl+c ONCE, and wait. If you press ctrl+c (or break) rapidly, you might
+   108	hang the program, and dos itself...
+   109	
+   110	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   111	
+   112	Write a INT28 handler to allow processing while dos is IDLE. Remember to
+   113	write your code 100% in conjunction with what microsoft says, or else something
+   114	that works fine with you might not work on another machine, or may not work
+   115	at all with Chicago... When dos is finished with it's core work, it's just
+   116	sitting IDLE and checking for keypresses. You don't need so quick key-response,
+   117	so do something useful in the background instead....
+   118	{kinda technical, or what?}
+   119	
+   120	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   121	
+   122	use 4dos! use 4dos! use 4dos! or AT LEAST any CLI program to replace
+   123	command.com, Virtually EVERYTHING is better than command.com.
+   124	You can find 4dos on selected of BBS'es... If you can't afford the money you
+   125	would have to spend on 4dos, use ndos if you own it. It's a souped-up version
+   126	of 4dos, but as always... The original is better. NDOS is a part of the
+   127	newer norton utilities packages.
+   128	
+   129	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   130	
+   131	If you use UMB's, AND own a 24-bit coloured-card (or 16bit), you might find
+   132	out that you can run into trouble in some of your videocards exotic modes...
+   133	Checking out your manual isn't always going to help you, since it usually
+   134	tells you to exclude out the entire C0000-F0000 area, or does not say anything
+   135	at all. Send your video-card through ALL the modes it's got, and write down
+   136	every 4k block of memory it has been accessing. You might loose some
+   137	UMB-memory, but you will at least (Let's hope so) loose your memory conflict
+   138	problems too.
+   139	
+   140	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   141	
+   142	Format your fd's with sector sliding...
+   143	If you can't do it yourself, let a program do it for you, (like fdformat).
+   144	If you can't guess the best sector/track values, run test benchmarks
+   145	and measure the time used to format disks.
+   146	
+   147	You can do this in a batch file. REALLY!!! I did it!
+   148	
+   149	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   150	
+   151	Pkzip files or directories directly to a ram drive. Now that's performance!
+   152	You can create a batch file to pkzip all files in a directory and below
+   153	+hidden/system +extra compression +automatically testing of zip file
+   154	fits destination +automatically moving. All in a batch file! (It works....!)
+   155	The packing speed usually rises from about 20-30k a second to 100-150k!
+   156	I recommend a real 32bit ramdrive.
+   157	(This applies of course only if your PC has 32-bit capabilities)
+   158	Don't use the lame ramdrive supplied with msdos.....
+   159	
+   160	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   161	
+   162	You can improve your PC's performace by several hundred percent!
+   163	(According to benchmark programs, that is....)
+   164	Start Windows, and open a full-scale dos window, or shell to dos
+   165	from a time-slicing product, then run Norton SI, or another benchmark product.
+   166	I got 260 on norton SI, and according to landmark I have a 522 Mhz
+   167	machine! According to CoreTest, a hard-drive benchmarking program, my hd
+   168	delivers 16 megz per second and have a -0.1 track to track seek time!
+   169	How's that! The controller delivers information even before any program
+   170	requested it! WOOOW! That's intelligent!
+   171	hehehe........, talk about dream machine, or what!
+   172	
+   173	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   174	
+   175	Ok, I guess i have said enough already....
+   176	Most of the above mentioned programs are usually located in several bbs'es.
+   177	Call the biggest one near you, and ask someone for it! I think I only have
+   178	mentioned shareware programs here...., so they should all be available to
+   179	the public... You will definitely find it on the internet. There is a great
+   180	deal of utilityprograms for msdos at SIMTEL20. Can't remember the address,
+   181	though..... =(
+   182	
+   183	If you want to contact me for comments or questions, do so and leave a
+   184	message to me on a bbs. Preferably soundserver, Don't send any comments that
+   185	are really not neccesary, or obvious. I get enough mail by modem already.....
+   186	
+   187	Soundserver has numbers of +47-22-57-16-XX, where XX applies to 00 and 04.
+   188	
+   189	Ok, I guess this have come to an end.
+   190	
+   191	My handle is Scorpio of Nocturnal, and our world head quarters is
+   192	Dream of perfection. Se the tagline at the bottom for how to contact me.
+   193	
+   194	If you REALLY need to call me home. Call one of the above mentioned bbs'es
+   195	and look up my name with "q info kristian skyberg". You can also find my
+   196	address next to the lines where it says "send a postcard....."
+   197	
+   198	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   199	
+   200	Here goes the everchanging tagline:
+   201	
+   202	<${יrP­י> of <ןיגRן/µÀ>
+   203	{/µÀÀ לDrm יf Prג­יןל * ןיגRן/µÀ ×Q At:
+   204	64-94-46-83 * We Are Arranging The Odyssey'95 Party!
+   205	
+   206	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ

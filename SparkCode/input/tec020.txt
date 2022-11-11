@@ -1,0 +1,53 @@
+     1	______________________________________________________________________
+     2	STACKER NOTE                          Stac Electronics Technical Note
+     3	
+     4	Subject: Installing Stacker on an IBM PS/1
+     5	
+     6	Tech020- 2/20/92
+     7	Page 1 OF 1
+     8	______________________________________________________________________
+     9	
+    10	STACKER works great on an IBM PS/1.  However, There are a few things
+    11	you must do before and after installing STACKER on an IBM PS/1.  The
+    12	following step-by-step procedure will prepare your PS/1 for STACKER:
+    13	
+    14	Procedure:
+    15	Note: Step 1 is recommended, but not required.
+    16	
+    17	1. Start IBM DOS from the 4th quadrant screen.  Click on "Backup and
+    18	Restore Your Fixed Disk" and press <Enter>.  Follow the prompts that
+    19	you are given to backup all of the files on your fixed disk.
+    20	NOTE:  The number of diskettes will vary depending on the amount of
+    21	data on your hard disk.
+    22	
+    23	2. Press <Shift>+<F9> to get to the DOS prompt after completing the
+    24	   backup.
+    25	
+    26	3. Type c:\dos\CUSTOMIZ and press the <Enter> key to setup the system.
+    27	   (Customiz can also be run from the IBM DOS quadrant.)
+    28	
+    29	4. The third line from the bottom of the screen says "Read
+    30	   Config.sys:".   Click on "From Disk".
+    31	
+    32	5. The next line down says "Read Autoexec.bat:".  Click on "From Disk".
+    33	
+    34	6. The last line says "Disk to read from:".  Click on "C:".
+    35	
+    36	7. Press <Enter> to save the changes and exit CUSTOMIZ.
+    37	
+    38	8. Restart your system by pressing <Ctrl>+<Alt>+<Del>.
+    39	NOTE:  At this point your computer will boot directly to the DOS
+    40	       prompt.
+    41	
+    42	9. You can now install STACKER by inserting the STACKER diskette and
+    43	   typing:   A:INSTALL /B=C 
+    44	   At the end of the STACKER install let STACKER reboot
+    45	   to access the STACKER drive.  This will again take you to the DOS
+    46	   prompt.
+    47	
+    48	10. To restore the PS/1 system menu, edit the Config.sys on drive C:
+    49	    and insert the line: INSTALL=D:\SHELLSTB.COM (STACKER 2.0 users can use
+    50	    SEDIT to modify Config.sys.)
+    51	
+    52	11. Restart the system for changes to take affect.
+    53	

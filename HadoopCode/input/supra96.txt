@@ -1,0 +1,227 @@
+     1	[11] From: dgsi!ee.rochester.edu!jerry at Internet-Gateway 2/21/92 5:36PM (11258
+     2	 bytes: 221 ln)
+     3	To: VRV at cimage_aa_lan
+     4	Subject: No Subject Given
+     5	------------------------------- Message Contents -------------------------------
+     6	[FILENAME:  SUPRA96.TXT]
+     7	
+     8	Supra Breaks Price Barrier With Powerful SupraFAXModems 14,400 bps Fax
+     9	and Data (V.32bis) Modem for only $399
+    10	
+    11	ALBANY, OR, January 1992 A wide range of features fax, data, voice,
+    12	caller ID, unique status display, small case, and very attractive price
+    13	all combine to make the new SupraFAXModem family of modems from Supra
+    14	Corporation an intriguing new opportunity for computer users.  The
+    15	SupraFAXModem V.32bis features 14,400 bps fax and data for $399.95
+    16	retail, and the SupraFAXModem V.32 features 9600 bps fax and data for
+    17	$299.95 retail.
+    18	
+    19	On the fax side, both modems feature Class 1 and 2 commands,
+    20	compatibility with Group 3 fax machines, and the ability to send and
+    21	receive faxes directly from the computer.  On the data side, both modems
+    22	support communication at speeds ranging from 300 bps to 14,400 bps (9600
+    23	bps for the SupraFAXModem V.32), plus they also support CCITT V.42bis,
+    24	MNP 2-5, and MNP 10 data compression and error correction protocols.
+    25	When using V.42bis (4:1 compression), the SupraFAXModem V.32bis provides
+    26	up to 57,600 bps throughput, and the SupraFAXModem V.32, up to 38,400
+    27	bps throughput.
+    28	
+    29	Both modems also feature a revolutionary status display, which allows
+    30	for an unlimited number of status messages.  In a display that looks
+    31	similar to a digital clock, the modems presently give the user up to 25
+    32	different messages, conveying things like connection rate and type (FX),
+    33	dialing (DI), ringing (RI), and transmission error (TE). This display is
+    34	a great advantage compared with most other modems, whose finite number
+    35	of indicator lights limit how much information they can convey to the
+    36	user.
+    37	
+    38	All of these features are packed into a case about the size of two decks
+    39	of playing cards placed side by side (1" x 4.5" x 6.5") a case that is
+    40	half the size of many other V.32 and V.32bis modems.
+    41	
+    42	All that's needed to use an external SupraModem is a computer
+    43	(or terminal) with an RS-232C interface, communications software, and a
+    44	cable to connect the modem to the computer.  Everything else is
+    45	included:  the modem, operatorUs manual, quick-reference card, power
+    46	adapter, and telephone cable.
+    47	
+    48	Voice & Caller ID
+    49	
+    50	SupraFAXModems also support two important features voice and caller ID
+    51	that can be enabled through low-cost, user-installable firmware upgrades
+    52	available mid-1992. The voice feature allows the modems to send and
+    53	receive digitized voice and implement several voice functions.  The
+    54	modems can compress and uncompress voice data for efficient storage,
+    55	generate and recognize touch tones, and sample at various frequencies,
+    56	depending on the quality level desired.  This feature will be useful for
+    57	interactive applications such as voice mail, answering machines, and
+    58	digital announcers. Caller ID (where available) allows the number from
+    59	which an incoming call was dialed to be displayed on the user's screen
+    60	before the call is answered. This will be useful for secure
+    61	communications, automatic identification of incoming calls, and
+    62	interactive voice applications.
+    63	
+    64	Innovation & Chip Sets Combine For Killer Pricing At $299.95 and $399.95
+    65	retail, respectively, the SupraFAXModem V.32 and SupraFAXModem V.32bis
+    66	are about 1/2 to 1/3 the price of similar modems.  Supra is able to
+    67	offer these prices because of innovative designs and state-of-the-art
+    68	chip sets from Rockwell International.
+    69	
+    70	"We are very excited about the power we're putting into our customers'
+    71	hands, and the outstanding quality we are able to deliver at these very
+    72	affordable prices," said John Wiley, President of Supra Corporation.
+    73	
+    74	In addition to the stand-alone modems, packages that include cables and
+    75	software will be available for IBM PC and Macintosh computers.  IBM PC
+    76	internal models will also be available.
+    77	
+    78	About Supra Corporation
+    79	
+    80	Supra Corporation, based in Albany, Oregon, has been providing personal
+    81	computer users with high-quality, low-cost peripherals since 1985.  The
+    82	SupraFAXModems (including the previously announced 9600 bps fax/2400 bps
+    83	data SupraFAXModem Plus) are the latest additions to the popular
+    84	SupraModem family. Since the original SupraModem 2400 was introduced in
+    85	1987, SupraModems have been popular among consumers looking for
+    86	excellent value in a reliable modem, and have been recommended by a
+    87	variety of sources, from respected PC Magazine and MacUser columnist
+    88	John C. Dvorak to the Berkeley Macintosh User's Group (BMUG). In
+    89	addition to manufacturing a complete line of fax and data modems, Supra
+    90	makes a variety of peripherals for Commodore Amiga computers.
+    91	
+    92	Supra Corporation
+    93	7101 SW Supra Drv
+    94	Albany, OR  97321
+    95	503-967-2400  (main 8-5pst)
+    96	503-967-2401  (Fax)
+    97	503-967-2410  (Sales 7-5pst)
+    98	800-727-8772  (Sales 7-5pst)
+    99	503-967-2440  (Tech Support 9-4pst)
+   100	503-967-2444  (BBS, 2 line v32bis)
+   101	CompuServe       76004,565
+   102	GEnie SupraTech Bix
+   103	SupraCorp American Online  SupraCorp2
+   104	
+   105	
+   106	SupraFAXModem Packages for Macintosh and IBM PC Compatibles Provide
+   107	Everything User Needs
+   108	
+   109	ALBANY,
+   110	OR, January 1992 Supra's two newest modems the SupraFAXModem V.32bis and
+   111	the SupraFAXModem V.32 are available as stand-alone units that work with
+   112	any computer with an RS-232C port, and as packages that include software
+   113	and cables for Macintosh and IBM PC compatible  computers.  The packages
+   114	provide everything the user needs to get started using the modem
+   115	immediately. The Macintosh packages are compatible with System 7 and
+   116	include FAXstf fax software, award-winning MicroPhone 1.5
+   117	telecommunications software, a CompuServe Information Manager starter
+   118	kit and software, and online service offers.  Also included in the
+   119	Macintosh packages are a modem cable, phone cable, and manuals. IBM
+   120	packages are available with internal and external SupraFAXModems for DOS
+   121	and Windows.  Windows packages include Winfax software, online service
+   122	offers, and all required cables and manuals. (Windows comes with its own
+   123	telecom software.)  DOS packages include FaxTalk Plus software, Mirror
+   124	telecommunications software, online service offers, and all required
+   125	cables and manuals.
+   126	
+   127	SupraFAXModem Retail Prices
+   128	
+   129	SupraFAXModem V.32bis Stand-Alone       $399.95
+   130	SupraFAXModem V.32 Stand-Alone          $299.95
+   131	SupraFAXModem V.32bis Macintosh         $479.95
+   132	SupraFAXModem V.32 Macintosh            $379.95
+   133	SupraFAXModem V.32bis IBM PC external   $449.95
+   134	SupraFAXModem V.32bis IBM PC internal   $389.95
+   135	SupraFAXModem V.32 IBM PC external      $349.95
+   136	SupraFAXModem V.32 IBM PC internal      $289.95
+   137	
+   138	DOS or Windows package
+   139	
+   140	Various upgrade offers will let owners of earlier SupraModems upgrade to
+   141	fax capabilities. Supra also has a sysop program for the stand-alone
+   142	versions. The Supra Sales Department can provide customers with more
+   143	information at 1-800-727-8772 or 503-967-2410.
+   144	
+   145	SupraFAXModem Features
+   146	Feature                       SupraFAXModem V.32bis       SupraFAXModem V.32
+   147	Retail Price (Stand-Alone)    $399.95                     $299.95
+   148	Maximum Fax Rate              14,400 bps                  9600 bps
+   149	Class 1 and 2 commands        X                           X
+   150	Group 3 compatible            X                           X
+   151	Send and receive fax          X                           X
+   152	CCITT V.27 ter                X                           X
+   153	CCITT V.29                    X                           X
+   154	CCITT V.17                    X                           X
+   155	Maximum Data Rate
+   156	(without data compression)    14,400 bps                  9600 bps
+   157	Bell 103/212A                 X                           X
+   158	CCITT V.21/V.22/ V.22bis      X                           X
+   159	CCITT V.23                    X                           X
+   160	CCITT V.32                    X                           X
+   161	CCITT V.32bis                 X
+   162	Error correction              X                           X
+   163	MNP 2P4, MNP 10               X                           X
+   164	CCITT V.42                    X                           X
+   165	Data compression              X                           X
+   166	MNP 5 (2:1)                   X                           X
+   167	CCITT V.42bis (4:1)           X                           X
+   168	Max. throughput, MNP 5        28,800 bps                  19,200 bps
+   169	Max. throughput, V.42bis      57,600 bps                  38,400 bps
+   170	Digital status display        X                           X
+   171	Connection status (digital)   3, 6, 12, 24, 48, 72,       3, 6, 12, 24, 48,
+   172	                              96, 120, 144, FX            96, FX
+   173	Error correction status (digital)  LP (V.42bis LAPM),      same as V.32bis
+   174	                                   M2 (MNP 2), M3 (MNP 3),
+   175	                                   M4 (MNP 4), M5 (MNP 5),
+   176	                                   M10 (MNP 10)
+   177	Data compression status (digital)  DC                      same as V.32bis
+   178	Action status (digital)            DI, RI, AA, CD, TE, TM  same as V.32bis
+   179	Single LED status display          OH, RD, SD, TR          same as V.32bis
+   180	Case size                     1" x 4.5" x 6.5"            1" x 4.5" x 6.5"
+   181	
+   182	Upgradable to Voice            X                           X
+   183	Upgradable to Caller ID        X                           X
+   184	5 year limited warranty        X                           X
+   185	Made in the U.S.A.             X                           X
+   186	RATS command compatible        X                           X
+   187	Asynchronous operation         X                           X
+   188	Synchronous operation          X                           X
+   189	Compatible with popular
+   190	  telecommunications software  X                           X
+   191	Automatic adjustment to
+   192	  optimal protocol and rate    X                           X
+   193	Autoanswer/autodial
+   194	  (tone or pulse)              X                           X
+   195	Two modular phone jacks        X                           X
+   196	Adjustable-volume speaker      X                           X
+   197	Front panel ON/OFF switch      X                           X
+   198	Stand-alone version            X                           X
+   199	Macintosh* package1            X                           X
+   200	IBM* PC Windows* package2      X                           X
+   201	IBM PC DOS* package3           X                           X
+   202	
+   203	1 Macintosh packages are compatible with System 7 and include FAXstf* fax
+   204	software, award-winning MicroPhone* 1.5 telecommunications software, CompuServe
+   205	Information Manager* starter kit and software, online service offers, modem
+   206	cable, phone cable, and manuals.
+   207	
+   208	2 Windows packages include Winfax* software, online service offers, cables, and
+   209	manuals.  (Windows comes with its own telecom software.)
+   210	
+   211	3 DOS packages include FaxTalk* Plus software, Mirror* telecommunications
+   212	software, online service offers, cables, and manuals.
+   213	
+   214	Supra Corporation
+   215	7101 SW Supra Drv
+   216	Albany, OR  97321
+   217	503-967-2400  (main 8-5pst)
+   218	503-967-2401  (Fax)
+   219	503-967-2410  (Sales 7-5pst)
+   220	800-727-8772  (Sales 7-5pst)
+   221	503-967-2440  (Tech Support 9-4pst)
+   222	503-967-2444  (BBS, 2 line v32bis)
+   223	CompuServe       76004,565
+   224	GEnie            SupraTech
+   225	Bix              SupraCorp
+   226	American Online  SupraCorp2
+   227	

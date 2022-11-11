@@ -1,0 +1,206 @@
+     1	Shiva at Networld '92
+     2	Shiva Joins Novell Technical Support Alliance
+     3	
+     4	At Networld, Shiva Corporation will announce joining Novell, Inc., and
+     5	other computer industry leaders as a member of the Technical Support
+     6	Alliance (TSA), which gives customers coordinated post-sales support for
+     7	multivendor computing environments. Novell's choice of Shiva as a
+     8	technical alliance partner was a result of an extensive survey of the
+     9	large NetWare user base. TSA members include 30 leading companies such as
+    10	Apple, Borland, Digital Equipment Corporation, Microsoft and others. For
+    11	more details, see the enclosed press release.
+    12	
+    13	Network Discussion Groups
+    14	
+    15	Throughout the show, Shiva will host a series of discussion groups on
+    16	issues surrounding dial-in network access. The groups of network managers
+    17	-over 100 in all will air their views, led by Dr. Eric Almquist, general
+    18	manager of Decision Research Corporation and Lori Underhill, also of DRC.
+    19	To keep the ideas flowing, Shiva also invited industry experts who will
+    20	act as discussion catalysts. For information about trends that emerge in
+    21	the discussion groups, contact Criswell Communications after Networld.
+    22	
+    23	Shiva Booth Demonstrations
+    24	
+    25	Shiva Corporation (booth #3624) will demonstrate a variety of dial-in
+    26	solutions for PC and Macintosh vendor environments, along with its popular
+    27	FastPath 5 LocalTalk-to-Ethernet router.
+    28	
+    29	NetModem/E
+    30	
+    31	Shiva will demonstrate the award-winning NetModem/E, the only dial-in
+    32	networking product that gives PC users transparent access to Novell
+    33	NetWare network data and services, even using graphical programs like
+    34	Lotus Notes and Windows. The NetModem/E supports Novell's IPX and
+    35	AppleTalk, so PC and Macintosh users can dial into a network and access
+    36	resources as if they were local nodes. Other features include shared
+    37	dial-out and network-to-network routing.
+    38	
+    39	The demonstration setup in Shiva's booth includes NetWare 3.11 running on a
+    40	Compaq 386-33 computer along with the Mac NLM (NetWare Loadable Module).
+    41	The network, based on a 10BaseT Ethernet topology, connects two Compaq
+    42	workstations, a Macintosh IIsi, and Apple Computer's PowerBook. Both PCs
+    43	and Macintosh computers can dial out to outside services and dial into the
+    44	Shiva network in Cambridge, MA, through a NetModem/E. The NetModem/E uses
+    45	Shiva's dial-in driver, which is compatible with the ODI (Open Data Link
+    46	Interface) specification from Novell. The workstations can all dial out
+    47	through a single NetModem/E to Shiva's bulletin board or CompuServe, or
+    48	dial into a NetModem at Shiva for network-to-network routing.
+    49	
+    50	FastPath 5
+    51	
+    52	Shiva's FastPath 5, the fastest LocalTalk-Ethernet gateway, and the de
+    53	facto standard for Macintosh routing, will also be demonstrated with
+    54	Shiva's new routing software, called K-Star 9.1, that is faster and uses
+    55	less memory than previous versions. K-Star 9.1 adds more support for SNMP,
+    56	including support for 311 unique MIB objects. Version 2.2.1 of Shiva Net
+    57	Manager, including a new management interface and enhanced diagnostics,
+    58	will also be demonstrated. The Shiva Net Manager lets users manage all
+    59	their FastPaths from anywhere on the internet.
+    60	
+    61	AppleTalk Remote Access Technology Demonstration
+    62	
+    63	Shiva is showing one of the first third-party demonstrations of AppleTalk
+    64	Remote Access. The demonstration setup includes an Apple PowerBook running
+    65	System 7 and AppleTalk Remote Access client software, a 9600 bps modem,
+    66	and a Shiva hardware server and modem connected to an AppleTalk network.
+    67	Using AppleTalk Remote Access and the modem, the remote PowerBook dials
+    68	and connects to the Shiva server, and becomes a full node on the AppleTalk
+    69	network. The PowerBook user can access file servers, printers, or
+    70	electronic mail, as if he or she were directly connected to the network.
+    71	
+    72	User Champions
+    73	
+    74	Shiva salutes its User Champions from Polaroid Corporation, McDonald's and
+    75	others in its booth presentation. Polaroid Corporation uses the NetModem/E
+    76	in an automated identification system that stores digitized photographs,
+    77	fingerprints and data on a central server. Clients in remote locations can
+    78	access identification data using the NetModem/E - a transparent, easy
+    79	solution. McDonald's Corporation also uses the NetModem/E, to give
+    80	regional managers in remote offices access to central databases from
+    81	anywhere.
+    82	
+    83	Expanded Management Team
+    84	
+    85	New management joining Shiva during the last two quarters include Bill
+    86	Avery, VP-Product Development; Paul Chesterman, VP-Finance; Steve Van
+    87	Beaver, Director of Customer Support; Ronna Alintuck, Director of
+    88	Marketing. For more information, see the enclosed release.
+    89	
+    90	About Shiva Corporation
+    91	
+    92	Founded in 1985, Shiva Corporation is a leading supplier of communications
+    93	servers and internetworking products. According to International Data
+    94	Corporation (Framingham, MA), Shiva is the leading AppleTalk
+    95	internetworking vendor, with 56% of the market.
+    96	
+    97	NetModem/E is a trademark of Shiva Corporation. FastPath is a registered
+    98	Trademark of Novell, licensed to Shiva Corporation. All other product
+    99	names are registered trademarks or trademarks of their respective
+   100	companies.
+   101	
+   102	--------------------------------------------------------
+   103	
+   104	Boston, MA, Networld -- February 11, 1992 -- Today Shiva Corporation joined
+   105	Novell, Inc., and other computer industry leaders as a member of the
+   106	Technical Support Alliance (TSA), formed to provide customers with
+   107	coordinated post-sales support for multivendor computing environments.
+   108	
+   109	Novell's choice of Shiva as technical alliance partner was a result of an
+   110	extensive survey of the large NetWare user base. Shiva was recognized as a
+   111	leading supplier of internetworking and dial-in remote access tools for
+   112	Novell customers. Shiva is the only Macintosh hardware product company,
+   113	other than Apple Computer Corp., currently in the Alliance.
+   114	
+   115	TSA members include computer industry leaders such as Apple, Borland,
+   116	Compaq, Digital Equipment Corp., Hewlett-Packard, IBM, Intel, Lotus
+   117	Development Corp., Microsoft, NetFRAME, Oracle, Ungermann Bass, 3Com and
+   118	others. The TSA now includes 30 member companies.
+   119	
+   120	According to Richard King, Novell's Vice President of Service and Support,
+   121	"With companies like Shiva joining the alliance, TSA will continue to
+   122	provide the widest support coverage for complex, multivendor systems in
+   123	the industry."
+   124	
+   125	The Technical Support Alliance agreement between Novell and Shiva outlines
+   126	the responsibilities of a support team that includes technical support
+   127	staff from both companies. Team members exchange training and technical
+   128	information on their respective products and use each other's products in
+   129	their technical support labs. A customer with a technical problem
+   130	involving both companies can call either company to begin resolution of
+   131	the problem. Procedures that involve a conference call between team
+   132	members are defined for problems that require escalation.
+   133	
+   134	Steve Van Beaver, Shiva's Director of Product Support, said "Our
+   135	participation in TSA reflects the fact that internetworking tools, and
+   136	dial-in remote access, are becoming network critical applications. As
+   137	users link multi-platform and multi-protocol environments, tools like
+   138	routers and Shiva's NetModem become virtually as central as the network
+   139	operating system."
+   140	
+   141	The NetModem/E is an integrated network communications server that provides
+   142	remote IBM and compatible PCs and Macintosh computers with transparent,
+   143	secure access to NetWare and AppleTalk Ethernet networks. The NetModem/E
+   144	provides dial-in, shared dial-out, and network-to-network routing for
+   145	PC-only networks, Macintosh-only networks, and mixed networks.
+   146	
+   147	Shiva's FastPath 5, the leading LocalTalk-Ethernet gateway, and NetModem/E,
+   148	a network communications server for Macintosh and PC users, are both
+   149	widely used to integrate Macintosh computers into Novell NetWare
+   150	environments. The FastPath 5 is a multi-protocol LocalTalk-Ethernet
+   151	gateway that routes AppleTalk Phase 1 and 2, TCP/IP, DECnet, IPTalk and
+   152	NFS. It is the de facto standard for AppleTalk to Ethernet routing, with
+   153	an estimated 80 percent of the market.
+   154	
+   155	Shiva's Dramatic Growth Results in Major Support Focus
+   156	
+   157	Shiva, recently recognized as 1 8th on the Inc. 500 list of fastest growing
+   158	companies, has increased its support staff by over 50% during the last
+   159	year. Senior technical support people have been added to the team,
+   160	increasing the bandwidth and quality of the support. The company has also
+   161	put a sophisticated call tracking system in place.
+   162	
+   163	According to Van Beaver, "Shiva has implemented an automated call tracking
+   164	system based on Informix that allows us to create a life history of every
+   165	customer who calls us. It saves both us and our customers valuable time as
+   166	we help solve their problems. Perhaps more important, it provides feedback
+   167	to the entire company about what customers are saying to us."
+   168	
+   169	Since joining the company, Van Beaver has also introduced a customer
+   170	awareness program. As part of the program, every Shiva manager visits or
+   171	phones several accounts each week, requesting feedback on product quality,
+   172	application use, and the customer's overall satisfaction.
+   173	
+   174	Turnaround time is a priority, since networks play a mission-critical role
+   175	in the corporate infrastructure. Said Van Beaver, "We've reduced our
+   176	response time drastically. If a customer calls Shiva, they can feel secure
+   177	that they'll talk with a support technician right away. And if we don't
+   178	meet those expectations, we want to know!" Van Beaver previously managed
+   179	product support at Intersolv (formerly Index Technology), where the
+   180	telephone support group received the best rating in the CASE industry for
+   181	three years running. He manages worldwide support, training and repair for
+   182	Shiva's products.
+   183	
+   184	About Shiva
+   185	
+   186	Shiva Corporation is a leading supplier of dial-in remote access, and
+   187	internetworking tools for Novell, AppleTalk, or mixed networks. Shiva
+   188	products have won critical acclaim for their easy to use peripheral
+   189	sharing, remote access and local- and wide-area network routing. According
+   190	to market research firm International Data Corporation, Shiva Corporation
+   191	is the leading supplier of AppleTalk internetworking systems with 56.1% of
+   192	the market.
+   193	
+   194	Shiva Corp, One Cambridge Center, Cambridge, MA 02142
+   195	617-252-6300
+   196	
+   197	  +---------------------------------------------------------------+
+   198	  |  From the America On-Line & PC-Link New Product Info Services |
+   199	  +===============================================================+
+   200	  | This information was processed with OmniPage Professional OCR |
+   201	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+   202	  | provided by the above mentioned company. For additional info, |
+   203	  | contact the company at the address or phone# indicated above. |
+   204	  |    All submissions for this service should be addressed to    |
+   205	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+   206	  +---------------------------------------------------------------+

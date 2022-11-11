@@ -1,0 +1,3321 @@
+     1	
+     2	
+     3	                      The Modem Dictionary
+     4	                (C) Copyright 1993 R. Scott Perry
+     5	                      All Rights Reserved
+     6	                          Version 1.50
+     7	
+     8	
+     9	
+    10	
+    11	            "What is this, why, and who is this guy?"
+    12	
+    13	     I feel that this dictionary fills a major void.  In my years 
+    14	of using BBS's, I have never seen such a dictionary.  The closest 
+    15	thing I've seen was a text file that had about 40 words listed.  
+    16	These words included "RAM" "ROM" "Microcomputer" "Telex" and a 
+    17	bunch of other words that aren't really that important to under-
+    18	stand computer telecommunications.  I've seen some books about 
+    19	"modeming" in bookstores, but they tend to be expensive ($15-
+    20	$49), and I don't recall seeing any dictionaries of terms relat-
+    21	ing to modems.  Also, many terms are easy to confuse and it can 
+    22	be very difficult to find definitions for these terms.  I have 
+    23	seen terms used incorrectly in advertisements by modem manufac-
+    24	turers and in many magazine articles.  I hope that this diction-
+    25	ary can be used as a good source of reference for confusing 
+    26	terms.
+    27	
+    28	     Why do I feel qualified to write a dictionary such as this?  
+    29	I bought my first modem more than seven years ago and have been 
+    30	using computers for twice as long.  Not only have I used many 
+    31	different computers and modems, I have seen the days where 
+    32	1200bps BBS's were rare because most people had 300bps modems.  
+    33	For about a year I ran my own BBS, which was quite successful at 
+    34	the time.  While I only had about 150K of storage for messages 
+    35	and files, I was able to get over 500 users in that year.  I have 
+    36	also gathered, read, and searched through hundreds of text files, 
+    37	magazines, and program documentation, just to help define words 
+    38	and find new words for this dictionary.  I have also spoken to 
+    39	representatives of major companies to help find out the truth 
+    40	behind the more confusing terms.
+    41	
+    42	
+    43	
+    44	                           LEGAL STUFF
+    45	
+    46	
+    47	     This dictionary is provided with no warranty of any kind.  
+    48	The author and/or distributor will not be liable for any conse-
+    49	quences resulting from the use of this information.  This is a 
+    50	field where misconceptions abound.  Although to the best of our 
+    51	knowledge all information is accurate, we can not guarantee its 
+    52	accuracy.  
+    53	
+    54	
+    55	
+    56	                              NOTES
+    57	
+    58	
+    59	Note 1:  It was difficult to decide what words to include and 
+    60	what words not to include.  I tried to include every term relat-
+    61	ing to computer telecommunications that the average user needs to 
+    62	know, or might come across and be curious about.  Some words 
+    63	(such as PSK) are easily found in manuals for modems, but are 
+    64	hard to find definitions for.  I tried to include as many of 
+    65	these as possible.
+    66	
+    67	Note 2:  Since there are so many words defined here, and many of 
+    68	them are complex and easily misunderstood, I wouldn't be sur-
+    69	prised if there are a couple errors of some sort.  I tried to be 
+    70	as careful as I could, but it is possible that there may be some 
+    71	mistakes.  If you notice any mistakes, or have suggestions of 
+    72	words to add (or take out), feel free to write to me.  I'll 
+    73	correct any mistakes in future versions.
+    74	
+    75	
+    76	
+    77	                MAKING COPIES OF THIS DICTIONARY
+    78	
+    79	
+    80	     This dictionary is being marketing as freeware.  It is copy-
+    81	righted, and you may not make any changes to it without my per-
+    82	mission. 
+    83	
+    84	O You may give copies to anyone you know.
+    85	
+    86	O Any BBS may have this dictionary available for downloading.
+    87	
+    88	O Any shareware distributors (including CD-ROM developers) may 
+    89	distribute this.  I'd really appreciate a note saying that you 
+    90	are doing so.
+    91	
+    92	O If you SELL any communications products, and wish to distribute 
+    93	this dictionary with your product(s), you MUST get my permission 
+    94	first (if you do not, it is considered copyright infringement).  
+    95	Send requests to the address listed below.
+    96	
+    97	O If you wish to QUOTE this dictionary in any media, such as in 
+    98	an article for a computer magazine, you must let me know.  Just 
+    99	send a note to the address below.
+   100	
+   101	
+   102	
+   103	                            PAYMENT?
+   104	
+   105	
+   106	     I've obviously put in countless hours over the past 4 years 
+   107	creating this dictionary.  Just searching through new articles 
+   108	and information to find new words takes hours.
+   109	
+   110	     As mentioned above, this dictionary is being marketed as 
+   111	freeware.  Feel free to use it as much as you want.  If you find 
+   112	that you are benefiting from it, I'd appreciate something.  A 
+   113	letter of thanks or some input would be very welcome.
+   114	
+   115	     I'd love to hear how you are using this dictionary.  Since 
+   116	its first release in 1989, the dictionary has been used:  in 
+   117	training courses run by modem manufacturers; as a reference for 
+   118	term papers for school; as a reference for an article for a Bar 
+   119	Association; by SysOps for new user messages; and more.
+   120	
+   121	
+   122	
+   123	                  "How do I reach the author?"
+   124	
+   125	
+   126	     I appreciate your input.  If you notice an error, or a word 
+   127	that is not included, or have praise/complaints, want to let me 
+   128	know how you are using the dictionary, or for any other reason, 
+   129	feel free to write to me.  I'm always looking to improve the 
+   130	dictionary.  Send any comments/suggestions/notices/etc. to:
+   131	
+   132	R. Scott Perry
+   133	178 Morton Street
+   134	Newton Centre, MA  02159
+   135	
+   136	
+   137	Hopefully, at some point there will be a BBS to call to get the 
+   138	latest version of the Telecommunications Dictionary, as well as 
+   139	to use as an easy way to contact me.  Until then, you can get
+   140	the latest version from Computerized Horizons.  You can write
+   141	to them at 2490 Black Rock Turnpike #309, Fairfield, CT 06430.
+   142	
+   143	
+   144	I hope you enjoy this dictionary!
+   145	
+   146	
+   147	
+   148	
+   149	                     Notes about the entries
+   150	                     ----- ----- --- -------
+   151	
+   152	* [Also called <entry>] and [Same as <entry>] mean that there are 
+   153	more than one word for a certain concept.  Do not bother looking 
+   154	at <entry>, it will just refer you back to the original entry.
+   155	
+   156	* [See also <entry>] at the end of a definition refers you to 
+   157	more information or an entry that may help you understand the 
+   158	original entry better.  Also, a word and it's opposite will often 
+   159	refer to each another.
+   160	
+   161	* [See <entry>] appearing directly after the term indicates that 
+   162	the definition is the same as <entry>, and you should look there.
+   163	
+   164	* BBS is used here generically to denote any service that you can 
+   165	call up with your computer, whether it is a bulletin board, a pay 
+   166	service, or even a mainframe.
+   167	
+   168	* Some entries refer to computers in general, but an understand-
+   169	ing of them is sometimes needed to understand other entries.
+   170	
+   171	
+   172	
+   173	
+   174	
+   175	                         The Dictionary
+   176	                         --- ----------
+   177	
+   178	
+   179	
+   180	
+   181	---Numbers---
+   182	
+   183	
+   184	
+   185	8N1 - The most common modem format.  [See also format].
+   186	
+   187	42A Block - This is a box about two inches square, with a modular 
+   188	jack, that separates the wires coming from the phone company.  
+   189	You can plug a phone or modem into this jacking, using a modular 
+   190	cord.  [See also modular cord, modular jack, modular plug].
+   191	
+   192	103 - Officially, `Bell 103' which is the standard controlling
+   193	transmission at 300 bps in the United States.  It was created by
+   194	AT&T.  [See also 212A, V.21].
+   195	
+   196	212A - Officially, `Bell 212A' which is the standard controlling 
+   197	transmission at 1200 bps in the United States.  It was created by 
+   198	AT&T.  [See also 103, V.22].
+   199	
+   200	300 bps (baud) - A transmission speed that is now almost never 
+   201	used, although most modems will allow communication at the speed 
+   202	(since it was common in the early 1980's).  It is roughly equal 
+   203	to 30 characters per second.
+   204	
+   205	1200 bps (baud) - In the mid 1980s this was the most common 
+   206	transmission speed, until 2400 bps became popular/cheaper.  It is 
+   207	roughly equal to 120 characters per second.
+   208	
+   209	2400 bps (baud) - A fairly high-speed transmission speed that 
+   210	towards the end of the 1980s gained popularity.  It is roughly 
+   211	equal to 240 characters per second.
+   212	
+   213	3400 hertz - The highest pitch that a telephone line will trans-
+   214	mit.  This cutoff limits the ways in which computers can communi-
+   215	cate over telephone lines.
+   216	
+   217	8250 UART - The UART used for the communications ports on most 
+   218	older computers.  [See also UART].
+   219	
+   220	9600 bps (baud) - This, along with 14,400 bps are the 2 standard 
+   221	speeds for high-speed modems.  It can transmit and receive ap-
+   222	proximately 960 characters per second (without compression).
+   223	
+   224	14400 bps - Currently, the fastest standard speed for high-speed 
+   225	modems.
+   226	
+   227	16450 UART - The UART used with some 286 computers.  [See also 
+   228	UART].
+   229	
+   230	16550 UART - This is the UART used with most newer computers and 
+   231	high speed modems.  There are several variations, but they all 
+   232	include one main feature: they include buffering, so that if data 
+   233	comes in or is sent faster than the computer/modem can accept it, 
+   234	the UART will hold the data (up to 16 bytes) until the 
+   235	computer/modem is ready for it.  [See also UART].
+   236	
+   237	16550A UART - See 16550 UART.
+   238	
+   239	16550AF UART - See 16550 UART.
+   240	
+   241	16550AFN UART - See 16550 UART.
+   242	
+   243	
+   244	
+   245	---A---
+   246	
+   247	
+   248	
+   249	abort - [1] The command word used with editors that allows you to 
+   250	exit, destroying your message.  [2] The character used to stop 
+   251	characters from a block of text appearing on your screen.  Usual-
+   252	ly the spacebar or CTRL-X are used to abort a message.
+   253	
+   254	access - Refers to an intangible amount (usually represented by a 
+   255	security level or flags) that indicate to what extent you are 
+   256	allowed to use a BBS.  When used in a term such as `you will be 
+   257	granted access', it means the amount of access that new users 
+   258	will generally receive.
+   259	
+   260	account - A term that refers to information that a BBS has about 
+   261	you.  It is usually referred to by an ID number or your name.  
+   262	The information it contains can include any information that you 
+   263	have at some point given the BBS, usually including your name, 
+   264	phone number, and security level.  [See also user number].
+   265	
+   266	account number - See user number.
+   267	
+   268	Acculink - A packet switched network that is used to save money 
+   269	on long-distance telecommunications.
+   270	
+   271	ACK - A character (CTRL-F) that ACKnowledges something, usually 
+   272	that a certain amount of data has been received correctly.  [See 
+   273	also NAK].
+   274	
+   275	acoustic coupler - This was common many years ago, but rare now.  
+   276	It is a cradle in which you would place the handset of a phone.  
+   277	This would be connected to a modem, and the modem would access 
+   278	the phone line through this coupler.  Modern modems connect 
+   279	directly to the phone line.  [See also acoustic modem].
+   280	
+   281	acoustic modem - A modem that uses an acoustic coupler.  [See
+   282	also acoustic coupler].
+   283	
+   284	adaptive data compression - See ADC.
+   285	
+   286	adaptive dialing - When a modem can determine whether to dial
+   287	pulse or tone.  It will try dialing with tones first.  If that
+   288	doesn't work, it will dial pulse.
+   289	
+   290	adaptive equalization - Modems that have this feature "listen" to 
+   291	the phone line to find the bandwidth with the least noise, and 
+   292	use that part of the band for transmission.  This allows for less 
+   293	interference from noise.
+   294	
+   295	ADC - Adaptive Data Compression.  A method of data compression
+   296	developed by Hayes, with a possible compression ratio of 2:1.
+   297	
+   298	alias - A name that users can use on a bulletin board that is not 
+   299	their own.  Aliases are usually used by young BBS users and those 
+   300	who pirate software or do other illegal activities.  Some exam-
+   301	ples of aliases are `Cracker Kid', `Starbuck', and `Midnight 
+   302	Killer'.  [Also called handle].  [See also user name].
+   303	
+   304	ampersand - A character (&) that usually means `and'.
+   305	
+   306	analog - As far as electronic signals are concerned, analog 
+   307	refers to signals that can represent an infinite range of num-
+   308	bers, as opposed to digital which can only be distinct whole 
+   309	numbers.  Analog data often comes from measurements.  The sound a 
+   310	modem makes over the phone is analog since it can be any of a 
+   311	number of different frequencies.  [See also digital].
+   312	
+   313	anonymous - Refers to a message, where the author was able to 
+   314	leave out his name.  On some BBS's you are allowed to post anony-
+   315	mous messages so that others won't know who you are.  The SysOp 
+   316	usually can find out who the author is, however.
+   317	
+   318	ANSI - ANSI is an organization that sets standards.  ANSI graph-
+   319	ics, however, is a set of cursor control codes which originated 
+   320	on the VT100 smart terminal.  Many BBS's use these codes to help 
+   321	improve the sending of characters to communications programs.  It 
+   322	uses the escape character, followed by other characters, which 
+   323	allows movement of the cursor on the screen, a change of color, 
+   324	and more.
+   325	
+   326	answering computer - This is the computer that is being called.  
+   327	Therefore, it is usually the BBS or mainframe. [See also origi-
+   328	nating computer].
+   329	
+   330	answering machine - See voice mail.
+   331	
+   332	answer frequency - The frequency of the carrier that a modem uses 
+   333	when it has been called by another computer.  [See also originate 
+   334	frequency].
+   335	
+   336	answer mode - When a modem is ready to pick up the phone when it 
+   337	rings.  After picking up the phone, the modem will attempt to 
+   338	make a connection with another modem.  All BBS's are in answer 
+   339	mode.  [See also originate mode].
+   340	
+   341	apostrophe - The character '.  It is usually used in contractions
+   342	of words, such as "don't".
+   343	
+   344	ARC - When a filename has the extension ARC, it means that it is 
+   345	an archive that has been compressed with the program PKARC.  To 
+   346	get the files out of the archive, you need to use the program 
+   347	PKXARC.  You should be able to find this program on many BBS's.  
+   348	[See also archive, unarchive].
+   349	
+   350	archive - [noun] A group of programs that are together, usually 
+   351	compressed, in one file.  [verb] the process of combining those 
+   352	files.  There are a number of software packages which will com-
+   353	press files into an archive, and most programs on BBS's have been 
+   354	archived with one of these software packages.  [See also unar-
+   355	chive, compress, ZIP, ARJ, ARC, PAK, LZH].
+   356	
+   357	area code - The 3-digit number used by the telephone company to 
+   358	designate a geographic area.  Each state in the United States has 
+   359	1 or more area codes.  If you call a phone number in a different 
+   360	area code, you must dial "1" and then the area code before the 
+   361	phone number.  If you call a number within your area code, you 
+   362	just dial the phone number (if it is long distance within your 
+   363	area code, you must dial "1" and then the number).
+   364	
+   365	ARJ - [1] A file extension that indicates that the file was com-
+   366	pressed with the program ARJ.  [2] The program ARJ, used to 
+   367	archive and un-archive files with the ARJ extension.  [See also 
+   368	archive, unarchive].
+   369	
+   370	ASCII - An acronym for American Standard Code of Information 
+   371	Interchange.  It uses 7 bits to represent all uppercase and 
+   372	lowercase characters, as well as numbers, punctuation marks, and 
+   373	other characters.  ASCII often uses 8 bits in the form of bytes 
+   374	and ignores the first bit.  [See also EBCDIC].
+   375	
+   376	ASCII transfer - When a text file is sent directly as it is, 
+   377	without any special codes.
+   378	
+   379	asterisk - The character *.
+   380	
+   381	asynchronous communication - This is when the beginning and end
+   382	of each byte that is sent over the phone lines is marked somehow.
+   383	This way, if there is line noise, the modem can find out right
+   384	away where the next byte should start.  [See also synchronous
+   385	communication].
+   386	
+   387	AT command - Any instructions sent to a modem that begin with 
+   388	"AT".  See also Hayes AT command set.
+   389	
+   390	AT command set - See Hayes AT command set.
+   391	
+   392	at sign - The character @.  Often read as 'at'.
+   393	
+   394	AT&T - American Telephone and Telegraph, the inventors of the 
+   395	first modem.
+   396	
+   397	attended mode - This is the mode that a communications program is 
+   398	in while you are operating it.  [See also unattended mode].
+   399	
+   400	attention characters - The letters "AT", which get the modem's 
+   401	attention that you are about to send it a command.  [See also 
+   402	Hayes AT command set].
+   403	
+   404	audio monitor - A speaker that is included as part of a modem.  
+   405	It allows you to listen to whatever sound is on the phone line.  
+   406	This is often used to let you hear busy signals or make sure that 
+   407	the other modem picks up the carrier.
+   408	
+   409	auto-answer - When a modem has the ability to automatically pick 
+   410	up the phone when the phone rings and then attempt to connect 
+   411	with another computer.
+   412	
+   413	auto-answer LED - When this LED (found on some external modems) 
+   414	lights up, it means that the modem is ready to answer the phone 
+   415	when the phone rings (it will then try to connect to another 
+   416	modem).  If it is not lit, the modem will not answer the phone.  
+   417	[See also LED indicators].
+   418	
+   419	auto-baud detect - The ability of a modem to change to a lower 
+   420	bps rate if the computer it is calling is unable to communicate 
+   421	at the requested speed.
+   422	
+   423	auto-dial - When a modem is capable of dialing a phone number, so 
+   424	that you don't have to dial manually.  Almost all modems have 
+   425	this ability.
+   426	
+   427	auto-download - The feature of some file transfer protocols 
+   428	whereby a BBS can automatically make your communications program 
+   429	start a download or upload (if your communications program has 
+   430	this capability too).  This saves some time for the user, who 
+   431	would otherwise have to set up his program to upload or download.
+   432	
+   433	auto fall-back - See fall-back.
+   434	
+   435	auto-kill - A feature on some BBS's that will delete a message on
+   436	a board if a certain threshold limit is reached.  For example, a
+   437	BBS might delete the second message on a board if there are
+   438	already 100 messages and someone posts another message.  This 
+   439	would limit the board to 100 messages, but still keep the first 
+   440	message (which is usually left by the SysOp).
+   441	
+   442	auto-redial - A feature that allows a modem or a communications 
+   443	program to dial a number again after it finds out that the number 
+   444	is busy.  This is very handy when trying to get through to popu-
+   445	lar bulletin boards that are often busy.
+   446	
+   447	auto-reliable - The ability of a modem to be able to communicate 
+   448	both with modems that do have error-control and/or data compres-
+   449	sion, and those that do not.
+   450	
+   451	auto-reply - To send a message (either public or private) immedi-
+   452	ately after reading a message on a BBS.  Usually, this is used to 
+   453	respond to the author of the original message.
+   454	
+   455	auto-syncing driver - This is the part of a BBS program that 
+   456	automatically determines the bps rate of a caller.  [See also 
+   457	manual-syncing driver].
+   458	
+   459	auto-typing - This is when a communications program can upload 
+   460	information to a BBS as if the user were typing in the informa-
+   461	tion.  For example, the user might type a message into a file, 
+   462	and then the communications program can send it to a BBS (which 
+   463	assumes the user is actually typing the message) to post as a 
+   464	message.
+   465	
+   466	
+   467	
+   468	---B---
+   469	
+   470	
+   471	
+   472	backdoor - A way of getting into certain BBS's and getting full 
+   473	access, without using a regular account.  Usually the author of 
+   474	the BBS program built the backdoor into the program so that he 
+   475	could get access to any BBS running his software.  Backdoors are 
+   476	less common today than they used to be.
+   477	
+   478	background send/receive - The ability of a fax/modem to send or 
+   479	receive faxes while the computer is being used for other pur-
+   480	poses.
+   481	
+   482	backslash - The character \.
+   483	
+   484	backspace - The character (CTRL-H) that causes the cursor on your
+   485	screen to move back one space.  [See also destructive backspace,
+   486	non-destructive backspace].
+   487	
+   488	bandwidth - A range of radio, audio, or other frequencies.  
+   489	Telephone lines have a bandwidth from 300 hertz to 3400 hertz.  
+   490	Since it is so limited, a modem must carefully change data into 
+   491	sounds that "fit" within this range.  Similar to frequency spec-
+   492	trum.
+   493	
+   494	bannerware - A software program that is free to use and copy, but 
+   495	advertises another program or product.  [See also public domain].
+   496	
+   497	batch file transfer - This is when more than one file is sent at 
+   498	a time by a file transfer protocol.  The user will tell the BBS 
+   499	what files he wants, and then the BBS will send all the files 
+   500	before the user needs to do anything else.
+   501	
+   502	baud - A term referring to the speed at which modems communicate.  
+   503	Technically, it is the number of changes in an electronic signal 
+   504	per second.  Since the number of changes used to be the same as 
+   505	the number of bits sent or received per second, bps and baud are 
+   506	often used interchangeably.  However, there is a difference, 
+   507	which is very often confused.  For example, many 1200bps modems 
+   508	were advertised as 1200 baud, even though they operate at 600 
+   509	baud.  They send out 2 bits 600 times a second, which means that 
+   510	it is 600 baud.  However, since it is so often misunderstood, you 
+   511	can assume that when you see "baud" it means bits per second, 
+   512	unless it is stated otherwise.  The term comes from the scientist 
+   513	J. M. E. Baudot.  [See also bps, dibit].
+   514	
+   515	BBS - An acronym for Bulletin Board System.  Usually it is a home 
+   516	computer that has a modem attached and is waiting for calls from 
+   517	other computers.  It can, however, also refer to commercial serv-
+   518	ices (such as CompuServe and Prodigy) and any other computers 
+   519	that you can call via telephone lines. BBS's almost always allow 
+   520	you to leave messages for other users.  Most BBS's have programs 
+   521	that you can download and use on your computer.  BBS can also be 
+   522	expanded more simply to `bulletin board'.
+   523	
+   524	BCC - Block Check Character.  This is used to help make sure that 
+   525	a group of data has not been accidentally altered.
+   526	
+   527	Bell 103 - See 103.
+   528	
+   529	Bell 212A - See 212A.
+   530	
+   531	bisync - Refers to a modem that synchronizes with an electronic 
+   532	signal over the telephone lines that marks the beginning of 
+   533	blocks of data.  It is one of a number of synchronous protocols.
+   534	
+   535	bit - A Binary digIT.  It is a number in base 2 (binary), which 
+   536	means that it can only be a 0 or a 1.  It is used in the expres-
+   537	sion `bits per second'.  [See also byte].
+   538	
+   539	bitstream - BBS's and related activities.  For example, you could 
+   540	say that a lot of public domain programs can be found in the 
+   541	bitstream.
+   542	
+   543	blind dial - This is when a modem will dial a number without 
+   544	waiting for a dial tone.  Some long-distance telephone services 
+   545	require a number to be dialed, even though there is no dial tone.  
+   546	In this case, your modem should be set to blind dial.
+   547	
+   548	block - A group of data bytes.  For example, when downloading a 
+   549	program, blocks of 128 or 1024 characters are often sent.
+   550	
+   551	block check character - See BCC.
+   552	
+   553	block size - This term, when used with either error control or 
+   554	data compression protocols, refers to the number of characters to 
+   555	be sent at one time.  If error control is used, the codes are 
+   556	sent immediately following this block.  Typical block sizes are 
+   557	64, 128, 192, or 256 characters.  Small block sizes are better 
+   558	when the line quality is bad (such as for long distance calls), 
+   559	while large block sizes are better during good connections (such 
+   560	as for local calls).
+   561	
+   562	board - [1] See BBS.  [2] See message base.
+   563	
+   564	bps - Bits Per Second.  The transmission speed of most modems is 
+   565	measured in baud or bps.  Bps is literally the number of bits 
+   566	sent by the modem every second.  [See also baud].
+   567	
+   568	braces - The characters { and }.  [See also left brace, right 
+   569	brace].
+   570	
+   571	brackets - The characters [ and ].  [See also left bracket, right 
+   572	bracket].
+   573	
+   574	break signal - This is a signal sent from one modem to another 
+   575	that lasts for about a second.  It is sometimes used to try to 
+   576	clear up synchronization problems.  On CCITT V.42 modems, there 
+   577	are more specialized procedures involved with the break signal, 
+   578	such as regarding the timing.  In V.42 there are three kinds of 
+   579	break signals.  [See also expedited signaling, destructive sig-
+   580	naling, in sequence signaling].
+   581	
+   582	browse - To go through the list of titles of messages or files on 
+   583	a BBS and note which ones you want to read.
+   584	
+   585	buffer - [1] (verb) To save all incoming data in memory.  [2] 
+   586	(verb) to temporarily save incoming data until the computer has a 
+   587	chance to process it.  [3] (noun) The place in memory where the 
+   588	saved information is stored, as in "I have a 32K buffer."
+   589	
+   590	bulk mailing - Used on a BBS when you send the same message to 
+   591	more than one person.  This saves you from having to rewrite the 
+   592	message.  [See also E-mail].
+   593	
+   594	bulletin - A special message posted on a BBS, usually written by 
+   595	the SysOp.  In most cases all users are expected to read any new 
+   596	bulletins that may have been posted since their last call.
+   597	
+   598	bulletin board - [1] See BBS. [2] Sometimes same as message base.
+   599	
+   600	bulletin board system - See BBS.
+   601	
+   602	busy - When a bulletin board is being used by as many users as it 
+   603	can handle, which is when all the telephone lines are being used.
+   604	
+   605	busy signal - The sound that you hear on a phone when the phone 
+   606	number you are trying to reach is in use (busy).  It usually 
+   607	consists of 60 cycles per minute.  [See also audio monitor].
+   608	
+   609	byte - A group of 8 bits.  It usually represents one character.
+   610	[See also ASCII].
+   611	
+   612	
+   613	
+   614	---C---
+   615	
+   616	
+   617	
+   618	call back unit - A device that can be attached to the phone line 
+   619	of a BBS to make it more secure.  After you connect with the BBS 
+   620	and tell it who you are, the device will then call your phone 
+   621	number.  This is used to make a very secure system to help pre-
+   622	vent hackers from invading a system.  It then becomes very diffi-
+   623	cult, if not impossible, for a hacker to get into the computer 
+   624	system.
+   625	
+   626	caller - Anyone who connects with a BBS.  It is usually used in a 
+   627	phrase such as "You are caller #4328."
+   628	
+   629	caller I.D. - A code that is sent over the phone lines in some 
+   630	areas when a person makes a phone call.  This code includes the 
+   631	phone number of the person making the call.  Some modems are able 
+   632	to understand this signal, and let you know who is calling you 
+   633	before you answer the phone.
+   634	
+   635	caller log - A list of callers who have called a BBS within a 
+   636	given time period.  The list may also keep information such as 
+   637	the bps rate of the caller.  This is used so that the SysOp can 
+   638	keep track of users, as well as any hackers, if they call the 
+   639	BBS.
+   640	
+   641	call progress monitoring - This is when your modem tells you what 
+   642	is happening when you dial another computer.  It will tell you 
+   643	that it has dialed the number, if the number is busy, if you 
+   644	connect, etc.
+   645	
+   646	call waiting - A service that the phone company offers that 
+   647	allows the customer to hear a special sound on the phone if there 
+   648	is an incoming call while the customer is talking on the phone.  
+   649	The customer can then talk with either caller.  This is a nice 
+   650	service unless you have a modem and call BBS's.  If you are 
+   651	connected with a BBS and someone else calls you, you will be 
+   652	disconnected.  In most areas there is a special 2 or 3 digit 
+   653	number that you can dial before a phone call that will disconnect 
+   654	call waiting for that call.  If you have call waiting, check your 
+   655	phonebook or call the phone company to find out how to disconnect 
+   656	call waiting.
+   657	
+   658	capital letters - See uppercase.
+   659	
+   660	capture - To 'catch' text that is being sent to your computer 
+   661	from a BBS and put it in a buffer or a file.
+   662	
+   663	capture buffer - The area in a computer's memory where a communi-
+   664	cations program stores incoming data that is to be saved.  [Also 
+   665	called capture memory].  [See also buffer].
+   666	
+   667	capture memory - See capture buffer.
+   668	
+   669	card (peripheral) - Any computer peripheral that can be connected 
+   670	directly, inside a computer.  Internal modems are usually periph-
+   671	eral cards.
+   672	
+   673	caret - The character ^.
+   674	
+   675	carriage return - See return.
+   676	
+   677	carrier - The tone that the modem sends over the phone lines 
+   678	before any data is sent on it.  It has a fixed frequency and a 
+   679	fixed amplitude.  It is then modified to indicate data.
+   680	
+   681	carrier detect - The wire in an RS-232C cable that holds the 
+   682	information as to whether or not the modem senses a carrier (and 
+   683	therefore is connected to another computer).  [Also called CD].
+   684	
+   685	carrier detect threshold - A way of measuring how well a modem
+   686	can detect valid data over noisy phone lines.  It is measured in
+   687	negative dBm's (decibel-milliwatts).  The bigger the number (the
+   688	more negative) the better.  For example, -45 dBm is better than
+   689	-40 dBm.  [Same as receive sensitivity].
+   690	
+   691	carrier detect LED - This LED will light up on an external modem 
+   692	when it senses a carrier on the phone line.  This indicates that 
+   693	the modem is connected to another modem.  [See also LED indica-
+   694	tors].
+   695	
+   696	carrier frequency - This is the frequency which a modem uses to
+   697	transmit or receive data.
+   698	
+   699	carrier loss time - The amount of time your modem will remain on 
+   700	the line when the carrier is lost.  It will stay on the line for 
+   701	this amount of time, to see if the carrier comes back.  If the 
+   702	carrier does not come back, the modem will hang up the phone 
+   703	line.
+   704	
+   705	CB simulator - A computer service where there are multiple phone 
+   706	lines (usually at least 5).  The CB simulator allows all the 
+   707	users to send messages to one another while they are on-line.  It 
+   708	usually allows you to send both public messages that everyone who 
+   709	is on-line can see and private messages that only one specific 
+   710	user can see.
+   711	
+   712	CCITT - International Telegraph and Telephone Consultative Com-
+   713	mittee.  This group, created by the United Nations, establishes 
+   714	certain standards for data transmission.  Their transmission, 
+   715	data compression, and error control standards all begin with V, 
+   716	for example V.22.  To find the standards in this dictionary, look 
+   717	up the standard name, i.e. V.42.
+   718	
+   719	CD - See carrier detect.
+   720	
+   721	character - Any letter, numeral or symbol.  [See also ASCII].
+   722	
+   723	character format - See format.
+   724	
+   725	characters per second - The number of bytes or characters that 
+   726	can be sent over the phone lines in 1 second.  This is determined 
+   727	by dividing the bps rate by the number of bits it takes to send 
+   728	one byte (usually 10--the start bit, 8 bits of data, and the stop 
+   729	bit).  So, a 2400bps modem can send 240 characters per second 
+   730	(2400/10).  [Same as CPS].
+   731	
+   732	chat - A mode that allows two or more people (almost always a 
+   733	SysOp and a user on a BBS) to communicate directly with each 
+   734	other using the modem.  Usually, each person can see what the 
+   735	other is typing at all times and can interrupt them (a beeping 
+   736	sound with a CTRL-G is useful to interrupt with).  [See also page 
+   737	(verb)].
+   738	
+   739	chat mode - This is when a communications program is set up so 
+   740	that the user can "chat" with someone on the other end of the 
+   741	line.  One way this can work is that anything that is typed by 
+   742	the other person is printed on the top half of the screen, but 
+   743	anything you type would appear on the bottom half of the screen.  
+   744	[See also chat].
+   745	
+   746	checksum - A number that represents a larger group of numbers in 
+   747	order to check for errors in data transmission.  It is commonly 
+   748	used when downloading a program, as well as in error control 
+   749	protocols.  The checksum is the result of a mathematical equa-
+   750	tion, such as adding all the numbers in a block together (al-
+   751	though it is usually more complex than that).
+   752	
+   753	chip set - A group of important IC chips on a modem (or other 
+   754	computer peripheral) that are all made by the same manufacturer.  
+   755	While there are many companies that make modems, there are only a 
+   756	few that make the chips for them.  Because the chip manufacturer 
+   757	is making the chips for many companies, they produce more chips, 
+   758	and the price of the chips is lower than if each company produced 
+   759	their own.  This decreases the price of the modems on the market.
+   760	
+   761	Christensen protocol - See Xmodem.
+   762	
+   763	circular dialing queue - This is used in some communications 
+   764	programs to allow you to enter a list of phone numbers to call, 
+   765	and it will keep going through the list and dialing numbers until 
+   766	it reaches one of them.  This is useful if you are trying to 
+   767	reach BBS's that are often busy.
+   768	
+   769	city code - With many foreign countries, you need to dial a city 
+   770	code before the phone number you are trying to reach.  You must 
+   771	dial the country code before the city code.  The city code will 
+   772	be from 1 to 5 digits.  [See also country code].
+   773	
+   774	clear to send - See CTS.
+   775	
+   776	columns - A measurement of the width of your screen as measured 
+   777	by the number of characters your screen can fit across it.  BBS's 
+   778	often ask for your screen width.  Most computers have a screen 
+   779	width of 80 columns.
+   780	
+   781	COM port - IBM and compatible computers have the ability to hook  
+   782	up devices (such as modems and mice) to the computer, through 
+   783	ports.  These ports are called COM ports, and are numbered 1-8.  
+   784	While all 8 could be used, usually only #1 and #2 are used, while 
+   785	#3 and #4 are used occasionally.  [See also selectable COM port].
+   786	
+   787	comm program - See communications program.
+   788	
+   789	command buffer - The place in your modem's memory where it stores 
+   790	the commands that you give it.  [See also buffer].
+   791	
+   792	command echo - When this is on, any AT command sent to the modem 
+   793	will then be sent back from the modem to the computer.  For 
+   794	example, if you were to type "ATS11=40," the modem would act on 
+   795	the command, and then send "ATS11=40" back to the computer.
+   796	
+   797	command mode - This is when your modem interprets what you type 
+   798	as commands, rather than just sending the data over the phone 
+   799	line.  [See also data mode, terminal mode, voice mode].
+   800	
+   801	command set - A list of all the possible commands that you can 
+   802	give something, such as a modem, a BASIC program, or a BBS.  [See 
+   803	also Hayes AT command set].
+   804	
+   805	commands - Instructions that you can give to a modem, a BBS, or 
+   806	another similar device.
+   807	
+   808	commercial host system - An on-line system that you can call up, 
+   809	that is operated by a company that charges you to use it.
+   810	
+   811	commercial software - Software that is copyrighted and may not 
+   812	legally be distributed by BBS's or copied and given to other 
+   813	users.  [See also public domain, copyright].
+   814	
+   815	communication - The idea of transferring one's thoughts or ideas 
+   816	to another person.  This can be through speaking, radio, T.V., 
+   817	telephones, mail, etc.
+   818	
+   819	communications program - A program that controls a modem, and has 
+   820	features that allow the user to do such things as upload, down-
+   821	load, etc.  It is similar to a terminal program but more sophis-
+   822	ticated.  It used to be used interchangeably with terminal pro-
+   823	gram.  [Same as comm program].
+   824	
+   825	compatible - When one object can work just like another.  Al-
+   826	though the term is usually used with computers, it is often used 
+   827	with modems.  Many modems are compatible with other popular 
+   828	modems.  [See also V.42 compatible].
+   829	
+   830	compliant - See V.42 compliant.
+   831	
+   832	compress - To make data take up less space.  Archiving programs 
+   833	do this, which means that files will take less time to transfer 
+   834	with modems.  Many modems now have the ability to automatically 
+   835	compress the information they send and receive.  [See also ar-
+   836	chive, data compression].
+   837	
+   838	compression ratio - The ratio of the original size of data that 
+   839	is sent to the compressed size.  For example, a 3:1 compression 
+   840	ratio means that the original data takes up 3 times the amount of 
+   841	space as the compressed data, and a modem would transfer the data 
+   842	3 times more quickly than if it was not compressed.
+   843	
+   844	computer network - See LAN.
+   845	
+   846	configure - To set something to your liking.  To configure a BBS, 
+   847	you may have to tell it your screen width, whether you need line 
+   848	feeds and other such information.
+   849	
+   850	configuration - Configuration is the information describing what 
+   851	your computer's hardware and software is like, so that a BBS can 
+   852	send information properly.  For example, you need to tell a BBS 
+   853	how wide your screen is.
+   854	
+   855	connect - [1] To get to a point where you can start communicating 
+   856	with a BBS, as in "I have connected with the BBS."  [2] Any point 
+   857	after you have established contact with a BBS, as in "I am still 
+   858	connected with the BBS" or "I have been connected with the bulle-
+   859	tin board for just over an hour."
+   860	
+   861	connect speed - The speed, in bps, which your modem uses when it 
+   862	connects with a BBS.  This speed will depend on the speed of your 
+   863	modem, and the BBS's modem.  It will be no higher than the lower 
+   864	of the two speeds.  If you have a 2400bps modem, and call a 
+   865	1200bps BBS, your connect speed should be 1200bps.
+   866	
+   867	connection - The actual contact with a BBS.  It is used most 
+   868	often in expressions such as "I have a bad connection," meaning 
+   869	that there is line noise.
+   870	
+   871	control character - Any of the 32 ASCII characters that do not 
+   872	print on your screen or printer.  These characters are usually 
+   873	used to control your computer.  [See also CTRL].
+   874	
+   875	copyright - A term meaning that a program or text file is pro-
+   876	tected by the government so that it may not legally be copied, 
+   877	except to make backup copies, or as specified by the author of 
+   878	the program.  You should not upload a copyrighted program to a 
+   879	BBS, unless it is shareware or freeware.  [See shareware, free-
+   880	ware].
+   881	
+   882	Co-SysOp - A term similar to a vice president.  The Co-SysOp of a 
+   883	BBS has more access to the BBS than any other user except the 
+   884	SysOp.  The Co-SysOp might check messages to make sure that they 
+   885	are suitable for the BBS (not containing illegal messages), and 
+   886	he may be able to validate users.  Sometimes a Co-SysOp is just a 
+   887	title given to someone who helped the BBS a lot by doing things 
+   888	such as posting messages and uploading.  Also, many times there 
+   889	is more than one Co-SysOp.  [See also SysOp].
+   890	
+   891	country code - The code that the telephone company uses to desig-
+   892	nate a certain country.  If you need to call a BBS (or a person) 
+   893	in a foreign country, you need to dial the country code, then 
+   894	usually the city code, and then the local phone number.  The 
+   895	country code will be 2 to 3 digits.  [See also city code].
+   896	
+   897	CPS - See characters per second.
+   898	
+   899	<CR> - Carriage Return.  See return.
+   900	
+   901	CRC - Stands for Cyclic Redundancy Check.  CRC is a system to 
+   902	make sure that a block of data (usually from a downloaded pro-
+   903	gram) is as free from error as possible.  It is usually 16 or 32 
+   904	bits long (CRC-16 and CRC-32 respectively).
+   905	
+   906	crash - When a BBS is harmed in such a way that it is temporarily 
+   907	inoperable.  The usual cause is that some files are destroyed, 
+   908	either by accident or by a hacker.  Some people try to crash 
+   909	BBS's, a fact that most users (and especially SysOps) think is 
+   910	sad.
+   911	
+   912	crash recovery - This feature of some file transfer protocols 
+   913	allows a user to continue a download or upload that had been 
+   914	interrupted.  With this system, a user will not have to receive 
+   915	the data that had already been sent before the disconnection, 
+   916	which will save time.
+   917	
+   918	crippleware - This is software, usually distributed as shareware,
+   919	but it is not a complete program.  If it is a game, it might only
+   920	let you play the first level.  If it is a database program, it
+   921	might only let you have 50 entries (whereas the real version
+   922	would have more).
+   923	
+   924	CRT - Cathode Ray Tube.  This is another name for a computer 
+   925	monitor.
+   926	
+   927	CTRL - The abbreviation for ConTRoL.  This abbreviation is fol-
+   928	lowed by a dash and then a character, such as CTRL-C, meaning the 
+   929	control character C.  [See also control character].
+   930	
+   931	CTRL-G - The control character G, which usually causes the com-
+   932	puter to produce a beeping sound.
+   933	
+   934	CTS - Clear To Send.  This is when the modem lets the other 
+   935	computer know that it can send information to the other computer. 
+   936	[See also flow control, RTS].
+   937	
+   938	CTS/RTS - The method of flow control that uses the CTS and RTS 
+   939	signals.  It is built into the hardware, not software.  [See also 
+   940	CTS, RTS, flow control].
+   941	
+   942	cursor - The marker that points out where text will next appear 
+   943	on your screen.  It can be one of many things, usually a plain 
+   944	white or flashing square, or an underline character.
+   945	
+   946	cyclic redundancy check - See CRC.
+   947	
+   948	cycling - When a light (such as the RD light) on an external 
+   949	modem continuously turns on and off.
+   950	
+   951	
+   952	
+   953	---D---
+   954	
+   955	
+   956	
+   957	dash - The character -.
+   958	
+   959	data - A group of characters that represents meaningful informa-
+   960	tion.  This information can be anything, ranging from bank ac-
+   961	count numbers to computer programs.  [See also information].
+   962	
+   963	database - [1] A program that keeps track of data, such as the 
+   964	information contained on mailing labels, or the price of stocks.  
+   965	[2] A large group of data.  The sum of the information that you 
+   966	can receive on extensive pay services such as CompuServe can be 
+   967	considered a database.
+   968	
+   969	database hack - A way that hackers attempt to gain access to 
+   970	someone's account on a BBS.  They create a list of common pass-
+   971	words (such as SECRET and MINE) and try every one on an account 
+   972	to see if it is the right password.  Because of this, an intelli-
+   973	gent BBS user will not use easy-to-guess passwords.
+   974	
+   975	data bits - [1] The number of bits that the modem uses to repre-
+   976	sent one byte.  This is usually 8, though it can be 7 since ASCII 
+   977	needs only 7 of the 8 bits.  [See also format].  [2] the actual 
+   978	bits within a byte being sent through the phone lines.
+   979	
+   980	data byte - A byte of information that is being sent over the 
+   981	phone lines.
+   982	
+   983	data carrier detect - See DCD.
+   984	
+   985	data communications equipment - See DCE.
+   986	
+   987	data compression - Some modems have the capability to 'squash' 
+   988	data so that it takes up less space.  When another modem (that 
+   989	also has this capability) receives the data, it 'unsquashes' the 
+   990	data to its original form.  By using data compression, a modem 
+   991	can send information faster.  It's a lot like shorthand--all the 
+   992	information is still there, but it takes less space and is quick-
+   993	er.  [See also MNP-5, V.42bis].
+   994	
+   995	data grade - A phone line that is set up by the phone company to
+   996	be more convenient for data communications.  It should have 
+   997	better electronic characteristics than a regular phone line.  
+   998	[See also voice grade].
+   999	
+  1000	data mode - The mode that a modem is in where all information 
+  1001	typed on the computer will be sent through the modem, and all 
+  1002	information received by the modem will be placed on the screen.  
+  1003	[See also command mode, terminal mode, voice mode].  [Same as 
+  1004	on-line mode].
+  1005	
+  1006	data modem - A modem that does not have the ability to send or
+  1007	receive fax transmissions.
+  1008	
+  1009	data rate - See data transmission rate.
+  1010	
+  1011	data set ready - See DSR.
+  1012	
+  1013	data terminal equipment - See DTE.
+  1014	
+  1015	data terminal ready - See DTR.
+  1016	
+  1017	data throughput - See effective transfer rate.
+  1018	
+  1019	data transmission rate - The speed at which data travels.  For 
+  1020	example, data may be sent at 115,200bps.  [Same as transmission 
+  1021	rate, transmission speed, data rate].  [See also bps].
+  1022	
+  1023	dB - See decibel.
+  1024	
+  1025	dBm - Decibel referred to one milliwatt.  This is used to measure 
+  1026	certain levels, such as transmit level.  [See also transmit 
+  1027	level, receive level, carrier detect threshold].
+  1028	
+  1029	DB-25 - The 25 pin plug that connects an RS-232C cable to the 
+  1030	RS-232 port.
+  1031	
+  1032	DCD - Data Carrier Detect.  This tells the computer whether or 
+  1033	not the modem is connected to another modem.
+  1034	
+  1035	DCE - Data Communications Equipment.  These are computer periph-
+  1036	erals that communicate.  A modem is a DCE.  [See also DTE].
+  1037	
+  1038	decibel - A unit describing how loud one sound is compared to 
+  1039	another.  [Same as dB].
+  1040	
+  1041	decompress - The process of converting compressed data back to 
+  1042	its original form.  [See also archive].
+  1043	
+  1044	decoy program - A program or text sent on mainframes and multi-
+  1045	line BBS's that simulates the log-on procedure.  The unsuspecting 
+  1046	user will see this and enter his password, and the person who 
+  1047	made the decoy program will get the password and can use the 
+  1048	account.
+  1049	
+  1050	default - A setting or an answer to a question that is automati-
+  1051	cally assumed.  If 80 columns is a default, then you only have to 
+  1052	change it if you want something other than 80 columns.
+  1053	
+  1054	delay time - The time it takes between sending data on a computer 
+  1055	and receiving a response from the remote computer.  If the delay 
+  1056	is long, most file transfer protocols will slow down.  [See also 
+  1057	protocol].
+  1058	
+  1059	demodulate - To convert the tones that a modem sends over the 
+  1060	phone lines back into data.  [See also modulate].
+  1061	
+  1062	destructive backspace - A term that indicates that your communi-
+  1063	cations program deletes the character the cursor is on when it 
+  1064	receives the backspace character.  [See also non-destructive 
+  1065	backspace].
+  1066	
+  1067	destructive signaling - This is a type of break signal that 
+  1068	causes all data to be destroyed while the break signal is being 
+  1069	sent.  [See also break signal].
+  1070	
+  1071	dial - To send out either the tones or pulses that the phone 
+  1072	company needs to understand what number you are calling.  Most 
+  1073	modems will dial automatically (auto-dial).
+  1074	
+  1075	dialing speed - See touchtone dialing speed.
+  1076	
+  1077	dialout facility - A service where you call a computer, and from 
+  1078	that computer you can call other computers.  It is usually used 
+  1079	with packet switching networks, which saves you money on long 
+  1080	distance calls.
+  1081	
+  1082	dialup line - A telephone line connected to the telephone compa-
+  1083	ny.  This is a regular phone line.  [Compare to leased line].
+  1084	
+  1085	dialup modem - A modem that is used over normal (dialup) tele-
+  1086	phone lines.
+  1087	
+  1088	dial modifiers - Any commands that are sent to a modem which 
+  1089	change the way a phone number is dialed.  For example: tone, 
+  1090	pulse, and pause.
+  1091	
+  1092	dial tone - The sound that you hear when you pick up the phone if 
+  1093	it is ready to have an outgoing call made.  Your modem, if it can 
+  1094	dial, should understand this tone.
+  1095	
+  1096	dibit - Two bits sent simultaneously by a modem.  For example, a 
+  1097	modem can operate at 1200bps and 600 baud.  What happens in this 
+  1098	case is that 600 times a second, the modem sends out a dibit (two 
+  1099	bits).  Therefore, it is sending 1200 (600 times 2) bits per 
+  1100	second.  [See also bps, baud].
+  1101	
+  1102	dictionary - The V.42bis data compression protocol stores certain 
+  1103	data that is being sent/received in a "dictionary," which it 
+  1104	refers to when compressing/decompressing data.  [See also 
+  1105	V.42bis, dictionary size].  [Same as encoder dictionary].
+  1106	
+  1107	dictionary size - This is the number of characters in the dic-
+  1108	tionary used for the V.42bis data compression protocol.  It is 
+  1109	usually 2048, but can also be 1024, 512, or 4096.  [See also 
+  1110	dictionary, V.42bis].
+  1111	
+  1112	digital - A system using discrete numbers to represent data.  In 
+  1113	computer systems, these are the numbers 0 and 1 (for binary).  
+  1114	[See also analog].
+  1115	
+  1116	digital signal processing - This is what is used to perform echo 
+  1117	cancellation on a CCITT V.32/V.42 modem.  [Same as DSP].  [See 
+  1118	also echo cancellation].
+  1119	
+  1120	DIP switch - DIP stands for Dual In-line Package.  DIP switches 
+  1121	are a group of small switches placed together on electronic 
+  1122	equipment.  Many modems have these.  The switches can be changed 
+  1123	to alter various settings.  For example, one DIP switch on a 
+  1124	modem may change the status of the DTR.
+  1125	
+  1126	direct mode - See MNP direct mode.
+  1127	
+  1128	disconnect - To hang up the phone and cause the connection be-
+  1129	tween your modem and another computer to be stopped.  Most BBS 
+  1130	programs have a way of disconnecting a user who has called the 
+  1131	bulletin board, if it is needed.
+  1132	
+  1133	disk capture - This is when a communications program will save
+  1134	incoming information to the disk.  This is useful if you are
+  1135	receiving a text file that you want to read later.
+  1136	
+  1137	dither tone - See echo suppressor defeat tone.
+  1138	
+  1139	door - A gateway that will allow a bulletin board to run a pro-
+  1140	gram while a user is on the BBS.  Games are popular doors on 
+  1141	BBS's, although doors can be used for serious purposes, too.
+  1142	
+  1143	down - A word meaning that a bulletin board is not working, so 
+  1144	that you can not connect with it.  This can mean that there was a 
+  1145	crash, or it could simply mean that the SysOp is playing a game 
+  1146	on his computer.  Often a SysOp will leave a phone connected to 
+  1147	his BBS line off the hook when he is using the computer so that 
+  1148	you will get a busy signal.  [See also running].
+  1149	
+  1150	download - To receive a computer file from a bulletin board.  It 
+  1151	is usually a computer program, but can also be a text file.  [See 
+  1152	also upload, protocol].
+  1153	
+  1154	DSP - See Digital Signal Processing.
+  1155	
+  1156	DSR - Data Set Ready.  This indicates that the modem is on, and 
+  1157	ready to accept input from the computer (either commands or data 
+  1158	to be sent over the phone line).  [Same as modem ready].
+  1159	
+  1160	DTE - Data Terminal Equipment.  This is computer equipment which 
+  1161	is not directly responsible for communicating, for example, the 
+  1162	computer itself and printers.  [See also DCE].
+  1163	
+  1164	DTMF - Dual Tone Multi-Frequency.  This is used in tone dialing.  
+  1165	It is a method where 2 distinct tones are sent for each digit 
+  1166	dialed.
+  1167	
+  1168	DTR - Stands for Data Terminal Ready.  The DTR signal is sent 
+  1169	from the computer to the modem, to let the modem know that the 
+  1170	computer is ready to communicate.
+  1171	
+  1172	dumb modem - A modem that only sends and receives characters to 
+  1173	or from the phone line.  [See also smart modem].
+  1174	
+  1175	dumb terminal - A keyboard and monitor that receive and send 
+  1176	information either to or from another computer or a phone line.  
+  1177	It is up to the other computer to do anything else, such as word 
+  1178	wrap.  [See also terminal, smart terminal].
+  1179	
+  1180	duplex - The capability of both sides of a connection to send 
+  1181	information at the same time.  Full duplex is the same as duplex.  
+  1182	When you are talking on the telephone to someone you are using 
+  1183	duplex (you can both talk at the same time if you want to).  [See 
+  1184	also half duplex].
+  1185	
+  1186	
+  1187	
+  1188	---E---
+  1189	
+  1190	
+  1191	
+  1192	EBCDIC - Stands for Extended Binary-Coded Decimal Interchange 
+  1193	Code.  It is a way of coding characters.  It is similar to ASCII, 
+  1194	but it uses 8 bits instead of 7.  [See also ASCII].
+  1195	
+  1196	EBBS - Electronic Bulletin Board System.  See BBS.
+  1197	
+  1198	echo - [1] A character that is sent back from a BBS instead of 
+  1199	the character that was sent to the BBS.  For example, if you 
+  1200	enter your password on a BBS it will often say `dots will echo', 
+  1201	meaning that it will send a period for every character in your 
+  1202	password (it is a safety feature).  [2] When a bulletin board or 
+  1203	your terminal program sends back the characters that you type.  
+  1204	If the bulletin board does not send back the characters, your 
+  1205	terminal program should print them to your screen as you type 
+  1206	them.  [3] Echo on the phone lines is when you hear an echo on a 
+  1207	long distance call.  This can interfere with modem transmissions.  
+  1208	[See also local echo, echo suppression].
+  1209	
+  1210	echomail - This is a technique used by many BBS's that will allow 
+  1211	a message base to be shared by many BBS's.  Usually late at night 
+  1212	the BBS's will exchange any new messages.  This way a user on one 
+  1213	BBS can interact with users on other BBS's.
+  1214	
+  1215	echo canceling - This is included in the CCITT V.32 standard.  It 
+  1216	attempts to cancel echoing on long distance calls, which other-
+  1217	wise would interfere with the transmission.  It sends the exact 
+  1218	opposite of the sound it receives, which cancels the echo.  [See 
+  1219	also echo suppression, digital signal processing].
+  1220	
+  1221	echo suppression - Echo suppression is a technique that the phone 
+  1222	company uses in an attempt to make long distance voice calls 
+  1223	sound better, by minimizing echo.  However, this can cause the 
+  1224	carrier of a modem to be lost (or at least garbled, causing a 
+  1225	loss of data).  In order to prevent this problem, a modem needs 
+  1226	to send a certain tone over the phone line at all times.  [See 
+  1227	also echo suppression defeat tone].
+  1228	
+  1229	echo suppression defeat tone - This is a signal sent over the 
+  1230	phone lines by some modems in an attempt to cancel out the nega-
+  1231	tive effects of echo suppression.  In the Bell standard, it is 
+  1232	2225Hz +/- 10Hz, in CCITT standards it is 2100Hz +/- 15Hz.  [Same 
+  1233	as dither tone].  [See also echo suppression].
+  1234	
+  1235	editor - The part of the BBS that allows you to enter a message 
+  1236	and edit it.
+  1237	
+  1238	effective throughput rate - See effective transfer rate.
+  1239	
+  1240	effective transfer rate - This is the rate at which data can be 
+  1241	sent after data compression has been accounted for.  For example, 
+  1242	a modem may be rated at 9600bps.  If it uses data compression 
+  1243	with a ratio that averages 2:1, it has an effective transfer rate 
+  1244	of 19,200bps.  While only 9600 bits are sent over the phone line, 
+  1245	they represent 19,200 bits of real information after they are 
+  1246	decoded.  [Same as throughput, data throughput, effective 
+  1247	throughput rate].  [See also raw speed, data compression].
+  1248	
+  1249	EIA - Electronics Industry Association.  They developed the RS-
+  1250	232C standard.  [See also RS-232C].
+  1251	
+  1252	electronic mail - See E-mail.
+  1253	
+  1254	E-mail - Electronic mail.  Messages that are sent to individual 
+  1255	people.  You choose who to send the message to and only that  
+  1256	person receives the message.  (Some BBS programs allow you to 
+  1257	send bulk E-mail, which goes to more than one person, but the 
+  1258	concept is still the same.)
+  1259	
+  1260	emotion icons - These are groups of several characters that are 
+  1261	used to express emotion over the phone line.  For example, :) is 
+  1262	a happy face (when you look at it from the side).  Similarly, :( 
+  1263	is a sad face.
+  1264	
+  1265	emulate - When a communications program imitates a certain brand 
+  1266	of terminal.
+  1267	
+  1268	encoder dictionary - See dictionary.
+  1269	
+  1270	encryption - Coding data so that people who are not supposed to 
+  1271	see the data will not be able to understand it.
+  1272	
+  1273	ENQ character - This is the same as Control-E, ASCII value 5.  It 
+  1274	stands for Enquiry.
+  1275	
+  1276	EOF - Stands for End Of File.  It is the character CTRL-Z, which 
+  1277	can mark the end of a text file.
+  1278	
+  1279	equalization - When a modem adjusts its transmit level for dif-
+  1280	ferent frequencies, to account for the greater loss at certain 
+  1281	frequencies over the phone line.  [See also transmit level, 
+  1282	receive level].
+  1283	
+  1284	error - When there is line noise and one or more characters are 
+  1285	changed.  This is especially noticeable when downloading or 
+  1286	uploading a program.  In this case the error must be detected, 
+  1287	and the data must be re-sent (or else the file will be 
+  1288	destroyed).  [See also line noise].
+  1289	
+  1290	error control - The ability of a modem to notice errors in trans-
+  1291	mission, and have any incorrect data re-sent.  [See also MNP 1-4, 
+  1292	LAPM, V.42].
+  1293	
+  1294	error correction - See error control.  (Error control is a more 
+  1295	correct term, since the modem does not correct incorrect data, it 
+  1296	just has it sent again).
+  1297	
+  1298	error free - When referring to data transmission, error free 
+  1299	refers to communications equipment in which data is transmitted 
+  1300	perfectly.  This is actually an impossible situation, but it is 
+  1301	possible to have data that is very, very close to error-free.
+  1302	
+  1303	ESC - See escape key.
+  1304	
+  1305	escape character - ASCII character 27.  [See also escape key, 
+  1306	ASCII].
+  1307	
+  1308	escape character guard time - See guard time.
+  1309	
+  1310	escape code - See escape sequence.
+  1311	
+  1312	escape key - The key marked ESC on a computer keyboard.  It is 
+  1313	often used to 'escape' out of a program or procedure in a pro-
+  1314	gram.  Also, the ASCII character (ASCII 27) is used by ANSI to 
+  1315	produce limited graphics.  [Same as ESC].  [See also ANSI].
+  1316	
+  1317	escape sequence - A sequence of characters (usually +++) that 
+  1318	instruct a modem to change from data mode to command mode, if 
+  1319	they are typed with a certain delay before and after they are 
+  1320	typed.  [See also data mode, command mode, guard time].
+  1321	
+  1322	even parity - This indicates that the parity bit is always set 
+  1323	such that the sum of the "1" bits in each byte that is sent, plus 
+  1324	the parity bit, is an even number.  [See also parity bit, 
+  1325	format].
+  1326	
+  1327	executive mode - When a user is connected to a bulletin board, 
+  1328	but the SysOp is controlling the bulletin board.  The most common 
+  1329	use of an executive mode is when the SysOp validates users with-
+  1330	out the user having to hang up.
+  1331	
+  1332	exit - See logoff.
+  1333	
+  1334	expedited signaling - Break signals that are sent before any 
+  1335	other data.  All data will remain intact.  [See also break sig-
+  1336	nal].
+  1337	
+  1338	expert mode - Many BBS's have this feature, which allows a user 
+  1339	who feels that he knows the system well to save time by not 
+  1340	having menus sent to his system.  If he forgets some commands 
+  1341	that are available, he can have the menu appear.  Otherwise, the 
+  1342	menus will not appear.  This is especially helpful at slow 
+  1343	speeds.
+  1344	
+  1345	extension - The extension of a filename on an MS-DOS system is 
+  1346	the last three characters, which are separated from the rest of 
+  1347	the filename by a period.  For example, the filename SPREDSHT.WKS 
+  1348	has the extension "WKS".  [See also archive].
+  1349	
+  1350	external modem - A modem that is located outside of the computer.  
+  1351	It is hooked up to the computer with a cable, most commonly an 
+  1352	RS-232C cable.  [Same as stand-alone modem].  [See also internal 
+  1353	modem].
+  1354	
+  1355	external program - A computer program that is separate from 
+  1356	another program.  When BBS software runs a program that is sepa-
+  1357	rate from it, it is called an external program.  [See also door].
+  1358	
+  1359	external protocol - This is a file transfer program that is not 
+  1360	built into your comm program, but the comm program is able to run 
+  1361	it anyway (as an external program).  [See also internal proto-
+  1362	col].
+  1363	
+  1364	extract - To take out files from an archive.  [See also archive, 
+  1365	unarchive].
+  1366	
+  1367	
+  1368	
+  1369	---F---
+  1370	
+  1371	
+  1372	
+  1373	factory configuration - The way that your modem was set up when 
+  1374	it left the factory.  Typing ATZ normally returns your modem to 
+  1375	the factory configuration.
+  1376	
+  1377	fall-back - The ability of a modem to change to a lower speed 
+  1378	when there is a problem communicating at the higher speed (usual-
+  1379	ly caused by line noise).  [Same as auto fall-back].
+  1380	
+  1381	fall-forward - This is when a modem will change to a faster speed 
+  1382	if line conditions improve after a fall-back occurs.
+  1383	
+  1384	fax - Short for facsimile.  It is a copy of a piece of paper that 
+  1385	is sent over the phone lines by a fax machine.  Some modems also 
+  1386	have fax machines built in them, so that they can send and/or 
+  1387	receive faxes.  [See also faxmodem].
+  1388	
+  1389	faxmodem - A modem that also has the capability of sending and 
+  1390	receiving faxes.  [See also fax].
+  1391	
+  1392	FCC - Federal Communications Commission.  This is the government 
+  1393	agency that is responsible for making sure that phone lines are 
+  1394	being used correctly and that radio interference is at acceptable 
+  1395	levels.
+  1396	
+  1397	FDM - Frequency Division Multiplexing.  A way that some modems 
+  1398	transmit full duplex information, by splitting the telephone 
+  1399	bandwidth into two sections.  One is used to receive data, the 
+  1400	other is used to send data.  This method can be used at speeds of 
+  1401	up to 2400bps.  [See also modulate].
+  1402	
+  1403	feature negotiation - This is when a modem can determine the best 
+  1404	protocol to use when connecting to another modem.  This includes 
+  1405	the fastest speed, error control, and data compression.  It is 
+  1406	part of hand-shaking.  [Same as negotiation scheme].
+  1407	
+  1408	feedback - A message that is sent by a user to the SysOp of a 
+  1409	bulletin board.  While it is meant to be a way for the user to 
+  1410	let the SysOp know of any complaints or compliments they may 
+  1411	have, it is more often a convenient way of sending E-mail to the 
+  1412	SysOp.
+  1413	
+  1414	filter - When a communications program or a BBS program takes out 
+  1415	certain characters or words and doesn't accept them.  For exam-
+  1416	ple, a bulletin board program may filter out CTRL-G's so that the 
+  1417	SysOp does not hear the beeping.  Also, some BBS programs have 
+  1418	the ability to take out obscene words from messages.  [See also 
+  1419	profanity filter].
+  1420	
+  1421	filter device - A piece of hardware which goes between the modem 
+  1422	and the phone line of a BBS.  When a user calls up, they will 
+  1423	either have a voice or computer connection that asks them for a 
+  1424	special password before they can gain access to the main computer 
+  1425	system.  This makes it more difficult for hackers to get into the 
+  1426	system, but is also more of a burden for the legitimate users.
+  1427	
+  1428	flash - On a normal telephone, this is when you quickly push down 
+  1429	and release the off-hook button.  It is often used for call 
+  1430	waiting.  Many modems have a command that will simulate this 
+  1431	action.
+  1432	
+  1433	flag - A piece of information that is either TRUE or FALSE.  It 
+  1434	is used in some bulletin board security systems to indicate 
+  1435	whether the user has access to certain parts of the bulletin 
+  1436	board.  It is also used by modems for certain indicators such as 
+  1437	DTR.
+  1438	
+  1439	flow control - A method of controlling when information is sent. 
+  1440	One method is Xon/Xoff, where a BBS will send information until 
+  1441	your computer sends an Xoff (CTRL-S).  It will resume sending 
+  1442	information when you send an Xon (CTRL-Q).  [See also Xon/Xoff, 
+  1443	CTS/RTS].
+  1444	
+  1445	format - Information such as "8N1" that describes the way that 
+  1446	your computer and a bulletin board should be connected.  The 
+  1447	first digit is normally 7 or 8, the number of data bits.  The 
+  1448	second character is a letter describing the parity (N for None, M 
+  1449	for Mark, S for Space, O for Odd, and E for Even).  The last 
+  1450	number is the number of stop bits.  8N1 is the most common for-
+  1451	mat.  Data is sent as follows: Start bit (0) - 7 or 8 bits of 
+  1452	data - (parity bit, if used) - stop bit (1) - (gap bits, if used) 
+  1453	[Same as settings].
+  1454	
+  1455	forward - To send E-mail that you received to someone else.
+  1456	
+  1457	framing bits - Bits that are used to separate characters.  The 
+  1458	bits themselves are not used as information.  [See also stop 
+  1459	bits, start bits].
+  1460	
+  1461	framing error - This occurs when the UART in a modem does not 
+  1462	detect a stop bit.  The modems are probably out of sync with each 
+  1463	other.
+  1464	
+  1465	freeware - Computer programs that are copyrighted, but they may 
+  1466	be legally copied if there is no payment involved.  They are 
+  1467	almost the same as public domain programs, except that public 
+  1468	domain programs are not copyrighted and may be sold for payment.  
+  1469	Freeware programs often can not be changed when they are distrib-
+  1470	uted.  [See also public domain].
+  1471	
+  1472	frequency division multiplexing - See FDM
+  1473	
+  1474	frequency shift keying - See FSK.
+  1475	
+  1476	frequency spectrum - A range of frequencies having similar char-
+  1477	acteristics.  All sounds we hear are grouped as the audio fre-
+  1478	quency spectrum.  Similar to bandwidth.
+  1479	
+  1480	FSK - Frequency Shift Keying.  This method that low-speed modems 
+  1481	use to transmit information over phone lines uses 4 frequencies, 
+  1482	which are used to represent 0's and 1's for both sending and 
+  1483	receiving.  These modems can only operate up to a speed of 600bps 
+  1484	at full duplex (or 1200bps at half duplex).  [See also modula-
+  1485	tion].
+  1486	
+  1487	full duplex - See duplex.
+  1488	
+  1489	full flow - See streaming.
+  1490	
+  1491	
+  1492	
+  1493	---G---
+  1494	
+  1495	
+  1496	
+  1497	gap - See gap bits.
+  1498	
+  1499	gap bits - A series of 0's that are sometimes sent between data 
+  1500	bytes over the phone lines.
+  1501	
+  1502	garbage - Unwanted characters that appear because of either line
+  1503	noise or incorrect settings.  [See also line noise, format].
+  1504	
+  1505	gateway - A connection between one network and another.  For 
+  1506	example, on some commercial on-line services, you can reserve 
+  1507	airplane tickets.  This usually involves the on-line service you 
+  1508	called connecting to the airline's computer.
+  1509	
+  1510	general file - Any kind of text on a bulletin board that is not 
+  1511	specifically E-mail, a bulletin of any sort, or a message.  
+  1512	Usually they are long files for the user's information.  Some 
+  1513	examples of general files are: a file containing more information 
+  1514	on the bulletin board program, a newspaper article about a con-
+  1515	troversial issue, and an article that explains how to make your 
+  1516	own disk drive.  
+  1517	
+  1518	global scan - When a bulletin board goes through all the messages 
+  1519	on all boards to check for new messages that the user has not yet 
+  1520	read.  This is very useful as it prevents the user from having to 
+  1521	go through each board to check for new messages.  [See also 
+  1522	quickscan].
+  1523	
+  1524	goodbye - See logoff.
+  1525	
+  1526	group III FAX - The standard controlling fax communication.
+  1527	
+  1528	guard time - When the escape sequence is sent to your modem, the 
+  1529	guard time is the amount of time that must occur between charac-
+  1530	ters of the escape code, for it to be considered the escape code.  
+  1531	Otherwise, it will assume you are entering data that is meant to 
+  1532	be sent to the other modem.  [See also escape code, data mode, 
+  1533	command mode].
+  1534	
+  1535	guard tone - A tone that is sometimes sent over the phone line 
+  1536	for echo suppression.  1800 hertz and 550 hertz are sometimes 
+  1537	used.
+  1538	
+  1539	guest - When a user is just looking at a bulletin board and does 
+  1540	not want to receive an account there.  The user usually has the 
+  1541	same privileges as a new user who has not yet been validated.  
+  1542	Many bulletin board programs allow guests.  This is a good fea-
+  1543	ture, since the SysOp does not have to validate users who will 
+  1544	not be calling the board more than once or twice.
+  1545	
+  1546	
+  1547	
+  1548	---H---
+  1549	
+  1550	
+  1551	
+  1552	hacker - [1] A programmer who likes to experiment with computers 
+  1553	(this is the type of person who often will not read the documen-
+  1554	tation to software before using it, so he can figure out how to 
+  1555	use it by himself).  [2] A person who attempts to abuse the 
+  1556	privileges of computer BBS's and other services.  His activities 
+  1557	may range from getting and exploring an account he is not sup-
+  1558	posed to have on a mainframe computer to attempting to crash a 
+  1559	bulletin board.  These people are unwanted by most BBS's.  They 
+  1560	are often not malicious.  The media sometimes confuses them with 
+  1561	phreakers. [See also phreaker].
+  1562	
+  1563	half card - For IBM compatible computers, this is a card that is 
+  1564	smaller than normal (about half the size).  It does not affect 
+  1565	the operation of the modem.
+  1566	
+  1567	half duplex - This is a mode which allows only one modem at a 
+  1568	time to transmit information.  When one modem is finished, the 
+  1569	other can then start to transmit.  [Same as simplex].  [See also 
+  1570	duplex].
+  1571	
+  1572	hand-shaking - The process of establishing an electronic link 
+  1573	between two modems.  Handshaking lets both modems know informa-
+  1574	tion such as the speed they will be using, and whether or not the 
+  1575	modems have the same type of error correction capability.  [See 
+  1576	also feature negotiation].
+  1577	
+  1578	handle - See alias.
+  1579	
+  1580	hang - When a bulletin board all of a sudden starts to do noth-
+  1581	ing.  That is, it will not accept calls or even let the SysOp 
+  1582	type anything until the computer is reset.  This can be caused by 
+  1583	a problem with the BBS software, or the computer itself.
+  1584	
+  1585	hang up - When someone closes a switch which stops a telephone 
+  1586	connection.  This either happens when someone puts a telephone 
+  1587	receiver into its cradle or when the person instructs the modem 
+  1588	to hang up.
+  1589	
+  1590	hardware error control - This is when error control is performed 
+  1591	by the modem, not the communications program.  [See also error 
+  1592	control].
+  1593	
+  1594	Hayes compatible - Any modem which operates in the same way as 
+  1595	the modems developed by Hayes.  Most modems up to 2400bps are 
+  1596	Hayes compatible.
+  1597	
+  1598	Hayes AT command set - This is the set of commands used to oper-
+  1599	ate Hayes modems and Hayes compatible modems.  Almost all of the 
+  1600	commands start with AT.
+  1601	
+  1602	help file - Many BBS systems will include information on how to 
+  1603	run the system in case you are having troubles.  Often just 
+  1604	pressing "H" or a question mark at the main menu will show you 
+  1605	the information, but with some systems you have to find the help 
+  1606	file somewhere, occasionally amidst the files to be downloaded.
+  1607	
+  1608	hertz - A unit of frequency, which equals cycles per second.
+  1609	
+  1610	high speed - A modem that operates at a high speed.  In most 
+  1611	cases it is assumed to be at least 9600bps.
+  1612	
+  1613	host - The computer that is being used to store information from 
+  1614	other computers.  Every BBS is a host, and so are pay services.
+  1615	
+  1616	host program - A computer program that allows your computer to 
+  1617	accept incoming calls, and let the callers upload or download 
+  1618	files.  It is limited compared to a BBS.  If you want to do any-
+  1619	thing more, such as record information or print it out, you 
+  1620	usually have to do the programming yourself.  [Similar to unat-
+  1621	tended mode].
+  1622	
+  1623	hot-keys - A term which means that you only have to press one key 
+  1624	at a menu, rather than several.  You don't have to hit the return 
+  1625	key.  Usually you can do this while a menu is being sent to your 
+  1626	computer (so you don't have to wait for the whole menu to be 
+  1627	sent).
+  1628	
+  1629	HST - High Speed Technology.  A high speed protocol developed by 
+  1630	US Robotics.  It allows for 14400bps one way, and 450bps the 
+  1631	other way.  The two computers can switch when one has more infor-
+  1632	mation to send than the other.  It is not compatible with the 
+  1633	CCITT protocol.
+  1634	
+  1635	hyphen - The character -.
+  1636	
+  1637	Hz. - See hertz.
+  1638	
+  1639	
+  1640	
+  1641	---I---
+  1642	
+  1643	
+  1644	
+  1645	IBM graphics - On IBM computers, there is a group of "graphic" 
+  1646	characters (such as lines, used to make boxes) that can be shown 
+  1647	on the screen.  Some BBS's will send these graphic characters if 
+  1648	requested.  Most non-IBM computers will not recognize these 
+  1649	characters.  These characters' bytes have their 8th bit set to 1.
+  1650	
+  1651	ID number - See user number.
+  1652	
+  1653	idle time - When a computer is not being used.  This refers to 
+  1654	either  a computer running a BBS that is not busy, or a caller 
+  1655	that is not sending anything or receiving anything.  Some BBS's 
+  1656	will hang up a user if there is a certain amount of idle time 
+  1657	(such as a minute).
+  1658	
+  1659	inactivity timer - When this is on, a modem will automatically 
+  1660	disconnect from a remote computer after a given amount of time 
+  1661	passes without any information sent or received.
+  1662	
+  1663	incoming - Information that is being sent to your computer.
+  1664	
+  1665	information - Any data that is sent between computers.  Data 
+  1666	usually refers to numbers and small pieces of information.  
+  1667	Information is usually used for larger things, such as text 
+  1668	files.  [See also data].
+  1669	
+  1670	initialize - To set up either hardware or software to work cor-
+  1671	rectly with your system.  Many modems have to be initialized each 
+  1672	time they are used so they `know' how to act with the communica-
+  1673	tions program.  When your software initializes your modem, it may 
+  1674	tell the modem to expect 2400 baud and no parity, as well as the 
+  1675	fact that you do not want any information to echo on your screen.  
+  1676	[See also initialization string].
+  1677	
+  1678	initialization string - This is the command that your communica-
+  1679	tions program sends to the modem when the program is started.  In 
+  1680	most cases, it is an AT command just like you would type in.  
+  1681	[See also initialization].
+  1682	
+  1683	interdigit interval - When pulse dialing is used, you need a 
+  1684	certain amount of time free of "clicks" so that the phone company 
+  1685	knows when each digit is finished.  When you are dialing on a 
+  1686	rotary phone, you don't need to worry about this because the time 
+  1687	it takes to turn the dial is sufficient.  A modem that sends 
+  1688	pulse codes must wait a specified amount of time before going 
+  1689	from one digit to the next in a phone number.  A value between 
+  1690	1/2 second a 1 second is usually used.
+  1691	
+  1692	internal modem - A modem that is `hidden' inside your computer.  
+  1693	Outside of your computer you will only see the phone cord.  An 
+  1694	internal modem can either be on a peripheral card that is placed 
+  1695	inside your computer, or it can be built into your computer.  
+  1696	[See also external modem].
+  1697	
+  1698	internal protocol - A file transfer protocol that comes as part 
+  1699	of a comm program, and is not separate from it.  [See also exter-
+  1700	nal protocol].
+  1701	
+  1702	interrupt - An interrupt, as far as modems and computers are
+  1703	concerned, is an electronic signal that tells the computer that
+  1704	something important is happening.  Most modems can be set up by
+  1705	software to send an interrupt every time a character is received
+  1706	by the modem.  When operating at fast speeds, this makes sure
+  1707	that the computer doesn't miss characters as it is printing them
+  1708	on the screen or saving them to a disk.
+  1709	
+  1710	in sequence signaling - Break signals that are sent in the proper 
+  1711	order among data, as opposed to expedited signaling (which will 
+  1712	send the signal before other data).  No data is harmed, it all 
+  1713	remains intact.  [See also break signal].
+  1714	
+  1715	
+  1716	
+  1717	---J---
+  1718	
+  1719	
+  1720	
+  1721	jack - The small plastic box that your phone cord connects to on 
+  1722	your wall.
+  1723	
+  1724	jump - A command used on some BBS's to go from one board or 
+  1725	section on a BBS to another.
+  1726	
+  1727	jumper - This is a piece of plastic and metal that can be moved 
+  1728	on an internal modem to change a setting, such as the COM port to 
+  1729	be used.  [See also selectable COM port].
+  1730	
+  1731	
+  1732	
+  1733	---K---
+  1734	
+  1735	
+  1736	
+  1737	K - When K is placed after a number, it means 1024 times that 
+  1738	number.  If you computer has 640K that means that it has a little 
+  1739	more than 640,000 bytes of memory.  Often communications software 
+  1740	will tell you that you have a certain amount of free memory to 
+  1741	use as a buffer.
+  1742	
+  1743	Kermit protocol - An almost error-free file transfer protocol 
+  1744	usually used for text transfers.  It was developed at Columbia 
+  1745	University.  [See also protocol].
+  1746	
+  1747	keyboard macro - A macro that will allow you to hit one or sever-
+  1748	al keys and have the program act as though you had typed a lot 
+  1749	directly from the keyboard.  [See also macro].
+  1750	
+  1751	kill - When referring to a message on a bulletin board, it means 
+  1752	deleting that message from the board.  Usually you can only 
+  1753	delete the messages that you write (unless you are a SysOp).
+  1754	
+  1755	
+  1756	
+  1757	---L---
+  1758	
+  1759	
+  1760	
+  1761	LAN - Local Area Network.  This is a group of computers that are 
+  1762	all connected.  Usually, there is one computer that controls all 
+  1763	peripherals (such as printers and a hard disk drive).  The other 
+  1764	computers are linked to the controlling computer, which lets the 
+  1765	other computers take turns using the peripherals.  [Same as 
+  1766	computer network].
+  1767	
+  1768	LAPB - Link Access Procedure Balanced.  This is a form of error 
+  1769	control found in X.32 packet switched networks.
+  1770	
+  1771	LAPM - Link Access Procedure for Modems.  A type of error control 
+  1772	used by some modems.  It is included in the V.42 protocol 
+  1773	(V.42bis also includes it, since V.42bis includes all V.42 error 
+  1774	control methods).  It is NOT a compression method, even though 
+  1775	some modem manufacturers have incorrectly advertised it as such.  
+  1776	[See also V.42, error control].
+  1777	
+  1778	leased line - A telephone line that directly connects two comput-
+  1779	ers.  It is usually rented from the telephone company.  A leased 
+  1780	line doesn't have many of the electronic restrictions that a 
+  1781	dialup line has, so data can be sent faster.  However, data 
+  1782	therefore can only be sent between those two computers.  [Compare 
+  1783	to dialup line].  [Same as private line].
+  1784	
+  1785	LED indicators - The lights on external modems that indicate 
+  1786	conditions such as speed, RD, DCD, etc.
+  1787	
+  1788	leech - A person who downloads a lot from a BBS, and does not 
+  1789	contribute much to the BBS by uploading programs or using the 
+  1790	message bases.
+  1791	
+  1792	left-brace - The character {.  It's not used often.
+  1793	
+  1794	left-bracket - The character [.
+  1795	
+  1796	letter - [1] The characters A-Z (uppercase or lowercase)  [2] 
+  1797	Another term for a message posted on a BBS.
+  1798	
+  1799	LF - Line Feed.  This is a control character (ASCII 10) that is 
+  1800	used on some computers and printers to move down one line (on the 
+  1801	screen or paper).  It is usually used right after a carriage 
+  1802	return.  [See also return].
+  1803	
+  1804	LHARC - A program that will extract archives with the extension 
+  1805	"LZH".  [See also archive, LZH].
+  1806	
+  1807	line - [1] A row of characters on your screen, for example, many 
+  1808	computers have screens with 25 lines.  [See also columns].  [2] 
+  1809	The connection between your computer and a BBS.  Most commonly 
+  1810	used in the term "line noise."  [3] A phone line connected to a 
+  1811	BBS.  For example, a BBS might advertise that it has "4 lines," 
+  1812	meaning that 4 people can call the BBS and use it at the same 
+  1813	time.  [Same as node].
+  1814	
+  1815	line delay - See delay time.
+  1816	
+  1817	linefeed - See LF.
+  1818	
+  1819	line noise - This is interference on the telephone lines.  It 
+  1820	will cause a character or many characters of garbage to appear on 
+  1821	your screen.  In general, the higher the bps rate of your modem, 
+  1822	the more line noise will appear.  However, error control proto-
+  1823	cols strive to eliminate line noise (and get rid of most of it).  
+  1824	[See also error control].
+  1825	
+  1826	link access procedure - See LAPM, LAPB.
+  1827	
+  1828	local - On a computer that is running a BBS, there are 1 or more 
+  1829	phone lines connected to it.  However, the SysOp can usually use 
+  1830	the BBS, too, from the keyboard.  This is considered a local 
+  1831	connection.
+  1832	
+  1833	local analog loopback - Tests the connection between a modem and 
+  1834	the computer.  [See also local digital loopback].
+  1835	
+  1836	local area network - See LAN.
+  1837	
+  1838	local call - A phone call to a phone number in your local area, 
+  1839	which will not incur long distance charges.  [See also long 
+  1840	distance call].
+  1841	
+  1842	local digital loopback - Tests the connections between a comput-
+  1843	er, the modem, the phone line, and the remote computer.  [See 
+  1844	also local analog loopback].
+  1845	
+  1846	local echo - This is when a communications program will send 
+  1847	information (either that you type or from a file) to your screen, 
+  1848	as well as to the other modem.  Usually local echo is not used, 
+  1849	and the BBS you are connected to will send the information back 
+  1850	to you, and only then will the communications program print what 
+  1851	you typed on your screen.
+  1852	
+  1853	local number - The phone number used after a country code, area 
+  1854	code and/or a city code.  In the United States, it is 7 digits 
+  1855	long.
+  1856	
+  1857	log - A log is a file that keeps track of some kind of use.  In a 
+  1858	communications program, it might keep track of what BBS's you 
+  1859	call.  A BBS can keep a user log, which is a file that indicates 
+  1860	which users called up and when.  [See also user log].
+  1861	
+  1862	logic bomb - This is part of a software program that will do 
+  1863	something malicious.  For example, the author of a BBS program 
+  1864	might have the program set up so that if he enters his initials 
+  1865	in a certain point while the program is running, it will destroy 
+  1866	all of the files on the BBS.  These are no longer as common as 
+  1867	they used to be.
+  1868	
+  1869	logoff - To leave a BBS.  When you choose to logoff, the BBS will 
+  1870	usually ask if that's what you really want to do, then it will 
+  1871	hangup.  It may also ask if you want to leave a note to the 
+  1872	SysOp.  [Same as exit, quit, goodbye].
+  1873	
+  1874	logon - The process of connecting to a BBS.  The is what occurs 
+  1875	after you have called the computer and the phone starts to ring, 
+  1876	but before you actually start using the BBS.  "Logon" can also 
+  1877	include the process of entering your name and password (which is 
+  1878	also called sign-on).  [See also signon].
+  1879	
+  1880	long distance call - A telephone call that is outside your local 
+  1881	calling area, and that you must pay for.  [See also local call].
+  1882	
+  1883	lowercase - The letters that are normally used, such as in this 
+  1884	sentence.  The other kind of letters are UPPERCASE.  [See also 
+  1885	uppercase].
+  1886	
+  1887	lurk - This is a term used on some CB simulators, which means 
+  1888	that the person is leaving his computer for a while (and there-
+  1889	fore will not be able to respond to messages).
+  1890	
+  1891	LZH - This file extension refers to an archive that was com-
+  1892	pressed with the program LHARC.  You need to get the program 
+  1893	LHARC from a BBS before you can un-archive the file.  [See also 
+  1894	archive, unarchive, LHARC].
+  1895	
+  1896	
+  1897	
+  1898	---M---
+  1899	
+  1900	
+  1901	
+  1902	macro - A series of instructions or text that can be entered by
+  1903	hitting a couple of keys.  For example, a communication program
+  1904	might let you enter your user name and password just by hitting
+  1905	CTRL-N.  [See also trigger character].
+  1906	
+  1907	mainframe - A large computer that many people can use at the same 
+  1908	time.  Usually, a mainframe computer is owned by a large company, 
+  1909	and it has a lot of memory and storage for its users.  Some 
+  1910	mainframes have phone lines connected to them so that employees 
+  1911	(or other authorized people) can use the mainframe from home.
+  1912	
+  1913	make/break pulse ratio - During pulse dialing, the make/break 
+  1914	pulse ratio is the ratio of the time that the phone is off the 
+  1915	hook to the time the phone is on the hook.  In America and Cana-
+  1916	da, it should be 39/61.  
+  1917	
+  1918	manual-syncing driver - This is what a BBS uses if the BBS pro-
+  1919	gram can not determine directly what the user's bps rate is, and 
+  1920	the user must hit the return key several times before the BBS can 
+  1921	figure out the user's speed.
+  1922	
+  1923	mark - When you are looking at the titles of messages to read, 
+  1924	some BBS programs will allow you to choose certain ones you want 
+  1925	to read.  This is called marking.
+  1926	
+  1927	mark bit - A bit that is set to 1.  [See also space bit].
+  1928	
+  1929	mark parity - This is when the parity bit is always set to a 
+  1930	binary 1.  [See also parity bit, format].
+  1931	
+  1932	maximum string length - In V.42bis data compression, this refers 
+  1933	to the maximum length of data (in characters) represented by one 
+  1934	word.  It can range from 6 to 250 characters, although it is 
+  1935	usually 32.
+  1936	
+  1937	menu - A list of options that you can choose from.  A BBS might 
+  1938	have a menu that lets you choose from reading messages, download-
+  1939	ing, or logging off.  In reality, there would be many more op-
+  1940	tions.
+  1941	
+  1942	message - Any text that is left in a message base on a BBS.  
+  1943	These can range from questions for other users to answer, to 
+  1944	information on new computer programs, to just about any topic you 
+  1945	could imagine.
+  1946	
+  1947	message base - A group of messages on a BBS pertaining to a 
+  1948	certain topic.  For example, a BBS might have message bases for 
+  1949	general messages, computer-related messages, and social informa-
+  1950	tion.  Some BBS's have dozens or even hundreds of message bases.  
+  1951	[Same as subboard, board].
+  1952	
+  1953	minicomputer - A scaled-down version of a mainframe.  A minicom-
+  1954	puter usually has many terminals connected to it, and can run
+  1955	many programs at the same time.  It is more powerful than a
+  1956	microcomputer.
+  1957	
+  1958	MNP - Microcom Networking Protocol.  A type of error control and 
+  1959	data compression, created by Microcom, that many newer modems 
+  1960	use.  It is built into the modem, unlike software error correc-
+  1961	tion in file transfer protocols.  There are different MNP levels.  
+  1962	Levels 1-4 are error control protocols, and level 5 is a data 
+  1963	compression protocol that can compress data to about 50% of its 
+  1964	original size.  A modem with MNP-5 also has MNP-4.  MNP 1-4 is 
+  1965	also included in the CCITT V.42 error correction system.
+  1966	
+  1967	MNP direct mode - This is a mode used on modems with the MNP 
+  1968	protocols, where the speeds from the modem to the remote modem 
+  1969	and to the computer are the same.  Also, there is no buffering, 
+  1970	and no flow control.  [Same as direct mode].  [See also MNP 
+  1971	normal mode].
+  1972	
+  1973	MNP normal mode - This is the more common mode used with modems 
+  1974	that have MNP capability, where the speed from the computer to 
+  1975	the modem can be higher than the connection between the modem and 
+  1976	the remote modem.  This mode uses buffering to prevent lost data.  
+  1977	[Same as normal mode].  [See also MNP direct mode].
+  1978	
+  1979	mode - The state that a computer or a program is in.  For exam-
+  1980	ple, a computer can be in a text mode, and a communications 
+  1981	program can be in a chat mode (which operates differently than 
+  1982	the normal mode).
+  1983	
+  1984	modem - MODulator/DEModulator.  This is a computer peripheral 
+  1985	which allows a computer to communicate over telephone lines.  
+  1986	This is the heart of computer telecommunications.  The main 
+  1987	factor that differentiates modems is their speed, measured in 
+  1988	bps.
+  1989	
+  1990	modem ready - See DSR.
+  1991	
+  1992	modify - See edit.
+  1993	
+  1994	modular cord - A standard telephone cord, with a modular plug at 
+  1995	either end.  [Same as modular line.  [See also modular jack, 
+  1996	modular plug].
+  1997	
+  1998	modular jack - The square hole in which you put telephone cord 
+  1999	(that has a modular plug).  [See also modular cord, modular plug, 
+  2000	42A block].
+  2001	
+  2002	modular line - See modular cord.
+  2003	
+  2004	modular plug - The square piece of plastic at the end of a tele-
+  2005	phone cord.  It plugs into a modular jack.  [See also modular 
+  2006	cord, modular jack].
+  2007	
+  2008	modulate - When a modem changes information from computer bits 
+  2009	into tones that can be transmitted over the phone lines.  Differ-
+  2010	ent methods of modulation are PSK, FSK, and FDM.  [See also 
+  2011	demodulate, PSK, FSK, FDM].
+  2012	
+  2013	modulation scheme - The method that a modem uses to modulate 
+  2014	data.  [See also PSK, FSK, FDM].
+  2015	
+  2016	MTA - Message Transfer Agent.  This is what moves data across a
+  2017	network under the X.400 electronic mail system.  [See also
+  2018	X.400].
+  2019	
+  2020	multiple-speed - This refers to a modem that can operate at 
+  2021	several speeds.  Most modems are capable of doing this.  While a 
+  2022	modem may be listed as having a speed of 2400bps, it most likely 
+  2023	also can operate at 1200bps and 300bps.
+  2024	
+  2025	multiple-state modulation - A modulation scheme that sends more 
+  2026	than one bit per baud.
+  2027	
+  2028	multi-line BBS - A BBS that has more than one line or node.  [See 
+  2029	also line].
+  2030	
+  2031	
+  2032	
+  2033	---N---
+  2034	
+  2035	
+  2036	
+  2037	NAK - This control character (CTRL-U) is sometimes used by commu-
+  2038	nications or BBS programs (usually in file transfers) to indicate 
+  2039	that the information it received was bad.  NAK stands for Nega-
+  2040	tive AcKnowledgement.  [See also ACK].
+  2041	
+  2042	negotiation scheme - See feature negotiation.
+  2043	
+  2044	network - A group of BBS's that are "linked" together.  This
+  2045	means that the BBS's share messages and sometimes files.  Usually
+  2046	the BBS's will call each other late at night to get the messages
+  2047	and files.  [See also echomail].
+  2048	
+  2049	new user - When you use a BBS, usually you will have the status
+  2050	of new user for the first few calls, until the SysOp verifies
+  2051	your account (at which time you will normally be considered a
+  2052	registered user).  A new user usually has less privileges, such
+  2053	as not being able to download programs.
+  2054	
+  2055	news - Some BBS programs will have announcements that are shown 
+  2056	when you log on to the BBS.  These are often referred to as news, 
+  2057	since they often inform you of changes to the BBS.  [Same as 
+  2058	system news].  [See also sign-on message].
+  2059	
+  2060	next - A command in BBS programs that will let you view the next 
+  2061	message in the message base.
+  2062	
+  2063	node - See line.
+  2064	
+  2065	noise - See line noise.
+  2066	
+  2067	noise level - See noise power.
+  2068	
+  2069	noise power - The "loudness" or strength of noise on a phone 
+  2070	line.  It is measured in -dBm's.  [See also signal power].
+  2071	
+  2072	non-destructive backspace - This is when a communications program 
+  2073	will not delete any characters on the screen when the backspace 
+  2074	key is pressed.  [See also destructive backspace].
+  2075	
+  2076	non-volatile memory - This is memory that many modems have which 
+  2077	is not destroyed when the power is turned off.  Using this memo-
+  2078	ry, you can store a certain configuration in the memory, and have 
+  2079	the modem automatically use the configuration when you turn it 
+  2080	on.
+  2081	
+  2082	normal mode - See MNP normal mode.
+  2083	
+  2084	null character - The ASCII character 0, or CTRL-@.  This charac-
+  2085	ter usually will not be printed on the screen.  It was originally 
+  2086	used when communications programs were slower and could not 
+  2087	receive information as fast as it was sent, so BBS programs would 
+  2088	send these characters after every line to slow down the speed at 
+  2089	which information had to be received.
+  2090	
+  2091	null modem - A special connection between two computers that will 
+  2092	make the computers think that they are hooked up to a modem, so 
+  2093	that the two computers can communicate with each other.
+  2094	
+  2095	numeric result codes - These are result codes that are printed as 
+  2096	numbers, rather than words.  [See also result codes, verbal 
+  2097	result codes].
+  2098	
+  2099	
+  2100	
+  2101	---O---
+  2102	
+  2103	
+  2104	
+  2105	odd parity - This indicates that the parity bit is always set so 
+  2106	that the sum of the bits set to 1 in a byte, plus the parity bit, 
+  2107	is an odd number.  [See also parity, format].
+  2108	
+  2109	off hook - The state that your telephone is in when you pick it 
+  2110	up.  In non-computer life, it usually means when the telephone 
+  2111	connection is accidentally disconnected, such as "Someone must 
+  2112	have left the phone off the hook."  A modem that takes the phone 
+  2113	"off hook" is taking control of the phone line, and it will 
+  2114	usually then dial a phone number for you.  When a telephone line 
+  2115	is "off hook," you are not able to receive calls from other 
+  2116	people, unless you have call waiting.  [See also on hook].
+  2117	
+  2118	off hook button - This is the button on a real telephone that is 
+  2119	depressed when you put down the receiver.  It signals the phone 
+  2120	company when your phone is off hook, and ready to place calls.
+  2121	
+  2122	off line - When your computer is not connected to another BBS.  
+  2123	[See also on line].
+  2124	
+  2125	on hook - When your telephone is not being used, and it is ready 
+  2126	to ring if someone calls.  [See also off hook].
+  2127	
+  2128	on-line - When your computer is connected to a BBS.  For example, 
+  2129	some communications programs will keep track of how long you have 
+  2130	been on line.  This lets you know how long you have been connect-
+  2131	ed to the BBS.
+  2132	
+  2133	on-line conference - This is when a group of people "get togeth-
+  2134	er" and have a conference using their computers.  Some of the 
+  2135	major on-line services do this.  [Same as real-time conference].
+  2136	
+  2137	on-line games - Any game that is played on a BBS.  Sometimes they 
+  2138	are played in real time against other players who are using the 
+  2139	BBS at the same time, and sometimes they are played by making a 
+  2140	move and waiting for their opponent(s) to make their move when 
+  2141	they next call.  [See also Role Playing Game].
+  2142	
+  2143	on-line information service - Any on-line service that provides 
+  2144	information.  Most commercial systems fall into this category.  
+  2145	[See also on-line service].
+  2146	
+  2147	on-line mode - See data mode.
+  2148	
+  2149	on-line service - While this can refer to any computer that is 
+  2150	hooked up to the phone line, it usually means a pay service such 
+  2151	as Compuserve or GEnie.  [Same as on-line system].  [See also 
+  2152	on-line information service].
+  2153	
+  2154	on-line system - See on-line service.
+  2155	
+  2156	originate - To call another computer and connect to it.  The 
+  2157	originating computer is the one that placed the telephone call 
+  2158	(as opposed to the BBS, which is the answering computer).
+  2159	
+  2160	originate-only modems - Some older modems only operate using an 
+  2161	originate frequency, which means that if you try calling one, you 
+  2162	must change your modem to send an answer tone.  This can be done 
+  2163	on many modems by typing ATDT, the phone number you want to call, 
+  2164	and then the letter R (before hitting return).
+  2165	
+  2166	originating computer - The computer which dials another computer.
+  2167	This is most likely referring to your computer (unless you have a
+  2168	BBS, or other people are calling your phone number, and you have
+  2169	your computer's modem answer the phone).  [See also answering
+  2170	computer].
+  2171	
+  2172	originate frequency - This is the frequency of the carrier that
+  2173	is used by the modem that places a call to another modem.  [See
+  2174	also answer frequency].
+  2175	
+  2176	originate mode - This is when a modem is ready to place a call,
+  2177	rather than accept an incoming call.  [See also answer mode].
+  2178	
+  2179	
+  2180	
+  2181	---P---
+  2182	
+  2183	
+  2184	
+  2185	packet - [1] A group of bits sent by a modem that comprise a byte
+  2186	of information.  [2] A group of bytes sent by a file transfer
+  2187	protocol.
+  2188	
+  2189	packet switching network - A telecommunications service that 
+  2190	transmits data from one computer to another using packets of 
+  2191	data.  They usually have telephone numbers in most areas of the 
+  2192	country so that users can connect to on-line services without 
+  2193	toll charges.
+  2194	
+  2195	pad - This happens when a file that is being transferred ends in
+  2196	the middle of a block of data.  The communications program must
+  2197	add blank data to fill up the block.  This is called padding.
+  2198	[See also protocol].
+  2199	
+  2200	PAD - Packet Assembler/Disassembler.  This is a device that 
+  2201	disassembles incoming packets, and assembles outgoing packets.
+  2202	
+  2203	page - [1] (noun) A page is one screen's worth of information.  
+  2204	Many BBS's will automatically wait for you to press a key after 
+  2205	it has sent you a page of information. [2] (verb) to alert the 
+  2206	SysOp that you would like to speak with him.  Many BBS's will 
+  2207	allow you to do this, and it will make beeping sounds so that the 
+  2208	SysOp will know you want to talk to him.  [Same as yell].  [See 
+  2209	also chat].
+  2210	
+  2211	PAK - [1] The extension for files archived with the program of
+  2212	the same name.  You need the program PAK to un-arc an archive
+  2213	with this extension.  [2] The program itself.  [See also archive,
+  2214	unarchive].
+  2215	
+  2216	parallel - This is when a computer sends data one byte (or any
+  2217	number of bits other than one) at a time.  This is faster than
+  2218	the alternative, serial.  [See also serial].
+  2219	
+  2220	parallel interface - Any interface that transmits or receives 
+  2221	more than one bit at a time.  In most cases, 8 bits are trans-
+  2222	ferred at a time.  The RS-232C standard involves a parallel 
+  2223	interface.  [See also serial interface].
+  2224	
+  2225	parity bit - Most modems have the capability to send an extra bit 
+  2226	for every byte sent, which is used to help sense errors.  This is 
+  2227	called the parity bit.  It can be set to no parity, mark parity, 
+  2228	space parity, odd parity or even parity.  Most BBS's do not use a 
+  2229	parity bit.  [See also format, mark, space, odd, even].
+  2230	
+  2231	password - A special code that only you should know.  This code 
+  2232	will allow you to gain access to your account on a computer.  
+  2233	Different BBS's have different rules as to how long your password 
+  2234	can be and what characters can be used.  You should not use a 
+  2235	password that is easy to guess (such as your name, or 
+  2236	"password"), because a hacker might try to gain access to your 
+  2237	account by guessing your password.
+  2238	
+  2239	pause - On most modems, you can send the modem a command that
+  2240	will pause at some point while dialing a number.  This can be
+  2241	useful on PBX systems, if you have to wait for a dial tone.
+  2242	
+  2243	PBX - Private Branch Exchange.  This is the telephone system that 
+  2244	many offices have, allowing extensions for each telephone, and a 
+  2245	connection to the main telephone system.
+  2246	
+  2247	PC-Pursuit - A packet switching network that allows people to 
+  2248	save money on long distance calling, if they use modems.
+  2249	
+  2250	phase shift keying - See PSK.
+  2251	
+  2252	phone number - A number identifying a specific phone line.  In 
+  2253	the United States, a phone number consists of a 3 digit area code 
+  2254	and a 7 digit number.  If you call BBS's in other countries, 
+  2255	there may be a specific country code and city code that is part 
+  2256	of the phone number.  You can find many of these codes in a phone 
+  2257	book.  A BBS will usually ask you to tell it your phone number 
+  2258	before you can be a registered user.
+  2259	
+  2260	phreaker - A person who spends a lot of time trying to find out 
+  2261	as much as possible about the telephone company, and how it 
+  2262	works.  They often try to find out ways to make long distance 
+  2263	calls for free.  Some steal calls from telephone credit card 
+  2264	users, some steal calls from the phone company directly, and 
+  2265	others don't make "free" long distance calls.  They are sometimes 
+  2266	confused with hackers.  [See also hacker].
+  2267	
+  2268	pick up - To pick up a carrier is when the 2 modems recognize 
+  2269	each other's signals over a phone line.  After this point the two 
+  2270	computers can communicate.
+  2271	
+  2272	ping-pong - A 9600bps and 4800bps protocol developed by Hayes.  
+  2273	It features fast turnaround.
+  2274	
+  2275	pins - The ports on the back of your computer and an external 
+  2276	modem will have pins.  Each pin has a certain function, such as 
+  2277	letting the computer know that the modem is online.  The pins 
+  2278	from a computer's port and the modem are connected by a cable.
+  2279	
+  2280	PKARC - The program which will make an archive with the extension 
+  2281	"ARC".  [See also archive, unarchive, ARC].
+  2282	
+  2283	PKUNZIP - The program which will un-arc a file that has the 
+  2284	extension ZIP.  [See also unarchive, archive, ZIP].
+  2285	
+  2286	PKXARC - The program which will un-arc an archive created with 
+  2287	PKARC.  [See also unarchive, archive, ARC].
+  2288	
+  2289	PKZIP - The program which will create an archive with the exten-
+  2290	sion "ZIP".  It is one of the most popular archive programs.  
+  2291	[See also archive, unarchive, ZIP].
+  2292	
+  2293	pocket modem - An external modem that is small enough to be 
+  2294	easily portable.  It usually either uses a battery for power, or 
+  2295	it can get its power from the phone line.
+  2296	
+  2297	poll - [verb] The process when a computer checks to see whether a 
+  2298	peripheral or another computer has data to send.  [noun] See 
+  2299	vote.
+  2300	
+  2301	post - To save a message that you have written on a BBS so that 
+  2302	other people can see it.  [Same as leave message].
+  2303	
+  2304	private - When referring to a message, it means that only a
+  2305	specific person or several people that you specify can view the
+  2306	message.  [See also public].
+  2307	
+  2308	private branch exchange - See PBX.
+  2309	
+  2310	private line - See leased line.
+  2311	
+  2312	privileged - Some BBS's have a privileged user level, where the 
+  2313	user can do more than a regular user.  For example, they may be 
+  2314	able to download more programs than regular users.  [See also 
+  2315	user level].
+  2316	
+  2317	profanity filter - Some BBS's have a special function that will 
+  2318	take out specified words (usually swears) from messages that 
+  2319	people leave.  That way, the BBS will automatically keep itself 
+  2320	"clean," even if users try to leave swears in their messages.
+  2321	
+  2322	prompt - A character or group of characters that are meant to 
+  2323	remind the user of a BBS that he needs to enter some information.  
+  2324	It might say "What now?" or it might list the name of the message 
+  2325	base the user is currently in, or a list of possible commands.
+  2326	
+  2327	protocol - [1] When referring to file transfers, a protocol is a 
+  2328	method of sending and receiving a program.  There are many meth-
+  2329	ods available, each with different advantages and disadvantages.  
+  2330	[See also upload, download, Xmodem, Ymodem, Zmodem, Kermit].  [2] 
+  2331	Protocol is also used to describe the way that hardware error 
+  2332	control is managed.  [See also error control].
+  2333	
+  2334	PSK - Phase Shift Keying.  In this method of modulation/demodula-
+  2335	tion, there are two frequencies used (usually 1200 hertz and 2400 
+  2336	hertz).  There are 4 different phase angles (0, 90, 180, and 270 
+  2337	degrees), representing dibits 00, 01, 10, and 11.  This is usual-
+  2338	ly used for 1200bps transmission.  Note that the baud rate using 
+  2339	PSK is really 1/2 of the bps rate, since 2 bits are sent at a 
+  2340	time instead of one.  [See also modulation].
+  2341	
+  2342	PSTN - Public Switched Telephone Network.  This is the regular 
+  2343	phone lines that just about everybody uses.
+  2344	
+  2345	public - When referring to a message, it means that the message 
+  2346	is available for everyone to see.  [See also private].
+  2347	
+  2348	public domain - A program that is in the public domain usually 
+  2349	has no copyright, and can be copied legally by anybody.  BBS's 
+  2350	often have public domain software available for people to down-
+  2351	load.  [See also shareware, freeware, commercial software, ban-
+  2352	nerware].
+  2353	
+  2354	public messaging - A fancy term that means to read and/or leave
+  2355	messages in a message base.
+  2356	
+  2357	public switched telephone network - See PSTN.
+  2358	
+  2359	pulse dialing - A method that some phones use to dial numbers.
+  2360	It involves a series of "clicks."  Most modems support this type
+  2361	of dialing, which is the only type available in some remote
+  2362	areas.  The other method of dialing is tone dialing.  [See also
+  2363	tone dialing].
+  2364	
+  2365	
+  2366	
+  2367	---Q---
+  2368	
+  2369	
+  2370	
+  2371	quickscan - An option used by some bulletin board programs which 
+  2372	will let you check several message bases to see if there are any 
+  2373	new messages.  [See also global scan].
+  2374	
+  2375	quit - See logoff.
+  2376	
+  2377	
+  2378	
+  2379	---R---
+  2380	
+  2381	
+  2382	
+  2383	rack mounted modems - Some multi-line BBS's use rack mounted
+  2384	modems, so that the modems can be easily and safely stored.
+  2385	
+  2386	raw speed - The speed at which a modem can actually transmit 
+  2387	data, before compression or other factors.  [See also effective 
+  2388	transfer rate].
+  2389	
+  2390	RD - Receive Data.  This is the wire in an RS-232C cable that
+  2391	receives data.
+  2392	
+  2393	real-time conference - See on-line conference.
+  2394	
+  2395	receive - To transfer information from another computer to your
+  2396	computer.  To receive a file is the same as downloading the file.
+  2397	[See also send].
+  2398	
+  2399	receive data LED - On external modems, this LED will light up 
+  2400	when the modem is receiving data.  [See also LED indicators].
+  2401	
+  2402	receive level - The "loudness" of the sound that is received by a 
+  2403	modem.  It is measured in -dBm's.  A modem will have a certain 
+  2404	range which it can understand, for example, -33dBm to -9dBm.  
+  2405	[See also equalization].
+  2406	
+  2407	receive sensitivity - See carrier detect threshold.
+  2408	
+  2409	register - A location in memory that stores a value which refers 
+  2410	to something specific.  This value can be changed.  For example, 
+  2411	most modems have a register that holds a number which tells the 
+  2412	modem how many rings it should wait for before picking up the 
+  2413	phone.
+  2414	
+  2415	registered user - This is the most common user level on most 
+  2416	BBS's.  It usually allows reasonable usage of the BBS (perhaps it 
+  2417	will give you a time limit of 45 minutes per day, and let you 
+  2418	download up to 200K of programs per day).  [Same as regular 
+  2419	user].  [See also user level].
+  2420	
+  2421	regular user - See registered user.
+  2422	
+  2423	reliable link - A connection that is "error-free," meaning that 
+  2424	an error control protocol is being used.  [See also auto-reliable 
+  2425	link].
+  2426	
+  2427	remote - A computer in a different location.  For a BBS, the user 
+  2428	is at a remote location (since they are connected by the phone 
+  2429	line, and not right there).  For a user, the BBS is at a remote 
+  2430	location.
+  2431	
+  2432	request to send - See RTS.
+  2433	
+  2434	reread - After a message is sent to your computer from a BBS, the 
+  2435	reread command will send the message again.  This can be useful 
+  2436	if the message is long, and you miss part of it.
+  2437	
+  2438	reset - A modem can be reset.  This will change any options (such
+  2439	as parity and speed) to the values that they have when the modem
+  2440	is first used.  This can be useful if you change some values for
+  2441	the modem and aren't sure what they do, and then you find that 
+  2442	the modem won't work.  Resetting the modem will fix everything 
+  2443	for you.
+  2444	
+  2445	response format - The way that a modem sends certain information 
+  2446	to the computer.  It can either be verbal (such as "BUSY" or "NO 
+  2447	CARRIER"), or it can be numeric ("7" or "3").
+  2448	
+  2449	response time - How long it takes for the computer or modem to 
+  2450	respond to a certain condition.  For example, a carrier detect 
+  2451	response time of 10ms means that it takes the modem 10 millisec-
+  2452	onds to figure out that there is a carrier.
+  2453	
+  2454	result codes - These are either numbers or words that the modem 
+  2455	sends to the communications program (which will usually print 
+  2456	them on the screen for you to see) that indicate how the modem 
+  2457	responded to an action you requested.  For example, if you tell 
+  2458	the modem to dial a number, it may respond with "CONNECT 1200", 
+  2459	which is a result code that means that the computer dialed the 
+  2460	number and connected to a computer on the other end.  [See also 
+  2461	numeric result codes, verbal result codes].
+  2462	
+  2463	retrain - Some modems have the capability of monitoring the phone 
+  2464	line to "see" how good the connection is.  If the line quality is 
+  2465	poor, these modems can "retrain"--they change their equalization 
+  2466	so as to better accommodate the lines.  [See also equalization].
+  2467	
+  2468	retransmit - To transmit information that was previously sent.  
+  2469	Whenever an error is encountered, retransmitting the data will 
+  2470	fix the problem.
+  2471	
+  2472	return - ASCII character 13.  This is the key marked "RETURN" or 
+  2473	"ENTER".  It will advance the cursor to the next line.  On some 
+  2474	printers, it will just move the print head to the left hand side, 
+  2475	and the printer then needs a linefeed to move to the next line.  
+  2476	[Same as carriage return, <CR>].
+  2477	
+  2478	reverse - When you are in a message base, you may find this 
+  2479	command which will allow you to read messages is backwards order 
+  2480	(from newest to oldest messages).
+  2481	
+  2482	reverse mode - When a modem switches the signals it should send.  
+  2483	For example, in reverse mode, a modem that dials another computer 
+  2484	will act as though it just received the call.  Some modems only 
+  2485	let you dial out (they do not accept calls).  In order to call 
+  2486	one of these modems, you would have to set your modem to reverse 
+  2487	mode, and then call the computer.
+  2488	
+  2489	RI signal - See ring indicator signal.
+  2490	
+  2491	right brace - The character }.
+  2492	
+  2493	right bracket - The character ].
+  2494	
+  2495	ring - When someone calls you on the telephone, the sound that
+  2496	your phone makes is called a "ring."  Also, when you call someone
+  2497	(or a computer), it will ring before they pick it up.  This
+  2498	indicates that the number is not busy, but nobody has picked up
+  2499	the phone yet.
+  2500	
+  2501	ringback - The sound that you hear over the phone that indicates
+  2502	that the phone is ringing on the other end, and not busy.  It
+  2503	sounds a lot like a phone actually ringing.
+  2504	
+  2505	ringing indicator LED - This is an LED on some external modems 
+  2506	that lights up when the phone is ringing.  [See also LED indica-
+  2507	tors].
+  2508	
+  2509	ring indicator signal - This is the line on an RS-232C cable that 
+  2510	indicates that the phone is ringing.
+  2511	
+  2512	RJ-11 - This is a normal phone jack.  Modems usually have 2 jacks
+  2513	like this, one to connect to the phone line, and the other to
+  2514	connect to a telephone (that you can use when the modem isn't
+  2515	being used).
+  2516	
+  2517	RPG - See Role Playing Game
+  2518	
+  2519	Role Playing Game - Some computers don't act as places to leave 
+  2520	messages or programs, but instead let you play a game.  On these 
+  2521	computers, you have a character and call up the computer to move 
+  2522	around in a world with other characters (other people who call 
+  2523	up), and you interact with them (for example, you may try to kill 
+  2524	the character).  [Same as RPG].  [See also on-line games].
+  2525	
+  2526	rotary - A phone that dials with the pulse method.  [See also
+  2527	pulse dialing, tone dialing].
+  2528	
+  2529	RS-232 - The name of a specific type of port on the back of some 
+  2530	computers, or peripherals such as modems.  It has 9 or 25 pins.  
+  2531	[See also RS-232C].
+  2532	
+  2533	RS-232C - The name of a standard (created by the Electronics 
+  2534	Industry Association) for communication between a computer and a 
+  2535	serial device.  The interface consists of 25 wires, although a 
+  2536	variation contains 9 wires.  Computers and peripherals which both 
+  2537	have an RS-232 port can be connected easily with an RS-232C 
+  2538	cable.
+  2539	
+  2540	running - Working.  If a BBS is running, then it is working 
+  2541	correctly and people can call it.  [See also down].
+  2542	
+  2543	RTS - Request To Send.  This is when the computer tells the modem
+  2544	that it wants to send information to the other computer.  It is
+  2545	only used in half duplex mode.  [See also flow control, CTS].
+  2546	
+  2547	
+  2548	
+  2549	---S---
+  2550	
+  2551	
+  2552	
+  2553	S register - A type of register that modems use.  [See also 
+  2554	register].
+  2555	
+  2556	scan - To look through messages or file descriptions to either 
+  2557	find new messages or files or look for certain key words within 
+  2558	the messages or descriptions.
+  2559	
+  2560	screen width - The number of characters that a computer can  
+  2561	display on one line.  On most modern computers, it is 80 columns.  
+  2562	[Same as video width].  [See also columns].
+  2563	
+  2564	script language - Many communications programs allow the user to 
+  2565	write a program, or script, which allows them to use the communi-
+  2566	cations program without actually typing anything.  It is often 
+  2567	used to call BBS's late at night to download programs or look for 
+  2568	new messages.  This way, the user does not have to be there when 
+  2569	the communications takes place.
+  2570	
+  2571	scripting language - See script language.
+  2572	
+  2573	sector - A unit to measure storage space.  It usually refers to 
+  2574	256 bytes.  It is rarely used any more.
+  2575	
+  2576	security level - Some BBS programs have different user levels, 
+  2577	usually numbered, which allow different levels of access.  For 
+  2578	example, 0 might refer to an unregistered user, 10 a registered 
+  2579	user, and 99 for the SysOp.  Each has different levels of access 
+  2580	on the BBS.  [Similar to user level].
+  2581	
+  2582	selectable COM ports - On internal modems for IBM compatible 
+  2583	computers, this allows you to change something on the modem 
+  2584	(usually a jumper or DIP switch) to allow you to change which COM 
+  2585	port the modem will be connected to.  [See also COM port, jumper, 
+  2586	DIP switch].
+  2587	
+  2588	selftest - The ability of a modem to test itself to make sure it 
+  2589	is functioning properly.
+  2590	
+  2591	send - To transfer information from one computer to another.  To 
+  2592	send a file is called uploading the file.  [See also receive].
+  2593	
+  2594	SendFax(TM) - A modem that can send faxes, but not receive them.
+  2595	
+  2596	serial - The method used when a computer sends and receives data 
+  2597	one bit at a time.  Contrast this to parallel.  [See also paral-
+  2598	lel].
+  2599	
+  2600	serial interface - An interface that transmits only 1 bit at a 
+  2601	time.  [See also parallel interface].
+  2602	
+  2603	serial port - A port on a computer that is used to transmit and
+  2604	receive data in a serial fashion (one bit at a time).  [See also
+  2605	RS-232C].
+  2606	
+  2607	service class - The level of MNP protocol that is being used, 
+  2608	such as MNP Class 4 or MNP Class 5.  [See also MNP].
+  2609	
+  2610	settings - See format.
+  2611	
+  2612	set-up - (noun) - Information that a BBS has about your computer. 
+  2613	(verb) - To give the information about your computer to a BBS.  
+  2614	This information usually includes screen width, whether or not 
+  2615	you want hot-keys, and other miscellaneous information.
+  2616	
+  2617	shareware - Programs that can be distributed freely, but you must 
+  2618	pay for these programs if you use them.  They usually allow you 
+  2619	to try them for a specified period of time and then you must 
+  2620	either pay for the program or get rid of it.  Many BBS's have 
+  2621	shareware programs that you can download without paying the BBS, 
+  2622	but you must remember that if you use a shareware program you are 
+  2623	supposed to pay for it.  [See also public domain].
+  2624	
+  2625	shell virus - A virus which places itself either before or after 
+  2626	a program on a disk or in memory.  It can be easy to detect such 
+  2627	a virus, since the length of the program will be longer after the 
+  2628	virus hits than it was before.  [See also virus].
+  2629	
+  2630	SIG - Special Interest Group.  This is similar to a message base,
+  2631	but it may also contain files.  It is generally used on large
+  2632	services, such as CompuServe.  [See also SIGop].
+  2633	
+  2634	SIGop - SIG OPerator.  The coordinator of a SIG.  This person is 
+  2635	responsible for checking messages to make sure that they pertain 
+  2636	to the topic of the SIG.  [See also SIG].
+  2637	
+  2638	signal power - The loudness or strength of what a modem sends 
+  2639	over the phone line.  It is measured in -dBm's.  [See also noise 
+  2640	power].
+  2641	
+  2642	sign-off message - A message that is displayed when you log off a
+  2643	BBS.  Often the message will include the numbers of other BBS's,
+  2644	and in some cases the BBS will allow you to leave a message for
+  2645	the next user to call the BBS.
+  2646	
+  2647	sign-on - The procedure of letting a BBS know who you are.  This 
+  2648	involves giving the computer information such as you user number, 
+  2649	name, password, and sometimes even phone number.  [See also 
+  2650	logon].
+  2651	
+  2652	sign-on message - A message that is displayed by a BBS after you 
+  2653	sign on.  Often news about the BBS will go here.  On some BBS's 
+  2654	you can leave a sign-on message for the next caller.  [See also 
+  2655	news].
+  2656	
+  2657	simplex - See half duplex.
+  2658	
+  2659	smart modem - Originally the brand name of a modem, it refers to 
+  2660	a modem which has capabilities which make it 'smart'.  Most 
+  2661	modems now sold are considered smart.  Basically, it means that 
+  2662	the modem has many features.  [See also dumb modem].
+  2663	
+  2664	smart terminal - A terminal that is capable of certain editing 
+  2665	features.  [See also terminal, dumb terminal, terminal 
+  2666	emulation].
+  2667	
+  2668	space bit - A bit set to zero.
+  2669	
+  2670	space parity - This is when the parity bit is always set as a 
+  2671	binary 0.  [See also parity bit, format].
+  2672	
+  2673	special interest group - See SIG.
+  2674	
+  2675	speed - This refers to the bps rate of a modem.  The most common 
+  2676	modem speeds are 300bps, 1200bps, 2400bps, and 9600bps.  [See 
+  2677	also effective transfer rate].
+  2678	
+  2679	stand-alone modem - See external modem.
+  2680	
+  2681	stand-alone program - A program, usually that allows you to do 
+  2682	file transfers, that is separate from your comm program, but can 
+  2683	be called by it.
+  2684	
+  2685	start bit - This framing bit indicates that the data byte will be 
+  2686	following.  It is always a binary 0.  [See also format, framing 
+  2687	bits].
+  2688	
+  2689	statistics - Any information that a BBS keeps on its users.  Some 
+  2690	BBS's keep track of how many messages a user posts, how many 
+  2691	programs the user uploads or downloads, and even how many times 
+  2692	the user calls.
+  2693	
+  2694	stats - See statistics.
+  2695	
+  2696	status line - In communications programs, sometimes the bottom 
+  2697	line of the screen will contain a status line, which has informa-
+  2698	tion such as the speed of the modem, the parity, how long you 
+  2699	have been connected to a BBS and other such information.
+  2700	
+  2701	status lights - See LED indicators. 
+  2702	
+  2703	stop bit - When a modem sends a byte of data, it usually sends 
+  2704	one or two framing bits after the data byte, before the next byte 
+  2705	is sent.  These bit(s) are called stop bits.  They are always a 
+  2706	binary 1.  [See also format, framing bits].
+  2707	
+  2708	streaming - When a file transfer protocol sends data continuous-
+  2709	ly, without waiting to make sure there are no errors.  A stream-
+  2710	ing protocol should check for errors, but if an error occurs the 
+  2711	file transfer should be stopped.  A streaming protocol should 
+  2712	only be used with modems that have hardware error control.  [See 
+  2713	also Ymodem-g, protocol].  [Same as full flow].
+  2714	
+  2715	streaming Ymodem - See Ymodem-g.
+  2716	
+  2717	STU-III - Secure Telephone Unit, generation III.  This is a
+  2718	system used by the government that makes voice and data calls
+  2719	much more secure.
+  2720	
+  2721	subboard - See message base.
+  2722	
+  2723	subject - Most BBS's require that you leave a short description
+  2724	about any messages that you post on the BBS.  This description is
+  2725	referred to as the subject of the message.  [Same as title].
+  2726	
+  2727	subop - A term used for the operator of a subboard.  Some BBS's 
+  2728	allow a person besides the SysOp to control a specific message 
+  2729	base.  This person would be able to kill any messages that he/she 
+  2730	felt were inappropriate.
+  2731	
+  2732	synchronous communication - With synchronous communication, data 
+  2733	bytes are not marked with a beginning and end, but instead are 
+  2734	sent at a specific interval.  When computers send data to modems, 
+  2735	it is synchronous communication.  When modems send the informa-
+  2736	tion they get from the computer, the modem usually will add start 
+  2737	and stop bits to identify the bytes.  That is asynchronous commu-
+  2738	nication.  [See also asynchronous communication].
+  2739	
+  2740	SysOp - Short for SYStems OPerator.  This is the person who is in
+  2741	charge of a BBS.  He has the power to change anyone's user level,
+  2742	delete users, delete or edit messages.  Usually this is the same
+  2743	person who paid for the BBS equipment and pays for the phone
+  2744	line.  [See also Co-SysOp].
+  2745	
+  2746	SysOp window - Some BBS programs have an area of the computer 
+  2747	screen (on the computer that the BBS runs on, not the user's 
+  2748	screen) that gives information about the user who is on-line, 
+  2749	such as his password, where he is from and his phone number.  
+  2750	This is called the SysOp window, and is for the convenience of 
+  2751	the SysOp.  [Similar to top of screen display].
+  2752	
+  2753	system - [1] Your computer.  When a BBS asks for your system 
+  2754	configuration, it is referring to information about your comput-
+  2755	er, such as screen width.  [2] A BBS.
+  2756	
+  2757	system files - Any computer files that are used by an operating
+  2758	system, or in the case of BBS's, files that are used by the BBS
+  2759	program that do not get changed.
+  2760	
+  2761	system news - See news.
+  2762	
+  2763	
+  2764	
+  2765	---T---
+  2766	
+  2767	
+  2768	
+  2769	tab - The key on your keyboard that will move the cursor forward
+  2770	about 5 spaces.  It is not an ASCII character (it is similar to a
+  2771	function key, since it does not output a single character).
+  2772	
+  2773	talk mode - See voice mode.
+  2774	
+  2775	TCM - Trellis Coded Modulation.  This is a form of error control
+  2776	used on some modems.
+  2777	
+  2778	TD - Transmit Data.  This is the wire in an RS-232C cable that is
+  2779	used to transmit information.
+  2780	
+  2781	Telco - Abbreviation for Telephone Company.
+  2782	
+  2783	telecomm - Short for telecommunications.  See telecommunications.
+  2784	
+  2785	telecommunication(s) - This word has no precise definition, but 
+  2786	is frequently used.  Its definition ranges from "any form of 
+  2787	communication over a distance" to "any communication by electric 
+  2788	means" to "two computers 'talking' to each other via modems."  
+  2789	Methods of communications that probably are considered telecommu-
+  2790	nications: BBS's, telephones, TV's and fax machines.  The word is 
+  2791	used both in singular and plural.
+  2792	
+  2793	telecommuting - The idea of company employees working from home, 
+  2794	rather than their office.  At home, they can communicate with the 
+  2795	office (and other entities) by modem or voice calls.
+  2796	
+  2797	telecomputing - Using computers to communicate.  This usually 
+  2798	involves using modems to communicate over the phone lines, but 
+  2799	can also involve other media such as the air waves.
+  2800	
+  2801	Telenet - The packet-switched network that is used for PC-Pur-
+  2802	suit, which is operated by U.S. Sprint.
+  2803	
+  2804	term program - See terminal program.
+  2805	
+  2806	terminal - A CRT and keyboard that are connected to either a 
+  2807	computer or a modem.  [See also smart terminal, dumb terminal].
+  2808	
+  2809	terminal emulation - When a communications program can simulate 
+  2810	the operations of a smart terminal.
+  2811	
+  2812	terminal mode - Some modems have a built in terminal program.  On 
+  2813	these modems, if that program is running, the modem is said to be 
+  2814	in its terminal mode.  It also refers to the state where a modem 
+  2815	is ready to accept commands, although command mode is the pre-
+  2816	ferred term.
+  2817	
+  2818	terminal program - A program that allows a person to use a modem.  
+  2819	It is generally very limited.  A communications program is a more 
+  2820	advanced version of a terminal program.  Usually a terminal 
+  2821	program will simulate a specific brand of terminal.  It generally 
+  2822	does not support file transfers.  [Also called term program].
+  2823	
+  2824	terminate - To disconnect with another computer.  This is some-
+  2825	times listed as a command in menus on BBS's.
+  2826	
+  2827	text file - Any information that can be read, and is stored in a 
+  2828	computer file.  A text file can be any kind of information, such 
+  2829	as a description of a computer program.
+  2830	
+  2831	thread - A group of related messages on a BBS, within the same 
+  2832	message base.  If a user posts a reply to a message, some BBS's 
+  2833	will start a thread.  If a message is part of a thread, the BBS 
+  2834	will have a command so that you can see the original message, 
+  2835	which started the thread.
+  2836	
+  2837	throughput - See effective transfer rate.
+  2838	
+  2839	tilde - The character ~.
+  2840	
+  2841	time limit - Most BBS's have a time limit, where you can only be 
+  2842	on the BBS for a certain amount of time.  On some BBS's you can 
+  2843	only be on for a certain amount of time each time you call, on 
+  2844	others there is a limit of time that you can be on the BBS per 
+  2845	day.
+  2846	
+  2847	time out - BBS programs often will disconnect a user if he
+  2848	doesn't type anything for a certain amount of time.  Time out
+  2849	occurs when the time limit is reached and the BBS program hangs
+  2850	up on the user.  This is done so that users do not tie up the
+  2851	BBS.  If a user is connected to the BBS but is not using it, 
+  2852	other callers might not be able to use the BBS.
+  2853	
+  2854	timing signal - A signal sometimes sent by modems over the phone 
+  2855	line that lets the receiving modem know when a byte of informa-
+  2856	tion starts.  It is required in synchronous communication.
+  2857	
+  2858	title - See subject.
+  2859	
+  2860	tone dialing - This is a method that a phone or modem can use to 
+  2861	dial a phone number.  It uses one audible tone per digit to be 
+  2862	dialed.  [See also pulse dialing].
+  2863	
+  2864	top of screen display - Some BBS's have this display on the top 
+  2865	of the screen of the computer running the BBS.  This will show 
+  2866	the SysOp certain information about the user who is on-line, such 
+  2867	as his phone number, how many programs he has downloaded, etc.  
+  2868	[Similar to SysOp window].
+  2869	
+  2870	touchtone dialing speed - The length of time that your modem 
+  2871	sends each touchtone digit over the phone lines.  It is the 
+  2872	equivalent to the length of time that you hold down the buttons 
+  2873	on a phone when you make a call.
+  2874	
+  2875	transfer - To send a computer program from one computer to anoth-
+  2876	er.  [See also download, upload, protocol].
+  2877	
+  2878	transfer protocol - See protocol.
+  2879	
+  2880	transmission rate - See data transmission rate.
+  2881	
+  2882	transmission speed - See data transmission rate.
+  2883	
+  2884	transmit data LED - This is an LED on an external modem that will 
+  2885	light when the modem is transmitting data over the phone line.  
+  2886	[See also LED indicators].
+  2887	
+  2888	transmit level - The "loudness" level of the sound leaving a 
+  2889	modem to go over the phone lines.  It is measured in -dBm's.  It 
+  2890	should be different at different frequencies, since certain 
+  2891	frequencies have more loss over the phone line than others.  [See 
+  2892	also equalization].
+  2893	
+  2894	trapdoor - This usually refers to a BBS program (or a mainframe 
+  2895	that you call up) that has a special code that can be entered to 
+  2896	give you high access.  Usually, it is entered as a user name and 
+  2897	password when logging on.  These are undocumented by the program, 
+  2898	and usually were created by the programmers so that they could 
+  2899	gain access to any computer running their BBS program.  Hackers 
+  2900	try to find trapdoors, but they are usually not created by hack-
+  2901	ers.  (Some other kinds of software have trapdoors, such as video 
+  2902	games, which might have trapdoors to give you extra lives).
+  2903	
+  2904	Trellis-coded modulation - See TCM.
+  2905	
+  2906	trigger character - This is a character that, when pressed, 
+  2907	starts a macro.  [See also macro].
+  2908	
+  2909	trojan horse - A trojan horse is a program within another pro-
+  2910	gram, usually on a mainframe or a computer running a BBS.  The 
+  2911	original program looks innocent, but when run it will trigger the 
+  2912	trojan horse, which will usually try to gain access to the main-
+  2913	frame computer system or BBS.
+  2914	
+  2915	TTY - A TeleTYpe machine.  It is a keyboard and a printer com-
+  2916	bined in one unit.  It is hooked up to another computer.
+  2917	
+  2918	TTY mode - This is when a communications program emulates a TTY 
+  2919	machine, which only involves printing characters and recognizing 
+  2920	the linefeed, carriage return and backspace characters.  [See 
+  2921	also TTY].
+  2922	
+  2923	two-wire leased line - See leased line.
+  2924	
+  2925	Tymnet - A packet-switched network.
+  2926	
+  2927	type-ahead buffer - Some BBS programs let you type characters to 
+  2928	the BBS, even while it is sending information to you.  When it is 
+  2929	finished sending the information to you, it will then act on the 
+  2930	information you sent.  The type-ahead buffer refers to the proc-
+  2931	ess, and the space in the BBS computer's memory where the charac-
+  2932	ters are held.
+  2933	
+  2934	
+  2935	
+  2936	---U---
+  2937	
+  2938	
+  2939	
+  2940	UA - User Agent.  It is the program that people use to create and
+  2941	read messages under the X.400 system.  [See also X.400].
+  2942	
+  2943	UART - Universal Asynchronous Receiver/Transmitter.  This is a 
+  2944	device in a computer or modem that will change serial data (the 
+  2945	way data comes in over the phone line) to parallel, and vice 
+  2946	versa.  [See also serial, parallel, 16550 UART, 8250 UART, 16450 
+  2947	UART].
+  2948	
+  2949	un-arc - See unarchive.
+  2950	
+  2951	unarchive - To take out the files from an archive.  [Same as 
+  2952	unarc].  [See also archive, extract, ARJ, ZIP, ARC, PAK, LZH].
+  2953	
+  2954	unattended mode - This mode is available on some communications 
+  2955	programs.   It will let your computer wait for a telephone call 
+  2956	from another computer, and will let the person using that comput-
+  2957	er access your computer (usually to download or upload programs).  
+  2958	It is called unattended because you don't have to wait for the 
+  2959	person to call, the program will automatically answer when some-
+  2960	one calls.  [See also attended mode].  [Similar to host program].
+  2961	
+  2962	underline character - The character _.
+  2963	
+  2964	underscore character - Any character (although almost always the
+  2965	underline character) that is used for underlining.  When this
+  2966	method is used, the text to be underlined will be sent (usually
+  2967	to a printer), and then backspaces will be sent, and then the
+  2968	underscore character will be printed over the text, so it looks
+  2969	like it is underlined.
+  2970	
+  2971	upload - To send a program from your computer to a BBS.  [See 
+  2972	also download, protocol].
+  2973	
+  2974	uppercase - Letters that are used for emphasis, as opposed to 
+  2975	regular lowercase letters.  CAPITAL letters are the same as 
+  2976	uppercase letters.  The first word in a sentence is in uppercase.  
+  2977	Some older computers were only capable of displaying uppercase 
+  2978	characters.
+  2979	
+  2980	user - A person who uses a BBS.  For example, a BBS might claim 
+  2981	that it has 500 users, which means that there are 500 different 
+  2982	people who have called the BBS.
+  2983	
+  2984	user level - The level of security which a user has.  This usual-
+  2985	ly is in the form of word(s), usually progressing from: New User, 
+  2986	Registered User, Privileged User, SysOp Level.  [See also securi-
+  2987	ty level].
+  2988	
+  2989	user list - Most BBS programs will allow you to see a list of all 
+  2990	its users.  It will show the user's name, and often city and 
+  2991	state.  This is called the user list.  Rarely will it show any 
+  2992	phone numbers or more detailed information.
+  2993	
+  2994	user log - A file on a computer running a BBS that lists which 
+  2995	users called, what time they called, and sometimes information as 
+  2996	to what they did while they were on the BBS.
+  2997	
+  2998	user name - This is the name that a person uses on a computer 
+  2999	system.  Sometimes an alias is used, but it is more often the 
+  3000	user's real name or a variation of it.  [See also alias].
+  3001	
+  3002	user number - A number that is used by some older BBS programs to 
+  3003	keep track of users.  On these BBS's, a user would have to remem-
+  3004	ber a specific number as well as his password.  Most BBS's now 
+  3005	just use the person's user name instead, which is much easier for 
+  3006	a user to remember.  [Same as account number, ID number].
+  3007	
+  3008	userfile - A file that a BBS program has that keeps track of all 
+  3009	users of the BBS and their statistics.
+  3010	
+  3011	
+  3012	
+  3013	---V---
+  3014	
+  3015	
+  3016	
+  3017	V.17 - The CCITT standard for fax transmission at 14,400bps.
+  3018	
+  3019	V.21 - The international standard, created by CCITT, that con-
+  3020	trols transmission at 300bps.  [See also 103].
+  3021	
+  3022	V.22 - The international standard for transmission at 1200bps, 
+  3023	created by CCITT.  [See also 212A].
+  3024	
+  3025	V.22bis - The international standard, created by CCITT, that 
+  3026	controls data transmission at 2400bps.
+  3027	
+  3028	V.23 - The CCITT protocol for transmission of 1200bps one way, 
+  3029	75bps the other way.
+  3030	
+  3031	V.24 - This, combined with V.28 is the CCITT standard equivalent 
+  3032	to EIA's RS-232C standard.  V.24/V.28 has 25 pins, just like the 
+  3033	original RS-232C standard.  [See also RS-232C].
+  3034	
+  3035	V.28 - Part of V.24.  [See also V.24].
+  3036	
+  3037	V.29 - The CCITT standard for 9600bps half-duplex communications.
+  3038	
+  3039	V.32 - The international standard controlling transmission at 
+  3040	9600bps.  It was created by CCITT.  It has provisions for fall-
+  3041	back, if the line is too noisy.
+  3042	
+  3043	V.32bis - The international standard for 14,400 bps modems, 
+  3044	created by CCITT.
+  3045	
+  3046	V.42 - A standard error control system created by CCITT that is 
+  3047	in use on many 9600bps modems and some 2400bps modems.  It in-
+  3048	cludes LAPM, as well as MNP 2-4.  [See also error control, V.42 
+  3049	compatible, V.42 compliant].
+  3050	
+  3051	V.42 compatible - This is a modem that follows all the V.42 
+  3052	specifications, except for LAPM error control (instead it uses 
+  3053	MNP).  [See also V.42].
+  3054	
+  3055	V.42 compliant - This is a modem which follows all the V.42 
+  3056	specifications, and uses LAPM error control if possible.  Other-
+  3057	wise, it will go to MNP error control.  [See also V.42].
+  3058	
+  3059	V.42bis - A CCITT standard for data compression.  It can compress
+  3060	data with about a 3:1 compression ratio, although it can compress
+  3061	up to 4:1 given the right conditions.  Any modem with V.42bis
+  3062	also has V.42 error control.  [See also data compression].
+  3063	
+  3064	verbal result codes - These are result codes which are printed as 
+  3065	words, rather than numbers.  [See also result codes, numeric 
+  3066	result codes].
+  3067	
+  3068	verify - This is when a SysOp makes sure that a new user is who 
+  3069	he or she claims to be.  The normal procedure is for the SysOp to 
+  3070	call up a new user, just to make sure that the phone number he 
+  3071	listed is real.  This is a way to make sure that the users are 
+  3072	less likely to abuse the system.  However, most SysOps do not 
+  3073	call new users, since it is time consuming.  Some SysOps will 
+  3074	look at the information the new user left just to make sure it 
+  3075	"looks" right (if the new user says his phone number is 555-1212, 
+  3076	the SysOp knows it is not real).  After verifying the user, the 
+  3077	SysOp will usually raise the user's user level.
+  3078	
+  3079	verified user - Any user who has been verified by the SysOp.  It 
+  3080	is also used to refer to users who have access better than that 
+  3081	of new users.
+  3082	
+  3083	video width - See screen width.
+  3084	
+  3085	videotex - The idea of getting information by computer, over the
+  3086	phone lines, and paying for it.  It is the computer version of
+  3087	audiotex (900 numbers, voice mail, having computers call you).
+  3088	
+  3089	virus - Any program which spreads itself secretly.  It reproduces 
+  3090	within a computer, and also will go to other computers if possi-
+  3091	ble (through file transfers).  At a certain point in time, the 
+  3092	virus will do something (anything from saying "Boo" to something 
+  3093	destructive, such as erasing all files on a hard disk drive).  
+  3094	They are often hidden inside legitimate programs that seem to run 
+  3095	normally, but contain the virus.  It will usually spread to every 
+  3096	program you run.  Viruses became widespread because BBS's can 
+  3097	inadvertently spread virus all across the country.  Whenever you 
+  3098	download a program, it might have a virus in it.  However, there 
+  3099	are several programs available which find many viruses and can 
+  3100	destroy them.
+  3101	
+  3102	voice detection - The ability of a modem to detect whether a
+  3103	computer answers the phone, or whether it is a human voice.
+  3104	
+  3105	voice grade - A telephone line that is designed to transfer human 
+  3106	voice.  This is the way most phone lines are set up.  However, 
+  3107	the phone company also has data grade lines, which are supposed 
+  3108	to make data communications better.  [See also data grade].
+  3109	
+  3110	voice mail - An addition to some modems.  This allows the modem 
+  3111	to also answer incoming voice calls, send recorded (voice) mes-
+  3112	sages to the caller, and let them leave a message.  [Same as 
+  3113	answering machine].
+  3114	
+  3115	voice mode - Some older modems require the user to manually dial 
+  3116	phone numbers through a telephone.  When this is done, the modem 
+  3117	is in voice mode.  When the remote computer picks up the phone, 
+  3118	the user must switch his modem from voice mode to data mode.  
+  3119	[Same as talk mode].  [See also data mode].
+  3120	
+  3121	vote - Some BBS's have this feature, which allows the SysOp to 
+  3122	find out user's preferences about things ranging from operation 
+  3123	of the BBS to political positions.  It is similar to a survey in 
+  3124	the non-computer world.  [Same as poll].
+  3125	
+  3126	VT100 - A smart terminal, which is emulated by many communica-
+  3127	tions programs.  It uses ANSI codes.  [See also ANSI].
+  3128	
+  3129	VT52 - Another smart terminal, which is emulated by some communi-
+  3130	cations programs.
+  3131	
+  3132	
+  3133	
+  3134	---W---
+  3135	
+  3136	
+  3137	
+  3138	window - A distinct area of a computer screen that contains 
+  3139	information different than the rest of the screen.  Sometimes it 
+  3140	covers other information 'underneath' the window (in which case 
+  3141	it is temporary), or it is permanent and does not contain other 
+  3142	information.  [See also SysOp window].
+  3143	
+  3144	word wrap - A function of editors on BBS's (just like that found
+  3145	in most word processors) which will move a word that won't fit at
+  3146	the very right hand of the screen down to the next line.
+  3147	
+  3148	worm - A program which embeds itself within another program.  
+  3149	Either it tries to find a space in which it won't be noticed, or 
+  3150	it will just stick itself anywhere within the main program (which 
+  3151	will ruin that program).  A worm is almost always destructive.  
+  3152	[See also virus].
+  3153	
+  3154	
+  3155	
+  3156	---X---
+  3157	
+  3158	
+  3159	
+  3160	X.25 - This is a packet-switching protocol developed by CCITT.
+  3161	It is used to carry large amounts of data at fast speeds over
+  3162	leased phone lines.  [See also X.32].
+  3163	
+  3164	X.25 dialup - See X.32.
+  3165	
+  3166	X.32 - This is CCITT's 1984 update of X.25, also known as X.25 
+  3167	dialup.  [See also X.25].
+  3168	
+  3169	X.400 - This is the CCITT standard protocol for a global system
+  3170	for the exchange of electronic mail.
+  3171	
+  3172	X.500 - The CCITT standard for a directory of the users of the
+  3173	X.400 system.  [See also X.400].
+  3174	
+  3175	xfer - Short for transfer.  It usually refers to file transfers.  
+  3176	[See also upload, download].
+  3177	
+  3178	Xmodem - A file transfer protocol developed by Ward Christensen 
+  3179	around 1977.  It is fairly slow by today's standards, but was the 
+  3180	first widespread file transfer protocol.  It uses blocks of 128 
+  3181	bytes, and after each block is sent, it sends a 1 byte checksum 
+  3182	to check for errors.  If an error is encountered, the block will 
+  3183	be re-sent.  Almost every communications program offers this 
+  3184	protocol.  [Same as Christensen protocol].  [See also protocol].
+  3185	
+  3186	Xmodem/CRC - The same as Xmodem, but it has a 16-bit CRC instead 
+  3187	of the checksum, which makes it more reliable (it catches more 
+  3188	errors).  [See also protocol].
+  3189	
+  3190	Xmodem-1K - This is similar to Xmodem/CRC, except it uses blocks 
+  3191	of 1024 bytes, rather than 128.  It is faster than Xmodem, since 
+  3192	it needs to stop less often to check for errors.  This is some-
+  3193	times incorrectly called Ymodem.  [See also protocol, Xmodem, 
+  3194	Ymodem].
+  3195	
+  3196	Xoff - The CTRL-S character.  This is often used to pause infor-
+  3197	mation that is being sent.  The information will be continued 
+  3198	when an CTRL-Q is received.  [See also flow control, Xon].
+  3199	
+  3200	Xon - The CTRL-Q character.  This will sometimes continue paused 
+  3201	information.  [See also flow control, Xoff].
+  3202	
+  3203	Xon/Xoff - The flow control method using the Xon and Xoff charac-
+  3204	ters.  It is built into the software, not the hardware.  [See 
+  3205	also Xon, Xoff, flow control].
+  3206	
+  3207	
+  3208	
+  3209	---Y---
+  3210	
+  3211	
+  3212	
+  3213	yell - See page (verb).
+  3214	
+  3215	Ymodem - A file transfer protocol which can transfer more than 
+  3216	one file at a time.  It transfers both a file and some informa-
+  3217	tion about the file (including its length, and the name of the 
+  3218	file).  It is similar to Xmodem/CRC, except that Ymodem can 
+  3219	transfer more than one file at a time.  It will use CRC-16 if 
+  3220	possible, or else it will use a 1 byte checksum.  It will use 
+  3221	both 1024 byte blocks and 128 byte blocks.  [See also protocol].
+  3222	
+  3223	Ymodem-g - This is Ymodem changed to provide best results with 
+  3224	error-correcting modems.  Errors can be discovered by the proto-
+  3225	col, since Ymodem-g uses CRC, but if there are any errors in the 
+  3226	transmission, the transmission will be aborted.  [See also Ymo-
+  3227	dem, protocol, streaming].  [Same as streaming Ymodem].
+  3228	
+  3229	
+  3230	
+  3231	---Z---
+  3232	
+  3233	
+  3234	
+  3235	ZIP - The file extension which refers to archives that were
+  3236	created by the program PKZIP.  You need the program PKUNZIP to
+  3237	get the files out of the archive.  [See also archive, unarchive,
+  3238	PKZIP, PKUNZIP].
+  3239	
+  3240	Zmodem - A file transfer protocol which is known for its speed, 
+  3241	as well as the ability to transfer information about the files 
+  3242	which it sends.  It has crash recovery and auto-download fea-
+  3243	tures, and can use a 32 bit CRC, which makes it almost error-
+  3244	free.  [See also protocol].
+  3245	
+  3246	
+  3247	
+  3248	
+  3249	
+  3250	
+  3251	
+  3252	
+  3253	                           TRADEMARKS
+  3254	
+  3255	CompuServe is a trademark of CompuServe.
+  3256	GEnie is a servicemark of GE Information Services.
+  3257	Hayes is a trademark of Hayes Microcomputer Products, Inc.
+  3258	MNP is a trademark of MicroCom, Inc.
+  3259	SendFax is a trademark of Sierra Semiconductor.
+  3260	
+  3261	
+  3262	
+  3263	
+  3264	
+  3265	                             HISTORY
+  3266	
+  3267	Telecommunications Dictionary version 0.99:
+  3268	
+  3269	     This was the first version available.  It was incomplete, 
+  3270	with about 150 words, only covering A-K.  But it was nice for 
+  3271	people not to have to wait another year to see part of it.  It 
+  3272	was released in 1989.  It was usually in a file called 
+  3273	"MODEMDIC".
+  3274	
+  3275	
+  3276	Telecommunications Dictionary version 1.00:
+  3277	
+  3278	     This was the first real version.  It had somewhere around
+  3279	430 words defined in it.  It was released on August 15, 1991.  It
+  3280	was sent out originally as "TDIC100" in a ZIP compressed format.
+  3281	
+  3282	
+  3283	Telecommunications Dictionary version 1.10:
+  3284	
+  3285	     This version had more than 530 words listed. Many words were 
+  3286	added, some extra information was added to some old words, and 
+  3287	several minor errors were corrected.  It was released on August 
+  3288	22, 1991 (I was very busy that week!).  It should be called 
+  3289	TDIC110.TXT, or if archived, TDIC110.ZIP (or whatever extension).
+  3290	
+  3291	
+  3292	Telecommunications Dictionary version 1.20:
+  3293	
+  3294	     This version was not officially released.  It was an interim 
+  3295	version.  It updated about half the definitions existing in 
+  3296	version 1.10, and minor inconsistencies were fixed.  Also, a few 
+  3297	words were added.
+  3298	
+  3299	Telecommunications Dictionary version 1.21:
+  3300	
+  3301	     Another interim version, not officially released.  Last 
+  3302	modification in August, 1992.
+  3303	
+  3304	The Modem Dictionary version 1.25:
+  3305	
+  3306	     An interim version, just before 1.30.  The name was changed, 
+  3307	since the dictionary is specific to modems, just a small portion 
+  3308	of telecommunications.
+  3309	
+  3310	The Modem Dictionary, version 1.30:
+  3311	
+  3312	     This version was widely distributed, and contains all of the 
+  3313	improvements found in the previous, unreleased versions.  It was 
+  3314	marketed as shareware on a trial basis.  This version is on file 
+  3315	at the United States Copyright Office, in Washington.
+  3316	
+  3317	The Modem Dictionary, version 1.50:
+  3318	
+  3319	     The current version.  The main change is that is was changed 
+  3320	back to freeware.  It will remain that way.  
+  3321	

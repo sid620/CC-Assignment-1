@@ -1,0 +1,374 @@
+     1	The following Hayes commands represent industry standards.  These
+     2	are included as part of the information we are providing new modem
+     3	ans BBS users as part of Online Training.----Lois Laulicht; ccc of wv
+     4	
+     5	
+     6	
+     7	
+     8	Introduction
+     9	
+    10	This chapter describes the AT command set. If you're using
+    11	communication software, you shouldn't have to use AT
+    12	commands. Your modem will be controlled by your
+    13	communications software. However, if you are writing software
+    14	that you want to control the modem, or if you want to
+    15	undderstand the "behind the scenes" operation of the modem,
+    16	you'll want to learn more about the AT command set.
+    17	Major topics discussed in this following section include:
+    18	
+    19	        *   Command Execution
+    20	
+    21	        *   Command Guidelines
+    22	
+    23	        *   AT Immediate Commands
+    24	
+    25	        *   AT Set Commands
+    26	
+    27	        *   AT Commands for Optional Non-Volatile Memory
+    28	
+    29	        *   Sendfax AT Commands
+    30	
+    31	        *   S Register Table
+    32	
+    33	
+    34	command Execution
+    35	
+    36	Your modem accepts only ASCII characters (loosely speaking
+    37	the characters on the keyboard) as commands- The commands
+    38	entered while the modem is in command mode are stored in a
+    39	memory buffer that is 40 characters long. Unless the echo
+    40	back is disabled (EO command), these characters will also be
+    41	echoed back to your computer and displayed on the monitor
+    42	screen. Upon seeing a carriage return showing that the
+    43	command is ended, the command is compared to a list of valid
+    44	commands, and if a match is found, the function associated
+    45	with the command is executed.
+    46	
+    47	A command line must start with the ATtention code AT.
+    48	However, commands may be strung together in a single command
+    49	line. If desired, each command may be separated by a space
+    50	for readability, however the command string may not exceed 40
+    51	characters and spaces. The command or string of commands will
+    52	be executed when you enter a carriage return, and a result
+    53	code is sent back after the last command that is executed in
+    54	the command string. The result codes are displayed on the
+    55	monitor, unless they have been intentionally disabled.
+    56	
+    57	
+    58	command Guidelines
+    59	
+    60	Your modem is easy to operate and configure. However, it is
+    61	very important that certain guidelines for issuing commands
+    62	to the modam are followed.
+    63	
+    64	If an error was made while entering a command in command
+    65	mode, it can be edited at any time (before pressing the
+    66	return key).Pressing the backspace key delete the last
+    67	character entered. By pressing the backspace key repeatedly,
+    68	the entire command line may be deleted, except for the AT
+    69	command at the beginning of the command line.
+    70	
+    71	Each command line must end with carriage return. The modem
+    72	does not begin command execution until it receives a carriage
+    73	return.
+    74	
+    75	
+    76	A missing parameter in a cammand that requires a parameter tp
+    77	fully define the command (in addition to the command)
+    78	evaluates to zero.
+    79	
+    80	The command buffer is 40 characters long, If a Command
+    81	exceeds 40 characters, the modem will abort execution of the
+    82	command line and display an error message.
+    83	
+    84	AT Immediate Commands
+    85	The modem command set consists of two types of commands:
+    86	Immediate Commands and set Commands. The Immediate Commands
+    87	will always use the current default settings, unless the
+    88	command specifies otherwise. The table below lists the
+    89	Immediate commands and their functions.
+    90	
+    91	                  AT ImmediateCommands
+    92	
+    93	COMMAND                        FUNCTION
+    94	
+    95	AT   Command line prefix.  The Attention Command precedes
+    96	     all other commands listed below except for A/ and the
+    97	     excape code. For example, the command DT would be typed
+    98	     ATDT.
+    99	______________________________________________________________
+   100	A/   Repeat the previous command (not to be preceded by AT)
+   101	______________________________________________________________
+   102	A    The modem is set to answer mode and goes offhook
+   103	     immediately.
+   104	______________________________________________________________
+   105	
+   106	Dn   Dial the number immediately following this command
+   107	     where n is the number to be dialed, or that number
+   108	     combined with other dial subcommands as shown below.
+   109	     Any combination of the subcommands listed below may
+   110	     be strung together to perform the desired dialing
+   111	     sequance. The number is dialed in the call progress
+   112	     or blind mode depending on register S11.
+   113	
+   114	     DIAL          FUNCTION
+   115	     SUBCOMMAND
+   116	
+   117	     T             Touch Tone Dialing.
+   118	
+   119	     P             Pulse Dialing.
+   120	                   (Default to Pulse if T or P not used)
+   121	
+   122	     R             Reverse mode. Puts modem in answer mode
+   123	                   immediately after dialing.
+   124	
+   125	     W             Wait for a continuous tone before
+   126	                   dialing the next number. Useful for dialing
+   127	                   MCI or Sprint. The modem waits for the
+   128	                   number of seconds set by the register S7
+   129	                   for the tone to occur. If the tone is not
+   130	                   not heard, BUSY or NO DIALTONE result code
+   131	                   is issued.
+   132	
+   133	     @             Wait for the "quiet answer" - one or more
+   134	                   rings followed by 5 seconds of silence -
+   135	                   for the length of time defined by register S7.
+   136	
+   137	     ,             Pause the length of time specified by register
+   138	                   S8 (default time = 2 seconds). Each comma
+   139	                   equals the pause length specified.
+   140	
+   141	     !             Flash.  This character can be used to go
+   142	                   temporarily on-hook in order to get a new
+   143	                   dialtone. (Note: Some software uses ! as a
+   144	                   carriage return.)
+   145	
+   146	
+   147	     ;             Return to the Command state after
+   148	                   dialing. This command can only be
+   149	                   placed at the end of a dial command.
+   150	
+   151	     S             Dial a stored number. The numbers
+   152	                   are stored in the registers of the
+   153	                   microcontroller.
+   154	
+   155	   S=9             Dial stored number 0,1,2,or 3 that has
+   156	                   been previously stored in non-volatile
+   157	                   memory using &Zn command (the non-
+   158	                   volatile memory is an optional feature).
+   159	
+   160	0-9  # * ABCD      Digits and -characters that may be use
+   161	                   in dialing. il * and ABCO may only be
+   162	                   used when tone dialing.
+   163	
+   164	DIAL EXAMPLE 1:ATDTl1234567
+   165	
+   166	                   This example instructs the modem to tone
+   167	                   dial the number 1234567. Bl@nk spaces
+   168	                   within a command string are ignored.
+   169	
+   170	DIAL EXAMPLE 2:  ATDP9WT4ll,,,,,HO
+   171	
+   172	                   This example instructs the modem to
+   173	                   pulse dial 9, wait for a second
+   174	                   dialtone; tone dial the number 411,
+   175	                   pause 10 seconds, and then hang up.
+   176	
+   177	
+   178	
+   179	    Hn    controls the modem on/off hook relay
+   180	          n = 0, on-hook (disconnected) n = 1, off-hook
+   181	
+   182	    In    Returns product ID/checksum.
+   183	          n = 0, returns product ID.
+   184	          n = 1, performs checksum, returns checksum.
+   185	          n = 2, performs checksum, returns result code.
+   186	          n = 3, returns ROM part # and revision level
+   187	
+   188	    On    Puts modem in the online data mode.
+   189	          n = 0, online
+   190	          n = 1, online with equalizer retrain sequence (2400
+   191	          bps only).
+   192	          Issuing an 'On' command always takes modem offhook
+   193	
+   194	    Z     Causes a software reset with registers set to default
+   195	          values.
+   196	
+   197	    &F    Sets values for S Registers and commands to factory
+   198	          default.
+   199	
+   200	    &Zn   Stores telephone numbers to optional non-volatile
+   201	          memory. Modem normally comes without non-volatile
+   202	          memory.
+   203	
+   204	
+   205	
+   206	                         AT Set Commands
+   207	
+   208	Set commands are used to configure the modem, allowing you to
+   209	select operation speeds and standards, result code format
+   210	and various other options. The default confiqurations are
+   211	listed first, and marked with an *.
+   212	
+   213	COMMAND                        FUNCTION
+   214	_____________________________________________________________
+   215	Bn     Selects V.22 or Bell 212A in the 1200 bps mode.
+   216	      *n = 1, Bell 212A with 2225 Hz Answer Back Tone
+   217	       n = 0, CCITT V.22 with 2100 Hz Answer Back Tone
+   218	
+   219	En     Determines whether the modem echoes the data received
+   220	       in the command mode back to the local computer.
+   221	      *n = 1, echo on                  n = 0, echo off
+   222	
+   223	Ln     Speaker Volume
+   224	      *n=2, medium    n= 0 or 1, low      n = 3, high
+   225	
+   226	Mn     Speaker Control
+   227	      *n = 1, speaker on when dialing until carrier detected
+   228	       n = 0, speaker off
+   229	       n = 2, speaker always on
+   230	       n = 3, speaker on after dialing until carrier detected
+   231	
+   232	
+   233	Qn     Result codes on/off.
+   234	      *n = 0, codes are sent   n = 1, codes are not sent
+   235	
+   236	Sr?    Reads the contents of status register r.
+   237	
+   238	Sr=n   This command may be used to modify an S Register of
+   239	       the modem. It assigns a value n to the status
+   240	       register r. They may be reset to the default value
+   241	       by issuing an '&F' or 'z' command. See next table
+   242	       for @ list of S Registers.
+   243	
+   244	Vn     Sets result code format.
+   245	      *n = 1, words n = 0, numeric
+   246	
+   247	Xn     Sets dialing mode, result code format for dial command
+   248	      *n = 4, Dialtone and busy signal detected. Result
+   249	              codes 0-7 and 10 enabled.
+   250	       n = 0, Dialtone and busy signal not recognized (blind
+   251	              dialing). Result codes 0-4 enabled.
+   252	       n = 1, Dialtone and busy signal not recognized (blind
+   253	              dialing). Result codes 0-5 and 10 enabled.
+   254	       n = 2, Dialtone detected. Busy signal not detected
+   255	              Result codes 0-6 and 10 enabled.
+   256	       n = 3, Busy signal detected. Dialtone not detected
+   257	              Result codes 0-5,7, and 10 enabled.
+   258	
+   259	
+   260	Yn     Long Space Disconnect Option
+   261	      *n = 0, disabled            n = 1, enabled
+   262	
+   263	Zn     Recall configuration profile in non-volatile RAM
+   264	      *n = 0, Recall profile 0 (stored using &WO command)
+   265	       n = 1, Recall profile 1 (stored using &WI command)
+   266	
+   267	&Cn    Enables DCD.
+   268	      *n = 1, DCD set by modem when remote carrier detected.
+   269	       n = 0, DCD always on.
+   270	
+   271	&Dn    Enables DTR. DTR on/off time as specified by S25.
+   272	      *n = 0, modem ignores DTR.
+   273	       n = 1, switches to command mode when DTR goes off.
+   274	       n = 2, same as n = 1. Also hangs up, disables auto
+   275	            answer.
+   276	       n = 3, initializes modem when DTR goes off.
+   277	
+   278	&Gn    Guard Tone (used only whan in CCITT modes)
+   279	      *n = 0, noguard tone   n = 1, 550Hz   n = 2, 1800 Hz
+   280	       This command need never be used when communicating
+   281	       over U.S. phone lines. Outside the U.S,, the modem
+   282	       may need to generate an additional tone, along with
+   283	       its carrier, to disable echo suppressors in the
+   284	       central office. This guard tone varies by country.
+   285	
+   286	
+   287	&Mn    Communications Mode
+   288	      *n = 0, Asynchronous    n = 1, n = 2, n = 3, Reserved
+   289	
+   290	&Pn    Pulse dial make/break ratio.
+   291	      *n = 0, 39/61 (for U.S. applications)
+   292	       n = 1, 33/67 (for foreign applications)
+   293	
+   294	&Qn    Communications Mode Option
+   295	
+   296	                   Idle State               On-line State
+   297	
+   298	      *n = 0       Normal                   Asynchronous
+   299	       n = 1       Normal                   Reserved
+   300	       n = 2       Dial when DTR  =  1      Reserved
+   301	                  Hangup when DTR = 0      Reserved
+   302	       n = 3       Talk/data, DTR = 0/1     Reserved
+   303	
+   304	&Sn    Controls DSR. DSR ON indicates that the modem is
+   305	       connected to a communication channel and is ready.
+   306	      *n = 0, DSR is always on
+   307	       n = 1, DSR turned on at start of handshaking, off in
+   308	              test mode, idle state, or when carrier is lost
+   309	
+   310	&Tn    Controls Test (for n=6,7,8 disabled for 300 bps modes
+   311	      *n = 0, Ends current test and returns to command mode
+   312	       n = 1, Initiate local analog loopback
+   313	       n = 3, Initiate local digital loopback
+   314	       n = 4. Grant request to remote mode for RDL.
+   315	       n = 5, Deny request from ramote modem for RDL
+   316	       n = 6, Initiate ramote digital loopback
+   317	       n = 7, Initiate remote digital loopback w/ self test
+   318	       n = 8, Initiate local analog loopback w/ self test
+   319	
+   320	         AT Commands for Optional Non-Volatile Memory
+   321	
+   322	This modem has been designed to accept non-volatile memory
+   323	if required. In general, non-volatile memory is not required
+   324	for modems that are used in PCs, since the configuration that
+   325	would be stored in the non-volatile memory is stored instead
+   326	in the communications software as part of the software setup,
+   327	or as an initialization string or dial string.
+   328	
+   329	&V   Displays active configuration profiles (S Register
+   330	     settings, commands, and telephone numbers. Inputs
+   331	     from the DTE are ignored while this information is
+   332	     being sent.
+   333	
+   334	@Wn  Store Active Profile. Sends and stores acceptable
+   335	     values for certain commands and S Registers to non-
+   336	     volatile RAM. The following may be stored:
+   337	
+   338	        Commands:Bn,Cn,En,Fn,Ln,Mn,P or T,Qn,Vn,Yn,Xn,&Cn,
+   339	        &Dn,&Gn,&Jn,&Ln,&Mn,&Pn,&Qn,&Rn,&Sn,&T4,&T5,&Xn
+   340	        Registers:S0,S14,S18,S21,S22,S23,S25,S26,S27
+   341	     The last DTE speed and parity are also stored. Stored
+   342	     values are used on power-up or hard reset.
+   343	
+   344	     n = 0, Store active profile in location 0
+   345	     n = 1, Store active profile in location 1
+   346	
+   347	&Yn  Select Stored Profile on Power Up Option
+   348	     n = 0, Select profile 0 on power up or hard reset
+   349	     n = 1, Select profile 1 on power up or hard reset
+   350	     See the &Wn command for particular commands and S
+   351	     Registers stored. The selected &Y command survives a
+   352	     power outage
+   353	
+   354	&Zn=x    Store Telephone Number. Stores up to four dialing
+   355	         strings in non-volatile RAM for later recall using DS
+   356	         (dial stored number) command.
+   357	
+   358	         Command format:
+   359	         &Z <up to 36 characters> <CR>
+   360	         &Z= <up to 36 characters> <CR>
+   361	         &Zn <up to 3G characters> <CR> where n=0 to 3
+   362	
+   363	     If the delimiter (=) is not present, the characters
+   364	     following the &Z are treated as telephone numbers
+   365	     and/or modifiers and are stored in location 0. If the
+   366	     delimiter is present, th@ characters following it are
+   367	     stored in the location specified by the character
+   368	     preceding the delimiter (0 to 3), If not specified, 0
+   369	     will be used.
+   370	     Allowable characters: 0 1 2 3 4 5 6 7 8 9 A B C D # *
+   371	                           T P R W @ , ! ;
+   372	
+   373	     Characters not listed above will be ignored.
+   374	

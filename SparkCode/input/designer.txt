@@ -1,0 +1,195 @@
+     1	SAPPHIRE DESIGNER NOTES by Tim Campell.
+     2	
+     3	This section contains no especially important information.  It is presented
+     4	here  for those people who might want to know why Sapphire was designed the
+     5	way it was.
+     6	
+     7	Some Background
+     8	
+     9	I've been  involved with computers since  1971, and since those  early days
+    10	spent sweating over a 10 character-per-second Teletype, my enduring passion
+    11	has been computer telecommunications.  I'm fascinated by the way it enables
+    12	us to reach out and grasp the crystallized thoughts of  a stranger.  We can
+    13	enter an amazing,  exciting universe.  Where  time can stand still  or flow
+    14	sideways.  Where people  can flash across  a continent in  the blink of  an
+    15	eye. 
+    16	Over the years, I've worked out countless designs for computer telecommuni-
+    17	cations systems.   Several of these designs  went beyond the planning stage
+    18	and became reality.   It excites me that we basement  programmers have this
+    19	chance to pioneer new methods of communication.
+    20	
+    21	Some of the projects I've been involved with include:
+    22	
+    23	    ACCESS:   Canada's first national consumer telecomputing service.
+    24	
+    25	    PYROTO:   The BBS/Game system (about 50,000 people play it each week).
+    26	              The latest version  is available from Pinnacle  Software for
+    27	              $35.  (Runs also as a door.)
+    28	
+    29	    SASSy:    A bizarre experiment  that helped us learn  what's wrong and
+    30	              what's right about  BBS's.  The spec and a 2-year report are
+    31	              available from Pinnacle Software ($10).
+    32	
+    33	I also had  the chance to provide  some suggestions for Ron  Sharp's extra-
+    34	ordinary INFINITy system,  which is a BBS with  a seemingly infinite number
+    35	of message bases.
+    36	
+    37	
+    38	Why Sapphire was Written
+    39	
+    40	After years of seeing other  kinds of BBS's, I had  to admit that I  didn't
+    41	like the way any of them worked.  I'm not talking about minor annoyances --
+    42	my own program has  dozens of quirks that I intend to iron out. Rather, I'm 
+    43	talking about fundamental design decisions.
+    44	
+    45	To my knowledge (and  based on my interpretation), every single  one of the
+    46	existing BBS  packages evolved from  RBBS.   Perhaps not in  actual program
+    47	code, but certainly in concept.  They all share the same  general features,
+    48	though admittedly most are vastly superior to the original RBBS!
+    49	
+    50	I was never tempted to copy RBBS,  because I'd already written my first BBS
+    51	program long before anybody around here  knew what a BBS was.  It  wasn't a
+    52	very sophisticated program, but it did put me on my own path.
+    53	
+    54	It  is  important to  understand  that there  was  something of  a computer
+    55	revolution  in Montreal  during the  mid-to-late 70's.   A large  number of
+    56	hackers set up  house on a local  school board's HP2000 mini-computer.   We
+    57	evolved our own set of idioms, so when the first "mainstream" BBS (an Apple
+    58	Networks) came to  town, we said, "BBS?   What's that?   Bulletin Broadcast
+    59	System?"  We really didn't know!
+    60	
+    61	Our user-interface idioms found  their way into various programs  that were
+    62	developed locally.   And thus they were  found in ACCESS, then  PYROTO, and
+    63	finally (after considerable mutation) in Sapphire.
+    64	
+    65	
+    66	Notes About the Design Philosophy
+    67	
+    68	Commands
+    69	
+    70	Sapphire uses word commands, rather than single-letter commands.  I figure:
+    71	it's easier to remember words than mnemonics -- especially when the mnemon-
+    72	ics are tortuously contrived (as in the infamous [Y]ell for chat).
+    73	
+    74	Since you  don't run out of words the way  you run out of letters, Sapphire
+    75	doesn't  need  multiple program  layers where  the  same commands  can mean
+    76	different things (e.g. [U]tilities or [U]pload), depending where you are.
+    77	
+    78	Because I use  word commands, I tend to make Sapphire somewhat more conver-
+    79	sational than a letter-command system.   I should mention that  some people
+    80	find my programs fairly terse.  What I  mean to say is that, while Sapphire
+    81	is not chatty, it  is more like  a dialogue than you're  likely to find  on
+    82	most BBS's.
+    83	
+    84	Maintenance
+    85	
+    86	Sapphire  is a zero-maintenance BBS.  I  design programs this way partially
+    87	because I'm  lazy and partially because  in the 70's most  Montreal hackers
+    88	were in a position to  get cut off from their programs at any  time.  (Most
+    89	of us weren't really supposed to be on that central system.)   As a result,
+    90	my associates  and I  got in  the habit  of designing  programs that  could
+    91	survive on their own.
+    92	
+    93	40 Column Text
+    94	
+    95	Many people have expressed  surprise at my extensive use of 40-column text.
+    96	The obvious answer  is that there are still plenty of 40-column screens out
+    97	there; the IBM-PC isn't the only personal computer in the world.
+    98	
+    99	However, the real  reason is that when people are reading boring text (such
+   100	as is necessary  while learning  to use  a BBS), they  want to  scan it  as
+   101	quickly as possible.   The fact is,  80-column text requires too  much eye-
+   102	movement for easy scanning; if newspapers can use narrow columns, so can I.
+   103	Why  should I be  held hostage to  the actual width  of my screen?   No law
+   104	forces us to fill each line.
+   105	
+   106	The Cool Reception
+   107	
+   108	The way  by which  potential members  are  introduced to  Sapphire may  not
+   109	strike you as  particularly inviting.  They are requested to send a message
+   110	telling you why they'd like  to join.  A few  people are so offended,  they
+   111	hang up immediately.
+   112	
+   113	The actual requirements for the application  can easily be changed, though.
+   114	Maybe you'll merely ask  them to tell you their  shoe-size.  But if  you're
+   115	running your BBS as a public service, I'd advise against it.
+   116	
+   117	The vast majority of BBS's  go down within a few months because  the sysops
+   118	are appalled at the  uncaring nature of the users.  But what can we expect?
+   119	Total strangers call our boards; should we expect them to be nice to us?
+   120	
+   121	You  can greet them  all with  open arms, but  chances are, you'll  be very
+   122	disappointed.   These  anonymous people  simply  have no  particularly good
+   123	reason to think you're special.
+   124	
+   125	Far  too few  novice sysops  are aware  of the  simple  fact that  when you
+   126	figuratively  "throw  open your  doors", you  can  get crumbs,  bums, free-
+   127	loaders, and jerks.   You also get some beautiful people,  but it's hard to
+   128	remember that when you've got some fellow who signs on, makes a beeline for
+   129	the  files section,  and ties  up your  line for hours  as he  pilfers your
+   130	software collection -- leaving nothing in return.
+   131	
+   132	It is utterly futile to be bitter.  The best solution is to be careful.
+   133	
+   134	A sysop's worst enemy  is his own good nature.  He wants to spread his arms
+   135	and hug everybody who signs up to his  system.  At first, he's excited that
+   136	so many people are visiting his BBS.  But later, when he  realizes how many
+   137	people  treat him  like  a bus  service  for software  and  information, he
+   138	becomes disillusioned.
+   139	
+   140	Perhaps I'm wasting my time telling this to new sysops, but the experienced
+   141	sysops  will be  nodding their heads,  by now.   The  fact is:   either you
+   142	resign yourself  to being used as  a commodity, or you learn  the very dif-
+   143	ficult art of rejecting new applicants.
+   144	
+   145	Of course, what  percentage you reject depends  on the size of  your BBSing
+   146	community.   In Montreal,  we have  plenty of people  calling BBS's.   As a
+   147	result,  I'm easily able to  reject 95% of all applicants.   Mind you, that
+   148	means that for the  first 2 months, my BBS was  excruciatingly dull.  After
+   149	all, how lively can a BBS be, when it has only a handful of members?
+   150	
+   151	Happily, though, I  stuck to my  guns.  Nowadays, The  Pinnacle Club has  a
+   152	nice  mix of  people, all  of  whom are  what most  sysops  consider "ideal
+   153	BBSers".  It  almost took more  patience than I  possess (since, like  most
+   154	sysops, I have an urge to let everybody on), but it was worth it.
+   155	
+   156	What makes  Sapphire truly a "Zero-Maintenance  BBS" is that you  can judge
+   157	people  by their reaction  to the request that  they justify their petition
+   158	for membership.  You don't even  have to phone them up!  What  people write
+   159	in their application usually tells the whole story.
+   160	
+   161	For example, many people  write things like, "Hi, I'd like  to be a member.
+   162	Please make me a member.  Thanks."
+   163	
+   164	If such a person can't even be bothered to justify himself, it is extremely
+   165	unlikely he will make an effort to be a good, contributing member.
+   166	
+   167	I've  had some extraordinary  experiences with  this method  of validation.
+   168	One fellow was incensed at the impersonal approach, but he took the time to
+   169	express his objections  in detail.  Bingo!  I made  him a member.  He later
+   170	posted a  message to the effect that he thought  he'd "gone to BBS heaven",
+   171	so impressed was he by the quality of the messages left by members!
+   172	
+   173	Sapphire can  be easily modified to  be less daunting  to the new user.   I
+   174	don't want  to give  you the  impression that  Sapphire must  give all  new
+   175	applicants the cold shoulder.
+   176	
+   177	But if you're a new sysop, I hope you'll think about the kind of people you
+   178	want on your system and design  accordingly.  Ask a few experienced  sysops
+   179	for advice.
+   180	
+   181	Conclusion
+   182	
+   183	Sapphire is not complete.  There are numerous upgrades to be made.  Some of
+   184	these are summarized in Appendix C.
+   185	
+   186	However,  I would like  to make it  clear that it  is not  my intention for
+   187	Sapphire  to be all  things to all people.   I hope  to retain the apparent
+   188	simplicity of the design.
+   189	
+   190	In other  words, there are many other BBS  packages out there that are more
+   191	grandiose in intent.  They can make your microcomputer look like a whopping
+   192	big mainframe.  But if you want a BBS  that is easy for your users and easy
+   193	for you, I think you'll want to run Sapphire.
+   194	
+   195	

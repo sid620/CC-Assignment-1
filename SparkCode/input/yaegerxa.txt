@@ -1,0 +1,1716 @@
+     1	Computational Genetics, Physiology, Metabolism,
+     2	Neural Systems, Learning, Vision, and Behavior
+     3	or PolyWorld:  Life in a New Context
+     4	
+     5	Larry Yaeger
+     6	Apple Computer, Inc.
+     7	20525 Mariani Ave., MS 76-2H
+     8	Cupertino, CA  95014
+     9	larryy@apple.com
+    10	
+    11	
+    12	1. Introduction
+    13	
+    14		The study of living systems has taken many forms, from 
+    15	research into the fundamental physical processes to ethological 
+    16	studies of animal behavior on a global scale.  Traditionally these 
+    17	investigations have focused exclusively on “real” biological systems 
+    18	existing in our world’s ecological system.  Only recently have 
+    19	investigations of living systems begun to occur in “artificial” systems 
+    20	in computers and robotic hardware.
+    21	
+    22		The potential benefits of an enhanced understanding of living 
+    23	systems are tremendous.  Some are of a grand scale, and are 
+    24	intuitively obvious, such as improvements in our ability to manage 
+    25	our own real ecosystems, the development of true machine 
+    26	intelligence, and the possibility of understanding our own mental and 
+    27	physiological processes.  Some are of a more prosaic scale, but more 
+    28	accessible thereby, and, perhaps, of more immediate utility, such as 
+    29	simple learning systems, robust pattern classifiers, general purpose 
+    30	optimization schemes, robotic controllers, and evolvable software 
+    31	algorithms.  The technological issues of the study of Artificial Life 
+    32	(ALife) are well laid out by Langton [27] in the proceedings of the 
+    33	first ALife workshop; the societal and philosophical implications of 
+    34	ALife are well presented in Farmer and Belin [16] in the proceedings 
+    35	of the second ALife workshop.
+    36	
+    37		The ecological simulator, PolyWorld (PW), presented and 
+    38	discussed in this paper, is one instantiation of these ALife 
+    39	motivations and principles.  PolyWorld attempts to bring together all 
+    40	the principle components of real living systems into a single artificial 
+    41	living system.  PolyWorld does bring together biologically motivated 
+    42	genetics, simple simulated physiologies and metabolisms, Hebbian 
+    43	learning in arbitrary neural network architectures, a visual 
+    44	perceptive mechanism, and a suite of primitive behaviors in artificial 
+    45	organisms grounded in an ecology that is hopefully just complex 
+    46	enough to foster speciation and inter-species competition.  Predation, 
+    47	mimicry, sexual reproduction, and even communication are all 
+    48	supported in a straightforward fashion.  The resulting survival 
+    49	strategies, both individual and group, are purely emergent, as are the 
+    50	functionalities embodied in their neural network “brains”.  Complex 
+    51	behaviors resulting from the simulated neural activity are 
+    52	unpredictable, and change as natural selection acts over multiple 
+    53	generations.
+    54	
+    55		PolyWorld is a tool for investigating issues relevant to 
+    56	evolutionary biology, behavioral ecology, ethology, neural systems, 
+    57	and computer science.  This paper will discuss the design principles 
+    58	employed in PW, along with some of the resulting behavior patterns 
+    59	observed in “species” evolved in PW, their neural architectures, and 
+    60	the genetic variations observed in large populations under different 
+    61	ecological conditions.
+    62	
+    63	
+    64	
+    65	2. Background
+    66	
+    67		This work owes much in terms of inspiration to the work of W. 
+    68	Grey Walter [44,45,46], Valentino Braitenberg [3], Richard Dawkins 
+    69	[9,10,11], John Holland [21], Ralph Linsker [28,29,30], and John 
+    70	Pearson [36].
+    71	
+    72		Walter’s early work with simple electronic “turtle” nervous 
+    73	systems, and Braitenberg’s “vehicles” suggested the approach of 
+    74	utilizing simulated organisms.  PolyWorld diverges from these works 
+    75	by encapsulating these organisms in a simulated world, and 
+    76	employing neural systems and learning rules from the world of 
+    77	computational neurophysiology, and by supporting a range of 
+    78	interactions between organisms.  And though a number of other 
+    79	researchers (Travers [43]; Wharton and Koball [47]; and even a 
+    80	commercial product from Bascom software, the author of which is not 
+    81	known) have built simple Braitenberg vehicle simulators (or actual 
+    82	physical models in the case of Wharton and Koball), these typically 
+    83	concentrated on a wiring-diagram user interface, and implemented 
+    84	vehicles through only level number 2 (of 14).  PW, on the other hand, 
+    85	takes note of the fact that by as early as Vehicle 4, Braitenberg 
+    86	invoked a form of natural selection, and supports the evolution of its 
+    87	organisms’ “wiring diagrams”, rather than having them specified by 
+    88	hand.  The neural systems of PW also utilize Hebbian learning during 
+    89	the lifetime of an individual, which is undoubtedly purposefully 
+    90	similar to Braitenberg’s “mnemotrix wire”.
+    91	
+    92		Richard Dawkins’s writings communicate both the beauty and 
+    93	the effectiveness of evolutionary dynamics.  In personal 
+    94	communications, he has also brought out key issues in speciation, 
+    95	such as the isolation of populations and the reduced viability of 
+    96	divergent species interbreeding, that have become important 
+    97	elements of this simulator.
+    98	
+    99		The artificial neural systems employed in PW are based on 
+   100	Hebbian learning, and a novel approach to network architecture 
+   101	specification.  Besides the obvious importance of Donald Hebb’s [18] 
+   102	research and speculations, their instantiation in the work of Ralph 
+   103	Linsker and John Pearson has guided the selection of these particular 
+   104	techniques for use in PW.  Linsker’s work demonstrated that Hebbian 
+   105	learning, as employed in PW, can and will self-organize important 
+   106	types of neural response patterns observed in early visual systems 
+   107	of real organisms.  John Pearson, working with Gerald Edelman, 
+   108	utilized a variant of Hebbian learning and successfully demonstrated 
+   109	important principles of neuronal and synaptic self-organization — 
+   110	cooperation and competition(for representing their observed inputs) 
+   111	— that again correspond well to phenomena observed in real living 
+   112	systems.  PolyWorld takes this unsupervised learning technique, and 
+   113	embeds it in arbitrary, evolving neural architectures, and then 
+   114	confronts the simulated neural system with survival tasks in a 
+   115	simulated ecology.
+   116	
+   117		In the last couple of decades, a number of researchers have 
+   118	developed computational ecologies targeted at various scientific 
+   119	issues.   Conrad [7,8] and Packard [34] have built systems to explore 
+   120	fundamental principles of evolutionary dynamics.  Jefferson et al 
+   121	[23],  and Collins and Jefferson [6] have constructed systems dealing 
+   122	with evolutionary mechanisms, behavioral goals, and learning 
+   123	architectures (Finite State Automata vs. Neural Networks).  Taylor et 
+   124	al [40] developed a system to investigate the relationship between 
+   125	individual behavior and population dynamics.  Ackley & Littman [1] 
+   126	built such a simulator to demonstrate a novel mechanism by which 
+   127	evolution can guide learning.  Peter Todd and Geoffrey Miller 
+   128	[31,41,42] have explored evolutionary selection for different learning 
+   129	algorithms in organisms with simple vision systems and an innate 
+   130	sense of “smell” that functions with varying degrees of accuracy.  
+   131	Danny Hillis [19,20] has used simple computational ecologies to 
+   132	evolve “ramps”, and exchange-sort algorithms.  Core Wars [13,14,15]  
+   133	is a non-evolving ecology of code fragments, and Rasmussen’s VENUS 
+   134	[37] is an evolving system based largely on Core Wars.  Thomas Ray 
+   135	[38] has also developed a computational ecology, TIERRA, based on 
+   136	evolving code fragments.  And John Koza [26] has developed a 
+   137	system for evolving LISP functions that he terms “Genetic 
+   138	Programming”.  PolyWorld, in its original conception, was targeted 
+   139	principally at the evolution of neural architectures for systems faced 
+   140	with complex behavioral tasks;  however, its biologically motivated 
+   141	behavioral and reproductive strategies, and the evolutionary 
+   142	mechanisms employed also make it suitable for use in behavioral 
+   143	ecology and evolutionary biology.  The extent of PW’s fidelity to 
+   144	biological systems, together with its unique use of a naturalistic 
+   145	visual perceptive system to ground its inhabitants in their 
+   146	environment distinguish it significantly from previous ecological 
+   147	simulators.
+   148	
+   149		John Holland’s ECHO system explicitly models a form of 
+   150	predation, involving “offense” and “defense” genes that determine 
+   151	the outcome of violent encounters.  Holland notes that in his system, 
+   152	this form of predation was essential to the evolution of complex 
+   153	genomes.  Though not as crucial to PW’s genetic complexity, 
+   154	predation was also designed into PW from the beginning.  In PW, 
+   155	genes also affect the outcome of violent encounters between 
+   156	organisms, but more indirectly through their “physiological” 
+   157	characteristics (strength and size).  There is also a behavioral 
+   158	component to the outcome of these encounters in PW, namely the 
+   159	degree of “volition” associated with the “fighting” behavior (the 
+   160	activation level of a predefined “fight” neuron), that differs from 
+   161	ECHO’s handling of predation.
+   162	
+   163		Belew et al [2] give an excellent overview of recent work in the 
+   164	area of evolving neural networks.  Reviewed briefly there, and 
+   165	presented in detail in their own paper, Harp et al [17] have 
+   166	developed a scheme for evolving neural architectures that has an 
+   167	element of ontogenetic development.  Their approach involves a set 
+   168	of synaptic projection radii between neuronal “areas”.  PolyWorld’s 
+   169	scheme for evolving architectures relies on the specification of 
+   170	connection densities and topological distortion of connections 
+   171	between neuronal groups.  These architectural criteria are 
+   172	represented in the genome, and then expressed as an organism’s 
+   173	neural architecture at “birth”.  This technique, though perhaps not 
+   174	quite as developmental as Harp’s approach, or the non-neural, but 
+   175	very biologically motivated cellular growth work of de Boer et al 
+   176	[12], has the strengths of being much more developmental  (and 
+   177	representationally compact) than a simple encoding of synaptic 
+   178	efficacy in the genes, and being computationally very efficient.  It 
+   179	captures the statistical results of development, without the necessity 
+   180	of modeling the developmental process itself.
+   181	
+   182		David Chalmers [4]  has experimented with evolving supervised 
+   183	neural network learning algorithms, successfully evolving the classic 
+   184	"delta rule" for a linear, single layer perceptron, and speculated on 
+   185	applying this "genetic connectionism" approach to other architectures 
+   186	and learning algorithms.  He also varies the diversity of his learning 
+   187	tasks, and demonstrates a correlation between this diversity and the 
+   188	generality of the evolved learning algorithm, similar to the 
+   189	correlation observed between amount of training data and 
+   190	generalization in supervised, "Back-Prop" neural networks.  Though 
+   191	the evolution of unsupervised learning algorithms is one area of 
+   192	special interest to the author, the current version of PW has the 
+   193	classic "Hebb rule" built in.  Neural architectures are, however, 
+   194	evolved in PW.  Interestingly, by permitting free movement in a 
+   195	simulated environment, PW effectively can generate an unlimited 
+   196	amount of diverse input for the neural mechanisms employed by its 
+   197	denizens.
+   198	
+   199		Nolfi et al [33] and Parisi et al [35] have explored evolving the 
+   200	connection strengths in small, fixed-architecture feed-forward neural 
+   201	networks controlling simple movement strategies in organisms 
+   202	evolved to seek food.  The organisms are directly provided with 
+   203	angle and distance to food items, and are alone in their environment.  
+   204	Nolfi, Parisi, et al also introduce a "self-supervised" learning 
+   205	technique, using the traditional back-propagation of error algorithm, 
+   206	and demonstrate an improvement in evolved foraging efficiency 
+   207	associated with a learned ability to predict the sensory consequences 
+   208	of motor activity.  PW employs an unsupervised learning algorithm 
+   209	and arbitrary neural architectures, with a more biologically-
+   210	motivated vision mechanism, as well as a competitive ecology.
+   211	
+   212		For the purpose of computer graphics animation, Renault et al 
+   213	[39] have experimented with visual systems for controlling computer 
+   214	generated characters.  Their system goes beyond visual processing, 
+   215	however, to include unique object identification and distances to 
+   216	objects as part of the input to the character control programs.  These 
+   217	control programs are rule-based and completely hand-crafted, 
+   218	specifically to provide obstacle avoidance.  In contrast, PW uses only 
+   219	the pixel colors associated with visual processing, and provides these 
+   220	as input to the non-rule-based neural systems of evolving organisms, 
+   221	without specifying the meaning or use of this information.  
+   222	
+   223		Dave Cliff [5] has implemented a neural visual system for a 
+   224	simulated fly, and states that it is only by a grounding perceptive 
+   225	mechanism such as vision that neural models can be made sense of.  
+   226	For the purposes of his simulation, the model fly is attached to a 
+   227	rotating, but otherwise unmoving test-stand similar to real 
+   228	experimental setups.  Organisms in PW use vision as their primary 
+   229	sense mechanism, but are free to explore their environment, and 
+   230	must do so effectively — using their vision to guide a suite of 
+   231	primitive behaviors — in order to survive and reproduce.
+   232	
+   233		The study of real living systems has spanned many physical 
+   234	and temporal scales,  from molecular level biochemical processes that 
+   235	take place in nanoseconds, through cellular level neural processes 
+   236	with time scales of a few milliseconds, to global evolutionary 
+   237	processes occurring over geological time scales.  One of the first 
+   238	decisions necessary to commence an investigation into artificial living 
+   239	systems is that of scale:  At what level of detail is it desirable to 
+   240	specify the parameters and underlying models of the simulation, and 
+   241	at what level does one wish to observe the resultant behaviors?  
+   242	Given current constraints on compute power, it is simply not feasible 
+   243	to begin computation with sub-atomic physics and expect to observe 
+   244	ethological behaviors.  Since ecology-level dynamics were the desired 
+   245	output level of the system being designed, it was clear that behavior 
+   246	models for PW’s individual organisms could not be too complex.  
+   247	However, a desire to avoid rule-based behavior specification led to a 
+   248	decision to model the organisms’ behaviors at the neuronal level.  
+   249	Since even natural evolutionary forces are constrained by their 
+   250	previous successes, the real world has filled up with organisms 
+   251	exhibiting a wide range of variations on assemblages of neuronal 
+   252	cells (in addition to other cell types, of course).  Modeling PW’s 
+   253	organisms at this level permits us to sidestep millions of years of 
+   254	evolution, while still taking advantage of its results to date.  In many 
+   255	ways, PW may be thought of as a sort of electronic primordial soup 
+   256	experiment, in the vein of Urey and Miller’s [32] classic experiment, 
+   257	only commencing at a much higher level of organization, with light-
+   258	sensitive and neuronal cells as the ingredients, and a simple ecology 
+   259	that includes all the other assemblages of those cells — the other 
+   260	organisms in the world — as the environment.
+   261	
+   262	
+   263	3. Overview
+   264	
+   265		PolyWorld is an ecological simulator, of a simple flat world, 
+   266	possibly divided up by a few impassable barriers, and inhabited by a 
+   267	variety of organisms and freely growing “food”.  The inhabiting 
+   268	organisms use vision as input to a neural network brain that employs 
+   269	Hebbian learning at its synapses.  The outputs of this brain fully 
+   270	determine the organisms’ behaviors.  These organisms and all other 
+   271	visible constituents of the world are represented by simple polygonal 
+   272	shapes.  Vision is provided by rendering an image of the world from 
+   273	each organism’s point of view, and using the resulting pixel map as 
+   274	input to the organism’s brain, as if it were light falling on a retina.
+   275	
+   276		A small number of an organism’s neurons are predetermined to 
+   277	activate a suite of possible primitive behaviors, including eating, 
+   278	mating, fighting, moving forward, turning, controlling their field of 
+   279	view, and controlling the brightness of a few of the polygons on their 
+   280	bodies.  Organisms expend energy with each action, including neural 
+   281	activity.  They must replenish this energy in order to survive.  They 
+   282	may do so by eating the food that grows around the environment.  
+   283	When an organism dies, its carcass turns into food.  Because one of 
+   284	the possible primitive behaviors is fighting, organisms can 
+   285	potentially damage other organisms.  So they may also replenish 
+   286	their energies by killing and eating each other.  Predation is thus 
+   287	modeled quite naturally.
+   288	
+   289		The organisms’ simulated physiologies and metabolic rates are 
+   290	determined from an underlying genome, as are their neural 
+   291	architectures.  When two spatially overlapping organisms both 
+   292	express their mating behavior, reproduction occurs by taking the 
+   293	genetic material from the two haploid individuals, subjecting it to 
+   294	crossover and mutation, and then expressing the new genome as a 
+   295	child organism.
+   296	
+   297		One way to look at this artificial world is as a somewhat 
+   298	complex energy balancing problem.  The fittest organism will be the 
+   299	one that best learns to replenish its energies by eating, and to pass 
+   300	on its genes by mating.  The particular patterns of activity that a 
+   301	successful organism engages in - the methods by which it sustains 
+   302	and reproduces itself - will be optimal for some particular fitness 
+   303	landscape.  But since that fitness landscape depends upon the 
+   304	behavior of the world's other inhabitants, it must, per force, be a 
+   305	dynamic landscape.  Since there is considerable variation in the 
+   306	placement and behavior of food and other organisms in the world, 
+   307	that fitness landscape is also fundamentally stochastic.  Indeed, if the 
+   308	"fittest organism in the world" fails to find a suitable mate in order to 
+   309	pass on the important bits of its genetic material, then those genes 
+   310	will be lost... possibly for all time.  Accordingly, every world has the 
+   311	potential to be quite different from every other world.
+   312	
+   313		Once an Evolutionarily Stable Strategy (ESS) has emerged, there 
+   314	is no fitness function except survival.  Until an ESS has emerged, PW 
+   315	is run in a sort of “on-line Genetic Algorithm (GA)” mode, with an ad 
+   316	hoc fitness function.  During this stage, a minimum number of 
+   317	organisms may be guaranteed to populate the world.  If the number 
+   318	of deaths causes the number of organisms extant in the world to 
+   319	drop below this minimum, either another random organism may be 
+   320	created by the system, or the offspring of two organisms from a table 
+   321	of the N fittest may be created, or, rarely, the best organism ever 
+   322	may be returned to the world unchanged.  This ad hoc fitness 
+   323	function rewards organisms for eating, mating, living their full 
+   324	lifespan, dying with reserve energies, and simply moving.  Each 
+   325	reward category is normalized by the maximum possible reward in 
+   326	each category, and has a specifiable scale factor to permit easy 
+   327	tuning of the fitness function.  Some simulation runs acquire an ESS 
+   328	in the first seed population and never require this on-line GA stage.  
+   329	Throughout this paper, the term created is applied to organisms 
+   330	spontaneously generated by the system, while born is used to refer 
+   331	to organisms resulting from the mating behaviors of the organisms.
+   332	
+   333		Current high end simulations typically involve over 300 
+   334	organisms, with up to approximately 200 neurons each, and require 
+   335	about 13 seconds per time-step on a Silicon Graphics Iris 4D/240-
+   336	GTX.  With an average lifespan of about 500 time-steps, and a time-
+   337	to-first-offspring of about 100 time-steps, this means that 500 
+   338	generations can be run at this complexity in about 1 week.  More 
+   339	modest simulations with around 100 comparable organisms require 
+   340	about 4 seconds per frame, and take a day or two for the same task.  
+   341	And at the low complexity end, simple demonstration worlds can be 
+   342	run in “real time”, at a few frames per second, and allow a more 
+   343	interactive experience for learning the system.
+   344	
+   345		Figure 1 shows a sample view of the PolyWorld terrain, 
+   346	populated with three related but distinct sub-species.  The largest 
+   347	panel shows a broad view of the world:  the dark green ground 
+   348	plane, the brown, impassable barriers, the bright green pieces of 
+   349	food, and the multicolored organisms.  Just above this oblique world 
+   350	view are four graphs of various informative simulation parameters.  
+   351	Above these at the top of the figure are many small views of the 
+   352	world drawn from the point of view of each of the organisms in the 
+   353	world; these are the images seen by the those organisms.  At the top 
+   354	right are a few numerical statistics.  And in the bottom right pane is 
+   355	a close-up view of the current “fittest” organism.
+   356	
+   357	
+   358	4. Genetics
+   359	
+   360		An organism’s genes completely encode both its “physiology” 
+   361	and its neural architecture.  Table 1 lists the full complement of 
+   362	genes present in the organisms of PW.
+   363	
+   364		• size
+   365		• strength
+   366		• maximum speed
+   367		• ID
+   368		• mutation rate
+   369		• number of crossover points
+   370		• lifespan
+   371		• fraction of energy to offspring
+   372		• number of neurons devoted to red component of vision
+   373		• number of neurons devoted to green component of vision
+   374		• number of neurons devoted to blue component of vision
+   375		• number of internal neuronal groups
+   376		• number of excitatory neurons in each internal neuronal 
+   377	group
+   378		• number of inhibitory neurons in each internal neuronal 
+   379	group
+   380		• initial bias of neurons in each non-input neuronal group
+   381		• bias learning rate for each non-input neuronal group
+   382		• connection density between all pairs of neuronal groups and 
+   383	neuron types
+   384		• topological distortion between all pairs of neuronal groups 
+   385	and neuron types
+   386		• learning rate between all pairs of neuronal groups and 
+   387	neuron types
+   388	
+   389	Table 1.  List of genes in organisms of PolyWorld.
+   390	
+   391	
+   392		All genes are 8 bits in length, and may be Gray-coded or 
+   393	binary-coded.  All but the ID gene are used to provide 8 bits of 
+   394	precision between a specifiable minimum and maximum value for 
+   395	the corresponding attribute.  For example, if the minimum possible 
+   396	size is minSize, and the maximum possible size is maxSize, and the 
+   397	value of the size gene (scaled by 255 to lie between 0.0 and 1.0) is 
+   398	valSizeGene, then the size of the organism with this gene will be:
+   399	
+   400		size = minSize + valSizeGene * (maxSize - minSize)
+   401	
+   402	These extrema values, along with a variety of other controlling 
+   403	parameters for the simulation, are contained in a “world file” that is 
+   404	read by the simulator at startup.
+   405	
+   406		The first 8 genes control the organism’s simulated physiology.  
+   407	Its size and strength affect both the rate at which it expends energy 
+   408	and the outcome of “fights” with other organisms.  In addition, its 
+   409	size is related directly to the maximum energy that it can store 
+   410	internally.  The next gene, maximum speed, also affects its 
+   411	“metabolic” rate.
+   412	
+   413		The ID gene’s only function is to provide the green component 
+   414	of the organism’s coloration at display time.  Since organisms can 
+   415	actually see each other, this could, in principle, support mimicry. For 
+   416	example, a completely passive species could evolve to display the 
+   417	green coloration of a very aggressive species if it were of selective 
+   418	advantage.  It might also be possible to attract potential mates by 
+   419	displaying the green coloration of food, though this might be of 
+   420	limited survival value.  (In practice, however, neither of these 
+   421	somewhat sophisticated evolutionary responses has yet been 
+   422	observed.)
+   423	
+   424		Mutation rate, the number of crossover points used during 
+   425	reproduction, and maximum lifespan were placed in the genes in 
+   426	order to permit a kind of meta-level genetics, and in recognition of 
+   427	the fact that these parameters were themselves evolved in natural 
+   428	systems.  They are, however, typically constrained to operate within 
+   429	“reasonable” limits; 0.01 to 0.1 for mutation rate, 2 to 8 for number 
+   430	of crossover points, and a few hundred to a few thousand “time-
+   431	steps” for lifespan.
+   432	
+   433		The final physiology gene controls the fraction of an organism’s 
+   434	remaining energy that it will donate to its offspring upon birth.  The 
+   435	offspring’s total available energy on birth is the sum of these 
+   436	contributions from the two parents.  Accordingly, at least one aspect 
+   437	of sexual reproduction may be captured by PW’s evolutionary 
+   438	“biology”:  it is entirely possible for two interbreeding sub-species to 
+   439	be almost identical genetically, differing only in the amount of 
+   440	personal energy devoted to the reproductive process.  PolyWorld has 
+   441	not yet been instrumented to observe for this phenomenon.
+   442	
+   443		The remaining genes are used to define the organism’s neural 
+   444	architecture.  These control parameters will be discussed in the 
+   445	section on Neurons and Learning.  It should be noted here, however, 
+   446	that one of the motivations for this method of specifying the neural 
+   447	architecture was to reduce the number of genes necessary to specify 
+   448	the neural system.  Early versions of PW used a simpler, fully 
+   449	recurrent neural architecture, and maintained a complete matrix of 
+   450	synaptic efficacies between all pairs of neurons in the genes.  For 200 
+   451	(NN) neurons, this older model required 40,000 (NN2) genes.  The 
+   452	current scheme supports evolving neural architectures which are 
+   453	fully specified by 12NG2 + 232NG + 1026, where NG is the number of 
+   454	internal neuronal “groups” or clusters (output group sizes are fixed to 
+   455	1, and input groups do not need biases, bias learning rates, or 
+   456	incoming synaptic connections).  Thus, for 4  internal groups, with up 
+   457	to 32 neurons per group, plus up to 16 neurons per vision group (of 
+   458	which there are 3, one for each color component:  red, green, blue), 
+   459	plus 2 other input groups (one neuron per group), plus the standard 
+   460	7 output groups (one neuron each), a network of up to 185 neurons 
+   461	can be fully specified by just 2,146 genes.  The large constants in this 
+   462	equation (232 and 1026) are due to the fixed set of input and output 
+   463	groups, and, especially, the desire to maintain each output neuron as 
+   464	a distinct group.  Though the number of specifications are 
+   465	significantly reduced from a full crossbar matrix, this number still 
+   466	heavily outweighs the number of genes devoted to physiology.  To 
+   467	permit a more robust exploration of the space of possible 
+   468	physiologies, then, the first crossover during genetic reproduction is 
+   469	always forced to occur somewhere within the set of physiology 
+   470	genes.
+   471	
+   472		An organism’s genome is allocated and interpreted such that 
+   473	space is available for the maximum possible number of neuronal 
+   474	groups.  That is, one of the parameters specified per pair of groups in 
+   475	a network with 3 groups out of a maximum of 5 groups would be 
+   476	accessed as:
+   477	
+   478		1,1     1,2     1,3     --     --     2,1     2,2     2,3     --     --     --     
+   479	3,1     3,2     3,3     --     --
+   480	
+   481	where the entries marked “--” serve simply as place holders.  This is 
+   482	as opposed to an access scheme looking like:
+   483	
+   484		1,1     1,2     1,3     2,1     2,2     2,3     3,1     3,2     3,3
+   485	
+   486	where the entries are contiguous.  The reason for this is to permit a 
+   487	smoother evolution of these neural architectures.  The addition of a 
+   488	fourth group would leave the old connections intact in the first 
+   489	representation, but not in the second.  It is even possible for a useful 
+   490	subcomponent of the architecture to ride along dormant in the genes 
+   491	to be expressed at a later time.
+   492	
+   493		Though learning is supported in the neural network model 
+   494	employed in PW, only the architecture and some initial values are 
+   495	encoded in the genes; hence evolution in PW is purely Darwinian, not 
+   496	Lamarckian.
+   497	
+   498		As in most GA’s, when an organism is created  from scratch, the 
+   499	bits in its genes are first zeroed, and then turned on with a certain 
+   500	bit probability.  Unlike most GA’s, it is possible to specify a range of 
+   501	legal bit probabilities, rather than always using 0.5.  The bit 
+   502	probability for an individual organism is then randomly selected 
+   503	from this range and used to initialize the organism’s bit-string 
+   504	genome.   So the probability of a bit being on in a particular organism 
+   505	will depend on the value randomly selected from the specified range, 
+   506	while the probability of a bit being on in the population as a whole 
+   507	will just be the mean of the specified range (0.5 if the range is 0.0 to 
+   508	1.0).  This permits a wider variance in local, organism-specific bit 
+   509	probabilities in early populations, rather than depending entirely on 
+   510	mutation and cross-over to so shuffle the bits.  Whether this is of any 
+   511	real value should be tested in a simpler GA system, and may be 
+   512	problem-specific in any event.  Here it was felt that both the older 
+   513	fully-recurrent neural network architecture and the later evolving 
+   514	neural architectures were more likely to have 
+   515	behaviorally/evolutionarily useful solutions with lower bit densities; 
+   516	this provided a mechanism for so biasing the initial seed population 
+   517	without ruling out selection towards the unexpected end of the 
+   518	spectrum.
+   519	
+   520		There is an optional “miscegenation function” (so dubbed by 
+   521	Richard Dawkins), that may be used to probabilistically influence the 
+   522	likelihood of genetically dissimilar organisms producing viable 
+   523	offspring; the greater the dissimilarity, the lower the probability of 
+   524	their successfully reproducing.  This function is not typically invoked 
+   525	until after a (specifiable) “significant” number of births without an 
+   526	intervening creation in order to allow the early stages of the 
+   527	simulation to explore as many genetic recombinations as possible.
+   528	
+   529	
+   530	5. Physiology and Metabolism
+   531	
+   532		As discussed above, the simulated physiology of PolyWorld’s 
+   533	organisms is determined by their genes.  The size of the organism 
+   534	directly affects the maximum amount of energy that the organism 
+   535	can store.  If an organism’s size is allowed to range between minSize 
+   536	and maxSize, and its energy capacity ranges between minECap and 
+   537	maxECap, then a given organism’s actual energy capacity, ECap is 
+   538	given as:
+   539	
+   540		ECap = minECap + (size - minSize) * (maxECap - minECap) / 
+   541	(maxSize - minSize)
+   542	
+   543	Similar linear relations are used to determine the influence of an 
+   544	organism’s size on the rate at which it expends energy during 
+   545	forward or turning movement (relative to a specifiable maximum-
+   546	size-penalty), and a size-advantage it will have during a fight with 
+   547	another organism (relative to a specifiable maximum-size-
+   548	advantage).
+   549	
+   550		An organism’s strength also affects both its energy expenditure 
+   551	and its advantage in a fight.  Strength directly scales the total energy 
+   552	used in a given time step, and thus usually ranges around 1.0 
+   553	(typically 0.5 to 2.0).  An attacker’s strength also scales the effect on 
+   554	the victim’s energy loss (fighting is discussed in more detail below in 
+   555	the section on Behavior).
+   556	
+   557		The energy expended by an organism’s neural processing is 
+   558	determined linearly from the number of neurons and the number of 
+   559	synapses it has.  A maximum number of neurons and synapses is 
+   560	determined from the control parameters for the entire world, then 
+   561	each individual’s neural energy expenditure is computed relative to 
+   562	these maxima.  Globally applied “neuron-to-energy” and “synapse-to-
+   563	energy” conversion factors then multiply these scaled neuron and 
+   564	synapse counts to determine the actual energy expended per time 
+   565	step.
+   566	
+   567		There are similar behavior-to-energy conversion factors for 
+   568	each of the primitive behaviors (eating, mating, fighting, moving, 
+   569	turning, focusing, and lighting).  The total energy expended in a time 
+   570	step is then the activation (0. to 1.) of the corresponding 
+   571	output/behavior neuron multiplied by that behavior’s energy-
+   572	conversion factor, summed over all behaviors, plus the neural energy 
+   573	expenditure, plus a specifiable fixed energy drain, with this sum 
+   574	finally scaled by the organism’s strength.
+   575	
+   576		As should be evident, there are clear energy conservation 
+   577	benefits to being small and weak, yet there are clear predatory 
+   578	advantages to being large and strong.  Size also permits an overall 
+   579	greater capacity to store energy, thus making energy available for 
+   580	additional behavioral activity, including reproduction.  The interplay 
+   581	between these opposing advantages is intended to produce niches in 
+   582	the fitness landscape, which may change over time.  There are 
+   583	similar opposing pressures between energy expenditure and visual 
+   584	acuity on the number of input neurons devoted to vision.
+   585	
+   586		There are two classes of energy storage in each organism:  
+   587	health-energy, and food-value-energy.  Both are replenished by 
+   588	eating food.  Both are depleted by neural activity and by engaging in 
+   589	the various behaviors.  But when an organism is attacked, only its 
+   590	health-energy is depleted by the attack.  If this health-energy 
+   591	reaches zero, the organism dies.  When an organism dies it is 
+   592	converted into a piece of food containing an amount of energy equal 
+   593	to the organism’s food-value-energy.  This separation of health-
+   594	energy from food-value-energy makes the predator-prey 
+   595	interactions quite natural; i.e., it is possible for an organism to be 
+   596	killed by having its health-energy driven to zero, while still 
+   597	maintaining a relatively high food value for the attacker.
+   598	
+   599		An organism’s food-value-energy will always be greater than 
+   600	or equal to its health-energy, yet both classes of energy have the 
+   601	same maximum capacity.  Accordingly, an organism may continue to 
+   602	eat to replenish its health-energy after its food-value-energy has 
+   603	reached capacity.  It is the health-energy that is provided as input to 
+   604	the neural network (see next section), and that is used to determine 
+   605	the amount of energy to be transferred to offspring.
+   606	
+   607		Purely for the purposes of display, an organism’s length and 
+   608	width are scaled by (the square root of) its maximum speed, length 
+   609	being multiplied, width being divided.  Thus faster individuals will 
+   610	appear longer and sleeker, while slower individuals will appear 
+   611	shorter and bulkier.  Since an organism’s visual acuity is subject to 
+   612	evolutionary pressures, it is conceivable that an organism might 
+   613	emerge that was able to ascertain another organism’s maximum 
+   614	speed purely from its shape, if there was a great enough advantage 
+   615	to the acquisition of this information (though this is not expected to 
+   616	be the case).
+   617	
+   618	
+   619	6. Neural Systems and Learning
+   620	
+   621		The inputs to an organism’s neural network “brain” are its 
+   622	“vision”, the current normalized level of its internal health-energy 
+   623	store, and a random value.  The outputs are the suite of 7 possible 
+   624	primitive behaviors (eating, mating, fighting, moving, turning, 
+   625	focusing, and lighting).  The internal neurons and all of the synaptic 
+   626	connections have no prespecified functionality; their utility is 
+   627	determined entirely by genetics and natural selection.
+   628	
+   629		The form of an organism’s brain, or neural system, is fully 
+   630	characterized by a set of parameters that are encoded in its genes.  
+   631	Referring back to Table 1, notice that the number of neurons devoted 
+   632	to each color component of vision is specified separately, permitting 
+   633	a specialization for more resolution in the most effective color, should 
+   634	this be of selective advantage.  These numbers typically range 
+   635	between 1 and 16 neurons per color.
+   636	
+   637		Next is a parameter that specifies the number of internal 
+   638	neuronal groups or clusters.  This typically ranges from 1 to 5.  In 
+   639	addition, there are 5 input groups (red vision, green vision, blue 
+   640	vision, energy level, and random), plus 7 output groups (the 
+   641	behaviors listed above).
+   642	
+   643		Each neural group may have distinct populations of excitatory 
+   644	(e-) and inhibitory  (i-) neurons.  The number of e- and i-neurons 
+   645	are specified on a per group basis, and typically range between 1 and 
+   646	16 neurons of each type.  Synaptic connections from e-neurons are 
+   647	always excitatory (ranging from 0.0 to a specifiable maximum 
+   648	efficacy).  Synaptic connections from i-neurons are always inhibitory 
+   649	(ranging from -1.e-10 to the negative of the maximum efficacy).
+   650	
+   651		Though the bias on each of the non-input neurons varies 
+   652	during the simulation, the initial values for these biases and their 
+   653	learning rates are specified on a per group basis, for each of the non-
+   654	input neural groups.  Biases are updated by a Hebbian learning rule, 
+   655	as if it were a synaptic connection to a neuron that was always fully 
+   656	activated, but unlike other synapses in this network, the bias may 
+   657	change sign.  Biases typically range from -1.0 to 1.0, and bias 
+   658	learning rates typically range from 0.0 to 0.2.
+   659	
+   660		The remaining parameters - connection density (CD) , 
+   661	topological distortion (TD), and learning rate (LR) - are all specified 
+   662	for each pair of neuronal groups and neuron types.  That is, separate 
+   663	values for each of these parameters are specified for the excitatory-
+   664	to-excitatory (e-e), excitatory-to-inhibitory (e-i), inhibitory-to-
+   665	inhibitory (i-i), and inhibitory-to-excitatory (i-e) synaptic 
+   666	connections between group i and group j, for each pair of groups i 
+   667	and j.
+   668	
+   669		Connection density, as the name suggests, is used to determine 
+   670	the extent of the connectivity between neuronal groups.  The number 
+   671	of e-e synapses between group i and group j is given by the nearest 
+   672	integer to  CDe-e(i,j) * Ne(i) * Ne(j), where      CDe-e(i,j) is the e-e CD 
+   673	from group j to group i, Ne(i) is the number of e-neurons in group i, 
+   674	and Ne(j) is the number of e-neurons in group j.  Similar expressions 
+   675	hold for the other types of connections between all pairs of groups.  
+   676	CD can range from 0.0 to 1.0.
+   677	
+   678		Topological distortion is used to determine the degree of 
+   679	disorder in the mapping of synaptic connections from one group to 
+   680	the next.  That is, for a TD of 0.0, synapses are mapped to perfectly 
+   681	contiguous stretches of neurons in the adjacent layer; for a TD of 1.0, 
+   682	synapses are mapped in a completely random fashion between 
+   683	adjacent layers.  Thus retinatopic maps such as are observed in 
+   684	natural organisms can be enforced (or not) at the architectural level 
+   685	(as well as resulting from the learning process).  TD typically ranges 
+   686	from 0.0 to 1.0.
+   687	
+   688		Learning rate controls the Hebbian learning process at the 
+   689	synapses between each pair of neuronal groups.  This permits 
+   690	natural selection to favor hardwired, “instinctive” connections for 
+   691	some neural pathways, while supporting learning in other pathways.  
+   692	LR typically ranges from 0.0 to 0.2.
+   693	
+   694		This method of specifying the neural architecture is fairly 
+   695	general, and is not biased for any particular neural organization.  
+   696	Possibly, one might expect to evolve a preponderance of inhibitory 
+   697	connections, especially locally, if the simulated neural architectures 
+   698	evolve to match real neural systems; yet the possibility exists for 
+   699	establishing local excitatory connections (such as are found in CA3 in 
+   700	the hippocampus).   The technique does not, however, explicitly 
+   701	model architectures whose characteristics are heavily based upon 
+   702	spatial organization (such as the parallel fibers originating from the 
+   703	granule cells in the cerebellum).  A straightforward extension to the 
+   704	current method, that allowed unique specifications of the same 
+   705	parameters along multiple spatial dimensions, could account for such 
+   706	organizational schemes.  However, with the limited compute 
+   707	resources currently being applied to PW simulations, and thus the 
+   708	limited number of neurons permitted in each brain, it was not 
+   709	deemed worthwhile to further decompose the groups into these 
+   710	spatial subcategories.
+   711	
+   712		When an organism’s brain is “grown” from its underlying 
+   713	genome, the synaptic efficacies are randomly distributed between 
+   714	specifiable minimum and maximum values.  The brain is then 
+   715	exposed to a sequence of mock visual inputs consisting of random 
+   716	noise, for a specifiable number of cycles.  This is all pre-birth.  In this 
+   717	fashion, it is unnecessary to store any synaptic efficacies in the 
+   718	genes.  This approach was inspired by Linsker’s simulations of visual 
+   719	cortex, which gave rise to on-center-off-surround cells, orientation-
+   720	selective cells, and so on, when exposed only to noise.  The crucial 
+   721	aspects of the networks in this case are their architecture — layered 
+   722	receptive fields in Linsker’s case, evolved arbitrary topology in PW — 
+   723	and the learning rule — Hebbian learning in both cases.
+   724	
+   725		It was debated whether to update all the organisms’ brains 
+   726	synchronously or not.  That is, whether each organism’s neural 
+   727	network should be allowed to make a complete neural activation and 
+   728	synaptic learning pass with each time step.  Even though it was 
+   729	desired to penalize organisms that evolved additional neurons and 
+   730	synapses, synchronous updating was ultimately selected, primarily 
+   731	because the corresponding structures in nature are executed in 
+   732	parallel, and penalties based on their serial implementation would be 
+   733	excessive.  The penalty is more properly derived from the additional 
+   734	energy use associated with these additional neural structures.
+   735	
+   736		At each time step, the input neurons are set to the appropriate 
+   737	values, corresponding to the organism’s visual field, its current 
+   738	health-energy level, and a random number.  New neuronal 
+   739	activations are computed by the simple formulae:
+   740	
+   741	xi   =   S ajt sijt
+   742	
+   743	ait+1   =   1 / (1 + e-axi)
+   744	
+   745	where ajt is the neuronal activation of neuron j at time t (the 
+   746	beginning of this time step), sijt is the synaptic efficacy from neuron 
+   747	j to neuron i at time t, ait+1 is the neuronal activation of neuron i at 
+   748	time t+1 (the end of this time step), and a is a specifiable logistic 
+   749	slope.
+   750	
+   751		The synaptic efficacies are then updated according to a Hebb 
+   752	rule, as:
+   753	
+   754	sijt+1   =   sijt   +   hckl (ait+1 - 0.5) (ajt - 0.5)
+   755	
+   756	where sijt+1 is the synaptic efficacy from neuron j to neuron i at time 
+   757	t+1, and hckl is the learning rate for connections of type c (e-e, e-i, i-
+   758	i, or i-e) from group l to group k.  An optional multiplicative decay 
+   759	term may also be applied to the synaptic efficacy.
+   760	
+   761		This simple “summing and squashing” neuron and Hebbian 
+   762	update rule are certainly coarse abstractions of the complexities 
+   763	observed in real neural systems.  Credence is lent to these particular 
+   764	abstractions by the previously quoted simulation work of Linsker, 
+   765	Pearson, and others, and by Linsker’s and others’ information-
+   766	theoretic analytical work on such systems, which suggest that they 
+   767	may capture the information-processing attributes of real neural 
+   768	systems, if not their precise method of action.  These neuronal and 
+   769	learning models were selected for use in PW based on these results 
+   770	and the models’ computational tractability. 
+   771	
+   772		During the course of a simulation, neural and synaptic activities 
+   773	may be monitored for a number of organisms in the world (the top 
+   774	five “fittest”, according to the ad hoc fitness function discussed 
+   775	earlier, even if it is not being used to create new organisms).  An 
+   776	example is shown in Figure 2.  Gray-scale is used to denote neural 
+   777	activation (between 0.0 and 1.0) and synaptic efficacy (between 
+   778	-maxEfficacy and +maxEfficacy).  At the very bottom of the grid is 
+   779	the color vision buffer.  The neural activations at the beginning of 
+   780	this time step are shown in a horizontal row just above the color 
+   781	vision, along with the red, green, and blue input neuron activation 
+   782	levels, and the energy and random input neuron activation levels.  
+   783	White frames are drawn around each neuronal group, except for the 
+   784	vision neurons which are framed in their corresponding color.  Black 
+   785	frames are drawn around each synapse, hence the unframed areas 
+   786	are regions of null connectivity.  Synapses that appear brighter than 
+   787	the neutral gray background are excitatory; those that appear darker 
+   788	than the background are inhibitory.  The leftmost vertical bar shows 
+   789	neuronal biases.  The non-input neural activations at the end of this 
+   790	time step are shown in the adjacent vertical bar; again, neuronal 
+   791	groups are framed in white.  Hence the diagram may be read as an 
+   792	incomplete crossbar connecting the neuronal states at the beginning 
+   793	of the time step (horizontally) to those at the end of the time step 
+   794	(vertically), through the various synaptic connections.
+   795	
+   796		Early simulations with PW had much simpler, fully recurrent 
+   797	neural architectures.  Though not particularly representative of real 
+   798	biological neural architectures, acceptable behavior strategies were 
+   799	evolved, and some of the results being presented are from organisms 
+   800	using these early networks.
+   801	
+   802	
+   803	7. Vision
+   804	
+   805		The color vision supplied as input to the organism is first 
+   806	rendered at the minimum window size permitted on the Iris + 1 
+   807	(because even-sized buffers can be accessed faster), or 22 x 22 
+   808	pixels.  The pixel row just above vertical center is then properly anti-
+   809	aliased into whatever number of visual neurons an organism has.  
+   810	Even though organisms and the environment of PW are three-
+   811	dimensional, the organisms’ vision consists of just this one-
+   812	dimensional strip of pixels, rather than the complete pixel map.  
+   813	Since the organisms are confined to motion on a ground-plane, it was 
+   814	felt that the benefit derived from computational efficiency 
+   815	outweighed the small loss of information resulting from this 
+   816	restriction.
+   817	
+   818		As was discussed above in the Genetics section, the number of 
+   819	neurons devoted to each of the color components is evolved 
+   820	independently (though they are adjacent on the genome, and so may 
+   821	tend to crossover together).
+   822	
+   823		As was discussed in the Neurons and Learning section, an 
+   824	organism’s vision is shown in the display of the brain internals that 
+   825	may be invoked interactively for some of the “fittest” individuals.  In 
+   826	addition, the full 22 x 22 pixel map for each of the organisms is 
+   827	usually displayed at the top of the screen.  This is mostly for a 
+   828	“reality check” — visual reassurance that the organisms are seeing 
+   829	what they would be expected to see, and may be disabled for a slight 
+   830	speed gain.
+   831	
+   832		The vertical field of view of the organisms is fixed at 10o, since 
+   833	they only see a strip of pixels just above the center of the image.  
+   834	Their horizontal field of view, however, is under their own 
+   835	“volitional”, neural control.  That is, the activation of the focusing 
+   836	neuron is mapped between a minimum and maximum field of view 
+   837	(typically 20o to 120o).  In principle, this might permit some depth 
+   838	of field determinations based on cyclic focusing operations, though 
+   839	nothing so sophisticated has emerged (or is expected to emerge) in 
+   840	the limited neural systems employed by the organisms so far.
+   841	
+   842		This type of direct perception of the environment should 
+   843	answer one of cognitive psychology’s most frequently sounded 
+   844	complaints against traditional AI:  The organisms of PW are 
+   845	“grounded” in their environment by their sense of vision.
+   846	
+   847	
+   848	8. Behavior
+   849	
+   850		A suite of primitive behaviors is made available to all 
+   851	organisms in PW, namely:
+   852	
+   853		• eating
+   854		• mating
+   855		• fighting
+   856		• moving
+   857		• turning
+   858		• focusing
+   859		• lighting
+   860	
+   861		All of these behaviors are expressed by raising the activation 
+   862	level of a prespecified neuron in the brain.  Given computational 
+   863	constraints, it was felt that a minimum number of cycles should be 
+   864	devoted to motor activity, hence this simple one-neuron-one-
+   865	behavior mapping.  The first three behaviors, eating, mating, and 
+   866	fighting, all have some associated threshold that must be exceeded 
+   867	before the activity is initiated.  Energy is expended by each of the 
+   868	behaviors, including eating.  The energy expenditure rates are 
+   869	controllable by scale factors (see Physiology and Metabolism) in the 
+   870	“world file” (see The New Context).
+   871	
+   872		Eating is an organism’s method for replenishing depleted 
+   873	energy stores.  In order to eat, an organism’s position must cause it 
+   874	to overlap a piece of food.  The amount of energy consumed is 
+   875	proportional to the activation of the eating neuron, once that 
+   876	activation exceeds a specifiable threshold.
+   877	
+   878		Mating is an organism’s method for reproducing.  In order to 
+   879	reproduce, an organism’s position must cause it to overlap another 
+   880	organism, and both organisms must express their mating behavior in 
+   881	excess of a specifiable threshold.  The outcome of the reproductive 
+   882	attempt may be affected by the miscegenation function (see 
+   883	Genetics), or by the maximum number of organisms permitted in the 
+   884	world (see The New Context).  The organism’s “desire” to mate (the 
+   885	activation level of its mating neuron) is mapped onto its blue color 
+   886	component for display purposes; this coloration is visible to other 
+   887	organisms as well as to human observers.
+   888	
+   889		Fighting is an organism’s method for attacking another 
+   890	organism.  In order to successfully attack the other organism, the 
+   891	attacker’s position must cause it to overlap the attackee.  Only one 
+   892	organism need express its fighting behavior to successfully attack 
+   893	another.  The energy that is depleted from the prey is a function of 
+   894	the volitional degree of the attack (the activation of the predator’s 
+   895	fight neuron), the predator’s current health-energy level, the 
+   896	predator’s strength, and the predator’s size.  The product of these 
+   897	contributing factors from the predator is scaled by a global attack-to-
+   898	energy conversion factor to make the final determination of amount 
+   899	of energy depletion applied to the prey.  If both organisms are 
+   900	expressing their fight behavior, the same computation is carried out 
+   901	reversing the roles of predator and prey.  Each organism’s desire to 
+   902	fight is mapped onto its red color component for display purposes; 
+   903	this coloration is visible to other organisms as well as to human 
+   904	observers.
+   905	
+   906		Moving refers to an organism’s forward motion.  Unless an 
+   907	organism encounters a barrier, or the edge of the world, it will move 
+   908	forward by an amount proportional to the activation of its moving 
+   909	neuron.
+   910	
+   911		Turning refers to a change in an organism’s orientation on the 
+   912	ground-plane (yaw).  An organism will turn about its y-axis by an 
+   913	amount proportional to the activation of its turning neuron.
+   914	
+   915		Focusing refers to an organism’s control over its horizontal field 
+   916	of view.  As discussed in the Vision section, the activation of an 
+   917	organism’s focusing neuron will be linearly mapped onto a range of 
+   918	possible angles to provide its horizontal field of view.  This makes it 
+   919	possible for an organism to use its vision to survey most of the world 
+   920	in front of it or to focus closely on smaller regions of the world.
+   921	
+   922		Lighting refers to an organism’s control over the brightness of a 
+   923	cap of several polygons on the front face of its “body”.  The activation 
+   924	of an organism’s lighting neuron is  linearly mapped onto the full 0 to 
+   925	255 brightness range in all color components of these front polygons.  
+   926	Accordingly, a simple form of visual communication is possible, in 
+   927	principle, for the organisms inhabiting PW.  (No evidence of their use 
+   928	of this form of communication has yet been found nor sought to date, 
+   929	though evidence of the organisms’ use of vision for controlling 
+   930	locomotion has been observed.)
+   931	
+   932	
+   933	9. The New Context
+   934	
+   935		The “world” of PolyWorld is a flat ground-plane, possibly 
+   936	divided up by a few impassable barriers, filled with randomly grown 
+   937	pieces of food, and inhabited by the organisms previously described.
+   938	
+   939		The number of organisms in the world is controllable by 
+   940	several means.  First, a maximum number of organisms is specifiable, 
+   941	in order to keep the problem computationally tractable.  Second, a 
+   942	minimum number of organisms is specifiable to keep the world 
+   943	populated during the early on-line GA stage (see Genetics).  Finally, 
+   944	an initial number of organisms is specifiable to determine how many 
+   945	individuals to seed the world with at the start of the simulation.
+   946	
+   947		Food is grown at a specifiable rate up to a specifiable maximum 
+   948	number of grown food items.  The number of food items may be 
+   949	guaranteed to be kept between a specifiable minimum and maximum 
+   950	food count.  Subject to this maximum, food is also generated as the 
+   951	result of an organism’s death.  The amount of energy in a piece of 
+   952	food that is grown is randomly determined between a specifiable 
+   953	minimum and maximum food energy.  The amount of energy in a 
+   954	piece of food resulting from the death of an organism is that 
+   955	organism’s food-value-energy (see Physiology and Metabolism) at 
+   956	death, or a specifiable minimum-food-energy-at-death.
+   957	
+   958		An arbitrary number of barriers may be placed in the world, 
+   959	which inhibit movement of the organisms.  These can serve to 
+   960	partially or completely isolate populations of organisms, and as such 
+   961	can contribute significantly to speciation (genetic diversity).  For 
+   962	reasons of computational efficiency, they are typically placed parallel 
+   963	to the z (depth) axis, though this is not strictly necessary.
+   964	
+   965		It is possible to manage the minimum, maximum, and initial 
+   966	numbers of organisms and food items, along with the ad hoc fitness 
+   967	statistics, simultaneously for a number of different independent 
+   968	“domains”.  These domains must be aligned parallel to the z (depth) 
+   969	axis, and typically, though not necessarily, coincide with the divisions 
+   970	imposed on the world by the barriers.  This permits the simultaneous 
+   971	“culturing” of completely independent populations when barriers 
+   972	extend the full length of the world, or limits the spread of genes 
+   973	between domains to those resulting from actual movement of 
+   974	organisms when the barriers are arranged so as to leave gaps for 
+   975	organisms to travel through.  If the domain fitness statistics were not 
+   976	kept separately, then genes from one domain could migrate to 
+   977	another domain by virtue of their global fitness during the start-up 
+   978	on-line GA phase.
+   979	
+   980		It is possible to set a flag such that the edges of the world act 
+   981	as barriers (the usual), wrap around, or aren’t there at all.  In this 
+   982	last case, PW’s ground-plane acts much like Braitenberg’s table top, 
+   983	with organisms that move past the edge of the world dying instantly.
+   984	
+   985		Various monitoring and graphing tools exist to assist in 
+   986	following the progress of a simulation and in developing an 
+   987	understanding of the evolutionary and neural dynamics at work.  As 
+   988	was mentioned earlier (in the section on Neural Systems and 
+   989	Learning), a display of the internal workings of any of the five 
+   990	“fittest” organisms may be called up at any time.  In addition, a small 
+   991	window that maintains an overhead view of the world will 
+   992	automatically track that same organism upon request.  This overhead 
+   993	window may also be zoomed in and out to follow the organism more 
+   994	closely.  
+   995	
+   996		Also available are graphic displays of the time histories of 
+   997	certain quantities of interest, including:  (1) population sizes (overall 
+   998	and per domain), (2) the past maximum, current maximum, and 
+   999	current average values of the ad hoc fitness function, (3) the ratio of 
+  1000	the number of organisms “born” (by mating) to the sum of the 
+  1001	number of organisms born and created, and (4) the ratio of the 
+  1002	difference of food-energy in and food-energy out to the sum of these 
+  1003	two values.  These last two items in particular are important gauges 
+  1004	of the course of the simulation.  Item (3) will start at 0.0 and 
+  1005	asymptote to 1.0 for successful simulations, in which at least one 
+  1006	species has emerged with an ESS; it will peak well below 1.0 for 
+  1007	unsuccessful simulations.  Item (4) ranges from -1.0 to 1.0, and 
+  1008	should asymptote to 0.0, for a world where energy is conserved.  
+  1009	Three values are actually plotted for item (4):  (a) the total food-
+  1010	energy, including the initial seeding of the world, which starts at 1.0 
+  1011	and should asymptote to 0.0, (b) the average food-energy, excluding 
+  1012	the initial seeding of the world, which starts at 0.0, and rapidly 
+  1013	becomes negative, but should also asymptote to 0.0, and (c) the 
+  1014	current food-energy on a time-step by time-step basis, which 
+  1015	fluctuates rapidly, but should cluster around the average food-
+  1016	energy.
+  1017	
+  1018		One additional display can graphically present the results of an 
+  1019	analysis of the genetic variability in the population.  All pairs of 
+  1020	organisms are examined to determine the magnitude of the Hamming 
+  1021	distance between them in gene space, and a gray-scale  plot is used 
+  1022	to display normalized genetic distances for the entire population at 
+  1023	each time step.
+  1024	
+  1025		All of the simulation control parameters and display options 
+  1026	are defined in a single “world file” that is read at the start of the 
+  1027	simulation.  In addition, some of the display options can be invoked 
+  1028	interactively at runtime.
+  1029	
+  1030		There isn’t space to go into many details of the code itself.  
+  1031	However, it may be worth noting that it consists of about 15,000 
+  1032	lines of C++, and is entirely object oriented, except  for a single 
+  1033	routine devoted to handling the organism-organism and organism-
+  1034	food interactions (for reasons of computational efficiency).  The 
+  1035	organisms, food, and barriers are maintained in doubly-linked lists 
+  1036	sorted on a single dimension (x).  This simple data structure has 
+  1037	minimal maintenance overhead, yet rules out most non-intersections 
+  1038	very well, and permits a sorting algorithm to be used that capitalizes 
+  1039	on the expected frame-to-frame coherency of organism positions.  It 
+  1040	runs on a Silicon Graphics Iris (to take advantage of its hardware 
+  1041	renderer for all the vision processing), and uses a set of object 
+  1042	oriented C++ graphics routines (included in the line count above) that 
+  1043	wrap around the standard Iris graphics library.
+  1044	
+  1045	
+  1046	10. Results:  Speciation and Complex Emergent Behaviors
+  1047	
+  1048		Despite the variability inherent in different worlds, certain 
+  1049	recurring “species” have occurred in a number of the simulations run 
+  1050	to date.  By “species”, I mean groups of organisms carrying out a 
+  1051	common individual behavior that results in distinctive group 
+  1052	behaviors.  Since the selection of these behaviors are derived from 
+  1053	the activity of their neural network brains, and the success of these 
+  1054	behaviors is partially a function of their physiologies, both of which 
+  1055	are in turn based on the genome of the organism, the behavioral 
+  1056	differences may generally be traced to the organism’s genetic code.  
+  1057	Hence these behavioral differences are representative of different 
+  1058	genetic species.
+  1059	
+  1060		A simulation is considered “successful” if and only if some 
+  1061	number of species emerge which are capable of sustaining their 
+  1062	numbers through their mating behaviors, and thus organism 
+  1063	creations cease.  These species can be said to have developed an ESS 
+  1064	within the ecological environment of PW.  The observational reports 
+  1065	below only refer to “successful” simulations.
+  1066	
+  1067		The first of these species has been referred to as the "frenetic 
+  1068	joggers".  In an early simulation without barriers, without a 
+  1069	miscegenation function, and with borders that wrap around 
+  1070	(essentially forming a torus), a population emerged that basically just 
+  1071	ran straight ahead at full speed, always wanting to mate and always 
+  1072	wanting to eat.  That particular world happened to be benign enough, 
+  1073	that it turned out they would run into pieces of food or each other 
+  1074	often enough to sustain themselves and to reproduce.  It was an 
+  1075	adequate, if not particularly interesting solution for that world.  And 
+  1076	without the miscegenation function or any physical isolation due to 
+  1077	barriers, whatever diversity was present in the early world 
+  1078	population was quickly redistributed and blended into a single 
+  1079	species that completely dominated the world for as long as the 
+  1080	simulation was run.
+  1081	
+  1082		The second recurring species has been referred to as the 
+  1083	“indolent cannibals”.  These organisms "solve" the world energy and 
+  1084	reproduction problem by turning the world into an almost zero-
+  1085	dimensional point.  That is, they never travel very far from either 
+  1086	their parents or their offspring.  These organisms mate with each 
+  1087	other, fight with each other, kill each other, and eat each other when 
+  1088	they die.  They were most prevalent in simulations run before the 
+  1089	parents were required to transfer their own energies to the 
+  1090	offspring; the organisms of these worlds were exploiting an 
+  1091	essentially free energy source.  With proper energy balancing, this 
+  1092	behavior was reduced to only an occasional flare-up near corners of 
+  1093	the world, where some organisms with limited motor skills naturally 
+  1094	end up congregating, sometimes for quite extended periods of time.  
+  1095	It turns out that the primary evolutionary benefit associated with 
+  1096	this behavior was the ready availability of mates, rather than the 
+  1097	“cannibalistic” food supply.  This was determined by completely 
+  1098	eliminating the food normally left behind by an organism’s death, yet 
+  1099	still observing the emergence of such species.  Large colonies of these 
+  1100	indolent cannibals look from above like a continuous (non-gridded) 
+  1101	version of Conway’s game of LIFE.
+  1102	
+  1103		The third recurring species has been referred to as the “edge 
+  1104	runners”.  These organisms take the next step up from the cannibals, 
+  1105	and essentially reduce their world to an approximately one-
+  1106	dimensional curve.  They mostly just run around and around the 
+  1107	edge of the world (which they are forcibly prevented from running 
+  1108	off of in most of the simulations).  This turns out to be a fairly good 
+  1109	strategy, since, if enough other organisms are doing it, then some will 
+  1110	have died along the path, ensuring adequate supplies of food.  And 
+  1111	mates are easily found by simply running a little faster or a little 
+  1112	slower, running in the opposite direction, or simply stopping at some 
+  1113	point and waiting for other runners to arrive (all of which behaviors 
+  1114	have been observed).  A form of this behavior persists even when 
+  1115	barriers block access to the rest of the world; organisms still 
+  1116	sometimes congregate along any edges, including the barriers.  It has 
+  1117	been suggested [22] that this may be a form of behavioral isolation, 
+  1118	permitting this species to retain its genetic identity to the exclusion 
+  1119	of other species.
+  1120	
+  1121		Another species recently emerged as the first evolutionarily 
+  1122	stable solution to a “table top” world — one with no edges.  These 
+  1123	“dervishes” evolved a simple rapid-turning strategy that kept them 
+  1124	away from the dangerous edges of the world, and yet explored 
+  1125	enough of the world to bring them into contact with food and each 
+  1126	other.  While this basic behavioral strategy persisted for many 
+  1127	hundreds of generations, evolution continued to explore optimum 
+  1128	degrees of predation, in a sort of continuous prisoner’s dilemma over 
+  1129	optimum degrees of cooperation.  Waves of varying levels of 
+  1130	expression of the fighting behavior could be observed sweeping 
+  1131	through several 
+  1132	
+  1133	distinct populations over evolutionary time-scales, with the greatest 
+  1134	variation in behaviors clearly seen at the boundaries between these 
+  1135	populations.
+  1136	
+  1137		The most interesting species and individuals are not so easily 
+  1138	classified.  In some worlds where a single species has become 
+  1139	dominant, the individuals’ behaviors have still been quite varied.  
+  1140	And in many worlds, no single species becomes obviously dominant.  
+  1141	It is especially in these simulations that a number of complex, 
+  1142	emergent behaviors have been observed, including:
+  1143		1) responding to visual stimuli by speeding up,
+  1144		2) responding to an attack by running away (speeding up),
+  1145		3) responding to an attack by fighting back,
+  1146		4) grazing (slowing upon encountering each food patch),
+  1147		5) expressing an attraction to food (seeking out and circling 
+  1148	food), and
+  1149		6) following other organisms.
+  1150	
+  1151		The first item is important in that it implies that conditions 
+  1152	have been found that will cause evolution to select for the use of the 
+  1153	organisms’ vision systems.  All four of the earlier, simpler species’ 
+  1154	behaviors would be appropriate even if these vision systems did not 
+  1155	exist.  Yet PW was built on the assumption that vision would be a 
+  1156	powerful, useful sense mechanism that evolution could not fail to 
+  1157	employ.  Even a simple speeding up in response to visual stimulation 
+  1158	could result in reaching food or a potential mate more effectively, 
+  1159	and this was the first observed visual response to emerge.
+  1160	
+  1161		The second and third items both represent reasonable 
+  1162	responses to attack by a predator.  Fleeing may reduce the effect of 
+  1163	the attack, and fighting back is an energy-efficient use of the 
+  1164	organism’s own ability to fight (as opposed to expressing the fight 
+  1165	behavior continuously which would expend unnecessary energy).
+  1166	
+  1167		Strategies four and five represent efficient feeding strategies.  
+  1168	As simple a survival skill as grazing might seem - to simply notice 
+  1169	when one’s internal energy is going up, and cease moving until it 
+  1170	stops going up - it was not observed until a fairly recent simulation.  
+  1171	It is still not a wide-spread phenomenon, though a few instances 
+  1172	have now been observed.  Only the most recent simulation, as of this 
+  1173	writing, has given rise to a population of organisms that seem to be 
+  1174	able to actively seek out food and “orbit” it while eating; such 
+  1175	“foraging” is clearly a valuable survival trait.  These organisms 
+  1176	appear to be drawn to the food as if there were a magnet or some 
+  1177	point attractor located in the food and controlling the organisms’ 
+  1178	behavior, though no such mechanism exists in PW.  Their attraction 
+  1179	to the food is purely a result of selection forces acting on the the 
+  1180	neural architecture connecting their vision systems to their motor 
+  1181	systems.
+  1182	
+  1183		The final, “following” strategy has also emerged only in this 
+  1184	most recent simulation.  Clearly of value, whether for seeking a prey 
+  1185	or a mate, this represents the most complex coupling of the vision 
+  1186	sense mechanism to the organisms’ motor controls yet observed.  
+  1187	Small “swarms” of organisms, and one example of a few organisms 
+  1188	“chasing” each other were even suggestive of simple “flocking” 
+  1189	behaviors.
+  1190	
+  1191		All of these behaviors, being inherently temporal phenomena, 
+  1192	require some sort of temporal medium for display.  Short video clips 
+  1193	of most of the above species and behaviors should be available in a 
+  1194	companion videotape released by the publisher of this book.
+  1195	
+  1196	
+  1197	
+  1198	11. Concluding Remarks
+  1199	
+  1200		Real benefits have already begun to accrue from the studies of 
+  1201	artificial neural systems.  Meanwhile, the study of artificial evolution 
+  1202	— genetic algorithms — is yielding insights into problems of 
+  1203	optimization, and into the dynamics of natural selection.  One form of 
+  1204	the study of Artificial Life is the perhaps obvious combination of 
+  1205	these two fields of research.  Adding computer graphics visualization 
+  1206	techniques yields the basic substrate of PolyWorld.
+  1207	
+  1208		One of the primary goals set out for PW has already been met:  
+  1209	the evolution of complex emergent behaviors from only the simple 
+  1210	suite of primitive behaviors built into the organisms of PW, their 
+  1211	sense mechanisms, and the action of natural selection on their neural 
+  1212	systems.  These recognizable behavioral strategies from real living 
+  1213	organisms, such as “fleeing”, “fighting back”, “grazing”, “foraging”, 
+  1214	“following”, and “flocking”, are purely emergent in the PW 
+  1215	environment.  And built as they are from simple, known primitive 
+  1216	behaviors, in response to simple, understandable ecological 
+  1217	pressures, they may be able to remove a little bit of the mystery, if 
+  1218	not the wonder, at the evolution of such behaviors in natural 
+  1219	organisms.  Indeed, the organisms of PW have evolved these higher-
+  1220	order behaviors by reproducing the same bottom-up complexity 
+  1221	ordering of behavioral dynamics as are postulated to drive such 
+  1222	phenomena in natural organisms:  core motor controls, followed by 
+  1223	approach and avoidance behaviors in individuals, followed by group 
+  1224	flocking behaviors that emerge naturally from the individual 
+  1225	approach/avoidance behaviors.
+  1226	
+  1227		The simple but effective strategies evolved by organisms in the 
+  1228	earlier, simpler simulations may be valuable as sort of “null 
+  1229	hypotheses” about certain forms of animal behavior.  In particular, 
+  1230	aggregation and wall-following amongst these simple organisms 
+  1231	occurs without need for elaborate behavioral strategies.  It is 
+  1232	sufficient that corners and walls obstruct simpler trajectories.  Yet if 
+  1233	enough organisms occupy these locational niches, it becomes a 
+  1234	behavioral niche as well, by providing readily available mates, and 
+  1235	an easily achieved form of behavioral isolation.
+  1236	
+  1237		It is, perhaps, easier to contemplate and understand these 
+  1238	behaviors in the simulated organisms of PW than it is in natural 
+  1239	organisms, precisely because they are simulated.  The blessing and 
+  1240	the curse of Artificial Life is that it is much more difficult for humans 
+  1241	to anthropomorphize (zoomorphize?  biomorphize?) these organisms 
+  1242	in a machine than it is natural organisms.  This frees us from 
+  1243	prejudices and preconceptions when observing and analyzing the 
+  1244	behaviors of artificial organisms, yet the most highly motivated of 
+  1245	ALife researchers is going to find it difficult to look at an artificial 
+  1246	organism and declare it unequivocally alive.  
+  1247	
+  1248		As more and more sophisticated computational models of living 
+  1249	systems are developed, it will be only natural to ask whether they 
+  1250	are in fact really alive.  To answer this, however, requires a 
+  1251	resolution to probably the greatest unanswered question posed and 
+  1252	addressed by the study of Artificial Life:  “What is life?”  Farmer & 
+  1253	Belin offer an analogous question for consideration:  “If we voyage to 
+  1254	another planet, how will we know whether or not life is present?”  
+  1255	One might also ask:  If we “voyage” to an artificial world, how will we 
+  1256	know whether or not life is present?  Rather than just ignore this 
+  1257	question, let’s look briefly at the how the organisms in PolyWorld 
+  1258	stack up against Farmer & Belin’s list of “properties that we associate 
+  1259	with life” (slightly abridged here for brevity):
+  1260	
+  1261	
+  1262		• “Life is a pattern in spacetime, rather than a specific material 
+  1263	object.”
+  1264			PW organisms are indeed patterns in a computer, rather 
+  1265	than any specific
+  1266			material; they neither extend nor violate this first 
+  1267	condition.
+  1268		• “Self-reproduction.”
+  1269			PW organisms certainly reproduce within the context of 
+  1270	their world.
+  1271		• “Information storage of a self-representation.”
+  1272			PW organisms use an analog of the same storage 
+  1273	mechanism Farmer & Belin
+  1274			mention for natural organisms:  their genetic 
+  1275	representation.
+  1276		• “A metabolism.”
+  1277			A PW organism’s metabolism effectively converts food 
+  1278	found in the
+  1279			environment into the energy it needs to carry out its 
+  1280	internal processes
+  1281			and behavioral activities, just as is the case in natural 
+  1282	organisms.  The
+  1283			metabolism in PW organisms is much simpler, but if the 
+  1284	function is the
+  1285			same, does the complexity of the underlying process 
+  1286	matter?
+  1287		• “Functional interactions with the environment.”
+  1288			PW organisms interact with their environment, including 
+  1289	other organisms;
+  1290			the more sophisticated ones respond behaviorally to 
+  1291	changes in the
+  1292			environment; such responses are purely under the 
+  1293	control of the
+  1294			organism.
+  1295		• “Interdependence of parts.”
+  1296			Following Farmer & Berlin’s reasoning, PW organisms can 
+  1297	and would die
+  1298			were they somehow separated from their internal energy 
+  1299	store.  And
+  1300			severing an organism’s brain in two would not produce 
+  1301	two organisms
+  1302			with behavior anything like the original.  Unnecessarily 
+  1303	(and perhaps
+  1304			inappropriately) stepping outside the bounds of the 
+  1305	simulation, they would
+  1306			also die if their various procedures and data were 
+  1307	destroyed or isolated.  In
+  1308			either case, half an organism is no longer that organism, if 
+  1309	it is any
+  1310			organism at all.
+  1311		• “Stability under perturbations.”
+  1312			PW organisms can survive small changes to their 
+  1313	environment.  Indeed,
+  1314			whole species have reemerged in entirely different 
+  1315	simulations.  Again
+  1316			stepping outside the simulation, whole species have 
+  1317	emerged with and
+  1318			without any of a variety of errors in the code.
+  1319		• “The ability to evolve.”
+  1320			PW organisms clearly can and do evolve.  There are 
+  1321	undoubtedly limits to
+  1322			their evolution; e.g., they could not possibly evolve a 
+  1323	sense of smell without
+  1324			programmer intervention.  However, all natural 
+  1325	organisms we know of
+  1326			have limits to their evolutionary capabilities:  It is highly 
+  1327	unlikely that
+  1328			humans could evolve a steel appendage; if Einstein is 
+  1329	correct, it is absolutely
+  1330			impossible for them to evolve a method of personal 
+  1331	locomotion that would
+  1332			exceed the speed of light.  All organisms, natural or 
+  1333	artificial, are bound
+  1334			by the physics of their universe.  Similar to the question 
+  1335	about metabolism,
+  1336			does the complexity of the underlying physics matter?
+  1337	
+  1338	Somewhat surprisingly, then, it would seem that we either need to 
+  1339	further refine our constraints on the definition of life, or welcome a 
+  1340	new genus to the world.
+  1341	
+  1342		Ultimately, the resolution to this question of life in artificial 
+  1343	organisms is probably going to have to be based on a consensus, as 
+  1344	with Turing’s famous test for artificial intelligence.  Perhaps in this 
+  1345	case, however, the consensus of a knowledgeable and informed jury 
+  1346	is needed, rather than that of Turing’s unspecified, presumably 
+  1347	average group of individuals.  As with the debate about the 
+  1348	“aliveness” of natural viruses being properly resident with biologists, 
+  1349	the question of “aliveness” in artificial organisms is probably best 
+  1350	argued by a combination of computer-aware biologists and biology-
+  1351	aware computer scientists.
+  1352	
+  1353	
+  1354	12. Future Directions
+  1355	
+  1356		The various species and behaviors that have emerged in the 
+  1357	different simulations suggest that PW may be a rich enough 
+  1358	simulation environment to pursue further evolutionary studies.  In 
+  1359	particular, a way of sort of “benchmarking” PW — the way one 
+  1360	compares the results of a computational fluid dynamics code to flow 
+  1361	over a flat plate or a cylinder, or over an airfoil measured in a 
+  1362	windtunnel — may have presented itself in the form of optimal 
+  1363	foraging strategies as studied in the field of behavioral ecology.  A 
+  1364	simple, canonical foraging experiment has been defined and 
+  1365	analyzed, and is now being simulated with PW.  Agreement or 
+  1366	disagreement with the analytical model should be examined and 
+  1367	understood.
+  1368	
+  1369		The neural architectures that provide the most useful survival 
+  1370	strategies should be analyzed and understood.  It would also be 
+  1371	fairly straightforward to encode an entire range of learning 
+  1372	algorithms in the genes of the organisms in PW, and attempt to 
+  1373	evolve the most effective learning algorithm, rather than assuming it 
+  1374	to be Hebbian.  (Some consideration has even been given the 
+  1375	possibility of having the fundamental genetic representation of 
+  1376	information — the genetic code — evolve.)  At least it might 
+  1377	worthwhile implementing cluster-to-cluster initial connection 
+  1378	strengths, initial connection strength variances, and maximum 
+  1379	connection strengths, to begin to hint at distinct cell types.  Or it may 
+  1380	be more worthwhile to jump directly to a more sophisticated cell 
+  1381	model, capable of capturing the actual temporal dynamics of spike 
+  1382	trains rather than average firing rates.
+  1383	
+  1384		More environmental interactions should be supported, 
+  1385	including the ability for the organisms to pick up, carry, and drop 
+  1386	pieces of food, and perhaps even pieces of barrier material.  This 
+  1387	should yield useful reasons for organisms to cooperate, other than 
+  1388	simply to reproduce.
+  1389	
+  1390		Though not discussed in the earlier parts of the paper, 
+  1391	energetics of the system have been observed to be crucial to the 
+  1392	evolution of successful survival strategies.  Mimicing the differences 
+  1393	between energy-rich tropical zones and energy-starved polar zones 
+  1394	in our one known, natural ecosystem, artificial life flourishes in 
+  1395	energy-rich simulations, and languishes in energy-starved 
+  1396	simulations.  Perhaps someday it may be possible to make useful 
+  1397	predictions about viable ranges of energy flux for natural systems 
+  1398	from artificial ecologies like PW.
+  1399	
+  1400		A quantitative assessment of the degree to which the isolation 
+  1401	of populations affects speciation may be possible with PW.  Some 
+  1402	tentative first steps have already been taken in this direction, though 
+  1403	questions remain about the most appropriate comparisons to make 
+  1404	and the appropriate times at which to make these comparisons. This 
+  1405	coupled with the problems associated with assuring the emergence of 
+  1406	an ESS in every population, and the simple magnitude of processing 
+  1407	time required to perform the simulations has delayed a complete 
+  1408	series of experiments of this nature.
+  1409	
+  1410		There are thousands of other interesting experiments that one 
+  1411	might perform with this system, including:  Monitoring brain size in 
+  1412	otherwise stable populations, such as the "dervishes"...  are smaller 
+  1413	and smaller nervous systems actually being selected for?  Monitoring 
+  1414	the frequency and magnitude of attacks on other organisms as a 
+  1415	function of their genetic (dis)similarity.  Monitoring the amount of 
+  1416	energy given to offspring in a single species... is there any indication 
+  1417	of an asymmetric split into different relative contributions?  Hand-
+  1418	tailoring a good neural architecture or two and seeding the world 
+  1419	with these engineered organisms.  Providing multiple internal, neural 
+  1420	time-cycles per external, action time-cycle.  Evolving three 
+  1421	completely independent domains of organisms, with barriers in 
+  1422	place, and then removing the barriers to observer the interspecies 
+  1423	dynamics.  It may even be possible to model the entire population of 
+  1424	Orca whales that frequent the waters around Vancouver, and look for 
+  1425	an evolutionary split into pods that travel little and eat essentially 
+  1426	stationary food sources versus pods that travel widely and feed on 
+  1427	fish, a very mobile food source.  And on and on.  In hopes that others 
+  1428	may find PolyWorld to be a useful tool for exploring these kinds of 
+  1429	questions, it has been made available via ftp from ftp.apple.com 
+  1430	(130.43.2.3) in /pub/polyworld.  Complete source code and some 
+  1431	sample "world files" are provided.
+  1432	
+  1433		In a more fanciful, and perhaps more visionary vein, it is 
+  1434	hoped that, someday, one of the organisms in PolyWorld that 
+  1435	demonstrates all the survival behaviors observed to date, plus a few 
+  1436	others, could be transferred from its original environment to, say, a 
+  1437	maze world, and become the subject of some classical conditioning 
+  1438	experiments.  Klopf’s [24,25] success at demonstrating over 15 
+  1439	classical conditioning phenomena in a single neuron using differential 
+  1440	Hebbian learning (he called it “drive-reinforcement” learning), 
+  1441	strongly suggests that such phenomena should be demonstrable in 
+  1442	PolyWorld’s organisms.
+  1443	
+  1444		And then, of course, there is simply “more, bigger, and longer”:  
+  1445	More organisms, with bigger neural systems, evolving longer.  As a 
+  1446	gedanken experiment, consider just how much “more, bigger, and 
+  1447	longer” might be useful:  The current 102 organisms, 102 neurons, 
+  1448	and 102 generations (approximately), could be expanded to 106 
+  1449	organisms, neurons, and generations, through an increase in compute 
+  1450	power of about 1012.  (Though this sounds like a tremendous 
+  1451	increase to ask for, consider that the current simulation is running on 
+  1452	a single, scalar workstation processor, not a vectorized, massively 
+  1453	parallel processor, then extend today’s trends in compute power, and 
+  1454	this ceases to be such a daunting request; in fact, the compute power 
+  1455	may be significantly less than this due to the greatly reduced motor 
+  1456	and autonomic nervous systems that would be required by artificial 
+  1457	organisms.)  It turns out that this is a fairly reasonable amount of 
+  1458	compute power with which to consider modeling a complete human 
+  1459	brain — basically devoting one of today’s fast computers to every 
+  1460	neuron — but no one understands how to actually construct such an 
+  1461	artificial brain.  However, this same amount of compute power might 
+  1462	be used to evolve the equivalent of a new species of computational 
+  1463	lab rat every week... and this is how:  by combining evolution, neural 
+  1464	systems, and ecological dynamics.  The leap of (informed) faith is 
+  1465	this:  If it is actually possible to evolve a computational lab rat — and 
+  1466	the experiments so far in PW suggest that this may indeed be the 
+  1467	case — then  it will be possible to evolve human or higher levels of 
+  1468	intelligence by the very same methods.  At least with this approach 
+  1469	there can be milestones and benchmarks along the path to human 
+  1470	level intelligence in a machine.
+  1471	
+  1472		If there is any question about why one would wish to pursue 
+  1473	these research directions, it is always possible to point to the benefits 
+  1474	to be derived in the evolutionary, ecological, biological, ethological, 
+  1475	and even computer science fields.  But it may also turn out to be the 
+  1476	only “right” way to approach machine intelligence.  One view of 
+  1477	intelligence is as an evolved, adaptive response to a variable 
+  1478	environment, that due to historical constraints and opportunism on 
+  1479	the part of nature happens to be based upon neuronal cells.  One 
+  1480	might further recognize that intelligence is really more a near-
+  1481	continuum — a spectrum from the simplest organism to the most 
+  1482	complex — rather than some singular event unique to humans.  Then, 
+  1483	by utilizing both the method (Natural Selection) and the tools 
+  1484	(assemblies of neuronal cells) used in the creation of natural 
+  1485	intelligence, PolyWorld is an attempt to take the appropriate first 
+  1486	steps towards modeling, understanding, and reproducing the 
+  1487	phenomenon of intelligence.  For while one of the grand goals is 
+  1488	certainly the development of a functioning human level (or greater) 
+  1489	intelligence in the computer, it would be an only slightly less grand 
+  1490	achievement to evolve a computational Aplysia that was fully 
+  1491	knowable — fully instrumentable, and, ultimately, fully 
+  1492	understandable — to let us know that we are on the right scientific 
+  1493	path.
+  1494	
+  1495	
+  1496	Acknowledgements
+  1497	
+  1498		The author would like to thank Alan Kay and Ann Marion of 
+  1499	Apple’s Vivarium Program for their support and encouragement of 
+  1500	this admittedly exotic research.  He would also like to thank his wife, 
+  1501	Levi Thomas, for her patience, understanding, and support 
+  1502	throughout the project.
+  1503	
+  1504	
+  1505	References
+  1506	
+  1507	 1. Ackley, D., and M. Littman (1992), “Interactions between Learning 
+  1508	and Evolution”  In Artificial Life II, edited by C. Langton, C. Taylor, J. 
+  1509	Farmer, and S. Rasmussen.  Santa Fe Institute Studies in the Sciences 
+  1510	of Complexity Proc. Vol. X.  Addison-Wesley, Redwood City, CA, 1992.
+  1511	
+  1512	 2. Belew, R. K., J. McInerney, and N. N. Schraudolph (1992), “Evolving 
+  1513	Networks:  Using the Genetic Algorithm with Connectionist Learning”  
+  1514	In Artificial Life II, edited by C. Langton, C. Taylor, J. Farmer, and S. 
+  1515	Rasmussen.  Santa Fe Institute Studies in the Sciences of Complexity 
+  1516	Proc. Vol. X.  Addison-Wesley, Redwood City, CA, 1992.
+  1517	
+  1518	 3. Braitenberg, V. (1984), Vehicles:  Experiments in Synthetic 
+  1519	Psychology.  A Bradford Book, MIT Press, Cambridge, 1984.
+  1520	
+  1521	 4. Chalmers, D. (1991), "The Evolution of Learning:  An Experiment in 
+  1522	Genetic Connectionism"  In Connectionist Models, Proceedings of the 
+  1523	1990 Summer School, edited by D. S. Touretzky, J. L. Elman, T. J. 
+  1524	Sejnowski, G. E. Hinton, Morgan Kaufmann, San Mateo, CA, 1991.
+  1525	
+  1526	 5. Cliff, D. (1991), “The Computational Hoverfly; a Study in 
+  1527	Computational Neuroethology”  In From Animals to Animats, 
+  1528	Proceedings of the First International Conference on Simulation of 
+  1529	Adaptive Behavior, edited by J.-A. Meyer and S. Wilson.  A Bradford 
+  1530	Book, MIT Press, Cambridge and London, 1991.
+  1531	
+  1532	 6. Collins, R. J., and D. R. Jefferson (1992), “AntFarm:  Towards 
+  1533	Simulated Evolution”  In Artificial Life II, edited by C. Langton, C. 
+  1534	Taylor, J. Farmer, and S. Rasmussen.  Santa Fe Institute Studies in the 
+  1535	Sciences of Complexity Proc. Vol. X.  Addison-Wesley, Redwood City, 
+  1536	CA, 1992.
+  1537	
+  1538	 7. Conrad, M., and M. Strizich (1985), “EVOLVE II:  A Computer 
+  1539	Model of an Evolving Ecosystem”, Biosystems 17, 245-258, 1985.
+  1540	
+  1541	 8. Conrad, M. (1987), “Computer Test Beds for Evolutionary Theory”  
+  1542	Oral Presentation at Artificial Life I Conference, 1987.
+  1543	
+  1544	 9. Dawkins, R. (1976), The Selfish Gene.  Oxford University Press, 
+  1545	Oxford, 1976.
+  1546	
+  1547	10. Dawkins, R. (1983), The Extended Phenotype:  The Gene as a Unit 
+  1548	of Selection.  Oxford University Press, Oxford, 1983.
+  1549	
+  1550	11. Dawkins, R. (1986), The Blind Watchmaker.  W.W. Norton, New 
+  1551	York, 1986.
+  1552	
+  1553	12. de Boer, M. J. M., F. D. Fracchia, and P. Prusinkiewicz (1992), 
+  1554	“Analysis and Simulation of the Development of Cellular Layers”  In 
+  1555	Artificial Life II, edited by C. Langton, C. Taylor, J. Farmer, and S. 
+  1556	Rasmussen.  Santa Fe Institute Studies in the Sciences of Complexity 
+  1557	Proc. Vol. X.  Addison-Wesley, Redwood City, CA, 1992.
+  1558	
+  1559	13. Dewdney, A. K. (1984), “Computer Recreations:  In the Game 
+  1560	Called Core War Hostile Programs Engage in a Battle of Bits”, Scientific 
+  1561	American 250(5), 14-22, May 1984.
+  1562	
+  1563	14. Dewdney, A. K. (1984), “Computer Recreations:  A Core War 
+  1564	Bestiary of Viruses, Worms, and Other Threats to Computer 
+  1565	Memories”, Scientific American 252(3), 14-23, March 1985.
+  1566	
+  1567	15. Dewdney, A. K. (1987), “A Program Called MICE Nibbles its Way 
+  1568	to Victory at the First Core War Tournament”, Scientific American 
+  1569	256(1), 14-20, January 1987.
+  1570	
+  1571	16. Farmer, J. D., and A. d’A. Belin (1992), “Artificial Life: The Coming 
+  1572	Evolution”  In Artificial Life II, edited by C. Langton, C. Taylor, J. 
+  1573	Farmer, and S. Rasmussen.  Santa Fe Institute Studies in the Sciences 
+  1574	of Complexity Proc. Vol. X.  Addison-Wesley, Redwood City, CA, 1992.
+  1575	
+  1576	17. Harp, S., T. Samad, and A. Guha (1990), “Towards the Genetic 
+  1577	Synthesis of Neural Networks”  In Proc. Third Intl. Conf. on Genetic 
+  1578	Algorithms, edited by J. D. Schaffer, Morgan Kaufmann, San Mateo, 
+  1579	CA, 1990.
+  1580	
+  1581	18. Hebb, D. O. (1949), The Organization of Behavior, John Wiley and 
+  1582	Sons, Inc., New York, 1949.
+  1583	
+  1584	19. Hillis, D. (1990), “Simulated Evolution and the Red Queen 
+  1585	Hypothesis”  Oral Presentation at Artificial Life II Conference, 1990.
+  1586	
+  1587	20. Hillis, D. (1992), “Co-Evolving Parasites Improve Simulated 
+  1588	Evolution as an Optimization Procedure”  In Artificial Life II, edited 
+  1589	by C. Langton, C. Taylor, J. Farmer, and S. Rasmussen.  Santa Fe 
+  1590	Institute Studies in the Sciences of Complexity Proc. Vol. X.  Addison-
+  1591	Wesley, Redwood City, CA, 1992.
+  1592	
+  1593	21. Holland, J. (1990), “Echo:  Explorations of Evolution in a Miniature 
+  1594	World”  Oral Presentation at Artificial Life II Conference, 1990.
+  1595	
+  1596	22. Hugie, D. (1992), Personal Communication.
+  1597	
+  1598	23. Jefferson, D., R. Collins, C. Cooper, M. Dyer, M. Flowers, R. Korf, C. 
+  1599	Taylor, and A. Wang (1992), “Evolution as a Theme in Artificial Life:  
+  1600	The Genesys/Tracker System”  In Artificial Life II, edited by C. 
+  1601	Langton, C. Taylor, J. Farmer, and S. Rasmussen.  Santa Fe Institute 
+  1602	Studies in the Sciences of Complexity Proc. Vol. X.  Addison-Wesley, 
+  1603	Redwood City, CA, 1992.
+  1604	
+  1605	24. Klopf, A. H. (1986), “A Drive-Reinforcement Model of Single 
+  1606	Neuron Function:  An Alternative to the Hebbian Neuronal Model”  In 
+  1607	Neural Networks for Computer, edited by J. S. Denker, AIP 
+  1608	Conference Proceedings 151, American Institue of Physics, New York, 
+  1609	1986.
+  1610	
+  1611	25. Klopf, A. H. (1987), “A Neuronal Model of Classical Conditioning”, 
+  1612	AFWAL-TR-87-1139, Air Force Wright Aeronautical Laboratories, 
+  1613	October, 1987.
+  1614	
+  1615	
+  1616	26. Koza, J. R. (1992), “Genetic Evolution and Co-Evolution of 
+  1617	Computer Programs”  In Artificial Life II, edited by C. Langton, C. 
+  1618	Taylor, J. Farmer, and S. Rasmussen.  Santa Fe Institute Studies in the 
+  1619	Sciences of Complexity Proc. Vol. X.  Addison-Wesley, Redwood City, 
+  1620	CA, 1992.
+  1621	
+  1622	27. Langton, C. G. (1989),  ed. Artificial Life.  Santa Fe Institute 
+  1623	Studies in the Sciences of Complexity Proc. Vol. VI.  Addison-Wesley, 
+  1624	Redwood City, CA, 1989.
+  1625	
+  1626	28. Linsker, R. (1988), “Towards an Organizing Principle for a 
+  1627	Layered Perceptual Network”  In Neural Information Processing 
+  1628	Systems, edited by D. Z. Anderson.  American Institute of Physics, 
+  1629	New York, 1988.
+  1630	
+  1631	29. Linsker, R. (1988), “Self-Organization in a Perceptual Network”, 
+  1632	Computer 21(3), 105-117, March 1988.
+  1633	
+  1634	30. Linsker, R. (1989), “An Application of the Principle of Maximum 
+  1635	Information Preservation to Linear Systems”  In Advances in Neural 
+  1636	Information Processing Systems 1, edited by D. S. Touretzky.  Morgan 
+  1637	Kaufmann Publishers, San Mateo, CA, 1989.
+  1638	
+  1639	31. Miller, G. F., and P. M. Todd (1991), “Exploring Adaptive Agency I:  
+  1640	Theory and Methods for Simulating the Evolution of Learning”  In 
+  1641	Connectionist Models, Proceedings of the 1990 Summer School, edited 
+  1642	by D. S. Touretzky, J. L. Elman, T. J. Sejnowski, G. E. Hinton, Morgan 
+  1643	Kaufmann, San Mateo, CA, 1991.
+  1644	
+  1645	32. Miller, S. M., and L. E. Orgel (1974), The Origins of Life.  Prentice-
+  1646	Hall, Englewood Cliffs, NJ, 1974.
+  1647	
+  1648	33. Nolfi, S., J. L. Elman, and D. Parisi (1990), "Learning and Evolution 
+  1649	in Neural Networks", CRL Tech. Rep. 9019, Center for Research in 
+  1650	Language, UCSD, La Jolla, CA, 1990.
+  1651	
+  1652	34. Packard, N. (1989), “Intrinsic Adaptation in a Simple Model for 
+  1653	Evolution”  In Artificial Life, edited by C. Langton.  Santa Fe Institute 
+  1654	Studies in the Sciences of Complexity Proc. Vol. VI.  Addison-Wesley, 
+  1655	Redwood City, CA, 1989. 
+  1656	
+  1657	35.  Parisi, D., S. Nolfi, and F. Cecconi (1991), “Learning, Behavior, and 
+  1658	Evolution”, Tech. Rep. PCIA-91-14, Dept. of Cognitive Processes and 
+  1659	Artificial Intelligence, Institue of Psychology, C.N.R. - Rome, June 
+  1660	1991.   (To appear in Proceedings of ECAL-91 — First european 
+  1661	Conference on Artificial Life, December 1991, Paris).
+  1662	
+  1663	36. Pearson, J. (1987), “Competitive/Cooperative Behavior of 
+  1664	Neuronal Groups in Brain Function”  Oral Presentation at Artificial 
+  1665	Life I Conference, 1987.  (And in Edelman, G. M. Neural Darwinism:  
+  1666	The Theory of Neuronal Group Selection.  Basic Books, New York, 
+  1667	1987.)
+  1668	
+  1669	37. Rassmussen, S., C. Knudsen, R. Feldberg, and M. Hindsholm (1990), 
+  1670	“The Coreworld:  Emergence and Evolution of Cooperative Structures 
+  1671	in a Computational Chemistry”  In Emergent Computation, edited by 
+  1672	Stephanie Forrest, North-Holland, Amsterdam, A Special Volume of 
+  1673	Physica D, Vol. 42 (1990) Nos. 1-3.
+  1674	
+  1675	38. Ray, T. S. (1992), “An Approach to the Synthesis of Life”  In 
+  1676	Artificial Life II, edited by C. Langton, C. Taylor, J. Farmer, and S. 
+  1677	Rasmussen.  Santa Fe Institute Studies in the Sciences of Complexity 
+  1678	Proc. Vol. X.  Addison-Wesley, Redwood City, CA, 1992.
+  1679	
+  1680	39. Renault, O., N. M. Thalmann, and D. Thalmann (1990), “A Vision-
+  1681	based Approach to Behavioural Animation”, J. of Visualization and 
+  1682	Computer Animation Vol. 1, 18-21.
+  1683	
+  1684	40. Taylor, C. E., D. R. Jefferson, S. R. Turner, and S. R. Goldman (1989), 
+  1685	“RAM: Artificial Life for the Exploration of Complex Biological 
+  1686	Systems”  In Artificial Life, edited by C. Langton.  Santa Fe Institute 
+  1687	Studies in the Sciences of Complexity Proc. Vol. VI.  Addison-Wesley, 
+  1688	Redwood City, CA, 1989.
+  1689	
+  1690	41. Todd, P. M., and G. F. Miller (1987), “A General Framework for the 
+  1691	Evolution of Adaptive Simulated Creatures”  Oral Presentation at 
+  1692	Artificial Life I Conference, 1987.
+  1693	
+  1694	42. Todd, P. M., and G. F. Miller (1991), “Exploring Adaptive Agency 
+  1695	II:  Simulating the Evolution of Associative Learning”  In From 
+  1696	Animals to Animats, Proceedings of the First International 
+  1697	Conference on Simulation of Adaptive Behavior, edited by J.-A. 
+  1698	Meyer and S. Wilson.  A Bradford Book, MIT Press, Cambridge and 
+  1699	London, 1991.
+  1700	
+  1701	43. Travers, M. (1989), “Animal Construction Kits”  In Artificial Life, 
+  1702	edited by C. Langton.  Santa Fe Institute Studies in the Sciences of 
+  1703	Complexity Proc. Vol. VI.  Addison-Wesley, Redwood City, CA, 1989.
+  1704	
+  1705	44. Walter, W. G.  The Living Brain.  W. W. Norton, New York, 1963.
+  1706	
+  1707	45. Walter, W. G. (1950), “An Imitation of Life”, Scientific American, 
+  1708	182(5), 42-45, May 1950.
+  1709	
+  1710	46. Walter, W. G. (1951), “A Machine that Learns”, Scientific 
+  1711	American, 185(2), 60-63, August 1951.
+  1712	
+  1713	47. Wharton, J., and B. Koball (1987), “A Test Vehicle for Braitenberg 
+  1714	Control Algorithms”  Oral Presentation at Artificial Life I Conference, 
+  1715	1987.
+  1716	

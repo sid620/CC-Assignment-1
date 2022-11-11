@@ -1,0 +1,382 @@
+     1	
+     2	How to connect a PC to a Videocrypt decoder
+     3	-------------------------------------------
+     4	
+     5	Markus Kuhn -- 1994-06-19
+     6	
+     7	
+     8	The easiest way to connect your PC to a Videocrypt pay-TV decoder is to
+     9	use the card slot as an interface and connect it with a voltage
+    10	converter (MAX232) and a TTL open collector driver (74LS07) to the
+    11	RS-232 serial port. This way, you don't even have to open the decoder
+    12	and the PC can now act as a smart card.
+    13	
+    14	WARNING: In order to build the adapter described below, you will at
+    15	         least require some basic hobby electronics experience. If
+    16	         you don't understand, how the described circuitry works,
+    17	         better don't use it! Although the described procedure is
+    18	         relatively secure, serious errors might in the worst case
+    19	         damage both your PC and your TV system.
+    20	
+    21	The chip cards used by the Videocrypt pay-TV system follow exactly the
+    22	specification ISO 7816 (you might find this international standard in a
+    23	good library, if you are interested in more details). Also, the
+    24	protocol is the "asynchronous half duplex T=0 protocol" with "active
+    25	low reset" and "inverse convention" as defined in this standard. The
+    26	following description may also be used in order to connect computers to
+    27	other ISO 7816 compatible chip card systems (e.g. GSM mobile phones or
+    28	other pay-TV decoding systems) if they also use asynchronous
+    29	transmission. For smart card systems which use synchronous transmission
+    30	(e.g. most phone cards) the interface described here will need some
+    31	modifications.
+    32	
+    33	According to ISO, a chip card is 85.60 mm long, 53.98 mm high, 0.76 mm
+    34	thick and the edges are rounded with a radius of 3.18 mm. It has eight
+    35	defined contact areas (C1 - C8 in the diagram below), each of which is
+    36	at least 2 mm wide and 1.7 mm heigh:
+    37	
+    38	
+    39		   ______________________________________
+    40		 /                                        \
+    41		|                                          |
+    42		|                                          |
+    43		|    C1   C5                               |
+    44		|    C2   C6                               |
+    45		|    C3   C7                               |
+    46		|    C4   C8                               |
+    47		|                                          |
+    48		|                                          |
+    49		|                                          |
+    50		 \________________________________________/
+    51	
+    52	
+    53	
+    54	These contacts have the following purpose:
+    55	
+    56	
+    57		C1	VCC	Supply voltage (+5 V, max. 200 mA)
+    58		C2	RST	Reset signal
+    59		C3	CLK	Clock signal
+    60		C4	-	reserved
+    61		C5	GND	Ground
+    62		C6	VPP	Programming voltage (5-25 V)
+    63		C7	I/O	Data input/output
+    64		C8	-	reserved
+    65	
+    66	
+    67	The following table gives the precise location of the contact areas.
+    68	These areas are only minimum areas, the actual contacts might be larger
+    69	but must of course be properly isolated from each other.
+    70	
+    71	In the following table,
+    72	
+    73		A	represents the maximum distance between the card's left
+    74			edge and the contact area's left edge,
+    75		B	represents the minimum distance between the card's left
+    76			edge and the contact area's right edge,
+    77		C	represents the maximum distance between the card's top
+    78			edge and the contact area's upper edge,
+    79		D	represents the minimum distance between the card's top
+    80			edge and the contact area's lower edge.
+    81	
+    82	
+    83			  A	  B	  C	  D
+    84	      -----------------------------------------
+    85		C1	10.25	12.25	19.23	20.93
+    86		C2	10.25	12.25	21.77	23.47
+    87		C3	10.25	12.25	24.31	26.01
+    88		C4	10.25	12.25	26.85	28.55
+    89		C5	17.87	19.87	19.23	20.93
+    90		C6	17.87	19.87	21.77	23.47
+    91		C7	17.87	19.87	24.31	26.01
+    92		C8	17.87	19.87	26.85	28.55
+    93	
+    94	
+    95	Older card systems (defined in a French AFNOR standard) had these
+    96	contacts located higher (distance from the top between 9.07 mm and
+    97	18.39 mm, distance from the left identical). As some decoders support
+    98	both contact area alternatives, make sure that this old contact area is
+    99	properly isolated or you'll produce a short circuit when inserting your
+   100	card. You may have noticed, that the contacts are arranged in the usual
+   101	1/10 inch (= 2.54 mm) system (i.e. like the pins of a 8-pin DIL chip).
+   102	
+   103	You can produce your card adapter by making a PCB with contact areas at
+   104	the above listed locations. The PCB must have precisely the thickness
+   105	and width of a real card, but it may be longer, so that you can locate
+   106	the interface electronics on the part which remains outside the slot.
+   107	Cards are inserted in most decoders with the contacts on the bottom
+   108	side. Normal PCBs are about 1.3 mm think and won't fit into the slot.
+   109	Either you get a PCB which is about 0.8 mm thick or you make it
+   110	thinner, e.g. by using a sander machine. Perhaps you find also ready to
+   111	use test cards with connectors instead of producing your own or you
+   112	simply open the decoder, clamp contacts to the resistors near the card
+   113	slot and insert a normal plastic card in order to activate the
+   114	card-presence switch (this is NOT recommended: there are unisolated 230
+   115	V parts inside the decoder and they could kill you if you are not very
+   116	carefull!!!).
+   117	
+   118	The adapter will only need the card contacts I/O, GND, RST and VCC. On
+   119	the RS-232 side, the following contacts will be used:
+   120	
+   121			   Sub-D 25-pin	   Sub-D 9-pin
+   122	      ---------------------------------------------------------
+   123		TxD		2		3	transmit data
+   124		RxD		3		2	receive data
+   125		RTS		4		7	request to send
+   126		CTS		5		8	clear to send
+   127		DSR		6		6	data set ready
+   128		GND		7		5	ground
+   129		DCD		8		1	carrier detect (here: reset)
+   130		DTR		20		4	data terminal ready
+   131	
+   132	
+   133	The pins DTR, DSR and CTS are not actually needed, they are just
+   134	connected together in the adapter, so that defined levels are available
+   135	on them because some software might need this. RTS is connected to an
+   136	unused MAX232 input and the corresponding TTL output might be used for
+   137	generating the reset signal if the adapter is used for connecting a PC
+   138	to a card instead of an decoder.
+   139	
+   140	The following components are necessary for the adapter
+   141	
+   142		1 x	0.5-0.8 mm PCB single sided or test card
+   143		1 x	IC Maxim MAX232CPE (or Linear Technology LT1081CN)
+   144		1 x	IC 74LS07 (or 7407)
+   145		5 x	capacitors 1 uF (or higher), 16 V
+   146		1 x	female Sub-D connector (9 or 25-pin)
+   147		1 x	card slot (optional)
+   148	
+   149	These components cost together less than 20 DM.
+   150	
+   151	The MAX232 converts the RS-232 levels (about +10 and -10 V) to TTL
+   152	voltage  (0 and +5 V) and vice versa without requiring anything else
+   153	than +5 V power supply. This chip contains two TTL->RS-232 and two
+   154	RS-232->TTL drivers and needs four external 1 uF capacitors in order
+   155	to generate the RS-232 voltage internally. The adapter electronic gets
+   156	its power supply from the decoder's VCC line or you can use an external
+   157	5 V supply if you wish.
+   158	
+   159	The card slot's RST line is connected using one of the TTL->RS-232
+   160	drivers in the MAX232 to DCD, so that the software and the decoder can
+   161	easily resynchronize in case of a protocol error.
+   162	
+   163	The I/O line is a bidirectional half-duplex asynchronous TTL level
+   164	serial port that is operated in a Videocrypt system with 9600 bits/s.
+   165	We can connect this line to a MAX232 TTL input driver (which is
+   166	connected to RxD and sends bytes to the PC) in order to receive data
+   167	from the decoder. The TxD signal is converted in the MAX232 to TTL
+   168	level and is connected with an open collector TTL driver to I/O. This
+   169	open collector driver (one of six in the 74LS07) has a high impedance
+   170	output during idle state and 1 and is connected to GND during a 0 on
+   171	it's input. As there is already a pull-up resistor to +5 V on I/O in
+   172	the decoder, this circuitry guarantees, that the adapter is in high
+   173	impedance state if the TxD line is idle and delivers the correct
+   174	voltage if the PC sends bytes and the decoder is in reception mode. As
+   175	we don't connect totem-pole or tristate outputs to I/O, a short circuit
+   176	should be impossible in the adapter.
+   177	
+   178	The following diagram describes the whole interface:
+   179	
+   180	
+   181	              +-------------+  +             
+   182	  +-----------|1     V    16|---+---o +5V (VCC)
+   183	 +|          +|             |  ===
+   184	 === +5V o-||-|2  MAX232  15|---+---o GND (card & RS-232)
+   185	  |           |             |
+   186	  +-----------|3      +---14|----o DCD                    +-<-o DTR
+   187	           +  |       |     |                             |
+   188	     +---||---|4      | +-13|----o RTS                    +->-o DSR
+   189	     |        |       | v   |                             |
+   190	     +--------|5      | +-12|- (unused TTL output)        +->-o CTS
+   191	          +   |       |     |
+   192	     GND o-||-|6      +-<-11|----o RST
+   193	              |             |
+   194	     RxD o----|7  ---<--- 10|-------------------+----o I/O
+   195	              |             |              |\   |
+   196	     TxD o----|8  --->---  9|--------------| |--+
+   197	              +-------------+             1|/ 2
+   198	                                          74LS07
+   199	    At the MAX232, pin 2 delivers
+   200	    +10 V and pin 6 delivers -10 V.        (also connected to 74LS07:
+   201	                                           pin 7=GND, pin 14=VCC)
+   202	
+   203	
+   204	Pay attention to the polarity of the capacitors (marked with a + in the
+   205	diagram next to each capacitor)! The -->-- symbols in the AX232
+   206	diagram above indicate the voltage converters inside the chip. You
+   207	might want to add an LED and a resistor (between 220 and 1k ohm)
+   208	between VCC and GND so that you can see when the decoder activates the
+   209	interface. If you can't live without blinking bits, then add a LED and
+   210	a resistor from VCC to I/O. The capacitor between VCC and GND is not
+   211	absolutely necessary, but recommended especially if you add other
+   212	circuitry on the board (e.g. the quartz oscillator described below).
+   213	
+   214	As a side effect of this simple interface design, every byte sent by
+   215	the PC is at the same time also received by the PC. Consequently, you
+   216	can test the circuit with a terminal emulator and external +5 V supply
+   217	by switching of local echo: if you still see every typed character
+   218	immediately on the screen, the interface should be all right. Software
+   219	must be capable of dealing with this echo from the interface. As
+   220	specified in the ISO standard, the decoder activates VCC only shortly
+   221	before a reset and deactivates VCC again if an answer-to-reset packet
+   222	isn't received from the card in time after the reset signal.
+   223	
+   224	A few additional hints:
+   225	
+   226	If you have a larger distance between the PC an the decoder, then
+   227	locate the adapter electronic near the decoder, because the RS-232
+   228	interface is much more suitable for long cables than the TTL signals. 
+   229	Cables of 12 m length have sucessfully been used and you shouldn't have
+   230	problems with RS-232 cables up to 25 m length and more.
+   231	
+   232	You can also use this adapter circuit to allow a PC to listen to the
+   233	data traffic between a decoder and a real card. Just connect the real
+   234	card and the adapter parallel to the decoder and don't let the PC
+   235	software transmit anything. Suitable card slots are available for
+   236	little money from various manufacturers (see below for addresses).
+   237	Videocrypt uses the inverse convention data format, i.e., you have to
+   238	reverse and invert the bits in each byte in the PC software in order to
+   239	get the correct byte value. For more details about the protocol, check
+   240	ISO 7816-3.
+   241	
+   242	There are many alternative ways to build this interface if you don't
+   243	have some of the components available. E.g. the MAX232 could be
+   244	replaced by the fully compatible LT1081 from Linear Technology. The
+   245	circuit still works fine if you use higher capacitors than 1 uF (e.g.
+   246	my prototype worked fine with 4 22 uF types which were left from a
+   247	previous project), but use equally sized capacitors. If you use the pin
+   248	compatible MAX220 (a low power version) instead of the MAX232, then use
+   249	capacitors with 10 uF or higher. The MAX232 should be the easiest
+   250	available one of these chips. If it is more convenient for your layout,
+   251	then you can use instead of the 1->2 driver in the 74LS07 one of the
+   252	remaining 5 drivers at the pins 3->4, 5->6, 9->8, 11->10 and 13->12. If
+   253	your local electronic store doesn't have a 74LS07 or 7407, then use
+   254	e.g. two of the six open collector inverters in a 74LS05 (same pin
+   255	assignment as the 74LS07) in series and a 2.2k pull-up resistor to VCC
+   256	between them. Peoples have also suggested quick-and-dirty designs where
+   257	the 74LS07 open-collector driver is replaced by a 100 ohm resistor and
+   258	the MAX232 by a CMOS inverter.
+   259	
+   260	If you don't have the experience to etch your own PCB (it's not very
+   261	difficult) or don't know someone who does, then you could solder the
+   262	components in a universal raster PCB or plug them into an experimental
+   263	board. Then produce just a simple PCB with only the ISO card contacts
+   264	and connections to outside the decoder by mechanically removing the
+   265	thin copper layer with a good knive between the 4 contacts and lines.
+   266	
+   267	Peoples have also suggested to use an empty German phone card, which
+   268	also has ISO contacts. Remove the integrated chip from the other
+   269	non-contact side, test whether the contacts are now isolated from each
+   270	other and use a special conductive ink you'll find in an electronics
+   271	store in order to draw connections to the end of the card were you
+   272	connect wires. I haven't tested this and don't know how well it works,
+   273	but you might also consider it. If you ask dealers who sell Videocrypt
+   274	clone cards, you might also get a suitable PCB with card contacts for
+   275	little money.
+   276	
+   277	You can use the same circuit with a few modifications in order to
+   278	connect a PC to a smart card. This allows you to use the PC in order to
+   279	emulate a decoder from the card's point of view.
+   280	
+   281	Just connect the card's RST input to pin 12 of the MAX232 so that you
+   282	can control the RST line with the RS-232 RTS signal. Add a 20k pull-
+   283	upresistor from the card's I/O line to VCC. In addition, you'll have to
+   284	generate a 3.57 MHz CLK signal for the card. If you use other
+   285	frequencies, remember that the time for one protocol bit is 372 CLK
+   286	periods and you'll have to adjust the bits/sec rate. Either you'll find
+   287	a complete 3.5 or 3.579545 MHz quartz oscillator which delivers a TTL
+   288	signal or you build one like the following circuit using a 3.579545 MHz
+   289	quartz (easily available, because each NTSC TV set contains one) and 2
+   290	of the 6 CMOS inverters in a 74HC04. I've also tried a 74HCT04 and a
+   291	4069, but they both are less suitable. And of course you'll need an
+   292	external regulated +5 V power supply (a decoder will give you only VCC
+   293	and CLK while it is talking to a card). In order to protect both the
+   294	card and the adapter, it might be a good idea to put a 10 ohm resistor
+   295	in all lines to the card (and perhaps even protection diodes to VCC and
+   296	GND). If you don't already have a VCC/GND capacitor near the 74HC04,
+   297	then add 0.1 uF between VCC and GND.
+   298	
+   299	           
+   300	     1M         2.2k        3|\4            10
+   301	  +-/\/\/--+----/\/\/-----+--| o-----+-----/\/\/---o CLK
+   302	  |        |2             |  |/      |
+   303	  |       -o-             |          |100 pF
+   304	  |     /_____\           |         ===
+   305	  |        |1             |          |
+   306	  |        | 3.579545 MHz |          |
+   307	  |        |     +--+     |          -      (also connect to 74HC04:
+   308	  +--------+---| |  | |---+         GND     pin 5,7,9,11,13=GND,
+   309	           |     +--+     |                 pin 14=VCC=+5 V)
+   310	           |27pF          |27pF
+   311	          ===            ===
+   312	           |              |
+   313	           -              -
+   314	          GND            GND
+   315	
+   316	You can easily build a universal device that can be operated in two
+   317	modes by changing the position of two jumpers:
+   318	
+   319	  a) In the first mode, you have a PC<->decoder adapter. The PCB is plugged
+   320	     into the card slot of a decoder, and either you let the PC talk
+   321	     to the decoder or you put a card into the additional slot on your
+   322	     device and use the PC in order to listen to the traffic between
+   323	     card and decoder. Use the jumpers in order to connect pins CLK and
+   324	     RST of your card slot to those of the decoder.
+   325	
+   326	  b) In the second mode of operation, you have a PC<->card adapter. The
+   327	     device is not connected with the decoder and you have to attach a
+   328	     +5 V power supply. The jumpers are switched, so that your card slot
+   329	     has its CLK pin connected to the output of the above quartz oscillator
+   330	     and the RST pin to pin 12 of the MAX232. As in this mode the PCB
+   331	     isn't plugged into the decoder, it is convenient to have tiny
+   332	     feets attached to the PCB so that you can put it on a table.
+   333	
+   334	Now you've built a cheap and flexible debugging tool for all ISO 7816
+   335	compatible smart card systems that use an asynchronous protocol. Other
+   336	ideas are to add a chip socket for a microcontroller (e.g. a PIC16C84
+   337	from Microchip or a 8032+EPROM from Intel) parallel to the additional
+   338	card slot and to add pins where you can easily connect an oscilloscope.
+   339	This allows you to debug card software for microcontrollers easily.
+   340	Feel free to produce and sell such a device, but if you do it
+   341	commercially, please be nice and don't forget to send me a free one,
+   342	too. :-)
+   343	
+   344	ISO 7816 chip card connectors are e.g. available from:
+   345	
+   346	     Amphenol-Tuchel Electronics GmbH
+   347	     August-Haeusser-Str. 10
+   348	     D-74080 Heilbronn
+   349	     Germany
+   350	
+   351	     phone +49 7131 486-0
+   352	     fax   +49 7131 486-323
+   353	
+   354	A few final remarks about the security of the adapter:
+   355	
+   356	Normally, both the RS-232 interface and the decoder slot should not be
+   357	harmed by short circuits, but be careful. Also try to avoid
+   358	electrostatic voltage (e.g. generated by walking on a suitable carpet)
+   359	near the interface, because discharges cause easily decoder or PC
+   360	crashes and could theoretically even harm the hardware (especially CMOS
+   361	chips like the 74HC04). Before connecting the decoder and the PC the
+   362	first time, you might want to check the voltage between the two GND
+   363	lines. In correct installations, the difference of the GND potentials
+   364	is very low (below 1 V), but someone has reported up to 50 V (high
+   365	impedance only). Most TV sets, VCRs, SAT receivers and decoders are not
+   366	connected with the earth line, so their GND potential is floating or
+   367	sometimes only defined by e.g. the shielding of the antenna cable. If
+   368	your antenna system is not correctly installed, the shield might also
+   369	not be grounded. One quick solution might be to switch off all
+   370	components and then connect first the RS-232 GND line to e.g. the GND
+   371	in the SCART connector or the GND at an audio connector of your decoder
+   372	before connecting anything else. You might also design the ISO contacts
+   373	on the PCB so that GND touches all pins at first when the PCB is
+   374	inserted in the card slot. The only really secure protection between
+   375	your PC and your decoder would be to use an isolating RS-232 driver
+   376	(e.g. you might want to check data sheets of Maxim's MAX250/251/252
+   377	chips which offer RS-232 protection up to 1500 V), but under normal
+   378	circumstances you won't need this.
+   379	
+   380	Use this circuit at your own risk and please don't blame me if anything
+   381	doesn't work or produces only smoke and noise. Good luck ... ;-)
+   382	

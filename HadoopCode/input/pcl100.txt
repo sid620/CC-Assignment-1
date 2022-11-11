@@ -1,0 +1,356 @@
+     1	;
+     2	;
+     3	;-- 22-Dec-88 <-Latest Change ------------------------------------------------
+     4	;
+     5	;  This file is intended to serve two purposes:
+     6	;
+     7	;  1) To provide a reference to the myriad of ESCAPE codes used in the
+     8	;     Hewlett Packard printer control language (PCL) for the various
+     9	;     models of HP Laser Printers.
+    10	;
+    11	;  2) As a data file for a series of utilities that operate on PCL files
+    12	;     to display the contents in an intelligable manner and provide some
+    13	;     filtering and editing capabilities. (Utilities are in the works!)
+    14	;
+    15	;  The primary source of information for this file has been the HP LaserJet
+    16	;  Series II Technical Reference Manual and other various sources such as the
+    17	;  file ESC_CODE.ARC by S. Noh (SYSOP Form Feed LaserJet BBS (210) 869-1327)
+    18	;  found on many bulletin boards.
+    19	;
+    20	;  The list as presented is sorted on Functional Area, then by Escape code
+    21	;  sequence.  You can easily adjust this by passing the file through the
+    22	;  DOS or other SORT utility of your choice.
+    23	;
+    24	;  To enable this document to stay up to date, I encourage anybody with
+    25	;  knowledge greater than mine to add any codes they know of to the list,
+    26	;  but to retain the format provided as this will be expected by the PCL
+    27	;  utilities when they are done. Where the availability on a printer model
+    28	;  is unknown, a ? appears in the availability column. For those codes
+    29	;  that have a user defined numeric field, the comment ends with "= #'.
+    30	;  This will cause the PCL display utility to fill in the value when
+    31	;  analyzing the PCL file.
+    32	;
+    33	;  The original file name that I have distributed is called PCL100.ARC. In
+    34	;  order to keep some track of the state of updates to the file I suggest
+    35	;  that if you upload it without any changes to another board, you retain
+    36	;  the same name,  if you contribute some additional information, add one
+    37	;  to the file name (i.e. PCL101.ARC).  A history section is provided at
+    38	;  the end of the file for you to record your name and any additional info
+    39	;  you think may be useful to others on this topic (optional). Just start
+    40	;  line with a semicolon (;) to indicate that it is a comment.
+    41	;
+    42	;  Lindsey S. Mundy | EXEC-PC Board    (414) 964-5160 Bob Mahoney SYSOP
+    43	;  5913 View Lane,  |    or
+    44	;  Edina, MN 55436  | Terrapin Station (612) 623-0152 Howard Eckman SYSOP
+    45	;
+    46	;-----------------------------------------------------------------------------
+    47	;
+    48	;
+    49	;
+    50	;-----------------------------------------------------------------------------
+    51	;  General ESC code format:
+    52	;
+    53	;  {esc} p s nnn t   where
+    54	;
+    55	;    p - the primary   field   Normally a symbol (* & etc.)
+    56	;    s - the secondary field   Normally a lower case letter
+    57	;  nnn - numeric value field   Optional variable width numeric
+    58	;    t - terminator    field   Normally a upper case letter (plus @)
+    59	;
+    60	;
+    61	;             /-----2-- Available on LaserJet Series II   \
+    62	;             |/----D-- Available on LaserJet Series IID  | x = not available
+    63	;             ||/---P-- Available on LaserJet Plus        >
+    64	;             |||/--5-- Available on LaserJet 500         | ? = unknown
+    65	;             ||||/-L-- Available on LaserJet             /
+    66	;             |||||
+    67	;             |||||
+    68	;-------------|||||------------------------------------------------------------
+    69	;p s nnn t  | ||||| | Functional Area       | Detailed Description
+    70	;------------------------------------------------------------------------------
+    71	 & d     @  | 2???? | Auto-underlining------- Disable
+    72	 & d     D  | x???? | Auto-underlining------- Enable
+    73	 & d   0 D  | 2???? | Auto-underlining------- Enable Fixed
+    74	 & d   3 D  | 2???? | Auto-underlining------- Enable Floating
+    75	         =  | 2???? | Cursor Position-------- Half Line Feed
+    76	 & a   # C  | 2???? | Cursor Position-------- Horizontal Column = #
+    77	 & a   # H  | 2???? | Cursor Position-------- Horizontal Decipoint = #
+    78	 & a   # R  | 2???? | Cursor Position-------- Vertical Row = #
+    79	 & a   # V  | 2???? | Cursor Position-------- Vertical Decipoints = #
+    80	 & f   0 S  | 2???? | Cursor Position-------- Push Position
+    81	 & f   1 S  | 2???? | Cursor Position-------- Pop  Position
+    82	 * p   # X  | 2???? | Cursor Position-------- Horizontal Position: Dots = #
+    83	 * p   # Y  | 2???? | Cursor Position-------- Vertical   Position: Dots = #
+    84	         Y  | 2???? | Display Functions Mode- Enable
+    85	         Z  | 2???? | Display Functions Mode- Disable
+    86	 * c   # D  | 2???? | Font Management-------- Assign Font ID = #
+    87	 * c   0 F  | 2???? | Font Management-------- Delete All Fonts
+    88	 * c   1 F  | 2???? | Font Management-------- Delete All Temporary Fonts
+    89	 * c   2 F  | 2???? | Font Management-------- Delete Last Font ID Specified
+    90	 * c   4 F  | 2???? | Font Management-------- Make Font Temporary
+    91	 * c   5 F  | 2???? | Font Management-------- Make Font Permanent
+    92	 & k   0 S  | 2???? | Font Pitch------------- 10.00 (Primary & Secondary)
+    93	 & k   2 S  | 2???? | Font Pitch------------- 16.66 (Primary & Secondary)
+    94	 (     3 @  | 2???? | Font Pitch------------- Default Font = Primary
+    95	 )     3 @  | 2???? | Font Pitch------------- Default Font = Secondary
+    96	 (     # X  | 2???? | Font Selection--------- Primary   Font ID = #
+    97	 )     # X  | 2???? | Font Selection--------- Secondary Font ID = #
+    98	 & k   0 G  | 2???? | Line Term-------------- CR=CR,    LF=LF,    FF=FF
+    99	 & k   1 G  | 2???? | Line Term-------------- CR=CR+LF, LF=LF,    FF=FF
+   100	 & k   2 G  | 2???? | Line Term-------------- CR=CR,    LF=CR+LF, FF=CR+FF
+   101	 & k   3 G  | 2???? | Line Term-------------- CR=CR+LF, LF=CR+LF, FF=CR+FF
+   102	 & f   0 X  | 2???? | Macro Control---------- Start Macro Definition
+   103	;-----------------------------------------------------------------------------
+   104	;
+   105	;
+   106	;------------------------------------------------------------------------------
+   107	;p s nnn t  | 2DP5L | Functional Area       | Detailed Description
+   108	;------------------------------------------------------------------------------
+   109	 & f   1 X  | 2???? | Macro Control---------- Stop  Macro Definition
+   110	 & f   2 X  | 2???? | Macro Control---------- Execute Macro
+   111	 & f   3 X  | 2???? | Macro Control---------- Call Macro
+   112	 & f   4 X  | 2???? | Macro Control---------- Enable Overlay
+   113	 & f   5 X  | 2???? | Macro Control---------- Disable Overlay
+   114	 & f   6 X  | 2???? | Macro Control---------- Delete Macros
+   115	 & f   7 X  | 2???? | Macro Control---------- Delete All Temp. Macros
+   116	 & f   8 X  | 2???? | Macro Control---------- Delete Macro ID
+   117	 & f   9 X  | 2???? | Macro Control---------- Make Temporary
+   118	 & f  10 X  | 2???? | Macro Control---------- Make Permanent
+   119	 & f   # Y  | 2???? | Macro Control---------- Macro ID = #
+   120	         9  | 2???? | Margin Control--------- Clear Horizontal Margins
+   121	 & a   # L  | 2???? | Margin Control--------- Left  Margin Column = #
+   122	 & a   # M  | 2???? | Margin Control--------- Right Margin Column = #
+   123	 & l   # E  | 2???? | Margin Control--------- Top Margin  Lines = #
+   124	 & l   # F  | 2???? | Margin Control--------- Text Lenght Lines = #
+   125	 & k   # H  | 2???? | Motion Control--------- Horizontal Motion (1/20") HMI = #
+   126	 & l   # C  | 2???? | Motion Control--------- Vertical Spacing (1/48) VMI = #
+   127	 & l   1 D  | 2???? | Motion Control--------- Vertical Spacing Lines = 1
+   128	 & l   2 D  | 2???? | Motion Control--------- Vertical Spacing Lines = 2
+   129	 & l   3 D  | 2???? | Motion Control--------- Vertical Spacing Lines = 3
+   130	 & l   4 D  | 2???? | Motion Control--------- Vertical Spacing Lines = 4
+   131	 & l   6 D  | 2???? | Motion Control--------- Vertical Spacing Lines = 6
+   132	 & l   8 D  | 2???? | Motion Control--------- Vertical Spacing Lines = 8
+   133	 & l  12 D  | 2???? | Motion Control--------- Vertical Spacing Lines = 12
+   134	 & l  16 D  | 2???? | Motion Control--------- Vertical Spacing Lines = 16
+   135	 & l  24 D  | 2???? | Motion Control--------- Vertical Spacing Lines = 24
+   136	 & l  48 D  | 2???? | Motion Control--------- Vertical Spacing Lines = 48
+   137	 & l   1 A  | 2???? | Page Size Select------- Executive
+   138	 & l   2 A  | 2???? | Page Size Select------- Letter
+   139	 & l   3 A  | 2???? | Page Size Select------- Legal
+   140	 & l  26 A  | 2???? | Page Size Select------- European A4
+   141	 & l  80 A  | 2???? | Page Size Select------- Monarch
+   142	 & l  81 A  | 2???? | Page Size Select------- Commercial 10
+   143	 & l  90 A  | 2???? | Page Size Select------- International DL
+   144	 & l  91 A  | 2???? | Page Size Select------- International C5
+   145	 & l   0 O  | 2???? | Page Size Select------- Portrait  Orientation
+   146	 & l   1 O  | 2???? | Page Size Select------- Landscape Orientation
+   147	 & l   # P  | 2???? | Page Size Select------- Length Lines = #
+   148	 & l   # X  | 2???? | Page Size Select------- Number of Copies = #
+   149	 & l   0 H  | 2???? | Paper Input Control---- Eject Page
+   150	 & l   1 H  | 2???? | Paper Input Control---- Feed from Tray
+   151	 & l   2 H  | 2???? | Paper Input Control---- Manual Feed
+   152	 & l   3 H  | 2???? | Paper Input Control---- Manual Envelope Feed
+   153	 & l   0 L  | 2???? | Perforation Skip------- Disable
+   154	 & l   1 L  | 2???? | Perforation Skip------- Enable
+   155	 ( s   # H  | 2???? | Primary Font Pitch----- Characters / Inch (CPI) = #
+   156	 ( s   # V  | 2???? | Primary Point Size----- Points = #
+   157	 ( s   0 P  | 2???? | Primary Spacing-------- Fixed
+   158	 ( s   1 P  | 2???? | Primary Spacing-------- Proportional
+   159	 ( s   0 B  | 2???? | Primary Stroke Weight-- Medium
+   160	 ( s   3 B  | 2???? | Primary Stroke Weight-- Bold
+   161	;-----------------------------------------------------------------------------
+   162	;
+   163	;
+   164	;------------------------------------------------------------------------------
+   165	;p s nnn t  | 2DP5L | Functional Area       | Detailed Description
+   166	;------------------------------------------------------------------------------
+   167	 ( s   0 S  | 2???? | Primary Style---------- Upright
+   168	 ( s   1 S  | 2???? | Primary Style---------- Italic
+   169	 (     0 A  | 2???? | Primary Symbol Set----- HP Math 7
+   170	 (     0 B  | 2???? | Primary Symbol Set----- HP Linedraw
+   171	 (     0 D  | 2???? | Primary Symbol Set----- ISO 60: Norwegian 1
+   172	 (     1 D  | 2???? | Primary Symbol Set----- ISO 61: Norwegian 2
+   173	 (     0 E  | 2???? | Primary Symbol Set----- HP Roman Extension
+   174	 (     1 E  | 2???? | Primary Symbol Set----- ISO  4: United Kingdom
+   175	 (     0 F  | 2???? | Primary Symbol Set----- ISO 25: French
+   176	 (     1 F  | 2???? | Primary Symbol Set----- ISO 69: French
+   177	 (     0 G  | 2???? | Primary Symbol Set----- HP German
+   178	 (     1 G  | 2???? | Primary Symbol Set----- ISO 21: German
+   179	 (     8 G  | 2???? | Primary Symbol Set----- HP Greek8
+   180	 (     0 I  | 2???? | Primary Symbol Set----- ISO 15: Italian
+   181	 (     0 K  | 2???? | Primary Symbol Set----- ISO 14: JIS ASCII
+   182	 (     1 K  | 2???? | Primary Symbol Set----- HP Katakana
+   183	 (     2 K  | 2???? | Primary Symbol Set----- ISO 57: Chinese
+   184	 (     8 K  | x???? | Primary Symbol Set----- Kana-8
+   185	 (     0 M  | 2???? | Primary Symbol Set----- HP Math 7
+   186	 (     1 M  | 2???? | Primary Symbol Set----- Technical
+   187	 (     8 M  | 2???? | Primary Symbol Set----- HP Math8
+   188	 (     0 N  | 2???? | Primary Symbol Set----- ISO100: ECMA-94 (Latin 1)
+   189	 (     0 O  | 2???? | Primary Symbol Set----- OCR-A
+   190	 (     1 O  | 2???? | Primary Symbol Set----- OCR-B
+   191	 (     0 S  | 2???? | Primary Symbol Set----- ISO 11: Swedish
+   192	 (     1 S  | 2???? | Primary Symbol Set----- HP Spanish
+   193	 (     2 S  | 2???? | Primary Symbol Set----- ISO 17: Spanish
+   194	 (     3 S  | 2???? | Primary Symbol Set----- ISO 10: Swedish
+   195	 (     4 S  | 2???? | Primary Symbol Set----- ISO 16: Portuguese
+   196	 (     5 S  | 2???? | Primary Symbol Set----- ISO 84: Portuguese
+   197	 (     6 S  | 2???? | Primary Symbol Set----- ISO 85: Spanish
+   198	 (     0 U  | 2???? | Primary Symbol Set----- ISO  6: ASCII
+   199	 (     1 U  | 2???? | Primary Symbol Set----- HP Legal
+   200	 (     2 U  | 2???? | Primary Symbol Set----- ISO  2: IRV
+   201	 (     7 U  | 2???? | Primary Symbol Set----- OEM-1
+   202	 (     8 U  | 2???? | Primary Symbol Set----- HP Roman-8
+   203	 (     9 U  | x???? | Primary Symbol Set----- ANSI
+   204	 (    10 U  | 2???? | Primary Symbol Set----- PC-8
+   205	 (    11 U  | 2???? | Primary Symbol Set----- PC-8 (D/N)
+   206	 (    15 U  | 2???? | Primary Symbol Set----- HP Pi Font
+   207	 ( s   0 T  | 2???? | Primary Typeface------- Lineprinter
+   208	 ( s   3 T  | 2???? | Primary Typeface------- Courier
+   209	 ( s   4 T  | 2???? | Primary Typeface------- Helvetica
+   210	 ( s   5 T  | 2???? | Primary Typeface------- Times Roman
+   211	 ( s   6 T  | 2???? | Primary Typeface------- Letter Gothic
+   212	 ( s   8 T  | 2???? | Primary Typeface------- Prestige
+   213	 ( s  11 T  | 2???? | Primary Typeface------- Presentation
+   214	 ( s  17 T  | 2???? | Primary Typeface------- Optima
+   215	 ( s  18 T  | 2???? | Primary Typeface------- ITC Garamond
+   216	 ( s  19 T  | 2???? | Primary Typeface------- Cooper Black
+   217	 ( s  20 T  | 2???? | Primary Typeface------- Coronet Bold
+   218	 ( s  21 T  | 2???? | Primary Typeface------- Broadway
+   219	 ( s  22 T  | 2???? | Primary Typeface------- Bodini Condensed
+   220	;-----------------------------------------------------------------------------
+   221	;
+   222	;
+   223	;------------------------------------------------------------------------------
+   224	;p s nnn t  | 2DP5L | Functional Area       | Detailed Description
+   225	;------------------------------------------------------------------------------
+   226	 ( s  23 T  | 2???? | Primary Typeface------- Century Schoolbook
+   227	 ( s  24 T  | 2???? | Primary Typeface------- University Roman
+   228	         E  | 2???? | Printer Control-------- RESET
+   229	 * b   # W  | 2???? | Raster Graphics-------- Transfer Data: Rows = #
+   230	 * r   0 A  | 2???? | Raster Graphics-------- Start - Left Graphic Margin
+   231	 * r   1 A  | 2???? | Raster Graphics-------- Start - Current Cursor Position
+   232	 * r     B  | 2???? | Raster Graphics-------- End Graphics
+   233	 * t  75 R  | 2???? | Raster Graphics-------- Resolution  75 Dots/Inch
+   234	 * t 100 R  | 2???? | Raster Graphics-------- Resolution 100 Dots/Inch
+   235	 * t 150 R  | 2???? | Raster Graphics-------- Resolution 150 Dots/Inch
+   236	 * t 300 R  | 2???? | Raster Graphics-------- Resolution 300 Dots/Inch
+   237	 * c   # A  | 2???? | Rectangular Area Fill-- Rectangle Width:  Dots = #
+   238	 * c   # B  | 2???? | Rectangular Area Fill-- Rectangle Height: Dots = #
+   239	 * c   1 G  | 2???? | Rectangular Area Fill-- Fill Pattern    1 Horizontal Line
+   240	 * c   2 G  | 2???? | Rectangular Area Fill-- Fill Pattern   2% Gray / 2 Vert Lines
+   241	 * c   3 G  | 2???? | Rectangular Area Fill-- Fill Pattern    3 Diagonal Lines
+   242	 * c   4 G  | 2???? | Rectangular Area Fill-- Fill Pattern    4 Diagonal Lines
+   243	 * c   5 G  | 2???? | Rectangular Area Fill-- Fill Pattern    5 Square Grid
+   244	 * c   6 G  | 2???? | Rectangular Area Fill-- Fill Pattern    6 Diagonal Grid
+   245	 * c  10 G  | 2???? | Rectangular Area Fill-- Fill Pattern  10% Gray
+   246	 * c  15 G  | 2???? | Rectangular Area Fill-- Fill Pattern  15% Gray
+   247	 * c  30 G  | 2???? | Rectangular Area Fill-- Fill Pattern  30% Gray
+   248	 * c  45 G  | 2???? | Rectangular Area Fill-- Fill Pattern  45% Gray
+   249	 * c  70 G  | 2???? | Rectangular Area Fill-- Fill Pattern  70% Gray
+   250	 * c  90 G  | 2???? | Rectangular Area Fill-- Fill Pattern  90% Gray
+   251	 * c 100 G  | 2???? | Rectangular Area Fill-- Fill Pattern 100% Gray
+   252	 * c   # H  | 2???? | Rectangular Area Fill-- Rectangle Width:  Decipoints = #
+   253	 * c   0 P  | 2???? | Rectangular Area Fill-- Select Fill = Rule
+   254	 * c   2 P  | 2???? | Rectangular Area Fill-- Select Fill = Gray Scale
+   255	 * c   3 P  | 2???? | Rectangular Area Fill-- Select Fill = HP Pattern
+   256	 * c   # V  | 2???? | Rectangular Area Fill-- Rectangle Height: Decipoints = #
+   257	 ) s   # H  | x???? | Secondary Font Pitch--- Characters/Inch (CPI) = #
+   258	 ) s   # V  | x???? | Secondary Point Size--- Point = #
+   259	 ) s   0 P  | x???? | Secondary Spacing------ Fixed
+   260	 ) s   1 P  | x???? | Secondary Spacing------ Proportional
+   261	 ) s   0 B  | x???? | Secondary Stroke Wt.--- Meduim
+   262	 ) s   3 B  | x???? | Secondary Stroke Wt.--- Bold
+   263	 ) s   0 S  | x???? | Secondary Style-------- Upright
+   264	 ) s   1 S  | x???? | Secondary Style-------- Italic
+   265	 )     0 A  | x???? | Secondary Symbol Set--- HP Math 7
+   266	 )     0 B  | x???? | Secondary Symbol Set--- HP Linedraw
+   267	 )     0 D  | x???? | Secondary Symbol Set--- ISO 60: Norwegian 1
+   268	 )     1 D  | x???? | Secondary Symbol Set--- ISO 61: Norwegian 2
+   269	 )     0 E  | x???? | Secondary Symbol Set--- HP Roman Extension
+   270	 )     1 E  | x???? | Secondary Symbol Set--- ISO  4: United Kingdom
+   271	 )     0 F  | x???? | Secondary Symbol Set--- ISO 25: French
+   272	 )     1 F  | x???? | Secondary Symbol Set--- ISO 69: French
+   273	 )     0 G  | x???? | Secondary Symbol Set--- HP German
+   274	 )     1 G  | x???? | Secondary Symbol Set--- ISO 21: German
+   275	 )     8 G  | x???? | Secondary Symbol Set--- HP Greek8
+   276	 )     0 I  | x???? | Secondary Symbol Set--- ISO 15: Italian
+   277	 )     0 K  | x???? | Secondary Symbol Set--- ISO 14: JIS ASCII
+   278	 )     1 K  | x???? | Secondary Symbol Set--- HP Katakana
+   279	;-----------------------------------------------------------------------------
+   280	;
+   281	;
+   282	;------------------------------------------------------------------------------
+   283	;p s nnn t  | 2DP5L | Functional Area       | Detailed Description
+   284	;------------------------------------------------------------------------------
+   285	 )     2 K  | x???? | Secondary Symbol Set--- ISO 57: Chinese
+   286	 )     8 K  | x???? | Secondary Symbol Set--- Kana-8
+   287	 )     0 M  | x???? | Secondary Symbol Set--- HP Math 7
+   288	 )     1 M  | x???? | Secondary Symbol Set--- Technical
+   289	 )     8 M  | x???? | Secondary Symbol Set--- HP Math8
+   290	 )     0 N  | x???? | Secondary Symbol Set--- ISO100: ECMA-94 (Latin 1)
+   291	 )     0 O  | x???? | Secondary Symbol Set--- OCR-A
+   292	 )     1 O  | x???? | Secondary Symbol Set--- OCR-B
+   293	 )     0 S  | x???? | Secondary Symbol Set--- ISO 11: Swedish
+   294	 )     1 S  | x???? | Secondary Symbol Set--- HP Spanish
+   295	 )     2 S  | x???? | Secondary Symbol Set--- ISO 17: Spanish
+   296	 )     3 S  | x???? | Secondary Symbol Set--- ISO 10: Swedish
+   297	 )     4 S  | x???? | Secondary Symbol Set--- ISO 16: Portuguese
+   298	 )     5 S  | x???? | Secondary Symbol Set--- ISO 84: Portuguese
+   299	 )     6 S  | x???? | Secondary Symbol Set--- ISO 85: Spanish
+   300	 )     0 U  | x???? | Secondary Symbol Set--- ISO  6: ASCII
+   301	 )     1 U  | x???? | Secondary Symbol Set--- HP Legal
+   302	 )     2 U  | x???? | Secondary Symbol Set--- ISO  2: IRV
+   303	 )     7 U  | x???? | Secondary Symbol Set--- OEM-1
+   304	 )     8 U  | x???? | Secondary Symbol Set--- HP Roman-8
+   305	 )     9 U  | x???? | Secondary Symbol Set--- ANSI
+   306	 )    10 U  | x???? | Secondary Symbol Set--- PC-8
+   307	 )    11 U  | x???? | Secondary Symbol Set--- PC-8 (D/N)
+   308	 )    15 U  | x???? | Secondary Symbol Set--- HP Pi Font
+   309	 ) s   0 T  | x???? | Secondary Typeface----- Lineprinter
+   310	 ) s   3 T  | x???? | Secondary Typeface----- Courier
+   311	 ) s   4 T  | x???? | Secondary Typeface----- Helvetica
+   312	 ) s   5 T  | x???? | Secondary Typeface----- Times Roman
+   313	 ) s   6 T  | x???? | Secondary Typeface----- Letter Gothic
+   314	 ) s   8 T  | x???? | Secondary Typeface----- Prestige
+   315	 ) s  11 T  | x???? | Secondary Typeface----- Presentation
+   316	 ) s  17 T  | x???? | Secondary Typeface----- Optima
+   317	 ) s  18 T  | x???? | Secondary Typeface----- ITC Garamond
+   318	 ) s  19 T  | x???? | Secondary Typeface----- Cooper Black
+   319	 ) s  20 T  | x???? | Secondary Typeface----- Coronet Bold
+   320	 ) s  21 T  | x???? | Secondary Typeface----- Broadway
+   321	 ) s  22 T  | x???? | Secondary Typeface----- Bodini Condensed
+   322	 ) s  23 T  | x???? | Secondary Typeface----- Century Schoolbook
+   323	 ) s  24 T  | x???? | Secondary Typeface----- University Roman
+   324	 ( s   # W  | 2???? | Soft Font Creation----- Download Characters: Bytes = #
+   325	 ) s   # W  | 2???? | Soft Font Creation----- Create Font Header: Bytes = #
+   326	 * c   # E  | 2???? | Soft Font Creation----- Character Code (Decimal) ASCII = #
+   327	 & p   # X  | 2???? | Transparent Print Data- Bytes = #
+   328	 & s   0 C  | 2???? | Wrap-around Mode------- Enable
+   329	 & s   1 C  | 2???? | Wrap-around Mode------- Disable
+   330	;-----------------------------------------------------------------------------
+   331	;
+   332	;
+   333	;------------------------------------------------------------------------------
+   334	;
+   335	;  History of PCLxxx.ARC
+   336	;  ---------------------
+   337	;
+   338	;  Original release 22 December 1988.   L.S.Mundy.
+   339	;
+   340	;  Please add any additions or corrections to this file and redistribute
+   341	;  using the naming convention specified above through the Bulletin Board
+   342	;  network of your choice.   Enjoy!.
+   343	;
+   344	;
+   345	;
+   346	;
+   347	;
+   348	;
+   349	;
+   350	;
+   351	;
+   352	;
+   353	;
+   354	;
+   355	;-----------------------------------------------------------------------------
+   356	

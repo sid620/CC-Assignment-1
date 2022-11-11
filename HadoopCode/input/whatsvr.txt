@@ -1,0 +1,1579 @@
+     1	What Is Virtual Reality? A Homebrew Introduction
+     2	March 1993
+     3	Jerry Isdale, i.e. Isdale Engineering
+     4	email: 72330.770@compuserve.com (preferred)
+     5	(alternate email: isdale@well.sf.ca.us)
+     6	
+     7	  This article is intended as a rough introduction to Virtual Reality (VR), 
+     8	primarily as background for (home-brew) development efforts (like the 
+     9	Group 3 effort). It is not meant to be The Definitive Treatise on VR. The 
+    10	reader is encouraged to search out other introductions and form your 
+    11	own opinions.  Contact Information and other sources of information are 
+    12	listed at the end of this paper.
+    13	
+    14	   An excellent short treatment of the state of the art and a taxonomy of 
+    15	VR is given in the ACM Siggraph publication "Computer Graphics", Vol. 
+    16	26, #3, August 1992. It is a report on the US Government's National 
+    17	Science Foundation invitational workshop on Interactive Systems 
+    18	Program held March 23-24, 1992.  The purpose of the workshop was to 
+    19	identify and recommend future research directions in the area of virtual 
+    20	environments.  A longer exposition of that taxonomy can be found in the 
+    21	MIT Journal "Presence" Vol. 1 #2.
+    22	
+    23	Contents:
+    24	1.	What is Virtual Reality
+    25	2.	Types of VR Systems
+    26	2.1.	Window on World Systems (WoW)
+    27	2.2.	Video Mapping
+    28	2.3.	Immersive Systems
+    29	2.4.	Telepresence
+    30	2.5.	Mixed Reality
+    31	3.	VR Hardware
+    32	3.1.	Manipulation and Control Devices
+    33	3.2.	Position Tracking
+    34	3.3.	Stereo Vision
+    35	4.	Levels of VR Systems
+    36	4.1.	Entry VR (EVR)
+    37	4.2.	Basic VR (BVR)
+    38	4.3.	Advanced VR (AVR)
+    39	4.4.	Immersion VR (IVR)
+    40	4.5.	Big Time VR
+    41	4.6.	SIMNET, Defense Simulation Internet
+    42	5.	Aspects of A VR Program
+    43	5.1.	Input Processes
+    44	5.2.	Simulation Process
+    45	5.3.	Rendering Processes
+    46	5.3.1.	Visual Renderer
+    47	5.3.2.	Auditory Rendering
+    48	5.3.3.	Haptic Rendering
+    49	5.3.4.	Other Senses
+    50	6.	World Space
+    51	6.1.	World Coordinates
+    52	6.2.	A World Divided: Separation of Environments
+    53	7.	World Database
+    54	7.1.	Storage Methods
+    55	7.2.	Objects
+    56	7.2.1. Position/Orientable
+    57	7.2.2. Hierarchy
+    58	7.2.3. Bounding Volume
+    59	7.3. Object Geometry
+    60	7.3.1.	3D PolyLines & PolyPoints
+    61	7.3.2.	Polygons
+    62	7.3.2.1. Vertex Join Set Polygon Format
+    63	7.3.3.	Primitives
+    64	7.3.4.	Solid Modeling & Boolean Operations
+    65	7.3.5.	Curves & Patches
+    66	7.3.6.	Dynamic Geometry (aka morphing)
+    67	7.3.7.	Swept Objects & Surface of Revolution
+    68	7.3.8.	Texture Maps & Billboard Objects
+    69	7.4.	Lights
+    70	7.5.	Cameras
+    71	7.6.	Scripts
+    72	7.6.1. Motion Scripts
+    73	7.6.2.	Physical or Procedural Modeling and Simulation
+    74	7.6.3.	Simple Animation
+    75	7.6.4. Trigger Scripts
+    76	7.6.5.	Connection Scripts
+    77	7.7.	Interaction Feedback
+    78	7.8.	Graphical User Interface/Control Panels
+    79	7.8.1.	Two  Dimensional Controls
+    80	7.8.2.	Three Dimensional Controls
+    81	7.9.	Hardware Control & Connections
+    82	7.10.	Room/Stage/Area Descriptions
+    83	8.	World Authoring versus Playback
+    84	9.	For More VR Information
+    85	9.1.	On-line Services & BBS
+    86	9.2. Internet NewsGroups
+    87	9.3.	Internet FTP Sites
+    88	9.4.	Local User Groups, USA
+    89	9.5.	Local User Groups, Other Coutntries:
+    90	9.6.	VRASP
+    91	9.7.	Journals & Newsletters
+    92	9.8.	Professional Societies
+    93	9.9.	VR Reference Books
+    94	9.10.	Computer Graphics Books
+    95	9.11.	Related Books
+    96	9.12.	VR Research Labs & Academia
+    97	10.	Companies Involved with Virtual Reality
+    98	
+    99	1.	What is Virtual Reality
+   100	
+   101	  The term Virtual Reality (VR) is used by many different people and 
+   102	currently has many meanings. There are some people to whom VR is a 
+   103	specific collection of technologies, that is a Head Mounted Display, Glove 
+   104	Input Device and Audio. However, the general concept of the systems 
+   105	goes way beyond that. The best definition of Virtual Reality I have see to 
+   106	date comes from the book "The Silicon Mirage" (see section on VR Books): 
+   107	
+   108	   "Virtual Reality is a way for humans to visualize, manipulate and 
+   109	interact with computers and extremely complex data" 
+   110	
+   111	  The visualization part refers to the computer generating visual, auditory 
+   112	or other sensual inputs. The images are graphical renderings of a world 
+   113	within the computer. This world may be a CAD model, a scientific 
+   114	simulation, or a view into a database. The user can interact with the 
+   115	world and directly manipulate objects within the world. Some worlds are 
+   116	animated by other processes, perhaps physical simulations, or simple 
+   117	animation scripts.
+   118	
+   119	  Some people object to the term "Virtual Reality", saying it is an 
+   120	oxymoron. Other terms that have been used are Synthetic Environments, 
+   121	Cyberspace, Artificial Reality, Simulator Technology, etc. VR is the most 
+   122	common and sexiest. It has caught the attention of the media.
+   123	
+   124	  The applications being developed for VR run a wide spectrum, from 
+   125	games to building and business planning. Many applications are worlds 
+   126	that are very similar to our own, like CAD or architectural modeling. 
+   127	Some applications provide ways of viewing from an advantageous 
+   128	perspective not possible with the real world, like scientific simulators and 
+   129	telepresense systems, air traffic control systems. Other applications are 
+   130	much different from anything we have ever directly experienced before. 
+   131	These latter applications may be the hardest, and most interesting 
+   132	systems. Visualizing the ebb and flow of the world's financial markets. 
+   133	Navigating a large corporate information base, etc.
+   134	
+   135	2.	Types of VR Systems
+   136	
+   137	  A major distinction of VR systems is the mode with which they interface 
+   138	to the user. There are some non-technologically mediated methods that 
+   139	some people stretch to include in VR, such as books, plays, movies or 
+   140	pure imagination. The above mentioned taxonomy can include these, but 
+   141	we wish to restrict VR to technology mediated systems.
+   142	
+   143	2.1.	Window on World Systems (WoW)
+   144	
+   145	  Some systems use a conventional computer monitor to display the 
+   146	visual world. This sometimes called desktop VR or  a Window on a World 
+   147	(WoW).  This concept traces its lineage back through the entire history of 
+   148	computer graphics. In 1965, Ivan Sutherland laid out a research 
+   149	program for computer graphics in a paper called "The Ultimate Display" 
+   150	that has driven the field for the past nearly thirty years. 
+   151	
+   152	  One must look at a display screen, he said, as a window through which 
+   153	one beholds a virtual world. The challenge to computer graphics is to 
+   154	make the picture in the window look real, sound real and the objects act 
+   155	real. [quoted from Computer Graphics V26#3]
+   156	
+   157	2.2.	Video Mapping
+   158	
+   159	  A variation of the WoW approach merges a video input of the user's 
+   160	silhouette with a 2D computer graphic. The user watches a monitor that 
+   161	shows his body's interaction with the world. Myron Kruger has been a 
+   162	champion of this form of VR since the late 60's. He has published two 
+   163	books on the subject: "Artificial Reality" and "Artificial Reality II". At least 
+   164	one commercial system uses this approach, the Mandala system. This 
+   165	system is based on a Commodore Amiga with some added hardware and 
+   166	software. A version of the Mandala is used by the cable TV channel 
+   167	Nickelodeon for a game show (Nick Arcade) to put the contestants into 
+   168	what appears to be a large video game.
+   169	
+   170	2.3.	Immersive Systems 
+   171	
+   172	  The ultimate VR systems completely immerse the user's personal 
+   173	viewpoint inside the virtual world. These "immersive" VR systems are 
+   174	often equipped with a Head Mounted Display. This is a helmet or a face 
+   175	mask that holds the visual and auditory displays. The helmet may be free 
+   176	ranging, or it might be attached to some sort of a boom armature. 
+   177	
+   178	  A nice variation of the immersive systems use multiple large projection 
+   179	displays to create a 'Cave'. An early implementation was called "The 
+   180	Closet Cathedral" for the ability to create the impression of an immense 
+   181	environment. within a small physical space. The Holodeck used in the 
+   182	television series "Star Trek: The Next Generation" is an extrapolation of 
+   183	this technology.
+   184	
+   185	2.4.	Telepresence
+   186	
+   187	  A variation on visualizing complete computer generated worlds is 
+   188	"Telepresence". This is a technology that links remote sensors in the real 
+   189	world with the senses of a human operator. The remote sensors might be 
+   190	located on a robot, or they might be on the ends of WALDO like tools. 
+   191	Fire fighters use remotely operated vehicles to handle some dangerous 
+   192	conditions. Surgeons are using very small instruments on cables to do 
+   193	surgery without cutting a major hole in their patients. The instruments 
+   194	have a small video camera at the business end. 
+   195	
+   196	2.5.	Mixed Reality
+   197	
+   198	  Merging the Telepresence and Virtual Reality systems gives the Mixed 
+   199	Reality or Seamless Simulation systems. Here the computer generated 
+   200	inputs are merged with telepresence inputs and the users view of the real 
+   201	world. A surgeon's view of a brain surgery is overlaid with images from 
+   202	earlier CAT scans and real-time ultrasound. A fighter pilot sees computer 
+   203	generated maps and data displays inside his fancy helmet visor. 
+   204	
+   205	3.	VR Hardware
+   206	
+   207	  There are a number of specialized types of hardware that have been 
+   208	developed or used for Virtual Reality applications.
+   209	
+   210	3.1.	Manipulation and Control Devices
+   211	
+   212	  One key element for interaction with a virtual world, is a means of 
+   213	tracking the position of a real world object, such as a head or hand. 
+   214	There are numerous methods for position tracking and control. Ideally a 
+   215	technology should provide 3 measures for position(X, Y, Z) and 3 
+   216	measures of orientation (roll, pitch, yaw). One of the biggest problem for 
+   217	position tracking is latency, or the time required to make the 
+   218	measurements and preprocess them before input to the simulation 
+   219	engine.
+   220	
+   221	  The simplest control hardware is a conventional mouse, trackball or 
+   222	joystick. While these are two dimensional devices, creative programming 
+   223	can use them for 6D controls. There are a number of 3 and 6 
+   224	dimensional mice/trackball/joystick devices being introduced to the 
+   225	market at this time. These add some extra buttons and wheels that are 
+   226	used to control not just the XY translation of a cursor, but its Z 
+   227	dimension and rotations in all three directions. One 6D Joystick has 
+   228	recently become available, the Global Devices 6D Controller. It has a 
+   229	tennis ball mounted on a stick. You can pull and twist the ball in 
+   230	addition to the left/right & forward/back of a normal joystick.
+   231	
+   232	  One common VR device is the instrumented glove.(NOTE: the use of a 
+   233	glove to manipulate objects in a computer is covered by a basic patent.) 
+   234	Here a glove is outfitted with sensors on the fingers as well as an overall 
+   235	position/orientation tracker. There are a number of different types of 
+   236	sensors that can be used. VPL (holders of the patent) made several 
+   237	DataGloves, mostly using fiberoptic sensors for finger bends and 
+   238	magnetic trackers for overal position. Mattel manufactured the 
+   239	PowerGlove for use with the Nintendo game system, for a short time.  
+   240	This device is easily adapted to interface to a personal computer. It 
+   241	provides some limited hand location and finger position data using strain 
+   242	gauges for finger bends and ultrasonic position sensors. The gloves are 
+   243	getting rare, but some can still be found at Toys R' Us and other discount 
+   244	stores.  Anthony Clifton recently posted this suggestion for a" very good 
+   245	resource for powergloves etc:  small children. A friend's son had gotten a 
+   246	glove a couple years ago and almost NEVER used it, so I bought it off the 
+   247	kid.  Remember children like money more than toys they never use."
+   248	
+   249	3.2.	Position Tracking
+   250	
+   251	  Mechanical armatures can be used to provide fast and very accurate 
+   252	tracking. Such armatures may look like a desk lamp (for basic 
+   253	position/orientation) or they may be highly complex exoskeletons (for 
+   254	more detailed positions). The drawbacks of mechanical sensors are the 
+   255	encumbrance of the device and its restrictions on motion.
+   256	
+   257	  Ultrasonic sensors can be used to track position and orientation. A set 
+   258	of  emitters and receivers are used with a known relationship between 
+   259	the emitters and between the receivers. The emitters are pulsed in 
+   260	sequence and the time lag to each receiver is measured. Triangulation 
+   261	gives the position. Drawbacks to ultrasonics are low resolution, long lag 
+   262	times and susceptibility to echoes from the environment.
+   263	
+   264	  Magnetic trackers use sets of coils that are pulsed to produce magnetic 
+   265	fields. The magnetic sensors determine the strength and angles of the 
+   266	fields. Limitations of these trackers are a high latency for the 
+   267	measurement and processing, range limitations, and interference from 
+   268	ferrous materials within the fields. However, magnetic trackers seem to 
+   269	be one of the preferred methods.
+   270	
+   271	  Optical position tracking systems have been developed. One method 
+   272	uses a ceiling grid LEDs and a head mounted camera. The LEDs are 
+   273	pulsed in sequence and the cameras image is processed to detect the 
+   274	flashes. Two problems with this method are limited space (grid size) and 
+   275	lack of full motion (rotations). Another optical method uses a number of 
+   276	video cameras to capture simultaneous images that are correlated by 
+   277	high speed computers to track objects. Processing time (and cost of fast 
+   278	computers) is a major limiting factor here.
+   279	
+   280	  Inertial trackers have been developed that are small and accurate 
+   281	enough for VR use. However, these devices generally only provide 
+   282	rotational measurements. They are also not accurate for slow position 
+   283	changes.
+   284	
+   285	3.3.	Stereo Vision
+   286	
+   287	  Stereo vision is often included in a VR system. This is accomplished by 
+   288	creating two different images of the world, one for each eye. The images 
+   289	are computed with the viewpoints offset by the equivalent distance 
+   290	between the eyes. There are a large number of technologies for presenting 
+   291	these two images. The images can be placed side-by-side and the viewer 
+   292	asked (or assisted) to cross their eyes.  The images can be projected 
+   293	through differently polarized filters, with corresponding filters placed in 
+   294	front of the eyes. Anaglyph images user red/blue glasses to provide a 
+   295	crude (no color) stereovision.
+   296	
+   297	  The two images can be displayed sequentially on a conventional monitor 
+   298	or projection display. LCD shutter glasses are then used to shut off 
+   299	alternate eyes in synchronization with the display. When the brain 
+   300	receives the images in rapid enough succession, it fuses the images into 
+   301	a single scene and perceives depth. A fairly high display swapping rate 
+   302	(min 60hz) is required to avoid perceived flicker. A number of companies 
+   303	made low cost LCD shutter glasses for use with TVs (Sega, Nintendo, 
+   304	Toshiba, etc). There are circuits and code for hooking these up to a 
+   305	computer available on many of the Online systems, BBSs and Internet 
+   306	FTP sites mentioned later. However, locating the glasses themselves is 
+   307	getting difficult as none are still being made or sold for their original use.
+   308	
+   309	  A more advanced stereoscopic system can be create by placing seperate 
+   310	small displays can be placed in front of each eye, with special optics to  
+   311	focus and stretch the perceived field of view. This setup is commonly 
+   312	known as a Head Mounted Display or HMD. Most lower cost HMDs 
+   313	($6000 range ) use LCD displays, while others use small CRTs. The more 
+   314	expensive HMDs use optical fibers to pipe the images from non-head 
+   315	mounted displays. ($60,000 and up) A HMD requires a position tracker 
+   316	in addition to the helmet. Alternatively, the binocular display can be 
+   317	mounted on an armature for support and tracking (a Boom display)
+   318	
+   319	4.	Levels of VR Systems
+   320	
+   321	  There are currently quite a number of different efforts to develop VR 
+   322	technology. Each of these projects has different goals and approach to 
+   323	the overall VR technology. Major (and Minor) University labs have big 
+   324	projects underway (UNC, Cornell, etc.). DARPA is investing heavily in VR 
+   325	and other simulation technologies. There are industry supported 
+   326	laboratories too, like the Human Interface Technologies Laboratory (HITL) 
+   327	in Seattle and Japanese NTT project. Many existing and startup 
+   328	companies are also building and selling world building tools (Autodesk, 
+   329	IBM's VUE, Sense8, VREAM).
+   330	
+   331	  There is also a number of home-brew VR projects. Some of these are 
+   332	highly visible, being publicized either in conventional media (PCVR 
+   333	magazine) or in the electronic networks (Rend386, etc.). Others are 
+   334	individuals and small club projects.
+   335	
+   336	4.1.	Entry VR (EVR)
+   337	
+   338	   The 'Entry Level' VR system takes a stock personal computer or 
+   339	workstation and implements a WoW system. The system may be based 
+   340	on an IBM clone (MS-DOS/Windows) machine or an Apple Macintosh, or 
+   341	perhaps a Commodore Amiga. The DOS type machines (IBM PC clones) 
+   342	are the most prevalent. There are Mac based systems, but few very fast 
+   343	rendering ones and no public domain versions, to my knowledge.  
+   344	Whatever the base computer it includes a graphic display,  a 2D input 
+   345	device like a mouse, trackball or joystick,  the keyboard, hard disk & 
+   346	memory.
+   347	
+   348	  Virtual Reality Studio (aka VR Studio, VRS) is a commercial example of 
+   349	an Entry Level VR product available from Accolade for PC and Amiga 
+   350	systems. VR Studio provides world creation and runtime versions of the 
+   351	program. Worlds created with the program can be freely distributed with 
+   352	the player package. There are a number of these worlds available from 
+   353	the networks. Compuserve's GraphDev forum has several in Library 11 
+   354	(VR Tech), like the company provided demo VRSDMO.ZIP (VRS.TXT gives 
+   355	a solution to the demo game). 
+   356	
+   357	4.2.	Basic VR (BVR)
+   358	
+   359	  The next step up from an EVR system adds some basic interaction and 
+   360	display enhancements.  Such enhancements would include a 
+   361	stereographic viewer (LCD Shutterglasses)  and a input/control device 
+   362	such as the Mattel PowerGlove and/or a multidimensional mouse or 
+   363	joystick. 
+   364	
+   365	4.3.	Advanced VR (AVR)
+   366	
+   367	  The next step up the VR technology ladder is to add a rendering 
+   368	accelerator and/or frame buffer and possibly other parallel processors for 
+   369	input handling, etc. The simplest enhancement in this area is a faster 
+   370	display card. For the PC class machines, there are a number of new fast 
+   371	VGA and SVGA accelerator cards. These can make a dramatic 
+   372	improvement in the rendering performance of a desktop VR system. 
+   373	Other more sophisticated image processors based on the Texas 
+   374	Instruments TI34020 or Intel i860 processor can make even more 
+   375	dramatic improvements in rendering capabilities. The i860 in particular 
+   376	is in many of the high end professional systems. The Silicon Graphics 
+   377	Reality Engine uses a number of i860 processors in addition to the usual 
+   378	SGI workstation hardware to achieve stunning levels of realism in real 
+   379	time animation.
+   380	
+   381	  An AVR system might also add a sound card to provide mono, stereo or 
+   382	true 3D audio output. Some sound cards also provide voice recognition. 
+   383	This would be an excellent additional input device for VR applications. 
+   384	
+   385	4.4.	Immersion VR (IVR)
+   386	
+   387	  An Immersion VR system adds some type of immersive display system: 
+   388	a HMD, a Boom, or multiple large projection type displays. 
+   389	
+   390	  An IVR system might also add some form of tactile, haptic and touch 
+   391	feedback interaction mechanisms. The area of Touch or Force Feedback 
+   392	(known collectively as Haptics) is a very new research arena.
+   393	
+   394	4.5.	Big Time VR
+   395	
+   396	  Many of the more advanced systems are being designed as software 
+   397	toolkits or operating systems for VR. This workbench approach allows 
+   398	them to substitute different input devices, renderers, simulation systems, 
+   399	etc. Some of these systems run as distributed processes over a network 
+   400	of computers. 
+   401	
+   402	4.6.	SIMNET, Defense Simulation Internet
+   403	
+   404	  One of the biggest VR projects is the Defense Simulation Internet. This 
+   405	project is a standardization being pushed by the USA Defense 
+   406	Department to enable diverse simulators to be interconnected into a vast 
+   407	network. It is an outgrowth of the DARPA (Defense Advanced Research 
+   408	Projects Administration) SIMNET project of the later 1980s. The basic 
+   409	Distributed Interactive Simulation (DIS) protocol has been defined by the 
+   410	Orlando Institute for Simulation & Training. It is the basis for the next 
+   411	generation of SIMNET, the Defense Simulation Internet (DSI). (love those 
+   412	acronyms!) A good, accessible treatment of SIMNET and DSI can be 
+   413	found in the premier issue of WIRED magazine (January 1993) entitled 
+   414	"War is Virtual Hell" by Bruce Sterling.
+   415	
+   416	5.	Aspects of A VR Program
+   417	
+   418	  Just what is required of a VR program? The basic parts of the system 
+   419	can be broken down into an Input Processor, a Simulation Processor, a 
+   420	Rendering Process, and a World Database. All these parts must consider 
+   421	the time required for processing. Every delay in response time degrades 
+   422	the feeling of 'presence' and reality of the simulation. 
+   423	
+   424	5.1.	Input Processes
+   425	
+   426	  The Input Processes of a VR program control the devices used to input 
+   427	information to the computer. There are a wide variety of possible input 
+   428	devices: keyboard, mouse, trackball, joystick, 3D & 6D position trackers 
+   429	(glove, wand, head tracker, body suit, etc.). A network system would add 
+   430	inputs from the net. A voice recognition system is also a good 
+   431	augmentation for VR, especially if the user's hands are being used for 
+   432	other tasks.
+   433	
+   434	5.2.	Simulation Process
+   435	
+   436	  The core of a VR program is the simulation system. This is the process 
+   437	that knows about the objects and the various inputs. It handles the 
+   438	interactions, the scripted object actions, simulations of physical laws 
+   439	(real or imaginary) and determines the world status. This simulation is 
+   440	basically a discrete process that is iterated once for each time step or 
+   441	frame. A networked VR application may have multiple simulations 
+   442	running on different machines, each with a different time step. 
+   443	Coordination of these can be a complex task.
+   444	
+   445	5.3.	Rendering Processes
+   446	
+   447	  The Rendering Processes of a VR program are those that create the 
+   448	sensations that are output to the user. A network VR program would also 
+   449	output data to other network processes. There would be separate 
+   450	rendering processes for visual, auditory, haptic (touch/force), and other 
+   451	sensory systems. Each renderer would take a description of the world 
+   452	state from the simulation process or derive it directly from the World 
+   453	Database for each time step.
+   454	
+   455	5.3.1.	Visual Renderer
+   456	
+   457	  The visual renderer is the most common process and it has a long 
+   458	history from the world of computer graphics and animation. The reader is 
+   459	encouraged to become familiar with various aspects of this technology.
+   460	
+   461	  The major consideration of a graphic renderer for VR applications is the 
+   462	frame generation rate. It is necessary to create a new frame every 1/20 of 
+   463	a second or faster. (1/20 is roughly the minimum rate at which the 
+   464	human brain will merge a stream of still images and perceive a smooth 
+   465	animation. 1/24fps is the standard rate for film, 1/25fps is PAL TV, 1/30 
+   466	is NTSC TV rates. 1/60fps is Showscan film rate.) This requirement 
+   467	eliminates a number of rendering techniques such as raytracing and 
+   468	radiosity. These techniques can generate very realistic images but often 
+   469	take hours to generate single frames. Visual renderers for VR use other 
+   470	methods such as a 'painter's algorithm', a Z-Buffer, or other Scanline 
+   471	oriented algorithm. There are many areas of visual rendering that have 
+   472	been augmented with specialized hardware.
+   473	
+   474	  The visual rendering process is often referred to as a rendering pipeline. 
+   475	This refers to the series of sub-processes that are invoked to create each 
+   476	frame. A sample rendering pipeline starts with a description of the world, 
+   477	the objects, lighting and camera (eye) location in world space. A first step 
+   478	would be eliminate all objects that are not visible by the camera. This can 
+   479	be quickly done by clipping the object bounding box or sphere against 
+   480	the viewing pyramid of the camera. Then the remaining objects have their 
+   481	geometry's transformed into the eye coordinate system (eye point at 
+   482	origin). Then the hidden surface algorithm and actual pixel rendering is 
+   483	done. 
+   484	
+   485	  The pixel rendering is also known as the 'lighting' or 'shading' 
+   486	algorithm. There are a number of different methods that are possible 
+   487	depending on the realism and calculation speed available. The simplest 
+   488	method is called flat shading and simply fills the entire area with the 
+   489	same color. The next step up provides some variation in color across a 
+   490	single surface. Beyond that is the possibility of smooth shading across 
+   491	surface boundaries, adding highlights, reflections, etc.
+   492	
+   493	  An effective short cut for visual rendering is the use of "texture" or 
+   494	"image" maps. These are pictures that are mapped onto objects in the 
+   495	virtual world. Instead of calculating lighting and shading for the object, 
+   496	the renderer determines which part of the texture map is visible at each 
+   497	visible point of the object. The resulting image appears to have 
+   498	significantly more detail than is otherwise possible. Some VR systems 
+   499	have special 'billboard' objects that always face towards the user. By 
+   500	mapping a series of different images onto the billboard, the user can get 
+   501	the appearance of moving around the object.
+   502	
+   503	5.3.2.	Auditory Rendering
+   504	
+   505	  A VR system is greatly enhanced by the inclusion of an audio 
+   506	component. This may produce mono, stereo or 3D audio. The latter is a 
+   507	fairly difficult proposition. It is not enough to do stereo-pan effects as the 
+   508	mind tends to locate these sounds inside the head. Research into 3D 
+   509	audio has shown that there are many aspects of our head and ear shape 
+   510	that effect the recognition of 3D sounds. It is possible to apply a rather 
+   511	complex mathematical function (called a Head Related Transfer Function 
+   512	or HRTF) to a sound to produce this effect. The HRTF is a very personal 
+   513	function that depends on the individual's ear shape, etc. However, there 
+   514	has been significant success in creating generalized HRTFs that work for 
+   515	most people and most audio placement. There remains a number of 
+   516	problems, such as the 'cone of confusion' wherein sounds behind the 
+   517	head are perceived to be in front of the head.
+   518	
+   519	  Sound has also been suggested as a means to convey other information, 
+   520	such as surface roughness. Dragging your virtual hand over sand would 
+   521	sound different than dragging it through gravel.
+   522	
+   523	5.3.3.	Haptic Rendering
+   524	
+   525	  Haptics is the generation of touch and force feedback information. This 
+   526	area is a very new science and there is much to be learned. There have 
+   527	been very few studies done on the rendering of true touch sense (such as 
+   528	liquid, fur, etc.).  Almost all systems to date have focused on force 
+   529	feedback and kinesthetic senses. These systems can provide good clues 
+   530	to the body regarding the touch sense, but are considered distinct from 
+   531	it. Many of the haptic systems thus far have been exo-skeletons that can 
+   532	be used for position sensing as well as providing resistance to movement 
+   533	or active force application.
+   534	
+   535	5.3.4.	Other Senses
+   536	
+   537	  The sense of balance and motion can be served to a fair degree in a VR 
+   538	system by a motion platform. These are used in flight simulators and 
+   539	some theaters to provide some motion cues that the mind integrates with 
+   540	other cues to perceive motion. It is not necessary to recreate the entire 
+   541	motion perfectly to fool the mind into a willing suspension of disbelief.
+   542	
+   543	  The sense of temperature has seen some technology developments. 
+   544	There exist very small electrical heat pumps that can produce the 
+   545	sensation of heat and cold in a localized area. These system are fairly 
+   546	expensive.
+   547	
+   548	  Other senses such as taste, smell, pheromone, etc. are beyond our 
+   549	ability to render rapidly and effectively. Sometimes, we just don't know 
+   550	enough about the functioning of these other senses.
+   551	
+   552	6.	World Space
+   553	
+   554	  The virtual world itself needs to be defined in a 'world space'. By its 
+   555	nature as a computer simulation, this world is necessarily limited. The 
+   556	computer must put a numeric value on the locations of each point of 
+   557	each object within the world. Usually these 'coordinates' are expressed in 
+   558	Cartesian dimensions of X, Y, and Z (length, height, depth). It is possible 
+   559	to use alternative coordinate systems such as spherical but Cartesian 
+   560	coordinates are the norm for almost all applications. Conversions 
+   561	between coordinate systems are fairly simple (if time consuming).
+   562	
+   563	6.1.	World Coordinates
+   564	
+   565	  A major limitation on the world space is the type of numbers used for 
+   566	the coordinates. Some worlds use floating point coordinates. This allows 
+   567	a very large range of numbers to be specified, with some precision lost on 
+   568	large numbers. Other systems used fixed point coordinates, which 
+   569	provides uniform precision on a more limited range of values. The choice 
+   570	of fixed versus floating point is often based on speed as well as the desire 
+   571	for a uniform coordinate field.
+   572	
+   573	6.2.	A World Divided: Separation of Environments
+   574	
+   575	  One method of dealing with the limitations on the world coordinate 
+   576	space is to divide a virtual world up into multiple worlds and provide a 
+   577	means of transiting between the worlds.  This allows fewer objects to be 
+   578	computed both for scripts and for rendering. There should be multiple 
+   579	stages (aka rooms, areas, zones, worlds, multiverses, etc.) and a way to 
+   580	move between them. 
+   581	
+   582	7.	World Database
+   583	
+   584	  The storage of information on objects and the world is a major part of 
+   585	the design of a VR system. The primary things that are stored in the 
+   586	World Database (or World Description Files) are the objects that inhabit 
+   587	the world, scripts that describe actions of those objects or the user 
+   588	(things that happen to the user), lighting, program controls, and 
+   589	hardware device support.
+   590	
+   591	7.1.	Storage Methods
+   592	
+   593	  There are a number of different ways the world information may be 
+   594	stored: a single file, a collection of files, or a database. The multiple file 
+   595	method is one of the more common approaches for VR development 
+   596	packages. Each object has one or more files (geometry, scripts, etc.) and 
+   597	there is some overall 'world' file that causes the other files to be loaded. 
+   598	Some systems also include a configuration file that defines the hardware 
+   599	interface connections.
+   600	
+   601	  Sometimes the entire database is loaded during program startup, other 
+   602	systems only read the currently needed files. A real database system 
+   603	helps tremendously with the latter approach. An Object Oriented 
+   604	Database would be a great fit for a VR system, but I am not aware of any 
+   605	projects currently using one.
+   606	
+   607	  The data files are most often stored as ASCII (human readable) text 
+   608	files. However, in many systems these are replaced by binary computer 
+   609	files. Some systems have all the world information compiled directly into 
+   610	the application.
+   611	
+   612	7.2.	Objects
+   613	
+   614	  Objects in the virtual world can have geometry, hierarchy, scripts, and 
+   615	other attributes. The capabilities of objects has a tremendous impact on 
+   616	the structure and design of the system. In order to retain flexibility,  a list 
+   617	of named attribute/values pairs is often used. Thus attributes can be 
+   618	added to the system without requiring changes to the object data 
+   619	structures. 
+   620	
+   621	  These attribute lists would be addressable by name (i.e. cube.mass => 
+   622	mass of the cube object). They may be a scalar, vector, or expression 
+   623	value. They may be addressable from within the scripts of their object. 
+   624	They might be accessible from scripts in other objects.
+   625	
+   626	7.2.1. Position/Orientable
+   627	
+   628	  An object is positionable and orientable. That is, it has a location and 
+   629	orientation in space.  Most objects can have these attributes modified by 
+   630	applying translation and rotation operations. These operations are often 
+   631	implemented using methods from vector and matrix algebra.
+   632	
+   633	7.2.2. Hierarchy
+   634	
+   635	  An object may be part of an object part HIERARCHY with a parent, 
+   636	sibling, and child objects. Such an object would inherit the 
+   637	transformations applied to it's parent object and pass these on to it's 
+   638	siblings and children. Hierarchies are used to create jointed figures such 
+   639	as robots and animals. They can also be used to  model other things like 
+   640	the sun, Êplanets and moons in a solar system.
+   641	
+   642	7.2.3. Bounding Volume
+   643	
+   644	  Additionally, an object  should include a BOUNDING VOLUME. The 
+   645	simplest bounding volume is the Bounding Sphere, specified by a center 
+   646	and radius. Another simple alternative is the Bounding Cube. This data 
+   647	can be used for rapid object culling during rendering and trigger 
+   648	analysis. Objects whose bounding volume is completely outside the 
+   649	viewing area need not be transformed or considered further during 
+   650	rendering. Collision detection with bounding spheres is very rapid. It 
+   651	could be used alone, or as a method for culling objects before more 
+   652	rigorous collision detection algorithms are applied.
+   653	
+   654	7.3. Object Geometry
+   655	
+   656	  The modeling of object shape and geometry is a large and diverse field. 
+   657	Some approaches seek to very carefully model the exact geometry of real 
+   658	world objects. Other methods seek to create simplified representations.  
+   659	Most VR systems sacrifice detail and exactness for simplicity for the sake 
+   660	of rendering speed.
+   661	
+   662	  The simplest objects are single dimensional points. Next come the two 
+   663	dimensional vectors. Many CAD systems create and exchange data as 2D 
+   664	views. This information is not very useful for VR systems, except for 
+   665	display on a 2D surface within the virtual world. There are some 
+   666	programs that can reconstruct a 3D model of an object, given a number 
+   667	of 2D views.
+   668	
+   669	7.3.1.	3D PolyLines & PolyPoints
+   670	
+   671	  The simplest 3D objects are known as PolyPoints and PolyLines. A 
+   672	PolyPoint is simply a collection of points in space. A Polyline is a set of 
+   673	vectors that form a continuous line.
+   674	
+   675	7.3.2.	Polygons
+   676	
+   677	  The most common form of objects used in VR systems are based on flat  
+   678	polygons. A polygon is a planar, closed multi-sided figure. They maybe 
+   679	convex or concave, but some systems require convex polygons. The use 
+   680	of polygons often gives objects a faceted look. This can be offset by more 
+   681	advanced rendering techniques such as the use of smooth shading and 
+   682	texture mapping.
+   683	
+   684	  Some systems use simple triangles or quadrilaterals instead of more 
+   685	general polygons. This can simplify the rendering process, as all surfaces 
+   686	have a known shape. However, it can also increase the number of 
+   687	surfaces that need to be rendered.
+   688	
+   689	7.3.2.1. Vertex Join Set Polygon Format
+   690	
+   691	  Vertex Join Set Polygon Format is a useful form of polygonal object. For 
+   692	each object in a VJS, there is a common pool of Points that are 
+   693	referenced by the polygons for that object. Transforming these shared 
+   694	points reduces the calculations needed to render the object. A point at 
+   695	the edge of a cube is only processed once, rather once for each of the 
+   696	three edge/polygons that reference it. The PLG format used by REND386 
+   697	is an example of a Vertex Join Set, as is the BYU format used by the 
+   698	'ancient' MOVIE.BYU program.)
+   699	
+   700	  The geometry format can support precomputed polygon and vertex 
+   701	normals. Both Polygons and vertices should be allowed a color attribute. 
+   702	Different renderers may use or  ignore these and possibly more advanced 
+   703	surface characteristics. Precomputed polygon normals are very helpful 
+   704	for backface polygon removal.  Vertices may also have texture 
+   705	coordinates assigned to support texture or other image mapping 
+   706	techniques.
+   707	
+   708	7.3.3.	Primitives
+   709	
+   710	  Some systems provide only Primitive Objects, such as cubes, cones, and 
+   711	spheres. Sometimes, these objects can be slightly deformed by the 
+   712	modeling package to provide more interesting objects.
+   713	
+   714	7.3.4.	Solid Modeling & Boolean Operations
+   715	
+   716	  Solid Modeling (aka Computer Solid Geometry, CSG) is one form of 
+   717	geometric modeling that uses primitive objects. It extends the concept by 
+   718	allowing various addition, subtraction, Boolean and other operations 
+   719	between these primitives. This can be very useful in modeling objects 
+   720	when you are concerned with doing physical calculations, such as center 
+   721	of mass, etc. However, this method does incur some significant 
+   722	calculations and is not very useful for VR applications. It is possible to 
+   723	convert a CSG model into polygons. Various complexity polygonal models 
+   724	could be made from a single high resolution 'metaobject' of a CSG type.
+   725	
+   726	7.3.5.	Curves & Patches
+   727	
+   728	  Another advanced form of geometric modeling is the use of curves and 
+   729	curved surfaces (aka patches). These can be very effective in representing 
+   730	complex shapes, like the curved surface of an automobile, ship or beer 
+   731	bottle. However, there is significant calculation involved in determining 
+   732	the surface location at each pixel, thus curve based modeling is not used 
+   733	directly in VR systems. It is possible, however, to design an object using 
+   734	curves and then compute a polygonal representation of those curved 
+   735	patches.  Various complexity polygonal models could be made from a 
+   736	single high resolution 'metaobject'.
+   737	
+   738	7.3.6.	Dynamic Geometry (aka morphing)
+   739	
+   740	  It is sometimes desirable to have an object that can change shape. The 
+   741	shape might simply be deformed, such a bouncing ball or the 
+   742	squash/stretch used in classical animation ('toons'), or it might actually 
+   743	undergo metamorphosis into a completely different geometry. The latter 
+   744	effect is commonly known as 'morphing' and has been extensively used 
+   745	in films, commercials and television shows. Morphing can be done in the 
+   746	image domain (2D morph) or in the geometry domain (3D morph). The 
+   747	latter is applicable to VR systems. The simplest method of doing a 3D 
+   748	morph is to precompute the various geometry's and step through them 
+   749	as needed. A system with significant processing power can handle real 
+   750	time object morphing.
+   751	
+   752	7.3.7.	Swept Objects & Surface of Revolution
+   753	
+   754	  A common method for creating objects is known as Sweeping and 
+   755	Surfaces of Revolution. These methods use an outline or template curve 
+   756	and a backbone. The template is swept along the backbone creating the 
+   757	object surface (or rotated about a single axis to create a surface of 
+   758	revolution). This method may be used to create either curve surfaces or 
+   759	polygonal objects.  For VR applications, the sweeping would most likely 
+   760	be performed during the object modeling (creation) phase, and the 
+   761	resulting polygonal object stored for real time use. 
+   762	
+   763	7.3.8.	Texture Maps & Billboard Objects
+   764	
+   765	  As mentioned in the section on rendering, texture maps can be used to 
+   766	provide the appearance of more geometric complexity without the 
+   767	geometric calculations. Using flat polygonal objects that maintain an 
+   768	orientation towards the eye/camera (billboards) and multiple texture 
+   769	maps can extend this trick even further.
+   770	
+   771	7.4.	Lights
+   772	
+   773	  Lighting is a very important part of a virtual world (if it is visually 
+   774	rendered). Lights can be ambient (everywhere), or located. Located lights 
+   775	have position and may have orientation, color, intensity and a cone of 
+   776	illumination. The more complex the light source, the more computation 
+   777	is required to simulate its effect on objects.
+   778	
+   779	7.5.	Cameras
+   780	
+   781	  Cameras or viewpoints may be described in the World Database. 
+   782	Generally, each user has only one viewpoint at a time (ok, two closely 
+   783	spaced viewpoints for stereoscopic systems). However, it may be useful to 
+   784	define alternative cameras that can be used as needed. An example 
+   785	might be an overhead camera that shows a schematic map of the virtual 
+   786	world and the user's location within it (You Are Here.)
+   787	
+   788	7.6.	Scripts
+   789	
+   790	  A virtual world consisting only of static objects is only of mild interest. 
+   791	Many researchers and enthusiasts of VR have remarked that interaction 
+   792	is the key to a successful and interesting virtual world. This requires 
+   793	some means of defining the actions that objects take on their own and 
+   794	when the user (or other objects) interact with them. This i refer to 
+   795	generically as the World Scripting. I divide the scripts into three basic 
+   796	types: Motion Scripts, Trigger Scripts and Connection Scripts
+   797	
+   798	  Scripts may be textual or they might be actually compiled into the 
+   799	program structure. The use of visual programming languages for world 
+   800	design was pioneered by VPL Research with their Body Electric system. 
+   801	This Macintosh based language used 2d blocks on the screen to 
+   802	represent inputs, objects and functions. The programmer would connect 
+   803	the boxes to indicate data flow.
+   804	
+   805	7.6.1. Motion Scripts
+   806	
+   807	  Motion scripts modify the position, orientation or other attributes of an 
+   808	object, light or camera based on the current system tick.  A 'tick' is one 
+   809	advancement of the simulation clock. Generally, this is equivalent to a 
+   810	single frame of visual animation. (VR generally uses Discrete Simulation 
+   811	methods)
+   812	
+   813	  For simplicity and speed, only one motion script should be active for an 
+   814	object at any one instant.   Motion scripting is a potentially powerful 
+   815	feature, depending on how complex we allow these scripts to become.  
+   816	Care must be exercised since the interpretation of these scripts will 
+   817	require time, which impacts the frame and delay rates.
+   818	
+   819	  Additionally, a script might be used to attach or detach an object from a 
+   820	hierarchy. For example, a script might attach the user to a CAR object 
+   821	when he wishes to drive around the virtual world. Alternatively, the user 
+   822	might 'pick up' or attach an object to himself.
+   823	
+   824	7.6.2.	Physical or Procedural Modeling and Simulation
+   825	
+   826	  A complex simulation could be used that models the interactions of the 
+   827	real physical world. This is sometimes referred to as Procedural 
+   828	Modeling. It can be a very complex and time consuming application. The 
+   829	mathematics required to solve the physical interaction equations can 
+   830	also be fairly complex. However, this method can provide a very realistic 
+   831	interaction mechanism.
+   832	
+   833	7.6.3.	Simple Animation
+   834	
+   835	  A simpler method of animation is to use simple formulas for the motion 
+   836	of objects.  A very simple example would be "Rotate about Z axis once 
+   837	every 4 seconds". This might also be represented as "Rotate about Z 10 
+   838	radians each frame".
+   839	
+   840	  A slightly more advanced method of animation is to provide a 'path' for 
+   841	the object with controls on its speed at various points. These controls are 
+   842	sometimes referred to as "slow in-out". They provide a much more 
+   843	realistic motion than simple linear motion.
+   844	
+   845	  If the motion is fixed, some systems can precompute the motion and 
+   846	provide a 'channel' of data that is evaluated at each time instance. This 
+   847	may be a simple lookup table with exact values for each frame, or it may 
+   848	require some sort of simple interpolation.
+   849	
+   850	7.6.4. Trigger Scripts
+   851	
+   852	  Trigger Scripts are invoked when some trigger event occurs, such as 
+   853	collision, proximity or selection.  The VR system needs to evaluate the 
+   854	trigger parameters at each TICK. For proximity detectors, this may be a 
+   855	simple distance check from the object to the 3D eye or effector object 
+   856	(aka virtual human) Collision detection is a more involved process. It is 
+   857	desirable but may not be practical without off loading the rendering and 
+   858	some UI tasks from the main processor.
+   859	
+   860	7.6.5.	Connection Scripts
+   861	
+   862	  Connection scripts control the connection of input and output devices 
+   863	to various objects. For example a connection script may be used to 
+   864	connect a glove device to a virtual hand object. The glove movements and 
+   865	position information is used to control the position and actions of the 
+   866	hand object in the virtual world. Some systems build this function 
+   867	directly into the program. Other systems are designed such that the VR 
+   868	program is almost entirely a connection script. 
+   869	
+   870	7.7.	Interaction Feedback
+   871	
+   872	  The user must be given some indication of interaction feedback when 
+   873	the virtual cursor selects or touches an object. Crude systems have only 
+   874	the visual feedback of seeing the cursor (virtual hand) penetrate an 
+   875	object. The user can then grasp or otherwise select the object. The 
+   876	selected object is then highlighted in some manner. Alternatively, an 
+   877	audio signal could be generated to indicate a collision. Some systems use 
+   878	simple touch feedback, such as a vibration in the joystick, to indicate 
+   879	collision, etc.
+   880	
+   881	7.8.	Graphical User Interface/Control Panels
+   882	
+   883	  A VR system often needs to have some sort of control panels available to 
+   884	the user. The world database may contain information on these panels 
+   885	and how they are integrated into the application. Alternatively, they may 
+   886	be a part of the program code.
+   887	
+   888	  There are several ways to create these panels. There could be 2D menus 
+   889	that surround a WoW display, or are overlaid onto the image. An 
+   890	alternative is to place control devices inside the virtual world. The 
+   891	simulation system must then note user interaction with these devices as 
+   892	providing control over the world.
+   893	
+   894	  One primary area of user control is control of the viewpoint (moving 
+   895	around within the virtual world). Some systems use the joystick or 
+   896	similar device to move. Others use gestures from a glove, such as 
+   897	pointing, to indicate a motion command.
+   898	
+   899	  The user interface to the VW might be restricted to direct interaction in 
+   900	the  3D world. However, this is extremely limiting and requires lots of 3D 
+   901	calculations. Thus it is desirable to have some form of 2D Graphical user 
+   902	interface to assist in controlling the virtual world. These 'control panels' 
+   903	of the would appear to occlude portions of the 3D world, or perhaps the 
+   904	3D world would appear as a window or viewport set in a 2D screen 
+   905	interface. The 2D interactions could also be represented as a flat panel 
+   906	floating in 3D space, with a 3D effector controlling them.
+   907	
+   908	7.8.1.	Two  Dimensional Controls
+   909	
+   910	  There are four primary types of 2D controls and displays. (controls 
+   911	cause changes in the virtual world, displays show some measurement on 
+   912	the VW.) Buttons, Sliders, Gauges and Text. Buttons may be menu items 
+   913	with either icons or text identifiers. Sliders are used for more analog 
+   914	control over various attributes. A variation of a slider is the dial, but 
+   915	these are harder to implement as 2D controls. Gauges are graphical 
+   916	depiction's of the value of some attribute(s) of the world. Text may be 
+   917	used for both control and display. The user might enter text commands 
+   918	to some command parser. The system may use text displays to show the 
+   919	various attributes of the virtual world. 
+   920	
+   921	  An additional type of 2D display might be a map or locator display. This 
+   922	would provide a point of reference for navigating the virtual world.
+   923	
+   924	  The VR system needs a definition for how the 2D cursor effects these 
+   925	areas. It may be desirable to have a notion of a 'current control' that is 
+   926	the focus of the activity (button pressed, etc.) for the 2D effector. Perhaps 
+   927	the arrow keys on the keyboard could be used to change the current 
+   928	control, instead of using the mouse (which might be part of the 3D 
+   929	effector at present). 
+   930	
+   931	7.8.2.	Three Dimensional Controls
+   932	
+   933	  Some systems place the controls inside the virtual world. These are 
+   934	often implemented as a floating control panel object. This panel contains 
+   935	the usual 2D buttons, gauges, menu items, etc. perhaps with a 3D 
+   936	representation and interaction style. 
+   937	
+   938	  There have also been some published articles on 3D control Widgets. 
+   939	These are interaction methods for directly controlling the 3D objects. One 
+   940	method implemented at Brown University attaches control handles to the 
+   941	objects. These handles can be grasped, moved, twisted, etc. to cause 
+   942	various effects on an object. For example, twisting one handle might 
+   943	rotate the object, while a 'rack' widget would provide a number of 
+   944	handles that can be used to deform the object by twisting its geometry.
+   945	
+   946	7.9.	Hardware Control & Connections
+   947	
+   948	  The world database may contain information on the hardware controls 
+   949	and how they are integrated into the application. Alternatively, they may 
+   950	be a part of the program code. Some VR systems put this information 
+   951	into a configuration file. I consider this extra file simply another part of 
+   952	the world database.
+   953	
+   954	  The hardware mapping section would define the input/output ports, 
+   955	data speeds, and other parameters for each device. It would also provide 
+   956	for the logical connection of that device to some part of the virtual world. 
+   957	For example a position tracker might be associated with the viewer's 
+   958	head or hand.
+   959	
+   960	7.10.	Room/Stage/Area Descriptions
+   961	
+   962	  If the system supports the division of the virtual world into different 
+   963	areas, the world database  would need multiple scene descriptions. Each 
+   964	area description would give the names of objects in scene, stage 
+   965	description (i.e. size, backgrounds, lighting, etc.). There would also be 
+   966	some method of moving between the worlds, such as entering a doorway, 
+   967	etc., that would most likely be expressed in object scripts.
+   968	
+   969	8.	World Authoring versus Playback
+   970	
+   971	  A virtual world can be created, modified and experienced. Some VR 
+   972	systems may not distinguish between the creation and experiencing 
+   973	aspects. However, there is currently a much larger body of experience to 
+   974	draw upon for designing the world from the outside. This method may 
+   975	use techniques borrowed from architectural and other forms of Computer 
+   976	Aided Design (CAD) systems. Also the current technologies for immersive 
+   977	VR systems are fairly limiting in resolution, latency, etc. They are not 
+   978	nearly as well developed as those for more conventional computer 
+   979	graphics and interfaces.
+   980	
+   981	  For many VR systems, it makes a great deal of sense to have a 
+   982	Authoring mode and a Playback mode. The authoring mode may be a 
+   983	standard text editor and compiler system, or it may include 3D graphic 
+   984	and other tools. The development project I am most involved with 
+   985	(CompuServe's Group 3) uses the split system and calls them the World 
+   986	Editor and World Player.
+   987	
+   988	  An immersive authoring ability may also be desirable for some 
+   989	applications and some users. For example, an architect might have the 
+   990	ability to move walls, etc. when immersed, while the clients with him, 
+   991	who are not as familiar with the system, are limited to player status. That 
+   992	way they can't accidentally rearrange the house by leaning on a wall.
+   993	
+   994	9.	For More VR Information
+   995	
+   996	  The following information is provided to point the interested reader to 
+   997	more information on virtual reality. It is not a complete listing of all 
+   998	sources. I would appreciate hearing about other books, groups, on-line 
+   999	services, etc. for inclusion in future versions of this (and other) 
+  1000	documents.
+  1001	
+  1002	9.1.	On-line Services & BBS
+  1003	
+  1004	  There are many computer bulletin boards and on-line services that 
+  1005	support VR discussion and development. I am personally involved on 
+  1006	several. My email address is given at the beginning of this paper. 
+  1007	
+  1008	  I mostly use the CompuServe GraphDev Forum (Go GRAPHDEV). This 
+  1009	forum has two message sections and two file libraries dedicate to VR (i.e. 
+  1010	VR Concepts and VR Tech). It is the home for the Group 3 VR 
+  1011	development project, of which I am the Project Leader. The libraries 
+  1012	contain a number of VR programs, demos, concept papers, and an echo 
+  1013	of the sci.virtual-worlds news group.  For information on CompuServe, 
+  1014	call (800)848-8990 or (614) 457-8650
+  1015	
+  1016	  The WELL (Whole Earth 'Lectronic Link) has a VR discussion area (GO 
+  1017	VR).  For information on joining The WELL, call(415) 332-4335 or modem 
+  1018	(415)332-6106. You can also telnet into the well as 'well.sf.ca.us' and 
+  1019	sign on as newuser.
+  1020	
+  1021	  The Byte Information Exchange (BIX) has a conference on VR: join 
+  1022	virtual.world. To join BIX, call 1-800-695-4882 (2400 Baud, No Parity, 8 
+  1023	data, 1 stop bit)
+  1024	
+  1025	  America On-line reportedly also has a VR section. "VIRTUS" - virtual 
+  1026	reality conference hosted by Virtues Corp. (info on joining AOL??)
+  1027	
+  1028	  GENIE has an echo of sci.virtual-worlds. Contact Joel Anderson 
+  1029	(joela@joela.apertus.com, GEnie: J.ANDERSON71) or Randall Severy - 
+  1030	(GEnie: RSEVERY, CompuServe: 76166,3477,  Internet: 
+  1031	ge!severy@uunet.uu.net) (Info on joining GENIE???)
+  1032	
+  1033	  The Diaspar VR Network is a BBS dedicated to VR. David Mitchell is 
+  1034	leading the VOID project which seeks to create low cost public access 
+  1035	distributed VR applications. Dieaspar includes a number of 'VNET' or 
+  1036	virtual BBS subsystems that are run by other individuals. Sense8 has 
+  1037	one VNET on Diaspar that is used for their customer support. Diaspar 
+  1038	can be reached at (714) 831-1776 (voice), 9600 Baud: 714-376-1234, 
+  1039	1200 Baud: 714-376-1200. Diaspar is also  available from Internet sites 
+  1040	via Telnet  as diaspar.com (192.215.11.1). On first login use the name 
+  1041	"Diaspar"  (be sure to use capital D and lowercase iaspar.) This gets you 
+  1042	to the BBS login area and you can get set up with your username and 
+  1043	password. 
+  1044	
+  1045	  The AMULET BBS (Santa Monica, CA).  Data access: (310)453-7705.  
+  1046	
+  1047	  The CyberBBS (San Francisco, Bay Area CA), (510)527-9012
+  1048	
+  1049	  One that I have heard of but not successfully connected to is 
+  1050	SENSE/NET (801) 364-6227 (Salt Lake City, Utah)
+  1051	
+  1052	9.2. Internet NewsGroups
+  1053	
+  1054	  The Internet has newsgroups that are also known as the Usenet News. 
+  1055	Some sysetms provide usenet readers that keep all usenet news in one 
+  1056	place. Others require that you subscribe to those you wish to read and 
+  1057	the news will be delivered as email. Subscribing requires sending an 
+  1058	email message to either an individual or an automated list-server service. 
+  1059	The list-servers take read the body of the message for special commands. 
+  1060	The one you want is "subscibe <listname> <your full name>". Replacing 
+  1061	<listname> with the name of the newslist you want and <your full name>  
+  1062	with  your *real* name, not your login name.
+  1063	
+  1064	Sci.virutal-worlds (aka: virtu-l): send a mail message to 
+  1065	     listserv@uiucvmd.bitnet 
+  1066	  with a body of
+  1067	   subscribe virtu-l <full_name>
+  1068	  Moderator: gbnewby@alexia.lis.uiuc.edu.(Greg Newby)
+  1069	  Note: this list is also available in 'digest' form. This method combines a 
+  1070	full day's messages into one message. To change to the digest form, send 
+  1071	a message to the above list server with a body of:
+  1072	   set virtu-l digest
+  1073	
+  1074	Sci.virtual-worlds.apps (aka: vrapp-l)
+  1075	     listserv@uiucvmd.bitnet
+  1076	  with a body of
+  1077	   subscribe vrapp-l <full_name>
+  1078	
+  1079	Glove-list:  Subscribe by sending an email message to
+  1080	       listserv@win30.nas.nasa.gov
+  1081	  with a body of
+  1082	      subscribe glove-list <your full name, not login id>
+  1083	  Post to: glove-list@win30.nas.nasa.gov
+  1084	   Moderator: jet@win30.nas.nasa.gov
+  1085	
+  1086	Head-Trackers mailing list:  Subscribe by sending e-mail to
+  1087	      trackers-request@qucis.queensu.ca
+  1088	  with an informal request (not handled by automated system)
+  1089	  post to: trackers@qucis.queensu.ca
+  1090	
+  1091	REND386 users list: Subscribe by sending an email message to
+  1092	       rend386-request@sunee.uwaterloo.ca
+  1093	  with a body of
+  1094	    subscribe your full name
+  1095	  Post to: rend386@sunee.uwaterloo.ca
+  1096	  Moderated by the creators of REND386 - Dave Stampe and Bernie Roehl
+  1097	
+  1098	9.3.	Internet FTP Sites
+  1099	
+  1100	milton.uwashingon.edu (128.95.136.1) (home of Sci.Virtual-Worlds 
+  1101	Frequently Asked Questions, which is badly out of date as of 3/93)
+  1102	ftp.u.washington.edu
+  1103	
+  1104	sunee.uwaterloo.ca (129.97.50.50) (home of REND386 (freeware VR 
+  1105	library/package)
+  1106	
+  1107	karazm.math.uh.edu (129.7.128.1) (purported to be home of the power 
+  1108	glove list, but archives here are real old)
+  1109	
+  1110	ftp.apple.com (130.43.2.3) (sites list, Macintosh VR, CAD projects info)
+  1111	
+  1112	src.doc.ic.ac.uk (146.169.2.1) (usenet archive /usenet...)
+  1113	
+  1114	taurus.cs.nps.navy.mil: (Info on DIS and NPSNET, including C library)
+  1115	
+  1116	avalon.chinalake.navy.mil (129.131.31.11) (lots of geometry files)
+  1117	
+  1118	wuarchive.wustl.edu (128.252.135.4) mirror of milton VR, usenet archive
+  1119	
+  1120	sunsite.unc.edu (152.2.22.81)  /pub/academic/computer-
+  1121	science/virtual-reality (virtual reality demos, iris info, glasses, mirrors 
+  1122	some of  milton.u.washington.edu, uforce info )
+  1123	
+  1124	9.4.	Local User Groups, USA
+  1125	
+  1126	  There are a lot of VR local user groups and 'Special Interest Groups'  
+  1127	(SIGs) popping up around the world. Some samples are:
+  1128	
+  1129	  Los Angeles VRSIG: contact Virtual Ventures/Dave Blackburn, 1300 
+  1130	The Strand, Suite A,  Manhattan Beach, CA 90266  Voice:(310) 545-0369  
+  1131	email: breeder@well.sf.ca.us  (I am a member of this group, which meets 
+  1132	at the Electronic Cafe International  on 18th Street, Santa Monica, CA)
+  1133	
+  1134	  Chicago VRSIG:  c/o Nina Adams, 3952 Western Ave, Western Springs, 
+  1135	Chicago, IL 60558,  Voice: (708)246-0766  email: 
+  1136	71052.1373@compuserve.com
+  1137	
+  1138	  San Francisco VR Group, Contact Linda Jacobson, Verge (Virtual 
+  1139	Reality Group), 16050 Kings Creek Rd.,  Boulder Creek, CA 95006;  
+  1140	Voice: 415-826-4716. email:lindaj@well.sf.ca.us
+  1141	
+  1142	  Houston TX: CyberSociety, 3336 Richmond Ave. #226, Houston, TX 
+  1143	77098-3022, Voice: 713/520-5020, FAX:  713/520-7395, NETt: 
+  1144	specdyn@well.sf.ca.us
+  1145	
+  1146	  Stoughton WI: Andrew's VEE-AR Club,  c/o Andrew or Tom Hayward, 
+  1147	624 Jackson Street, Stoughton, WI 53589
+  1148	
+  1149	  Boston Computer Society VR Group, c/o Paul Matthews - Director, 
+  1150	Building 1400,  One Kendal Square, Cambridge, MA 02139, Voice: 508 
+  1151	921 6846  24hr,  Voice: 617 252 0600, email:pgm@world.std.com
+  1152	
+  1153	  Louisville, Kentucky: VRSIG, c/o Andrew Prell, PO Box 43003, 
+  1154	Louisville, KY 40253,  Voice:502 495-7186,  email: 
+  1155	andrewp@well.sf.ca.us
+  1156	
+  1157	9.5.	Local User Groups, Other Coutntries:
+  1158	
+  1159	  Belgium: Genootschap voor Virtuele Realiteit  (Society for Virtual 
+  1160	Reality), Philippe Van Nedervelde, Lichtaartsesteenweg 55, B-2275 
+  1161	Poederlee - Lille, Belgium
+  1162	
+  1163	  Canada: Univ. of Waterloo VR Group, c/o Rick Kazman (or c/o Bernie 
+  1164	Roehl), Dept of Computer Science, Univ. of Waterloo, Waterloo, Ontario, 
+  1165	N2L 3G1, Voice: (519) 888-4870 (R.Kazman), (519) 885-1211 x2607 
+  1166	(B.Roehl), email: broehl@sunee.uwaterloo.ca
+  1167	
+  1168	  Toronto Canada: Toronto VRSIG, c/o Caius Tenche, (416) 242-3119, 
+  1169	email: caius.tenche@canrem.com
+  1170	
+  1171	  England: VR User Group, Kim Baukham, 2 Beacon Road , London, 
+  1172	SE13 6EH, England
+  1173	
+  1174	  France:  Les Virtualistes, 90 Avenue de Paris, 92320 Chatillon, France, 
+  1175	Voice: 1/47 35 65 48, FAX: 1/47 35 85 88
+  1176	
+  1177	  Germany: Fraunhofer Institute for Computer Graphics & German 
+  1178	Working Group on Virtual Reality (Related to Technical University in 
+  1179	Darmstadt, and to the Computer Graphics Centre (ZGDV) in Darmstadt), 
+  1180	Mr. Wolfgang Felger, Wilhelminenstr. 7,  W-6100 Darmstadt, F.R.G., 
+  1181	Voice ++49-6151-155122, Fax.: ++49-6151-155199, email: 
+  1182	felger@igd.fhg.de, email list: vr@igd.fhg.de
+  1183	
+  1184	  South Africa VRSIG c/o Roger Layton, Chairman,  PO Box 72267, 
+  1185	PARKVIEW, 2122,  South Africa, TEL: +27-11-788-5938, FAX: +27-11-
+  1186	442-5529,  email: 74660.2154@compuserve.com
+  1187	
+  1188	9.6.	VRASP
+  1189	
+  1190	  A group that straddles the line between an on-line group, a local user 
+  1191	group and a newsletter is the Virtual Reality Alliance for Students and 
+  1192	Professionals (VRASP). This group is headquartered in New Jersey, but 
+  1193	there are members around the world. Local collections of VRASP folks are 
+  1194	known as 'Cells'. The group operates their own BBS and is active on 
+  1195	many of the on-line services. They have an excellent newsletter, 
+  1196	PixElation, that offers both technical articles and humorous reviews of 
+  1197	various events. Subscriptions to PixElation is $30/yr, $20/yr for 
+  1198	sustaining (active) members of VRASP. ($8/yr more for international) For 
+  1199	more information contact:
+  1200	
+  1201	  VRASP,  c/o Karin August, PO BOX 4139, Highland Park, NJ 08904-
+  1202	4139,  email:71033.702@compuserve.com
+  1203	
+  1204	9.7.	Journals & Newsletters
+  1205	
+  1206	  PCVR Magazine. For the home-brew enthusiast. includes Code Disks, 
+  1207	Editor: Joseph Gradecki, 1706 Sherman Hill Road, Unit A, Laramie, WY. 
+  1208	82060,  VOICE/FAX: (307) 742-7675,  email: gradecki@rodeo.uwyo.edu,  
+  1209	email: 70711.257@compuserve.com
+  1210	
+  1211	  CyberEdge Journal. Excellent professional newsletter,  Ben Delaney, 
+  1212	Editor, #1 Gate Six Road, Suite G,  Sausalito, CA 94965, Voice: 415 331-
+  1213	EDGE (3343), FAX: 415 331-3643, email: 76217.3074@compuserve.com, 
+  1214	email:bdel@well.sf.ca.us., ISSN# 1061-3099
+  1215	
+  1216	  Presence: Teleoperators & Virtual Environments. Professional Tech 
+  1217	Papers and Journal.,  MIT Press Journals, 55 Hayward St, Cambridge 
+  1218	MA 02142, (800) 356-0343,  (617) 628-8569,  (617) 253-2889 (9-5 EST), 
+  1219	Fax: (617) 258-6779,   email: hiscox@mitvma.mit.edu, ISSN 1054-7460
+  1220	
+  1221	  Virtual Reality Report, Meckler Publishing, Sandra Helsel, Editor in 
+  1222	Chief, Meckler Corporation,  11 Ferry Lane, Westport CT 06880, Voice: 
+  1223	(203)226-6967
+  1224	
+  1225	  VR Monitor: Frank Dunn, Editor,  Matrix Information Services, 18560 
+  1226	Bungalow Drive, Lathrup Village, MI 48076, Voice: (313) 559-1526, 
+  1227	email: matrix@well.sf.ca.us, email: 70117.2546@compuserve.com
+  1228	
+  1229	  Virtural Reality News, Brian Lareau, Editor, Magellan Marketing Inc. 
+  1230	32969 Hamilton Courts Suite 215, Farmington Hills Mich. 48334 313-
+  1231	488-0330, email: larryv@msen,com
+  1232	
+  1233	9.8.	Professional Societies
+  1234	
+  1235	  There are two major professional computer associations that publish 
+  1236	respected journals related to Virtual Reality.
+  1237	
+  1238	  The Association for Computing Machinery (ACM) has a number of 
+  1239	special interest groups whose journals and newsletters often have VR 
+  1240	related articles. SIGGRAPH is the SIG for Computer Graphics. Their 
+  1241	national convention is The Event for Computer Graphics each year.  The 
+  1242	'93 conference will be in Anahiem CA, August 1-6. SIGCHI is the SIG for 
+  1243	Computers and Human Interaction. This group has published a lot of 
+  1244	research on new methods of interacting with computers, including a 
+  1245	number of new VR applications. Contact info:
+  1246	
+  1247	  Association for Computing Machinery,  1515 Broadway, 17th Floor,  
+  1248	New York, NY 10036,   (212) 869-7440,  email: 
+  1249	info.Membership@siggraph.org (for membership info),  email: 
+  1250	info.Siggraph93@siggraph.org (for conference info)
+  1251	
+  1252	  The Institute of Electrical and Electronics Engineers (IEEE) has a  
+  1253	computer graphics SIG that publishes an execellent journal called "IEEE 
+  1254	Computer Graphics and Applications".  Subscriptions are $26/year for 
+  1255	society members, $47 for ACM or other society members, (six issues). 
+  1256	(The Jan 1994 issue will have a concentration on Virtual Reality!) The 
+  1257	IEEE also publishes a large number of books and conference 
+  1258	proceedings. Contact info:
+  1259	
+  1260	  IEEE Computer Society, PO Box 3014,  Los Alamitos, CA 90720-9804,   
+  1261	(714) 821-8380,  (800) 272-6657 (Publication orders),  email: 
+  1262	membership@compmail.com
+  1263	
+  1264	9.9.	VR Reference Books
+  1265	
+  1266	  There are a number of good reference works on VR and Computer 
+  1267	Animation currently in print. There is also a whole slew of VR specific 
+  1268	books due out in the Spring of '93. Most of these are aimed at the less 
+  1269	technical reader, but some will include lots of good technical details. 
+  1270	Many will include executable programs on disk, some with source code.
+  1271	
+  1272	"Silicon Mirage: The Art and Science of Virtual Reality", Steve 
+  1273	Aukstakalnis & David Blatner, Peach Pit Press 1992,ISBN 0-938151-82-
+  1274	7
+  1275	
+  1276	"Virtual Reality", Howard Rheingold, Summit Books, 1991, ISBN 0-671-
+  1277	69363-8
+  1278	
+  1279	"Virtual Reality Playhouse", Nicholas Lavroff, Waite Group Press, 1992 
+  1280	ISBN 1-878739-19-0 (includes PC disk, apps are at most WoW 
+  1281	interactive animations, but the only VR book+disk out right now)
+  1282	
+  1283	"Cyberspace - First Steps", MIT Press, 1992 (collection of essays on VR), 
+  1284	ISBN 0-262-52177-6
+  1285	
+  1286	"Artificial Reality II", Myron Krueger, Addison-Wesley, 1991, ISBN: 0-201-
+  1287	52260-8
+  1288	
+  1289	"Computers as Theatre", Brenda Laurel, Addison-Wesley, 1991
+  1290	
+  1291	"Virtual Reality: Theory, Practice, and Promise", Sandra Heisle & Judith 
+  1292	Roth, Meckler Corp, 1990
+  1293	
+  1294	"Virtual Reality: Through the New Looking Glass", Ken Pimentel & Kevin 
+  1295	Teixeira, Intel/Windcrest/McGraw-Hill, 1993 ISBN 0-8306-4064-9
+  1296	"Virtual Reality Creations", Dave Stampe Bernie Roehl & John Eagan, 
+  1297	Waite Group Press, 1993 ISBN 1-878739-39-5 (Due out June/July '93, 
+  1298	includes Rend386 on PC disk) 
+  1299	
+  1300	"Adventures in Virtual Reality", Tom Hayward, Que Books, 1993, ISBN 1-
+  1301	56529-208-1 (includes PC disk with VREAM world and other demos)
+  1302	
+  1303	"International Directory of VR R&D", Meckler (to be published may 1993)
+  1304	
+  1305	9.10.	Computer Graphics Books
+  1306	
+  1307	"Computer Graphics (Principles and Applications)", Foley, Van Dam, 
+  1308	Feiner & Hughes, 2nd Edition, Addison Wesley, 1990 ISBN 0-201-12110-
+  1309	7 (This is The Bible of Computer Graphics. The classic text book.) 
+  1310	
+  1311	"Visualization Graphics in C", Lee Adams, Windcrest/McGraw-Hill, 1991, 
+  1312	ISBN 0-8306-3487-8
+  1313	
+  1314	"Fundamentals of Three Dimensional Computer Graphics", Alan Watt, 
+  1315	Addison Wesley, 1989, ISBN 0-201-15442-0
+  1316	
+  1317	"New Trends in Animation and Visualization", Thalmann & Thalmann, 
+  1318	John Wiley & Sons, 1991, ISBN 0-471-93020-2
+  1319	
+  1320	"Physically-Based Modeling for Computer Graphics", Ronen Barzel, 
+  1321	Academic Press, 1992, ISBN 0-12-079880-8
+  1322	
+  1323	"MAKING THEM MOVE; Mechanics, Control and Animation of Articulated 
+  1324	Figures", (Book and Video Package) Edited by Norman I. Badler (U 
+  1325	Pennsylvania), Brian A. Barsky (U CalBerkeley) and David Zeltzer (Media 
+  1326	Lab, MIT),Morgan Kaufmann Publishers, ISBN  Book/Video Package: 1-
+  1327	55860-155-4  Book only: 1-55860-106-6 Tape only: 1-55860-154-6
+  1328	
+  1329	9.11.	Related Books
+  1330	
+  1331	  The following books, while not directly about VR technology, can 
+  1332	provide some background ideas and concepts for VR.
+  1333	ECCENTRIC SPACES, by Robert Harbison.  Boston:  David R. Godine, 
+  1334	1988. $10.95, Subtitled, "A voyage through real and imagined worlds."
+  1335	
+  1336	"The Design and Analysis of Spatial Data Structures", Haman Samet, 
+  1337	Addison Wesley. 1990, ISBN: 0-201-50255-0
+  1338	
+  1339	"Applications of Spatial data Structures", Hanan Samet, 1990, ISBN: 0-
+  1340	201-50300-X
+  1341	
+  1342	"The Visual Display of Quantitative Information", Edward Tufte, Graphic 
+  1343	Press, 1983
+  1344	
+  1345	"Envisioning Information", Edward Tufte, Graphic Press 1990
+  1346	
+  1347	"Virtual Worlds, A Journey in Hype and Hyperreality", by Benjamin 
+  1348	Woolley, published by Blackwell, Oxford, 1992. 
+  1349	
+  1350	9.12.	VR Research Labs & Academia
+  1351	
+  1352	(partially from the Milton.U.Washington.EDU FAQ area, which lists lots 
+  1353	of schools. However, most of the postings there are from 1990 or 1991 
+  1354	and I know some are no longer valid contact)
+  1355	
+  1356	CAD Institute, 4100 E. Broadway, Suite 180, Phoenix, AZ 85040, (800) 
+  1357	658-5744, Dean: John Morrison 76307.1552@compuserve.com
+  1358	
+  1359	HITL (Human Interface Technology Laboratory), University of 
+  1360	Washington, FJ-15, Seattle, WA 98195, (206) 543-5075, Director: Dr. 
+  1361	Thomas A. Furness III
+  1362	
+  1363	Visual Systems Laboratory, Institute for Simulation and Training 
+  1364	Laboratory,  University of Central Florida, 12424 Research Parkway, 
+  1365	Suite 300, Orlando, FL 32826,  Director: Dr. Michael Moshell
+  1366	
+  1367	UNC Laboratory,  Univerisity of North Carolina, Chapel Hill,  Computer 
+  1368	Science Department,  Chapel Hill, NC 27599-3175, Director: Fredrick 
+  1369	Brooks
+  1370	
+  1371	US Navy - Cyberview, David Sarnoff Research Center, Mark Long, 
+  1372	CN5300,  Princeton NJ 08543-5300
+  1373	
+  1374	Naval Postgraduate School,  Graphics and Video Lab,  Department of 
+  1375	Computer Science,  Naval Postgraduate School,  Monterey, CA 93943-
+  1376	5100,  Contacts: Dave Pratt, pratt@cs.nps.navy.mil,  Prof. Mike Zyda, 
+  1377	zyda@trouble.cs.navy.mil
+  1378	
+  1379	Computer Graphics Laboratory,  University of Alberta, Edmonton, 
+  1380	Canada, Mark Green, Associate Professor (mark@cs.ualberta.ca)  (403) 
+  1381	492-4584
+  1382	
+  1383	National Center for Supercomputing Applications
+  1384	  (NCSA) at the University of Illinois at Urbana-Champaign. Contact: 
+  1385	Gregory B. Newby, Assistant Professor,  Graduate School of Library and 
+  1386	Information Science. Room 417 DKH, 1407 W. Gregory Drive,  Urbana, 
+  1387	IL, 61801.  gbnewby@alexia.lis.uiuc.edu
+  1388	
+  1389	Networked Virtual Art Museum, Studio for Creative Inquiery, Carnigie 
+  1390	Mellon University,  Pittsburgh PA  15213,  Carl Loeffler, (412) 268 3452, 
+  1391	cel+@andrew.cmu.edu
+  1392	
+  1393	10.	Companies Involved with Virtual Reality
+  1394	
+  1395	  Companies involved with or producing VR products. The following is a 
+  1396	composite of several lists i have found on Internet and CompuServe. It is 
+  1397	by no way an exhaustive list.  There are commercial companies that sell 
+  1398	such lists (and more info). Some of these are included in the list below.
+  1399	
+  1400	1-900-VIRTUAL (yes a 1-900 number for VR) cost $1.25/minute
+  1401	
+  1402	3D Imagetek , 4525-B San Fernando Rd., Glendale, CA 91204, Phone: 
+  1403	(818) 507-1269   Fax: (818) 507-8537, Helmet Mounted Displays (HMDs)
+  1404	
+  1405	3*DTV Corporation, P.O. Box Q, San Francisco, CA 94913-4316, Voice 
+  1406	(415) 479-3516, Fax 415 479 3316 (LCD shutter glasses, other 
+  1407	homebrew products)
+  1408	
+  1409	Advanced Gravis Computer Technology Ltd. 7400 MacPherson Ave. #111,
+  1410	Burnaby, B.C. V5J 5B6 Canada. 604-434-7274. MouseStick (optical 
+  1411	joystick
+  1412	for AT bus card) , 3D Sound Card.
+  1413	
+  1414	Ascension Technology Corporation. P.O. Box 527, Burlington, VT 05402. 
+  1415	802-
+  1416	655-7879. Ascension Bird (6D magnetic tracker)
+  1417	
+  1418	Autodesk, Inc. 2320 Marinship Way, Sausalito, CA 94965.  (800) 525-
+  1419	2763 Cyberspace Developers Kit
+  1420	
+  1421	CAE Electronics Ltd. C.P. 1800 Saint-Laurent, Quebec, H4L 4X4 
+  1422	Canada. 514-341-6780. Head-mount displays.
+  1423	
+  1424	CiS. 285 Littleton Rd., Ste. 3, Westford, MA 01886. 603-894-5999, 508 
+  1425	692-2600 (fax). Geometry Ball Jr. (6D joystick).
+  1426	
+  1427	Clarity, Nelson Lane,  Garrison, NY  10524, Phone: (914) 424-4071  Fax: 
+  1428	(914) 424-3467,Auditory display products
+  1429	
+  1430	Covox, Inc. 675 Conger Street,  Eugene, Oregon  97402, Phone: (503) 
+  1431	342-1271 Fax: (503) 342-1283,  "Voicemaster Key System" - PC voice 
+  1432	interface $150 and other sound related products
+  1433	
+  1434	Crystal River Engineering. 12350 Wards Ferry Rd., Groveland, CA 95321. 
+  1435	209-962-6382. Convolvotron (4 channel 3D audio card for PC).
+  1436	
+  1437	Dimension International, Zephyr One Calleva Park, Aldermaston, 
+  1438	Berkshire RG7 4QZ , Phone: 07 34 810 077  Fax: 816 940, "Superscape" 
+  1439	PC-based VR, uses 34020 graphics card to speed things up. 
+  1440	
+  1441	Dimension Technologies, Inc., 176 Anderson Avenue, Rochester, NY  
+  1442	14607, vox: 716-442-7450, fax: 716-442-7589, DTI 100M, projection 
+  1443	video stereoviewing system.
+  1444	
+  1445	Division Ltd. Quarry Rd., Chipping Sodbury, Bristol B517 6AX England. 
+  1446	44-0454-324527. 80860-based VR. "Vision VR" hi-end system with 
+  1447	multiple 80860s. PC-based, lo-end system with one 80860 and one 
+  1448	Sharp HSSP per eye.
+  1449	
+  1450	Exos 8. Blanchard Road, Burlington, MA 01803. 617229-2075. Hand-
+  1451	worn interface devices.
+  1452	
+  1453	Fake Space Labs. 935 Hamilton Ave., Menlo Park, CA 94025. 415-688-
+  1454	1940. BOOM (stereo viewer on articulated arm).
+  1455	
+  1456	Focal Point Audio 1402 Pine Ave. Suite 127, Niagara Falls, NY 14301. 
+  1457	415-963-9188. 3D audio boards for Mac and PC.
+  1458	
+  1459	Global Devices, 6630 Arabian Circle, Granite Bay CA 95661, (915)791-
+  1460	2558, fax:915-791-4358. 6D controller & navigator - joystick/ball 
+  1461	devices.
+  1462	
+  1463	Gyration, Inc. 12930 Saratoga Ave., Bldg. C, Saratoga, CA 95070. 408-
+  1464	255-3016. GyroPoint (optically sensed gyroscopic sensors).
+  1465	
+  1466	Haitex Resources, Inc., Charleston, South Carolina, 803-881-7518, 
+  1467	Haitex X-Specs 3D for the Amiga line. (glasses should work with PC 
+  1468	circuit)
+  1469	
+  1470	Horizon Entertainment,  P.O. Box 14020, St. Louis MO 63178-4020, 
+  1471	(800) ILLUSION (455-8746), Virtuality Entertainment Games
+  1472	
+  1473	Leep Systems, 241 Crescent St., Waltham, MA 02154,, Phone: (617) 647-
+  1474	1395   Fax: (617) 899-9602"Cyberface" HMDs, optics for HMDs.
+  1475	
+  1476	Logitech Inc. 6505 Kaiser Drive, Fremont, CA 94555. 415-795-8500. (6D 
+  1477	mouse and head tracker).
+  1478	
+  1479	Media Magic, Phone: (415) 662-2426, P.O. Box 507 Nicasio, CA 94946, 
+  1480	Superb catalog of books and videos on VR, Chaos, Fractals, etc.
+  1481	
+  1482	Mira Imaging, Inc. , 2257 South 1100 East, Suite 1A,  Salt Lake City, 
+  1483	Utah  84106, (800) 950-6472, Phone: (801) 466-4641   Fax: (801) 466-
+  1484	4699"Hyperspace" - 3D digitizing and modeling software
+  1485	
+  1486	Myron Krueger, Artificial Reality,  55 Edith, Vernon, CA 06066, Phone: 
+  1487	(203) 871-1375,Custom-designed virtual world environments
+  1488	
+  1489	Pasha Publication,  P.O. Box 9188,  Arlington, VA 22219, Voice 800-424-
+  1490	2908, VIRTUAL REALITY HANDBOOK: Products, Services and Resources
+  1491	
+  1492	The University of Pensylvania,Center for Technology Transfer, 3700 
+  1493	Market St., Suite 300,  Philadelphia, PA  19104, Phone: (215) 898-9585   
+  1494	Fax: (215) 898-9519, "Jack" - full body sensor positioning system
+  1495	
+  1496	Polhelmus, Inc. 1 Hercules Drive, P.O. Box560, Colchester, VT 05446. 
+  1497	802-655-3159. Polhemus (3Space 6D magnetic tracker).
+  1498	
+  1499	Pop-Optix Labs. 241 Crescent Street, Waltham, MA 02154. 617-647-
+  1500	1395. Specialized optics for headmount displays.
+  1501	
+  1502	Reel-3D Enterprises, Inc, PO BOX 2368, Culver City CA 90231, (310) 
+  1503	837-2368, Toshiba LCD Shutter glasses
+  1504	
+  1505	Real World Graphics, Phone: 0992 554 442  Fax: 554 827, 5 Bluecoats 
+  1506	Ave., Hertford SG14 1PB. 80860-based VR systems. "SuperReality" with 
+  1507	multiple 80860s and texturing ASICs on VME cards. Lo-end "Reality PC" 
+  1508	has a four-processor PC card with  stereo framebuffer. Specialising in 
+  1509	flight simulation.
+  1510	
+  1511	Reflection Technology, 230 Second Ave., Waltham, MA 02154, Phone: 
+  1512	(617) 890-5905   Fax: (617) 890-5918, "Private Eye" LED-based 
+  1513	monochrome HMD.
+  1514	
+  1515	RPI Advanced Technology Group, POB 14607   San Francisco, CA  
+  1516	94114, Phone: (415) 777-3226, "The Personal Simulator" and "HMSI" 
+  1517	(Head Mounted Sensory Interface device)
+  1518	
+  1519	Sense8 Corporation. 1001 Bridgeway, P.O. Box 477, Sausalito CA 94965. 
+  1520	415-331-6318, 415-331-9148 (fax). VR software and systems (for PC, 
+  1521	Sun & Silicon Graphics) .
+  1522	
+  1523	SimGraphics Engineering Corp. 1137 Huntington Drive, South 
+  1524	Pasadena, CA 91030. 213-255-0900. Systems configuration house/OEM 
+  1525	VR equipment supplier.
+  1526	
+  1527	Shooting Star Technology ,1921 Holdom Ave., Burnaby, BC, V5B 3W4, 
+  1528	Phone: (604) 298-8574   Fax: (604) 298-8580,Mechanical position sensor 
+  1529	(approx $1499) 
+  1530	
+  1531	SophisTech Research,  6936 Seaborn Street,  Lakewood, CA 90713-2832,  
+  1532	(310) 421-7295,  (800) 4VR SOURCE (orders only), Virtual Reality 
+  1533	Sourcebook
+  1534	
+  1535	Spaceball Technologies, Inc. 2063 Landings, Sunnyvale, CA 94043. 408-
+  1536	745- 0330. Spaceball (6D joystick).
+  1537	Spectrum Dynamics,  3336 Richmond Ave. #226,  Houston, TX 77098-
+  1538	3022, Voice: 713/520-5020, Fax :  713/520-7395, email: 
+  1539	specdyn@well.sf.ca.us, VR equipment distributers, VAR, etc
+  1540	
+  1541	StereoGraphics. 21 71-H East Francisco Blvd., San Rafael, CA 94901. 
+  1542	415- 459-4500. Stereoscopic displays & LCD Shutter Systems.
+  1543	
+  1544	Straylight. 150 Mount Bethel Road, Warren, NJ 07050. 908-580-0086. 
+  1545	VR authoring systems.
+  1546	
+  1547	Subjective Technologies. 1106 Second Street, Suite 103, Encinitas, CA 
+  1548	92024. 619-942-0928. Tools for controlling virtual environments.
+  1549	
+  1550	TiNi Alloy Co. 1144 65th Street, Unit A, Oakland, CA 94608. 510-658-
+  1551	3172. Tactile feedback systems.
+  1552	
+  1553	Virtual Research 1313 Socorro Ave., Sunnyvale, CA 94089. 408-739-
+  1554	7114. Flight Helmet (head mounted display).
+  1555	
+  1556	Virtual Technologies. P.O. Box 5984, Stanford, CA 94309. 415-599-2331. 
+  1557	Instrumented gloves and clothing.
+  1558	
+  1559	Vision Research Graphics, 99 Madbury Road, Durham, NH  03824, vox: 
+  1560	603-868-2270, fax: 603-868-1352, Resellers of Haitex LCD glasses w/PC 
+  1561	driver & software
+  1562	
+  1563	The Vivid Group. 317 Adelaide Street, W., Suite 302, Toronto, Ontario, 
+  1564	M5V IP9 Canada. 416-340-9290. 416-348-98()9 (fax). Mandala (VR 
+  1565	authoring systems).
+  1566	
+  1567	VREAM. 256X N. Clark Street, #250, Chicago, 11. 60614. 3-12-477-0425 
+  1568	VR authoring systems.
+  1569	
+  1570	W.Industries, Phone: 0533 542 127     Fax: 548 222, 3 Oswin Rd., 
+  1571	Brailsford Industrial Park, Leicester LE3 1HR, "Virtuality" arcade VR.
+  1572	
+  1573	World Design Inc. 5348 1/2 Ballard Ave.  Seattle, WA  98107, Phone: 
+  1574	(206) 782-8630, Robert Jacobson - VR consultants, Information 
+  1575	Designers
+  1576	
+  1577	Xtensory Inc. 140 Sunridge Drive, Scolls Valley, CA 95066. 408-439-
+  1578	0600. Tactile feedback systems.
+  1579	

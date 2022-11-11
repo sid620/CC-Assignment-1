@@ -1,0 +1,123 @@
+     1	Photographing TV and Computer Screen Images
+     2	
+     3	From the brochure "KODAK Scientific Imaging Products", pages 26 and 27:
+     4	        Photographing TV and Computer Screen Images
+     5	
+     6	It is a relatively simple task to record a color or monochrome image
+     7	displayed on a television set, monitor, or computer screen.  Although
+     8	a 35 mm single-lens-relfex (SLR) camera is recommended for ease of
+     9	focusing and framing the image, any automatic or adjustable camera will
+    10	yield good resutls.  Close focusing capability is a must if the screen
+    11	image is to fill the film frame.
+    12	    Several options are available:  use a camera with a close-focusing
+    13	(macro) lens, use a lens with a fixed focal length of about 100 mm,
+    14	use "tele-extenders' to increase the focal length of a normal lens, or
+    15	use a supplementary close-up lens on a normal 50 mm lens.  A lens of longer
+    16	focal length, (e.g., one of 100 mm), minimizes the effect of screen
+    17	curvature.  You also need a stable tripod or platform because exposure
+    18	times are too long to permit hand-holding the camera.
+    19	
+    20	Shutter Speed
+    21	Becuase images on a television or computer screen are formed line-by-line
+    22	by a rapidly moving electron beam, you can obtain a complete picture of the
+    23	screen only if the camera shutter speed is slow enough to allow the moving
+    24	beam to complete its scan.  To avoid photographs with dark or light "banding,"
+    25	the beam should complete many scans.
+    26	    TV images typically are composed of 525 horizontal scan lines (U.S.
+    27	standard) or 625 scan lines (the standard adopted by other countries).
+    28	For the U.S. standard, a complete scan takes 1/30 second (1/60th for the
+    29	odd- and 1/60 for the even-numbered lines).  Theoretically you should use
+    30	a shutter speed no faster than 1/30 second, or 1/25 second for a 625-line
+    31	picture.  These times are for a camera with a leaf shutter; for cameras
+    32	with a focal-plane shutter, reduce shutter speed to 1/8 second in order
+    33	to avoid getting a dark band across your picture and to stop TV action
+    34	scenes.
+    35	    For computer screens, however, the subject is not moving and the
+    36	resolution requirements are much higher.  Also, photographs are frequently
+    37	made of charts or graphs with light-colored backgrounds, and which show up
+    38	dark bands particularly well.  When photographing computer screens, you can
+    39	obtain the best results with exposure times of 1/2 to 1 second.  This exposure
+    40	puts many images of the screen on the film to minimize the effect of
+    41	"banding"--a film speed of ISO 100 is ideal.
+    42	
+    43	Adjusting The Screen Image
+    44	Reduce the contrast of the screen image to slightly below the setting for
+    45	normal viewing.  For a black-and-white image, adjust the brightness control so
+    46	that there is detail in the highlights and also in the shadows.  For a color
+    47	image, adjust the color controls so the image is visually pleasing.
+    48	    If your TV, monitor, or computer has an automatic brightness control--
+    49	one that varies image brightness in response to changing levels of room
+    50	lighting--turn the control off and adjust the brightness manually.  For
+    51	computer screens, reduce the brightness so there are no scan lines visible on a
+    52	black screen.
+    53	
+    54	Room Lighting
+    55	Darken the room completely if possible, or to a practical level to reduce
+    56	ambient illumination.  Doing so helps make the area around the screen image
+    57	appear black in your pictures.  A black surround is usually more pleasing than
+    58	a lighter one or one reflecting part of the room.  If you photograph screen
+    59	images frequently, consider using a specially devised black "tent" or cone that
+    60	fits tightly around the screen.
+    61	    Do not use flash or other lighting to illuminate the screen; it will
+    62	overpower the screen image.  If you camera is equipped with automatic flash,
+    63	disable it or cover the flash with a piece of cardboard or other opaque material.
+    64	
+    65	Film Recommendations
+    66	Use daylight color film to photgraph images on color screens.  Color pictures of
+    67	color screen images may have a blue-green appearance because the sensitivity of
+    68	the film is different from that of the eye.  Use a slow film, e.g., KODAK
+    69	EKTACHROME 100 Profressional Film.  This film speed will call for a 1-second
+    70	exposure at f-8 to f-11.  A 400-speed film may be too fast; you will not be
+    71	able to stop down to near f-11.  Excellent photographs of computer screens are
+    72	made using small f-stops (to account for screen curvature) _and_ long shutter
+    73	speeds.  KODACHROME 25 Professional Film has produced very good results.
+    74	   To improve color rendition with KODACHROME and EKTACHROME Professional Films,
+    75	you may need to use a KODAK Color Compensating Filter CC10 or 20R over the
+    76	camera lens and to increase the exposure by 1/3 stop.  Use a CC20B filter with
+    77	a color negative film such as KODAK VERICOLOR III Professional Film, which
+    78	provides brighter colors than and increased color contrast over the "conventional"
+    79	100-speed film.  Experiment with this film, becasue it works better with some
+    80	phosphors than others.
+    81	    You can also use the above color films to record the white, green, or amber
+    82	images from monochrome computer screens (without the use of color compensating
+    83	filters), or use black-and-white films if you do not need to retain the green or
+    84	amber colors in the picture.
+    85	
+    86	[herein are listed a number of KODAK films.  It is, after all, a KODAK document.]
+    87	
+    88	Exposure Determination
+    89	Choose the correct shutter speed (1/2 to 1 second for computer screens and
+    90	1/4 to 1/8 second for TV images), and leave the f-stop stetting to be determined.
+    91	Consult your camera manual to determine how to set exposures with an essentially
+    92	fixed shutter speed.
+    93	    Cameras equipped with a built-in exposure meter are useful, but the TV or
+    94	computer screen should fill the image area when the reading is taken.  For
+    95	typical displays of "average" color and brightness content, you meter should
+    96	yield correctly exposed slides.  For predominantly bright displays, bracket
+    97	exposures on the "overexpose" side; for predominantly dark screen displays,
+    98	bracket on the "underexposure" side.  If you have through-the-lens metering
+    99	and you are using a color film with a color compensating filter over the camera
+   100	lens, your camera should automatically increase exposure to compensate for
+   101	attenuation by the filter.
+   102	    To be sure of getting a properly exposed picture, bracket your exposures.
+   103	In 1/3-stop increments, overexpose or underexpose 1 full stop from any
+   104	calculated exposure.
+   105	
+   106	Selected Reference
+   107	Eastman Kodak Company 1986.  Photographing Television and Computer Screen
+   108	Images (AC-10).
+   109	
+   110	To order publications from KODAK, write to:
+   111	Eastman Kodak Company
+   112	Dept 412-SP
+   113	343 State Street
+   114	Rochester, New York  14650-0608
+   115	
+   116	
+   117	Copied without permission, but then, it was a free catalogue, so I don't
+   118	think they'll mind.
+   119	
+   120	        Alan Berenbaum          adb@research.att.com
+   121	        AT&T Bell Labs
+   122	        Murray Hill, NJ
+   123	

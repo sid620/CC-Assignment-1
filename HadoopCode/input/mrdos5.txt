@@ -1,0 +1,188 @@
+     1	DOS Level 3:
+     2	
+     3	The world of DOS is a large one.  There are many, many commands with optional
+     4	switches in the realm of file management.  Fortunately, like most software
+     5	there is a flow and feel to DOS.  After you are familiar with the core
+     6	commands, looking up additional ones and figuring out how to use them becomes
+     7	easier.  The pattern is a DOS word (DIR, COPY, DEL....) followed by the
+     8	necessary, minimum information to make it go.  For example:
+     9	
+    10	      A>DIR B:                  DIR only needs the drive the directory is
+    11	                                desired
+    12	
+    13	      A>Copy C:sample.doc B:    COPY needs 3 pieces of information - what file
+    14	                                on which drive is to be copied to which drive
+    15	
+    16	      A>DEL B:Test.EXE          DEL needs 2 pieces of information - what file
+    17	                                on which drive to delete
+    18	
+    19	
+    20	
+    21	SOFTWARE VERSIONS
+    22	-----------------
+    23	Software is labeled with a version number.  With each subsequent release of
+    24	the product, the version number increases.  The reason for these upgrades are
+    25	to rid "bugs" (problems) within the software, significant product
+    26	improvements, and/or to exploit new hardware advancements.  In general,
+    27	anything created on an earlier version of a software will work with a later
+    28	version of the same software.  This is known as upward compatibility.  The
+    29	reverse is rarely true.
+    30	
+    31	DOS first hit the market as version 1.0 in 1981.  It has gone thru many
+    32	upgrades as new hardware components became available and new DOS features were
+    33	added.  Currently DOS 4.X is available.  However, most systems are still
+    34	using DOS 3.X versions.  For a single user system, any DOS version over 2.1
+    35	is probably adequate.  If you are using high density 3.5 inch floppy
+    36	drives, you will need at least DOS 3.X.
+    37	
+    38	When application software is purchased, DOS version requirements are noted on
+    39	the package as well as RAM requirements.
+    40	
+    41	
+    42	FILE ALLOCATION TABLE
+    43	---------------------
+    44	As was discussed earlier formatting a new floppy disk prior to use,
+    45	electronically superimposes a grid system on the disk.  Each grid intersection
+    46	(sector) is numbered.  The location of files pieces on a disk are noted in a
+    47	File Allocation Table (FAT) on each disk.  When a file is copied to a disk,
+    48	the FAT is checked for available sector locations.
+    49	
+    50	The FAT is like an index to the location of file pieces on the disk.  File
+    51	portions DO NOT have to be in adjacent sectors.  As a disk repeatedly has new
+    52	files copied to it and old files deleted, files become fragmented - portions
+    53	of the file exist in non-adjacent sectors.  This situation is referred to
+    54	as non-contiguous sectors.  Data integrity is not affected by this situation,
+    55	but the speed in which data can be retrieved is.  There are many third party    
+    56	
+    57	
+    58	
+    59	
+    60	
+    61	products to "defragment" a disk.  If the programs you will be using are disk
+    62	intensive - like accounting or database management, you will notice a slowing
+    63	of program execution over time as files become fragmented.
+    64	
+    65	When a file is deleted from a disk, the contents are not wiped from the
+    66	sectors, rather the file name is removed from the FAT and the associated
+    67	sectors are now simply declared available for new data.  This is important to
+    68	understand because deleted files are actually still on the disk but their
+    69	locations are now not considered off limits.  Again, many third party software
+    70	products are available to undelete these files.
+    71	
+    72	If you do delete a file, try not to use the disk until the proper utility
+    73	software is available to reverse the deletion.  With more use, you are running
+    74	the risk that the next file that is copied to the disk will occupy the
+    75	sectors of file you wish to undelete.  If that should happen, you will not be
+    76	able to undelete the "old" file.
+    77	
+    78	Some popular third party utility tools to defragment a disk and allow
+    79	undeletion include PC TOOLS, NORTON UTILITIES, MACE UTILITIES, VOPT DISK
+    80	OPTIMIZER.
+    81	
+    82	BATCH FILES
+    83	-----------
+    84	Batch files are a DOS tool that allow you to automatically execute 1 or more
+    85	DOS commands sequentially.  A more detailed explanation can be found under
+    86	Hard Disk Dos sections.
+    87	
+    88	For example, you are tired of changing default drives, subdirectories and
+    89	typing the word LOTUS each time you wish to enter into the LOTUS 123
+    90	spreadsheet program.  The 3 steps required are:
+    91	
+    92	                    A>C:
+    93	                    C>cd\lotus
+    94	                    C>lotus
+    95	
+    96	These steps can be combined with a single BATCH file called LOT.BAT.
+    97	
+    98	To build:
+    99	
+   100	                  C>copy con:lot.bat  --- Begin creating a file called lot.bat
+   101	                    C:
+   102	                    cd\lotus
+   103	                    lotus
+   104	                    <F6>              --- End building and save to disk by
+   105	                                          pressing the <F6> function key
+   106	
+   107	Now, each time LOT is entered at the DOS prompt, the commands within the
+   108	LOT.BAT file are automatically executed sequentially.
+   109	
+   110	                C>lot
+   111	                                                                                
+   112	
+   113	
+   114	
+   115	
+   116	
+   117	REDIRECTION
+   118	-----------
+   119	Redirection refers to having input or output come or go to devices other than
+   120	the standards of Keyboard (Input) and Monitor (output).  In DOS we expect to
+   121	enter commands from the Keyboard and have the results displayed on the
+   122	Monitor.
+   123	
+   124	          A>DIR           --- Gives a directory of the A drive disk on the
+   125	                              monitor
+   126	
+   127	          A>DIR >PRN      --- PRN  means to send the results of this command
+   128	                              to the printer
+   129	
+   130	          A>DIR >LIST.TXT --- Now the output of this command is put into a
+   131	                              file on the A disk called LIST.TXT  (any
+   132	                              filename could have been used)
+   133	
+   134	The greater than sign ( > )  used above was to REDIRECT the output to a
+   135	Printer and a Disk File rather than the default output device; the monitor.
+   136	This is useful for getting a hard copy print-out of a particular disk's
+   137	contents.
+   138	
+   139	PIPING - FILTERS
+   140	----------------
+   141	Piping is a way of telling DOS to transfer the output from one command to be
+   142	the input for another command.  Piping is a form of redirection except DOS
+   143	will create a temporary file on a disk to accomplish the task.
+   144	
+   145	Piping usually involves the use of special commands, termed Filters, to accept
+   146	data, do something with it, and then pass it to the next step.  There are 3
+   147	standard filters used by DOS in piping:
+   148	
+   149	    FIND - used to search a file directory for a specified string of text
+   150	    MORE - used to display one 1 screen of output at a time
+   151	    SORT - used to sort disk filenames
+   152	
+   153	The symbol used by DOS to indicate a Piping operation is the vertical bar (|).
+   154	
+   155	Examples:
+   156	
+   157	         A>DIR |sort     --- Will display on the monitor the list of files
+   158	                             on the A disk, BUT in filename alphabetic order.
+   159	
+   160	         A>DIR |sort/+10 --- Will display on the monitor the list of files
+   161	                             on the A disk, BUT by alphabetic order of the
+   162	                             filename extensions.  Extensions are 10
+   163	                             characters from the left on the screen during a
+   164	                             DIR.
+   165	
+   166	        A>DIR |sort >prn  -- Same as the 1st example except the results of
+   167	                             this command will be printed out.
+   168	
+   169	        A>DIR |sort >SAM.D - Same as the 1st example except the results of
+   170	                             this command will be saved in a file on the disk
+   171	                             called  SAM.D
+   172	                                                                                
+   173	
+   174	
+   175	
+   176	
+   177	
+   178	        A>DIR |sort |more -- Will display in sorted order one screen at a time
+   179	
+   180	        A>DIR |find "05-14-89"  -- Will display a list of files that were last
+   181	                                   changed on May 14, 1989
+   182	
+   183	        A>DIR |find "SALES"     -- Will display a list of files that have the
+   184	                                   word SALES in the file name
+   185	
+   186	
+   187	
+   188	*****   END OF FILE:  Press <ESC> to return to Main Menu   *****

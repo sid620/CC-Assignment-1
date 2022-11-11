@@ -1,0 +1,109 @@
+     1	********       ********   ##########################  **      **       ****
+     2	**     **      **    **   #   B  U  S  T  E  D  !  #  **      **      **  **
+     3	**      **     ********   #   ~  ~  ~  ~  ~  ~  ~  #  **      **     **    **
+     4	**      **     **         #      Written By:       #  **      **    **********
+     5	**     **      **         #     The Leviathan      #  **      **    **      **
+     6	********       **         ##########################  **********    **      **
+     7	-------------------------------------------------------------------------------
+     8	D e d i c a t e d  -  P h r e a k e r s  -  U n t i l  -  A p p r h e n d e d  
+     9	    Phreakers                              Until       Apprehended
+    10	-------------------------------------------------------------------------------
+    11	Alright, since I thought this was a big issue, I thought I'd write a doc on
+    12	this particular subject since a couple of my friends have been busted too.
+    13	Anyways, the following is an article from the San Jose Mercury News newspaper
+    14	on Wednesday morning, May 9th 1990. For those of you who don't watch the news
+    15	or read newspapers, live off in Cambodia, or you've been hacking constantly
+    16	and just don't have time for stuff like this, lemme fill you in. It appears
+    17	that the Secret Service ran a series of raids on apartments across the nation
+    18	against Hackers/Phreakers/and Carders alike. Anyways, Just read the article.
+    19	------------------------------------------------------------------------------
+    20	HACKERS TARGETED IN FRAUD PROBE
+    21	By: Rory J. O'Conner
+    22	-------------------------------
+    23	In a sweeping nationwide investigation of alledged wire fraud by computer and
+    24	telephone hackers, the Secret Service on Tuesday searched as many as 29
+    25	locations in 13 cities, including one in San Jose.
+    26		
+    27		Only sketchy details of the investigation, code-named "Operation: Sun
+    28	-Devil," were available late Tuesday, but it apparently is the biggest of its
+    29	kind.
+    30		Officials have called an 11 a.m. press conference in Phoenix today to
+    31	provide details. The hackers are believed to involved in the theft of bank
+    32	credit card numbers and long-distance access codes, and in unauthorized comp-
+    33	uter access. Some of the hackers may also have infiltrated hospital records
+    34	and altered "911" emergency records, according to law enforcement sources who
+    35	requested to remain anonymous. (Hmmmmm, I wonder why?? heheh)
+    36		
+    37		A single search warrant was executed in San Jose on Tuesday, said
+    38	Leo Cunningham, an attorney in the U.S. attorney's San Jose office. That
+    39	warrant is sealed, and Cunningham would not disclose the location that was
+    40	searched or name any local suspects in the investigation.
+    41		
+    42		Secret Service spokesman Richard Adams in Washington declined to
+    43	provide details of the investigation, referring calls to the Phoenix office
+    44	of the U.S. attorney Stephen McNamee, who supervised the effort. Adams did say,
+    45	however, that by late Tuesday afternoon the investigation was "pretty much
+    46	done." McNamee also declined to comment, but will direct the press conference.
+    47		
+    48		CBS news reports Tuesday that there had been 10 arrests throughout the
+    49	country and that the hackers had infiltrated certain bank records. One source
+    50	said as many as 150 Secret Service agents participated in the raids. But one
+    51	law enforcement source directly involved in the investigation cautioned that
+    52	some early reports were inaccurate or incomplete.
+    53		
+    54		In addition to San Jose and Phoenix, the search warrants were report
+    55	-edly executed in Chicago, Cincinnati, Detroit, Los Angeles, Miami, Newark,
+    56	NA.,New York, Pittsburg, San Diego, Richmond, VA., and Plano, Texas.
+    57		
+    58		The theft of credit card numbers and telephone access card numbers via
+    59	computers has been practiced for years by a loose underground of technically
+    60	savvy "phone phreaks." The phreaks often maintain secret computer "bulletin
+    61	boards," which they use via telephones to swap or sell the illicit codes.
+    62	
+    63		Computer break-ins have also been accomplished by a small number of
+    64	so-called hackers, usually technically sophisticated teen-age boys who commit
+    65	the crimes as pranks or self-styled "rite if passage" into the world of
+    66	computer programming. Until recently, few of them have been caught and pro-
+    67	secuted, and most who have been convicted, received fairly light sentences
+    68	involving little or no jail time.
+    69	
+    70		Under new computer crime laws, the Secret Service has jurisdiction to
+    71	investigate allegations of electronic fraud through the use of access devices
+    72	such as credit-card numbers and codes that long-distance companies issue to
+    73	individual callers.
+    74	
+    75		Defendants convicted of unauthorized use of such "access devices" can
+    76	be sentenced up to 10 years in prison if they commit fraud of more then $1,000
+    77	according to the law. (WHOA! No fucking way, dude!)
+    78	
+    79		A similiar investigation supervised by federal prosecutors in Chicago
+    80	has resulted in several indictments.
+    81	-------------------------------------------------------------------------------
+    82	
+    83	Wow, some heavy shit eh? Anyways, more of my bullshit. All of these people that
+    84	DID get busted usually had used the codes that totaled to over 7000 bucks or
+    85	more in phone calls. In other words, if you've been phreaking for over 2 years,
+    86	I'd be watchin yer ass. A couple of my friends and some of my friends' friends,
+    87	that have been busted, said that they've been phreaking at least over 2 years.
+    88	So those of you who have only been hacking for a year, I wouldn't be too
+    89	worried.
+    90	
+    91		Now for my lecture. Phreaking is a SERIOUS offense, and I'm not telling
+    92	you to stop but to BE CAREFUL!! Different companies handle their "access codes"
+    93	differently than other companies. Don't abuse codes too much. A good way to
+    94	handle codes is use them for 3 to 4 days, and then post them on some lamer
+    95	board. If you are a fairly nice hacker, I'm sure you could come up with new
+    96	codes daily. Then again, if yer a selfish bastard, don't listen to me. BUT
+    97	the company KNOWS you are there and they KNOW who you are. It's a matter of
+    98	choice if they should bust you or not. If you abuse their stuff and rack up
+    99	a major bill for them, it's only a matter of TIME before yer busted. Then
+   100	again, if you must phreak, then do it but move around. Try different companies.
+   101	If you hack one company for like 6 months, of COURSE you're gonna get hit but
+   102	if you hack one company for 1 month, then switch to another and so on and so on
+   103	your chances of NOT getting busted are much higher
+   104	
+   105	
+   106	
+   107	Thanks go out to The Sable Syntax, Big Vito, and the rest of the D.P.U.A gang.
+   108	You can find a D.P.U.A member on yer local H/P Board.
+   109	

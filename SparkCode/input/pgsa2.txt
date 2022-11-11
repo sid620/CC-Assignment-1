@@ -1,0 +1,179 @@
+     1	
+     2	   Description and Supporting 
+     3	     
+     4	     Documentation for the
+     5	        
+     6	         POWER GLOVE SERIAL ADAPTER II 
+     7	    
+     8	    (tentative June 12,1992)
+     9	
+    10	
+    11	
+    12	
+    13	
+    14	         Author :  Jim Brain
+    15	   Organization :  The Association for Computing 
+    16	     Machinery at Urbana Champaign
+    17	     Urbana, IL   61801
+    18	       Special Interest Group :  SIGARCH
+    19	    Date :  June 12th,  1992
+    20	
+    21	INTRODUCTION:        
+    22	 
+    23	 The Power Glove Serial Adapter, Revision 2 (hereto referred to as
+    24	the PGSA II, or "the box") provides the microcomputer user with a means to
+    25	interface the Mattel Manufactured Nintendo PowerGlove (tm) to his or her
+    26	personal system.  The PowerGlove is a 3 dimensional input device capable of
+    27	providing the user with X,Y, and Z coordinates to help facilitate 3-D 
+    28	software requirements.  In addition, the PGSA II allows the users similar
+    29	access to the SEGA(tm) 3-D Shutter Glasses.  With both of these capabilities 
+    30	on-board the PGSA II, low cost Virtual Realism and 3 dimensional visualization
+    31	systems are a reality.  
+    32	
+    33	HARDWARE REQUIREMENTS:
+    34	 
+    35	 The only hardware requirement is the ability for a user's
+    36	system to accept standard RS-232C (EIA-232D) serial data at a bit rate of
+    37	9600 bps with 1 stop bit, no parity, and 8 data bits.  The PGSA II comes
+    38	with a "standard" female DB25 connector commonly used for RS-232 devices,
+    39	although users can change that restriction by using adapters.  The PGSA II
+    40	allows the users to gather input from the PowerGlove without having to
+    41	know the specifics of the input device at the hardware level.  The interface
+    42	box provides all the necessary buffering and translation, so that the user 
+    43	can receive up-to-date information on the position of the PowerGlove and  
+    44	control the SEGA glasses.
+    45	
+    46	AVAILABILITY:
+    47	
+    48	 Although the PGSA II is currently under development, finished units
+    49	will not ship until early in August.  This information is provided for 
+    50	potential customers eager to learn more about the use of 3 dimensional
+    51	input and output devices, as well as potential software authors drawn to
+    52	the idea of using 3 dimensional devices in future product releases.  There
+    53	is an installed base of software for the so-called "parallel interface" which
+    54	uses the processor on the host computer and special lines on the printer port 
+    55	of the host computer to provide a subset of the functions available in the
+    56	PGSA II.  While the "parallel" interface has been refined considerably for
+    57	users of newer IBM compatible systems, other machine owners have been less
+    58	fortunate.  The PGSA II hopes to solve these problems when available.
+    59	
+    60	REQUEST FOR MORE INFORMATION:
+    61	
+    62	 The Internet News Group SCI.VIRTUAL-WORLDS receives up-to-date
+    63	information about progress in the areas of 3-D viewing and input devices.
+    64	Many readers of this newsgroup, names being too numerous to mention, can 
+    65	provides answers to common questions related to the use and development of
+    66	devices such as the PGSA II and appropriate software.  Alternately, This
+    67	author can be reached at the internet and land address found at the closing
+    68	of this document.  Although in its initial stages, low-cost virtual reality
+    69	is fast becoming a real reality.
+    70	
+    71	SOFTWARE REQUIREMENTS:
+    72	
+    73	 Although no installed base for the PGSA II exists, it can easily
+    74	emulate the Menelli Interface, designed as a project by Ron Menelli, or the 
+    75	Abrahms Gentile Entertainment, Inc. (AGE) PGSA Interface.  This provides the 
+    76	user with a means to utilize the new inteface box, while waiting for software
+    77	to be written that will fully support the new box.  In the area of SEGA   
+    78	support, the PGSA II will work with all currently available software 
+    79	utilizing RTS control or the newer RTS/DTR control designed by Glen Harris.
+    80	
+    81	PRODUCT CONTENTS:
+    82	
+    83	 The PGSA II system comes standard with adapters to interface 1        
+    84	Nintendo PowerGlove and one pair of SEGA shutter glasses.  The system 
+    85	terminates with a connector that will accept a standard RS-232 DB-25 male
+    86	plug. A complete set of documentation will also be included.  This 
+    87	documentation will explian how to use the interface, how to program the 
+    88	interface in common languages, how to troubleshoot the interface should
+    89	anything go awry, and how to enhance the unit.  The documentation will also
+    90	detail the theory involved.  A demonstration disk containing sample programs
+    91	and help files will be included, provided the user states his current system
+    92	type.
+    93	
+    94	WHAT IS NOT INCLUDED:
+    95	
+    96	 The user must supply his own means for power generation.  A jack has
+    97	been included to allow hookup of many low-cost "brick" power units, commonly
+    98	referred to as "battery eliminators".  The sytem can be powered by any AC or
+    99	DC voltage from 6 volts up to 35 volts.  The user must also supply the needed
+   100	PowerGlove and/or SEGA glasses.  The system will function perfectly without
+   101	the SEGA glasses installed, but the unit will operate the SEGA glasses in 
+   102	only 2 of 4 modes of operation if the glasses are installed alone.  Potential
+   103	customers are discouraged from buying this unit solely to operate the
+   104	SEGA Glasses.  If the user has an RS-232 interface incompatible with the DB-25
+   105	connector, he or she can either buy the unit themselves, or purchase it from
+   106	SIGARCH. 
+   107	
+   108	ACCESSORIES:
+   109	
+   110	 Users who wish to enhance the operation of the PGSA II may do so in
+   111	many ways.  Although the current version of the controlling software does
+   112	not support it, the current hardware and future versions of the software will
+   113	include support for up to 2 PowerGloves.  Also, future versions of the 
+   114	controlling software will include support for one or more Nintendo U-Force
+   115	controllers, a device similar in operation to the PowerGlove.  
+   116	
+   117	SOFTWARE UPGRADES:
+   118	
+   119	 Registered owners of of the PGSA II will receive updates to the 
+   120	controller code as they are finished, along with documentation and programs
+   121	to load the new code into the interface.  The interface is 
+   122	"field-programmable", which means that updates to the controller code can be
+   123	made by the end user using special programs.  The user will also be notified  
+   124	of other products produced by SIGARCH.
+   125	
+   126	MISCELLANEOUS:
+   127	
+   128	 The PGSA II has been made with flexibility in mind.  The user can
+   129	select the following options on the standard board:
+   130	
+   131	 Control SEGA Glasses using RTS direct control.
+   132	 Control SEGA Glasses using RTS/DTR direct control.
+   133	 Control SEGA Glasses using interface control.
+   134	 Select 1 PowerGlove active.
+   135	 Select 2 PowerGloves active.
+   136	 Select On-board SEGA voltage generation (for 6-9 volt power supplies)
+   137	 Select User supplied SEGA voltage gen.  (optional for 10+ V supplies)
+   138	 Select High or Low initial baud rate. 
+   139	
+   140	Plus, there are 3 configuration options for users with nonstandard RS-232
+   141	requirements. 
+   142	
+   143	COST:
+   144	
+   145	 SIGARCH is still evaluating the retail price for these units, but
+   146	factors tentativly support a price of $85.00. SIGARCH cannot guarantee
+   147	this price until all evaluation has been finished.  SIGARCH is looking
+   148	into the possibility of offering kits of the PGSA II at a reduced price, but
+   149	the decision has not been discussed thoroughly.  Note that cost will largely
+   150	be determined by the number of people committing to purchase a box upon
+   151	manufacture, since SIGARCH will take prepaid orders for the units. A base
+   152	of 50 purchasers is required before final production can start.
+   153	
+   154	ABOUT THE ORGANIZATION:
+   155	
+   156	 SIGARCH is a non-profit special interest group (SIG) of the 
+   157	Association of Computing Machinery at Urbana Champaign (ACM at UIUC).  The
+   158	president is Mr. Mike Schaffstein, and the PGSA II Project Leader is Mr.
+   159	Jim Brain.  The PGSA II Project is a fundraising attempt to gather funds for
+   160	more such projects and their associated development.  SIGARCH is the Special
+   161	Interest Group in Computer Architecture, so this and future projects will 
+   162	utilize microprocessor based systems.
+   163	
+   164	ABOUT THE AUTHOR:
+   165	
+   166	 Jim Brain is a senior in Computer Engineering at the University of
+   167	Illinois at Urbana Champaign.  He presently lives in Urbana and will seek
+   168	a graduate degree in Electrical Engineering upon completion of his bachelor's
+   169	degree in May, 1993.  He can be reached at the following addresses:
+   170	
+   171	Jim Brain
+   172	305 N Lincoln Avenue N116
+   173	Urbana, IL   61801
+   174	brain@cs.uiuc.edu
+   175	
+   176	-- 
+   177	Nothing is better than Eternal Happiness.             jlb31348@uxa.cso.uiuc.edu
+   178	A ham sandwich is better than nothing.                                Jim Brain
+   179	Therefore, a ham sandwich is better than eternal happiness.mp

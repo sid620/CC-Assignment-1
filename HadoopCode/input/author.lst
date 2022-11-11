@@ -1,0 +1,3635 @@
+     1	                               Copyright (c) by 1993-1995 Timo Salmi
+     2	                                                 All rights reserved
+     3	
+     4	ftp://garbo.uwasa.fi/pc/pd2/author35.zip               Sun 17-Dec-95
+     5	
+     6	* Email addresses of 255 Reachable MS-DOS shareware and PD authors *
+     7	====================================================================
+     8	
+     9	MS-DOS  PD  and  shareware utility authors please see SUBMIT.TXT for
+    10	more information and a convenient fill-in  sheet.  But  please  also
+    11	read  the  MUSTREAD.NOW file. This list covers MS-DOS utility PD and
+    12	shareware authors reachable by email on InterNet, including  authors
+    13	with addresses on CompuServe and FidoNet.
+    14	
+    15	Solely Windows, games or fully commercial authors are not covered by
+    16	this  list.  Windows  authors have a list of their own maintained by
+    17	Chris Marriott (chris@chrism.demon.co.uk).
+    18	
+    19	This   same  ftp://garbo.uwasa.fi/pc/pd2/author*.zip  list  is  also
+    20	available  without  the  version  number   as   /pc/link/author.zip.
+    21	
+    22	A piece of advice. This information has been gathered during a  long
+    23	period  of  time.  Before  trying  to contact an author by email try
+    24	fingering his/her address to make  sure  that  it  is  still  valid.
+    25	Unfortunately,  this  will not work for all systems, but it is worth
+    26	the try.
+    27	
+    28	....................................................................
+    29	Prof. Timo Salmi   Co-moderator of news:comp.archives.msdos.announce
+    30	Moderating at ftp:// & http://garbo.uwasa.fi archives  193.166.120.5
+    31	Department of Accounting and Business Finance  ; University of Vaasa
+    32	ts@uwasa.fi http://uwasa.fi/~ts BBS 961-3170972; FIN-65101,  Finland
+    33	
+    34	-------------------------------------------------------------------
+    35	1        Ahlgren, Joe
+    36	2        Aitchison, Mark
+    37	3        Aitkens, Charles
+    38	4        Aldridge, Rafe
+    39	5        Andel, Arjen van
+    40	6        Anderson, Thomas N.
+    41	7        Augustine, Davis
+    42	8        Babb, Brendan
+    43	9        Babcock, Robert
+    44	10       Baer, Dennis
+    45	11       Baker, Robert W.
+    46	12       Baldwin, L. David
+    47	13       Barnes, Michael
+    48	14       Baron, Victor
+    49	15       Barry, Rey
+    50	16       Beauchaine, Robert
+    51	17       Berry, Bob
+    52	18       Bhalla, Arun
+    53	19       Bixler, Roy
+    54	20       Blackman, Adrian
+    55	21       Blum, Christian
+    56	22       Bodoh, Daniel
+    57	23       Boer (de Boer), Berend
+    58	24       Bohanec, Marko
+    59	25       Bondono, Jeff
+    60	26       Brandstrom, Peter
+    61	27       Branson, Don
+    62	28       Breuer, Richard
+    63	29       Bridges, John
+    64	30       Brown, David
+    65	31       Brown, Keith S.
+    66	32       Brown, Ralf
+    67	33       Bruce, Robert
+    68	34       Brucker, Fred P.
+    69	35       Brzezinski, Andrzej
+    70	36       Buerg, Vernon
+    71	37       Burfitt, Kevin
+    72	38       Burke, Christopher
+    73	39       Button, Jim
+    74	40       Caine, Tony
+    75	41       Camp, David
+    76	42       Carapetis, Paul
+    77	43       Carlyle, Jeffrey
+    78	44       Carter, Simon
+    79	45       Centanni, Nicholas
+    80	46       Chin, John
+    81	47       Chinook Software
+    82	48       Clarke, Daryl
+    83	49       Coast to Coast
+    84	50       Collins, Adrian
+    85	51       Colucci, Michael
+    86	52       Conrad, David
+    87	53       Corbier, Daniel
+    88	54       Coyote Data
+    89	55       Datawatch
+    90	56       Davies, Robert
+    91	57       Davis, Gayle
+    92	58       Dell, Thomas
+    93	59       Derbyshire, Andrew
+    94	60       Derr, James
+    95	61       Dhesi, Rahul
+    96	62       Dickson, Mike
+    97	63       Dight, David
+    98	64       DiVecchio, Mark
+    99	65       Dobb's, Journal
+   100	66       Duby, Philippe
+   101	67       Doupnik, Joe
+   102	68       Duentsch, Ivo
+   103	69       Dumdei, Mike
+   104	70       Durward, Jon
+   105	71       Edwards, Larry
+   106	72       Efros, Alexei
+   107	73       Elber, Gershon
+   108	74       Engelmann, Eric
+   109	75       Eradus, Richard
+   110	76       Evsikov, Igor
+   111	77       Farfan, Daniel
+   112	78       Faulks, Neil
+   113	79       Feldmann, Harald
+   114	80       Forsberg, Chuck
+   115	81       Foy, Jeffery
+   116	82       Franchi, Maurizio
+   117	83       Frandsen, Jesper
+   118	84       Freiss, Martin
+   119	85       Fubar Systems
+   120	86       Gadegast, Frank
+   121	87       Gallias, Michael
+   122	88       Garcia, Ciriaco
+   123	89       Geeslin, Robert
+   124	90       Geiser, Wayne
+   125	91       Gillett, Dave
+   126	92       Green, J Paul
+   127	93       Greenberg, Ross
+   128	94       Gregory, Randy
+   129	95       Gresseth, Reidar
+   130	96       Guthrie, Bruce
+   131	97       Gutmann, Peter
+   132	98       Hahn, Karl
+   133	99       Hakim, Andy
+   134	100      Hamel, David
+   135	101      Hargreaves, Shawn
+   136	102      Harris, Mark
+   137	103      Hart, Michael
+   138	104      Hass, Jim
+   139	105      Heino, Kim
+   140	106      Hilbig, Erhard
+   141	107      Hogstrom, Jonas
+   142	108      Holin, Michael
+   143	109      Homrighausen, Joaquim
+   144	110      Hovila, Ari
+   145	111      Hu, Franklin
+   146	112      Hu, Tsung
+   147	113      Huang, Weiguang
+   148	114      Huseby, Sverre H.
+   149	115      Iakovlev, Alex
+   150	116      Info-ZIP
+   151	117      Isaacson, Eric
+   152	118      Jackson, Lee
+   153	119      Jaeger, Thomas
+   154	120      Jennings, Peter
+   155	121      Jeong, Joohee
+   156	122      Johansson, Anssi
+   157	123      Johnson, Thomas C.
+   158	124      JP Software Inc.
+   159	125      Jung, Robert
+   160	126      Kiernan, John
+   161	127      Kim, Eugene
+   162	128      Kirsch, Dave
+   163	129      Kirschbaum, David P
+   164	130      Knudson, Chad
+   165	131      Koornneef, Jim
+   166	132      Kovach, Warren L.
+   167	133      Koziol, Quincey
+   168	134      Krehbiel, Courtney
+   169	135      Lazarus, Ross
+   170	136      Ledbetter, Keith
+   171	137      Lee, Gene
+   172	138      Lee, Patrick
+   173	139      Lewis, Dan
+   174	140      Lockrey, Brian
+   175	141      Loewy, Ron
+   176	142      Mace, Donald
+   177	143      Maconochie, David
+   178	144      Maddox, Gary
+   179	145      Madison, W.G.
+   180	146      Madsen, Steven
+   181	147      Mahlknecht, Greg
+   182	148      Mai, Anthony
+   183	149      Marks, Richard
+   184	150      Marson, Hamish
+   185	151      McAfee Associates
+   186	152      McCaffrey, John
+   187	153      Menninger, William
+   188	154      Miettunen, Jouni
+   189	155      Mukherjee, Joy
+   190	156      Murdoch, Duncan
+   191	157      Nelson, Russell
+   192	158      Newlin, John
+   193	159      Nguyen, Hoa
+   194	160      Ni, Hongbo
+   195	161      Noorda, Brent
+   196	162      Nugent, Gary
+   197	163      Olowofoyeku, Abimbola
+   198	164      Ozeran, James
+   199	165      Pardun, Gary
+   200	166      Patri-Soft
+   201	167      Paulson, Duane
+   202	168      PCMAG
+   203	169      Perkovic, David
+   204	170      Pfeiffer, Peter
+   205	171      PKWare Inc.
+   206	172      Pluimers, Jeroen
+   207	173      Podnos, Vladimir
+   208	174      Pollet, Patrick
+   209	175      Presno (de Presno), Odd
+   210	176      Pritchett, Ron
+   211	177      Pultz, Scott
+   212	178      QuickWare
+   213	179      Reeve, Alan
+   214	180      Reilley, Peter
+   215	181      Revie, Dennis
+   216	182      Risku, Kai
+   217	183      Rollason, Jeff
+   218	184      Rosenthal, Doren
+   219	185      Roshal, Eugene
+   220	186      Rossmann, Andrew
+   221	187      Rothenburg, Robert Walking-Owl
+   222	188      Roub, Paul
+   223	189      Rovers, Perry
+   224	190      Rowe, Eddie
+   225	191      Salmi, Timo
+   226	192      Salvisberg, Hans
+   227	193      Sankey, Todd
+   228	194      Schaefer, Arno
+   229	195      Schikore, Daniel
+   230	196      Schipper, Jeroen
+   231	197      Schmidt, Robert
+   232	198      Schroeder, W.F.
+   233	199      Schull, Jonathan
+   234	200      Schulz, Russell
+   235	201      Scott, Peter
+   236	202      SemWare Inc.
+   237	203      Shearer, Dan
+   238	204      Shippony, Zvi
+   239	205      Shmakov, Sergey
+   240	206      Siebeck, Wolfgang
+   241	207      Sill, Daniel
+   242	208      Silva, John
+   243	209      Singh, Manjit
+   244	210      Skinner, Roland
+   245	211      Skulason, Fridrik
+   246	212      Smetana, Rob
+   247	213      Smith, David
+   248	214      Smith, Harry
+   249	215      Smith, Samuel
+   250	216      Spielbusch, Stan
+   251	217      Starr, David
+   252	218      Stern, Marc
+   253	219      Stewartson, Ian
+   254	220      Stiller, Wolfgang
+   255	221      Stone, Chris
+   256	222      Strevel, Christian
+   257	223      Stroem, Henrik
+   258	224      Summers, Peter
+   259	225      Szentesi, Zoltan
+   260	226      Tassle (Van Tassle), Ray
+   261	227      Taylor, Patrick I.
+   262	228      Thomson, Douglas
+   263	229      Toikkanen, Tarmo
+   264	230      Tolliver, James
+   265	231      Tong, Ka
+   266	232      Torgersen, Knut
+   267	233      Tschirner, Tim
+   268	234      Uberto, Franck
+   269	235      Vandenberg, Rick
+   270	236      Veerman, Rene
+   271	237      Veldman, Frans
+   272	238      Vias, John
+   273	239      Vries (de Vries), Nico
+   274	240      Vuorenmaa, Markku
+   275	241      Vygonets, Vadim
+   276	242      Vyncke, Eric
+   277	243      Walsh, Norm
+   278	244      Walter, Alexander
+   279	245      Weatherley, Rhys
+   280	246      Weinbeck, Gene
+   281	247      Weinstein, Iram
+   282	248      Whitmore, Stuart
+   283	249      Windl, Ulrich
+   284	250      Wisan, Richard
+   285	251      Woods, Jeff
+   286	252      Woods, Rob
+   287	253      Wriedt, Dirk
+   288	254      Wunderlich, Jeff
+   289	255      Zitterkopf, John D.
+   290	-------------------------------------------------------------------
+   291	
+   292	
+   293	Key:        Ahlgren, Joe
+   294	Author:     Joe Ahlgren
+   295	Program:    GEOCLOCK sunlight clock and map
+   296	Company:    GeoClock
+   297	Email:      jahlgren@capaccess.org, 70461.2340@compuserve.com
+   298	WWW:
+   299	Address:    2218 N Tuckahoe St, Arlington VA 22205   USA
+   300	Voice:      703-241-2661
+   301	BBS:        703-241-7980/7981
+   302	Fax:        703-241-5809
+   303	Other Info:
+   304	
+   305	
+   306	Key:        Aitchison, Mark
+   307	Author:     Mark Aitchison
+   308	Program:    BOOTID freeware Boot Sector (Virus) Identifier
+   309	Company:    Department of Physics & Astronomy, University of Canterbury
+   310	Email:      M.Aitchison@csc.canterbury.ac.nz
+   311	WWW:
+   312	Address:    Private Bag 4800, Christchurch, New Zealand
+   313	Voice:      (0643) 3642-947
+   314	BBS:       
+   315	Fax:        (0643) 3642-999
+   316	Other info:
+   317	
+   318	
+   319	Key:        Aitkens, Charles
+   320	Author:     Charles Aitkens
+   321	Program:    SCROLLit Scrollback Buffer Utility
+   322	Company:    Bromfield Software Products
+   323	Email:      71054.3051@compuserve.com
+   324	WWW:
+   325	Address:    P.O. Box 70081, Ottawa, Ontario K2P 2M3, CANADA
+   326	Voice:     
+   327	BBS:
+   328	Fax:       
+   329	Other info:
+   330	
+   331	
+   332	Key:        Aldridge, Rafe
+   333	Author:     Rafe Aldridge
+   334	Program:    RTPC10 - a collection of Turbo Pascal Units and Examples
+   335	Company:   
+   336	Email:      rca@ib.rl.ac.uk
+   337	WWW:
+   338	Address:    Street Farm, Dereham Road, Garvestone. NR9 4QT UK
+   339	Voice:     
+   340	BBS:
+   341	Fax:
+   342	Other info:
+   343	
+   344	
+   345	Key:        Andel, Arjen van
+   346	Author:     Arjen van Andel
+   347	Program:    File_Handle <ASP> File & Program manager with Filefinder
+   348	Company:    Hasoft
+   349	Email:      100710.1352@compuserve.com
+   350	WWW:
+   351	Address:    Meeuwensedijk 10, 4268 GV MEEUWEN, The Netherlands
+   352	Voice:      +31-(0)416-351-469
+   353	BBS:
+   354	Fax:        +31-(0)416-351-469
+   355	Other info:
+   356	
+   357	
+   358	Key:        Anderson, Thomas N.
+   359	Author:     Thomas N. Anderson
+   360	Program:    TASM - A table driven cross assembler for MS-DOS
+   361	Company:    Speech Technology Incorporated
+   362	Email:      73770.3612@compuserve.com, toma@sqi.com
+   363	WWW:
+   364	Address:    837 Front Street South, Issaquah, WA 98027, USA
+   365	Voice:      (206) 392-8150
+   366	BBS:
+   367	Fax:
+   368	Other info: Many microprocessor families are supported.
+   369	
+   370	
+   371	Key:        Augustine, Davis
+   372	Author:     Davis Augustine
+   373	Program:    SHROM Shell Room Utility
+   374	Company:   
+   375	Email:      72230.3053@compuserve.com
+   376	WWW:
+   377	Address:    P.O.Box 390178 Cambridge, MA 02139, USA
+   378	Voice:
+   379	BBS:       
+   380	Fax:
+   381	Other info:
+   382	
+   383	
+   384	Key:        Babb, Brendan
+   385	Author:     Brendan Babb
+   386	Program:    BFMT137  - formats text (left/right/justify/centre/align)
+   387	Company:   
+   388	Email:      Brendan@micro.uct.ac.za
+   389	WWW:
+   390	Address:    Microbiol. Dept, UCT, Rondebosch 7700, Cape Town, SA
+   391	Voice:      (021) 650-3258
+   392	BBS:       
+   393	Fax:       
+   394	Other info:
+   395	
+   396	
+   397	Key:        Babcock, Robert
+   398	Author:     Robert W. Babcock
+   399	Program:    Wssindex, disk cataloger, archive & graphics files
+   400	Company:    WSS Division of DDC
+   401	Email:      peprbv@cfa0.harvard.edu, babcock@cfa, rbabcock on BIX
+   402	WWW:
+   403	Address:    4 Reeves Road, Bedford, MA  01730, USA
+   404	Voice:      617-275-1183 or 9104
+   405	BBS:        617-275-5834, 14.4kbaud v.32bis, 24 hour, TAGBBS
+   406	Fax:
+   407	Other info: Association of Shareware professionals member
+   408	
+   409	
+   410	Key:        Baer, Dennis
+   411	Author:     Dennis Baer
+   412	Program:    Super BASIC Programming Language (IBM, AMIGA, MACINTOSH)
+   413	Company:
+   414	Email:      dennis.baer@hofbbs.com
+   415	WWW:
+   416	Address:    25 Miller Road, Farmingdale, NY 11735, USA
+   417	Voice:      (516) 694-5872
+   418	BBS:
+   419	Fax:        Fax available on request.
+   420	Other info:
+   421	
+   422	
+   423	Key:        Baker, Robert W.
+   424	Author:     Robert W. Baker
+   425	Program:    NEWSyymm & WNWSyymm PC/Mac News Archives
+   426	Company:    Baker Enterprises
+   427	Email:      rbakerpc@delphi.com
+   428	WWW:
+   429	Address:    20 Ferro Dr, Sewell, NJ 08080 U.S.A.
+   430	Voice:      609/582-9203
+   431	BBS:       
+   432	Fax:        609/582-9204
+   433	Other info: PC/Mac Industry news & information services & ref dbases
+   434	
+   435	
+   436	Key:        Baldwin, L. David
+   437	Author:     L. David Baldwin
+   438	Program:    Dialog Design for Borland's Turbo Vision
+   439	Company:   
+   440	Email:      76327.53@compuserve.com
+   441	WWW:
+   442	Address:    22 Fox Den Rd., Hollis, NH 03049, USA
+   443	Voice:      (603) 465-7857
+   444	BBS:       
+   445	Fax:
+   446	Other info: Winter telephone (813) 867-3030
+   447	
+   448	
+   449	Key:        Barnes, Michael
+   450	Author:     Michael Barnes
+   451	Program:    Address Master
+   452	Company:    Artwork Software
+   453	Email:      ssumbarn@rdg.ac.uk
+   454	WWW:
+   455	Address:    67 Heath Road, Beaconsfield, Bucks, HP9 1DG, England
+   456	Voice:      0494 672806
+   457	BBS:
+   458	Fax:
+   459	Other info: Also on FidoNet 2:254/151.10
+   460	
+   461	
+   462	Key:        Baron, Victor
+   463	Author:     Victor G. Baron
+   464	Program:    Little Black Book Autodialer and Database-Multinational
+   465	Company:    GTX Software
+   466	Email:      71210.3632@compuserve.com
+   467	WWW:
+   468	Address:    5419 Dahlia Drive, Los Angeles CA 90041, USA
+   469	Voice:      (213) 257-2704
+   470	BBS:
+   471	Fax:
+   472	Other info:
+   473	
+   474	
+   475	Key:        Barry, Rey
+   476	Author:     Rey Barry
+   477	Program:    Freeware Hall of Fame Guide
+   478	Company:    Freeware Hall of Fame, an archive and BBS
+   479	Email       rbarry@hopper.acs.virginia.edu
+   480	Address:    1561 Dairy Rd., Charlottesville, VA 22903, USA
+   481	Voice:      804-293-2693
+   482	BBS:        894-293-4710
+   483	Fax:       
+   484	Other info: Program is known as HOFmmyy.ZIP
+   485	
+   486	
+   487	Key:        Beauchaine, Robert
+   488	Author:     Robert (Bob) Beauchaine
+   489	Program:    TVINP102.ZIP, Numerical Input routines for Turbo Vision
+   490	Company:    Tektronix, Inc.
+   491	Email:      bobb@vice.ICO.TEK.COM
+   492	WWW:
+   493	Address:    P.O. Box 500, M.S. 59-323, Beaverton, OR 97077, USA
+   494	Voice:      (503) 627-6086
+   495	BBS:       
+   496	Fax:        (503) 627-5560
+   497	Other info:
+   498	
+   499	
+   500	Key:        Berry, Bob
+   501	Author:     Bob Berry 
+   502	Program:    CSHOW CompuShow program for viewing graphics
+   503	Company:    Canyon State Systems and Software
+   504	Email:      76555.167@compuserve.com
+   505	WWW:
+   506	Address:    Post Office Box 86, Sedona, AZ. 86336, USA
+   507	Voice:      (602) 282-5070
+   508	BBS:       
+   509	Fax:       
+   510	Other info:
+   511	
+   512	
+   513	Key:        Bhalla, Arun
+   514	Author:     Arun Bhalla
+   515	Program:    AUTORND (Random batch file execution), WCTDDOOR
+   516	Company:    Arun Bhalla Software (a.k.a. ARUNSOFT)
+   517	Email:      abhalla@imsa.edu, abhalla@aol.com
+   518	WWW:
+   519	Address:    6744 Breckenridge Road, Lisle, IL 60532-3409, USA
+   520	Voice:      (708) 961-5678 <home>   (708) 907-5605 <school>
+   521	BBS:        (708) 961-5678  (call voice first)
+   522	Fax:        (708) 961-5678  (call voice first)
+   523	Other info:
+   524	
+   525	
+   526	Key:        Bixler, Roy
+   527	Author:     Roy Bixler
+   528	Program:    directory-oriented copy and find duplicate files utils.
+   529	Company:   
+   530	Email:      as327@cleveland.freenet.edu
+   531	WWW:
+   532	Address:    19 Acorn Dr., Hawthorn Woods, IL 60047, USA
+   533	Voice:      (708) 438-9361
+   534	BBS:       
+   535	Fax:       
+   536	Other info: There are also Atari ST versions of above utils.
+   537	
+   538	
+   539	Key:        Blackman, Adrian
+   540	Author:     Adrian J. Blackman
+   541	Program:    Torganal simulation of qualitative organic analysis
+   542	Company:
+   543	Email:      Adrian.Blackman@chem.utas.edu.au
+   544	WWW:
+   545	Address:    Chem Dept, Uni of Tasmania, Hobart, Tas., Australia
+   546	Voice:      61 02202183
+   547	BBS:       
+   548	Fax:        61 02234074
+   549	Other info:
+   550	
+   551	
+   552	Key:        Blum, Christian
+   553	Author:     Christian Blum
+   554	Program:    READ, An advanced MS-DOS text file browser
+   555	Company:   
+   556	Email:      chbl@stud.uni-sb.de chris@phil15.uni-sb.de
+   557	WWW:
+   558	Address:    Friedrich-Ebert-Str. 50, 66578 Heiligenwald, Germany
+   559	Voice:      +49 +6821 67476
+   560	BBS:       
+   561	Fax:        same as voice, please contact me first
+   562	Other info:
+   563	
+   564	
+   565	Key:        Bodoh, Daniel
+   566	Author:     Daniel Bodoh
+   567	Program:    DV System Information - Unix-ish utilities for DESQview
+   568	Company:    University of Wisconsin, ECE grad student
+   569	Email:      bodoh@xraylith.wisc.edu
+   570	WWW:
+   571	Address:    1402 Regent #417, Madison WI USA 53711-2244
+   572	Voice:      (608) 255-3574
+   573	BBS:
+   574	Fax:
+   575	Other info: Edits DESQview FAQ list, avail. on SIMTEL as DVFAQx.ZIP
+   576	
+   577	
+   578	Key:        Boer (de Boer), Berend
+   579	Author:     Berend de Boer
+   580	Program:    PtGen, TurboVision screen generator
+   581	Company:    Nederware
+   582	Email:      berend@beard.nest.nl, CIS 100120,3121, FidoNet 2:281/527.23
+   583	WWW:
+   584	Address:    Burgerstraat 22, 5311 CX Gameren, Netherlands
+   585	Voice:      31-4186-1992
+   586	BBS:
+   587	Fax:
+   588	Other info:
+   589	
+   590	
+   591	Key:        Bohanec, Marko
+   592	Author:     Marko Bohanec
+   593	Program:    GarboIDX V2.0+ Create SimTel-compatible GARBO.IDX
+   594	Company:    Institut Jozef Stefan
+   595	Email:      marko.bohanec@ijs.si
+   596	WWW:
+   597	Address:    Jamova 39, SI-61000 Ljubljana, Slovenia
+   598	Voice:      +386 61 1259-199
+   599	BBS:       
+   600	Fax:        +386 61 219-385, +386 61 1258-058
+   601	Other info:
+   602	
+   603	
+   604	Key:        Bondono, Jeff
+   605	Author:     Jeffrey (Jeff) Bondono
+   606	Program:    Our Cosmohood (a 3d view of the nearest 2300 galaxies)
+   607	Company:    Bondono Software
+   608	Email:      ah314@detroit.freenet.org
+   609	WWW:
+   610	Address:    51054 Kingwood / Shelby Twp, MI 48316-4524 / USA
+   611	Voice:      (810) 731-4706
+   612	BBS:
+   613	Fax:        (810) 731-3143
+   614	Other info:
+   615	
+   616	
+   617	Key:        Brandstrom, Peter
+   618	Author:     Peter Brandstrom
+   619	Program:    TVToys, Turbo Vision help and video goodies, BP source
+   620	Company:   
+   621	Email:      d91-pbr@nada.kth.se
+   622	WWW:
+   623	Address:    Roslagsg 10, S-113 55 Stockholm, Sweden Europe
+   624	Voice:      +46 8 612 42 23
+   625	BBS:
+   626	Fax:       
+   627	Other info:
+   628	
+   629	
+   630	Key:        Branson, Don
+   631	Author:     Don Branson
+   632	Program:    EVENTMAN Set up and run programs un-attended
+   633	Company:    Simian Id Software
+   634	Email:      BITNET: C08922DB@WUVMD
+   635	WWW:
+   636	Address:    P.O. Box 430011, St. Louis, Mo. 63143, USA
+   637	Voice:      (314) 781-8709
+   638	BBS:
+   639	Fax:
+   640	Other info: TSR version for registered users.
+   641	
+   642	
+   643	Key:        Breuer, Richard
+   644	Author:     Richard (Ricki) Breuer
+   645	Program:    RUTILS several DOS utilities
+   646	Company:    ComConsult Kommunikationstechnik GmbH
+   647	Email:      ricki@pool.informatik.rwth-aachen.de
+   648	WWW:
+   649	Address:    Pascalstrasse 25, 5100 Aachen, Germany, Europe
+   650	Voice:      +49 2408 149118
+   651	BBS:       
+   652	Fax:        +49 2408 149149
+   653	Other info:
+   654	
+   655	
+   656	Key:        Bridges, John
+   657	Author:     John Bridges
+   658	Program:    VGAKIT SVGA Programming Kit (freeware)
+   659	Company:
+   660	Email:      75300.2137@compuserve.com
+   661	WWW:
+   662	Address:    2810 Serang Place, Costa Mesa, Ca. 92626, USA
+   663	Voice:
+   664	BBS:
+   665	Fax:
+   666	Other info: is the author of GRASP published by Paul Mace Software
+   667	
+   668	
+   669	Key:        Brown, David
+   670	Author:     David Brown
+   671	Program:    MDB - Music Database/Tape Layout
+   672	Company:    St.Mary's University, Math/Comp.Sci. Dept.
+   673	Email:      dbrown@husky1.stmarys.ca, dbrown@shark.stmarys.ca
+   674	WWW:
+   675	Address:    Halifax, NS, Canada  B3H 3C3
+   676	Voice:      (902)420-5893
+   677	BBS:        
+   678	Fax:        (902)420-5266
+   679	Other info:
+   680	
+   681	
+   682	Key:        Brown, Keith S.
+   683	Author:     Keith S. Brown
+   684	Program:    KPPF (Keith's Preferred Pascal Format)
+   685	Company:    NASA/JSC/ES64
+   686	Email:      brownk@samnet.jsc.nasa.gov
+   687	WWW:
+   688	Address:    Houston, TX 77058 (USA)
+   689	Voice:      713-483-8952
+   690	BBS:       
+   691	Fax:        713-486-2162
+   692	Other info: Builds tools (mostly MechEng or Software)
+   693	
+   694	
+   695	Key:        Brown, Ralf
+   696	Author:     Ralf Brown
+   697	Program:    MS-DOS Interrupt List; SPAWNO spawn() replacement
+   698	Company:   
+   699	Email:      ralf@telerama.lm.com
+   700	WWW:
+   701	Address:    813 Copeland Way Suite 26, Pittsburgh, PA 15232, USA
+   702	Voice:     
+   703	BBS:       
+   704	Fax:       
+   705	Other info: Also distributes a number of DESQview-aware programs
+   706	
+   707	
+   708	Key:        Bruce, Robert
+   709	Author:     Robert (Bob) Bruce
+   710	Program:    Msdos/Windows/Mac/Amiga/Unix CD-ROMs (incl SIMTEL20, Garbo)
+   711	Company:    Walnut Creek CDROM
+   712	Email:      rab@cdrom.com
+   713	WWW:
+   714	Address:    1547 Palos Verdes Mall, Suite 260, Walnut Creek, CA 94596, USA
+   715	Voice:      +1 510 947-5996 / +1 800 786-9907 Toll Free (US/Can only)
+   716	BBS:
+   717	Fax:        +1 510 947-1644
+   718	Other info: Many CDROM titles available.  Phone/Fax/email for free catalog.
+   719	
+   720	
+   721	Key:        Brucker, Fred P.
+   722	Author:     Fred P. Brucker
+   723	Program:    {COMMO} High performance telecomm program
+   724	Company:    New Standard Software
+   725	Email:      71021.356@compuserve.com
+   726	WWW:
+   727	Address:    P.O. Box 141537, Columbus, OH 43214, USA
+   728	Voice:      (614) 326-1309
+   729	BBS:        (718) 444-4555
+   730	Fax:
+   731	Other info:
+   732	
+   733	
+   734	Key:        Brzezinski, Andrzej
+   735	Author:     Andrzej Brzezinski
+   736	Program:    VED - Vision Edit text editor with mouse support
+   737	Company:    University of Manitoba
+   738	Email:      umbrzez0@silver.cs.umanitoba.ca
+   739	WWW:
+   740	Address:    308-70 Garry St., Winnipeg, MB, R3C 3J9, CANADA
+   741	Voice:      (204) 943-4020
+   742	BBS:
+   743	Fax:
+   744	Other info:
+   745	
+   746	
+   747	Key:        Buerg, Vernon
+   748	Author:     Vernon D. Buerg
+   749	Program:    LIST A File Viewing and Browsing Utility
+   750	Company:
+   751	Email:      70007.1212@compuserve.com
+   752	WWW:
+   753	Address:    139 White Oak Circle, Petaluma, CA 94952, USA
+   754	Voice:
+   755	BBS:        (707) 778-8944, (707) 778-8841, (415) 994-2944
+   756	Fax:        (707) 778-8728 For orders only
+   757	Other info:
+   758	
+   759	
+   760	Key:        Burfitt, Kevin
+   761	Author:     Kevin (Zaph) Burfitt
+   762	Program:    Cthugha - Oscilliscope on Acid for SB/GUS (Audio Visual)
+   763	Company:    Torps Productions
+   764	Email:      zaph@torps.apana.org.au
+   765	WWW:
+   766	Address:    P.O. Box 331, Richmond 3121, Melbourne, Australia
+   767	Voice:      (not published)
+   768	BBS:        +613-813-3688
+   769	Fax:        (not published)
+   770	Other info:
+   771	
+   772	
+   773	Key:        Burke, Christopher
+   774	Author:     Christopher (Chris) Burke
+   775	Program:    TurboVision in Graphics mode (Pas/C++)
+   776	Company:    MindWare
+   777	Email:      clb@prism.mindware.brisnet.org.au
+   778	WWW:
+   779	Address:    P.O. Box 1247, Carindale, Qld, 4152, Australia
+   780	Voice:      +61-7-398-4000
+   781	BBS:        +61-7-398-4200
+   782	Fax:        +61-7-398-4200
+   783	Other info: Fidonet 3:640/307
+   784	
+   785	
+   786	Key:        Button, Jim
+   787	Author:     Jim Knopf (formerly aka Jim Button)
+   788	Program:    PC-File, buttonFile, NEWPAPER, Medley, PC-Calc
+   789	Company:    formerly ButtonWare, Inc.
+   790	Email:      jknopf@ix.netcom.com
+   791	WWW:
+   792	Address:
+   793	Voice:
+   794	BBS:
+   795	Fax:        (206)836-0633
+   796	Other info: The "Father of Shareware". Retired.
+   797	            Founding member of ASP and its first chairman.
+   798	
+   799	
+   800	Key:        Caine, Tony
+   801	Author:     Tony Caine
+   802	Program:    2COL/JETCOL 1-6 column copmressed print for all printers
+   803	Company:    ARCaine Technology
+   804	Email:      arcaine@holonet.net,  72614.1451@compuserve.com
+   805	WWW:
+   806	Address:    960 Neilson St, Albany, CA 94706, USA
+   807	Voice:      (510) 527-9859
+   808	BBS:
+   809	Fax:
+   810	Other info:
+   811	
+   812	
+   813	Key:        Camp, David
+   814	Author:     David J. Camp
+   815	Program:    mailbin
+   816	Company:
+   817	Email:      david%campfire@wupost.wustl.edu
+   818	WWW:
+   819	Address:    6103 Charlotte Avenue, St. Louis, MO 63120-1201
+   820	Voice:      +1 314 382 0584
+   821	BBS:
+   822	Fax:
+   823	Other info: last release is called xxinstal.bat
+   824	
+   825	
+   826	Key:        Carapetis, Paul
+   827	Author:     Paul Carapetis
+   828	Program:    PCPS Postscript printing program for DOS and OS2
+   829	Company:    MicroSource
+   830	Email:      Paul_Carapetis@au.wang.com
+   831	WWW:
+   832	Address:    102 Allister Ave, Knoxfield, Australia, 3180.
+   833	Voice:      61-3-7632424
+   834	BBS:
+   835	Fax:
+   836	Other info: Also author of MicroSource utilities (MSUTILxx.ZIP)
+   837	
+   838	
+   839	Key:        Carlyle, Jeffrey
+   840	Author:     Jeffrey Carlyle
+   841	Program:    comp.os.msdos.programmer FAQ
+   842	Company:    Perplexic Software
+   843	Email:      Jeffrey.Carlyle@BGAMUG.COM
+   844	WWW:
+   845	Address:    297 Meadowlark Trail, Bowling Green, KY 42101 USA
+   846	Voice:      +1 502 781-7884
+   847	BBS:        +1 502 843-2120
+   848	Fax:
+   849	Other info:
+   850	
+   851	
+   852	Key:        Carter, Simon
+   853	Author:     Simon A. Carter
+   854	Program:    LAUNCH PC menu,mouse/short cuts/help/multi-user/security
+   855	Company:    Crystal Software
+   856	Email:      simonc@bruce.cs.monash.edu.au
+   857	WWW:        http://www.cs.monash.edu.au/~simonc
+   858	Address:    14 Canterbury Rd, Heathmont, Victoria 3135, AUSTRALIA
+   859	Voice:      +61-3-9720-8558
+   860	BBS:
+   861	Fax:        +61-3-9729-8836
+   862	Other info: Latest version of Launch available from WWW home page
+   863	
+   864	
+   865	Key:        Centanni, Nicholas
+   866	Author:     Nicholas Centanni
+   867	Program:    Night Bird, 3D animation screen saver of Bird in Flight
+   868	Company:    Magnum Opus Studios
+   869	Email:      nickc@netcom.com
+   870	WWW:
+   871	Address:    15466 L.G. Blvd., Suite 109-060, Los Gatos, CA 95032 USA
+   872	Voice:      (408) 236-2264
+   873	BBS:       
+   874	Fax:       
+   875	Other info:
+   876	
+   877	
+   878	Key:        Chin, John
+   879	Author:     J.R. Lee Chin (John)
+   880	Program:    GIF Commentor v1.1
+   881	Company:    SoftView
+   882	Email:      psjrl@wombat.newcastle.edu
+   883	WWW:
+   884	Address:    P.O. Box 35, Cooranbong 2265 N.S.W. Australia
+   885	Voice:      61-49-215077
+   886	BBS:
+   887	Fax:
+   888	Other info:
+   889	
+   890	
+   891	Key:        Chinook Software
+   892	Author:     Chinook Software
+   893	Program:    ATK Analyst's Tool Kit (data flow diagrams)
+   894	Company:    Chinook Software
+   895	Email:      mschwart@nyx.cs.du.edu
+   896	WWW:
+   897	Address:    P. O. Box 24536, Denver, Colorado 80224, USA
+   898	Voice:
+   899	BBS:
+   900	Fax:
+   901	Other info: Email contact: Michael Schwartz
+   902	
+   903	
+   904	Key:        Clarke, Daryl
+   905	Author:     Daryl Clarke
+   906	Program:    NewPet - Geochemical/Igneous Petrology Modelling Program
+   907	Company:    Memorial Univ. of Nfld., Dept. of Earth Sciences
+   908	Email:      daryl@garfield.cs.mun.ca
+   909	WWW:
+   910	Address:    St.John's, NF, A1B 3X5, Canada
+   911	Voice:      (709) 737 8346 or 737 8142
+   912	BBS:
+   913	Fax:        (709) 737 2589
+   914	Other info: FTP site - sparky2.esd.mun.ca (134.153.11.101)
+   915	
+   916	
+   917	Key:        Coast to Coast
+   918	Author:     Coast to Coast Telecommunications, Inc.
+   919	Program:    MS-DOS/Windows CD-ROM (SimTel Software Repository)
+   920	Company:    Coast to Coast Telecommunications, Inc.
+   921	Email:      cdrom@Mail.Coast.NET
+   922	WWW:        WWW Info and Forms Interface: http://www.coast.net/SimTel/
+   923	Address:    5850 Dixie Highway, Clarkston, MI 48346, U.S.A.
+   924	Voice:      (800) 536-3373 (toll free, U.S.A./Canada)  or  (810) 623-6700
+   925	BBS:
+   926	Fax:        (810) 623-1469
+   927	Other info: 
+   928	
+   929	
+   930	Key:        Collins, Adrian
+   931	Author:     Adrian (Ade) Collins
+   932	Program:    QT-QUOTE Versatile Fortune Cookie Program
+   933	Company:
+   934	Email:      ade@mcc.ac.uk
+   935	WWW:
+   936	Address:    70 Broad Oak Lane, Didsbury, Manchester M20 0GG, UK
+   937	Voice:      (daytime) +44 61-275-6009  (home) +44 61-434-3484
+   938	BBS:
+   939	Fax:        +44 61-275-6040
+   940	Other info:
+   941	
+   942	
+   943	Key:        Colucci, Michael
+   944	Author:     Michael Colucci
+   945	Program:    The Invoice Store 3.1
+   946	Company:    Software Store Products, Inc.
+   947	Email:      SoftwStore@aol.com
+   948	WWW:
+   949	Address:    PO Box 562, Oakdale, NY 11769, USA
+   950	Voice:      (516)244-6927
+   951	BBS:        (516)589-4984
+   952	Fax:        (516)567-5563
+   953	Other info:
+   954	
+   955	
+   956	Key:        Conrad, David
+   957	Author:     David (Dave) Conrad
+   958	Program:    XSUM checksumming utilities
+   959	Company:    Moore Computing
+   960	Email:      ab411@detroit.freenet.org
+   961	WWW:
+   962	Address:    432 Alter Rd., Detroit, MI 48215-3105, USA
+   963	Voice:      (313) 824-6111
+   964	BBS:
+   965	Fax:
+   966	Other info: David_Conrad@mts.cc.wayne.edu address is defunct
+   967	
+   968	
+   969	Key:        Corbier, Daniel
+   970	Author:     Daniel Corbier
+   971	Program:    Ucalc, Ultimate Calculator, math expression evaluator
+   972	Company:
+   973	Email:      corbier@delphi.com
+   974	WWW:
+   975	Address:    11670 Ne 20th Drive, Miami FL 33181, USA
+   976	Voice:
+   977	BBS:
+   978	Fax:
+   979	Other info: Finger corbier@andrews.edu for up-to-date info on Ucalc
+   980	
+   981	
+   982	Key:        Coyote Data
+   983	Author:     Coyote Data, Ltd.
+   984	Program:    MS-DOS/Windows CD-ROM (SIMTEL20)
+   985	Company:    Coyote Data, Ltd.
+   986	Email:      71756.444@CompuServe.COM  or  CIS 71756,444
+   987	WWW:
+   988	Address:    1142 N. Main, Rochester, MI 48307, USA
+   989	Voice:      (800) 451-7093 (toll free)  or  (313) 656-8265
+   990	BBS:
+   991	Fax:        (313) 651-4071
+   992	Other info: Phone, email, or FAX for additional information.
+   993	
+   994	
+   995	Key:        Datawatch
+   996	Author:     Datawatch
+   997	Program:    Virex Anti-Viral Program for the PC
+   998	Company:    Datawatch Corporation
+   999	Email:      info@datawatch.com
+  1000	WWW:
+  1001	Address:    3700 Lyckan Parkway, Durham, NC 27707 USA
+  1002	Voice:      (919) 490-1277
+  1003	BBS:        (919) 419-1602
+  1004	Fax:        (919) 490-6672
+  1005	Other Info: All Datawatch Products are available retail as well.
+  1006	
+  1007	
+  1008	Key:        Davies, Robert
+  1009	Author:     Robert Davies
+  1010	Program:    newmat07: a matrix manipulation library for C++
+  1011	Company:    RDMC
+  1012	Email:      robertd@kauri.vuw.ac.nz
+  1013	WWW:
+  1014	Address:    16 Gloucester Street, Wilton, Wellington, New Zealand
+  1015	Voice:
+  1016	BBS:
+  1017	Fax:
+  1018	Other info:
+  1019	
+  1020	
+  1021	Key:        Davis, Gayle
+  1022	Author:     Mr. Gayle Davis
+  1023	Program:    SWAG (Sourceware Archival Group)
+  1024	Company:    NONE
+  1025	Email:      72067.2726@compuserve.com
+  1026	WWW:
+  1027	Address:
+  1028	Voice:      (219) 875-8811
+  1029	BBS:        (219) 875-8133
+  1030	Fax:        N/A
+  1031	Other Info: SWAG is a huge library of PASCAL snippets collected
+  1032	            from PC networks worldwide.
+  1033	
+  1034	
+  1035	Key:        Dell, Thomas
+  1036	Author:     Thomas E Dell
+  1037	Program:    Waffle - WAFxxx.ZIP
+  1038	Company:    Darkside International
+  1039	Email:      dell@vox.darkside.com
+  1040	WWW:
+  1041	Address:    PO Box 4436, Mountain View CA 94040 USA
+  1042	Voice:
+  1043	BBS:        1-(408) 245-SPAM
+  1044	Fax:
+  1045	Other info:
+  1046	
+  1047	
+  1048	Key:        Derbyshire, Andrew
+  1049	Author:     Andrew H. Derbyshire
+  1050	Program:    UUPC/extended - E-mail for DOS, OS/2, and Windows/NT
+  1051	Company:    Kendra Electronic Wonderworks
+  1052	Email:      help@kew.com
+  1053	WWW:
+  1054	Address:    P.O. Box 132, Arlington, MA 02174-0002 USA
+  1055	Voice:      617-641-3739
+  1056	BBS:        617-641-4817 (anonymous UUCP; send mail to help@kew.com)
+  1057	Fax:       
+  1058	Other info: Prime internet archive is ftp.clarkson.edu
+  1059	
+  1060	
+  1061	Key:        Derr, James
+  1062	Author:     James (Jim) Derr
+  1063	Program:    SHEZ Compression Companion
+  1064	Company:    California Software Design
+  1065	Email:      jim.derr@spacebbs.com, 76266.2634@compuserve.com
+  1066	WWW:
+  1067	Address:    P.O. Box 15248, Santa Rosa, Ca. 95402, USA
+  1068	Voice:      (707) 575-9868
+  1069	BBS:        (707) 538-8710
+  1070	Fax:
+  1071	Other info:
+  1072	
+  1073	
+  1074	Key:        Dhesi, Rahul
+  1075	Author:     Rahul Dhesi
+  1076	Program:    ZOO manipulate archives of files in compressed form
+  1077	Company:
+  1078	Email:      dhesi@cirrus.com
+  1079	WWW:
+  1080	Address:
+  1081	Voice:
+  1082	BBS:
+  1083	Fax:
+  1084	Other info:
+  1085	
+  1086	
+  1087	Key:        Dickson, Mike
+  1088	Author:     Mike Dickson
+  1089	Program:    PANTHER Communications Software
+  1090	Company:    Black Cat Software Factory
+  1091	Email:      mike.dickson@almac.co.uk
+  1092	WWW:
+  1093	Address:    10 Stoneybank Terrace,Musselburgh,Midlothian,SCOTLAND,EH216NL
+  1094	Voice:      031-653-6124
+  1095	BBS:
+  1096	Fax:        031-653-6124
+  1097	Other info:
+  1098	
+  1099	
+  1100	Key:        Dight, David
+  1101	Author:     David L. Dight
+  1102	Program:    XED A Unique HEX/Binary File Editor
+  1103	Company:
+  1104	Email:      davidd@interconnect.com.au, 100033.2563@compuserve.com
+  1105	WWW:
+  1106	Address:    PO Box 280, Kings Cross N.S.W. 2011 AUSTRALIA
+  1107	Voice:      +61 2 331 4521
+  1108	BBS:
+  1109	Fax:        +61 2 233 2929
+  1110	Other info:
+  1111	
+  1112	
+  1113	Key:        DiVecchio, Mark
+  1114	Author:     Mark DiVecchio
+  1115	Program:    PC-VT VT100/4014 PC Based Terminal Emulator
+  1116	Company:    Athena Systems Development Group
+  1117	Email:      markd@silogic.uucp
+  1118	WWW:
+  1119	Address:    9888 Carroll Center Road Suite 113, San Diego, CA 92126 USA
+  1120	Voice:      (619) 549-9841
+  1121	BBS:        (619) 549-3927
+  1122	Fax:        (619) 549-9833
+  1123	Other info: Also the Author of LPTx, A Line Printer Capture Program
+  1124	
+  1125	
+  1126	Key:        Dobb's, Journal
+  1127	Author:     Dr. Dobb's Magazine
+  1128	Program:    Dr. Dobb's Magzine articles
+  1129	Company:
+  1130	Email:      76704.50@CompuServe.COM
+  1131	WWW:
+  1132	Address:
+  1133	Voice:
+  1134	BBS:        Dr. Dobb's BBS
+  1135	Fax:
+  1136	Other info:
+  1137	
+  1138	
+  1139	Key:        Duby, Philippe
+  1140	Author:     Philippe Duby
+  1141	Program:    DKI disk analyser
+  1142	Company:    Alter Ego
+  1143	Email:      duby@zen.dedal.fr.net, 73551,1561@compuserve.com
+  1144	WWW:
+  1145	Address:    7 Rue Jules Valles, 69100 Villeurbanne, France
+  1146	Voice:      (33) 78.24.47.71
+  1147	BBS:
+  1148	Fax:        (33) 78.52.47.76
+  1149	Other info:
+  1150	
+  1151	
+  1152	Key:        Doupnik, Joe
+  1153	Author:     Prof. Joe R. Doupnik of Utah State University
+  1154	Program:    MsKermit
+  1155	Company:    Kermit Distribution, Columbia University Center for
+  1156	            Computing Activities, New York, USA
+  1157	Email:      jrd@cc.usu.edu
+  1158	WWW:
+  1159	Address:
+  1160	Voice:
+  1161	BBS:
+  1162	Fax:
+  1163	Other info:
+  1164	
+  1165	
+  1166	Key:        Duentsch, Ivo
+  1167	Author:     Ivo Duentsch
+  1168	Program:    Numbers, a utility for number theoretical functions
+  1169	Company:    Universitaet Osnabrueck
+  1170	Email:      duentsch@triton.rz.uni-osnabrueck.de
+  1171	WWW:
+  1172	Address:    Rechenzentrum, 49069 Osnabrueck, Germany
+  1173	Voice:      (+49) 541 - 969 2346
+  1174	BBS:
+  1175	Fax:        (+49) 541 - 969 2470
+  1176	Other info:
+  1177	
+  1178	
+  1179	Key:        Dumdei, Mike
+  1180	Author:     Mike Dumdei
+  1181	Program:    TXZM Zmodem Driver, MCOMM Async Lib
+  1182	Company:    MCOMM Software
+  1183	Email:      mdumdei@darkstar.swsc.k12.ar.us, mdumdei@aol.com
+  1184	WWW:
+  1185	Address:    6 Holly Lane, Texarkana, TX 75503, USA
+  1186	Voice:      903-838-8307
+  1187	BBS:        903-838-6713
+  1188	Fax:
+  1189	Other info:
+  1190	
+  1191	
+  1192	Key:        Durward, Jon
+  1193	Author:     Jonathan G. Durward
+  1194	Program:    Hex Binary File Editor (with mouse support)
+  1195	Company:    JD Software
+  1196	Email:      jgdurwar@uwaterloo.ca
+  1197	WWW:
+  1198	Address:    258 Lester St, Waterloo, Ontario, Canada, N2L 3W5
+  1199	Voice:      (519) 884-9749
+  1200	BBS:
+  1201	Fax:
+  1202	Other info:
+  1203	
+  1204	
+  1205	Key:        Edwards, Larry
+  1206	Author:     Larry T. Edwards
+  1207	Program:    4FILES file manager, annotator & launcher for 4DOS/NDOS
+  1208	Company:    Hand-Crafted Software
+  1209	Email:      72037.3607@compuserve.com
+  1210	WWW:
+  1211	Address:    Box 6001, Sitka, Alaska 99835 USA
+  1212	Voice:      (907) 747-8996
+  1213	BBS:
+  1214	Fax:        (907) 747-4801
+  1215	Other info:
+  1216	
+  1217	
+  1218	Key:        Efros, Alexei
+  1219	Author:     Alexei (Alyosha) Efros
+  1220	Program:    Melody Master - music editor & programming tool
+  1221	Company:
+  1222	Email:      efros@peruvian.cs.utah.edu
+  1223	WWW:        http://www.cs.utah.edu/~efros
+  1224	Address:    1125 E. 200 S. #2, Salt Lake City, Utah 84102, USA
+  1225	Voice:      (801) 531-9320
+  1226	BBS:
+  1227	Fax:
+  1228	Other info:
+  1229	
+  1230	
+  1231	Key:        Elber, Gershon
+  1232	Author:     Gershon Elber
+  1233	Program:    GIFLIB, IRIT solid modeller, EEDRAW EE drawing package.
+  1234	Company:
+  1235	Email:      gershon@gr.cs.utah.edu
+  1236	WWW:
+  1237	Address:    #918 university village, S.L.C., UT 84108, USA
+  1238	Voice:      (801) 582-1807
+  1239	BBS:
+  1240	Fax:
+  1241	Other info:
+  1242	
+  1243	
+  1244	Key:        Engelmann, Eric
+  1245	Author:     Eric Engelmann
+  1246	Program:    Technical Shareware CDROMs and Directories
+  1247	Company:    EMS Professional Shareware
+  1248	Email:      eengelmann@worldbank.org
+  1249	WWW:        http://www.paltech.com/ems/ems.htm
+  1250	Address:    4505 Buckhurst Ct., Olney MD 20832-1830, USA
+  1251	Voice:      +1(301)924-3594
+  1252	BBS:        +1(301)774-1486
+  1253	Fax:        +1(301)774-1486
+  1254	Other info: 
+  1255	
+  1256	
+  1257	Key:        Eradus, Richard
+  1258	Author:     Richard Eradus
+  1259	Program:    TGIF graphical file viewer (gif/pcx/bmp/fli)
+  1260	Company:    Tashcom software
+  1261	Email:      Rpe@euronet.nl / rpe@dds.nl
+  1262	WWW:
+  1263	Address:    Dahliastraat 66e, 3073 BE , Rotterdam, The Netherlands
+  1264	Voice:      +31-10-4845295
+  1265	BBS:        Maasstad bbs +31-10-4862184
+  1266	Fax:
+  1267	Other info:
+  1268	
+  1269	
+  1270	Key:        Evsikov, Igor
+  1271	Author:     Igor Ivanovich Evsikov
+  1272	Program:    RSC Resident Scientific Calculator
+  1273	Company:    Join Institute of Nuclear Research
+  1274	Email:      evsikov@lcta5.jinr.dubna.su
+  1275	WWW:
+  1276	Address:    P.O. Box 79, Head Post Office Moscow 101000 Russia
+  1277	Voice:      (221) 4-52-09
+  1278	BBS:       
+  1279	Fax:       
+  1280	Other info:
+  1281	
+  1282	
+  1283	Key:        Farfan, Daniel
+  1284	Author:     Daniel (Dan) Farfan
+  1285	Program:    The Sound Board V2. Software for the EYES & EARS
+  1286	Company:    Automated Education, Inc.
+  1287	Email:      p00249@psilink.com
+  1288	WWW:
+  1289	Address:    PO BOX 42284 Phoenix, AZ 85080-2284 USA
+  1290	Voice:      (602) 973-2790
+  1291	BBS:
+  1292	Fax:
+  1293	Other info: Download 1sboard2.zip for info. about 1-Levelware!
+  1294	
+  1295	
+  1296	Key:        Faulks, Neil
+  1297	Author:     Neil Faulks
+  1298	Program:    E4 - Protean Text Editor
+  1299	Company:
+  1300	Email:      neil@dcs.kcl.ac.uk
+  1301	WWW:
+  1302	Address:    28 Clickett Hill, Basildon, Essex, England, UK. SS14 1NW
+  1303	Voice:      +44 71 873 2007
+  1304	BBS:       
+  1305	Fax:       
+  1306	Other info:
+  1307	
+  1308	
+  1309	Key:        Feldmann, Harald
+  1310	Author:     Harald Feldmann
+  1311	Program:    HAP (R) 3.00 Archiver by Hamarsoft (R)
+  1312	Company:    Hamarsoft (R)
+  1313	Email:      harald.feldmann@almac.co.uk
+  1314	WWW:
+  1315	Address:    P.o. box 451, 6400 AL  Heerlen, The Netherlands
+  1316	Voice:      NOT PUBLIC, please send e-mail if you want it private.
+  1317	BBS:
+  1318	Fax:
+  1319	Other info: New release 3.14e is available for registered users
+  1320	
+  1321	
+  1322	Key:        Forsberg, Chuck
+  1323	Author:     Chuck Forsberg
+  1324	Program:    ZMODEM
+  1325	Company:    Omen Technology Inc
+  1326	Email:      caf@omen.COM, 70007.2304@compuserve.com
+  1327	WWW:
+  1328	Address:    Post Office Box 4681, Portland OR  97208-4681, U.S.A.
+  1329	Voice:      503-621-3406
+  1330	BBS:        503-621-3746
+  1331	Fax:        503-621-3735
+  1332	Other info:
+  1333	
+  1334	
+  1335	Key:        Foy, Jeffery
+  1336	Author:     Jeffery (Jeff) Foy
+  1337	Program:    QWK2TXT - Converts QWK mail packets to ASCII text
+  1338	Company:    Jiffy Software
+  1339	Email:      jfoy@glia.biostr.washington.edu
+  1340	WWW:
+  1341	Address:    14509-8th N.E., Seattle, WA 98155-6945, USA
+  1342	Voice:      (206) 362-8158
+  1343	BBS:        (206) 939-7876
+  1344	Fax:       
+  1345	Other info:
+  1346	
+  1347	
+  1348	Key:        Franchi, Maurizio
+  1349	Author:     Maurizio Franchi
+  1350	Program:    PROFinance, complete financial calculations program
+  1351	Company:
+  1352	Email:      maurizio.franchi@galactica.it
+  1353	WWW:
+  1354	Address:    Casella Postale 24, 25075 Nave, BRESCIA, Italy
+  1355	Voice:
+  1356	BBS:
+  1357	Fax:
+  1358	Other info:
+  1359	
+  1360	
+  1361	Key:        Frandsen, Jesper
+  1362	Author:     Jesper Frandsen
+  1363	Program:    PCXDUMP. TSR screen capture.
+  1364	Company:
+  1365	Email:      jesperf@daimi.aau.dk
+  1366	WWW:
+  1367	Address:    c/o B. Frandsen, Duedalen 1, 5492 Vissenbjerg, DENMARK.
+  1368	Voice:      009-45-86195460
+  1369	BBS:
+  1370	Fax:
+  1371	Other info:
+  1372	
+  1373	
+  1374	Key:        Freiss, Martin
+  1375	Author:     Martin Freiss
+  1376	Program:    PCElm   Mail user agent for NOS, UUPC, or other MTAs
+  1377	Company:    private
+  1378	Email:      freiss.pad@sni.de
+  1379	WWW:
+  1380	Address:    Muehlenfloessstr. 60, D-W4792 Bad Lippspringe, Germany
+  1381	Voice:
+  1382	BBS:
+  1383	Fax:
+  1384	Other info:
+  1385	
+  1386	
+  1387	Key:        Fubar Systems
+  1388	Author:     Christopher J. Ambler
+  1389	Program:    FSUUCP communication utility
+  1390	Company:    Fubar Systems
+  1391	Email:      cambler@zeus.calpoly.edu, chris@fubarsys.com
+  1392	WWW:
+  1393	Address:    1344 Madonna Road, Suite 242, San Luis Obispo, Ca, 93405 USA
+  1394	Voice:      (805) 542-0336
+  1395	BBS:        (805) 53-FUBAR (543-8227)
+  1396	Fax:
+  1397	Other info:
+  1398	
+  1399	
+  1400	Key:        Gadegast, Frank
+  1401	Author:     Frank Gadegast
+  1402	Program:    GNU-DOS-port of the SECMPEG-security-utility for MPEG
+  1403	Company:    PHADE Software
+  1404	Email:      phade@contrib.de
+  1405	WWW:
+  1406	Address:    Leibnizstr. 30, 10625 Berlin, GERMANY
+  1407	Voice:      (030) 312 81 03
+  1408	BBS:
+  1409	Fax:        (030) 312 81 03  Fax only part-time available !!!
+  1410	Other info: Archivename: mpeg2p11.zip
+  1411	
+  1412	
+  1413	Key:        Gallias, Michael
+  1414	Author:     Michael Gallias
+  1415	Program:    Mod Editor and Units for Borland Pascal
+  1416	Company:
+  1417	Email:      gallias@iafrica.com
+  1418	Address:    P O Box 51231, Musgrave Road, 4062, South Africa
+  1419	Voice:
+  1420	BBS:
+  1421	Fax:
+  1422	Other info:
+  1423	
+  1424	
+  1425	Key:        Garcia, Ciriaco
+  1426	Author:     Ciriaco Garcia de Celis
+  1427	Program:    2M high capacity diskette format application
+  1428	Company:
+  1429	Email:      ciri@gui.uva.es, Fidonet 2:341/21.8
+  1430	WWW:
+  1431	Address:    C/Renedo, 2, 4-C; 47005 Valladolid; Spain
+  1432	Voice:
+  1433	BBS:        +34 -83 -307574 (16k8)
+  1434	Fax:
+  1435	Other info:
+  1436	
+  1437	
+  1438	Key:        Geeslin, Robert
+  1439	Author:     Robert Geeslin
+  1440	Program:    TIGER TRANSFER reads Census TIGER/Line & creates MapInfo
+  1441	Company:    OSU-COM
+  1442	Email:      GEESLIN@VMS.OCOM.OKSTATE.EDU
+  1443	WWW:
+  1444	Address:    Clinic Bldg, 2345 Southwest Blvd, Tulsa, OK 74107, USA
+  1445	Voice:      918-582-2681x205
+  1446	BBS:
+  1447	Fax:
+  1448	Other info: Creates MBI files for MapInfo Import Utility (required)
+  1449	
+  1450	
+  1451	Key:        Geiser, Wayne
+  1452	Author:     Wayne Geiser
+  1453	Program:    On This Day - What happened on this day in history?
+  1454	Company:    The Software Construction Co.
+  1455	Email:      softcons@world.std.com   70313.3615@compuserve.com
+  1456	WWW:
+  1457	Address:    PO Box 160, N Billerica, MA  01862-0160 USA
+  1458	Voice:      (508) 851-6204
+  1459	BBS:
+  1460	Fax:
+  1461	Other info: [ASP] also authored Diamond Data (baseball stats)
+  1462	
+  1463	
+  1464	Key:        Gillett, Dave
+  1465	Author:     Dave Gillett
+  1466	Program:    Reuter Connect - VT-100 comms w/scripts and macros
+  1467	Company:    Reuters, and privately
+  1468	Email:      dgil@ipsaint.ipsa.reuter.com OR dgil@pa.reuter.com
+  1469	WWW:
+  1470	Address:    3790 El Camino Real #231, Palo Alto, CA 94306, USA
+  1471	Voice:      (415)327-1700
+  1472	BBS:
+  1473	Fax:        (415)327-0146
+  1474	Other info: C++ and TP5
+  1475	
+  1476	
+  1477	Key:        Green, J Paul
+  1478	Author:     J Paul Green
+  1479	Program:    PROTECT Software protection programs
+  1480	Company:    G-Force Computer Systems
+  1481	Email:      jpgreen@easylink.ieunet.ie
+  1482	WWW:
+  1483	Address:    Hill House, Donnybrook, Douglas, Co Cork, IRELAND
+  1484	Voice:      +353 21 894950
+  1485	BBS:
+  1486	Fax:        +353 21 894924
+  1487	Other info:
+  1488	
+  1489	
+  1490	Key:        Greenberg, Ross
+  1491	Author:     Ross Greenberg
+  1492	Program:    VIRX Easy to use free virus scanner
+  1493	Company:    Microcom, Inc.
+  1494	Email:      72461.3212@compuserve.com
+  1495	WWW:
+  1496	Address:
+  1497	Voice:
+  1498	BBS:        (919) 419-1602 v.32bis
+  1499	Fax:
+  1500	Other info:
+  1501	
+  1502	
+  1503	Key:        Gregory, Randy
+  1504	Author:     Randy S. Gregory
+  1505	Program:    PRO-KEYS: An innovative new cmd line environment.
+  1506	Company:
+  1507	Email:      RANDY@ae.agecon.wisc.edu
+  1508	WWW:
+  1509	Address:    1717 Simpson St. Apt. #217, Madison, Wisconsin, 53713, USA
+  1510	Voice:      (608) 223-8907
+  1511	BBS:
+  1512	Fax:
+  1513	Other info:
+  1514	
+  1515	
+  1516	Key:        Gresseth, Reidar
+  1517	Author:     Reidar Gresseth, Chris Hook
+  1518	Program:    Explosiv Screen Saver
+  1519	Company:    Hook and Gresseth Software
+  1520	Email:      gresseth@ucs.ubc.ca
+  1521	WWW:
+  1522	Address:    P.O. Box 3013, Vancouver, B.C., V6B 3X5, Canada
+  1523	Voice:      (604) 277-8914 or (604) 738-0045
+  1524	BBS:       
+  1525	Fax:       
+  1526	Other info:
+  1527	
+  1528	
+  1529	Key:        Guthrie, Bruce
+  1530	Author:     Bruce Guthrie
+  1531	Program:    Guthrie utilities including READ
+  1532	Company:    U.S. Department of Commerce, and Wayne Software
+  1533	Email:      bgu@cu.nih.gov
+  1534	WWW:
+  1535	Address:    113 Sheffield St., Silver Spring, MD 20910, USA
+  1536	Voice:      (202) 482-3234
+  1537	BBS:       
+  1538	Fax:        (301) 588-8986
+  1539	Other info: Variety of usually free utilities
+  1540	
+  1541	
+  1542	Key:        Gutmann, Peter
+  1543	Author:     Peter Gutmann
+  1544	Program:    HPACK multi-system archiver
+  1545	Company:
+  1546	Email:      pgut1@cs.aukuni.ac.nz
+  1547	WWW:
+  1548	Address:    24 Durness Place, Orewa, North Auckland, New Zealand
+  1549	Voice:      +64 9 426-5097
+  1550	BBS:
+  1551	Fax:
+  1552	Other info:
+  1553	
+  1554	
+  1555	Key:        Hahn, Karl
+  1556	Author:     Karl Hahn
+  1557	Program:    MIME64  A MIME base64 encoder/decoder
+  1558	Company:    Loral Data Systems
+  1559	Email:      hahn@lds.loral.com
+  1560	WWW:
+  1561	Address:    5630 Sawyer Circle, Sarasota, Florida 34233  USA
+  1562	Voice:      813 371-0811 X5334    813 922-5578
+  1563	BBS:
+  1564	Fax:        813 378-6773
+  1565	Other info:
+  1566	
+  1567	
+  1568	Key:        Hakim, Andy
+  1569	Author:     Andy Hakim
+  1570	Program:    Precise Point: "graphical" text-mode mouse driver
+  1571	Company:    none
+  1572	Email:      ahakim@uh.edu
+  1573	WWW:
+  1574	Address:    P.O. Box 70392, Houston, TX 77270, USA
+  1575	Voice:      (713) 880-3059
+  1576	BBS:        (713) 961-1604 (Sands PCB)
+  1577	Fax:   
+  1578	Other info:
+  1579	
+  1580	
+  1581	Key:        Hamel, David
+  1582	Author:     David Hamel
+  1583	Program:    Boxer: full-featured text editor for programmers/writers
+  1584	Company:    Boxer Software
+  1585	Email:      70242.2126@compuserve.com
+  1586	WWW:
+  1587	Address:    PO Box 3230, Peterborough, NH 03458-3230, U.S.A.
+  1588	Voice:      603-924-6602
+  1589	BBS:        603-924-3859
+  1590	Fax:        603-924-4471
+  1591	Other info: Boxer is available for both DOS and OS/2
+  1592	
+  1593	
+  1594	Key:        Hargreaves, Shawn
+  1595	Author:     Shawn Hargreaves
+  1596	Program:    FED folding text editor
+  1597	Company:    none
+  1598	Email:      slh100@tower.york.ac.uk
+  1599	WWW:
+  1600	Address:    1 Salisbury Road, Market Drayton, Shropshire, England
+  1601	Voice:      (england) 0630 654346
+  1602	BBS:
+  1603	Fax:
+  1604	Other info:
+  1605	
+  1606	
+  1607	Key:        Harris, Mark
+  1608	Author:     Mark Harris
+  1609	Program:    Ample Notice appointments, alarm, PIM
+  1610	Company:    Granny's Old-Fashioned Software
+  1611	Email:      mh@cs.appstate.edu
+  1612	WWW:
+  1613	Address:    Rt 4, Box 216, Boone, NC 28607 USA
+  1614	Voice:      (704) 264-6906
+  1615	BBS:
+  1616	Fax:        (704) 264-4634
+  1617	Other info:
+  1618	
+  1619	
+  1620	Key:        Hart, Michael
+  1621	Author:     Michael S. Hart
+  1622	Program:    Project Gutenberg Electronic Texts
+  1623	Company:    Illinois Benedictine College (USA)
+  1624	Email:      hart@vmd.cso.uiuc.edu  or  hart@uiucvmd
+  1625	WWW:
+  1626	Address:    IBC, 5700 College Road, Lisle, IL 60532-0900 USA
+  1627	Voice:      (217) 344-0367
+  1628	BBS:        (503) 620-0307 or (408) 378-5108
+  1629	Fax:
+  1630	Other info: email listserv@uiucvmd or listserv@vmd.cso.uiuc.edu
+  1631	            to receive newsletters.  Send "sub gutnberg your name"
+  1632	
+  1633	
+  1634	Key:        Hass, Jim
+  1635	Author:     Jim Hass
+  1636	Program:    HDM - Hard Disk Menu & Security System for DOS & Networks
+  1637	Company:    MicroFox Company
+  1638	Email:      73057.3113@compuserve.com
+  1639	WWW:
+  1640	Address:    PO Box 447, Richfield OH 44286-0447, USA
+  1641	Voice:      (216) 659-9489
+  1642	BBS:        (216) 661-9065
+  1643	Fax:        (216) 659-9489
+  1644	Other info: Other products available.
+  1645	
+  1646	
+  1647	Key:        Heino, Kim
+  1648	Author:     Kim Heino, Tapani T. Salmi
+  1649	Program:    BBBS, Bulletin Board System for MS-DOS
+  1650	Company:    Oy Julo Systems Ltd
+  1651	Email:      Kim.Heino@utu.fi
+  1652	WWW:
+  1653	Address:    Paavolankatu 3 D 34, FIN-20240  TURKU
+  1654	Voice:      +358 21 240 1513
+  1655	BBS:        +358 21 240 4036
+  1656	Fax:
+  1657	Other info:
+  1658	
+  1659	
+  1660	Key:        Hilbig, Erhard
+  1661	Author:     Erhard Hilbig
+  1662	Program:    CONEX Terminal emulation program
+  1663	Company:    Universitaet-Gesamthochschule Paderborn
+  1664	Email:      zahilb@pbhrzt.uni-paderborn.de
+  1665	WWW:
+  1666	Address:    Uni Paderborn, Postfach 1621, 4790 Paderborn, Germany
+  1667	Voice:      05251/60-2433
+  1668	BBS:
+  1669	Fax:        05251/60-3207
+  1670	Other info:
+  1671	
+  1672	
+  1673	Key:        Hogstrom, Jonas
+  1674	Author:     Jonas Hogstrom
+  1675	Program:    A3E, Ansi Ascii Avatar Editor
+  1676	Company:    JH SoftService
+  1677	Email:      c91jonho@und.ida.liu.se
+  1678	WWW:
+  1679	Address:    Kunsbergsgatan 8c, S-582 53  Linkoping, Sweden
+  1680	Voice:      +46-13-122636
+  1681	BBS:        FidoNet 2:204/408.3
+  1682	Fax:        +46-21-350524
+  1683	Other info:
+  1684	
+  1685	
+  1686	Key:        Holin, Michael
+  1687	Author:     Michael E Holin
+  1688	Program:    PC-CONFIG V6.45, systeminfo / benchmarkprg. for DOS
+  1689	Company:
+  1690	Email:      m.holin@mib.central.de
+  1691	WWW:
+  1692	Address:    PO.Box 1146, 38678 Clausthal, Germany
+  1693	Voice:      +49 5323 3350
+  1694	BBS:        +49 5323 84130
+  1695	Fax:        +49 5323 3380
+  1696	Other info:
+  1697	
+  1698	
+  1699	Key:        Homrighausen, Joaquim
+  1700	Author:     Joaquim Homrighausen
+  1701	Program:    FrontDoor E-Mail package
+  1702	Company:    Absolute Solutions
+  1703	Email:      joho@abs.lu, 2:270/17@fidonet
+  1704	WWW:
+  1705	Address:    389, route d'Arlon / L-8011 Strassen / Luxembourg
+  1706	Voice:
+  1707	BBS:        +352 316702 (ZyXEL), +352 318766 (HST/V32Terbo)
+  1708	Fax:        +352 316702
+  1709	Other info:
+  1710	
+  1711	
+  1712	Key:        Hovila, Ari
+  1713	Author:     Ari Hovila / Jari Perkiomaki
+  1714	Program:    WLIST Word frequency counter
+  1715	Company:    University of Vaasa
+  1716	Email:      ajh@uwasa.fi
+  1717	WWW:
+  1718	Address:    P.O.Box 700, FIN-65101 Vaasa, Finland
+  1719	Voice:      +358-61-3248 389
+  1720	BBS:        +358-61-3170 972  Walli BBS (domestic only)
+  1721	Fax:        +358-61-3248 380
+  1722	Other info: garbo.uwasa.fi FTP site moderator (MS-DOS, Windows)
+  1723	
+  1724	
+  1725	Key:        Hu, Franklin
+  1726	Author:     Franklin Hu
+  1727	Program:    PC-Proof professional grammar checking program
+  1728	Company:    Intellect Systems
+  1729	Email:      72630.3457@compuserve.com
+  1730	WWW:
+  1731	Address:    P.O. Box 58213, Renton, WA 98058, USA
+  1732	Voice:      (206) 226-0429
+  1733	BBS:
+  1734	Fax:
+  1735	Other info:
+  1736	
+  1737	
+  1738	Key:        Hu, Tsung
+  1739	Author:     Tsung Hu
+  1740	Program:    Telemate, GIFLink, GIFLITE, MusicalGIF, MuchMusic
+  1741	Company:    White River Software
+  1742	Email:      72070.3515@compuserve.com
+  1743	WWW:
+  1744	Address:    P.O.Box 73031, Hamilton, Ont. L9A 5H7, Canada
+  1745	Voice:
+  1746	BBS:        (503)297-0626
+  1747	Fax:
+  1748	Other info:
+  1749	
+  1750	
+  1751	Key:        Huang, Weiguang
+  1752	Author:     Dr Weiguang Huang
+  1753	Program:    SymbMath: Symbolic Math software
+  1754	Company:    University of New South Wales
+  1755	Email:      sc9300078@cumulus.csd.unsw.edu.au, w.huang@unsw.edu.au,
+  1756	            huang@deakin.oz.au
+  1757	WWW:
+  1758	Address:    Dept. of Analytical Chemistry, University of New South Wales,
+  1759	            Kensington, NSW 2033, Australia
+  1760	Voice:      61-2-697-4643
+  1761	BBS:
+  1762	Fax:        61-2-662-2835
+  1763	Other info:
+  1764	
+  1765	
+  1766	Key:        Huseby, Sverre H.
+  1767	Author:     Sverre H. Huseby
+  1768	Program:    DOSED cmd line editor, XDSKCPY diskcopy without swapping
+  1769	Company:   
+  1770	Email:      sverrehu@ifi.uio.no
+  1771	WWW:
+  1772	Address:    Bjoelsengt. 17, N-0468 Oslo, Norway
+  1773	Voice:      +47 22 23 05 39
+  1774	BBS:       
+  1775	Fax:       
+  1776	Other info:
+  1777	
+  1778	
+  1779	Key:        Iakovlev, Alex
+  1780	Author:     Alex F. Iakovlev, Ph.D.
+  1781	Program:    MULTIGRAPH-2 Graphics Library for Modula-2 Language
+  1782	Company:    Computing Center of Russian Academy of Sciences
+  1783	Email:      iak@sms.ccas.msk.su
+  1784	WWW:
+  1785	Address:    40, Vavilov Street, Moscow, 117967, Russia
+  1786	Voice:      (7-095) 135-1340
+  1787	BBS:
+  1788	Fax:        (7-095) 135-6159
+  1789	Other info:
+  1790	
+  1791	
+  1792	Key:        Info-ZIP
+  1793	Author:     Greg Roelofs, Mark Adler, Jean-loup Gailly (et al)
+  1794	Program:    zip and unzip for Unix, MS-DOS, and other platforms
+  1795	Company:
+  1796	Email:      zip-bugs@wkuvx1.wku.edu
+  1797	WWW:
+  1798	Address:
+  1799	Voice:
+  1800	BBS:
+  1801	Fax:
+  1802	Other info: Info-ZIP Group, a mailing list moderated by Hunter
+  1803	            Goatley. Send the line HELP to listserv@wkuvx1.wku.edu
+  1804	            for information on subscription to the info-zip mailing
+  1805	            list.
+  1806	
+  1807	
+  1808	Key:        Isaacson, Eric
+  1809	Author:     Eric Isaacson
+  1810	Program:    A86 assembler, ZIPKEY zipcode directory
+  1811	Company:    Eric Isaacson Software
+  1812	Email:      71333.3154@compuserve.com
+  1813	WWW:
+  1814	Address:    416 E. University Ave., Bloomington IN 47401-4739 USA
+  1815	Voice:      1-812-339-1811
+  1816	BBS:
+  1817	Fax:
+  1818	Other info:
+  1819	
+  1820	
+  1821	Key:        Jackson, Lee
+  1822	Author:     Lee Jackson
+  1823	Program:    The Hack Report
+  1824	Company:   
+  1825	Email:      ljackson@mdf.fidonet.org
+  1826	WWW:
+  1827	Address:    130 Dove Lane, Kyle, TX 78640, USA
+  1828	Voice:      (512) 295-3923
+  1829	BBS:       
+  1830	Fax:       
+  1831	Other info:
+  1832	
+  1833	
+  1834	Key:        Jaeger, Thomas
+  1835	Author:     Thomas Jaeger
+  1836	Program:    ACZAR - "The Ultimate Archive Shell"
+  1837	Company:    CZAR Software
+  1838	Email:      71031.3613@compuserve.com, czarsoft@aol.com
+  1839	WWW:
+  1840	Address:    P.O. Box 370087, El Paso, TX 79937-0087, USA
+  1841	Voice:      915-595-8787
+  1842	BBS:        915-595-8705
+  1843	Fax:        915-595-8787
+  1844	Other info: Fido: 1:381/99
+  1845	
+  1846	
+  1847	Key:        Jennings, Peter
+  1848	Author:     Peter Jennings
+  1849	Program:    MagicKey TSR Internet autotyper, BEAM maps, DailyWord
+  1850	Company:    Jennings Communications, Inc
+  1851	Email:      peterj@netcom.com
+  1852	WWW:
+  1853	Address:    Box 336, Ben Lomond, CA, USA 95005
+  1854	Voice:      +1 408 336-3503
+  1855	Fax:        +1 408 336-3503 (autoswitch)
+  1856	FTP:        ftp.netcom.com:/pub/VE3SUN
+  1857	WWW:        ftp://ftp.netcom.com:/pub/VE3SUN/www/home.html
+  1858	Other info: HamBase and amateur radio utilities. Stereograms.
+  1859	
+  1860	
+  1861	Key:        Jeong, Joohee
+  1862	Author:     Joohee Jeong
+  1863	Program:    jspell, spell-checker w/ TeX-ability
+  1864	Company:    Nemosoft Technologies
+  1865	Email:      73072.3651@compuserve.com
+  1866	WWW:
+  1867	Address:    P.O.Box 1619, El Cerrito, CA 94530-9998, U.S.A.
+  1868	Voice:      (510) 528-8753
+  1869	BBS:
+  1870	Fax:        (510) 528-8753
+  1871	Other info:
+  1872	
+  1873	
+  1874	Key:        Johansson, Anssi
+  1875	Author:     Anssi Johansson
+  1876	Program:    Utils for UltraBBS - bulletins, filebase editing tools..
+  1877	Company:    High Volume Software
+  1878	Email:      avij@under.nullnet.fi
+  1879	WWW:        http://www.ppoy.fi/~avij/
+  1880	Address:    Ratatie 6, FIN-29250 Nakkila, Finland
+  1881	Voice:      +358-39-53741471
+  1882	BBS:        +358-39-5374311 - Underground UBBS - 5 lines
+  1883	Fax:        +358-39-5374265
+  1884	Other info: European UltraBBS support, see http://www.ppoy.fi/~avij/
+  1885	
+  1886	
+  1887	Key:        Johnson, Thomas C.
+  1888	Author:     Thomas C. Johnson
+  1889	Program:    PC-TRACK   3D Satellite Orbit Visualization Tool
+  1890	Company:    Acme Workshops
+  1891	Email:      71371.1257@compuserve.com
+  1892	WWW:
+  1893	Address:    9920 S. Palmer Rd., New Carlisle, Oh. 45344, USA
+  1894	Voice:      (513) 878-9174
+  1895	BBS:
+  1896	Fax:
+  1897	Other info: Also Author of Master Chef: Recipe, Diet & Sched Tool
+  1898	
+  1899	
+  1900	Key:        JP Software Inc.
+  1901	Author:     JP Software Inc.
+  1902	Program:    4DOS
+  1903	Company:    JP Software Inc.
+  1904	Email:      75300.210@compuserve.com, 75300.1215@compuserve.com
+  1905	WWW:
+  1906	Address:    P.O. Box 1470, East Arlington, MA 02174, USA
+  1907	Voice:      (617) 646-3975
+  1908	BBS:
+  1909	Fax:        (617) 646-0904
+  1910	Other info:
+  1911	
+  1912	
+  1913	Key:        Jung, Robert
+  1914	Author:     Robert K Jung
+  1915	Program:    ARJ archiver program
+  1916	Company:
+  1917	Email:      robjung@world.std.com, 72077.445@compuserve.com
+  1918	WWW:
+  1919	Address:    2606 Village Road West, Norwood, Mass. 02062, USA
+  1920	Voice:
+  1921	BBS:        (617) 354-8873; Fidonet 1:16/390.7
+  1922	Fax:
+  1923	Other info:
+  1924	
+  1925	
+  1926	Key:        Kiernan, John
+  1927	Author:     J. A. Kiernan
+  1928	Program:    MOLWT. Simple chemical calculations at the DOS prompt.
+  1929	Company:
+  1930	Email:      jkiernan@julian.uwo.ca
+  1931	WWW:
+  1932	Address:    Anatomy Dept, Univ. of Western Ontario, London, Canada N6A 5C1
+  1933	Voice:      (519) 679-2111
+  1934	BBS:
+  1935	Fax:        (519) 661-3936
+  1936	Other info: Also  NEUROTUT  (Human Neuroscience tutorial program)
+  1937	
+  1938	
+  1939	Key:        Kim, Eugene
+  1940	Author:     Eugene Kim
+  1941	Program:    GRAF-IT! v2.0 Inequality grapher
+  1942	Company:    Harvard University
+  1943	Email:      eekim@husc.harvard.edu
+  1944	WWW:
+  1945	Address:
+  1946	Voice:
+  1947	BBS:
+  1948	Fax:
+  1949	Other info: Snailmail address and phone numbers changes constantly.
+  1950	
+  1951	
+  1952	Key:        Kirsch, Dave
+  1953	Author:     Dave Kirsch
+  1954	Program:    MOU--Turbo C & Pascal, MSC TRUE mouse cursor routines
+  1955	Company:    None
+  1956	Email:      Zoid@mindlink.bc.ca
+  1957	WWW:
+  1958	Address:    #801-9835 King George Hwy, Surrey, BC.  Canada  V3T 5H6
+  1959	Voice:      (604) 585-8844
+  1960	BBS:        (604) 576-1214
+  1961	Fax:        (604) 534-7473
+  1962	Other info: Freeware mouse routines (w/src).
+  1963	
+  1964	
+  1965	Key:        Kirschbaum, David P
+  1966	Author:     David Kirschbaum
+  1967	Program:    Unix-compatible uuencode/decode for MS-DOS
+  1968	Company:    Toad Hall
+  1969	Email:      kirschd@ljl.com
+  1970	WWW:
+  1971	Address:    7573 Jennings Drive, Fayetteville NC  28303, USA
+  1972	Voice:      (910) 868-3471
+  1973	BBS:
+  1974	Fax:
+  1975	Other info: Full 80x88 .ASM source included.
+  1976	
+  1977	
+  1978	Key:        Knudson, Chad
+  1979	Author:     Chad Knudson
+  1980	Program:    CKWare Utilities
+  1981	Company:    CKWare
+  1982	Email:      knudson@cs.und.nodak.edu
+  1983	WWW:
+  1984	Address:    2398 30th Avenue South #403, Grand Forks, ND 58201-6594, USA
+  1985	Voice:      (701) 746-9849
+  1986	BBS:        (701) 775-1143
+  1987	Fax:        (701) 777-2940
+  1988	Other info: Written numerous utilities for DOS and BBSses
+  1989	
+  1990	
+  1991	Key:        Koornneef, Jim
+  1992	Author:     Jim Koornneef
+  1993	Program:    Save$ (CDN) - Easy RRSPs, Mutual Funds, Mortgages
+  1994	Company:    Golden Crater Software
+  1995	Email:      fnord@cml.com
+  1996	WWW:
+  1997	Address:    4380 Wellington Rd. Box 42014, London, Ont. Can. N6E 3V1
+  1998	Voice:      (519) 637-2137
+  1999	BBS:
+  2000	Fax:
+  2001	Other info: Specialize in data compression libraries
+  2002	
+  2003	
+  2004	Key:        Kovach, Warren L.
+  2005	Author:     Dr. Warren L. Kovach
+  2006	Program:    MVSP - A MultiVariate Statistical Package
+  2007	Company:    Kovach Computing Services
+  2008	Email:      warrenk@cix.compulink.co.uk, 100016.2265@compuserve.com
+  2009	WWW:
+  2010	Address:    85 Nant-Y-Felin, Pentraeth, Anglesey, Wales LL75 8UY UK
+  2011	Voice:      +44 (0248) 450414
+  2012	BBS:
+  2013	Fax:
+  2014	Other info:
+  2015	
+  2016	
+  2017	Key:        Koziol, Quincey
+  2018	Author:     Quincey Koziol
+  2019	Program:    NCSA Telnet for the PC
+  2020	Company:    National Center for Supercomputing Applications (NCSA)
+  2021	Email:      koziol@ncsa.uiuc.edu
+  2022	WWW:
+  2023	Address:    605 E. Springfield Ave., Champaign, Ill., 61820, USA
+  2024	Voice:      (217) 244-0705
+  2025	BBS:        
+  2026	Fax:        (217) 244-1987
+  2027	Other info:
+  2028	
+  2029	
+  2030	Key:        Krehbiel, Courtney
+  2031	Author:     Courtney Krehbiel
+  2032	Program:    ABC Fun Keys
+  2033	Company:    Lazelle
+  2034	Email:      courtney@cts.com   72341,2033@compuserve.com
+  2035	WWW:
+  2036	Address:    P.O. Box 231505, Encinitas, CA 92023-1505, USA
+  2037	Voice:      (619) 436-1012
+  2038	BBS:        (619) 436-3525
+  2039	Fax:
+  2040	Other info:
+  2041	
+  2042	
+  2043	Key:        Lazarus, Ross
+  2044	Author:     Dr Ross Lazarus
+  2045	Program:    NetBday - A Netware login birthday reminder package
+  2046	Company:
+  2047	Email:      ross@westmead.health.su.oz.au
+  2048	WWW:
+  2049	Address:    29 Francis St. Bondi, NSW 2026, Australia
+  2050	Voice:      +61 2 633 7946
+  2051	BBS:
+  2052	Fax:
+  2053	Other info:
+  2054	
+  2055	
+  2056	Key:        Ledbetter, Keith
+  2057	Author:     Keith Ledbetter
+  2058	Program:    SST: the Supersonic Search Tool  (a "whereis")
+  2059	Company:
+  2060	Email:      72240.1221@compuserve.com
+  2061	WWW:
+  2062	Address:    4240 Ketcham Drive, Chesterfield, VA  23832, USA
+  2063	Voice:      (804) 674-0780 (6pm - 10pm Eastern Time)
+  2064	BBS:
+  2065	Fax:
+  2066	Other info:
+  2067	
+  2068	
+  2069	Key:        Lee, Gene
+  2070	Author:     Gene W. Lee
+  2071	Program:    COSMOS planetarium simulator
+  2072	Company:    Lee Enterprises Inc.
+  2073	Email:      lee@convex.com
+  2074	WWW:
+  2075	Address:    4309 Peggy Lane, Plano Texas, 75074, USA
+  2076	Voice:      (214) 516-4732
+  2077	BBS:       
+  2078	Fax:       
+  2079	Other info:
+  2080	
+  2081	
+  2082	Key:        Lee, Patrick
+  2083	Author:     Patrick Lee
+  2084	Program:    CatQWK, QWK Layout, QWK Product Listing
+  2085	Company:   
+  2086	Email:      patlee@panix.com
+  2087	WWW:
+  2088	Address:    60-06 79th Street, Elmhurst, NY  11373-5314, USA
+  2089	Voice:      (718) 639-6696
+  2090	BBS:        (212) 496-8324
+  2091	Fax:        (718) 639-6696 not automatic
+  2092	Other info:
+  2093	
+  2094	
+  2095	Key:        Lewis, Dan
+  2096	Author:     Dan Lewis
+  2097	Program:    Last Byte (Upper) Memory Manager
+  2098	Company:    Key Software Products
+  2099	Email:      dan.lewis@ksp.com
+  2100	WWW:
+  2101	Address:    440 Ninth Avenue, Menlo Park, CA 94025, USA
+  2102	Voice:      (415) 364-9847
+  2103	BBS:
+  2104	Fax:
+  2105	Other info:
+  2106	
+  2107	
+  2108	Key:        Lockrey, Brian
+  2109	Author:     Brian Lockrey
+  2110	Program:    PC-Quizzer, PC-Piano Teacher
+  2111	Company:    Data Assist, Inc.
+  2112	Email:      brian@aiinet.com
+  2113	WWW:
+  2114	Address:    659 Lakeview Plaza Blvd, Suite H, USA
+  2115	Voice:      (614) 888-8088
+  2116	BBS:        (614) 888-8056
+  2117	Fax:        (614) 888-8072
+  2118	Other info:
+  2119	
+  2120	
+  2121	Key:        Loewy, Ron
+  2122	Author:     Ron Loewy
+  2123	Program:    HLPDK - Multi Platform Help Development Kit
+  2124	Company:    ISoft D&M
+  2125	Email:      100274.162@Compuserve.Com, 76350.333@Compuserve.Com
+  2126	WWW:
+  2127	Address:    P.O.Box 5517, Coralville IA 52241, U.S.A
+  2128	Voice:      (319) 351-8413
+  2129	BBS:       
+  2130	Fax:       
+  2131	Other info: Other hypertext converters are available.
+  2132	
+  2133	
+  2134	Key:        Mace, Donald
+  2135	Author:     Donald (D.L.) Mace
+  2136	Program:    RSA303D Relational Stock Analysis
+  2137	Company:    DLM Consulting
+  2138	Email:      71171.500@compuserve.com
+  2139	WWW:
+  2140	Address:    P. O. Box 867452  Plano, TX 75086  USA
+  2141	Voice:
+  2142	BBS:        214-596-5121
+  2143	Fax:
+  2144	Other info:
+  2145	
+  2146	
+  2147	Key:        Maconochie, David
+  2148	Author:     DJ Maconochie
+  2149	Program:    DELPX03, Fast exponential fitting, time series utilites
+  2150	Company:
+  2151	Email:      djm16@leicester.ac.uk
+  2152	WWW:
+  2153	Address:    MSB, University Rd., Leicester, LE1 2HN, Britain
+  2154	Voice:
+  2155	BBS:
+  2156	Fax:
+  2157	Other info:
+  2158	
+  2159	
+  2160	Key:        Maddox, Gary
+  2161	Author:     Gary Maddox
+  2162	Program:    BLASTER Master
+  2163	Company:
+  2164	Email:      76711.547@compuserve.com
+  2165	WWW:
+  2166	Address:    1901 Spring Creek #315, Plano, TX 75023-4219, USA
+  2167	Voice:
+  2168	BBS:
+  2169	Fax:
+  2170	Other info: BLASTER Master has been updated regularly since 1990.
+  2171	
+  2172	
+  2173	Key:        Madison, W.G.
+  2174	Author:     W.G. (Bill) Madison
+  2175	Program:    ReadyRef  Do-It-Yourself pop-up help for DOS
+  2176	Company:    W.G. Madison & Assoc., Ltd.
+  2177	Email:      bmadison@crl.com      73240.342@compuserve.com
+  2178	WWW:
+  2179	Address:    13819 Shavano Downs, San Antonio, Texas 78230-5811, USA
+  2180	Voice:      210-492-2776
+  2181	BBS:
+  2182	Fax:
+  2183	Other info: FIDOnet  bill madison 1:387/800
+  2184	
+  2185	
+  2186	Key:        Madsen, Steven
+  2187	Author:     Steve Madsen
+  2188	Program:    BBSkit - BBS/door programmer's toolkit for TP6+
+  2189	Company:   
+  2190	Email:      sjmadsen@nextsrv.cas.muohio.edu
+  2191	WWW:
+  2192	Address:    1888 Edith Marie Drive, Beavercreek, OH 45431  USA
+  2193	Voice:     
+  2194	BBS:       
+  2195	Fax:       
+  2196	Other info:
+  2197	
+  2198	
+  2199	Key:        Mahlknecht, Greg
+  2200	Author:     Greg Mahlknecht
+  2201	Program:    SDES Screen Designer
+  2202	Company:    Vironix
+  2203	Email:      mahlknec@beastie.cs.und.ac.za
+  2204	WWW:
+  2205	Address:    P.O. Box 347, Gillitts, 3603, South Africa
+  2206	Voice:      +31 764-3576
+  2207	BBS:        +31 764-3377
+  2208	Fax:       
+  2209	Other info:
+  2210	
+  2211	
+  2212	Key:        Mai, Anthony
+  2213	Author:     Anthony Mai
+  2214	Program:    QuickStar Fax Pro
+  2215	Company:    Pennsylvania State University
+  2216	Email:      mai@phys.psu.edu
+  2217	WWW:
+  2218	Address:    Box #28, 10 Vairo Blvd., State College, PA 16803 USA
+  2219	Voice:      1-(814)867-3385
+  2220	BBS:
+  2221	Fax:
+  2222	Other info:
+  2223	
+  2224	
+  2225	Key:        Marks, Richard
+  2226	Author:     Richard Marks
+  2227	Program:    UUEXE encode/decode
+  2228	Company:    Unisys (work)
+  2229	Email:      rmarks@netaxs.com
+  2230	WWW:
+  2231	Address:    931 Sulgrave Lane, Bryn Mawr, PA 19010, USA
+  2232	Voice:      work (215) 993-7358, home (215) 525-8993
+  2233	BBS:
+  2234	Fax:
+  2235	Other info:
+  2236	
+  2237	
+  2238	Key:        Marson, Hamish
+  2239	Author:     Hamish Marson
+  2240	Program:    PSERV, Novell Accounting Print Server
+  2241	Company:    University of Waikato
+  2242	Email:      h.marson@waikato.ac.nz
+  2243	WWW:
+  2244	Address:    Private Bag, Hamilton, New Zealand
+  2245	Voice:      0064 7 8562889
+  2246	BBS:
+  2247	Fax:        0064 7 8384066
+  2248	Other info:
+  2249	
+  2250	
+  2251	Key:        McAfee Associates
+  2252	Author:     McAfee Associates
+  2253	Program:    SCANV virus detection and identification, etc
+  2254	Company:    McAfee Associates
+  2255	Email:      mcafee@netcom.COM
+  2256	WWW:
+  2257	Address:    2710 Walsh Avenue, Suite 200, Santa Clara,
+  2258	            California 95051, USA
+  2259	Voice:      +1 (408) 988-3832 (M-F 7:30AM - 5:30PM GMT-7)
+  2260	BBS:        +1 (408) 988-4004 (US Robotics DS HST/v32/v42bis)
+  2261	Fax:        +1 (408) 970-9727 (Group III compatible)
+  2262	Other info: Email contact person: Aryeh Goretsky
+  2263	            CompuServe address:   76702.1714@compuserve.com
+  2264	            CompuServe Forum:     VIRUSFORUM
+  2265	
+  2266	
+  2267	Key:        McCaffrey, John
+  2268	Author:     John McCaffrey
+  2269	Program:    Amy! - LARGE character typing fun for infants & toddlers
+  2270	Company:    OPAL Network
+  2271	Email:      mccaffjt@perkin-elmer.com, 72360.2777@compuserve.com
+  2272	WWW:
+  2273	Address:    625 Overlook Drive, Cheshire, CT 06410-2122, USA
+  2274	Voice:      work (203) 761-2872, home (203) 250-0936
+  2275	BBS:        (203) 250-0938, (203) 250-0942
+  2276	Fax:        (203) 761-2892
+  2277	Other info: PC/Mac programmer: Database/RS232_Comm/Science/Education
+  2278	
+  2279	
+  2280	Key:        Menninger, William
+  2281	Author:     William L. Menninger (prefer Will)
+  2282	Program:    States geography quiz, Meval expression evaluator
+  2283	Company:    Massachusetts Institute of Technology
+  2284	Email:      willus@ilm.pfc.mit.edu (til 1/94)
+  2285	WWW:
+  2286	Address:    2162 Dudley St., Pasadena, CA 91104 (til 7/94), USA
+  2287	Voice:      (617) 253-8646 or (818) 797-1998
+  2288	BBS:
+  2289	Fax:
+  2290	Other info: The CA address is my wife's.  I'll join her ~1/94 :-(
+  2291	
+  2292	
+  2293	Key:        Miettunen, Jouni
+  2294	Author:     Jouni Miettunen
+  2295	Program:    TooLate editors, Filex - filename extension identification
+  2296	Company:
+  2297	Email:      jon@stekt.oulu.fi
+  2298	WWW:
+  2299	Address:    Rautatienkatu 20 A 10, FIN-90100 Oulu, Finland, Europe
+  2300	Voice:      +(358)-81-3113258
+  2301	BBS:
+  2302	Fax:
+  2303	Other info: x2ftp.oulu.fi FTP site maintainer (MS-DOS)
+  2304	
+  2305	
+  2306	Key:        Mukherjee, Joy
+  2307	Author:     Joy Mukherjee
+  2308	Program:    X-Master - shell to use CMF,ROL,MOD from ZIP/ARJ/LZH's
+  2309	Company:    None
+  2310	Email:      jmukher@lonestar.utsa.edu
+  2311	WWW:
+  2312	Address:    202 Vanderheck, San Antonio, TX, 78209-4045, USA
+  2313	Voice:      Not disclosed
+  2314	BBS:        (210) 648-3702
+  2315	Fax:        (210) 820-3080
+  2316	Other info:
+  2317	
+  2318	
+  2319	Key:        Murdoch, Duncan
+  2320	Author:     Duncan Murdoch
+  2321	Program:    Turbo Pascal utilities
+  2322	Company:
+  2323	Email:      dmurdoch@mast.QueensU.CA
+  2324	WWW:
+  2325	Address:    337 Willingdon Ave., Kingston, Ontario, Canada, K7L 4J3
+  2326	Voice:
+  2327	BBS:        Fidonet 1:249/99.5
+  2328	Fax:
+  2329	Other info: Edits Borland/Turbo Pascal unofficial bug list
+  2330	
+  2331	
+  2332	Key:        Nelson, Russell
+  2333	Author:     Russell Nelson
+  2334	Program:    Crynwr packet driver collection - Ethernet drivers
+  2335	Company:    Crynwr Software
+  2336	Email:      info@crynwr.com
+  2337	WWW:
+  2338	Address:    11 Grant St.,Potsdam, NY 13676, USA
+  2339	Voice:      (315) 268-1925
+  2340	BBS:
+  2341	Fax:        (315) 268-9201
+  2342	Other info:
+  2343	
+  2344	
+  2345	Key:        Newlin, John
+  2346	Author:     John Newlin
+  2347	Program:    ArcMaster - File compression system manager
+  2348	Company:    New-Ware
+  2349	Email:      CIS 71535,665
+  2350	WWW:
+  2351	Address:    8050 Camino Kiosco, San Diego, CA 92122, USA
+  2352	Voice:      (619) 455-6225
+  2353	BBS:        (619) 455-5226
+  2354	Fax:       
+  2355	Other info:
+  2356	
+  2357	
+  2358	Key:        Nguyen, Hoa
+  2359	Author:     Hoa Gia Nguyen
+  2360	Program:    VIET Vietnamese word processor for MS-DOS
+  2361	Company:    VIETech
+  2362	Email:      VIETech@haydn.stanford.edu, nguyenh@nosc.mil
+  2363	WWW:
+  2364	Address:    P.O. Box 3834, La Mesa, CA 91944, USA
+  2365	Voice:
+  2366	BBS:
+  2367	Fax:
+  2368	Other info:
+  2369	
+  2370	
+  2371	Key:        Ni, Hongbo
+  2372	Author:     Hongbo Ni
+  2373	Program:    NJSTAR Chinese and Japanese Word Processor
+  2374	Company:    Hongbo Data Systems
+  2375	Email:      100032.2724@compuserve.com
+  2376	WWW:
+  2377	Address:    P.O. Box 40, Epping NSW 2121, Australia
+  2378	Voice:      +61-2-869-0821
+  2379	BBS:       
+  2380	Fax:        +61-2-869-0823
+  2381	Other info: NJSDK (C Lib.) Chinese Software Development Kit Available
+  2382	
+  2383	
+  2384	Key:        Noorda, Brent
+  2385	Author:     Brent Noorda
+  2386	Program:    CEnvi for DOS, C-like script language intepreter
+  2387	Company:    Nombas
+  2388	Email:      bsn@world.std.com, 72212.1622@compuserve.com
+  2389	WWW:
+  2390	Address:    P.O. Box 875, Medford, MA 02155, USA
+  2391	Voice:      (617) 391-6595
+  2392	BBS:        (617) 391-6595
+  2393	Fax:       
+  2394	Other info: CEnvi also avialable for Windows and OS/2
+  2395	
+  2396	
+  2397	Key:        Nugent, Gary
+  2398	Author:     Gary Nugent
+  2399	Program:    JUPSAT21 Jovian Satellite Simulator with animation
+  2400	Company:    None
+  2401	Email:      gnugent@cara.ie, M4450@eurokom.ie
+  2402	WWW:
+  2403	Address:    54a Landscape Park, Churchtown, Dublin 14, Ireland.
+  2404	Voice:     
+  2405	BBS:       
+  2406	Fax:       
+  2407	Other info:
+  2408	
+  2409	
+  2410	Key:        Olowofoyeku, Abimbola
+  2411	Author:     Olowofoyeku Abimbola
+  2412	Program:    AUTO-CONFIG Automatic system configuration manager
+  2413	Company:
+  2414	Email:      laa12@seq1.keele.ac.uk
+  2415	WWW:
+  2416	Address:    268 Horwood, Newcastle, Staffs ST5 5BQ, England
+  2417	Voice:      +44 (0782) 629850
+  2418	BBS:
+  2419	Fax:
+  2420	Other info: aka The African Chief
+  2421	
+  2422	
+  2423	Key:        Ozeran, James
+  2424	Author:     James Daniel (Dan) Ozeran
+  2425	Program:    Enzkin - Enzyme Kinetics Calculations for Steady State
+  2426	            Rate Equations
+  2427	Company:    University of Chicago, Department of Biochemistry
+  2428	Email:      dan-ozeran@uchicago.edu`
+  2429	WWW:
+  2430	Address:    5841 S. Maryland Ave, MC5058, Chicago, IL 60637 USA
+  2431	Voice:      (312) 702-9355
+  2432	BBS:
+  2433	Fax:        (312) 702-9234
+  2434	Other info:
+  2435	
+  2436	
+  2437	Key:        Pardun, Gary
+  2438	Author:     Gary Pardun
+  2439	Program:    BuildPRD Build MS Word Printer Driver
+  2440	Company:    Gary Pardun Consulting
+  2441	Email:      cpardun@matt.ksu.ksu.edu
+  2442	WWW:
+  2443	Address:    1540 Waterford Place, #3, Manhattan, KS  66502-0417, USA
+  2444	Voice:      (913)539-5355
+  2445	BBS:        (upon request)
+  2446	Fax:        (upon request)
+  2447	Other info:
+  2448	
+  2449	
+  2450	Key:        Patri-Soft
+  2451	Author:     Norm Patriquin
+  2452	Program:    PCOPY copier & other Patriquin utilities
+  2453	Company:    Patri-Soft
+  2454	Email:      76347.2477@compuserve.com
+  2455	WWW:
+  2456	Address:    5225 Canyon Crest Drive Suite 71-358,
+  2457	            Riverside, CA 92507, USA
+  2458	Voice:      714-352-2820
+  2459	BBS:        714-352-2825
+  2460	Fax:        714-352-1527
+  2461	Other info:
+  2462	
+  2463	
+  2464	Key:        Paulson, Duane
+  2465	Author:     Duane Paulson
+  2466	Program:    RES13 Resident Screen Decoder
+  2467	Company:   
+  2468	Email:      duanep@holonet.net  70671.666@compuserve.com
+  2469	WWW:
+  2470	Address:    1317 W. 11th St, Santa Ana, CA 92703, USA
+  2471	Voice:     
+  2472	BBS:       
+  2473	Fax:       
+  2474	Other info:
+  2475	
+  2476	
+  2477	Key:        PCMAG
+  2478	Author:     PC Magazine
+  2479	Program:    PC Magazine utilities
+  2480	Company:    Ziff Communications Company
+  2481	Email:      72241.104@compuserve.com
+  2482	WWW:        http://www.pcmag.ziff.com
+  2483	Address:    One Park Avenue, New York, NY 10016, USA
+  2484	Voice:      1(800)289-0429
+  2485	BBS:        1(617)231-4450
+  2486	Fax:        1(212)503-5799
+  2487	Other info: FTP server at ftp://ftp.pcmag.ziff.com/pub/pcmag
+  2488	
+  2489	
+  2490	Key:        Perkovic, David
+  2491	Author:     David Perkovic
+  2492	Program:    The Brain.  Neural Network Simulator
+  2493	Company:    DP Computing
+  2494	Email:      dpc@mep.com, perkovic@cleese.apana.org.au
+  2495	WWW:
+  2496	Address:    PO Box 712, Noarlunga Center SA 5168, Australia
+  2497	Voice:      +61 8 326 4364
+  2498	BBS:       
+  2499	Fax:       
+  2500	Other info: Compiling a list of BBSes accepting uploads via email.
+  2501	
+  2502	
+  2503	Key:        Pfeiffer, Peter
+  2504	Author:     Peter Pfeiffer
+  2505	Program:    SPLog - State of the art Ham Radio Logging Software; etc
+  2506	Company:    (ABS) Alpha Business Software and Atomic Energy of Canada Limited
+  2507	Email:      pfeiffer@cu73.crl.aecl.ca    or    pfeiffer@cu51.crl.aecl.ca
+  2508	WWW:
+  2509	Address:    3 Claremount Dr, Deep River, Ontario, K01 1P0, Canada
+  2510	Voice:      (613) 584-9207
+  2511	BBS:
+  2512	Fax:        (613) 584-9070
+  2513	Other info: Commercial and Shareware Software Development.
+  2514	
+  2515	
+  2516	Key:        PKWare Inc.
+  2517	Author:     PKWare Inc. (Phil Katz)
+  2518	Program:    PKZIP file compressions system; PKLITE
+  2519	Company:    PKWare Inc.
+  2520	Email:      support@pkware.com
+  2521	WWW:
+  2522	Address:    9025 N. Deerwood Drive, Brown Deer, WI 53223 USA
+  2523	Voice:      414-354-8699
+  2524	BBS:        414-354-8670
+  2525	Fax:        414-354-8559
+  2526	Other info: Email contact person Mark Gresbach
+  2527	
+  2528	
+  2529	Key:        Pluimers, Jeroen
+  2530	Author:     Jeroen W. Pluimers
+  2531	Program:    UpCONV - Pascal case conversion utility
+  2532	Company:    P.S.O. (Pluimers Software Ontwikkeling)
+  2533	Email:      jeroenp@rulfc1.LeidenUniv.nl
+  2534	WWW:
+  2535	Address:    P.O. Box 266, 2170 AG  Sassenheim, THE NETHERLANDS
+  2536	Voice:      +31-2522-20908
+  2537	BBS:        +31-2522-20050 (HST/DS, 24 hrs a day)
+  2538	Fax:        none
+  2539	Other info:
+  2540	
+  2541	
+  2542	Key:        Podnos, Vladimir
+  2543	Author:     Vladimir Podnos & team
+  2544	Program:    ELCUT Finite Element Analysis System
+  2545	Company:    TOR Co-operative Enterprise
+  2546	Email:      podnos@tor.spb.su
+  2547	WWW:
+  2548	Address:    6, Uglovoj per., St.Petersburg, 198052, Russia
+  2549	Voice:      (812) 292-1965
+  2550	BBS:
+  2551	Fax:        (812) 110-1334
+  2552	Other info: analyzes 2D Electro-Magnet, Stress/Strain, Thermal Fields
+  2553	
+  2554	
+  2555	Key:        Pollet, Patrick
+  2556	Author:     Patrick Pollet
+  2557	Program:    TURTLE  Turtle graphic unit in any BGI mode
+  2558	Company:    INSA Villeurbanne France
+  2559	Email:      ppollet@cismibm.univ-lyon1.fr
+  2560	WWW:
+  2561	Address:    INSA Bat 110 , 20 Av. Einstein 69621 Villeurbanne Fr
+  2562	Voice:      72 43 83 80
+  2563	BBS:       
+  2564	Fax:        72 43 85 33
+  2565	Other info:
+  2566	
+  2567	
+  2568	Key:        Presno (de Presno), Odd
+  2569	Author:     Odd de Presno
+  2570	Program:    The Online World - handbook
+  2571	Company:        
+  2572	Email:      opresno@extern.uio.no or presno@grida.no
+  2573	WWW:
+  2574	Address:    4815 Saltrod, Norway
+  2575	Voice:      + 47 370 31204
+  2576	BBS:        + 47 370 31378
+  2577	Fax:        + 47 370 27111
+  2578	Other info: gopher cosn.org (Networking Information / Reference)
+  2579	
+  2580	
+  2581	Key:        Pritchett, Ron
+  2582	Author:     Ron Pritchett
+  2583	Program:    (2DAPNT) 2DaPoint, 4D Fido Netmail packer
+  2584	Company:    Realm Software
+  2585	Email:      pritchet@ash.cs.scarolina.edu
+  2586	WWW:
+  2587	Address:    1208 Bush River Rd #H4, Columbia, SC 29210, USA
+  2588	Voice:      1-(803)-772-8205
+  2589	BBS:        1-(803)-731-2510
+  2590	Fax:
+  2591	Other info:
+  2592	
+  2593	
+  2594	Key:        Pultz, Scott
+  2595	Author:     Scott H. Pultz
+  2596	Program:    SPMORF Morphing program for MS-DOS
+  2597	Company:
+  2598	Email:      scott@eskimo.com
+  2599	WWW:
+  2600	Address:    114-168th AVE NE, Bellevue, WA 98008, USA
+  2601	Voice:      (206)746-4799
+  2602	BBS:
+  2603	Fax:
+  2604	Other info:
+  2605	
+  2606	
+  2607	Key:        QuickWare
+  2608	Author:     Bill Alexander, Bill Brinson
+  2609	Program:    Q387 Math Accelerator and Emulator
+  2610	Company:    QuickWare
+  2611	Email:      70750.2147@compuserve.com
+  2612	WWW:
+  2613	Address:    P.O. Box 684652, Austin, Texas 78768, USA
+  2614	Voice:      (512) 280-1452
+  2615	BBS:        none
+  2616	Fax:        (713) 961-4438 (orders only)
+  2617	Other info: Runs all AutoCADs without a 387/487, speeds up others.
+  2618	
+  2619	
+  2620	Key:        Reeve, Alan
+  2621	Author:     Alan Reeve
+  2622	Program:    MacSEE read/white Mac files on PC
+  2623	Company:    REEVEsoft
+  2624	Email:      reevesoft@delphi.com or 71521.2200@CompuServe.com
+  2625	WWW:
+  2626	Address:    REEVEsoft, P.O. Box 1884, Clemson SC  29633 USA
+  2627	Voice:      (803) 654-7378
+  2628	BBS:        None
+  2629	Fax:        None
+  2630	Other info: None
+  2631	
+  2632	
+  2633	Key:        Reilley, Peter
+  2634	Author:     Peter Reilley
+  2635	Program:    BEAV Binary Editor And Viewer
+  2636	Company:
+  2637	Email:      pvr@wang.com
+  2638	WWW:
+  2639	Address:    19 Heritage Cir., Hudson, N.H. 03051, USA
+  2640	Voice:
+  2641	BBS:
+  2642	Fax:
+  2643	Other info:
+  2644	
+  2645	
+  2646	Key:        Revie, Dennis
+  2647	Author:     Dennis Revie
+  2648	Program:    VAR Grade - Comprehensive grade entry, analysis, stats
+  2649	Company:    VARed Software
+  2650	Email:      73427.112@Compuserve.com
+  2651	WWW:
+  2652	Address:    1490 Calle Fidelidad, Thousand Oaks, CA 91360-6819 USA
+  2653	Voice:      (805) 523-7546
+  2654	BBS:       
+  2655	Fax:       
+  2656	Other info: VAR Grade is a teacher's grading program
+  2657	
+  2658	
+  2659	Key:        Risku, Kai
+  2660	Author:     Kai Risku
+  2661	Program:    FFIT, Optimally copies files to disks (knapsack)
+  2662	Company:   
+  2663	Email:      Kai.Risku@hut.fi
+  2664	WWW:
+  2665	Address:    Kronvik, 65410 Sundom, Finland
+  2666	Voice:      +358-61-3571343
+  2667	BBS:       
+  2668	Fax:       
+  2669	Other info:
+  2670	
+  2671	
+  2672	Key:        Rollason, Jeff
+  2673	Author:     Jeff Rollason
+  2674	Program:    PocketD Plus advanced file manager and CRUSH compressor
+  2675	Company:    PocketWare
+  2676	Email:      100031.3537@compuserve.com
+  2677	WWW:
+  2678	Address:    P.O. Box 2369, Hendon, London NW4 1NR, England
+  2679	Voice:      +44 81 203 3731
+  2680	BBS:
+  2681	Fax:
+  2682	Other info:
+  2683	
+  2684	
+  2685	Key:        Rosenthal, Doren
+  2686	Author:     Doren Rosenthal
+  2687	Program:    UnStal01,VirSim2C,WinLite1,Cleaner1,SysMon30,Master20
+  2688	Company:    Rosenthal Engineering
+  2689	Email:      as194@cleveland.freenet.edu
+  2690	WWW:
+  2691	Address:    P.O.Box 1650 San Luis Obispo, CA USA 93406
+  2692	Voice:      1 - (805) 541-0910
+  2693	BBS:
+  2694	Fax:        Call voice line first
+  2695	Other info: Member ASP and ASAD
+  2696	
+  2697	
+  2698	Key:        Roshal, Eugene
+  2699	Author:     Eugene Roshal
+  2700	Program:    RAR multifunctional integrated archive manager
+  2701	Company:
+  2702	Email:      Eugene_Roshal@p0.f23.n5010.z2.fidonet.org
+  2703	WWW:
+  2704	Address:    Gagarina 21-15, 454010, Chelyabinsk, Russia
+  2705	Voice:
+  2706	BBS:        +7-3512-656522
+  2707	Fax:        +7-3512-654920
+  2708	Other info: Contact for registration to Ron Dwight 2:220/22
+  2709	
+  2710	
+  2711	Key:        Rossmann, Andrew
+  2712	Author:     Andrew Rossmann
+  2713	Program:    INFOPLUS
+  2714	Company:
+  2715	Email:      andyross@infopls.chi.il.us
+  2716	WWW:
+  2717	Address:
+  2718	Voice:
+  2719	BBS:        (708) 537-0247
+  2720	Fax:
+  2721	Other info:
+  2722	
+  2723	
+  2724	Key:        Rothenburg, Robert Walking-Owl
+  2725	Author:     Robert Rothenburg Walking-Owl
+  2726	Program:    Fork (DOS stdout/redirection splitter)
+  2727	Company:   
+  2728	Email:      robert.rothenburg@asb.com, rrothenb@ic.sunysb.edu
+  2729	WWW:
+  2730	Address:    P.O. Box 1327, South Stony Brook, NY 11790-0951 USA
+  2731	Voice:     
+  2732	BBS:       
+  2733	Fax:       
+  2734	Other info:
+  2735	
+  2736	
+  2737	Key:        Roub, Paul
+  2738	Author:     Paul Roub
+  2739	Program:    SALT Learn utility (SLEARN), TelixFonEditor (TFE)
+  2740	Company:   
+  2741	Email:      proub@bix.com
+  2742	WWW:
+  2743	Address:    PO Box 141583, Coral Gables, FL 33114-1583, USA
+  2744	Voice:     
+  2745	BBS:       
+  2746	Fax:       
+  2747	Other info:
+  2748	
+  2749	
+  2750	Key:        Rovers, Perry
+  2751	Author:     Perry Rovers
+  2752	Program:    FTP-LIST, List of FTP sites that accept Anonymous access
+  2753	Company:   
+  2754	Email:      Perry.Rovers@kub.nl
+  2755	WWW:
+  2756	Address:    Prof. Rogierhof 7, 5014 NT, Tilburg, The Netherlands (home)
+  2757	Voice:      +31-13-662288 (work)
+  2758	BBS:       
+  2759	Fax:       
+  2760	Other info: Additions/updates/comments only please. No unsollicited ads etc.
+  2761	
+  2762	
+  2763	Key:        Rowe, Eddie
+  2764	Author:     Eddie Rowe
+  2765	Program:    NoSnail - Netmail for RBBS-PC (Fidonet technology related)
+  2766	Company:
+  2767	Email:      931ROWE@MERLIN.NLU.EDU
+  2768	WWW:
+  2769	Address:    Northeast La Univ., NLU Box 5052, Monroe, La. 71212, USA
+  2770	Voice:      (318) 251-3799
+  2771	BBS:        (318) 255-4710
+  2772	Fax:
+  2773	Other info: Fidonet#1:380/14
+  2774	
+  2775	
+  2776	Key:        Salmi, Timo
+  2777	Author:     Prof. Timo Salmi
+  2778	Program:    TS-programs, FAQs, information lists
+  2779	Company:    Department of Accounting & Finance, University of Vaasa
+  2780	Email:      ts@uwasa.fi
+  2781	WWW:        http://www.uwasa.fi/~ts
+  2782	Address:    P.O.Box 700, FIN-65101 Vaasa, Finland
+  2783	Voice:      +(358)-61-3248111
+  2784	BBS:        +(358)-61-3170972 Walli BBS (domestic only)
+  2785	Fax:        +(358)-61-3248344
+  2786	Other info: garbo.uwasa.fi FTP site moderator (MS-DOS, publicity)
+  2787	            Co-moderator of comp.archives.msdos.announce newsgroup
+  2788	
+  2789	
+  2790	Key:        Salvisberg, Hans
+  2791	Author:     Hans Salvisberg
+  2792	Program:    BOOT.SYS  -- The Heavy-duty Configuration Manager <ASP>
+  2793	Company:    Salvisberg Software & Consulting
+  2794	Email:      73237.3556@compuserve.com
+  2795	WWW:
+  2796	Address:    Bellevuestr. 18,  CH-3095 Berne,  SWITZERLAND
+  2797	Voice:
+  2798	BBS:
+  2799	Fax:        +41-31-972-42-10
+  2800	Other info:
+  2801	
+  2802	
+  2803	Key:        Sankey, Todd
+  2804	Author:     Todd Sankey
+  2805	Program:    TDS directory sorter
+  2806	Company:
+  2807	Email:      sankey@physics.ubc.ca
+  2808	WWW:
+  2809	Address:    201 - 2345 W.5th Ave Vancouver, BC, Canada
+  2810	Voice:      (604) 733-1056
+  2811	BBS:
+  2812	Fax:
+  2813	Other info:
+  2814	
+  2815	
+  2816	Key:        Schaefer, Arno
+  2817	Author:     Arno Schaefer
+  2818	Program:    FIPS nondestructive partition split utility
+  2819	Company:
+  2820	Email:      schaefer@rbg.informatik.th-darmstadt.de
+  2821	WWW:
+  2822	Address:    Hainertrift 54, 63303 Dreieich, Germany
+  2823	Voice:      +49-6103-699967
+  2824	BBS:
+  2825	Fax:        +49-6103-699967
+  2826	Other info:
+  2827	
+  2828	
+  2829	Key:        Schikore, Daniel
+  2830	Author:     Daniel (Dan) Schikore
+  2831	Program:    The Danix Utilities
+  2832	Company:    N/A
+  2833	Email:      drs@cs.purdue.edu
+  2834	WWW:
+  2835	Address:    1983 Greenheath Dr., Florissant, MO 63033, USA
+  2836	Voice:      (314) 839-0709
+  2837	BBS:
+  2838	Fax:
+  2839	Other info:
+  2840	
+  2841	
+  2842	Key:        Schipper, Jeroen
+  2843	Author:     Jeroen Schipper
+  2844	Program:    READMAIL, A message reader for the PC
+  2845	Company:
+  2846	Email:      jschipper@hut.nl
+  2847	WWW:
+  2848	Address:
+  2849	Voice:
+  2850	BBS:
+  2851	Fax:
+  2852	Other info:
+  2853	
+  2854	
+  2855	Key:        Schmidt, Robert
+  2856	Author:     Robert Schmidt
+  2857	Program:    TWEAK for VGA, XINTRO Introduction to VGA mode X
+  2858	Company:    Norwegian Institute of Technology
+  2859	Email:      robert@idt.unit.no
+  2860	WWW:
+  2861	Address:    HK 25-51, N-7035 Trondheim, NORWAY
+  2862	Voice:      +47 73 88 70 36
+  2863	BBS:
+  2864	Fax:
+  2865	Other info:
+  2866	
+  2867	
+  2868	Key:        Schroeder, W.F.
+  2869	Author:     W.F.(Django) Schroeder DL5YEC
+  2870	Program:    HamComm: ham radio, send/receive rtty and cw w/o modem
+  2871	Company:    Siemens Nixdorf Informationssysteme AG Paderborn
+  2872	Email:      schroeder.pad@sni.de
+  2873	WWW:
+  2874	Address:    Augsburger Weg 63, 4790 Paderborn, Germany
+  2875	Voice:      +49 5251 48 9 88
+  2876	BBS:        packet radio: DL5YEC@DB0BQ.DEU.EU
+  2877	Fax:        +49 5251 828 509
+  2878	Other info:
+  2879	
+  2880	
+  2881	Key:        Schull, Jonathan
+  2882	Author:     Jonathan Schull
+  2883	Program:    SoftLock Document  and  Programmers' ToolKits
+  2884	Company:    SoftLock Services, Inc.
+  2885	Email:      Schull@SoftLock.com;  Intro@SoftLock.com
+  2886	WWW:
+  2887	Address:    963 East Ave., Rochester, NY 14607-2251, USA
+  2888	Voice:      (716) 242-0348
+  2889	BBS:        (in-house only)
+  2890	Fax:        (716) 242-0348
+  2891	Other info: Automated sales, distribution for all!
+  2892	
+  2893	
+  2894	Key:        Schulz, Russell
+  2895	Author:     Russell Schulz
+  2896	Program:    RusNews, naproc, procc (Waffle newsreader, utilities)
+  2897	Company:
+  2898	Email:      russell@alpha3.ersys.edmonton.ab.ca
+  2899	WWW:
+  2900	Address:
+  2901	Voice:
+  2902	BBS:
+  2903	Fax:
+  2904	Other info: primary ftp for these+other Waffle utils: halcyon.com
+  2905	
+  2906	
+  2907	Key:        Scott, Peter
+  2908	Author:     Peter Scott
+  2909	Program:    HYTELNET Instant-access to telnet login sites
+  2910	Company:    University of Saskatchewan Libraries
+  2911	Email:      scott@sklib.usask.ca
+  2912	WWW:
+  2913	Address:    College Dr.,Saskatoon, Sask, Canada, S7N 0W0
+  2914	Voice:      (306) 966-5920
+  2915	BBS:
+  2916	Fax:        (306) 966-6040
+  2917	Other info:
+  2918	
+  2919	
+  2920	Key:        SemWare Inc.
+  2921	Author:     SemWare
+  2922	Program:    QEdit (Advanced, TSR, and OS/2)
+  2923	Company:    SemWare
+  2924	Email:      tech.support@semware.atl.ga.us
+  2925	WWW:
+  2926	            75300.2710@compuserve.com
+  2927	            richard.blackburn@semware.atl.ga.us
+  2928	Address:    4343 Shallowford Rd Ste. C3A, Marietta, GA 30062-5022, USA
+  2929	Voice:      (404)641-9002
+  2930	BBS:        (404)641-8968
+  2931	Fax:        (404)640-6213
+  2932	Other info:
+  2933	
+  2934	
+  2935	Key:        Shearer, Dan
+  2936	Author:     Dan Shearer
+  2937	Program:    CHECKSYS system config tester, USE prog for LAN managers
+  2938	Company:    University of South Australia
+  2939	Email:      ccdps@lux.levels.unisa.edu.au
+  2940	WWW:
+  2941	Address:    70 Third Avenue, St Peters, South Australia 5069, Australia
+  2942	Voice:      +61 8 362 9529
+  2943	BBS:
+  2944	Fax:        +61 8 362 9529
+  2945	Other info:
+  2946	
+  2947	
+  2948	Key:        Shippony, Zvi
+  2949	Author:     Zvi Shippony
+  2950	Program:    MAFIA - Math utilities package
+  2951	Company:    Jet Propulsion Laboratory (JPL)
+  2952	Email:      zvi@hipp.jpl.nasa.gov   or:   zvi@thak.jpl.nasa.gov
+  2953	WWW:
+  2954	Address:    4800 Oak Grove Dr., Pasadena, CA, 91109, U.S.A.
+  2955	Voice:      (818) 354-1687
+  2956	BBS:
+  2957	Fax:
+  2958	Other info: Home: 4822 Tilden Ave. Sherman Oaks, CA, 91423
+  2959	
+  2960	
+  2961	Key:        Shmakov, Sergey
+  2962	Author:     Sergey Yurievich Shmakov
+  2963	Program:    RSC Resident Scientific Calculator
+  2964	Company:    Join Institute of Nuclear Research
+  2965	Email:      evsikov@lcta9.jinr.dubna.su
+  2966	WWW:
+  2967	Address:    P.O. Box 79, Head Post Office Moscow 101000 Russia
+  2968	Voice:      (221) 4-52-09
+  2969	BBS:
+  2970	Fax:
+  2971	Other info:
+  2972	
+  2973	
+  2974	Key:        Siebeck, Wolfgang
+  2975	Author:     Wolfgang Siebeck
+  2976	Program:    PCElm 3.01 and above
+  2977	Company:    RMI Nachrichtentechnik GmbH
+  2978	Email:      siebeck@infoac.rmi.de
+  2979	WWW:
+  2980	Address:    P.O.Box 1526, D-5100 Aachen, Germany
+  2981	Voice:      +49 241-47997-22
+  2982	BBS:
+  2983	Fax:        +49 241-47997-77
+  2984	Other info:
+  2985	
+  2986	
+  2987	Key:        Sill, Daniel
+  2988	Author:     Daniel A. Sill & Stephen L. Balkum
+  2989	Program:    SVGAxx2x Super VGA Graphics Libraries For BASIC/C/C++
+  2990	Company:    Zephyr Software
+  2991	Email:      sill@zoe.as.utexas.edu, balkum@zoe.as.utexas.edu
+  2992	WWW:
+  2993	Address:    P.O. Box 7704, Austin, Texas 78713-7704, USA
+  2994	Voice:      (512) 280-7705 M-F 5pm-9pm, Sa-Su 10am-9pm CST/CDT
+  2995	BBS:
+  2996	Fax:
+  2997	Other info:
+  2998	
+  2999	
+  3000	Key:        Silva, John
+  3001	Author:     John P. Silva
+  3002	Program:    SVGA Fast Truecolor Image Viewer
+  3003	Company:
+  3004	Email:      jsilva@netcom.com
+  3005	WWW:
+  3006	Address:    3429 Maywood Dr., Richmond, CA  94803, USA
+  3007	Voice:      (510) 222-9255
+  3008	BBS:
+  3009	Fax:
+  3010	Other info:
+  3011	
+  3012	
+  3013	Key:        Singh, Manjit
+  3014	Author:     Manjit (Manu) Singh
+  3015	Program:    Supreme Utility - multiple command file utility
+  3016	Company:    SupremeSoft
+  3017	Email:      msingh@ucs.indiana.edu
+  3018	WWW:
+  3019	Address:    105 Deerfield Drive, Easton, CT 06612-1106, U.S.A.
+  3020	Voice:      (203) 261 - 7510 or (812) 331 - 8379
+  3021	BBS:        (812) 824 - 8682
+  3022	Fax:
+  3023	Other info:
+  3024	
+  3025	
+  3026	Key:        Skinner, Roland
+  3027	Author:     Roland Skinner
+  3028	Program:    QUIKCOPY  Quick file and diskette copier for DOS.
+  3029	Company:    RJS Software
+  3030	Email:      rjs@leclub.co.za, roland@cs.wits.ac.za
+  3031	WWW:        http://www.cs.wits.ac.za/~roland
+  3032	Address:    P.O. Box 14134, Bredell, 1623, Republic of South Africa
+  3033	Voice:      +27-(0)11-716-4486  (GMT+2, office hours only)
+  3034	BBS:        LeClub BBS  +27-(0)11-315-3477
+  3035	Fax:        +27-(0)11-794-1490
+  3036	Other info:
+  3037	
+  3038	
+  3039	Key:        Skulason, Fridrik
+  3040	Author:     Fridrik (Frisk) Skulason
+  3041	Program:    F-PROT anti-virus program
+  3042	Company:    Frisk Software International
+  3043	Email:      frisk@complex.is
+  3044	WWW:
+  3045	Address:    Postholf 7180, IS-127 Reykjavik, Iceland
+  3046	Voice:
+  3047	BBS:
+  3048	Fax:        +354-1-28801
+  3049	Other info:
+  3050	
+  3051	
+  3052	Key:        Smetana, Rob
+  3053	Author:     Rob W. Smetana
+  3054	Program:    Pro~Formance Data Tool 2-gig editor dBASE/EBCDIC/ASCII
+  3055	Company:    Pro~Formance
+  3056	Email:      72117.1360@compuserve.com
+  3057	WWW:
+  3058	Address:    132 Alpine Terrace,  San Francisco  CA  94117,   USA
+  3059	Voice:      (415) 863-0530
+  3060	BBS:
+  3061	Fax:        (415) 522-1347
+  3062	Other info: Author of over 20 shareware programs
+  3063	
+  3064	
+  3065	Key:        Smith, David
+  3066	Author:     David Smith
+  3067	Program:    AUTOMATED INTERNET
+  3068	Company:    AV Technologies
+  3069	Email:      physics@computek.net
+  3070	WWW:
+  3071	Address:    1104 Mason Drive, Hurst, TX 76053, USA
+  3072	Voice:      817-282-2928
+  3073	BBS:        (214) 641-6292
+  3074	Fax:
+  3075	Other info:
+  3076	
+  3077	
+  3078	Key:        Smith, Harry
+  3079	Author:     Harry J. Smith
+  3080	Program:    VPCalc - Variable Precision floating decimal calculator
+  3081	Company:    Litton Computer Services
+  3082	Email:      HJSmith@ix.netcom.com
+  3083	WWW:
+  3084	Address:    19628 Via Monte Dr., Saratoga, CA 95070-4522, USA
+  3085	Voice:      1-(408) 741-0406
+  3086	BBS:
+  3087	Fax:
+  3088	Other info:
+  3089	
+  3090	
+  3091	Key:        Smith, Samuel
+  3092	Author:     Samuel H. Smith
+  3093	Program:    HS/Link bidirectional file transfer protocol
+  3094	Company:    The Tool Shop
+  3095	Email:      71150.2731@compuserv.com
+  3096	WWW:
+  3097	Address:    P.O. Box 4808, Panorama City, CA. 91412, USA
+  3098	Voice:      (818) 891-4228
+  3099	BBS:        (818) 891-1344
+  3100	Fax:        (818) 891-4228
+  3101	Other info:
+  3102	
+  3103	
+  3104	Key:        Spielbusch, Stan
+  3105	Author:     Stan Spielbusch
+  3106	Program:    SuperDIR directory util w/DB formatting, etc.
+  3107	Company:    Cottonwood Software
+  3108	Email:      75264.1630@compuserve.com
+  3109	WWW:
+  3110	Address:    P.O. Box 6546, Leawood, KS  66206  USA
+  3111	Voice:      (913) 663-3022
+  3112	BBS:
+  3113	Fax:        (913) 663-3747
+  3114	Other info:
+  3115	
+  3116	
+  3117	Key:        Starr, David
+  3118	Author:     David Starr
+  3119	Program:    Most popular sharebook: "1984 - Invasion of PC Privacy"
+  3120	Company:    Common Law Service Center
+  3121	Email:      starrd@iia.org
+  3122	WWW:
+  3123	Address:    9016 Wilshire Blvd, #231, Beverly HIlls, California, USA
+  3124	Voice:      (310) 859-7700
+  3125	BBS:        (310) 208-2014 offline until 9/94
+  3126	Fax:        (310) 208-2005
+  3127	Other info: Creator of Patriot series "ShareBooks"(tm)
+  3128	
+  3129	
+  3130	Key:        Stern, Marc
+  3131	Author:     Marc Stern
+  3132	Program:    XSET - enhanced set instruction
+  3133	Company:
+  3134	Email:      stern@mble.philips.be
+  3135	WWW:
+  3136	Address:    Av. de la Basilique 376 b.19 - 1080 Bruxelles - Belgium
+  3137	Voice:      (32.2) 525.63.32 - (32.2) 427.98.52
+  3138	BBS:
+  3139	Fax:
+  3140	Other info:
+  3141	
+  3142	
+  3143	Key:        Stewartson, Ian
+  3144	Author:     Ian Stewartson
+  3145	Program:    Korn/Bourne Shell for MS-DOS and OS/2
+  3146	Company:    Data Logic Limited
+  3147	Email:      istewart@datlog.co.uk
+  3148	WWW:
+  3149	Address:    Queens House, Kymberley Road, Harrow, Middlesex, HA1 1YR, UK.
+  3150	Voice:      +44 81 863 0383
+  3151	BBS:        Not available
+  3152	Fax:        +44 81 861 2010
+  3153	Other info:
+  3154	
+  3155	
+  3156	Key:        Stiller, Wolfgang
+  3157	Author:     Wolfgang Stiller
+  3158	Program:    Integrity Master anti-virus and data integrity system
+  3159	Company:    Stiller Research
+  3160	Email:      72571.3352@compuserve.com
+  3161	WWW:
+  3162	Address:    2625 Ridgeway St., Tallahassee, FL 32310-5169 USA
+  3163	Voice:      904-574-0920
+  3164	BBS:        904-386-8693
+  3165	Fax:        904-575-7884
+  3166	Other info: orders: 1-800-788-0787 (ASG)
+  3167	
+  3168	
+  3169	Key:        Stone, Chris
+  3170	Author:     Chris Stone
+  3171	Program:    BBS List Database Door - Door program for BBS's
+  3172	Company:    High Mountain Software
+  3173	Email:      cstone@hms.com, Fidonet: Chris Stone 1:104/825.0
+  3174	WWW:
+  3175	Address:    389 Brookside Drive, Bailey, CO 80421, USA
+  3176	Voice:      (303) 838-2386
+  3177	BBS:        (303) 674-0147
+  3178	Fax:        n/a
+  3179	Other info: Anonymous ftp from ftp.csn.net in dir hms.
+  3180	
+  3181	
+  3182	Key:        Strevel, Christian
+  3183	Author:     Christian `Fantasma' Strevel
+  3184	Program:    InvDsk // The Software Database
+  3185	Company:    CC+Soft.Inc
+  3186	Email:      ggonzale@rsservb.cem.itesm.mx
+  3187	WWW:
+  3188	Address:    Guerrero #343, Ent. D-109, Mexico DF 06900, MEXICO
+  3189	Voice:      (011) 525-583-72-68
+  3190	BBS:        (011) 525-659-10-79
+  3191	Fax:        (011) 525-583-72-68 (please contact me first)
+  3192	Other info:
+  3193	
+  3194	
+  3195	Key:        Stroem, Henrik
+  3196	Author:     Henrik Stroem
+  3197	Program:    HS.COM, Boot sector virus detection and repair program
+  3198	Company:    Stroem System Soft
+  3199	Email:      hstroem@pvv.unit.no
+  3200	WWW:
+  3201	Address:    Husebyveien 58c, 7078 Saupstad, Norway
+  3202	Voice:     
+  3203	BBS:       
+  3204	Fax:
+  3205	Other info: Anti (boot) virus researcher and assembly-l programmer
+  3206	
+  3207	
+  3208	Key:        Summers, Peter
+  3209	Author:     Peter Summers
+  3210	Program:    MUFUSION, Microfusion MF30 terminal emulator
+  3211	Company:    Cardiology Dept, Royal Melbourne Hospital
+  3212	Email:      U5533129@ucsvc.ucs.unimelb.edu.au
+  3213	WWW:
+  3214	Address:    Cardiology Dept, Royal Melboure Hospital, Australia, 3050
+  3215	Voice:      (+61 3) 342 8727
+  3216	BBS:       
+  3217	Fax:        (+61 3) 347 2808
+  3218	Other info:
+  3219	
+  3220	
+  3221	Key:        Szentesi, Zoltan
+  3222	Author:     Zoltan Szentesi
+  3223	Program:    ZOOM, A General 256C drawing prg.
+  3224	Company:    none yet
+  3225	Email:      Szentesiz@pmmf.hu
+  3226	WWW:
+  3227	Address:    7800 Siklos  Korvin str. 7 Hungary
+  3228	Voice:      00-36-72-351-757
+  3229	BBS:
+  3230	Fax:
+  3231	Other info: Interests: graphics,networks,pacsal,c++,new methods
+  3232	
+  3233	
+  3234	Key:        Tassle (Van Tassle), Ray
+  3235	Author:     Ray Van Tassle
+  3236	Program:    WIZ-fast, multidisk file filder
+  3237	Company:
+  3238	Email:      rayvt@comm.mot.com
+  3239	WWW:
+  3240	Address:    1020 Fix Run Lane/Algonquin, Il. USA 60102
+  3241	Voice:      (708)658-4941
+  3242	BBS:        (708)854-1696
+  3243	Fax:
+  3244	Other info:
+  3245	
+  3246	
+  3247	Key:        Taylor, Patrick I.
+  3248	Author:     Patrick Taylor
+  3249	Program:    UFI Universal File Information for batch files
+  3250	Company:    Andrologic CMN.
+  3251	Email:      exuptr@exu.ericsson.se
+  3252	WWW:
+  3253	Address:    3308 Lanarc, Plano, TX 75023, Sweden
+  3254	Voice:      214-596-2760
+  3255	BBS:        The Sounding Board BBS  +1 214 596 2915
+  3256	Fax:       
+  3257	Other info: Also: CPDISK, ROOTER, CP, XORT, TXTSPLIT, UUMAKE
+  3258	
+  3259	
+  3260	Key:        Thomson, Douglas
+  3261	Author:     Douglas (Doug) Thomson
+  3262	Program:    TeleReplica Remote Control of PC
+  3263	Company:    Monash University, Gippsland Campus
+  3264	Email:      doug@giaeb.cc.monash.edu.au
+  3265	WWW:
+  3266	Address:    MUGC, Switchback Rd, Churchill, Victoria 3842, AUSTRALIA
+  3267	Voice:
+  3268	BBS:
+  3269	Fax:        +61-51-226738
+  3270	Other info:
+  3271	
+  3272	
+  3273	Key:        Toikkanen, Tarmo
+  3274	Author:     Tarmo Toikkanen
+  3275	Program:    Controlled Copy, advanced DOS file copier
+  3276	Company:
+  3277	Email:      ttoikkan@gamma.hut.fi, 100523.2223@compuserve.com
+  3278	WWW:
+  3279	Address:    Ruusulankatu 19 A 26, 00250 Helsinki, Finland
+  3280	Voice:      +358-0-493 169
+  3281	BBS:
+  3282	Fax:
+  3283	Other info: Registration via internet accepted
+  3284	
+  3285	
+  3286	Key:        Tolliver, James
+  3287	Author:     James (Jim) Tolliver
+  3288	Program:    MEG Graphical sysinfo
+  3289	Company:
+  3290	Email:      JTJTJTJT@AOL.COM or 76516.1246@Compuserve.COM
+  3291	WWW:
+  3292	Address:    P.O. Box 4071, Stamford CT, 06907 USA
+  3293	Voice:      (203) 964-5082
+  3294	BBS:
+  3295	Fax:
+  3296	Other info: Member ASP
+  3297	
+  3298	
+  3299	Key:        Tong, Ka
+  3300	Author:     Ka Iok Tong (aka Kent Tong)
+  3301	Program:    Freeman Installer & Uninstaller
+  3302	Company:    Sydney University
+  3303	Email:      tongk@archsci.arch.su.edu.au
+  3304	WWW:
+  3305	Address:    Box 20, Sydney University, NSW 2006, Australia
+  3306	Voice:      (61)(2)2116314
+  3307	BBS:
+  3308	Fax:        (61)(2)2116314, same as voice
+  3309	Other info:
+  3310	
+  3311	
+  3312	Key:        Torgersen, Knut
+  3313	Author:     Knut Torgersen
+  3314	Program:    REMIND - A mind jogger for important dates and events
+  3315	Company:
+  3316	Email:      knutt@ifi.uio.no, knutt@softpoint.no
+  3317	WWW:
+  3318	Address:    Lauritz Hervigs vei 105A, N-3035  DRAMMEN, Norway
+  3319	Voice:      +47 32 81 97 53
+  3320	BBS:       
+  3321	Fax:        +47 32 81 97 53 (Fax modem! Call first!)
+  3322	Other info:
+  3323	
+  3324	
+  3325	Key:        Tschirner, Tim
+  3326	Author:     Tim Tschirner
+  3327	Program:    The LJ4 Utility - Quickly Changes LaserJet 4 Printer Settings
+  3328	Company:    TASsoft
+  3329	Email:      ittschir@techfak.uni-bielefeld.de
+  3330	WWW:
+  3331	Address:    Friedrich-Ebert-Str. 13, 33602 Bielefeld, Germany
+  3332	Voice:      +49-521-121681
+  3333	BBS:
+  3334	Fax:
+  3335	Other info: Once registered, all future updates are free
+  3336	
+  3337	
+  3338	Key:        Uberto, Franck
+  3339	Author:     Franck Uberto
+  3340	Program:    DIXCOPY (one pass copyer for std & ext. formats)
+  3341	Company:    ESRF
+  3342	Email:      uberto@esrf.fr
+  3343	WWW:
+  3344	Address:    BP 220, 38043 GRENOBLE Cedex, FRANCE
+  3345	Voice:
+  3346	BBS:
+  3347	Fax:
+  3348	Other info:
+  3349	
+  3350	
+  3351	Key:        Vandenberg, Rick
+  3352	Author:     Rick Vandenberg
+  3353	Program:    V-MailServer MSDOS-based mail server
+  3354	Company:    Vandenberg Systems Research
+  3355	Email:      rick@vsystem.wimsey.bc.ca
+  3356	WWW:
+  3357	Address:    103-1016 West 12th Avenue, Vancouver, BC, Canada V6H 1L3
+  3358	Voice:      (604) 737-2532
+  3359	BBS:
+  3360	Fax:
+  3361	Other info:
+  3362	
+  3363	
+  3364	Key:        Veerman, Rene
+  3365	Author:     Rene "Lowlevel" Veerman
+  3366	Program:    Textgraph tp7 unit - textmode unit, with tph
+  3367	Company:    Syntax Terror Software
+  3368	Email:      lowlevel@xs4all.nl
+  3369	WWW:
+  3370	Address:    Calkoengracht 21, 1131 ZM Volendam, Holland
+  3371	Voice:      +31-2993-63417
+  3372	BBS:
+  3373	Fax:
+  3374	Other info:
+  3375	
+  3376	
+  3377	Key:        Veldman, Frans
+  3378	Author:     Frans Veldman
+  3379	Program:    TBAV Thunderbyte Anti Virus Utilities
+  3380	Company:    ESaSS B.V.
+  3381	Email:      Veldman@ESaSS.iaf.nl
+  3382	WWW:
+  3383	Address:    P.o. box 1380, 6501 BJ Nijmegen, The Netherlands
+  3384	Voice:      +31-80-787881
+  3385	BBS:        +31-85-212395
+  3386	Fax:        +31-80-789186
+  3387	Other info:
+  3388	
+  3389	
+  3390	Key:        Vias, John
+  3391	Author:     John Vias
+  3392	Program:    Snooper, a powerful system information utility
+  3393	Company:    Vias and Associates
+  3394	Email:      72260.1601@compuserve.com
+  3395	WWW:
+  3396	Address:    P.O. Box 8234, Gainesville, FL 32605, USA
+  3397	Voice:      (800) 332-8234
+  3398	BBS:        (904) 335-7289
+  3399	Fax:        (904) 332-4951
+  3400	Other info: Tech support and international calls: (904) 332-8234
+  3401	
+  3402	
+  3403	Key:        Vries (de Vries), Nico
+  3404	Author:     Nico E de Vries
+  3405	Program:    UltraCompressor II
+  3406	Company:    AIP-NL
+  3407	Email:      desk@aip.nl; 100115,2303; 2:281/713.1
+  3408	WWW:
+  3409	Address:    P.O. Box 1432, 3430 BK, Nieuwegein, The Netherlands
+  3410	Voice:      +31-(0)30-662107
+  3411	BBS:        +31-(0)3402-55707
+  3412	Fax:        +31-(0)30-616571
+  3413	Other info:
+  3414	
+  3415	
+  3416	Key:        Vuorenmaa, Markku
+  3417	Author:     Markku Vuorenmaa
+  3418	Program:    Locate - file finder
+  3419	Company:   
+  3420	Email:      Markku.Vuorenmaa@uta.fi or csmavu@uta.fi
+  3421	WWW:
+  3422	Address:    Mikkilantie 13, 62100 Lapua, FINLAND
+  3423	Voice:     
+  3424	BBS:       
+  3425	Fax:       
+  3426	Other info:
+  3427	
+  3428	
+  3429	Key:        Vygonets, Vadim
+  3430	Author:     Vadim (Vadik) Vygonets
+  3431	Program:    Universal Undo -- a universal batch unpacker
+  3432	Company:    Hebrew University of Jerusalem, Israel
+  3433	Email:      vadik@cs.huji.ac.il
+  3434	WWW:
+  3435	Address:    29/32 Colombia st. Jerusalem Israel
+  3436	Voice:      ++972-2-412694
+  3437	BBS:
+  3438	Fax:
+  3439	Other info:
+  3440	
+  3441	
+  3442	Key:        Vyncke, Eric
+  3443	Author:     Eric Vyncke
+  3444	Program:    NetCC Network Carbon Copy
+  3445	Company:    Network Research Belgium
+  3446	Email:      vyncke@nrb.be
+  3447	WWW:
+  3448	Address:    Parc Industriel des Hauts-Sarts B-4040 Herstal Belgium
+  3449	Voice:      +32.41.40.72.11
+  3450	BBS:
+  3451	Fax:        +32.41.48.11.70
+  3452	Other info: anon ftp to aix1.segi.ulg.ac.be in /u/ftp/nrb
+  3453	
+  3454	
+  3455	Key:        Walsh, Norm
+  3456	Author:     Norman (norm) Walsh
+  3457	Program:    Sfware (font management, information, special effects)
+  3458	Company:    Small Planet Software
+  3459	Email:      walsh@cs.umass.edu
+  3460	WWW:
+  3461	Address:    #42I Southwood Apts, Amherst MA 01002, USA
+  3462	Voice:      (413) 256-8527
+  3463	BBS:        N/A
+  3464	Fax:        N/A
+  3465	Other info: Also available: TeX font utils, MergeSFP, SFP2Auto
+  3466	
+  3467	
+  3468	Key:        Walter, Alexander
+  3469	Author:     Alexander Walter
+  3470	Program:    FONTEDIT, Font editor for HP LaserJet bitmapped fonts
+  3471	Company:    Alexander Walter Co.
+  3472	Email:      76500.1423@compuserve.com
+  3473	WWW:
+  3474	Address:    182 ILER Dr., Middletown, NJ. 07748, USA
+  3475	Voice:      (800) 262-0827, (908) 949-0507 or (908) 671-5080
+  3476	BBS:        none
+  3477	Fax:        none
+  3478	Other info: Version also available for editing DeskJet fonts
+  3479	
+  3480	
+  3481	Key:        Weatherley, Rhys
+  3482	Author:     Rhys Weatherley
+  3483	Program:    UW/PC multi-window terminal prog & Helldiver newsreader
+  3484	Company:    School of Computing Science, Queensland University of Technology
+  3485	Email:      rhys@fit.qut.edu.au
+  3486	WWW:
+  3487	Address:    School of Computing Science, QUT, Brisbane QLD 4000, Australia.
+  3488	Voice:
+  3489	BBS:
+  3490	Fax:
+  3491	Other info: Former comoderator of MS-DOS FTP site list /pc/pd2/moder*.zip
+  3492	
+  3493	
+  3494	Key:        Weinbeck, Gene
+  3495	Author:     Gene Weinbeck
+  3496	Program:    FundRaiser Basic donor management for nonprofits
+  3497	Company:    Professional Support Software
+  3498	Email:      edgewalk@ios.com,  72077,1015@compuserve.com
+  3499	WWW:
+  3500	Address:    PO Box 901, West Plains, MO 65775  USA
+  3501	Voice:      (417) 256-4280
+  3502	BBS:
+  3503	Fax:        (417) 256-6370
+  3504	Other info: ASP author member
+  3505	
+  3506	
+  3507	Key:        Weinstein, Iram
+  3508	Author:     Iram Weinstein
+  3509	Program:    4EDIT, 4ZIP, USEMGR
+  3510	Company:    XD Systems
+  3511	Email:      70741.3711@compuserve.com iramw@trg1.saic.com
+  3512	WWW:
+  3513	Address:    1014 Shipman Lane, McLean, VA 22101 USA
+  3514	Voice:      (703) 821-3215
+  3515	BBS:
+  3516	Fax:
+  3517	Other Info: The programs are utilities for 4DOS
+  3518	
+  3519	
+  3520	Key:        Whitmore, Stuart
+  3521	Author:     Stuart J. Whitmore
+  3522	Program:    UniMessage BBS utility door
+  3523	Company:    UniNova Services Corporation
+  3524	Email:      stuart.whitmore@uninova.com
+  3525	WWW:
+  3526	Address:    PO Box 900, Ellensburg, WA 98926, USA
+  3527	Voice:      (509) 925-3894
+  3528	BBS:        (509) 925-3893
+  3529	Fax:        (509) 925-3893
+  3530	Other info:
+  3531	
+  3532	
+  3533	Key:        Windl, Ulrich
+  3534	Author:     Ulrich Windl
+  3535	Program:    D2D Professional Disk Copy Program
+  3536	Company:    University of Regensburg
+  3537	Email:      Ulrich.Windl@rz.uni-regensburg.de
+  3538	WWW:
+  3539	Address:    DV-med, Franz-Josef-Strauss-Allee 11, D-93042
+  3540	            Regensburg, Germany
+  3541	Voice:      49 941 944-5879
+  3542	BBS:
+  3543	Fax:        49 941 944-5882
+  3544	Other info:
+  3545	
+  3546	
+  3547	Key:        Wisan, Richard
+  3548	Author:     R. N. (Dick) Wisan 
+  3549	Program:    PrnSet & Friends universal printer setter & Text File Manicure Kit 
+  3550	Company:
+  3551	Email:      WISANR@hartwick.edu
+  3552	WWW:
+  3553	Address:    37 Clinton Street, Oneonta, NY 13820, USA
+  3554	Voice:      (607) 432-4133
+  3555	BBS:
+  3556	Fax:
+  3557	Other info:
+  3558	
+  3559	
+  3560	Key         Wolfe, Robert
+  3561	Author:     Robert A. Wolfe
+  3562	Program:    StaTutor:  A tutorial for statistical concepts.
+  3563	Company:    Biostatistics, University of Michigan.
+  3564	Email:      bobwolfe@umich.edu
+  3565	WWW:
+  3566	Address:    Biostatistics SPH, Univ. Michigan, Ann Arbor, MI 48109, USA
+  3567	Voice:      (313) 936-0997
+  3568	BBS:
+  3569	Fax:        (313) 763-2215
+  3570	Other info:
+  3571	
+  3572	
+  3573	Key:        Woods, Jeff
+  3574	Author:     Jeff Woods
+  3575	Program:    Telix Communications software for DOS and Windows
+  3576	Company:    deltaComm Development, Inc.
+  3577	Email:      jeff.woods@delta.com, 71035.2167@compuserve.com
+  3578	WWW:
+  3579	Address:    PO Box 1185, Cary, NC  27512, USA
+  3580	Voice:      (919) 460-4556
+  3581	BBS:        (919) 481-9399
+  3582	Fax:        (919) 460-4531
+  3583	Other info: (800) 859-8000 for orders only
+  3584	
+  3585	
+  3586	Key:        Woods, Rob
+  3587	Author:     Rob Woods
+  3588	Program:    BaseBall Card Stats
+  3589	Company:    Purple Six Fingered Fist *PSFF*
+  3590	Email:      woodsrg@newton.ccs.tuns.ca
+  3591	WWW:
+  3592	Address:    28 Beaverbank Rd.,Nova Scotia, Canada, B4E 1G5
+  3593	Voice:      864-3015
+  3594	BBS:        N/A
+  3595	Fax:        N/A
+  3596	Other info:
+  3597	
+  3598	
+  3599	Key:        Wriedt, Dirk
+  3600	Author:     Dirk Wriedt
+  3601	Program:    ARV intelligent file archival&database, ARVxxx.ARJ
+  3602	Company:
+  3603	Email:      dirkw@toppoint.de
+  3604	WWW:
+  3605	Address:    Kirsebek 15, D-24376 Kappeln, Germany
+  3606	Voice:      +49-431-180413
+  3607	BBS:
+  3608	Fax:
+  3609	Other info:
+  3610	
+  3611	
+  3612	Key:        Wunderlich, Jeff
+  3613	Author:     Jeff Wunderlich
+  3614	Program:    AURORA text editor, huge capacity, very fast
+  3615	Company:    Aurora Terra
+  3616	Email:      71702.1025@compuserve.com
+  3617	WWW:
+  3618	Address:    P.O. Box 34275, Bethesda MD, USA
+  3619	Voice:      (301) 468-2255
+  3620	BBS:        (301) 230-1214
+  3621	Fax:       
+  3622	Other info:
+  3623	
+  3624	
+  3625	Key:        Zitterkopf, John D.
+  3626	Author:     John D. Zitterkopf
+  3627	Program:    The HardDisk Accomplice
+  3628	Company:    ZittWare
+  3629	Email:      jdz1@Ra.MsState.Edu
+  3630	WWW:
+  3631	Address:    940 N. Jackson St. #7D, Starkville, MS 39759, USA
+  3632	Voice:
+  3633	BBS:        Metro City BBS (601)897-2031 [8-N-1]
+  3634	Fax:
+  3635	Other info: Additional address: Zitt@aol.com

@@ -1,0 +1,1030 @@
+     1	
+     2	Archive-name: os2-faq
+     3	Version: 2.0
+     4	
+     5	OS/2 Frequently Asked Questions List: User's Edition
+     6	Release 2.0; April 25, 1992
+     7	Compiled by Timothy F. Sipples
+     8	
+     9	Introduction:  For changes/suggestions/additions please mail
+    10	sip1@ellis.uchicago.edu.  This List may be freely distributed.  Mention
+    11	of a product does not constitute an endorsement.  Answers to questions
+    12	closer to the bottom of the List may rely on information given in prior
+    13	answers.  Customers outside the United States should not necessarily
+    14	rely on 800 telephone numbers, part numbers, or upgrade policies
+    15	contained in this List.
+    16	
+    17	Release Notes:  With OS/2 2.0 arriving in stores this List arrives at
+    18	Release 2.0.  Many thanks for the suggestions/corrections -- please keep
+    19	them coming.  Reminder to BBS operators and other archivists: please
+    20	retain a copy of Release 1.9g of this List, the last release to cover
+    21	OS/2 1.x in any detail.  The Programmer's Edition of the FAQ List is
+    22	coming; netmail bjaspan@mit.edu with your contributions.  Questions 1,
+    23	2, 4, 5, 6, 7, 8, 10, 11, 17, 18, 22, 26, and 29 have been revised since
+    24	Release 1.9z.
+    25	
+    26	Questions Addressed in this Release:
+    27	
+    28	(1)	What is OS/2?
+    29	(2)	What are the differences between versions?
+    30	(3)	What is Extended Services/2?
+    31	(4)	How good is OS/2 2.0's DOS and Windows compatibility?
+    32	(5)	Where can I buy OS/2?
+    33	(6)	How much does OS/2 2.0 cost?
+    34	(7)	What hardware do I need to run IBM OS/2 2.0?  Do I need a PS/2?
+    35	(8)	What applications are available for OS/2?
+    36	(9)	Where can I obtain OS/2 shareware and freeware?
+    37	(10)	I am having trouble installing OS/2 2.0.  What should I do?
+    38	(11)	Will OS/2 2.0 work with my SuperVGA adapter?
+    39	(12)	Will OS/2 2.0 work with my printer?
+    40	(13)	How do I access HPFS partitions on my hard drive without booting
+    41		from the hard drive?  I'm getting error messages now -- how do I
+    42		"repair" my hard disk?
+    43	(14)	I can't install OS/2 from Drive B.  What's wrong?
+    44	(15)	Is there a Norton Utilities for OS/2?
+    45	(16)	Sometimes OS/2 2.0 will freeze when I run an application?  What do
+    46		I do?
+    47	(17)	My dealer doesn't know OS/2 from Unix.  How can I get answers to
+    48		my OS/2 questions?
+    49	(18)	Why should I use HPFS?  What does it offer me?  Does it work with
+    50		DOS?
+    51	(19)	I'm a Unix wizard.  How do I make OS/2 resemble Unix?
+    52	(20)	I prefer Windows.  How do I make OS/2 2.0 resemble Windows (or
+    53		OS/2 1.3)?
+    54	(21)	I would like to set up an OS/2 BBS.  What is available?
+    55	(22)	Can I use COM3 and COM4 in OS/2 2.0?
+    56	(23)	How do I start a background process from the OS/2 command line?
+    57	(24)	What are CSDs, how do I tell which I have, and where do I get
+    58		them?
+    59	(25)	How do I add new Adobe Type Manager typefaces?
+    60	(26)	How do I tweak OS/2 2.0 for maximum performance?
+    61	(27)	What networking products are available for OS/2 2.0?
+    62	(28)	Should I worry about viruses when running OS/2 2.0?
+    63	(29)	Are there any clever tricks that apply to OS/2 2.0?
+    64	
+    65	----------------------------------------------------------------------
+    66	
+    67	(1)	What is OS/2?
+    68	
+    69	OS/2 is an advanced operating system for PCs and PS/2s with an 80286
+    70	processor or better.  It was codeveloped by Microsoft and IBM and
+    71	envisioned as the successor to DOS.
+    72	
+    73	It was designed from the ground up with preemptive multitasking and
+    74	multithreading in mind.  It also protects applications from one another
+    75	(a single misbehaved program will not typically disrupt the entire
+    76	system), supports multimegabytes of physical RAM, and supplies virtual
+    77	memory to applications as requested, breaking DOS's 640K barrier.
+    78	
+    79	As shipped, it does not support multiuser operation, although third
+    80	parties have grafted multiuser capabilities onto the base operating
+    81	system.  Remote-OS, OS2YOU, Citrix, and PolyMod2 are four such products.
+    82	Remote-OS is published by The Software Lifeline, tel. 407-994-4466, and
+    83	OS2YOU is available from the OS/2 shareware/freeware sources (see
+    84	Question 9).  Citrix Systems can be reached at 305-755-0559.  PolyMod2's
+    85	publisher, MemSoft, can be reached at 407-997-????.
+    86	
+    87	------------------------------
+    88	
+    89	(2)	What are the differences between versions?
+    90	
+    91	IBM OS/2 Version 2.0 (CSD Level 02000, see Question 24) is now widely
+    92	available in retail release.  Version 2.0 will run only on machines with
+    93	an 80386SX processor or better.  IBM is (now) developing OS/2 (and its
+    94	Intel and non-Intel-based successors) independently but is involving
+    95	third party PC manufacturers in its testing.  Improvements include the
+    96	ability to preemptively multitask DOS, Windows 2.x, and Windows 3.0
+    97	(real and standard mode) applications (without purchasing any of these
+    98	environments) in separate, robust, protected sessions; an object-
+    99	oriented Workplace Shell (WPS); a multiple operating system boot
+   100	mechanism; new 32-bit programming interfaces; support for more than 16
+   101	MB of physical RAM; and more third party device drivers.  It also
+   102	provides EMS 3.2/4.0 and XMS 2.0/DPMI 0.9 (expanded and extended memory)
+   103	services to DOS and Windows applications.  OS/2 1.x applications,
+   104	unmodified, still run under OS/2 2.0.
+   105	
+   106	IBM OS/2 Version 1.3 is the last release of OS/2 to operate on PCs with
+   107	80286 CPUs.  This version introduced built-in Adobe Type Manager (ATM),
+   108	providing scalable typefaces for screen and printer, and reduced memory
+   109	requirements.  Procedures Language/2 (a.k.a. REXX), a powerful batch-
+   110	oriented programming language, became a part of Standard Edition with
+   111	this release.  (A few OEMs are shipping Microsoft OS/2 Version 1.3, but
+   112	Microsoft has all but abandoned OS/2 development.)
+   113	
+   114	OS/2 Version 1.2 was the first to incorporate the High Performance File
+   115	System (HPFS, which supports long file names).  With this release IBM
+   116	OS/2 added a dual boot mechanism and IBM Extended Edition introduced
+   117	REXX.
+   118	
+   119	OS/2 Version 1.1 was the first to include the Presentation Manager (PM)
+   120	GUI/API, now an integral part of the operating system.  Microsoft OEM
+   121	versions added a dual boot mechanism with this release.
+   122	
+   123	OS/2 Version 1.0, introduced in 1987, was the first release of OS/2.
+   124	Task switching was accomplished through a character-based shell and
+   125	limited DOS compatibility was provided.
+   126	
+   127	------------------------------
+   128	
+   129	(3)	What is Extended Services/2?
+   130	
+   131	Prior to Version 2.0, IBM offered two separate packages with each
+   132	release of OS/2: Standard Edition and Extended Edition.  Extended
+   133	Edition included extra, bundled software products: the Communications
+   134	Manager (for communication with IBM mainframes, minicomputers, and other
+   135	hosts), Database Manager (a full, network aware, relational database),
+   136	and LAN Requester.
+   137	
+   138	IBM has now unbundled the Extended Edition features, dropped LAN
+   139	Requester from the package (now available separately, with IBM's LAN
+   140	Server product), updated it for OS/2 2.0, and renamed it Extended
+   141	Services/2 1.0.  ES/2, by itself, no longer includes the base operating
+   142	system as Extended Edition once did.
+   143	
+   144	This new arrangement makes it easier to update the base operating system
+   145	with CSDs (see Question 24).  And now ES/2 1.0 will run under OS/2 1.3
+   146	Standard Edition as well as OS/2 2.0.  Also, ES/2 1.0, like OS/2 2.0
+   147	itself, is designed to operate on both IBM and non-IBM systems (see
+   148	Question 7).
+   149	
+   150	------------------------------
+   151	
+   152	(4)	How good is OS/2 2.0's DOS and Windows compatibility?
+   153	
+   154	OS/2 1.x justifiably earned a reputation for poor DOS compatibility.
+   155	Since it was designed for the 80286, it could not run more than one DOS
+   156	application at a time.
+   157	
+   158	The situation has changed dramatically with OS/2 2.0.  Version 2.0
+   159	preemptively multitasks DOS and Windows (real and standard mode)
+   160	applications in separate, protected sessions, without purchasing either
+   161	environment.
+   162	
+   163	OS/2 2.0 provides a complete DOS emulation equivalent to DOS 5.0.  The
+   164	operating system can provide each DOS application with up to 32 MB of
+   165	EMS 4.0 (expanded memory), 16 MB of XMS 2.0 (extended memory), and/or
+   166	512 MB of DPMI 0.9 (DOS Protected Mode Interface extended memory), all
+   167	from its pool of physical and/or virtual memory (meaning you do not have
+   168	to have as much RAM in your system as your applications request).  These
+   169	limits are in addition to the up to 730K free conventional memory
+   170	supplied to each DOS application, even after mouse and network drivers
+   171	are loaded.  As in DOS 5.0, DOS code and device drivers may be loaded
+   172	into high memory.  A 386 memory manager like QEMM or 386Max is not
+   173	needed -- these features are provided by OS/2 2.0 directly.
+   174	
+   175	The DOS emulation allows customization of device driver sets -- each DOS
+   176	application shares a systemwide CONFIG.SYS and the equivalent of its own
+   177	CONFIG.SYS.  Also, there is a systemwide AUTOEXEC.BAT file; batch
+   178	commands particular to each DOS application can be invoked using
+   179	separate, application-specific batch files.  And many DOS Settings are
+   180	provided to fine tune each DOS/Windows application's behavior (e.g.
+   181	IDLE_SENSITIVITY, VIDEO_RETRACE_EMULATION, etc).  The most popular
+   182	DOS/Windows applications on your hard disk will be migrated
+   183	automatically when you install OS/2 2.0.
+   184	
+   185	In addition, OS/2 2.0 will boot one or more specific versions of DOS in
+   186	separate sessions, to assist in running particularly difficult
+   187	applications.  So, for example, it is possible to multitask DOS 3.3, DOS
+   188	4.0, DOS 5.0, emulated DOS, and Desqview running atop DOS, all in
+   189	separate sessions, either windowed or full screen, all with the same
+   190	and/or separate device drivers, TSRs, environment variables, etc.  These
+   191	boot images may be stored on a hard disk.  (Under OS/2 2.0, the commands
+   192	VMBOOT, VMDISK, and the Installation Guide will assist in booting real
+   193	versions of DOS.)
+   194	
+   195	Standard graphics modes (generally up to the resolution of the desktop;
+   196	see Question 11) are supported in DOS windows, as are selectable text
+   197	mode typefaces.  Cut/paste to/from windowed DOS applications is
+   198	supported (to/from other DOS, OS/2, and Windows applications), including
+   199	graphics cut/paste.  Theoretically, OS/2 2.0 will run up to 240
+   200	simultaneous DOS/Windows sessions; the practical maximum depends on
+   201	system resources.  OS/2 2.0 will provide math coprocessor emulation for
+   202	DOS/Windows programs if a math coprocessor is not present or if the 386
+   203	CPU's step level is below D0.  (Check your 80386's step level using the
+   204	utility 386Step, available from the OS/2 shareware/freeware sources; see
+   205	Question 9.  Run it under native DOS, i.e. not while running OS/2 2.0.)
+   206	
+   207	OS/2 2.0 will, in fact, run virtually all DOS applications in existence,
+   208	including notorious ones such as Microsoft Flight Simulator, Wing
+   209	Commander, Maple (latest version), MatLab (latest version), and others.
+   210	Those that do not run generally fall into the following categories:
+   211	
+   212	(a)  Programs that use Virtual Control Program Interface (VCPI) memory
+   213	extenders or other extenders which require direct access to the 80386
+   214	control registers.  Since such applications are also all but
+   215	incompatible with Windows, most vendors have program updates for DPMI
+   216	compatibility, which OS/2 2.0 does support;
+   217	
+   218	(b)  Application programs which attempt to directly address the physical
+   219	sectors of an OS/2 managed nonremoveable hard disk drive.  Such programs
+   220	include UnErase in Norton Utilities, for example.  Fortunately OS/2 2.0
+   221	has a built-in UnDelete feature which is more robust than Norton's
+   222	approach.  (Consult the online Command Reference for information on how
+   223	to enable UNDELETE);
+   224	
+   225	(c)  Timing sensitive DOS applications.  Certain DOS programs that
+   226	generate digitized sound through the PC's internal speaker may have
+   227	distorted sound.  High speed, real time data collection may be
+   228	compromised.  These problems can often be minimized or even eliminated
+   229	using OS/2 2.0's DOS Settings.
+   230	
+   231	(d)  DOS programming debuggers.  DOS applications running under OS/2 2.0
+   232	are not permitted to access the debug registers DR0-DR7 from a DOS
+   233	session.  Also, DOS debuggers will not be able to set hardware
+   234	breakpoints, and all read/write operations to debug registers in virtual
+   235	8086 mode will be ignored.
+   236	
+   237	Generally DOS backup programs will work under OS/2 2.0, but they may not
+   238	capture some of the OS/2 data (especially extended attributes) on the
+   239	hard disk.  OS/2 backup tools are available, notably IBM's PMTape, Sytos
+   240	Plus, EZTape/PM, and a port of GNUtar.  DOS-based disk caching software
+   241	is not required since OS/2 includes a built-in, highly configurable,
+   242	more efficient disk cache.
+   243	
+   244	DOS programs running under OS/2 2.0 are extremely fast.  A single DOS
+   245	application (no other applications open) running full screen under OS/2
+   246	2.0 typically achieves 95-97% of the performance it would have under
+   247	native DOS.  If the DOS application performs any disk I/O it can
+   248	actually operate faster than it would if running under native DOS.  It
+   249	is not unheard of for disk intensive DOS applications to run twice or
+   250	even three times as fast under OS/2 2.0.
+   251	
+   252	If pure DOS is absolutely required, OS/2 2.0 includes a utility called
+   253	the Boot Manager.  The Boot Manager can provide a menu listing all the
+   254	operating systems available on the system and will allow selection of
+   255	any one at startup, with a default after timeout.  The OS/2 1.x DualBoot
+   256	method is still available as well.  Consult the OS/2 2.0 Installation
+   257	Guide for instructions on how to configure your system to use Boot
+   258	Manager or DualBoot.  Note that OS/2 2.0 need not be installed on Drive
+   259	C -- it can reside on other volumes.
+   260	
+   261	Compatibility with Windows, a popular DOS extender, is provided by Win-
+   262	OS/2, an environment based on Microsoft's Windows source code.  It runs
+   263	Windows 2.x and 3.0 real mode and standard mode applications under OS/2
+   264	2.0, either on a full screen Windows desktop (with the familiar Program
+   265	Manager and one or more Windows applications) or "seamlessly," alongside
+   266	OS/2 applications on the WPS desktop.  "Seamless" operation is available
+   267	in VGA and XGA resolutions with OS/2 2.0 as it ships; see Question 11
+   268	for information on third party drivers.
+   269	
+   270	CVTICO, a popular utility available from the OS/2 shareware/freeware
+   271	sources (see Question 9), will convert Windows icons for use by the OS/2
+   272	Icon Editor and/or OS/2-specific programs.  (No conversion is necessary
+   273	if the icons are to be used with Windows programs running under OS/2
+   274	2.0.)
+   275	
+   276	OS/2 2.0 directly provides Windows enhanced mode features save one:
+   277	services included in WINMEM32.DLL.  Windows applications which utilize
+   278	this DLL (e.g. Mathematica 2.0, Omnipage Professional 1.0) will not run
+   279	under OS/2 2.0.  Fortunately the number of WINMEM32 applications is few,
+   280	and apparently the vendors of such applications will be shipping OS/2
+   281	2.0 compatible updates.
+   282	
+   283	Windows applications are well integrated into the overall OS/2 WPS
+   284	environment with DDE and Clipboard hooks, and OLE 1.0 is supported among
+   285	Windows applications.  Adobe Type Manager for Win-OS/2 comes with OS/2
+   286	2.0 (see Question 25).  Windows screen (for a full screen desktop) and
+   287	printer device drivers will work under Win-OS/2.  Such notorious Windows
+   288	applications as Word for Windows, Norton Desktop (save portions
+   289	described above), Toolbook, and screen savers such as After Dark work
+   290	fine under Win-OS/2.  Even the Windows Multimedia Extensions (and
+   291	programs which utilize them) operate under Win-OS/2.
+   292	
+   293	Win-OS/2 departs from Microsoft Windows in that it allows more than one
+   294	Windows desktop and can preemptively (rather than cooperatively)
+   295	multitask Windows applications in separate, robust, protected sessions.
+   296	Also, while the enhancements incorporated into Windows 3.1 are
+   297	functionally incorporated into Win-OS/2, Win-OS/2 is not technically
+   298	Windows 3.1 compatible.  IBM has demonstrated 3.1-level Win-OS/2, and it
+   299	is widely rumored that a free 3.1-level update will be available this
+   300	summer.  Aside from the Windows 3.1 applets there are no Windows 3.1-
+   301	specific applications available.  (Win-OS/2 will run the Windows 3.0
+   302	applets, but it does not include them.  Instead, a vast assortment of
+   303	true OS/2 2.0 applets are provided, including a spreadsheet, database
+   304	program, asynchronous communications program, time planning/scheduling
+   305	applets, a true programmer's editor, the System Editor, an icon editor,
+   306	games, and much more.)
+   307	
+   308	------------------------------
+   309	
+   310	(5)	Where can I buy OS/2?
+   311	
+   312	Microsoft versions of OS/2 1.x are available only through OEMs (e.g.
+   313	Compaq, Dell) or by purchasing Microsoft's LAN Manager 2.1 or SQL Server
+   314	products.  Microsoft has all but ceased OS/2 development, working
+   315	instead on Windows and the future, high-end NT (formerly OS/2 3.0).
+   316	
+   317	IBM OS/2 Version 2.0 is available from most software dealers (including
+   318	Elek-Tek, tel. 708-677-7660) and directly from IBM (tel. 800-3-IBM-OS2,
+   319	800-465-1234 in Canada).  OS/2 2.0 on 3.5 inch disks is part no.
+   320	84F7586.  For 5.25 inch disks, 10G2991.  Media are high density.  For
+   321	compact disc, 10G2992.  IBM OS/2 Version 1.3 is still available and may
+   322	be ordered through many IBM dealers.
+   323	
+   324	IBM is trying to make OS/2 2.0 available everywhere DOS is purchased.
+   325	If your dealer does not stock OS/2 2.0, call IBM's order line and
+   326	mention the name of your dealer when you place your order.  IBM also has
+   327	plans to bundle OS/2 2.0 with new PS/1, PS/2, and non-IBM systems.
+   328	
+   329	------------------------------
+   330	
+   331	(6)	How much does OS/2 2.0 cost?
+   332	
+   333	IBM OS/2 2.0 retails for USD 195.  However, in the United States
+   334	introductory pricing is available through July 31, 1992, by calling
+   335	IBM's order line (800-3-IBM-OS2).  Upgrades are free from OS/2 1.x, USD
+   336	49 from any version of Windows, USD 99 from any version of DOS, and USD
+   337	139 without an upgrade.  (An OS/2 1.x to 2.0 upgrade form, which you can
+   338	print out and send in, is available from OS/2 shareware/freeware
+   339	sources, see Question 9.  Version 1.x Extended Edition licensees receive
+   340	a free upgrade to OS/2 2.0 and ES/2 1.0; Version 1.x LAN Server
+   341	licensees receive LAN Server 2.0 at no charge.  All free OS/2 1.x to 2.0
+   342	upgrades are available until August 24, 1992.)  Similar promotions are
+   343	in effect in Canada and other countries.  Special pricing is available
+   344	for multiple OS/2 licenses.  Educational discounts are available but may
+   345	not apply to the introductory prices.  (IBM's educational inquiries line
+   346	in the U.S. is 800-222-7257.)
+   347	
+   348	------------------------------
+   349	
+   350	(7)	What hardware do I need to run IBM OS/2 2.0?  Do I need a PS/2?
+   351	
+   352	You need any PC, PC compatible, PS/1, or PS/2 with at least an 80386SX
+   353	CPU, 4 MB (6 MB or more strongly recommended) of RAM (configured as 640K
+   354	base plus the remainder as extended memory, with at least 3968K total
+   355	RAM after system use), a 60 MB or larger hard disk (with 15-30 MB free),
+   356	a supported video adapter (CGA, EGA, VGA, 8514/A, XGA, or third party
+   357	driver) with appropriate display, and a high density 3.5 or 5.25 inch
+   358	floppy drive for installation.  A mouse or other pointing device is
+   359	strongly recommended.  Allow extra RAM and hard disk space for OS/2-
+   360	based networking, ES/2, and/or extra system loads (i.e. an extraordinary
+   361	number of large applications running simultaneously).  When calculating
+   362	hard disk space requirements, subtract space occupied by files already
+   363	on the hard disk which are functionally included in OS/2 2.0 and may be
+   364	deleted, e.g. DOS, a 386 memory manager, Windows, Adobe Type Manager
+   365	with base typefaces, etc.
+   366	
+   367	The WPS will not operate with the Monochrome Display Adapter or the
+   368	Hercules Monochrome Graphics Adapter.  Usually the WPS will fail to work
+   369	with monochrome EGA.  However, some EGA adapters (e.g. Paradise
+   370	Monochrome EGA Card, ATI EGA Wonder) will emulate all color EGA modes on
+   371	TTL monochrome monitors and, thus, will work with the WPS.
+   372	
+   373	On (E)ISA bus machines, OS/2 specifically supports hard drive adapters
+   374	which conform to the Western Digital chipset interface standard (i.e.
+   375	nearly all MFM, RLL, IDE, and ESDI adapters) and Adaptec, Future Domain,
+   376	and IBM SCSI adapters.  In addition, "generic" INT13 support is provided
+   377	for all other hard disk adapters.  This "generic" support even embraces
+   378	such devices as Iomega's Bernoulli and SyQuest's removeable media
+   379	products.  CD-ROM support is included as well.  At present the OS/2 CD-
+   380	ROM driver does not work with all brands, but the DOS device drivers,
+   381	when suitably configured and installed, will still provide CD-ROM
+   382	services to DOS/Windows programs.  Printer and plotter support is
+   383	discussed in Question 12.
+   384	
+   385	Version 2.0 is explicitly supported on PC compatibles.  IBM is offering
+   386	a money back compatibility guarantee in the United States.  Should OS/2
+   387	2.0 fail to work on your compatible within the first 90 days of use, and
+   388	should IBM be unable to fix the problem, your purchase price will be
+   389	refunded.  To date over 200 non-IBM models have been tested in IBM's own
+   390	labs.
+   391	
+   392	------------------------------
+   393	
+   394	(8)	What applications are available for OS/2?
+   395	
+   396	In addition to the thousands of applications available for DOS and
+   397	Windows, there are a couple thousand OS/2-specific applications
+   398	representing almost every category imaginable.
+   399	
+   400	The DOS/Windows applications with 16-bit OS/2-specific counterparts
+   401	include Lotus 1-2-3, Freelance, Microsoft Word, Excel, Multiplan, Aldus
+   402	Pagemaker, Ventura Publisher, Corel Draw, WordPerfect, DisplayWrite,
+   403	DeScribe, Micrografx Designer, AutoCAD, Oracle, RBase, SAS, SPSS,
+   404	HyperAccess/5, DynaComm, Pro-YAM, Borland Sidekick, Paradox, Wingz,
+   405	Brief, QEdit, 4DOS, and many others.  In some cases DOS and OS/2
+   406	versions ship together (e.g. Microsoft Word 5.5, Lotus 1-2-3 3.0,
+   407	Wingz).
+   408	
+   409	OS/2 2.0 provides an attractive, 32-bit, Workplace Shell environment for
+   410	new applications; many do not have DOS/Windows predecessors.  This new
+   411	class of 32-bit applications will include Lotus 1-2-3, Freelance,
+   412	cc:Mail, Notes, AmiPro, WordPerfect 6.0, N/Joy, DeScribe, Publisher's
+   413	Paintbrush, PFS:Works, CorelDraw, HyperAccess, Sybase, FAX/PM, and many
+   414	more.  Over 1000 new 32-bit OS/2 2.0 applications are slated for release
+   415	in the next year.
+   416	
+   417	OS/2-specific versions of popular utilities include PKZIP/UNZIP, SEA's
+   418	ARC, LHA, Zoo 2.1, many GNU tools, tens of different file finders,
+   419	desktop clocks, calculators, and many more.  Programming languages
+   420	include Assembler, C++, COBOL, Pascal, C, Fortran, BASIC, REXX (included
+   421	with every copy of OS/2 2.0), Smalltalk, Modula-2, LISP, Forth, and
+   422	still more, from vendors such as Borland, Jensen and Partners
+   423	International, Watcom, Symantec (through its Zortech subsidiary), IBM,
+   424	Microway, and many more.  A full 32-bit development package, GNU C/C++
+   425	2.1, is available from OS/2 shareware/freeware sources (see Question 9).
+   426	
+   427	The IBM NSC BBS (tel. 404-835-6600) provides an online product database
+   428	of OS/2-specific software.  A directory of OS/2 applications, IBM
+   429	document number G362-0029-00, is published by Graphics Plus, tel. 800-
+   430	READ-OS2.  TINF is an applications listing (for use with the OS/2 help
+   431	facility) available from the shareware/freeware sources listed below.
+   432	
+   433	------------------------------
+   434	
+   435	(9)	Where can I obtain OS/2 shareware and freeware?
+   436	
+   437	Many BBSes hold large OS/2 libraries.  Fernwood (tel. 203-483-0348) has
+   438	over 50 MB worth.  The OS/2 Shareware BBS (703-385-4325), Bay Area OS/2
+   439	BBS (510-657-7948), and Greater Chicago Online (708-895-4042) carry
+   440	still more.  The IBM NSC BBS has some shareware/freeware as well, along
+   441	with CSDs (see Question 24) and the PS/2 Assistant (an invaluable
+   442	resource for locating almost any sort of information on OS/2).  IBM
+   443	Canada maintains several support BBSes (604-664-6466, 416-946-4255, and
+   444	514-938-3022 at 2400 bps; 604-664-6464 and 416-946-4244 at 9600 bps).
+   445	Information on IBM's new OS/2 BBS is included in the OS/2 2.0 package.
+   446	
+   447	The Usenet conference comp.binaries.os2 carries OS/2 software.  And
+   448	several sites are available via anonymous ftp.  (No ftp?  Send a single
+   449	line message with the word HELP to bitftp@pucc.bitnet or
+   450	ftpmail@decwrl.dec.com to learn about ftp mail servers.)  They include
+   451	(with Internet node numbers and subdirectories):
+   452	
+   453	hobbes.nmsu.edu             128.123.35.151     pub/os2, pub/os2-1.x
+   454	mtsg.ubc.ca                 137.82.27.1        os2:
+   455	luga.latrobe.edu.au         131.172.2.2        pub/os2
+   456	msdos.archive.umich.edu     141.211.164.153    msdos/os2
+   457	funic.funet.fi              128.214.6.100      pub/os2
+   458	sun0.urz.uni-heidelberg.de  129.206.100.126    pub/os2
+   459	novell.com                  130.57.4.1         os2
+   460	
+   461	The last site should not be accessed weekdays from 8:00 a.m. to 5:30
+   462	p.m. Pacific Time.
+   463	
+   464	Other sources include CompuServe ("GO IBMOS2") and a Bitnet/EARN archive
+   465	(send a single line message with the word HELP to
+   466	LISTSERV@BLEKUL11.BITNET for more information).
+   467	
+   468	------------------------------
+   469	
+   470	(10)	I am having trouble installing OS/2 2.0.  What should I do?
+   471	
+   472	First consult the Installation Guide and other materials accompanying
+   473	OS/2 2.0.  Make sure your PC meets the system requirements in Question
+   474	7.
+   475	
+   476	And if the following instructions do not help, fall back on IBM's toll
+   477	free technical support (available in the U.S. and described in the OS/2
+   478	2.0 package).
+   479	
+   480	Certain PC compatibles have difficulty accepting OS/2 2.0 (CSD level
+   481	02000 only; see Question 24), particularly AT bus systems with RLL, MFM,
+   482	ESDI, or certain SCSI adapters (e.g. AMI SCSI adapters).  The problem
+   483	usually appears in the form of FDISK errors, extremely slow copying to
+   484	the hard disk, or a whining/grating noise emanating from the hard disk.
+   485	
+   486	IBM suggests a simple workaround.  First, DISKCOPY Diskette 1 of your
+   487	OS/2 2.0 package.  Set aside your original Diskette 1 and use the copy
+   488	from now on as if it were the original.  Using a text editor, modify the
+   489	CONFIG.SYS file on Diskette 1 (the copy), replacing the line
+   490	"basedev=ibm1s506.add" with "rem basedev=ibm1s506.add."  Boot the
+   491	Installation Disk, and proceed through the installation procedure
+   492	through the first five diskettes, then reinsert the Installation
+   493	Diskette as directed.  Then after files have been copied from the
+   494	Installation Diskette the system prompts you to remove the diskette and
+   495	press ENTER to reboot.  Do so, but immediately reinsert the Installation
+   496	Diskette as soon as the screen clears.  Follow instructions (insert
+   497	Diskette 1 and press ENTER when prompted), then press ESC when prompted.
+   498	At the OS/2 command line, type:
+   499		RENAME C:\OS2\IBM1S506.ADD IBM1S506.XXX
+   500		COPY C:\OS2\IBMINT13.ADD C:\OS2\IBM1S506.ADD
+   501	replacing C: with the appropriate drive if you are installing elsewhere.
+   502	Remove Diskette 1, then press CTRL-ALT-DEL to reboot and to finish
+   503	installation.
+   504	
+   505	The mouse selection menu provided when installing is a bit confusing.
+   506	The Logitech Mouse selection should be chosen if you have a Mouse
+   507	Systems PC Mouse or a Logitech C7 or C9 serial mouse ONLY.  If you have
+   508	another Logitech pointing device, it is Microsoft compatible when
+   509	powered up, so select the appropriate Microsoft driver.  If you are
+   510	using a Logitech C7 or C9 mouse and have been using native DOS, be sure
+   511	to issue the command MOUSE PC (or MOUSE 2 PC if your mouse is attached
+   512	to COM2) before booting into or installing OS/2.  Alternatively, turn
+   513	off the system (to reset the mouse) before booting or installing OS/2.
+   514	(The Logitech Support BBS can be reached at 510-795-0408.)
+   515	
+   516	Some PCs have trouble printing under OS/2 2.0.  This problem can often
+   517	be traced to an interrupt conflict, or a substandard cable or printer
+   518	adapter.  LPT1 uses IRQ 7 and LPT2, if installed, uses IRQ 5.
+   519	Interrupts should not be shared on AT bus machines.  The SoundBlaster
+   520	card, for example, comes set to IRQ 7.  Reset it to an unused interrupt.
+   521	
+   522	Make sure adapters with on board ROMs are not conflicting with other
+   523	adapters.  For example, many SuperVGA adapters use large chunks of upper
+   524	memory, and many hard disk adapters have on board ROMs which can be
+   525	mapped into this area and conflict.  Adapters must cooperate in their
+   526	use of memory and interrupts and must not share address space or
+   527	interrupts.  Check your product manuals for more help.
+   528	
+   529	Be sure adequate free disk space is available before installing,
+   530	including space for a swap file.  Drives compressed using Stacker or
+   531	similar utilities should be uncompressed before installing (unless
+   532	access to these drives is not needed).  OS/2 2.0 is not presently
+   533	compatible with Stacker or similar utilities.  However, an OS/2 2.0
+   534	version of Stacker is forthcoming.
+   535	
+   536	Do not select HPFS when installing if your machine has 6 MB of RAM or
+   537	less.  Doing so will likely result in diminished performance.
+   538	
+   539	Automatic migration of your CONFIG.SYS and AUTOEXEC.BAT files is not
+   540	recommended.  If you have Windows 3.1 installed on your system do not
+   541	migrate your Windows desktop.
+   542	
+   543	Be sure your CMOS setup parameters are set correctly, especially those
+   544	relating to floppy drives.
+   545	
+   546	Be certain your adapter's sector translation mode is enabled if you are
+   547	using an MFM, RLL, or ESDI hard disk drive with more than 1024
+   548	cylinders.  The 1024 cylinder limit is a BIOS constraint.
+   549	
+   550	Certain Quantum IDE hard disk drives require a free ROM update from the
+   551	manufacturer to work with OS/2.
+   552	
+   553	"Autoswitching" on non-IBM EGA adapters should be disabled (usually with
+   554	a DIP switch or jumper setting).  In rare cases it may be necessary to
+   555	switch third party VGA adapters into 8-bit mode.
+   556	
+   557	OS/2 is particularly sensitive to bad RAM (often reflected in TRAP 2
+   558	error messages).  Use a thorough RAM testing utility, and try not to mix
+   559	9 chip and 3 chip SIMMs/SIPPs.
+   560	
+   561	The HP DeskJet and DeskJet Plus printers work, without loss of
+   562	functionality, using the Epson EPL-7000 driver (with Fast System Fonts
+   563	disabled and bin selection ignored).  An explicit choice at installation
+   564	is provided for the DeskJet 500 -- look carefully.  The Epson EPL-7000
+   565	driver may also be used to operate the DeskJet 500.  As of this writing
+   566	a DeskJet 500C color driver (for OS/2-specific programs) is not yet
+   567	available.
+   568	
+   569	Allow several minutes for OS/2 2.0 to build your desktop (and display
+   570	icons) at the end of installation -- take the Tutorial offered to you in
+   571	the meantime.  Select Shutdown and reboot once after installation
+   572	completes to ensure that DOS/Windows applications will operate properly.
+   573	Avail yourself of the "Start Me" icon, the other online help, and the
+   574	README file located in the root directory.  They will help in getting
+   575	started with the Workplace Shell, the new paradigm introduced with OS/2
+   576	2.0, and in properly configuring your system.
+   577	
+   578	When installing over a beta version of OS/2 be sure to reformat.
+   579	
+   580	------------------------------
+   581	
+   582	(11)	Will OS/2 2.0 work with my SuperVGA adapter?
+   583	
+   584	If you have a SuperVGA adapter, OS/2 2.0 should initially be installed
+   585	using the standard VGA driver.  (If you have an ATI Vantage or Ultra
+   586	adapter, or some other 8514/A hardware compatible adapter, install using
+   587	the 8514/A driver.)  Then consult the README file OS/2 copies to your
+   588	root directory for more information on SuperVGA support.
+   589	
+   590	OS/2 2.0 comes with basic mode switching capabilities to handle
+   591	applications which utilize SuperVGA modes.  If OS/2 2.0 detects a
+   592	SuperVGA adapter it will list two SuperVGA support files, VSVGA.SYS and
+   593	BVHSVGA.DLL, in your CONFIG.SYS file.  (A replacement VSVGA.SYS file,
+   594	fixing Tseng 4000 and TRAP E problems, is available from
+   595	shareware/freeware sources under the name VSVGAFX1; see Question 9.)
+   596	But to enable this mode switching support you must start a DOS full
+   597	screen session, issue the command SVGA ON, EXIT, Shutdown, and reboot.
+   598	SVGA ON creates a text file called \OS2\SVGADATA.PMI which describes
+   599	your SuperVGA adapter to the system.  Then you may install high
+   600	resolution drivers.  Aside from DOS applications (which may require
+   601	their own drivers), OS/2 2.0 requires up to three high resolution
+   602	support files:
+   603	
+   604	\OS2\DLL\DISPLAY.DLL                 Workplace Shell display driver
+   605	\OS2\MDOS\WINOS2\SYSTEM\VGA.DRV      Win-OS/2 full screen driver
+   606	\OS2\MDOS\WINOS2\SYSTEM\SWINVGA.DRV  Win-OS/2 "seamless" driver
+   607	
+   608	You may replace any one of these individually for high resolution
+   609	operation in each given mode, but be sure to keep a backup copy of the
+   610	original file(s).  The "seamless" Win-OS/2 and WPS desktop driver files
+   611	must match (in terms of resolution and number of colors) if you wish to
+   612	run Windows programs "seamlessly."  Any suitable Windows 3.0 SuperVGA
+   613	driver will work as a Win-OS/2 full screen driver, but be sure to use
+   614	the EXPAND utility (as described in README) when installing.
+   615	
+   616	OS/2 1.3 SuperVGA drivers often serve, with some limitations, as WPS
+   617	desktop drivers.  Use the command DDINSTAL to replace DISPLAY.DLL.
+   618	Setting IOPL=YES in CONFIG.SYS may be required when installing a new
+   619	DISPLAY.DLL.
+   620	
+   621	As of this writing Trident is the only third party vendor with OS/2 2.0
+   622	high resolution drivers, although several other manufacturers have
+   623	promised drivers.  When available they will be provided through OS/2
+   624	shareware/freeware sources (see Question 9).
+   625	
+   626	IBM was unable to test all SuperVGA adapters, so if you are experiencing
+   627	problems report them through IBM's toll free support (in the U.S.,
+   628	described in the OS/2 2.0 package) or to the adapter manufacturer.
+   629	
+   630	------------------------------
+   631	
+   632	(12)	Will OS/2 2.0 work with my printer?
+   633	
+   634	OS/2 2.0 includes support for the Hewlett-Packard LaserJet, DeskJet (see
+   635	Question 10), and PaintJet families; IBM ExecJets, Proprinters,
+   636	Quickwriters, Quietwriters, Pageprinters, and Laserprinters; Epson dot
+   637	matrix and laser printers; Postscript devices; and other printers (e.g.
+   638	Panasonic) compatible with these families.  A variety of IBM and HP
+   639	plotters is also supported.
+   640	
+   641	DOS/Windows printer drivers continue to work for DOS/Windows
+   642	applications.  OS/2 2.0 includes a large assortment of Windows printer
+   643	drivers for Win-OS/2.  If necessary install Windows printer drivers
+   644	using the Win-OS/2 Control Panel.  OS/2 2.0 and OS/2 1.3 printer drivers
+   645	are interchangeable.
+   646	
+   647	If your printer is not compatible with one of the drivers supplied with
+   648	OS/2, check with the printer manufacturer first then with OS/2
+   649	shareware/freeware sources (see Question 9).  If you own an IBM printer,
+   650	check with the Lexmark BBS (tel. 606-232-5653).
+   651	
+   652	------------------------------
+   653	
+   654	(13)	How do I access HPFS partitions on my hard drive without booting
+   655		from the hard drive?  I'm getting error messages now -- how do I
+   656		"repair" my hard disk?
+   657	
+   658	With IBM OS/2 2.0, insert the Installation Diskette, Shutdown (if
+   659	necessary), and reboot.  When prompted insert Diskette 1 and press
+   660	ENTER.  When prompted, press ESC.  You will be given an OS/2 command
+   661	line prompt.  From there you can make necessary changes to your hard
+   662	disk -- an OS/2 character mode text editor is handy for such changes.
+   663	(Make sure you backup CONFIG.SYS before making any changes so that you
+   664	can easily revert to the old version should things go wrong.)
+   665	
+   666	You may use this diskette boot method to run CHKDSK on your DOS FAT,
+   667	OS/2 FAT, or OS/2 HPFS partitions.  After you reach the command line,
+   668	insert Diskette 2.  Then type A:\CHKDSK X: /F to repair most kinds of
+   669	damage to your hard disk, replacing X with the appropriate drive letter.
+   670	OS/2 CHKDSK will also remark your hard disk, if possible, as accessible
+   671	should OS/2 "lock it out" for some reason.
+   672	
+   673	The best way to avoid the need to perform CHKDSK is to always select
+   674	Shutdown.  Click on the Workplace Shell desktop background using mouse
+   675	button two to bring up the appropriate menu.  Also, avoid deleting OS/2-
+   676	related files when using native DOS.
+   677	
+   678	------------------------------
+   679	
+   680	(14)	I can't install OS/2 2.0 from Drive B.  What's wrong?
+   681	
+   682	IBM OS/2 2.0 can only be installed from Drive A, like DOS (unless your
+   683	BIOS supports booting from Drive B), or across a network (contact IBM
+   684	for more information on network installation procedures).  If you have
+   685	the wrong disk size go back to your dealer and obtain the correct media.
+   686	Otherwise you could go inside your machine and swap floppy drive cable
+   687	connectors, use your system's setup utility to set the new CMOS
+   688	parameters, and then install OS/2 from the "new" Drive A.  Sometimes the
+   689	floppy drive cable connectors will not be the same.  If so you can
+   690	obtain an adapter plug.
+   691	
+   692	------------------------------
+   693	
+   694	(15)	Is there a Norton Utilities for OS/2?
+   695	
+   696	Not yet, although Norton Desktop, Norton Utilities, and Norton Commander
+   697	all work under OS/2 2.0's DOS/Windows sessions (with limitations noted
+   698	in Question 4).  But the GammaTech Utilities should fill the role.
+   699	Contact their publisher at tel. 405-359-1219.  Note that OS/2 2.0 has a
+   700	built-in UnDelete utility (see the README file or online help), and HPFS
+   701	is resistant to fragmentation (see Question 18).
+   702	
+   703	------------------------------
+   704	
+   705	(16)	Sometimes OS/2 2.0 will freeze when I run an application?  What do
+   706		I do?
+   707	
+   708	Before rebooting with CTRL-ALT-DEL, try CTRL-ESC.  Do not hit additional
+   709	keys, do not move the mouse.  Wait up to a minute.  In most cases the
+   710	Window List or an error message will pop up.  If you wish you may close
+   711	the offending application at that point.  Try ALT-ESC if you have
+   712	disabled CTRL-ESC in that application's DOS Settings.
+   713	
+   714	------------------------------
+   715	
+   716	(17)	My dealer doesn't know OS/2 from Unix.  How can I get answers to
+   717		my OS/2 questions?
+   718	
+   719	If your question is not answered in this List, post a note to the
+   720	appropriate Usenet conference: comp.os.os2.apps carries discussions
+   721	related to finding or using any application running under OS/2,
+   722	comp.os.os2.programmer addresses anything related to OS/2 programming,
+   723	and comp.os.os2.misc is for any other OS/2-related discussion.  These
+   724	groups are watched closely by IBM's OS/2 development team.  Also,
+   725	comp.lang.rexx discusses REXX programming.  BLEKUL11 (on Bitnet/EARN)
+   726	distributes its own OS/2 conference by mail; send a single line message
+   727	with the word HELP to LISTSERV@BLEKUL11.BITNET for full instructions.
+   728	An unedited mailing list is also available; send a single line message
+   729	with the word HELP to LISTSERV@FRORS12.BITNET.
+   730	
+   731	Your local FidoNet BBS may carry OS/2 echo conferences.  If not, ask
+   732	your system operator to get ahold of them.  CompuServe ("GO IBMOS2") and
+   733	Prodigy are also excellent resources.
+   734	
+   735	The IBM NSC BBS was established as a support forum.  That BBS's message
+   736	areas, product database, and PS/2 Assistant file(s) are invaluable
+   737	resources.  Information on the new OS/2 BBS is included in the OS/2 2.0
+   738	package.  In the United States IBM has toll free technical support
+   739	(described in the OS/2 2.0 package; report problems there), an OS/2
+   740	Hotline (general information, orders, upgrades, tel. 800-3-IBM-OS2), the
+   741	HelpWare Center (tel. 800-PS2-2227), and an educational inquiries line
+   742	(see Question 6).  In Canada call IBM Personal Systems Software at 800-
+   743	465-1234.  OS/2 2.0 developers should contact the IBM Developer
+   744	Assistance Program at 407-982-6408.  IBM offers classes worldwide to
+   745	help in using and programming OS/2 2.0; call your local IBM branch
+   746	office (or the OS/2 Hotline) for more information.
+   747	
+   748	OS/2 has its own magazines as well.  To subscribe to IBM Personal
+   749	Systems Developer, a quarterly publication, telephone 407-982-1105.  For
+   750	information on OS/2 Monthly send netmail to JDS Publishing at
+   751	72550.2440@compuserve.com or telephone 908-985-8358.
+   752	
+   753	OS/2 2.0 books include Deitel and Kogan, "The Design of OS/2," Addison-
+   754	Wesley, ISBN 0-201-54889-5; and Que's "Using OS/2 2.0."  Your bookstore
+   755	should be able to order these and other titles.
+   756	
+   757	Any of the regular DOS or Windows resources (e.g. books, magazines,
+   758	shareware/freeware sources) will be useful since both environments come
+   759	with OS/2 2.0.
+   760	
+   761	------------------------------
+   762	
+   763	(18)	Why should I use HPFS?  What does it offer me?  Does it work with
+   764		DOS?
+   765	
+   766	HPFS offers long file names (up to 254 characters including the path,
+   767	greatly exceeding the "8 dot 3" limit in FAT/DOS file systems),
+   768	resistance to file fragmentation, improved media error handling, and
+   769	speedier disk operation, particularly on large hard disks, on systems
+   770	with more than 6 MB of RAM.  HPFS is not case sensitive, although it
+   771	does preserve case in file names.
+   772	
+   773	However, HPFS is not currently supported on removeable media, although
+   774	some programs (e.g. BACKUP) preserve long file names on such FAT disks.
+   775	Also, native mode DOS cannot access a HPFS partition.  However,
+   776	DOS/Windows sessions running under OS/2 can use all files that conform
+   777	to the "8 dot 3" naming conventions, even if they are stored on HPFS
+   778	volumes.
+   779	
+   780	------------------------------
+   781	
+   782	(19)	I'm a Unix wizard.  How do I make OS/2 resemble Unix?
+   783	
+   784	A great number of GNU and Unix utilities have been ported to OS/2 native
+   785	mode and are available from the shareware/freeware sources listed above.
+   786	A uucp package, UUPC/Extended, is available via anonymous ftp from
+   787	sun.soe.clarkson.edu, directory pub/uupc; netmail help@kew.com with
+   788	questions.
+   789	
+   790	In addition, the Hamilton C Shell is available from Hamilton Labs, tel.
+   791	508-358-5715 or netmail 3890321@mcimail.com.  The Thompson Toolkit, a
+   792	Bourne-like shell, is published by Thompson Automation, tel. 206-224-
+   793	1639.  Thompson offers a version of awk as well.  MKS (tel. 519-884-2251
+   794	or netmail pat@mks.com) publishes a number of standard Unix utilities
+   795	for OS/2.  Argosoft (tel. 510-795-7921) publishes ARGO/UX, a BSD 4.3
+   796	Unix compatible environment.  For OS/2-specific X Windows server
+   797	support, IBM provides an optional package available with its TCP/IP 1.2
+   798	for OS/2.  The TCP/IP 1.2 base package includes a news reader as a
+   799	sample application.
+   800	
+   801	DOS and Windows based utilities and aids still work fine under OS/2 2.0.
+   802	
+   803	------------------------------
+   804	
+   805	(20)	I prefer Windows.  How do I make OS/2 2.0 resemble Windows (or
+   806		OS/2 1.3)?
+   807	
+   808	At first the Workplace Shell may seem strange and different.  Use it for
+   809	a while and then decide.
+   810	
+   811	If you still feel you want change how OS/2 2.0 works, follow the
+   812	instructions beginning on p. 29 in the "Migrating to the OS/2 Workplace
+   813	Shell" booklet.
+   814	
+   815	------------------------------
+   816	
+   817	(21)	I would like to set up an OS/2 BBS.  What is available?
+   818	
+   819	OS/2 is an excellent environment for BBS operation (even using
+   820	DOS/Windows software), including large multiline facilities.  Related
+   821	software will enable FidoNet capabilities, gateways to Usenet/UUCP,
+   822	nodelist processing, additional file transfer protocols, and more.
+   823	
+   824	Five popular OS/2-specific BBSes are Maximus and Simplex (available from
+   825	the shareware/freeware sources listed above), Omega Point/2 (BBS tel.
+   826	404-564-1961), Magnum (tel. 818-706-9800, BBS tel. 818-706-9805), and
+   827	Multi-Net (tel. 503-883-8099, BBS tel. 503-883-8197).
+   828	
+   829	------------------------------
+   830	
+   831	(22)	Can I use COM3 and COM4 in OS/2?
+   832	
+   833	COM3 and COM4 are supported on PS/2s without any additional effort.  On
+   834	(E)ISA machines, some additions are required to CONFIG.SYS.  Using a
+   835	text editor, include "(port number, base address, interrupt number)"
+   836	parameters next to the COM.SYS and VCOM.SYS filenames.  One example:
+   837		DEVICE=C:\OS2\COM.SYS (3,3E8,5) (4,2E8,3)
+   838		DEVICE=C:\OS2\MDOS\VCOM.SYS (3,3E8,5) (4,2E8,3)
+   839	You do not have to include parameters for COM1 and COM2 (unless they are
+   840	somehow nonstandard).
+   841	
+   842	Note that AT bus COM ports cannot be used at the same time if they share
+   843	interrupts because of bus design limitations (cf. Roger C. Alford,
+   844	"Under the Hood: How Interrupts Work," Byte, February, 1992, pp. 249-
+   845	256).  PolyCom, a replacement driver available from the OS/2
+   846	shareware/freeware sources (see Question 9), supports up to eight ports
+   847	with the right hardware.
+   848	
+   849	"Smart" (coprocessor controlled) multiport communication adapters should
+   850	be used when installing more than four ports.  Such an adapter will work
+   851	with OS/2 if the manufacturer has written an appropriate driver.
+   852	Examples include IBM's ARTIC products, Digitalk (tel. 213-645-1082) and
+   853	Stargate (tel. 800-782-7428) adapters.
+   854	
+   855	------------------------------
+   856	
+   857	(23)	How do I start a background process from the OS/2 command line?
+   858	
+   859	Look up the START and DETACH commands in the online Command Reference.
+   860	
+   861	------------------------------
+   862	
+   863	(24)	What are CSDs, how do I tell which I have, and where do I get
+   864		them?
+   865	
+   866	CSDs are Corrective Service Diskettes, or bug fixes, periodically issued
+   867	by IBM.  The OS/2 CSD level number may be obtained using the command
+   868	SYSLEVEL from the OS/2 command line prompt.  CSDs are cumulative, i.e.
+   869	only the most recent CSD is required to bring a system up from any
+   870	previous CSD level.  However, CSDs only apply within a major version
+   871	number.  For example, an upgrade, not a CSD, would bring OS/2 Version
+   872	1.3 up to Version 2.0.  Note also that each national language (e.g.
+   873	French, U.K. English) uses a distinct CSD.
+   874	
+   875	CSDs may be ordered by anyone with an IBM customer number (usually large
+   876	sites) directly from IBM Defect Support (tel. 800-237-5511).  OS/2 users
+   877	without customer numbers should ask authorized IBM dealers to order CSDs
+   878	from that source.  Many dealers do not know about this program, so be
+   879	persistent.  CSDs may also be downloaded from the IBM NSC BBS,
+   880	CompuServe ("GO IBMOS2"), or from other OS/2 shareware/freeware sources
+   881	(see Question 9).  And CSDs may be ordered through IBM's new OS/2 BBS.
+   882	
+   883	The most recent OS/2 2.0 CSD level will be listed in this List and in
+   884	the PS/2 Assistant files.
+   885	
+   886	------------------------------
+   887	
+   888	(25)	How do I add new Adobe Type Manager typefaces?
+   889	
+   890	OS/2 2.0 comes with built-in Adobe Type Manager for OS/2 and Win-OS/2.
+   891	A basic set of typefaces comes with OS/2 2.0 and is installed for use
+   892	under OS/2's ATM.  To install these same typefaces for use under Win-
+   893	OS/2's ATM, go to the Win-OS/2 ATM Control Panel and install the
+   894	typefaces from Printer Diskette 5.
+   895	
+   896	Each typeface should come with three separate files with PFB, AFM, and
+   897	PFM extensions.  To install a typeface for use under Win-OS/2, use the
+   898	ATM Control Panel.  To install a typeface for use with OS/2-specific
+   899	applications, select OS/2 System -> System Setup -> Font Palette -> Edit
+   900	Font... -> Add.
+   901	
+   902	PFM files may converted to AFM files using the PFM2AFM utility,
+   903	available from many OS/2 shareware/freeware sources (see Question 9).
+   904	Also, AFM files for Adobe commercial typefaces can be obtained via
+   905	netmail; send a single line message with the word HELP to ps-file-
+   906	server@adobe.com for instructions.
+   907	
+   908	With the exception of the basic set of typefaces that comes with OS/2
+   909	2.0, typeface files may be shared by OS/2 ATM and Win-OS/2 ATM.  To do
+   910	so, install the typefaces to a directory listed in LIBPATH in CONFIG.SYS
+   911	(most conveniently \OS2\DLL).
+   912	
+   913	------------------------------
+   914	
+   915	(26)	How do I tweak OS/2 2.0 for maximum performance?
+   916	
+   917	For OS/2 overall, the parameters MAXWAIT, TIMESLICE, PRIORITY,
+   918	PRIORITY_DISK_IO, and cache settings (in the DISKCACHE and/or IFS lines)
+   919	can be tweaked.  These parameters are documented in the online Command
+   920	Reference.
+   921	
+   922	If not using HPFS (which should only be used on systems with more than 6
+   923	MB of RAM), periodically defragment FAT partitions using an appropriate
+   924	utility.  A shareware defragmenter for DOS called DOG (Disk OrGanizer)
+   925	works well.  (You can boot DOS from a floppy disk to run such a
+   926	utility.)
+   927	
+   928	For the Workplace Shell, drag shadows of most often used items to the
+   929	desktop or folders closer to the "surface" -- opening folders takes
+   930	time.  Drag shadows of programs you use often (e.g. the Win-OS/2 full
+   931	screen Program Manager) to the Startup folder.  Disable animation (go to
+   932	OS/2 System -> System Setup -> System -> Window).
+   933	
+   934	For DOS programs, run full screen instead of windowed if speed is
+   935	important.  In DOS Settings for each application: reduce conventional,
+   936	XMS, DPMI, and EMS memory allocations to the bare minimum required for
+   937	maximum performance; turn off VIDEO_RETRACE_EMULATION unless necessary;
+   938	adjust IDLE_SENSITIVITY; turn off DOS_BACKGROUND_EXECUTION if not
+   939	needed; change the HW_TIMER setting (particularly for games); enable
+   940	VIDEO_FASTPASTE if possible.  Communications programs should use
+   941	hardware handshaking where possible (use OS/2's MODE COMx command if
+   942	necessary), and a buffered UART can prove helpful.  For faster printing
+   943	set the DOS program's output port to LPTx.OS2 (where x is the printer
+   944	port number) -- use a "print to file" option if necessary.  Other,
+   945	standard steps to enhance DOS performance (e.g. increasing BUFFERS in
+   946	CONFIG.SYS) of course apply.
+   947	
+   948	For Windows programs, run using a full screen desktop if speed is vital.
+   949	The Win-OS/2 Full Screen icon set up by the installation program has
+   950	poor Settings.  For better performance perform some of the same steps
+   951	outlined in the preceding paragraph.  The same advice applies for
+   952	printer output.  In addition, the Print Manager should be disabled (OS/2
+   953	provides a systemwide spooler).  From the Win-OS/2 desktop close the
+   954	Print Manager, uncheck the "Use Print Manager" box from the Win-OS/2
+   955	Control Panel -> Printers section, then, using a text editor, edit the
+   956	\OS2\MDOS\WINOS2\SYSTEM.INI file, removing the ",!printman" entry from
+   957	the MAVDMApps line.  (This last step will keep a warning dialog box from
+   958	appearing each time you start the Win-OS/2 desktop.)  Consider disabling
+   959	the Public setting in the Clipboard.
+   960	
+   961	Try reducing the number of on screen colors or dropping down in screen
+   962	resolution to enhance speed.  Close (not just minimize; check the Window
+   963	List) unnecessary objects and applications.  Consider adding more RAM.
+   964	
+   965	Shadow RAM should be disabled (using your system's CMOS setup program)
+   966	for best performance unless that RAM is not released by the system for
+   967	use by OS/2.
+   968	
+   969	------------------------------
+   970	
+   971	(27)	What networking products are available for OS/2 2.0?
+   972	
+   973	In addition to DOS/Windows products, OS/2-specific TCP/IP support is
+   974	available from IBM, Essex Systems (tel. 508-532-5511), FTP Software
+   975	(send netmail to info@ftp.com), and others.  NetWare Requester for OS/2
+   976	is available from Novell; NetWare server has been demonstrated by IBM.
+   977	IBM offers both NetWare and LAN Server 2.0 (basic and advanced) with LAN
+   978	Requesters.  Microsoft offers LAN Manager 2.1 (which comes bundled with
+   979	OS/2 1.3) and is working on an OS/2 2.0-specific network requester.  DEC
+   980	sells Pathworks for OS/2.  [Banyan Vines?  Others?]
+   981	
+   982	------------------------------
+   983	
+   984	(28)	Should I worry about viruses when running OS/2 2.0?
+   985	
+   986	At present there are no OS/2-specific viruses.  However, DOS/Windows
+   987	viruses can conceivably infect an OS/2 2.0 system.  DOS/Windows
+   988	antivirus tools are just as useful in preventing such infection.  Also,
+   989	IBM has an antivirus package which runs under OS/2 directly (without
+   990	DOS/Windows emulation), and others are on the way.
+   991	
+   992	But OS/2 2.0 is likely to be much more resistant to viruses because of
+   993	its design.  Viruses running in one virtual DOS/Windows session are
+   994	likely to be confined to that session.  Low level disk access is
+   995	curtailed under OS/2 2.0, thus preventing most virus infection at that
+   996	level.  And when a DOS/Windows virus does trigger, it is far less likely
+   997	to disrupt the entire system.
+   998	
+   999	OS/2 2.0 is by no means virus proof -- no system is.  But it should
+  1000	prove more resistant to virus infection.
+  1001	
+  1002	------------------------------
+  1003	
+  1004	(29)	Are there any clever tricks that apply to OS/2 2.0?
+  1005	
+  1006	If you have installed the optional bitmaps, try clicking on the
+  1007	Workplace Shell desktop background once with mouse button one and
+  1008	pressing CTRL-ALT-SHIFT-O.
+  1009	
+  1010	If you have a color monitor, try editing your CONFIG.SYS file so that
+  1011		SET PROMPT=$e[32;40m$e[1m[$P]$e[0m
+  1012	to obtain a more colorful OS/2 command line prompt.  You can do the same
+  1013	for your DOS sessions if you edit PROMPT in AUTOEXEC.BAT, assuming you
+  1014	have ANSI.SYS loaded.
+  1015	
+  1016	To force DIR to display your directories in alphabetical order, with the
+  1017	subdirectories listed first, edit CONFIG.SYS so that
+  1018		SET DIRCMD=/O:GN
+  1019	and, if you wish the same for your DOS command line sessions, use DOSKEY
+  1020	in AUTOEXEC.BAT (see the online Command Reference).  DOSKEY also enables
+  1021	command history.  (Shutdown and reboot for changes to CONFIG.SYS to take
+  1022	effect.)
+  1023	
+  1024	--
+  1025	Timothy F. Sipples       Keeper of the OS/2 Frequently Asked Questions
+  1026	sip1@ellis.uchicago.edu  List, available via anonymous ftp from
+  1027	Dept. of Economics       128.123.35.151, directory pub/os2/faq, or via
+  1028	Univ. of Chicago  60637  netmail from LISTSERV@BLEKUL11.BITNET.
+  1029	
+  1030	

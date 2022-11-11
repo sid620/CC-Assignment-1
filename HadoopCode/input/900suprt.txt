@@ -1,0 +1,172 @@
+     1	LAKE OSWEGO, ORE., January 1992 -- The first independent "hot line" to
+     2	diagnose and resolve Novell NetWare technical-support problems is starting
+     3	its third year of operation, and calls for help to 1-900-PRO-HELP" are
+     4	increasingly complex as network users, administrators, value-added
+     5	resellers, systems integrators and MIS managers move to larger,
+     6	corporate-wide enterprise networks built around three or four servers and
+     7	300 to 400 users.
+     8	
+     9	1-900-PRO-HELP and its related 1-800-YES-4TEC and 503-NET-HELP hot lines --
+    10	all operated by 900 Support Inc. of Lake Oswego, Ore. -- are also taking
+    11	more calls from users asking for help in connecting NetWare to a growing
+    12	array of systems and multi-tasking environments.
+    13	
+    14	Today's diverse mix includes Windows, UNIX, IBM SNA (System Network
+    15	Architecture) and SAA (System Application Architecture) and the Apple
+    16	Macintosh.
+    17	
+    18	The calling trends indicate a marked shift away from the virtually
+    19	homogeneous networking environment that the certified NetWare engineers
+    20	staffing 1-900-PRO-HELP encountered at the hot line's launch in December
+    21	1989. Smaller networks were prevalent at that time, typically configured
+    22	with no more than 20 nodes operating almost exclusively under MS/PC-DOS.
+    23	
+    24	"The trends point to network users in the process of 'right-sizing,"' said
+    25	Danton Mendell, president of 900 Support.
+    26	
+    27	"Right-sizing' is the migration from older, obsolete mainframes to a
+    28	networked personal-computer environment, and multiple file servers. The
+    29	corporation is replacing its centrally-located mainframe with an
+    30	enterprise-wide network that links PCs," said Mendell.
+    31	
+    32	"It's a matter of economics. A LAN-based environment fosters competitive
+    33	flexibility and improves productivity. A mainframe-based structure
+    34	increases maintenance costs even as it frustrates the ability of a company
+    35	to lead or adapt to changing markets and customer needs."
+    36	
+    37	The 900 Support hot lines counter the widening gap between the technical
+    38	support that network users need and what is widely described as a crucial
+    39	lack of responsive, affordable, expert support.
+    40	
+    41	Information Week, an industry publication, recently reported a survey by
+    42	market-researcher Dataquest of 500 information-systems managers that
+    43	showed widespread dissatisfaction with support from network operating
+    44	systems vendors.
+    45	
+    46	"The 900 Support hot lines ensure that callers receive priority support.
+    47	Callers don't have to wait for answers. It's the $50 solution to the
+    48	$50,000 network problem, even with the changes underway in networking,"
+    49	said Mendell.
+    50	
+    51	The three hot lines provide callers with instant access to certified
+    52	NetWare engineers -- around the clock and seven days a week -- for just
+    53	$2.99 a minute.
+    54	
+    55	"That's a clear alternative to annual contracts for unlimited support that
+    56	may cost $15,000, and high, fixed fees for service that may or may not be
+    57	needed," said Mendell.
+    58	
+    59	"The 900 Support hot lines also eliminate the all-too-typical long waits on
+    60	hold or waits for a technician to call back -- if the technician calls
+    61	back. Instead, 900 Support provides callers with immediate access to
+    62	expert help, which is critical when the network is down, employees aren't
+    63	working and the company is losing sales and money."
+    64	
+    65	The pioneer service, 1-900-PRO-HELP, bills calls directly to the caller's
+    66	telephone number. 1-800-YES-4TEC and 503-NET-HELP bill calls to a
+    67	corporate account or credit card.
+    68	
+    69	After operating 1-900-PRO-HELP for almost a year and a half, 900 Support
+    70	opened toll-free 1-800-YES-4TEC in April 1991 for corporations and
+    71	government agencies that block access to 900-number-based telephone
+    72	services.
+    73	
+    74	900 Support opened 503-NET-HELP in August 1991 for international network
+    75	users, administrators and engineers unable to dial the 800-and-900
+    76	number-based services from outside the United States.
+    77	
+    78	Overall, the volume of calls to all three hot lines is up 200 percent from
+    79	the prior year. 1-900-PRO-HELP posted the biggest year-to-year gain, with
+    80	1991 calls up 300 percent over 1990 volume. Calls to the newer hot lines,
+    81	1-800-YES4TEC and 503-NET-HELP are up 60 percent.
+    82	
+    83	The big gain in 1-900-PRO-HELP calls reflects convenience, said Mendell.
+    84	
+    85	"Customers gain immediate access to the expert services they need, and the
+    86	call is charged to the caller's telephone bill. That's simple and easy.
+    87	The 1-800YES-4TEC and 503-NET-HELP hot lines provide an alternative
+    88	convenience, where calls are charged to a corporate account or a credit
+    89	card."
+    90	
+    91	Two categories comprise an almost equal 50 percent share of the calling
+    92	volume -- first, end users and LAN administrators, and, second,
+    93	value-added resellers and systems integrators that market, install,
+    94	configure and maintain networks.
+    95	
+    96	The hot lines also receive calls from management information systems
+    97	executives confirming system specs and proposals from consultants hired to
+    98	build or expand a network.
+    99	
+   100	A typical call now takes 12 minutes, up from 10 minutes during the first
+   101	year, reflecting the shift to more complex networks, said Mendell.
+   102	
+   103	Calls during the day continue to be simpler, relating to operation and
+   104	maintenance of the network. Evening, night and weekend calls focus on
+   105	upgrades, troubleshooting and new installations, an indication that
+   106	callers do not tackle the most difficult problems during standard business
+   107	hours.
+   108	
+   109	However, the mix of off-hours calls now includes more operation and
+   110	maintenance questions as international callers make use of 603-NET-HELP.
+   111	
+   112	More than 95 percent of all problems are solved in one call. A problem that
+   113	is not resolved typically requires the caller to perform a lengthy
+   114	operation off line.
+   115	
+   116	"A caller may need help with a disk upgrade, for example," said Mendell.
+   117	"In the course of investigating you discover they have not yet done a
+   118	backup, so you instruct them to perform the backup off line, then do steps
+   119	x, y and z, and to call back if they encounter any problems. You certainly
+   120	don't want to keep the customer on line while waiting for the backup to
+   121	complete."
+   122	
+   123	Printing and upgrades to NetWare 386 from NetWare 286 generate a lot of
+   124	calls. Questions about NetWare Lite, introduced in late 1991, are
+   125	increasing, and represent about 15 percent of the calling volume.
+   126	
+   127	Network printing is one of three surprises noted by 900 Support during the
+   128	first two years of operation, according to Mendell.
+   129	
+   130	Network printing capabilities have increased. So have printing complexities
+   131	-- "which is generating more calls for support than before Novell made
+   132	network printing facilities more powerful," said Mendell.
+   133	
+   134	"For example, what was a stand-alone printer is now shared. That introduces
+   135	complexity. The applications may not be aware they are running on a
+   136	network. More complexity. The shared printer at the file server is now
+   137	located at the file server or the workstation. Still more complexity. And
+   138	NetWare must properly trap all the formatting and fonts at the
+   139	workstation, for example, for transfer into the printing queue. "
+   140	
+   141	The second surprise is the number of large businesses and government
+   142	agencies using the hot lines.
+   143	
+   144	"We targeted smaller and medium-sized businesses that couldn't afford an
+   145	annual service contract," said Mendell. "Yet even the companies that can
+   146	afford contracts are calling, which says they are not satisfied with the
+   147	technical-support they are otherwise getting"
+   148	
+   149	The third surprise is the poor market share of Microsoft's LAN Manager.
+   150	
+   151	"Trade journals report Microsoft's LAN market share at less than two
+   152	percent. Calls to the hot line confirm that. This may change as Microsoft
+   153	moves to a new release that is reported to be competitive."
+   154	
+   155	Oregon-based 900 Support Inc. is today's pioneer in cost-effective,
+   156	responsive, 24-hour customer support for users of personal computers and
+   157	personal-computer networks.--
+   158	
+   159	900 Support Inc
+   160	15820 SW Upper Boones Ferry Rd, Lake Oswego, OR 97035
+   161	503-684-2826
+   162	
+   163	  +---------------------------------------------------------------+
+   164	  |  From the America On-Line & PC-Link New Product Info Services |
+   165	  +===============================================================+
+   166	  | This information was processed with OmniPage Professional OCR |
+   167	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+   168	  | provided by the above mentioned company. For additional info, |
+   169	  | contact the company at the address or phone# indicated above. |
+   170	  |    All submissions for this service should be addressed to    |
+   171	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+   172	  +---------------------------------------------------------------+

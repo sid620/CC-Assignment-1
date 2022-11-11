@@ -1,0 +1,114 @@
+     1	CUPERTINO, Calif. -- January 13,1992 -- Symantec Corporation (NASDAQ:SYMC)
+     2	today announced The Norton AntiVirus version 2.0 for DOS and Windows. It
+     3	finds and repairs over 1,000 viruses and strains, and detects unknown
+     4	viruses. The Norton AntiVirus offers fast scanning speed, provides
+     5	automatic protection in the background and uses a scanner that requires as
+     6	little as lK RAM. It includes complete Windows operation, recursive scan
+     7	and repair, and configurable protection options.
+     8	
+     9	The Norton AntiVirus offers unmatched virus update protection, including
+    10	easy user addition of new virus definitions. Corporate-wide virus defense
+    11	features allow standardized virus safeguards for an entire company. The
+    12	Norton AntiVirus provides more complete network server support than any
+    13	other virus protection program.
+    14	
+    15	"With the number of viruses growing at a rate of about 20 per week, timely
+    16	virus definition updates become a critical factor," said Rod Turner,
+    17	executive vice-president of Symantec's Peter Norton Group. "Symantec's
+    18	comprehensive virus update services provide the fast turnaround that users
+    19	need."
+    20	
+    21	Key Features 
+    22	============
+    23	Full Windows Operation 
+    24	
+    25	The Norton AntiVirus version 2.0 includes virus defense for both DOS and
+    26	Windows. Pop-up Virus Alert dialogue boxes provide comprehensive,
+    27	multi-tasking protection under Windows. Windows Scan Clinic lets users
+    28	scan for viruses, repair or remove infected files, add new virus
+    29	definitions and set configuration options.
+    30	
+    31	Automatic Protection 
+    32	
+    33	Whether in DOS or Windows, The Norton AntiVirus provides automatic,
+    34	transparent and continuous protection in the background without
+    35	interfering with the user's daily work. This allows even novice users to
+    36	have full protection against virus infections. It constantly monitors file
+    37	activity and alerts the user only when a virus is detected.
+    38	
+    39	Network Protection 
+    40	
+    41	The Norton AntiVirus offers the broadest range of network virus protection
+    42	found in a single product. It intercepts infected files that attempt to
+    43	launch on a network drive, it offers complete unattended scanning and DOS
+    44	error level reporting. It is network compatible with Novell NetWare 286 &
+    45	386, 3COM 3+0pen, OS/2 LAN Manager, Banyan Vines and AT&T Starlan.
+    46	
+    47	Immediate Virus Update Protection 
+    48	
+    49	Continuous new virus updates are available through Symantec's Virus
+    50	Newsline (408/252-3993), Symantec's 24-hour Virus Faxline (310/575-5018),
+    51	Symantec BBS (408/973-9598 or 9834) and Compuserve. A new Virus Definition
+    52	Disk Service is also available for $12 plus tax. Norton AntiVirus
+    53	customers can obtain the update disk by calling (800) 343-4714, ext. 756.
+    54	
+    55	User addition of new virus definitions is easily done with a single menu
+    56	selection. The Norton AntiVirus lists the viruses it protects against and
+    57	automatically updates the list as more definitions are added.
+    58	
+    59	Comprehensive Virus Defense 
+    60	
+    61	The Norton AntiVirus detects unknown viruses by tracking unusual virus like
+    62	behavior. An encrypted fingerprinting file provides additional security
+    63	against unknown viruses. Intelligent virus fingerprinting detects changes
+    64	to files caused by viruses, even when the file size does not change.
+    65	
+    66	A file may be infected with more than one virus; some viruses can infect a
+    67	file many times. With The Norton AntiVirus' new recursive scanning, a user
+    68	scans the file once and the product keeps removing viruses until the file
+    69	is clean. The Norton AntiVirus provides configurable protection options
+    70	which give the user speed, security and memory size choices for optimum
+    71	performance.
+    72	
+    73	At installation, The Norton AntiVirus stores vital system information on a
+    74	Rescue Disk (either on floppy or network drives). If a virus destroys this
+    75	important information (CMOS, Boot Record, partition tables) the user's
+    76	system can be recovered using the Rescue Disk.
+    77	
+    78	Corporate Virus Defense 
+    79	
+    80	MIS/PC coordinators can utilize the flexibility of The Norton AntiVirus to
+    81	establish company-wide virus safeguards. The Norton AntiVirus includes a
+    82	wide array of command line options for highly automated operation on both
+    83	standalone and networked PCs. Customizable virus alert messages give
+    84	organizations the ability to implement their own virus response
+    85	instructions. Password protection restricts access to program
+    86	configuration options, ensuring consistent protection. The Norton
+    87	AntiVirus also provides audit trails to track all virus-related activity.
+    88	
+    89	Pricing and Availability 
+    90	
+    91	The Norton AntiVirus version 2.0 for DOS and Windows is available at a
+    92	suggested retail price of $129. Upgrades to registered customers are
+    93	available for $29. It runs on IBM PC, XT, AT, PS/2 and 100% compatibles,
+    94	and requires DOS 3.1 or higher with 384K RAM. The Norton AntiVirus is
+    95	compatible with Windows 3.0.
+    96	
+    97	Symantec Corporation develops, markets and supports a complete line of
+    98	application and system software products for IBM personal computers and
+    99	compatibles, and Apple Macintosh computers.
+   100	
+   101	Founded in 1982, the company has offices in the United States, Canada,
+   102	Australia and Europe. Information on the company and its products can be
+   103	obtained by calling (800) 441-7234 toll free, or (408) 252-3570.
+   104	
+   105	  +---------------------------------------------------------------+
+   106	  |  From the America On-Line & PC-Link New Product Info Services |
+   107	  +===============================================================+
+   108	  | This information was processed with OmniPage Professional OCR |
+   109	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+   110	  | provided by the above mentioned company. For additional info, |
+   111	  | contact the company at the address or phone# indicated above. |
+   112	  |    All submissions for this service should be addressed to    |
+   113	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+   114	  +---------------------------------------------------------------+

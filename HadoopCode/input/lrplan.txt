@@ -1,0 +1,67 @@
+     1	
+     2	Taken from the public information file LONG_RANGE_PLAN.DOC on the University
+     3	of Pittsburgh's VAX Cluster system.  This document details PITT's long range
+     4	plan in regards to computing at the University of Pittsburgh.  Of special note
+     5	are the references to Virtual Reality, as it could be used within the Academic
+     6	environment.
+     7	
+     8	Some selected extracts include:
+     9	
+    10	
+    11	
+    12	>in a longer view than five years, but well within existing technology,
+    13	>digitized sound together with the availability of digital audio tape decks
+    14	>should make possible compendiums of sound archives of everything from tribal
+    15	>music to bird calls to sound effects to language dialects to speech therapy
+    16	>analysis.
+    17	
+    18	>With the adoption of digital high-resolution television standards within
+    19	>the next few years, film and video clips and stills should eventually become
+    20	>available in digital form.  This will open extraordinary opportunities in
+    21	>education.  Imagine a lecture that intersperses brief clips from Nova or
+    22	>Infinite Voyage television archives to help illustrate difficult concepts in
+    23	>a science class, or a lecture on Shakespeare that compares elements of
+    24	>style with clips from several of his plays.  Or the introduction of
+    25	>"virtual realities" into the classroom, in which field trips may be taken
+    26	>that are either impractical or impossible in ordinary reality.
+    27	
+    28	>These are only a very few of the possibilities.  We predict that the next
+    29	>ten years will see a genuine revolution in the way information is
+    30	>accessed in our society due to the accessibility of networked distributed
+    31	>databases.
+    32	
+    33	>Fortunately, the University of Pittsburgh is in an advantageous position
+    34	>to capitalize on these developments as they occur.  The presence of
+    35	>high-speed fiber-optic backbone network trunk lines, coupled with
+    36	>ethernet port capabilities in most campus buildings, provides us with the
+    37	>minimum essential connectivity needed to take advantage of the developing
+    38	>networking capabilities.
+    39	.
+    40	.
+    41	.
+    42	
+    43	On the subject of whether or not a faculty member's personal computer would be
+    44	the responsibilty of the faculty or department:
+    45	
+    46	>Another example:  A physics lab might be constructed around a "virtual
+    47	>reality" in which all frictional forces are absent and the gravity field
+    48	>may be changed at will.  While the individual student machines may reside
+    49	>in a physics laboratory room, the actual computing power may well reside
+    50	>elsewhere (or even in several places) on the network.  Or the physics lab
+    51	>may be carried out on any suitable machine connected to the network,
+    52	>either in a public computing lab or even in a student's dorm room!  How
+    53	>much of the physics lab is "central", and how much is the responsibility
+    54	>of the "end-user"?
+    55	
+    56	
+    57	
+    58	
+    59	And from the document's glossary:
+    60	
+    61	
+    62	>Virtual reality - The digital construction and display of an artificial
+    63	>environment, such as in a flight simulator.
+    64	
+    65	
+    66	
+    67	

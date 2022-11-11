@@ -1,0 +1,130 @@
+     1	
+     2	The Control Team proudly presents:
+     3	
+     4	Zaphod Beeblebrox's notes on using Pc 1.44 Mb 3.5" drives with ST/STE's with a
+     5	minimum of trouble. If you have Tos v2.06 and STE, even the TOS will recognize
+     6	that you have an 1.44 drive installed as your internal drive!!! Version 1.1
+     7	==============================================================================
+     8	
+     9	This whole thing started a few days ago, when I decided that I was fed-up with
+    10	all those 720 Kb disks, I needed something better for backing up all the wares
+    11	from my BBS, and I thought.... Hmm, wait a sec, the Pc dudes have 1.44 drives
+    12	in their computers, and so does the Mega STE.... Why not install one in my
+    13	"normal" STE as well??? Then I started planning for the project, and came to
+    14	this conclusion:
+    15	
+    16	1. You must have a WD1772-02-02, the other ones will not handle the doubled
+    17	clock frequency of 16 mHz without problems.
+    18	
+    19	2. Your 1.44 Mb diskdrive must output a signal on pin 2 (HD detect) whenever a
+    20	HD disk is present in the drive. Examples of drives that works fine with this
+    21	modification: TEAC and Panasonic. I used a Panasonic drive for my own
+    22	computer. Not all drives have the jumpers set-up correctly when you buy them,
+    23	so *NEVER* buy a drive if they cannot tell you fer sure that it really has the
+    24	HD detect signal output. Because if it doesn't have it, you're fucked up!!
+    25	
+    26	3. You must have some kind of circuit that only enables 16 mHz when drive 0 is
+    27	selected and a HD disk is present in drive 0.......
+    28	
+    29	4. If you have a STE, you should also solder a jumper on bridge E6 underneath
+    30	the drive in order to get TOS to recognize that you have a 1.44 Mb drive.
+    31	
+    32	
+    33	The Circuit:
+    34	============
+    35	
+    36	I designed my automatical HD detect switch around a 74LS00 and a 74F157. The
+    37	LS00 is a quadruple NAND gate, and the F157 is a dual two-to-one multiplexer.
+    38	The first thing you need to do, is to invert the HD detect signal with one of
+    39	the NAND gates, you simply feed the HD detect on both inputs of one of the
+    40	NAND gates and there you have it - inverted HD detect on the output of that
+    41	NAND gate!!!! What you do now, is that you take the drive B select signal and
+    42	the inverted HD detect signal and feed them onto the inputs of a second NAND
+    43	gate. Now, you'll only get a '0' output from the second NAND gate if....
+    44	
+    45	   * Drive B is not selected
+    46	   * Drive A contains a HD disk
+    47	
+    48	After this, we simly feed the output of the second nand gate to the select
+    49	input on the F157 multiplexer. This means that the conditions above will
+    50	select 16 mHz clock for the FDC, and all other conditions will select the
+    51	standard 8 mHz clock. Easy, isn't it??? Now, I will present you with the
+    52	actual circuitry.... Remember that the wires are only joined where I have "+"
+    53	signs, other wires are just crossing each other. It's very importanf that you
+    54	get tha 74F157 and not anything slower. the 74LS157 cannot handle more than
+    55	about 14-15 mHz and we need something that will switch 16 mHz without problems.
+    56	
+    57	
+    58	     +--------+  +-----------------------+
+    59	     |        |  |                       |
+    60	     |        |  |  |  |  |  |  |  |     |
+    61	     |      --------------------------   |
+    62	     |      !                        !   |
+    63	     |      !                        !   |
+    64	     |      \         74F157         !   |
+    65	     |      /       MULTIPLEXER      !   |
+    66	     |      !                        !   |
+    67	     |      !                        !   |
+    68	     |      --------------------------   |
+    69	     |        |  |  |  |  |  |  |  |     |
+    70	     |   +----+  |  |  |           +-+---+
+    71	     |   |       |  |  |             |
+    72	     |   |       |  |  +---------------------------+
+    73	     |   |       |  |                |             |
+    74	     +---|----+  |  +--------------------------+   |
+    75	     |   |    |  |                   |         |   |
+    76	     |   |    |  +-------------------------+   |   |
+    77	     |   |    |                      |     |   |   |
+    78	     |   |    |  |  |  |  |  |  |    |     |   |   |
+    79	     |   |  -----------------------  |     |   |   |
+    80	     |   |  !                     !  |     |   |   |
+    81	     |   |  !                     !  |     |   |   |
+    82	     |   |  \        74LS00       !  |     |   |   |
+    83	     |   |  /    QUAD NAND GATE   !  |     |   |   |
+    84	     |   |  !                     !  |     |   |   |
+    85	     |   |  !                     !  |     |   |   |
+    86	     |   |  -----------------------  |     |   |   |
+    87	     |   |    |  |  |  |  |  |  |    |     |   |   |
+    88	     |   |    |  |  |  +--+  |  +----+     |   |   |
+    89	     |   |    |  |  |  |     |  |          |   |   |
+    90	     |   |    |  +--|--------+  |          |   |   |
+    91	     |   |    |     |  |        |          |   |   |
+    92	     |   +----------+  |        |          |   |   |
+    93	     |        |        |        |          |   |   |
+    94	     |        |        |        |          |   |   |
+    95	     *        *        *        *          *   *   *
+    96	     +5V     D1S      HDD      GND       16M  8M  FDC
+    97	
+    98	What do all these abbreviations stand for?? Well....
+    99	
+   100	+5V is the juice required for our little gadget... Get this from Pin 15 of the
+   101	WD1772-02-02 chip.... GND is ground, which you can get from Pin 14 of the
+   102	WD1772-02-02... D1S is drive B select, which is Pin 19 of the YM2149
+   103	soundchip. HDD is pin 2 of the diskdrive ribbon cable. It's the wire right
+   104	besides the red marked wire, which is number one. That is, HD detect is wire
+   105	#2 on the 34 wire diskdrive ribbon cable. 16M is a 16 mHz signal, which can be
+   106	tapped from Pin 52 of the STE videoshifter, or Pin 2 of the STE MCGLUE (The
+   107	big 144 pin surface mounted, not a very good idea, but if you follow the trace
+   108	from Pin 2 of it, you'll discover the correct thru-hole where you should tap
+   109	the 16 mHz signal, it's located right between the videoshifter and the SIMM
+   110	memory modules on the motherboard). FDC is the WD1772 clock signal, which can
+   111	be found on Pin 18 of the Floppydisk controller. 8M is the 8 mHz signal, which
+   112	can be tapped from the old pin 18 hole, or a thru-hole near the WD1772 socket.
+   113	Or you might also tap the 8 mHz signal from pin 15 of the MC68000 CPU.
+   114	
+   115	This has been another Control Team production, presented to you by Zaphod
+   116	Beeblebrox of The Control Team. This project worked just fine for me, but I
+   117	will not accept any responsibility if your computer turns itself into a
+   118	toaster while performing this hardware modification. By the way, if you like
+   119	my work, you're welcome to send me a donation if you want to... (HAHAHAHA!!!).
+   120	You can reach me at any of the Control Team boards:
+   121	
+   122	      Eagles Nest BBS     +46-18-262804     (235 Megs and HST Dual Standard).
+   123	      Data Control I.     +1-(818)/558-5636 (200 Megs + 88*x Syquest and HST).
+   124	
+   125	Or send me a snailmail at this address:
+   126	
+   127	      Carl Andersson
+   128	      Liggargatan 5J
+   129	      754 20 Uppsala
+   130	      Sweden

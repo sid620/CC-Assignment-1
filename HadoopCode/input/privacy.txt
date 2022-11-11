@@ -1,0 +1,106 @@
+     1	PALO ALTO, Calif.-- For the first time in more that a decade,
+     2	civil libertarians and computer professionals are banding
+     3	together to stop what many consider a Big Brotherish attempt
+     4	by the FBI to keep track of peoples lives.
+     5	  A Palo Alto-based group, Computer Professionals for Social
+     6	Responsibility, has been instrumental in preventing the FBI
+     7	from expanding its data base to include information such as
+     8	credit card transactions, telephone calls and airline
+     9	passangers list.
+    10	   "We need computer professionals acting like public
+    11	interest lawyers to make sure the FBI is acting responsibly"
+    12	said Jerry Berman, chief legislative counsel for the American
+    13	Civil Liberties Union.
+    14	   Mr Berman was part of a panel Saturday at Stanford
+    15	University that went head-to-head with the FBI's assistant
+    16	director for technical services, William Bayse, over
+    17	expansion of the National Crime Information Center (NCIC).
+    18	   Law enforcement officials use the NCIC system's 19.4
+    19	million files about 700,000 times a day for routine checks on
+    20	everyone from traffic violators to Peace Corps applicants.
+    21	   "The FBI would like us to believe that they are protecting
+    22	us from the hick Alabama Sheriff who wants to misuse the
+    23	system, " said Brian Harvey, a computer expert at the
+    24	University of California, Berkeley, "The FBI is the problem."
+    25	   Not since the fight to pass the Privacy Act of 1974 have
+    26	computer experts, civil libertarians and legislators come
+    27	together on the issue of citizen rights and access to
+    28	information.
+    29	   In the early 1970s, the government's efforts to monitor
+    30	more than 125,000 war protesters sparked concerns about
+    31	privacy.  The 1974 law limited the movement of information
+    32	exchanged by federal agencies.
+    33	   But computers were not so sophisticated then, and the
+    34	privacy act has several exceptions for law enforcement
+    35	agencies, said Marc Rotenberg, one of the computer group's
+    36	experts on the data base.
+    37	   Two years ago, the FBI announced its plan to expand the
+    38	data base, and came up with 240 features to include a sort of
+    39	"wish list" culled from the kinds of information law
+    40	enforcement officials who use the system would like to have.
+    41	   Rep. Don Edwards (D-Calif.) balked at moving ahead with
+    42	the plan without suggestions from an independent group, and
+    43	put together a panel that includes members of the Palo Alto
+    44	computer organization.
+    45	   Working with Mr. Bayse, FBI officials eventually agreed to
+    46	recommend a triuncated redesign of the data base.  It drops
+    47	the most controversial features, such as plans to connect the
+    48	data base to records of other government agencies - including
+    49	the Securities and Exchange Commission, the Internal Revenue
+    50	Service, the Immigration and Naturalization Service, the Social
+    51	Security Administration and the State Department's passport office.
+    52	   FBI director William S. Sessions could reject those
+    53	recommendations, however, and include all or part of the wish
+    54	list in the redesign.  he is expected to decide soon just how
+    55	much to expand the system.
+    56	   Based in the Hoover Building in Washington, D.C., the
+    57	computer system already fills a room half the size of a
+    58	football field.  The $20 million to $40 million redesign will
+    59	"establish record-keeping at the FBI for the next 10 years,"
+    60	said Mr. Rotenberg.  The 20-year-old system has 12 main
+    61	files containing information on stolen vehicles, missing
+    62	people, criminal arrests and convictions, people who are
+    63	suspected of plotting against top-level government officials
+    64	and people for whom arrest warrants have been issued.
+    65	   In Los Angeles, police squad cars have computer terminals
+    66	connected to NCIC data that allow them to check a person's
+    67	fingerprints on the scene.
+    68	   But the system is far from infallible - and that's what
+    69	worries civil libertarians.
+    70	   One Michigan man, Terry Dean Rogan, was arrested five
+    71	times for crimes he did not commit.  His wallet had been
+    72	stolen and he was repeatedly confused with a murder suspect
+    73	who had used Mr. Rogan's identification.  Mr. Rogan sued, and
+    74	eventually received a $55,000 settlement from Los Angeles
+    75	because the city had failed to remove his name from the data
+    76	base.
+    77	   "If the informationis inaccurate or incomplete, it creates
+    78	a stigmatizing effect,"
+    79	 Mr. Rotenberg said.  "If you're recorded in the NCIC,
+    80	there's a presumption of criminal activity."
+    81	   Mr. Bayse told the audience Saturday that the system is
+    82	inefficient and outdated, and that the FBI wants to improve
+    83	the technology to prohibit occurrences such as the Rogan
+    84	case.
+    85	   "We need a new system, if nothing else, to implement
+    86	internal security and privacy controls as a stopper for
+    87	someone maliciously trying to take information out of the
+    88	system," he said.
+    89	   Civil libertarians are not arguing about the system's
+    90	usefulness, but many are wary about the FBI's motives and
+    91	about safeguarding sensitive information.
+    92	   "Computer systems today are very vulnerable," said
+    93	panelist Peter Neumann, an employee of the SRI International
+    94	"think tank" in Menlo Park and member of the computer group.
+    95	"There are trap doors.  Even the best-designed systems have
+    96	crackable internal controls."
+    97	   The FBI spends about $1 million a year auditing the system
+    98	to correct inaccuracies and has managed to reduce its error
+    99	rate by 25 percent.  But evey Mr. Bayse agreed that it's not
+   100	perfect.
+   101	   "With up to 900,000 queries a day, lots of things can
+   102	happen there."
+   103	
+   104	
+   105	Copyright: Knight/Ridder
+   106	

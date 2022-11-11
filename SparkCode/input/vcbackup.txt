@@ -1,0 +1,194 @@
+     1	                How to Back-up your PC *VisiCalc disk                _____________________________________                How to Back-up your PC *VisiCalc disk
+     2	
+     3	Dual drive disk copy procedure:
+     4	
+     5	The  following  technique  will convert your Visicalc disk  to  a  normal, 
+     6	copyable disk.   But don't try to add other files to the disk as there are copyable
+     7	four  programs on the disk which do not appear in the directory.   Use  of 
+     8	this  procedure does not relieve you of your responsibilities under  copy-
+     9	right  laws  or licensing agreements.   Using a PCDOS disk  on  drive  A:, 
+    10	Format a new disk on B:, then type what is underlined:
+    11	
+    12	  _____A>DEBUG
+    13	
+    14	As  soon as DEBUG is loaded,  remove the PCDOS disk from A:.   Insert your 
+    15	write-protected,  "copy-protected"  VisiCalc Disk in A:   If you  have  at 
+    16	least 96kb of memory, type what is underlined:
+    17	
+    18	 ____________-L 100 0 0 80                  (reads first 16 tracks from A:)
+    19	 _____________-L 100 0 80 80                 (reads next 16 tracks from A:)
+    20	 _____________-W 100 1 80 80                 (writes same on B:)
+    21	 ______________-L 100 0 100 3E                (copies the last 8 tracks except 
+    22	 ______________-W 100 1 100 3E                 for the "uncopyable" sector 13F)
+    23	
+    24	If  you  have  less than 96KB,  you must take  smaller  bites.   Type  the 
+    25	following instead:
+    26	
+    27	 ____________-L 100 0 0 40                  (read a 32KB "gulp", 8 tracks)
+    28	 ____________-W 100 1 0 40
+    29	 _____________-L 100 0 40 40
+    30	 _____________-W 100 1 40 40
+    31	 _____________-L 100 0 80 40
+    32	 _____________-W 100 1 80 40
+    33	 _____________-L 100 0 C0 40
+    34	 _____________-W 100 1 C0 40
+    35	 ______________-L 100 0 100 3E
+    36	 ______________-W 100 1 100 3E
+    37	 
+    38	Remove your old VisiCalc disk from A:.  You have now copied the disk,  but 
+    39	it  won't run yet.   First you must patch the 80-column  VisiCalc  program 
+    40	loader/decrypter  so that it will run correctly with sector 13F  formatted 
+    41	normally.  type:
+    42	
+    43	 _____________-L 100 1 138 3            (load the invisible loader-decrypter)
+    44	 ___________-E 150 90 90              (first patch for 80-col.)
+    45	 ________-E 156 B0
+    46	 ___________-E 158 90 90
+    47	 ____________________-E 168 90 04 40 90 90
+    48	 ___________-E 16E C6 06
+    49	 ___________-E 173 90 90
+    50	 ____________________-E 179 90 04 20 90 90
+    51	 ___________-E 17F C6 06
+    52	 ___________-E 184 90 90
+    53	 ____________________-E 18A 90 04 00 90 90
+    54	 ___________-E 190 C6 06
+    55	 ________-E 195 EB                 
+    56	 ____________________-E 1B0 90 05 00 00 90     (last patch disables timer check)
+    57	 _____________-W 100 1 138 3            (save it back on new disk)
+    58	
+    59	                  VisiCalc Backup  8-1-82   JEH  Page 1
+    60	
+    61	
+    62	
+    63	                  
+    64	                  VisiCalc Backup  8-1-82   JEH  Page 2
+    65	
+    66	
+    67	Next,  you  must apply the following patches if you wish to be able to run 
+    68	VCONFIG to select the 40 column display, type:
+    69	
+    70	 _____________-L 100 1 13B 3                 (load 40-col loader-decrypter)
+    71	 __________________________-E 14D 90 90 B4 10 90 90 90    (first patch)
+    72	 ___________-E 169 C6 06
+    73	 ___________-E 16E 90 90
+    74	 ____________________-E 174 90 2C 20 90 90
+    75	 ___________-E 17A C6 06
+    76	 ___________-E 17F 90 90                   
+    77	 ____________________-E 185 90 2C 00 90 90          
+    78	 ___________-E 18B C6 06
+    79	 ________-E 190 EB                      
+    80	 ____________________-E 1AB 90 04 00 90 90          (disable timer check here too)
+    81	 _____________-W 100 1 13B 3                 (save on new disk)
+    82	 _-Q                             (exit debug)
+    83	
+    84	Remove  your new copyable VisiCalc disk from B:.   Write-protect  the  new 
+    85	copy,  place it in A:  and boot it.  After you have verified that the copy 
+    86	works correctly,  you may copy it using "DISKCOPY".  All copies of the new 
+    87	disk  should function exactly as the original "copy-protected" disk.   The 
+    88	serial number is unchanged.  You may not legally sell, give or loan either 
+    89	the original disks, copies, or documentation! 
+    90	
+    91	Single drive note:
+    92	
+    93	                                           _All  DEBUG  accesses  to  drive A:  (L 100 0 x x) refer  to  the  original 
+    94	                                              _VisiCalc disk.  References to drive B: (W 100 1 x x) refer to the new disk 
+    95	being prepared.   Make sure that you swap disks at the right time and that 
+    96	your original disk has the write-protect tab installed.
+    97	
+    98	Conversion to .COM file - single drive, 48KB minimum:_____________________________________________________Conversion to .COM file - single drive, 48KB minimum:
+    99	
+   100	The following procedure will read the 80-column VisiCalc program from your 
+   101	Visicalc  disk (original or copy) and write a standard .COM file which may 
+   102	be  loaded on a non-standard disk drive  (Winchester,  double-sided,   8", 
+   103	etc.).   You will need another formatted disk.   This disk should  contain 
+   104	the  DOS  system  files (format /s) and any .BAT file  (required  to  exit 
+   105	VisiCalc sometimes).  With a DOS disk in A:, type:
+   106	
+   107	  _____A>DEBUG
+   108	
+   109	Remove the DOS disk, insert your VisiCalc disk, then type:
+   110	
+   111	 _____________-L 100 0 138 3            (load the VC80 loader/decrypter)
+   112	 ____________-M 0 3FF 7000             (duplicate it in higher memory)
+   113	 ____-R CS                     (inspect command segment register)
+   114	
+   115	DEBUG will respond with the contents of the CS register (049F for DOS 1.0, 
+   116	4B5 FOR DOS 1.1) and prompt with a colon :.   Type the old contents +  700 
+   117	(hex).   That is,  0B9F or BB5.   Do the same with RS.   The screen should 
+   118	appear as on the next page.
+   119	
+   120	
+   121	
+   122	
+   123	
+   124	
+   125	                  VisiCalc Backup  8-1-82   JEH  Page 2
+   126	
+   127	
+   128	
+   129	
+   130	                  VisiCalc Backup  8-1-82   JEH  Page 3
+   131	
+   132	
+   133	A>DEBUG
+   134	 _____________-L 100 0 138 3
+   135	 ____________-M 0 3FF 7000
+   136	 ____-R CS
+   137	CS 049F                  or CS 04B5 for DOS 1.1
+   138	 ____                        ____:0B9F                    or :0BB5
+   139	 ____-R DS
+   140	DS 049F                  or DS 04B5
+   141	 ____                        ____:0B9F                    or :0BB5
+   142	
+   143	Next, apply the following patches, type:
+   144	
+   145	 ___________-E 107 9F 04              (byte-flipped 049f from CS if DOS 1.0)
+   146	   or
+   147	 ___________-E 107 B5 04              (if DOS 1.1, byte-flipped 04b5) 
+   148	 _________________-E 24D BB A8 00 90        (hard-wire the decryption key)
+   149	
+   150	Now, to run the loader/decrypter, type:
+   151	
+   152	 __________-G =1B8 26B               (execute from 1b8 to 26b)
+   153	
+   154	The  entire program will now be loaded and decrypted and a  register  dump 
+   155	should  appear  on the screen.   Next restore CS and DS to their  previous 
+   156	values and set the file length in CX.  The screen image should appear as:
+   157	
+   158	(register dump)
+   159	 ____-R CS
+   160	CS 0B9F                  or CS 0BB5 for DOS 1.1
+   161	 ____                        ____:049F                    or :04B5
+   162	 ____-R DS
+   163	DS 0B9F                  or DS 0BB5
+   164	 ____                        ____:049F                    or :04B5
+   165	 ____-R CX
+   166	CX 0000
+   167	 ____                                                ____:6B64               (length = 6B64 FOR VisiCalc 1.1, 6802 for VC 1.0)
+   168	
+   169	All  that  is left is to name the file,  write it and  exit.   Remove  the 
+   170	VisiCalc disk, insert the new, formatted, empty disk in the same drive and 
+   171	type:
+   172	
+   173	 ________-N VC.COM                 (or whatever you wish to name it)
+   174	 _-W                        (write the .COM file)
+   175	 _-Q                        (exit DEBUG)
+   176	
+   177	THAT'S IT!
+   178	
+   179	This document was placed in the public domain by me on August 1,  1982.  I 
+   180	do  not know how many different "copy-protection" methods might be in use, 
+   181	but this worked on my disk and should work on yours until VisiCorp changes 
+   182	their  recipe.   Please feel free to distribute this  information  without 
+   183	charge to any interested person.
+   184	
+   185	                                                  John Hart     
+   186	                                                  Houston, Texas
+   187	
+   188	
+   189	*VisiCalc is a trademark of VisiCorp (formerly Personal Software).
+   190	
+   191	                  VisiCalc Backup  8-1-82   JEH  Page 3
+   192	
+   193	
+   194	iCalc is a trademark of VisiCorp (formerly Personal

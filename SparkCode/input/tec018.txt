@@ -1,0 +1,73 @@
+     1	
+     2	
+     3	                                STAC ELECTRONICS
+     4	                           TECHNICAL SUPPORT BULLETIN
+     5	
+     6	  NUMBER:     018
+     7	  SUBJECT:    WINDOW3.0
+     8	
+     9	  DATE:       September 18, 1991
+    10	  TIME:       
+    11	
+    12	  SOURCE:         Tech Support, Engineering, User's Manual
+    13	  SUPERCEDES/     TECH003 Dated 4/14/1991
+    14	  SUPERCEDED BY:  
+    15	  RELEASE STATUS: Public
+    16	
+    17	  TITLE:
+    18	      WINDOWS 3.0 in enhanced mode and STACKER
+    19	
+    20	  OVERVIEW:
+    21	      WINDOWS is a memory-intensive program.  It can be run in enhanced mode to
+    22	      take advantage of extended memory, and such operation is compatible with
+    23	      STACKER.
+    24	
+    25	  ISSUES/COMMENTS:
+    26	      1) When the XT/8 coprocessor board is present, its address range must be
+    27	         excluded in the WINDOWS SYSTEM.INI file.  Overlooking this step can
+    28	         lead to corruption of the Windows directory.  Omitting the EMMExclude
+    29	         can also lead to "Insufficient Memory" errors when launching Windows
+    30	         programs.
+    31	         Use of the AT/16 coprocessor presents no such problems.
+    32	
+    33	      2) Permanent swap files cannot reside on the STACKER volume; (Windows
+    34	         does not present it as an option).
+    35	
+    36	      3) Temporary swap files should also reside on the uncompressed drive.
+    37	
+    38	      4) With third party (non-Microsoft) memory managers, certain files
+    39	         must exist in the identical directory paths on both the compressed
+    40	         Stacker drive and in the uncompressed boot drive.
+    41	
+    42	              386MAX           BLUEMAX             QEMM386
+    43	              -----------      ------------        ------------
+    44	              386MAX.SYS       BLUEMAX.SYS         QEMM386.SYS
+    45	              386LOAD.SYS      385LOAD.SYS         LOADHI.SYS
+    46	              386MAX.VXD       BLUEMAX.VXD         WINHIRAM.VXD
+    47	
+    48	  RECOMMENDED ACTIONS:
+    49	      1) If WINDOWS is run in enhanced mode AND the XT/8 coprocessor board is
+    50	         installed, add an EMMExclude statement to WINDOWS\SYSTEM.INI under the
+    51	         heading [386ENH] (see User's Manual, "Microsoft Windows 3.0 in 386
+    52	         Enhanced Mode Users").  This should be done BEFORE WINDOWS is loaded,
+    53		 and can be accomplished using any text editor.  (If the coprocessor is
+    54	         disabled, SYSTEM.INI may be modified using NOTEPAD.)
+    55	 
+    56	      2) If a permanent swap file will be part of the configuration, leave
+    57	         sufficient uncompressed space on the host volume.  If there is not 
+    58		 enough uncompressed space and you have Stacker version 2.0 or greater,
+    59		 use SDEFRAG to physically shrink the STACVOL file.
+    60	         If you are using version 1.12 or lower,the STACKER volume must be 
+    61	         SREMOVEd, and a smaller one created.
+    62	
+    63	      3) Temporary swap files left on the uncompressed drive will not cause
+    64	         fragmentation in the STACKER volume.
+    65	
+    66	      4) If the STACKER volume becomes corrupted or write-protected due to an
+    67	         interrupted 386-enhanced session:
+    68	          a) verify that STACKER coprocessor card address has been excluded in
+    69	             SYSTEM.INI;
+    70	          b) run SCHECK/F on the STACKER volume;
+    71	          c) delete the WIN386.SWP (temporary swap) file;
+    72	          d) run SCHECK/F again;
+    73	          e) reboot before writing anything to disk.

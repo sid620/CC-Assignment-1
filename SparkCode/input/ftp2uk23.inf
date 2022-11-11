@@ -1,0 +1,1687 @@
+     1	FTP2UK23.INF   SIMTEL20 by FTP from UK JANET sites
+     2	
+     3	Notes for PC/MSDOS users at UK JANET sites - last revised 27 Apr 92
+     4	
+     5	Some of the methods below are no longer in my current repertoire. If you
+     6	think the advice has become out of date, please send me a message with
+     7	details.
+     8	        Hylton Boothroyd, Warwick Business School, bsrdp@warwick.ac.uk
+     9	
+    10	UK readers can find the latest version of this file in the directory
+    11	ibmpc/simtel20/info  at  uk.ac.ic.doc.src
+    12	------------------------------------------------------------------------
+    13	Contents:
+    14	
+    15	 0. Background to this file
+    16	    0.1 JANET (NIFTP) methods v. Internet FTP
+    17	
+    18	 1. Practical alternatives, and why
+    19	    1.1 Lancaster
+    20	    1.2 Imperial College, London
+    21	    1.3 TRICKLEs
+    22	    1.4 FTP from mirrors and quasi-mirrors outside the UK
+    23	    1.5 FTP variations available
+    24	
+    25	 2. Getting a file from SIMTEL20: two-stage FTP via London
+    26	    2.1 Scope of advice
+    27	    2.2 Authorizations
+    28	    2.3 Outline and limitations
+    29	    2.4 Getting information files before you start
+    30	    2.5 An annotated example of Warwick - NSF.SUN(London) - SIMTEL20
+    31	
+    32	 3. Getting a file from SIMTEL20: FTP direct
+    33	    3.1 Scope of advice
+    34	    3.2 Authorizations
+    35	    3.3 Outline and limitations
+    36	    3.4 Getting information files before you start
+    37	    3.5 Automation of FTP file collection
+    38	
+    39	 4. Getting a file from SIMTEL20: one-step file request via FT-RELAY
+    40	    4.1 Scope of advice
+    41	    4.2 Authorizations
+    42	    4.3 Outline and limitations
+    43	    4.4 Getting information files before you start
+    44	    4.5 An example of a request to FT-RELAY
+    45	
+    46	 5. File history
+    47	
+    48	------------------------------------------------------------------------
+    49	 0. Background to this file
+    50	---------------------------
+    51	These notes were originally prepared for Keith Petersen, the SIMTEL20
+    52	archivist, to meet a steady stream of requests for information from UK
+    53	JANET sites with the basic query:
+    54	        Can I get SIMTEL20 files in the UK by FTP?  How?
+    55	
+    56	Now that all JANET sites can get SIMTEL20 files over JANET from the
+    57	SIMTEL20 collection maintained at Imperial College in London, the advice
+    58	here has served its original purpose.  However, until late 1993, and
+    59	perhaps beyond that, the working methods discussed in this file will
+    60	continue to be of interest to UK users wanting files publicly available
+    61	by FTP from other non-UK sites.
+    62	
+    63	When FTP is mentioned on the net by people outside the UK, it usually
+    64	means the programme at a site on Internet (a network of networks) that
+    65	can be used
+    66	    *   to establish a connection with a distant site,
+    67	    *   to inspect the contents of distant directories,
+    68	    *   to transfer files along the connection.
+    69	When networks and sites are not busy it is fast and fluent.
+    70	
+    71	JANET is too unlike other networks for it simply to join Internet en
+    72	bloc. JANET sites therefore either have to join Internet individually in
+    73	their own right or have to rely on indirect access.  Until mid-1991,
+    74	scarcely any JANET sites were on Internet.  By the end of 1993 most JANET
+    75	sites will have joined, though cost may keep some sites off Internet
+    76	indefinitely.
+    77	
+    78	If you are at a JANET site that is already on Internet, the flavour of
+    79	working methods can be sampled from sections 2.5.4 (manual interactive)
+    80	and 3.5 (manually started scripts and automatically repeated scripts).
+    81	And you can take your advice on FTP from anywhere in the world.
+    82	
+    83	If you are at a JANET site that is not yet on Internet you have to
+    84	connect with special Internet interfaces at other UK sites to act as your
+    85	end of the Internet connection.  You can get an idea of the several
+    86	stages of manually collecting a file from SIMTEL20 to your PC from the
+    87	long annotated example in section 2.5, which is mostly a straight account
+    88	of my first experience of FTP in all its JANET awkwardness but also
+    89	includes a sprinkling of afterthoughts.
+    90	
+    91	Unfortunately, connections between JANET sites are not produced by a
+    92	single widely implemented package. There is a medley of packages with
+    93	little in common in their user interfaces.  And there is only patchy
+    94	guidance on what to put into each package to produce the desired JANET
+    95	message.  A complete advice file on indirect connection with Internet
+    96	would have to have a complete set of recipes for each package in the
+    97	medley.  That is beyond my capacity.  So the accounts here are based on
+    98	my preferred connection to the world:
+    99	
+   100	    before Internet at my site -
+   101	
+   102	        PC+Kermit -----> Unix host ----+---> JANET -> Internet interfaces
+   103	                     |
+   104	        PC+Rainbow --+
+   105	
+   106	        [ I already had many utilities on the unix intermediary, and
+   107	          liked its multiple streaming of parallel jobs, so I was not
+   108	          drawn to the obvious alternative
+   109	            PC+Rainbow   ------------------> JANET -> Internet interfaces ]
+   110	
+   111	     after Internet at my site -
+   112	
+   113	        PC+Kermit -----> Unix host ----+---> Internet
+   114	                     |
+   115	        PC+Rainbow --+
+   116	
+   117	PC+Kermit leaves plenty of room on a standard 640K PC for doing things at
+   118	the PC end during a connection.  PC+Rainbow uses so much space that only
+   119	the most trivial operations are feasible - its chief advantages are
+   120	built-in methods for direct use of JANET and its speed of file transfer.
+   121	
+   122	Since UK JANET methods can be awkward to use, there is some advantage in
+   123	wrapping up the painful details in scripts and/or set-up recipes once you
+   124	have established them.  So far I only have recipes for using unix hosts.
+   125	Brief examples are included below, but more ambitious methods are in
+   126	the companion file
+   127	    pd1:<msdos.info>FTP2UK23.ZIP .
+   128	
+   129	In using the advice below:
+   130	    *   be prepared to replace my account of what I do with something
+   131		suited to your own hardware and software;
+   132	    *   replace the variants of my email address with similar variants of
+   133		your own.
+   134	
+   135	
+   136	0.1 JANET (NIFTP) methods v. Internet FTP
+   137	-----------------------------------------
+   138	There are two modes of linking with a distant site:
+   139	    *   interactive manual control,
+   140	    *   sending a complete request message.
+   141	
+   142	In FTP there is no difference in what can be done in the two modes -
+   143	a complete request message simply mimics interactive manual control.
+   144	
+   145	On JANET there are differences in what can be done in the two modes, and
+   146	you need to switch between them.  At best the two modes are managed
+   147	within a menu-driven front-end, as in the PC-Rainbow package. At worst
+   148	there is an unrelated and different-looking utility for each mode, as on
+   149	a typical unix host.
+   150	
+   151	Interactive manual control offers the following basic facilities:
+   152	    FTP  JANET
+   153	    Yes    Yes   List a distant directory on screen
+   154	     No*   Yes   Read a distant text file on screen
+   155	    Yes     No   Have a distant text/binary file sent to you
+   156	    Yes     No   Have a distant directory sent to you as a file
+   157	     No    Yes   Direct access to remote site from PC (via Rainbow)
+   158	
+   159	       * on some systems, but not on the London interface, FTP allows
+   160		 quick and easy interruption to inspect files collected from a
+   161		 distant site.
+   162	
+   163	A stand-alone request message offers the following basic facilities:
+   164	    FTP  JANET
+   165	    Yes    Yes   Have a distant text/binary file sent to you
+   166	    Yes     No*  Have a distant directory sent to you as a file
+   167	     No    Yes   Direct file receipt on PC from remote site (via Rainbow)
+   168	
+   169	       * many JANET sites partly compensate for the lack of
+   170		 directory-as-file by periodically updating separate textfiles of
+   171		 directory listings, but there is no standard method for naming
+   172		 and locating them.
+   173	
+   174	-----------------------------------------------------------------------------
+   175	1.  Practical alternatives, and why
+   176	-----------------------------------
+   177	SIMTEL20 has probably the largest publicly-accessible actively-managed
+   178	up-to-date collection of serious MSDOS software in the world, both public
+   179	domain (PD) and shareware (SW).  BUT ...
+   180	
+   181	    *   a large mature UK repository of PC software now exists at
+   182		Lancaster, with full time staff who are:
+   183	          - pro-active in collecting it from sites like SIMTEL20 and
+   184		    cataloguing it,
+   185		  - funded partly to avoid the overloading of gateways to
+   186		    international networks and the international networks
+   187		    themselves;
+   188	
+   189	    *   a reasonable mirror of SIMTEL20's pd1:<msdos> directory is now
+   190		maintained at Imperial College, London;
+   191	
+   192	    *   an email service of SIMTEL20 files is still available via a
+   193		network of caches/servers around Europe and near-Europe - the
+   194		TRICKLE servers;
+   195	
+   196	    *   it is often easier and more reliable to connect with mature
+   197		non-UK sites that keep up-to-date copies of SIMTEL20 files.
+   198	
+   199	I don't aim to include stand-alone guides to alternatives to SIMTEL20,
+   200	but here in section 1 are some pointers to those that seem to be reliable
+   201	together with a quick overview of the three methods available for
+   202	reaching SIMTEL20 and other FTP sites.
+   203	
+   204	
+   205	1.1 Lancaster
+   206	-------------
+   207	The "National Software Archive" at Lancaster offers in its own format
+   208	virtually everything that is added to SIMTEL20.  The archive is
+   209	accessible to *all* JANET users by email and JANET methods.  In November
+   210	1991 it became accessible by FTP.
+   211	
+   212	To get started either send an email message of the form:
+   213		From: bsrdp@uk.ac.warwick.cu
+   214		To:  archive-server@uk.ac.lancs.pdsoft
+   215		Subject: Anything you like, or leave out the whole line
+   216	
+   217		send help
+   218	
+   219	or call the archive interactively over JANET and follow the instructions
+   220	on screen - on my unix host I simply need to enter
+   221	        pad lancs.pdsoft
+   222	( a limited range of unix-like commands is available: for example, 'more'
+   223	  but not 'less');
+   224	
+   225	or, if you have direct FTP, use methods similar to the manual interactive
+   226	method described in section 2.5.4 or to the automated methods described
+   227	in section 3.5 - a suitable first script would be:
+   228	                verbose
+   229	                open 148.88.64.2
+   230	                user anonymous bsrdp@warwick.ac.uk
+   231	                ascii
+   232	                dir  *                       lancs.dir
+   233	                get  docs/pdintro            lancs.docs.pdintro
+   234	                get  micros/ibmpc/dos/index  lancs.dos.index
+   235	                bye
+   236	
+   237	Good and bad features from the point of view of SIMTEL20 users are:
+   238	    +   has a separate standardized descriptive file for each
+   239	        application, which
+   240		    %   often tells you enough to avoid an unsuitable archive,
+   241		    %   reports the commercial status - PD or which of the many
+   242			varieties of SW - in April 1992 about 45% of the MSDOS
+   243			list was SW;
+   244	    +   publishes four regular email newsletters ( dos, windows, os2, and
+   245		deskview ) which include the information files for the latest
+   246		additions together with full pathnames;
+   247	    -   is a chronological collection with uninformative directory names
+   248		and file names - I find I need both a printed and a local online
+   249		copy of
+   250	                /micros/ibmpc/dos/index
+   251	        to navigate comfortably - if you accidentally call
+   252	                dir /micros/ibmpc
+   253		you will after some minutes get a directory listing of about 2000
+   254		names running from f001 to h999 and be no wiser;
+   255	    -   has no cross-referencing to SIMTEL20;
+   256	    -   repackages all archives in a .BOO format, but offers DEBOOing
+   257		tools if your site does not have them;
+   258	    -   lags perhaps 7/10 days behind SIMTEL20, but ...
+   259	    +   accepts requests for expediting;
+   260	    +   avoids adding to traffic on international networks,
+   261	    -   low rate of first time FTP connection.
+   262	
+   263	If you are at a JANET site without Internet FTP, then:
+   264	    +   physically available 24 hours a day,
+   265	    +   high rate of first time connection.
+   266	
+   267	
+   268	1.2 Imperial College, London
+   269	----------------------------
+   270	The UKUUG archive at Imperial College started a new section in August
+   271	1991. By April 1992 a complete set of MSDOS files from SIMTEL20 appeared
+   272	to be in place.
+   273	
+   274	The archive is accessible to *all* JANET users by email and JANET
+   275	methods, and is also accessible by FTP.  JANET users should make this the
+   276	standard site for collecting their up-to-date copy of
+   277	        pd1:<msdos.filedocs>SIMIBM.ARC
+   278	which is held as
+   279	        ibmpc/simtel20/filedocs/simibm.arc .
+   280	
+   281	To get started either send an email message of the form:
+   282	        From: bsrdp@uk.ac.warwick.cu
+   283	        To: info-server@doc.ic.ac.uk
+   284	        Subject: Anything you like, or leave out the whole line
+   285	
+   286	        request: index
+   287	        topic:   help
+   288	        request: end
+   289	
+   290	or call the archive interactively by JANET methods outside office hours
+   291	and follow the instructions on screen - on my unix host I simply need to
+   292	enter
+   293	        pad ic.doc.src
+   294	( a rather wider range of unix-like commands is available than at
+   295	  Lancaster, including 'less' and file location calls);
+   296	
+   297	or, if you have direct FTP, use methods similar to the manual interactive
+   298	method described in section 2.5.4 or to the automated methods described
+   299	in section 3.5 - a suitable script to check the current range of
+   300	directories would be
+   301	                verbose
+   302	                open src.doc.ic.ac.uk
+   303	                user anonymous bsrdp@warwick.ac.uk
+   304	                dir ibmpc/simtel20/.  ic.simtel20.dir
+   305	                bye
+   306	( the numeric form of the address is 146.169.3.7, and the address you
+   307	  offer as your password must include @ ).
+   308	
+   309	Good and bad features from the point of view of SIMTEL20 users are:
+   310	    +   uses SIMTEL20's directory structure and filenames, so
+   311		announcements on  comp.binaries.ibm.pc.archives  can be
+   312		translated directly into requests;
+   313	    -   at April 1992 additionally carried about 20% extra detritus from
+   314		months of development using buggy communications and/or buggy
+   315		local name processing, including:
+   316		  % many extra buggily-named directories with old and/or
+   317		    buggily-named versions of SIMTEL20 files,
+   318		  % a tendency to miss the deletion of superseded versions of
+   319		    software within current SIMTEL20 directories,
+   320		  % a scattering of programmes which have additionally or
+   321		    alternatively been subject to unix compress,
+   322		so
+   323		  % it can confidently be used to call files for which you have a
+   324		    correct directoryname+filename from SIMIBM.ARC,
+   325		  % it is best not used for browsing until it is tidier - get an
+   326		    up-to-date copy of SIMIBM.ARC and browse in that;
+   327	    +   lags only one or two days behind files being added to SIMTEL20
+   328	    +   has a high rate of first-time connection;
+   329	    +   avoids adding to traffic on international networks.
+   330	
+   331	If you are at a JANET site without Internet FTP, then:
+   332	    -   physically unavailable for manual interactive working during
+   333		normal office hours (0830-1730 Mon-Fri),
+   334	    +   high rate of first time-time connection.
+   335	
+   336	
+   337	1.3 TRICKLEs in Europe and near-Europe
+   338	--------------------------------------
+   339	There is a slowly changing list of about 10 sites on the EARN/BITNET
+   340	network in Europe, ranging from Spain to Denmark to Israel, with
+   341	automatic servers which together manage a substantial cache of SIMTEL20
+   342	material of current interest.  The cache has no duplication in it, except
+   343	transiently during file distribution.
+   344	
+   345	I think it will now mainly be of interest only if the Imperial College
+   346	mirror becomes unavailable for any reason. But some users in unusual
+   347	circumstances may still need it.
+   348	
+   349	Although the TRICKLE system is primarily for direct connection of sites
+   350	on the EARN/BITNET network, one of the TRICKLEs, currently that in
+   351	Austria, provides a complete email service for UK users.  On receiving a
+   352	request for a SIMTEL20 file, the Austrian TRICKLE will:
+   353	    *   mail it if it is in the Austrian cache,
+   354	    *   ask each other TRICKLE to mail it, and report,
+   355	    *   if all report negatively, place an order for the file and mail it
+   356		on arrival.
+   357	
+   358	To get started, send an email message of the form
+   359	         From: bsrdp@uk.ac.warwick.cu
+   360	         Reply-To: bsrdp%cu.warwick.ac.uk@UKACRL
+   361	         To: trickle@awiwuw11.earn
+   362	         Subject: Anything you like, or leave out the whole line
+   363	
+   364	         /help
+   365	
+   366	and in the help file that arrives ignore all references (TELL etc) to the
+   367	direct access methods available to sites that are on EARN.  You might be
+   368	OK without the Reply-To line. I made it standard when it became clear
+   369	that the TRICKLEs were not always in a state where they could form an
+   370	adequate version of my address - UKACRL is the EARN interface for all
+   371	JANET sites.
+   372	
+   373	Some good and bad features from the point of view of SIMTEL20 users are:
+   374	    +   uses SIMTEL20's directory structure and filenames, so
+   375		announcements on  comp.binaries.ibm.pc.archives  can be
+   376		translated directly into requests;
+   377	    -   usually lags about 3 days behind newsgroup announcements in
+   378		updating its directory and accepting requests, but has occasional
+   379		hiccoughs when it lags by another week, particularly at periods
+   380		of excitement and/or crisis on the networks;
+   381	    +   exact copies of SIMTEL20 .ZIP files and .ARC files are translated
+   382		into mailable form, often in several parts, and arrive with no
+   383		effort on your part, although ...
+   384	    -   it can be the weekend before the big parts arrive in term time (
+   385		if a file is sent in n parts, the first n-1 are big and the final
+   386		part may be)
+   387	    -   UK users must specifically ask for mailings of archive files
+   388		(.ARC, .LZH, .ZIP, .ZOO  ...) to be xxencoded, and must have the
+   389		tools for xxdecoding, which can can be a bit messy - downloading
+   390		the set of separate parts to your PC and using Richard Mark's
+   391		uudecode
+   392	                pd1:<msdos.filutl>UUEXE510.ZIP
+   393		is an alternative to writing supporting perl/awk scripts for a
+   394		unix host.
+   395	
+   396	
+   397	1.4 FTP from mirrors and quasi-mirrors outside the UK
+   398	-----------------------------------------------------
+   399	Sites in various parts of the world aim at keeping reasonably up-to-date
+   400	copies of SIMTEL20's MSDOS files and offering an FTP service to the world
+   401	at large. They may be of little interest once the Imperial College
+   402	coverage is thoroughly debugged, except insofar as they are actively
+   403	managed collections.
+   404	
+   405	Mirror sites, a minority, have:
+   406	    *   a tree of directories somewhere in their own directory structure
+   407		that exactly matches the pd1:<msdos> directory tree on SIMTEL20,
+   408	    *   files that are exact copies of the files on SIMTEL20,
+   409	    *   an identical set of files to those on SIMTEL20, typically managed
+   410		by automatic overnight off-peak calling of new files, and
+   411		therefore typically in a state that lags a day or two behind
+   412		SIMTEL20.
+   413	
+   414	What I prefer to call quasi-mirror sites, although they are usually
+   415	described as mirrors, depart in some respects from being true mirrors,
+   416	but may have other qualities to recommend them. The Imperial College
+   417	collection of SIMTEL20 files described in section 1.2 is intended to be a
+   418	true mirror.
+   419	
+   420	Mirrors and quasi-mirrors do not usually have the same operating system
+   421	as SIMTEL20, so the appearance of directory names and filenames is
+   422	somewhat different. For example, at the first site described below the
+   423	SIMTEL20 file
+   424	        pd1:<msdos.filedocs>SIMIBM.ARC
+   425	is held as
+   426	        /mirrors/msdos/filedocs/simibm.arc
+   427	
+   428	Four unix sites are worth looking at from the UK, and can be accessed by
+   429	the methods for accessing SIMTEL20 in sections 2, 3, and 4 below.
+   430	
+   431	wuarchive.wustl.edu
+   432	  Offers a true mirror in its directory
+   433	        /mirrors/msdos
+   434	  and
+   435	    +   usually lags by only about one day,
+   436	    +   has a high rate of first-time connections,
+   437	    +   usually operates more quickly than other sites,
+   438	    +   in 1991 was the source for the mirror at Imperial College,
+   439		London.
+   440	
+   441	oak.oakland.edu
+   442	  Offers a true mirror in its directory
+   443	        /pub/msdos
+   444	  and
+   445	    +   usually lags by no more than a day, and is managed by the SIMTEL20
+   446	        msdos archivist,
+   447	    -   has a lower rate of first-time connections than wuarchive.
+   448	
+   449	nic.funet.fi
+   450	  Offers a quasi-mirror in its directory
+   451	        /pub/msdos
+   452	  though the directory also has several sub-directories not related to
+   453	  material from SIMTEL20's  pd1:<msdos> directory.
+   454	  Some good and bad features from the point of view of SIMTEL20 users
+   455	  are:
+   456	    -   within /pub/msdos there is an extra layer of sub-directories into
+   457	        which the SIMTEL20 directories are grouped, though ...
+   458	    +   a group of thematically related directory names can then
+   459		conveniently be presented in a single screenful,
+   460	    -   .ARC and .ZIP files are repackaged into .LZH archives, which
+   461		requires yet another verification tool on a unix host - however,
+   462		once you have the .LZH archive on your PC ...
+   463	    +   archives in .LZH format are a little smaller;
+   464	    -   lags behind wuarchive.wustl.edu
+   465	
+   466	garbo.uwasa.fi
+   467	  Offers a quasi-mirror in its directory
+   468	        /pc
+   469	  though the directory also contains some non-SIMTEL20 material.
+   470	  Some good and bad features from the point of view of SIMTEL20 users
+   471	  are:
+   472	    +   competes to make most worthwhile things available quickly, and
+   473		indeed to persuade software authors to make it a repository of
+   474		first resort, but ...
+   475	    -   adds only a subset of what is added to SIMTEL20, though I guess
+   476		that users will find at least 90% of what they want;
+   477	    +   holds only about 20% of what is on SIMTEL20 - as an active
+   478		utility writer the moderator excludes also-ran's and me-too's, so
+   479		the average quality of general utilities is high;
+   480	    -   holds only about 20% of what is on SIMTEL20 - so some
+   481		applications topics are entirely missing;
+   482	    -   repacks some .ARCs to .ZIPs, with SIMIBM.ARC as
+   483	                /pc/filelist/simibm.zip ;
+   484	    +/- accepts some .LZHs ( see nic.funet.fi above for comments )
+   485	    -   uses a thematic directory structure coarser than that of
+   486		SIMTEL20, with subtly different directory names and sometimes
+   487		different filenames, but ...
+   488	    +   announces details of additions quickly, with full pathname (but
+   489		look out for corrections) and often with evaluative comments, on
+   490		comp.binaries.ibm.pc.archives;
+   491	    +   maintains an index list
+   492	                /pc/filelist/garboidx.arc
+   493		with brief descriptions similar to SIMIBM.IDX but perhaps a
+   494		little more evaluative;
+   495	    -   has no cross reference from SIMTEL20 pathnames;
+   496	    -   often (50%+ of my requests) declares itself unable to provide a
+   497		directory listing using 'dir' (a persistent bug) though a list of
+   498		names-only is available using 'ls';
+   499	    -   despite being geographically nearer to the UK is connected
+   500		through busy networks that make file transfers noticeably slower
+   501		than from wuarchive and oak.
+   502	
+   503	
+   504	1.5 FTP variations available
+   505	----------------------------
+   506	Distant connection by FTP is seductive, so it is perhaps worth saying:
+   507	    *   the software and hardware at FTP sites are not usually maintained
+   508		principally for the benefit of distant callers, though in the
+   509		long run there is a very rough quid pro quo in what is made
+   510		available to archive sites by the networking community;
+   511	    *   even if you are not physically prevented from accessing a distant
+   512		site during its normal daytime office hours, you should try to
+   513		respect requests for considerate use;
+   514	    *   operators and/or funders of distant sites may call, Enough, and
+   515		pull the plug.
+   516	
+   517	For JANET users the three methods of FTP connection currently available
+   518	are:
+   519	
+   520	two-stage connection through the London FTP interface
+   521	-----------------------------------------------------
+   522	    +   available to all JANET sites,
+   523	    +   well-established,
+   524	    +   allows you during a single FTP session in London to move easily
+   525		between:
+   526	          % listing directory contents (complete with files sizes),
+   527		  % pulling a copy of any file to London,
+   528	    -   everything has to be transferred from London to your own site
+   529		before you can inspect it,
+   530	    -   has no facility for you to build supportive scripts for pulling
+   531		files to London or for sending them to your own site,
+   532	    -   often busy and often with limited capacity for incoming files,
+   533		though this is temporarily easing as sites with their own
+   534		Internet connections discontinue their traffic,
+   535	    -   requires two substantially different methods of distant computer
+   536		access and file transfer, one within the UK to reach London, and
+   537		ordinary Internet FTP from London to the rest of the world,
+   538	    +   direct PC-London access with the UK 'Rainbow' package from
+   539		certain types of local network;
+   540	
+   541	ordinary FTP
+   542	------------
+   543	    -   not yet available at some JANET sites,
+   544	    +   should be relatively bug-free proven technology,
+   545	    +   allows you during a single manually controlled FTP session to
+   546		move easily between:
+   547	          % listing directory contents (complete with files sizes),
+   548		  % pulling a copy of any file,
+   549	          % briefly inspecting pulled files,
+   550	    +   can be automated to various degrees;
+   551	
+   552	one-stage file-relay service via FT-RELAY
+   553	-----------------------------------------
+   554	    +   available to all JANET sites,
+   555	    +   delivers files to your own site, and operates the FTP connection
+   556	        itself,
+   557	    +   very fast, like direct FTP,
+   558	               IF lines to FT-RELAY are free
+   559	                  AND FT-RELAY is not busy
+   560		          AND the networks to the remote site are not busy
+   561	                  AND the remote site can accept you,
+   562	    -   experimental, with scope of future behaviour not yet defined, and
+   563		fairly sharp changes in the degree to which it will persist with
+   564		a request - at a particular test date in August 1991 I noted:
+   565		  % each request for a directory listing and each request for a
+   566		    file is the subject of a separate message to FT-RELAY and
+   567		    separate re-connection to the remote site,
+   568	          % directory listings lack file sizes,
+   569		  % terminates the request under many conditions where I would
+   570		    want it to persist - can be very tedious,
+   571		  % some key online descriptions only in a news file that has
+   572		    garbled characters in key passages.
+   573	
+   574	These three alternatives are described more fully in Sections 2 ,3 and 4.
+   575	
+   576	
+   577	--------------------------------------------------------------------------
+   578	2.  Getting a file from SIMTEL20: two-step FTP via London
+   579	---------------------------------------------------------
+   580	This section has the fullest sequence of advice, since it is the only
+   581	method by which all JANET users can achieve interactive FTP connection.
+   582	To avoid repetition, later sections in places point back to section 2.
+   583	
+   584	2.1 Scope of advice
+   585	-------------------
+   586	For UK people at any JANET site who
+   587	  * want MSDOS public-domain and shareware files from SIMTEL20,
+   588	  * want a proven method of access to SIMTEL20 itself, including online
+   589	    inspection of directories to see filenames and filesizes,
+   590	  * are not at a site offering direct FTP,
+   591	  * are new to FTP, and want a framework of understanding, not just a
+   592	    recipe.
+   593	
+   594	You will need to find people at your own site who can adapt the methods
+   595	for the link with London, since this will vary from site to site.
+   596	Broadly you are likely to be reaching London from one of three kinds of
+   597	platform:
+   598	  * a well-supported unix host at your site (as in Section 2.5)
+   599	  * a well-supported VMS host at your site,
+   600	  * a PC linked to a suitable high-speed local network using something
+   601	    like the UK Rainbow package to give direct access to a JANET 'pad'.
+   602	
+   603	The London-SIMTEL20 link is standard for everybody, and is an example of
+   604	what the rest of the world understands as FTP.
+   605	
+   606	
+   607	2.2 Authorizations
+   608	------------------
+   609	At most UK universities and polytechnics, both staff and students in
+   610	principle have unrestricted access to international email and to the UK's
+   611	substitute for FTP that links JANET sites.  So all that is needed is
+   612	locally authorised access to
+   613	  * a mainframe linked to JANET, or
+   614	  * a PC linked to a net linked to JANET,
+   615	plus some specific information on distant sites and some knowhow.
+   616	
+   617	For the London interface with internet you need to know
+   618	    address : uk.ac.nsfnet-relay.sun   or   nsf.sun
+   619	    login   : guestftp
+   620	    password: guestftp
+   621	    other   : use a short form of your JANET email address as your
+   622	                reference for the session
+   623	
+   624	For SIMTEL20 you need to know
+   625	    address : wsmr-simtel20.army.mil
+   626	    login   : anonymous
+   627	    password: anything - operator suggests 'guest'
+   628	    other   : if asked for passwords during the session press <ENTER>
+   629	
+   630	Since, many UK and international facilities are close to capacity and
+   631	prone to downtime, access in practice is resource-limited.
+   632	
+   633	
+   634	2.3 Outline and limitations
+   635	---------------------------
+   636	A straightforward method is:
+   637	  * connect your site to the London interface,
+   638	  * connect the London interface to SIMTEL20,
+   639	  * transfer a copy of the file you want from SIMTEL20 to London,
+   640	  * close the link to SIMTEL20,
+   641	then either
+   642	  * address a copy of the file to yourself at your own site,
+   643	  * close the link to London,
+   644	or
+   645	  * close the link to London,
+   646	  * send to London for the file to be sent to you and deleted in London.
+   647	and finally
+   648	  * wait.
+   649	
+   650	The first alternative uses a rather cumbersome special facility at
+   651	NSF.SUN, though its use is identical for all JANET users.  The second
+   652	alternative depends on JANET file transfer utilities in use at your site,
+   653	but can be streamlined and is usually quicker.
+   654	
+   655	The London interface does not connect your site directly to Internet. You
+   656	are given a modest workspace in London to use as your base for FTP
+   657	connections on Internet. London has to be used as a temporary intermediate
+   658	store for files. It does not have much free space;  it refuses entry when
+   659	there is less than 1Mb free to share between users.
+   660	
+   661	Like any FTP connection, the connection between London and SIMTEL20 is in
+   662	some ways a very limited affair. In particular:
+   663	  * you cannot ask SIMTEL20 to display help/info files on your screen - you
+   664	    have to bring them to London.
+   665	However, the interface in London offers fewer facilities than you
+   666	normally get when connected to another JANET site. In particular:
+   667	  * having got the SIMTEL20 help/info files to London you cannot ask
+   668	    London to display them on your screen - you have bring them to your
+   669	    own site.
+   670	
+   671	Although you may have read about automated FTP, there are no ready-made
+   672	scripts suitable for you-London or London-SIMTEL20.
+   673	
+   674	
+   675	2.4 Getting information files before you start
+   676	------------------------------------------------
+   677	You may find the example in section 2.5 sufficient, but it is preferable
+   678	to send two email messages in the following format, with your own email
+   679	identity substituted for mine, and to read and perhaps to print the
+   680	replies:
+   681	
+   682	  1
+   683	    From: bsrdp@uk.ac.warwick.cu
+   684	    To: info-server@uk.ac.nsfnet-relay
+   685	
+   686	    Request: guestftp
+   687	    Topic: userguide
+   688	    Request: end
+   689	
+   690	  2
+   691	    From: bsrdp@uk.ac.warwick.cu
+   692	    Reply-To: bsrdp%cu.warwick.ac.uk@UKACRL
+   693	    To: trickle@awiwuw11.earn
+   694	    Subject: Anything you like, or leave out the whole line
+   695	
+   696	    /pdget <msdos.starter>SIMTEL20.INF
+   697	    /pdget <msdos.starter>QUICKREF.LST
+   698	
+   699	The final @UKACRL refers to the JANET/EARN interface; from the point of
+   700	view of EARN it is a part of every UK address. This second message should
+   701	yield
+   702	  * Keith Petersen's standard file of information on SIMTEL20, including
+   703	    information about what to do when you get an ftp connection;
+   704	  * a list of the main MSDOS directories at SIMTEL20.
+   705	
+   706	
+   707	2.5 An annotated example of ftp from SIMTEL20
+   708	---------------------------------------------
+   709	I could connect my PC direct to the London interface, but I prefer to use
+   710	one of Warwick's Unix mainframes as my base for communications.  It has
+   711	PD versions of ARC and UNZIP, and also ZOO, DEBOO, UUDECODE and XXDECODE
+   712	which I need for the other routes. It is also where I keep an up-to-date
+   713	copy of SIMIBM.ARC and scripts for partly automating some of the
+   714	processes.
+   715	
+   716	So I will start at my PC and collect from SIMTEL20
+   717	    pd1:<msdos.arc-lbr>FV137.ZIP ,
+   718	via my Warwick Unix host. I know of the existence and pathname of the
+   719	file from a news announcement. [ A later version is now current, but I
+   720	have left this annotated example unchanged ]
+   721	
+   722	To establish a style of presentation I will start with the familiar.  I
+   723	will sometimes use [  ] to enclose brief summaries of what appears on the
+   724	screen, so I can concentrate on the key moves. I will also number the
+   725	various sections for reference later in the file.  Here goes:
+   726	
+   727	2.5.1 --- WARWICK PC ---
+   728	
+   729	a:>
+   730	a:>kermit
+   731	    MSDOS on my PC awaits input - no hard disk today, it failed physically
+   732	    during the week.
+   733	    I start an old small version of my PC communications package.
+   734	
+   735	Kermit-MS>
+   736	Kermit-MS>c
+   737	    MSKERMIT on my PC awaits input.
+   738	    I ask to be connected to the network my PC is physically plugged into.
+   739	
+   740	[blank screen]
+   741	[blank screen]<ENTER>
+   742	    The ageing Local Area Switching System awaits input!
+   743	    I tentatively press the <ENTER> key.
+   744	
+   745	Please select computer
+   746	Please select computer  anemone
+   747	    I enter the local name for the Unix host I use.
+   748	
+   749	
+   750	2.5.2 --- WARWICK UNIX HOST ---
+   751	
+   752	login:
+   753	login: bsrdp
+   754	    My Warwick Unix host awaits a username.
+   755	    I enter my own username.
+   756	
+   757	Password:
+   758	Password:
+   759	    I enter my own password - it isn't echoed!
+   760	
+   761	[variety of login info]
+   762	TERM = (vt100k)
+   763	TERM = (vt100k) <ENTER>
+   764	    My Warwick Unix host reports my usual terminal configuration and
+   765	    awaits for confirmation or the name of an alternative.
+   766	    I press <ENTER> to confirm my terminal type, although I'm not sure my
+   767	    PC end really is vt100 today!  However, nothing goes wrong later in
+   768	    the session, and no other machine asks about terminal type.
+   769	
+   770	41:
+   771	41: pad nsf.sun
+   772	    My Warwick Unix host awaits input.
+   773	    I ask to be connected to the London interface with Internet.
+   774	
+   775	
+   776	2.5.3 --- LONDON NSF.SUN ---
+   777	
+   778	Connected, break in character is ^p
+   779	To enter command state type ^p followed by 'a'
+   780	University of London Computer Centre (uk.ac.nsfnet-relay.sun) X.29 Service
+   781	login:
+   782	login: guestftp
+   783	    NSF.SUN awaits a username.
+   784	    I enter the standard username for public access to NSF.SUN
+   785	
+   786	    The two lines referring to ^p have nothing to do with London but were
+   787	    printed by, and refer to, a process that was started by "pad" on the
+   788	    fast communications network at Warwick between my Warwick Unix host
+   789	    and NSF.SUN.
+   790	
+   791	Password:
+   792	Password: guestftp
+   793	    NSF.SUN awaits a password.
+   794	    I enter the standard password for public access to NSF.SUN
+   795	
+   796	Warning - only 1723 Kbyte available for the whole service
+   797	Do you still want to use use the service at the present time ? ( y or n )
+   798	Do you still want to use use the service at the present time ? ( y or n )y
+   799	    The limited space message appears if there is less than 4Mb of disk
+   800	    space left.  If there is less than 1Mb then I am allowed on only to
+   801	    list the names of my files and/or delete some.
+   802	    I decide to go ahead.
+   803	
+   804	Enter your reference for this session:
+   805	Enter your reference for this session: bsrdp@warwick
+   806	    NSF.SUN awaits the name of a directory to be created to hold my files.
+   807	    I enter a name in the recommended form for NSF.SUN - a short form of
+   808	    my JANET address.
+   809	
+   810	guest-ftp>
+   811	guest-ftp> help
+   812	    NSF.SUN awaits input.
+   813	    I decide to ask for information, correctly guessing what the command
+   814	    might be.
+   815	
+   816	[List of commands and files]
+   817	    It takes a while before I realise that I have entered the GUEST-FTP
+   818	    HELP environment, that I shall stay in it until I type in a command to
+   819	    leave it, and that typing a listed command name now does not activate
+   820	    the command but simply causes information about it to appear on the
+   821	    screen.
+   822	
+   823	    I spend a few minutes reading about commands and making a note of
+   824	    those I might want.  I also read the short text files on offer. A
+   825	    reminder of how to leave the GUEST-FTP HELP environment is continually
+   826	    renewed on screen.
+   827	
+   828	guest-ftp>
+   829	guest-ftp> ftp
+   830	    I ask for an ftp session to be started.
+   831	
+   832	
+   833	2.5.4 --- LONDON NSF.SUN FTP ---
+   834	
+   835	ftp>
+   836	ftp> help
+   837	    NSF.SUN FTP awaits input.
+   838	    In this FTP session, what I get on my screen is similar to what users
+   839	    in the rest of the world see when they use FTP, and similar to what
+   840	    is directly available at selected JANET sites.
+   841	    I decide to ask for information, again correctly guessing the command.
+   842	
+   843	[Longer list of commands]
+   844	    It takes a while before I realise that this time I have not entered a
+   845	    help environment, and that typing a command name activates the
+   846	    command. To learn about "ascii" I must now type
+   847	       "help ascii".
+   848	    I spend a few minutes reading about commands and making a note of
+   849	    those I might want under the impression that I shall leave London
+   850	    behind when I connect to SIMTEL20.
+   851	
+   852	    Later I discover that I do not leave London during distant connections
+   853	    - ftp is an armslength affair, and this help facility remains
+   854	    available throughout the connection to SIMTEL20.
+   855	
+   856	ftp>
+   857	ftp> open wsmr-simtel20.army.mil
+   858	    I ask to be connected to SIMTEL20.
+   859	
+   860	ftp: connect: Network is unreachable
+   861	ftp>
+   862	    NSF.SUN FTP could not make the connection and now again awaits input.
+   863	    Busy? Broken? Back soon? May be days?  No information is obtainable.
+   864	    Later I discover that it is easier to get connected to SIMTEL20
+   865	    in the morning before the USA wakes up!
+   866	    Later still I discover that the wsmr-simtel20 address is sometimes
+   867	    declared to be unknown - this happens when parts of Internet become
+   868	    inaccessible, and the server that confirms the army.mil addresses is
+   869	    not reachable.
+   870	    Seven hours and several attempts later ...
+   871	
+   872	Connected to 192.88.110.20
+   873	220 WSMR-SIMTEL20.ARMY.MIL [....]
+   874	Name (192.88.110.20: guestftp)
+   875	Name (192.88.110.20: guestftp) anonymous
+   876	    SIMTEL20 announces itself and awaits a valid username.
+   877	    I enter the standard username for public access to SIMTEL20.
+   878	    Later I learn that this is the usual username for FTP access around
+   879	    the world.
+   880	
+   881	ANONYMOUS user ok, send real identity as password
+   882	Password:
+   883	Password: guest
+   884	    SIMTEL20 accepts the username and awaits a password.
+   885	    I ignore the on-screen request and enter one of the suggestions from
+   886	    Keith Petersen's advice file - it isn't actually echoed.
+   887	    Later I discover that some FTP sites are quite fussy about the
+   888	    password and expect a valid email address containing @ .
+   889	
+   890	ftp>
+   891	ftp>dir
+   892	    NSF.SUN FTP and SIMTEL20 await input.
+   893	    I ask NSF.SUN to ask SIMTEL20 to display a list of files in the
+   894	    current directory on SIMTEL20.
+   895	
+   896	200 Port ... accepted
+   897	150 List started
+   898	PS:<ANONYMOUS>
+   899	   [List of files in current directory on SIMTEL20]
+   900	226 Transfer completed
+   901	    Processes at SIMTEL20 clunk away giving a series of numbered progress
+   902	    reports and produce the information I want. Numbered reports are a
+   903	    general feature of FTP; each represents a phase that can fail and
+   904	    therefore cause the remaining phases to be aborted.
+   905	
+   906	ftp>
+   907	ftp> cd pd1:<msdos.arc-lbr>
+   908	    I ask NSF.SUN FTP to ask SIMTEL20 to change directories so that I can
+   909	    look for the file I want in case it has been replaced by a newer
+   910	    version. I follow the notes I made from Keith Petersen's information
+   911	    file.
+   912	
+   913	331 Default name accepted. Send password to connect to it.
+   914	331 Default name accepted. Send password to connect to it. <ENTER>
+   915	    Wow! Can't even change directory at SIMTEL20 without permission.
+   916	    I remember Keith's advice and press the <ENTER> key.
+   917	
+   918	[acceptance message]
+   919	ftp>
+   920	ftp> dir
+   921	    SIMTEL20 changes the directory.
+   922	    I ask NSF.SUN FTP to ask SIMTEL20 to display a list of files.
+   923	
+   924	[Two or three screens of file information roll by, including the target]
+   925	    So far, I only seem to be able to control output by using the
+   926	    Ctrl-S/Ctrl-Q keys to stop/start screen output on my PC.
+   927	    Later I discover that at some FTP sites I can reduce the list of
+   928	    names by specifying a unix-like target for the file by something
+   929	    like:
+   930	        dir fv*    or    dir fv*.*
+   931	
+   932	ftp>
+   933	ftp> hash
+   934	    Transfer will take place silently and I won't have any indication of
+   935	    how it is going, so I ask for a # to be put on screen every so many
+   936	    bytes. There are so many linkage points between London and SIMTEL20
+   937	    that transfer can be interrupted for 20-30 seconds at times (longer
+   938	    usually means the connection has been lost).
+   939	    Later I discover that directory listings are peppered with # signs
+   940	    if I forget to type  hash  again after a binary transfer.
+   941	
+   942	Hash mark printing on (1024 bytes/hash mark)
+   943	ftp>
+   944	ftp> type binary
+   945	    I ask NSF.SUN FTP to arrange that, until further notice during this
+   946	    session, files are to be despatched from SIMTEL20 in 8-bit binary
+   947	    format, to be treated like that on the way, and to be held in London
+   948	    in that format for re-transmission to Warwick.
+   949	    Despite Keith's strong advice to ask for TENEX mode, I find that
+   950	    ZIP/ARC files arrive in perfect condition.
+   951	
+   952	200 Type I ok
+   953	ftp>
+   954	ftp> get fv137.zip
+   955	    SIMTEL20 agrees.
+   956	    I ask NSF.SUN FTP to ask SIMTEL20 to send a copy of the file I want.
+   957	
+   958	200 Port 4.224 at host accepted
+   959	150 Retrieve of PD1:<MSDOS.ARC-LBR>FV137.ZIP.1 (4 pages, 8128 8-bit bytes)
+   960	226 Transfer completed. 8128 bytes transferred
+   961	8128 bytes received in 17 seconds
+   962	    SIMTEL20 thinks it worked.
+   963	    NSF.SUN FTP is non-committal, but at least its byte count agrees.
+   964	
+   965	ftp>
+   966	ftp> quit
+   967	    NSF.SUN FTP awaits input.
+   968	    I ask it to close the link with SIMTEL20 and to end the FTP session.
+   969	    For sites where direct FTP is available, this point marks the end of
+   970	    an FTP session.
+   971	
+   972	
+   973	2.5.5 --- LONDON NSF.SUN ---
+   974	
+   975	[Closing message from SIMTEL20]
+   976	guest-ftp>
+   977	guest-ftp>dir
+   978	    NSF.SUN awaits input.
+   979	    I ask for the files in my London directory to be listed.
+   980	
+   981	[one filename - fv137.zip]
+   982	guest_ftp>
+   983	guest_ftp> push
+   984	    It's there!
+   985	    NSF.SUN awaits input.
+   986	    I call a very basic transmission utility to send the file to my Unix
+   987	    host at Warwick.  It is a tedious method.  For regular use I prefer
+   988	    the sort of streamlined method described in Section 2.5.7.  But the
+   989	    steps here are:
+   990	      * independent of facilities at your own site,
+   991	      * usable by a beginner from any host with a registered JANET
+   992	        address.
+   993	
+   994	Okay lets push a file using NIFTP
+   995	Give local filename:
+   996	Give local filename: fv137.zip
+   997	    NSF.SUN starts up a utility for sending files.
+   998	    I quote the file name in my directory on NSF.SUN.
+   999	    Later I discover that if I make a mistake it is simplest to answer
+  1000	    nonsense to the remaining questions - NSF.SUN then rejects the
+  1001	    request and I can start again.
+  1002	
+  1003	Give remote filename:
+  1004	Give remote filename: nsf.fv137.zip
+  1005	    I quote the name I want the file to have on my Unix host to remind me
+  1006	    of its origin until I'm sure it is OK.
+  1007	
+  1008	Give NRS name of remote host:
+  1009	Give NRS name of remote host: uk.ac.warwick.anemone
+  1010	    I quote an address down to the actual machine that holds my home
+  1011	    filespace at Warwick.
+  1012	
+  1013	Do you want binary or <default> ascii (input b or a):
+  1014	Do you want binary or <default> ascii (input b or a): b
+  1015	    I'm sending a zip file - it must be binary.
+  1016	
+  1017	OK binary it is - input word size <default 8>:
+  1018	OK binary it is - input word size <default 8>:
+  1019	    Well, it says default, so I'll just press <RETURN>
+  1020	
+  1021	Give user name on remote host:
+  1022	Give user name on remote host: bsrdp
+  1023	    I quote my usual username for my Unix host.
+  1024	
+  1025	Give user password on remote host:
+  1026	Give user password on remote host:
+  1027	    I quote my usual password for my Unix host - it isn't echoed
+  1028	
+  1029	Re-type password to make sure:
+  1030	Re-type password to make sure:
+  1031	    I re-quote my password - again it isn't echoed
+  1032	
+  1033	Push status..please wait..
+  1034	Push status..please wait.. OK - Request sent to the Spooler - use "q" to check
+  1035	guest_ftp>
+  1036	guest_ftp> q
+  1037	    A message from the push utility unfolds as it puts my request into
+  1038	    NSF.SUN's queue of jobs to be done.
+  1039	    Later I discover that various checks are done, and that other
+  1040	    messages may unfold. In particular, NSF.SUN checks whether the name
+  1041	    of the "remote host" (my Unix host) is on its list of acceptable
+  1042	    addresses.
+  1043	    I accept the invitation to see my request in the list of waiting jobs.
+  1044	
+  1045	Sorry - this command has been disabled for the time being !!!
+  1046	guest-ftp>
+  1047	guest-ftp>exit
+  1048	    NSF.SUN declines to do what it has just offered - presumably lists
+  1049	    get horribly long. Since there is no means of checking, I shall just
+  1050	    have to return to Warwick and wait to see what happens.
+  1051	    I close the connection to London.
+  1052	
+  1053	
+  1054	2.5.6 --- WARWICK UNIX HOST ---
+  1055	
+  1056	42:
+  1057	42: ls
+  1058	    My Warwick Unix host awaits input.
+  1059	    I ask for a list of files in my home directory.
+  1060	
+  1061	[ No sign of nsf.fv137.zip ]
+  1062	    I get on with something else.
+  1063	
+  1064	    About an hour later I notice a copy of the file has arrived and that
+  1065	    the file size looks about right.  About six hours after that a mail
+  1066	    message arrives saying that the file has been transferred.  I find
+  1067	    the message next day.
+  1068	
+  1069	    Later I discover that the copy of the file on NSF.SUN is deleted as
+  1070	    soon as NSF.SUN thinks that it has succeeded in sending a copy.
+  1071	
+  1072	94:
+  1073	94: unzip -t nsf.fv137.zip
+  1074	    I ask for the integrity of the zip file to be tested using a PD unix
+  1075	    version of unzip that was circulated on the net some time ago.
+  1076	
+  1077	    To get your own copy of unzip, collect the source code as a binary
+  1078	    file from SIMTEL20
+  1079	        pd6:<unix-c.file-mgmt>UNZIP.TAR-Z
+  1080	    then rename it
+  1081	        unzip.tar.Z
+  1082	    uncompress, detar, and compile it.
+  1083	
+  1084	[each file in the zip reported to be OK]
+  1085	95:
+  1086	95: mv nsf.fv137.zip fv137.zip
+  1087	    Now I know it is genuine, I no longer want to show where it came from.
+  1088	    That's it for now - I'm not sure I've got the right configuration
+  1089	    today for the next stage. But with my usual copy of kermit on the PC
+  1090	    the final stages would start ...
+  1091	
+  1092	96:
+  1093	96: kermit s8 fv137.zip
+  1094	    Request binary transfer to PC.  With the software nowadays normally
+  1095	    present at the two ends, I no longer have to bother swapping between
+  1096	    7-bit and 8-bit settings at the PC end.
+  1097	    On completion of the transfer I would
+  1098	      -  test the integrity of fv137.zip on the PC (though this never goes
+  1099	         wrong unless I fail to tidy up after interrupting an earlier
+  1100	         transfer),
+  1101	      -  return to my Warwick Unix host to delete the copy there,
+  1102	      -  close the link to my Warwick Unix host.
+  1103	
+  1104	End of example
+  1105	
+  1106	
+  1107	2.5.7 --- STREAMLINING NSF.SUN TO OWN SITE ---
+  1108	
+  1109	The NSF.SUN administrator recommends you not to push files from NSF.SUN,
+  1110	but to to pull them from your own site.
+  1111	
+  1112	It is good advice.  At your own site you can store all the unchanging
+  1113	transfer data and avoid repeating it manually for each file pulled from
+  1114	NSF.SUN .  However, recipes for pulling files from NSF.SUN depend on
+  1115	whichever of the medley of JANET file transfer methods is/are installed
+  1116	at your site.  I can only show you what is possible and leave you to
+  1117	adapt it for your context.
+  1118	
+  1119	Here is a revised transcript of the relevant part of the session
+  1120	described in Sections 2.5.5 and 2.5.6, and then a brief guide to how on
+  1121	my Unix host I provided the new command used in the transcript.
+  1122	
+  1123	Revised transcript:
+  1124	
+  1125	[Closing message from SIMTEL20]
+  1126	guest-ftp>
+  1127	guest-ftp>dir
+  1128	    NSF.SUN awaits input.
+  1129	    I ask for the files in my London directory to be listed.
+  1130	
+  1131	[one filename - fv137.zip]
+  1132	guest_ftp>
+  1133	guest_ftp> exit
+  1134	    It's there!  I ask to end the connection to London.
+  1135	
+  1136	42:
+  1137	42: nsfget fv137.zip
+  1138	    The Warwick unix host awaits input.
+  1139	    I ask for the file to be collected from NSF.SUN using a new command I
+  1140	    have created for this purpose.  I have written the command so that if
+  1141	    I have more than one file, I simply add extra names in one long line.
+  1142	
+  1143	fv137.zip:transfer id is 004756
+  1144	43:
+  1145	43: hhq
+  1146	    My command calls  hhcp, a file transfer utility often available on
+  1147	    unix systems;  hhcp sends my request to join the general queue of
+  1148	    transfer requests to and from Warwick and reports the reference
+  1149	    number of my request. No further information will be sent to me about
+  1150	    the progress of this request unless it still hasn't been successfully
+  1151	    completed in several days time, but there are means of checking its
+  1152	    progress.  I ask to see the state of the general queue.
+  1153	
+  1154	[list of requests in the queue without mine among them]
+  1155	43:
+  1156	43: ls -l
+  1157	    Looks as though everything might have happened so fast that the
+  1158	    transfer is complete.
+  1159	    I ask to see a list of files in my current directory.
+  1160	
+  1161	[list which includes fv137.zip with a date and time more or less now ]
+  1162	
+  1163	End of revised transcript
+  1164	
+  1165	
+  1166	The sequence of steps to make the new command  nsfget  available on my
+  1167	Unix host was:
+  1168	
+  1169	    * make a permanent record of the transfer parameters by entering
+  1170	        hhstore nsf.sun
+  1171	      and then completing the offered entry lines as shown, or skipping
+  1172	      them by pressing <RETURN>, to read
+  1173	        transfer authorization: guestftp
+  1174	        transfer password: guestftp
+  1175	        account name:
+  1176	        account password:
+  1177	        file password:
+  1178	        output device type:
+  1179	        output device type qualifier:
+  1180	        mode of access: read and remove
+  1181	        binary word size: 8
+  1182	        special options:
+  1183	
+  1184	    * create a unix script file 'nsfget' specific to me since it
+  1185	      includes the name of my temporary directory at NSF.SUN
+  1186	        #!/bin/sh
+  1187	        #`nsfget' to get my files from nsf.sun
+  1188	        [ $# -ne 0 ] || {
+  1189	                echo 'Ownuse: nsfget [ file ... ]'
+  1190	                exit 1; }
+  1191	        for i
+  1192	        do
+  1193	                hhcp -L -b -a nsf.sun:bsrdp@warwick/$i $i
+  1194	        done
+  1195	        exit 0
+  1196	        #End of nsfget
+  1197	
+  1198	    * make the script executable by
+  1199	        chmod u+x nsfget
+  1200	
+  1201	
+  1202	--------------------------------------------------------------------------
+  1203	3. Getting a file from SIMTEL20: FTP direct
+  1204	--------------------------------------------------------------------------
+  1205	
+  1206	3.1 Scope of advice
+  1207	-------------------
+  1208	For UK people at those selected sites which have direct access to FTP and
+  1209	who
+  1210	  * want MSDOS public-domain and shareware files from SIMTEL20,
+  1211	  * are new to FTP.
+  1212	
+  1213	Much of the relevant advice is a subset of Section 2, and the longer
+  1214	sections of that are simply pointed to and not repeated here.
+  1215	
+  1216	
+  1217	3.2 Authorizations
+  1218	------------------
+  1219	At UK universities and polytechnics in which direct FTP is being
+  1220	installed, both staff and students are in principle expected to have
+  1221	unrestricted access to FTP via mainframe hosts.  Direct access from PCs
+  1222	may not be generally supported.
+  1223	
+  1224	To get access to SIMTEL20, you need to know
+  1225	    address : wsmr-simtel20.army.mil     ( or 192.88.110.20 )
+  1226	    login   : anonymous
+  1227	    password: anything - the operator suggests 'guest'
+  1228	    other   : if asked for passwords during the session press <ENTER>
+  1229	
+  1230	Accessing other sites is similar: the login response is identical, but
+  1231		* some sites insist that the password be a valid email address,
+  1232		* some sites insist that your site's Internet identity be in its
+  1233		  own listing of Internet identities - this can be a dampener to
+  1234		  your enthusiasm at a newly connected site.
+  1235	
+  1236	
+  1237	3.3 Outline and limitations
+  1238	---------------------------
+  1239	The method is simple:
+  1240		* connect to a suitable host as in section 2.5.1 above,
+  1241	        * call  ftp  - on my unix host I simply enter
+  1242	                ftp
+  1243		  to start an FTP session as in section 2.5.4 above.
+  1244	
+  1245	Compared with the FTP session described in section 2.5.4 you have one
+  1246	important advantage on a unix host - during an FTP session you can start
+  1247	a subsidiary shell within which you have a minute or so to do things at
+  1248	your own site before the remote site closes the connection because of
+  1249	inactivity. In particular, this just gives adequate time to
+  1250	        * run a verification of a .ZIP or .ARC binary just downloaded,
+  1251	        * skim through a help/info file,
+  1252	        * look through an annotated index of files from a particular
+  1253	          directory.
+  1254	However, although this can be helpful for the first exploration of a
+  1255	distant site, it should not be regarded as a regular working method - a
+  1256	minute is a relatively enormous waste of network time.
+  1257	
+  1258	
+  1259	3.4 Getting information files before you start
+  1260	------------------------------------------------
+  1261	Send email message#2 from section 2.4, or if you think the example in
+  1262	section 2.5.4 is enough, connect to SIMTEL20 and collect the two files
+  1263	    pd1:<msdos.starter>SIMTEL20.INF
+  1264	    pd1:<msdos.starter>QUICKREF.LST
+  1265	
+  1266	
+  1267	3.5 Automation of FTP file collection
+  1268	-------------------------------------
+  1269	The London interface in section 2.5.4 is limited in various important
+  1270	respects: it provides only a subset of normal FTP.
+  1271	
+  1272	At your own site, you can control how an FTP session is started, and in
+  1273	particular you can use ftp scripts to automate your connections to the
+  1274	distant site (section 3.5.1). This is
+  1275	    *   efficient and convenient for you, since you can repeat an
+  1276		attempted connection simply by calling the script again,
+  1277	    *   efficient for the distant site and the networks connecting you,
+  1278		since connect time excludes all the time you normally take to
+  1279		think and type during a connection.
+  1280	Typically an FTP exploration session then consists of many brief scripted
+  1281	connections with the results of one version of the script reviewed and
+  1282	edited into the next version. So for example, 60 minutes of clock time
+  1283	may need no more than 3 minutes of network time.
+  1284	
+  1285	More controversially, and with the risk that you might make a
+  1286	considerable nuisance of yourself, you may be able to automate the
+  1287	re-trying of connections if you often don't get through to the distant
+  1288	site first time (section 3.5.2).  There is no satisfactory method of
+  1289	automating recovery from lost connections after file transfer has begun.
+  1290	
+  1291	The rest of this section supposes you are working from a unix host.  In
+  1292	places the recipes that do or do not work for me may additionally depend
+  1293	on the fact that I am working in a  csh  environment under SunOS 4.1.1.
+  1294	I have chosen a style of working that unifies the approach in the two
+  1295	sections.
+  1296	
+  1297	If a distant site is almost always accessible first call then section
+  1298	3.5.1 is preferable; if connection regularly requires several retries,
+  1299	section 3.5.2 is more convenient.
+  1300	
+  1301	
+  1302	3.5.1 Scripts for ftp connections
+  1303	
+  1304	A script simply consists of a complete set of ftp commands to open,
+  1305	operate, and close an ftp connection, similar to those that you use for
+  1306	a manual connection but with some important differences:
+  1307	  * the first few lines have their own special format,
+  1308	  * the script must be complete - make sure you end with  bye  or  close,
+  1309	  * the script must be plain text - don't use a wordprocessor file with
+  1310	    hidden formatting characters,
+  1311	  * the script must be correct - build up your knowledge of a distant
+  1312	    site by a series of modest information requests, and develop a habit
+  1313	    of corect spellling.
+  1314	
+  1315	To get a directory listing from SIMTEL20, first prepare a text file, say
+  1316	'simlist,' containing commands in this style:
+  1317	        verbose
+  1318	        open wsmr-simtel20.army.mil
+  1319	        user anonymous guest
+  1320	        dir   pd1:<msdos.arc-lbr>  arc-lib.dir
+  1321	        bye
+  1322	Then enter the command line
+  1323	        ftp -in < simlist
+  1324	and watch on-screen reports of the progress of the connection. If all
+  1325	goes well, you will in a few seconds have a new file 'arc-lib.dir'
+  1326	containing the directory listing from SIMTEL20.
+  1327	
+  1328	If you fail to connect successfully with the distant site, a retry simply
+  1329	consists of typing the command line again. If you are working in an
+  1330	environment with command history, like csh, this can be reduced to
+  1331	something like
+  1332	        !ftp
+  1333	or even less - all you need after the !  is an opening scrap long enough
+  1334	to reach back uniquely through the history log.
+  1335	
+  1336	To get a binary file from SIMTEL20 you have to change to the directory
+  1337	containing the file you want and have to make sure that 8-bit rather than
+  1338	7-bit transmission is used.  So edit 'simlist' to contain commands in
+  1339	this style:
+  1340	        verbose
+  1341	        open wsmr-simtel20.army.mil
+  1342	        user anonymous guest
+  1343	        binary
+  1344	        hash
+  1345	        cd pd1:<msdos.arc-lbr>
+  1346	        get fv138.zip
+  1347	        bye
+  1348	On my unix host the specification of 'binary' is sufficient to get
+  1349	uncorrupted binaries from SIMTEL20.  You may have to use 'tenex' as
+  1350	recommended in the advice file in section 3.4. Note that the current
+  1351	version of fvnnn.zip on SIMTEL20 may now be later than 138.
+  1352	
+  1353	You can include several small requests in one script, but until networks
+  1354	are more reliable big files are probably better handled with a separate
+  1355	script for each.
+  1356	
+  1357	In section 3.5.2,  verbose  is an essential command. Without it, your
+  1358	retry process will collect the same information over and over again. But
+  1359	for manually started scripts you can leave it out, and then you will only
+  1360	have a brief, though perhaps insufficiently informative, message if the
+  1361	connection fails.
+  1362	
+  1363	As your confidence/skill increases, you will be able to use the scripts
+  1364	in different ways. Here are two ideas.
+  1365	
+  1366	Idea 1
+  1367	If you are unlikely to want a file copy of a directory, omit the filename
+  1368	for your end, for example
+  1369	        dir   pd1:<msdos.arc-lbr>
+  1370	and call the script with the command line
+  1371	        ftp -in < simlist | less
+  1372	which releases network connections quickly, but allows you to browse up
+  1373	and down the listing at leisure.
+  1374	
+  1375	Idea 2
+  1376	Make the ftp session a background process while you do something else.
+  1377	You might think of just entering the command
+  1378	        ftp -in < simlist &
+  1379	but that sends progress reports to the screen, and if anything goes wrong
+  1380	the background process will be indefinitely suspended unable to send its
+  1381	error report to the screen.  Use a command of the form
+  1382	        ftp -in < simlist >>& ftp.log &
+  1383	so all messages are added to a general log that you can inspect and scrap
+  1384	from time to time.  You would no longer need  hash  in your scripts, but
+  1385	keep  verbose  in.
+  1386	
+  1387	
+  1388	3.5.2 Automating tries and re-tries
+  1389	
+  1390	For an automatic method of re-trying failed requests, it is difficult to
+  1391	devise rules to strike an efficient and responsible balance between
+  1392	persisting and stopping (an unresolved problem for the developers of
+  1393	FT-RELAY).
+  1394	
+  1395	A reasonable user-developed attempt at managing retries on unix hosts can
+  1396	be found on SIMTEL20 as
+  1397	        pd6:<unix-c.networks>BATCHFTP.TAR-Z
+  1398	Its management of the retries themselves seems to be sound, but it is
+  1399	    *   sensitive to the flavour of unix under which it is used,
+  1400	    *   critically dependent on the script being correct if it is to
+  1401	        terminate and tidy-up properly,
+  1402	    *   unable to recover if a connection is lost once file transfer has
+  1403		started.
+  1404	Each of which means that unless you know how to inspect and manage unix
+  1405	processes on your system it is probably better left alone.
+  1406	
+  1407	To use it, collect it as a binary file and rename it
+  1408	        batchftp.tar.Z
+  1409	uncompress, detar, and compile it. To avoid problems until you are
+  1410	experienced with it:
+  1411	    *   keep the scripts in a special directory,
+  1412	    *   change to the directory before calling the programme,
+  1413	    *   give the incoming files plain filenames without a path.
+  1414	You can experiment with relaxing these conditions if and when you have
+  1415	seen it deal successfully with a wide range of connection problems.
+  1416	
+  1417	An appropriate script, say 'simb', for getting a directory with batchftp
+  1418	would read:
+  1419	        {
+  1420	        verbose
+  1421	        open wsmr-simtel20.army.mil
+  1422	        user anonymous guest
+  1423	        dir pd1:<msdos.filedocs> dir.filedocs
+  1424	        bye
+  1425	        }
+  1426	which is simply an ftp script from section 3.5.1 with new first and last
+  1427	lines, and in which
+  1428	    *   the  verbose  command is essential since it provides the data
+  1429		with which batchftp controls retries,
+  1430	    *   the  bye/close  command is essential in my system to ensure
+  1431		termination and file tidying after a successful connection.
+  1432	The script would be run as a background process by the command line
+  1433	        batchftp -i simb &
+  1434	
+  1435	If you know you know that now is a bad time of day/week to launch
+  1436	batchftp, then rather than adding to network traffic by repeating tries
+  1437	that are almost bound to fail, put the command line itself into a
+  1438	one-line command file, say 'dosimb', reading
+  1439	        batchftp -i simb
+  1440	and then enter commands like
+  1441	        chmod u+x dosimb
+  1442	        at 2330 Sat dosimb
+  1443	to arrange for it to be launched for its first try when networks are
+  1444	quiet.
+  1445	
+  1446	The temporary and permanent message files of batchftp are slightly
+  1447	infelicitous, lacking a final carriage return and linefeed.  However,
+  1448	their format is critical to the operation of the programme.
+  1449	
+  1450	--------------------------------------------------------------------------
+  1451	4.  Getting a file from SIMTEL20: one-step file request via FT-RELAY
+  1452	--------------------------------------------------------------------------
+  1453	
+  1454	Although the examples in section 4.5 are for calling files from SIMTEL20
+  1455	itself, those who use FT-RELAY usually aim at a mirror site like
+  1456	wuarchive.wustl.edu  because:
+  1457	    *   there is usually a much better chance of first-time connection,
+  1458	    *   the peculiarities of pathnames at SIMTEL20 make it harder to
+  1459		include them in general shell scripts designed to save the
+  1460		tedious repetition of standard details to several remote sites.
+  1461	
+  1462	4.1 Scope of advice
+  1463	-------------------
+  1464	For UK people who have access to JANET and who
+  1465	  - want MSDOS public-domain and shareware files from SIMTEL20,
+  1466	  - want the convenience of delivery to their own site in one-step,
+  1467	  - do not have access to direct FTP and do not want to operate manually
+  1468	    at the London interface.
+  1469	
+  1470	You will need to find people at your own site who can adapt the methods
+  1471	for the link with FT-RELAY, since this will vary from site to site.
+  1472	Broadly you are likely to be reaching FT-RELAY from one of three kinds of
+  1473	platform:
+  1474	  - a well-supported unix host at your site (as in Section 4.5)
+  1475	  - a well-supported VMS host at your site,
+  1476	  - a direct access point to a network at your site.
+  1477	Since action consists entirely in formulating and sending an appropriate
+  1478	message to FT-RELAY, the on-screen appearance of these three environments
+  1479	is likely to strike the beginner as having nothing in common! If you do
+  1480	not use a unix host you may find it easier to ignore section 4.5 and to
+  1481	start from scratch with the information in section 4.4.
+  1482	
+  1483	
+  1484	4.2 Authorizations
+  1485	------------------
+  1486	As in section 2.2.
+  1487	
+  1488	
+  1489	4.3 Outline and limitations
+  1490	---------------------------
+  1491	The method is to send a message to your site's outgoing message queue and
+  1492	wait!
+  1493	
+  1494	On a unix host, an appropriate medium is an hhcp command which takes its
+  1495	turn in the list of outgoing messages, and stays there until:
+  1496	    *   deleted by FT-RELAY, or
+  1497	    *   deleted by you.
+  1498	
+  1499	In August 1991 it was true to say
+  1500	FT-RELAY deletes your message if:
+  1501	    *   it meets your request, or
+  1502	    *   the distant site says that the content of your request cannot be
+  1503		complied with, or
+  1504	    *   it fails to connect with the distant site
+  1505		[ which means that FT-RELAY does not have to keep long lists of
+  1506		  unfilled requests, but also means that you have to make a lot
+  1507		  of resubmissions if networks and/or sites are congested ],
+  1508	and FT-RELAY preserves your message if
+  1509	    *   the distant site says it is too busy.
+  1510	
+  1511	But the behaviour is still subject to experiment.  For example, in Sep
+  1512	1991 file requests to SIMTEL20 were kept alive for several hours until
+  1513	successful, though directory requests were dropped after one failure.  To
+  1514	do this, FT-RELAY did *not* maintain a backlog of requests: it simply
+  1515	used a reply code that caused software at my site to keep the request in
+  1516	the queue of outgoing messages.
+  1517	
+  1518	That seems a reasonable behaviour.
+  1519	
+  1520	It would not, I think, be wise to press for FT-RELAY to hold its own
+  1521	backlog of requests. Although that might be convenient for people using
+  1522	background methods on an intermediate host, it would make a direct
+  1523	PC-JANET link impractical.
+  1524	
+  1525	
+  1526	4.4 Getting information files before you start
+  1527	------------------------------------------------
+  1528	For information on SIMTEL20, send email message#2 from section 2.4, or if
+  1529	you think the example in section 4.5 is enough, send to FT-RELAY for the
+  1530	the two files
+  1531	    pd1:<msdos.starter>SIMTEL20.INF
+  1532	    pd1:<msdos.starter>QUICKREF.LST
+  1533	
+  1534	The general principles of how to use FT-RELAY are available on-line in
+  1535	JANET NEWS.  Starting from my unix host, to read the advisory files I
+  1536	enter
+  1537	        pad janet.news
+  1538	and follow the on-screen instructions to
+  1539		directory GATEWAYS, sub-directory FTRELAY, for the file files
+  1540			INTRO, CBS, and FTAM ; and to
+  1541		directory NETWNEWS, file NEWS33, for the original announcement
+  1542			which was garbled in the relevant section (each opening
+  1543			quote became a U and each closing quote became a T).
+  1544	
+  1545	
+  1546	4.5 An example of a request to FT-RELAY
+  1547	---------------------------------------
+  1548	The advice as it appears on JANET is almost ready-made  for direct PC to
+  1549	FT-RELAY connection using the PC Rainbow utility.  But implementing the
+  1550	advice on a unix host is trickier, particularly if you want to reach
+  1551	SIMTEL20 itself - directory names on SIMTEL20 use characters which on a
+  1552	unix system do powerful things.
+  1553	
+  1554	On my unix host I eventually implemented what is described as method B in
+  1555	NEWS33 .  It works for both SIMTEL20 and unix mirrors.  So here is the
+  1556	recipe.
+  1557	
+  1558	First establish a name, say ftb, for all future requests to FT-RELAY
+  1559	using this particular method, so that you can later experiment with other
+  1560	methods:
+  1561	        hhalias  UK.AC.FT-RELAY  ftb
+  1562	
+  1563	Next, record the parameters that you want to be used every time you use
+  1564	this method, filling in or skipping the lines that appear automatically
+  1565	after the first command:
+  1566	        hhstore  ftb
+  1567	        transfer authorization: anonymous
+  1568	        transfer password: bsrdp@warwick.ac.uk
+  1569	        mode of access:
+  1570	        binary word size: 8
+  1571	Although  hhstore  is not something to trust with confidential personal
+  1572	authorizations to a remote site, these standard formats are effectively
+  1573	public.
+  1574	
+  1575	Now you are ready to make your first two specific requests, one for a
+  1576	directory and one for a binary file.  In practice each request is entered
+  1577	on a single line although I show them here using two lines each:
+  1578	
+  1579	  hhcp -L ftb:"wsmr-simtel20.army.mil::(D)pd1:<msdos.arc-lbr>"
+  1580	                                                             arc-lbr.dir
+  1581	
+  1582	  hhcp -L -b ftb:"wsmr-simtel20.army.mil::pd1:<msdos.arc-lbr>fv138.zip"
+  1583	                                                             fv138.zip
+  1584	
+  1585	You have asked for
+  1586	  * the directory <msdos.arc-lbr> to be sent to you as a file, and to be
+  1587	    given the name  arc-lbr.dir  on your system,
+  1588	  * the file  fv138.zip  to be sent and given the same name.
+  1589	
+  1590	Notice the placing of the double quotes which contain the complete
+  1591	specifications for SIMTEL20 - for the topmost directory at a site the
+  1592	specification stops after (D). Notice too that the problem of directory
+  1593	management during file transfer is left to FT-RELAY.
+  1594	
+  1595	The unix host replies quoting the reference number for each one-line
+  1596	message and you are then free to continue. You can inspect the state of
+  1597	the message queue with
+  1598	        hhq
+  1599	to see whether they have yet been dealt with ( tries are typically made
+  1600	at 5 minute intervals for half an hour, and after that the intervals
+  1601	typically double every six tries ). You can also inspect a detailed log
+  1602	of connection attempts from you to FT-RELAY with
+  1603	        hhlog
+  1604	both while waiting, and after finding a message has been dropped without
+  1605	the requested file having arrived.
+  1606	
+  1607	To avoid re-typing long standard parts of the command line you can create
+  1608	simple executable shell scripts: for example, here are separate scripts
+  1609	for calling directory listings and calling binary files from SIMTEL20:
+  1610	
+  1611	  #!/bin/sh
+  1612	  # hhd - script to call a sub-directory listing
+  1613	  case $1 in
+  1614	  "") echo  My use: hhd directoryname ;;
+  1615	  * ) hhcp -L ftb:"wsmr-simtel20.army.mil::(D)pd1:<msdos.$1>"  $1.dir ;;
+  1616	  esac
+  1617	  exit 0
+  1618	  #end of hhd
+  1619	
+  1620	  #!/bin/sh
+  1621	  # hhb - script to call a binary file
+  1622	  case $2 in
+  1623	  "") echo  My use: hhb directoryname filename ;;
+  1624	  * ) hhcp -L -b ftb:"wsmr-simtel20.army.mil::pd1:<msdos.$1>$2"  $2 ;;
+  1625	  esac
+  1626	  exit 0
+  1627	  #end of hhb
+  1628	
+  1629	With these available, and the transfer authorizations permanently stored
+  1630	by hhstore as earlier in section 4.5, the two examples simply become
+  1631	  hhd arc-lbr
+  1632	  hhb arc-lbr fv138.zip
+  1633	
+  1634	It is possible to construct more elaborate scripts - see the companion
+  1635	file FTP2UK23.ZIP
+  1636	
+  1637	--------------------------------------------------------------------------
+  1638	5. File history - main revisions
+  1639	--------------------------------------------------------------------------
+  1640	Version 2.3 Apr 1992
+  1641	  Updated information on Lancaster and Imperial College.
+  1642	  Added oak.oakland to list of non-UK sites of interest.
+  1643	
+  1644	Version 2.2 Oct 1991
+  1645	  Added section 0.1 on file transfer on Internet and JANET.
+  1646	  Revised sections 2.5 to 2.7 on getting files home from NSF.SUN.
+  1647	
+  1648	Version 2.1 Sep 1991
+  1649	  Added mirror at src.doc.ic.ac.uk
+  1650	  Thanks to Lee McLoughlin for information on the IC mirror, and to Nino
+  1651	  Margetic for significant suggestions on FT-RELAY scripts.
+  1652	
+  1653	Version 2.0 Aug 1991
+  1654	  Restructured to include
+  1655	    mirrors at wuarchive.wustl.edu  and  nic.funet.fi
+  1656	    one-step file request via FT-RELAY,
+  1657	    direct FTP from selected sites.
+  1658	  Thanks to Tim Clarke and Rob McMahon for advice on FTP and FTP-RELAY
+  1659	  at Warwick, and to Dirk Reuver and Andrew McClean for significant
+  1660	  suggestions on routes and methods.
+  1661	
+  1662	Version 1.0 Jul 1991
+  1663	  First public version covering
+  1664	    alternatives - Lancaster, Trickle's, mirror at garbo.uwasa.fi
+  1665	    two-step FTP via London.
+  1666	
+  1667	Version 0.1 May 1991
+  1668	  First draft of a response to an enquiry by Keith Petersen about FTP
+  1669	  connection between the UK and SIMTEL20.
+  1670	  Limited circulation of complete draft to various experts:
+  1671	        Tony Bates , i/c NSF.SUN
+  1672	        Keith Petersen , i/c SIMTEL
+  1673	        Tim Clarke , i/c Comms at Warwick
+  1674	  and of part of draft
+  1675	        Turgut Kalfaoglu , i/c TRICKLEs in Europe
+  1676	        Alan Phillips , i/c UK National Software Archive, Lancaster
+  1677	        Timo Salmi , i/c VAASA .
+  1678	
+  1679	Thanks to all for advice and comment - errors remain my responsibility!
+  1680	
+  1681	-----------------------------------------------------------------------------
+  1682	Hylton Boothroyd        h.boothroyd@warwick.ac.uk     or, if necessary:
+  1683	Warwick Business School Janet:    h.boothroyd@uk.ac.warwick
+  1684	University of Warwick   Internet: h.boothroyd%warwick.ac.uk@nsfnet-relay.ac.uk
+  1685	COVENTRY, CV4 7AL       Uucp:     h.boothroyd@warwick.uucp
+  1686	Phone (+44) 203 523523  Earn/Bitnet: h.boothroyd%uk.ac.warwick@UKACRL
+  1687	------------------------------------------------------------------------------

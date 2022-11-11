@@ -1,0 +1,94 @@
+     1	
+     2	                                 The
+     3	
+     4	                               Fabulous
+     5	
+     6	       ####       ####        ###    ###         ##########
+     7	       #####     #####        ###    ###         ##########
+     8	       ### ##   ## ###        ###    ###         ###
+     9	       ###  ## ##  ###        ###    ###         ########
+    10	       ###   ###   ###        ###    ###         ########  
+    11	       ###    #    ###        ###    ###         ###
+    12	       ###         ###        ###    ###         ###
+    13	       ###         ###  ##    ##########   ##    ###     ##
+    14	       ###         ###  ##     ########    ##    ###     ##
+    15	
+    16	                                 List 
+    17	
+    18	                  (MicroSoft's Undocumented Features)
+    19	
+    20	                          Volume 1  Number 6
+    21	
+    22	===============================================================================
+    23	
+    24	1)  TRUENAME
+    25	
+    26	    Internal DOS 5.0 command.  Canonicalize a filename or path (using
+    27	    DOS interrupt 21h, function 60) prints the actual directory.
+    28	
+    29	    SYNTAX
+    30	
+    31	    TRUENAME filename      prints the complete path to file
+    32	
+    33	    TRUENAME directory     prints the complete path to directory
+    34	
+    35	    Note: If the path is in a network, it starts with a \\machine-name
+    36	
+    37	                              Michael Larsson
+    38	
+    39	
+    40	    TRUENAME is analogous to the "whence" command in the UNIX Korn
+    41	    shell.  It returns the real fully qualified pathname for a command.
+    42	
+    43	    TRUENAME is useful in networks, where a physical drive may be mapped
+    44	    to a logical volume, and the user needs to know the physical location
+    45	    of the file.  It ignores the DOS SUBST, and JOIN commands, or network
+    46	    MAPped drives.
+    47	
+    48	    It is an undocumented MS/DOS feature, but is documented in 4DOS as
+    49	    follows:
+    50	
+    51	    SYNTAX        (Internal DOS 5.0 / 4DOS)
+    52	 
+    53	    TRUENAME [d:][path]filename
+    54	
+    55	    PURPOSE
+    56	
+    57	    Returns a fully qualified filename.
+    58	
+    59	    COMMENTS
+    60	
+    61	    TRUENAME will see "through" JOIN and SUBST commands, and requires
+    62	    MS-DOS 3.0 or above.
+    63	
+    64	    EXAMPLE
+    65	
+    66	    The following command uses TRUENAME to get the true pathname for a
+    67	    file:
+    68	
+    69	    c:\> subst d: c:\util\test
+    70	    c:\> truename d:\test.exe
+    71	
+    72	    c:\util\test\test.exe
+    73	
+    74	                              Dennis McCunney
+    75	
+    76	    TRUENAME : will reveal the full name drive and path of the filename.
+    77	    If you specify a wildcard ('*') in the filename, it will expand
+    78	    the filename to use question marks instead. If the path includes
+    79	    the ..\ sequence, TRUENAME will examine the directory structure and
+    80	    calculate the path.  Stranger still, the line:
+    81	
+    82	        TRUENAME \CRONK\FLIBBET\..\ART
+    83	        produces the response:
+    84	        C:\CRONK\ART
+    85	
+    86	    even if the directories \CRONK\FLIBBET and the file ART don't exist!
+    87	    Don't expect this command to work across networks.
+    88	
+    89	                              PC Magazine #212 Pg. 48-49
+    90	                              Forwarded by:
+    91	                              Rodney Atkins
+    92	
+    93	===============================================================================
+    94	

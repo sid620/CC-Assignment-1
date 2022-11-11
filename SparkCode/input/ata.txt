@@ -1,0 +1,53 @@
+     1	DALLAS, October 15, 1991 ... The ARCNET Trade Association (ATA) has
+     2	petitioned the American National Standards Institute (ANSI) for approval
+     3	of the ATA's "ARCNET Local Area Network Standard" as an ANSI standard.
+     4	
+     5	ATA officials say should the process continue its present course, final
+     6	adoption of the standard by ANSI's executive committee should take place
+     7	by late 1991 or early 1992. The ATA, which has been approved by ANSI as a
+     8	standards developing body, is in the midst of ANSI's canvass process to
+     9	obtain approval of the ARCNET protocol as a U.S. standard.
+    10	
+    11	The ARCNET Standard was generated under documented, strict adherence to due
+    12	process rules of committee review and consensus standards development
+    13	customarily used by standards-developing bodies. Participation in the
+    14	process was open to all ATA members and others having direct and material
+    15	interest in the standard. Before announced review meetings, drafts were
+    16	circulated to all members. During the meetings, all comments were
+    17	discussed, resolved, and documented for inclusion in the subsequent
+    18	revision.
+    19	
+    20	Revision 1.6--the version which has been circulated in the ANSI canvass
+    21	process--was approved by the ATA board which authorized the document to be
+    22	published for dissemination to interested LAN technology users.
+    23	
+    24	ARCNET, which was introduced in 1977, today is supported by more than 50
+    25	supplied and has an installed base approaching four million nodes in more
+    26	than 300,000 networks. Most manufacturers offer ARCNET products under
+    27	their proprietary names, giving ARCNET a low profile in its thousands of
+    28	office and factory floor applications. Currently, between 750,000 and one
+    29	million ARCNET nodes are being shipped annually for installation in tens
+    30	of thousands of networks.
+    31	
+    32	The ATA is a not-for-profit organization formed in 1987 to increase
+    33	visibility, support and development of this widely-installed LAN
+    34	technology.
+    35	
+    36	Copies of the standard are available from the ATA office at the address
+    37	below. The non-member price is $75, and the member price is $55. There is
+    38	an additional $10 charge for shipping and handling.
+    39	
+    40	ARCNET Trade Association
+    41	3365 N. Arlington Heights Rd, Arlington Heights, IL 60004
+    42	708-255-3003; fax 708-577-7276
+    43	
+    44	  +---------------------------------------------------------------+
+    45	  |  From the America On-Line & PC-Link New Product Info Services |
+    46	  +===============================================================+
+    47	  | This information was processed with OmniPage Professional OCR |
+    48	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+    49	  | provided by the above mentioned company. For additional info, |
+    50	  | contact the company at the address or phone# indicated above. |
+    51	  |    All submissions for this service should be addressed to    |
+    52	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+    53	  +---------------------------------------------------------------+

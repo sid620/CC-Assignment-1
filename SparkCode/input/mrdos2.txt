@@ -1,0 +1,115 @@
+     1	HARDWARE:
+     2	
+     3	CENTRAL PROCESSOR UNIT (CPU):  Heart of the PC - it contains
+     4	the microprocessor. The CPU is a set of miniaturized circuits that
+     5	does all the "thinking".  It controls the interpretation
+     6	(arithmetic-logic unit) and execution (control unit) of instructions.
+     7	It is this CPU in conjunction with RAM that comprise the computer's
+     8	"brain".  The CPU does the "thinking/calculating" while RAM contains
+     9	the instructions or "memories".  It is the CPU that largely determines
+    10	the operating speed of the computer.
+    11	
+    12	BIT:  Smallest unit of information recognized by the
+    13	computer.  BIT is short for Binary Digit.  A Binary Digit can
+    14	be either a 0 or a 1.  Several bits make up a byte.
+    15	
+    16	BYTE:  A group of 8 BITS.  This grouping of adjacent binary
+    17	digits (bits) is operated on by the computer as a unit.
+    18	Computers use 1 BYTE to represent 1 character such as a
+    19	letter of the alphabet, a number, a punctuation mark, a
+    20	space, etc.  A BYTE is also a unit of measure since it
+    21	represents 1 character.  For example, when the letter "A" is
+    22	pressed, the keyboard actually sends the following to RAM:
+    23	10000001  - a set of 8 bits.  See RAM, FLOPPY DISK.
+    24	
+    25	RANDOM ACCESS MEMORY (RAM):  A set of miniaturized circuits which
+    26	represents the working memory of the computer.  This is where
+    27	application programs (software) can be loaded from the outside and then
+    28	executed.  The larger the RAM the better.  A typical single-user
+    29	computer system may contain approximately 640,000 bytes of RAM.  (This is
+    30	often abbreviated as 640k RAM: 1 k bytes is actually = 1024 bytes)
+    31	
+    32	The RAM is emptied when the computer is turned off - thus it is
+    33	often called "volatile" memory.  WHAT YOU SEE ON YOUR COMPUTER MONITOR
+    34	IS ACTUALLY IN RAM ONLY - a temporary storage location.  To make it
+    35	permanent we "save" it, or "write" it to a floppy disk or hard drive.
+    36	These devices are not volatile storage - they do not require
+    37	electricity.
+    38	
+    39	READ ONLY MEMORY (ROM):  This is a special section of memory
+    40	that contains instructions which are activated each time the
+    41	computer is turned on.  These instructions are set at the
+    42	factory and cannot be changed - thus, they can only be "read"
+    43	not written to.  ROM instructions perform equipment checks
+    44	and initialization of the computer prior to each use.
+    45	
+    46	DISK DRIVE:  The port in which a floppy disk is inserted.  Device that "reads"
+    47	data from a magnetic disk and copies it into the computer's memory (RAM) so it
+    48	can be used by the computer, and that "writes" data from the computer's memory
+    49	onto a disk so it can be stored for later use.  Each Disk Drive is labeled
+    50	A,B,C,etc because we often must tell the computer which drive has the disk
+    51	with the information or where to send the information.  A Disk Drive reads and
+    52	writes on a 5.25 inch or 3.5 inch floppy disk.
+    53	
+    54	FLOPPY DISKS:  The most commonly used mass storage device.  Allows
+    55	entering programs to RAM and saving data from RAM.  Will hold data even         
+    56	
+    57	
+    58	
+    59	
+    60	
+    61	after the computer is turned off.  Data on these disks is stored in
+    62	concentric rings called tracks.  The Disk surface is a thin piece of
+    63	mylar and is coated with a magnetized material similar to audio or
+    64	video tape.
+    65	
+    66	The read/write heads can magnetize and demagnetize the coated surface
+    67	repeatedly.  Therefore, the Disk can be used, erased, and reused
+    68	indefinitely.  An IBM PC disk holds approximately 360k worth of
+    69	information (250 double-spaced pages of text).  This is called a
+    70	Double-sided, Double-density Diskette.  Newer, smaller 3.5 inch disk
+    71	exist which hold at least twice as much - 720k.
+    72	
+    73	FIXED DISK DRIVE:  Usually named disk drive C.  It is essentially a
+    74	very large floppy disk.  This Fixed Disk (commonly called a Hard Drive)
+    75	is secured within the machine and cannot be seen or transported.  The
+    76	storage capacity is so large it is measured in megabytes (1M = 1K
+    77	squared = 1,048,576 bytes).  Fixed Disks are available from 5M on up.
+    78	The advantage is that it is enough space to meet most users' total
+    79	storage needs, operates much faster than a floppy (5-10x faster), and is less
+    80	likely to fail since it lives within the protected computer.
+    81	
+    82	KEYBOARD:  Input device that lets you enter data into the
+    83	computer.  The layout is similar to the standard QWERTY
+    84	typewriter keyboard, however there are many extra special
+    85	keys that are defined by the software you are running.
+    86	
+    87	MONITOR:  A television-like device that the computer uses to
+    88	communicate with you.  Typically the monitor displays 80
+    89	columns (characters) by 25 rows (lines) of information.
+    90	
+    91	PRINTER:  Most users get at least one Printer for their
+    92	computer.  It produces a "Hard-Copy" output of your data
+    93	rather than just being able to view it on the monitor.  Dot-
+    94	Matrix printers are inexpensive and fast and can draw
+    95	graphics.  Letter-Quality printers are more expensive and
+    96	slower but create pages better than typewritten (even
+    97	pressure on each keystroke).
+    98	
+    99	MODEM:  Short for Modulator/Demodulator.  A device to send
+   100	and receive computer output over telephone lines.
+   101	
+   102	
+   103	ÚÄÄÄÄÄÄÄÄÄÄ¿                                       ÚÄÄÄÄÄÄÄ¿
+   104	³KEYBOARD  ³                ÚÄÄÄÄÄ¿                ³MONITOR³
+   105	³Mouse     ÃÄÄÄÄ INPUT ÄÄÄÄ>³ CPU ÃÄÄÄÄÄ OUTPUT ÄÄ>³Printer³
+   106	³Light Pen ³                ³ RAM ³                ³Plotter³
+   107	³Microphone³                ÀÄÄÂÄÄÙ                ³Speaker³
+   108	³Joystick  ³                   ³ INPUT             ÀÄÄÄÄÄÄÄÙ
+   109	ÀÄÄÄÄÄÄÄÄÄÄÙ                   ³ and/or
+   110	                               ³ OUTPUT
+   111	  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+   112	  ³ DISK STORAGE, Tape Storage, Modem, Fixed Disk Storage ³
+   113	  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   114	
+   115	*****   END OF FILE:  Press <ESC> to return to Main Menu   *****

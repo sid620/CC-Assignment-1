@@ -1,0 +1,540 @@
+     1	_AN ICON EDITOR_
+     2	by Keith Weiskamp and Loren Heiny
+     3	
+     4	
+     5	[LISTING ONE]
+     6	
+     7	/*   iconed.c -- a special purpose icon editor.
+     8	 *
+     9	 *   This program allows you to interactively edit icons that
+    10	 *   can be used in a graphics program. You can create an icon,
+    11	 *   edit an existing one, or save an icon pattern to a file. The
+    12	 *   program requires a mouse. The icon files produced are of the
+    13	 *   form:
+    14	 *			ICONWIDTH ICONHEIGHT
+    15	 *			one row of icon pattern
+    16	 *			next row of icon pattern
+    17	 *			      .  .  .
+    18	 *			last row of icon pattern
+    19	 *
+    20	 */
+    21	
+    22	#include <stdio.h>
+    23	#include <stdlib.h>
+    24	#include <conio.h>
+    25	#include <graphics.h>
+    26	#include <stdarg.h>
+    27	#include <alloc.h>
+    28	#include "mouse.h"        /* mouse and keyboard routines */
+    29	
+    30	#define BIGICONLEFT 20    /* left side of the big icon pattern */
+    31	#define BIGICONTOP  50    /* top side of the big icon pattern */
+    32	#define BIGBITSIZE  8     /* big bits are 8 pixels in size */
+    33	#define ICONWIDTH   16    /* an icon is a 16x16 pattern */
+    34	#define ICONHEIGHT  16
+    35	#define ICONLEFT    400   /* small icon pattern located here */
+    36	#define ESC         27    /* the value of the ESC key */
+    37	
+    38	/*   Here are the functions used in iconed.c:  */
+    39	
+    40	void draw_enlarged_icon(void);
+    41	void toggle_bigbit(int x, int y);
+    42	void toggle_icons_bit(int x, int y);
+    43	void init_bigbit(void);
+    44	void toggle_cursor(int x, int y);
+    45	void save_icon(void);
+    46	int read_icon(void);
+    47	void init_graphics(void);
+    48	void show_icon(void);
+    49	
+    50	/*  The global variables */
+    51	
+    52	void *bigbit;      /* points to image of a big bit */
+    53	                   /* holds icon pattern */
+    54	unsigned char icon[ICONHEIGHT][ICONWIDTH];
+    55	
+    56	void main()
+    57	{
+    58	    int x, y;
+    59	    int c;
+    60	
+    61	    read_icon();           /* read in an icon file */
+    62	    init_graphics();
+    63	                           /* initialize mouse */
+    64	    if (!initmouse()) {    /* must have mouse */
+    65	      restorecrtmode();
+    66	      printf("\nMouse not installed");
+    67	      printf("\nQuitting the Icon Editor");
+    68	      exit(1);
+    69	    }
+    70	    draw_enlarged_icon();  /* an empty big icon pattern */
+    71	    show_icon();           /* Draw the icon */
+    72	
+    73	    hidemouse();      /* mouse cursor must be turned off */
+    74			      /* before writing to screen */
+    75	    outtextxy(BIGICONLEFT, 10, "Press ESC when finished ...");
+    76	    outtextxy(BIGICONLEFT, BIGICONTOP-20, "Enlarged Icon");
+    77	    outtextxy(ICONLEFT, BIGICONTOP-20, "Actual Icon");
+    78	    showmouse();       /* redisplay mouse cursor */
+    79	
+    80	      /* get input from mouse/keyboard */
+    81	    while ((c=waitforinput(LEFT_BUTTON)) != ESC) {
+    82		if (c < 0) {     /* if true mouse button pressed */
+    83	            getmousecoords(&x, &y);  /* get current position */
+    84		    toggle_bigbit(x, y);     /* toggle big bit */
+    85		}
+    86	    }
+    87	
+    88	    hidemouse();       /* turn mouse off and then get out */
+    89	    closegraph();      /* of graphics mode */
+    90	    printf("Do you want to save this icon to a file? (y) ");
+    91	    if (getch() != 'n')
+    92		save_icon();
+    93	}
+    94	
+    95	
+    96	void draw_enlarged_icon(void)
+    97	{
+    98	/*
+    99	 *  This function draws an enlarged view of the icon pattern.
+   100	 *  You can click a big bit in this pattern to toggle the
+   101	 *  corresponding icons on and off in the actual icon. The
+   102	 *  icon is drawn at BIGICONLEFT, BIGICONTOP, to right, bottom.
+   103	 */
+   104	    int i;
+   105	    int right,bottom;
+   106	
+   107	    setlinestyle(DOTTED_LINE, 0, NORM_WIDTH);
+   108	    right = 2 * (BIGICONLEFT + (ICONWIDTH-1) *
+   109			(BIGBITSIZE + NORM_WIDTH));
+   110	    bottom = BIGICONTOP + ICONHEIGHT * (BIGBITSIZE + NORM_WIDTH);
+   111	
+   112	    hidemouse();    /* draw vertical and horizonatal dashed */
+   113	    for (i=0; i<=ICONHEIGHT; i++)
+   114	        line(BIGICONLEFT, BIGICONTOP+i*(BIGBITSIZE+NORM_WIDTH),
+   115		     right, BIGICONTOP+i*(BIGBITSIZE+NORM_WIDTH));
+   116	    for (i=0; i<=ICONWIDTH; i++)
+   117	      line(BIGICONLEFT+2*(i*(BIGBITSIZE+NORM_WIDTH)), BIGICONTOP,
+   118		   BIGICONLEFT+2*(i*(BIGBITSIZE+NORM_WIDTH)), bottom);
+   119	    showmouse();
+   120	    init_bigbit();	/* create the big bit image */
+   121	}
+   122	
+   123	
+   124	void init_bigbit(void)
+   125	{
+   126	/*  This function creates the image of a single big bit. This
+   127	 *  image is used to toggle the big bits whenever the user
+   128	 *  clicks on the big icon pattern.
+   129	 */
+   130	    int bbx, bby;
+   131	    int i,j;
+   132	
+   133	    bbx = BIGICONLEFT;
+   134	    bby = BIGICONTOP;     /* corner of the big icon */
+   135	
+   136	    hidemouse();       /* hide the mouse before drawing */
+   137	    for (j=bby+1; j<=bby+BIGBITSIZE; j++) {
+   138	        for (i=bbx+1; i<=bbx+2*BIGBITSIZE; i++) {
+   139		    putpixel(i,j,getmaxcolor());
+   140		}
+   141	    }
+   142	
+   143	  /* Set aside memory for the big bit image and then use
+   144	     getimage() to capture its image. */
+   145	
+   146	    bigbit = malloc(imagesize(bbx,bby,bbx+2*BIGBITSIZE,
+   147			    bby+BIGBITSIZE));
+   148	    getimage(bbx+1,bby+1,bbx+2*BIGBITSIZE,bby+BIGBITSIZE,
+   149		     bigbit);
+   150	
+   151	  /* Erase the big bit by exclusive ORing it with itself */
+   152	
+   153	    putimage(bbx+1, bby+1, bigbit, XOR_PUT);
+   154	    showmouse();      /* turn the mouse back on */
+   155	}
+   156	
+   157	
+   158	void toggle_bigbit(int x, int y)
+   159	{
+   160	/*
+   161	 *  This function toggles a big bit and the corresponding pixel
+   162	 *  in the icon pattern. The x and y coordinates specify the
+   163	 *  mouse position.
+   164	 */
+   165	    int i, j;
+   166	    int line1, line2, col1, col2;
+   167	
+   168	    for (j=0; j<ICONHEIGHT; j++) {
+   169	        line1 = BIGICONTOP+j*(BIGBITSIZE+NORM_WIDTH);
+   170	        line2 = BIGICONTOP+(j+1)*(BIGBITSIZE+NORM_WIDTH);
+   171		if (line1 <= y && y < line2) {
+   172	            for (i=0; i<ICONWIDTH; i++) {
+   173		       col1 = BIGICONLEFT+2*(i*(BIGBITSIZE+NORM_WIDTH));
+   174		       col2 = BIGICONLEFT+2*((i+1)*
+   175				 (BIGBITSIZE+NORM_WIDTH));
+   176	               if (col1 <= x && x < col2) {
+   177	                   hidemouse();
+   178	                   putimage(col1+1,line1+1,bigbit,XOR_PUT);
+   179	                   showmouse();
+   180	                   toggle_icons_bit(i, j);
+   181			   return;
+   182	              }
+   183		    }
+   184		}
+   185	    }
+   186	}
+   187	
+   188	
+   189	void toggle_icons_bit(int x, int y)
+   190	{
+   191	/*
+   192	 *  This function toggles a single pixel in the icon pattern.
+   193	 *  The pixel's color and value is changed in the icon array.
+   194	 *  Arguments x and y are between 0 and ICONWIDTH or ICONHEIGHT.
+   195	 *  The array icon saves the icon pattern. If a location is set
+   196	 *  to 1, the corresponding pixel in the icon is displayed.
+   197	 */
+   198	    hidemouse();
+   199	       /* if pixel is not black, make it black */
+   200	    if (getpixel(2*x+ICONLEFT,BIGICONTOP+y) != BLACK) {
+   201		putpixel(2*x+ICONLEFT,BIGICONTOP+y,BLACK);
+   202		putpixel(2*x+1+ICONLEFT,BIGICONTOP+y,BLACK);
+   203	        icon[y][x] = 0;
+   204	    }
+   205	    else {        /* draw all pixels on with the max color */
+   206		putpixel(2*x+ICONLEFT,BIGICONTOP+y,getmaxcolor());
+   207		putpixel(2*x+1+ICONLEFT,BIGICONTOP+y,getmaxcolor());
+   208		icon[y][x] = 1;
+   209	    }
+   210	    showmouse();
+   211	}
+   212	
+   213	
+   214	void save_icon(void)
+   215	{
+   216	/*  This function writes the icon pattern to a file. The user
+   217	 *  is prompted for the filename. The format of the file is
+   218	 *  presented at the top of the iconed.c file.
+   219	 */
+   220	    char filename[80];
+   221	    FILE *iconfile;
+   222	    int i, j;
+   223	
+   224	    printf("\nEnter the file name to store the icon in: ");
+   225	    scanf("%s",filename);
+   226	    if ((iconfile = fopen(filename,"w")) == NULL) {
+   227		printf("Could not open file.\n");
+   228		return;
+   229	    }
+   230	      /*  Write the header to the file */
+   231	    fprintf(iconfile, "%d %d\n", ICONWIDTH, ICONHEIGHT);
+   232	
+   233	    for (j=0; j<ICONHEIGHT; j++) {      /* Write the icon */
+   234	        for (i=0; i<ICONWIDTH; i++)     /* pattern to a file */
+   235		    fprintf(iconfile, "%x ", icon[j][i]);
+   236		fprintf(iconfile, "\n");
+   237	    }
+   238	    fclose(iconfile);
+   239	}
+   240	
+   241	
+   242	int read_icon(void)
+   243	{
+   244	/* This function reads an icon file into the icon array and
+   245	 * calls show_icon() to turn the appropriate pixels on. If the
+   246	 * file header doesn't match ICONWIDTH and ICONHEIGHT, the
+   247	 * the file is invalid and the icon is not read. The function
+   248	 * returns a 0 if a file is not read; otherwise 1 is returned.
+   249	 */
+   250	    char filename[80];
+   251	    FILE *iconfile;
+   252	    int i, j;
+   253	    int width, height;
+   254	
+   255	    for (j=0; j<ICONHEIGHT; j++) {   /* Initialize icon array */
+   256	        for (i=0; i<ICONWIDTH; i++)  /* to all blanks */
+   257		    icon[j][i] = 0;
+   258	    }
+   259	
+   260	    printf("\n\n-----------  ICON EDITOR -------------\n\n");
+   261	    printf("Do you want to edit an existing icon? (y) ");
+   262	
+   263	    if (getch() == 'n')
+   264		return(0);
+   265	
+   266	    printf("\nEnter name of the file to read the icon from: ");
+   267	    scanf("%s",filename);
+   268	    if ((iconfile = fopen(filename,"r")) == NULL) {
+   269		printf("Cannot open file.\n");
+   270		return(0);		 /* return a failure flag */
+   271	    }
+   272	/*  Read first line of the icon file. It should contain two
+   273	    numbers that are equal to ICONWIDTH and ICONHEIGHT.
+   274	 */
+   275	    fscanf(iconfile,"%d %d", &width, &height);
+   276	    if (width != ICONWIDTH || height != ICONHEIGHT) {
+   277		printf("Incompatible icon file.\n");
+   278		return(0);          /* return a failure flag */
+   279	    }
+   280	
+   281	    for (j=0; j<ICONHEIGHT; j++) {
+   282	        for (i=0; i<ICONWIDTH; i++)
+   283		    fscanf(iconfile, "%x", &icon[j][i]);
+   284	    }
+   285	    fclose(iconfile);
+   286	    return(1);             /* return a success flag */
+   287	}
+   288	
+   289	
+   290	void init_graphics(void)
+   291	{
+   292	/* This function initializes the graphics hardware.
+   293	*/
+   294	    int gdriver = CGA;
+   295	    int gmode, gerror;
+   296	
+   297	    gmode =4;
+   298	    initgraph(&gdriver,&gmode,"");
+   299	    if ((gerror = graphresult()) < 0) {
+   300		printf("Failed graphics initialization: gerror=%d\n",
+   301			gerror);
+   302		exit(1);
+   303	    }
+   304	}
+   305	
+   306	void show_icon(void)
+   307	{
+   308	/*  This function displays the icon pattern stored in the
+   309	 *  icon array.
+   310	 */
+   311	
+   312	    int x, y;
+   313	
+   314	    for (y=0; y<ICONHEIGHT; y++)
+   315	      for (x=0; x<ICONWIDTH; x++) {
+   316	        if (icon[y][x] == 1) {
+   317		  putimage(BIGICONLEFT+2*(x*(BIGBITSIZE+NORM_WIDTH))+1,
+   318		  BIGICONTOP+y*(BIGBITSIZE+NORM_WIDTH)+1, bigbit,
+   319		  XOR_PUT);
+   320		  toggle_icons_bit(x, y);
+   321		}
+   322	     }
+   323	}
+   324	
+   325	
+   326	
+   327	
+   328	
+   329	[LISTING TWO]
+   330	
+   331	/*  mouse.c  -- routines to support a Microsoft compatible mouse.
+   332	 *              This package assumes that you are running under
+   333	 *              graphics mode.
+   334	 */
+   335	
+   336	#include <dos.h>
+   337	#include <conio.h>
+   338	#include "mouse.h"
+   339	#include "graphics.h"
+   340	
+   341	#define TRUE  	1
+   342	#define FALSE 	0
+   343	int mouseexists;      /* internal variable set true if a */
+   344			      /* mouse driver is detected  */
+   345	
+   346	
+   347	void mouse(int *m1, int *m2, int *m3, int *m4)
+   348	{
+   349	/*
+   350	 *   This function provides the interface between the mouse
+   351	 *   driver and an application program. Several predefined mouse
+   352	 *   functions supported by the Microsoft mouse are available.
+   353	 *   Parameters are passed and returned with the ax, bx, cx and
+   354	 *   dx registers.
+   355	 */
+   356	    union REGS inregs, outregs;
+   357	
+   358	    inregs.x.ax = *m1;
+   359	    inregs.x.bx = *m2;
+   360	    inregs.x.cx = *m3;
+   361	    inregs.x.dx = *m4;
+   362	    int86(0x33, &inregs, &outregs);
+   363	    *m1 = outregs.x.ax;      /* return parameters */
+   364	    *m2 = outregs.x.bx;
+   365	    *m3 = outregs.x.cx;
+   366	    *m4 = outregs.x.dx;
+   367	}
+   368	
+   369	
+   370	int initmouse(void)
+   371	{
+   372	/*
+   373	 *  This function initializes the mouse and displays
+   374	 *  the mouse cursor at the top, left of the screen, if one
+   375	 *  is present.
+   376	 */
+   377	    int m1, m2, m3, m4, gmode;
+   378	    char far *memory = (char far *)0x004000049L;
+   379	
+   380	    mouseexists = TRUE;
+   381	    m1 = RESET_MOUSE;
+   382	    mouse(&m1, &m2, &m3, &m4);
+   383	    if (m1) {               /* if mouse reset okay, assume */
+   384		gmode = getgraphmode();            /* mouse exists */
+   385		if (gmode == HERCMONOHI) {   /* Test for Hercules */
+   386		    *memory = 0x06;
+   387	        }
+   388		m1 = SET_MOUSE_COORD;
+   389		mouse(&m1, &m2, &m3, &m4);  /* mouse exists and draw the */
+   390		showmouse();            /* cursor on the screen at 0,0 */
+   391		return(1);             /* return a success flag */
+   392	    }
+   393	    else {                       /* no mouse installed */
+   394		mouseexists = FALSE;
+   395		return(0);            /* return a no-mouse found flag */
+   396	    }
+   397	}
+   398	
+   399	
+   400	void hidemouse(void)
+   401	{
+   402	/*  This function removes the mouse cursor from the screen. It
+   403	 *  should be called before displaying data on the screen.
+   404	 *  Use showmouse() to redisplay the mouse cursor. The mouse
+   405	 *  cursor still moves even though it is not visible. Don't
+   406	 *  call hidemouse() if the mouse is not already visible.
+   407	 */
+   408	    int m1, m2, m3, m4;
+   409	
+   410	    if (mouseexists) {            /* check for mouse */
+   411	       m1 = HIDE_MOUSE;	         /* hide the mouse cursor */
+   412	       mouse(&m1, &m2, &m3, &m4);
+   413	    }
+   414	}
+   415	
+   416	
+   417	void showmouse(void)
+   418	{
+   419	/*  This function displays the mouse cursor. You should not call
+   420	 *  this function if the mouse is already visible.
+   421	*/
+   422	    int m1, m2, m3, m4;
+   423	
+   424	    if (mouseexists) {		/* make sure mouse exists */
+   425	       m1 = SHOW_MOUSE;
+   426	       mouse(&m1, &m2, &m3, &m4);  /* display mouse cursor */
+   427	    }
+   428	}
+   429	
+   430	
+   431	void getmousecoords(int *x, int *y)
+   432	{
+   433	/*
+   434	 *  This function returns the position of the mouse cursor.
+   435	 */
+   436	    int m1, m2;
+   437	
+   438	    if (mouseexists) {
+   439	       m1 = GET_MOUSE_STATUS;
+   440	       mouse(&m1, &m2, x, y);
+   441	       /* adjust for virtual coordinates */
+   442	       if (getmaxx() == 319) (*x) /= 2;
+   443	    }
+   444	}
+   445	
+   446	
+   447	int testbutton(int testtype, int whichbutton)
+   448	{
+   449	/*
+   450	 *  This function tests a mouse button state. It returns TRUE
+   451	 *  if the specified mouse button (whichbutton) meets the
+   452	 *  specified action (as indicated by testtype); otherwise the
+   453	 *  function returns FALSE.
+   454	 */
+   455	    int m1, m2, m3, m4;
+   456	
+   457	    m1 = testtype;
+   458	    if (whichbutton == LEFT_BUTTON || whichbutton ==
+   459			  EITHER_BUTTON) {
+   460	        m2 = LEFT_BUTTON;
+   461	        mouse(&m1, &m2, &m3, &m4);
+   462		if (m2) return(TRUE);     /* return TRUE if action ok*/
+   463	    }
+   464	    if (whichbutton == RIGHT_BUTTON || whichbutton ==
+   465			 EITHER_BUTTON) {
+   466	        m1 = testtype;
+   467		m2 = RIGHT_BUTTON;
+   468	        mouse(&m1, &m2, &m3, &m4);
+   469		if (m2) return(TRUE);     /* return TRUE if action ok */
+   470	    }
+   471	    return(FALSE);           /* return FALSE as a catch all */
+   472	}
+   473	
+   474	
+   475	int waitforinput(int whichbutton)
+   476	{
+   477	/*  This function returns a character if a key has been pressed,
+   478	 *  -1 if a mouse button has been pressed; otherwise a zero. If
+   479	    a mouse exists, this routine favors any keyboard action.
+   480	 */
+   481	    int c = 0;
+   482	
+   483	      while (!c)   {
+   484		if (kbhit())    /* check if a key has been pressed */
+   485		    c =getch();  /* return the character     */
+   486	        else {
+   487	         if (testbutton(CHECK_BUTTON_PRESS, whichbutton)) {
+   488		    while (!testbutton(CHECK_BUTTON_RELEASE,
+   489			      whichbutton));
+   490		    c = -1;
+   491		 }
+   492		else if (testbutton(CHECK_BUTTON_RELEASE,
+   493			      whichbutton)) {
+   494		    c = -1;
+   495		    }
+   496	       }
+   497	      }
+   498	      return(c);
+   499	}
+   500	
+   501	
+   502	[LISTING THREE]
+   503	
+   504	
+   505	/*   mouse.h  -- this file includes function prototypes and macro
+   506	 *               constants for the functions in mouse.c.
+   507	 */
+   508	
+   509	/*  The following is a list of constants that correspond to the
+   510	 *  mouse functions supported in mouse.c.
+   511	 */
+   512	
+   513	#define RESET_MOUSE          	0
+   514	#define SHOW_MOUSE           	1
+   515	#define HIDE_MOUSE           	2
+   516	#define GET_MOUSE_STATUS     	3
+   517	#define SET_MOUSE_COORD      	4
+   518	#define CHECK_BUTTON_PRESS   	5
+   519	#define CHECK_BUTTON_RELEASE 	6
+   520	#define SET_MOUSE_HORIZ_RANGE   7 	/* not used */
+   521	#define SET_MOUSE_VERT_RANGE    8	/* not used */
+   522	#define SET_GRAPHICS_CURSOR 	9	/* not used */
+   523	#define GET_MOUSE_MOVEMENT   	11
+   524	#define SET_MICKEY_RATIO     	15 	/* not used */
+   525	
+   526	#define LEFT_BUTTON          	0	/* use left button */
+   527	#define RIGHT_BUTTON         	1       /* use right button */
+   528	#define EITHER_BUTTON        	2      /* use either button */
+   529	
+   530	
+   531	/*  The function prototypes for the functions in mouse.c
+   532	 */
+   533	
+   534	void mouse(int *m1, int *m2, int *m3, int *m4);
+   535	int  initmouse(void);
+   536	void getmousecoords(int *x, int *y);
+   537	void hidemouse(void);
+   538	void showmouse(void);
+   539	int  testbutton(int testtype, int whichbutton);
+   540	int  waitforinput(int whichbutton);

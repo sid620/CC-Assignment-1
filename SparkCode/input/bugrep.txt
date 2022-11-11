@@ -1,0 +1,79 @@
+     1	
+     2	If you experience any failures with an external cache as described in
+     3	the enclosed files and programs, please fill out and return this form
+     4	to PKWARE.  You may reply one of several ways:
+     5	
+     6	1)  Print this form and attachments and send by MAIL to:
+     7	
+     8		PKWARE Inc.
+     9		Attn: PKWARE Technical Support
+    10		9025 N. Deerwood Drive
+    11		Brown Deer, WI  53223
+    12	
+    13	2)  Print this form and attachments and send by FAX to:
+    14	
+    15	        PKWARE Inc.
+    16		Attn: PKWARE Technical Support
+    17	        (414)354-8559
+    18	
+    19	3)  Fill out this form in a text editor and UPLOAD the file with
+    20	    attachments requested below to:
+    21	
+    22		PKWARE BBS
+    23		Attn: PKWARE Technical Support
+    24		(414)354-8670
+    25	
+    26	
+    27	----------------------------------------------------------------------------
+    28	                                CONTACT INFO
+    29	Your Name:
+    30	
+    31	Company/BBS:
+    32	
+    33	Voice(Day)Phone:
+    34	
+    35	Data Number:				Fax Number:
+    36	----------------------------------------------------------------------------
+    37	
+    38	                            SYSTEM CONFIGURATION
+    39	
+    40	
+    41	Computer Brand/Model:			CPU type:
+    42	
+    43	
+    44	BIOS version & Date:			BIOS vendor/OEM:
+    45	
+    46	
+    47	Motherboard vender/OEM:			Cache controller vender/OEM:
+    48	
+    49	
+    50	Vender/OEM of Cache chips:		Date Code(s) of Cache chips:
+    51	
+    52	
+    53	
+    54	DESCRIBE HOW FAILURE WAS GENERATED.  LIST PROGRAM(S) AND COPIES
+    55	OF THE SCREEN OUTPUTS SHOWING RESULTS.  INCLUDE FAILING FILE(S)
+    56	IF POSSIBLE.
+    57	(Use additional sheets if necessary)
+    58	
+    59	
+    60	
+    61	
+    62	
+    63	
+    64	
+    65	
+    66	
+    67	
+    68	
+    69	
+    70	
+    71	
+    72	
+    73	
+    74	
+    75	
+    76	----------------------------------------------------------------------------
+    77	DESCRIBE STEPS TO REPRODUCE PROBLEM
+    78	(Use additional sheets if necessary)
+    79	

@@ -1,0 +1,64 @@
+     1	
+     2	
+     3	                                STAC ELECTRONICS
+     4	                           TECHNICAL SUPPORT BULLETIN
+     5	
+     6	  NUMBER:     015
+     7	  SUBJECT:    DOS5.0
+     8	
+     9	  DATE:       June 28, 1991
+    10	  TIME:       7:24 AM
+    11	
+    12	  SOURCE:         Tech Support, MS DOS 5.0 Documentation
+    13	  SUPERCEDES/
+    14	  SUPERCEDED BY:  
+    15	  RELEASE STATUS: Public
+    16	
+    17	  TITLE:
+    18	      Loading STACKER into upper memory ("loading high") with MS-DOS 5.0
+    19	
+    20	  OVERVIEW:
+    21	      MS-DOS 5.0 comes equipped with a memory manager which may be used to load
+    22	      device drivers into the upper memory area between 640K and 1MB.  STACKER
+    23	      is one such driver.
+    24	
+    25	  ISSUES/COMMENTS:
+    26	      1) DEVICE=C:\DOS\HIMEM.SYS provides access to extended memory and ensures
+    27	      that no two programs use the same portion of it at the same time.
+    28	
+    29	      2) DOS=UMB tells DOS to maintain a link to the upper memory area;
+    30	      DOS=HIGH,UMB also loads the kernel of DOS into the high memory area
+    31	      (HMA).
+    32	
+    33	      3) DEVICE = C:\DOS\EMM386.EXE NOEMS causes extended memory to simulate
+    34	      expanded memory so that programs and device drivers may be loaded into
+    35	      the upper memory area.  Specifying RAM instead of NOEMS will establish a
+    36	      64K page frame for expanded memory, and the reduced number of upper
+    37	      memory blocks may be insufficient to allow the driver to be loaded high;
+    38	      in this case, a commercial memory manager (QEMM386, 386MAX) may be
+    39	      needed.  If the STACKER coprocessor card is installed, it will also be
+    40	      necessary to exclude its address range (e.g., x=CC00-CFFF).
+    41	
+    42	      4) DEVICEHIGH=C:\STACKER\STACKER.COM... does the actual loading of the
+    43	      STACKER device driver into the upper memory area.  If there is
+    44	      insufficient memory available, DOS will load the driver into conventional
+    45	      memory with no warning message.
+    46	
+    47	      5) The DOS command MEM/C lists the order and size in which drivers and
+    48	      programs have been loaded.
+    49	
+    50	
+    51	  RECOMMENDED ACTIONS:
+    52	      1) Ensure that the statements are executed in CONFIG.SYS in proper order.
+    53	      (Note that they need not be consecutive, and the paths may differ from
+    54	      system to system):
+    55	                      DEVICE=C:\DOS\HIMEM.SYS
+    56	                      DOS=HIGH,UMB
+    57	                      DEVICE=C:\DOS\EMM386.EXE (NOEMS or RAM) (X=exclude range
+    58	                          if applicable)
+    59	                      DEVICEHIGH=C:\STACKER\STACKER.COM...
+    60	
+    61	      2) If boot drive is SSWAPped, ensure that a copy of HIMEM.SYS and
+    62	      EMM386.EXE reside in the \DOS directory on the host volume; for instance,
+    63	      if C: and D: are SSWAPped, then a copy of the files must reside in
+    64	      D:\DOS.

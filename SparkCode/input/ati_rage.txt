@@ -1,0 +1,199 @@
+     1	      ATI TECHNOLOGIES ANNOUNCES 3D RAGE - VALUE-PRICED CHIP TO ENABLE
+     2	              ARCADE-EQUIVALENT GAMING ON MULTIMEDIA HOME PCs
+     3	---------------------------------------------------------------------------
+     4	
+     5	NOVEMBER 13, 1995 - Las Vegas, Nev. - ATI Technologies Inc. (TSE:ATY) today
+     6	announced 3D RAGE, the first 3D chip that meets the price/performance
+     7	milestones set by manufacturers of the next generation of Multimedia Home
+     8	PCs and provides a comprehensive 3D arcade-caliber tool kit for games
+     9	developers to create visually stunning games on the PC.
+    10	
+    11	Value-priced, and featuring dizzying arcade-caliber gaming on the PC, 3D
+    12	RAGE is the most integrated high performance multimedia accelerator in its
+    13	class. 3D RAGE marries rich 3D features with all of the capabilities of its
+    14	award winning mach64 2D accelerators, adds full-screen, full-motion 30
+    15	frames per second (fps) MPEG video playback and enhanced support for all
+    16	major consumer video applications to produce the most intense gaming
+    17	experience available on a PC. The new chip also utilizes the latest SGRAM
+    18	memory providing four times the performance of current DRAM products at
+    19	DRAM comparable pricing. Next generation synchronous memories keep
+    20	bandwidth-hungry video and 3D engines found in advanced multimedia
+    21	accelerators running smoothly.
+    22	
+    23	"With 3D RAGE, ATI completes the PC gaming puzzle," said Henry Quan, ATI's
+    24	vice president of marketing. "Capitalizing on proven technologies and
+    25	stable, open platforms, we have brought together the best of 3D, 2D and
+    26	video, all in one product, which will not only produce the most powerful
+    27	experience for the hard core gamer but will provide the ultimate, maximized
+    28	tool for games developers."
+    29	
+    30	"After years of anticipation, everything will finally be in place over the
+    31	next 12 months to foster a leap forward for the PC viewing experience,"
+    32	said Mike Feibus, Analyst with Mercury Research. "This is due primarily to
+    33	the confluence of three factors. First and foremost is Windows 95, with
+    34	open and available APIs. Second is the emergence of accelerators like ATI's
+    35	3D RAGE that provide support for 3D and video as well as two-dimensional
+    36	graphics. And third, the developing hardware-software platform is spurring
+    37	games developers to make use of the technology. It will be an exciting
+    38	year."
+    39	
+    40	"Companies like Microsoft and ATI are leading the industry to transform the
+    41	PC into the ultimate gaming platform," said Kate Seekings, Microsoft's 3D
+    42	Evangelist. "With the introduction of 3D RAGE, ATI has once again shown
+    43	that they understand the needs of games developers and systems
+    44	manufacturers and have built in all the features and performance these two
+    45	parties need to capitalize on this huge business opportunity."
+    46	
+    47	Built for Current and Future Needs
+    48	
+    49	Priced at $48 (in quantities of l0,000), with samples available now and
+    50	full production to begin in first quarter 1996, 3D RAGE is the first chip
+    51	of its kind which will enable systems manufacturers to provide completely
+    52	integrated, high performance 2D/3D/video for arcade-caliber gaming in an
+    53	easily upgradeable multimedia system which could sell for less than $2,000.
+    54	The second in its accelerator family to incorporate ATI's recently
+    55	announced Enhanced Visual Architecture (EVA), 3D RAGE allows OEMs to design
+    56	a single low-cost multimedia motherboard which incorporates the critical
+    57	features the new multimedia consumer is demanding such as TV-tuner,
+    58	hardware MPEG and video conferencing.
+    59	
+    60	The PC - An Inherently Superior Gaming Machine
+    61	
+    62	With industry experts predicting sales volumes of "next generation"
+    63	multimedia PCs at over 10 million units in l996, the revenue potential for
+    64	PC games is far greater than that of "next generation" games consoles. As
+    65	well as providing the virtual reality experience of 3D, the PC as a gaming
+    66	platform supports TV-quality video, interactivity for tele-gaming and
+    67	LAN-based multi-player gaming, making it an inherently superior gaming
+    68	environment, virtually unmatchable in the console market. Games developers
+    69	need a predictable, stable, high performance platform to ensure that PC
+    70	games can be created that will be a significant improvement over the
+    71	console experience. ATI's 3D RAGE has been built to meet these criteria and
+    72	with an installed base of over l0 million accelerators, ATI is a proven
+    73	volume supplier of multimedia hardware and can deliver the customers for
+    74	games publishers to support the development of 3D games on the PC.
+    75	
+    76	Rather than catering to a proprietary, closed environment like some other
+    77	multimedia accelerator vendors, ATI's 3D RAGE leverages off the strong
+    78	industry standards being developed by companies like Microsoft. It supports
+    79	all major Application Programming Interfaces (API) including Microsoft's
+    80	Windows 95 Direct3D and Reality Lab, Apple's TinselTown and QuickDraw 3D,
+    81	Argonaut's BRender and Criterion's RenderWare. Coupled with the latest
+    82	gaming add-ons such as joysticks, 3D input devices, Virtual Reality
+    83	headsets and Digital Simultaneous Voice Data (DSVD) modems used for
+    84	tele-gaming, 3D RAGE will enable totally new gaming categories.
+    85	
+    86	The Ideal Development Tool
+    87	
+    88	"While other graphics and video vendors continue to launch 'trade-off
+    89	technology', ATI's 3D RAGE supports all major APIs, accelerates all six
+    90	Direct 3D texturing modes and incorporates all the features a games
+    91	developer needs to optimize the gaming experience," said Craig Fryar from
+    92	the OEM division of game publisher Interplay Productions. "Put this amazing
+    93	product together with ATI's reputation for shipping quality multimedia
+    94	hardware in volume and games developers have a winner."
+    95	
+    96	With performance rates of over 20 million perspectively correct texture
+    97	mapped pixels per second and 575K+ Gouraud shaded triangles per second, 3D
+    98	RAGE has the best single chip performance currently available in this
+    99	category. To achieve comparable functionality and performance, other
+   100	vendors require the use of multiple chips like triangle set-up engines and
+   101	DACs, which adds to total system costs. Also, many chip manufacturers
+   102	provide limited features forcing the game developer to compromise image
+   103	quality in favor of speed, or vice versa. ATI allows the games developers'
+   104	creativity to reign supreme by allowing them to decide how they want to use
+   105	3D RAGE features to create the ultimate experience depending on the class
+   106	of game they are developing.
+   107	
+   108	By utilizing PCI bus mastering, 3D RAGE further increases system
+   109	performance. For example, texture maps can be swapped at high speeds
+   110	between system and graphics memory which offloads the CPU to perform tasks
+   111	such as calculating triangle vertices, resulting in significantly higher
+   112	frame rates, which provides a dramatically enhanced gaming experience.
+   113	
+   114	3D Rage supports perspectively-corrected bi- and tri-linear filtered
+   115	texture mapping for the highest level of virtual reality immersion. In
+   116	addition, support for all six Direct 3D modes in conjunction with sub-pixel
+   117	accuracy creates an amazing gaming experience. It also supports 3D Gouraud
+   118	shaded polygons to accelerate the rendering of solid color surfaces. Hidden
+   119	surface removal using Z-buffering is also available so the developer can
+   120	decide whether to use graphics memory to offload the CPU from having to
+   121	perform the taxing Z-sort algorithm when building 3D images.
+   122	
+   123	Ardent gamers are truly addicted to eye-popping 3D which games developers
+   124	achieve using special effects, such as alpha blending, fog and texture
+   125	lighting, which have all been incorporated into 3D RAGE. With the video
+   126	texturing feature of 3D RAGE, developers can render live video images
+   127	direct from an MPEG source onto 3D surfaces for state-of-the-art visual
+   128	effects.
+   129	
+   130	The Ultimate Video Accelerator
+   131	
+   132	3D RAGE provides the highest possible video functionality including support
+   133	for all major consumer video applications. MPEG playback functionality
+   134	provides broadcast-quality, full screen, full motion, true color video. To
+   135	transform your PC into an intelligent TV that harnesses all of the
+   136	entertainment capabilities of a TV with the processing power of a PC, a
+   137	TV-tuner capability can be added on so users can channel surf, do instant
+   138	replays, capture their own TV transcripts and more. An optional hardware
+   139	MPEG upgrade will provide the highest quality video images at full screen,
+   140	30 fps speeds guaranteed, completely removing the task of processing video
+   141	from the CPU. Enabling all of this multimedia expansion is ATI's EVA
+   142	architecture with its built-in ATI Media Connector (AMC) which allows for
+   143	the efficient transport of video and audio between multimedia devices and
+   144	cards.
+   145	
+   146	ATI is the first to include both front-end and back-end video hardware
+   147	scaling to handle two or more video streams simultaneously, a key
+   148	requirement for the burgeoning modem-based video conferencing market. PCI
+   149	bus mastering offloads the CPU from bi-directional transfer of video
+   150	between the system memory and the accelerator.
+   151	
+   152	3D RAGE - The Ideal OEM Product
+   153	
+   154	ATI clearly has an advantage over the several new entrants who have
+   155	appeared in the 3D acceleration market. OEMs are building Home PCs for
+   156	users who are not only demanding great 3D, 2D and video acceleration, but
+   157	who also want proven feature rich drivers and utilities. In addition, OEM
+   158	system manufacturers are selling into a multiple niche market where
+   159	TV-tuners, hardware MPEG and videoconferencing are in high demand. 3D RAGE
+   160	provides all of this functionality plus ensures pin compatibility with
+   161	current and future mach64 multimedia accelerators and options provides
+   162	local language support to lessen the cost for the OEM to sell the product
+   163	in international markets.
+   164	
+   165	Other Features
+   166	
+   167	- PCI 2.1 Plug and Play with bus mastering
+   168	
+   169	- Bi-endian support for broad processor compatibility including PCI
+   170	PowerMacs
+   171	
+   172	- Integrated 135mhz DAC support 1280x1024 resolution
+   173	
+   174	- Supports 1, 2, 4MB FP/EDO DRAM, SDRAM and SGRAM
+   175	
+   176	- Unique color calibration support in hardware
+   177	
+   178	- DDC1 and DDC2 Plug and Play monitor support
+   179	
+   180	- Power-on diagnostics and active and passive power management
+   181	
+   182	Corporate Profile
+   183	
+   184	ATI Technologies designs and manufactures products for the Intel-compatible
+   185	personal computer and Apple PCI Power Macintosh markets. These products
+   186	include graphics accelerators and components, communications products and
+   187	video hardware and software. Founded in l985, the firm's revenues for
+   188	fiscal 1995 were over $359 million. ATI employs 650 people worldwide and
+   189	has a product line that is sold through an international network of
+   190	computer manufacturers and leading computer distributors. ATI is a publicly
+   191	traded company on the Toronto Stock Exchange (TSE:ATY).
+   192	
+   193	                                   # # #
+   194	
+   195	Copyright ATI Technologies Inc., 1995. 3D RAGE, EVA, AMC and mach64 are
+   196	trademarks of ATI Technologies Inc. All other company and/or product names
+   197	are trademarks and/or registered trademarks of their respective
+   198	manufacturers. Features and specifications are subject to change without
+   199	notice.

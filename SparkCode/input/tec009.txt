@@ -1,0 +1,45 @@
+     1	
+     2	
+     3	                                STAC ELECTRONICS
+     4	                           TECHNICAL SUPPORT BULLETIN
+     5	
+     6	  NUMBER:     009
+     7	  SUBJECT:    CACHE
+     8	
+     9	  DATE:       May 24, 1991
+    10	  TIME:       3:00 PM
+    11	
+    12	  SOURCE:         Engineering, Tech Support
+    13	  SUPERCEDES/
+    14	  SUPERCEDED BY:  
+    15	  RELEASE STATUS: Public
+    16	
+    17	  TITLE:
+    18	      STACKER and disk-cache programs.
+    19	
+    20	  OVERVIEW:
+    21	      While STACKER includes its own cache, the driver is compatible with other
+    22	      products that perform the same function.
+    23	
+    24	      Norton's NCACHE and Microsoft WINDOWS' SMARTDRV.SYS are loaded from the
+    25	      CONFIG.SYS, usually before STACKER.  Other programs, such as PC-KWIK and
+    26	      PC-CACHE, load from the AUTOEXEC.BAT file, after STACKER.
+    27	
+    28	  ISSUES/COMMENTS:
+    29	      1) Some cache programs (e.g., PC-CACHE, PC-KWIK) may report that a
+    30	      particular drive letter is not eligible for caching, but caching proceeds
+    31	      normally.
+    32	
+    33	      2) When multiple cache programs are operating, disk reads/writes may have
+    34	      unpredictable results.  Use of memory may also be negatively impacted.
+    35	
+    36	
+    37	  RECOMMENDED ACTIONS:
+    38	      1) Alter the settings for the cache so that the uncompressed, host drive
+    39	      is cached.  This will, by extension, cache any STACKER volumes residing
+    40	      on it.  (The PC-KWIK message can be avoided by excluding the STACKER
+    41	      volume when the cache program is invoked.  Consult PC-KWIK documentation
+    42	      for the appropriate parameter.)
+    43	
+    44	      2) If a commercial cache program is running, specify a STACKER cache of 0
+    45	      bytes (/M=0)

@@ -1,0 +1,306 @@
+     1	Article 92 of sci.virtual-worlds:
+     2	Path: milton!randy@xanadu.com
+     3	From: randy@xanadu.com (Randy Farmer -- A survivor of the Lost Patrol)
+     4	Newsgroups: sci.virtual-worlds
+     5	Subject: Cyberspace: Getting There From Here **(LONG)**
+     6	Summary: Repost of article posted in alt.cyberspace, by request
+     7	Keywords: cyberspace hardware Habitat Club Caribe
+     8	Message-ID: <1990Mar8.160311.3103@xanadu.com>
+     9	Date: 8 Mar 90 16:03:11 GMT
+    10	Sender: hlab@milton.acs.washington.edu
+    11	Organization: Xanadu Operating Company, Palo Alto, CA
+    12	Lines: 289
+    13	Approved: hitl@hardy.u.washington.edu
+    14	
+    15	
+    16	I have had a few requests to repost my article, so heregoes!
+    17	
+    18	I would really appreciate it if you sent me your thoughts on this text via
+    19	email (to save net bandwidth), and resist the urge to fragment my thoughts
+    20	in a followup posting with lots of '>'s. This article is meant to convey one
+    21	thought: Cyberspace is NOT hardware. Thanks :-)
+    22	
+    23	This article originally appeared in the Journal of Computer Game Design last
+    24	October, and is positioned as kind of primer. Those of you who received a
+    25	copy of this at Hackers 5.0 or read it in alt.cyberspace, hit 'n' now :-).
+    26	----------------------------------------------------------------------------
+    27	
+    28	               Cyberspace: Getting There From Here.
+    29	              (c) Copyright 1989 F. Randall Farmer
+    30	
+    31	Randy was lead C64 programmer on the fabled 'Habitat'(1) project 
+    32	for Lucasfilm Games. He has taken a hiatus from building Cyberspace 
+    33	while he works on a new telecommunications product at AMIX, a 
+    34	subsidiary of Autodesk. He can be reached via Usenet as 
+    35	randy@xanadu.com or through the Journal BBS.
+    36	
+    37		"Golden Vaporware" is a term I've heard Ted Nelson(2) use to 
+    38	describe such exciting computer projects as Xanadu, Dynabook and 
+    39	Cyberspace. I understood the term to mean Really-Great-Stuff-That-
+    40	People-Are-(Sort-Of)-Working-On-And-Never-Ship.  But now, it 
+    41	seems,  "The Age Of Golden Vaporware" has arrived. Ted's Xanadu 
+    42	project is now well under way and should ship product in '90.  There 
+    43	is a company called Dynabook Technologies that has released "step 2" 
+    44	of the "20 steps"(3) to Alan Kay's vision of the ultimate laptop.  And 
+    45	Cyberspace has been prototyped by QuantumLink and Lucasfilm.
+    46	
+    47		These projects are likely to succeed not because they are 
+    48	exciting to us techie-geeks, but because they have solid commercial 
+    49	and technical foundations.  Here I will illustrate a path from current 
+    50	software and hardware technologies to the Cyberspace that many of 
+    51	us have dreamed of for almost 20 years.
+    52	
+    53	
+    54	What is Cyberspace anyway?
+    55	
+    56		"Cyberspace" is a fuzzily defined word that has been in the 
+    57	press a lot recently(4)(at least in Silicon Valley).  Vernor Vinge first 
+    58	described a vision of what might now be called Cyberspace in his 
+    59	novella True Names(5). The hero of Vinges's story connected to "The 
+    60	Other Plane" using EEG electrodes placed on the forehead. The Other 
+    61	Plane was a place where complicated software systems were 
+    62	represented by familiar objects.  The Max Headroom television show 
+    63	used similar representations in various episodes.  Other fictional 
+    64	treatments include William Gibson's Neuromancer (6), which has 
+    65	been turned into a popular graphic adventure, and other 
+    66	"Cyberpunk" novels. Here the vision of Cyberspace is based around 
+    67	commercial and governmental network computer access, where 
+    68	"cowboys" and "wizards" break in and wreak fiscal havoc. In these 
+    69	works, Cyberspace is a metaphor for abstract concepts.
+    70	
+    71		Autodesk, maker of the best selling AutoCAD system, has 
+    72	thrown its hat into the Cyberspace ring where it joins VPL's Jaron 
+    73	Lanier and NASA-AMES. All of these products share similar base 
+    74	technologies and assumptions: two head-mounted TV monitors for 
+    75	stereo imaging, a powerful computer, and a 3D input device like 
+    76	VPL's DataGlove. They are primarily single user systems, and, in the 
+    77	case of at least Autodesk's product, probably aimed at CAD users who 
+    78	want to edit drawings in three dimensions. There are many other 
+    79	applications, but discussion is beyond the scope of this article. The 
+    80	key to all of these systems is enough computer power to do  double-
+    81	buffered stereoscopic real-time graphics at a high frame rate (say 
+    82	20-30 frames/second). This technology is expensive: in the case of 
+    83	VPL's "virtual reality" system (their special two user version) the 
+    84	price tag weighs in at $69,925. The "Eyephones" cost $9,400 and the 
+    85	glove $8,800.(7) These companies envision Cyberspace as a new kind 
+    86	of user interface.
+    87	
+    88		To me, Cyberspace is a place, not just an interface or a 
+    89	metaphor. A place where people, regardless of location, hardware, or 
+    90	purpose can get together in a participatory experience to conduct 
+    91	business, socialize, or have a good game of SpaceCombat9.6.
+    92	
+    93		Why this vision instead of the others?  People.  Unlike the 
+    94	interactions with artificial personalities created for computer 
+    95	adventure games, Cyberspace interactions could create relationships 
+    96	that are "greater than the sum of their parts".  Here the consequences 
+    97	of individual actions take on a greater significance because they 
+    98	affect the world of, and the personal belongings of the other 
+    99	participants.  Because Cyberspace will be so malleable,  each 
+   100	individual can "make a dent"(8) and participate in its ongoing 
+   101	creation and adaptation.
+   102	
+   103		This is not speculation! During Habitat's beta test, several social 
+   104	institutions sprang up spontaneously: There were marriages and 
+   105	divorces, a church (complete with a real-world Greek Orthodox 
+   106	minister), a loose guild of thieves, an elected sheriff (to combat the 
+   107	thieves), a  newspaper (with a rather eccentric editor), and before 
+   108	long two lawyers hung up their shingle to sort out claims.  And this 
+   109	was with only about 150 people! My vision encompasses tens of 
+   110	thousands of simultaneous participants.
+   111	
+   112	
+   113	How can it work?
+   114		There are several major problems facing a large-scale 
+   115	Cyberspace system: Bandwidth, Graphic Resolution, User Interface 
+   116	Standards, Event Integrity, Data Communications Standards, and 
+   117	Computer Horsepower.
+   118	
+   119		Bandwidth is the most overrated problem. Everybody thinks 
+   120	you need to send megabytes of data every minute to each user in 
+   121	order to make Cyberspace work. This is simply not true. Habitat 
+   122	works at a mere 300 baud. The keys to keeping bandwidth down are 
+   123	distributed processing (having the local computer do most of the 
+   124	display and interface work), object oriented command messages, and 
+   125	avoiding communication intensive graphics primitives (such as those 
+   126	associated with NAPLPS, that slower-than-molasses protocol they use 
+   127	for Prodigy and other Videotex systems).
+   128	
+   129		Graphic Resolution, User Interface and Local Horsepower issues 
+   130	should all be lumped together.  To be viable over time, Cyberspace 
+   131	must be designed with the "to each according to his abilities" 
+   132	principle. If a C64 with NTSC TV and joystick-only interface 
+   133	encounters a 60 megahertz 486 user with Eyephones and DataGlove, 
+   134	the interaction should be filtered so that each user can have a 
+   135	satisfying experience (e.g the C64 user doesn't see all the intricate 
+   136	detail the 486er has put into his attire, and all people walk exactly 
+   137	the same, but they can still sit, chat, and play a nice game of 
+   138	Strattagema.)
+   139	
+   140		Event Integrity is a side effect of distributed processing. Simply 
+   141	put: you can't trust the home computer. Hackers have all the time in 
+   142	the world to crack the software and make it send messages it 
+   143	shouldn't. This is akin to the long debated copy protection problem, 
+   144	but comes with its own unique solution: The Host. Since the host is 
+   145	the final arbiter of all events, it should be programmed at a very 
+   146	high level to reject bad messages.
+   147	
+   148		Data Communications Standards are key to the future viability 
+   149	of Cyberspace. A protocol is required that is efficient and forward 
+   150	looking,  with hooks for future revisions (as bandwith increases) and 
+   151	data encryption. Anything that is going to be used for business will 
+   152	need to transmit its data securely for protection against espionage.  
+   153	Also, the standard needs to address such issues as Email and  
+   154	gateways to those entrenched text-only systems.  I want to read my 
+   155	Usenet mail printed on a sheet of paper in my Cyberhand!
+   156	
+   157		Since the host coordinates all activity for all users, Host 
+   158	Horsepower is by far the most critical issue. For the first few years of 
+   159	operations, Cyberspace will have a single centralized host consisting 
+   160	of several connected multi-processing computers.  In order to keep 
+   161	overhead to a minimum, bandwidth and database access will need to 
+   162	be tightly limited.  The communications protocol will need to be 
+   163	super efficient and messages must be kept tiny.  Eventually there 
+   164	will be several independent Cyberspaces, perhaps on LANs or a 
+   165	larger BBS. Of course, while you are walking around in your office 
+   166	Cyberspace, you might want to go to other Cyberspaces, so a 
+   167	distributed host model will need to be designed.  By not having a 
+   168	central host keep track of everything and everyone, this distributed 
+   169	model will actually decrease the load on each host. This will allow 
+   170	Cyberspace to take on a few interesting features: 1) Each host can be 
+   171	a different kind of place, with different 'rules' (e.g. A role-playing 
+   172	Cyberhost would probably have monsters, combat rules -including 
+   173	character death- and a no-holds-barred policy about participant 
+   174	behavior whereas an office Cyberhost would have access protection 
+   175	and wouldn't allow personal combat of any type), 2) Increased 
+   176	capacity without loss of access, and 3) Faster growth.
+   177	
+   178	When will it happen?
+   179	
+   180		Rather than pin a date on my Cyberverse, I will outline a 
+   181	possible implementation path, including all of the developments 
+   182	publicly announced to date.
+   183	
+   184	Event: Spring 1989 "Habitat" A.K.A. "The Poor Man's Cyberspace"
+   185		Ship Low End Prototype:
+   186			Third person, 2D, Low resolution, Low bandwidth,
+   187			multi-user Cyberspace with joystick/keyboard interface
+   188			Purpose: Entertainment
+   189	
+   190	Event: Fall? 1990 "CyberCad"
+   191		Ship commercial CAD version of Cyberspace Interface
+   192			Eyephones, DataGlove/DataSuit. First person, single-user
+   193			3D graphics (wire frame on small computers).
+   194			Purpose: Commercial CAD
+   195			
+   196	Event: AT&T starts installing nationwide ISDN(9), promises 
+   197	installation
+   198		by 2001 (this should drive bandwidth to 1.5gigabits/second!)
+   199	Event: 'DataGlove, the cheap version' arrives.
+   200	Event: 9600/19.2k baud modems <$100 dollars
+   201	Event: A Cyberspace team defines the first Cyberspace Data and 
+   202		Communications Standards (an event they will regret later
+   203		when this interim hack becomes the defacto standard)
+   204	Event: 486/68040 50+ megahertz computers sell for <$1000 dollars.
+   205	
+   206	Event: (about 1995) "Cyberverse 1.0" (U.S.? Japan?)
+   207		Ship first multi-purpose Cyberspace universe
+   208			Eyephones optional, mouse or glove required
+   209			Local data stored on high density media (CDROM?)
+   210			9600baud minimum speed, LAN version available.
+   211			(host still required)
+   212	
+   213	Event: Computers get 10X faster and 10X more memory/storage.
+   214	Ongoing event: AT&T still installing ISDN
+   215	Event: (about 2000) Japan completes ISDN installation, selling
+   216		ISDN 'modems' cheap!
+   217	Event: First 'cracker' group has successfully done measurable
+   218		damage to the global Cyberverse.
+   219		The back doors are all closed. Or are they?
+   220	Event: After cursing the original Cyberdesigners for several years
+   221		now, the Data and Comm standards are updated to support.
+   222		multi- and distributed-host models. Massive testing required.
+   223	Event: First suicide attributed, by the media, to a game played while
+   224		in Cyberspace.
+   225	Event: First combination television/phone/computer successfully 
+   226		mass marketed??
+   227	
+   228	Event: (about 2000) "Cyberverse 2.0"
+   229		Ship distributed host version
+   230			Supports latest user interface hardware (optionally).
+   231			Now a host is not required.
+   232	
+   233	Event: (about 2010) AT&T finally completes ISDN. Wall size 
+   234		videophone reaching suburban markets (10-20 years late?)
+   235	Event: Congress takes significant note of the Cyberverse, because
+   236		trade unions (and other lobbies) note significant
+   237		changes in the distribution of political power.
+   238		First Cyberspace lobby arrives in Washington.
+   239	Event:10-20% of Americans spend over 4 hours per day "on the
+   240		Other Side". First chapter of Mothers Against Cyberspace
+   241		forms, claims 'Junior' never goes out to playI
+   242		(We gotta think about this stuff too, ya know!)
+   243	
+   244	Event: (the Future) "Cyberverse 3.0" A.K.A. "The Big Payoff"
+   245		Distribute version 3.0 via Cybersoft retail outlets in Cyberspace
+   246			100,000+baud, allowing life-like personalizations
+   247			EEG direct input? Hologram Video? Retinal Projection?
+   248			Full Body digitizing? Forced feedback?
+   249			Voice input/output? World access via remote-robots?
+   250			
+   251	
+   252	Farmer, you're full of Cybercrud!(10)
+   253	
+   254		Oh, yeah? A 386/CDROM version of Habitat will soon be 
+   255	released in Japan.  Other foreign companies are also interested in this 
+   256	technology, and some are talking about multi-machine support, 
+   257	standards, and the future.  My only fear is that the long-term nature 
+   258	of this project will cause American companies to shy away, and let 
+   259	yet another new technology be monopolized by other, more forward-
+   260	looking nations.
+   261	
+   262	(1)Credit where credit is due: Chip Morningstar was original designer 
+   263	and leader of the Habitat project. Aric Wilmunder was the other 
+   264	primary C64 programmer. Janet Hunter did most of the Host work. I 
+   265	was also chief operator and world builder. Habitat has not yet been 
+   266	released in its complete form (it will in Japan in '90). For a taste of a 
+   267	much-scaled-down version, check out Club Caribe on QuantumLink 
+   268	(you'll need a C64 & software). Call 800-782-2278 for details.
+   269	(2) Nelson, Theodor, Standard Public Xanadu Speech. Xanadu is the 
+   270	name of the original mega-hypertext product.
+   271	(3) Khosla, Vinod, of Dynabook Technologies quoted in Bay Area 
+   272	Computer Currents "Dynabook! Dynamite?" Vol 7,#4 pp 22-24.
+   273	(4) Laurel, Brenda, mentions Cyberspace in "New Interfaces for 
+   274	Interactive Entertainment" in Vol 2, #5 of The Journal of Computer 
+   275	Game Design.
+   276	(5) Vinge, Vernor, "True Names" republished in an anthology "True 
+   277	Names and Other Dangers" (mandatory reading for would-be 
+   278	Cyberhacks)
+   279	(6) Gibson, William, "Neuromancer"  (recommended reading)
+   280	7)Nix, Shan, interviews Jaron Lanier of VPL in The San Fransisco 
+   281	Chronicle, "Welcome to the World of Hyper-Reality" early August 
+   282	1986, pp B1,B6
+   283	(8) ibid
+   284	(9)ISDN:Integrated Services Digital Network: instead of converting 
+   285	digital data to analog (via modem) and back again, digital data is 
+   286	dropped directly on to phone lines. Maximum throughput of full scale 
+   287	fiber-optic ISDN is 1 to 6 gigabits/second or more. Several foreign 
+   288	countries have made ISDN a national priority.
+   289	(10)Nelson, Theodor: Computer Lib/Dream Machines Microsoft Press 
+   290	Revised Edition 1987 pp 27-29
+   291	
+   292	----------------------------------------------------------------------------
+   293	Well, there you have it, my first published article :-). All comments welcome.
+   294	
+   295	Don't pay too much attention to the timeline, it's meant mostly to point
+   296	out that there are no real technical barriers to this vision, and the future
+   297	should only see the kind of improvments we've seen with computers: Faster,
+   298	Bigger, and more Resolution.
+   299	
+   300	
+   301	
+   302	
+   303	
+   304	
+   305	
+   306	 

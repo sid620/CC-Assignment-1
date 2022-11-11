@@ -1,0 +1,272 @@
+     1	                    ASP Membership Requirements
+     2	
+     3	The following are the general standards that ALL ASP authors (full members)
+     4	have agreed to follow.  Each was passed by at least a 2/3 vote of those
+     5	members voting and is binding on all authors.  They consist of a support
+     6	policy, a policy on payments, a policy on no crippled software, an
+     7	Ombudsman policy and some miscellaneous items:
+     8	
+     9	
+    10	               **** ASP SOFTWARE SUPPORT POLICY ****
+    11	
+    12	1. All ASP members' shareware products must provide support (included in the
+    13	purchase price) for a minimum of three months from the date of registration.
+    14	If the support is by telephone, there may be a limitation on BOTH the total
+    15	connect time and the period after purchase during which it is available
+    16	without additional cost so long as the connect time is at least 30 minutes
+    17	during the required three months.  Support may be provided for a fee after
+    18	this initial period has elapsed. The support policy must be clearly stated in
+    19	the shareware documentation.
+    20	
+    21	2.  Support during the initial period may be one or more of the following:
+    22	
+    23	    - mail support
+    24	
+    25	    - telephone support (if this is the only support provided, at a
+    26	      minimum an answering machine must be available 4 hours per day; this
+    27	      support may be limited to thirty minutes of connect time at the
+    28	      option of the author)
+    29	
+    30	     - for communications products, or ones associated to a communication
+    31	       product by BBS or major communications service
+    32	
+    33	     - by any alternate method approved by the Board of Directors by a two
+    34	       thirds vote (of those directors voting)
+    35	
+    36	3.  The minimum level of support required by this policy involves answering
+    37	questions and fixing serious bugs during the minimum three month period.  For
+    38	problems involving a specific hardware or software environment or feature, the
+    39	author may choose not to modify the program.  In that case, if the report is
+    40	within three months after purchase, then the author shall offer to refund the
+    41	user's purchase price.
+    42	
+    43	4. Any money sent to an author to register an unsupported product shall be
+    44	promptly returned with an explanation that the product in question is no
+    45	longer supported.
+    46	
+    47	5.   Known incompatibilities with other software or hardware and major or
+    48	unusual program limitations are noted in the documentation that comes with
+    49	the shareware (evaluation) program.
+    50	
+    51	
+    52	
+    53	            **** ASP REGISTRATION PAYMENT POLICY *****
+    54	
+    55	1. The Documentation must clearly describe how to register the product and
+    56	what goods and/or services the user will receive for registering.
+    57	
+    58	2. Fees must be expressed in fixed monetary amounts.  Voluntary payments or
+    59	contributions may not be solicited, although phrasing such as "if you use
+    60	and like this product, please register" is allowed.
+    61	
+    62	3. Multiple levels of registration may be set, as long as each level
+    63	individually satisfies the above two requirements.
+    64	
+    65	
+    66	               **** ASP POLICY ON NO CRIPPLING ****
+    67	
+    68	The principle behind shareware is "try before you buy."  ASP believes that
+    69	users have a right to try a fully functioning shareware program in their
+    70	regular computing environment. Accordingly, ASP authors agree that:
+    71	
+    72	   (1) The executable files (and/or items linked in with executables)
+    73	   in their shareware and registered versions will be the same (with
+    74	   the exceptions noted below)
+    75	
+    76	   (2) All the program's features will be fully documented.
+    77	
+    78	   (3) Registration encouragement procedures which in the judgment of
+    79	   the Board are either unreasonable or unprofessional are not allowed.
+    80	
+    81	       Registration Reminder Screens should (if used):
+    82	
+    83	          1) be displayed no more than twice each time the program
+    84	             runs (or twice per day for long-running programs such as
+    85	             TSR's).
+    86	
+    87	          2) not require more than two keystrokes to bypass.
+    88	
+    89	          3) not have a forced minimum display time of more than three
+    90	             seconds.  In other words, the RRS itself should not take
+    91	             control of the computer away from the user for more than
+    92	             three seconds.
+    93	
+    94	          Practices such as creating undocumented hidden files or printing
+    95	          a registration form without the user's knowledge or consent are
+    96	          prohibited.  It is NOT necessary to have any of the above as a
+    97	          simple "Strike Any Key To Continue" is the least objectional to
+    98	          the user.
+    99	
+   100	    (4)  Solicitation of sales of a non-shareware version (NSV) of a
+   101	          shareware program may be made in the evaluation version only if it
+   102	          meets the following guidelines:
+   103	
+   104	          (a) Features of the NSV not in the shareware version must not be
+   105	              detailed in the body of the documentation. An appendix or
+   106	              separate file listing the features may be used.
+   107	
+   108	          (b) The shareware version may not present any features of the NSV
+   109	              during its operation such as in stubbed-out menus or in on-line
+   110	              help. A solicitation of the NSV and its features may be
+   111	              presented in any Registration Reminder Screens and on order
+   112	              forms.
+   113	
+   114	          (c) The names of the NSV and the shareware program must be
+   115	              distinctly different. Suffixes such as 'Plus', 'Pro',
+   116	              'Gold', 'LAN', etc. meet this distinction. Numeric version
+   117	              or suffix numbers do not meet this distinction.
+   118	
+   119	          (d) The shareware version may not be designed or implemented in
+   120	              such a fashion that, in the opinion of 60% of the Board of
+   121	              Directors, it gives the user the impression that the
+   122	              shareware version's major purpose is to sell copies of the NSV.
+   123	
+   124	
+   125	Exceptions to a strict interpretation of this policy are as follows:
+   126	
+   127	   - to save disk space, tutorial and additional explanatory
+   128	     material may be left out of the shareware documentation.
+   129	
+   130	   - the shareware version may have registration encouragement
+   131	     procedures absent from the registered version (or which can be
+   132	     disabled with a code only provided to registered users).
+   133	
+   134	   - the registered version may include sample files not included
+   135	     in the shareware version.
+   136	
+   137	   - if source code is offered with the registered version,
+   138	     it may be withheld from the shareware version.
+   139	
+   140	   - the author may provide two shareware versions: one a small
+   141	     version which the author designates the distributed version
+   142	     in normal circumstances (e.g. language tools in C only
+   143	     available in one model) so long as the full shareware version
+   144	     is available from some public source (possibly for a small
+   145	     distribution fee) and may be copied for trial purposes.
+   146	     The small version's documentation must clearly describe
+   147	     how users may obtain the full shareware version.
+   148	
+   149	   - registered users may be provided bonus utilities unrelated to
+   150	     (and which do not change) the basic functionality of the program
+   151	
+   152	   - registered users may be given utilities which provide a
+   153	     convenience but which are not essential
+   154	
+   155	   - exceptions approved by the ASP board of directors
+   156	     by a 60% vote of those voting
+   157	
+   158	   - It is an acceptable registration incentive to market the first
+   159	     product of a series as shareware and use the remaining products as
+   160	     registration incentives, so long as the remaining products are
+   161	     merely "more of the same" when compared to the first product. The
+   162	     author may charge a single registration fee for the set, or may use
+   163	     varying levels of registration to allow customers to obtain the
+   164	     original product and/or remaining products.
+   165	
+   166	
+   167	                  **** ASP OMBUDSMAN POLICY ****
+   168	
+   169	1.  The board shall set up the office of Ombudsman and appoint someone to
+   170	    that position.  The Ombudsman's sole role shall be to mediate disputes
+   171	    between ASP members and their customers.  The Ombudsman shall report
+   172	    to the board situations where he feels board action or knowledge is
+   173	    appropriate.
+   174	
+   175	2.  All ASP members and vendor associate members are required to cooperate
+   176	    with the Ombudsman when approached by him/her.
+   177	
+   178	3.  The Shareware version of any shareware program produced by ASP author
+   179	    members must contain the following text as part of some file on the
+   180	    disk.  (The shareware version means the one intended for trial use).
+   181	
+   182	    "This program is produced by a member of the Association of Shareware
+   183	    Professionals (ASP).  ASP wants to make sure that the shareware
+   184	    principle works for you. If you are unable to resolve a
+   185	    shareware-related problem with an ASP member by contacting the member
+   186	    directly, ASP may be able to help. The ASP Ombudsman can help you
+   187	    resolve a dispute or problem with an ASP member, but does not provide
+   188	    technical support for members' products.  Please write to the ASP
+   189	    Ombudsman at 545 Grover Road, Muskegon, MI USA 49442-9427, Fax
+   190	    616-788-2765, or send a CompuServe message via CompuServe Mail to ASP
+   191	    Ombudsman 70007,3536."
+   192	
+   193	4.  Inclusion of Ombudsman statement.
+   194	
+   195	    a.  The Ombudsman statement shall be included in the shareware version
+   196	         in a location clearly accessible to the evaluator.
+   197	
+   198	     b.  Any registered versions which contain reference to the ASP or use
+   199	         the ASP logo must contain the Ombudsman statement but they may be
+   200	         in a written form rather than on disk.
+   201	
+   202	     c.  If the ASP logo or name is used by any ASP approved vendor in any
+   203	         ads/catalogs etc , then that vendor must include the OMB
+   204	         statement with their catalogs and newsletters and is encouraged
+   205	         to include it with any disks sold containing ASP member programs.
+   206	
+   207	     d.  Members are free to include the Ombudsman statement in printed
+   208	         documentation, ads and other mailings if they wish.
+   209	
+   210	5.  The first sentence may be replaced by "<Member's name> is a member of
+   211	    the Association of Shareware Professionals (ASP)."  If a member's
+   212	    company qualifies under the company name policy, the company name may
+   213	    be used instead of <member's name>.
+   214	
+   215	6.  ASP approved vendors must include the following statement with their
+   216	    catalogs and newsletters and are encouraged to include it with all
+   217	    disks sold:
+   218	
+   219	    "Company X is an Approved Vendor and a member of the Association
+   220	    of Shareware Professionals (ASP). ASP wants to make sure that the
+   221	    shareware principle works for you. If you are unable to resolve
+   222	    a shareware-related problem with an ASP member by contacting the
+   223	    member directly, ASP may be able to help. The ASP Ombudsman can
+   224	    help you resolve a dispute or problem with an ASP member, but does not
+   225	    provide technical support for members' products. Please write to the
+   226	    ASP Ombudsman at 545 Grover Road, Muskegon, MI USA 49442-9427, Fax
+   227	    616-788-2765, or send a CompuServe message via CompuServe Mail to ASP
+   228	    Ombudsman 70007,3536."
+   229	
+   230	7.  The Ombudsman statement may not be hidden in a file or other manner
+   231	    which 60% of the board of directors regards as obscure.
+   232	
+   233	8.  ASP approved BBS Systems must include the following statement as a
+   234	    system bulletin (or as a downloadable file, if and only if an online
+   235	    bulletin is not feasible), Which is to be accessible by all callers:
+   236	
+   237	    "<Name of BBS> is an Approved BBS and a member of the Association
+   238	    of Shareware Professionals (ASP). ASP wants to make sure that
+   239	    the shareware principle works for you. If you are unable to resolve
+   240	    a shareware-related problem with an ASP member by contacting the
+   241	    member directly, ASP may be able to help. The ASP Ombudsman can
+   242	    help you resolve a dispute or problem with an ASP member, but does not
+   243	    provide technical support for members' products. Please write to the
+   244	    ASP Ombudsman at 545 Grover Road, Muskegon, MI USA 49442-9427, Fax
+   245	    616-788-2765, or send a CompuServe message via CompuServe Mail to ASP
+   246	    Ombudsman 70007,3536."
+   247	
+   248	9.  If posted as a bulletin, the title of said bulletin shall be "ASP
+   249	    Ombudsman Statement"; if posted as a downloadable file, the filename
+   250	    shall be "ASPOMB.xxx" (where "xxx" is representative of either a
+   251	    text ar archive filename extension.)
+   252	
+   253	
+   254	                   **** ASP MISC STANDARDS ****
+   255	
+   256	The program has been thoroughly tested by the author and should not be
+   257	harmful to other files or hardware if used properly.
+   258	
+   259	Any discussion of the shareware concept and of registration requirements is
+   260	done in a professional and positive manner.
+   261	
+   262	The program author will respond to people who send registration payments, as
+   263	promised in the program's documentation.  At a minimum, the author will
+   264	acknowledge receipt of all payments.
+   265	
+   266	 The author will keep the ASP apprised of changes in mailing address and of
+   267	any changes in the status of his/her programs to:
+   268	
+   269	    ASP Executive Director
+   270	    545 Grover Road
+   271	    Muskegon  MI  49442-9427
+   272	

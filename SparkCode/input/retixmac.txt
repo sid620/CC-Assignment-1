@@ -1,0 +1,39 @@
+     1	Santa Monica, CA, January 6, 1992 -- Retix, a leading worldwide supplier of
+     2	Open Networking products, today announced that it has begun shipments of
+     3	its Microsoft Mail for Macintosh Gateway to X.400. The gateway provides
+     4	Microsoft Mail (MS Mail) users with direct access to X.400 network users
+     5	worldwide.
+     6	
+     7	The MS Mail Gateway links users of MS Mail for the Macintosh to users of
+     8	other leading LAN-based electronic mail (e-mail) products, mainframe and
+     9	mini-computer based e-mail systems and public and private X.400 services.
+    10	The gateway works in conjunction with Retix' OpenServer 400 to provide MS
+    11	Mail-to-X.400 file conversion and transmission facilities. Using the
+    12	standard X.400 data format, messages can be exchanged between otherwise
+    13	incompatible e-mail programs, regardless of the computing platform.
+    14	
+    15	Pricing for the gateway begins at $1,795, U.S. list. For more information,
+    16	contact Retix Inside Sales at 1-800-255-2333 or 310-828-3400.
+    17	
+    18	Retix is a leading worldwide supplier of Open Networking products to the
+    19	end user and OEM markets. Founded in 1985, Retix designs, manufactures and
+    20	markets both OSI software and internetworking bridges and routers to end
+    21	users, OEMs, systems integrators, value-added resellers and distributors.
+    22	Retix has more than 200 OSI original equipment manufacturer (OEM)
+    23	licensees throughout the world and has sold over 20,000 bridges and
+    24	routers. Retix' shares are traded on the NASDAQ National Market System
+    25	under the symbol "RETX".
+    26	
+    27	Retix, 2401 Colorado Ave, Santa Monica, CA 90404
+    28	310-828-3400
+    29	
+    30	  +---------------------------------------------------------------+
+    31	  |  From the America On-Line & PC-Link New Product Info Services |
+    32	  +===============================================================+
+    33	  | This information was processed with OmniPage Professional OCR |
+    34	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+    35	  | provided by the above mentioned company. For additional info, |
+    36	  | contact the company at the address or phone# indicated above. |
+    37	  |    All submissions for this service should be addressed to    |
+    38	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+    39	  +---------------------------------------------------------------+

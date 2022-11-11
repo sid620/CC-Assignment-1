@@ -1,0 +1,153 @@
+     1	Redmond, Washington -- ADIC - Advanced Digital Information Corporation -
+     2	intends to ship its 4mm DAT Autochanger for Novell networks on March 1,
+     3	1992. A tape storage subsystem that holds up to 96 gigabytes of data based
+     4	on the Hewlett-Packard 4mm DCLZ data compression drive, the Autochanger
+     5	operates in either random access or sequential stacker mode, utilizing a
+     6	standard SCSI interface. Combined with Cheyenne Software's ARCserve 4.0
+     7	Autochanger Software Module, the Autochanger provides fully automated,
+     8	high-capacity NetWare data storage and management.
+     9	
+    10	Because of the product's flexibility and massive storage capability, the
+    11	Autochanger can also be used in mini computer and mainframe applications.
+    12	In fact, the Autochanger has already been certified for private label use
+    13	by one of the largest mini computer manufacturers in the country.
+    14	
+    15	The Autochanger's proven design is the result of three years of development
+    16	and extensive environmental testing to assure data integrity and long-term
+    17	reliability. The DAT Autochanger automatically changes cartridges as they
+    18	become full and retrieves data on a file-by-file basis. The detachable
+    19	tape magazine has a snap-on dust-proof cover for convenient transport and
+    20	storage and complete media protection.
+    21	
+    22	List price for the DAT Autochanger is $12,900. Cheyenne Software's ARCserve
+    23	4.0 is available for $1195 for a 20-user solution. The Autochanger is
+    24	available immediately through ADIC (800-336-1233) and through
+    25	distribution. Call ADIC for a list of authorized distributors.
+    26	
+    27	--------------------------------------------------------
+    28	
+    29	February 10, 1992 -- Redmond, Washington--Emulex Corporation has begun
+    30	shipment of Advanced Digital Information Corporation's 4mm DAT Autochanger
+    31	under its own private label. The DAT Autochanger, a random access storage
+    32	subsystem, is manufactured by ADIC and is being sold under the Emulex
+    33	label to DEC users with HSC (Hierarchical Storage Controller)
+    34	VAXclusters.
+    35	
+    36	Advanced Digital Information Corporation's DAT Autochanger, currently being
+    37	exhibited at Networld 92 Boston, stores up to 96 gigabytes of data based
+    38	on the Hewlett-Packard 4mm DCLZ data compression drive. The autochanger
+    39	operates in either random access or sequential stacker mode, utilizing a
+    40	standard SCSI interface. Optional host adapters and software provide a
+    41	complete backup solution for DEC VAXclusters.
+    42	
+    43	Ernie Brown, Vice President of OEM sales for ADIC, states, "This
+    44	association with Emulex will provide significant opportunities for DEC
+    45	users to substantially expand their storage capabilities."
+    46	
+    47	The autochanger's proven design is the result of three years of development
+    48	and extensive environmental testing to assure data integrity and long-term
+    49	reliability. The twelve-cassette removable magazine with protective cover
+    50	ensures complete media protection at all times.
+    51	
+    52	Emulex is the leading independent supplier of Digital Equipment Corporation
+    53	peripherals. The Autochanger, sold under the model name SSCH40 by Emulex,
+    54	is combined with the Emulex ST01 and DSSI controllers and is available
+    55	from Emulex starting at $15,340.
+    56	
+    57	--------------------------------------------------------
+    58	
+    59	February 10, 1992 -- Redmond, Washington--Advanced Digital Information
+    60	Corporation (ADIC) today announced that Cheyenne Software's newest
+    61	ARCserve data management software release, ARCserve 4.0, is anticipated to
+    62	be available for the ADIC DAT Autochanger storage management system by
+    63	March 1, 1992. Combined with the ARCserve 4.0 Autochanger Software Module,
+    64	the ADIC DAT Autochanger provides fully automated, high-capacity NetWare
+    65	data storage and management. The DAT Autochanger and ARCserve 4.0 are
+    66	being demonstrated at Networld 92 Boston, February 11-13, ADIC Booth
+    67	#3010.
+    68	
+    69	The DAT Autochanger is ADIC's second generation of auto-changing devices.
+    70	It combines the Hewlett-Packard 4mm DDS DAT drive with its hardware-based
+    71	data compression to provide up to 96 gigabytes of random access data
+    72	storage and retrieval through use of a 12-tape magazine and tape
+    73	autochanger. This combination offers a low media cost with high capacity
+    74	and fast data transfer rates, making it a viable solution for automating
+    75	LAN backup.
+    76	
+    77	Cheyenne Software's ARCserve 4.0 is approved by Novell for use with
+    78	NetWare. This new software release includes AutoPilot, a hierarchical file
+    79	and tape rotation management system. Its high-speed, automated and
+    80	unattended scheduling works in cooperation with a highly versatile file
+    81	selection system to take full advantage of the DAT Autochanger's
+    82	12-cartridge magazine.
+    83	
+    84	Local server backup avoids network traffic and achieves maximum speed by
+    85	handling more data in less time. ARCserve 4.0 backs up an entire Local
+    86	Area Network (LAN), including local and remote servers, workstations,
+    87	program, data and bindery files and all NetWare file attributes and
+    88	trustee assignments.
+    89	
+    90	With the combination of ADICs DAT Autochanger and Cheyenne's ARCserve, the
+    91	backup process is completely automatic, unattended and reliable.
+    92	
+    93	List price for the DAT Autochanger is $12,900. ARCserve starts at $1,195
+    94	for a 20-user version. The ARCserve autochanger module is bundled with the
+    95	DAT Autochanger and is compatible with ARCserve 4.0.
+    96	
+    97	--------------------------------------------------------
+    98	
+    99	February 10, 1992 -- Redmond, Washington--Advanced Digital Information
+   100	Corporation (ADIC) today announced that Cheyenne Software's new ARCserve
+   101	data management software version 4.0 and ARCserve/Solo are available for
+   102	the ADIC DATa 8000 tape backup system. Combined with workstation-based
+   103	ARCserve/Solo or file server-based ARCserve 4.0, the ADIC DATa 8000
+   104	provides fully automated, high-capacity NetWare data storage, archiving
+   105	and restoring capabilities. The DATa 8000, ARCserve/Solo and ARCserve 4.0
+   106	are being demonstrated at Networld '92 Boston, February 11-13, ADIC Booth
+   107	#3010.
+   108	
+   109	The DATa 8000 is an external DAT backup drive for Novell LANs, with up to 8
+   110	gigabytes of storage capacity. It combines the Hewlett-Packard 4mm DDS
+   111	drive with its hardware-based data compression to provide up to 8
+   112	gigabytes of random access data storage and retrieval. This combination
+   113	offers the highest capacity backup storage at the lowest price for
+   114	comparable high capacity 4mm backup products on the market today. The
+   115	unit's 3.25"H x 6.75"W x 1l"D footprint allows it to be extremely portable
+   116	and easy to integrate into networks.
+   117	
+   118	Cheyenne Software's ARCserve 4.0 and ARCserve/Solo are approved by Novell
+   119	for use with NetWare. Both packages back up an entire Local Area Network
+   120	(LAN), including local and remote servers, workstations, program, data and
+   121	bindery files and all NetWare file attributes and trustee assignments.
+   122	
+   123	ARCserve 4.0 is a sophisticated server-based solution that includes
+   124	autopilot capabilities, with hierarchical file management, and
+   125	daisy-chaining support. Its high-speed, automated and unattended
+   126	scheduling works in cooperation with a highly versatile selection system.
+   127	
+   128	ARCserve/Solo is the first workstation-based backup/restore solution that
+   129	provides the high quality features usually associated only with NLM
+   130	(Network Loadable Module) capabilities. ARCserve/Solo is also upwardly
+   131	compatible with ARCserve 4.0.
+   132	
+   133	List price for the DATa 8000 is $3,490. The ARCserve with a 20-user license
+   134	is $1195. ARCsolo lists for $190.
+   135	
+   136	ADIC, headquartered in Redmond, Washington, manufactures high-performance
+   137	tape backup systems and disk storage subsystems for applications in which
+   138	data integrity and product reliability are imperative.
+   139	
+   140	ADIC - Advanced Digital Information Corp
+   141	PO Box 2996, Redmond, WA 98073
+   142	206-881-8004
+   143	
+   144	  +---------------------------------------------------------------+
+   145	  |  From the America On-Line & PC-Link New Product Info Services |
+   146	  +===============================================================+
+   147	  | This information was processed with OmniPage Professional OCR |
+   148	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+   149	  | provided by the above mentioned company. For additional info, |
+   150	  | contact the company at the address or phone# indicated above. |
+   151	  |    All submissions for this service should be addressed to    |
+   152	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+   153	  +---------------------------------------------------------------+

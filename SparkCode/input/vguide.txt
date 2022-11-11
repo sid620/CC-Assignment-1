@@ -1,0 +1,2676 @@
+     1	
+     2	
+     3	
+     4	
+     5	                             DISK VENDOR'S GUIDE
+     6	
+     7	                              Copyright 1992 by
+     8	                    Association of Shareware Professionals
+     9	                               545 Grover Road
+    10	                           Muskegon  MI  49442-9427
+    11	                                    U.S.A.
+    12	
+    13	
+    14	                                March 15, 1993
+    15	
+    16	                                      -
+    17	
+    18	                            CompuServe 72050,1433
+    19	
+    20	
+    21	          A limited license is granted to reprint short extracts from
+    22	          this guide as long as credit is given and a copy is sent to
+    23	          the address above.  Individuals may copy this guide for each
+    24	          other as long as no fee is charged.  Others including disk
+    25	          vendors, BBSs and User Groups may distribute copies of the
+    26	          unmodified self-extract VGUIDE.EXE file as long as the file or
+    27	          its contents are NOT renamed, modified or made part of some
+    28	          larger work without the written permission of the ASP.  A BBS
+    29	          may rearchive the unmodified VGUIDE.DOC file that is contained
+    30	          within VGUIDE.EXE as long as the resulting archive name is
+    31	          VGUIDE.ZIP, VGUIDE.LZH, VGUIDE.ARC, VGUIDE.???
+    32	
+    33	                                     ----
+    34	
+    35	          NOTICE:   ALL INFORMATION, TIPS AND ADVICE IN THIS GUIDE ARE
+    36	          PRESENTED TO "GUIDE" YOU INTO AREAS FOR YOU TO RESEARCH AND
+    37	          STUDY IN MORE DETAIL ON YOUR OWN.  IN NO CASE WILL THE ASP OR
+    38	          OTHER CONTRIBUTING WRITERS BE LIABLE FOR DAMAGES RESULTING
+    39	          FROM YOUR ACTING UPON INFORMATION THAT IS CONTAINED HEREIN. IN
+    40	          PARTICULAR, AN ATTORNEY SHOULD BE CONSULTED ON ANY QUESTIONS
+    41	          OF LAW BEFORE FOLLOWING ADVICE CONTAINED HEREIN.
+    42	
+    43	                                     ----
+    44	
+    45	          The primary author of this document is George Abbott. 
+    46	          Contributing authors are Nelson Ford, Eric Isaacson, Tom
+    47	          Wagner and many others.
+    48	
+    49	                                     ----
+    50	
+    51	          To contact the ASP, write to Association of Shareware
+    52	          Professionals, 545 Grover Road, Muskegon MI 49442-9427,
+    53	          telephone 616-788-5131 or you can FAX to 616-788-2765 and ask
+    54	          for a Vendor Application kit.
+    55	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+    56	
+    57	
+    58	                              Table Of Contents
+    59	
+    60	     1.   Forward  . . . . . . . . . . . . . . . . . . . . . . . . .    3
+    61	          1.1  What Is Shareware?  . . . . . . . . . . . . . . . . .    4
+    62	
+    63	     2.   Introduction . . . . . . . . . . . . . . . . . . . . . . .    5
+    64	
+    65	     3.   Getting Started  . . . . . . . . . . . . . . . . . . . . .    6
+    66	          3.1  Identify Your Market Niche  . . . . . . . . . . . . .    6
+    67	               3.1.1     Local Shows & Flea Markets. . . . . . . . .    6
+    68	               3.1.2     Selling Shareware From Your Retail Store. .    6
+    69	               3.1.3     Shopping Malls. . . . . . . . . . . . . . .    6
+    70	               3.1.4     Mail Order Shareware. . . . . . . . . . . .    6
+    71	               3.1.5     Rack Vendor . . . . . . . . . . . . . . . .    7
+    72	          3.2  Collecting Shareware Disks - Overview.  . . . . . . .    7
+    73	          3.3  Reviewing The Disks . . . . . . . . . . . . . . . . .    8
+    74	          3.4  Logos & Letterhead  . . . . . . . . . . . . . . . . .    9
+    75	
+    76	     4.   Preparing Your Catalog . . . . . . . . . . . . . . . . . .   11
+    77	          4.1  Honesty In Advertising  . . . . . . . . . . . . . . .   11
+    78	          4.2  Use A Good Word Processor . . . . . . . . . . . . . .   12
+    79	
+    80	     5.   Hardware . . . . . . . . . . . . . . . . . . . . . . . . .   13
+    81	          5.1  Computers . . . . . . . . . . . . . . . . . . . . . .   13
+    82	          5.2  Do NOT Depend On 1.2m Drives  . . . . . . . . . . . .   13
+    83	          5.3  Disk Duplicators  . . . . . . . . . . . . . . . . . .   15
+    84	
+    85	     6.   Software . . . . . . . . . . . . . . . . . . . . . . . . .   16
+    86	          6.1  Catalog-On-A-Disk . . . . . . . . . . . . . . . . . .   16
+    87	          6.2  Compression Software  . . . . . . . . . . . . . . . .   18
+    88	          6.3  Disk Duplication  . . . . . . . . . . . . . . . . . .   20
+    89	          6.4  Virus Scanning  . . . . . . . . . . . . . . . . . . .   22
+    90	          6.5  DOS Tutorial Shareware  . . . . . . . . . . . . . . .   23
+    91	
+    92	     7.   Supplies . . . . . . . . . . . . . . . . . . . . . . . . .   26
+    93	          7.1  Diskettes . . . . . . . . . . . . . . . . . . . . . .   26
+    94	          7.2  Mailers . . . . . . . . . . . . . . . . . . . . . . .   27
+    95	          7.3  Label Stock . . . . . . . . . . . . . . . . . . . . .   27
+    96	
+    97	     8.   Trademarks . . . . . . . . . . . . . . . . . . . . . . . .   29
+    98	
+    99	     9.   Collecting Shareware . . . . . . . . . . . . . . . . . . .   30
+   100	
+   101	     10.  Providing Technical Support  . . . . . . . . . . . . . . .   32
+   102	
+   103	     11.  The Association of Shareware Professionals ("ASP") . . . .   34
+   104	
+   105	
+   106	
+   107	
+   108	
+   109	
+   110	
+   111	                                      1
+   112	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   113	
+   114	
+   115	                              Table Of Contents
+   116	
+   117	     12.  Services . . . . . . . . . . . . . . . . . . . . . . . . .   37
+   118	          12.1 Telephone . . . . . . . . . . . . . . . . . . . . . .   37
+   119	          12.2 Credit Card Merchant Accounts . . . . . . . . . . . .   38
+   120	          12.3 A Banker's Perspective  . . . . . . . . . . . . . . .   38
+   121	
+   122	     Index . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   46
+   123	
+   124	
+   125	
+   126	
+   127	
+   128	
+   129	
+   130	
+   131	
+   132	
+   133	
+   134	
+   135	
+   136	
+   137	
+   138	
+   139	
+   140	
+   141	
+   142	
+   143	
+   144	
+   145	
+   146	
+   147	
+   148	
+   149	
+   150	
+   151	
+   152	
+   153	
+   154	
+   155	
+   156	
+   157	
+   158	
+   159	
+   160	
+   161	
+   162	
+   163	
+   164	
+   165	
+   166	
+   167	
+   168	                                      2
+   169	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   170	
+   171	
+   172	     1.   Forward
+   173	
+   174	          The purpose of this guide is to provide tips on how to start
+   175	          and run a shareware disk vending service.  A shareware disk
+   176	          vending service (Vendor) is defined as someone or a company
+   177	          that gathers and maintains a collection of shareware
+   178	          evaluation disks (creates a library), keeps the library up to
+   179	          date, publishes a catalog (printed and/or on-disk) and sells
+   180	          evaluation copies to end users.  Some vendors specialize in
+   181	          mail/telephone order, others operate booths at fairs, flea
+   182	          markets, booths in malls, etc.
+   183	
+   184	          A variant of a disk vendor is one that places racks of
+   185	          shareware in one or more retail locations.  This is usually
+   186	          referred to as a "Rack Vendor" as compared to a "Mail Order
+   187	          Vendor" as described above.  The Rack Vendor shares a portion
+   188	          of the sales price with the owner of the rack location.  Racks
+   189	          are often found in airport gift shops, convenience stores,
+   190	          retail chain stores like Walmart, K-Mart, book stores, etc. 
+   191	          Further, the Rack Vendor replenishes the supply of disks in
+   192	          the racks.  The racks vary from cardboard displays to fancy
+   193	          wire or metal racks.
+   194	
+   195	          Another type of vendor are those that produce CD-ROMs that
+   196	          contain shareware software.
+   197	
+   198	          This guide is going to folks who are considering starting a
+   199	          disk vendor business, so some of the points may seem obvious
+   200	          or elementary to experienced vendors.
+   201	
+   202	          The information and opinions in this guide are drawn from
+   203	          talking to many vendors from the ASP headquarters and from the
+   204	          contributions of many ASP members.  Many of the ideas and
+   205	          concepts in this document are discussed from time to time on
+   206	          the ASPFORUM on CompuServe.  If you have access to CompuServe,
+   207	          GO SHARE to reach the ASP forum and "talk" to hundreds of ASP
+   208	          members.
+   209	
+   210	          This document has been put together and freely distributed in
+   211	          the spirit of sharing. The ASP does not make money from it.
+   212	          All input, new information and corrections are gratefully
+   213	          accepted.
+   214	
+   215	
+   216	
+   217	
+   218	
+   219	
+   220	
+   221	
+   222	
+   223	
+   224	
+   225	                                      3
+   226	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   227	
+   228	
+   229	     1.   Forward (Continued)
+   230	
+   231	          1.1  What Is Shareware?
+   232	
+   233	               Nelson Ford (one of the ASP's founders and historians)
+   234	               relates the following: "Andrew Fluegelman started the
+   235	               formal shareware concept (he trademarked the name
+   236	               Freeware for it).  Andy did not say that everyone who
+   237	               spent an afternoon writing a program, uploaded it to a
+   238	               couple of BBSs and sat back and waited would get rich. 
+   239	               He said that the freeware approach provides a way to let
+   240	               the users decide (rather than the people who control the
+   241	               advertising prices) which programs should succeed, based
+   242	               solely on the quality and usefulness of the program."
+   243	
+   244	               Later, an article in InfoWorld used the term "shareware"
+   245	               and as far as we know, Bob Wallace (PC-Write) was the
+   246	               first to use it with a shareware product.  Also during
+   247	               that time, Nelson Ford wrote a column called "The Public
+   248	               Library" for the late SOFTALK magazine.  Nelson asked his
+   249	               readers to submit names for this new way of marketing
+   250	               software and the word "shareware" was the winner.  Over
+   251	               the years, the ASP has fought trademark cases in several
+   252	               countries when someone tried to trademark the word
+   253	               "shareware".  The ASP firmly believes that the word
+   254	               "shareware" should be freely used by anyone.
+   255	
+   256	               Nelson continues, "Shareware is not some magic way to get
+   257	               rich from trivial or substandard, amateurish products of
+   258	               limited appeal or usefulness.  Some shareware programmers
+   259	               who have failed prefer to blame the shareware approach
+   260	               rather than themselves.  They think that millions of
+   261	               people are using their programs without paying and that
+   262	               the shareware concept just doesn't work."
+   263	
+   264	               "To these people we always reply: If shareware doesn't
+   265	               work, how are Button (PC-File), Wallace (PC-Write), and
+   266	               others making over a million dollars a year at it? 'These
+   267	               are exceptions!' they reply. Sure they are exceptions.
+   268	               Anyone making a million dollars a year at anything is an
+   269	               exception. Many others are making lesser, but
+   270	               respectable, incomes. Not bad for a business that anyone
+   271	               can get into at virtually no up-front cost."
+   272	
+   273	               "Yes, shareware definitely works.  Like anything else,
+   274	               how well it works for you depends on hard work, ability,
+   275	               and even a little bit of luck.  And even luck often boils
+   276	               down to being prepared to take advantage of opportunities
+   277	               when they coming knocking.  We hope this guide will help
+   278	               you get prepared."
+   279	
+   280	
+   281	
+   282	                                      4
+   283	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   284	
+   285	
+   286	     2.   Introduction
+   287	
+   288	          These days, it seems that many people that recently  purchased
+   289	          their first computer and ran across the shareware concept
+   290	          think they can easily get into the shareware disk vendor
+   291	          business.  They see the catalogs produced by other vendors and
+   292	          say "I could do that."  Or, they realize that there are no
+   293	          disk vendors in their part of the country.
+   294	
+   295	          Starting a shareware disk vending business is a lot more work
+   296	          than first meets the eye.  There are hardware, software and
+   297	          knowledge requirements that must be considered and mastered. 
+   298	          First, you need a shareware disk collection AND permission
+   299	          from the authors (copyright holders) to distribute the
+   300	          shareware.  Next, you need appropriate hardware.  Most
+   301	          importantly, you need a lot of marketing, computer and
+   302	          software knowledge to succeed.  If you are just looking for a
+   303	          fast buck, are not willing to review the programs you carry,
+   304	          don't plan to get the latest versions, don't plan to prepare
+   305	          an organized catalog, GIVE UP NOW - you will probably fail in
+   306	          this highly competitive business.
+   307	
+   308	          However, if you don't give up, realize that there are
+   309	          thousands of disk distributors in the world today.  New ones
+   310	          start up almost daily.  Unfortunately, vendors fail and go out
+   311	          of business fairly often.  Where you will fit into the
+   312	          shareware picture is largely up to you and your efforts.  We
+   313	          hope that after reading this document, you will either be a
+   314	          successful shareware disk vendor or you will have the detailed
+   315	          information to cause you to explore different profit
+   316	          opportunities.  If you are already a shareware disk vendor,
+   317	          this document may give you tips on how to be more successful.
+   318	
+   319	          Keep in mind that a shareware disk vendor does NOT own or
+   320	          control the copyright on the shareware programs, documentation
+   321	          and supporting files provided by the author.  The author owns
+   322	          and controls the copyright.  The author can select who will be
+   323	          allowed to copy his/her shareware and how it is to be
+   324	          distributed.  The copyrights ARE enforceable.  RESPECT the
+   325	          author's copyright.  Examine every disk, not sent to you
+   326	          directly by the author, to see if the author has placed any
+   327	          copying restrictions on the disk.  You will likely need to 
+   328	          write to the authors asking permission to carry their
+   329	          shareware.  You may get both permission AND the latest
+   330	          version.  Some will even send major future upgrades.
+   331	
+   332	          There are some authors that require that all RACK and CD-ROM
+   333	          vendors get written permission and SOMETIMES royalty payments
+   334	          BEFORE the vendor can place the author's copyrighted works on
+   335	          racks or CD-ROMs EVEN IF THEY SENT YOU THEIR DISK IN THE FIRST
+   336	          PLACE.  FOLLOW ALL COPYING RESTRICTIONS OR RISK LAWSUITS
+   337	
+   338	
+   339	                                      5
+   340	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   341	
+   342	
+   343	     3.   Getting Started
+   344	
+   345	          3.1  Identify Your Market Niche
+   346	
+   347	               What got you interested in becoming a shareware disk
+   348	               vendor?  What are your objectives?  How much time can you
+   349	               devote to disk vending?  What are your financial
+   350	               resources?  Have you formulated a Business Plan?  What
+   351	               level is right for you to start?  How big do you want to
+   352	               get?  Are you prepared to succeed?  Are you prepared to
+   353	               fail?
+   354	
+   355	               3.1.1     Local Shows & Flea Markets.
+   356	
+   357	                         A really low cost way of starting is to take a
+   358	                         card table to a local computer show, swap meet
+   359	                         or flea market and set up a "booth".  You have
+   360	                         a box full of shareware disk copies, a list of
+   361	                         titles and a cash box.  Sounds easy?  Well, a
+   362	                         lot of work is behind that simple "booth".
+   363	
+   364	
+   365	               3.1.2     Selling Shareware From Your Retail Store.
+   366	
+   367	                         You already operate a computer, book, or other
+   368	                         retail store likely to be frequented by
+   369	                         computer users (almost anyone these days).  You
+   370	                         operate like the flea market fellow except that
+   371	                         you have counter or shelf space in place of the
+   372	                         card table and you have a cash register rather
+   373	                         than a cash box.
+   374	
+   375	
+   376	               3.1.3     Shopping Malls.
+   377	
+   378	                         This approach is similar to the Flea Market
+   379	                         approach except that you operate out of a small
+   380	                         booth in the walkway of a shopping mall.
+   381	
+   382	
+   383	               3.1.4     Mail Order Shareware.
+   384	
+   385	                         You put together either a printed or on-disk
+   386	                         catalog for your customers to make telephone or
+   387	                         mail order purchases.  You advertise in trade
+   388	                         magazines, local newspapers, local "shopper's
+   389	                         guides" or you make blind mailings to targeted
+   390	                         purchased mailing lists.  You should be able to
+   391	                         take credit card orders to succeed in telephone
+   392	                         or mail order.
+   393	
+   394	
+   395	
+   396	                                      6
+   397	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   398	
+   399	
+   400	     3.   Getting Started (Continued)
+   401	
+   402	          3.1  Identify Your Market Niche (Continued)
+   403	
+   404	               3.1.5     Rack Vendor
+   405	
+   406	                         A Rack Vendor is one that places racks of
+   407	                         shareware in one or more retail locations.  The
+   408	                         Rack Vendor shares a portion of the sales price
+   409	                         with the owner of the rack location.  Racks are
+   410	                         often found in airport gift shops, convenience
+   411	                         stores, retail chain stores like Walmart, K-
+   412	                         Mart, book stores, etc.  Further, the Rack
+   413	                         Vendor replenishes the supply of disks in the
+   414	                         racks.  The racks vary from cardboard displays
+   415	                         to fancy wire or metal racks.
+   416	
+   417	               You can combine any or all of the above as dictated by
+   418	               your resources and situation.
+   419	
+   420	
+   421	          3.2  Collecting Shareware Disks - Overview.
+   422	
+   423	               Investigate the marketplace.  See what others are doing. 
+   424	               Determine how you want to tackle the market.  Your disks
+   425	               must come directly from the author so that you get the
+   426	               latest and don't have copyright problems.  However, you
+   427	               can obtain disks from the various sources below so that
+   428	               you will know which authors to contact.  Make sure the
+   429	               list you put together IS of shareware or public domain
+   430	               and NOT ripped-off commercial or traditional retail type
+   431	               software.
+   432	
+   433	               Section 9 will cover Collecting Shareware in more detail. 
+   434	               Following is a quick overview of some of the ways to
+   435	               start your shareware list.
+   436	
+   437	               3.2.1     You have been involved with a large local User
+   438	                         Group and have obtained a copy of their
+   439	                         collection to build a list of authors.
+   440	
+   441	               3.2.2     You are an avid BBSer that has downloaded a lot
+   442	                         of shareware to build a list of authors.
+   443	
+   444	               3.2.3     You purchase disks from various other vendors
+   445	                         to build your list of authors to contact.
+   446	
+   447	               3.2.4     You obtain a CD-ROM disk containing hundreds or
+   448	                         thousands of shareware and public domain
+   449	                         programs.  You use this to build your list of
+   450	                         authors to contact.
+   451	
+   452	
+   453	                                      7
+   454	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   455	
+   456	
+   457	     3.   Getting Started (Continued)
+   458	
+   459	          3.3  Reviewing The Disks
+   460	
+   461	               Scan EVERY disk for virus infections.  Be sure you also
+   462	               scan shrinkwrapped "retail" software as tens of thousands
+   463	               of infected disks are shipped by major retailers every
+   464	               year.  They think viri are a shareware or BBS problem
+   465	               (NOT TRUE) and they are careless and sloppy in preparing
+   466	               their master disks.
+   467	
+   468	               Know what is in your collection.  Don't just quickly read
+   469	               the on-disk documentation.  Many ASP authors have a
+   470	               VENDOR.DOC file that contains any copying or distribution
+   471	               restrictions, a list of the files that must be present
+   472	               and a catalog description.  Starting in 1994, you will
+   473	               see a VENDINFO.DIZ file that will eventually replace the
+   474	               VENDOR.DOC file.  However, you should install the
+   475	               shareware and run it.
+   476	
+   477	               By running the software, you may find that you have
+   478	               obtained a damaged or incomplete disk.  If you distribute
+   479	               this disk, you will get expensive to handle technical
+   480	               support calls and you will have to give credit or send
+   481	               out another disk.  Or the customer will call the author. 
+   482	               Most authors send these customers a new disk AND
+   483	               recommend some other vendor to your PREVIOUS customer. 
+   484	               The same authors also recommend other vendors if you
+   485	               insist on carrying old versions.
+   486	
+   487	               If the software isn't better or different than what you
+   488	               are already carrying in your catalog, you may not wish to
+   489	               carry the shareware.  Or, you may find the new system
+   490	               better and use it to replace an existing catalog entry. 
+   491	               For example, YADS stands for "Yet Another DOS Shell" or
+   492	               menu system.  Seems like everyone thinks they have
+   493	               designed the best there is.  They haven't even looked at
+   494	               what is already available in the shareware marketplace. 
+   495	               You just can't afford to carry all of the menu systems,
+   496	               screen blankers, clocks, tickler systems, etc. that are
+   497	               constantly being designed by the authors.
+   498	
+   499	               LOOK FOR the author's distribution restrictions.  Some
+   500	               authors will NOT allow you to carry the shareware unless
+   501	               you get written permission from them.  As mentioned
+   502	               before, you should contact the author anyway as you will
+   503	               probably get the latest version if the author gives you
+   504	               permission.  SOME authors not only require written
+   505	               permission, but may also require royalties from rack and
+   506	               CD-ROM vendors even though they may have sent you their
+   507	               disks in the first place.
+   508	
+   509	
+   510	                                      8
+   511	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   512	
+   513	
+   514	     3.   Getting Started (Continued)
+   515	
+   516	          3.3  Reviewing The Disks (Continued)
+   517	
+   518	               Look for files advertising other vendors.  The files
+   519	               placed on disks the other vendor distributes are probably
+   520	               copyrighted by that vendor and you can not issue disks
+   521	               with that file.  Further, you don't want to advertise
+   522	               that other vendor's service.
+   523	
+   524	               Vendors can copyright "compilations" of many separate
+   525	               small shareware systems on one disk.  This is often done
+   526	               with small utilities.  The vendor can NOT copyright the
+   527	               individual programs and documentation (not written by the
+   528	               vendor), as the authors retain their own copyrights. 
+   529	               BUT, they can copyright the compilation.  Don't forget
+   530	               you still need permission from many of the authors to
+   531	               carry their system even in a compilation.
+   532	
+   533	               You must build up your own compilations that don't
+   534	               infringe on the other vendor's copyrights.
+   535	
+   536	               If you use disk numbers in your catalog, don't copy some
+   537	               other vendors numbering system.  You could end up in
+   538	               court.  Do your own thing.  Don't use the program
+   539	               descriptions out of some other vendor's catalog.  This is
+   540	               another way to look for copyright trouble.  However, the
+   541	               same description may appear in many vendor catalogs IF
+   542	               they all use the author's description found in the
+   543	               VENDOR.DOC or VENDINFO.DIZ files used by many authors. 
+   544	               You may use the author's description if it isn't pure
+   545	               hype.  Be sure that you describe the shareware on the
+   546	               disk and not some retail product the author is pushing in
+   547	               place of the shareware.
+   548	
+   549	               If you are/become a member of the ASP, you will receive
+   550	               the latest Official ASP Catalog each month that contains
+   551	               the author written program descriptions.  You will also
+   552	               receive a CD-ROM approximately monthly.
+   553	
+   554	
+   555	          3.4  Logos & Letterhead
+   556	
+   557	               If you really want to go into a business, get your ducks
+   558	               lined up first.  Pick a company name.  Coming up with a
+   559	               unique name could be a tough one, particularly if you use
+   560	               the word "shareware".  Also, avoid the word "freeware" as
+   561	               Headland Press still owns the Trademark on that word.  A
+   562	               lot of authors of shareware REALLY don't like to send
+   563	               their disks to an outfit with the words "public domain"
+   564	               in their name as that implies "free" (read that as no
+   565	               registration income).
+   566	
+   567	                                      9
+   568	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   569	
+   570	
+   571	     3.   Getting Started (Continued)
+   572	
+   573	          3.4  Logos & Letterhead
+   574	
+   575	               A logo always looks good on your letterhead.  If you are
+   576	               not artistic yourself, or do not have an artistic friend,
+   577	               go to your local college Art Department and see if you
+   578	               can find someone to design a logo.  At least get some
+   579	               help laying out your letterhead even if you don't use a
+   580	               logo.
+   581	
+   582	               Create a Business Plan.  Prepare a budget for the next
+   583	               several years that compares your expected income with
+   584	               expected expenses.  What advertising schedules will you
+   585	               use?  Where are you heading or where could you head? 
+   586	               Look at the market.  What penetration do you expect?
+   587	
+   588	               Go to your local IRS office (in the USA) and find out how
+   589	               to get a Federal Tax I.D. number.  It costs nothing. 
+   590	               Even if you have no employees, you will need it for your
+   591	               Tax Schedule C.  Many states that have Sales & Use taxes
+   592	               will use the same number for your State Tax license
+   593	               number.  Contact your State sales tax office.
+   594	
+   595	               Get a business checking account.  It makes it easier to
+   596	               track your costs and income for tax purposes.  If you
+   597	               have a good history with your bank, you may be able to
+   598	               get a Master/Visa Merchant account from them.  Being able
+   599	               to handle credit card sales is a real asset.  Do you have
+   600	               a sharp looking business card to hand to the bank manager
+   601	               when you are applying for a credit card Merchant Account? 
+   602	               You should be dressed in a business like manor.  Have
+   603	               every phase of your image be business like.
+   604	
+   605	               The image you present is very important.  It conveys a
+   606	               lot about your drive and commitment to succeed.  Send out
+   607	               professional looking letters to the authors and others. 
+   608	               Many authors will "round-file" (read that - trash)
+   609	               letters not on letterhead paper printed with a 9-pin dot
+   610	               matrix printer in the draft mode.  If you received such a
+   611	               letter, would you consider the sender to be "for real"
+   612	               and commit the expense to send disks?
+   613	
+   614	
+   615	
+   616	
+   617	
+   618	
+   619	
+   620	
+   621	
+   622	
+   623	
+   624	                                      10
+   625	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   626	
+   627	
+   628	     4.   Preparing Your Catalog
+   629	
+   630	          If you are a Rack Vendor, your catalog may consist of a Table
+   631	          of Contents type of listing on your rack.  You may only have
+   632	          the descriptions on the disk packages.  If you are a Rack
+   633	          Vendor, you may be able to skip after you read Section 4.1.
+   634	
+   635	          4.1  Honesty In Advertising
+   636	
+   637	               Over the years, many of us in this shareware business
+   638	               have seen many of the sleazy shareware advertisements and
+   639	               catalogs touting FREE!, FREE!, FREE! Software.  You don't
+   640	               find too many any more as most of those vendors have
+   641	               failed or have decided that honesty is the BEST policy. 
+   642	               After all, the entire shareware industry is based on
+   643	               trust between the author, vendor, BBS and end user.
+   644	
+   645	               You should prominently display a description of shareware
+   646	               and the registration process.  This is also true for Rack
+   647	               Vendors.  You must make an attempt to educate your
+   648	               customers on the nature of shareware.  You can write this
+   649	               information in your own words or use the ASP wording:
+   650	
+   651	                    "Shareware is an exciting marketing method which
+   652	                    allows you to try top-quality software before you
+   653	                    pay the author. With Shareware, you cannot be
+   654	                    disappointed spending money on a program that's not
+   655	                    right for you. The small fee you pay to us covers
+   656	                    only the duplication and distribution costs, and
+   657	                    permits you to evaluate the program."
+   658	
+   659	                    "If you continue to use the program, you must send
+   660	                    the author an additional payment which may entitle
+   661	                    you to technical support, printed manual, bonus
+   662	                    programs, and more. Your payment supports the
+   663	                    authors, enabling them to continue writing newer and
+   664	                    better Shareware programs."
+   665	
+   666	               This is important in maintaining customer satisfaction. 
+   667	               Too often a customer purchases a disk from a vendor only
+   668	               to be offended when s/he learns that an additional
+   669	               payment is required.  Customers should be fully informed
+   670	               before their purchase.
+   671	
+   672	               Some rack vendors have failed when they were not honest
+   673	               up front with the user.  The user thinks the price
+   674	               sticker is the ONLY cost of shareware.  They get angry
+   675	               when they see the author's registration requirements,
+   676	               demand their money back from the store owner and the
+   677	               store owner dumps the trouble causing rack.
+   678	
+   679	
+   680	
+   681	                                      11
+   682	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   683	
+   684	
+   685	     4.   Preparing Your Catalog (Continued)
+   686	
+   687	          4.1  Honesty In Advertising (Continued)
+   688	
+   689	               Users are not "encouraged to register", they are
+   690	               "required to register".  Please do not imply that a user
+   691	               registers only if s/he "likes" the product.  Liking the
+   692	               product is irrelevant if the user continues using it
+   693	               beyond the evaluation period.
+   694	
+   695	               Registration is required for use beyond evaluation, and
+   696	               emphasis should be placed upon the individual author's
+   697	               registration requirements.  The user's trial or
+   698	               evaluation license is determined by the copyright holder. 
+   699	               This is a legal requirement, not an optional formality.
+   700	
+   701	               Please do not make promises which the authors can not
+   702	               fulfill, such as stating that registration always brings
+   703	               printed manuals.  Usually this is true, but the actual
+   704	               registration benefits depend upon the individual author. 
+   705	               Each author has his/her own registration incentives.
+   706	
+   707	               Actually, the above is a requirement, not just a
+   708	               suggestion, for ASP Vendor members.
+   709	
+   710	               If you throw honesty to the wind, both you and the
+   711	               authors will get complaint calls and letters.  Authors
+   712	               getting these complaints will almost always recommend
+   713	               some other vendor that the author knows believes in
+   714	               honesty in advertising.  Another opportunity for failure
+   715	               in this business {grin}.
+   716	
+   717	
+   718	          4.2  Use A Good Word Processor
+   719	
+   720	               There are many excellent shareware word processors that
+   721	               will produce excellent looking printed catalogs (be sure
+   722	               to register {smile} ).  Or you can use a good non-
+   723	               shareware word processor.  There are excellent shareware
+   724	               Desk Top Publishing systems if you wish to include screen
+   725	               captures in your catalog.
+   726	
+   727	               If you are preparing an on-disk catalog, almost ALL word
+   728	               processors can "print" to a straight ASCII file that
+   729	               contains no control characters except a Form Feed (ASCII
+   730	               12) after line 59 on each page.  Do not pad blank lines
+   731	               to make a full 66 lines per page.  The HP laser printers
+   732	               (and compatibles) can handle only 59 or 60 lines before
+   733	               they eject the page.
+   734	
+   735	
+   736	
+   737	
+   738	                                      12
+   739	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   740	
+   741	
+   742	     5.   Hardware
+   743	
+   744	          5.1  Computers
+   745	
+   746	               At a minimum, you will need a computer with BOTH 5.25"
+   747	               360k and 3.5" 720k disk drives.  These days, a 400m hard
+   748	               drive is very reasonable in cost.  You need a good
+   749	               computer to review the shareware and public domain
+   750	               software that you may place in your catalog.  Get the
+   751	               latest and greatest that you can afford.  At the time
+   752	               this document was last updated, fast super VGA computers
+   753	               with at least 200m hard drive could be purchased in the
+   754	               $1,500 (or less) range.
+   755	
+   756	               You may also want to pick up an old machine with a
+   757	               Hercules type monochrome monitor to see if the color
+   758	               selections used by an author will give a readable screen
+   759	               on an old monitor.  A laptop with LCD display may be
+   760	               another good test bench for the same reason.  Some
+   761	               authors just don't take the time to shut off color so
+   762	               that the program can be used on the older monitors. 
+   763	               Naturally many games these days are written for VGA as
+   764	               many serious gamers have up to date monitors.
+   765	
+   766	          5.2  Do NOT Depend On 1.2m Drives
+   767	
+   768	               You MUST have a TRUE 5.25 inch 360k drive.  You may also
+   769	               want a 1.2m 5.25 inch drive, but you MUST have a true
+   770	               360k drive to make your 360k disks.
+   771	
+   772	               Some vendors distribute NO 360k disks anymore as the
+   773	               demand is fading.  Hovever, most disk vendors still
+   774	               distribute either 360k 5 1/4" or 720k 3 1/2" disks.  A
+   775	               few distribute collections on 1.44m 3.5" disks.  Very FEW
+   776	               vendors sell 1.2m 5 1/2" disks.  Don't let a computer
+   777	               store or mail order outfit tell you that you can make
+   778	               360k copies on 1.2m high density drives.  Sure, sometimes
+   779	               you can.  Often a customer will NOT be able to read the
+   780	               disk.  You will get a LOT of calls from those to whom you
+   781	               have sent disks.  It will cause you loss of big bucks,
+   782	               lost sales and frustrated customers.  Sort of akin to the
+   783	               end of the world for a shareware vendor.
+   784	
+   785	               Why?  The answer is fairly simple.  To get 1.2m on a
+   786	               5.25" disk, the disk drive "paints" a track that is 1/2
+   787	               as wide as the 360k drives so it can place 80 tracks on a
+   788	               disk rather than 40.  Sure, you can ask the DOS FORMAT
+   789	               program to tell your disk drive to lay down only 40
+   790	               tracks for a 360k format, but they are still THIN tracks.
+   791	
+   792	
+   793	
+   794	
+   795	                                      13
+   796	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   797	
+   798	
+   799	     5.   Hardware (Continued)
+   800	
+   801	          5.2  Do NOT Depend On 1.2m Drives (Continued)
+   802	
+   803	               If the disk was previously formatted, and often suppliers
+   804	               sell pre-formatted disks at no additional price, the
+   805	               vestiges of the 80 tracks are STILL there, even though
+   806	               your disk drive just wrote a 40 track 360k format onto
+   807	               the disk.  A true 360k drive has a WIDER head and will
+   808	               easily pick up portions of bits from the adjacent
+   809	               unerased thin track that was laid down previously.  The
+   810	               360k drive reads garbled data and DOS gives up.
+   811	
+   812	               Even if you make 360k disks with disks that have NEVER
+   813	               been formatted before, the tracks are too thin to be read
+   814	               by many 360k drives.  A slightly out of adjustment 360k
+   815	               drive can read true 360k disks just fine, but will choke
+   816	               on one of those darned disks made on a high density
+   817	               drive.
+   818	
+   819	               This problem does NOT exist with 1.44m 3 1/2" drives. 
+   820	               The track width on both the 720k and 1.44m formats is the
+   821	               SAME.  Eighty tracks are used for both 720k and 1.44m. 
+   822	               The 1.44m format just has twice as many sectors to the
+   823	               track.
+   824	
+   825	
+   826	
+   827	
+   828	
+   829	
+   830	
+   831	
+   832	
+   833	
+   834	
+   835	
+   836	
+   837	
+   838	
+   839	
+   840	
+   841	
+   842	
+   843	
+   844	
+   845	
+   846	
+   847	
+   848	
+   849	
+   850	
+   851	
+   852	                                      14
+   853	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   854	
+   855	
+   856	     5.   Hardware (Continued)
+   857	
+   858	          5.3  Disk Duplicators
+   859	
+   860	               You can use the DOS DISKCOPY command to make copies from
+   861	               your shareware masters.  If you are not familiar with DOS
+   862	               commands, most high schools have Continuing Education
+   863	               courses that will teach you how to use a computer.  See
+   864	               Section 6.5 for training shareware.
+   865	
+   866	               Hopefully, your sales will reach a point where you can no
+   867	               longer keep up with using a computer and DISKCOPY.  Below
+   868	               are several companies that supply disk duplication
+   869	               equipment.
+   870	
+   871	                    Midwestern Disk          o Has 4 and 5 at-a-time for
+   872	                    Duplication Center         360k, 720k, 1.2m and 1.44m
+   873	                    509 W. Taylor              disks.
+   874	                    Creston  IA  50801       o Carries the Ventuno line of
+   875	                    515-782-5190               3.5" & 5.25" bin autoloader
+   876	                    800-221-6332               type duplicators.
+   877	                    FAX: 515-782-4166        o Call for prices.
+   878	
+   879	                    MediaFORM                o Xpress autoloaders and disk
+   880	                    75 Uwchlan Avenue          labelers for all types of
+   881	                    Exton  PA  19341           disk media.
+   882	                    215-524-7600             o Call for prices.
+   883	                    800-220-1215             o 12% discount for ASP members
+   884	                    FAX: 516-363-3735
+   885	
+   886	                    Micro-Technology         o Axiomatic 4 at-a-time  for
+   887	                    Concepts                   360k, 720k, 1.2m and 1.44m
+   888	                    258 Johnson Avenue         disks.
+   889	                    Brooklyn  NY  11206      o Call for prices
+   890	                    718-456-9100
+   891	                    800-366-4860
+   892	                    FAX: 718-456-1200
+   893	
+   894	               If you are in need of disk duplicators, be sure to call
+   895	               all of the above companies to get the latest price and
+   896	               feature combinations so that you get just what you need.
+   897	
+   898	
+   899	
+   900	
+   901	
+   902	
+   903	
+   904	
+   905	
+   906	
+   907	
+   908	
+   909	                                      15
+   910	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   911	
+   912	
+   913	     6.   Software
+   914	
+   915	          6.1  Catalog-On-A-Disk
+   916	
+   917	               CATALOG-ON-A-DISK (from EmmaSoft Software Company, Inc.)
+   918	               makes it easy for your computer-using customers to buy
+   919	               from you.  They can browse or search for products and
+   920	               order as they go along using only the (Enter) and (Esc)
+   921	               keys, arrows and numbers.  The order form is sent to a
+   922	               printer or text file, with taxes and shipping calculated,
+   923	               to be mailed, faxed, called in, or sent by modem.
+   924	
+   925	               The program is particularly appropriate for selling
+   926	               shareware because all your customers have computers, it's
+   927	               a unique and modern way to distribute the catalog, and
+   928	               the program itself is shareware.  It's a fast way to get
+   929	               a catalog put together, and is less expensive to produce
+   930	               than a print catalog.  CATALOG-ON-A-DISK also offers
+   931	               unique ways to distribute your catalog.  Businesses
+   932	               distribute catalogs on floppy disks, on the hard disks of
+   933	               computers they sell, and even have customers download
+   934	               catalogs from their BBSs.
+   935	
+   936	               CATALOG-ON-A-DISK makes buying easy because it is based
+   937	               on the (Enter) key to make choices, and the (Esc) key to
+   938	               back out.  There are very few keys for the user to find,
+   939	               so ordering goes very quickly with no obstacles between
+   940	               your customer and your products.  You make your catalog
+   941	               files with your favorite text editor, then compress the
+   942	               files using the Companion program.  Compressed files fit
+   943	               an enormous number of products on a floppy disk.  They
+   944	               are read directly into memory - no intermediate file is
+   945	               created so it displays fast and pricing and other catalog
+   946	               data is secure.
+   947	
+   948	               You make the catalog screens to best represent your
+   949	               company.  Opening Screens display your splash screen,
+   950	               tell about the catalog, your products, and your company. 
+   951	               The Main Menu displays categories of products.  The
+   952	               "Exit" menu is where customers print the order form,
+   953	               review an order, or view Special Forms (discount coupons,
+   954	               informational text or ordering details).  You can set up
+   955	               your own help screens and a help bar.  If your catalog is
+   956	               not in English you can translate the program's internal
+   957	               text.  Address and date formats can be set for US or
+   958	               international use.
+   959	
+   960	
+   961	
+   962	
+   963	
+   964	
+   965	
+   966	                                      16
+   967	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+   968	
+   969	
+   970	     6.   Software (Continued)
+   971	
+   972	          6.1  Catalog-On-A-Disk (Continued)
+   973	
+   974	               You can also set your catalog to automatically calculate
+   975	               sales tax for one, all, or no states or provinces.  You
+   976	               can also build shipping options into the catalog, letting
+   977	               the customer choose an option so the shipping will be
+   978	               calculated into the total on the order form.
+   979	
+   980	               Trial shareware versions are available from:
+   981	
+   982	               Electronic Service   Area      Library    File Name
+   983	
+   984	               CompuServe          GO WORK      14      CATALG.EXE
+   985	               Genie               HOSB         12      CATALGxx.ZIP*
+   986	               ESC BBS             Files        1       CATALGxx.ZIP*
+   987	
+   988	               *Replace the "xx" with the most current version number.
+   989	
+   990	               Example:  CATALG21.ZIP.
+   991	
+   992	               Plus many vendors and BBSs around the world.
+   993	
+   994	
+   995	
+   996	
+   997	
+   998	
+   999	
+  1000	
+  1001	
+  1002	
+  1003	
+  1004	
+  1005	
+  1006	
+  1007	
+  1008	
+  1009	
+  1010	
+  1011	
+  1012	
+  1013	
+  1014	
+  1015	
+  1016	
+  1017	
+  1018	
+  1019	
+  1020	
+  1021	
+  1022	
+  1023	                                      17
+  1024	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1025	
+  1026	
+  1027	     6.   Software (Continued)
+  1028	
+  1029	          6.2  Compression Software
+  1030	
+  1031	               It is a challenge for many authors to fit their entire
+  1032	               system on one disk.  They often use compression software
+  1033	               that can squeeze the files to 50% or less than their
+  1034	               original size.  Compression software is always used on
+  1035	               Bulletin Board Systems (BBS) to reduce download times and
+  1036	               save room on the BBS hard disk drive.
+  1037	
+  1038	               Phil Katz's PKZIP system is the most widely used
+  1039	               compression system.  For BBSs, the author compresses all
+  1040	               of the program and documentation files into one ZIP file. 
+  1041	               For example the SmuggyWrap shareware (fictitious) Version
+  1042	               2.1 may all be ZIPed into a file named SMUGGY21.ZIP. 
+  1043	               Some authors send their disks to both BBSs and disk
+  1044	               vendors as a single ZIP file.  In this case, your job
+  1045	               will be to run PKUNZIP to expand the compressed ZIP file
+  1046	               out into the various program and documentation files so
+  1047	               that you can evaluate the system.
+  1048	
+  1049	               It may be the author's intention that you place all of
+  1050	               the files in the ZIP (after uncompression) onto a single
+  1051	               disk for your shareware distribution master.  Hopefully,
+  1052	               the author will communicate this to you with a letter or
+  1053	               on-disk instructions.  Authors often have a VENDOR.DOC or
+  1054	               VENDINFO.DIZ file for this type of instruction.  Other
+  1055	               authors expect you to be a mind reader and this type
+  1056	               author often gets few registrations due to poor
+  1057	               packaging.
+  1058	
+  1059	               If you plan to send out shareware disks to your
+  1060	               customers, they will need to already have the PKZIP
+  1061	               system or you will have to include PKUNZIP.EXE on each
+  1062	               distribution disk that contains ZIP files.  Further, your
+  1063	               customer will have to figure out how to unZIP the
+  1064	               compressed file.  This is a REAL problem for end users. 
+  1065	               Those users that already understand how to unZIP a file
+  1066	               probably obtain their shareware from BBSs and won't be
+  1067	               your customer anyway.  If you include PKUNZIP.EXE on your
+  1068	               distribution disks, you will need a license from PKWARE
+  1069	               (414-354-8699).
+  1070	
+  1071	               To solve this end user problem, there is another type of
+  1072	               compressed file used by many authors called a "Self-
+  1073	               Extract Program".  It is an executable program (.EXE)
+  1074	               where the PKZIP software is at the front of the file and
+  1075	               the remainder of the .EXE file that is the compressed
+  1076	               data (normally in a ZIP file).
+  1077	
+  1078	
+  1079	
+  1080	                                      18
+  1081	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1082	
+  1083	
+  1084	     6.   Software (Continued)
+  1085	
+  1086	          6.2  Compression Software (Continued)
+  1087	
+  1088	               When you run this type of program, it uncompresses all of
+  1089	               the author's program and documentation files to recreate
+  1090	               the original files.  It is the author's responsibility to
+  1091	               get a license from PKWARE to send you this self-extract
+  1092	               program file.  You do not need to pay any further
+  1093	               royalties to PKWARE as the author has already done so.
+  1094	
+  1095	               Many authors include an INSTALL program or BATch file to
+  1096	               properly install the shareware on the users hard drive. 
+  1097	               Therefore, you never want to uncompress the self-extract
+  1098	               if the INSTALL program is looking for the self-extract
+  1099	               files.
+  1100	
+  1101	               Every disk or rack vendor should get a registered copy of
+  1102	               PKZIP.  Call PKWARE at 414-354-8699 to get your
+  1103	               registered copy and ask them about royalty arrangements
+  1104	               if you wish to send out disks with just the PKUNZIP
+  1105	               program.
+  1106	
+  1107	
+  1108	               Another popular compression system is LHA.  It competes
+  1109	               very favorably with PKZIP as far as compression rates and
+  1110	               (as of this writing) has no royalty requirements.  There
+  1111	               are copyright notice requirements that must be followed. 
+  1112	               This software is available from most disk vendors and
+  1113	               BBSs.
+  1114	
+  1115	
+  1116	
+  1117	
+  1118	
+  1119	
+  1120	
+  1121	
+  1122	
+  1123	
+  1124	
+  1125	
+  1126	
+  1127	
+  1128	
+  1129	
+  1130	
+  1131	
+  1132	
+  1133	
+  1134	
+  1135	
+  1136	
+  1137	                                      19
+  1138	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1139	
+  1140	
+  1141	
+  1142	     6.   Software (Continued)
+  1143	
+  1144	          6.3  Disk Duplication
+  1145	
+  1146	               Your computer came with DOS.  One of the DOS files is
+  1147	               DISKCOPY.EXE.  You can easily copy disks with DISKCOPY 
+  1148	               A:  A: (Enter) to make one-at-a-time copies.  You have to
+  1149	               run it for each copy and each time, it needs to load your
+  1150	               master disk.
+  1151	
+  1152	               The following duplication software is available from
+  1153	               several ASP authors.  The descriptions are from the ASP
+  1154	               Official Catalog.
+  1155	
+  1156	               Product: Disk DUP
+  1157	               Author: FormGen Corp., 416-857-4141
+  1158	               Version: 5.9a (11-08-90)
+  1159	               Needs: IBM PC, DOS 3.2 or better.
+  1160	               Registration fee: $25.00
+  1161	               Registration benefits:  Printed manual, master disks,
+  1162	                                       unlimited technical support,
+  1163	                                       product discounts.
+  1164	               Look for: DUP59A.EXE on BBSs; DUP59.EXE on CompuServe
+  1165	                         in CIS:IBMHW forum LIBrary 1 (or contact
+  1166	                         userID 70446,76 for assistance).
+  1167	               Download size: 75k (about six minutes with a 2400 baud
+  1168	                              modem)
+  1169	               Description:
+  1170	                    Speeds the duplication of disks. Master images are
+  1171	                    stored on hard drive, but data compression saves
+  1172	                    valuable space. Copies can be produced at lightning
+  1173	                    speed. Multi-disk option for up to ten drives at
+  1174	                    once! Disks can be serialized at your option.  Many
+  1175	                    options, excellent user interface, full status
+  1176	                    screen.  Very powerful, yet easy to use!  If you
+  1177	                    need to make multiple copies of disks, DUP will make
+  1178	                    it quick and easy.
+  1179	
+  1180	
+  1181	               Product: DISKCOPY
+  1182	               Author: Feico Nater Shareware, 31 74 438373
+  1183	               Version: 1.0 (01-01-92)
+  1184	               Needs: IBM PC, DOS 2.0 or better.  Hard disk.
+  1185	               Registration fee: $15.00
+  1186	               Registration benefits:  Phone/mail support, free
+  1187	                                       updates.
+  1188	               Look for: DISKCOPY.* on BBSs; DISKCO.* on CompuServe in
+  1189	                         CIS:. forum LIBrary 0; DISKCOPY.* on GEnie in
+  1190	                         0 forum LIBrary 0.
+  1191	               Download size: 13k (about one minute with a 2400 baud
+  1192	                              modem)
+  1193	
+  1194	                                      20
+  1195	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1196	
+  1197	
+  1198	     6.   Software (Continued)
+  1199	
+  1200	          6.3  Disk Duplication (Continued)
+  1201	
+  1202	               Description:
+  1203	                    Copies an entire floppy disk onto a file on the
+  1204	                    fixed disk and back again.  Provides: Easy copying
+  1205	                    of a floppy disk from A to A or from B to B, without
+  1206	                    the need to swap disks several times.  Make many
+  1207	                    copies of a single disk without the need to use a
+  1208	                    source disk. Includes automatic formatting.
+  1209	
+  1210	
+  1211	               Product: FormGen Utility Pak #1
+  1212	               Author: FormGen Corp., 416-857-4141
+  1213	               Version: 1.01 (10-30-90)
+  1214	               Needs: IBM PC, DOS 3.2 or better.
+  1215	               Registration fee: $25.00
+  1216	               Registration benefits: Printed manual, master disks,
+  1217	                                      unlimited technical support,
+  1218	                                      product discounts.
+  1219	               Look for: UPAK1.EXE on BBSs; UPAK.EXE on CompuServe in
+  1220	                         CIS:IBMSYS forum LIBrary 3 (or contact userID
+  1221	                         70446,76 for assistance).
+  1222	               Download size: 146k (about 11 minutes with a 2400 baud
+  1223	                              modem)
+  1224	               Description: 12 excellent utilities!
+  1225	                   QCOPY  fast single drive copy, makes multiple
+  1226	                          copies, no swapping
+  1227	                   SERA   secure file erase ** MEETS DOD STANDARDS **
+  1228	                   DUMP   high performance hex dump
+  1229	                   ENCRYPT/DECRYPT
+  1230	                          fast and very secure file encryption
+  1231	                   FEED/EJECT  TSR page eject
+  1232	                   GDAY   your morning smile
+  1233	                   SEARCH/GLOBAL
+  1234	                          multifile search/replacement
+  1235	                   LOCASE    converts files to lower case
+  1236	                   ZIPPROC   automated file processing
+  1237	                   TIMESYNC  sets your system clock to time standard
+  1238	
+  1239	               You can obtain the above systems from almost any ASP disk
+  1240	               vendor or you can call the author's company directly.  BE
+  1241	               SURE you register all shareware that you use after the
+  1242	               evaluation stage {smile}.
+  1243	
+  1244	
+  1245	
+  1246	
+  1247	
+  1248	
+  1249	
+  1250	
+  1251	                                      21
+  1252	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1253	
+  1254	
+  1255	     6.   Software (Continued)
+  1256	
+  1257	          6.4  Virus Scanning
+  1258	
+  1259	               YOU MUST CHECK EVERY DISK that you receive.  Don't trust
+  1260	               anything, especially the so-called "retail" shrinkwrapped
+  1261	               software.  Shareware authors, BBSs and vendors are
+  1262	               routinely careful if they expect to stay in business. 
+  1263	               Before you even do a DIRectory of any disk, run your
+  1264	               virus scanner software against the disk.  Contact the
+  1265	               person that sent you the infected disk as they may not be
+  1266	               aware of the infection.
+  1267	
+  1268	               You may never find a virus.  They actually aren't as
+  1269	               common as the press would have you believe.  Second to
+  1270	               retail software are the computer repair shops at
+  1271	               spreading virus attacks.  Some rarely, if ever, check a
+  1272	               disk brought in by a customer that wishes to try out a
+  1273	               new computer on the floor.  Some don't check computers
+  1274	               that they bring in for repair.  The customer's hard disk
+  1275	               could be infected and the repair person can easily infect
+  1276	               the test disk used to diagnose the computer.  Every
+  1277	               computer checked by that test disk thereafter will be
+  1278	               infected.  Some retail computer stores re-shrinkwrap
+  1279	               returned software and place it back on the shelf without
+  1280	               checking it.  Scary, isn't it?
+  1281	
+  1282	                               SCAN EVERY DISK!
+  1283	
+  1284	               Integrity Master is an excellent easy to use, up-to-date,
+  1285	               anti-virus, data integrity, change management, and
+  1286	               security program.  It provides a single comprehensive
+  1287	               solution to assure that all your programs and data are
+  1288	               safe.  In addition to scanning for known viruses, it
+  1289	               detects unknown viruses and unlike other products will
+  1290	               detect files which have been damaged but not infected by
+  1291	               a virus.  Integrity Master protects you against all
+  1292	               threats to your data and programs not just viruses!  To
+  1293	               order with Master or Visa card, call 800-788-0787 or 314-
+  1294	               256-3130.  You can subscribe to several upgrade packages.
+  1295	
+  1296	               Virx - A so called "free" demo of the of Datawatch's
+  1297	               retail "Virex For The PC".  The latest Virx version can
+  1298	               be obtained from the VIRUSFORUM on CompuServe, many BBSs
+  1299	               and disk vendors as VIRX.ZIP.  It is only the scanner and
+  1300	               will detect over a thousand viri.  If a virus is
+  1301	               detected, you are warned so you can send back or destroy
+  1302	               the disk being scanned.  However, if you want to remove
+  1303	               the virus, you buy a copy of Datawatch's "Virex For The
+  1304	               PC" which can be purchased through computer software
+  1305	               stores and mail order houses or by calling Datawatch at
+  1306	               919-490-1277.
+  1307	
+  1308	                                      22
+  1309	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1310	
+  1311	
+  1312	     6.   Software (Continued)
+  1313	
+  1314	          6.5  DOS Tutorial Shareware
+  1315	
+  1316	               Many startup shareware disk vendors have little knowledge
+  1317	               of the computers they are using.  Further, the people
+  1318	               that answer the phones have little knowledge of what they
+  1319	               are sending out.  They don't even have the knowledge to
+  1320	               tell the user to do a DIRectory of the disk they sent to
+  1321	               the user to look for .TXT and .DOC files that can be
+  1322	               printed by the user.  They even don't know how to tell
+  1323	               the user how to COPY the README type files to the
+  1324	               printer.
+  1325	
+  1326	               There are several excellent shareware programs for
+  1327	               learning the DOS commands.
+  1328	
+  1329	
+  1330	                                  DOS Sumary
+  1331	
+  1332	
+  1333	               Product: DOS Summary (Hypertext)
+  1334	               Author: Computer Knowledge
+  1335	               Version: 2.0 (02-15-92)
+  1336	               Needs: IBM PC, DOS 2.0 or better.
+  1337	               Registration fee: $25.00
+  1338	               Registration benefits:  Printed manual with command
+  1339	                  examples not found in the software, master disks,
+  1340	                  bonus utilities.  Shareware disks of other products.
+  1341	               Look for: DOSSUM20.ZIP on BBSs; DSUM02.ZIP on
+  1342	                         CompuServe in CIS:IBMSYS forum LIBrary 1 (or
+  1343	                         contact userID 75655,210 for assistance).
+  1344	               Download size: 150k (about 11 minutes with a 2400 baud
+  1345	                                    modem)
+  1346	               Description:
+  1347	                 DOS Summary is a hypertext tutorial and reference
+  1348	                 product which covers all DOS commands and drivers
+  1349	                 through MS-DOS 5.0. Also added are tutorials covering
+  1350	                 memory management and how DOS starts. The program can
+  1351	                 be used in standalone or resident mode.  When
+  1352	                 started, you have the option of an alphabetical
+  1353	                 command menu or a menu where commands are grouped by
+  1354	                 function. You may also start the program with a DOS
+  1355	                 command name as a parameter and be taken immediately
+  1356	                 to that command.
+  1357	
+  1358	
+  1359	
+  1360	
+  1361	
+  1362	
+  1363	
+  1364	
+  1365	                                      23
+  1366	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1367	
+  1368	
+  1369	     6.   Software (Continued)
+  1370	
+  1371	          6.5  DOS Tutorial Shareware (Continued)
+  1372	
+  1373	                                    DosEA
+  1374	
+  1375	               For a tutorial on using DOS, try "DosEA", which is a
+  1376	               six-program hypertext series.  Here are short descriptins
+  1377	               of the six programs in the series.
+  1378	
+  1379	                              *************
+  1380	                        *********  DosEA  **********
+  1381	                        **  Product Descriptions  **
+  1382	                        **   Order Information    **
+  1383	                        ****************************
+  1384	
+  1385	               Langin Software offers a series of tutorials and a book
+  1386	               to help users learn DOS.  The tutorials are called
+  1387	               "DosEA" and are a play on words for a dossier on DOS.
+  1388	
+  1389	               "DosEA 1 -- For Absolute Beginners" is a tutorial which
+  1390	               demonstrates the hypertext system used in the series.
+  1391	
+  1392	               "DosEA 2 -- What is DOS?" is a tutorial which explains
+  1393	               the development of DOS.
+  1394	
+  1395	               "DosEA 3 -- 10 Easy Commands" is a tutorial with hands-on
+  1396	               practice of 10 easy DOS commands.
+  1397	
+  1398	               "DosEA 4 -- Find That Command!" is a utility which helps
+  1399	               determine the appropriate DOS commands for various
+  1400	               chores.
+  1401	
+  1402	               "Beginner's Pak" is a package of the first four programs
+  1403	               in the series (DosEA 1 through DosEA 4).
+  1404	
+  1405	               "DosEA 5 -- All About MS-DOS 5" is a reference of the
+  1406	               many additions, deletions, and changes in MS-DOS 5.
+  1407	
+  1408	               "DosEA 6 -- Switched on DOS" covers the 238 DOS switches.
+  1409	
+  1410	               "An Easy Course in Using DOS" is a humorous illustrated
+  1411	               book for those who hate computer manuals.
+  1412	
+  1413	
+  1414	
+  1415	
+  1416	
+  1417	
+  1418	
+  1419	
+  1420	
+  1421	
+  1422	                                      24
+  1423	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1424	
+  1425	
+  1426	     6.   Software (Continued)
+  1427	
+  1428	          6.5  DOS Tutorial Shareware (Continued)
+  1429	                                                         US$ Price Total
+  1430	                                                        --------- ------
+  1431	               DosEA 1 -- For Absolute Beginners           10.00  ______
+  1432	               DosEA 2 -- What is DOS?                     10.00  ______
+  1433	               DosEA 3 -- 10 Easy Commands                 10.00  ______
+  1434	               DosEA 4 -- Find That Command!               10.00  ______
+  1435	               Beginner's Pak (DosEA 1-4)                  25.00  ______
+  1436	               DosEA 5 -- All About MS-DOS 5               10.00  ______
+  1437	               DosEA 6 -- Switched on DOS                  10.00  ______
+  1438	               An Easy Course in Using DOS                 18.00  ______
+  1439	
+  1440	               Shipping and handling (US)                   4.00  ______
+  1441	               Shipping and handling (non-US)               5.00  ______
+  1442	
+  1443	                                                           TOTAL  ______
+  1444	               Prices subject to change without notice.
+  1445	               Credit card orders:  -- Mastercard -- Visa
+  1446	                                    -- American Express -- Discover
+  1447	               Phone:       713-524-6394          * These numbers *
+  1448	               Toll free:   800-2424-PsL          *    are for    *
+  1449	               FAX:         713-524-6398          *   ordering    *
+  1450	               CompuServe:  71355,470             *     only      *
+  1451	                                                        ----
+  1452	               Mail:
+  1453	                 PsL
+  1454	                 P.O. Box 35705
+  1455	                 Houston, TX  77235-5705
+  1456	
+  1457	               The above numbers and address are for the Public
+  1458	               (software) Library and are for ordering, ONLY.  For
+  1459	               information about dealer pricing, volume discounts, site
+  1460	               licensing, shipping of product, returns, latest version
+  1461	               number or other technical information, see "Langin
+  1462	               Software" below.
+  1463	
+  1464	               Cash orders:  Send check or money order to Langin
+  1465	               Software at address shown below.  Non-US payments should
+  1466	               be drawn on US bank. Traveller's checks accepted. 
+  1467	               Canadian postal money orders accepted.  Include your Name
+  1468	               and Address and disk size.
+  1469	
+  1470	               Mail to:
+  1471	                    Langin Software
+  1472	                    532 W. 3rd St.
+  1473	                    CENTRALIA, IL  62801 USA
+  1474	                    CompuServe: 73770,615
+  1475	                    Fax: (618) 532-0075
+  1476	                    Voice: (618) 532-4899
+  1477	
+  1478	
+  1479	                                      25
+  1480	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1481	
+  1482	
+  1483	     7.   Supplies
+  1484	
+  1485	          The following information was obtained from messages on the
+  1486	          CompuServe ASPFORUM over the years, and information sent to
+  1487	          this author by various companies.  This list is by no means
+  1488	          complete and you will need to do your own research to decide
+  1489	          just where you will obtain your supplies.
+  1490	
+  1491	          7.1  Diskettes
+  1492	
+  1493	               There are countless suppliers of disks.  Many (if not
+  1494	               most) obtain their disks from Taiwan manufacturers.  The
+  1495	               quality of disks can vary widely from one supplier to
+  1496	               another.  This document will list no disk suppliers as
+  1497	               they seem to come and go due to the highly competitive
+  1498	               nature of this market.
+  1499	
+  1500	               Check computer magazine ads and try 500 or so from
+  1501	               several suppliers.  Keep track of the failure rate. 
+  1502	               Switch vendors if the failure rate is more than several
+  1503	               percent.  Pick a supplier that has a good replacement
+  1504	               policy for bad disks.  Make sure they pay the postage if
+  1505	               they require that you return the bad disks.  This writer
+  1506	               once had 48 disks fail out of one package of 50 disks. 
+  1507	               That supplier got blunt phone calls.
+  1508	
+  1509	               If you pay extra for pre-formatted disks, be sure that
+  1510	               your duplication software does a CRC check (DISKCOPY /v)
+  1511	               as even pre-formatted disks can have a bad failure rate. 
+  1512	               You can't afford the returns when you send out faulty
+  1513	               disks.
+  1514	
+  1515	               Keep up with what is going on in the computer industry. 
+  1516	               Subscribe to several computer magazines.  A lot of folks
+  1517	               got caught not being able to obtain 3.5" disks in the
+  1518	               Spring of 1992 when Microsoft had their Windows 3.1 and
+  1519	               DOS 5 and IBM had their OS/2 major upgrades AT THE SAME
+  1520	               TIME.  Microsoft and IBM gobbled up every 3.5" disk in
+  1521	               sight.  The ASPFORUM was full of panic messages from both
+  1522	               authors and vendors that got caught.  This writer was
+  1523	               down to only 7 disks while in the middle of a major
+  1524	               upgrade on a shareware product.  Normally, you can get
+  1525	               almost any quantity in several weeks.  So, be aware! 
+  1526	               Don't let your stock of disks get too low.
+  1527	
+  1528	
+  1529	
+  1530	
+  1531	
+  1532	
+  1533	
+  1534	
+  1535	
+  1536	                                      26
+  1537	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1538	
+  1539	
+  1540	     7.   Supplies (Continued)
+  1541	
+  1542	          7.2  Mailers
+  1543	
+  1544	               Consider the following as a starter for obtaining disk
+  1545	               mailers and other supplies.
+  1546	
+  1547	                    Calumet Carton           Sterling Disk Duplication
+  1548	                       Company               11495 N. Pennsylvania Ave,
+  1549	                    P.O. Box 405                      Ste 204
+  1550	                    16920 State Street       Carmel  IN  46032
+  1551	                    S. Holland IL 60473      317-575-3390
+  1552	                    708-333-6521             FAX: 317-575-3389
+  1553	                    FAX: 708-333-8540
+  1554	
+  1555	                    Pack & Wrap              Mailers
+  1556	                    466 Derby Avenue         40650 Forest View Road
+  1557	                    W. Haven  CT  06516      Zion  IL  60099
+  1558	                    800-541-9782             800-872-6670
+  1559	                    203-389-1983             FAX: 708-872-4842
+  1560	                    FAX: 203-389-9416
+  1561	
+  1562	                    The Sirgo Company        Mail Safe
+  1563	                    P.O. Box 58              4340 W. 47th Street
+  1564	                    Schereville IN 46375     Chicago  IL  60632
+  1565	                    219-865-6092             708-872-6677
+  1566	                    FAX: 219-322-5194        800-527-0754
+  1567	                                             FAX: 708-872-4842
+  1568	
+  1569	                    Quill Office             International Media & Supplies
+  1570	                      Products               3501 Coffee Road, Suite 9
+  1571	                    P.O. Box 94080           Modesto  CA 95355
+  1572	                    Palatine  IL             800-835-5515
+  1573	                         60094-4080          FAX: 209-571-5757
+  1574	                    708-634-4800
+  1575	                    FAX: 708-634-5708
+  1576	
+  1577	          7.3  Label Stock
+  1578	
+  1579	               With font programs, you can make small quantities of
+  1580	               laser labels at a low cost that look like they were
+  1581	               custom printed.  Nelson Ford feels that Avery Label Pro
+  1582	               is the best laser label program.  Paul Mayer recommends
+  1583	               CompUSA for laser labels.  If there is not one near you,
+  1584	               you can call them at 817-261-7702 or 800-342-7638.  They
+  1585	               accept mail orders through this number by credit card. 
+  1586	               Prices on 6/1/90 were:
+  1587	
+  1588	                    8-1/2 x 11 sheets (100)     $17.99   Stock #853262
+  1589	                    5-1/4" disk labels  (840)   $26.49   Stock #853901
+  1590	                    3-1/2" disk labels  (630)   $26.49   Stock #853892
+  1591	
+  1592	
+  1593	                                      27
+  1594	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1595	
+  1596	
+  1597	     7.   Supplies (Continued)
+  1598	
+  1599	          7.3  Label Stock (Continued)
+  1600	
+  1601	               Avery will send you a sample pack of laser labels for the
+  1602	               purpose of getting your software to work with them. 
+  1603	               Write to them at 777 East Foothill Blvd., Azusa, CA
+  1604	               91702-1358 or call 800-541-5507.
+  1605	
+  1606	               The Computer Label Company, 800-332-4223 (619-322-3030)
+  1607	               and MEI, 800-634-3478 (614-481-4417) have good prices on
+  1608	               standard 3.5" by 1" labels.  You can also call United Ad
+  1609	               Label at 800-423-4643 (714-990-2700) and ask for a free
+  1610	               catalog and sample label kit.  They specialize in
+  1611	               audio/video labels but they do have both pin-feed and
+  1612	               laser sheet labels for 3.5" and 5.25" floppy disks.
+  1613	
+  1614	               Another good source for labels is Lyben Computer Supplies
+  1615	               313-268-8100.  They have the Avery labels.  They are also
+  1616	               one of the few suppliers that carry the continuous
+  1617	               fanfold label stock that can be used for 3.5" disks.  The
+  1618	               labels are 2 3/4 by 1 15/16 inch and are Stock # 0300.
+  1619	
+  1620	               Almost all types of label stock can be obtained from
+  1621	               Quill (see above for address).
+  1622	
+  1623	
+  1624	
+  1625	
+  1626	
+  1627	
+  1628	
+  1629	
+  1630	
+  1631	
+  1632	
+  1633	
+  1634	
+  1635	
+  1636	
+  1637	
+  1638	
+  1639	
+  1640	
+  1641	
+  1642	
+  1643	
+  1644	
+  1645	
+  1646	
+  1647	
+  1648	
+  1649	
+  1650	                                      28
+  1651	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1652	
+  1653	
+  1654	     8.   Trademarks
+  1655	
+  1656	          Generally, if you start using your company name without a (TM)
+  1657	          notice by the name, you lose the trademark protection. So
+  1658	          spend the extra four keystrokes and put it on.  The trademark
+  1659	          office requires that you send them copies of artwork currently
+  1660	          being used with the TM indicated next to your word or phrase. 
+  1661	          The patent & trademark office will then issue you a paper
+  1662	          telling you that your word or phrase is now a Registered
+  1663	          Trademark and then you have the right to use the circled R in
+  1664	          place of TM.
+  1665	
+  1666	          CompuServe has a service called IQuest (GO IQUEST) that will
+  1667	          allow you to scan the Trademark Data Base for about $35 to
+  1668	          $150 depending on how many ways you search.  The search cost
+  1669	          depends entirely on the exact mark and goods involved, how
+  1670	          many "hits" come up in the search, etc.  This may a quick way
+  1671	          to check on whether or not someone else has already registered
+  1672	          your words.  However, the experienced lawyer may well find
+  1673	          more information than the novice searcher and save you a lot
+  1674	          of problems later.
+  1675	
+  1676	          The Association of Shareware Professionals currently uses
+  1677	          Lance Rose for copyright and trademark advice.  Lance has
+  1678	          handled the ASP's lobbying efforts in Washington D.C. and was
+  1679	          instrumental in having a bill modified that otherwise would
+  1680	          have virtually eliminated any copyright protection for
+  1681	          shareware.
+  1682	                         Lance Rose
+  1683	                         87 Midland Avenue
+  1684	                         Montclair  NJ  07042
+  1685	                         201-509-1700
+  1686	
+  1687	          Lance told us that "properly speaking it's not the words
+  1688	          themselves that are registered, but the mark at issue for
+  1689	          specific goods or services.  The whole question of
+  1690	          registration, of course, does not exhaust the issues raised by
+  1691	          the question of can I use the mark?  An unregistered trademark
+  1692	          won't come up on an IQuest-style search, but the owner of the
+  1693	          mark can sue someone who starts using it later.  In this case,
+  1694	          neither the registration search, nor registration itself, will
+  1695	          keep the second user from getting beaten by the first user. 
+  1696	          They will want a copy of your package and need to know the
+  1697	          first sale of the product with the "trademark" used."
+  1698	
+  1699	          It can pay to shop around for a lawyer. ASP members have
+  1700	          reported paying $200, $700, and over $1000.  However, the $200
+  1701	          is impossible these days as the filing fee is now $200.
+  1702	
+  1703	          For information about Trademarks call the Dept. of Commerce at
+  1704	          703-557-3158 for a copy of Basic Facts About Trademarks.
+  1705	
+  1706	
+  1707	                                      29
+  1708	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1709	
+  1710	
+  1711	     9.   Collecting Shareware
+  1712	
+  1713	          You need to build a list of the types of shareware you wish
+  1714	          for your catalog and you need to collect a list of author
+  1715	          addresses.  Where do you get your shareware disks?
+  1716	
+  1717	               o    From another disk vendor
+  1718	
+  1719	               o    From BBSs
+  1720	
+  1721	               o    From large local User Group
+  1722	
+  1723	               o    From a CD-ROM
+  1724	
+  1725	               o    FROM THE AUTHOR DIRECTLY
+  1726	
+  1727	          Guess which this writer considers the best source?  You are
+  1728	          right, the authors.  You get the latest and greatest version
+  1729	          and will probably be placed on the author's mailing list for
+  1730	          updates and new products.  Further, you won't infringe on the
+  1731	          "library" or "compilation" copyright of some other vendor.
+  1732	
+  1733	          If you have no collection at all, you may want to begin
+  1734	          creating your subject and author list by purchasing many disks
+  1735	          from several other disk vendors.  ONLY use these disks to get
+  1736	          the addresses to contact the authors.
+  1737	
+  1738	          You must look in the authors documentation to learn of any
+  1739	          copying restrictions stated by the author.  Under the
+  1740	          copyright laws, you may be prevented from distributing
+  1741	          additional copies without getting permission from the author. 
+  1742	          Some authors place no restrictions on copying and others have
+  1743	          very strict restrictions.  YOU must determine this from
+  1744	          examining the authors files.  SOME authors require special
+  1745	          written permission and SOME require royalty arrangements from
+  1746	          rack and CD-ROM vendors even if they sent you the evaluation
+  1747	          disk in the first place.
+  1748	
+  1749	          If you are into BBSs, this may be a good source.  Be SURE you
+  1750	          use BBSs that are properly networked with the authors and
+  1751	          other BBSs so that you will be downloading current versions of
+  1752	          the shareware.  Local isolated BBSs may have very old versions
+  1753	          and the author addresses will be out of date.  Again, examine
+  1754	          the disks for any author imposed copying restrictions.  Also
+  1755	          look for vendor and BBS files that are not part of the authors
+  1756	          system that you will want to remove.
+  1757	
+  1758	          User Groups may also have out-of-date versions and care will
+  1759	          need to be taken.  Again, use this as a source to build your
+  1760	          author address list so you can contact the authors.
+  1761	
+  1762	
+  1763	
+  1764	                                      30
+  1765	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1766	
+  1767	
+  1768	     9.   Collecting Shareware (Continued)
+  1769	
+  1770	          CD-ROMs are very expensive to create and some are updated
+  1771	          infrequently.  Further, you may not know if the CD-ROM
+  1772	          producer made any effort to contact the authors to get either
+  1773	          permission to distribute or the latest version.  Before you
+  1774	          even consider using a CD-ROM for your source of author
+  1775	          addresses, examine the date stamps on the shareware executable
+  1776	          program files (.EXE).  If they are older than one year, you
+  1777	          know this will not be an up-to-date source of addresses.
+  1778	
+  1779	          Recently the ASP started supplying their Vendor members with a
+  1780	          CD-ROM carrying much of the shareware produced by the ASP
+  1781	          authors.  At this writing, it is updated and issued monthly
+  1782	          and there is no extra charge for this service.
+  1783	
+  1784	          After you have created a draft of your catalog, and made your
+  1785	          author address list, contact the authors to obtain the
+  1786	          shareware.
+  1787	
+  1788	          If you are a RACK or CD-ROM vendor, let the author know that
+  1789	          when you write to them.  If you ALSO are a catalog (printed or
+  1790	          on-disk) vendor, let them know that too.  SOME authors will
+  1791	          require special permission and SOME may require royalties for
+  1792	          you to place their copyrighted shareware on racks or CD-ROMs. 
+  1793	          They may or may not require this special contract or royalties
+  1794	          for your catalog operation.  These special requirements are
+  1795	          the AUTHOR's requirements, not requirements of the ASP or any
+  1796	          other trade organization that this author knows of.  The ASP
+  1797	          takes NO position on any of these special author requirements
+  1798	          or any royalty requirements and offers NO opinion except to
+  1799	          warn the vendors that the author's copyrights are legally
+  1800	          enforceable.
+  1801	
+  1802	
+  1803	
+  1804	
+  1805	
+  1806	
+  1807	
+  1808	
+  1809	
+  1810	
+  1811	
+  1812	
+  1813	
+  1814	
+  1815	
+  1816	
+  1817	
+  1818	
+  1819	
+  1820	
+  1821	                                      31
+  1822	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1823	
+  1824	
+  1825	          10.  Providing Technical Support
+  1826	
+  1827	          Hopefully you will have customers that have purchased disks
+  1828	          from your library collection.  Note that they are buying your
+  1829	          library and disk copying services - NOT the right for
+  1830	          unlimited use of the shareware.
+  1831	
+  1832	          Many of your customers will be first time shareware users. 
+  1833	          They will not know how to do a DIRectory of the disk to look
+  1834	          for README type files and how to copy them to their printer. 
+  1835	          YOU MUST provide some type of instruction to allow YOUR
+  1836	          customer to figure out how to find the author's installation
+  1837	          instructions.  If the author placed no installation
+  1838	          instructions on the disk either place your own instruction
+  1839	          file on the disk, or don't carry that disk in your library. 
+  1840	          Develop a sheet you can send with each order that will give
+  1841	          the novice user getting started instructions.
+  1842	
+  1843	          Don't get excited, you are not expected to provide support on
+  1844	          the author's programs, just on the package YOU sold.  They
+  1845	          have to be able to install the author's stuff so they can
+  1846	          contact the author for support on the author's programs and
+  1847	          documentation.  You are responsible for only the front end of
+  1848	          the installation so the user can get to the author's
+  1849	          instructions.  Some authors provide little or no instructions
+  1850	          on getting their shareware installed and only a dedicated
+  1851	          computer nerd could do it.  Just don't sell these disks. 
+  1852	          Don't let the author's problems become your problems.
+  1853	
+  1854	          If you wish to add a general purpose Help program to the
+  1855	          shareware disks in your library, take a look at the following:
+  1856	
+  1857	               Product: Simply Help!
+  1858	               Author: SimpleWare, 709-489-3757
+  1859	               Version: 1.0 (01-07-91)
+  1860	               Needs: IBM PC, DOS 2.1 or better.  384k RAM, hard disk
+  1861	                 recommended.
+  1862	               Registration fee: $35.00
+  1863	               Registration benefits:  Latest version with shareware
+  1864	                                       notices removed.  Support by
+  1865	                                       mail.
+  1866	               Look for: SIMHLP10.ZIP on BBSs (call 709-489-6018 to
+  1867	                         download it at no charge).
+  1868	               Download size: 285k (about 21 minutes with a 2400 baud
+  1869	                              modem)
+  1870	               Description:
+  1871	                 Create stand alone help systems or add help to any
+  1872	                 program. Editor has pull down menus, dialog boxes,
+  1873	                 mouse support, on-line help, block operations, line
+  1874	                 drawing, import/export, reports, and many more.  Edit
+  1875	                 your file and instantly RUN it to see the results.
+  1876	
+  1877	
+  1878	                                      32
+  1879	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1880	
+  1881	
+  1882	     10.  Providing Technical Support (Continued)
+  1883	
+  1884	                 Simply Help! (Continued)
+  1885	
+  1886	                 Compiler creates EXE files or TSR files with your
+  1887	                 choice of hot key.  A library for QuickBASIC 4.xx is
+  1888	                 included. Applications include TSR help for existing
+  1889	                 programs, catalogs, readme files, manuals, on-line help
+  1890	                 for QuickBASIC programs.
+  1891	
+  1892	               You MUST register Simply Help! if you are going to place
+  1893	               ANY files created by Simply Help! on any disk copies you
+  1894	               sell.
+  1895	
+  1896	          You can have an instruction on all disk labels to show how to
+  1897	          run your help program created with software like "Simply
+  1898	          Help!"  Or, you can print the instruction on the disk sleeves
+  1899	          or an instruction sheet sent with each order.  You can't
+  1900	          expect your customers to be computer experts.
+  1901	
+  1902	
+  1903	          If you are going to survive in this business, you must list a
+  1904	          daytime support number.  You may only need to tell the first
+  1905	          time user to read your instructions on starting shareware.  If
+  1906	          you get too many calls, your instructions are inadequate and
+  1907	          you must improve them.  If you do not provide a "real live"
+  1908	          support person, your customers will go elsewhere and you risk
+  1909	          going out of business.
+  1910	
+  1911	          Too many shareware vendors think that this business is an easy
+  1912	          fast buck venture.  They think they can make big money
+  1913	          operating evenings out of their home.  Like the authors, you
+  1914	          can start that way if you are willing to have the money come
+  1915	          in slowly at first.  Eventually, you will need at least one or
+  1916	          two people working full time reviewing new disks and handling
+  1917	          technical support.  You will need another person to handle the
+  1918	          orders.
+  1919	
+  1920	          This is a tough section for many folks wanting to get into
+  1921	          this business.  However, it is good advice gathered from many
+  1922	          sources and is intended to help you decide if you want to
+  1923	          invest further in shareware vending.
+  1924	
+  1925	
+  1926	
+  1927	
+  1928	
+  1929	
+  1930	
+  1931	
+  1932	
+  1933	
+  1934	
+  1935	                                      33
+  1936	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1937	
+  1938	
+  1939	     11.  The Association of Shareware Professionals ("ASP")
+  1940	
+  1941	          The Association of Shareware Professionals ( ASP is a
+  1942	          Registered Trademark ) started with an organizational meeting
+  1943	          hosted by Nelson Ford (PSL) on February 27, 1987 in Houston
+  1944	          Texas.  Successful authors such as Jim Button (PC-File), Bob
+  1945	          Wallace (PC-Write) and Marshall Magee (Automenu), along with
+  1946	          major disk vendors like Public (software) Library (PSL),
+  1947	          Public Brand Software, PC-SIG, BBS operators, CompuServe
+  1948	          sysops and many others participated in this meeting.
+  1949	
+  1950	          These people could have adopted the attitude that they were
+  1951	          already successful enough without such an organization, but
+  1952	          they did not.  They paid their own way to the Convention even
+  1953	          though they were the featured speakers!  Button was elected
+  1954	          the ASP's first (and second) Chairman of the Board of
+  1955	          Directors.  Magee became the first President.  None of these
+  1956	          are "honorary" positions; they involve a great deal of time
+  1957	          and effort.
+  1958	
+  1959	          The ASP also owes thanks to the sysops of IBMNET on
+  1960	          CompuServe.  Sysops Conrad Kageyama and Don Watkins were at
+  1961	          the Convention and arranged, on the spot, a place on IBMNET
+  1962	          for the shareware authors to meet electronically and continue
+  1963	          our plans.  We have been meeting there daily ever since in
+  1964	          what must be a record for longest continuous business meeting.
+  1965	
+  1966	          The ASP has grown into a group of shareware Authors, Shareware
+  1967	          Publishers, Disk Vendors, Bulletin Board Systems (BBS), User
+  1968	          Groups, Press members and others working together to improve
+  1969	          the image and marketability of shareware as an alternative way
+  1970	          of purchasing high quality software.
+  1971	
+  1972	          The shareware marketing concept is just a different way of
+  1973	          marketing software.  It is quite different from other forms
+  1974	          that usually include the Software Manufacturer, Distributors
+  1975	          and Retailers AND a LOT of expensive advertising and mark-ups
+  1976	          that often cause prices in the $500-$1000 range.
+  1977	
+  1978	          The shareware channel consists of 4 distinct groups:
+  1979	
+  1980	          1.  The shareware Authors who write and hold the copyrights on
+  1981	          the software.  Some authors have shareware Publishers to
+  1982	          handle the marketing.
+  1983	
+  1984	
+  1985	
+  1986	
+  1987	
+  1988	
+  1989	
+  1990	
+  1991	
+  1992	                                      34
+  1993	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  1994	
+  1995	
+  1996	     11.  The Association of Shareware Professionals (Continued)
+  1997	
+  1998	          2.  The disk copying services (Vendors) which build and
+  1999	          maintain collections of shareware and public domain software,
+  2000	          thus providing a convenient source from which users may obtain
+  2001	          software for evaluation.  The disk Vendors charge for the
+  2002	          disks to make a profit while covering library, advertising and
+  2003	          other costs.   User Groups contribute to shareware
+  2004	          distribution and are usually not-for-profit providing low cost
+  2005	          disk copies for members.
+  2006	
+  2007	          3.  Bulletin Board Systems (BBSs) which help to distribute
+  2008	          software by maintaining libraries of downloadable programs. 
+  2009	          BBSs also provide a means for users to communicate with each
+  2010	          other, recommending programs, providing technical assistance,
+  2011	          reporting problems, and more.
+  2012	
+  2013	          4.  The software user who is the underlying reason for the
+  2014	          existence of groups 1, 2 and 3.
+  2015	
+  2016	          What are the benefits of being an ASP member?
+  2017	
+  2018	          1.  Author and Publisher members benefit by the user's
+  2019	          recognition of the ASP MEMBER logo.  Author and Publisher
+  2020	          members benefit from the experience of other members.  They
+  2021	          work together to help each other with programming, marketing
+  2022	          and support issues.  Members help each other find better
+  2023	          sources of supplies, to promote each others products, to pool
+  2024	          their buying power to obtain better prices, and more.  Author
+  2025	          and Publisher members benefit from ASP public relations
+  2026	          efforts.  Author and Publisher members receive a subscription
+  2027	          to ASPects, the ASP newsletter.
+  2028	
+  2029	          2.  Disk Vendor members benefit by the user's recognition of
+  2030	          the ASP Approved Vendor logo.  Author and Publisher members
+  2031	          are encouraged to send updates and new programs to ASP
+  2032	          Approved Vendors and to allow ASP Approved Vendors and User
+  2033	          Groups to distribute their products without requesting
+  2034	          permission from the author or publisher.  Vendor and User
+  2035	          Group members benefit from the public relations efforts of the
+  2036	          ASP.  Vendor members receive a monthly CD-ROM containing many
+  2037	          of the ASP authored products.  Lists of ASP Approved Vendors
+  2038	          are made available publicly and users are encouraged to look
+  2039	          for ASP Approved Vendors as the best source of high quality,
+  2040	          up-to-date shareware. Vendor and User Group members receive a
+  2041	          subscription to ASPects, the ASP newsletter.
+  2042	
+  2043	
+  2044	
+  2045	
+  2046	
+  2047	
+  2048	
+  2049	                                      35
+  2050	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  2051	
+  2052	
+  2053	     11.  The Association of Shareware Professionals (Continued)
+  2054	
+  2055	          3. BBS members benefit by the user's recognition of the ASP
+  2056	          Approved BBS logo.  Author and Publisher members are
+  2057	          encouraged to provide updates to ASP Approved BBSs either by
+  2058	          mail or by uploading directly.  BBS members benefit from the
+  2059	          public relations efforts of the ASP. Lists of ASP Approved
+  2060	          BBSs are made available publicly and users are encouraged to
+  2061	          look for ASP Approved BBSs as the best source of high quality,
+  2062	          up-to-date shareware.
+  2063	
+  2064	          The ASP is a team of Authors, Publishers, Vendors, BBSs and
+  2065	          User Groups working together to improve the image of shareware
+  2066	          as a respectable alternative to high priced retail software. 
+  2067	          ASP members work to educate the public, to let users know that
+  2068	          shareware is available for them to actually use and evaluate
+  2069	          before making a decision to purchase.
+  2070	
+  2071	          How do I join the ASP?
+  2072	
+  2073	          Join the team today!  To obtain your free ASP Membership
+  2074	          application kit, write, call or FAX the ASP and ask for the
+  2075	          Vendor Application Kit.
+  2076	
+  2077	               Association of Shareware Professionals
+  2078	               545 Grover Road
+  2079	               Muskegon  MI  49442-9427  USA
+  2080	
+  2081	               FAX: 616-788-2765
+  2082	               Voice: 616-788-5131 (8:00 A.M to 5:00 P.M. USA Eastern)
+  2083	      
+  2084	          If you join the ASP as a Vendor Member, your address will be
+  2085	          published to all of the ASP authors and the authors are
+  2086	          strongly urged to send the ASP vendors their disks.  It is the
+  2087	          author's responsibility to send you their disks.  Due to the
+  2088	          growth in the numbers of vendors, it became prohibitively
+  2089	          expensive for the authors to send their disks to all the ASP
+  2090	          vendor members.  Therefore, the authors voted to raise their
+  2091	          annual ASP dues to help fund sending a CD-ROM to all ASP
+  2092	          vendors.  At this writing, it is sent every month and each CD
+  2093	          contains the full collection as submitted by the authors.  It
+  2094	          also contains a "delta" sub-directory with all of the
+  2095	          additions and changes since the previous ASP CD.
+  2096	
+  2097	          Included on each CD is the latest on-disk ASP Official Catalog
+  2098	          listing over 1,000 shareware products produced by the ASP
+  2099	          authors.  The ASP Vendor members also receive the ASP's
+  2100	          monthly (approximately) newsletter and can use the ASP
+  2101	          trademarked logo in their catalogs and advertising.
+  2102	
+  2103	
+  2104	
+  2105	
+  2106	                                      36
+  2107	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  2108	
+  2109	
+  2110	     12.  Services
+  2111	
+  2112	          NOTE: The information in this section is subject to change at
+  2113	          any time.  This information was put together several years ago
+  2114	          and these price structures change often.  Contact the
+  2115	          telephone carrier for the latest arrangements and prices. 
+  2116	          Your Yellow Pages should list the long distance carriers that
+  2117	          serve your local.
+  2118	
+  2119	          12.1      Telephone
+  2120	
+  2121	                    AT&T has a low cost 800-line service called the
+  2122	                    Ready Line which is relatively inexpensive.  For
+  2123	                    about 23 cents a minute out of state, about 35 cents
+  2124	                    a minute in state (for Texas), you can have a fancy
+  2125	                    800 number just like the big boys.  Most of the good
+  2126	                    acronyms are already gone, but you should still be
+  2127	                    able to come up with something.  At the PsL, our
+  2128	                    number is 1-800-2424-PsL, which we think is easy to
+  2129	                    remember.  However, we were not able to get anything
+  2130	                    like 800-PsL-DISK or 800-SHRWARE, which would have
+  2131	                    been better.  Another shareware distributor has the
+  2132	                    number 800-IBM-DISK, but IBM clamped down on them
+  2133	                    for trademark infringement and they no longer
+  2134	                    advertise the number that way, so we suggest that
+  2135	                    you not waste time trying to work "IBM" into your
+  2136	                    acronym.  The Ready Line 800 number is assigned to
+  2137	                    your regular telephone number, so you do not even
+  2138	                    have to get a second line, unless you just want to
+  2139	                    be able to know for sure if someone has dialed the
+  2140	                    800 number.
+  2141	
+  2142	                    An AT&T competitor, Sprint, has cheaper rates,
+  2143	                    although only time will tell if their service will
+  2144	                    match AT&T's.  Sprint's rates are as follows:
+  2145	                    $10/month Rates vary with distance and total number
+  2146	                    of hours: 0-5 hours: $.2125-$.23 5-25 hours:
+  2147	                    $.195-$.205 25-75 hours: $.1775-$.19 75-150 hours:
+  2148	                    $.1775-$.1875 Call 800-347-3300 to order service.
+  2149	                    (Rates above are as of 1990 and are subject to
+  2150	                    change.)
+  2151	
+  2152	
+  2153	
+  2154	
+  2155	
+  2156	
+  2157	
+  2158	
+  2159	
+  2160	
+  2161	
+  2162	
+  2163	                                      37
+  2164	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  2165	
+  2166	
+  2167	     12.  Services (Continued)
+  2168	
+  2169	          12.2 Credit Card Merchant Accounts
+  2170	
+  2171	               MasterCard & Visa
+  2172	
+  2173	               MC/Visa Merchant accounts can be very difficult for
+  2174	               mail-order merchants to get, more so in some parts of the
+  2175	               country than in others.  If you have had a business
+  2176	               checking account for your business for several years, get
+  2177	               to know your branch manager well.  Try them first.
+  2178	
+  2179	               If that fails, your next step should be to check ALL your
+  2180	               local banks.  It's possible that many of the local banks
+  2181	               are processed by the same clearinghouse who sets the
+  2182	               rules for member banks about acceptance of mail-order
+  2183	               merchants.
+  2184	
+  2185	               American Express
+  2186	
+  2187	               While MC/Visa are the big guns, American Express is worth
+  2188	               contacting after you get your Master/Visa account.
+  2189	
+  2190	          12.3 A Banker's Perspective
+  2191	
+  2192	               Following is a document prepared by Eric Isaacson that
+  2193	               may help you convince your bank that someone in the
+  2194	               shareware business is worthy of consideration for a
+  2195	               Merchant Account:
+  2196	
+  2197	               -------------------------------------------------------
+  2198	
+  2199	               Shareware Marketing of Software: A Banker's Perspective
+  2200	
+  2201	                               by Eric Isaacson
+  2202	
+  2203	               Copyright 1991 Eric Isaacson.
+  2204	
+  2205	               All rights reserved.  Permission is hereby granted to
+  2206	               shareware businesses and members of the banking industry
+  2207	               to freely copy and distribute this unmodified work
+  2208	               between and among themselves. 
+  2209	
+  2210	               Your comments are welcome!  Send them to:
+  2211	
+  2212	                    Eric Isaacson Software
+  2213	                    416 E. University Ave.
+  2214	                    Bloomington  IN  47401-4739
+  2215	                    (812)339-1811
+  2216	
+  2217	
+  2218	
+  2219	
+  2220	                                      38
+  2221	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  2222	
+  2223	
+  2224	     12.  Services (Continued)
+  2225	
+  2226	          12.3 A Banker's Perspective (Continued)
+  2227	
+  2228	               The Purpose of This Booklet
+  2229	
+  2230	               In the past ten years a new approach to marketing
+  2231	               computer software has emerged: shareware.  Shareware is
+  2232	               relatively small compared to the overall software market,
+  2233	               and it is very different.  It has been poorly understood
+  2234	               by bankers wishing to evaluate shareware businesses. 
+  2235	               This booklet explains the shareware business from the
+  2236	               banker's point of view.
+  2237	
+  2238	               Why Software Is Different
+  2239	
+  2240	               A computer has two components: the hardware and the
+  2241	               software.  The physical machinery comprises the hardware:
+  2242	               the main box, various disk drives and circuit boards
+  2243	               mounted inside, and the keyboard and monitor connected
+  2244	               via cables.  Computer programs comprise the software: the
+  2245	               operating system, the word processor, the spreadsheet,
+  2246	               the accounting package, the database manager, etc.
+  2247	
+  2248	               The marketing of computer software poses unique problems. 
+  2249	               The value of software is intellectual: it comes from the
+  2250	               hundreds-to-thousands of hours spent preparing the
+  2251	               program and making sure it works perfectly for all users. 
+  2252	               The price of the floppy disks that carry the software is
+  2253	               tiny compared to the intellectual value.  This makes the
+  2254	               computer software industry similar to the video-movie
+  2255	               industry: both have problems with unauthorized copying. 
+  2256	               But the problems of computer software are worse: first,
+  2257	               most computers have the built-in ability to duplicate
+  2258	               software using just one machine. Duplication of movies
+  2259	               requires two tape decks placed next to each other.
+  2260	               Second, copies of software are perfect duplicates of the
+  2261	               original.  With videotape, there is significant and
+  2262	               annoying degradation when copying is attempted.
+  2263	
+  2264	               To combat unauthorized copying, some software publishers
+  2265	               attempted to make their software difficult to copy.  This
+  2266	               "copy protection" was common in the early days of
+  2267	               personal computing.  But publishers have never succeeded
+  2268	               in devising a protection scheme that doesn't annoy the
+  2269	               legitimate purchaser of the program.  
+  2270	
+  2271	
+  2272	
+  2273	
+  2274	
+  2275	
+  2276	
+  2277	                                      39
+  2278	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  2279	
+  2280	
+  2281	     12.  Services (Continued)
+  2282	
+  2283	          12.3 A Banker's Perspective (Continued)
+  2284	
+  2285	               Today almost all computers have high-capacity ("hard")
+  2286	               disk drives onto which all software is copied.  If a user
+  2287	               can't copy the software to the hard drive, that user
+  2288	               isn't likely to buy the software.  Copy-protected
+  2289	               software has almost disappeared from the marketplace.
+  2290	
+  2291	               Other software publishers have taken the completely
+  2292	               opposite approach to the problem: they market their
+  2293	               software as shareware. 
+  2294	
+  2295	               What Is Shareware?
+  2296	
+  2297	               Shareware is the opposite of copy-protection.  Rather
+  2298	               than trying to prevent copying, the software publisher
+  2299	               actually encourages the user to make copies and "share"
+  2300	               the program with anyone interested.  Complete
+  2301	               documentation is placed onto the floppy disk along with
+  2302	               the program.  In the documentation there is an
+  2303	               explanation of shareware.  Anyone who receives a copy of
+  2304	               the program is encouraged to try out the program.  If
+  2305	               they like it, they should send payment (usually called a
+  2306	               "registration") for the program directly to the
+  2307	               publisher. Thus the ability to make perfect copies of the
+  2308	               program becomes a tool for marketing the program.
+  2309	
+  2310	               Note that shareware authors retain a valid copyright to
+  2311	               the program.  The author establishes the conditions under
+  2312	               which the program may be copied.  The author may also
+  2313	               establish a specific amount of time for evaluation of the
+  2314	               program, beyond which the user is legally required to
+  2315	               either pay the registration fee or stop using the
+  2316	               program.  The validity of a shareware program's copyright
+  2317	               has been tested and approved by the courts: a Missouri
+  2318	               shareware author successfully sued a Texas distributor
+  2319	               for violating his conditions for copying.  Also, a
+  2320	               shareware author was invited to testify before a U.S.
+  2321	               Congressional committee evaluating software copyright
+  2322	               law, and the law was reworded to recognize explicitly the
+  2323	               existence and validity of shareware.
+  2324	
+  2325	               Shareware is still a small segment of the whole software
+  2326	               industry, but it is growing rapidly.  Annual revenues
+  2327	               connected with shareware are estimated to exceed $100
+  2328	               million in 1991.
+  2329	
+  2330	
+  2331	
+  2332	
+  2333	
+  2334	                                      40
+  2335	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  2336	
+  2337	
+  2338	     12.  Services (Continued)
+  2339	
+  2340	          12.3 A Banker's Perspective (Continued)
+  2341	
+  2342	               The Shareware Author's Business
+  2343	
+  2344	               Most businesses publishing shareware consist of a single
+  2345	               person: the author of the program.  Many authors develop
+  2346	               programs on evenings and weekends, while retaining a full
+  2347	               time job weekdays.  The author invests mostly time and
+  2348	               not money: a good program takes many hours to prepare,
+  2349	               but it takes at most only a few hundred dollars to
+  2350	               market.
+  2351	
+  2352	               Marketing a shareware product consists simply of placing
+  2353	               it into the shareware distribution stream -- transmitting
+  2354	               the program to free or low-cost dial-up computers called
+  2355	               "bulletin-board systems", transmitting or sending it to
+  2356	               nationwide services like Compuserve and Prodigy, and
+  2357	               sending copies to companies that catalog and distribute
+  2358	               shareware.  If the product is good, enthusiastic users
+  2359	               will spread it themselves, so that an initial
+  2360	               distribution of a few dozen copies will proliferate into
+  2361	               many thousands of copies.  A significant number of those
+  2362	               thousands result in registrations (money) sent to the
+  2363	               author.
+  2364	
+  2365	               What are the advantages and disadvantages of shareware
+  2366	               marketing?  The disadvantages are that a program takes
+  2367	               time to build up sales volume, and the volume will
+  2368	               usually be much smaller.  Also, a program must be very
+  2369	               good to succeed as shareware.  It might be possible, via
+  2370	               skillful marketing and advertising, to fool the public
+  2371	               into buying a mediocre program when it's shrink-wrapped
+  2372	               on a store shelf.  But the user can try out a shareware
+  2373	               program before buying it -- if it's mediocre, the user
+  2374	               won't use it and hence won't register it.
+  2375	
+  2376	               The advantages of shareware are low risk and low
+  2377	               overhead.  Through traditional (non-shareware)
+  2378	               distribution channels, it takes from $200,000 to $500,000
+  2379	               to properly launch a software product.  Markups must be
+  2380	               granted to both retail outlets and their supplying
+  2381	               distributors, so that the publisher might get only 15% of
+  2382	               the retail price, and the author even less.
+  2383	
+  2384	
+  2385	
+  2386	
+  2387	
+  2388	
+  2389	
+  2390	
+  2391	                                      41
+  2392	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  2393	
+  2394	
+  2395	     12.  Services (Continued)
+  2396	
+  2397	          12.3 A Banker's Perspective (Continued)
+  2398	
+  2399	               Some shareware programs fail: they aren't good enough to
+  2400	               generate registrations.  But the author doesn't thereby
+  2401	               go bankrupt.  He or she simply loses the modest,
+  2402	               out-of-pocket initial disk-and-postage investment.
+  2403	
+  2404	               There are hundreds of shareware authors who make enough
+  2405	               money from shareware to substantially supplement their
+  2406	               regular job income.  About 50 authors are making a living
+  2407	               from shareware receipts, and have gone full-time with
+  2408	               their shareware business.  Many of them can make a
+  2409	               handsome profit without even needing to hire anyone else
+  2410	               to help out.
+  2411	
+  2412	               Some shareware businesses grow into full-fledged
+  2413	               companies, with dozens of employees and multi-million
+  2414	               dollar annual sales.  To reach that level, the author
+  2415	               typically supplements the shareware marketing with
+  2416	               traditional advertising and dealer distribution.  But
+  2417	               even for those companies, the risks are low because the
+  2418	               author moves into traditional distribution only after the
+  2419	               product is generating significant revenue through
+  2420	               shareware marketing.  The expansion is financed via
+  2421	               existing profits, rather than venture capital.
+  2422	
+  2423	               Shareware Businesses and Banking
+  2424	
+  2425	               Shareware marketing is completely unique -- the only
+  2426	               other business with its try-before-you-buy philosophy is
+  2427	               Public Television; but Public Broadcasting stations do
+  2428	               not enjoy the low overhead that shareware authors do.
+  2429	
+  2430	               The uniqueness of shareware makes it poorly understood in
+  2431	               the banking industry, especially those handling
+  2432	               credit-card merchant accounts.  Shareware has some of the
+  2433	               characteristics bankers normally associate with poor
+  2434	               risk: payments are made almost entirely by mail or
+  2435	               telephone, and all but the largest shareware businesses
+  2436	               are operated out of the author's home.
+  2437	
+  2438	
+  2439	
+  2440	
+  2441	
+  2442	
+  2443	
+  2444	
+  2445	
+  2446	
+  2447	
+  2448	                                      42
+  2449	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  2450	
+  2451	
+  2452	     12.  Services (Continued)
+  2453	
+  2454	          12.3 A Banker's Perspective (Continued)
+  2455	
+  2456	               In reality, however, shareware authors are ideal
+  2457	               credit-card merchants from the banker's point of view. 
+  2458	               Unlike other mail-order businesses in which the customer
+  2459	               doesn't see the product until it arrives, with shareware
+  2460	               the customer already has the product.  If the customer
+  2461	               isn't happy, he or she simply stops using the program,
+  2462	               and never pays the author in the first place.  If the
+  2463	               customer wishes to defraud the author, he or she simply
+  2464	               uses the program and never contacts the author.  Thus,
+  2465	               all of a shareware author's paying customers are both
+  2466	               happy with the product and honest enough to pay for it. 
+  2467	               The level of customer complaints and chargebacks is close
+  2468	               to zero.  Credit-card fraud for shareware is
+  2469	               non-existent.
+  2470	
+  2471	               If a banker knows about shareware, he or she should
+  2472	               welcome a shareware author's business.  How can a banker
+  2473	               identify a bona fide shareware business?  To start, the
+  2474	               banker can ask the author for a copy of the program.  If
+  2475	               the banker doesn't feel "computer-literate" enough to
+  2476	               verify that it's a genuine, non-trivial program, he or
+  2477	               she can ask for references.  Many shareware authors are
+  2478	               members of the Association of Shareware Professionals
+  2479	               (ASP).  The ASP screens applications for membership, to
+  2480	               ensure that only legitimate authors of non-trivial
+  2481	               shareware are admitted as author-members.  The ASP would
+  2482	               be happy to verify any claims of membership -- they can
+  2483	               be reached at (616)788-5131, weekdays 8--5 eastern time. 
+  2484	               Other prominent authors have chosen not to join the ASP,
+  2485	               but their programs are listed in the catalogs of
+  2486	               shareware distribution companies such as Public Brand
+  2487	               Software, P. O. Box 51315, Indianapolis, IN 46251; or the
+  2488	               Public (software) Library, P. O. Box 35705, Houston, TX
+  2489	               77235.
+  2490	
+  2491	               Shareware Distribution Companies
+  2492	
+  2493	               Bankers should be aware of another major component of the
+  2494	               shareware industry, distinct from the authors: the
+  2495	               shareware distribution companies.  These companies take
+  2496	               advantage of the fact that copying of shareware is
+  2497	               allowed, by providing a cataloguing and distribution
+  2498	               service of shareware disks.  Customers of distribution
+  2499	               houses are sent lists of available programs, for which
+  2500	               they can pay a copying fee of between $1 and $5 per disk.
+  2501	
+  2502	
+  2503	
+  2504	
+  2505	                                      43
+  2506	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  2507	
+  2508	
+  2509	     12.  Services (Continued)
+  2510	
+  2511	          12.3 A Banker's Perspective (Continued)
+  2512	
+  2513	               There is no business arrangement between authors and
+  2514	               distribution houses: authors neither receive any
+  2515	               royalties for disks sold, nor do they pay anything for
+  2516	               the publicity given them.  Customers understand that they
+  2517	               are not paying for the software, but merely for the
+  2518	               distribution service.  Most shareware authors allow
+  2519	               distributors to handle their programs, because it spreads
+  2520	               their programs even further.
+  2521	
+  2522	               From a banker's point of view, the shareware distribution
+  2523	               houses are closer to traditional mail-order businesses. 
+  2524	               Their profit margins are much lower than authors',
+  2525	               because their overhead relative to revenues is higher. 
+  2526	               They must advertise in order to build business.  Some
+  2527	               distribution companies haven't charged enough for disks
+  2528	               to cover their overhead costs, and have thus gone
+  2529	               bankrupt.  But others, such as Public Brand Software and
+  2530	               the Public (software) Library, have built solid,
+  2531	               profitable, multi-million-dollar companies from shareware
+  2532	               distribution.
+  2533	
+  2534	               A banker wishing to evaluate a shareware distribution
+  2535	               company can use many of the usual criteria: length of
+  2536	               time in business, size of business, profit sheets, etc. 
+  2537	               There are a couple of pointers specific to shareware
+  2538	               distribution that can enhance the evaluation: first,
+  2539	               companies should be charging at least $3 per disk in
+  2540	               order to be profitable.  There can exist "Mom and Pop"
+  2541	               outfits, run out of homes, that make some money charging
+  2542	               less; but if they try to expand into real businesses,
+  2543	               their overhead almost always overwhelms them.  Second, a
+  2544	               banker can check the distributor's integrity by asking
+  2545	               for a catalog and for advertising copy, to make sure that
+  2546	               they are adequately explaining to the customer that they
+  2547	               are a shareware distribution service and are not selling
+  2548	               the software itself.  If the customers understand what
+  2549	               they are getting, the level of complaints and chargebacks
+  2550	               will be much less than that of the average mail-order
+  2551	               business; if they don't, it will be as much or greater.
+  2552	
+  2553	
+  2554	
+  2555	
+  2556	
+  2557	
+  2558	
+  2559	
+  2560	
+  2561	
+  2562	                                      44
+  2563	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  2564	
+  2565	
+  2566	     12.  Services (Continued)
+  2567	
+  2568	          12.3 A Banker's Perspective (Continued)
+  2569	
+  2570	               For More Information
+  2571	
+  2572	               The booklet "Shareware `Try Before You Buy' Software" by
+  2573	               Rob Rosenberger describes shareware from the consumer's
+  2574	               point of view.  You may purchase it by sending $4.95 plus
+  2575	               $1.75 S+H to Paradise Publishing, 3111 S. Valley View
+  2576	               Blvd. Suite B-105, Las Vegas, NV 89102; or calling
+  2577	               (702)253-1940.  For free catalogs listing the best
+  2578	               available shareware programs, you can write to Public
+  2579	               Brand Software or the Public (software) Library at the
+  2580	               addresses already given, or call them at their respective
+  2581	               numbers: (800)426-3475 and (800)242-4775.
+  2582	               -------------------------------------------------------
+  2583	
+  2584	               End of Eric's article.
+  2585	
+  2586	
+  2587	
+  2588	
+  2589	
+  2590	
+  2591	
+  2592	
+  2593	
+  2594	
+  2595	
+  2596	
+  2597	
+  2598	
+  2599	
+  2600	
+  2601	
+  2602	
+  2603	
+  2604	
+  2605	
+  2606	
+  2607	
+  2608	
+  2609	
+  2610	
+  2611	
+  2612	
+  2613	
+  2614	
+  2615	
+  2616	
+  2617	
+  2618	
+  2619	                                      45
+  2620	             Shareware Vendor's Guide - Copyright 1992 by the ASP
+  2621	
+  2622	
+  2623	                                    Index
+  2624	
+  2625	          1.2m Disk Problems  . . . . 13     On-Disk Catalog . . . . 12, 16
+  2626	          800 Numbers . . . . . . . . 37     Rack Vendor . . . . . 3, 7, 11
+  2627	          American Express  . . . . . 38     Rack Vendor Definition  . .  3
+  2628	          ASP . . . . . . . . . . . . 34     Registering Shareware . . . 11
+  2629	               Catalog  . . . . . . .  9     Registration Incentives . . 12
+  2630	          ASP CD-ROM  . . . . . . . . 36     Shareware Compilation
+  2631	          Association of Shareware                     Copyrights  . . .  9
+  2632	                    Professionals . . 34     Shareware Copyrights  . . 5, 8
+  2633	          Banker's Perspective  . . . 38     Shareware Definition  . . .  4
+  2634	          Catalog Software  . . . . . 16     Shareware Description . . . 11
+  2635	          Catalog, ASP  . . . . . . .  9     Shareware Registration  . . 11
+  2636	          Catalog, On-Disk  . . . 12, 16     Simply Help Shareware . . . 32
+  2637	          CD-ROM - ASP  . . . . . . . 36     Software  . . . . . . . . . 16
+  2638	          Checking Account  . . . . . 10          Catalog  . . . . . . . 16
+  2639	          Collecting Disks  . . . . .  7          Compression  . . . . . 18
+  2640	          Collecting Shareware  . . . 30          Duplication  . . . . . 20
+  2641	          Compression Software  . . . 18     Supplies
+  2642	          Computer Equipment  . . . . 13          Disks  . . . . . . . . 26
+  2643	          Copyright                               Label Stock  . . . . . 27
+  2644	               Compilations . . . . .  9          Mailers  . . . . . 27, 28
+  2645	               Shareware  . . . . . 5, 8     Technical Support . . . . . 32
+  2646	          Credit Cards  . . . . . . . 10     Trademarks  . . . . . . . . 29
+  2647	          Definition                         Tutorial Software
+  2648	               Freeware . . . . . . .  4          DOS Summary
+  2649	               Shareware  . . . . . .  4               (Hypertext) . . . 23
+  2650	          Description Of Shareware  . 11          DosEA  . . . . . . . . 24
+  2651	          Disk Collection . . . . . .  7     Vendor  . . . . . . . . . .  3
+  2652	          Disk Mailers  . . . . . 27, 28     Vendor Advertizing  . . . .  9
+  2653	          Disk Organization . . . . .  8     VENDOR.DOC File . . . . . 8, 9
+  2654	          Disk Suppliers  . . . . . . 26     Virus Scanning  . . . .  8, 22
+  2655	          Disk Vendor Definition  . .  3     Virx/Virex-PC Scanners  . . 22
+  2656	          Duplication Software  . . . 20     Visa Card . . . . . . . . . 38
+  2657	          Duplicators . . . . . . 14, 15     WATS Lines  . . . . . . . . 37
+  2658	          Federal Tax I.D.  . . . . . 10     Word Processor  . . . . . . 12
+  2659	          Fluegelman, Andrew  . . . .  4
+  2660	          Freeware Definition . . . .  4
+  2661	          Help Software . . . . . . . 32
+  2662	          High Density Disk
+  2663	                    Problems  . . . . 13
+  2664	          Integrity Master
+  2665	                    Anti-Virus  . . . 22
+  2666	          Label Stock . . . . . . . . 27
+  2667	          Letterhead  . . . . . . . .  9
+  2668	          Library Collection  . . . .  7
+  2669	          Logos . . . . . . . . . . .  9
+  2670	          Mailers, Disk . . . . . 27, 28
+  2671	          Market Niche  . . . . . . .  6
+  2672	          Master Card . . . . . . . . 38
+  2673	          Merchant Accounts . . . . . 38
+  2674	          Niche, Market . . . . . . .  6
+  2675	
+  2676	                                      46

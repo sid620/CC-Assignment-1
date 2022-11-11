@@ -1,0 +1,388 @@
+     1	
+     2	
+     3	
+     4	        WHAT IS HIGH MEMORY, WHY DO I CARE, AND HOW CAN I USE IT?
+     5	                      BY CY ATKINSON
+     6	
+     7	
+     8	  WHAT IS IT:
+     9	
+    10	
+    11	
+    12	     The 8088 chip, the engine in the PC and XT, can address one meg in 16
+    13	
+    14	  64K segments numbered 0 thru F.  IBM has designed the hardware of the PC
+    15	
+    16	  and XT to make the first 640K available to PCDOS and the user, and
+    17	
+    18	  reserved the upper 360K for various hardware functions such as ROS and
+    19	
+    20	  screen buffers, etc.  This upper portion of the 1 meg address capability
+    21	
+    22	  is refered to as HIGH MEMORY, and it is available for the user in 64K
+    23	
+    24	  segments IF THE SPECIFIC HARDWARE WHICH USES THAT SEGMENT IS NOT
+    25	
+    26	  INSTALLED.
+    27	
+    28	
+    29	
+    30	     With the exception of the area from 640 to 704K (the eleventh 64K seg-
+    31	
+    32	  ment, and hence segment 'A'), HIGH MEMORY can not be directly addressed
+    33	
+    34	  by DOS.  But it can be used by various special programs.  These programs
+    35	
+    36	  include RAMDISK programs such as HIGHDISK, which use a portion of HIGH
+    37	
+    38	  MEMORY as a virtual disk drive; DOS extenders, such  as RAMADE, which
+    39	
+    40	  allow you to load DOS "extensions" into this normally unused space; and
+    41	
+    42	  simple "lid lifters" such as DOSMEM, which change the maximum  size of
+    43	
+    44	  the DOS region from 640K to 704K (and even in some special circumstances,
+    45	
+    46	  to 736K).
+    47	
+    48	
+    49	
+    50	  WHY DO I CARE:
+    51	
+    52	
+    53	
+    54	     A COUPLE OF MONTHS AGO, A DISCUSSION WAS ENTERED IN AN INTERNAL IBM BBS
+    55	
+    56	  as to how storage addresses are decoded on the IBM PC XT motherboard.
+    57	
+    58	  The idea was advanced that it should be possible to replace all four
+    59	
+    60	  banks of 64K chips with 256K chips, plug in a "custom" prom at U44, and
+    61	
+    62	  depending on the system's hardware configuration, have up to 256K of
+    63	
+    64	  additional HIGH MEMORY available for ramdisk, print spooler, DOS
+    65	
+    66	  extensions, or whatever.
+    67	
+    68	
+    69	
+    70	     Well, it's been done.  IT WORKS!  IT'S EASY!  IT INVOLVES NO SOLDERING
+    71	
+    72	  OR MODIFICATIONS TO THE MOTHERBOARD EXCEPT REPLACING SOCKETED CHIPS ---
+    73	
+    74	  AND IT'S *C*H*E*A*P*!*  At current San Jose prices, the cost of taking
+    75	
+    76	  an XT from 640K to 896K is under $50.  It would cost less than $95 to go
+    77	
+    78	  all the way from 256K to 896K.
+    79	
+    80	
+    81	
+    82	     On my PPC, I run a 360k ramdisk, a 96k ramdisk, a 30K print spooler,
+    83	
+    84	  and still have 410K left for DOS and applications.  A friend runs 192K
+    85	
+    86	  of ramdisk, print spoolers, and DOS extensions, and still has a 704K DOS
+    87	
+    88	  address space.
+    89	
+    90	
+    91	
+    92	  HOW DO I DO IT:
+    93	
+    94	
+    95	
+    96	     The six 64K sebments above 640K are reserved as follows:
+    97	
+    98	
+    99	
+   100	  * Segment A is reserved for the fully expanded Enhanced Graphics Adapter.
+   101	
+   102	
+   103	
+   104	  * Segment B is reserved for the Mono and Color graphics adapters.
+   105	
+   106	
+   107	
+   108	  * Segment C is reserved for the Hard Disk Adapter, and the 3270 card.
+   109	
+   110	
+   111	
+   112	  * Segments D and E are reserved for extended/expanded memory
+   113	
+   114	    (In the PC Jr, this space is used for the rom cartridges.)
+   115	
+   116	
+   117	
+   118	  * Segment F is reserved for BIOS and Basic Rom, and is not available.
+   119	
+   120	
+   121	
+   122	     To access HIGH MEMORY (any combination of segments A C D E) on an IBM
+   123	
+   124	  PC XT which already has 640K on the motherboard, all you have to do is:
+   125	
+   126	
+   127	
+   128	    1. Replace the 64K chips in the appropriate banks with 256K chips.
+   129	
+   130	       (see the information below on options for programming the U44
+   131	
+   132	       decoder chip).
+   133	
+   134	    2. Replace the original U44 decoder ROM with one programmed to your
+   135	
+   136	       needs according to the information in this article.
+   137	
+   138	    3. Set the jumpers at E2, and SW2 positions 3 and 4, to select the
+   139	
+   140	       desired memory configuration (determined by how the new U44 is
+   141	
+   142	       programmed and by your hardware configuration).
+   143	
+   144	
+   145	
+   146	     (If you have not already expanded to 640K, you will also have to
+   147	
+   148	  insert a 74LS158 chip in the empty chip socket U84, and you may have to
+   149	
+   150	  install a jumper at E2, in addition to inserting the extra storage chips)
+   151	
+   152	
+   153	
+   154	  TELL ME ALL ABOUT U44:
+   155	
+   156	
+   157	
+   158	     U44 is a 256 X 4 bit prom.  That is, it has 256 addresses, each of
+   159	
+   160	  which contains a single hex digit (four bits) of data.  This data is
+   161	
+   162	  arranged into sixteen decoding tables, each of which has sixteen entries.
+   163	
+   164	  These tables are what tell the machine whether a particular 64K segment
+   165	
+   166	  of storage exists, and in which bank of chips it is located.
+   167	
+   168	
+   169	
+   170	     Which table is used is determined by the E2 jumpers and SW2 pos 3 & 4.
+   171	
+   172	  These comprise the four high order input bits to U44 (A7-A4).  The two
+   173	
+   174	  jumpers (A7 & A6) select one of four sets of tables, and the switches
+   175	
+   176	  (A5 & A4) select the specific table within a given set.
+   177	
+   178	
+   179	
+   180	     Which entry in the selected table will be used to decode a specific
+   181	
+   182	  storage address is determined by the four high order bits of that storage
+   183	
+   184	  address (CA19-CA16 of the PC address bus), which are directed to the four
+   185	
+   186	  low order input bits to U44 (A3-A0).
+   187	
+   188	
+   189	
+   190	     Each entry in U44's decoding tables contains one of five hexidecimal
+   191	
+   192	  values: x'9' (select bank 0), x'B' (select bank 1), x'D' (select bank 2),
+   193	
+   194	  x'F' (select bank 3), or x'E' (segment not addressable).  BY BUILDING A
+   195	
+   196	  TABLE WITH THE APPROPRIATE VALUES, IT IS POSSIBLE TO DECODE ANY COMBINA-
+   197	
+   198	  TION OF 64K AND/OR 256K STORAGE CHIPS UP TO ONE MEG -- SO LONG AS IT DOES
+   199	
+   200	  NOT CONFLICT WITH INSTALLED ADAPTERS!
+   201	
+   202	
+   203	
+   204	
+   205	
+   206	       THE FOURTH SET OF TABLES REPRESENTS A MAJOR BREAKTHROUGH FOR
+   207	
+   208	    OWNERS OF VERY OLD XT'S, WHICH HAVE 64K CHIPS SOLDERED INTO BANK 0
+   209	
+   210	    (NO SOCKETS).  IT ENABLES THEM TO UPGRADE TO 640K BY INSTALLING 256K
+   211	
+   212	    CHIPS INTO BANKS 1 AND 2, AND LEAVING 64K CHIPS IN BANKS 0 AND 3.
+   213	
+   214	    OR, THEY MAY INSTALL 256K CHIPS INTO BANKS 1, 2, AND 3, AND ACCESS
+   215	
+   216	    640K PLUS UP TO 192K OF HIGH MEMORY.  AGAIN, NO CHANGES ARE REQUIRED
+   217	
+   218	    AT THE E2  JUMPER BLOCK.
+   219	
+   220	
+   221	
+   222	
+   223	
+   224	
+   225	     Using this program, you have switch selectable storage configurations
+   226	
+   227	  to accomodate the most common hardware configurations.  However, if this
+   228	
+   229	  example isn't suitable for your particular case, it should be reasonably
+   230	
+   231	  easy, using the information provided, to develop a special version for
+   232	
+   233	  any particular circumstance.  IBM usually uses a 24S10 for the U44 chip,
+   234	
+   235	  but any of several subs will work fine.  Blank chips can be located in
+   236	
+   237	  most areas for well under two dollars.  The only hard part is getting
+   238	
+   239	  them programmed.
+   240	
+   241	
+   242	
+   243	  IF I DO IT THIS WAY, HOW DO I SET THE SWITCHES:
+   244	
+   245	
+   246	
+   247	     With a chip programmed to my recommendations installed at U44, and a
+   248	
+   249	  jumper installed at E2 1 - 2, four new memory configurations are switch
+   250	
+   251	  selectable:
+   252	
+   253	
+   254	
+   255	  NOTE: in the tables which follow, "Closed" means that the switch is ON.
+   256	
+   257	                                    "Open" means that the switch is OFF.
+   258	
+   259	
+   260	
+   261	
+   262	     SW2 4 & 3 = 00 (both closed)========> 640K plus Segments A, D, and E
+   263	
+   264	                                              (OK with Hard Disk only)
+   265	
+   266	     SW2 4 & 3 = 01 (4 closed, 3 open)===> 640K plus Segments C, D, and E
+   267	
+   268	                                              (OK with EGA only)
+   269	
+   270	     SW2 4 & 3 = 10 (4 open, 3 closed)===> 640K plus Segments D and E
+   271	
+   272	                                              (OK with EGA and Hard Disk)
+   273	
+   274	     SW2 4 & 3 = 11 (both open)==========> 640K (NO HIGH MEMORY)
+   275	
+   276	
+   277	
+   278	
+   279	
+   280	
+   281	
+   282	  HOW CAN I GET A REPLACEMENT U44 PROM LIKE THE ONE DESCRIBED HERE:
+   283	
+   284	
+   285	
+   286	     Of course, anyone who has access to a prom programmer, such as a
+   287	
+   288	  DATIO box, can make these proms up very easily, and is welcome to do so
+   289	
+   290	  using this information in any way he (or she) desires.  But not every
+   291	
+   292	  one has the ability to do-it-himself.  Enough of those who have already
+   293	
+   294	  been sent this information, or who have read my appends in PORTABLE
+   295	
+   296	  FORUM, have asked me for assistance in obtaining the chips that I have
+   297	
+   298	  been able to interest someone here in San Jose in making them up.  Based
+   299	
+   300	  ON CURRENT LOCAL PRICES FOR THE BLANKS, WE ARE OFFERING U44 CHIPS PROGRAMMED
+   301	
+   302	  according to the listing in this article for $6.00.
+   303	
+   304	
+   305	
+   306	     HERES HOW WE'LL DO IT:
+   307	
+   308	
+   309	
+   310	  1.  If you live in the U.S., please mail your order to:
+   311	
+   312	
+   313	
+   314	                      Cy Atkinson (CHIPS)
+   315	
+   316	                      5218 Running Bear Drive
+   317	
+   318	                      San Jose, CA  95136
+   319	
+   320	
+   321	
+   322	      Please include a check in the amount of $6.00 for each chip ordered,
+   323	
+   324	      PLUS an additional $3.00 for postage and handling for 1 to 10 chips,
+   325	
+   326	      $6.00 for 11 to 20, etc.
+   327	
+   328	
+   329	
+   330	  2.  If you live outside the U.S., mail your order to the same address,
+   331	
+   332	      but please include $6.00 for each chip, PLUS an additional $5.00 for
+   333	
+   334	      1 to 10 chips, etc.
+   335	
+   336	
+   337	
+   338	  Please don't forget to clearly indicate YOUR mailing address in your
+   339	
+   340	  order.  We will attempt to handle all orders as promptly as possible.
+   341	
+   342	
+   343	
+   344	  THAT'S ALL:
+   345	
+   346	
+   347	
+   348	     I hope you've found this interesting and useful.  Regardless of how
+   349	
+   350	  you obtain your U44 replacement, please feel free to write to me at the
+   351	
+   352	  address above if you run into any problems.  It may take a while, but
+   353	
+   354	  I'll try to respond.   Thanks, and Happy Computing!!
+   355	
+   356	
+   357	
+   358	                                >>>>>>>>>>================>> Cy Atkinson
+   359	
+   360	
+   361	
+   362	  EDITOR'S NOTES:
+   363	
+   364	
+   365	
+   366	    1. Assistance on this upgrade can also be obtained from the microCHIP
+   367	
+   368	  editor who has also performed it on his portable PC.
+   369	
+   370	
+   371	
+   372	    2. IF YOU HAVE A PC1 OR PC2 (BUT NOT A PC Jr):
+   373	
+   374	
+   375	
+   376	     If your ps is not the 8-slot motherboard type, but is a 5-slot
+   377	
+   378	  motherboard, it is possible to put four banks of 256K chips on the
+   379	
+   380	  motherboard... BUT the modification is not for the faint of heart.
+   381	
+   382	  According to the author of the instructions for modifying 5-slot PCs,
+   383	
+   384	  distribution is limited to IBMers and their families.  The instructions
+   385	
+   386	  for PC upgrades can be obtained from the microCHIP editor.
+   387	
+   388	

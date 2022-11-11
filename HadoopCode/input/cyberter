@@ -1,0 +1,683 @@
+     1	Article 4307 of sci.virtual-worlds:
+     2	Newsgroups: sci.virtual-worlds
+     3	Path: news.u.washington.edu!milton.u.washington.edu!hlab
+     4	From: snoswell@ucs.adelaide.edu.au (Michael Snoswell)
+     5	Subject: TECH: Info on CYBERTERM Open System (long)
+     6	Message-ID: <1992May31.221443.12742@u.washington.edu>
+     7	Originator: hlab@milton.u.washington.edu
+     8	Sender: news@u.washington.edu (USENET News System)
+     9	Organization: Information Technology Division, The University of Adelaide, AUSTR
+    10	Date: Sun, 31 May 1992 16:24:54 GMT
+    11	Approved: cyberoid@milton.u.washington.edu
+    12	
+    13	
+    14	
+    15	Following is the document I promised a while back on the system I am
+    16	developing. I have received many requests for this data so here it is
+    17	(a little incomplete or it never would have been posted). I'm emailing
+    18	copies to those who requested it and will be in touch with programmers
+    19	who said they were interested (see later).
+    20	
+    21	---------------------------------------------------------------------------
+    22	                                  
+    23	                                  OSC
+    24	                         Open System Cyberterm
+    25	
+    26	THIS DOCUMENT
+    27	
+    28	This document is an overview of ideas and concepts that have evolved
+    29	over the last year or so. It is not meant to comprehensive, exhaustive,
+    30	complete or fixed. Any items mentioned herein are open for discussion
+    31	and modification through arbitration (ie if you've got a good idea, tell
+    32	me and we'll use it!). Criticism is most wellcome as this has chiefly
+    33	been only a two person project with various input from 1/2 dozen others.
+    34	Arguments and pointers from others would be gratefully received.
+    35	
+    36	The first part of this document discusses some broad ideas and then
+    37	gives a brief description of the terms used. Following this is a 1/2
+    38	technical discussion on a walk though of some aspects of the system.
+    39	After that a more detailed examination is made of the various terms
+    40	described briefly earlier and finally a look at other, less related
+    41	topics is covered in cursory fashion.
+    42	
+    43	After all that a brief description of the software as it stands is
+    44	given, along with projected milestones and pleas for
+    45	technical/programming assistance.
+    46	
+    47	This document mentions many ideas and concepts that stem from the use
+    48	and implementation of the underlying protocols. This paper discusses
+    49	broad uses of the protocols and the resulting system rather than
+    50	focusing on the protocol itself. The reason for this is two-fold:
+    51	
+    52	  1) The protocol by itself would seem pretty meaningless without 
+    53	     describing how it works and how its resulting use affects the 
+    54	     dynamics of a system, and 
+    55	     
+    56	  2) The protocol isn't firmly set. As the system is developed, more 
+    57	     holes are found and things change. There are 1 dozen or so basic 
+    58	     messages and a dozen or so rules that are followed, but these are in flux.
+    59	
+    60	It is hoped that this paper will give readers some familiarity with the
+    61	type of system that is beeing aimed for. A later paper, covering the
+    62	nitty gritty may be produced, but the detailed explanations may be left
+    63	to the source code itself when it is released. 
+    64	
+    65	Having read this discussion first, users and programmers will be in a 
+    66	better position to criticise and aid in the systems development (by 
+    67	discussion and programming support).
+    68	
+    69	Note: Where possible I have put terms in capitals which refer to 
+    70	concepts/objects whichare peculiar to this system. This is to try to 
+    71	differentiate items when using English to describe some ideas etc, to 
+    72	make things a bit clearer.
+    73	
+    74	
+    75	
+    76	SYSTEM OVERVIEW
+    77	
+    78	The need for a low cost, low bandwidth cyberterminal (CYBERTERM) has 
+    79	arisen due to the increasing need to communicate over existing data 
+    80	channels with existing hardware. The system is aimed for widespread use 
+    81	over a number of platforms and data connections. Initial release is planned 
+    82	for late '92 in a shareware format with full source code for all available 
+    83	systems.
+    84	
+    85	
+    86	
+    87	INTERFACE
+    88	
+    89	The interface is simply using the screen with the keyboard and mouse to 
+    90	provide a window view into a cyberspace area. As source code will become 
+    91	available. 
+    92	
+    93	The addition of Power Glove, HMD and other devices will be 
+    94	encouraged but not initally supported and will not be required. 
+    95	
+    96	The nature of the system will be such that if you have a PC XT with 
+    97	hercules graphics then you can display only wire frame at 1 frame per 
+    98	second (or whatever the software can manage). If you have an Indigo or 
+    99	similar then you are lucky enough to be able to display 30 frames a second,
+   100	solid or rendered. The idea is that all the different systems will be able to be
+   101	functionally connected together in a meaningful manner. If you have a full 
+   102	body suit, lucky you and you get better integration into the cyberspace etc etc 
+   103	etc.
+   104	
+   105	What this all means is that the code has a central communications core that is 
+   106	common to all modules on all systems. The interface business is merely a 
+   107	variable front end. All systems will use the same messages etc to 
+   108	communicate, but the low end users' systems will not request the extra data and 
+   109	will not be capable of producing some messages. 
+   110	(eg if you don't have a mouse then movenment is via keyboard. If you have a 
+   111	Data Glove then movement can be via gestures).
+   112	
+   113	
+   114	
+   115	INITIAL SYSTEM
+   116	
+   117	The system will initially be designed around a PC, with Amiga and X11 (on a 
+   118	Sun IPC) mods being made as we go, but with no special provisos for these 
+   119	machines at this point. Software is currently being written and a beta version 
+   120	will be available in a few months (now is May '92). Release will be via 
+   121	request to selected users for immediate feedback, followed by general 
+   122	shareware release.
+   123	
+   124	
+   125	
+   126	SYSTEM ARCHITECHETURE
+   127	
+   128	The whole nature of the cyberspace is controlled by the messages that are 
+   129	sent, which abstractly define the rules for objects, clients etc within the 
+   130	cyberspace. To more clearly describe the nature of these rules and 
+   131	messages, a number of terms have been borrowed and coined to describe 
+   132	new/borrowed concepts. Once these terms are defined, then it becomes 
+   133	much clearer as to how the whole thing fits together and the interaction of 
+   134	objects and the nature of this interaction will become evident as you 
+   135	understand the rules and contraints which define the behaviour of the 
+   136	cyberspace.
+   137	
+   138	
+   139	
+   140	DEFINITIONS
+   141	
+   142	These definitions are brief and are given to allow a fuller understanding of
+   143	the descriptions to follow. A more detailed discussion of these terms
+   144	will follow later.
+   145	
+   146	CLIENT
+   147	
+   148	A CLIENT is the term to describe a person (USER) who is connected to a
+   149	system. The CLIENT may be automated (an AGENT).
+   150	
+   151	SERVER
+   152	
+   153	A SERVER is the central message handling facility which handles the data
+   154	flow between CLIENTS. (A bit like a BBS)
+   155	
+   156	LOCAL SERVER (LS)
+   157	
+   158	A LOCAL SERVER is a SERVER that resides on the same machine as the
+   159	CLIENT.
+   160	
+   161	REMOTE SERVER (RS)
+   162	
+   163	A REMOTE SERVER is not at the same physical machine as the CLIENT in
+   164	question.
+   165	
+   166	CYBERTERM (CT)
+   167	
+   168	This is the term to define the CLIENT and the LOCAL SERVER together which a USER
+   169	interfaces to. This all resides on his local machine.
+   170	
+   171	SECTOR
+   172	
+   173	A SECTOR is a region of CYBERSPACE which is controlled by a single
+   174	SERVER.
+   175	
+   176	SECTOR CONTROLLER (SC)
+   177	
+   178	This is another term for the SERVER, but which covers the CLIENT that is
+   179	local to that SERVER (akin to a News conference moderator or a BBS
+   180	sysop).
+   181	
+   182	PERMASPACE (PS)
+   183	
+   184	PERMASPACE is an area of the SECTOR which has been allocated to a
+   185	specific purpose. The data defining this region resides in the SC which
+   186	controls the SECTOR.
+   187	
+   188	PRIVATE PERMASPACE (PPS)
+   189	
+   190	PERMASPACE can belong to a single CLIENT (or else it belongs to the SC). If a
+   191	USER acquires a region of a SECTOR for their own use, that region is
+   192	called PRIVATE PERMASPACE and is controlled by the owner CLIENT's LOCAL
+   193	SECTOR CONTROLLER (ie the SERVER which resides on their own machine).
+   194	
+   195	LINE
+   196	
+   197	A LINE is the connection from the SERVERs to the CLIENTS, LINEs can be
+   198	virtual or real.
+   199	
+   200	AGENTS
+   201	
+   202	AGENTS are macros that use the messages and protocols of the system to
+   203	perform tasks as the USER himself would. There are 3 types of AGENTS
+   204	defined so far. PRIVATE AGENTS, SC AGENTS and INDEPENDENT AGENTS.
+   205	
+   206	ASPECT
+   207	
+   208	ASPECT is the description of an OBJECT and covers visual and audio
+   209	definitions in an extensible hierarchy of increasing complexity. All
+   210	objects have default ASPECTs.
+   211	
+   212	CYBERSPACE CONFERENCING (CBC)
+   213	
+   214	This is the initial "let's get together and have a chat" aim of the
+   215	system and is useful when people ask "So what are you working on?". You
+   216	say, "I'm working on a Cyberspace Conferencing system", or something
+   217	like that.
+   218	
+   219	GUEST
+   220	
+   221	A GUEST is a CLIENT who is remote to your location who is connected to
+   222	your LOCAL SERVER.
+   223	
+   224	BBS
+   225	
+   226	A bulletin board system, which when in "chat" or "conference" mode is a
+   227	good analogy for what this system will build upon (ie a graphical
+   228	version of a BBS CB channel.)
+   229	
+   230	OBJECTS
+   231	
+   232	OBJECTs are any things which exist within a SECTOR and and listed in a
+   233	SERVER database. This includes CLIENTS, AGENTS, PERMASPACE etc.
+   234	
+   235	ID
+   236	
+   237	ID applies to AGENTS, CLIENTS and SERVERS. It is a unique 4 byte number
+   238	where the top 4 bits define what type of object the ID belongs to.
+   239	
+   240	FAR - 1,000 units
+   241	NEAR - 100 units
+   242	CLOSE - 10 units
+   243	VERY_CLOSE - 1 unit (ie 26 adjacent units)
+   244	
+   245	
+   246	
+   247	A DEMONSTRATION RUN THROUGH
+   248	
+   249	Perhaps the best way to show how the various features of the system interact
+   250	is to give a description of a typical session. This description will not
+   251	be exhaustive and will give some technical details of the message
+   252	passing that will take place during such a session. A complete
+   253	description of all the features will not be given here as that would
+   254	take too long and this is only meant to be an overview. However, what I
+   255	hope is to be able to give some insight into what the working system
+   256	will be like.
+   257	
+   258	So here we go.
+   259	(by the way this description is of a screen and keyboard system, but as
+   260	stated above, you can use whatever hardware/imagination you have
+   261	available)
+   262	
+   263	First off when you start up the CYBERTERM you have a blank screen with maybe 
+   264	a few control buttons around the edges. 
+   265	
+   266	The first step is to log into the LOCAL SERVER. Now this is a SECTOR 
+   267	CONTROLLER that resides on the same machine and in the first incarnation of 
+   268	the software is all in the same executable. 
+   269	
+   270	This connection is done by hitting the 'connect' key
+   271	(or mouse button etc). This will send a REQUEST_TO_ENTER message to your
+   272	LOCAL SERVER, but first the interface will require that you enter some
+   273	parameters. These are:
+   274	
+   275	  1) your proposed entry point into the LOCAL SECTOR, and 
+   276	  
+   277	  2) the proposed viewing direction. 
+   278	  
+   279	In a more advanced system these parameters will probably be pre-set in 
+   280	an option menu so you don't have to enter these details each time, but 
+   281	that's the way it is now 
+   282	
+   283	(Note: There are quite a few places where things can be pre-set like 
+   284	this, as you'll see).
+   285	
+   286	Once the CLIENT software has assembled this data it sends the message to
+   287	the LOCAL SERVER prepended by your ID, a unique identifying code (4
+   288	bytes) that defines you as a human CLIENT as well as giving you a unique
+   289	handle for reference purposes. An additional parameter, velocity, is set 
+   290	to zero and is the final part of the message. 
+   291	
+   292	The connection between the CLIENT and the LOCAL SERVER is a buffer 
+   293	that emulates a LINE. 
+   294	
+   295	A daemon type function transfers the message across to the SERVER's input 
+   296	(and visa versa). 
+   297	
+   298	The reason this is done is so that the software for a REMOTE SERVER and 
+   299	the LOCAL SERVER will be the same, except that the daemon will be 
+   300	different (ie transfering data to and from a modem, serial line, socket, 
+   301	or whatever). So as far as the SERVER is concerned it is running 
+   302	autonimously from the CLIENT and the human interface handling software.
+   303	
+   304	The SERVER checks its internal database of objects to see if you are
+   305	allowed to enter at the specified point (more on that in a moment) then
+   306	sends a MOVE_TO message back to the CLIENT. This includes the CLIENT's
+   307	ID to make sure the right person gets the message (not necessary
+   308	obviously as you're the only one logged into your machine), a location
+   309	tuple, a direction tuple and a velocity tuple (which is zero in this
+   310	case). Now it looks like we're already sending redundant information, but
+   311	these are generic commands that can apply to many situations.
+   312	
+   313	You CLIENT software now gets this MOVE_TO message and can throw up
+   314	an image on the screen which shows what the SECTOR looks like from this
+   315	point.
+   316	
+   317	What's there to display? Well by default the 'floor' of the sctor is
+   318	blue and can be displayed as a grid. The range of co-ords is 2**16
+   319	(32768) only positive, as a 32 bit fixed decimal number. This
+   320	effectively gives a cube 32768 units on a side. That seems small but
+   321	think of each unit as one metre. This means the SECTOR is about 32kms
+   322	cubed, with increments down to 1/30 mm. I really think this will cator
+   323	for system (and user) requirements for a long time to come. There is
+   324	room for much more detail than this actually (2**32 time more) as is 
+   325	shown later under PRIVATE PERMASPACE.
+   326	
+   327	Okay, so we see a blue grid below us. Our CLIENT software is keeping
+   328	track of our velocity and co-ords at the last vector change (ie time
+   329	stamped) in its internal object database (this is separate from the 
+   330	SERVER's  object database). So a simple look at the time and a scan of 
+   331	the database will give the current location of all objects and the 
+   332	screen can be updated accordingly. If your machine is slow this screen 
+   333	update is slow etc.
+   334	
+   335	Now that you're logged into the LOCAL SERVER things get a bit more
+   336	interesting. To make things a bit clearer I'll skip over the details a
+   337	bit here and get to a remote connection.
+   338	
+   339	Suffice to say that the objects contained in the LOCAL SERVER all belong
+   340	to your PRIVATE PERMASPACE. There may be objects here, for instance that
+   341	represent your hard disk and so you may have a graphical operating system
+   342	where you can move files, launch applications etc. You can construct
+   343	objects and store them for later use. Certain areas may be defined as
+   344	dorrways to the control of real-world apparatus by telepresence etc. So
+   345	you now have your own SECTOR, a whole world really, in which to create
+   346	and move. Now all this on your own machine is nice but dull.
+   347	
+   348	The next step is to send a TRANSFER_SECTOR command. This will move you
+   349	to another SECTOR. This will obviously be a REMOTE SECTOR. It's up to
+   350	you to specify a legal SECTOR you wish to transfer to and it's up to
+   351	your LOCAL SECTOR CONTROLLER to know how to connect to the SECTOR.
+   352	Asumming all this has been set up your LOCAL SC (for modem) dials up the
+   353	remote SC and identifies itself as an SC that has a CLIENT that wants to
+   354	enter. This is sent as a REQUEST_TO_ENTER command (as before). Your
+   355	CLIENT software knows that to issue a TRANSFER_SECTOR message you must
+   356	enter a location and view direction so it prompts you for them (or gets
+   357	it from pre-set options as before). The local SC passes the info on to
+   358	the remote SC. If the request message is okay, a MOVE_TO command is
+   359	sent from the remote SC to the local SC which now knows that any data
+   360	coming in from the CLIENT (on LINE x) is transfered straight to the
+   361	remote SC (on LINE y) and visa versa.
+   362	
+   363	Now that your CLIENT software has a new location and viewdirection it
+   364	adjusts it's internal object database and updates the screen accordingly
+   365	(the blue grid). 
+   366	
+   367	When you entered the SECTOR the SC sent a message of its own to all 
+   368	other users who are within NEAR (100 units) of where you entered.
+   369	These messages say what your ID is, your vector and location (this is
+   370	actually a PERSONAL_ASPECT_DATA message which has ID, vector and
+   371	location in the front of the message but without the ASPECT data as the
+   372	SC doesn't have this yet). 
+   373	
+   374	These other users may have their systems set up to ignore these 
+   375	(unexpected) messages, but if they process them then you, 
+   376	the new user, will appear on their screens in the appropriate place and will be
+   377	placed in their individual object databases. They may also have a
+   378	database of 'know ASPECTS' and can check to see if they already know
+   379	what you look like and so can display you in your full glory straight
+   380	away. Alternatively they may have their system set up to automatically request
+   381	your APSECT if it is unknown and to display it then.
+   382	
+   383	Anyway, you've just entered this REMOTE SECTOR.
+   384	
+   385	Now you can send a message (or a more sophisticated system would be
+   386	pre-set) to ask the REMOTE SC what the brief details are of all users
+   387	within NEAR of your location (that is, to send you PERSONAL_ASPECT_DATA
+   388	messages with ID, vector and direction). This data is added into your
+   389	CLIENT's object database (with a time stamp) and the objects appear on
+   390	your screen with the default ASPECT. You can request the details of
+   391	other users over different distances first off if you like. Once you know
+   392	the ID of other users you can REQUEST_ASPECT_DATA of a specific ID, to
+   393	whatever level of detail of ASPECT the REMOTE SC has in it's database.
+   394	So on your screen these other users appear as arrows (their default
+   395	ASPECT) or their real shape. 
+   396	
+   397	When you move (that is, change your velocity or direction) your CLIENT
+   398	automatically sends a message (MOVE_TO) to the SERVER. If this is okay by
+   399	the SERVER then it sends a MOVE_TO message to you telling you where to
+   400	move to (the reason for this is made clear later) and then the SERVER 
+   401	distributes the message to all NEAR CLIENTS. In this way, as you watch 
+   402	your screen with these objects moving around in straight lines until 
+   403	they change vec/vel when you get a message from the REMOTE SC telling 
+   404	you their new velocity/direction. If you turn around your system sends 
+   405	a MOVE_TO message that is distributed and others see your shape turn around etc.
+   406	
+   407	It is important to note that there is no collision control and it is quite
+   408	possible for you to move straight through someone else. 
+   409	
+   410	(Note: The only possible exception to this is stopping over a PERMASPACE
+   411	unit you do not own (see later) or the possiblity that two CLIENTS
+   412	cannot be at the same point at the same time. There is no logical reason
+   413	why this could not be so, it's just that it doesn't see right to me.
+   414	Being instantaneaously at the sam epoint is okay, (ie moving through
+   415	each other), but being stationary at the same point? Comments please.)
+   416	
+   417	An optional message that you can send to the SC is CHANGE_UPDATE_RATE 
+   418	which tells the SC how often to send you location, vel and vec updates 
+   419	of all CLIENTS within a given distance of yourself. Normally you would 
+   420	have to request this information specifically and the position of users 
+   421	you see on the screen may be false (for example a user may drift out 
+   422	of the NEAR distance from you but your object database is still tracking 
+   423	them saying they are moving at such and such a vector and speed when 
+   424	actually they may have changed direction etc. So with a CHANGE_UPDATE_RATE 
+   425	message you can request to be updated on the stats of users who are 
+   426	NEAR or FAR or whatever say every 10 seconds. Of course if they move when 
+   427	they are within NEAR of you then you will be automatically updated anyway).
+   428	
+   429	So now you can sit and watch these shapes going by.
+   430	
+   431	Other commands within a SECTOR are SEND_MAIL, JUMP_TO, 
+   432	REQUEST_SECTOR_TRANSFER etc.
+   433	
+   434	Similarly to  requesting the ASPECT of users in the area, you can
+   435	request the ASPECT of PERMASPACE in the area. 
+   436	
+   437	PERMASPACE is permanaent regions that default to blue. 
+   438	
+   439	These will usually consist of PRIVATE PERMASPACE but some regions may 
+   440	be owned by the SC such as public database access areas and public 
+   441	bulletin boards (more on these later).
+   442	
+   443	Just like CLIENTS, PERMASPACE has a default ASPECT that is a blue cube
+   444	that occupies the unit cube that is the centre of its local co-ordinate
+   445	space. Requests for higher level ASPECTS may reveal these cubes to be
+   446	buildings, flashing lights or data structures etc. 
+   447	
+   448	A PRIVATE PERMASPACE ASPECT may reveal that it belongs to a friend of 
+   449	yours. (It may his name on top or maybe you recognise his style of 
+   450	castle!) 
+   451	
+   452	You can move through PERMASPACE but you CANNOT stop (ie have 0 velocity) 
+   453	when in a unit cube of PERMASPACE which does not belong to you. 
+   454	
+   455	So you stop one unit away (VERYCLOSE) and send a 
+   456	REQUET_TO_ENTER_PRIVATE_PERMASPACE. This is interpreted by the SC as 
+   457	a TRANSFER_SECTOR message, to the LOCAL SERVER of the user who owns 
+   458	that PP. If the request is okayed by the owner then you are sent a 
+   459	MOVE_TO message that moves you to the coords of the PP. 
+   460	
+   461	Now you have transfered to a new SECTOR and are controlled by
+   462	the owner's private SC on his machine. The remote SC you were controlled
+   463	by now routes all your data straight to the LINE that that new SC is on.
+   464	(in a similar way to how your LOCAL SC is re-routing all your data
+   465	straight through to the modem).
+   466	
+   467	Once again your screen is blank and you can request to see what's around
+   468	you. This person may have his SECTOR set up to look like a lounge room
+   469	or as rolling hills. All messages from users who you could see before
+   470	(ie those outside that unit cube of PP that you're in) are filtered out
+   471	to reduce bandwidth required (you may, for instance want to keep mail
+   472	coming through. If you have a powerful system you may still get all
+   473	'outside' messages but make the walls of the living room appear
+   474	transparent like smoked glass etc).
+   475	
+   476	Now that you are in his SECTOR you must abide by his rules. If you send
+   477	a MOVE_TO message that will make you collide with object in his PP (eg a
+   478	chair or wall) then his sector can return okay for that request, but
+   479	when it calculates that you've hit a wall, it can send an addittional
+   480	MOVE_TO message that sets your velocity to zero. In this way you must
+   481	follow the rules he has set up in his PP. Obviously if he proves to be
+   482	obnoxious you can send a EXIT_SECTOR message that the main REMOTE SC
+   483	intercepts and so moves you back out into public cyberspace,
+   484	garuanteed.
+   485	
+   486	Other users can enter the PP of your frined at the same time  so you
+   487	can have a 'private conference with only those present'. At that time
+   488	his LOCAL SC daemon has set up secondary virtual LINES to allow the
+   489	messages from several remote CLIENTS to come down the one modem
+   490	connection. As each message is preceeded by the message senders ID, it's
+   491	a fairly simply task fo rthe daemon to put the incoming messages into
+   492	the appropriate virtual LINE buffers so the SC thinks there are lots of
+   493	people/modems connected up.
+   494	
+   495	Of course, the main remote SC may also provide private conference rooms where
+   496	similar duscussion can take place.
+   497	
+   498	This PP may alternatively be the front end to access a commercial
+   499	database, a game service, a ticket sales office etc.
+   500	
+   501	So you want to establish your own PP within the public SECTOR? You send
+   502	a REQUEST_TO_AQUIRE_PRIVATE_PERMASPACE message that is sent via the SC
+   503	to anyone who is CLOSE to you (within 10 units). If less than 50% of
+   504	those nearby say 'no' to the SC then you aquire 1 unit of PP and this is
+   505	registered in the SC's object database. You can optionally send
+   506	PERMASPACE_DATA messages to the SC that define the ASPECT of your PP to
+   507	whatever level of detail you desire so others can see your new
+   508	aquisition. Clearly, you can aquire several PP units next to each other
+   509	and build up a composite structure that is more impressive.
+   510	
+   511	This aquisition is monitored by the SC and there may be limits defined.
+   512	
+   513	Some reqions of PP that belong to commercial users may be large (eg a
+   514	database service for stock information may have a large area of PP that
+   515	(when you request to see higher level aspects) may be  large building
+   516	surrounded by wide grass areas with fountains and gardens). Maybe there
+   517	would be large areas within the owned PP that has no higher ASPECT so
+   518	that in a crowded area of many PPs the structure will stand out as it
+   519	has all this 'open' space around it.
+   520	
+   521	You can send mail to a friend by several methods. The most straight
+   522	forward would be to use the SEND_MAIL message where you specify the
+   523	recipients ID and then the message (no set format, just specify the
+   524	length in 4 bytes). The mail will be sent straight to his LINE. If he is
+   525	currently transfered to another SECTOR, the mail is sent on to the next
+   526	SECTOR to which he travelled (he may have moved on from there too).
+   527	
+   528	He may have his CLIENT software set up so mail appears as a flashing icon on
+   529	the screen or as a full letter box outside the little cottage that is
+   530	his PP.
+   531	
+   532	Mail can also be send to a location and the SC will try to inform the
+   533	owner, if the mail is not received, a MAIL_FAILED message is returned.
+   534	Text mail may be appended to a PP ASPECT temporarily. In this way if
+   535	no-one is 'home' (maybe not logged in or in another SECTOR) then you can
+   536	send the mail to the PP location and when he person returns he will see
+   537	an added object on his normal PP aspect. This object may be a piece of
+   538	paper with the text message written on it.
+   539	
+   540	In a similar way a true bulletin board could be set up, where people
+   541	could leave messages for others to read.
+   542	
+   543	So you can conference with otheres, send mail, access commercial
+   544	services etc.
+   545	
+   546	The commercial services may first connect to the system using their
+   547	original 2D flat screen interface, so when you enter their PP you just
+   548	see a single screen. In this way the interface changes would be minimal
+   549	to start with but they could develop better interfaces to make data
+   550	access more efficient. A statistics service could have a PP where data was
+   551	represented as dynamic 3D structures etc.
+   552	
+   553	Probably the most useful items within the cybersapce are your AGENTS.
+   554	These items exist as packets of messages that together form an entity
+   555	that is a type of object. See the comprehensive definition later on for
+   556	details. Agents can do whatever you can do, in your place. Some agents
+   557	are simply objects that you use (for instance a 'design-an-aspect' agent
+   558	may allow you to draw items in 3D (walls, texture, motion etc) and will
+   559	then create the ASPECT data for you). It may be an access key tool (eg you
+   560	might guy a '10 shot' agent from a database service. When you want to
+   561	access that database you instruct the agent as to what you want. The
+   562	agent then goes off to the databases PP and gets a high prioirty of
+   563	service (because you paid for it!) and also knows how the database works
+   564	and so can access the data faster and then mail the data back to you (or
+   565	maybe return to you itself with its ASPECT changed to show you the data)
+   566	and after the tenth use it doesn't come back. 
+   567	
+   568	The last sort of agent is independant. These actually are macro
+   569	languages that are executed by the SC and may act as guides
+   570	to newcomers or perform tasks within the sector for you (ie like a
+   571	servant). They can exist by themselves. You can have an AGENT that
+   572	'lives' in you PP and answers requests to enter from other CLIENTS while
+   573	you are tied up somewhere else. Now this brings on all sorts of
+   574	possibilities. You could send an AGENT to a conference in your place and
+   575	it may respond to text as a human would, to gather data for you. For
+   576	this reason and others, there is one strict rule, and that is that the
+   577	default ASPECT of agents are a white star made of three perpendicular
+   578	axes, no matter what.
+   579	
+   580	Another example is to have several agents that travel with you in unison
+   581	and which have ASPECTS that fit into yours to make one larger, more
+   582	impressive ASPECT.
+   583	
+   584	One ASPECT detail that hasn't been mentioned is sound. Obviously a sound
+   585	interface would be good (so you can talk to people you meet other than
+   586	just sending mail or typing stuf in during a private conference). Sound
+   587	would be easy enough to implement into the SEND_MAIL message protocol
+   588	(you get mail from someone who is in such and such a direction
+   589	therefore the headphones position the sound source accordingly). But I
+   590	would like to incorporate it into the ASPECT as well so you could hear
+   591	someone comming, even if you were looking in the wrong direction.
+   592	
+   593	(Note: Its clear that this system is open to abuse to rogue CLIENTS that send
+   594	invalid messages. The buck will have to stop at the SERVER and so this
+   595	could end up being a pretty awesome beast as far as functionality goes.)
+   596	
+   597	
+   598	DETAILED DESCRIPTIONS NOT COVERED BEFORE
+   599	
+   600	(incomplete section)
+   601	(note: I covered a bit more detail than planned above, hope it suffices
+   602	for now or I'll never send this thing!)
+   603	===================================================================
+   604	===================================================================
+   605	        - each CLIENT has an ID derived from their "login" address (eg internet 
+   606	        address) and so is unique. Along with ID, each CLIENT has an ASPECT 
+   607	        which describes how they appear to other CLIENTS. ASPECT by default 
+   608	        is an arrow with a single feather to indicate 3D orientation 
+   609	        ASPECT has levels, the one just stated 
+   610	        is the default level, 0. The next level is "wire frame" representation 
+   611	        that consists of a variable length list of points and vectors. They 
+   612	        have variable colour and have a DYNAMIC | STATIC parameter, if DYMNAMIC 
+   613	        is TRUE then motion paramters follow (undefined yet). The last parameter
+   614	        is EXTENDED. If EXTENDED is TRUE then a further level follows defining 
+   615	        solid geometry descriptions, which end with the EXTENDED parameter 
+   616	        for future expansion. Things are designed this way so that a simple 
+   617	        system (AT with CGA graphics) can select only the minimum display 
+   618	        criteria because that's all it can handle. Better machines '486, 
+   619	        Silicon Graphics Workstation etc can go for full solid rendering etc. 
+   620	===================================================================
+   621	===================================================================
+   622	
+   623	SOFTWARE STATUS
+   624	
+   625	The system so far has a CLIENT that connects to the LOCAL SERVER and
+   626	allows the user to move around within their own SECTOR, requesting 
+   627	information on and displaying PERMASPACE objects that are already in the 
+   628	SERVER's object database. This is all in wire frame (easily upgraded to solids,
+   629	but it goes too slow on the PC (386SX) for development work).
+   630	
+   631	This system works on a PC and on a SUN (X11).
+   632	
+   633	The graphics library used is VOGLE, but REND386 is being kept in mind
+   634	for PC stuff. An Amiga version is in the works (mainly just requires the
+   635	VOGLE driver). (VOGLE is available from most ftp sites I assume, I got
+   636	it from the Australian ftp mirror site, archie.au:/graphics/graphics/echidna)
+   637	
+   638	The code is in ANSI C. This is ideal stuff for C++ but that would limit
+   639	the platforms we could easily port to (and not enough people are
+   640	comfortable with it yet).
+   641	
+   642	HELP WANTED
+   643	
+   644	As you can see, there are many ideas brewing here and so few
+   645	implemented. I really hope to have something significant done by the
+   646	beta release date later this year ('92) before tasks and improvements
+   647	can be farmed out to others. Ideas on modifying the concepts involved
+   648	would be wonderful, but programmers with time would be even better. Managing
+   649	remote development seems a difficult task. Breaking this into neat
+   650	packages isn't really possible at the moment. The only area that could
+   651	be done (perhaps) is the graphical operating system stuff for your
+   652	local computer. I hope people will disagree with me and show how this
+   653	can be done as a joint effort. My time for co-ordination of such an
+   654	effort is woefully limited which is why I have perservered with the
+   655	programming alone thus far.
+   656	
+   657	As I think I mentioned earlier, I want to make this software freely
+   658	available with limited source distribution until it looks stable. But
+   659	in the long run, the source should be available for everyone to update
+   660	and use as they will. My main reasoning for this is to give everyone a
+   661	chance to have a working interactive system that they can connect up
+   662	together.
+   663	
+   664	So far I have received about 30 requests for information/code. This
+   665	document will be posted to sci.virtual-worlds and sent to each of the
+   666	senders. If after reading this you want to help with programming, then
+   667	let me know. Any and all comments (public and email) would be 
+   668	greatly appreciated.
+   669	
+   670	Cheers
+   671	        Michael Snoswell                        June 1st, 1992
+   672	        snoswell@sirius.ucs.adelaide.edu.au
+   673	
+   674	p.s. okay, so the doco's not complete...(sigh)
+   675	
+   676	-- 
+   677	
+   678	  Michael Snoswell                         snoswell@sirius.ucs.adelaide.edu.au  
+   679	  Vision Systems Limited                   08 343 0462                          
+   680	  South Australia                          "Profound quote"                     
+   681	
+   682	
+   683	 

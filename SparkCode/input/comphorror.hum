@@ -1,0 +1,3744 @@
+     1	From: ajs@hpfcdc.HP.COM Sat Nov 10 14:40:39 1990
+     2	From: ajs@hpfcdc.HP.COM (Alan Silverstein)
+     3	Subject: Re: "The Devouring Fungus" at a bookstore near you
+     4	
+     5	> ...a collection of anecdotes and stories about computer technology and
+     6	> the people who spend their time working with computers...  This is the
+     7	> first time I have seen anyone collect so many of them together, and in
+     8	> such an amusing and readable way.
+     9	
+    10	The following HUGE collection is probably shorter than the book, and not
+    11	so well edited, but it hasn't been posted in a long time, so here it is.
+    12	Let's see if 160Kb makes it around the Net.  Enjoy.
+    13	
+    14		COMPUTER-RELATED HORROR STORIES, FOLKLORE, AND ANECDOTES
+    15	
+    16		Excerpts (edited) from net.rumor, March, 1986, with later
+    17		additions, including a huge number from a rec.humor posting.  I
+    18		did some reformatting and a spelling check.  Have at...
+    19	
+    20	
+    21		/ net.rumor / megaron!rogerh / Mar 7, 1986 /
+    22	
+    23		The Tektronix 4051 (one of the first desk-top computers) had a
+    24		microprocessor (6800 I think) deep inside it.  Although the
+    25		machine's native language was Basic, there were (undocumented)
+    26		hooks to download and run machine code.  The machine also had a
+    27		synthesized bell.  The result, of course, was that 4051 was one
+    28		of the favorite musical instruments in some parts of Tek.
+    29	
+    30		Anybody remember how to walk an IBM 1130's disk drives?  I
+    31		recall stories that the right program would start them marching
+    32		across the room.
+    33	
+    34	
+    35		/ hpfcla:net.rumor / mit-amt!gerber / Mar 9, 1986 /
+    36	
+    37		> Anybody remember how to walk an IBM 1130's disk drives?  I
+    38		> recall stories that the right program would start them marching
+    39		> across the room.
+    40	
+    41		A friend of mine once told me how he used to do just that at U
+    42		of Delaware.  He used to do it from a terminal room where you
+    43		couldn't see the machine itself, but you'd know when it happened
+    44		-- the disk would pull either its power plug or its connection
+    45		to the mainframe off, and the machine would crash.
+    46	
+    47		The TRS-80 Model 1 used to put out so much RF interference, that
+    48		one way of adding sound to ANY program was to put a small AM
+    49		radio right by the machine, and listening to the electronic
+    50		"music".  Some programs even used this trait of the trash-80,
+    51		instead of connecting up the external speaker.
+    52	
+    53	
+    54		/ net.rumor / gilbbs!mc68020 / Mar 21, 1986 /
+    55	
+    56		In 1978, a company in my area which specialized in fruit orchard
+    57		temperature alarm systems (it being necessary to awaken the
+    58		farmers to start the smudge pots and ventilators (giant fans) in
+    59		order to prevent damage to the fruit) decided they wanted to go
+    60		into the TRS-80 I peripherals business.  They hired me as an
+    61		engineering technician and programmer.
+    62	
+    63		There I was, working on programs to drive the peripherals, and
+    64		having even the simplest programs crashing and going haywire for
+    65		no apparent reason.  Being brought up to never assume it's the
+    66		machine's fault, I spent several weeks trying to figure out what
+    67		I was doing wrong.
+    68	
+    69		The one day my boss asked me to go to the company next door and
+    70		assist them with a problem (they built hydraulic lift units,
+    71		like the ones you see being used in construction...turned out we
+    72		built the electronic control boxes for their lifts).  I walk
+    73		into the shop, and am confronted by 12 extra heavy duty
+    74		arcwelding machines (these guys were welding steel up to 2"
+    75		thick!).  After solving their problem, I traced the power mains.
+    76		Sure enough, we were drawing our AC feed from the same source
+    77		they were, no transformers between us.
+    78	
+    79		A few hours, a couple of isolation transformers and caps later,
+    80		and all of a sudden my code runs perfectly.
+    81	
+    82		The boss still didn't believe it, when I showed him the finally
+    83		working code...  he had pretty much decided I was a flop as a
+    84		programmer.  They decided two weeks later not to go into
+    85		computers...  too volatile, they said.
+    86	
+    87	
+    88		/ net.rumor / catnip!ben / Mar 6, 1986 /
+    89	
+    90		>> I was once told that the operating system for the Burroughs
+    91		>> B1700, another computer well-supplied with lights, displayed a
+    92		>> smile in its idle loop.
+    93	
+    94		> Some Honeywell computers make "bird calls" over a built-in
+    95		> speaker when idle.  If the computer room sounds like a jungle,
+    96		> then you're certain to get lots of CPU for your jobs.
+    97	
+    98		Back when I was an undergrad at Oberlin College, I had the
+    99		pleasure of working as an operator on their Xerox Sigma 9.  The
+   100		best part of the job was bringing down the machine.  The console
+   101		displayed "Thhhhhhats all Folks!!!", while the processor treated
+   102		you to a rendition of the Star Spangled Banner on the CPU alarm.
+   103	
+   104	
+   105		/ net.rumor / bgsuvax!drich / Mar 5, 1986 /
+   106	
+   107		Speaking of doing things to power lines...I remember a story I
+   108		heard from my circuits professor in Colorado.  It seems that
+   109		they received a computer from the government (I can't remember
+   110		the make, but it wasn't anything I had heard of before).  This
+   111		computer was a bit of a beast.  It ran off of 3-phase power, and
+   112		had a disk that was between 3 and 4 feet in diameter.  Well,
+   113		several students were involved in setting up the disk drive one
+   114		night, and when the professor left he told them that they could
+   115		connect everything, but not to power it up until he checked it
+   116		over.
+   117	
+   118		Well, you know students...they wired it up and turned it on.
+   119		For those of you who are not to familiar with 3-phase power, if
+   120		you reverse any 2 out of the 3 wires, the polarity changes.
+   121		Well, they managed to reverse 2 of the wires, causing the disk
+   122		to spin backwards.  Now, since the heads are designed to float
+   123		on a cushion of air above the disk, they went down instead of
+   124		up, and the disk ended up with a nice groove right down the
+   125		middle.  Needless to say, the prof wasn't pleased when he came
+   126		in the next morning and found his nice new disk turned into so
+   127		many magnetic shavings....
+   128	
+   129	
+   130		/ net.rumor / utzoo!henry / Mar 5, 1986 /
+   131	
+   132		And then there's the old trick of manipulating an IBM 029
+   133		keypunch so that it punches cards which are all holes.  Great
+   134		bookmarks; I still have a few.
+   135	
+   136		Ideally you want to have a roomful of keypunches on hand,
+   137		because the mean time between jams when punching those things is
+   138		only a few cards.  What would happen if one of them went into a
+   139		high-speed card reader, I don't know.  The mind boggles.
+   140	
+   141		(For the benefit of the fuzzy-cheeked youngsters in the crowd,
+   142		punchcards need a certain amount of mechanical strength to
+   143		survive machine handling.  All-holes cards are weak and tear
+   144		easily.  Normal punchcards are constrained to have [as I recall]
+   145		at most one punch per column in rows 1-7, so that the central
+   146		region of the card is mostly solid.)
+   147	
+   148	
+   149		/ net.rumor / utrc-2at!davidh / Mar 5, 1986 /
+   150	
+   151		While working on a project at Litton Systems, I heard of this
+   152		embarrassing moment.
+   153	
+   154		One project (for the military) required that the military
+   155		supplied technicians be taught how to service the computers they
+   156		had bought.  The lessons were proceeding well with the explicit
+   157		instructions "Don't apply the power until we check it."
+   158		Naturally, somebody jumped the gun.  Immediately, 120V AC was
+   159		applied across the core memory (yes, core, not silicon).  The
+   160		result?  A pile of slag and a whopping replacement bill.
+   161	
+   162	
+   163		/ net.rumor / loral!jlh / Mar 5, 1986 /
+   164	
+   165		I remember 4 or 5 years back when we were running all our
+   166		microcode and state machine development on a PDP 11 under RSX11.
+   167		Seems time for the annual preventitive maintenance came around,
+   168		and one of the tests is to ensure the drive can read and write
+   169		correctly to each and every block of a disk.  The DEC field
+   170		service tech looked at our rack of disks, saw one labeled 'Jay's
+   171		scratch', and decided to use that for a disk.  Well, you know
+   172		engineers.  A disk is a scratch disk until you put something you
+   173		need on it, at which time it is the working disk.  You also know
+   174		engineers never re-name a disk once it has a label on it.  Jay
+   175		comes in the next day, mounts his disk, and reads out a bunch of
+   176		E5's.  Seems he lost about 3 months of work, only some of which
+   177		he had listings of.  I think the field service rep also caught
+   178		hell for doing that to a customer's disk without asking anyone.
+   179	
+   180	
+   181		/ net.rumor / ucla-cs!davis / Mar 6, 1986 /
+   182	
+   183		I was working in a somewhat large data center not to long ago.
+   184		Seems the company thought they could save some money on
+   185		maintenance costs by going self service.  Well it seems that a
+   186		year or two later another great cost savings idea was to hire
+   187		C.E.'s that had only 6 months training in the electronics
+   188		field!!!  Well the time came to install a new super
+   189		minicomputer, tape cabinet, and disk cabinet.  Well they put the
+   190		new C.E.  in charge of the whole project.  He connected the
+   191		cables from the disk cabinet to the CPU, then connected the
+   192		cables from the tape drive to the CPU.  All set!
+   193	
+   194		He plugged in the tape drive and then the disk cabinet to A.C.
+   195		When he went to plug in the CPU he noticed that the electrical
+   196		outlet was a different kind than that of the computer.  But this
+   197		C.E.  was smart.  He thought of a way that he could remove the
+   198		plug and install a plug that would fit in the outlet.  (Then the
+   199		company would not have to pay for an electrician).  Good Idea
+   200		except that he switched the HOT and the GROUND wires when
+   201		installing the new plug.  As we all know computers are well
+   202		grounded.  Well the grounding also is good in cables that
+   203		connect to peripherals as well as within the peripherals
+   204		themselves.  Of course this bright C.E.  turned on the disk
+   205		cabinet, tape cabinet, and CPU before plugging in the CPU plug.
+   206	
+   207		You should have seen the smoke and sparks when he plugged in the
+   208		CPU.  The tape drive was shot, the disk cabinet was shot and the
+   209		CPU was shot!!!!!  At least none of the terminals were connected
+   210		at the time.  It took 4 C.E.s 1 week of constant work to repair
+   211		the damage.  Ever see a memory board with the chips blown to
+   212		kingdomcome?
+   213	
+   214	
+   215		/ net.rumor / terak!doug / Mar 5, 1986 /
+   216	
+   217		> ...the teflon insulation reacted with the hot (molten) metal to
+   218		> form HF gas.  When the fire department turned on the sprinklers
+   219		> in desperation: hydrofloric acid.
+   220	
+   221		In 1970 ('71?)  Fresno State's computer room was the target of a
+   222		firebomb thrown by some protesting students.  The fire
+   223		department arrived and hosed everything down.  The fire damage
+   224		was negligible.  But then the FD decided that since it was
+   225		electrical equipment, they should be using CO2 extinguishers
+   226		instead.
+   227	
+   228		Either water or CO2 would have been okay alone; but when the CO2
+   229		was sprayed on top of the water, it formed carbolic acid [or is
+   230		it carbonic, I don't remember].  Destroyed all of the equipment,
+   231		the disks, and the tapes.  Took about a year and a half to
+   232		recreate their records from hardcopy.
+   233	
+   234		---
+   235	
+   236		At that time, our CDC CE told of a student demonstration in
+   237		Canada where a university's CDC 3300 had been wrecked by
+   238		demonstrators and sold as scrap.  A CE reportedly bought the
+   239		machine after observing that almost all of the damage was bent
+   240		sheet metal and unplugged connectors.  He supposedly set up a
+   241		service bureau in his home.  I'm not sure I believe this story.
+   242	
+   243	
+   244		/ net.rumor / bbncc5!jr / Mar 10, 1986 /
+   245	
+   246		> I also remember sending a print file that contained about 1000
+   247		> logical end-of-records (and nothing else) to a remote line
+   248		> printer.  It took about 5 minutes for it to transmit and print
+   249		> nothing.
+   250	
+   251		When MCIMail first went on the air, they charged for hardcopy
+   252		mail delivery by the character (actually, 5000-character unit).
+   253		You could mail yourself or a friend a few reams of paper for $1
+   254		by sending a file of formfeeds.  They fixed their charging when
+   255		we pointed this out.
+   256	
+   257		Also, their password-generator occasionally spits out somewhat
+   258		racy words (they have the form consonant-vowel-consonant-...
+   259		-vowel, 8 characters in all).  The generator checks for most of
+   260		the obvious bad ones, but it seems a few must slip by the
+   261		censors.  We suggested that they ought to charge extra for the
+   262		racy ones, on the grounds that they would be so much easier to
+   263		remember.  This idea was rejected, though its originator got
+   264		such a password for the thought.
+   265	
+   266	
+   267		/ net.rumor / linus!sdo / Mar 11, 1986 /
+   268	
+   269		> Is it really true that someone working for a bank or a large
+   270		> company diverted megabucks into his or her personal account by
+   271		> adjusting a program that figured out people's paychecks or
+   272		> interest payments so that it always rounded *down* to the
+   273		> nearest penny, never up, and then deposited the extra parts of
+   274		> pennies (mills) into his or her own account?  I heard this story
+   275		> several years ago, but now I need to know if it's really true.
+   276		> So if you know the name of the bank or the company and the
+   277		> approximate year this person was caught,
+   278	
+   279		Not only is it true, it has also happened a lot more than just
+   280		once.  In fact, this is one of the simplest computer scams
+   281		going.  One of the cleverest ones I ever heard about involved
+   282		someone working for a company (a fruit company, I believe) who
+   283		had the computer change (just slightly) the recorded times (and
+   284		prices) of the company's transactions on the commodities
+   285		exchanges.  His profits came from the slight changes (say,1/16
+   286		of a point) in the contract prices that occur all the time
+   287		during a normal trading day.
+   288	
+   289		I have seen several books which talk about these and other
+   290		schemes in detail.  Unfortunately, the names and dates are often
+   291		not revealed as most companies are loath to have the general
+   292		public find out the ease with which these types of crimes can be
+   293		carried out, as well as the difficulty of discovering them once
+   294		they have occurred.  One of the most revealing items is the fact
+   295		that computer criminals are almost always caught only because
+   296		discrepancies in their lifestyles are noted (e.g.  buying a
+   297		40-foot yacht on a $20k salary).  In fact, the longest running
+   298		crime I heard about, which involved a programmer (I believe) in
+   299		a prominent New York bank, went on for close to 10 years.  The
+   300		culprit escaped detection so long because he had a $30,000-a-
+   301		month gambling habit and was losing his illegal income as fast
+   302		as he got it.  He was finally caught when his bookie was
+   303		arrested as part of a police 'sting' operation, and his name was
+   304		found on the books as one of the largest customers.
+   305	
+   306		As for finding more out about such things, all the information I
+   307		have came from browsing through the MIT engineering library for
+   308		a few afternoons, so I imagine that any good college library
+   309		should have at least some material on this.  Good luck in
+   310		finding out some actual names and dates, however!
+   311	
+   312	
+   313		/ net.rumor / utah-cs!peterson / Mar 13, 1986 /
+   314	
+   315		My mom (a CPA) was on an audit of a large S & L several years
+   316		ago where they caught somebody doing this.  As I recall, the
+   317		person was getting away with around $10-20K a year with the scam
+   318		(not quite "megabucks", but still pretty healthy).
+   319	
+   320		The roundoff error was pretty much invisible to the auditors.
+   321		The tricky part for the crook was actually writing the check (or
+   322		funds transfer) so he could collect the money.  This was what
+   323		showed up on the books someplace and resulted in him getting
+   324		caught.
+   325	
+   326	
+   327		/ net.rumor / hpcvla!john / Mar 14, 1986 /
+   328	
+   329		> One of the most revealing items is the fact that computer
+   330		> criminals are almost always caught only because discrepancies in
+   331		> their lifestyles are noted (e.g.  buying a 40-foot yacht on a
+   332		> $20k salary).
+   333	
+   334		There are exceptions.  During the fifties a military clerk
+   335		working for the NSA had a wreck in his hydroplane.  Since he had
+   336		access to a lot a top secret data they assigned an agent to
+   337		watch over him while he was under anesthesia to ensure that he
+   338		wouldn't babble anything.  It wasn't until later when he
+   339		disappeared and moved to Moscow that anyone thought to ask how a
+   340		low paid clerk could afford to buy a hydroplane.
+   341	
+   342	
+   343		/ net.rumor / ucsfcca!dick / Mar 26, 1986 /
+   344	
+   345		I've resisted for many days, but I give up.  My friend Doug used
+   346		to work in a bank, in the OLD days.  Their master file was on
+   347		punched cards, with FOUR accounts per card.  After Doug had
+   348		programmed the daily update and put it in production, the bank
+   349		examiners came to him saying, "We have noticed a drop in
+   350		revenues in the minimum-balance account."  Doug explained his
+   351		program:  "...and when the average balance for the month is
+   352		below the minimum, the surcharge is applied."  They said, "No,
+   353		no!  When the current balance has EVER fallen below the minimum,
+   354		the surcharge should be applied."  Doug said that didn't seem
+   355		very fair, but they made the rules and he would fix the program.
+   356	
+   357		Months later, the examiners came round again, quite
+   358		suspiciously.  They told him that they had noticed another drop
+   359		in revenues in the minimum balance account.  Doug explained that
+   360		he had fixed the program, but he would surely look into the
+   361		matter right away.  After examining his program again, he went
+   362		into the computer room to check the actual deck of cards that
+   363		the operators used.  He soon discovered the problem.
+   364	
+   365		He had added four patch cards to the end of the deck, one for
+   366		each account on a master file card.  Three of them were gone.
+   367		It seems that as the deck was used day after day, the last card
+   368		had gotten grubbier and grubbier.  Eventually, the card reader
+   369		would not feed it.  But the program seemed to work fine anyway!
+   370		Then the new last card died, etc.
+   371	
+   372		The bank examiners were satisfied.  Doug was relieved.  And now
+   373		we all know that patching is not the right way to go.
+   374	
+   375	
+   376		/ net.rumor / unisoft!tim / Mar 14, 1986 /
+   377	
+   378		A fellow I worked with once told me a horror story that happened
+   379		when he was working as an operator at MIT.
+   380	
+   381		The system they were using had recently been converted to using
+   382		a new type of coated fiberglass disk, to replace the old, heavy
+   383		metal-platter kind.  No problem there.  Well, the system they
+   384		had this "Emergency Stop" plug on it that you would pull when an
+   385		emergency occurred (they assumed it was for, say, a flood in the
+   386		machine room).  One late evening, a couple of the operators were
+   387		sitting around being bored, and decided to see what would happen
+   388		when they pulled "Emergency Stop".  Immediately after pulling
+   389		it, they heard a strange sound in the disk cabinet.  Looking
+   390		over, they saw an arm emerge from the side of the cabinet, on
+   391		either side of a platter, and CLAMP down on the platter.
+   392		Apparently, this wasn't made for use with fiberglass platters.
+   393	
+   394		They were picking splinters out of the walls for days.
+   395	
+   396	
+   397		/ net.rumor / petsd!cjh / Mar 14, 1986 /
+   398	
+   399		This disk drive got troublesome hardware glitches, usually just
+   400		after the end of the "normal" working day.  Which, for the
+   401		programmers, was prime time, of course.
+   402	
+   403		The glitches happened just when a very good-looking woman on the
+   404		cleaning crew walked past the drive.  She usually wore tight
+   405		slacks, and a longish blouse...  there was friction between the
+   406		layers of clothes as she walked, and the static charge
+   407		occasionally jumped to the disk drive.
+   408	
+   409	
+   410		/ net.rumor / atari!dyer / Mar 15, 1986 /
+   411	
+   412		NBS was running version 6 Unix on a PDP-11/45 with four RL02
+   413		packs.  It took nearly half a day to backup the system.  Half a
+   414		day to copy four 10 megabyte packs?
+   415	
+   416		The operators (who didn't know any better -- they'd been given a
+   417		canned procedure) were typing in DD commands to copy from one
+   418		pack to another.  They were using a buffer size of ten BYTES....
+   419	
+   420	
+   421		/ net.rumor / bu-cs!bzs / Mar 14, 1986 /
+   422	
+   423		Ok, my two quickies...
+   424	
+   425		Several years ago I was working on a portable real-time system
+   426		we had custom built (using an LSI-11/1, 4KB, home-brewed O/S.)
+   427		There were two of them in the universe and were working hard on
+   428		two separate research studies.  Filled my heart with glee when I
+   429		went to lift mine and out of its guts poured several ounces of
+   430		coffee...(not me, never found out who.)
+   431	
+   432		A couple of years ago I was drinking coffee in my favorite
+   433		coffee shop (maybe I should just stay away from the coffee!)
+   434		when their phone rang, they shouted from behind the counter that
+   435		it was for me, there was an alarm going in one of the machine
+   436		rooms and I should get right over there.
+   437	
+   438		Ran over to find an operator standing there with a finger on the
+   439		Halon hold button, we had a two zone alarm going so it was about
+   440		to dump the tanks (I remember the operator looking very pleased
+   441		at their current career choice).  It didn't look like there was
+   442		any fire, so I began running around pulling up floor tiles
+   443		(after, of course, disabling the fire system) looking for the
+   444		offending sensors, 90Db going off in my ears.  Suddenly I notice
+   445		this bad stinging pain in my arm, great I'm thinking, the big
+   446		one, just what I need to finish a perfect day.  Well, it wasn't
+   447		that bad, fortunately someone else in the room noticed the bee
+   448		on my shoulder...
+   449	
+   450		I could go on.
+   451	
+   452	
+   453		/ net.rumor / proper!carl / Mar 16, 1986 /
+   454	
+   455		A bulletin board service in Oakland, CA, (Sunrise Omega-80) lost
+   456		a drive when an ant walked across one of the disk drive heads as
+   457		it was stepping..  Smeared the disk, the drive wasn't too good
+   458		either, and the board was down for several weeks..
+   459	
+   460	
+   461		/ net.rumor / tekchips!jackg / Mar 17, 1986 /
+   462	
+   463		Speaking of 7094s, I once worked at an installation that had two
+   464		of these.  The "console printer" on these computers was a large
+   465		machine that looked (and maybe was) a 407 accounting machine.
+   466		The 7094 didn't have any kind of internal clock but the 407 did
+   467		and its patch panel was wired up so every time a line was
+   468		printed on it, the time was appended at the right margin.  Thus
+   469		elapsed time of a job could be determined by looking at the time
+   470		printed when the $JOB card was printed and when the EXIT message
+   471		was printed.
+   472	
+   473		Someone found out, however, that the timer did not advance while
+   474		printing was in progress, so the times were a little inaccurate.
+   475		To get a free run on the computer, all you had to do was keep
+   476		the 407 continually busy and the timer would never advance.  A
+   477		program could issue a print to the printer every so often (not
+   478		very often due to the slowness of the printer) and never be
+   479		billed for a cent.  It did drive the operators crazy though
+   480		because everytime a line was printed on the 407, they went over
+   481		to look to see if it was telling them something significant to
+   482		the running of the job.
+   483	
+   484	
+   485		/ net.rumor / bbncc5!jr / Mar 19, 1986 /
+   486	
+   487		> The glitches happened just when a very good-looking woman on the
+   488		> cleaning crew walked past the drive.
+   489	
+   490		Reminds me of the Arpanet site that used to crash frequently
+   491		right around the end of the day.  Seems the cleaner plugged the
+   492		floor buffer into a convenient 100AC outlet - the one inside the
+   493		IMP cabinet.
+   494	
+   495	
+   496		/ net.rumor / mmm!mrgofor / Mar 19, 1986 /
+   497	
+   498		A while back I was the tech support person for a minicomputer
+   499		OEM.  Our customers were located all over the SF Bay area, we
+   500		were located in Sunnyvale.  Since the customers were spread
+   501		around, I usually tried to diagnose and fix problem over the
+   502		phone.
+   503	
+   504		One day a Berkeley customer called me to complain that there
+   505		were sparks and bad smells coming from the computer.  I assured
+   506		him that that was ridiculous - computers don't generate sparks.
+   507		He said that it sure did - every time he tried to plug in his
+   508		modem.  I told him to try it again while I was on the phone, so
+   509		I could try to diagnose the problem.  He laid the phone's
+   510		handset on the table rather than putting me on hold (it wouldn't
+   511		reach over to the computer, but it was in the same room).
+   512		Things were quiet for a few seconds, and then I could hear a
+   513		loud yelp that made its way across the computer room and through
+   514		the phone.  He came back on the line and said the computer had
+   515		bit him.
+   516	
+   517		Clearly, this was an on-site job - not something I could
+   518		diagnose from his description - so I drove up to Berkeley.  When
+   519		I got there, I saw the flat ribbon cable that connected the
+   520		modem to the terminal interface - the power wire was on the
+   521		edge, and for the whole length of the cable the plastic
+   522		insulation had melted off, leaving the bare wires.  Hmmm, I
+   523		thinks to myself, what could cause such a thing?
+   524	
+   525		I whipped out my handy-dandy volt-o-meter and tested the outlets
+   526		to which the various pieces of equipment had been connected.
+   527		All were 110 volts -- looked good.  It finally occurred to me to
+   528		check the polarity of the sockets -- and sure enough -- they
+   529		were wired wrong.  It was a very old building, and whoever had
+   530		done the latest wiring in the computer room was obviously no fan
+   531		of consistency.  The modem and the computer tried to share a
+   532		common ground, but in reality there was a whopping potential
+   533		difference between them, and when they were hooked up, sure
+   534		enough, the computer generated sparks and bad smells --
+   535		something computers are not generally supposed to do.
+   536	
+   537	
+   538		/ net.rumor / mmm!mrgofor / Mar 19, 1986 /
+   539	
+   540		Okay, one more computer "horror" story -- this one's kind of
+   541		cute.
+   542	
+   543		We were trying to sell a $60,000 system to a family-run company
+   544		whose "computer expert" was in his 60's.  We had a program
+   545		called "Biosum" that would calculate the biorhythms for two
+   546		people and add the sine waves together and tell you how
+   547		compatible the two people are.
+   548	
+   549		The day of the biggest demo, the customer brings in his mother
+   550		(head of the clan) to see what the company is going to be
+   551		shelling out their money for.  The customer wanted to show his
+   552		mother something fun on the computer, so we fired up Biosum.
+   553		Unfortunately, the mother had been born in the 1800's, and you
+   554		know how sloppy BASIC programmers are when it comes to date
+   555		conversions - especially 18 year-old programmers who think "20
+   556		years ago" qualifies as ancient history.  When the program asked
+   557		for her birthdate and she typed it in (she was just starting to
+   558		get a thrill out of the machine), the program crashed very
+   559		ungracefully.  Talk about embarrassing...
+   560	
+   561		They bought the system anyway, but I don't think the matriarch
+   562		ever really liked it.
+   563	
+   564	
+   565		/ net.rumor / mmm!mrgofor / Mar 19, 1986 /
+   566	
+   567		This story did not happen to me, and I disremember where I heard
+   568		it, so it may not be true, but it's interesting nonetheless,
+   569		so...
+   570	
+   571		There was a computer system that was experiencing intermittent
+   572		power failures that were proving impossible to track down.
+   573		Every means of recording device and electrical filter was used,
+   574		but to no avail.  The power failures always seemed to happen
+   575		soon after lunch time, but for no apparent reason.  After months
+   576		of agonizing work, the technician finally figured it out:
+   577	
+   578		The room on the other side of the wall from the computer room
+   579		was the men's bathroom.  The grounding for the computer room
+   580		circuits went to the water pipes that serviced one of the
+   581		toilets.  The building was rather old, and the toilets were in
+   582		some need of repair.  It seems that when one sat on the toilet
+   583		seat, the weight of the sittee would cause the whole
+   584		construction to lean forward a bit - not much, but enough to
+   585		cause the marginally attached grounding wires to separate from
+   586		the water pipes as the pipes bent along with the toilet - voila
+   587		- the computer re-boots.
+   588	
+   589		I bet that was a hard one to track down!
+   590	
+   591	
+   592		/ net.rumor / mhuxt!evans / Mar 14, 1986 /
+   593	
+   594		I know of a case where a spider decided to set up shop a few mm
+   595		in front of a CCD array.  The spider rapidly figured out that
+   596		the inside of an imaging device wasn't a very good restaurant
+   597		and left -- but only after depositing a few strands of spider
+   598		silk.  One of these strands would periodically interrupt the
+   599		optical path of the CCD causing interesting images.  Of course
+   600		this was an intelligent machine, so no one ever looked at the
+   601		raw images -- not for at least a week that is...
+   602	
+   603	
+   604		/ net.rumor / ti-csl!tgralewi / Mar 14, 1986 /
+   605	
+   606		On the same lines as the "120 test", I once knew a repair tech
+   607		that had a "perfect" system for finding the problem when a
+   608		machine blew fuses.  He kept putting larger and larger fuses in
+   609		until something else blew.
+   610	
+   611	
+   612		/ net.rumor / utzoo!henry / Mar 19, 1986 /
+   613	
+   614		Pat Hume, one of the very senior profs in CS at U of T, once
+   615		told the story of how he broke the FERUT.  FERUT was FERranti U
+   616		of T, one of the first computers in Canada -- a great
+   617		vacuum-tube monster.  It had something like a ten-step procedure
+   618		for powerdown.  From time to time this machine got modified.
+   619		One day Hume was the last user of the day, and the time came to
+   620		shut it down.  Somebody had added an extra step to the shutdown
+   621		procedure, presumably as the result of some modification, but
+   622		either the writing was illegible or the instructions weren't
+   623		clear.  He did the best he could, and smoke started coming out.
+   624		He hastily finished the powerdown procedure, and called
+   625		Ferranti.  They naturally said "your service contract is nine to
+   626		five, we'll be there tomorrow morning".
+   627	
+   628		Next morning, the Ferranti technical crew showed up and spent
+   629		all morning in the machine room.  From Hume's description, one
+   630		got the impression of technicians half-inside the computer
+   631		briskly hurling parts out.  Hume, a rather junior professor at
+   632		the time, sat in his office all morning waiting for the word on
+   633		the multi-million-dollar computer he'd broken.  People walking
+   634		past in the hall would look in with pitying expressions.
+   635	
+   636		Towards noon, the Ferranti senior man walked into Hume's office
+   637		with a double armload of parts, dumped them on his desk, and
+   638		said "that's it".  Machine restored to operation, junior
+   639		professor not having to contemplate spending the next fifty
+   640		years paying back its price...  But the really cute part was
+   641		that the machine's reliability was markedly better after this
+   642		episode.  He'd managed to apply just enough stress to blow out
+   643		all the marginal parts.
+   644	
+   645	
+   646		/ net.rumor / decwrl!moroney / Mar 19, 1986 /
+   647	
+   648		Here's another example of what steel wool in the wrong places
+   649		can do to a machine:
+   650	
+   651		And yet another flooring story...
+   652	
+   653		(Being a hardware engineer at heart, I still shiver when I think
+   654		about this one.)
+   655	
+   656		Seams there was a cleaning lady that was assigned to the floor
+   657		that had the computer on it (a Zerox SIGMA 5 if it really
+   658		matters).  Well, one day she decided that the heal marks in the
+   659		raised tile floor just had to be cleaned up.  After seeing that
+   660		the soap and wax did not take all the marks out, she then tried
+   661		steel wool!
+   662	
+   663		The customer had to replace the whole machine.
+   664	
+   665		Since the cooling fans draw from the bottom, all the evaporating
+   666		wax was sucked up through the machine.  The soft coating on the
+   667		PC cards and backplane made a good home for all the small pieces
+   668		of steel wool that flew by later.
+   669	
+   670	
+   671		/ net.rumor / decwrl!moroney / Mar 19, 1986 /
+   672	
+   673		Yet another old classic war story.
+   674	
+   675		It seems that there was a certain university that was doing
+   676		experiments in behavior modification in response to brain
+   677		stimulation in primates.  They had this monkey with a number of
+   678		electrodes embedded in it's brain that were hooked up to a
+   679		PDP-11.  They had several programs that would stimulate
+   680		different parts of the monkey's brain, and they had spent over a
+   681		year training the monkey to respond to certain stimuli.
+   682	
+   683		Well, eventually the PDP developed problems, and field service
+   684		was called in.  Due to some miscommunication, the field service
+   685		representative was not informed of the delicacy of this
+   686		particular setup, and the people running the experiment were not
+   687		informed that field service was coming to fix the machine.  The
+   688		FS representative then booted up a diagnostic system I/O
+   689		exerciser.  After several minutes of gyrations, the monkey
+   690		expired, its brain fried.
+   691	
+   692		The moral, of course, is "Always mount a scratch monkey."
+   693	
+   694	
+   695		/ net.rumor / sdcrdcf!dem / Mar 21, 1986 /
+   696	
+   697		This was told to me by a fellow co-worker who worked for another
+   698		large main frame manufacture previously.
+   699	
+   700		It seems they delivered a new machine to an overseas site and
+   701		during installation every time they applied power to one of the
+   702		memory bays they blew every circuit breaker in the computer
+   703		room.  After resetting the circuits they again applied power to
+   704		the memory bay with the same results.  Since this was a new
+   705		machine they crated it up and shipped it back and got a
+   706		replacement.
+   707	
+   708		When they got the damaged memory bay back the started to tear it
+   709		down to fine the cause of the short.  Well what they found was a
+   710		small hole about 3/8 in.  in diameter going from top to bottom
+   711		through some of the memory arrays, which cause a very effective
+   712		short.  After a lot of research they found the cause.
+   713	
+   714		It seems that after the memory had passed test and evaluation
+   715		and quality assurance the bay was crated and put in the
+   716		warehouse to await delivery.  At some time during its storage an
+   717		electrician was hired to do some work and since it was a secure
+   718		building the security guard had do go with him.  The electrician
+   719		at one point said that he had to go back down to his truck to
+   720		get a drill and the guard asked why and the electrician said he
+   721		needed to drill a hole right here (pointing to a spot on the
+   722		floor).  The guard then responded by pulling out his sidearm and
+   723		proceeded to blow a hole at the appropriate spot which happened
+   724		to be right above where the memory bay was being stored.
+   725	
+   726		The last he knew the guard had been reprimanded and re-assigned
+   727		to another of the security agency's customers.
+   728	
+   729	
+   730		/ net.rumor / rebel!george / Mar 22, 1986 /
+   731	
+   732		> I once heard about a Xerox tech who opened up a malfunctioning
+   733		> copier and found a dead mouse lying on its back, spread eagled,
+   734		> right smack dab in the middle of it.
+   735	
+   736		Some time ago I worked for a large minicomputer vendor who also
+   737		had a problem installation in a warehouse.  I vividly remember
+   738		the frequent soft disk errors.  When the FE went to investigate
+   739		the large 3330 type drive, it didn't take too long before he
+   740		found the cause.  A field mouse had gotten into its large
+   741		tread-mill style blower.  Thereafter we (unofficially, to be
+   742		sure) referred to that drive model as the mouse-a-matic.
+   743	
+   744	
+   745		/ net.rumor / uthub!koko / Mar 21, 1986 /
+   746	
+   747		> The modem and the computer tried to share a common ground, but
+   748		> in reality there was a whopping potential difference between
+   749		> them, and when they were hooked up, sure enough, the computer
+   750		> generated sparks and bad smells - something computers are not
+   751		> generally supposed to do.
+   752	
+   753		This reminds me of a nasty accident I had in the Power
+   754		Electronics Laboratory.  I had a terminal connected to a
+   755		6809-based microcomputer board.  The board was in turn connected
+   756		through an interface, driver circuit and isolation transformer
+   757		to an SCR power module.  The module was connected directly to
+   758		the 117-volt line, which was protected by a 50-amp breaker.
+   759	
+   760		In the course of debugging the circuit, I had connected an
+   761		oscilloscope -- isolated, of course -- to the circuit.  I
+   762		connected one channel, with its ground wire, to some point in
+   763		the power circuit.  I had other channels of the scope connected
+   764		to the microcomputer interface.  I understood that the
+   765		microcomputer ground now became hot, but this was okay since the
+   766		microcomputer power supply and terminal were both isolated -- or
+   767		so I thought.  Then I turned on the 50-amp breaker switch to
+   768		energize the power circuit.  BANG!!!
+   769	
+   770		A large current, enough to pop the 15-amp breaker supplying the
+   771		computer and terminal, went from the power circuit, through one
+   772		set of scope leads, through the scope, through another set of
+   773		scope leads, through the computer ground trace, through the
+   774		ground wire in the RS-232 cable and into the terminal.  The
+   775		goddamn terminal had its RS-232 signal ground strapped to the
+   776		earth ground in the 117-volt line.  The current blew a trace on
+   777		the computer board.  When it finished off that path, it
+   778		proceeded to find the path of next lowest resistance -- the line
+   779		driver and receiver chips in the computer board and the
+   780		terminal.
+   781	
+   782		All four chips, plus some TTL chips in the terminal, were burned
+   783		out.  But one of those chips had a hole blown right through it!
+   784		I could see remains of the substrate through the hole.
+   785		Fortunately, the 15-amp breaker tripped before anything else was
+   786		damaged.  But the 15-amp breaker was slightly damaged -- it
+   787		tends to stick a little upon turning on.  (I left my mark in the
+   788		lab.)
+   789	
+   790		All of this goes to prove that that third wire in the line cord
+   791		does not always promote safety.  In this case, it created a
+   792		hazard.  From now on, I will always use a ground cheater for
+   793		terminals when working in that lab.
+   794	
+   795	
+   796		/ net.rumor / rlgvax!jsf / Mar 27, 1986 /
+   797	
+   798		I have two quick but nasty stories.  These are true so for
+   799		everyone who has been defending horror stories in net.rumor by
+   800		saying there all folk lore, sorry.
+   801	
+   802		Back in the summer of '84 I was setting up a PC lab at my
+   803		school.  We were converting an old chem.  lab, and of course had
+   804		to make some major modifications, including installing air
+   805		conditioning to handle the heat.  After setting up about 50 Dec
+   806		Pro 350s we had the normal break in trouble but soon everything
+   807		settled down and ran fine until about mid October.
+   808	
+   809		I came in one Saturday morning to open the lab and found it a
+   810		little warm, but didn't think anything about it.  After cramming
+   811		close to 100 freshmen into the lab to work on their homework,
+   812		the temperature reached close to 90 and 3/4s of the machines
+   813		were down with random hardware errors.  Seems that building
+   814		services had decided on Friday afternoon that it was time to
+   815		turn off the air conditioner, and fire up the heat for the
+   816		winter.  They had of course locked the door behind them, and we
+   817		had riveted all the windows shut that summer to prevent theft.
+   818		The whole lab was down until late Monday when we finally
+   819		convinced building services that we would need our air
+   820		conditioner all winter.
+   821	
+   822		The cause of the second one was a little more difficult to find.
+   823		Recently one of our customers was having trouble with a group of
+   824		terminals getting periodic line noise, sometimes to the point of
+   825		locking up the comm processor.  After finding nothing wrong in
+   826		the hard or software a team of crack support people went to
+   827		site.  There they found a bunch of RS232 lines almost 600 ft.
+   828		long that ran through an elevator shaft.  Every time the
+   829		elevator came by with it's big electric motor on top the RS232
+   830		line would pick up the RF noise like any good antenna and drive
+   831		the comm board insane.
+   832	
+   833	
+   834		/ net.rumor / burl!rcj / Mar 24, 1986 /
+   835	
+   836		> Is it really true that someone working for a bank or a large
+   837		> company diverted megabucks into his or her personal account by
+   838		> adjusting a program that figured out people's paychecks or
+   839		> interest payments so that it always...
+   840	
+   841		The most amusing incident I've ever heard along these lines (I
+   842		*think* I read it in the book _Computer_Crime_) involved a guy
+   843		who modified a payroll program for his large company.  The
+   844		program processed an alphabetically-sorted list of employees, so
+   845		he would shave a few cents from each account as he processed,
+   846		then make the results into a check for the last guy in the list
+   847		-- which happened to be one he had set up with his mailing
+   848		address on it.  The name was really flaky, started with "Zy" or
+   849		something like that.  Anyway, his employer decided to do a
+   850		morale-boost/public-relations move by awarding a trip or
+   851		something neat like that to the first and last employee in the
+   852		personnel/payroll database....It didn't take them long to link
+   853		the non-existent employee at the end with the programmer in
+   854		question.
+   855	
+   856	
+   857		/ net.rumor / ajs / Mar 29, 1986 /
+   858	
+   859		This is the truth as I know it, but with enough mystery to
+   860		constitute rumor.
+   861	
+   862		Back in college I knew a real whiz, the sort of guy who cut his
+   863		computer classes because he was off consulting for Large Unnamed
+   864		Companies, but passed them anyway.  Well, once he showed up with
+   865		a substantial bandage on his elbow, covering stitches, after
+   866		being gone a couple of days.  He wouldn't say much, only that
+   867		he'd been standing too close to a disc drive when it exploded,
+   868		and that his job was destructive testing.
+   869	
+   870		Later he told me a story of how he'd purposely blown a large
+   871		system, which the experts at the company said couldn't be done,
+   872		as part of this testing.  He said he downloaded some software to
+   873		a system in a locked room thousands of miles way, and saw the
+   874		results on closed circuit TV.
+   875	
+   876		The system had a CPU in the middle and a line of disc drives on
+   877		each side.  He claims he caused the drives to blow up, starting
+   878		at the outsides and working in, at just the right times to
+   879		propagate a combined shock wave into the CPU.  If that wasn't
+   880		enough, just as the shock wave arrived, he had the CPU power
+   881		supply do something nasty which smoked the circuits.
+   882	
+   883		Apparently this was all production hardware, so naturally the
+   884		company (supposedly one of the three-letter-acronym giants)
+   885		didn't want word to get out.
+   886		___________
+   887	
+   888		I think this guy was the same one who told me a gory story about
+   889		a high-speed removable-cartridge disc drive with a cover
+   890		interlock.  When the drive was spinning you couldn't open the
+   891		cover.  The story is that the interlock was broken, but an
+   892		operator didn't notice the disc was still spinning when he
+   893		lowered a pack removal cover on it.  He was holding the cover by
+   894		a center handle that immediately went to high RPMs, and you can
+   895		imagine the rest.
+   896	
+   897	
+   898		From: mcgregor@hpccc.HP.COM (Scott McGregor)
+   899		Date: 22 Sep 86
+   900		Subject: hpf.jokes for Sep 86
+   901		Newsgroups: hpf.general
+   902	
+   903		True story from my own past.
+   904	
+   905		I worked for a small business dp timesharing and software
+   906		development firm in Stamford, Connecticut in 1976.  We were so
+   907		successful in OEMing DEC PDP-11s with our business software that
+   908		year that the owner decided to give himself a treat.  He moved
+   909		out of his nondescript office suite and moved into a penthouse
+   910		suite in a professional building.  In fact, he proudly
+   911		announced, we'd be the highest point in Stamford and have a
+   912		great view.
+   913	
+   914		Well, we moved in (quite a struggle since the elevator only went
+   915		to the floor below) and started processing again, and within the
+   916		weak started to notice a larger than usual number of soft
+   917		crashes.  Then we had a hard disk crash.  Naturally we suspected
+   918		that things had been jarred in the move or coming up the stairs.
+   919		We had a FE come in and check it out and repair the disk.  The
+   920		FE didn't find anything wrong.  The same thing happened the next
+   921		week; we lost a hard disk and suffered numerous soft crashes
+   922		which we tracked down to faulty disk reads.  FE came out, and
+   923		looked for the problem and couldn't find it when all of a sudden
+   924		he detects a surge on our power.  So, we are told we need a
+   925		clean power line.
+   926	
+   927		Next week we have an electrician in and get a clean line pulled
+   928		up 14 stories.  But still we have these hard and soft disk
+   929		failures.  Frustrated, we have the FE call in a specialist.  The
+   930		specialist comes in doesn't find anything right away, then
+   931		suddenly "blip" detects a surge on our ground!?  So, they tell
+   932		us we need a clean ground.  We get an electrician and tell him
+   933		this, and he looks at us strange but puts in a new ground.  Next
+   934		week same thing; lots of soft disk errors and this time we lose
+   935		two platters on our 11/45 (recently arrived 11/03 with only
+   936		floppy disks is cruising just fine though).
+   937	
+   938		We're really frustrated now, our MTBF (which we report to our
+   939		customers in the monthly service level report) is in the toilet!
+   940		The owner is hot about this.  DEC local FE and specialist can't
+   941		figure it out.  Finally, they call in an engineer from Mass.  He
+   942		strolls through our front door walks over to where the 11/45
+   943		(including disks in same cabinet) is, right next to the window.
+   944		He doesn't even look at the computer, just stares out the window
+   945		for a few seconds.  Finally, he turns to us and says,
+   946		"Interesting, by the way, can you tell me what those antennas
+   947		are for?"  as he points out the window at the other side of the
+   948		roof.
+   949	
+   950		"I don't know, just TV antennas I guess" says my boss.  The
+   951		engineer asks us to call maintenance just to check.  Meanwhile
+   952		this engineer is showing the local FE and specialist how he can
+   953		get blips on his scope from the venetian blinds, his tie clip
+   954		and just about everything else.  Turns out the antennas were
+   955		microwave and radio paging antennas.  This being the high point
+   956		in Stamford made it an ideal site (in fact the antenna rented
+   957		for 10X the price of the penthouse suite!).  Everytime some
+   958		doctor was paged in Stamford, the antennas would send out a
+   959		signal that induced a current in everything around.  Being only
+   960		20 feet away everything in our office was hit especially in our
+   961		hard disks which used a magnet and induction coil to position
+   962		the heads over the proper track!  Some signals would cause the
+   963		head to over or undershoot the specified track causing the soft
+   964		crashes, while others cause the head to actually hit the
+   965		platter.  The floppies on the 11/03 weren't affected because
+   966		they didn't use induction coils.
+   967	
+   968		They had to move the office down to the first floor where it had
+   969		a view of...  the parking lot!  (However, in fairness to the
+   970		11/45 and its disks I must also say that it later did a long
+   971		stint at one of our customer's sites, in a "Polyfill" factory.
+   972		The fibers in the air were so thick that the filters on the air
+   973		conditioner had to be cleaned daily or it would actually burn
+   974		out--but the 11/45 and disks functioned smoothly (I, however got
+   975		a raging sore throat and sometime will find I have some lung
+   976		disease!))
+   977	
+   978	
+   979		From: jimd@hpcvra
+   980		Date: 24 Sep 86
+   981		Subject: Re: hpf.jokes for Sep 86
+   982		Newsgroups: hpf.general
+   983	
+   984		I once got to visit the data processing shop for Frito-Lay
+   985		headquarters in Dallas, Texas (there's a Dallas in Oregon, too,
+   986		you know).  They are a huge IBM shop...
+   987	
+   988		The favorite war story at Frito-Lay was about the arrival of a
+   989		new 308x (not sure of exact model) mainframe.  It was one of the
+   990		first that IBM shipped - possibly a beta-unit.  The guts of the
+   991		machine are liquid-cooled - when you look inside the machine you
+   992		see what look like liquid cooled heads from a modern motorcycle.
+   993		In any case, the machine literally melted down one night.
+   994		Turned out that the cleaning crew decided they needed some water
+   995		for window washing...  The spigot for the coolant supply was
+   996		mounted on the top of the cabinet and equipped with a standard
+   997		looking water valve!
+   998	
+   999	
+  1000		From: robin@hpulexa.HP.COM
+  1001		Date: 25 Sep 86
+  1002		Subject: hpf.jokes for Sep 86
+  1003		Newsgroups: hpf.general
+  1004	
+  1005		It seems a customer was having trouble with the floppy drive on
+  1006		his 9836 computer.  He would write his files to disk every night
+  1007		before he went home to find the next morning the disks were
+  1008		unreadable.  This went on for a few weeks so he decided to call
+  1009		HP.  After the usual telephone interrogation the CE decided he
+  1010		would have to go on-site.
+  1011	
+  1012		The CE tried to read the customer's floppy to no avail.
+  1013		Assuming a damaged disk, they tried a new one.  To test the
+  1014		drive the CE initialized a new floppy, installed it into the
+  1015		drive, wrote a file only to read it back perfectly.  Being a
+  1016		good CE he cleaned the heads on the disk drive, ran the
+  1017		diagnostics and sure enough, everything looked fine.  Since both
+  1018		he and the customer were satisfied no problem existed, they
+  1019		decided the disk PM was worth the trip.
+  1020	
+  1021		The next day the customer called the CE back because his disks
+  1022		were unreadable.  The CE went back to the customer site and
+  1023		again, the disks were unreadable.  He reviewed the command
+  1024		sequence used to create the files and all was correct.  They
+  1025		cleaned the heads again, ran the diagnostics only to discover no
+  1026		problems.  A new, initialized floppy worked fine.  Just in case
+  1027		the diagnostics had gone awry, the CE, over the next couple of
+  1028		weeks, began to replace parts of the two drives.  (Intermittent
+  1029		problems are always the most difficult to expose.)  Finally the
+  1030		customer had two brand new drives only to find he could not read
+  1031		his disks.
+  1032	
+  1033		The CE, becoming very frustrated, asked himself,"If I were a
+  1034		floppy disk why would I become unreadable?"  EUREKA!!
+  1035	
+  1036		It seems that every night, so that he would not forget to bring
+  1037		his files to work the next day, the customer would put them in a
+  1038		convenient place-right next to the door.  HE HAD THEM STUCK TO
+  1039		THE FRIDGE WITH A MAGNET!!  Of course the CE checked the
+  1040		immediate area of the computer for anything magnetic, but who
+  1041		would have thought...
+  1042	
+  1043		_____________________
+  1044	
+  1045		From:  JWH109@PSUVM.BITNET (Jack Hsu)
+  1046		Date:  25 Mar 89
+  1047		Subject:  Computer folklore summary	[revised]
+  1048		Newsgroups:  rec.humor
+  1049	
+  1050		To all those people who wanted the past computer folklore
+  1051		tidbits that were posted to the net months ago, here is a
+  1052		partial list of all the computer folklore that was posted.
+  1053		Because this file was so huge, I removed the signatures and most
+  1054		of the headers.  I did keep the userid of the people who
+  1055		submitted the article and the date of submission.  There is also
+  1056		a brief description of what is contained in each article (I
+  1057		admit that some of the descriptions are rather stupid, but what
+  1058		do you expect from a guy who was both doing this on his spare
+  1059		time and often editing things at 3:00 in the morning.)  I hope
+  1060		this will brighten everyone's day (as well as devour a large
+  1061		part of you disk.)
+  1062	
+  1063	
+  1064		From:  pt@geovision.uucp (Paul Tomblin)
+  1065		Subject:  IBM 3270 myths
+  1066		Date:  28 Jan 89
+  1067	
+  1068		I started there:
+  1069	
+  1070		1) A computer kept crashing, and every time service was called,
+  1071		it worked fine.  It turned out that one of the users would come
+  1072		in, sit down at the console and put his papers and stuff on the
+  1073		top covering the cooling vents.  When it crashed, he'd pick up
+  1074		his stuff and leave, removing the evidence.  Service people
+  1075		didn't figure this one out until they decided to watch him work
+  1076		to see why it crashed.
+  1077	
+  1078		2) We had an IBM cluster controller controlling some 3270
+  1079		terminals.  We paid $5000 for an upgrade that would allow more
+  1080		users to be connected to the controller.  The IBM service rep
+  1081		came in and REMOVED a board, that was put there to deliberately
+  1082		slow things down.
+  1083	
+  1084		3) (This one happened to me) A Northern Telecom 3270 terminal
+  1085		caught fire, with flames coming out of the top.  I guess I was
+  1086		doing some hot stuff.  I was not putting stuff on top of the
+  1087		terminal cooling slots.
+  1088	
+  1089		4) Somebody working on an Airline Reservation System, trying to
+  1090		get maximum response out of the machine, was looking at a OS
+  1091		listing and found a delay loop that was executed by a timer
+  1092		interrupt every 100th of a second.  Removing it brought the
+  1093		performance up, but they had to replace one of the chips in the
+  1094		machine that wasn't fast enough.
+  1095	
+  1096	
+  1097		From:  jackg@tekirl.TEK.COM (Jack Gjovaag;6160;50-321;LP=A)
+  1098		Subject:  GE 415 and 425 stories
+  1099		Date:  31 Jan 89
+  1100	
+  1101		...the GE 415 and 425 CPUs were identical except that the 415
+  1102		had an extra wire that slowed the clock down a bit.  To upgrade
+  1103		to the 425, after paying your money, the wire was removed.  Some
+  1104		users knew about this and one of them made up a realistic
+  1105		looking letter supposedly from GE saying something to the
+  1106		effect:  "CAUTION.  Do not remove the wire from pin 4AB to 7FL
+  1107		in the CPU enclosure.  This wire is located approximately 7
+  1108		inches up from the bottom of the backplane in bay 2 and should
+  1109		not be removed by using a GE 112-3 wire unwrapping tool, first
+  1110		not removing the wrapping from 4AB, then pulling the wire from
+  1111		under the other wiring to its bound end at 7FL, followed by not
+  1112		unwrapping the bound end from 7FL.  Not removing this wire will
+  1113		result in the normal clockspeed which is 1.6 times slower than
+  1114		with the wire removed and will not cause corresponding increases
+  1115		in system throughput."  Naturally most of these wires got
+  1116		removed.
+  1117	
+  1118		Another interesting but kludgy fix to a problem came from a user
+  1119		of an IBM 7044.  The 7044 had a HALT instruction that stopped
+  1120		the CPU clock.  The user was doing some realtime processing or
+  1121		something of the sort and didn't like the idea of the CPU ever
+  1122		being able to stop itself.  He asked IBM how much it would cost
+  1123		to disable the instruction and they gave him some large quote
+  1124		which contained the implicit message "We don't want to do it and
+  1125		this price is set high enough to make you change your mind about
+  1126		the request."  The user didn't want to pay the money so he fixed
+  1127		up a photodiode over the light on the console that was on when
+  1128		the CPU was running and hooked it up to a solenoid that would
+  1129		push the RUN button whenever the light went out.  The cost was a
+  1130		couple of dollars.
+  1131	
+  1132	
+  1133		From:  lm03_cif@uhura.cc.rochester.edu (Larry Moss)
+  1134		Subject:  Apple II and magnets
+  1135		Date:  2 Feb 89
+  1136	
+  1137		I heard one story about a guy that was using an Apple IIe at
+  1138		work a few years ago.  He was ready to give up with computers
+  1139		because every disk he ever tried to use would lose all of the
+  1140		files on it.
+  1141	
+  1142		It turned out that he kept little reminder notes attached to the disk
+  1143		drive - with magnets.
+  1144	
+  1145	
+  1146		From:  aem@ibiza.Miami.Edu (a.e.mossberg)
+  1147		Subject:  TRS-80 story
+  1148		Date:  3 Feb 89
+  1149	
+  1150		Back when TRS-80s had just come out, my friend bought one.  One
+  1151		day we were in a Radio Shack, and one of the guys working there
+  1152		gave a diskette to my friend.  My friend folded it up and put it
+  1153		in his pocket....
+  1154	
+  1155	
+  1156		From:  new@udel.EDU (Darren New)
+  1157		Subject:  Smoking Computers
+  1158		Date:  3 Feb 89
+  1159	
+  1160		Speaking of smoking computers, this is absolutely true...  I was
+  1161		there.  I was working at a high-school and the soon-to-be
+  1162		computer teacher had just taken one of the TRS-80 model I's
+  1163		home.  About half an hour later we get a call:
+  1164	
+  1165		  "Darren?"
+  1166		  "Yeah?"
+  1167		  "Is the computer supposed to smoke when I turn it on?"
+  1168		  "NO! Of course not."
+  1169		  "Then should I turn it off?"
+  1170	
+  1171		He had plugged the power supply into the video connector and
+  1172		fried every chip in the machine.  Win some, lose some.
+  1173	
+  1174	
+  1175		From:  Zap@cup.portal.com (Tim Philip Cadell)
+  1176		Subject:  Another TRS-80 story
+  1177		Date:  4 Feb 89
+  1178	
+  1179		When I used to work at a Radio Shack store, we got a call one
+  1180		day from a man who was trying to load a program (Blackjack, I
+  1181		believe) off of tape into a TRS-80 Model I computer and run it.
+  1182		A friend of mine went to the phone and told him that after he
+  1183		loaded it, type "R U N" and press enter.  He got a syntax error
+  1184		and after reading it back, it turned out that he had typed "Are
+  1185		You In?"  and pressed enter.
+  1186	
+  1187	
+  1188		From:  peggy@ddsw1.MCS.COM (Peggy Shambo)
+  1189		Subject:  Stick Mac keyboards
+  1190		Date:  4 Feb 89
+  1191	
+  1192		This is a true story (honest!):
+  1193	
+  1194		A friend was having a problem with a sticky keyboard for his
+  1195		Mac.  He was talking to another friend who off-handedly
+  1196		suggested putting into the dishwasher to clean it up.  So, my
+  1197		friend did just that!  Needless to say, the keyboard didn't
+  1198		function any too well after that.  :-)
+  1199	
+  1200	
+  1201		From:  peggy@ddsw1.MCS.COM (Peggy Shambo)
+  1202		Subject:  Shattered disks
+  1203		Date:  4 Feb 89
+  1204	
+  1205		Yet another true story:
+  1206	
+  1207		I was at GE Consulting's Training and Education Center in
+  1208		Albany, NY taking a course on the PC.  Well, there were some
+  1209		inexperienced PC users there, so we had to go through the
+  1210		"basics" for them (ie, the do's and don't's of disk handling)
+  1211	
+  1212		Well, according to the instructor, there had been one student
+  1213		who had driven up from Bridgeport, CT (corporate offices are
+  1214		there).  He had stayed at a nearby motel overnight, leaving his
+  1215		briefcase in the trunk of the car.  (Oh, let me add that it was
+  1216		sub-zero weather at the time of this incident).  In the morning
+  1217		he arrived at T&E, opened up his briefcase, took out a floppy
+  1218		disk, inserted into a drive...  then *c-r-a-c-k*!!!  It
+  1219		shattered into little pieces.
+  1220	
+  1221	
+  1222		From:  robert@jive.sybase.com (Robert Garvey)
+  1223		Subject:  How not to label disks
+  1224		Date:  4 Feb 89
+  1225	
+  1226		Heard a story about a company whose PC software was being blamed
+  1227		for the consistent failure to read backup data off floppies.
+  1228		Unable to determine the cause, they finally sent someone to sit
+  1229		beside the system's user the entire work day.  Nothing unusual
+  1230		was seen until the very end of the business day when the user
+  1231		took the floppy out of the drive and started to label it.  A
+  1232		blank label was put on and the disk inserted into the carriage
+  1233		of an electric typewriter...
+  1234	
+  1235	
+  1236		From:  Michael Polymenakos <I78BC@CUNYVM.CUNY.EDU>
+  1237		Subject:  The novice salesman
+  1238		Date:  5 Feb 1989
+  1239	
+  1240		How about the young computer salesman giving some client a
+  1241		demonstration of the new electronic word-processor?  He loads up
+  1242		a large document, and says:  "watch this!".  He hits a couple of
+  1243		keys, and converts every "i" in the document to an "a", making
+  1244		the text unreadable.
+  1245	
+  1246		"And it you can change it all back, just like this" he
+  1247		proclaims, subsequently converting all "a"s back to "i",
+  1248		including those that had been "a"s originally.
+  1249	
+  1250		Of course, it happened to a friend of a friend of mine.. :-)
+  1251	
+  1252		Another one my father told me:
+  1253	
+  1254		My dad was an electronics engineer in Greece, for a company that
+  1255		imported various high-tech lab equipment.  One of them (A HP
+  1256		spectrophotometer, I think) was controlled by a special built-in
+  1257		computer, running optional proprietary software.  Each optional
+  1258		package was copy protected.  To enforce that, installing the
+  1259		package could only be done by a tech-rep; after the
+  1260		installation, the disks were automatically erased, and the
+  1261		program was kept in battery-backed RAM.
+  1262	
+  1263		Anyway, at some point the computer lost all its programs.  A
+  1264		call had to be made to Germany, for new disks to be sent as a
+  1265		replacement.  My dad could not find the reason for this, and he
+  1266		was really surprised when the client called again, with the same
+  1267		problem next week.  Call Germany again, install the disks again,
+  1268		then next week guess what happened:  The lab calls again.  But
+  1269		there was a definite pattern:  The lab always found the system
+  1270		down on a Wednesday morning.  Obviously, whatever went wrong
+  1271		happened on Tuesday nights only....
+  1272	
+  1273		After more than a month of downtime, someone realized that the
+  1274		cleaning lady came to the room every Tuesday night.  Someone
+  1275		went to check her and found out that she carried a nine-year old
+  1276		kid with her.  The kid had discovered the machine's on-off
+  1277		switch, with a few buttons next to it.  When the machine was on,
+  1278		pressing those buttons made cute sounds (audible warnings!)
+  1279		which are supposed to alert you to the fact that holding the
+  1280		button down for a few seconds would completely reset the
+  1281		machine.  I guess the kid thought of it as an oversized musical
+  1282		instrument.  The mom turned the machine off before she left,
+  1283		erasing error codes etc.  No-one knows how much this story cost
+  1284		the lab in downtime.....
+  1285	
+  1286	
+  1287		From:  buck@siswat.UUCP (A.  Lester Buck)
+  1288		Subject:  Nuked punched cards
+  1289		Date:  5 Feb 89
+  1290	
+  1291		When I was a freshman in 1971, all mainframe jobs were submitted
+  1292		on cards.  And there was a snack room with microwave oven just
+  1293		down the hall.  Well, we were waiting for our jobs to run and
+  1294		were bored, so one of my friends had the idea - What does a
+  1295		microwave oven do to a card deck?  We got a deck of blank cards
+  1296		and cooked them for a while.  It is a simple physics problem to
+  1297		show that uniformly heating a sphere leads to MUCH higher
+  1298		temperatures at the center compared to the edge.  Of course, the
+  1299		card deck *looked* perfectly normal, but inside it was charred,
+  1300		black and brittle.
+  1301	
+  1302		No, we never submitted such a deck.  We took pity on the
+  1303		operators and the poor card reader...  (And with dozens of
+  1304		drawers of card decks to chose from, it would have been easy to
+  1305		cover our tracks.)
+  1306	
+  1307		And then there are all the stories of "rewind and break tape"
+  1308		macros, (almost) all discovered accidentally.  Or the FORTRAN
+  1309		print statement that did a line of underlines without advancing
+  1310		the paper, repeated that oh, 100 times, then did 100 form feeds.
+  1311		The operator was untangling that printer for some time...
+  1312	
+  1313		This school did have a very well-followed honor system, and it
+  1314		was considered extremely bad form to affect anyone else
+  1315		adversely.
+  1316	
+  1317	
+  1318		From:  fpu@taux01.UUCP (32764 fpu account)
+  1319		Subject:  Spelling mistakes
+  1320		Date:  5 Feb 89
+  1321	
+  1322		When I was a junior, I worked as a summer student in the
+  1323		Amsterdam branch of a multi-national computer company.  The PR
+  1324		department there published a poster advertising the world wide
+  1325		quality of its products; the poster had the word "quality"
+  1326		written on it in 20 different languages.
+  1327	
+  1328		The Hebrew word for quality, which contains five letters,
+  1329		appeared in the poster with three spelling mistakes.
+  1330	
+  1331	
+  1332		From:  tmca@ut-emx.UUCP (The Anarch)
+  1333		Subject:  The equipment next door
+  1334		Date:  6 Feb 89
+  1335	
+  1336		This tale is true, I was there.
+  1337	
+  1338		The DEC users group here occasionally has Q+A sessions with a
+  1339		representative of said company which sometimes become complaint
+  1340		and apology sessions.  I remember one particular complaint from
+  1341		a Physics professor who claimed that his microVax was having
+  1342		problems with its tk50 tape drive and he had lost a fair
+  1343		quantity of data when the drive allegedly mangled a tape
+  1344		(magnetically, not physically).  Some discussion ensued and the
+  1345		professor griped that he also didn't like the way that the
+  1346		screen display "flexed" every time they turned the equipment on
+  1347		next door.
+  1348	
+  1349		It turns out that the "equipment next door" is a largish Tokomak
+  1350		fusion reactor - the electromagnets in the thing have to be seen
+  1351		to be believed.  (And this man is a physics professor - phew!)
+  1352	
+  1353	
+  1354		From:  loughry@tramp.Colorado.EDU (J. Loughry)
+  1355		Subject:  MBA formatting lesson
+  1356		Date:  6 Feb 89
+  1357	
+  1358		Once upon a time in the MBA factory...
+  1359	
+  1360		About fifty prospective MBAs were learning how to run an IBM PC.
+  1361		The computer lab had a bunch of nice hard-disk equipped
+  1362		machines, with 1-2-3 and dBase and Word, etc, all lined up in
+  1363		front of a video projector.
+  1364	
+  1365		"Today we're going to learn how to use DOS to format a disk.
+  1366		Everybody have their floppy disk ready?  Good.  Put it into the
+  1367		disk drive.  (No no, it goes in the *other* way...that's
+  1368		right....)
+  1369	
+  1370		"Okay, now to format a disk, you use the command FORMAT C:"
+  1371	
+  1372		...and they all typed it in.
+  1373	
+  1374	
+  1375		From:  mercer@ncrcce.StPaul.NCR.COM (Dan Mercer)
+  1376		Subject:  Faulty satellite link
+  1377		Date:  6 Feb 89
+  1378	
+  1379		My favorite story is about a satellite link that went haywire
+  1380		every Friday at 3:00 PM.  The company that owned the link
+  1381		immediately blamed the software in their communications
+  1382		controllers.  Systems analysts were dispatched on site, and try
+  1383		as they did, they couldn't find a software bug that could be
+  1384		responsible.  Finally, by dumb luck they found it.  A bunch of
+  1385		factory workers let off at 3:00 started their weekend with a
+  1386		parking lot beer party and threw their empty cans in the
+  1387		satellite uplink.  A shift of security guards fixed that.
+  1388	
+  1389	
+  1390		From:  cyosta@taux01.UUCP ( Yossie Silverman )
+  1391		Subject:  Listening to memory
+  1392		Date:  6 Feb 89
+  1393	
+  1394		I have two stories to relate.  Both have to do with IBM machines
+  1395		(the large variety):
+  1396	
+  1397		1) Back when core memory was in use one could "listen" to the
+  1398		   memory with a transistor radio.  A game among system
+  1399		   programmers was to access memory in such a manner as to
+  1400		   produce recognizable tunes on the radio.
+  1401	
+  1402		2) Printers produce a buzzing with varying frequency depending
+  1403		   on the text being printed (this is because of the rate at
+  1404		   which the hammers strike the slugs in the print chain).  The
+  1405		   same system programmers would also compete to see who could
+  1406		   print a job that played specific (and known) tunes.
+  1407	
+  1408		One further story that comes to mind.  It is said that specific
+  1409		models of IBM mainframes had a bug whereby "branching backwards
+  1410		over a page boundary to a paged out page would leave the
+  1411		supervisor bit turned on in the PSW in the stored PSW".  I never
+  1412		was able to verify this but it makes some sort of sense when you
+  1413		look at the hardware that IBM uses.
+  1414	
+  1415	
+  1416		From:  hollen@spot.megatek.uucp (Dion Hollenbeck)
+  1417		Subject:  Stars and Stripes
+  1418		Date:  6 Feb 89
+  1419	
+  1420		While a student at UCSD in the middle 60's I had the opportunity
+  1421		to work many late nights in the computer punch card room on my
+  1422		physical chemistry lab calculations.  One late night when the
+  1423		computer operator was obviously bored, he invited me into the
+  1424		sanctum sanctorum - the computer room.  The computer was a CDC
+  1425		3600 and had a curving console about 8 feet long with several
+  1426		hundred lights and switches (in those days, there was no such
+  1427		thing as terminal input).  On the far wall was a bank of a dozen
+  1428		1/2" tape drives with vacuum column tape tension control.
+  1429	
+  1430		He loaded up a deck into the card reader (the only command input
+  1431		device) and started it.  For the next 1/2 hour the computer
+  1432		PLAYED the Stars and Stripes Forever and assorted Sousa marches,
+  1433		using the tones on the console (every light had its own tone)
+  1434		for the high low notes and the tape drives for the low notes.
+  1435		At the same time, all the lights on the console were blinking on
+  1436		and off.  Since I am now a full-time programmer, I finally
+  1437		appreciate the work it must have taken a system level programmer
+  1438		to do that.  Talk about primitive audio devices!
+  1439	
+  1440	
+  1441		From:  vail@tegra.UUCP (Johnathan Vail)
+  1442		Subject:  Faulty IC's
+  1443		Date:  6 Feb 89
+  1444	
+  1445		A friend worked for a company that made IC's.  It seemed that
+  1446		every few months their yields would go down to about zero.
+  1447		Analysis of the failures showed all sorts of organic material
+  1448		was introduced into the process somewhere but they couldn't
+  1449		figure out where.  One evening someone was working late and came
+  1450		into the lab.  There he found the maintenance crew cooking
+  1451		pizza in the chip curing ovens!
+  1452	
+  1453	
+  1454		From:  hinojosa@hp-sdd.hp.com (Daniel Hinojosa)
+  1455		Subject:  Printer chain problems
+  1456		Date:  6 Feb 89
+  1457	
+  1458		A friend of mine told a story of one of these printers he and
+  1459		another friend destroyed in a most interesting manner.  These
+  1460		printers had, it would seem, a sort of chain that held all of
+  1461		the characters.  I guess they held about three complete sets of
+  1462		the alphabet plus special characters.
+  1463	
+  1464		These chaps read the chain and created a file in their system
+  1465		that had all of the characters of one pass in it.  They gave the
+  1466		command to print the file.  Upon doing so the printer starts to
+  1467		spin the chain, then SMACK!  Trying to print all of those
+  1468		characters at once while the chain was moving, didn't quite
+  1469		work.  The fellow said they found the print characters in
+  1470		various parts of their office for years thereafter.
+  1471	
+  1472	
+  1473		From:  BVAUGHAN@pucc.Princeton.EDU (Barbara Vaughan)
+  1474		Subject:  The MBA interface
+  1475		Date:  8 Feb 89
+  1476	
+  1477		In 1972, I was assigned the task of writing an interactive user
+  1478		interface for a statistical analysis program written in FORTRAN
+  1479		IV.  I was told that the users were "MBA types; not very
+  1480		quantitative and with little background in statistics."  ( I
+  1481		hope this is no longer true of MBA's.)
+  1482	
+  1483		Anyway, writing such an interface in FORTRAN IV was no picnic,
+  1484		but I tried to make it very friendly.  Plain English questions,
+  1485		examples of correct answers, range checks to determine validity
+  1486		of responses, helpful error messages.
+  1487	
+  1488		One of the first users to test the program said that it kept
+  1489		bombing out on question 3.  "Enter number of thingamabobs (Valid
+  1490		responses 1 to 5):".  I asked what her response had been and she
+  1491		said "Five".  Puzzled, I asked if I could watch her run the
+  1492		program.  This is what I saw:  ....(Valid responses 1 to 5):
+  1493		FIVE
+  1494	
+  1495		That's when I realized what nonquantitative really meant.  Even
+  1496		though FORTRAN IV had no character string handling capability
+  1497		(you had to declare your characters as INTEGER or REAL), I had
+  1498		to write a routine to read all keyboard input as characters,
+  1499		convert to numbers, and add a friendly message to explain what a
+  1500		number was.
+  1501	
+  1502	
+  1503		From:  jbs@rti.UUCP (Joe Simpson)
+  1504		Subject:  Fried circuit boards and other stories
+  1505		Date:  8 Feb 89
+  1506	
+  1507		A friend of mine used to work for Northern Telecom, and said
+  1508		this story circulated there:
+  1509	
+  1510		A team of installers was installing a DMS-10 digital telephone
+  1511		switch somewhere in Tennessee.  They had it set up and had been
+  1512		testing it all day; everything seemed to work okay, so they left
+  1513		early in the evening to go barhopping and rabble-rousing, as NT
+  1514		installers are said to be wont to do.
+  1515	
+  1516		Next morning they came in only to find that the switch had
+  1517		failed during the night, and a couple of circuit boards were
+  1518		fried to boot.  They replaced the boards, tested it all day, and
+  1519		left again that evening.  Next morning, same result.  This went
+  1520		on for a couple of days, and finally one of the installers
+  1521		bunked down next to the DMS-10.  Along about midnight, in came
+  1522		the cleaning lady with a feather duster, and proceeded to dust
+  1523		everything in the room, including the exposed circuit boards.
+  1524	
+  1525		UNRELATED STORY:
+  1526	
+  1527		When I was an undergrad at UNC, I spent a little time in the
+  1528		graduate department's graphics lab.  When one of the grads was
+  1529		showing us the hardware, he pointed out a large rubber mallet
+  1530		sitting beside one of the cabinets.  He said that the connection
+  1531		between the chips' prongs and their sockets sometimes became
+  1532		poor, and often when the system acted up the cure was to bang on
+  1533		the cabinet with the mallet to reseat the chips.  He also said
+  1534		anytime they had a photo of the lab taken, they made sure the
+  1535		mallet was visible in the picture, and sent a copy to DEC, who
+  1536		apparently knew exactly what the mallet was for.
+  1537	
+  1538	
+  1539		From:  johnl@ima.ima.isc.com (John R. Levine)
+  1540		Subject:  Printing a line
+  1541		Date:  8 Feb 89
+  1542	
+  1543		...The letters on the print chain are all scrambled up.  Each
+  1544		time the chain moves, some fraction of the letters on the chain
+  1545		will be in front of the place where those particular letters are
+  1546		supposed to print, so the printer fires just those hammers.
+  1547		Then the chain moves, some more hammers fire, etc.
+  1548	
+  1549		The particular hack that Mr.  Hinojosa and I described
+  1550		reprogrammed the printer so it would think that every letter on
+  1551		the line was correctly placed and so fire all the hammers at
+  1552		once.  That makes quite a lot of noise (normally, only 10 or so
+  1553		of the 120 or 132 hammers go off at once) and moreover turned
+  1554		out to use more power than the printer was prepared to supply
+  1555		thus blowing the fuse and causing other problems.
+  1556	
+  1557	
+  1558		From:  jbs@rti.UUCP (Joe Simpson)
+  1559		Subject:  Where's the off switch?
+  1560		Date:  8 Feb 89
+  1561	
+  1562		I worked one summer in a COBOL shop (no, that's not supposed to
+  1563		be the funny part) that had a Sperry/Univac mainframe.  The
+  1564		operator's terminal was on a desk that was backed up against the
+  1565		CPU cabinet.  One day the system went down hard, and I walked
+  1566		down to the machine room to see what was up (or down).
+  1567	
+  1568		The operator (fortunately for his job security, the son of the
+  1569		company's vice-president), said he had no idea what had
+  1570		happened, that it seemed the power had gone off.  We checked all
+  1571		the circuit breakers to no avail.  Finally, he said the last
+  1572		thing he remembered before the power went was crossing his legs;
+  1573		I looked under his desk and saw, completely unprotected, set
+  1574		into the cabinet at just above ankle height, a power switch.  It
+  1575		was "OFF".  Some brilliant engineering, that.
+  1576	
+  1577	
+  1578		From:  ljc@otter.hpl.hp.com (Lee Carter)
+  1579		Subject:  Backup your disks
+  1580		Date:  8 Feb 89
+  1581	
+  1582		Various stories that customer engineers have told us:
+  1583	
+  1584		1.) An office secretary was presented with her first PC and
+  1585		    given large amounts of instruction on how to operate it.
+  1586		    Just before he left, the C.E.  asked the secretary, "What
+  1587		    must you do every Friday?"  to which the secretary replied
+  1588		    "Copy my data disks so I don't lose any information."
+  1589		    Satisfied, the C.E.  departed.  One week later there was a
+  1590		    phone call; "I can't read my disks!"  so the C.E.  went back
+  1591		    to the secretary.  Sure enough the data disks were corrupt
+  1592		    and unreadable.  "Have you got copies of these disks?" --
+  1593		    "Yes" -- "Can I see them please?"
+  1594	
+  1595		    The secretary opened her desk drawer and removed several
+  1596		    sheets of paper.  Curiously the C.E.  examined them to see
+  1597		    each was a perfect photocopy of the data disks....
+  1598	
+  1599		2.) A site had an HP3000 installation with a number of large
+  1600		    300Mb disk disk drives.  One week, two of the drives
+  1601		    crashed, so they called an engineer.  The engineer examined
+  1602		    the drives, and noticed a little pile of sawdust on the
+  1603		    floor by the side of them.  Needless to say, there is no
+  1604		    wood in the construction of these drives and the floor was
+  1605		    concrete.
+  1606	
+  1607		    The engineer repairs the drives and leaves, sorely vexed.
+  1608		    The same thing happens a couple of days later - same two
+  1609		    drives crash, engineer calls, sawdust, etc.  This pattern
+  1610		    repeats until one day they notice a maintenance man, who has
+  1611		    a long plank of wood, walk into the computer room, wedge the
+  1612		    wood between the two drives (the gap between them was juuust
+  1613		    riiight!)  and then proceed to saw the plank in half with an
+  1614		    enormous rip-saw....
+  1615	
+  1616	
+  1617		From:  prabhu@mitisft.Convergent.COM (Prabhu Venkatesh)
+  1618		Subject:  Need a 10 ns delay
+  1619		Date:  8 Feb 89
+  1620	
+  1621		Real, real, true, swear-by-God story:
+  1622	
+  1623		A friend of mine was repairing a Russian EC-20 computer in
+  1624		Bangalore, India.  He found an insulated wire soldered to a pin
+  1625		of a chip.  Looking for the other end, he traced and he traced
+  1626		and he traced -- 10 feet of wire, and the other end was soldered
+  1627		to an adjacent chip!
+  1628	
+  1629		As it turned out, they needed a 10 ns delay between the two
+  1630		pins.
+  1631	
+  1632	
+  1633		From:  XT.A12@forsythe.stanford.edu (the Mitchell)
+  1634		Subject:  What does a floppy disk look like?
+  1635		Date:  8 Feb 89
+  1636	
+  1637		I was in a PASCAL class a long time ago (please, no flames about
+  1638		PASCAL).  This was in the days of double density drives for the
+  1639		new kid on the block, the IBM PC.  Anyway, we were all supposed
+  1640		to have a work disk for saving our files.  When the prof asked
+  1641		everyone to get their disks out, someone stood up and said that
+  1642		their disk didn't look like what anyone else had.  This persons
+  1643		disk looked like a disk, and not a square.  Which is exactly
+  1644		what you get when you rip off the packaging off a diskette - you
+  1645		get the disk.....
+  1646	
+  1647	
+  1648		From:  cetron@wasatch.UUCP (Edward J Cetron)
+  1649		Subject:  Walking computers, another story
+  1650		Date:  8 Feb 89
+  1651	
+  1652		...Seems I was a young hotshot programmer-type and was working
+  1653		in the corporate research unit of a big company (lets see, it
+  1654		makes LOTS of bandaids).  Well, it was the first time I ever
+  1655		used a machine with a disk drive in a room that I could find
+  1656		(much less have permission to enter).  Never having had a
+  1657		computer with version numbers before (this was RSX-11M 3.0 --
+  1658		dating myself huh?)  I never purged my directory.  Also given
+  1659		that I was hacking an immense Data-entry and retrieval system in
+  1660		Fortran-IV (more dating (-:  ), TKB would do intense things to
+  1661		the drive, which was fragmented beyond belief.
+  1662	
+  1663		This tended to upset the system manager, one Mark Googleman, no
+  1664		end, since he'd have to move the beast back into position.
+  1665		Since two hackers on one machine naturally tend to competition
+  1666		(could you crack into the machine, get priv'ed, and log the
+  1667		other off BEFORE they noticed and logged you off?)  and I was
+  1668		embarrassed when confronted with the proof that this was my
+  1669		fault, I naturally bluffed my way out explaining that I was
+  1670		doing on purpose.
+  1671	
+  1672		Well, one thing led to another, and it became a ritual to leave
+  1673		taped papers to the floor with one's name on it in the computer
+  1674		room.  The object was to spend as much time from 9:00pm until
+  1675		7:00am WITHOUT ENTERING THE COMPUTER ROOM, running programs,
+  1676		doing TKB's etc, in order to move the RP's in a fixed manner.
+  1677		In the morning, the person with the disk drive closest to their
+  1678		name won the pool of money.
+  1679	
+  1680		I had slowly become the "hardware champion" until one day Mark
+  1681		managed to program the tape drive for Christmas carols...  sigh,
+  1682		I was so devastated that I didn't even take up his challenge to
+  1683		make the RP's perform accompaniment......
+  1684	
+  1685	
+  1686		From:  dlm@cuuxb.ATT.COM (Dennis L. Mumaugh)
+  1687		Subject:  UNIX vs. IBM
+  1688		Date:  7 Feb 89
+  1689	
+  1690		The headline would be:  UNIX crashes IBM system.
+  1691	
+  1692		It seems that we had obtained an UNIX system and were using it
+  1693		for the first time.  In those days UNIX was brand new and the
+  1694		rest of the world had never heard of it.
+  1695	
+  1696		Any rate, we had attached our PDP-11/45 to an IBM 370-155 system
+  1697		running JESS-2.  This meant the PDP-11 pretended to be a RJE
+  1698		card-reader/printer/punch station.  Things were going quite well
+  1699		and the Bell Labs software worked great.
+  1700	
+  1701		Then one day we found that our RJE line was disconnected and the
+  1702		IBM people refused to allow us to talk with the IBM machines.
+  1703		The reason, they claimed, was that most of the time that UNIX
+  1704		submitted an RJE job the IBM would promptly crash with no error
+  1705		report.
+  1706	
+  1707		Finally it was determined that when the IBM people had sysgen'd
+  1708		the line they claimed it was a 2780 with a 80 character line and
+  1709		we were a 2770 with a 132 character line.  This didn't cause
+  1710		problems unless our line and the next adjacent line both
+  1711		submitted jobs at once.
+  1712	
+  1713		But I thought it amusing that DEC equipment could crash an IBM
+  1714		system at will.
+  1715	
+  1716	
+  1717		From:  smadi@rlgvax.UUCP (Smadi Paradise)
+  1718		Subject:  How does a computer work?
+  1719		Date:  7 Feb 89
+  1720	
+  1721		I have not witnessed this one, but some of my friends did.
+  1722	
+  1723		Some computer-illiterate visitors were shown the CDC6400 at the
+  1724		Hebrew University of Jerusalem.  One of them asked, how does the
+  1725		machine do all these wonderful things?  Their guide joked that
+  1726		it has a small man inside.
+  1727	
+  1728		While he was speaking, a CDC technician (the late Rachmim Moreno, a
+  1729		small man indeed) had just finished some routine maintenance and
+  1730		stepped out of the machine.
+  1731	
+  1732		Another story, which took place on April 1st 1984:
+  1733	
+  1734		I was requested to present Unix software tools to the Software
+  1735		Workbench undergraduate course.  After talking about grep, SCCS,
+  1736		lex and what not, I described an experimental expert system that
+  1737		creates applications by combining UNIX tools.  Given an English
+  1738		description of an application, the system produces user manuals.
+  1739		Given an ``O.K.'', it would go on and produce the actual
+  1740		software.
+  1741	
+  1742		The system was a success:  it kept some of the students busy for
+  1743		a long time.  Here it is, reconstructed from memory:
+  1744	
+  1745		#!/bin/csh -f
+  1746		echo "What should your application do?"
+  1747		echo "Type a short description followed by a control-D"
+  1748		cat > /dev/null
+  1749		echo "Working... here is the user's manual:".
+  1750		/usr/games/festoon | some sed | nroff -man | more
+  1751		echo "Is that O.K? If not, please describe what's wrong."
+  1752		exec /usr/games/doctor
+  1753	
+  1754	
+  1755		From:  oppenhei@aecom2.AECOM.YU.EDU (Michael Oppenheim)
+  1756		Subject:  Computer illiterates
+  1757		Date:  7 Feb 89
+  1758	
+  1759		I have an XT compatible with a hard drive but no printer, so
+  1760		people often use my machine, save their work on floppies, and go
+  1761		to the library or computer room to print.
+  1762	
+  1763		One fellow, a non-computer literate, wanted to do a paper on my
+  1764		computer.  I showed him how to use the word processor and how to
+  1765		save it on a floppy.  Later, I went with him to help him print
+  1766		it.  As we were leaving the dorm, I noticed he was empty-handed.
+  1767	
+  1768		"Where's the disk?" I asked.
+  1769	
+  1770		"Why? Do we need it?"
+  1771	
+  1772	
+  1773		From:  davida@umd5.umd.edu (David Arnold)
+  1774		Subject:  Showering with a keyboard
+  1775		Date:  7 Feb 89
+  1776	
+  1777		...Sounds like an old hall-mate of mine from college, who would
+  1778		clean his keyboard by taking it into the shower with him.
+  1779		Either that, or just tear it down and clean it with Bacardi 80
+  1780		proof.  That poor computer managed to struggle on for several
+  1781		years!
+  1782	
+  1783	
+  1784		From:  dplatt@coherent.com (Dave Platt)
+  1785		Subject:  Altering the memory test
+  1786		Date:  7 Feb 89
+  1787	
+  1788		There's another great story involving computers-that-have-
+  1789		lights.  This one involves Ivan Sutherland, co-founder of Evans
+  1790		& Sutherland (the pioneering computer-graphics firm), developer
+  1791		of Sketchpad (the very first computer-graphics tablet device, I
+  1792		believe), and winner of the "Father of Computer Graphics" aware
+  1793		some years ago.
+  1794	
+  1795		While in college, Sutherland worked with one of the very
+  1796		earliest Von Neumann architecture (stored-program) computers...
+  1797		I've heard this specific machine referred to as "THE Von Neumann
+  1798		machine".  This computer had a very limited amount of memory
+  1799		storage.  Rather than using ferrite cores, RAM memory, or such
+  1800		modern devices, it used "storage tubes"...  tiny little CRTs
+  1801		similar in operation to the tubes used in some "storage screen"
+  1802		graphics terminals (anybody used a Tektronix 4010 lately?).
+  1803		These little devices would store a rectangular array of bits in
+  1804		each tube.  It was actually possible to SEE the bits by looking
+  1805		at the phosphor-coated target area in each screen.
+  1806	
+  1807		One of the disadvantages of this storage technology (aside from
+  1808		low capacity) is that the tubes have a limited lifetime.
+  1809		"Burn-in" eventually occurs (as owners of Tektronix storage
+  1810		scopes can attest) as the phosphor structure ages and breaks
+  1811		down, and eventually the tubes must be replaced.
+  1812	
+  1813		The engineers who maintained this computer had some
+  1814		special-purpose diagnostic programs, which would run "ripple
+  1815		patterns" through memory and would look for bit-patterns that
+  1816		weren't stored properly (a similar test is done when diagnosing
+  1817		memory problems in most computers).  With the Von Neumann
+  1818		machine, though, it was often possible to identify tubes that
+  1819		were on the way downhill, simply by looking at the array of
+  1820		tubes in the cabinet and seeing which ones had a dim or uneven
+  1821		appearance during the ripple test.
+  1822	
+  1823		One day, Sutherland [and a cohort, I believe] substituted a
+  1824		program deck of their own devising for the memory-test deck that
+  1825		the engineers used.  This substitute deck did not run the usual
+  1826		memory test; instead, it loaded a certain specific bit-pattern
+  1827		into memory and then halted the machine.
+  1828	
+  1829		During the next routine-maintenance period, the engineer reset
+  1830		the machine, booted the deck, and the program immediately
+  1831		halted.  Puzzled, the engineer reset and rebooted again, and the
+  1832		same thing occurred.  Suspecting that some portion of memory had
+  1833		failed so completely that the program could not run, the
+  1834		engineer opened the panel to the storage-tube rack.
+  1835	
+  1836		There, shining out at him in carefully-lit bits, was a
+  1837		four-letter word.
+  1838	
+  1839		A sign soon appeared in the computer room...  "Programmers will
+  1840		NOT mess around with the hardware-diagnostic program decks!"
+  1841	
+  1842		[Disclaimers:  it has been 15 years since I heard this story, so
+  1843		I've probably forgotten some of the details and have gotten
+  1844		others wrong.]
+  1845	
+  1846	
+  1847		From:  frk@frksyv.UUCP (Frank Korzeniewski)
+  1848		Subject:  Upper/Lower case mix up
+  1849		Date:  6 Feb 89
+  1850	
+  1851		Several years back I was working at a HMO and we had a lot of
+  1852		8080 micros using ADM3A dumb terminals.  These terminals were so
+  1853		dumb that all they had were upper case character sets.
+  1854		Eventually, upper managment was talked into upgrading them to
+  1855		the ROM's with upper and lower case characters.
+  1856	
+  1857		Well, one day we received this big three foot square box from
+  1858		the terminal manufacturer.  Everyone was puzzled as to what they
+  1859		could be sending us.  The person with the order said he had
+  1860		asked for 30 lower case options.  The ADM3A terminal has an
+  1861		upper and lower clamshell like case.  When the box was opened we
+  1862		found they had sent us 30 lower halfs to the terminal case.
+  1863	
+  1864	
+  1865		From:  clw@hprnd.HP.COM (Carl Wuebker)
+  1866		Subject:  Revenge of the Whiz Kid
+  1867		Date:  6 Feb 89
+  1868	
+  1869		One time, in a college library, I ran across a book of computer
+  1870		folklore.  It had a story about a young whiz kid hired as a
+  1871		computer programmer, who didn't like the way that computer
+  1872		operators were ordered to blindly follow directions.  So he took
+  1873		a scratch removable disk pack apart, replaced the platters with
+  1874		phonograph records, and put it back together.  Then, from his
+  1875		terminal, he called for it to be mounted.  The operator could
+  1876		tell that the disk pack was different (plastic is lighter than a
+  1877		disk platter) but mounted it anyway, destroying a disk drive.
+  1878	
+  1879		In the late '60s, Georgia Tech went to a computer registration
+  1880		system.  In Spring, 1969, George P.  Burdell (the mythical
+  1881		Georgia Tech student created during the war years) was
+  1882		registered for every class on campus.  I've heard that he aced
+  1883		them all, too.
+  1884	
+  1885		Finally, in the early '70s, Georgia Tech installed a Univac
+  1886		1108, so we heard all the Univac stories.  One of the stories
+  1887		revolved around an operator, sitting sleepily at his computer
+  1888		console about 2am, watching the backups.  The status messages
+  1889		disappear from his screen, a large (CBS-style) eye appears on
+  1890		the screen, it winks, and then the screen pops back to normal.
+  1891		Those were the days of fast memory and memory mapped screens, so
+  1892		its possible...
+  1893	
+  1894		Just one more.  On that same Univac, a friend discovered a
+  1895		security hole.  It seems you could checkpoint (stop and save) a
+  1896		job to tape to, say, shut the machine down for maintenance.  You
+  1897		could later restart the job from the tape at the exact point you
+  1898		stopped it.  My friend discovered that you could checkpoint the
+  1899		job, change the privileged mode bit (guard mode, supervisor mode
+  1900		etc.  -- the thing that prevented students from breaking into
+  1901		the machine) to 1, and restart it -- as a privileged job.  He
+  1902		was found out, though -- operators became suspicious when they
+  1903		went from 0 checkpoints per month to several check-point tapes
+  1904		per day.
+  1905	
+  1906	
+  1907		From:  eal@tut.fi (Lehtim{ki Erkki)
+  1908		Subject:  Wrong instruction
+  1909		Date:  6 Feb 89
+  1910	
+  1911		Our company bought a text processing package and a salesman came
+  1912		to us to install it.  He had some difficulties in the first time
+  1913		to install it, so he decided to delete all his files and start
+  1914		over.  But alas, instead of typing "DELETE [...]*.*.*" (Yes,
+  1915		it's in VAX/VBMS), he typed
+  1916	
+  1917		DELETE/NOLOG [*...]*.*.*
+  1918	
+  1919		A few moments later I noticed that I had much more disk quota
+  1920		left than i should have and noticed that all my files with
+  1921		DELETE privilege for same user group had gone.  And for
+  1922		everybody else too.
+  1923	
+  1924	
+  1925		From:  johnl@ima.ima.isc.com (John R. Levine)
+  1926		Subject:  Computer antics
+  1927		Date:  7 Feb 89
+  1928	
+  1929		...Aw shucks, we did this with a PDP-8.  The accumulator was
+  1930		displayed in fairly large incandescent bulbs on the front panel,
+  1931		which needed high powered drivers.  Turning the bits on and off
+  1932		made plenty of radio noise.  I've heard legends of PDP-9
+  1933		programmers who would routinely leave a radio on the console as
+  1934		a debugging aid.
+  1935	
+  1936		...There was a legendary card deck that, when run through an old
+  1937		electromechanical accounting machine, would print out an
+  1938		American flag while playing the Star Spangled Banner.
+  1939	
+  1940		Speaking of printers, here are two silly stories from about
+  1941		1969.  At that time they used 360/20s as RJE terminals to the
+  1942		360/91 mainframe.  The '91 crashed all the time, so while
+  1943		waiting for the '91 to come back up we would toggle in little
+  1944		programs from the console, or laboriously punch an up to 80 byte
+  1945		program on a card, then use the "load" button to read and start
+  1946		the program.  There was constant competition for the most
+  1947		interesting single-card program.  My best was an expensive mimeo
+  1948		machine that read in a deck of cards and listed it over and
+  1949		over.
+  1950	
+  1951		In one case, we experimented with the Universal Character Set
+  1952		buffer in the printer.  The 1403 printer had interchangeable
+  1953		print trains, but different trains would have different
+  1954		character layouts.  The UCS buffer told what character was at
+  1955		what position on the train.  When it printed a line, it would
+  1956		see what characters were at the right position, fire the
+  1957		appropriate hammers, move the train ahead one position, fire the
+  1958		appropriate hammers, and so on until the entire line was
+  1959		printed.  So as an experiment, we filled the entire UCS buffer
+  1960		with the same character, then printed lines of that character.
+  1961		It printed about a page and a half real fast, then the cover
+  1962		opened about half way (it automatically opened whenever the
+  1963		printer ran out of paper, to warn the operator and dump
+  1964		ever-present coffee cups on the floor) and then blew a fuse.  We
+  1965		cleared out.  It hadn't occurred to us we could blow fuses with
+  1966		software.
+  1967	
+  1968		In another case, we experimented with the carriage control tape.
+  1969		Things like "skip to new page" or "vertical tab" were
+  1970		implemented with a loop of paper tape that had 66 rows, one for
+  1971		each line on a page, and 12 columns.  You could do a skip to
+  1972		channel 1, and it would advance the paper and the tape until it
+  1973		found a hole in column 1.  By convention, column 1 was top of
+  1974		page, column 2 top and middle of page, but you could program it
+  1975		any way you want.  We tried various combinations and everything
+  1976		worked just fine until we tried a skip to channel 12.
+  1977		Unfortunately, there weren't any punches in column 12, so the
+  1978		paper just whizzed through the printer at full speed.  We pushed
+  1979		the printer stop button.  Nothing.  We pushed the CPU stop
+  1980		button.  Still nothing.  Finally the CPU System Reset button
+  1981		stopped the printer.  Being good ecologists, we fed the paper
+  1982		back into the feed box, then ran.
+  1983	
+  1984	
+  1985		From:  merlyn@intelob.intel.com (Randal L. Schwartz @ Stonehenge)
+  1986		Subject:  Party line problems
+  1987		Date:  9 Feb 89
+  1988	
+  1989		Back in the early days, I was using an ADM-3 from a friend's
+  1990		house (hi Greg Jorgenson!)  with an old acoustical-coupled
+  1991		modem.  The modem was attached used on the house phone...  a
+  1992		party line (!).  We were accustomed to getting bumped with funny
+  1993		little noise characters when the party-liners would try to
+  1994		pickup the phone for a call, but otherwise tied up the line for
+  1995		the usual hours-on-end we hackers are known for.
+  1996	
+  1997		One day, we picked up the phone to make a call, and found that
+  1998		the party-liners were on it (two female voices).  Since we had
+  1999		nothing better to do, we decided to listen in.  The conversation
+  2000		went something like:
+  2001	
+  2002		Voice 1:  Did you just hear that?
+  2003		Voice 2:  Yeah, it was a click.  Must be our party line.
+  2004		Voice 1:  A party line?  Does that mean they are listening to us?
+  2005		Voice 2:  I don't think they can.  All I can hear when they are
+  2006			  talking is some beeps.
+  2007	
+  2008		We scrambled to hang up the phone to cover our instant
+  2009		hysterical laughter.  Little did they know...  :-)
+  2010	
+  2011	
+  2012		From:  msmith@topaz.rutgers.edu (Mark Robert Smith)
+  2013		Subject:  How to fix an IBM
+  2014		Date:  9 Feb 89
+  2015	
+  2016		Yet another true IBM story:
+  2017	
+  2018		My girlfriend's father is a service tech for IBM.  He had one
+  2019		computer that would periodically lock up for no apparent reason.
+  2020		He tried replacing all sorts of boards, drives, and other
+  2021		hardware to no avail.  Finally, he called in the specialists.
+  2022	
+  2023		The specialists arrived with many special tools, and in one case
+  2024		a very special tool.  In an old style case, in a custom-molded
+  2025		velour covered interior, sat the Vibra-matic -- a rubber mallet.
+  2026		They had brought this as a joke, but....
+  2027	
+  2028		It turned out that the power supply wasn't completely welded to
+  2029		the ground, and the vibration of the machine caused intermittent
+  2030		power failures of extremely short duration.  This was fixed, and
+  2031		tested with the specialists banging on the chassis with the
+  2032		Vibra-matic while my girlfriend's father stuck his head inside
+  2033		to look for vibration.  Luckily the owners of the machine never
+  2034		saw them.
+  2035	
+  2036	
+  2037		From:  bass@utkcs2.cs.utk.edu (Vance Bass)
+  2038		Subject:  The customer is always right
+  2039		Date:  9 Feb 89
+  2040	
+  2041		Heard recently from an IBM field service manager:
+  2042	
+  2043		A huge travel agency in Florida (a major booker of Caribbean
+  2044		cruises for blue-haired retired ladies) recently bought an IBM
+  2045		3090 to handle the reservation database.  When the deal was
+  2046		consummated, the proud new owner asked IBM to install it in a
+  2047		big glass room right behind the receptionist's area so all the
+  2048		customers could see the flashing lights and spinning tape reels
+  2049		as they walked in -- a testimony to the modernity of the agency.
+  2050	
+  2051		Good idea, except there are no blinking lights on a 3090.  So
+  2052		the service manager offered to build some.  They hired a
+  2053		theatrical designer to come up with a suitably futuristic "set",
+  2054		got curved glass walls to minimize reflections, and installed
+  2055		the mainframe behind the "real-looking" facade.  The customer
+  2056		declared that it was exactly what he had in mind, regardless of
+  2057		what the actual computer looks like.
+  2058	
+  2059		Moral: the customer is always right.
+  2060	
+  2061	
+  2062		From:  loughry@tramp.Colorado.EDU (J. Loughry)
+  2063		Subject:  Foiling benchmarks
+  2064		Date:  10 Feb 89
+  2065	
+  2066		(This is just a rumor, but it's a *neat* rumor....)
+  2067	
+  2068		It seems (allegedly) that certain Microsoft compilers are smart
+  2069		enough to figure out when they are being benchmarked.  Any time
+  2070		the parser sees the "standard" 10,000-prime-numbers algorithm,
+  2071		it dumps that section of code and substitutes a set of
+  2072		hand-tuned, gut-level machine code designed to do that one thing
+  2073		as fast as possible!  I don't think it actually just printed
+  2074		them out from a table, but you get the idea....
+  2075	
+  2076		Also:  (this is true)
+  2077	
+  2078		One has to be careful when trying to benchmark optimizing
+  2079		compilers.  These things *are* smart enough to notice that while
+  2080		you're doing all those expensive floating point calculations,
+  2081		you're never actually doing anything with the answer...  so the
+  2082		compiler just figures it all out once, and replaces all the
+  2083		calculations with a simple assignment.
+  2084	
+  2085		Prime Computer once had a compiler optimize their competitor's
+  2086		benchmark down to a single NOP -- and for several years they
+  2087		gleefully used this "performance" figure in their ads.
+  2088	
+  2089	
+  2090		From:  curtc@pogo.GPID.TEK.COM (Curtis Charles)
+  2091		Subject:  Looking for passwords
+  2092		Date:  9 Feb 89
+  2093	
+  2094		Back in the good ol' days of card readers, a game we discussed
+  2095		was how to obtain passwords.  Jobs were submitted by setting
+  2096		your deck of cards on a counter.  An operator would grab all the
+  2097		jobs on the counter, run them through the reader, and return
+  2098		them with their output later.
+  2099	
+  2100		We're talking CDC hardware here, so various combinations of
+  2101		6-7-8-9 or 7-8-9 punches indicated End of Job, or End of Record.
+  2102		Well, there was a magic combination (6-8-9?)  that was
+  2103		interpreted as "read binary, and ignore other control punches
+  2104		except the magic combination."
+  2105	
+  2106		So, the devious programmer submits two jobs, the first has a
+  2107		program to read binary data, followed by a 6-8-9 and (for the
+  2108		operator's consumption only) a 6-7-8-9.  The second job just has
+  2109		a 6-8-9 to switch the system out of binary mode.  The two jobs
+  2110		are placed on the counter is such a way that the first job will
+  2111		be the first one through the card reader and the second job will
+  2112		be the last one through the card reader, with other students
+  2113		jobs in between.  Viola', you've got a whole list of accounts
+  2114		and passwords.
+  2115	
+  2116		Of course, the operator might become suspicious when 10 jobs go
+  2117		in and only one comes out.  Or, he might scramble the order of
+  2118		the jobs left on the counter defeating the plan.  I'm not sure
+  2119		anybody actually did this, but it strikes me as an easy way to
+  2120		breach security.
+  2121	
+  2122	
+  2123		From:  dplatt@coherent.com (Dave Platt)
+  2124		Subject:  Operating system comments
+  2125		Date:  9 Feb 89
+  2126	
+  2127		Another subclass of computer folklore is the occasional barbed
+  2128		comment that one can find when reading through source code.
+  2129		Operating-system programmers seem particularly prone to witty,
+  2130		shamefaced, or other slightly-off-center comments in their code.
+  2131	
+  2132		Some examples come to mind (some of the details may be
+  2133		incorrect; it's been a long time since I read any of this code):
+  2134	
+  2135		1) DEC RSX-11M (???)  operating system.  System fault handler
+  2136		   module.  If a bus-check fault occurs (indicating possible
+  2137		   hardware problems with some device on the bus), the O/S traps
+  2138		   to a fault-handler routine that tries to identify the
+  2139		   offending hardware and reset it.  If, while attempting to
+  2140		   recover from a bus-check fault, a second such fault occurs,
+  2141		   the system traps again...  this time to a routine which
+  2142		   simply masks off all processor interrupts and hangs in a
+  2143		   tight loop.  It's necessary to manually reset the machine to
+  2144		   unhang it.
+  2145	
+  2146		   The comment on the loop reads, "The death of God left the
+  2147		   angels in a strange position."
+  2148	
+  2149		2) There are a couple of comments in the output-symbiont (print
+  2150		   spooler) code in the old Xerox CP-V operating system.  At the
+  2151		   top of a long block of convoluted and otherwise undocumented
+  2152		   code, there appears a taunting:
+  2153	
+  2154			"See if you can figure out what I'm doing here."
+  2155	
+  2156		   Somewhat further on, there's a really dubious code-construct
+  2157		   (I don't recall just what was being done), adorned with the
+  2158		   comment:
+  2159	
+  2160			"I'm ashamed of this"
+  2161	
+  2162		3) In the synchronous-terminal (BISYNC) module in the CP-6
+  2163		   operating system's communications software, there's a routine
+  2164		   that constructs synchronous data blocks (the ones that start
+  2165		   out with the characters "syn, syn, dle", and so forth).  The
+  2166		   code comment reads
+  2167	
+  2168			"With a SYNC SYNC here...
+  2169			 and a SYNC SYNC there..."
+  2170	
+  2171		   The module is labeled "EIE_IO".
+  2172	
+  2173		4) A related module, which was responsible for driving the Unit
+  2174		   Record Peripheral printer, was labeled "Y@URP".
+  2175	
+  2176	
+  2177		From:  werme@Alliant.COM (Ric Werme)
+  2178		Subject:  Printer music
+  2179		Date:  8 Feb 89
+  2180	
+  2181		At Carnegie-Mellon, the standard carriage tape had an empty
+  2182		channel.  An easy way to get on the bad side of the operators
+  2183		was to use the right character as a FORTRAN print control
+  2184		character.  (The tape was designed so that the printer
+  2185		implemented nearly all of the FORTRAN carriage control
+  2186		features.)  It was never a problem until someone wrote a SNOBOL
+  2187		program and forgot to print a space at the beginning of each
+  2188		line.  The operator wasn't near the machine at the time and 1403
+  2189		fed the paper faster than it could stack!
+  2190	
+  2191		...I hereby claim the best sound of any printer music.  At
+  2192		Sanders Technology, a defunct company that pioneered the letter
+  2193		quality dot matrix printer, I decided to come up with some real
+  2194		music.
+  2195	
+  2196		After a disappointing start, I designed some fonts that were
+  2197		variable numbers of vertical bars in 1/2 inch wide characters.
+  2198		The printer's horizontal resolution was 0.001", better than
+  2199		laser printers, but not good enough for decent music.  I had to
+  2200		compute line spacings in 0.0001" units and round to the nearest
+  2201		0.001".  About an octave and a half would fit in a 2Kb PROM
+  2202		(this was before 16K ram chips made down-loaded fonts
+  2203		practical).
+  2204	
+  2205		Next I arranged "A Bicycle Built for Two", since that was the
+  2206		first song a computer ever played (you've heard it in the movie
+  2207		2001).  It also was a hack on Daisywheel terminals, our main
+  2208		competition.  It was impressive.  And attracted a fair amount of
+  2209		attention at the trade shows.
+  2210	
+  2211		I later did three Christmas carols, and even a version of Le
+  2212		Marseilles (sp?)  for a potential French customer.
+  2213	
+  2214		Since the only real language we had was Fortran, I wrote TECO
+  2215		programs to generate the font from a source file of frequency
+  2216		and character bindings, and another TECO program that read a
+  2217		simple music language and generated the lines of text needed to
+  2218		play the song.  Not only could I set the meter, the program had
+  2219		to reverse the order of the characters for the right-left
+  2220		passes.
+  2221	
+  2222		I still have two of those printers.  NH Mensa prints its
+  2223		newsletters on one.  Unfortunately, I'm running out of ribbons
+  2224		and the pins are beginning to crack.  Smart printer.  Does its
+  2225		own justification, handles proportional fonts, mixed fonts, all
+  2226		sorts of stuff.  Its control language is readable, inspired by
+  2227		runoff.  Between the printer, a CP/M system and a screen editor
+  2228		(written as a macro for a TECO variant), who needs an IBM PC?
+  2229	
+  2230	
+  2231		From:  REBILL02@ULKYVX.BITNET
+  2232		Subject:  Broken off switch
+  2233		Date:  9 Feb 89
+  2234	
+  2235		...It seems that, with an empty disk pack, a properly written
+  2236		program would cause the read/write head/arm to reach out of the
+  2237		machine into the open air.  One programmer decided to see if he
+  2238		could get the machine to turn itself off that way.  The next
+  2239		morning, maintenance was called to fix a broken on/off switch.
+  2240	
+  2241	
+  2242		From:  brent@uwovax.uwo.ca (Brent Sterner)
+  2243		Subject:  8 in octal
+  2244		Date:  9 Feb 89
+  2245	
+  2246		Back in my undergrad years, a fellow student had access to the
+  2247		departmental PDP-8.  He also had access to the academic center's
+  2248		machine room, and somehow acquired the PDP-10 sign from that
+  2249		system.  The PDP-10 sign was hung proudly on the PDP-8,
+  2250		particularly when a tour was being given.  When asked about the
+  2251		sign, his reply was:  "Octal".
+  2252	
+  2253	
+  2254		From:  arensb@cvl.umd.edu (Andrew Arensburger)
+  2255		Subject:  Scheduling algorithms
+  2256		Date:  9 Feb 89
+  2257	
+  2258		Peterson and Silberschatz (_Operating_System_Concepts_, Addison-
+  2259		Wesley, 2nd edition, p.121) point out the importance of good
+  2260		scheduling algorithms when one is designing an operating system:
+  2261	
+  2262		"Rumor has it that when they closed down the 7094 at MIT in
+  2263		1973, they found a low-priority job that had been submitted in
+  2264		1967 and had not yet been run."
+  2265	
+  2266	
+  2267		From:  haynes@ucscc.UCSC.EDU (Jim Haynes)
+  2268		Subject:  Design check
+  2269		Date:  9 Feb 89
+  2270	
+  2271		One of the design engineers at G.E.  kept an electric vibrator
+  2272		in his desk.  I think it was originally an engraver, not a
+  2273		massager or sexual vibrator.  Anyway, when we seemed to have
+  2274		intermittent problems in a machine he would plug in the vibrator
+  2275		and touch it to each circuit board in the suspect area while
+  2276		running a diagnostic program.
+  2277	
+  2278		At that time G.E.  had a small enough number of machines in the
+  2279		field such that when a customer's machine was in bad trouble and
+  2280		the regular field engineers couldn't fix it, the company would
+  2281		pull together a small group of engineers and programmers who had
+  2282		participated in the design of the hardware and software and send
+  2283		them to camp out at the site until the problem was solved.  So
+  2284		that's where the vibrator probably found the most use.
+  2285	
+  2286	
+  2287		From:  haynes@ucscc.UCSC.EDU (Jim Haynes)
+  2288		Subject:  Accountant problems
+  2289		Date:  9 Feb 89
+  2290	
+  2291		...That reminded me of a story in Norbert Wiener's
+  2292		autobiography.  During World War II he was in charge of a group
+  2293		of people who ran desk calculators to solve ballistics problems.
+  2294		The people were called "computers".
+  2295	
+  2296		He always had trouble getting enough computers to handle the
+  2297		workload, what with the military manpower situation.  Once when
+  2298		the Army couldn't get scientific computers they sent him a bunch
+  2299		of accountants.  He said these would carry out every calculation
+  2300		to two decimal places and no more!  (They thought only in
+  2301		dollars and cents.)
+  2302	
+  2303	
+  2304		From:  rn10+@andrew.cmu.edu (Ronald J. Notarius)
+  2305		Subject:  Problems with security
+  2306		Date:  9 Feb 89
+  2307	
+  2308		I used to work in the Computer Lab at the Community College of
+  2309		Allegheny County, Allegheny Campus.  CCAC-A has a 3 file server
+  2310		Novell Network in place.  For most of the Fall, they were
+  2311		constantly losing the hard drives in the Network during holiday
+  2312		breaks -- you could be assured that one or more of the file
+  2313		servers went down during a 3-day weekend, for example.
+  2314	
+  2315		The first thought was that power to the lab was being turned off
+  2316		on the long weekends, so the power to the file servers was wired
+  2317		such that power stayed on and could not be turned off except at
+  2318		the circuit breaker.  Didn't help; turned out that the problem
+  2319		was a well-meaning security guard who thought that the servers
+  2320		were accidentally left on, so he turned them off.  Next
+  2321		solution?  Hot-wire the power supply switches...
+  2322	
+  2323		So now they discovered that the guard was pulling out the power
+  2324		plugs!
+  2325	
+  2326		He no longer works in that building...
+  2327	
+  2328	
+  2329		From:  peggy@ddsw1.MCS.COM (Peggy Shambo)
+  2330		Subject:  Operator problems
+  2331		Date:  9 Feb 89
+  2332	
+  2333		'Way back when I used-to-wuz a computer operator, we had a BIG
+  2334		RED button on the operator's console for an emergency powerdown.
+  2335		Well, one night one of the operators accidentally dropped
+  2336		something onto it, and *vooom*...  no system.  The next day he
+  2337		was explaining how he did it...  and *vooom* hit the button...
+  2338		no system.  So they built a little arch-shaped Lucite cover over
+  2339		the button.  So what happens then?  The one and the same
+  2340		operator was showing how it could be hit anyway...  and
+  2341		*vooom*...  no system!!!!
+  2342	
+  2343		Last I knew, he still worked there...  but in customer support..
+  2344		no longer on the console...  I wonder why?  :-)
+  2345	
+  2346	
+  2347		From:  dougf@dougf.Caltech.Edu (Doug Freyburger)
+  2348		Subject:  Computer dates and other stories
+  2349		Date:  8 Feb 89
+  2350	
+  2351		My office-mate years ago at JPL lived through this:
+  2352	
+  2353		When the Viking Mars probes where launched, no one thought
+  2354		they'd last very long in Mars oribt, so the programs saved a few
+  2355		bytes by ignoring leap years and hardwiring 366 in (1976 was
+  2356		leap).  The next year everyone was called in to rewrite their
+  2357		systems for downloading to Mars with a 365 day year.
+  2358	
+  2359		Better yet, both spacecraft were still going strong in 1980 and
+  2360		most of the crew were long gone to other projects.  Everyone had
+  2361		to be called back for another download to Mars.  It pays to
+  2362		include leap year in your code.
+  2363	
+  2364		From personal experience:
+  2365	
+  2366		I remember a Lunar-Lander game written in PDP-11 TECO that used
+  2367		VT100 cursor keys.  The entire program looked like your terminal
+  2368		was at the wrong baud rate (standard TECO programming form).  It
+  2369		ran without change on the old PDP-10 still surviving at college
+  2370		and later on the brand-new VAX, as well as 3 different O/S
+  2371		versions of PDP-11 without change.
+  2372	
+  2373		From rumors of ancient DEC history:
+  2374	
+  2375		The system programmer group writing TOPS-10 used to love fancy
+  2376		TECO programs and had a weekly contest for them.  One guru
+  2377		working on FORTRAN compilers would read them carefully but never
+  2378		enter one.  They thought he was just concentrating on compilers.
+  2379		Then one week he submitted a macro that did FORTRAN compilation,
+  2380		complete with optimization.  The TECO program took days to run,
+  2381		but it worked.  Apparently he had written a PDP-10 instruction
+  2382		set emulator in TECO and feed the compiler to it!
+  2383	
+  2384	
+  2385		From:  usenet@mailrus.cc.umich.edu (usenet news)
+  2386		Subject:  More code documentation
+  2387		Date:  10 Feb 89
+  2388	
+  2389		One day I was scanning through some code for MYS (the Michigan
+  2390		Terminal System) (don't remember what I was looking for), and I
+  2391		saw my all time favorite comment.
+  2392	
+  2393		There was a kludge to get around something or other which was
+  2394		used by IBM.  The two word comment next to it was:  DAMN IBM
+  2395	
+  2396		And I just saw it related to a change IBM made which it never
+  2397		notified anybody of.  ("Well, just because we told you the bit
+  2398		would always be zero doesn't mean it will be.")
+  2399	
+  2400	
+  2401		From:  abhijit@pyr.gatech.EDU (Abhijit Chaudhari)
+  2402		Subject:  Why you should back up your disks
+  2403		Date:  10 Feb 89
+  2404	
+  2405		A friend of mine was very excited after finishing a really hard
+  2406		Pascal assignment.  To show off his joy, he started waving his
+  2407		5-1/4" floppy disk (we were using IBM PC's) for all the world to
+  2408		see.  Not being satisfied with showing us the floppy in the
+  2409		jacket, he removed the jacket and now had a floppy in one hand
+  2410		and the jacket in the other.  The next instant a pigeon flying
+  2411		overhead decided to relieve itself; and the excreta fell
+  2412		straight through the ovular slot (on the envelope) and landed
+  2413		onto the mylar.  Needless to say, that was the only copy of his
+  2414		program.
+  2415	
+  2416	
+  2417		From:  haynes@ucscc.UCSC.EDU (Jim Haynes)
+  2418		Subject:  Interesting OS commands
+  2419		Date:  10 Feb 89
+  2420	
+  2421		The Burroughs B5500 operating system had two-letter console
+  2422		commands for everything.  One of them was EI, documented in the
+  2423		operator's manual as:  EI
+  2424	
+  2425		The system replies with EIO and performs no other function.
+  2426	
+  2427		or words to that effect.  This was taken out late in the life of
+  2428		the system, and the EI command was eventually used for something
+  2429		useful.  Also, on a system crash the console TTY would type out
+  2430	
+  2431		P
+  2432		 L
+  2433		  O
+  2434		   P...
+  2435	
+  2436		(I've ported this feature to all our Unix systems, in loving
+  2437		memory of the B5500.)
+  2438	
+  2439		In the GE635 operating system, there was a section of code
+  2440		dealing with allocation of the multiple processors.  The
+  2441		comments read
+  2442	
+  2443		; ARE ALL PROCESSORS RUNNING?
+  2444		; YES, BRANCH
+  2445		; NO. HEAD 'EM UP
+  2446		; MOVE 'EM OUT
+  2447	
+  2448		Which reminds me - once I tried commenting an assembly language
+  2449		program in the usual style, one comment per instruction, with
+  2450		the comments being in iambic pentameter.  I gave it up pretty
+  2451		quickly, as I'm not a poet.  Has anybody ever done something
+  2452		like this and done it well?
+  2453	
+  2454	
+  2455		From:  meo@stiatl.UUCP (Miles O'Neal)
+  2456		Subject:  Random messages
+  2457		Date:  10 Feb 89
+  2458	
+  2459		I had gotten a program from a friend that delivered a random
+  2460		message from a file.  These messages tended to be ridiculous or
+  2461		to make fun of computers we were using.  The Gould S.E.L we had
+  2462		just gotten in had a (deservedly, IMO) reputation for being all
+  2463		screwed up.  So I put messages in the file such as:
+  2464	
+  2465		MPX/32 NOT FOUND. ENTER OPERATING SYSTEM IN HEX ON CONSOLE.
+  2466	
+  2467		and set up the system-wide login procedure to execute the
+  2468		"fortunes" program when anyone logged in.  Unfortunately, I was
+  2469		late the next morning, and it seems a new guy (who had always
+  2470		been protected from "this JCL stuff" before) had logged in,
+  2471		gotten the above message, and spent 1/2 hour looking through the
+  2472		documentation for the hex code for the O.S.
+  2473	
+  2474		When I got in, each time I tried to login (on 4 separate
+  2475		systems), the following appeared on my terminal:
+  2476	
+  2477		Miles, you're FIRED!!!
+  2478	
+  2479		and I was then unceremoniously logged out.  (I wasn't fired...)
+  2480	
+  2481	
+  2482		From:  master@uop.edu (Nasser Al-Ismaily)
+  2483		Subject:  Interesting program documentation
+  2484		Date:  10 Feb 89
+  2485	
+  2486		Told to me by my girlfriend:
+  2487	
+  2488		On her second year in college a professor came to their class
+  2489		and was telling them about his new students (freshmen).  When he
+  2490		asked them to comment all their programs, this is what he got:
+  2491	
+  2492		- "This program is very nice"
+  2493		- "This program is very difficult"
+  2494		- "This program is very interesting"...
+  2495	
+  2496	
+  2497		From:  rn10+@andrew.cmu.edu (Ronald J. Notarius)
+  2498		Subject:  Blowing up a power supply
+  2499		Date:  10 Feb 89
+  2500	
+  2501		In the process of trying to hook up a hard drive a few weeks ago
+  2502		(minus documentation, of course), I was given some incorrect
+  2503		instructions over the telephone, resulting in a loud "crack!"
+  2504		from the IBM-PC's power supply.  My "assistant" panicked,
+  2505		"omigod we just blew up a power supply!"  I assured him not to
+  2506		worry, I had insurance.
+  2507	
+  2508		Two hours later, after finally managing to open up the power
+  2509		supply, I discovered (to my immense lack of astonishment) that
+  2510		the fuse had blown.
+  2511	
+  2512		Of course, IBM has soldered the fuse in place.  How often to you
+  2513		blow a fuse in a power supply?
+  2514	
+  2515		The insurance company is insisting on buying me a new PS.  I
+  2516		won't argue with them...
+  2517	
+  2518	
+  2519		From:  darin@nova.laic.uucp (Darin Johnson)
+  2520		Subject:  Problematic printouts
+  2521		Date:  9 Feb 89
+  2522	
+  2523		Actually, the print chains are not in alphabetical order.  They
+  2524		are magically ordered by some arcane formula.  Some of the
+  2525		printers are designed so that the hammer will strike the
+  2526		character just as the correct character is at the correct place
+  2527		in the line (the chain rotates at very fast speeds).  Often,
+  2528		many characters will get printed at the same time, and no more
+  2529		than 2 rotations of the chain are ever needed to print a line
+  2530		(which is why they are fast).  Presumably, the right set of
+  2531		characters on a line will cause all the hammers (132) to strike
+  2532		at the same time (while the chain is rotating).
+  2533	
+  2534		I had related a story like this to a friend in college and
+  2535		(unknown to me) had decided to try it.  He spent a night
+  2536		carefully going over the chain and determining the proper
+  2537		sequence to send.  The next evening, he decided to print his
+  2538		file, and had me watch (only one line was printed).  The job
+  2539		printed and we ran downstairs.  The printer was still rocking
+  2540		slightly.  Opening up the cover, the chain was still intact, but
+  2541		had come completely off the drive that held it.  We tore out the
+  2542		offending sheet of paper with the incriminating line (smudged
+  2543		and garbled) and complained to the operator on duty that the
+  2544		printer was broken again.  I don't think my friend ever tried it
+  2545		again.
+  2546	
+  2547	
+  2548		From:  billd@celerity.UUCP (Bill Davidson)
+  2549		Subject:  Hidden program responses
+  2550		Date:  9 Feb 89
+  2551	
+  2552		...A few years ago I worked for a *VERY* small company called
+  2553		Metalsoft which made software for sheet-metal punch machines.
+  2554		Prior to my joining the company, the software department
+  2555		consisted of one person (my boss), Voldi Way, who was 15 years
+  2556		old.  The only product we had then was a NC program editor which
+  2557		Voldi wrote in BASIC to run on an IBM PC (it actually was pretty
+  2558		nice for the price in spite of all this).
+  2559	
+  2560		I was there to help design a full CAD/CAM system to
+  2561		automatically write NC programs, but I still had to help support
+  2562		the old program.  Voldi put a few "undocumented features" in
+  2563		this program which he never told anyone about, including the
+  2564		president of the company (well...  I knew, but *I* wasn't going
+  2565		to say anything).
+  2566	
+  2567		In any case, one morning someone at a sheet metal shop far away
+  2568		(I think Atlanta), called a file f*ckoff or some such thing and
+  2569		the editor responded with, "My, are we having a bad day?  You
+  2570		really should try to relax more," or something like that.  The
+  2571		NC-programmer then called the president of our company (Carl)
+  2572		and said he had cussed at the computer and it had *answered*
+  2573		him!  Carl said, "No it didn't," and claimed over and over again
+  2574		that it couldn't do that.
+  2575	
+  2576		After he got off the phone he came into our office and started
+  2577		asking questions at which time Voldi and I both began laughing
+  2578		hysterically.  It took dozens of users about 8 months to notice
+  2579		this "feature", which had around 100 words that it recognized,
+  2580		and a few dozen responses including some that made the computer
+  2581		unusable for 10 to 15 minutes (like telling the user that it was
+  2582		formatting the hard disk).  Needless to say, the feature
+  2583		disappeared in the next release.
+  2584	
+  2585	
+  2586		From:  peggy@ddsw1.MCS.COM (Peggy Shambo)
+  2587		Subject:  The eccentric genius
+  2588		Date:  11 Feb 89
+  2589	
+  2590		I used to work at a Honeywell installation, where we had a
+  2591		super-genius of a systems engineer, affectionately known as
+  2592		"Gentle Ben".  This man could read system dump the way most
+  2593		people would read the funny papers (or the net?).  He was the
+  2594		core of systems intelligence.
+  2595	
+  2596		But as super-genius people are sometimes labeled "eccentric",
+  2597		Gentle Ben was not an exception:
+  2598	
+  2599		Smoking in the computer room was verboten, and he knew it.  But
+  2600		he would light up right at the operator's console, take a few
+  2601		drags, then suddenly remember something and dash off, stuffing
+  2602		his *lit* cigarette into his coat pocket...  then wonder where
+  2603		the burning smell was coming from.
+  2604	
+  2605		Drinking was also a no-no in the computer room, but Ben would
+  2606		stop by the coffee machine on his way into the computer room and
+  2607		walk in with his cup in one hand, his cigarette in the other.
+  2608		On several occasions he was observed to place his cigarette
+  2609		*into* the coffee cup (still with coffee in it) and a few
+  2610		minutes later, while engrossed in problem solving, take a sip of
+  2611		the coffee...  cigarette and all...  and not even notice!
+  2612	
+  2613	
+  2614		From:  hermann@cpsc.ucalgary.ca (Michael Hermann)
+  2615		Subject:  Programmming awards
+  2616		Date:  10 Feb 89
+  2617	
+  2618		At Calgary, the computer science department has an award called
+  2619		the Williams Cup (as in old stained coffee cup), which is given
+  2620		yearly to the student who hands in the most imaginative
+  2621		rendition of a regular programming assignment.  Anyway, as the
+  2622		story goes, the cup was awarded to a student who'd done a desk
+  2623		calculator assignment.  Seems that the prof hadn't specified
+  2624		that you had to do it in decimal, so his/her program did math
+  2625		with _roman_numerals_.
+  2626	
+  2627		The clincher for the award must have been his/her programming
+  2628		style, since of course, the documentation was in _latin_.
+  2629	
+  2630	
+  2631		From:  larryh@tekcae.CAX.TEK.COM (Larry Hedges)
+  2632		Subject:  Problems with PC's
+  2633		Date:  10 Feb 89
+  2634	
+  2635		A women (I heard it was a women) bought a PC from a computer
+  2636		store, and after a week or so the computer store received a
+  2637		call.  She complained that every time she tried to boot up the
+  2638		computer, the boot up procedure would fail with error messages.
+  2639		The computer salesman came over to her house to fix the
+  2640		computer.  He said, "OK, give me your system disc and we'll try
+  2641		to boot this turkey up.  She walk over to the refrigerator where
+  2642		the floppy disc was positioned with a magnet and handed the disc
+  2643		to the salesman.
+  2644	
+  2645	
+  2646		From:  daemon@felix.UUCP (The devil himself)
+  2647		Subject:  How many floppies can you put in a drive?
+  2648		Date:  10 Feb 89
+  2649	
+  2650		I once worked at a company that released a version of UNIX on a
+  2651		series of seven floppies for installation on micros.  These
+  2652		micros tended to be sold into doctor's and lawyer's offices
+  2653		where there were never any computer literate folk (and the
+  2654		vendors were always scarce when the end users needed them).
+  2655		Hence we had many amusing phone calls on our 800 line placed by
+  2656		secretaries trying to load UNIX.
+  2657	
+  2658		One afternoon the following awaited us on our return to lunch:
+  2659	
+  2660		"I'm following your instructions exactly, and I am still having
+  2661		a problem.  I have placed floppies 1 through 6 into the floppy
+  2662		drive, but I can't stuff floppy 7 in no matter how hard I try!"
+  2663	
+  2664		Our directions said "Insert next floppy".  We forgot to say
+  2665		"Remove floppy and insert the next".
+  2666	
+  2667		We spent the rest of the afternoon seeing how many floppies we
+  2668		could stuff into a floppy drive.
+  2669	
+  2670	
+  2671		From:  tmv@mruxb.UUCP (Thomas M VandeWater)
+  2672		Subject:  Resourceful secretaries
+  2673		Date:  10 Feb 89
+  2674	
+  2675		While I was a grad student at UC Berkeley, the following
+  2676		happened:
+  2677	
+  2678		The airconditioner where a few of the mainframes were kept was
+  2679		being repaired, hence some of our UNIX systems were unavailable.
+  2680		A secretary asked a friend of mine the reason she could not
+  2681		print out her thesis.  "The airconditioner is broken," she
+  2682		replied.
+  2683	
+  2684		Anyway, the next day while I was at the printer, a HUGE fan was
+  2685		blowing on the printer and a note said "KEEP THE FAN ON, THE
+  2686		PRINTER MUST STAY COOL TO WORK PROPERLY".
+  2687	
+  2688		Can't blame the secretary for her ingenuity!
+  2689	
+  2690	
+  2691		From:  berman-andrew@CS.YALE.EDU (Andrew P. Berman)
+  2692		Subject:  Rogue maniacs
+  2693		Date:  10 Feb 89
+  2694	
+  2695		This supposedly occurred at Princeton to a grad student who
+  2696		later became an assistant professor....
+  2697	
+  2698		Some grad students were annoyed with this particular grad.  He
+  2699		was known for being a rogue-maniac.  They were using a UNIX
+  2700		system.  The other guys used a security hole in Mail to obtain
+  2701		privileged status.  They altered rogue a bit to check if this
+  2702		person was playing the game, and to make the game much easier if
+  2703		it was him.  The next time the poor guy played it, he won.  But
+  2704		his name didn't appear on the high score list.
+  2705	
+  2706		I think they also screwed up vi to check if he was using it and
+  2707		to reverse all the commands if he was...
+  2708	
+  2709	
+  2710		From:  ncb@execu.UUCP (Nelson C. Bishop)
+  2711		Subject:  How not to edit programs
+  2712		Date:  10 Feb 89
+  2713	
+  2714		After the first the first relase of IFPS/Personal a call came in
+  2715		to our hotline.
+  2716	
+  2717		"IFPS suddenly stopped working!"
+  2718		"Well what was the sequence of events?"
+  2719		"I was trying to load a large model and ran out of space, so I
+  2720		edited ifps.exe (the executable) and cut out half of it so my
+  2721		model would fit."
+  2722		"!"
+  2723	
+  2724	
+  2725		From:  flynn@pixel.cps.msu.edu (Patrick J. Flynn)
+  2726		Subject:  Computers and the navy
+  2727		Date:  14 Feb 89
+  2728	
+  2729		...There is a related story about the first naval vessels to use
+  2730		computers.  The storage medium was drum memory, and some
+  2731		officers underestimated the gyroscopic properties of large,
+  2732		massive, rapidly rotating cylinders when they executed course
+  2733		changes.
+  2734	
+  2735		Officer:  Hard to Port!
+  2736		Helmsman:  Aye aye, sir!
+  2737		Drum:  *SMASH!!!*
+  2738	
+  2739	
+  2740		From:  mlloyd@maths.tcd.ie (Michael Lloyd)
+  2741		Subject:  Slip ups at quality control
+  2742		Date:  13 Feb 89
+  2743	
+  2744		Anyone remember the Act Sirius 1 machine?  It was expensive,
+  2745		powerful, and pre-PC, and totally failed to take off (despite
+  2746		impressive graphics).
+  2747	
+  2748		Anyway, the story was reported that many users complained of
+  2749		inability to boot off the supplied system disks.  The response
+  2750		was always the same -- the user must have caused magnetic
+  2751		damage.  Apparently, they claimed that a common source of this
+  2752		was to leave the disks next to an old (mechanical bell)
+  2753		telephone for more than six rings!
+  2754	
+  2755		Eventually the truth came out - they were indeed shipping blank
+  2756		system disks!  Someone in Quality Control went quite red!
+  2757	
+  2758	
+  2759		From:  donb@hpcuhb.HP.COM (Donald Benson)
+  2760		Subject:  How to dry a floppy
+  2761		Date:  14 Feb 89
+  2762	
+  2763		Someone I know well got his floppies wet in a leaking car trunk.
+  2764		Since they were drying slowly, he tried spinning them up in the
+  2765		drive (the reasoning being that the shell would puff out
+  2766		slightly and let air circulate.)  The drive squeaked a while,
+  2767		then became silent.  But it still wouldn't read.  The tech said
+  2768		he had never seen the drive belt fall off before...
+  2769	
+  2770		8" floppies take a week to dry.
+  2771	
+  2772	
+  2773		From:  lane@jespy.dec.com
+  2774		Subject:  Fixing a tape drive
+  2775	
+  2776		This may not be overly funny but I get a major kick out of it.
+  2777		A long time ago, I was a computer maintenance tech in NORAD's
+  2778		Cheyenne Mountain Complex working on the long gone Philco 1000
+  2779		and 2000 systems.  For those who have never owned one of these
+  2780		cuties, they were designed in 1959 (I think) and were
+  2781		constructed of discrete transistors, as ICs hadn't been invented
+  2782		yet.  We're talking room size machines.
+  2783	
+  2784		The tape drives were a mix of transistors and vacuum tubes
+  2785		(6AU6's, 12AU7's on the picker cleat driver, 807's in the servo
+  2786		amps, I think).  Since the tubes needed a warm up period and the
+  2787		transistors didn't, the tape drive power supplies had a
+  2788		complicated startup sequence using some largish relays.
+  2789	
+  2790		One day, I got a call about a tape drive (transport in those
+  2791		days) that was acting very bizarre.  As soon as they hit the on
+  2792		switch, the tape reels would take off in opposite directions and
+  2793		stretch the 1" tape down to a little thread about 1/16" in
+  2794		diameter before it broke.  (The motors were slightly larger than
+  2795		a car's starter - no joke)
+  2796	
+  2797		As I entered the computer room, I was met with several high
+  2798		ranking types scratching heads.  I listened to the complaints,
+  2799		watched the transport go crazy for a bit, and went to work.
+  2800		Without saying a single word, I shut the machine off and hit the
+  2801		left side of the power control panel (directly over the power-on
+  2802		sequence relay) with my fist.  I re-loaded a tape, turned on the
+  2803		power and watched everything come up OK.  I turned and left,
+  2804		still without a word.
+  2805	
+  2806		I later heard the comments about what was said...  Still later,
+  2807		I got a letter of commendation for the whole performance,
+  2808		believe it or not.
+  2809	
+  2810		I think I am prouder of that one moment than anything else that
+  2811		comes to mind.
+  2812	
+  2813	
+  2814		From:  tcsc@tcsc3b2.UUCP (The Computer Solution Co.)
+  2815		Subject:  Offensive mailing labels
+  2816		Date:  10 Feb 89
+  2817	
+  2818		In 1968, while attending a large, midwestern University, I
+  2819		worked in the Department for Administrative Research.  While
+  2820		providing design and programming assistance to the Alumni
+  2821		Records department, we ran into an interesting problem.
+  2822	
+  2823		The Alumni Records office desired to embed all kinds of
+  2824		information into the key value used to identify each of the
+  2825		school's alumni.  This led to a very long, unwieldy key value.
+  2826		When mailing labels were printed, both the key value and a
+  2827		special code used by the mailing machines was required on the
+  2828		top line of the label.  We ran out of space on the label.
+  2829	
+  2830		Not to worry!  This fancy computer (a "brand new" IBM 360/50
+  2831		running OS/PCP) could transform a numeric key value into an
+  2832		alphanumeric value by converting the alumni-record key from the
+  2833		too long base-10 number to a shorter base-36 number.  Just use
+  2834		all of the letters and digits!
+  2835	
+  2836		Just as we sat back to congratulate ourselves on serving the
+  2837		user's needs with the clever application of technology, we got a
+  2838		call from the mailing house...
+  2839	
+  2840		"Our delivery man just returned from the Post Office.  They
+  2841		won't take your mailing.  It looks like somebody tampered with
+  2842		your list.  You better get down here right away!"
+  2843	
+  2844		There, on top of one of the trays of mail was a label with the
+  2845		converted alumni record identifier.  It read something like ...
+  2846	
+  2847			-------------------------------
+  2848		       | 123FUCK69A4       MM  43210** |
+  2849		       | MISS INGRID BEASLEY  EDU. 29  |
+  2850		       |   ...                         |
+  2851	
+  2852		The mailing was instructing Miss Beasley to mark all further
+  2853		correspondence to the office of Alumni Records with her "new
+  2854		computer identifier code" shown on the label.  Needless to say,
+  2855		the Office of Alumni Records failed to see the humor in it all.
+  2856		We thought that at her age, Miss Beasley (Edu.  29) might
+  2857		actually take the "computer's mistake" as a complement!
+  2858	
+  2859		Thereafter, we were instructed to add the "DIRTY-WORD-ROUTINE"
+  2860		which performed a table lookup of every word which a committee
+  2861		of about a dozen of the raunchiest people in the department
+  2862		could come up with.  But what about short phrases?  And how
+  2863		about maintenance of the table?  Whose budget does this come out
+  2864		of?
+  2865	
+  2866		A student programmer, invited to a meeting to "see design in the
+  2867		real world" made an unwanted suggestion.  Just convert to
+  2868		base-31 and don't use vowels.  It worked.  The next year, they
+  2869		changed the alumni records identifier again.  I graduated.
+  2870	
+  2871	
+  2872		From:  res@ihlpb.ATT.COM (Rich Strebendt)
+  2873		Subject:  SDS 920 stories
+  2874		Date:  13 Feb 89
+  2875	
+  2876		...This posting brought back to mind my experiences with an SDS
+  2877		machine one summer at a NASA base I worked at.  I believe the
+  2878		machine was an SDS 930, but I may be mistaken.
+  2879	
+  2880		It did not like to have its main memory cabinet door closed
+  2881		(crashing after a few moments if anyone had the timerity to
+  2882		close it!), so it always sat there with one door partly open.
+  2883	
+  2884		It had a card reader that was interesting.  It read the cards
+  2885		length-wise (column 1->80) rather than width-wise (row 9->12).
+  2886		So, if the cards were a little out of spec (low bidder on a
+  2887		government contract), it would either read two cards at a time,
+  2888		or eat one card at a time.  When one was eaten you could recover
+  2889		it from inside the reader -- neatly folded into a many-creased
+  2890		accordian that was cute to look at but impossible to read.
+  2891	
+  2892		The previous poster also mentioned that their machine did not
+  2893		like to awaken in the morning.  Here at the Indian Hill location
+  2894		of Bell Labs we had one machine that did not mind awakening, as
+  2895		long as it was not Monday.  It hated Monday mornings.  It was
+  2896		one half of a duplex pair of IBM 360/67's.  Each Monday the
+  2897		machines would be IPLed and each Monday the Left Half would come
+  2898		up all ready to work, while the Right Half balked and struggled
+  2899		and refused to come up for at least another hour.  The Comp
+  2900		Center staff tried all kinds of things to try to cure or get
+  2901		around the problem (let it run all weekend, lie to it and tell
+  2902		it that Monday was Tuesday, etc.), but it had that habit as long
+  2903		as I can remember working on it.
+  2904	
+  2905	
+  2906		From:  haynes@ucscc.UCSC.EDU (Jim Haynes)
+  2907		Subject:  Mount St. Helens
+  2908		Date:  14 Feb 89
+  2909	
+  2910		...Randy Rorden told me about another happening of this kind at
+  2911		the same company, when Greg was not there.  They got a disk
+  2912		drive in for repair and the filter was clogged with fine gray
+  2913		abrasive dust.  He asked where it had been, and found it had
+  2914		come from an office in Yakima, Wash.  At the time of the Mt.
+  2915		St.  Helens eruption!
+  2916	
+  2917	
+  2918		From:  bobc@killer.DALLAS.TX.US (Bob Calbridge)
+  2919		Subject:  Reading Colecovision cartridges
+  2920		Date:  13 Feb 89
+  2921	
+  2922		On another level of computing, a couple of years ago I designed
+  2923		and built a board for my S-100 system that would treat
+  2924		Colecovision game cartridges as if they were mapped input
+  2925		devices.  This way I was able to read the object code onto disk
+  2926		and eventually into memory.  I would then dis-assemble the
+  2927		program to find out how they worked.  I don't recall which game
+  2928		it was, but near the end of the code was the text reading
+  2929		something to the effect of:
+  2930	
+  2931		"If someone at Atari is reading this, please say hello to Jim
+  2932		Pym."
+  2933	
+  2934		The name is made up, but you get the point.  Similarly, you
+  2935		could find some names scattered in the code that never showed up
+  2936		in the game itself, and I seem to recall (though I'd have to go
+  2937		back and check) someone actually including a love note in the
+  2938		code as a dedication.
+  2939	
+  2940	
+  2941		From:  wwp@homxb.ATT.COM (W.PATTERSON)
+  2942		Subject:  School pranks
+  2943		Date:  13 Feb 89
+  2944	
+  2945		The following story is true.  The names have been changed to
+  2946		protect the innocent.
+  2947	
+  2948		A computer repairman was one day called to a grade school to
+  2949		repair their no longer working computer.  When he opened up the
+  2950		processor, he found a thick coating of white dust covering every
+  2951		component within, i.e.  backplane, mother board and all other PC
+  2952		boards, housing walls, etc.  He had never seen any coating like
+  2953		this in any other computer.  The repair of the processor
+  2954		involved simply blowing out the dust.
+  2955	
+  2956		A few days later he was on another service call within the
+  2957		school for another computer.  Walking by the room that contained
+  2958		the unit he had previously fixed, he decided to peek into the
+  2959		room to see how it was doing.  What he saw explained the white
+  2960		dust.  He saw several boys beating the chalk board erasers next
+  2961		to the fan in the unit, and watching the unit suck the dust
+  2962		inside.
+  2963	
+  2964	
+  2965		From:  sukenick@ccnysci.UUCP (SYG)
+  2966		Subject:  PDP-10 mistakes
+  2967		Date:  13 Feb 89
+  2968	
+  2969		The science division in CCNY had a PDP-10 ("DEC System 10", that
+  2970		is) for general use.  One problem was that people were
+  2971		complaining that they were logging in and all their files were
+  2972		gone!  The problem was simple:  what happened when they logged
+  2973		out previously.
+  2974	
+  2975		To logout, the command is KILL or K and an option.  K/I would
+  2976		log you out after querying you about what to do with each of
+  2977		your files.  K/F would happily log you out fast and keep all
+  2978		your files.  K/D would happily log you out and delete all your
+  2979		files...  the D key is right next to the F key...
+  2980	
+  2981	
+  2982		From:  ddb@ns.UUCP (David Dyer-Bennet)
+  2983		Subject:  More PDP-10 stories
+  2984		Date:  13 Feb 89
+  2985	
+  2986		...Here's a folk tale.  The person who told me says he was
+  2987		there, and I believe him.
+  2988	
+  2989		Several/many years ago, when Tops-10 was the most exciting
+  2990		operating system at DEC (that is, before Tops-20), and when
+  2991		ANF-10 was considered networking (hmmm...  I guess it still
+  2992		would be), some interesting hacks were perpetrated.  My favorite
+  2993		two stories:
+  2994	
+  2995		The ANF-10 nodes were PDP-11's, some serving as terminal
+  2996		concentrators, some as front-ends to the 10's.  A person made
+  2997		some modifications to the code to run in the terminal
+  2998		concentrator version so that, if you asked to be connected to a
+  2999		node that wasn't currently available, it would respond "That
+  3000		node is not available.  Would you care to play Adventure while
+  3001		you wait?", and was in fact prepared to play adventure if
+  3002		requested.
+  3003	
+  3004		The "reverse video" hack:  this was done "to" a particular
+  3005		person that people didn't much like.  The terminal concentrator
+  3006		code was changed to make his terminal work backwards.  "Home"
+  3007		was the bottom right corner.  Carriage return returned you to
+  3008		the rightmost column.  Line feed moved you up a line.  And so
+  3009		forth.  The terminal escape sequences were parsed, interpreted,
+  3010		and reissued suitably modified.
+  3011	
+  3012		I probably once knew who the perpetrators (and victims) were,
+  3013		but it's all lost in the mists of time for me now.  Sorry for
+  3014		not giving proper credit.
+  3015	
+  3016	
+  3017		From:  ajz@mentor.cc.purdue.edu (T. Tim Hsu)
+  3018		Subject:  Definition of double capacity
+  3019		Date:  12 Feb 89
+  3020	
+  3021		A friend of mine from Akron University once told me this
+  3022		story...
+  3023	
+  3024		While working as a lab consultant, he was approached by a woman
+  3025		(a business major) who was having problems with an IBM PC drive.
+  3026		So he goes over to the machine to examine it.  It seems that the
+  3027		drive performed correctly, but took ten times longer than usual
+  3028		to retrieve the proper information.  Upon examination of the
+  3029		drive itself, he noticed TWO diskettes had been shoved into the
+  3030		drive (which happens to be a difficult feat).  Her explanation?
+  3031		"I thought it would double the capacity."
+  3032	
+  3033		He also told me about the time someone put a 3.5" disk into a
+  3034		5.25" drive...  They had to take the machine apart to retrieve
+  3035		the broken pieces.
+  3036	
+  3037	
+  3038		From:  meissner@tiktok.dg.com (Michael Meissner)
+  3039		Subject:  Copying tapes
+  3040		Date:  11 Feb 89
+  3041	
+  3042		One day about 3 years back, a problem was reported with one of
+  3043		the AOS/VS system programs, which is fairly routine.  The person
+  3044		in development asked the customer support person (in a different
+  3045		city) for a copy of the tape that demonstrated the problem.
+  3046		Evidently, the customer support person was still learning the
+  3047		ropes, because he/she put the tape on an office copier, and sent
+  3048		up a photocopy of the tape (rather than a magnetic copy).
+  3049	
+  3050		We all got a laugh out of it.  To make things even better, the
+  3051		OS person was able to tell from the paper label on the tape that
+  3052		not enough information was supplied, and that we would have to
+  3053		ask the customer for the requisite info.
+  3054	
+  3055	
+  3056		From:  larry@kitty.UUCP (Larry Lippman)
+  3057		Subject:  Fun with paper tape
+  3058		Date:  12 Feb 89
+  3059	
+  3060		During the 1970's my organization used quite a bit of punched
+  3061		tape.  In fact, in a storeroom there are still about a dozen
+  3062		VERY expensive rolls of unused metallized mylar punched tape
+  3063		which we used for creation of, ahem, archive tape records.  The
+  3064		definition of "archive" media sure has changed, huh?
+  3065	
+  3066		We still have a thermal punched tape splicer, along with a rack
+  3067		that has a high-speed Remex tape reader and punch.  None of this
+  3068		stuff has seen use in at least five years, but I have not had
+  3069		the heart to order its disposal.
+  3070	
+  3071		I did, however, concede to changing times, and junked our
+  3072		Decision Data 8020 interpreting card reader/punch about 4 years
+  3073		ago when we axed an PDP-11/44.  I remember when that card
+  3074		reader-punch was ordered in 1974 at a cost of around $8K.  It
+  3075		was our only card device which was shared among development
+  3076		systems when necessary.  We even designed a custom interface
+  3077		using an 8080 with software driver so that it could run on
+  3078		either an 11/03 QBUS or on UNIBUS.  We wanted interpreting
+  3079		capability, in addition to having a standalone keypunch (which
+  3080		the 8020 would also do), so we never bought any native DEC card
+  3081		equipment.
+  3082	
+  3083		In one lab where we had two ASR-33's, which have now been gone
+  3084		for several years, a piece of oiled punched paper chad will
+  3085		STILL worm its way out of the baseboard moulding every once and
+  3086		a while.  Unfortunately, more than one chad box was accidentally
+  3087		dumped -- so the floor has been well "seeded" over the years.
+  3088	
+  3089	
+  3090		From:  aberg@math.rutgers.edu (Hans Aberg)
+  3091		Subject:  Troubles with computer music
+  3092		Date:  12 Feb 89
+  3093	
+  3094		A computer musician who lives up in Ithaca, NY, told the
+  3095		following story:
+  3096	
+  3097		He tried out his Macintosh MIDI equipment, and everything worked
+  3098		perfectly.  In those days, in the early mid-eighties, one had to
+  3099		rely on 512K, and an external disk drive (no hard drive).
+  3100	
+  3101		Then he went up to Chicago (?)  for a performance for an
+  3102		audience.  He picked up all the equipment on the stage -- it
+  3103		didn't work at all.
+  3104	
+  3105		So the next couple of hours he tried to figure out what is
+  3106		wrong, and the audience started to show up...
+  3107	
+  3108		But then, Aha!, somebody discovered that the external disk drive
+  3109		was placed on the left side of the Macintosh -- not on the right
+  3110		side, as it should according to the manual.  The Mac has its
+  3111		transformers on the left side, and their magnetic field
+  3112		interfered with the drive.
+  3113	
+  3114		So they moved the drive over to the right side, everything all
+  3115		of a sudden working perfectly, and the performance was carried
+  3116		in land.
+  3117	
+  3118	
+  3119		From:  jackson@adobe.COM (Curtis Jackson)
+  3120		Subject:  Misc computer stories
+  3121		Date:  11 Feb 89
+  3122	
+  3123		...A disgruntled employee at NavOCEANO (Naval Ocean Office, I
+  3124		believe) across the street from me when I worked at NORDA (Naval
+  3125		Ocean R&D Activity) decided to get even with the locals.
+  3126	
+  3127		There was a large Univac installation there, and some
+  3128		ultra-high-speed card readers.  He hollowed out an entire box of
+  3129		punch cards (about 2.5 feet of cards, for all you youngsters)
+  3130		and filled them with old old old bananas.  He then submitted
+  3131		this deck as a job.  The operators were used to multi-box jobs,
+  3132		so they usually just picked up the entire box of cards and
+  3133		dumped them in the high-speed readers.  It took over 3 weeks of
+  3134		maintenance before the reader was working reliably again, and
+  3135		the control room reeked of banana for weeks afterwards...
+  3136	
+  3137		When crucial data on tape was lost at my university, the gurus
+  3138		in the computer room would retrieve as much data as possible,
+  3139		then fill in the gaps by soaking the tapes in a solution that
+  3140		made the individual bits show up as 1 or 0 (dark or light) under
+  3141		a magnifier.  They'd then hand-assemble the missing sections
+  3142		from the visual inspection.
+  3143	
+  3144		I once spent an entire night (over 12 hours) trying to get my
+  3145		compiler (working up to that point) to work again so I could
+  3146		work on it some more for my compilers course.  At the end, I had
+  3147		reduced the problem down to a program (C code) that basically
+  3148		declared an integer "i", said "i=5", then printed "i".  The
+  3149		program printed a floating-point number...  I was so angry I got
+  3150		the idiot who had been mucking around with the C compiler from
+  3151		Bell Labs in the lab at 7am on Sunday morning to fix the damned
+  3152		thing.
+  3153	
+  3154		Our aged PDP-10 finally died one weekend when we had an
+  3155		unusually hot Sunday (there was no operator support on Sundays
+  3156		until 6pm) and it turned out the fall leaves had never been
+  3157		cleared from the AC vents by the university physical plant.  The
+  3158		temperature got over 100 degrees F in the computer room, and the
+  3159		old CPU on the 10 wouldn't even whimper afterwards.
+  3160	
+  3161		It's amazing how many of us remember the "Good Ole Days" --
+  3162		didn't you hate patching paper tape?  Yeecchhh.
+  3163	
+  3164	
+  3165		From:  sfisher@abingdon.SGI.COM (Scott Fisher)
+  3166		Subject:  Various office stories
+  3167		Date:  11 Feb 89
+  3168	
+  3169		No joke.  I have seen at least one letter sent to the software
+  3170		support group of a DBMS company that said, "I have included a
+  3171		copy of my disk as per your request," only to find a photocopy
+  3172		attached to the letter.  They did copy both sides, at least.
+  3173	
+  3174		This is the same company (my wife worked there) where an irate
+  3175		customer couldn't save his records to disk.  The error message
+  3176		he reported would only have appeared on a full disk, but he
+  3177		claimed that he checked the space remaining and it was "okay".
+  3178		Turns out that the program he ran to check remaining space on a
+  3179		disk drive returned the amount of free space, expressed in
+  3180		Kbytes.  A full disk, therefore, returned the string 0k (where 0
+  3181		= zero).
+  3182	
+  3183		Then there was the customer who complained because the new
+  3184		software release wouldn't print.  This customer just *knew* he'd
+  3185		caught the software company in a bug and he was demanding his
+  3186		money back.  My wife stepped through the whole process, set up a
+  3187		duplicate system on her end of the phone, and spent a fair
+  3188		amount of time duplicating his situation.  At last she
+  3189		determined that the only possible failure was that his printer
+  3190		wasn't on line.
+  3191	
+  3192		"I've managed to duplicate your error message," she finally told
+  3193		him after about three days of this.
+  3194	
+  3195		"Aha!  It *is* a bug, and you'll finally admit it!  Are you
+  3196		going to refund my money?"
+  3197	
+  3198		"Well, we'll see," she said.  "First, look on your printer and
+  3199		see if the little green light marked 'on line' is lit."
+  3200	
+  3201		"No, it isn't.  What does it mean if it's not on line?"
+  3202	
+  3203		"Well, it's like the lights are on but nobody's home..."
+  3204	
+  3205		He never asked for his money back again.
+  3206	
+  3207	
+  3208		From:  dlm@cuuxb.ATT.COM (Auntie Dion)
+  3209		Subject:  Alfred E. Newman
+  3210		Date:  11 Feb 89
+  3211	
+  3212		I was at UoM from 1967-1975...
+  3213	
+  3214		The operating system was derived from the University of Michigan
+  3215		and had the peculiarity that every job required output, both
+  3216		printer and punch.  This was even if the job bombed completely.
+  3217		An ABEND was okay as it gave a core dump, but a bad set of cards
+  3218		wouldn't result in anything, so...  The systems people arranged
+  3219		in this circumstance to insert a computer picture of Alfred E.
+  3220		Neumann, with the caption, "What me worry", into the output
+  3221		stream.  Also, each compilation that didn't succeed resulted in
+  3222		a card placed in the punch stream with "FAILED" in block
+  3223		letters.
+  3224	
+  3225		The day came when the Board of Regents toured the computer
+  3226		center with its several million dollar computer.  As a Regent
+  3227		was looking at the printer it just so happened that a bunch of
+  3228		jobs in a row all failed, leaving the line printer printer about
+  3229		20 pictures of Alfred for the Regents to view.
+  3230	
+  3231		The FAILED cards we'd collect and paper our offices with.
+  3232	
+  3233	
+  3234		From:  dlm@cuuxb.ATT.COM (Auntie Dion)
+  3235		Subject:  More code comments
+  3236		Date:  11 Feb 89
+  3237	
+  3238		The Version 6 UNIX kernel source had two very wonderful comments
+  3239		(realize UNIX has extremely few comments):
+  3240	
+  3241		In the first it is discussing the mechanics of what in
+  3242		retrospect is the point where, in C, the CPU switches kernel
+  3243		stacks and resumes executing a previous process.  The comment is
+  3244		about 8 lines long and ends, "you are not expected to understand
+  3245		this."
+  3246	
+  3247		Then there is the comment, "The return value of this function
+  3248		has special significance," and it returns either 0 or 1, not
+  3249		very special.
+  3250	
+  3251	
+  3252		From:  dlm@cuuxb.ATT.COM (Auntie Dion)
+  3253		Subject:  Starting up computers
+  3254		Date:  11 Feb 89
+  3255	
+  3256		Long before there was DEC we had an SDS 920 computer.  These had
+  3257		printed circuit cards with gold plated contacts and gas tight
+  3258		connectors.  They were a bitch to reseat.  You had to pound them
+  3259		into the socket with a mallet.  One day, as were were reseating
+  3260		the card a senior executive wandered by and saw what was
+  3261		happening and said, "I've heard of kicking coke machines but
+  3262		this is ridiculous!"
+  3263	
+  3264		The same computer also must have been pregnant as it had
+  3265		"morning sickness".  In the morning when we turned it one, it
+  3266		wouldn't work until we let it warm up for a half an hour.
+  3267	
+  3268		Then there was the time it broke.  Most of it still worked but
+  3269		the shift instructions wouldn't work, we called it a shiftless
+  3270		computer.
+  3271	
+  3272		Then there was the Army tech that was lazy and dropped a screw
+  3273		driver [so he says] from the Supply bus to the AC line and fried
+  3274		every transistor in the computer.  In shipping it back to the US
+  3275		of A for repair, it was accidentally pushed off of a loading
+  3276		dock.  We learned about how to do auto body work on a computer.
+  3277	
+  3278		Poor SDS 920, last I heard it was still serving our country in a
+  3279		nameless rural area and the technicians go out to Radio Shack to
+  3280		buy transistors to repair it.
+  3281	
+  3282	
+  3283		From:  cramer@optilink.UUCP (Clayton Cramer)
+  3284		Subject:  Excessive Use Of Computers?
+  3285		Date:  22 Feb 89
+  3286	
+  3287		A recent sign of the extensive use of computers in areas
+  3288		heretofore not considered as needing a computer:
+  3289	
+  3290		    One of the EEs that works here asked me for some help
+  3291		    figuring out how to read a 3.5" floppy disk.  "I tried it in
+  3292		    a Mac, but it couldn't read it."  "What sort of computer did
+  3293		    it come out of?", I innocently asked.  "A Brother knitting
+  3294		    machine."
+  3295	
+  3296		Knit one, pearl two, write FAT to disk, service mouse
+  3297		interrupts, knit one, pearl two...
+  3298	
+  3299	
+  3300		From:  clw@hprnd.HP.COM (Carl Wuebker)
+  3301		Subject:  How to bug an operator
+  3302		Date:  19 Feb 89
+  3303	
+  3304	
+  3305		In the early 1970's at Georgia Tech there lived a Univac 1108
+  3306		running under the Exec 8 operating system.  The 1108 had
+  3307		commands that began with an @, and they would hang up the
+  3308		terminal until you were done.  So, for example, an:
+  3309	
+  3310			@MSG,W Operator, please mount tape 1234...
+  3311	
+  3312		would send a message to the operator, but wouldn't return
+  3313		control to your terminal until the operator replied.  Anyway,
+  3314		some fellow at Univac got the idea of double-@ commands, which
+  3315		would allow you to play through while the single @ commands were
+  3316		working -- kind of like the & feature of Unix.
+  3317	
+  3318			@@MSG,W Operator...
+  3319	
+  3320		would allow you to go on, but required the operator to answer a
+  3321		console question.  After our "new" OS was installed, the Rich
+  3322		Electronic Computer Center published a bulletin about how to use
+  3323		this new feature.  Soon afterwards, a student filled a file with
+  3324		4K of these operator reply statements and started it...
+  3325	
+  3326		Results -- the operator's console was flooded with messages, all
+  3327		of which required a reply.  He had to bring the machine down,
+  3328		dump the memory, and reboot.  The next morning, the system staff
+  3329		went through the dump and removed the student's login from the
+  3330		system.
+  3331	
+  3332	
+  3333		From:  jtw@wuee1.wustl.edu (Trent Wohlschlaeger)
+  3334		Subject:  Fixing a keyboard
+  3335		Date:  21 Feb 89
+  3336	
+  3337		True Story:
+  3338	
+  3339		I worked as a student "computer consultant" for Austin College
+  3340		(no, not UT) during my undergrad years.  One Saturday the entire
+  3341		Organic Chem class was in trying to do some simulated analysis
+  3342		of compounds.  A (minor) friend and (major) crush of mine walked
+  3343		in to find all the terminals in use, so I took her down to the
+  3344		machine room to allow her to use one of the terminals there.
+  3345	
+  3346		I think the terminal was an ADM-something with a detached
+  3347		keyboard.  At any rate, the keyboard started acting up, causing
+  3348		the program to simulate all sorts of tests she didn't want.
+  3349		After jiggling the cord several times, which fixed the problem
+  3350		for about 1.5 minutes each, I finally stated that it needed
+  3351		"manual adjustment", picked the keyboard up, lowered it a
+  3352		carefully eyed 2 inches, and dropped it to the desktop.
+  3353	
+  3354		It worked fine for the next 4 hours until I left.  She looked at
+  3355		me as if I was some sort of computer god.  Of course, she still
+  3356		wouldn't go out with me!
+  3357	
+  3358	
+  3359		From:  lan@bucsb.UUCP (Larry Nathanson)
+  3360		Subject:  Excessive computerphobes
+  3361		Date:  21 Feb 89
+  3362	
+  3363		While a counselor at a computer/circus camp (I won't get into
+  3364		elaborating on it, or I'll forget the funny story - inquiries
+  3365		taken by mail) a few years ago, there were a few campers that
+  3366		would choose only one program.  One girl "Natasha" was extremely
+  3367		interested in the high wire, and deathly afraid of the computer
+  3368		rooms.  Room 1 was around 25 PC's, Room 2 was //e's, and Room 3
+  3369		was a bunch of Mac 128's...  (That was HIGH tech then....)
+  3370	
+  3371		Anyway, on the last day of the two week session, it's the
+  3372		nastiest thunderstorm Inland Conn had seen, which means the
+  3373		kiddies are all indoors for the day...  The highwire is swinging
+  3374		like the surface of the pool, and the trapeze is spewing debris
+  3375		all over the fields...  Most of the campers are rather content
+  3376		to be indoors, and after MUCH coaxing, we get Natasha to draw a
+  3377		picture on the "cute little harmless computer"...
+  3378	
+  3379		Wouldn't you know it -- Natasha has just finished her cute
+  3380		little doggie picture and she gets daring, and figures out that
+  3381		the "A" symbol means letters, and she's going to title her
+  3382		creation...  All of a sudden there is a HUGE CRASH -- lightening
+  3383		strikes the transformers outside...  As she touches it, the
+  3384		keyboard starts smoking, and the image of her picture melts down
+  3385		the screen, with black smoke pouring out of the vents on top.
+  3386		This poor girl was so traumatized that she'll NEVER touch a Mac
+  3387		so long as she lives!
+  3388	
+  3389		By the way, the lightbulbs overhead exploded, the //e
+  3390		motherboards were OK, but their power supplys were black inside,
+  3391		and smelled like a campfire...  they all had to be replaced.
+  3392		Half/2 the Macs were wrecked violently -- smoking keyboards,
+  3393		etc...  the other half just needed new fuses...  And the grand
+  3394		finale -- the IBM's were a total loss, and some of the IBM color
+  3395		monitors had flames coming out of the top...
+  3396	
+  3397		I was told Natasha ran so far it took a half hour to catch
+  3398		her...  As I remember it, I got a fire extinguisher, and was
+  3399		having a blast dousing the IBM's...  However, knowing
+  3400		"selective" memory being what it is, I was probably crouching
+  3401		under a bench somewhere...
+  3402	
+  3403	
+  3404		From:  lauri@svax.cs.cornell.edu (Georges Lauri)
+  3405		Subject:  Abusive users
+  3406		Date:  20 Feb 89
+  3407	
+  3408		...I used to work in a company doing workstations for stock and
+  3409		commodity brokers.  These things are their bread and butter:  if
+  3410		they don't work, they can't do *a thing*.  They thus tend to get
+  3411		frustrated easily.
+  3412	
+  3413		One of them calls, and says, "No matter what I type, it doesn't
+  3414		work".  Get the machine exchanged, the keyboard is hopelessly
+  3415		damaged.  A couple of days later, the same thing happens.  We
+  3416		discovered that the guy used his *telephone handset* to bang on
+  3417		the keyboard to flip pages.
+  3418	
+  3419		The competition -- obviously from similar experiences -- had
+  3420		keyboards encased in sheetmetal, with very tough springs; these
+  3421		people only hit one key at a time anyway, and didn't touch type,
+  3422		so that was OK...
+  3423	
+  3424		In a similar vein, a frustrated customer had, on a bad trade,
+  3425		*ripped* his console from the data feed -- the back panel was
+  3426		still hanging to the wall outlet.  We got bit by this again when
+  3427		we introduced mice on our systems:  now *they* were getting
+  3428		banged up by people using them do dial the phone!!
+  3429	
+  3430		To solve all these problems, we had to install routines to
+  3431		detect keyboard banging (lots of keys pressed too quickly in
+  3432		succession) and mouse banging (that took some work) and beep
+  3433		*real loud* -- they'd get embarrassed and not do it anymore.
+  3434		Abuse management -- a whole new area in user interfaces!
+  3435	
+  3436	
+  3437		From:  lord@se-sd.sandiego.ncr.com (Dave Lord)
+  3438		Subject:  Orientation dependent systems
+  3439		Date:  20 Feb 89
+  3440	
+  3441		One of the guys who used to work here had been a field engineer
+  3442		for many years.  (That means he used to repair computers.)  One
+  3443		of the machines he used to work on was one of those large
+  3444		beasties, about 5 feet high and six or seven feet long.  To get
+  3445		at the innards you opened up the hinged doors on the sides.  The
+  3446		"memory unit" was also hinged and to work on it you had to open
+  3447		it out so it was at a 90 degree angle to its normal position.
+  3448	
+  3449		Anyway, there was this particular machine that was getting
+  3450		_lots_ of memory errors.  But of course when they opened it up
+  3451		to test it, it worked fine.  They tried various things like
+  3452		cleaning the vents, cleaning the connectors and replacing
+  3453		various parts, but to no avail.  When the memory unit was folded
+  3454		out at a 90 degree angle it worked fine, when it was closed it
+  3455		got memory errors.  Finally, in desperation, they closed it up
+  3456		and turned the whole processor so that it was at a ninety degree
+  3457		angle to its original position.  Supposedly it never had a
+  3458		problem again.
+  3459	
+  3460		They explained to the customer that the machine had "East-West
+  3461		Memory".
+  3462	
+  3463	
+  3464		From:  gmw1@CUNIXD.CC.COLUMBIA.EDU (Gabe M Wiener)
+  3465		Subject:  Novice engineering students
+  3466		Date:  20 Feb 89
+  3467	
+  3468		Several years ago I was working as an instructor at a computer
+  3469		camp.  I was assigned to teach the introductory class in TTL
+  3470		logic and peripheral design.  So there I was, explaining the TTL
+  3471		high and low states.  "Five volts represents the 'high' state or
+  3472		a binary 1, and zero volts represents the 'low' state, or a
+  3473		binary 0."  And I went on and on explaining the various TTL
+  3474		Gates (AND, NOR, NAND, etc).  Finally, I got to the Inverter (or
+  3475		NOT gate).  I explained that if you put 5 volts into it, you'll
+  3476		get 0 volts out, and if you put 0 volts into it you'll get 5
+  3477		volts out.  To this, one person replied:
+  3478	
+  3479		"Wouldn't that thing be awfully useful during a power failure?"
+  3480	
+  3481	
+  3482		From:  dmt@ptsfa.PacBell.COM (Dave Turner)
+  3483		Subject:  Operator mistakes
+  3484		Date:  18 Feb 89
+  3485	
+  3486		Whenever we used to make major changes to our operating system
+  3487		or transaction processing system we were required to repeat a
+  3488		prior day's business to prove the the system was ready for
+  3489		production.
+  3490	
+  3491		Until about 10 years ago, we would do this by copying all the
+  3492		databases and tapes for a day and run a series of tests on
+  3493		Saturdays.  All the production terminal operators would be at
+  3494		their terminals typing exactly the same things that they had
+  3495		typed on the day being repeated.
+  3496	
+  3497		All this was very expensive and error prone.  Usually the tests
+  3498		would cause a crash a few minutes after they started.
+  3499	
+  3500		On one memorable day in 1976 the test was running very smoothly.
+  3501		The computer room was filled with onlookers:  operations people,
+  3502		systems programmers, bigshots, vendor representatives, etc.
+  3503	
+  3504		The console operator was continuously displaying the status of
+  3505		the system.  One common command was to display all the jobs in
+  3506		the system:
+  3507	
+  3508			$dj 1-999
+  3509	
+  3510		Everyone was pleased that the test was going so well until
+  3511		around 4 PM when all the jobs suddenly stopped running.
+  3512	
+  3513		Concern turned to elation when the console operator confessed
+  3514		that he had mistakenly typed:
+  3515	
+  3516			$cj 1-999
+  3517	
+  3518		Which *cancelled* all the jobs in the system!
+  3519	
+  3520	
+  3521		From:  ferguson@x102c.harris-atd.com (ferguson ct 71078)
+  3522		Subject:  Computer welding
+  3523		Date:  18 Feb 89
+  3524	
+  3525		...The 4th-hand version of this story I heard regarded the first
+  3526		mounting of a large capacity disk drive on a ship.  The teller
+  3527		(known to occasionally exaggerate) claimed that the disk was a
+  3528		particularly high volume model for its era and was about three
+  3529		feet in diameter (I have difficulty believing this).  He claimed
+  3530		that the gyroscopic forces for such a large rotating mass were
+  3531		sufficient to warp the ship's decks as the ship rocked and
+  3532		heaved while underway.
+  3533	
+  3534		A first-hand story:  this one actually happened to me.  When I
+  3535		was a student at the University of Texas, I was employed at a
+  3536		computer lab programming one of the early generation desktop
+  3537		computers.  The machine was an 8080 (later Z80) CP/M machine
+  3538		with an S-100 bus in an IMSIA (sp?)  cabinet.  The IMSIA cabinet
+  3539		was about the size of a modern IBM-PC but about twice as high.
+  3540		The chassis was aluminum with a steel cover.  The power cord for
+  3541		the system entered the cabinet through the rear and was
+  3542		connected directly to a terminal strip (two parallel rows of
+  3543		screws in a heavy piece of bakelite).  The terminal strip was
+  3544		mounted on the backplane of the cabinet which was a sheet of
+  3545		aluminum about 1/8" thick.
+  3546	
+  3547		Well one day I was merrily typing away on a terminal when an
+  3548		hair-raising event occurred.  A jet of fire and sparks spewed
+  3549		out of the rear of the computer cabinet accompanied by brilliant
+  3550		ultraviolet light.  It was as though someone had started up an
+  3551		arc welder inside the computer.  The lab filled with ozone and
+  3552		smoke.  The welding continued for about a two full seconds
+  3553		before it ceased of its own accord.  It took a couple of minutes
+  3554		to get my heart out of my throat and get up the nerve to unplug
+  3555		the machine.  When I examined the computer I found a 3/8" hole
+  3556		in the aluminum backplane of the computer which had obviously
+  3557		been torched out.  The desk was covered with molten globules of
+  3558		aluminum which hardened into little pills.
+  3559	
+  3560		The computer lab was in a building filled with engineering labs
+  3561		which contained all kinds of heavy equipment.  Apparently one or
+  3562		more large machines had been switched on or off and a hell of a
+  3563		big power spike had come down the line.  Evidently one of the
+  3564		screws in the computer's terminal strip was just a little bit
+  3565		too long and the tip of the screw was just a little bit too
+  3566		close to the aluminum backplane of the cabinet which was
+  3567		grounded of course.  This closeness allowed the power spike to
+  3568		arc between the tip of the screw and the backplane.  The arc
+  3569		continued until the hole it was melting in the backplane grew
+  3570		too large to sustain the arc.
+  3571	
+  3572		The amazing part of this story was that the computer was
+  3573		completely unharmed save some cosmetic damage.  Even the fuses
+  3574		were intact (they were "downstream" from the terminal strip).
+  3575		Furthermore, the building fuse hadn't blown.  Basically, after
+  3576		about ten minutes to get my nerve back, I plugged the computer
+  3577		back in, cleaned the aluminum pills off my desk, and went back
+  3578		to work like nothing had happened.  Try that with your Taiwan
+  3579		clone!  (Later on I trimmed down all the screws in the power
+  3580		strip.)
+  3581	
+  3582	
+  3583		From:  kfir@bimacs.BITNET (Yuval Kfir)
+  3584		Subject:  What is the definition of "crash"
+  3585		Date:  17 Feb 89
+  3586	
+  3587		I was told the following story by a friend, but the details are
+  3588		probably mixed up -- if someone remembers them correctly they
+  3589		are welcome to put me right.  It happened at an ILA conference
+  3590		(those are the Hebrew initials of called in English), two or
+  3591		three years ago:  Some time after the conference began, a man
+  3592		came up hysterically to the DEC representatives (where DEC's
+  3593		display was on), and told them that the computer had crashed.
+  3594		Without even thinking, they told him, "Just reboot it then,
+  3595		what's the problem?".
+  3596	
+  3597		"No, you don't get it -- I was just unloading it from the van
+  3598		here, and..."  (I think it was a VAXstation, God rest its soul).
+  3599	
+  3600	
+  3601		From:  jml@holin.ATT.COM (John Lynch)
+  3602		Subject:  Getting free credit
+  3603		Date:  17 Feb 89
+  3604	
+  3605		I recall a story from the 1970's, told by a friend at the time,
+  3606		about a phone bill.
+  3607	
+  3608		The local phone company, NJ Bell, would include a keypunch card
+  3609		with your bill.  The card included the standard information
+  3610		about the customer and the bill amount.  This friend of mine
+  3611		took the phone bill card to keypunch and added an overpunch to
+  3612		the the bill amount making it a negative number.  He sent in a
+  3613		check for the regular amount with the altered card.  When he
+  3614		received his next month's bill there was a credit for his
+  3615		payment and a credit from his previous balance due.
+  3616	
+  3617		He never told me if the phone company ever caught on or not.
+  3618	
+  3619	
+  3620		From:  tom@iconsys.UUCP (Tom Kimpton)
+  3621		Subject:  Why you don't say yes automatically
+  3622		Date:  17 Feb 89
+  3623	
+  3624		When we were first porting UN*X to our hardware we often had
+  3625		crashes that would leave the file system in a state of disarray.
+  3626		Going through the fsck routine of being asked if we wanted to
+  3627		clear the file, etc., got to be a hassle.  So one of the
+  3628		programmers added a "-y" option to fsck that would print out yes
+  3629		to the question (so you could see what was going on),
+  3630		automatically clear the file in question and continue.
+  3631	
+  3632		It was very handy.  It cut reboot times down dramatically.
+  3633		Until the first time "/" was corrupted:  Directory "/"
+  3634		corrupted, do you wish to remove?  YES Directory "/" removed.
+  3635		"-y" was removed forthwith.
+  3636	
+  3637	
+  3638		From:  meo@stiatl.UUCP (Miles O'Neal)
+  3639		Subject:  A good way to waste a programmer's time
+  3640		Date:  17 Feb 89
+  3641	
+  3642		The *old* Compucolor (or whoever Intecolor used to be) computers
+  3643		were pretty nice for writing neat games in; their BASIC was very
+  3644		flexible and graphics-oriented.  A friend (hi, Nick) at Tech and
+  3645		I were playing around, getting the computer to do all kinds of
+  3646		neat (to us, then) stuff, and Nick found a very obscure feature:
+  3647		ANY character could be placed in a comment.  So we wrote a
+  3648		program that did all kinds of neat stuff on the screen, and then
+  3649		stopped for a moment (with keyboard locked) displaying, "Read
+  3650		the code and see if you can figure this one out!"
+  3651	
+  3652		The memory mapped display was fast.  The code was as compact
+  3653		(i.e., spaghetti code) as we could make it, crammed onto 1 LONG
+  3654		line, followed by a comment that had as its first characters the
+  3655		ones to return to beginning of line and clear to eol, and then
+  3656		the following:
+  3657	
+  3658		10 REM Read the code and see if you can figure this one out!
+  3659	
+  3660		When you tried to print the source to the screen, it happened so
+  3661		fast the eye registered nothing but the final comment.  A lot of
+  3662		grad students (not to mention undergrads) wasted a LOT of time
+  3663		trying to figure this one out!
+  3664	
+  3665	
+  3666		From:  Tim_CDC_Roberts@cup.portal.com
+  3667		Subject:  How to damage a keyboard
+  3668		Date:  17 Feb 89
+  3669	
+  3670		There was a letter to the editor of BYTE in its early days that
+  3671		went something like this:
+  3672	
+  3673		"You said in your beginners column of <month/year forgotten>
+  3674		that nothing I could enter at the keyboard would harm my
+  3675		computer at all.
+  3676	
+  3677		"Well, I entered a Coke at the keyboard, and believe me it did
+  3678		some kind of damage."
+  3679	
+  3680	
+  3681		From:  kevinf@cognos.uucp (Kevin Ferguson)
+  3682		Subject:  Why you don't put program developers in PR
+  3683		Date:  15 Feb 89
+  3684	
+  3685		DISCLAIMER:  So help me God, this is the absolute truth.  I
+  3686		should know, because I was there.
+  3687	
+  3688		Many moons ago (1982), I was on contract as a P/A to one of
+  3689		those credit card companies that shall remain nameless.  I was
+  3690		attached to the project that was completely rewriting the
+  3691		billing process.  The approved implementation included a massive
+  3692		number of database tables that the Credit Department would
+  3693		maintain to control their billing cycles, appearance of the
+  3694		statement for different types of customers, interest charge
+  3695		calculation, and so on, ad nauseum.
+  3696	
+  3697		Well, as the project trundled on toward completion, the end user
+  3698		became aware of the manpower effort that would be required to
+  3699		initialize all of these tables.  (In retrospect, their reaction
+  3700		was really quite excessive.)  Our illustrious Project Manager
+  3701		said at the time, "No problem.  We'll just promote the TestBed
+  3702		environment."  I'm sure that you can imagine our reaction, as
+  3703		the mischievous minds of programmers tend to generate humorous
+  3704		testing environments.
+  3705	
+  3706		Sure enough, despite all of the programmers's and testers's
+  3707		objections, the TestBed environment was promoted to Production
+  3708		"...with those changes that are deemed necessary by the Credit
+  3709		Department."  Apparently, they did not catch all of the
+  3710		"necessary changes" because in the first week, the Credit
+  3711		Department mailed 1,500 statements to delinquent customers with
+  3712		the Reminder Notice:  "Pay up, or we'll rape your wife."
+  3713	
+  3714		Judging by the memo that was distributed to the MIS Department
+  3715		following this debacle, the rest of the organization failed to
+  3716		see the humor in this.
+  3717	
+  3718	
+  3719		From:  emoffatt@cognos.uucp (Eric Moffatt)
+  3720		Subject:  Student pranks
+  3721		Date:  13 Feb 89
+  3722	
+  3723		This reminds me of a particularly nasty trick we (myself and a
+  3724		fellow named Mike something) played in High School (1972?).  In
+  3725		our FORTRAN course all of the students's card decks were packed
+  3726		in boxes and shipped out to run at some magic computer elsewhere
+  3727		in the city; turnaround was about 2 days.  Well, Mike was
+  3728		somewhat of a system hack and had "discovered" that there was a
+  3729		way to read all other JCL (yep, IBM) in a deck as data.  We just
+  3730		had to try it out.
+  3731	
+  3732		I wrote a super simple parser (scan a line for READ, WRITE,
+  3733		DO...)  and an output formatter which did a fair job of
+  3734		duplicating the real compiler's output.  We just slipped the
+  3735		"special" JCL in at the start of the deck and viola...  the
+  3736		students received realistic looking compiles but with fake error
+  3737		messages like, "READ statement in wrong place" or, "You cannot
+  3738		WRITE here".  Well, the instructor just didn't know what to make
+  3739		of this (he was new to this stuff too) and we finally had to
+  3740		'fess up.  As I remember it I got one of my very few detentions
+  3741		for costing the class a whole computer run but it was worth it
+  3742		to see the teacher's face.
+  3743	
+  3744	 

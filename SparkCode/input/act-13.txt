@@ -1,0 +1,1696 @@
+     1	
+     2	
+     3	
+     4	
+     5	
+     6	
+     7	
+     8	
+     9	     VOL 1                                                   NUM 1
+    10	                                   
+    11	
+    12	
+    13	                                   
+    14	                     The Amatuer Crackist Tutorial
+    15	                              Version 1.3
+    16	                                  By
+    17	                            Specular Vision
+    18	
+    19	
+    20	
+    21	
+    22	
+    23	                          Special Thanks to:
+    24	                            Mr. Transistor
+    25	                                Ironman
+    26	                           The Grand Elusion
+    27	                            Banzai Buckaroo
+    28	                                   
+    29	
+    30	
+    31	
+    32	                      Another fine PTL Production
+    33	                        Call The Myth Inc. BBS
+    34	     Table of Contents:
+    35	     ------------------       (Page  Numbers will be aprox.  until
+    36	                                  final version is finished)
+    37	          i.        Table of Contents                         2
+    38	
+    39	          ii.       Introduction                              3
+    40	
+    41	          I.        How to Crack                              4
+    42	                      Debugging DOS                           4
+    43	                      Cracking on the IBM PC Part 1           7
+    44	                      Cracking on the IBM PC Part 2          11
+    45	
+    46	          II.       Example Cracks                           14
+    47	                      Mean-18 by Accolade                    14
+    48	                      Submarine by Eypx                      18
+    49	                      Space Station Oblivion by Eypx         22
+    50	
+    51	          III.      Removing Doc Check Questions             23
+    52	                      F-15 Strike Eagle by MicroProse        23
+    53	                      Battlehawks 1945 by Lucasfilms         25
+    54	                      Yeager's AFT by Electronic Arts        26
+    55	
+    56	          IV.       Cracking Self Booters                    27
+    57	                      Disk Basics
+    58	                      Victory Road by Data East              27
+    59	                      MS-Flight Simulator (Ver 2.x)          30
+    60	
+    61	          V.        Creating Title Screens                   33
+    62	
+    63	          VI.       Appendix                                 35
+    64	                      A - Interrupt Tables                   36
+    65	                          (This will be an add-on file)
+    66	
+    67	
+    68	
+    69	
+    70	
+    71	
+    72	
+    73	
+    74	
+    75	
+    76	
+    77	
+    78	
+    79	
+    80	
+    81	
+    82	
+    83	
+    84	
+    85	
+    86	
+    87	
+    88	
+    89	                                   2
+    90	     Introduction:
+    91	     -------------
+    92	
+    93	     Due to the current lack of Crackers, and also keeping in mind
+    94	     the  time it took me to learn the basics of cracking,  I  de-
+    95	     cided  to put this tutorial together.   I will  include  many
+    96	     files which I have found helpful in my many cracking  endeav-
+    97	     ors.   It also has comments that I have included to  make  it
+    98	     easier to understand.
+    99	
+   100	
+   101	
+   102	     Comments Key:
+   103	     -------------
+   104	
+   105	     Comments in the following material will be made by one of the
+   106	     following  and the lines that enclose the comments  show  who
+   107	     made the comment.
+   108	
+   109	     Specular Vision = -------------
+   110	     Mr. Transistor  = +++++++++++++
+   111	     Ironman         = |||||||||||||
+   112	
+   113	
+   114	     Special thanks to Mr.  Transistor, for coming out of "Retire-
+   115	     ment" to help compose this document.
+   116	
+   117	
+   118	
+   119	
+   120	
+   121	
+   122	
+   123	
+   124	
+   125	
+   126	
+   127	
+   128	
+   129	
+   130	
+   131	
+   132	
+   133	
+   134	
+   135	
+   136	
+   137	
+   138	
+   139	
+   140	
+   141	
+   142	
+   143	
+   144	                                   3
+   145	     Chapter I                                        How to Crack
+   146	
+   147	
+   148	     -------------------------------------------------------------
+   149	     Let's start with a simple introduction to patching a  program
+   150	     using the DOS DEBUG program.  The following article will  in-
+   151	     troduce you to the basic ideas and concepts of looking for  a
+   152	     certain area of a program and making a patch to it.
+   153	     -------------------------------------------------------------
+   154	
+   155	
+   156	     By:            Charles Petzold / Specular Vision
+   157	     Title:         Case Study: A Colorful CLS
+   158	
+   159	       This article originally appeared in the Oct.  14,1986 Issue
+   160	     of PC Magazine (Vol 15. Num 17.). Written by Charles Petzold.
+   161	
+   162	       The hardest part of patching existing programs is determin-
+   163	     ing  where the patch should go.  You really have to  make  an
+   164	     intelligent guess about the functioning of the program.
+   165	
+   166	       As an example,  let's attempt to modify COMMAND.COM so that
+   167	     is colors the screen on a CLS command.   As with any type  of
+   168	     patch try it out on a copy and NOT the original.
+   169	
+   170	       First, think about what we should look for.  CLS is differ-
+   171	     ent from all the other DOS internal Commands,  It is the only
+   172	     internal command that does something to the screen other than
+   173	     just write to it with simple teletype output.  CLS blanks the
+   174	     screen and homes the cursor.   Since it can't do this through
+   175	     DOS Calls (unless ANSI.SYS is loaded), it is probably calling
+   176	     the BIOS Directly.   The BIOS Interrupt 10h call controls the
+   177	     video,  and so the CLS command probably uses several INT  10h
+   178	     instructions.  The machine code for INT 10h is CD 10.
+   179	
+   180	       (While  this  same method will work under  any  version  of
+   181	     PC-DOS,  Version 2.0 and later, the addresses I'll  be  using
+   182	     are from PC-DOS 3.1. Other versions of PC-DOS(or MS-DOS) will
+   183	     have  different addresses;  you should be absolutely  certain
+   184	     that you're using the correct addresses.)
+   185	
+   186	       Load COMMAND.COM into DEBUG:
+   187	
+   188	                    DEBUG COMMAND.COM
+   189	
+   190	     and do an R (Registers) command.  The size of COMMAND.COM  is
+   191	     in  register CX.   For DOS 3.1's COMMAND.COM,  this value  is
+   192	     5AAA.
+   193	
+   194	       Now do Search command to look for the CD 10 bytes:
+   195	
+   196	                    S 100 L 5AAA CD 10
+   197	
+   198	     You'll get a list of six addresses, all clustered close to-
+   199	
+   200	                                   4
+   201	     gether.  The first one is 261D. You can now pick an address a
+   202	     little before that (to see what the first call is doing)  and
+   203	     start disassembling:
+   204	
+   205	                    U 261B
+   206	
+   207	      The  first INT 10 has AH set to 0F which is a Current  Video
+   208	     State  call.   The code checks if the returned  value  of  AL
+   209	     (Which  is  the  video mode) is less than 3 or  equal  to  7. 
+   210	     These are the text modes.   If so,  it branches to 262C.   If
+   211	     not, it just resets the video mode with another INT 10 at ad-
+   212	     dress 2629.
+   213	
+   214	       At 262C,  the code first sets the border black (the INT  10
+   215	     at  2630),  then does another Current Video  State  call  (at
+   216	     2634) to get the screen width in register AH.  It uses infor-
+   217	     mation from this call to set DX equal to the bottom right row
+   218	     and column.   It then clears the screen by scrolling the  en-
+   219	     tire screen up with another INT 10 (at 2645),  and then  sets
+   220	     the cursor to the zeroth row and zeroth column with the final
+   221	     INT 10 (at 264D).
+   222	
+   223	       When it scrolls the whole screen, the zero value in AL  ac-
+   224	     tually  means blank the screen,  the value of BH is  the  at-
+   225	     tribute  to be used on the blanked area.   In  an  unmodified
+   226	     COMMAND.COM,  BH is set to 7 (Which is white on black) by the
+   227	     following statement at address 2640:
+   228	
+   229	                    MOV  BX,0700
+   230	
+   231	       If  you  prefer a yellow-on-blue attribute  (1E),  you  can
+   232	     change this line by going into Assemble mode by entering:
+   233	
+   234	                    A
+   235	
+   236	     then entering
+   237	
+   238	                    MOV  BX,1E00
+   239	
+   240	     and exiting Assemble mode by entering a blank line.
+   241	
+   242	       Now you can save the modified file:
+   243	
+   244	                    W
+   245	
+   246	     and quit DEBUG:
+   247	
+   248	                    Q
+   249	
+   250	       When  you load the new version of COMMAND.COM (and you  can
+   251	     do so without rebooting by just entering:
+   252	
+   253	                    COMMAND
+   254	
+   255	
+   256	                                   5
+   257	     on  the DOS command level),  a CLS will turn the screen  blue
+   258	     and display characters as yellow.
+   259	
+   260	       If it doesn't or if anything you type shows up as white  on
+   261	     black,  that probably means you have ANSI.SYS loaded.  If you
+   262	     use ANSI.SYS,  you don't have to make this patch but can  in-
+   263	     stead use the prompt command for coloring the screen.
+   264	
+   265	     END.
+   266	
+   267	
+   268	
+   269	
+   270	
+   271	
+   272	
+   273	
+   274	
+   275	
+   276	
+   277	
+   278	
+   279	
+   280	
+   281	
+   282	
+   283	
+   284	
+   285	
+   286	
+   287	
+   288	
+   289	
+   290	
+   291	
+   292	
+   293	
+   294	
+   295	
+   296	
+   297	
+   298	
+   299	
+   300	
+   301	
+   302	
+   303	
+   304	
+   305	
+   306	
+   307	
+   308	
+   309	
+   310	
+   311	
+   312	                                   6
+   313	     -------------------------------------------------------------
+   314	     That was just one section of a very large article that helped
+   315	     me  to get started.   Next we'll look at two other  articles,
+   316	     both written by Buckaroo Banzi.   These two articles  CRACK-1
+   317	     and  CRACK-2 give you an introduction to the  different  copy
+   318	     protection schemes used on IBM PC's, and how to find and  by-
+   319	     pass them.
+   320	     -------------------------------------------------------------
+   321	
+   322	
+   323	
+   324	     By:            Buckaroo Banzai
+   325	     Title:         Cracking On the IBM PC Part I
+   326	
+   327	
+   328	     Introduction
+   329	     ------------
+   330	       For  years,  I have seen cracking tutorials for  the  APPLE
+   331	     computers,  but never have I seen one for the PC.  I have de-
+   332	     cided to try to write this series to help that pirate move up
+   333	     a level to a crackest.
+   334	
+   335	       In this part, I will cover what happens with INT 13 and how
+   336	     most copy protection schemes will use it.  I strongly suggest
+   337	     a  knowledge of Assembler (M/L) and how to use  DEBUG.  These
+   338	     will be an important figure in cracking anything.
+   339	
+   340	
+   341	     INT-13 - An overview
+   342	     --------------------
+   343	
+   344	       Many  copy  protection  schemes  use  the  disk   interrupt
+   345	     (INT-13).  INT-13 is often use to either try to read in a il-
+   346	     legally   formatted   track/sector  or  to   write/format   a
+   347	     track/sector that has been damaged in some way.
+   348	
+   349	       INT-13 is called like any normal interrupt with the  assem-
+   350	     bler  command INT 13 (CD 13).  [AH] is used to  select  which
+   351	     command to be used, with most of the other registers used for
+   352	     data.
+   353	
+   354	     INT-13 Cracking College
+   355	     -----------------------
+   356	       Although,  INT-13 is used in almost all protection schemes,
+   357	     the easiest to crack is the DOS file.  Now the protected pro-
+   358	     gram  might use INT-13 to load some other data from a  normal
+   359	     track/sector on a disk, so it is important to determine which
+   360	     tracks/sectors  are  important to the protection  scheme.   I
+   361	     have  found  the best way to do this is to  use  LOCKSMITH/pc
+   362	     (what, you don't have LS. Contact your local pirate for it.)
+   363	
+   364	       Use LS to analyze the diskette. Write down any track/sector
+   365	     that seems abnormal.  These track are must likely are part of
+   366	     the protection routine.   Now, we must enter debug. Load in
+   367	
+   368	                                   7
+   369	     the  file  execute a search for CD 13.   Record  any  address
+   370	     show.  
+   371	
+   372	       If no address are picked up,  this mean 1 or 2 things,  the
+   373	     program is not copy protected (right...) or that the check is
+   374	     in an other part of the program not yet loaded.   The  latter
+   375	     being  a real hassle to find,  so I'll cover it in  part  II. 
+   376	     There is another choice.   The CD 13 might be hidden in  self
+   377	     changing  code.   Here is what a sector of hidden code  might
+   378	     look like
+   379	
+   380	     -U CS:0000
+   381	     1B00:0000 31DB     XOR    BX,BX
+   382	     1B00:0002 8EDB     MOV    DS,BX
+   383	     1B00:0004 BB0D00   MOV    BX,000D
+   384	     1B00:0007 8A07     MOV    AL,[BX]
+   385	     1B00:0009 3412     XOR    AL,12
+   386	     1B00:000B 8807     MOV    [BX],AL
+   387	     1B00:000D DF13            FIST   WORD...
+   388	
+   389	       In  this  section of code,  [AL] is set to DF  at  location
+   390	     1B00:0007.   When you XOR DF and 12,  you would get a CD(hex)
+   391	     for  the  INT opcode which is placed right next to a  13  ie,
+   392	     giving you CD13 or INT-13.   This type of code can't and will
+   393	     not be found using debug's [S]earch command.
+   394	
+   395	
+   396	
+   397	     Finding Hidden INT-13s
+   398	     ----------------------
+   399	
+   400	       The  way I find best to find hidden INT-13s,  is to  use  a
+   401	     program called PC-WATCH (TRAP13 works well also).   This pro-
+   402	     gram  traps  the interrupts and will print  where  they  were
+   403	     called  from.   Once running this,  you can just  disassemble
+   404	     around  the address until you find code that look like it  is
+   405	     setting up the disk interrupt.
+   406	
+   407	       An  other way to decode the INT-13 is to use  debug's  [G]o
+   408	     command.   Just  set  a breakpoint at  the  address  give  by
+   409	     PC-WATCH  (both  programs give the return address).   Ie,  -G
+   410	     CS:000F (see code above).   When debug stops,  you will  have
+   411	     encoded  not only the INT-13 but anything else leading up  to
+   412	     it.
+   413	
+   414	
+   415	     What to do once you find INT-13
+   416	     -------------------------------
+   417	
+   418	       Once you find the INT-13,  the hard part for the most  part
+   419	     is over.   All that is left to do is to fool the computer  in
+   420	     to thinking the protection has been found.   To find out what
+   421	     the computer is looking for, examine the code right after the
+   422	     INT-13.  Look for any branches having to do with the
+   423	
+   424	                                   8
+   425	       CARRYFLAG or any CMP to the AH register.  If a JNE or JC
+   426	      (etc) occurs, then [U]nassembe the address listed with the
+   427	     jump.  If it is a CMP then just read on.
+   428	
+   429	       Here you must decide if the program was looking for a  pro-
+   430	     tected  track or just a normal track.   If it has a CMP  AH,0
+   431	     and it has read in a protected track,  it can be assumed that
+   432	     it  was looking to see if the program had  successfully  com-
+   433	     plete  the  READ/FORMAT of that track and that the  disk  had
+   434	     been  copied thus JMPing back to DOS (usually).   If this  is
+   435	     the case,  Just NOP the bytes for the CMP and the correspond-
+   436	     ing JMP.
+   437	
+   438	       If  the program just checked for the carry flag to be  set,
+   439	     and it isn't,  then the program usually assumes that the disk
+   440	     has been copied. Examine the following code
+   441	
+   442	           INT 13      <-- Read in the Sector
+   443	           JC 1B00     <-- Protection found
+   444	           INT 19      <-- Reboot
+   445	     1B00  (rest of program)
+   446	
+   447	       The program carries out the INT and find an error (the  il-
+   448	     legally formatted sector) so the carry flag is set.  The com-
+   449	     puter,  at the next instruction,  see that the carry flag  is
+   450	     set  and know that the protection has not been  breached.  In
+   451	     this case, to fool the computer, just change the "JC 1B00" to
+   452	     a "JMP 1B00" thus defeating the protection scheme.
+   453	
+   454	     NOTE: the PROTECTION ROUTINE might be found in more than just
+   455	           1 part of the program
+   456	
+   457	
+   458	     Handling EXE files
+   459	     ------------------
+   460	
+   461	       As we all know,  Debug can read .EXE files but cannot write
+   462	     them.   To get around this,  load and go about  cracking  the
+   463	     program as usual.   When the protection scheme has been found
+   464	     and tested, record (use the debug [D]ump command) to save + &
+   465	     - 10 bytes of the code around the INT 13.    Exit back to dos
+   466	     and  rename the file to a .ZAP (any extension but  .EXE  will
+   467	     do) and reloading with debug.  Search the program for the 20+
+   468	     bytes  surrounding  the code and record  the  address  found. 
+   469	     Then  just load this section and edit it like  normal.   Save
+   470	     the  file and exit back to dos.   Rename it back to the  .EXE
+   471	     file and it should be cracked.  
+   472	
+   473	     ***NOTE:  Sometimes  you have to play around with  it  for  a
+   474	               while to make it work.
+   475	
+   476	
+   477	
+   478	
+   479	
+   480	                                   9
+   481	     DISK I/O (INT-13)
+   482	     -----------------
+   483	       This interrupt uses the AH resister to select the  function
+   484	     to be used.  Here is a chart describing the interrupt.
+   485	
+   486	     AH=0    Reset Disk
+   487	     AH=1    Read the Status of the Disk
+   488	             system in to AL
+   489	
+   490	         AL          Error
+   491	       ----------------------------
+   492	         00   - Successful
+   493	         01   - Bad command given to INT
+   494	        *02   - Address mark not found
+   495	         03   - write attempted on write protected disk
+   496	        *04   - request sector not found
+   497	         08   - DMA overrun
+   498	         09   - attempt to cross DMA boundary
+   499	        *10   - bad CRC on disk read
+   500	         20   - controller has failed
+   501	         40   - seek operation failed
+   502	         80   - attachment failed
+   503	     (* denotes most used in copy protection)
+   504	     AH=2    Read Sectors
+   505	
+   506	       input
+   507	          DL = Drive number (0-3)
+   508	          DH = Head number (0or1)
+   509	          CH = Track number
+   510	          CL = Sector number
+   511	          AL = # of sectors to read
+   512	       ES:BX = load address
+   513	       output
+   514	           AH =error number (see above)
+   515	               [Carry Flag Set]
+   516	           AL = # of sectors read
+   517	
+   518	     AH=3 Write (params. as above)
+   519	     AH=4 Verify (params. as above -ES:BX)
+   520	     AH=5 Format (params. as above -CL,AL
+   521	                  ES:BX points to format
+   522	                  Table)
+   523	
+   524	     ------------------------------------------------------------
+   525	       For more information on INT-13 refer to appendix A.
+   526	     ------------------------------------------------------------
+   527	
+   528	     END.
+   529	
+   530	
+   531	
+   532	
+   533	
+   534	
+   535	
+   536	                                  10
+   537	     -------------------------------------------------------------
+   538	     In part II,  Buck cover's Calls to INT-13 and INT-13 that are
+   539	     located  in  different overlays of the program.   This  is  a
+   540	     method that is used often.
+   541	     -------------------------------------------------------------
+   542	
+   543	
+   544	     Cracking Tutorial II.
+   545	
+   546	     By:            Buckaroo Banzai
+   547	     Title:         Cracking On the IBM PC Part II
+   548	
+   549	
+   550	     Introduction
+   551	     ------------
+   552	
+   553	       OK guys,  you now passed out of Copy Class 101 (dos  files)
+   554	     and have this great new game with overlays.   How do I  crack
+   555	     this one.  You scanned the entire .EXE file for the CD 13 and
+   556	     it's nowhere.  Where can it be you ask yourself.
+   557	
+   558	       In  part II,  I'll cover cracking Overlays and the  use  of
+   559	     locksmith in cracking.   If you haven't read part I,  then  I
+   560	     suggest you do so.  The 2 files go together.
+   561	
+   562	
+   563	     Looking for Overlays
+   564	     --------------------
+   565	       So, you cant find CD 13 in the .EXE file, well, it can mean
+   566	     4 things. 
+   567	
+   568	          1:  The .EXE (though it is mostly .COM) file is  just  a
+   569	              loader for the main file. 
+   570	
+   571	          2:  The .EXE file loads in an overlay.  
+   572	
+   573	          3:  The CD 13 is encrypted &/or hidden in the .EXE file. 
+   574	
+   575	          4:  Your looking at the WRONG file.
+   576	
+   577	
+   578	       I  won't  discuss case 1 (or at least no here)  because  so
+   579	     many UNP files are devoted to PROLOCK and SOFTGUARD,  if  you
+   580	     can't figure it out with them, your stupid.
+   581	
+   582	       If you have case 3, use the technique in part I and restart
+   583	     from the beginning. And if you have case 4, shoot your self.
+   584	
+   585	       You  know  the program uses overlays but don't see  and  on
+   586	     disk?   Try looking at the disk with good old Norton's.   Any
+   587	     hidden files are probably the overlays.   These are the  ones
+   588	     we  are after.   If you still can't find them,  use  PC-WATCH
+   589	     (this program is a must!!! For all crackists.   Traps ALL in-
+   590	     terrupts).
+   591	
+   592	                                  11
+   593	
+   594	     Using PC-Watch to Find Overlays
+   595	     -------------------------------
+   596	       Start up PC-Watch and EXCLUDE everything in the left  Col.. 
+   597	     Search  the  right Col.  until you find DOS21 -  OpnFile  and
+   598	     select it.  
+   599	
+   600	          Now run the program to be cracked.  
+   601	          Play the game until the protection is checked.  
+   602	          Examine  you PCWatch output to see what file was  loaded
+   603	           right before it.  
+   604	          This probably is the one holding the check.  
+   605	          If not, go through all the files.
+   606	
+   607	
+   608	     You Have Found the Overlays
+   609	     ---------------------------
+   610	       Great,  now just crack the overlay as if it was a DOS file. 
+   611	     You don't need to worry about .EXE file,  debug can write  an
+   612	     overlay  file.   Part I explains the basics of  cracking.   I
+   613	     suggest that you keep a backup copy of the overlay so if  you
+   614	     mess up,  and you will, you can recover quickly. Ah,  and you
+   615	     thought cracking with overlays was going to be hard.
+   616	
+   617	
+   618	
+   619	     Locksmith and Cracking
+   620	     ----------------------
+   621	
+   622	      The  copy/disk utility program Locksmith by AlphaLogic is  a
+   623	     great tool in cracking.   It's analyzing ability is great for
+   624	     determining what and where the protection is.
+   625	
+   626	      I find it useful,  before I even start cracking,  to analyze
+   627	     the  protected  disk to find and id  it's  protection.   This
+   628	     helps in 2 ways.   First,  it helps you to know what to do in
+   629	     order to fake out the protection.   Second,  it helps you  to
+   630	     find what the program is looking for.
+   631	
+   632	      I  suggest that you get locksmith if you don't already  have
+   633	     it.   Check your local pirate board for the program.   I also
+   634	     suggest  getting PC-Watch and Norton Utilities 3.1.(Now  4.1)
+   635	     All of these program have many uses in the cracking world.
+   636	
+   637	     END.
+   638	
+   639	
+   640	
+   641	
+   642	
+   643	
+   644	
+   645	
+   646	
+   647	
+   648	                                  12
+   649	     Chapter II                                     Example Cracks
+   650	
+   651	
+   652	
+   653	     -------------------------------------------------------------
+   654	     OK,  now let's put some of this information into practice  by
+   655	     examining a few cracks of some common programs.   First we'll
+   656	     look at a Crack for Mean-18 Golf by Accolade.   Accolade  has
+   657	     been one of those companies that has a fervent belief in Copy
+   658	     Protection.
+   659	     -------------------------------------------------------------
+   660	
+   661	
+   662	
+   663	
+   664	     Title:         MEAN-18 UnProtect For CGA/EGA Version
+   665	
+   666	
+   667	     This crack works by eliminating the code that tests for known
+   668	     bad  sectors  on the original diskette to see if  it  is  the
+   669	     genuine article or an illegal copy.   The code begins with an
+   670	     INT 13 (CD 13 HEX),  a DOS BIOS disk service routine followed
+   671	     a few bytes later by another INT 13 instruction.  The program
+   672	     then checks the returned value for the bit configuration that
+   673	     signifies the bad sectors and, if all is as expected, contin-
+   674	     ues on with program execution.
+   675	
+   676	     The code that needs to be patched is in the GOLF.EXE file and
+   677	     in the ARCH.EXE file.  It is identical in both files and lies
+   678	     near the end of each file.
+   679	
+   680	     In the following steps,  you'll locate the start of the  test
+   681	     code and patch it by replacing it with NOP instructions  (HEX
+   682	     90).   The  method described uses the DOS DEBUG  utility  but
+   683	     Norton's Utility (NU) works too.
+   684	
+   685	     Copy  all  of the files from the MEAN-18 disk  onto  a  fresh
+   686	     floppy  using  the DOS COPY command and place  your  original
+   687	     diskette out of harm's way.
+   688	
+   689	     Assuming DEBUG is in the A:  drive and the floppy  containing
+   690	     the files to be unlocked is in the B: drive , proceed as fol-
+   691	     lows:
+   692	
+   693	     First  REName  the  GOLF.EXE  file  so  it  has  a  different
+   694	     EXTension other than .EXE.
+   695	
+   696	                    REN GOLF.EXE GOLF.DEB
+   697	
+   698	
+   699	     Next  load the file GOLF.DEB into DEBUG and displays the  "-"
+   700	     DEBUG prompt.  
+   701	
+   702	                    A:> DEBUG B:GOLF.EXE
+   703	
+   704	                                  13
+   705	     Search for the beginning of the code to be patched by typing:
+   706	
+   707	
+   708	                    - S CS:100 FFFF CD 13
+   709	
+   710	     Searches  the file for the two byte INT 13  instruction.   If
+   711	     all goes well, two addresses should appear on the screen.
+   712	
+   713	                    XXXX:019C
+   714	                    XXXX:01A8
+   715	
+   716	     XXXX indicates that the numbers preceeding the ":"  vary from
+   717	     system  to system but the numbers following the ":"  are  the
+   718	     same on all systems.  
+   719	
+   720	     The  next  step is to use the "U"  command  as  indicated  to
+   721	     un-assemble  a few bytes in order to verify your position  in
+   722	     the file)
+   723	
+   724	                    - U CS:019C
+   725	
+   726	     (Un-assembles  32 bytes of code.   Verify the  following  se-
+   727	     quence of instructions:
+   728	
+   729	                    INT       13
+   730	                    JB        01E9
+   731	                    MOV       AL,[BX+01FF]
+   732	                    PUSH      AX
+   733	                    MOV       AX,0201
+   734	                    INT       13
+   735	                    POP       AX
+   736	                    JB        01E9
+   737	                    CMP       AL,F7
+   738	                    JNZ       01B5
+   739	
+   740	     These are the instructions you'll be patching out in the fol-
+   741	     lowing step)
+   742	
+   743	                    - A CS:019C
+   744	
+   745	     This command assembles the new instructions you enter at  the
+   746	     keyboard into the addresses shown.  Beginning at CS:019C, and
+   747	     for the next 21 bytes, ending with and including CS:01B0, en-
+   748	     ter  the no op command "NOP" (90h) followed by a <return>  or
+   749	     <enter>.   Just hit <enter> at address XXXX:01B1 to  end  the
+   750	     assemble command.)
+   751	
+   752	                    XXXX:019C  NOP <enter>
+   753	                    XXXX:019D  NOP <enter>
+   754	                               .
+   755	                               .
+   756	                               .
+   757	                    XXXX:01AE  NOP <enter>
+   758	                    XXXX:01AF  NOP <enter>
+   759	
+   760	                                  14
+   761	                    XXXX:01B0  NOP <enter>
+   762	                    XXXX:01B1 <enter>
+   763	
+   764	     This just wipes out the section of code containing the INT 13
+   765	     check.
+   766	
+   767	     Now  do  a HEX dump and verify that bytes 019C  through  01B0
+   768	     have been set to 90 HEX.
+   769	
+   770	                    - D CS:019C
+   771	
+   772	     If they have, write the patched file to the disk as follows)
+   773	
+   774	                    - W
+   775	
+   776	     This    writes    the    patched    file    back    to    the                        
+   777	     disk where it can be run by typing    GOLF just as before but
+   778	     now,  it  can be run from any drive,  including  the     hard
+   779	     drive)
+   780	
+   781	     Now just [Q]uit or exit back to DOS.  This command can be ex-
+   782	     ecuted at any "-" DEBUG prompt if you get lost.  No modifica-
+   783	     tion will be made to the file on the disk until you issue the
+   784	     "W" command.
+   785	
+   786	                    - Q
+   787	
+   788	     The process is the same for the ARCH.EXE file but because  it
+   789	     is a different length, the segment address, (XXXX part of the
+   790	     address),  will be different.   You should find the first INT
+   791	     13  instruction  at address XXXX:019C and the second  one  at
+   792	     XXXX:01A8 as before. 
+   793	
+   794	     You  will again be patching 21 bytes and you will start  with
+   795	     019C and end with 01B0 as before.   After doing the HEX  dump
+   796	     starting  at address 019C,  you again write the file back  to
+   797	     the disk with a "W" command then "Q" uit.
+   798	
+   799	     Norton's utilities can also be used to make this patch.   Be-
+   800	     gin  by searcing the GOLF.EXE or ARCH.EXE files for  the  two
+   801	     byte  combination  CD  13 (remember to  enter  these  as  HEX
+   802	     bytes).  Once located, change the 21 bytes, starting with the
+   803	     first "CD"  byte, to 90 (a NOP instruction).  As a check that
+   804	     you  are in the right place, the byte sequence in both  files
+   805	     is  CD 13 72 49 8A 87 FF 01 50 B8 01 02 CD 13 58 72 3C 3C  F7
+   806	     75 04.   After modifying the bytes,  write the modified  file
+   807	     back to the disk.  It can then be run from any drive.
+   808	
+   809	     END.
+   810	
+   811	
+   812	
+   813	
+   814	
+   815	
+   816	                                  15
+   817	     ------------------------------------------------------------
+   818	     That was the first the tutorial cracks,  here's another crack
+   819	     based on the same ideas but using Norton's Utilities instead. 
+   820	     The  following  is an unprotect method  for  Eypx  Submarine. 
+   821	     Eypx is another one of those companies bent on protecting the
+   822	     world.
+   823	     ------------------------------------------------------------
+   824	
+   825	
+   826	     By:            Assembler Magic
+   827	     Title:         EPYX Submarine Unprotect
+   828	
+   829	
+   830	       You  will  only need to make one modification to  the  main         
+   831	     executable program of Submarine, SUB.EXE.  I will assume that         
+   832	     your  computer  has a hard disk and that you have a  path  to
+   833	     DOS. It's time to fire up DEBUG as follows:
+   834	
+   835	                    DEBUG SUB.EXE<cr>
+   836	
+   837	       The computer should respond with a "-" prompt.  Now look at
+   838	     the  registers,  just to make sure everything came  up  okay. 
+   839	     Type the letter "R"  immediately after the prompt.   The com-
+   840	     puter should respond with a few lines of info as follows:
+   841	                
+   842	     AX=0000  BX=0001  CX=6103  DX=0000  SP=0080  BP=0000  SI=0000
+   843	     DI=0000  DS=12CE ES=12CE SS=37B2 CS=27FC IP=0010 NV UP EI  PL
+   844	     NZ NA PO NC
+   845	          27FC:0010 8CC0       MOV     AX,ES
+   846	     -
+   847	
+   848	       Note  the value of CS is "27FC".   That is the  hexadecimal
+   849	     segment address for the beginning of the program code in your
+   850	     computer's memory.   It is highly probable that the value you
+   851	     see for CS will differ from mine.   Whatever it is,  write it
+   852	     down.  Also, the values you see for DS, ES and SS will almost
+   853	     certainly differ from mine and should not cause you  concern. 
+   854	     The other registers should show the same values mine do,  and
+   855	     the flags should start with the same values. 
+   856	
+   857	       Next,  we will do a search for Interrupt 13's.   These  are
+   858	     BIOS  (not DOS) Interrupts built into the program  which  are
+   859	     used  to ensure that the original disk is being used  to  run
+   860	     the program. The whole key to this unprotect scheme is to by-
+   861	     pass these Interrupts in the program code.   The tricky  part
+   862	     of this unprotect is to find them!   They are not in the seg-
+   863	     ment  of  program code starting at the value of CS  equal  to
+   864	     "27FC".   They are closer to the beginning of the program  in
+   865	     memory.   Easy enough!   Reset the value of CS to  equal  the
+   866	     value  of DS as follows; type immediately after  Debug's  "-"
+   867	     prompt:
+   868	
+   869	                    RCS<cr>
+   870	
+   871	
+   872	                                  16
+   873	     Debug will prompt you for the new value of CS with:
+   874	
+   875	                    CS:27FC:
+   876	
+   877	       You  respond  by typing the value of DS you  saw  when  you
+   878	     dumped the registers the first time.   For example,  I  typed
+   879	     "12CE<cr>".   The  value you type will be  different.   Debug
+   880	     will  again respond with the "-"  prompt which means  we  are
+   881	     ready to do our search.   Type in the following after the "-"
+   882	     prompt:
+   883	
+   884	                    S CS:0 FFFF CD 13<cr>
+   885	
+   886	       The computer should respond with three lines of information
+   887	     which are the addresses of the three Interrupt 13 calls built
+   888	     into the program.   The first four digits are the segment ad-
+   889	     dress  and will equal to the value of CS you have  just  set. 
+   890	     The second four digits following the colon are the offset ad-
+   891	     dresses which are of primary interest to us.   On my  machine
+   892	     they came back as follows:
+   893	
+   894	                    12CE:4307
+   895	                    12CE:431F
+   896	                    12CE:4335
+   897	
+   898	       The segment addresses will be identical and the three  off-
+   899	     set  addresses should all be relatively close together.   Now
+   900	     look at the first offset address.  (As you can see,  mine was
+   901	     "4307".) Write it down.  Now we do a bit of Unassembly.
+   902	
+   903	       Type "U4307<cr>"  which is the letter "U", followed immedi-
+   904	     ately  (with no blank spaces) by whatever your  first  offset
+   905	     address turned out to be, followed by a carriage return.   If
+   906	     you are not familiar with unassembled machine code,  it  will
+   907	     look like lines of gibberish as follows:
+   908	
+   909	                    12CE:4307 CD13        INT      13
+   910	                    12CE:4309 4F          DEC      DI
+   911	                    12CE:430A 744C        JZ       4358
+   912	                              .
+   913	                              .
+   914	                    12CE:431F CD13        INT      13
+   915	                    12CE:4321 4F          DEC      DI
+   916	                              .
+   917	                              .
+   918	                    12CE:4324 BF0400      MOV      DI,0004
+   919	                    12CE:4326 B80102      MOV      AX,0201
+   920	                
+   921	       In  my computer,  Unassemble will automatically  output  16
+   922	     lines of code to the screen.  Yours may differ.  Note, in the
+   923	     abbreviated list I have shown above, the addresses at the be-
+   924	     ginning  of  the two lines which contain the  Interrupt  13's
+   925	     (INT  13) correspond to the first two addresses we  found  in
+   926	     our search.  Now we continue the unassemble, and here comes
+   927	
+   928	                                  17
+   929	     another  tricky part.   Just type in "U<cr>"  after  the  "-"
+   930	     prompt.  
+   931	
+   932	       You'll get sixteen more lines of code with the third Inter-
+   933	     rupt 13 on a line which begins with the address (CS):4335  if
+   934	     you  have  the same version of Submarine as I do.   It's  not
+   935	     terribly  important  to  this  exercise,   but  it  will   at         
+   936	     least show you that things are proceeding okay.   Now type in         
+   937	     "U<cr>"  again  after the prompt.  You are  now  looking  for
+   938	     three key lines of code.   On my program they appear as  fol-
+   939	     lows:
+   940	
+   941	                    12CE:4335 07          POP      ES
+   942	                    12CE:4356 5D          POP      BP
+   943	                    12CE:4357 CB          RETF
+   944	
+   945	     The true key is the instruction "POP ES".   This  instruction
+   946	     begins  the normal return sequence after the program has  ex-
+   947	     ecuted its Interrupt 13 instructions and accompanying checks. 
+   948	     If  Debug on your machine prints fewer than 16 lines of  code
+   949	     at a shot, you may have to type in "U" more than twice at the
+   950	     "-" to find these instructions.  (If you haven't found any of
+   951	     this stuff, either get help on the use of Debug or go back to
+   952	     using your diskette version!)  Write down the offset  address
+   953	     of  the "POP ES"  instruction; the four digits following  the
+   954	     colon,  which in my example is "4354".   You're well on  your
+   955	     way now, so please persevere.
+   956	
+   957	       The  next step is to modify the program to JUMP around  the
+   958	     code which executes the Interrupt 13's and go immediately  to
+   959	     the  instruction  which  begins the  normal  return  sequence
+   960	     (again,  it's the "POP ES".  Type in the  following  instruc-
+   961	     tions carefully:
+   962	
+   963	                    A4307<cr>
+   964	
+   965	       This first bit tells Debug that new Assembler code will  be
+   966	     inserted at the address of the first Interrupt 13.   If  your
+   967	     first  Interrupt 13 is at an address other that  "4307",  use
+   968	     the correct address,  not mine.  The computer will prompt you              
+   969	     with the address:
+   970	
+   971	                    12CE:4307
+   972	
+   973	     After which you will immediately type:
+   974	
+   975	                    JMP 4354<cr>
+   976	
+   977	     This instruction jumps the program immediately to the  normal
+   978	     return code instructions.  Again, at the risk of being redun-
+   979	     dant, if your "POP ES" instruction is at a different address,
+   980	     use that address, not "4354"!
+   981	
+   982	     The computer will prompt you with the address of the next in-
+   983	
+   984	                                  18
+   985	     struction  if  all went well.   MAKE SURE you  just  hit  the
+   986	     carriage  return at this point.  Debug will then  return  the
+   987	     familiar "-" prompt.
+   988	
+   989	     Now  it's  time  to examine your  handiwork.   Let's  do  the
+   990	     unassemble again starting at the address of what had been the
+   991	     first Interrupt 13 instruction, but which is now the Jump in-
+   992	     struction.  Type in "U4307<cr>" or "U" followed by the appro-
+   993	     priate address and a carriage return.   The first line begin-
+   994	     ning with the address should appear as follows:
+   995	
+   996	                    12CE:4307 EB4B        JMP      4354
+   997	
+   998	     The key here is the four bytes immediately following the  ad-
+   999	     dress.   In my example they are "EB4B".   Yours may  not  be. 
+  1000	     But,  they are VERY IMPORTANT because they represent the  ac-
+  1001	     tual machine code which is the Jump instruction.  WRITE THESE
+  1002	     FOUR BYTES DOWN AND MAKE SURE THEY ARE CORRECT.
+  1003	
+  1004	       Now  if  you want to have some fun before we go  on,  reset
+  1005	     register  CS to its original value by first typing  "RCS<cr>"
+  1006	     at  the "-"  prompt.   Then type in the original value of  CS
+  1007	     that I asked you to write down.   Using my example,  I  typed
+  1008	     "27FC<cr>".  Next, you will type "G<cr>" after the "-" prompt
+  1009	     which  means GO!   If all went well,  SUB should run at  this
+  1010	     point.   At  least it will if you put all  of  the  Submarine
+  1011	     files  onto the diskette or into the hard  disk  subdirectory
+  1012	     where youre working.   If it didn't run, you may have made an
+  1013	     error. Check through what you have done.  
+  1014	
+  1015	     Don't give up at this point if it does not run.  Your version
+  1016	     of Debug may simply have not tolerated our shenanigans.  When
+  1017	     you are done playing, quit Submarine ("Alt-Q<cr>") and type a
+  1018	     "Q<cr>" after the Debug prompt "-" appears.
+  1019	
+  1020	     Now  comes  the tough part.   I can't walk you  through  this
+  1021	     phase  in complete detail,  because you may be using  one  of
+  1022	     several programs available to modify the contents of SUB.EXE. 
+  1023	     Debug is not the way to go,  because it can't write out  .EXE
+  1024	     files, only .COM files.
+  1025	
+  1026	     -------------------------------------------------------------
+  1027	     Note:  Another method of doing this is to REName the  SUB.EXE
+  1028	     file  so it has a different extension other than .EXE  before
+  1029	     you enter DEBUG.   That way after you've made the change  you
+  1030	     can then [W]rite then changes out to the file right in DEBUG. 
+  1031	     Then one drawback is that you can't run the program in  DEBUG
+  1032	     once you've changed the name.
+  1033	     -------------------------------------------------------------
+  1034	
+  1035	     You have to get into your sector modification package (NORTON
+  1036	     works good) and work on the SUB.EXE file on your new diskette
+  1037	     or your hard disk.  Remember, I warned you that doing this on
+  1038	     your hard disk is dangerous if you are not fully aware of
+  1039	
+  1040	                                  19
+  1041	     what you are doing.  So, IF YOU MESS UP, it's YOUR OWN FAULT!
+  1042	
+  1043	     You  are looking for the first occurrence of an Interrupt  13
+  1044	     (the "CD 13") using the search facility in your program.   If
+  1045	     you  don't have the ability to search for the two-byte  hexa-
+  1046	     decimal code "CD 13" directly, then you will have to manually
+  1047	     search.  
+  1048	
+  1049	     -------------------------------------------------------------
+  1050	     Note:  Norton 4.x now has a search utility.   When you get to
+  1051	     the  point of typing in the search text,  just press the  TAB
+  1052	     key, and you can type in the actual hexadecimal code "CD 13".
+  1053	     -------------------------------------------------------------
+  1054	
+  1055	     Start  at the beginning of SUB.EXE and proceed.   Again,  you
+  1056	     want to find the first of the three (first from the beginning
+  1057	     of the program).  
+  1058	
+  1059	     I  will give you a hint.   I found it in NORTON  at  location
+  1060	     4407  hexadecimal  which is location 17,415  decimal  in  the
+  1061	     SUB.EXE program file.   DOS standard sectors are 512  decimal
+  1062	     bytes.  Replace  the two bytes "CD 13"  with the "EB  4B"  or
+  1063	     whatever  your Jump instruction turned out to be.   Write  or
+  1064	     save the modified file.
+  1065	
+  1066	     That's ALL there is to modifying SUB.EXE.   You can go  ahead
+  1067	     and execute your program.   If you have followed my  instruc-
+  1068	     tions, it should run fine.  Get help if it doesn't.  Now, you
+  1069	     should be all set.  You can load onto your hard disk,  if you
+  1070	     haven't already.  You can run it from a RAM disk using a  BAT
+  1071	     file if you really want it to hum.   Or,  if you have the fa-
+  1072	     cilities,  you can copy it from 5-1/4" floppy to 3-1/2"  dis-
+  1073	     kette and run it on machines which accept that medium if  you
+  1074	     upgrade to a new computer.
+  1075	
+  1076	     END.
+  1077	
+  1078	
+  1079	
+  1080	
+  1081	
+  1082	
+  1083	
+  1084	
+  1085	
+  1086	
+  1087	
+  1088	
+  1089	
+  1090	
+  1091	
+  1092	
+  1093	
+  1094	
+  1095	
+  1096	                                  20
+  1097	     -------------------------------------------------------------
+  1098	     Now let's take a look at a newer crack on the program,  Space
+  1099	     Station Oblivion by Eypx.  At a first [S]earch with Debug and
+  1100	     Norton's  Utility no CD 13's could be found,  and yet it  was
+  1101	     using them... So a different approach had to be taken...
+  1102	     -------------------------------------------------------------
+  1103	
+  1104	
+  1105	     By:            PTL
+  1106	     Title:         Space Station Oblivion Crack
+  1107	
+  1108	
+  1109	     First of all,  you must determine which file the INT 13's are
+  1110	     in,  in this case it had to be the file OBLIVION.EXE since it
+  1111	     was the main program and probably contained the INT 13's.  So
+  1112	     then rename it to a different EXTension and load it into  De-
+  1113	     bug.
+  1114	
+  1115	     Then do a [S]earch for INT 13's.
+  1116	
+  1117	                    -S 100 FFFF CD 13
+  1118	
+  1119	     Which will promptly turned up nothing.  Hmmm...
+  1120	
+  1121	     Next you might decide that, maybe, the code was modifying it-
+  1122	     self.   So quit from Debug and load up PC-Watch,  include all
+  1123	     the  INT  13  Calls.   For those of  you  not  familiar  with
+  1124	     PC-Watch,  it is a memory resident program that can be set to
+  1125	     look  for  any type of BIOS call.   When that  call  is  made
+  1126	     PC-Watch prints to the screen the contents of all the  regis-
+  1127	     ters  and the current memory location that the call was  made
+  1128	     from.
+  1129	
+  1130	     After PC-Watch is initialized, then run the OBLIVION.EXE file
+  1131	     from the hard disk,  leaving the floppy drive door open,  and
+  1132	     sure  enough,  when the red light comes on in   the  diskette
+  1133	     drive,  PC-Watch  will report the address's of  some  INT  13
+  1134	     calls.  Which you should then write down.
+  1135	
+  1136	     From  there,  quit the game, reboot,  (To dump PC-Watch  from
+  1137	     memory) and load the OBLIVION.EXE into Debug and issue a [G]o
+  1138	     command with a breakpoint.  What address should you use for a
+  1139	     breakpoint?   You guessed it, the same address PC-Watch gives
+  1140	     you.
+  1141	
+  1142	     Well,  it locked up did'nt it?  Which is quite common in this
+  1143	     line of work so don't let that discourage you.   So next  re-
+  1144	     loaded  it into debug and this time [U]nassemble the  address
+  1145	     that you got from PC-Watch.   But instead of finding the  INT
+  1146	     13's you'll find harmless INT 21's.
+  1147	
+  1148	     Hmm...  could  it be that the program was converting  the  CD
+  1149	     21's to CD 13's during the run?   Well,  to test the idea as-
+  1150	     semble an INT 20 (Program Terminate) right after the first 
+  1151	
+  1152	                                  21
+  1153	     INT 21. Then I run the program, and yes immediately after the
+  1154	     red light comes on the drive, the program will terminate nor-
+  1155	     mally.
+  1156	
+  1157	     Then [U]nassemble that same area of memory,  and low and  be-
+  1158	     hold,  some  of the INT 21's have magically turned  into  INT
+  1159	     13's.  How clever...
+  1160	
+  1161	     So,  then it is just a matter of locating the address of  the
+  1162	     routine that it jumped (JMP) to if the correct disk was found
+  1163	     in  drive A:.   Once you have that address,  just go  to  the
+  1164	     start of all this nonsense and [A]ssemble a JMP XXXX command. 
+  1165	     Where  XXXX was the address to jump to if the  original  disk
+  1166	     was in drive A:.
+  1167	
+  1168	     Then  just [W]rite the file back out to the disk  and  [Q]uit
+  1169	     debug,   and  then  REName  the  file  back  to  OBLIVION.EXE
+  1170	     afterwhich it should work fine.
+  1171	
+  1172	
+  1173	     END.
+  1174	
+  1175	                                  22
+  1176	     Chapter III                      Removing Doc Check Questions
+  1177	
+  1178	
+  1179	     -------------------------------------------------------------
+  1180	     A  new fad has recently started up with software vendors,  it
+  1181	     involves  the use of "Passwords" which are either  stored  in
+  1182	     the  documentation or are actually the documentation  itself. 
+  1183	     Then  when you reach a certain part of the  program  (Usually
+  1184	     the beginning) the program will ask for the password and  you
+  1185	     have  to look it up in the Docs before being allowed to  con-
+  1186	     tinue.   If the wrong password is entered,  it  will  usually
+  1187	     drop you to DOS or take you to a Demo version of the program.
+  1188	
+  1189	     This  new form of copy protection is very annoying,  but  can
+  1190	     usually  be cracked without too much effort,   and the  files
+  1191	     and the disk are usually in the standard DOS format.   So now
+  1192	     we'll take a look at cracking the Doc check questions.
+  1193	
+  1194	     First  of  all  we'll crack the startup  questions  in   F-15
+  1195	     Strike Eagle by MicroProse.
+  1196	     -------------------------------------------------------------
+  1197	
+  1198	
+  1199	     By:            JP ASP
+  1200	     Title:         F-15 Unprotect
+  1201	
+  1202	
+  1203	
+  1204	     Make a copy of the original disk using the DOS DISKCOPY  pro-
+  1205	     gram.
+  1206	
+  1207	                    >DISKCOPY A: B:
+  1208	
+  1209	     Then  insert the copy disk in the A drive and invoke DOS  DE-
+  1210	     BUG.
+  1211	
+  1212	                    >DEBUG
+  1213	
+  1214	     Now we'll [F]ill an area of memory with nothing (00).
+  1215	
+  1216	                    -F CS:100 L FEFF 0
+  1217	
+  1218	     Next we will [L]oad into address CS:0100 the data that is  on
+  1219	     the A: disk (0) from sector 0 to sector 80.
+  1220	
+  1221	                    -l cs:100 0 0 80
+  1222	
+  1223	     Now  lets [S]earch the data we loaded for the area where  the
+  1224	     copy protection routine is.
+  1225	
+  1226	                    -s cs:100 l feff FA EB FD
+  1227	
+  1228	     Then for each of the occurences listed, use the address DEBUG
+  1229	     returned in the [E]nter command below.
+  1230	
+  1231	                                  23
+  1232	
+  1233	                    -e xxxx 90 90 90
+  1234	
+  1235	     -------------------------------------------------------------
+  1236	     Here's the part we are interested in,  it's where you  change
+  1237	     all  the autorization codes to a space.   Notice how you  can
+  1238	     use the [S]earch command to look for ASCII text.
+  1239	     -------------------------------------------------------------
+  1240	
+  1241	                    -s cs:100 l feff "CHIP"
+  1242	
+  1243	     Then for each occurance of "CHIP"  use the address DEBUG  re-
+  1244	     turned in the [F]ill command below.
+  1245	
+  1246	                    -F XXXX L F 20
+  1247	
+  1248	     Write out the modified data
+  1249	
+  1250	                    -W CS:100 1 0 80
+  1251	
+  1252	     Quit DEBUG
+  1253	
+  1254	                    -Q
+  1255	
+  1256	
+  1257	       You should now be able to DISKCOPY and boot from all copies
+  1258	     also  just press the space bar when it ask for ANY  authority
+  1259	     code and then press "ENTER". Now there is no need to remember
+  1260	     (or look up) any codes that are so finely tucked away in  the 
+  1261	     manual!
+  1262	
+  1263	     END.
+  1264	
+  1265	
+  1266	
+  1267	
+  1268	
+  1269	
+  1270	
+  1271	
+  1272	
+  1273	
+  1274	
+  1275	
+  1276	
+  1277	
+  1278	
+  1279	
+  1280	
+  1281	
+  1282	
+  1283	
+  1284	
+  1285	
+  1286	
+  1287	                                  24
+  1288	     -------------------------------------------------------------
+  1289	     Here is a similar method that was used break the passwords in
+  1290	     the  program BATTLEHAWKS 1945 by Lucasfilms.  However  Norton
+  1291	     Utilities  is  used to search for the  passwords  and  change
+  1292	     them.
+  1293	     -------------------------------------------------------------
+  1294	
+  1295	     By:            PTL
+  1296	     Title:         BATTLEHAWKS-1945 Doc Check Crack
+  1297	
+  1298	
+  1299	     In  keeping in line with their previous programs,  Lucasfilms
+  1300	     has  released yet another program which uses Doc  Checks  for
+  1301	     its means of copy protection, Battlehawks 1942.
+  1302	
+  1303	     When you run this program,  it first goes through a series of
+  1304	     graphic displays, then it goes through a series of questions,
+  1305	     asking what type of mission you want to fly,  such as  Train-
+  1306	     ing, Active Duty, or which side of the war you want to be on.
+  1307	
+  1308	     Then right before the simulation begins,  it shows you a pic-
+  1309	     ture of a Japanese Zero and ask you for a password which you
+  1310	
+  1311	     are  then  supposed to get by looking up the picture  of  the
+  1312	     Zero in the User Manual and typing the corresponding password
+  1313	     in.   After which it enters the simulation,  in the event you
+  1314	     enter  the wrong password,  it puts you into a training  mis-
+  1315	     sion.
+  1316	
+  1317	     Removing  the  Doc Check in a program like  this  is  usually
+  1318	     pretty  easy.   The ideal way to do it is to remove  the  Doc
+  1319	     Check routine itself,  but if you don't have all day to debug
+  1320	     and  trace  around the code this might not be the  best  way. 
+  1321	     For  instance if you only have your lunch hour to work on  it
+  1322	     (Like  I did),  then you need to use the standard  Q.D.C.R.S.
+  1323	     (Quick Doc Check Removal System).
+  1324	
+  1325	     How do you do a QDCRS?  Well first of all,  play around  with
+  1326	     the program,  find out what it will and will NOT accept as  a
+  1327	     password.   Most  programs will accept anything,  but  a  few
+  1328	     (Like Battlehawks) will only accept Alpha characters.
+  1329	
+  1330	     Once you've learned what it likes,  make an educated guess as
+  1331	     to what program the Doc Check routine is in.   Then load that
+  1332	     program into Norton's Utility (NU).
+  1333	
+  1334	     At this point,  take a look at the passwords,  and write down
+  1335	     the most unusual one that you can find (I'll explain  later). 
+  1336	     Now  type that password in as the search string,  and let  NU
+  1337	     search through the file until it finds the password.   Now  a
+  1338	     couple of things can happen.
+  1339	
+  1340	          1. It only finds one occurrence
+  1341	          2. It finds more than one occurrence
+  1342	          3. It doesn't find any occurrence
+  1343	
+  1344	     In  the event of case 2 then YOU have to determine where  the
+  1345	     passwords  are stored,  you can do this by opening your  eyes
+  1346	     and looking.
+  1347	
+  1348	     In the event of case 3,  go to the kitchen and start a pot of
+  1349	     coffee, then tell you wife to go to bed without you,  because
+  1350	     you have a "Special Project" that you have to finish tonight. 
+  1351	     And by the way, Good Luck.  You'll need it.
+  1352	
+  1353	     Hopefully case 1 will occur,  now you have to take a look  at
+  1354	     the data and ask yourself 2 questions:
+  1355	
+  1356	          1. Are all the passwords the same length?
+  1357	          2. Is there a set number of spaces  between  each  pass-
+  1358	             word?
+  1359	          3. Does the next password always start a certain  number
+  1360	             of characters from the first character of the  previ-
+  1361	             ous password?
+  1362	
+  1363	     If you can answer yes to any of the above questions,  you  in
+  1364	     luck.  All you have to do is change the passwords to spaces
+  1365	
+  1366	     (If the program allows that,  Battlehawks doesn't) or  change
+  1367	     them to you favorite character. The letter X works good, it's
+  1368	     easy to type and easy to remember.
+  1369	
+  1370	     If you can't answer yes to any of the questions then you  ei-
+  1371	     ther need to bypass the Doc Check routine itself or you  need
+  1372	     to be adventurous and experiment. Battlehawks will not follow
+  1373	     any  of the above patterns,  and your quickly running out  of
+  1374	     time, so you'll have to try something, fast...
+  1375	
+  1376	     So  just  wiped out all of the data area with  X's,  all  the
+  1377	     passwords and associated "garbage" between them.   Then saved
+  1378	     the changes and drop out of NU and into BH.  Then when it ask
+  1379	     for the password,  just filed the area with X's.  Next  thing
+  1380	     you  know,  you'll be escorting a bombing run on  a  Japanese
+  1381	     carrier.
+  1382	
+  1383	     So,  this one turned out to be fairly simple.   Where you may
+  1384	     run into trouble is on Doc Checks that use a graphic  system,
+  1385	     such as Gunship by MicroProse.  When it comes to this type of
+  1386	     Doc Check, you almost have to bypass the routine itself.  And
+  1387	     again, a good way to do this is with setting break points and
+  1388	     using the trace option in Debug.
+  1389	
+  1390	     END.
+  1391	
+  1392	
+  1393	
+  1394	
+  1395	
+  1396	
+  1397	
+  1398	                                  25
+  1399	
+  1400	     -------------------------------------------------------------
+  1401	     That  was the easy version Doc Check crack,  however there  a
+  1402	     "Better"  way to crack Doc Checks,  is to bypass the  routine
+  1403	     completely  so  the user can just press enter and  not  worry
+  1404	     about spaces.   Let's take a lot at this method by looking at
+  1405	     a crack for the program, Yeager's Advanced Flight Trainer, by
+  1406	     Electronic Arts.
+  1407	     -------------------------------------------------------------
+  1408	
+  1409	
+  1410	     By:            PTL
+  1411	     Title:         Yeager's Advanced Flight Trainer
+  1412	
+  1413	
+  1414	
+  1415	
+  1416	
+  1417	
+  1418	
+  1419	
+  1420	
+  1421	
+  1422	
+  1423	
+  1424	
+  1425	
+  1426	
+  1427	
+  1428	                                  26
+  1429	     Chapter 5                               Cracking Self Booters
+  1430	
+  1431	
+  1432	
+  1433	     -------------------------------------------------------------
+  1434	     Now we'll take a look at cracking self booters.  A few compa-
+  1435	     nies  have found this to be the best copy  protection  scheme
+  1436	     for them, one of which is DataEast, makers of Ikari Warriors,
+  1437	     Victory Road,  Lock-On, Karnov, etc...  This posses a special
+  1438	     problem  to the Amateur Cracker, since they seldom use  stan-
+  1439	     dard DOS formats.  So let's jump right in!
+  1440	     -------------------------------------------------------------
+  1441	
+  1442	
+  1443	     This  is the area where a "Higher than Normal"  knowledge  of
+  1444	     Assembly  Language and DOS Diskette structures,  so first  of
+  1445	     all, the Basic's.
+  1446	
+  1447	
+  1448	     The Disk's Physical Structure
+  1449	
+  1450	     Data is recorded on a disk in a series of concentric circles,
+  1451	     called Tracks.   Each track if further divided into segments,
+  1452	     called  Sectors.   The  standard  double-density  drives  can
+  1453	     record  40 tracks of data, while the new quad-density  drives
+  1454	     can record 80 tracks.
+  1455	
+  1456	     However, the location, size, and number of the sectors within
+  1457	     a  track are under software control.   This is why  the  PC's
+  1458	     diskettes are known as soft-sectored.  The characteristics of
+  1459	     a  diskette's sectors (Their size, and the number per  track)
+  1460	     are set when each track is formatted.  Disk Formatting can be
+  1461	     done either by the operating system or by the ROM-BIOS format
+  1462	     service.   A lot of self booters and almost all forms of copy
+  1463	     protection  create unusual formats via the ROM-BIOS  diskette
+  1464	     services.
+  1465	
+  1466	     The  5 1/4-inch diskettes supported by the standard  PC  BIOS
+  1467	     may  have  sectors that are 128,256,512,  or 1,024  bytes  in
+  1468	     size.   DOS, from versions 1.00 through 4.01 has consistently
+  1469	     used sectors of 512 bytes, and it is quite possible that this
+  1470	     will continue.  
+  1471	
+  1472	     Here is a table displaying 6 of the most common disk formats:
+  1473	     _____________________________________________________________
+  1474	
+  1475	     Type      Sides        Sectors       Tracks       Size(bytes)
+  1476	     _____________________________________________________________
+  1477	
+  1478	      S-8        1             8            40            160K
+  1479	      D-8        2             8            40            320K
+  1480	      S-9        1             9            40            180K
+  1481	      D-9        2             9            40            360K
+  1482	     QD-9        2             9            80            720K
+  1483	     QD-15       2            15            80          1,200K
+  1484	     _____________________________________________________________
+  1485	
+  1486	
+  1487	
+  1488	     S  - Single Density
+  1489	     D  - Double Density
+  1490	     QD - Quad Density
+  1491	
+  1492	     Of all these basic formats,  only two are in widespread  use:
+  1493	     S-8  and D-9.   The newer Quad Density formats are for the  3
+  1494	     1/2" and 5 1/4" high density diskettes.
+  1495	
+  1496	
+  1497	     The Disk's Logical Structure
+  1498	
+  1499	     So,  as we have already mentioned,  the 5  1/4-inch  diskette
+  1500	     formats have 40 tracks,  numbered from 0 (the outside  track)
+  1501	     through 39 (the inside track,  closest to the center).   On a
+  1502	     double  sided diskette,  the two sides are numbered 0  and  1
+  1503	     (the  two  recording heads of a double-sided disk  drive  are
+  1504	     also numbered 0 and 1).
+  1505	
+  1506	     The BIOS locates the sectors on a disk by a three-dimensional
+  1507	     coordinate  composed of a track number (also referred  to  as
+  1508	     the  cylinder number),  a side number (also called  the  head
+  1509	     number),  and a sector number.  DOS,  on the other hand,  lo-
+  1510	     cates information by sector number,  and numbers the  sectors
+  1511	     sequentially from the outside to inside.
+  1512	
+  1513	     We   can  refer  to  particular  sectors  either   by   their
+  1514	     three-dimensional  coordinates or by their sequential  order. 
+  1515	     All ROM-BIOS operations use the three-dimensional coordinates
+  1516	     to locate a sector.  All DOS operations and tools such as DE-
+  1517	     BUG use the DOS sequential notation.
+  1518	
+  1519	     The BASIC formula that converts the three-dimensional coordi-
+  1520	     nates  used by the ROM-BIOS to the sequential sector  numbers
+  1521	     used by DOS is as follows:
+  1522	
+  1523	          DOS.SECTOR.NUMBER = (BIOS.SECTOR - 1) + DIOS.SIDE
+  1524	            * SECTORS.PER.SIDE + BIOS.TRACK * SECTORS.PER.SIDE
+  1525	            * SIDES.PER.DISK
+  1526	
+  1527	     And  here are the formulas for converting  sequential  sector
+  1528	     numbers to three-dimensional coordinates:
+  1529	
+  1530	          BIOS.SECTOR = 1 + DOS.SECTOR.NUMBER MOD SECTORS.PER.SIDE
+  1531	            BIOS.SIDE = (DOS.SECTOR.NUMBER \ SECTORS.PER.SIDE)
+  1532	            MOD SIDE.PER.DISK
+  1533	            BIOS.TRACK = DOS.SECTOR.NUMBER \ (SECTORS.PER.SIDE
+  1534	            * SIDES.PER.DISK)
+  1535	
+  1536	          (Note:  For double-sided nine-sector diskettes, the PC's
+  1537	          most  common disk format, the value of  SECTORS.PER.SIDE
+  1538	          is  9 and the value of SIDES.PER.DISK is 2.   Also  note
+  1539	          that  sides and tracks are numbered differently  in  the
+  1540	          ROM-BIOS numbering system: The sides and tracks are num-
+  1541	          bered from 0, but the sectors are numbered from 1.)
+  1542	
+  1543	     Diskette Space Allocation
+  1544	
+  1545	     The  formatting  process divides the sectors on a  disk  into
+  1546	     four sections, for four different uses.  The sections, in the
+  1547	     order they are stored, are the boot record,  the file alloca-
+  1548	     tion  table (FAT),  the directory, and the data  space.   The
+  1549	     size of each section varies between formats,  but the  struc-
+  1550	     ture and the order of the sections don't vary.
+  1551	
+  1552	          The Boot Record:
+  1553	
+  1554	          This section is always a single sector located at sector
+  1555	     1 of track 0, side 0.  The boot record contains,  among other
+  1556	     things,  a short program to start the process of loading  the
+  1557	     operating system on it.   All diskettes have the boot  record
+  1558	     on them even if they don't have the operating system.  Asisde
+  1559	     from  the start-up program,  the exact contents of  the  boot
+  1560	     record vary from format to format.
+  1561	
+  1562	          The File Allocation Table:
+  1563	
+  1564	          The  FAT follows the boot record,  usually  starting  at
+  1565	     sector 2 of track 0,  side 0.   The FAT contains the official
+  1566	     record of the disk's format and maps out the location of  the
+  1567	     sectors used by the disk files.   DOS uses the FAT to keep  a
+  1568	     record of the data-space usage.  Each entry in the table con-
+  1569	     tains  a specific code to indicate what space is being  used,
+  1570	     what space is available,  and what space is unusable (Due  to
+  1571	     defects on the disk).
+  1572	
+  1573	          The File Directory:
+  1574	
+  1575	          The file directory is the next item on the disk.   It is
+  1576	     used  as a table of contents,  identifying each file  on  the
+  1577	     disk  with a directory entry that contains several pieces  of
+  1578	     information, including the file's name and size.  One part of
+  1579	     the entry is a number that points to the first group of  sec-
+  1580	     tors  used by the file (this number is also the  first  entry
+  1581	     for this file in the FAT).
+  1582	
+  1583	          The Data Space:
+  1584	
+  1585	          Occupies  the bulk of the diskette (from  the  directory
+  1586	     through the last sector),  is used to store data,  while  the
+  1587	     other  three  sections are used to support  the  data  space. 
+  1588	     Sectors  in  the  data space are allocated  to  files  on  an
+  1589	     as-needed basis,  in units known as clusters.   The  clusters
+  1590	     are one sector long and on double-sided diskettes, they are a
+  1591	     pair of adjacent sectors.
+  1592	
+  1593	
+  1594	
+  1595	     (From  here  on I'll continue to describe the basics  of  DOS
+  1596	     disk structures, and assembly language addressing technics.
+  1597	
+  1598	
+  1599	     -------------------------------------------------------------
+  1600	     Here  is a simple routine to just make a backup copy  of  the
+  1601	     Flight Simulator Version 1.0 by Microsoft.  I know the latest
+  1602	     version  is  3.x but this version will serve the  purpose  of
+  1603	     demonstrating  how to access the data and program files of  a
+  1604	     selfbooter.
+  1605	     -------------------------------------------------------------
+  1606	
+  1607	
+  1608	     By:            PTL
+  1609	     Title:         Microsoft Flight Simulator 1.00 Unprotect
+  1610	
+  1611	
+  1612	     This procedure will NOT convert the Flight Simulator disk  to
+  1613	     files  that can be loaded on a hard drive.   But...  it  will
+  1614	     read  off the data from the original and put it onto  another
+  1615	     floppy.  And this should give you an idea of how to read data
+  1616	     directly from a disk and write it back out to another disk.
+  1617	
+  1618	     First of all take UNFORMATTED disk and place it in drive  B:. 
+  1619	     This will be the target disk.
+  1620	
+  1621	     Now  place your DOS disk (which has Debug) into drive A:,  or
+  1622	     just load Debug off you hard disk.
+  1623	
+  1624	                    A>DEBUG
+  1625	
+  1626	     Then  we  are going to enter (manually) a little  program  to
+  1627	     load the FS files off the disk.
+  1628	
+  1629	                    -E CS:0000 B9 01 00 BA 01 00 BB 00
+  1630	                               01 0E 07 06 1F 88 E8 53
+  1631	                               5F AA 83 C7 03 81 FF 1C
+  1632	                               01 76 F6 B8 08 05 CD 13
+  1633	                               73 01 90 FE C5 80 FD 0C
+  1634	                               76 E1 90 CD 20
+  1635	
+  1636	                    -E CS:0100 00 00 01 02 00 00 02 02 00 00 03 02
+  1637	                               00 00 04 02 00 00 05 02 00 00 06 02
+  1638	                               00 00 07 02 00 00 08 02
+  1639	
+  1640	     Next we'll [R]eset the IP Register by typing.
+  1641	
+  1642	                    -R IP
+  1643	
+  1644	     And then typing four zeros after the address prefix.
+  1645	
+  1646	                    xxxx:0000  
+  1647	
+  1648	     Next insert the original Flight Simulator disk into drive  A: 
+  1649	     and we'll run our little loader.
+  1650	
+  1651	                    -G =CS:0000 CS:22 CS:2A
+  1652	
+  1653	     Now enter a new address to load from.
+  1654	
+  1655	                    -E CS:02 0E
+  1656	                    -E CS:27 19
+  1657	
+  1658	     And run the Loader again.
+  1659	
+  1660	                    -G =CS:0000 CS:22 CS:2A
+  1661	
+  1662	     New address
+  1663	
+  1664	                    -E CS:02 27
+  1665	                    -E CS:27 27
+  1666	
+  1667	     Run Loader
+  1668	
+  1669	                    -G =CS:0000 CS:22 CS:2A
+  1670	
+  1671	     Here  we'll  do some [L]oading directly from  the  disk  our-
+  1672	     selves.
+  1673	
+  1674	                    -L DS:0000 0 0 40
+  1675	
+  1676	     And the in turn, write it back out to the B: (1) drive
+  1677	
+  1678	                    -W DS:0000 1 0 40
+  1679	
+  1680	     Etc...
+  1681	
+  1682	                    -L DS:0000 0 40 28
+  1683	                    -W DS:0000 1 70 30
+  1684	                    -L DS:0000 0 A0 30
+  1685	                    -W DS:0000 1 A0 30
+  1686	                    -L DS:0000 0 138 8
+  1687	                    -W DS:0000 1 138 8
+  1688	
+  1689	     When  we are all through,  [Q]uit from debug and  you  should
+  1690	     have a backup copy of the Flight Simulator.
+  1691	
+  1692	                    -Q
+  1693	
+  1694	     And that's all there is to it.
+  1695	
+  1696	     END.

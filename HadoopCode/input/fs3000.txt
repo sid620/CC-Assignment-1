@@ -1,0 +1,62 @@
+     1	BOSTON, Mass. (February 11, 1992) -- Tallgrass Technologies Corporation
+     2	today announced the FS3000, a 2.7 gigabyte QIC tape device. The FS3000 is
+     3	positioned as a high performance device for back up and restore on
+     4	extremely high performance networks where speed requirements exceed
+     5	existing QIC and DAT technologies.
+     6	
+     7	The FS3000 triples the performance of other technologies with a transfer
+     8	rate of up to 36 Megabytes per minute. An industry first, the FS3000 can
+     9	backup a full Gigabyte of data in 1/2 hour. The FS3000 utilizes the
+    10	QIC-1350 specification and stores 2.7 GB with data compression on a single
+    11	cartridge. An extended length data cartridge will be available by year
+    12	end, allowing the FS3000 to store up to 3.2 gigabytes on a single
+    13	cartridge. Because the drive supports Quick File Access, the FS3000 can
+    14	seek out any file in an average of 30 seconds in a restore operation, even
+    15	providing fast restore of compressed files.
+    16	
+    17	"Time critical applications are best served by this new system. With a
+    18	backup speed of 1 GB per half hour, a typical 300 MB Novell network can do
+    19	backups and restores in under 10 minutes . The FS3000 offers the user an
+    20	alternative to more costly technologies," stated Ernest H. Wassmann,
+    21	President and CEO of Tallgrass.
+    22	
+    23	The FS3000 offers data integrity that exceeds less than one unrecoverable
+    24	error in 1015 bits, the highest in the industry, as well as unmatched
+    25	reliability by achieving an 80,000 hour MTBF. The FS3000 provides an
+    26	automatic cartridge loading mechanism that is more advanced than
+    27	traditional swing-head design, assuring user convenience and data
+    28	security.
+    29	
+    30	The FS3000 is a 5.25" half height device supporting the tape command set of
+    31	SCSI-II. It is supported by DOS, NetWare, UNIX, XENIX, OS/2 and Macintosh
+    32	environments for both ISA and MCA bus computers.
+    33	
+    34	Suggested retail pricing for the FS3000 starts at $4,495 for an internal
+    35	ISA model and ranges to $4,995 for an external MCA model. All drives are
+    36	shipped with FileSECURE software, SCSI host adapter, cables, power cord,
+    37	and Magnus data cartridge.
+    38	
+    39	Tallgrass Technologies is a leading supplier of storage management
+    40	solutions. Established in 1981, Tallgrass supports an installed base in
+    41	excess of 250,000 units worldwide. Celebrating over a decade in business
+    42	as Architects of Storage Management, Tallgrass is represented in
+    43	twenty-two countries around the globe.
+    44	
+    45	Tallgrass' series of tape backup systems provide a full range of storage
+    46	management solutions, enabling Tallgrass to be a single-source provider of
+    47	tape backup systems to its distributor partners.
+    48	
+    49	TALLGRASS TECHNOLOGIES 
+    50	11100 West 82nd St, Lenexa, Kansas 66214 
+    51	913-492-6002 ù FAX 913-492-2465
+    52	
+    53	  +---------------------------------------------------------------+
+    54	  |  From the America On-Line & PC-Link New Product Info Services |
+    55	  +===============================================================+
+    56	  | This information was processed with OmniPage Professional OCR |
+    57	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+    58	  | provided by the above mentioned company. For additional info, |
+    59	  | contact the company at the address or phone# indicated above. |
+    60	  |    All submissions for this service should be addressed to    |
+    61	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+    62	  +---------------------------------------------------------------+

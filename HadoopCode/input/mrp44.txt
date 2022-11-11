@@ -1,0 +1,49 @@
+     1	BOSTON, MASSACHUSETTS, FEBRUARY 10,1992 -- Expandable Software, Inc., a
+     2	market leader of integrated factory and financial management software on
+     3	PC-LANs, today announced its new release 4.4. Over sixty new features were
+     4	incorporated. Major ease of use enhancements include pop-up help (user
+     5	modifiable) with point-and-shoot selection of valid values, hot-keys jump
+     6	users to other related programs or inquires from any prompt, and over 100+
+     7	drill-down inquires. The new release also supports companies requiring
+     8	sales and financial reporting by product line. This release will be
+     9	provided free to all Expandable/MRP users under their standard maintenance
+    10	contract.
+    11	
+    12	Release 4.4 also includes a major new module, Lot Tracking. This
+    13	significant addition to the Expandable/MRP system lists for $3,000. Aimed
+    14	at companies that require part traceability where material must be tracked
+    15	by lot number, batch number, or serial number, the Lot Tracking module
+    16	provides complete tracking of a part and its lot/serial number information
+    17	from the time it is purchased or manufactured until it is consumed or
+    18	shipped. Features include traceability of parts as they are received,
+    19	cycle counted, kit issued to work orders or jobs, backflush issued,
+    20	completed and or shipped.
+    21	
+    22	Marshall Guile, president and CEO of Expandable Software said, '"The new
+    23	Lot Tracking module provides optimum downward (lot source) and upward (lot
+    24	consumption) traceability required by companies with either FDA or serial
+    25	number traceability requirements. Lot Tracking also provides capabilities
+    26	to help a firm improve its quality control and save a firm unnecessary
+    27	write-offs because of lot expiration date control."
+    28	
+    29	The Expandable/MRP system manages manufacturing (MRP II), financial, and
+    30	order management information for manufacturing companies. Feature rich and
+    31	completely integrated, it employs fourth-generation relational data base
+    32	technology and runs on IBM's AIX and in a variety of PC/LAN environments.
+    33	Because Expandable/MRP is an open-ended, total solution for manufacturing
+    34	management, --- and one that combines affordability with great power --,
+    35	the Expandable system on AIX and LANs has emerged as the premier
+    36	manufacturing software product of the 90s.
+    37	
+    38	Expandable Software can be reached at: 408-261-7880
+    39	
+    40	  +---------------------------------------------------------------+
+    41	  |  From the America On-Line & PC-Link New Product Info Services |
+    42	  +===============================================================+
+    43	  | This information was processed with OmniPage Professional OCR |
+    44	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+    45	  | provided by the above mentioned company. For additional info, |
+    46	  | contact the company at the address or phone# indicated above. |
+    47	  |    All submissions for this service should be addressed to    |
+    48	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+    49	  +---------------------------------------------------------------+

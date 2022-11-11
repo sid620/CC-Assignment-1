@@ -1,0 +1,769 @@
+     1	
+     2	90-02/BeingInNothingness
+     3	
+     4	BEING IN NOTHINGNESS
+     5	Virtual Reality and the Pioneers of Cyberspace
+     6	
+     7	By John Perry Barlow
+     8	Published in Microtimes Magazine
+     9	
+    10	"Cyberspace.  A consensual hallucination experienced daily 
+    11	by billions of legitimate operators, in every nation...A 
+    12	graphic representation of data abstracted from the banks of 
+    13	every computer in the human system.  Unthinkable 
+    14	complexity.  Lines of light ranged in the nonspace of the 
+    15	mind, clusters and constellations of data.  Like city lights, 
+    16	receding..."
+    17				--William Gibson, Neuromancer
+    18	
+    19	Suddenly I don't have a body anymore.  
+    20	
+    21	All that remains of the aging shambles which usually constitutes my 
+    22	corporeal self  is a glowing, golden hand floating before me like 
+    23	Macbeth's dagger.  I point my finger and drift down its length to the 
+    24	bookshelf on the office wall.
+    25	
+    26	I try to grab a book but my hand passes through it.  
+    27	
+    28	"Make a fist inside the book and you'll have it," says my invisible 
+    29	guide.  
+    30	
+    31	I do, and when I move my hand again, the book remains embedded in 
+    32	it.  I open my hand and withdraw it.  The book remains suspended 
+    33	above the shelf.
+    34	
+    35	I look up.  Above me I can see the framework of red girders which 
+    36	supports the walls of the office...above them the blue-blackness of 
+    37	space.  The office has no ceiling, but it hardly needs one.  There's never 
+    38	any weather here.  
+    39	
+    40	I point up and begin my ascent, passing right through one of the 
+    41	overhead beams on my way up.  Several hundred feet above the office, 
+    42	I look down.  It sits in the middle of a little island in space.   I 
+    43	remember the home asteroid of The Little Prince with its one volcano, 
+    44	it's one plant.
+    45	
+    46	How very like the future this place might be: a tiny world just big 
+    47	enough to support the cubicle of one Knowledge Worker.  I feel a wave 
+    48	of loneliness and head back down.  But I'm going too fast.  I plunge 
+    49	right on through the office floor and into the bottomless indigo below.  
+    50	Suddenly I can't remember how to stop and turn around.  Do I point 
+    51	behind myself?  Do I have to turn around before I can point?  I flip into 
+    52	brain fugue.
+    53	
+    54	"Just relax," says my guide in her cool clinical voice.  "Point straight 
+    55	up and open your hand when you get where you want to be."
+    56	
+    57	Sure.  But how can you get where you want to be when you're coming 
+    58	from nowhere at all?  
+    59	
+    60	And I don't seem to have a location exactly.  In this pulsating new 
+    61	landscape, I've been reduced to a point of view.  The whole subject of  
+    62	"me" yawns into a chasm of interesting questions.  It's like Disneyland 
+    63	for epistomologists.  "If a virtual tree falls in the computer-generated 
+    64	forest..?"  Or "How many cybernauts can dance on the head of a 
+    65	shaded solid?"  Gregory Bateson would have loved this.  Wittgenstein, 
+    66	phone home. 
+    67	
+    68	At least I know where I left my body.  It's in a room called Cyberia in a 
+    69	building called Autodesk in a town called Sausalito, California.  Planet 
+    70	Earth.  Milky Way.  So on and so forth.  My body is cradled in its usual 
+    71	cozy node of space-time vectors.
+    72	
+    73	But I...or "I"...am in cyberspace, a universe churned up from computer 
+    74	code by a Compaq 386 and a pair of Matrox graphics boards, then fed 
+    75	into my rods and cones by  VPL Eyephones, a set of goggles through 
+    76	whose twin, parallax-corrected video screens I see this new world.  
+    77	
+    78	When I move my head, the motion is tracked by a a Polhemus 
+    79	magnetic sensor and the imaging engine of cyberspace is instructed to 
+    80	alter what I see accordingly.  Thus, having made a controlled ascent 
+    81	back up through the floor of the "office," I turn to the left and I see red 
+    82	chair with a desk behind it.  I turn to the right and I see a door leading 
+    83	out onto the floating platform.  
+    84	
+    85	The configuration and position of my right hand is fed into the system 
+    86	by a VPL DataGlove, also with an Polhemus attached to it.  The 
+    87	relationship between my hand and the eyephones is precisely 
+    88	measured by the two trackers so that my hand appears where I would 
+    89	expect it to.  When I point or make a fist, the fiber optics sewn into the 
+    90	DataGlove convert kinesthetics into electronics.  For a decisecond or so, 
+    91	my hand disappears and then reappears, glowing and toon-like, in the 
+    92	appropriate shape.
+    93	
+    94	Despite the current confines of my little office-island, I know that I 
+    95	have become a traveller in a realm which will be ultimately bounded 
+    96	only by human imagination, a world without any of the usual limits of 
+    97	geography, growth, carrying capacity, density or ownership.  In this 
+    98	magic theater, there's no gravity, no Second Law of Thermodynamics, 
+    99	indeed, no laws at all beyond those imposed by computer processing 
+   100	speed...and given the accelerating capacity of that constraint, this 
+   101	universe will probably expand faster than the one I'm used to.
+   102	
+   103	Welcome to Virtual Reality.  We've leapt through the looking glass.  
+   104	Now what?  Go ask Alice.
+   105	
+   106	
+   107	      
+   108	
+   109	
+   110	The Next Big Thing
+   111	Money from Nuthin'
+   112	
+   113	"I think this is the biggest thing since we landed on the Moon," says 
+   114	Jaron Lanier, the dread-locked CEO of VPL Research.  (Who was 9 
+   115	years old at that time.)  I don't choke on that one.  Indeed, I'd take it a 
+   116	bit farther, guessing that Columbus was probably the last person to 
+   117	behold so much usable and unclaimed real estate (or unreal estate) as 
+   118	these cybernauts have discovered.
+   119	
+   120	At Autodesk, the Sausalito publisher of AutoCAD drafting software, 
+   121	they spent the summer of T89 in product development heaven, talking 
+   122	telephone, automobile, airplane, computer.  They invoked Edison, Bell, 
+   123	Ford, and Jobs.  And there was that loincloth-and-machete sense of 
+   124	enterprise which one might have experienced in the Wright Brothers' 
+   125	Akron Bicycle Shop or Paul Jobs' garage in Mountain View...as well as 
+   126	countless less-chronicled shots at perpetual motion or baldness cures.
+   127	
+   128	Neil Armstrong's small step ran about 70 Billion Real Dollars, but 
+   129	when John Walker, the Hacker King of Autodesk, committed his 
+   130	company to creating the first commercially-available "world in a can," 
+   131	he figured that the prototype "gizmo" could be built for about $25,000.     
+   132	
+   133	VPL, the other trading post on VR frontier, isn't much fatter, although 
+   134	internal synergy seems to magnify output.  Since their incorporation in 
+   135	1985, they've had two Scientific American covers and produced the 
+   136	DataGlove, DataSuit, the PowerGlove, Swivel 3-D and VPL 
+   137	EyePhones, the only commercially available head-mounted display.  
+   138	They've been in a couple of big lawsuits (one, just concluded to their 
+   139	satisfaction, with Stanford University), and create, at a distance, the 
+   140	mirage of a fair-sized company going at it pretty hard.  
+   141	
+   142	But up close, one can get on a first-name basis with every VPL 
+   143	employee in the course of an afternoon. They have yet to outgrow the 
+   144	third floor of their slightly tacky building at the Redwood City yacht 
+   145	harbor.
+   146	
+   147	While Apple's research gazillions yield such dubious fruit as 
+   148	multimedia and the AppleFax Modem, while IBM replicates methods 
+   149	for chaining bureaucrats to its mainframes,  it begins to appear that the 
+   150	Next Big Thing will begin its commercial evolution as humbly as the 
+   151	personal computer.
+   152	
+   153	As usual, the Big Guys have neither the means nor the desire to engage 
+   154	in such open-ended creation as settling the virtual universe will 
+   155	require.  Like the Union Pacific Railroad awaiting the fact of empire, 
+   156	they prefer to let the rag-tag pioneers die all over the frontier before 
+   157	they come out to claim it.  
+   158	
+   159	When the Altairs and Osbornes of Virtual Reality have made their fatal 
+   160	errors are headed for Chapter 11, IBM probably will issue forth the 
+   161	SolutionStation VR Network or some such and accelerate natural 
+   162	selection in the field.
+   163	
+   164	But as I write this, VPL and Autodesk still have  it to themselves.  
+   165	Actually, they are not the first to make virtual landfall. They are only 
+   166	the first at financial risk. Unlike the first automobiles or telephones 
+   167	their commercial fledglings had the advantage of long incubation by 
+   168	government and Academia.
+   169	
+   170	Virtual Reality, as a concept, found first form at the University of Utah 
+   171	over twenty years ago in the fecund cranium of Ivan E. Sutherland, the 
+   172	godfather of computer graphics and the originator of about every  Big 
+   173	Computer Idea not originated by Alan Kay or Doug Englebart.  In 
+   174	1968, he produced the first head-mounted display.  This was the 
+   175	critical element in VR hardware, but it was so heavy that it had to be 
+   176	suspended from the ceiling...at some peril to its wearer.  Damocles was 
+   177	mentioned.
+   178	
+   179	Besides, once you got it on, there wasn't much to see in there.  There 
+   180	wasn't a computer in existence which could churn out enough 
+   181	polygons per second to simulate a reality much more full-bodied than 
+   182	a game of Pong. 
+   183	
+   184	So Virtual Reality passed a generation waiting for the equipment to 
+   185	arrive.  In 1985 the Japanese finally (and unintentionally) provided us 
+   186	with the right video displays when NASA's Mike McGreevy happened 
+   187	to notice that the Citizen Watch Co. LCD displays in a Radio Shack 
+   188	mini-TV were small enough to fit two in a head-mounted.  
+   189	
+   190	I hardly need to detail what happened to CPU horsepower during that 
+   191	period.  By 1985, graphics engines of appropriate juice were almost 
+   192	within financial range of entities not involved in the defense of our 
+   193	nation.
+   194	
+   195	Also by this time, NASA had made a strong commitment to VR 
+   196	research, though mostly in the service of "telepresence," the ability to 
+   197	project one's judgement and actions into a robot located some real 
+   198	place you'd rather not be, like space.  They were less persuaded by the 
+   199	attractions of unreal places.
+   200	
+   201	The Air Force was also conducting research at Wright-Patterson under 
+   202	the direction of Tom Furness, but most of this was directed at the usual 
+   203	dismal purpose, simplifying the annihilation of non-virtual humans.  
+   204	Heads up displays and looks that kill were their speciality.
+   205	
+   206	For all this expenditure of tax dollars, Virtual Reality still lacked two 
+   207	critical elements: a sense of whimsy and a fluid, three-dimensional 
+   208	method for "grabbing" and manipulating the furniture of cyberspace.  
+   209	VPL was on the case.  
+   210	
+   211	VPL's Tom Zimmerman had always wanted the ability to actually play 
+   212	air guitar.  It was the sort of desire his "boss," Jaron Lanier, could 
+   213	understand. Jaron had only gotten into computers after concluding 
+   214	that musical composition was not a reliable day job.  And his 
+   215	ownership of more than 300 musical instruments might indicate, if 
+   216	nothing else, a probing dissatisfaction with the limits of each one.  
+   217	
+   218	Over a two year period, Zimmerman and Young Harvill (also of VPL) 
+   219	created the DataGlove, a hand with which to strum those invisible 
+   220	strings.  While they were creating this hardware interface (though the 
+   221	Spandex feel of the DataGlove makes "leisureware interface" seem like 
+   222	a more appropriate term), Jaron and Chuck Blanchard were writing 
+   223	Body Electric, the software necessary to map the actual movements of 
+   224	the DataGlove and eyephones onto the virtual landscape.
+   225	
+   226	The commercial colonization of cyberspace was beginning.  VPL's 
+   227	strategy was to build the most powerful simulations current 
+   228	technology would allow, without regard to hardware cost, selling the 
+   229	spin-offs at increasingly affordable prices.  Once such item, the 
+   230	PowerGlove, is a Nintendo game controller based on the DataGlove 
+   231	which VPL has licensed to Mattel.  (Available this Christmas at a store 
+   232	near you for $85.00.)  
+   233	
+   234	Another VPL spin-off product is Swivel 3-D, odds on the best 3-D 
+   235	modeler for the Macintosh.  Young Harvill wrote it as a tool to create 
+   236	an artificial reality quickly and easily on Mac before integrating it into 
+   237	Body Electric and sending it over the twin Silicon Graphics CPUs 
+   238	which blow it up to full size.       
+   239	
+   240	In September of 1988, John Walker wrote an internal Autodesk white 
+   241	paper called Through the Looking Glass: Beyond "User Interfaces."   In it 
+   242	he proposed an "Autodesk Cyberpunk Initiative" to produce within 16 
+   243	months a doorway into cyberspace...available to anyone with $15,000 
+   244	and a 386 computer.  The project's motto:  "Reality Isn't Enough Any 
+   245	More."  (I wondered if they considered: "I'd rather have a computer in 
+   246	front of me than a frontal lobotomy...")
+   247	
+   248	Since NASA's Virtual Realities were running in the millions and VPL's 
+   249	in the middle hundreds of thousands, Walker envisioned a significant 
+   250	discount over previous models, but he knew that his customers, if any, 
+   251	would be more bargain-conscious than, say, the U.S. Air Force.  
+   252	
+   253	Autodesk's Cyberia Project was running hard by Christmas, 1988, 
+   254	staffed by William and Meredith Bricken, Eric Gullichsen, Pat Gelband, 
+   255	Eric Lyons, Gary Wells, Randy Walser, and John Lynch.  When I 
+   256	arrived on the scene in May, they had been keeping hacker's hours for 
+   257	a long time.        
+   258	
+   259	And they were ready to make a product.  They'd made a promo video 
+   260	starring Timothy Leary.  Gullichsen had even registered William 
+   261	Gibson's term "cyberspace"  as an Autodesk trademark, prompting an 
+   262	irritated Gibson to apply for trademark registration of the term "Eric 
+   263	Gullichsen."  By June, they had an implementation which, though 
+   264	clearly the Kitty Hawk version of the technology, endowed people 
+   265	with an instantaneous vision of the Concorde level.  
+   266	
+   267	Meanwhile, back in the real world, things were getting complicated.  
+   268	While everyone who went to Autodesk's Cyberia agreed that Virtual 
+   269	Reality was something, there was less agreement as to what.  
+   270	
+   271	Part of the problem was the scale of possibilities it invoked.  They 
+   272	seemed to be endless and yet none of them was anywhere near ready 
+   273	to return an investment.  But when something has endless possibilities, 
+   274	each of them is liable to dilute down to a point where people start to 
+   275	say things like, "Sure, but what's it really good for."  At which point the 
+   276	devoted cybernut might lapse into random syllables, his tongue heavy 
+   277	with all that golden potential.  
+   278	
+   279	Virtual Reality induces a perception of huge potency underlying 
+   280	featureless ambiguity.  There is a natural tendency to fill this gap 
+   281	between power and definition with ideology.  And the presence of 
+   282	such unclaimed vastness seems to elicit territorial impulses from 
+   283	psychic regions too old to recognize the true infinity of this new 
+   284	frontier.  Disputes appeared like toadstools in the rich new soil of 
+   285	cyberspace.
+   286	
+   287	Thus, by mid-November, the Autodesk half of the Next Big Thing was 
+   288	down to one full-time hacker: Randy Walser.  The Brickens had headed 
+   289	to Seattle to join Tom Furness in a (non-lethal) VR research program at 
+   290	the University of Washington.  Eric Gullichsen and Pat Gelband had 
+   291	formed their own VR company, Sense 8.  (Get it?)
+   292	
+   293	Within, VPL's soulful band remained as tightly bonded as a Hell's 
+   294	Angels chapter.  Without, they found themselves increasingly tangled 
+   295	in legal hassles.  They were in court with AGE (a group of New York 
+   296	toy developers who are not just in it for their health), trying to protect 
+   297	their rights to the PowerGlove.  They'd just settled a suit with Stanford 
+   298	University.  In general, they were having experiences which made me 
+   299	question the axiom that you can't cheat an honest man.           
+   300	
+   301	Still, everyone realized that a baby this size would be bound to 
+   302	occasion some labor pains.  As the general media began to pick up on 
+   303	Virtual Reality, its midwives were preparing themselves for interesting 
+   304	times.  It would be worth it.  But why?
+   305	
+   306	To the people who will actually make the future, such a question is 
+   307	beside the point.  They will develop cyberspace because, like Mallory's 
+   308	mountain, it's there.  Sort of.
+   309	
+   310	
+   311	      
+   312	
+   313	
+   314	There some practical reasons for the settlement of cyberspace.  They 
+   315	aren't as much fun to think about as the impractical ones, but they 
+   316	exist.  First among them is that this is the next logical step in the quest 
+   317	to eliminate the interface...the mind-machine information barrier.
+   318	
+   319	Over the last twenty years, our relations with these magic boxes have 
+   320	become intimate at a rate matched only by the accelerating speed of 
+   321	their processors.  From the brutal austerity of batch-processed punch-
+   322	cards to the snuggly Macintosh, the interface has become far less 
+   323	cryptic and far more interactive.  
+   324	
+   325	There have remained some apparently unbreachable barriers between 
+   326	us and the CPU.  One of them was the keyboard, which even with the 
+   327	graphical interface and the accompanying infestation of mice, 
+   328	remained the principal thoroughfare from human perception to RAM.  
+   329	The thin alphanumeric stream which drips from our fingertips and 
+   330	into the computer is a pale reflection of the thoughts which produce it, 
+   331	arriving before the CPU at a pace absurdly mis-matched to its 
+   332	chewing/spitting capacities.
+   333	
+   334	Then there is the screen itself.  While a vast improvement on the 
+   335	flickering LED's of the Altair or even the amber text of DOS, the 
+   336	metaphorical desktop remains flat as paper.  There is none of the depth 
+   337	or actual spatiality of experience.
+   338	
+   339	After we get past what few documents we can keep on the screen at 
+   340	one time, we are back to the alphabetized hierarchy.  We can't pile it, 
+   341	as most of us tend to do in real life.  We have to file it.  And this is not
+   342	
+   343	the way the mind stores information.  One doesn't remember the 
+   344	names of his friends alphabetically.  When looking for a phase in a 
+   345	book, you are more likely to look for its spatial position on the page 
+   346	than it's intellectual position in context.
+   347	
+   348	The actual operation of human memory works on a model more like 
+   349	the one Saint Thomas Aquinas used.  Aquinas, who carried around in 
+   350	his head almost all the established knowledge of his simpler world, is 
+   351	said to have imagined a mind-castle with many different rooms in 
+   352	which varying kinds of ideas dwelled.  The floor plan increased with 
+   353	his knowledge.       
+   354	
+   355	Nicholas Negroponte recreated a modest version of Aquinas' castle in 
+   356	the 70's.  He came up with a virtual office, represented in cartoon form 
+   357	on the screen.  One could mouse around to the "piles" of  "paper" 
+   358	stacked on the "desk" or "filing cabinet," leafing through them not by 
+   359	the first letter of their subject name but by their archaeological layer of 
+   360	deposition.  
+   361	
+   362	The problem was the screen.  Negroponte created a flat picture of an 
+   363	office rather than something more like the real thing because that was 
+   364	all one could display on a screen.  In two dimensions, the image of 
+   365	desktop seemed a lot more natural than the image of the desk.  Thence 
+   366	the Macintosh. 
+   367	
+   368	I used to think that the only way around these narrow I/O apertures 
+   369	lay in such heroic solutions as brain implants.  I think I was about 14 
+   370	when it occurred to me that this was the answer.  Brain surgery 
+   371	seemed a minor nuisance if it left one with the ability to remember 
+   372	everything.  
+   373	
+   374	I suppose I'd still be willing to put a Cray in my cranium, but my faith 
+   375	in technology has moderated since early adolescence.  I'm more 
+   376	comfortable with the possibility of an interface which fills the gap 
+   377	between keyboarding and neurological hardwiring and involves no 
+   378	cortical knife-play.  Virtual Reality is almost certainly that.
+   379	
+   380	And indeed, Virtual Reality may be so close to the implant side of the 
+   381	continuum that, as Randy Walser of Autodesk insists, it's not even 
+   382	appropriate to call it an interface.  It more a place...kind of like Fibber 
+   383	McGee's Ultimate Closet...than the semi-permeable information 
+   384	membrane to which we're accustomed.
+   385	
+   386	Whatever you want to call it, Autodesk's John Walker puts it this way, 
+   387	"If cyberspace truly represents the next generation of human 
+   388	interaction with computers, it will represent the most profound change 
+   389	since the development of the personal computer."  Right.
+   390	
+   391	But that still doesn't tell us what it's good for besides extending human 
+   392	quirkiness to the storage of immaterial stuff.  After all, most of what 
+   393	humans do with computers is merely an improvement over what they 
+   394	did with other keyboard-bound devices, whether typewriters or 
+   395	calculators.  Word processing and numerical analysis will be no easier 
+   396	"inside" the machine than it was outside.   
+   397	
+   398	But let's quit being giddy for a moment.  We're talking bucks here.  
+   399	Right now a good working platform costs almost as much as a CAT 
+   400	scanner.  Who's going to buy one without something like Blue Cross 
+   401	footing the bill?  And why?
+   402	
+   403	Alright, there is a reason why Autodesk is involved in this enterprise 
+   404	besides some daydream of the Ultimate Hack.  Whatever adventures 
+   405	they might entertain they afford by selling AutoCAD, the Dbase III of 
+   406	architecture.  How many architects have dreamed of the ability to take 
+   407	their clients on a walk inside their drawings before their 
+   408	miscommunications were sealed in mortar?
+   409	
+   410	Virtual Reality has already been put to such use at the University of 
+   411	North Carolina.  There Sitterman Hall, the new $10 million home of 
+   412	UNC's computer science department, was designed by virtual means.
+   413	
+   414	Using a head-mounted display along with a handlebar-steerable 
+   415	treadmill, the building's future users "walked through" it, discovering, 
+   416	among other things, a discomforting misplacement of a major interior 
+   417	wall in the lobby.  At the point of the discovery, moving the wall out 
+   418	was cheap.  A retrofit following the first "real" walk-through would 
+   419	have cost more by several orders of magnitude.  Thus, one can imagine 
+   420	retrofit savings from other such examples which could start to make 
+   421	DataSuits as common a form of architectural apparel as chinos and 
+   422	tweed.  
+   423	
+   424	Given the fact that AutoCAD is already generating about  a hundred 
+   425	seventy million dollars a year even without such pricy appurtenances 
+   426	as cyberspace design tools, it isn't hard to imagine a scenario in which 
+   427	developing workstations for virtual architecture comes to look like 
+   428	very shrewd business.
+   429	
+   430	Then there is the burgeoning scientific market.  Computers are the new 
+   431	microscopes.  Increasingly, they allow us to see into worlds which are 
+   432	not only too small but too weird to bring to human scale before.   For 
+   433	example, they are showing us the infinitely detailed order of chaos, 
+   434	never before observable, in a form which makes it possible to 
+   435	appreciate its simplicity as well as its complexity.
+   436	
+   437	Virtual Reality promises the ability to not only see but to "touch" 
+   438	forbidden realms.  Again at UNC, work is already quite advanced in 
+   439	which one can assemble complex molecules like Tinkertoys, the 
+   440	attraction or repulsion between individual atoms in the assembly 
+   441	modelled to the scale of human tactile perceptions.  The drug industry 
+   442	alone could have uses for such capacity sufficient to sustain a lot of 
+   443	CyberBiz.  
+   444	
+   445	One can imagine a lot of heretofore inaccessible "places" in which 
+   446	one's presence might be scientifically illuminating.  A Fantastic Voyage 
+   447	through the circulatory system will become possible (with or without 
+   448	Raquel Welch).  Or travel to alien worlds.  (Thanks to JPL, I have 
+   449	already taken an extremely convincing helicopter ride down the Vallis 
+   450	Marinaris on Mars.)
+   451	
+   452	Then there all the places which have never before had physical 
+   453	existence on any scale: the rolling plains of mathematical topologies, 
+   454	the humming lattice of quantum states, cloud chambers in which mu 
+   455	mesons are the size of basketballs and decay over weeks rather than 
+   456	picoseconds.           
+   457	
+   458	The possibility for less sober uses seems equally fertile.  One can 
+   459	imagine VR salons, video game parlors for big kids with Gold Cards, 
+   460	in which a central supercomputer provides the opportunity for a score 
+   461	of people to be Ms. Pacman.  Or whatever.  Nolan Bushnell, the 
+   462	founder of Atari and something of an expert on the subject of video 
+   463	games, is already at work on something like this.   
+   464	
+   465	The list of possibilities is literally bounded only by the imagination.  
+   466	Working bodies for the damaged.  Teleconferencing with body 
+   467	language.  Virtual surgery.  Hey, this is a practical thing to do!        
+   468	
+   469	And yet I suspect that something else altogether, something not so 
+   470	practical,  is at the root of these yearnings.  Why do we really want to 
+   471	develop Virtual Reality?  There seems to be a flavor of longing here 
+   472	which I associate with the desire to converse with aliens or dolphins or 
+   473	the never-born.  
+   474	
+   475	On some level, I think we can now see the potential for technology, 
+   476	long about the business of making the metaphorical literal, of reversing 
+   477	the process and re-infecting ordinary reality with luminous magic.  
+   478	
+   479	Or maybe this is just another expression of what may be the third 
+   480	oldest human urge, the desire of have visions.  Maybe we want to get 
+   481	high. 
+   482	
+   483	      
+   484	
+   485	Drugs, Sex, & Rock Tn' Roll
+   486	Boot Up, Jack In, Get Virtual
+   487	
+   488	Technology is the new drugs.
+   489	
+   490				Jerry Garcia
+   491	
+   492	Knowing that Garcia is a sucker for anything which might make a 
+   493	person question all he knows, I gave him a call not long after my first 
+   494	cyberspace demo.  Hell yes, he was interested.  When?  If I'd told him 
+   495	6:00 AM, I think he'd have been there on time.
+   496	
+   497	He adapted to it quicker than anyone I'd watched other than my 4 year 
+   498	old daughter Anna (who came home and told her sisters matter-of-
+   499	factly that she been to a neat "place" that afternoon.)  
+   500	
+   501	By the time he crossed back over to our side of Reality Horizon, he was 
+   502	pretty kid-like himself.  "Well," he finally said, "they outlawed LSD.  
+   503	It'll be interesting to see what they do with this."
+   504	
+   505	Which brings me to a point which makes Jaron Lanier very 
+   506	uncomfortable.  The closest analog to Virtual Reality in my experience 
+   507	is psychedelic, and, in fact, cyberspace is already crawling with 
+   508	delighted acid heads.
+   509	
+   510	The reason Jaron resents the comparison is that it is both inflammatory 
+   511	(now that all drugs are evil) and misleading.  The Cyberdelic 
+   512	Experience isn't like tripping, but it is as challenging to describe to the 
+   513	uninitiated and it does force some of the same questions, most of them 
+   514	having to do with the fixity of reality itself.  
+   515	
+   516	While you can hardly expect people to lay down $15,000 for something 
+   517	just because it shakes their basic tenets, that's enough to make it worth 
+   518	the trip for me.  I think the effort to create convincing artificial
+   519	realities will teach us the same humbling lesson about reality which 
+   520	artificial intelligence has taught us about intelligence...namely, that we 
+   521	don't know a damned thing about it.    
+   522	
+   523	I've never been of the cut-and-dried school on your Reality Question.  I 
+   524	have a feeling VR will further expose the conceit that "reality" is a fact. 
+   525	
+   526	It will provide another reminder of the seamless continuity between 
+   527	the world outside and the world within delivering another major hit to 
+   528	the old fraud of objectivity.  RTReal'," as Kevin Kelly put it, "is going 
+   529	to be one of the most relative words we'll have." 
+   530	
+   531	And that's just fine with me, since so much of what's wrong in 
+   532	America is based on the pathological need for certainty and the idiotic 
+   533	delusion that such a condition can even exist.
+   534	
+   535	Another reason for relating this to acid is the overwhelming sense of its 
+   536	cultural scale.  It carries with it a cosmic titillation I haven't 
+   537	experienced since 1966.  There is also the same dense shower of 
+   538	synchronicities surrounding it.  (I must have run into William and 
+   539	Meredith Bricken ten times, always unexpectedly and sometimes in the 
+   540	strangest of places.  Today, as I was typing his name, Jaron called me 
+   541	for the first time in three weeks.  Then I felt strangely moved to call 
+   542	Eric Gullichson after a couple of months of silence.  He told me that 
+   543	yesterday had been his last day at Autodesk.  Etc. Etc. Etc.)  
+   544	     
+   545	Finally, Timothy Leary is all excited again.  Now I don't endow every 
+   546	one of his pronouncements with oracular qualities...I remember the 
+   547	Comet Starseed... but I have always thought that Uncle Tim is kind of 
+   548	like a reverse of the canary in the coal mine.  Whenever the culture is 
+   549	about to make a big move, he's the first canary to start jumping up and 
+   550	down.  
+   551	
+   552	He's also, like Zelig, a kind of Zeitgeist chameleon.  He spent the 40's in 
+   553	the Army.  In the 50's, he was a tweedy young college professor, a 
+   554	Jules Feiffer cartoon.  In the 60's, he was, well, Timothy Leary.  In the 
+   555	70's, he became, along with H. R. Haldeman, a political prisoner.  He 
+   556	lived up the material 80's in Beverly Hills.  Whatever America is about 
+   557	to do, Tim starts doing it first.  
+   558	
+   559	When I visited him recently, he was already as cyberpunk as he had 
+   560	been psychedelic when I last saw at Millbrook 22 years ago.  Still, his 
+   561	current persona seems reasonable, even seraphic.  He calmly scored a 
+   562	long list of persuasive points, the most resonant of which is that most 
+   563	Americans have been living in Virtual Reality since the proliferation of 
+   564	television.  All cyberspace will do is make the experience interactive 
+   565	instead of passive. 
+   566	
+   567	"Our brains are learning how to exhale as well as inhale in the data-
+   568	sphere." he said.  Like our finny ancestors crawling up on land, we are 
+   569	about to be come amphibians again, equally at home in visceral and 
+   570	virtual frames. 
+   571	
+   572	The latest bus is pulling out of the station.  As usual, Leary has been on 
+   573	it for a while, waiting patiently for it to depart.
+   574	
+   575	      
+   576	
+   577	Then there is the...uhhhm...sexual thing.  I have been through eight or 
+   578	ten Q. & A. sessions on Virtual Reality and I don't remember one 
+   579	where sex didn't come up.  As though the best thing about all this will 
+   580	be the infinite abundance of shaded polygonal party dolls.  As though 
+   581	we are devising here some fabulously expensive form of Accu-jac.  
+   582	
+   583	This is strange.  I don't what to make of it, since, as things stand right 
+   584	now, nothing could be more disembodied or insensate than the 
+   585	experience of cyberspace.  It's like having had your everything 
+   586	amputated.  You're left mighty under-endowed and any partner 
+   587	would be so insubstantial you could walk right through her without 
+   588	either of you feeling a thing.  (In fact, when people play tag in Jaron's 
+   589	Reality Built for Two, one strategy is to hide inside the other person's 
+   590	head.)
+   591	
+   592	And I did overhear the word "DataCondom" at one point...  Maybe the 
+   593	nerds who always ask this question will get a chance to make it with 
+   594	their computers at long last.  (I prefer not to think too much of how 
+   595	anyone who would want to make it with a machine might treat the 
+   596	women in their lives...if any there be.)
+   597	
+   598	Fortunately, I think these dreams of cybersex will be thwarted by their 
+   599	own realization.  Yes, it will work for that purpose and it will be easy.  
+   600	But the real point of Virtual Reality, as with life itself, is contact.  
+   601	Contact with oneself alone is certainly a laudable enough goal, but the 
+   602	presence of half a million dollars worth of equipment between that 
+   603	subject and object is neither necessary nor desirable.
+   604	
+   605	Even if Virtual Reality turns out to provide the format for the ultimate 
+   606	pornographic film...a "feelie" with a perfect body...it will serve us 
+   607	better as the ultimate telephone.     
+   608	
+   609	
+   610	
+   611	Life in the DataCloud
+   612	Scratching Your Eyes Back In
+   613	
+   614	There was a man who lived in town
+   615	And he was wondrous wise.
+   616	He jumped into a bramble bush
+   617	And scratched out both his eyes.
+   618	And when he saw what he had done,
+   619	With all his might and main,
+   620	He jumped back in the bramble bush
+   621	And scratched them in again.
+   622	
+   623					Old English Nursery Rhyme 
+   624	Information is alienated experience.
+   625	
+   626					Jaron Lanier
+   627	
+   628	Since the Sumerians starting poking sticks into clay and claiming that 
+   629	the resulting cuneiform squiggles meant something, we've been living 
+   630	in the Information Age.  Only lately did someone come up with a name 
+   631	for it.  I suppose that was because we quit making anything else of 
+   632	value.  Before that, they just called it civilization.    
+   633	
+   634	Indeed, one could make a pretty good case that consciousness, as we 
+   635	define it, arose simultaneously with the ability to communicate its 
+   636	products symbolically.  (See The Origin of Consciousness and the 
+   637	Breakdown of the Bicameral Brain by Julian Jaynes for related 
+   638	conclusions.)
+   639	
+   640	The Sumerians had a pretty clear perspective on what this stuff was 
+   641	good for.  The preponderance of their runic tablets turn out to be, on 
+   642	translation, calendars, inventories, and mnemonic devices for such 
+   643	data as one might need to remember but which was too trivial to merit 
+   644	conversion into the other storage form of the era, epic poetry.  They 
+   645	didn't use it to describe anything.
+   646	
+   647	Perhaps they recognized that even the most mundane experience 
+   648	would beggar any effort to describe it if one were serious about 
+   649	creating a genuine simulation.
+   650	
+   651	The Egyptians didn't have any such illusions either, but, in addition to 
+   652	keeping track of cubits and high water, they found symbols useful for 
+   653	their elaborate liturgical purposes.  With so many dramatis personae in 
+   654	the pantheon, some method was required for sorting out each one's 
+   655	ritualistic preferences.
+   656	
+   657	The Greeks, as was their wont, expanded the envelope further.  To the 
+   658	previously established (and sensible) uses for writing, they added 
+   659	commentary, philosophy, calculation and drama.  
+   660	
+   661	Still, they restrained themselves from attempting to simulate 
+   662	experience on paper (or whatever it was they wrote on).  One might 
+   663	argue that drama was an effort to do that, but I think that the likes of 
+   664	Sophocles probably just found it easier not to have to personally teach 
+   665	his actors all their lines. 
+   666	
+   667	As early as the 5th Century B.C. we hear the first warnings that 
+   668	information might constitute an abuse of experience.  Socrates 
+   669	suggested that writing things down might damage your ability to 
+   670	remember them in their proper, full-bodied form.  (An admonition we 
+   671	know about since Plato went ahead and wrote it down as soon as 
+   672	Socrates was hemlocked out of the ability to stop him.)
+   673	
+   674	It wasn't until the 17th Century that things really got out of hand.  
+   675	Cervantes wrote Don Quixote and fiction was born.  From that point, 
+   676	any experience could be plucked from its holy moment in time and 
+   677	pressed like a flower in a book, to be reconstituted later in the 
+   678	imagination of the reader.   
+   679	
+   680	The thin, alphanumeric trickle that is language was suddenly thought 
+   681	to be a acceptable surrogate for the boiling torrent of shapes, smells, 
+   682	colors, sounds, memories, and context which amalgamate in the 
+   683	cauldron of a human skull and become there something called Reality.  
+   684	No longer did one have to "be there."  One could read about it and get 
+   685	the flavor well enough.    
+   686	
+   687	This absurd delusion is now universal.  The only reason anyone 
+   688	believes it is that everyone does.  
+   689	
+   690	I, on the other hand, began to have my doubts around the time I 
+   691	started trying to create some of this magical information myself.  
+   692	Sometime in the 4th Grade, I began to write about the things that 
+   693	happened to me.  For awhile, the approval others showed my efforts 
+   694	was enough to inspire their continuation.
+   695	
+   696	Gradually, however, the effort became painful.  The inadequacy of my 
+   697	word-replicas for experience was increasingly clear.  I tried poetry.  
+   698	This seemed to work until I realized that it did so because a poem is 
+   699	about itself and thus has no "real thing" to be compared to.
+   700	
+   701	Writing about something continues to cause me nothing but anguish.  
+   702	The symbolic tools are hopelessly mis-matched to their three-
+   703	dimensional analogues.  For example, the word "chair" is in no way 
+   704	like any chair.  
+   705	
+   706	Nor does it begin to imply the vast range of dissimilar objects to which 
+   707	one might apply it.  You can hop it up with adjectives... "big red 
+   708	chair"...or additional phrases... "big red chair that Washington sat 
+   709	in"...but the result is usually bad writing without much advancement 
+   710	of your cause.  I mean, "the big, deeply red, densely-brocaded, 
+   711	Georgian love seat that Washington sat in while being bled by leeches" 
+   712	is still, for all its lugubrious mass, not a chair.
+   713	
+   714	And if it were, it wouldn't move in the way that real things do even 
+   715	when they're standing still.  Words just sit there.  Reality vibrates and 
+   716	hums.  I have a pet phrase for this element of the mismatch:  Using 
+   717	words to describe an experience is like using bricks to build a full-
+   718	sized, operational model of a fog bank.
+   719	
+   720	Perhaps it was a subliminal recognition of this fact that caused 
+   721	America to fall in love with statistics.  As a descriptive tool, numbers 
+   722	are even worse than words.  They are very purely themselves and 
+   723	nothing else.  Nevertheless, we now put everything from flowing 
+   724	water to the human psyche into these rigid numerical boxes and are 
+   725	especially straight-faced as we claim it fits in them.
+   726	
+   727	In doing this, we usually follow a rule I call, with characteristic 
+   728	modesty, Barlow's Law of Real Numbers.  This states that the 
+   729	combination of any two speculative numbers by any arithmetic 
+   730	operation will always yield a real number.  The more decimal places 
+   731	the better.
+   732	
+   733	Computers have hardly been part of the solution in this area.  We pass 
+   734	our measuring grids over pulsating reality, shovel the results into our 
+   735	machines, thrash them with micro-circuits, and pretend that what 
+   736	floats up to the screen is "real."
+   737	
+   738	Horseshit.
+   739	
+   740	What computers can do, and have done to a fare-thee-well, is to 
+   741	provide us with a hyper-abundance of such processed lies.  Everything 
+   742	from U.S. News and World Report to Penthouse is now a dense thicket 
+   743	of charts, tables, graphs, and %'s.  All purporting to tell us something 
+   744	about what is.  
+   745	
+   746	But it's all just information.  Which, apart from the fact that it's not to 
+   747	be confused with experience,  has several problems which Jaron Lanier 
+   748	succinctly enumerated for me: "The first problem is that it's in-
+   749	formation.  The second problem is that it's linear information.  And the 
+   750	third problem is that it's false information." 
+   751	
+   752	Or, as we say in Wyoming, "Figures don't lie, but liars can figure."
+   753	
+   754	Virtual Reality is probably not going to cure this nonsense any more 
+   755	than television, its one-way predecessor, has done.  The global supply 
+   756	of words, numbers, statistics, projections, analyses, and gossip...what I 
+   757	call the DataCloud... expands with thermonuclear vigor and all the 
+   758	Virtual Reality we can manufacture isn't going to stop that.
+   759	
+   760	But it may go a long way toward giving us means to communicate 
+   761	which are based on shared experience rather than what we can 
+   762	squeeze through this semi-permeable alphanumeric membrane.  If it 
+   763	won't contain the DataCloud, it might at least provide some 
+   764	navigational aids through it.
+   765	
+   766	Maybe it can scratch our eyes, blinded by information, back in again.
+   767	
+   768	
+   769	

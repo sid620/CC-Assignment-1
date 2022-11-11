@@ -1,0 +1,75 @@
+     1	SAN JOSE, CALIFORNIA, February 10, 1992 -- Eagle Technology and Futurus
+     2	Corporation announced today that Futurus Lite Mail software will be
+     3	included in the Eagle NetWare Lite Ethernet Starter Kit beginning March 1,
+     4	1992. Futurus Lite Mail is the first electronic mail and groupware package
+     5	bundled with Eagle Ethernet adapters and Novell NetWare Lite.
+     6	
+     7	The Eagle NetWare Lite Ethernet Starter Kit is distributed through Eagle's
+     8	established channel of domestic and international distributors. The price
+     9	of the Eagle NetWare Lite Ethernet Starter Kit is $615 (U.S.) suggested
+    10	list price. The Eagle one node NetWare Lite Ethernet Add-On Kit is $312
+    11	(U.S.) suggested list price.
+    12	
+    13	"By offering our customers a true starter kit, including electronic mail,
+    14	Eagle advances its commitment to provide cost effective network computing,
+    15	"said Ken Lamneck, Managing Director of Eagle. "Because Lite Mail is
+    16	perfectly suited to NetWare Lite and based on Futurus' five years of
+    17	successful experience, Lite Mail was the obvious choice," he added.
+    18	
+    19	Futurus Lite Mail is designed to meet the needs of first-time network users
+    20	through a comfortable and intuitive interface. In addition to low memory
+    21	overhead, the Terminate and Stay Resident (TSR) software features
+    22	electronic mail for message sending, replying, forwarding, and archiving.
+    23	Message Handling System (MHS) compatibility provides seamless sending and
+    24	viewing of faxes as well as gateway communications with other hosts such
+    25	as MCI Mail and X.400. Other features include file attachments, carbon
+    26	copying, and blind carbon copying and, unique "bumpable" technology to
+    27	easily and economically increase the number of allowable users one by
+    28	one.
+    29	
+    30	"Futurus Lite Mail provides NetWare Lite users with true person-to-person
+    31	connectivity," said Futurus President J. Robert Martinson. "We are pleased
+    32	to contribute our five years of market-proven experience to Eagle
+    33	Technology," he added.
+    34	
+    35	According to Ladd Timpson, Product Line Manager of Novell, Inc., "We're
+    36	excited that Eagle Technology is adding Futurus Lite Mail to its NetWare
+    37	Lite Starter Kit and Add-On Kit. Lite Mail enhances the standard E-mail
+    38	capabilities by providing a Chat utility and a Phone Message Center -
+    39	features that allow NetWare Lite users to immediately experience the
+    40	benefits of networking. "
+    41	
+    42	Included in the Eagle NetWare Lite Ethernet Starter Kit is a coupon that
+    43	users can send to Futurus for a Lite Mail calculator module at no charge.
+    44	Futurus also offers users the option of upgrading their Lite Mail software
+    45	to Futurus Team for DOS for $60 (U.S.) per node. Futurus Team for DOS
+    46	provides all of the functionality of Lite Mail plus personal, group and
+    47	resource scheduling, notepad, cardex, database, DOS file manager, and
+    48	network print queue manager.
+    49	
+    50	For more information, interested resellers and endusers should contact
+    51	Eagle Technology at 800/733-2453 or 408/441-7453.
+    52	
+    53	Futurus Corporation is a privately-held developer of LAN-based electronic
+    54	mail and groupware software packages. The company's flagship product,
+    55	Futurus Team for DOS, formerly Right Hand Man, has won numerous editorial
+    56	awards including PC Magazine Editor's Choice and Infoworld's Best in its
+    57	Class. Futurus Corporation was founded in 1987 by J. Robert Martinson and
+    58	is headquartered in Atlanta, Georgia.
+    59	
+    60	Eagle Technology is a leading manufacturer of network interface cards and
+    61	related connectivity products providing multi-platform connectivity for
+    62	workgroups, departments, and corporations worldwide. Eagle was formed in
+    63	1989 and is headquartered in San Jose, California. Eagle's 1991 shipments
+    64	place it among the top three network interface card vendors worldwide.
+    65	
+    66	  +---------------------------------------------------------------+
+    67	  |  From the America On-Line & PC-Link New Product Info Services |
+    68	  +===============================================================+
+    69	  | This information was processed with OmniPage Professional OCR |
+    70	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+    71	  | provided by the above mentioned company. For additional info, |
+    72	  | contact the company at the address or phone# indicated above. |
+    73	  |    All submissions for this service should be addressed to    |
+    74	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+    75	  +---------------------------------------------------------------+

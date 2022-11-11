@@ -1,0 +1,244 @@
+     1	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+     2	บ                                                                            บ
+     3	บ                      GET THE MOST OUT OF YOUR NEW PC                       บ
+     4	บ                                                                            บ
+     5	บ                                                                            บ
+     6	บ                                                                            บ
+     7	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+     8	
+     9		I have been programming for twenty years on all sorts of computers,
+    10	but the PC is my favorite.  I've seen it all (almost), and done it all
+    11	(almost) and I'd like to take this opportunity to help those of you who have
+    12	just purchased your first PC.  I am going to give you a few do's and don'ts
+    13	- feel free to disagree, but at least I'll give you some interesting ideas
+    14	to think about.  First of all, if you have not yet purchased a PC, please
+    15	follow the following RULES OF PC PURCHASE:
+    16	
+    17			   1. If you can, buy at least a 286 or 386.
+    18			      (Why? Because the older 8086 PC's are
+    19			       just TOO SLOW!)
+    20			   2. Get the biggest hard disk you can afford.
+    21			      (Why? Because they fill up with good
+    22			      software much faster than you would expect.)
+    23			   3. Get a color monitor, preferably VGA.
+    24			      (Why? Because I like color, of course,
+    25			      and have three monochrome monitors
+    26			      sitting unused in my closet!)
+    27			   4. Make sure one of your floppies is 5 1/4 inch
+    28			      size (that's the standard size).
+    29	
+    30	
+    31		Now that you have your PC up and running, here are the things
+    32		to do:
+    33	1. FOCUS YOUR INTERESTS.  Try to figure out why you got a PC and what you
+    34	   want to do with it.  Are you interested in writing, music, art, programming
+    35	   or what.  Come on, you must be interested in something! A PC can be used
+    36	   for virtually anything.  It is even good for teaching your child to read
+    37	   (Reader Rabbit, Amy's Primer). Focus, focus, focus.
+    38	
+    39	2. USE A SURGE SUPPRESSOR. Go ahead, I know you are almost broke after
+    40	   buying that 220 Megabyte hard disk, but GET A SURGE SUPPRESSOR BEFORE
+    41	   YOU TURN IT ON!  The very first night I put together my first PC,
+    42	   there was a huge thunder and lightning storm.  My house wiring took
+    43	   a direct hit while my $3500 investment was on for the very first time!
+    44	   A surge suppressor saved my bacon by turning off automatically. After
+    45	   30 minutes it mysteriously went back on by itself, and my PC was undamaged.
+    46	
+    47	3. TRY DESKTOP PUBLISHING & A WORD PROCESSOR. Remember using a typewriter?
+    48	   One tiny mistake and you had to retype the whole page! Now, with any
+    49	   simple word processor, you can correct your errors before you print the
+    50	   first copy. And if you write a lot of letters, it's great to have an
+    51	   automatic file of all the letters you wrote on your hard disk, complete
+    52	   with addresses.  Desktop publishing is also a terrific advance, and
+    53	   with inexpensive products like Publish It! or First Publisher, it is
+    54	   also easy to get started.  Perhaps you have an idea for your own
+    55	   newsletter?
+    56	
+    57	4.TRY LOTUS 123 OR ANOTHER SIMILAR SPREADSHEET. The PC became so incredibly
+    58	  popular because of Lotus (and Word Processing).  Though I personally am
+    59	  bored to tears by spreadsheets, fifty million users can't be wrong,
+    60	  so give it a try.
+    61	
+    62	5.TRY THE BASIC INTERPRETER YOU GOT WITH YOUR MACHINE. Basic, or the GWBASIC
+    63	  you probably got free with your clone, is an easy and surprisingly powerful
+    64	  language (GW stands for Gee Whiz!).  Even if you plan to buy most
+    65	  of your software, you will understand your PC much better if you write a
+    66	  few simple BASIC programs of your own.  If you find you like BASIC, you
+    67	  may eventually want to move up to QuickBasic or Turbo Basic, which
+    68	  run about $69.95 and allow you to compile your Basic Programs to true
+    69	  EXE files, just like the professional programs you buy.
+    70	
+    71	6.LEARN SOMETHING ABOUT DOS.  The Disk Operating System you got with your
+    72	  machine is also a powerful language, and you should run, not walk, to
+    73	  your nearest bookstore and buy the slimmest book you can find about DOS.
+    74	
+    75	7.GET A HARD DISK & LEARN TO ORGANIZE IT.  If you already have a PC without
+    76	  a Hard Disk, you have already experienced the incredible frustration
+    77	  of computing from only one or two floppies. Get a Hard Disk, 40 Megabyte
+    78	  minimum.  It shouldn't cost much more than $300. Right now, there is
+    79	  a mail-order bargain on the Seagate 65 Meg RLL Drive.  You will need
+    80	  an RLL Controller, but the disk is only $260 and built like a tank.
+    81	  (See Computer Shopper).
+    82	
+    83	8. GET THE NORTON UTILITIES. This bag of tricks and techniques will more
+    84	  than pay for itself with Quick Unerase, which will allow you to easily
+    85	  recover those files you deleted by mistake.
+    86	
+    87	9. BACKUP IRREPLACEABLE FILES TO FLOPPY DISKS. If you are writing the
+    88	   great American Novel, copy your work once a week to a floppy and stash
+    89	   it in a safe place.  It only takes a second, and imagine how you
+    90	   would feel if the only copy on your hard disk somehow became
+    91	   unreadable.  I leave the question of full hard disk backups completely
+    92	   up to you.  If you have a lot of important files on your hard disk
+    93	   it may be advisable, even if it takes 60 or more floppies. Fastback Plus
+    94	   or DSBackup can ease the task. I don't personally backup, but I have
+    95	   three machines (one 386, one 286 and one old 8086) and each has copies
+    96	   of my most important files.  They are all surge protected, and the
+    97	   chance of three simultaneuos hard disk disasters is only 1 in 47,000,000.
+    98	   (Approximately).
+    99	
+   100	10. BUY A DOZEN SHAREWARE PROGRAMS FOR $1.99 EACH, AND REGISTER AT LEAST ONE.
+   101	   Shareware is an interesting and inexpensive way to experience a broad
+   102	   range of software. It is a unique marketing concept - try before you
+   103	   buy. You will help keep it alive, and more good shareware coming, if
+   104	   you register the shareware you like and continue to use. You will
+   105	   absolutely need a simple ASCII Editor to use your PC properly.
+   106	   Without a simple editor, even changing your AUTOEXEC.BAT file
+   107	   is a real chore. QEDIT is nice. Put PROMPT $P $G in your
+   108	   AUTOEXEC.BAT file RIGHT NOW if it isn't already there. It
+   109	   identifies directory names when you change directories.
+   110	
+   111	11. TRY SOME ARTIFICIAL INTELLIGENCE PROGRAMS TO PEEK INTO THE FUTURE
+   112	    OF COMPUTING.  You have probably heard about Expert Systems, that
+   113	    follow rules-of-thumb to give advice like a human expert, but
+   114	    through Shareware you can also try one yourself. Other areas are
+   115	    Natural Language Programs, that respond to your english language
+   116	    sentences, and Neural Networks that mimic the thought process of the
+   117	    human brain.  Many can be experienced at low cost through shareware,
+   118	    or though the miracle of Modems and Bulletin Boards. Or you could
+   119	    select one of the three very special packages we'll introduce you
+   120	    to at the end of this Tutorial. Each package is usually $99.95,
+   121	    but is offered here for only $59.95.
+   122	
+   123	12. AFTER YOU ARE FAIRLY COMFORTABLE WITH DOS, TRY WINDOWS 3.0.
+   124	    Windows 3.0 is a GUI or Graphical User Interface.  It requires
+   125	    the use of a Mouse, because you operate Windows by pointing and
+   126	    clicking with the Mouse.  It also requires a serious 286 or 386
+   127	    computer with VGA and plenty of hard disk space.  Windows alone
+   128	    wants about 5 Meg of your hard drive geography.
+   129	    Although most of what you want to do on a computer does not
+   130	    require Windows, you should eventually try it, because it
+   131	    probably represents the future of PC Computing.
+   132	
+   133	
+   134			THINGS YOU SHOULD TRY TO AVOID
+   135	DON'T:
+   136	     Move your PC without very good reason. It can destroy the
+   137		 programs on your hard disk.
+   138	     Get any weird programs that mess with your hard disk if you
+   139	     havn't had a problem!
+   140	     Make millions of directories within directories.
+   141	     Keep your hard disk almost full.
+   142	     Worry about OS/2 - it is a dead issue for home users.
+   143	     Leave your machine on all the time.
+   144	     Worry if you can't learn to program in C, Lisp or Prolog.
+   145	     Write COBOL on a PC.
+   146	     Worry much about Viruses. They are dying down now.
+   147	     Load your machine so full of TSR's at start-up that it gets confused.
+   148	     Open your computer unless you absolutely have to.
+   149	     Upgrade to a 386 if you have a fast 286.
+   150	     Upgrade at all - buy another machine. Two is nice.
+   151	     Try to to turn your PC into a MAC - buy a MAC.
+   152	     Don't overload your AUTOEXEC.BAT file.
+   153	     Don't type FORMAT C: unless you really mean it!
+   154	
+   155	
+   156			 A QUICK INTRO TO DOS FOR BEGINNERS ONLY
+   157	
+   158	     DOS stands for Disk Operating System.  It started ten years
+   159	     ago at Version 1.0 and then matured with 3.1 and 3.3. It
+   160	     gives your machine the primitive intelligence required to
+   161	     run programs (Applications), and organize a hard drive.
+   162	
+   163	     DOS 4.1 is current as of the beginning of 1991, but a Beta-test
+   164	     Version of DOS 5.0 is already available to industry insiders.
+   165	     It is recommended.  DOS is a brilliant engineering accomplishment
+   166	     by Microsoft.  Over the years, hundreds of very bright programmers
+   167	     have contributed to it.
+   168	
+   169	     DOS is built around the concept of a Hard Drive divided into
+   170	     file folders called Directories.  C:\ is the root.
+   171	     C:\DOS > is a direcory OFF the ROOT. (You could think of branches
+   172	     off a tree, and yes, there are often directories within directories.)
+   173	     Try to avoid copying files to your root.
+   174	     Instead, make a new Directory (file folder) with a meaningful
+   175	     name (MONEY, TEMP, WORK, NEW, LOTUS, WORD, etc) and change
+   176	     to that Directory. Then copy your files into that Directory.
+   177	     The exact commands are given below, and you will keep your
+   178	     Hard Drive neat and tidy.
+   179	
+   180	
+   181	     Most used Commands: (you press the ENTER KEY after you type
+   182				  any one of these commands.  Practice on
+   183				  a formatted floppy, not your hard drive.)
+   184	
+   185	
+   186		DIR produces a directory list of files and programs on the
+   187		    disk, example DIR A:, or just DIR
+   188		DIR/P pauses when the screen is full for long Directories
+   189		DIR/W (Directory Wide) puts the Directory list in several
+   190		    columns across the screen
+   191		COPY copies a file or program to a new name, new directory
+   192		    or new disk, example COPY *.*  C:
+   193		    (If you have a new disk in A: and want to copy ALL the
+   194		    programs on the disk to C: you would type this at the
+   195		    A:> prompt.)
+   196		CD changes from one directory to another. CD\ changes back
+   197		    to the root    CD\MYDIR, then to change back: CD\
+   198		MD makes a new directory
+   199		    example MD MYDIR
+   200		TYPE displays the contents of an ASCII file on the screen
+   201		    TYPE ORDER.FRM
+   202		PRINT prints a file on the printer
+   203		    PRINT ORDER.FRM or COPY ORDER.FRM LPT1
+   204		    Note: there really is an ORDER.FRM on this disk,
+   205		    so you can try this command later on the MoneyMaker Disk!
+   206		Pressing the Shift/Print Screen Keys causes the current
+   207		     screen to be printed
+   208		DEL deletes a file....be careful   DEL BADPGM.EXE
+   209		RD removes an empty directory      RD MYDIR
+   210	
+   211		Using different disk drives: to switch to another drive,
+   212		     type the letter of the drive followed by a colon
+   213		File Extensions: File names are made up of three parts:
+   214		a name, a period, and an extension, example  LOTUS.EXE
+   215		name: up to eight characters
+   216		extension: up to three characters
+   217		Some extensions are reserved names: EXE, COM, BAT
+   218		an EXE or COM file is a program ready to run just by
+   219		   typing the first part of the name (and pressing ENTER)
+   220		a BAT file consists of DOS Language statements, and
+   221		    most BAT files are used to start COM or EXE programs
+   222		    The AUTOEXEC.BAT File runs automatically whenever
+   223		    you boot or start your PC.
+   224	
+   225		 if you get hopelessly confused, just BOOT!
+   226		 (turn your computer OFF and back ON, or
+   227		 press CTRL-ALT-DEL simultaneously).
+   228	
+   229		 LIST.COM, included on this disk, should be installed
+   230		 in the Root Directory of your PC.  It is better than
+   231		 the type command.  To use it, just type LIST followed
+   232		 by the text file name you want to read.  When you
+   233		 EXIT the Main Menu from AITUTOR, try typing
+   234		 LIST CATALOG.TXT to read a selection from our AI Catalog.
+   235	
+   236		 Serious DOS mistakes:
+   237		 typing FORMAT C: (erases your whole C: Drive)
+   238		 not backing up critical files to floppy disks
+   239		 typing DEL *.* in your ROOT (deletes all root files)
+   240		 pouring coffee in your keyboard. (keyboards prefer water).
+   241	
+   242	
+   243	(C) 1991 Thinking Software, Inc.
+   244	

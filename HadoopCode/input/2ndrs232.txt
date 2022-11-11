@@ -1,0 +1,204 @@
+     1	Date: Wed, 15 Jul 87 22:36:06 MEZ
+     2	From: Bernhard Nebel <NEBEL%DB0TUI11.BITNET@forsythe.stanford.edu>
+     3	Subject: A 2nd RS232 port
+     4	Comment: Extracted from digest info-atari16 87-283
+     5	To: INFO-ATARI16@score.stanford.edu
+     6	 
+     7	 
+     8	           HOW TO GET A SECOND RS232 PORT FOR YOUR ATARI
+     9	 
+    10	It might happen to you that you need a second RS232 port for your
+    11	ATARI ST.  Perhaps you have a printer with a serial port and a
+    12	telephon modem, as I do.  The first idea might be to go to your dealer
+    13	expecting that he has an extension card for a few bucks. He hasn't,
+    14	and you get curious about whether the ATARI can be regarded as a real
+    15	computer.  Anyway, you need a solution and don't want to trade your
+    16	ATARI for one of those clones and are even more upset about the idea
+    17	of exchanging the connectors any time you use another peripheral. This
+    18	can be the point when you consider looking more seriously into the
+    19	hardware detecting that there is this MIDI port you never spent any
+    20	thought about. It is just there for those people who cannot play piano
+    21	properly and compensate for this by buying a lot of electronic parts
+    22	hoping that they can improve their music by it :-).  You may even have
+    23	a different opinion about them. You know, however, for sure that *you*
+    24	won't use this port. Therefore it seems to be a good idea to use it
+    25	for your own purposes.
+    26	 
+    27	The above describes precisely my thoughts leading to the modification
+    28	of my ATARI described below. It's just an easy, quick and cheap
+    29	hardware hack -- it doesn't meet the RS232 standards -- but it works!
+    30	I used a RS232 receiver to receive *and* send the signals, because
+    31	this was the chip I found somewhere in my old computer (a 6800 !!)
+    32	where it served the same purpose. However, note that nowadays
+    33	RS232 tranceivers are available which should be used instead.
+    34	 
+    35	Note that the description below applies *only* to the ATARI 520 ST and
+    36	things may be different for the 1040. Additionally, the description
+    37	can be, of course, incorrect. Therefore you should verify that the
+    38	modifications described below are correct by consulting the proper
+    39	sources.  In any way, modifications according to the description below
+    40	carried out by you are on your own risk.  In particular, you should be
+    41	aware that the warranty for your computer will expire after opening
+    42	it.
+    43	 
+    44	 
+    45	1) A COMMUNICATION PORT
+    46	 
+    47	The first thing you have to decide is what communication port you like to
+    48	use. I chose the MIDI IN port for three reasons:
+    49	 - I won't use MIDI after the modification.
+    50	 - Connectors for this communication port are easily available and cheap.
+    51	 - Three of the five pins aren't used.
+    52	 
+    53	The drawback of this solution is that you might easily confuse the
+    54	MIDI IN port with the MIDI OUT port when plugging in your connector
+    55	which can result in blowing up your peripheral.
+    56	 
+    57	I use the following pin assignment:
+    58	 Pin 1 = RS232 OUT
+    59	 Pin 2 = GND
+    60	 Pin 3 = RS232 IN
+    61	Note that pin 4 & 5 are already used.
+    62	 
+    63	Pin layout of the communication port seen from inside:
+    64	 
+    65	         1         3
+    66	 
+    67	          4       5
+    68	              2
+    69	 
+    70	NOTE: In a lot of sources including my ATARI manual I found a different pin
+    71	      layout which, however, seems to be wrong.
+    72	 
+    73	SOLDERING: Pin 2 of MIDI IN has to be connected with pin 2 of MIDI OUT.
+    74	NOTE: These pins are only accessible from the bottom side of the board.
+    75	 
+    76	 
+    77	2) REWIRING THE MIDI ACIA
+    78	 
+    79	The wiring of the MIDI ACIA has to be changed.  We have to rewire the
+    80	Tx-Data and Rx-Data pins, because we want to use a different
+    81	driver. Additionally, the Tx-Clk and Rx-Clk must be connected to a
+    82	different clock, because a fixed baud rate of 7812.5 is probably not
+    83	appropriate.  In the ATARI 520 ST the 6850 sitting next to the sound
+    84	chip -- the YM 2149 -- is the right chip.
+    85	 
+    86	CUTTING: Pin 2 (Rx Data), pin 3 (Rx Clk), pin 4 (Tx Clk) and pin 6 (Tx Data).
+    87	 
+    88	 
+    89	3) A NEW BAUD RATE GENERATOR
+    90	 
+    91	Timer A of the MFP 68091 is not used and can be employed as a baud
+    92	rate generator for our ACIA. A tiny assembler program setting the
+    93	correct baud rate is given below. I usually run this program at boot
+    94	time from my AUTO folder. A more sophisticated solution could be to
+    95	write an accessory to set the baud rate.
+    96	 
+    97	SOLDERING: Connect pin 3 (Rx Clk) and pin 4 (Tx Clk) of the MIDI ACIA with
+    98	           pin 13 (Timer A Out) of the MFP.
+    99	 
+   100	 
+   101	4) A RS232 DRIVER
+   102	 
+   103	As I said above, I used a RS232 receiver (SN 75189) for both
+   104	transmitting and receiving. That means that the outgoing signal does
+   105	*not* conform to the RS232 voltage level specification. However, this
+   106	cheap kludge always worked.
+   107	 
+   108	SOLDERING: - Mount a 75189 (RS232 receiver) on a small circuit board.
+   109	           - Connect pin 14 (Vcc) of the 75189 with Vcc, e.g., with pin 14
+   110	             of a 7404.
+   111	           - Connect pin 7 (Gnd) of the 75189 with Gnd, e.g., with pin 7
+   112	             of a 7404.
+   113	           - Connect pin 13 (4A) of the 75189 with pin 3 (RS232 In)
+   114	             of the MIDI IN port .
+   115	           - Connect pin 11 (4Y) of the 75189 with pin 2 (Rx Data) of
+   116	             the MIDI ACIA .
+   117	           - Connect a resistor (1K Ohm, probably 10K works as well) with
+   118	             pin 11 (4Y) of the 75189 and Vcc.
+   119	           - Connect pin 3 (1Y) of the 75189 with pin 1 (RS232 Out) of
+   120	             the MIDI IN port.
+   121	           - Connect a resistor (1K Ohm) with pin 3 (1Y) of the 75189
+   122	             and Vcc.
+   123	           - Connect pin 1 (1A) of the 75189 with pin 6 (Tx Data) of
+   124	             the MIDI ACIA.
+   125	           - Finally, you should install the circuit board somewhere on
+   126	             the motherboard.
+   127	 
+   128	These are all hardware modifications in order to get a second RS232
+   129	port.  There is, however, some software necessary before you actually
+   130	can use the new port. First, the baud rate has to be programmed into
+   131	timer A. A small assembly program is given below.  Second, the ACIA
+   132	registers have to be set up to the proper values. At boot time they
+   133	get set to 8-Bit, no-parity.  Third, you have to write programs which
+   134	actually use the port.  I, for my part, changed GEM-KERMIT and my
+   135	TERMINAL accessory in order to work with the MIDI port.
+   136	 
+   137	SETTING THE BAUD RATE:
+   138	 
+   139	* Initialize Timer A as baud rate generator for MIDI ACIA
+   140	*
+   141	* Bernhard Nebel 14.12.86
+   142	*
+   143	* valid values for data and control are:
+   144	*       baud    control data
+   145	*       19200   1       1
+   146	*       9600    1       2
+   147	*       4800    1       4
+   148	*       3600    1       5
+   149	*       2400    1       8
+   150	*       2000    1       10
+   151	*       1800    1       11
+   152	*       1200    1       16
+   153	*       600     1       32
+   154	*       300     1       64
+   155	*       200     1       96
+   156	*       150     1       128
+   157	*       134     1       143
+   158	*       110     1       175
+   159	*       75      2       64
+   160	*       50      2       96
+   161	 
+   162	 
+   163	gemdos  equ     1
+   164	bios    equ     13
+   165	xbios   equ     14
+   166	 
+   167	Pterm0  equ     $00
+   168	Cconws  equ     $09
+   169	 
+   170	rsconf  equ     15
+   171	setprt  equ     33
+   172	xbtimer equ     31
+   173	 
+   174	 
+   175	modem   .equ    *
+   176	 
+   177	        move.l  #-1,-(sp)               vector
+   178	        move.w  #64,-(sp)               data
+   179	        move.w  #1,-(sp)                control
+   180	        move.w  #0,-(sp)                timer = A
+   181	        move.w  #xbtimer,-(sp)
+   182	        trap    #xbios
+   183	        add.l   #12,sp
+   184	 
+   185	        move.l  #mess,-(sp)
+   186	        move.w  #Cconws,-(sp)
+   187	        trap    #gemdos
+   188	        addq.l  #6,sp
+   189	 
+   190	        move.w  #Pterm0,-(sp)
+   191	        trap    #gemdos
+   192	 
+   193	* strings
+   194	 
+   195	        .even
+   196	mess    dc.b "MIDI port initialized (300 baud, 8-Bit, Nosync).",$0D,$0A,0
+   197	 
+   198	Have fun - Bernhard
+   199	} MAILER STANFORD  7/15/87
+   200	v Mail Delivery Subsy NEBEL@DB0TUI11.BITN  7/15/87 Returned mail: User unknown
+   201	Acknowledge-To: <NEBEL@DB0TUI11>
+   202	 
+   203	
+   204	$ 

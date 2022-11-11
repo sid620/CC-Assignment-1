@@ -1,0 +1,90 @@
+     1	Retail prices on SMC's most popular 8- and 16-bit Ethernet network
+     2	interface cards have been reduced 20 to 35 per cent according to an
+     3	announcement made today by the company. At the same time, SMC introduced
+     4	both new and enhanced Elite Series Ethernet adapter cards featuring
+     5	increased performance, reduced size and easier installation. The new
+     6	boards expand the SMC EtherCard PLUS Elite adapter card line.
+     7	
+     8	The significant price reductions on SMC Ethernet cards became effective
+     9	February 1,1992. According to Geof Karlin, SMC vice president of
+    10	marketing, the price drops reflect a major benefit of SMC's ability to
+    11	manufacture its own Ethernet chipset and bus interface LSI. "Our control
+    12	of silicon integration allows us to pass along manufacturing cost
+    13	advantages to our customers. This new, low pricing reflects SMC's
+    14	commitment to remain the Ethernet price/performance leader."
+    15	
+    16	The five new EliteSeries boards from SMC consist of an 8-bit 10BASE-T; two
+    17	16-bit Micro Channel cards -- one 10BASE-T and one coax; and two
+    18	high-performance EISA adapters that feature two direct interfaces to
+    19	twisted pair or thin coax wiring via on-board transceivers, and offer an
+    20	alternative connection to a variety of media through an AUI port. The
+    21	three enhanced EliteSeries boards are all 16-bit adapters -- one 10BASE-T,
+    22	one coax and a combination 10BASE-T/coax version.
+    23	
+    24	The new and upgraded boards all feature higher levels of silicon
+    25	integration for both increased reliability and ease of installation, and
+    26	are 20% smaller than the previous generation boards they replace.
+    27	
+    28	"With the introduction of these new boards, we extend our line of Elite
+    29	board offerings," said Karlin. "Further integration of our LSI and
+    30	elimination of jumpers have allowed us to reduce space requirements on the
+    31	boards while increasing their reliability and making them easy to
+    32	configure. We expect these new cards to be as popular as the rest of the
+    33	EliteSeries line."
+    34	
+    35	SMC EtherCard PLUS Elite boards are well-known for their outstanding
+    36	performance and quality, and easy installation via two preconfigured
+    37	jumper settings, or SMC's EZSETUP software configuration program. They
+    38	offer the broadest driver support in the LAN industry through SMC's
+    39	SuperDisk and third-party vendors.
+    40	
+    41	SMC is making its new EtherCard PLUS Elite boards available in convenient,
+    42	easy-to-carry 6-packs with even more economical per-board retail prices -
+    43	some as low as $165. This is equivalent to buying five boards, and getting
+    44	the sixth free. Elite 6-packs will begin shipping in February, according
+    45	to the company.
+    46	
+    47	SMC (NASD:SMSC) is one of the world's largest suppliers of PC LAN system
+    48	products. The company is a major designer, manufacturer and marketer of
+    49	10BASE-T/twisted pair, coax and fiber network interface cards,
+    50	concentrators and network management products for the Ethernet and ARCNET
+    51	markets. SMC currently has a worldwide installed base of over 3.5 million
+    52	nodes.
+    53	--------------------------------------------------------
+    54	After announcing major retail price reductions on its Ethernet adapter
+    55	cards, SMC said that five of its most popular boards will be available in
+    56	6-packs at even lower prices beginning this month.
+    57	
+    58	SMC's 8-bit and 16-bit 10BASE-T and coax, as well as their 16-bit
+    59	combination boards, are all available in the new packaging at a per-board
+    60	price that is 20% off list, according to the company. All the boards are
+    61	part of the SMC EliteSeries family of Ethernet adapter cards.
+    62	
+    63	"Resellers want to buy in volume whenever possible, so we're offering Elite
+    64	Ethernet boards in a package that meets that need," said Kristine Stewart,
+    65	SMC's director of channel marketing.
+    66	
+    67	The new boxes, complete with carrying handle, began shipping to
+    68	distributors this month. Stewart said SMC is alerting the reseller
+    69	community about the new packaging through what the company calls the Elite
+    70	Treat direct mail campaign which features one of the 6-packs filled with
+    71	gourmet popcorn and promotional materials. 
+    72	
+    73	"We shipped over 16,000 of these Elite Treat boxes worldwide. It's
+    74	certainly the best tasting direct mail campaign we've ever had, and should
+    75	attract quite a bit of attention," said Stewart.
+    76	--------------------------------------------------------
+    77	For more information about SMC or the name of their nearest reseller,
+    78	contact SMC at 80 Arkay Drive, Hauppauge, NY 11788;1-800-SMC4-YOU in the
+    79	U.S., 1-800-8334-SMC in Canada, or (516) 273-3100, ext. 5317 elsewhere.
+    80	
+    81	  +---------------------------------------------------------------+
+    82	  |  From the America On-Line & PC-Link New Product Info Services |
+    83	  +===============================================================+
+    84	  | This information was processed with OmniPage Professional OCR |
+    85	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+    86	  | provided by the above mentioned company. For additional info, |
+    87	  | contact the company at the address or phone# indicated above. |
+    88	  |    All submissions for this service should be addressed to    |
+    89	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+    90	  +---------------------------------------------------------------+

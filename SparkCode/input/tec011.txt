@@ -1,0 +1,54 @@
+     1	______________________________________________________________________
+     2	STACKER NOTE                           Stac Electronics Technical Note
+     3	
+     4	Subject: Scheck and Stacker space reporting
+     5	
+     6	Tech011 - 2/20/92
+     7	Page 1 OF 1
+     8	_______________________________________________________________________
+     9	
+    10	Stacker's SCHECK utility offers information on the physical and logical
+    11	Stacker drive regarding total, used, and remaining bytes; percentage of
+    12	space used and free; compression ratio and projected bytes free.  Below
+    13	is a typical SCHECK report:
+    14	
+    15	SCHECK - 2.0, (c) Copyright 1990-92 Stac Electronics, Carlsbad, CA
+    16	Volume in drive E is STACVOL_DSK
+    17	No errors found
+    18	Stacker Drive Statistics:
+    19	
+    20	                  Stacker Drive             STACVOL File
+    21	                  Drive E:                  E:\STACVOL.DSK
+    22	            ----------------------          ----------------------
+    23	  Total Bytes:  4,096,000                   2,054,656
+    24	  Bytes Used:   3,735,552 ( 91.2%)          1,846,272 ( 89.9%)
+    25	  Bytes Free:     360,448 (  8.8%)            208,384 ( 10.1%)
+    26	
+    27	Stacker Drive Compression Ratio = 2.0:1
+    28	Projected Bytes Free            = 360,448
+    29	
+    30	
+    31	What does it all mean?
+    32	
+    33	The left hand column displays logical data on the Stacker drive.  This
+    34	is how DOS and CHKDSK see the drive.  The right hand column shows the
+    35	usage of space (physical) inside the STACVOL file.  This is the file
+    36	that contains all of your compressed data.  Its name and location are
+    37	shown in the column title.
+    38	
+    39	Compression ratio:
+    40	The Stacker drive compression ratio is the average compression ratio
+    41	of the files in that specific STACKER drive.  In the above example, the
+    42	2.0:1 ratio tells us that the files in this Stacker drive are taking up
+    43	half the space they would take up on non "Stacked" drive.  The drive
+    44	compression ratio does not display if the drive is empty.
+    45	
+    46	Projected bytes free:
+    47	This number is Stacker's estimate of the available space left on the
+    48	drive.  If the drive is less than 12% full, or if the drive compression
+    49	ratio is 2.0:1 or greater, this number will be the same as bytes free
+    50	in the Stacker drive (left column).  The projected bytes free on drives
+    51	with usage over 12%, or compression ratios less than 2.0:1, will be a
+    52	number slightly less than the bytes free in the STACVOL file multiplied
+    53	by the overall compression ratio.
+    54	

@@ -1,0 +1,188 @@
+     1	MICROCOM DEMONSTRATES INTERNETWORKING AND COMMUNICATIONS HARDWARE AND
+     2	SOFTWARE AT NETWORLD 92 BOSTON, BOOTH #1508
+     3	
+     4	BOSTON, MA-(Networld '92 Boston, Booth #1508) February 11, 1992 Microcom,
+     5	Inc. a Norwood, MA-based PC connectivity vendor, today demonstrated its
+     6	award-winning line-up of internetworking and communications solutions. Two
+     7	new high-speed V.32bis modems, the portable MicroPorte 4232bis and the
+     8	standalone QX/4232bis+, were also debuted today.
+     9	
+    10	Microcom also demonstrated the following solutions at Networld.
+    11	
+    12	ù Microcom Bridge/Router
+    13	
+    14	The MBR/6000 transparently bridges and routes traffic on 16/4 MB Token Ring
+    15	or Ethernet LANs. The MBR connects LANs at local sites and at remote
+    16	locations over leased lines.
+    17	
+    18	Communications Software For Windows
+    19	
+    20	ù Carbon Copy for Windows provides remote control between PCs running
+    21	Windows applications. Carbon Copy for Windows supports VGA, EGA, CGA,
+    22	Hercules and most Super VGA and video modes.
+    23	
+    24	ù RELAY Gold for Windows enables PC-to-mainframe communications supporting
+    25	up to 15 multiple sessions. RELAY Gold provides file transfer, terminal
+    26	emulation and true PC-to-IBM connectivity.
+    27	
+    28	ù MicroCourier offers complete communications at a very low price. Users
+    29	can connect to other PCs, bulletin boards and on-line services such as
+    30	CompuServe.
+    31	
+    32	Communications Software For DOS
+    33	
+    34	ù Carbon Copy Plus is the leading remote control and communications product
+    35	for PCs. Carbon Copy links keyboards over a LAN or via modem and standard
+    36	telephone lines.
+    37	
+    38	ù RELAY Gold fulfills the need for reliable PC-to-mainframe, PC-to-mini and
+    39	PC-to-PC communications. RELAY supports virtually any physical connection
+    40	including coax boards, gateways, Token Ring TIC, synchronous and
+    41	asynchronous dial-up.
+    42	
+    43	ù RELAY Gateway provides an economical connection between multiple PCs on a
+    44	LAN to a mainframe. Three versions support a variety of connections
+    45	between NetBIOS or Novell IPX LANs to IBM hosts.
+    46	
+    47	Microcom MNP 10 Modems
+    48	
+    49	ù HDMS provides comprehensive means to conveniently expand dial-up modem
+    50	network capacity with an efficient central site management and security
+    51	system. HDMS supports up to 32 High Density V.32bis modems featuring
+    52	sophisticated management reports, event logs and four layers of
+    53	dial-access security.
+    54	
+    55	ù QX/4232bis+ V.32bis desktop modem delivers throughputs up to 57, 000 bps.
+    56	This full-featured modem also provides 2-wire dial and 4-wire leased line
+    57	operation protected by multiple security modems.
+    58	
+    59	ù MicroPorte 4232bis portable modem offers V.32bis speeds up to 38,400 bps.
+    60	Like all new Microcom modems, the MicroPorte 4232bis features MNP 10 for
+    61	reliable operation over both poor quality land lines and cellular links.
+    62	
+    63	--------------------------------------------------------
+    64	
+    65	MICROCOM DEBUTS INDUSTRY'S FIRST V.32bis PORTABLE MODEM 
+    66	
+    67	MicroPorte 4232bis Supports Data Communication Over Cellular and Land-lines
+    68	with MNP 10 Adverse Channel Enhancements
+    69	
+    70	BOSTON, MA (Networld Booth #1508), FEBRUARY 11, 1992 -- Microcom), Inc.,
+    71	(Norwood, MA) developer of MNP (Microcom Networking Protocol), today
+    72	debuted the MicroPorte 4232bis, the industry's first V.32bis portable
+    73	modem. With V.32bis, the MicroPorte 4232bis yields high-speed throughputs
+    74	up to 38,400 bps on land-based lines reducing modem connect time,
+    75	resulting in substantial line cost savings. In keeping with the Company's
+    76	strategy, the MicroPorte 4232bis supports MNP 10 providing enhanced data
+    77	transmission reliability over both dial-up and cellular connections.
+    78	
+    79	The MicroPorte 4232bis has a footprint about the size of an index card,
+    80	weighs 10 ounces, and supports the advanced modem features users have come
+    81	to expect from Microcom's premium desktop modems.
+    82	
+    83	"The MicroPorte 4232bis is the only high-speed portable modem that enables
+    84	users to communicate virtually anywhere," says Stephen P. Mank, Microcom's
+    85	Vice President of Marketing. "Supporting communication over cellular is
+    86	particularly important to the increasing number of laptop, notebook,
+    87	palmtop and pen computer users who require mobile communication
+    88	capabilities. With MNP 10, their connect times are shorter and
+    89	communication links more reliable."
+    90	
+    91	Microcom's MNP 10 gives the MicroPorte 4232bis user a better chance to get
+    92	connected and stay connected over poor quality cellular and land-based
+    93	links. MNP 10 incorporates four unique functions called Adverse Channel
+    94	Enhancements (ACE) that regulate modem speed and packet sizes, optimizing
+    95	data transfer under virtually any conditions. MNP 10 initiates a call at
+    96	1200 bps, the most robust level, then upshifts to the highest possible
+    97	line speed. Throughout the call, MNP 10 monitors various line parameters
+    98	and aggressively adapts packet size and shifts modem speed, upward or
+    99	downward, providing optimum data throughput.
+   100	
+   101	In addition to supporting CCITT V.32bis modulation standards and MNP 10,
+   102	the MicroPorte 4232bis also supports MNP 2-4 error control, MNP 5 and
+   103	V.42bis data compression, and other modulation standards, including V.32
+   104	(9600), V.22bis (2400), V.22 (1200 bps), Bell 212A (1200 bps) and Bell 103
+   105	(300 bps).
+   106	
+   107	The MicroPorte 4232bis includes an AC power pack and rechargeable
+   108	batteries. Fully charged batteries provide 1.5 hours of connect time. Auto
+   109	shut-off conserves battery life when the MicroPorte is not in use. For
+   110	mobile computing, users can purchase an optional 12-volt DC adapter that
+   111	plugs into a standard automobile cigarette lighter.
+   112	
+   113	Shipping to authorized Microcom resellers in March 1992, the MicroPorte
+   114	4232bis will have a list price of $899.
+   115	
+   116	--------------------------------------------------------
+   117	
+   118	BOSTON, MA (Networld Booth #1508), February 11, 1992--Microcom, Inc.,
+   119	(Norwood, MA) developer of the Microcom Networking Protocol (MNP), the de
+   120	facto modem standard, today debuted the QX/4232bis+, the newest member of
+   121	its V.32bis modem family. The QX/4232bis+ is ideally suited for users of
+   122	high-power PCs and larger systems requiring very high throughput, solid
+   123	security and error-free transmission over dial-up or leased lines.
+   124	
+   125	Enabling users to transfer data at speeds up to 57,600 bps, the QX/4232bis+
+   126	eliminates performance bottlenecks that frequently occur when running
+   127	complex applications with slower modems. The high-speed QX/4232bis+ also
+   128	provides the throughput users require for data-intensive applications
+   129	running on midrange, mainframe and supercomputers.
+   130	
+   131	In addition to 2-wire dial-up operation, the QX/4232bis+ supports 4-wire
+   132	leased lines. This preserves users' modem investments as the QX/4232bis+
+   133	is compatible with most 4-wire modems.
+   134	
+   135	If the leased line connection is disrupted, the QX/4232bis+ automatically
+   136	switches to a 2-wire dial backup. While in backup mode, the modem
+   137	continually monitors the leased line and switches back to 4-wire operation
+   138	when the line is restored. Throughout the backup process, the QX/4232bis+
+   139	maintains complete data integrity.
+   140	
+   141	Since many large computer systems are installed in banks, financial
+   142	institutions and Fortune 1000 corporations, Microcom designed the
+   143	QX/4232bis+ with multiple security modes to protect sensitive financial
+   144	and technical data. Sophisticated security features enable users to
+   145	program a security database for up to 20 users, selecting fixed dial-back,
+   146	variable dial-back or pass-through security, depending upon the user's
+   147	needs. Other security features are also provided.
+   148	
+   149	For both synchronous and asynchronous operation, the QX/4232bis+ provides
+   150	CCITT V.25bis dialing commands. This feature is particularly valuable to
+   151	users of IBM AS/400 systems, which commonly support V.25bis dialing.
+   152	
+   153	Following its strategy of providing high-performance capabilities in its
+   154	modems, Microcom also includes MNP 10 in the QX/4232bis+. MNP 10 provides
+   155	users with an effective solution for communicating data over cellular
+   156	networks and other adverse channels such as noisy land lines. MNP 10
+   157	enhances modem connectability and adjusts packet size and modem speed to
+   158	optimize performance of the QX/4232bis+.
+   159	
+   160	Other features provided in the QX/4232bis+ include
+   161	
+   162	ù Auto Logon
+   163	. PCS Security
+   164	ù Multiple Configurations
+   165	. UUCP/Kermit Spoofing
+   166	ù Remote Access
+   167	ù Auto Dial-back On Loss of Carrier
+   168	
+   169	Microcom will ship the QX/4232bis+ to authorized dealers by the end of
+   170	January 1992. The modem will have a list price of $1099.
+   171	
+   172	Microcom's other V.32bis modems include the QX/4232bis desktop model and
+   173	the recently announced MicroPorte 4232bis portable modem. Both include MNP
+   174	10 and provide speeds up to 38,400 bps.
+   175	
+   176	Microcom, 500 River Ridge Dr, Norwood, MA 02062
+   177	617-551-1000
+   178	
+   179	  +---------------------------------------------------------------+
+   180	  |  From the America On-Line & PC-Link New Product Info Services |
+   181	  +===============================================================+
+   182	  | This information was processed with OmniPage Professional OCR |
+   183	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+   184	  | provided by the above mentioned company. For additional info, |
+   185	  | contact the company at the address or phone# indicated above. |
+   186	  |    All submissions for this service should be addressed to    |
+   187	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+   188	  +---------------------------------------------------------------+

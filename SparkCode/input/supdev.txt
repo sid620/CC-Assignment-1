@@ -1,0 +1,175 @@
+     1	            Supported Devices for various DPT Drivers
+     2	                         As Of 11/21/91
+     3	
+     4	
+     5	SW-OS2: Driver Enhancement for PM2011 and PM2012 controllers.
+     6	        Compatible with OS/2 versions 1.21 and 1.3.  DOS FAT and
+     7	        HPFS File Systems are supported.  Support for Overlapped
+     8	        Commands, Scatter Gather, and Bus Mastering is provided.
+     9	        Support for multiple controllers is also provided.
+    10	
+    11	All major vendor standard hard disks supported.  Magneto Optical,
+    12	Removable Cartridge, and CDROM drives are not yet supported. 
+    13	Supported Tape Drives are as follows:
+    14	
+    15	
+    16	Archive*         Tandberg*         Wangtek*
+    17	
+    18	Viper 2150       3660              5150ES
+    19	Viper 2525       3800              5525ES
+    20	Viper 4520                         6130HS
+    21	
+    22	
+    23	* Support for these tape drives is accomplished with Sytos Plus in
+    24	conjuction with SW-OS2.
+    25	
+    26	
+    27	
+    28	SW-NOV: Driver Enhancement for PM2001, PM2011, and PM2012.
+    29	        Compatible with Netware 2.15, 2.2, 3.1 and 3.11.  Multiple
+    30	        controller support is provided.  Support for Overlapped
+    31	        Commands, Scater Gather, and Bus Mastering is provided.
+    32	
+    33	
+    34	All major vendor standard hard disks supported, with added support
+    35	for the following Removable Media drives:
+    36	
+    37	
+    38	Ricoh          Sony          Syquest
+    39	
+    40	RO5030E2       Tidlewave     SQ-555
+    41	
+    42	
+    43	Currently no tape or CDROM support.
+    44	
+    45	
+    46	
+    47	SW-SCO:  Driver Enhancement for SCO Unix 3.2.2 and ODT 1.1.
+    48	         Support for Overlapped Commands, Scatter Gather, and Bus
+    49	         Mastering is provided.  Supports multiple controllers.
+    50	
+    51	All major vendor standard hard disks supported, including the Sony
+    52	Tidlewave Magneto Optical.
+    53	
+    54	CDROM support for Sony, Toshiba XM-3301B and 3303B, and Maxtor 800HS.
+    55	Supported Tape Drives are as follows:
+    56	
+    57	Archive*       Exabyte*         HP*        Mountain*       Wangtek*
+    58	
+    59	Python 4521NT  EXP8200         35450A      FS1200          6130FS
+    60	Python 4520NT                              FS2100          6130HS
+    61	Python 4330XT                              FS7500          5525ES
+    62	Python 4530NT                              FS7150          5125ES
+    63	Viper 2125S                                                5099ES
+    64	Viper 2650S                                                5150ES
+    65	Viper 2060S                                                6130HS
+    66	Viper 2150S
+    67	
+    68	Cipher        IBM        Quarterdeck        Sony           Tanberg
+    69	
+    70	6250          3480       Quarterdeck        5DT-1000       TDC2660 
+    71	                                                           TDC3800
+    72	
+    73	Tecmar
+    74	
+    75	QT150ES
+    76	QT525ES
+    77	DV1.3G
+    78	THS2200
+    79	
+    80	
+    81	* This tape information is taken directly from the SCO Unix
+    82	Supplemental Guide.  SW-SCO supports any tape drive directly
+    83	supported by SCO Unix 3.2.2.
+    84	
+    85	
+    86	
+    87	SW-ISC:  Driver Enhancement for Interactive Unix 2.2.1.
+    88	         Support for Overlapped Commands, Scatter Gather, and Bus
+    89	         Mastering is provided.  Supports multiple controllers.
+    90	
+    91	All major vendor standard hard disks supported.
+    92	
+    93	Supported Tape Drives are as follows:
+    94	
+    95	Archive*         Exabyte*       Wangtek*        Caliper
+    96	
+    97	Viper 2125S      EXP8200         6130HS          CP150 
+    98	Viper 2060S                      5150ES
+    99	Viper 2150S                      5099ES
+   100	                                 5125ES
+   101	                                       
+   102	
+   103	
+   104	Cipher      Quarterdeck       Tanberg          Teac
+   105	
+   106	ST150       Quarterdeck       TDC2660       MT-25T-45S2
+   107	                              TDC3800
+   108	
+   109	
+   110	
+   111	SmartROM: SmartROM is a DOS driver built into a ROM that custom
+   112	          fits on the DPT controller.  Provides enhanced mode for
+   113	          PM2001, PM2011, and PM2012.  SmartROM can be used on
+   114	          PM3011 for large disk drive support and/or multiple
+   115	          controllers.  Compatible with MS/PC DOS 3.3 and 4.01.
+   116	
+   117	
+   118	All major vendor standard hard disks supported, including the
+   119	Syquest SQ-555, Ricoh 5030, and Sony SMO-E501.
+   120	
+   121	Supported Tape Drives are as follows:
+   122	
+   123	NEC CDROM       Archive*        Cipher*       Exabyte*       Teac*
+   124	
+   125	NEC70           Viper 2060S     ST150         EXB8200     MT25T45S2
+   126	NEC77           Viper 2150S                               MT25TN50
+   127	NEC80           Viper 4330XT
+   128	NEC82           Viper 4520NT
+   129	NEC83           Viper 4530NT
+   130	                Maynstream 1300
+   131	
+   132	Toshiba CDROM   Hitachi CDROM
+   133	
+   134	XM-3301B        1700S      
+   135	XM-3303B        1750S
+   136	                3650S
+   137	  
+   138	
+   139	* Support for these tape drives is accomplished with SmartROM in
+   140	conjuction with SW-AIMDOS.
+   141	
+   142	
+   143	
+   144	SW-DOS:  Driver Enhancement for DOS 3.3 and higher for PM2001,
+   145	         PM2011, and PM2012.  
+   146	
+   147	All major vendor standard hard disks supported, including the
+   148	Syquest SQ-555, Maxtor Tahiti, and Sony Tidalwave.
+   149	
+   150	Currently, there is no CDROM support.
+   151	
+   152	Supported Tape Drives are as follows:
+   153	
+   154	Archive*       Exabyte*         HP*        Mountain*       Wangtek*
+   155	
+   156	Python 4521NT  EXP8200         35450A      FS2100          6130FS
+   157	Python 4520NT                                              5150HS
+   158	Python 4330XT                                              5525ES
+   159	Python 4530NT                                              5125ES
+   160	Viper 2125S                                                5099ES
+   161	Viper 2150S                                                      
+   162	Viper 2060S                                                      
+   163	
+   164	Cipher*       IBM*           Caliper*       Sony*          Tanberg*
+   165	6250          3480           CP320          SDT-1000       TDC2660 
+   166	                                                           TDC3800
+   167	
+   168	* Support for these tape drives is accomplished with SW-DOS in
+   169	conjuction with SW-SYDOS.
+   170	
+   171	
+   172	
+   173	
+   174	
+   175	

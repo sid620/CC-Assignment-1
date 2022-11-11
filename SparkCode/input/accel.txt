@@ -1,0 +1,84 @@
+     1	          Amiga 500 processor accelerator project
+     2	                                        by Leslie Ayling
+     3	                                        p.o. box 334
+     4	                                        GLEBE 2037
+     5	
+     6	     Welcome once again to cheapskates corner, where we try and buy the 
+     7	world for a song. This time around we shall increase the speed of the 
+     8	processor to just over 14Mhz, double the standard speed,
+     9	for under $25 !!!!
+    10	
+    11	     You will need the following -
+    12	
+    13	1. an MC68000p12A 16MHz processor. These are available in Sydney from VSI 
+    14	   electronics, 16 DICKSON ave ARTARMON 2064 ph (02)4398622  cost is 
+    15	   $18.90 plus tax ($22.68 tax inc.)
+    16	2. a 74F74 D type flip flop. Geoff wood at Lane Cove or Rod Irving 
+    17	  should keep them.
+    18	3. a few short lengths of hook-up wire.
+    19	4. a SPDT switch.
+    20	
+    21	Refer to the accompanying circuit diagram
+    22	Note: Keep the leads to the switch as SHORT as possible.
+    23	The circuit is relatively straight forward. the 74F74 is wired as a 
+    24	positive edge triggered divide by two circuit, which provides the alternate 
+    25	clock frequency of 14.18Mhz approxiamately. The old 68000 8Mhz processor 
+    26	is removed and replaced with the 16Mhz version which has is clock pin (15) 
+    27	bent out horizontally so we can connect our new circuitry to it. 
+    28	The SPDT switch either connects the normal 7Mhz signal or the new 14Mhz 
+    29	signal to the 68000's clock input.
+    30	
+    31	The switch can be changed while the machine is on, however it will simply 
+    32	lock up. Just reset as usual from the keyboard once you have changed speed.
+    33	
+    34	I have a revision 5 board with new 1.3 roms which cope with the new speed 
+    35	quite happily. Using the program CRAMDEN-SI from MEGADISC 10 to compare 
+    36	the difference the mod makes : 
+    37	
+    38	The standard position gives-
+    39	
+    40	performance relative to amiga 1000 : 1.0
+    41	performance relative to ibm pc/xt  : 3.2
+    42	
+    43	On high speed the performance is-
+    44	
+    45	performance relative to amiga 1000 : 1.7
+    46	performance relative to ibm pc/xt  : 5.2
+    47	
+    48	so roughly a 70% increase in performance.
+    49	Even though the clock speed is doubled to the processor, the performance 
+    50	dosen't increase to 2.0 because the agnus and the other support chips are 
+    51	still running at the same speed as before thus holding the processor up 
+    52	for a slightly higher percentage of the total time than before.
+    53	
+    54	This mod basically gives the same capability as the CMI accelerator board 
+    55	priced at $399 in sydney, with the exception that it isn't software
+    56	controlled. However when it's only costing 1/16th the price one cant 
+    57	really complain!!.
+    58	
+    59	If you have any queries or would like the mod installed in your machine, 
+    60	either contact me direct or via Megadisc.
+    61	
+    62	The machine should work on the 1000 and 2000 however the pin numbers may 
+    63	be different.I suggest you compare the a500 schematics with that of your 
+    64	machine and make note of the differences.
+    65	
+    66	Hope this is of some help...........regards   Leslie Ayling.
+    67	
+    68	#addendum#
+    69	One machine this mod was carried out on had trouble with the one of the 
+    70	disk drives at high speed. It appeared to be trying to step the head of 
+    71	the internal drive faster than the drive could physically move and 
+    72	refused to boot.When I connected a drive with a 5ms track-track access 
+    73	time and booted off of it the problem dissappeared.
+    74	I have a patch for this problem for normal DOS disks to slow down the 
+    75	step rate which sits in the boot sector.It may be a problem however for 
+    76	protected software or non-standard boot sector type programs.
+    77	Don't despair however the patch is very small and should fit in 
+    78	somewhere anyway.Just drop me a line. If your machine exhibits the 
+    79	problem, the patch disk is available DIRECT from me with various usefull 
+    80	disk speedup utils and a Trackdisk step-rate alteration program, plus 
+    81	loads of other priceless information on gurus, reset program flow, 
+    82	diagnostics all on an ARP1.3 system disk for the princely sum of $5 !! 
+    83	There should be no problem with HARD disks however if anyone encounters 
+    84	any please let me know........thanks.

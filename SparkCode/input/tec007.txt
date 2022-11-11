@@ -1,0 +1,48 @@
+     1	
+     2	
+     3	                                STAC ELECTRONICS
+     4	                           TECHNICAL SUPPORT BULLETIN
+     5	
+     6	  NUMBER:     007
+     7	  SUBJECT:    SREMOVE; STACKER-MISC
+     8	
+     9	  DATE:       May 24, 1991
+    10	  TIME:       3:06 PM
+    11	
+    12	  SOURCE:         Tech Support, User's Manual
+    13	  SUPERCEDES/
+    14	  SUPERCEDED BY:
+    15	  RELEASE STATUS: Public
+    16	
+    17	  TITLE:
+    18	      Removing a STACKER volume completely; down/upsizing a drive.
+    19	
+    20	  OVERVIEW:
+    21	      STACKER's SREMOVE utility is used in the process of both permanently
+    22	      removing a STACKER volume and "changing" the size of either the STACKER
+    23	      volume or the uncompressed drive.
+    24	
+    25	  ISSUES/COMMENTS:
+    26	      1) The permanent removal of a STACKER volume entails the removal of all
+    27	      of the data inside of it.
+    28	
+    29	      2) At this time, it is not possible to increase the size of a STACKER
+    30	      volume.  It is necessary to remove the volume completely, then to create
+    31	      another volume of a different size.  This applies if the STACKER
+    32	      volume is too small (too much space left uncompressed when the STACKER 	
+    33	      volume was created).  Stacker version 2.0 can reduce the size of the
+    34	      Stacker drive using SDEFRAG /G (page 94 in the User Guide).
+    35	
+    36	  RECOMMENDED ACTIONS:
+    37	      1) Permanent removal:
+    38	          a) back up all data on STACKER volume;
+    39	          b) run SREMOVE (see User's Manual, "STACKER Utilities--SREMOVE");
+    40	          c) delete DEVICE=STACKER.COM... and DEVICE=SSWAP.COM.. lines in
+    41	          CONFIG.SYS, per instructions following SREMOVE..
+    42	
+    43	      2) "Changing" the size of a STACKER volume:
+    44	          a) proceed as for permanent removal;
+    45	          b) make another free space STACKER volume using INSTALL or SCREATE,
+    46	          and changing only the amount of space to leave uncompressed;
+    47	          c) restore data to the new STACKER volume;
+    48	          d) edit CONFIG.SYS for new STACVOL filename.

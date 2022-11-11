@@ -1,0 +1,108 @@
+     1	Santa Monica, CA, February 5, 1992 -- Retix, a leading worldwide supplier
+     2	of Open Networking products, today expanded its OpenServer 400 series of
+     3	X.400 based messaging solutions with a new version of OpenServer 400 and
+     4	two additional gateway Products. The company has added an OS/2 version to
+     5	its current line of popular OpenServer 400 products which includes
+     6	versions for DOS and UNIX (both SCO and Interactive versions). In
+     7	addition, Retix has introduced a new Microsoft Mail for PC Networks
+     8	Gateway to X400 and a new version of the SMTP (Simple Mail Transfer
+     9	Protocol) Gateway to X.400, expanding its current suite of gateway
+    10	products. Now, users in each of the major operating system environments,
+    11	using virtually any e-mail system, can benefit from OpenServer 400's
+    12	messaging solution.
+    13	
+    14	The OpenServer 400 Product Family
+    15	
+    16	Retix OpenServer 400 products allow users to link otherwise incompatible
+    17	mail systems to one another, creating a cohesive, enterprise-wide
+    18	messaging environment. All OpenServer 400 products provide a distributed
+    19	solution based on widely-accepted industry and ISO international
+    20	standards. In addition, OpenServer 400 products can be combined with an
+    21	extensive suite of gateways from Retix and other vendors to gain access to
+    22	virtually every popular e-mail and mail-enabled application in use today.
+    23	OpenServer 400 for OS/2
+    24	
+    25	OpenServer 400 for OS/2 is designed to take full advantage of the
+    26	multi-tasking OS/2 Version 1.3 operating system, providing users with
+    27	improved performance and increased capacity for their enterprise-wide
+    28	messaging networks. Key benefits of the OS/2 version include: better
+    29	memory utilization and increased performance for more efficient service to
+    30	large numbers of users; the ability to run OpenServer 400 and selected
+    31	e-mail server applications on a single machine; and a graphical OpenServer
+    32	Configuration Utility (OCU) running under Presentation Manager that
+    33	simplifies configuration and set-up.
+    34	
+    35	"Now that we have a version of OpenServer 400 for OS/2, as well as DOS and
+    36	UNIX, we can address the full spectrum of users that need to establish
+    37	enterprise-wide messaging," said Mark Fishburn, vice president and general
+    38	manager of Retix' OSI Product Unit.
+    39	
+    40	New Gateway Products
+    41	
+    42	Retix also expanded its family of gateways which work in conjunction with
+    43	OpenServer 400 to give users of PC LAN-based e-mail systems
+    44	interoperability with a wide range of other e-mail systems, mainframe and
+    45	minicomputer based systems and public mail networks that support X.400.
+    46	
+    47	The new Microsoft (MS) Mail for PC Networks Gateway provides MS
+    48	Mail-to-X.400 format conversion and transmission, allowing users of MS
+    49	Mail for PC Networks (formerly Consumer Software's Network Courier e-mail
+    50	package) to send messages and receive messages from users of other e-mail
+    51	systems. In fact, to the MS Mail user, users of other email systems appear
+    52	as if they were using the same mail system; the gateway simply maps the MS
+    53	Mail address to the X.400 address transparently.
+    54	
+    55	The Retix SMTP Gateway to X.400 works in a similar fashion, providing
+    56	SMTP-to-X.400 format conversion and transmission facilities, so that users
+    57	of UNIX e-mail systems (RFC 822 mailers) obtain access to other e-mail
+    58	systems and mail networks. Using the SMTP Gateway in combination with
+    59	OpenServer 400, users can send messages or files throughout an enterprise
+    60	using any e-mail package that supports RFC 822. The new version of the
+    61	gateway announced today adds support for SCO UNIX (to the previously
+    62	supported Interactive version), as well as MMDF-II, a popular SCO UNIX
+    63	mailer.
+    64	
+    65	"Microsoft has a significant market share in the LAN-based e-mail world
+    66	with MS Mail for PC Networks, and UNIX mailers are used heavily in both
+    67	government and academic sectors," said James Neiser, associate vice
+    68	president of marketing for the Retix OSI Product Unit. "In conjunction
+    69	with our OpenServer Partners, we can now provide X.400-based
+    70	interoperability to e-mail users in virtually every market sector."
+    71	
+    72	The MS Mail for PC Networks and SMTP Gateways to X.400 join the growing
+    73	number of gateways supplied by Retix and its OpenServer Partners to
+    74	provide access to popular e-mail and mail-enabled applications. Additional
+    75	gateways to X.400 are currently available for users of 3Com, cc:Mail,
+    76	NetWare MHS, OfficeWorks, MS Mail for Macintosh and WordPerfect, among
+    77	others.
+    78	
+    79	Pricing and Availability
+    80	
+    81	OpenServer for OS/2 is available 60 days ARO and begins at $5,950, U.S.
+    82	list. The Microsoft Mail for PC Networks Gateway to X.400 and the new
+    83	version of the SMTP Gateway to X.400 are available 60 days ARO. Pricing
+    84	for both gateways begins at $1,795, U.S. list. The products will be
+    85	demonstrated, along with OpenServer 400, at Networld Boston, February
+    86	11-13,1992 in Boston, Massachusetts, booth 121.
+    87	
+    88	Retix is a leading worldwide supplier of Open Networking products to the
+    89	end user and OEM markets. Founded in 1985, Retix designs, manufactures and
+    90	markets both OSI software and internetworking bridges and routers to end
+    91	users, OEMs, systems integrators, value-added resellers and distributors.
+    92	Retix has more than 200 OSI OEM licensees throughout the world and has
+    93	sold over 25,000 bridges and routers. Retix' shares are traded on the
+    94	NASDAQ National Market System under the symbol "RETX".
+    95	
+    96	Retix, 2401 Colorado Ave, Santa Monica, CA 90404
+    97	310-828-3400
+    98	
+    99	  +---------------------------------------------------------------+
+   100	  |  From the America On-Line & PC-Link New Product Info Services |
+   101	  +===============================================================+
+   102	  | This information was processed with OmniPage Professional OCR |
+   103	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+   104	  | provided by the above mentioned company. For additional info, |
+   105	  | contact the company at the address or phone# indicated above. |
+   106	  |    All submissions for this service should be addressed to    |
+   107	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+   108	  +---------------------------------------------------------------+

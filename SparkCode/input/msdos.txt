@@ -1,0 +1,255 @@
+     1	
+     2	
+     3	
+     4	
+     5	 FFFFFFFF   FFFFFFFF         FFFFFFFFF   FFFFFFFF   FFFFFFFF
+     6	FFFFFFFFFF FFFFFFFFFF        FFFFFFFFFF FFFFFFFFFF FFFFFFFFFF
+     7	FFF FF FFF FFFFFFF    FFFFFF FFF    FFF FFF    FFF FFFFFFF
+     8	FFF F  FFF    FFFFFFF FFFFFF FFF    FFF FFF    FFF    FFFFFFF
+     9	FFF    FFF FFFFFFFFFF        FFFFFFFFFF FFFFFFFFFF FFFFFFFFFF
+    10	FF     FF   FFFFFFFF         FFFFFFFFF   FFFFFFFF   FFFFFFFF
+    11	
+    12	Specific information........
+    13	
+    14	
+    15	
+    16	
+    17	
+    18	
+    19	
+    20	
+    21	
+    22	
+    23	
+    24	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    25	
+    26	If you can't afford the big cluster size on large hd's (32k...)
+    27	slice'em up with fdisk into two, three partitions.
+    28	
+    29	There can exist ONE file only in each cluster.
+    30	
+    31	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    32	
+    33	If you experience files with spaces in them (20h),  you might discover that is
+    34	isn't so easy to delete them. Let's say we have a file called "game 94.exe".
+    35	First rename it to something deleteable.
+    36	
+    37	ren game?94.exe game_94.exe
+    38	del game_94.exe
+    39	
+    40	Of course, you might have to delete any files that blocks for a rename,
+    41	like "game!94.exe", etc.....
+    42	
+    43	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    44	
+    45	If [program-name] *.*
+    46	don't work, use
+    47	
+    48	for %a in (*.*) [prog-name] %a		;or %%a for batch files (?)
+    49	
+    50	instead. If you don't need *.*, use the wildcard that suits your problem...
+    51	
+    52	-This is called a FOR loop.
+    53	
+    54	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+    55	
+    56	If you ever use nonstandard floppy-disks and get hardware errors on them,
+    57	you might discover that you can't run "Norton Disk Doctor" or another
+    58	similar disk-error correcting utility on them.
+    59	
+    60	The trick is to either use one of these solutions in your config.sys:
+    61	
+    62		* Driver.sys and define a new logical drive
+    63	-NOT recommended because a LOT of programs fuck up with this driver.
+    64	
+    65		* Drivparm= . This parameter redefines your physical drive, and
+    66	sets new information. HIGHLY recommended, works virtually everywhere!
+    67	
+    68	SYNTAX:
+    69	
+    70	drivparm= /D:[number] (/C) /F:[factor] /H:[heads] (/I) (/N) /S:[sectors]
+    71		  /T:[tracks]
+    72	
+    73	D	-	represents logical drive number, A:=0, B:=1, C:=2, and so on.
+    74			0-255, but real limit is drive Z.
+    75	
+    76	C	-	Means that the drive has CHANGE LINE SUPPORT, which means
+    77			that the drive detects if you remove and and insert a disk.
+    78			5.¬ usually doesn't have Change Line Support, but 3.« usually
+    79			does.
+    80	
+    81	F	-	Form factor. Says what true device the new device should
+    82			emulate.
+    83			0-	160/180k, or 320/260k disk.
+    84			1-	1.2 MB disk.
+    85			2-	720k 3.5 inch disk.
+    86			5-	Hard disk.
+    87			6-	Tape Drive.
+    88			7-	1.44 MB 3.5 inch disk.
+    89			8-	Read/Write optical disk.
+    90			9-	2.88 MB 3.5 inch disk.
+    91	
+    92			The default is a 3.5 inch 720 kb disk.
+    93	
+    94	H	-	Maximum head number. From 1 to 99. Default is 2.
+    95	
+    96	I	-	Specifies that the device is 3.5 inch electrically-compatible.
+    97			Set this switch if your BIOS does not support 3.5 inch drives.
+    98	
+    99	N	-	Specifies a non-removable block device.
+   100	
+   101	S	-	Sectors per track. From 1 to 99. Default is 9.
+   102			(In most cases, if you set the track to the highest case
+   103			 in which you may experience, the device will usually still
+   104			 detect a less-sectored storage device, and properly use it)
+   105			(Then again, it might not...hehehe)
+   106	
+   107	T	-	Number of tracks PER SIDE of block device. From 1 to 999.
+   108			same ()'s goes as over.
+   109	
+   110	This parameter can also be used to specify a 3.«" disk drive in a system
+   111	which bios cannot handle that.....
+   112	
+   113	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   114	
+   115	At least set
+   116	
+   117	c:\dos\mode con rate=32 delay=1
+   118	
+   119	if you don't have the utility to set the rate higher, this is a setting
+   120	to live with....
+   121	
+   122	-------------------------------------------------------------------------------
+   123	
+   124	An alternate and better solution, but more technical, is to create a TSR that
+   125	stuffs more characters into the keyboardbuffer whenever a key is pressed.
+   126	
+   127	-------------------------------------------------------------------------------
+   128	
+   129	If you want an extended keyboardbuffer, it is really easy to create a program
+   130	that changes the buffer to point to the USUALLY empty space between
+   131	0200 and 0300...
+   132	
+   133	Note: USUALLY!
+   134	
+   135	To help you with this, I have included a program in asm for you. If you have
+   136	no compilator, don't worry, because I have also compilated it. You can find
+   137	most info in the buffermv.1st file.
+   138	
+   139	The asm, exe, and 1st files lies in the EXTRAS directory.
+   140	
+   141	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   142	
+   143	if the install program is stupid enough, use subst to SUBSTitute drive
+   144	a: for a directory on your hd. This way you can install MUCH faster...
+   145	
+   146	Use: subst a: [drive]:\[full path]
+   147	
+   148	use a program to shell to dos between installing the disks, or just stuff all
+   149	the disks into the directory
+   150	
+   151	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   152	
+   153	use a boot-menu if possible
+   154	[dos 6.0 and higher]
+   155	
+   156	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   157	
+   158	of course, to save memory, the start of your config.sys would look something
+   159	like this:
+   160	
+   161	stacks=0,0	;Unless you REALLY need stacks, keep them out!
+   162			;You can use a multiple-boot if you only need stacks
+   163			 for one program
+   164	fcbs=1		;No-one uses fcbs's anymore, keep them low
+   165	buffers=20,8	;Only real impact on small&slow hd's and floppies
+   166			 Turn higher if one of your devices tend to slow down
+   167			 The second number is the size of the secondary buffer.
+   168	lastdrive=c[d?]	;dos sets lastdrive at one drive more than you need.
+   169			 When you don't planning on installing devices between
+   170			 reboots, set lastdrive to your REAL last drive
+   171	files=20	;20 is enough for wp, which is about the only program
+   172			 that use so many. You can usually live with 10, (or 8)
+   173			 Other programs, like bbs'es need more.... If you
+   174			 Task-switch, you might need much more!
+   175	
+   176	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   177	
+   178	Dos has several bugs you don't want to run in to. Be avare of command lines
+   179	very long (, like 250 chars), which in addition to some keycodes hangs dos.
+   180	A cold boot is the only cure. You might want to avoid pressing a lot of ctrl
+   181	codes simoultanesly. (Who does that really? Me? Guess so.....)
+   182	
+   183	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   184	
+   185	Use smaller characters in dos sessions!
+   186	Using a smaller characters generates a larger -real estate-, and gives you
+   187	easier dos management. Normally, virtually everyone can use:
+   188	
+   189	[config.sys]
+   190	device=c:\dos\ansi.sys
+   191	
+   192	[autoexec.bat]              ;or another file containing the commands you
+   193	c:\dos\mode con lines=50    ;normally would have had in that file 
+   194	
+   195	Other people, like me, would use a tsr to give you 80*60 or 100*40, or
+   196	maybe something like the 160*64! (1mb, 1280*1024)
+   197	
+   198	Generally, I use 80*60 for normal dos management, and 100*40 for reading
+   199	text files.
+   200	
+   201	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   202	
+   203	If your hd is as complicated as mine, with 600+ directories, 10000-20000
+   204	files, and tree paths as big as 15 levels deep, you WANT to create additional
+   205	drives with subst.
+   206	
+   207	Let's say that your main and last drive is d:
+   208	Then you really want to:
+   209	subst e: d:\
+   210	subst f: d:\
+   211	
+   212	and so on.....
+   213	
+   214	If you can't afford the small memory the additional drives costs you,
+   215	and you only have one Floppy Drive, replace b: which is not used, and only
+   216	takes memory anyway...
+   217	
+   218	this way you can be in
+   219	d:\main\progs\main\dos\util\data\sound\players\dmp
+   220	and copy a file, let's say readme.now to e: (which is really d:!)
+   221	e:\second\datas\second\copy2\temp\delme\x\x\x\
+   222	
+   223	then only a {copy d:readme.now .} is required!!!!!!!!
+   224	
+   225	-------------------------------------------------------------------------------
+   226	
+   227	Windows notice!
+   228	
+   229	Since windows is NOT compatible with subst, do as follows:
+   230	
+   231	1.	Rename WIN.COM to WINFILE.COM
+   232	2.	Make a bat file {win.bat} containing this:
+   233	
+   234		subst d: /D		;and e: b: f:, if you have more that one
+   235					;substed drive...
+   236	
+   237		c:\windows\winfile.com
+   238	
+   239		subst d: d:\		;restore the subst'es to the original
+   240					;configuration
+   241	
+   242	This works fine with me, and is as far as I know, the best solution to this
+   243	problem... There IS a way to use SUBSTed drives in windows, but I will not
+   244	explain this here.
+   245	
+   246	You might want to restore your video configuration, since windows usually
+   247	fucks up any exotic video mode. (like 80*60, which windows returns to 80*50)
+   248	
+   249	------------------------------------------------------------------------------
+   250	
+   251	You CAN however create subst'ed drives within a dos-window. The subst'ed
+   252	drives will not be shared among the windows.
+   253	
+   254	נננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננ
+   255	

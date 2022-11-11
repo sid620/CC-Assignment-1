@@ -1,0 +1,281 @@
+     1	From: Donald E. Kimberlin
+     2	
+     3	        As our Moderator's response said, Telex certainly should be
+     4	called the original form of E-Mail. Far from "dead" on a global basis,
+     5	UN reports published in the "Brittanica Book of the Year" indicate
+     6	there are about three million Telex lines around the globe.  Contrary
+     7	to the impression international telephone people like to create,
+     8	direct, immediate access via Telex still exists to more of the world's
+     9	political entities than does telephone.  This has been the case for
+    10	many years. (Totalitarian governments must like Telex; they have been
+    11	known to shut down telephone service, but not Telex.  The suspected
+    12	reason: It can be monitored with hard copy easily, and has often been
+    13	done,too.  Of course, they themselves use it for military messages.)
+    14	
+    15	        Telex sprang from the same source as the Volkswagon automo-
+    16	bile: The creative growth era of the early Third Reich. It was devised
+    17	as a means to distribute military command and control messages and
+    18	data in a time before we even had a structure for data processing
+    19	machinery.  What existed at that point in time was 45.5 bps Baudot
+    20	automatic telegraphy and dial-pulsing telephone exchanges.  The
+    21	original Telex was essentially (director-controlled; yes, the
+    22	Europeans were doing that then) rotary telephone switches modified to
+    23	carry DC telegraph lines, providing a switched service for
+    24	teletypewriters in the same way as was done for telephones.
+    25	
+    26	        There was one major difference: Intercity transmission
+    27	facilites were expensive and in short supply, and one analog telephone
+    28	circuit between cities could carry 24 (and in some applications, 25)
+    29	telegraph channels bearing Telex.  The economics are obvious, and
+    30	probably are what keep Telex important in the Third World today.
+    31	
+    32	        In that era of transparent analog transmission lines, Telex
+    33	was easily able to use telephone dial-pulsing on the local telegraph
+    34	loops followed by Baudot teletype for the messages ... and it did.
+    35	Hence, this form of Telex operation became known as "type A Telex
+    36	signaling." It is still used that way in many nations.  In those you
+    37	will see a teleprinter with a control box that has a telephone dial.
+    38	When Western Union decided it had should enter into Telex in the U.S.,
+    39	it adopted the original style and Type A signaling.  Similarly, many
+    40	other Europeans adopted Type A operations, among them the U.K., France
+    41	and Belgium as well as others.  Meantime, (I think it was L. M.
+    42	Ericsson leading the move for) others saw an opportunity to simply use
+    43	the numerics on the keyboard for call set-up, thus some nations
+    44	adopted what became known as "Type B" Telex.  By this time, the CCITT
+    45	had taken charge and was setting international agreements, one of
+    46	which was to set the speed of international Baudot circuits at 50
+    47	Baud, instead of 45.5. Some few nations were many years behind in
+    48	upspeeding. In this writer's experience, Cuba and Pakistan are
+    49	remembered as still running 45.5 Baud Telex trunks even into the
+    50	1970's.
+    51	
+    52	        Telex grew around the world very rapidly ... long before
+    53	automatic telephony, again most likely due to its economics of channel
+    54	usage.  Considerable networks of Telex on HF (shortwave) radio to
+    55	then-remote areas of Africa, the Middle East and Asia were established
+    56	by the government-owned PTTs, operating non-stop with error-correcting,
+    57	retransmitting time division multiplexers per CCITT Recommendation
+    58	R.44 (so what's new about TDM ... Baudot built his first one in 1873,
+    59	three years _before_ Bell's telephone.  Check it out, unbelievers!),
+    60	with the common name "TOR" for "Telex Over Radio."  Readers who are
+    61	SWL's certainly hear of TOR, SITOR and Telex Mux on shortwave radio
+    62	today ... there's still plenty around and on the air.
+    63	
+    64	        Also, the broad reach and universality of Telex around the
+    65	world lead to the CCITT establishing the global network of
+    66	International Telegram (commonly called Cablegram; RCA's product on
+    67	its original shortwave radio was the Radiogram) channels on a switched
+    68	network overlay of Telex called "Gentex."  That's right: Your
+    69	international cablegram goes on Telex, too.  It's simply Telex
+    70	channels dialed up permanently between telegram offices.  The beauty
+    71	is that of any switched service: Restoration in case of channel
+    72	failure is simply dialing up another call.
+    73	
+    74	        The result of all this is that Telex was, and remains in many
+    75	nations, _the_ mediumn of communications for business and both civil
+    76	and military government use.  Airlines using the PARS (and
+    77	internationally IPARS) reservations systems still run Baudot code
+    78	today (although many lines have changed to high-speed modem traffic),
+    79	because their plain-language text transmissions use only 7.5 bits per
+    80	character, compared to the 11 bits of CCITT International Alphabet 5
+    81	(known as ASCII in colloqial North America).  The economics are
+    82	obvious.  In many nations, the total minutes of international Telex
+    83	still today exceeds that of international telephone traffic.  Business
+    84	uses Telex more than most Americans understand.  West Germany has had
+    85	more than 400,000 Telex lines for years, while the U.S. at its peak
+    86	could count only 345,000 Telex _and_ TWX subscribers.  Americans
+    87	simply grew up as sociological prisoners of "the phone," under a
+    88	hegemony that taught them anything else must be insignificant.
+    89	
+    90	        Almost in parallel with the 1930's development of Telex, Bell
+    91	interests saw the possibilities and decided to do Telex one better.
+    92	Bell Labs was commissioned to develop a simialr service, using dial
+    93	pulse selection. It became known as Teletypewriter Exchange Service,
+    94	or TWX.  (In fact, Bell beat WUTCo to the marketplace punch and WUTCo
+    95	came along later with Telex in the U.S.)  The original TWX ran 75 bps
+    96	with Baudot code and dial selection, until Bell Labs got its second
+    97	generation ready. That one, called "four-row TWX" in telephone
+    98	parlance, used *modems* called "101 Data Sets" (that's right, Daddy of
+    99	the 103!) on two-wire ordinary telephone subscriber lines run to
+   100	special exchanges called a WADS (Wide Area Data Service) exchange in
+   101	each major city, where the billing and such was done.  Actually, a
+   102	WADS exchange was a partition of one local telephone exchange in the
+   103	city. Because it was using the Public Switched Telephone Network (DDD
+   104	in American parlance, TWX was given reserved area codes ... 510, 610,
+   105	710, 810 and 910.  Some few remote locations on TWX are still on those
+   106	area codes.
+   107	
+   108	        Four-row TWX used 11-bit characters to provide an expanded
+   109	code set including "control characters" that permitted the TWX machine
+   110	to be operated much like an office typewriter ... more so than Telex
+   111	and its Baudot limitations that at best used CCITT-standardized
+   112	"character strings" to provide some degree of functionality beyond
+   113	plain text (see the CCITT F, R and S Series of Recommenda- tions). The
+   114	control characters of TWX provided paragraph indents, form feeds and
+   115	such that Telex never really had.  And, with Four-Row TWX,
+   116	transmission (on the 101 Data Set) was upped to 110 bps, and the code
+   117	provided VRC "parity" error-checking. (One can show that 110 bps with
+   118	11-bit characters is equivalent to about 140-150 words per minute, a
+   119	typing speed only Olympic-class typists could achieve on mechanical
+   120	typewriters.)  Even so, the "TWX code" had only 93 of its 128 possible
+   121	characters assigned.
+   122	
+   123	        It just so happened that when the computer era came along,
+   124	Bell's Teletype Corporation (at Skokie, Il, purchased from Dr.
+   125	Kleinschmidt to get a supply of teleprinters for TWX) had its Model 33
+   126	teleprinter in production for TWX.  That was, in its time, the
+   127	cheapest keyboard instrument readily available for the then-"new"
+   128	computer business.  The Model 33 teleprinter and its mechanically-
+   129	embedded TWX code became the _de_facto_ I/O device for the computer.
+   130	The computer people early on wanted use of all the character
+   131	combinations in the code, so Teletype obliged with modifications for
+   132	computers.  Thus ASCII was born of TWX code, and it ultimately became
+   133	CCITT International Telegraph Alphabet Number 5.  The IA5 definitions
+   134	in the CCITT books vary from ASCII only in wording. Study of both
+   135	ASCII and IA5 can show roots of most of the character combinations
+   136	back to Baudot (or its CCITT character strings) and even manual
+   137	telegraphy.
+   138	
+   139	However, computer programmers and computer mux makers who don't
+   140	understand this have often done some horrible things to uses of the
+   141	code, causing products that alienate people from data communications;
+   142	wondering why their products don't migrate well or why people have
+   143	trouble understanding them.  There is a certain beauty of human logic
+   144	in using these codes properly.  They grew out of manual operations in
+   145	sending messages.  One can even see in IBM's BCDIC and later EBCDIC an
+   146	emulation of what was in the telegraphic codes, but I doubt IBMer's
+   147	for their part would admit that.
+   148	
+   149	        While Telex was the rest of the world, insular America grew
+   150	with its parallel Telex of WUTCo and TWX of Bell.  Because Bell was
+   151	strictly limited to dial telephony only for international business,
+   152	and because WUTCo had given up its international operations in a 1939
+   153	deal to monopolize domestic telegraph business by taking over ITT's
+   154	Postal Telegraph (which was a thorn in WUTCo's side), the U.S.
+   155	developed a unique sort of "international telegraph" company known as
+   156	an "International Record Carrier." The IRC's were an interesting
+   157	catch-all sort of firm; an American answer to "how do we get a regu-
+   158	latory handle on all these characters?"  Some were US-based, like
+   159	WUTCo's "Cable System" that became Western Union International when
+   160	sold off as a result of the 1939 Postal Telegraph deal.  Others had
+   161	"just been there," like ITT's World Communications that had been a
+   162	gaggle of companies with names like Federal Telegraph, All American
+   163	Cables and Radio, Globe Wireless, Press Wireless, and the common
+   164	carrier part of Mackay Marine.  RCA Communications had been around
+   165	specializing largely in spanning the Pacific with radio as well as
+   166	generally reaching ships and other places by radio telegraphy; today
+   167	it is the RCA Globecom subsidiary of MCI (as is WUI, calling itself
+   168	MCI International).  Tropical Radiotelegraph grew out of putting radio
+   169	telegraph on shipboard before WWI so its owners, the United Fruit
+   170	Company of Boston could divert shiploads of bananas to the best market,
+   171	expanding to communications to its plantations, then becoming in
+   172	some nations the public telegraph and international telephone company
+   173	of the nation; today it is TRT Telecommunications.  The French
+   174	Telegraph Cable Company, owned by French investors in the PTT had been
+   175	in the U.S. since the days of Monsier Puyer-Quartier laying telegraph
+   176	cables from France to the U.S., hence its telegraphic routing address,
+   177	PQ. Even the Firestone Tire & Rubber Company owned its own IRD, the
+   178	Trans-Liberia Radiotelegraph Company, operating HF radio from Akron to
+   179	its rubber plantations in Liberia.  (TL is still there in Akron, as a
+   180	matter of fact.)
+   181	
+   182	        All these firms formed the U.S. IRC business and enjoyed a
+   183	period of regulated competitiveness for thirty years or so. They were the
+   184	Telex interface between the U.S. and the world, all connecting out to
+   185	WUTCo Telex and (by performing "protocol conversion" long before
+   186	computers did so,) Bell TWX.  International Telex users were
+   187	confronted with some typical American confusion ... they had to prefix
+   188	their Telex calls to America with added digits to steer their call via
+   189	the IRC of their choice (in most nations) and then to either Telex or
+   190	TWX for the U.S. domestic connection.
+   191	
+   192	        All that had to change when Congress "deregulated" the IRC's
+   193	in 1982, four years before telephony had a similar change.  Restric-
+   194	tions on AT&T providing only telephony were lifted; the IRC's were
+   195	freed to operate anyplace as compared to a limited number of "gateway
+   196	cities," WUTCo was permitted to go international once again, and
+   197	everybody could compete for any kind of business.
+   198	
+   199	        That's what has happened in America, so you can call FTCC
+   200	(formerly French Cable) as well as relative newcomers to the U.S.
+   201	market like Cable & Wireless (from the U.K.) and ask them what deal
+   202	they will offer in competition to AT&T or WUTCo, either domestically
+   203	or internationally, for voice, data or video.
+   204	
+   205	        International Telex remains a basic business.  The various
+   206	companies made various deals to interface to their Telex connections.
+   207	MCI's is, of course, via WUI, the first IRC that MCI bought.
+   208	AT&TMail's is via TRT. Along the evolutionary course of the later days
+   209	of the IRC business, a firm was established called Graphic Scanning
+   210	(IRC's have always tried to do something with facsimile, long before
+   211	Group III machines made them the Office Toy of 1990, and Graphic
+   212	Scanning got into the IRC field in this way), and Graphnet is
+   213	Telenet's Telex connection.
+   214	
+   215	        As our moderator said, the E-Mail services all "alias" your
+   216	E-Mail address to their IRC connection.  It's usually your numeric
+   217	E-Mail address with a fixed prefix.  Example: My own AT&TMail numeric
+   218	is 7281481. Its Telex alias is 157281481. On MCIMail, my numeric is
+   219	4133373,and its Telex alias is 650-4133373.
+   220	
+   221	        The global Telex network has had since inception a handy
+   222	"confirmation' convention called "Who Are You?" and each Telex machine
+   223	is encoded with an "automatic answerback" that lets you know on
+   224	connection and whenever you ask (WRU in Baudot; <ctrl-E> in ASCII)
+   225	what machine you are connected to.  So, if you are an E-Mail user,
+   226	your overseas correspondent will want to know your "network"and
+   227	"answerback."  That's usually the Telex code for the IRC you're with
+   228	and your E-Mail aplha address.  So, mine on MCIMail is MCI UW
+   229	dkimberlin and on AT&TMail mine is TRT UT dkimberlin.  Really rather
+   230	simple, when you understand the meaning and purpose of the IRC and
+   231	international Telex.
+   232	
+   233	        One last word for this top-level exposition: Telex isn't so
+   234	cheap compared to E-Mail.  If you have a regular correspondent in
+   235	another nation and want to DDD to batch files, or if you have an X.25
+   236	or Teletex route to another nation (WUTCo's Easylink E-Mail does, but
+   237	the other E-Mails seem to say,"huh? Teletex?"), that may well be
+   238	cheaper than Telex.  It runs at 50 bps, just 66 words per minute, and
+   239	you get billed at the Telex output rate.
+   240	
+   241	        All that said, then why bother? Well, Telex is still there and
+   242	readily accessible from your E-Mail, and it reaches those 3-1/2
+   243	million or so machines in offices of foreign nations you may have only
+   244	occasional traffic for. And, those machines are in global directories
+   245	like the Jaeger u. Waldmann directories so you can look them up from
+   246	home. And, those machines are in hotels all around the world, so you
+   247	can get a message to the traveler who hasn't been able to get a phone
+   248	line out for three days.  And, those Telex lines connect to all the
+   249	cablegram offices that will for their high price, still send a
+   250	messenger to _find_ your missing salesman (unlike the US' rapidly
+   251	deteriorating telegram service).  As well, they reach the ships at sea
+   252	with your Telex to roust up the staffer who's on an ocean cruise.  No
+   253	matter where in the world they are; no matter what time zone they are
+   254	in, no matter if they are on the Gregorian or Moslem or Hindu or
+   255	Bhuddist calendar, your message routed by Telex should get to them far
+   256	more efficiently than random dialing of the phone.
+   257	
+   258	        So, while most Americans discovered some of these advantages
+   259	when the Group III fax came along, but still need to find a "fax
+   260	number" that's not in a directory like Jaeger u. Waldmann, your E-Mail
+   261	connection to international Telex is a potentially useful tool.
+   262	
+   263	        (For those who may want a fuller, more detailed explanation,
+   264	Datapro Research offers reprints of a 22-page 1986 report they had me
+   265	author, numbered MT20-510-101, by calling (800) 328-3776.  Readers who
+   266	have Datapro's "Nanagement of Telecommunications" service may have
+   267	this at hand.)
+   268	
+   269	A final riposte: Our Moderator said in commenting to the question:
+   270	
+   271	>In case you were wondering, FAX is the (FA)csimile E(X)change.
+   272	
+   273	Au contraire, notre cher moduerateur.  While some marketeers of recent
+   274	facsimile service offerings may have made that linkage, the term "fax"
+   275	has been used generically by the much more limited group of facsimile
+   276	(including telephoto) users from telecomm time immemorial.
+   277	
+   278	Downloaded from Just Say Yes. 2 lines, More than 1500 files online!
+   279	       Do you write? Give us a call!   415-922-2008 CASFA 
+   280	
+   281	                                                                                                                            

@@ -1,0 +1,310 @@
+     1	
+     2	       ---------------------------------------------------------------- 
+     3	 
+     4	                           SOFTWARE FOR LAPTOP NEEDS
+     5	          INCLUDES A LISTING OF SHAREWARE VENDORS AT END OF THIS FILE
+     6	       
+     7	       ---------------------------------------------------------------- 
+     8	
+     9	       In some respects you should not need special software just for a 
+    10	       laptop or notebook computer. The whole idea is to be able to run 
+    11	       software that larger desktop computers run - but when and where you 
+    12	       need it. That's the flexibility of computing in a laptop 
+    13	       environment.
+    14	
+    15	       However, several software packages are frequently mentioned by 
+    16	       laptop users as being valuable because of their minimal memory 
+    17	       requirements or specialized features. 
+    18	
+    19	       For the many users, an integrated package containing a word 
+    20	       processor, spreadsheet, database and modem package may be the 
+    21	       best value since some needs may be met within ONE software 
+    22	       system. Two standouts in this category are Microsoft Works and 
+    23	       LotusWorks. 
+    24	
+    25	       No-Squint from SkiSoft Publishing is a small software utility 
+    26	       which changes the tiny laptop screen cursor into a larger block 
+    27	       which can be seen. Available from most software vendors or call 
+    28	       617/863-1876. 
+    29	              
+    30	       Shareware packages with minimal memory needs which run all 
+    31	       laptops include Alite (a spreadsheet), PC-Write Lite (word 
+    32	       processor) and File Express. All are available from shareware 
+    33	       disk vendors such as those listed at the end of this article as 
+    34	       well as most computer clubs and BBS systems.
+    35	
+    36	       For hard drive users whose disk space is at a premium, the 
+    37	       software package Stacker from Stac electronics compresses and 
+    38	       expands files on crowded drives - a necessity for many laptop 
+    39	       and notebook computer users. 
+    40	
+    41	       For modem work, many laptop users gravitate to the software 
+    42	       package ProComm Plus (commercial software which also has a 
+    43	       shareware variant) or the useful Telix package (shareware.) 
+    44	
+    45	       Other, distinct utility packages are frequently mentioned. 
+    46	       Although not specifically designed for laptops and notebooks, 
+    47	       these are useful software items....
+    48	
+    49	       PC TOOLS DELUXE. The quintessential toolkit of goodies DOS 
+    50	       forgot to include. PC Tools contains a superb DOS shell for file 
+    51	       management, a miniature database, file transfer utility, 
+    52	       calculator, backup system, unerase data restorer, disk repair 
+    53	       capability, security file wiper and literally dozens of other 
+    54	       useful one-of-a-kind goodies. If you can only afford one 
+    55	       utility, PC Tools Deluxe is it. 
+    56	
+    57	       THE PC MAGAZINE UTILITIES are continuing classics and favorites 
+    58	       of many users. Available through most computer clubs and by 
+    59	       modem from local BBS sources and PC Magazine as disk bonus 
+    60	       offers when you subscribe to that periodical. An index to PC 
+    61	       Magazine utilities is maintained through their on line PcMagnet 
+    62	       modem service which can be reached by following printed 
+    63	       instructions contained in every issue of PC Magazine. The 
+    64	       utilities are in the public domain and generally available at no 
+    65	       charge beyond a small disk copying or distribution fee. 
+    66	       Most shareware distributors carry disk sets of the PC Magazine
+    67	       utilities. Several utilities in this set are useful for laptops 
+    68	       and allow file transfer between two computers, remote computing, 
+    69	       file slicing and macro work on laptops. Since all are free and 
+    70	       easily located they are genuine bargains for all laptop users. 
+    71	
+    72	       LABELPRO prepares labels and address stickers better than any 
+    73	       competing program. Prepare nametags, casette tape labels, 
+    74	       address stickers with ease. 
+    75	
+    76	       HOTLINE allows you to manage, search, sort and DIAL phone 
+    77	       directory databases. A grownup electronic rolodex system which 
+    78	       works better than any other program of this type. 
+    79	
+    80	       BROOKLYN BRIDGE & DESKLINK allow transfer of files between 
+    81	       computers via a cable connector and facilitate the transfer 
+    82	       between desktop and laptop computers with ease. 
+    83	
+    84	       KEYWORKS & NEWKEY are universal keyboard macro programs which 
+    85	       issue a burst of keystrokes when you press only one or two keys. 
+    86	       ESSENTIAL for all beginners to learn and use! NEWKEY is 
+    87	       shareware. 
+    88	
+    89	       CHECK-IT & SYSTEM SLEUTH perform diagnostic tests to tell your 
+    90	       what connections, cables, ports disk drives and components are 
+    91	       working and why. You can locate bad memory chips and in general 
+    92	       save time and frustration tracking down problems. 
+    93	
+    94	       QEMM-386 & 386MAX manage vast areas of RAM memory in 80386 
+    95	       equipped computers. These can convert extended memory to 
+    96	       expanded memory, move device drivers and terminate and stay 
+    97	       resident programs efficiently, and remap BIOS and graphics video 
+    98	       into faster RAM area memory. Subtle programs which help manage 
+    99	       memory on more powerful DOS machines. 
+   100	
+   101	       MARK/RELEASE is a small program whose sole function is to 
+   102	       install and remove TSR programs such as popup calculators, 
+   103	       address books and others for minimum memory crowding and 
+   104	       conflict. Shareware. 
+   105	
+   106	       FASTBACK PLUS allows reliable and quick backup of essential hard 
+   107	       disk files to floppy disks and tape backup systems. A variety of 
+   108	       options allows selective backup by date, data and file type. 
+   109	
+   110	       SUPER PC-KWIK provides a fast disk cache buffer system that 
+   111	       speed processing and convenience for hard disk users. Speed is 
+   112	       always a convenience when using a hard drive and SUPER PC-KWIK 
+   113	       is the champion disk cache software utility. 
+   114	
+   115	       PKZIP is a unique shareware program which compresses files up to 
+   116	       80% smaller in size! This frees up disk space on your hard drive 
+   117	       and also allows faster file transfers when using a modem. PKZIP 
+   118	       is as standard as DOS and almost as essential. 
+   119	
+   120	       FASTTRAX is a disk optimizer and file defragmenter whose sole 
+   121	       job is to periodically assemble files into efficient contiguous 
+   122	       sectors on a disk for speedy performance. A routine housekeeping 
+   123	       function no disk drive owner can neglect. 
+   124	
+   125	       SCAN & CLEANUP are virus/trojan horse detection and erradication 
+   126	       programs which are probably the best of the bunch. Shareware.
+   127	
+   128	       CED & PCED & LIST are utilities which browse files (list) and 
+   129	       provide command line editing functions (CED and PCED) which are 
+   130	       far superior to the functions DOS provides. All are shareware. 
+   131	
+   132	       HOT SHOT GRAPHICS & PIZAZZ PLUS function to capture screen 
+   133	       graphics to transfer them to another software program for 
+   134	       presentation or publication use. 
+   135	
+   136	       GRAPHICS LINK PLUS facilitates the conversion of graphics 
+   137	       picture files between varying software packages. 
+   138	
+   139	       TYPEFAST resets the keyboard rate of your system so you can 
+   140	       (good guess) type fast! Public domain utility from PC Magazine. 
+   141	
+   142	       PRINTCACHE is a print spooler. You can thus dump your document 
+   143	       file out to the printer and within a split second come back to 
+   144	       your program and keep working rather than sit there for 30 
+   145	       minutes as your printer hogs the PC. 
+   146	
+   147	       ULTRAVISION adjusts cursor size and provides many differing 
+   148	       typefaces on your screen if you don't care for the ones which 
+   149	       came with your software or PC. 
+   150	
+   151	       MAGELLAN The ultimate text search utility. Search an entire hard 
+   152	       disk quickly for the file that contains the phrase "swimming 
+   153	       pool budget for Mr. Davis" or other search idea. Great for 
+   154	       locating that document when piles of files seem lost on your 
+   155	       hard drive. 
+   156	
+   157	       GRANDVIEW The best of the outliner programs. When you need to 
+   158	       assemble, sort and prioritze tasks or documents Grandview is it. 
+   159	
+   160	       SOFTWARE BRIDGE & WORD FOR WORD PROFESSIONAL allow different 
+   161	       word processing programs to swap documents in different file 
+   162	       formats. Great for the office where each person uses a different 
+   163	       word processing package. 
+   164	 
+   165	       Next, a short overview to highlight the differences between 
+   166	       types of software and a brief listing of shareware disk vendors.
+   167	
+   168	       With so much software in the marketplace sometimes the hardest 
+   169	       job is to select from overabundance and arrive at genuinely 
+   170	       useful programs. Software is available in three basic flavors: 
+   171	       COMMERCIAL, PUBLIC DOMAIN and SHAREWARE. 
+   172	
+   173	       Commercial software is sold by mail or through retail outlets 
+   174	       and is generally protected by both legitimate and stringent 
+   175	       copyright laws. Commercial software may in addition be copy-
+   176	       protected (difficult or impossible to make spare disk copies) or 
+   177	       non-copy protected (can be copied to another disk for safe-
+   178	       keeping or archival purposes.) Commercial software is usually of 
+   179	       good quality and can range in price from 10 dollars to several 
+   180	       hundred dollars or more. 
+   181	       
+   182	       Public domain software represents computer programs which have 
+   183	       been released into the public domain, do not require payment or 
+   184	       registration fees to the author, and are frequently available 
+   185	       from computer clubs, some libraries, and modem BBS telephone 
+   186	       systems. PC Magazine utilities are examples of public domain 
+   187	       software. 
+   188	
+   189	       Shareware, a third area of software interest represents programs 
+   190	       whose author(s) request a donation or registration but are 
+   191	       otherwise available in much the same manner as public domain 
+   192	       software. Frequently "enticements" such as a documentation 
+   193	       manual of program instructions, an upgrade disk or other bonus 
+   194	       offer is made within the program to secure a registration fee. 
+   195	
+   196	       Which type of software is best? Probably a little of each, to be 
+   197	       honest. Many people find that starting with several affordable 
+   198	       commercial programs (to ensure fast, productive results) and 
+   199	       then sampling shareware over time (to continue trying new 
+   200	       software affordably) to be of value. Other computer owners find 
+   201	       that starting with shareware and public domain software (to get 
+   202	       a broad sampling of software variety at little cost) and then 
+   203	       buying additional commercial programs as sophisticated needs 
+   204	       grow a productive strategy.
+   205	 
+   206	       Back to shareware for a moment....
+   207	
+   208	       You do not have to be a hobbyist, hacker or computer guru to 
+   209	       utilize shareware and public domain software. A short list of 
+   210	       shareware distributors follows this section. 
+   211	
+   212	       Membership in a local computer club or user group is one way 
+   213	       to obtain shareware. Many retail software and computer 
+   214	       equipment stores maintain lists of local clubs. 
+   215	       
+   216	       Frequently a local and friendly Radio Shack salesman can give 
+   217	       you a clue as to computer clubs. The clubs frequently augment 
+   218	       club treasuries by sale of shareware disks. Membership with many 
+   219	       clubs is optional - purchasing a shareware disk is convenient 
+   220	       whether you are a member or not. Disk distribution or copying 
+   221	       may fees hover around $3 to $5. 
+   222	
+   223	       A second, perhaps more convenient source for some people, is 
+   224	       mail order sources of shareware, otherwise known as shareware 
+   225	       distributors. A list of several shareware sources is provided 
+   226	       at the end of this tutorial. 
+   227	
+   228	       A third avenue for locating shareware is either a BBS computer 
+   229	       system (a computer in someone's home or office hooked by modem 
+   230	       to telephone lines) or the larger commercial on-line services 
+   231	       such as Compuserve, The Source and BIX. These larger commercial 
+   232	       services can be the fastest way to locate and obtain shareware. 
+   233	       The on-line modem route has the additional advantage that 
+   234	       shareware can be located by electronic search/sort which 
+   235	       certainly speeds up the process. Cost is obviously a factor. 
+   236	       With a local BBS service the cost is simply that of a local 
+   237	       phone call. Commercial services generally charge by the minute 
+   238	       or hour and sometimes also involve long distance charges if a 
+   239	       local line is not available. 
+   240	
+   241	       Next a list of popular mail order shareware distributors not to 
+   242	       be confused with mail order software distributors of commercial 
+   243	       software. Contact them and request a free catalog - you will 
+   244	       be surprised at the depth and variety of shareware offerings. 
+   245	       
+   246	       A shareware distributor or disk vendor usually charges a nominal 
+   247	       fee ($2 to $5) to copy and DISTRIBUTE a disk to you. If you find 
+   248	       the shareware useful, you are encouraged to send the author of 
+   249	       the package a final REGISTRATION FEE ($10 to $50 approximately) 
+   250	       to use the package and receive updated copies, instruction 
+   251	       manuals or bonus items to thank you for the courtesy of 
+   252	       registering. Shareware is an honor system. The distributors make 
+   253	       money charging a fee for a sample disk, but the author also 
+   254	       deserves a registration fee if you find the shareware useful. 
+   255	
+   256	       ---------------------------------------------------------------- 
+   257	       
+   258	                     SHAREWARE DISTRIBUTORS - A SHORT LIST
+   259	
+   260	       ---------------------------------------------------------------- 
+   261	       
+   262	       SSP Shareware Sales, Dept LC    
+   263	       PO Box 1506, Mercer Island, WA 98040 
+   264	
+   265	       Offers specialized shareware collections for laptop owners and 
+   266	       buyers as well as a large collection of general purpose 
+   267	       shareware. Featuring low prices of $1.99 per program item, SSP 
+   268	       offers over 3,000 shareware titles. SSP catalog available on 
+   269	       disk and costs $1.00 for shipping/handling in 360K format size 
+   270	       disk or $1.50 on 720K format disk. One of the lower priced 
+   271	       disk vendors for laptop and general purpose shareware.
+   272	
+   273	       PC-SIG
+   274	       1030D East Duane Ave., Sunnyvale, CA 94086; (800) 245-6717; 
+   275	       In Calif. (800) 222-2996. 
+   276	
+   277	       PC-SIG is perhaps the largest and best known of the shareware 
+   278	       distributors. With a bi-monthly magazine, slickly packaged 
+   279	       software, over 2000 disks and a printed catalogue PC-SIG is 
+   280	       perhaps also the best organized. PC-SIG boasts authorized 
+   281	       dealers throughout the United States (most major cities) and 
+   282	       many foreign countries! Marketing and customer service are a PC-
+   283	       SIG trademark. Memberships list at $20 per year which allows 
+   284	       members to purchase disks for $5.50 per disk in lot orders of 
+   285	       10 or more. Non-members pay $6.00 per disk. PC-SIG CD-ROM 
+   286	       available which contains all titles in the PC-SIG library.
+   287	
+   288	       Public Brand Software, Inc.
+   289	       POB 51478, Indianapolis, IN 46251; (317) 856-1001 or 
+   290	       (800) IBM-DISK. 
+   291	
+   292	       Public Brand charges $5 per disk plus $5 shipping and handling 
+   293	       per order. On par with PC-SIG. Extensive shareware catalog.
+   294	       All titles can be downloaded from CompuServe or the PBS bulletin 
+   295	       board online with your modem.
+   296	
+   297	       Tutorial finished. Be sure to order your FOUR BONUS DISKS which 
+   298	       expand this software package with vital tools, updates and 
+   299	       additional tutorial material for laptop users! Send $20.00 to 
+   300	       Seattle Scientific Photography, Department LAP, PO Box 1506, 
+   301	       Mercer Island, WA 98040. Bonus disks shipped promptly! Some 
+   302	       portions of this software package use sections from the larger 
+   303	       PC-Learn tutorial system which you will also receive with your 
+   304	       order. Modifications, custom program versions, site and LAN 
+   305	       licenses of this package for business or corporate use are 
+   306	       possible, contact the author. This software is shareware - an 
+   307	       honor system which means TRY BEFORE YOU BUY. Press escape key to 
+   308	       return to menu. 
+   309	       
+   310	

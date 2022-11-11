@@ -1,0 +1,56 @@
+     1	
+     2	    ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+     3	    บ  Adaptec, Incorporated                              ACB-2310,12       บ
+     4	    ฬอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน
+     5	    บ       J6       J9       J10     J3 J4 J5 J1(2312)                     บ
+     6	    บ    ฺฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ           บ
+     7	    บ    ณ ณณณณ     :::::1            1: 1: 1: 1:               ณษอออ       บ
+     8	    บ    ณ                            :: :: :: ::               ณบ          บ
+     9	    บ    ณ                    123     :: :: :: ::               ณบ          บ
+    10	    บ    ณ                    :::           :: ::               ณบ          บ
+    11	    บ    ณ                    456           :: ::               ณบ          บ
+    12	    บ    ณ                                                      ณบ          บ
+    13	    บ    ณ                                                      ณบ          บ
+    14	    บ    ณ                                                      ณบ          บ
+    15	    บ    ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ       ฺฟ            ฺฤฤูบ          บ
+    16	    บ                                  ภฤฤฤฤฤฤฤูภฤฤฤฤฤฤฤฤฤฤฤฤู   บ          บ
+    17	    บ  INTERFACE:  ISA(AT)->ST412(MFM)                                      บ
+    18	    บ  CONTROLS:   2 Floppy Drives (2312 only) (360KB, 720KB, 1.2MB, 144MB) บ
+    19	    บ              2 Hard Drives                                            บ
+    20	    บ                                                                       บ
+    21	    บ  J9: Option Jumpers:  1: Disable I/O Waite State      ฟ               บ
+    22	    บ                       2: Track-1 ReCal., Step=35us.   ณDefault        บ
+    23	    บ                       3: (Not Used)                   ณSetting is     บ
+    24	    บ                       4: Serial Monitor Mode          ณNO JUMPERS     บ
+    25	    บ                       5: Diagnostics Enable           ณinstalled.     บ
+    26	    บ                       6: (Reserved)                   ู               บ
+    27	    บ                                                                       บ
+    28	    บ  J10: I/O Addresses:  Hard Drive: *Primary Address (1F0H): OFF        บ
+    29	    บ                                    Secondary Address (170H): 4-5      บ
+    30	    บ                                                                       บ
+    31	    บ                       Floppy Drive: *Primary Address (3F0H): OFF      บ
+    32	    บ                                      Secondary Address (370H): 1-2    บ
+    33	    บ                                                                       บ
+    34	    บ  J1: Floppy Drive (2312 only)          (* Default setting)            บ
+    35	    บ  J5: HD Control                                                       บ
+    36	    บ  J4: HD0 Data                                                         บ
+    37	    บ  J3: HD1 Data                                                         บ
+    38	    บ  J6: HD LED                                                           บ
+    39	    วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ ADDITIONAL INFO ฺฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
+    40	    บ                                                                       บ
+    41	    บ  According to the Manufacturer, the ACB-2310/12 is 100% software and  บ
+    42	    บ  hardware compatible with the WD1003-WA2, but you are advised to do   บ
+    43	    บ  a Low Level Format to take advantage of the improved 1:1 Interleave  บ
+    44	    บ  that this controller offers.  Note that there is no on-board BIOS,   บ
+    45	    บ  so no DOS Debug LLF option is available.  Third party Formatting     บ
+    46	    บ  software is required, ie; Disk Manager(tm) or SpeedStor(tm).         บ
+    47	    บ                                                                       บ
+    48	    บ                                                                       บ
+    49	    บ                                                                       บ
+    50	    บ                                                                       บ
+    51	    บ                                                                       บ
+    52	    บ                                                                       บ
+    53	    บ                                                                       บ
+    54	    บ                                                                       บ
+    55	    บ                                                                       บ
+    56	    ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ

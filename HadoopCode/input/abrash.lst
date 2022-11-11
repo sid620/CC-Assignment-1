@@ -1,0 +1,472 @@
+     1	_ROLL YOUR OWN MINILANGUAGES WITH MINI-INTERPRETERS_
+     2	by Michael Abrash and Dan Illowsky
+     3	
+     4	
+     5	
+     6	[LISTING ONE]
+     7	
+     8	; This program demonstrates the use of a mini-interpreter to produce
+     9	; code that is compact, flexible and easy to modify. The mini-
+    10	; program draws and labels a maze and animates an arrow through
+    11	; the maze.
+    12	;
+    13	; Note: This program must be run in 80-column text mode.
+    14	;
+    15	; Tested with TASM 1.0 and MASM 5.0.
+    16	;
+    17	; By Dan Illowsky & Michael Abrash 2/18/89
+    18	; Public Domain
+    19	;
+    20	Stak    segment para stack 'stack'      ;allocate stack space
+    21	        db      200h dup (?)
+    22	Stak    ends
+    23	;
+    24	_TEXT   segment para public 'code'
+    25	        assume  cs:_TEXT, ds:_TEXT
+    26	;
+    27	; Overall animation delay. Selected for an AT: set higher to slow
+    28	; animation more for faster computers, lower to slow animation less
+    29	; for slower computers.
+    30	;
+    31	DELAY_COUNT     equ     30000
+    32	;
+    33	; Equates for mini-language commands, used in the data
+    34	; sequences that define mini-programs. The values of these
+    35	; equates are used by Interp as indexes into the jump table
+    36	; Function_Table in order to call the corresponding subroutines.
+    37	;
+    38	; Lines starting with ">>" describe the parameters that must
+    39	; follow the various commands.
+    40	;
+    41	Done      equ     0     ;Ends program or subprogram.
+    42	                        ;>>No parms.
+    43	SubProg   equ     1     ;Executes a subprogram.
+    44	                        ;>>Parm is offset of subprogram.
+    45	SetXY     equ     2     ;Sets the cursor location (the location at
+    46	                        ; which to output the next character).
+    47	                        ;>>Parms are X then Y coordinates (both
+    48	                        ; bytes).
+    49	SetXYInc  equ     3     ;Sets the distance to move after displaying
+    50	                        ; each character.
+    51	                        ;>>Parms are X then Y amount to move after
+    52	                        ; displaying character (both bytes).
+    53	SetX      equ     4     ;Sets the X part of the cursor location.
+    54	                        ;>>Parm is the X coordinate (byte).
+    55	SetY      equ     5     ;Sets the Y part of the cursor location.
+    56	                        ;>>Parm is the Y coordinate (byte).
+    57	SetXInc   equ     6     ;Sets the X part of the amount to move after
+    58	                        ; displaying each character.
+    59	                        ;>>Parm is the X amount to move after
+    60	                        ; character is displayed (byte).
+    61	SetYInc   equ     7     ;Sets the Y part of the amount to move after
+    62	                        ; displaying each character.
+    63	                        ;>>Parm is the Y amount to move after
+    64	                        ; character is displayed (byte).
+    65	SetAtt    equ     8     ;Sets the screen attribute of characters to
+    66	                        ; be displayed.
+    67	                        ;>>Parm is attribute (byte).
+    68	TextUp    equ     9     ;Displays a string on the screen.
+    69	                        ;>>Parm is an ASCII string of bytes,
+    70	                        ; which must be terminated by an EndO byte.
+    71	RepChar   equ    10     ;Displays a single character on the screen
+    72	                        ; a number of times.
+    73	                        ;>>Parms are char to be displayed followed
+    74	                        ; by byte count of times to output byte.
+    75	Cls       equ     11    ;Clears screen and makes text cursor
+    76	                        ; invisible.
+    77	                        ;>>No parms.
+    78	SetMStart equ     12    ;Sets location of maze start.
+    79	                        ;>>Parms are X then Y coords (both bytes).
+    80	Mup       equ     13    ;Draws maze wall upwards.
+    81	                        ;>>Parm is byte length to draw in characters.
+    82	Mrt       equ     14    ;Draws maze wall right.
+    83	                        ;>>Parm is byte length to draw in characters.
+    84	Mdn       equ     15    ;Draws maze wall downwards.
+    85	                        ;>>Parm is byte length to draw in characters.
+    86	Mlt       equ     16    ;Draws maze wall left.
+    87	                        ;>>Parm is byte length to draw in characters.
+    88	SetAStart equ     17    ;Sets arrow starting location.
+    89	                        ;>>Parms are X then Y coordinates
+    90	                        ; (both bytes).
+    91	Aup       equ     18    ;Animates arrow going up.
+    92	                        ;>>No parms.
+    93	Art       equ     19    ;Animates arrow going right.
+    94	                        ;>>No parms.
+    95	Adn       equ     20    ;Animates arrow going down.
+    96	                        ;>>No parms.
+    97	Alt       equ     21    ;Animates arrow going left.
+    98	                        ;>>No parms.
+    99	DoRep     equ     22    ;Repeats the command that follows
+   100	                        ; a specified number of times.
+   101	                        ;>>Parm is repetition count (one byte).
+   102	;
+   103	EndO            equ     0       ;used to indicate the end of a
+   104	                                ; string of text in a TextUp
+   105	                                ; command.
+   106	;********************************************************************
+   107	; The sequences of bytes and words between this line and the next
+   108	; line of stars are the entire mini-program that our interpreter will
+   109	; execute. This mini-program will initialize the screen, put text on
+   110	; the screen, draw a maze, and animate an arrow through the maze.
+   111	;
+   112	DemoScreen$ label byte  ;this is the main mini-program that our
+   113	                        ; interpreter will execute
+   114	; Initialize the screen
+   115	        db SubProg
+   116	        dw InitScreen$
+   117	; Put up words
+   118	        db SetXY,0,0, SetXYInc,0,1, TextUp,'START',EndO
+   119	        db SetXY,79,20, TextUp,'END',EndO
+   120	; Draw the maze
+   121	        db SetMstart,4,0, Mrt,8, Mdn,4, Mrt,4, Mup,3, Mrt,4, Mdn,3
+   122	        db Mrt,4, Mdn,8, Mrt,3, Mup,3, Mrt,5, Mup,9, Mrt,17, Mdn,9
+   123	        db Mrt,5, Mdn,3, Mrt,4, Mup,10, Mrt,12, Mdn,18, Mrt,6
+   124	        db SetXY,4,2, Mrt,4, Mdn,2, Mlt,4, Mdn,18, Mrt,12, Mup,4
+   125	        db Mrt,4, Mdn,4, Mrt,11, Mup,11, Mrt,5, Mup,9, Mrt,9, Mdn,9
+   126	        db Mrt,5, Mdn,11, Mrt,12, Mup,4, Mrt,4, Mdn,4, Mrt,10
+   127	        db SetXY,8,6, SubProg
+   128	        dw Box4x6$
+   129	        db SetXY,8,14, SubProg
+   130	        dw Box4x6$
+   131	        db SetXY,24,14, SubProg
+   132	        dw Box4x6$
+   133	        db SetXY,54,14, SubProg
+   134	        dw Box4x6$
+   135	        db SetXY,62,4, SubProg
+   136	        dw Box4x6$
+   137	        db SetXY,16,6, SubProg
+   138	        dw Box4x4$
+   139	        db SetXY,16,12, SubProg
+   140	        dw Box4x4$
+   141	        db SetXY,62,12, SubProg
+   142	        dw Box4x4$
+   143	; Animate the arrow through the maze.
+   144	        db SetAStart,3,0, Alt,2, Adn,2, Art,2, Aup,2
+   145	        db SetXY,0,0
+   146	        db DoRep,5,SubProg
+   147	        dw SpinAround$
+   148	        db Alt,2, Adn,1, Art,9, Adn,4, Alt,4, Adn,8, Art,8, Adn,8
+   149	        db Alt,8, Aup,8, Art,8, Aup,2, Art,8, Adn,2, Art,7, Aup,3
+   150	        db Art,5, Aup,9, Art,13, Adn,9, Art,5, Adn,11, Art,8, Aup,10
+   151	        db Art,8, Aup,8, Alt,8, Adn,8, Art,8, Adn,10, Art,8, Adn,1
+   152	        db Art,2, Aup,2, DoRep,5,SubProg
+   153	        dw SpinAround$
+   154	        db Alt,2, Adn,1, Art,1
+   155	        db Done
+   156	; Subprogram to clear the screen and initialize drawing variables.
+   157	InitScreen$ db  SetXY,0,0, SetAtt,7, SetXYInc,1,0, Cls, Done
+   158	; Subprograms to draw boxes.
+   159	Box4x4$    db Mrt,4, Mdn,4, Mlt,4, Mup,4, Mrt,2, Done
+   160	Box4x6$    db Mrt,4, Mdn,6, Mlt,4, Mup,6, Mrt,2, Done
+   161	; Subprogram to spin the arrow around a square.
+   162	SpinAround$ db Alt,2, Adn,2, Art,2, Aup,2, Done
+   163	;********************************************************************
+   164	; Data for outputting text characters to the screen.
+   165	Text_Out_Data   label byte
+   166	Cursor_X_Coordinate     db      0
+   167	Cursor_Y_Coordinate     db      0
+   168	Cursor_X_Increment      db      1
+   169	Cursor_Y_increment      db      0
+   170	Character_Attribute     db      7
+   171	Last_Maze_Direction     db      0ffh ;0-up, 1-rt, 2-dn, 3-lt
+   172	                                     ; 0ffh-starting
+   173	AnimateLastCoordinates  dw      0    ;low byte is X, high byte is Y
+   174	;
+   175	; Jump table used by Interp to call the subroutines associated
+   176	; with the various function numbers equated above. The functions
+   177	; called through this jump table constitute the mini-language
+   178	; used in this program.
+   179	;
+   180	Function_Table label word       ;list of function addresses
+   181	        dw      Done%           ; which correspond one for
+   182	        dw      SubProg%        ; one with the commands defined
+   183	        dw      SetXY%          ; with EQU above
+   184	        dw      SetXYInc%
+   185	        dw      Set%            ;Set%, MOut%, and Animate% all use
+   186	        dw      Set%            ; the function number to determine
+   187	        dw      Set%            ; which byte to set or which
+   188	        dw      Set%            ; direction is called for
+   189	        dw      Set%
+   190	        dw      TextUp%
+   191	        dw      RepChar%
+   192	        dw      Cls%
+   193	        dw      SetMStart%
+   194	        dw      MOut%
+   195	        dw      MOut%
+   196	        dw      MOut%
+   197	        dw      MOut%
+   198	        dw      SetAStart%
+   199	        dw      Animate%
+   200	        dw      Animate%
+   201	        dw      Animate%
+   202	        dw      Animate%
+   203	        dw      DoRep%
+   204	;
+   205	; Program start point.
+   206	;
+   207	Start   proc    far
+   208	        push    cs      ;code and data segments are the
+   209	        pop     ds      ; same for this program
+   210	        mov     si,offset DemoScreen$   ;point to mini-program
+   211	        call    Interp                  ;execute it
+   212	        mov     ah,1    ;wait for a key before clearing the
+   213	        int     21h     ; the screen and ending
+   214	        mov     ah,15   ;get the current screen mode
+   215	        int     10h     ; so it can be set to force
+   216	        sub     ah,ah   ; the screen to clear and the
+   217	        int     10h     ; cursor to reset
+   218	        mov     ah,4ch
+   219	        int     21h     ;end the program
+   220	Start   endp
+   221	;
+   222	; Mini-interpreter main loop and dispatcher. Gets the next
+   223	; command and calls the associated function.
+   224	;
+   225	Interp  proc near
+   226	        cld
+   227	GetNextCommand:
+   228	        lodsb                           ;get the next command
+   229	        mov     bl,al
+   230	        xor     bh,bh                   ;convert to a word in BX
+   231	        shl     bx,1                    ;*2 for word lookup
+   232	        call    [bx+Function_Table]     ;call the corresponding
+   233	                                        ; function
+   234	        jmp short GetNextCommand        ;do the next command
+   235	;
+   236	; The remainder of the listing consists of functions that
+   237	; implement the commands supported by the mini-interpreter.
+   238	;
+   239	; Ends execution of mini-program and returns to code that
+   240	; called Interp.
+   241	;
+   242	Done%:
+   243	        pop     ax      ;don't return to Interp
+   244	        ret             ;done interpreting mini-program or subprogram
+   245	                        ; so return to code that called Interp
+   246	;
+   247	; Executes a subprogram.
+   248	;
+   249	SubProg%:
+   250	        lodsw                   ;get the address of the subprogram
+   251	        push    si              ;save pointer to where to
+   252	                                ; resume the present program
+   253	        mov     si,ax           ;address of subprogram
+   254	        call    Interp          ;call interpreter recursively
+   255	                                ; to execute the subprogram
+   256	        pop     si              ;restore pointer and resume
+   257	        ret                     ; the program
+   258	;
+   259	; Sets the screen coordinates at which text will be drawn.
+   260	;
+   261	SetXY%:
+   262	        lodsw
+   263	        mov     word ptr [Cursor_X_Coordinate],ax
+   264	        ret
+   265	;
+   266	; Sets the amount by which the cursor will move after each
+   267	; character is output to the screen.
+   268	;
+   269	SetXYInc%:
+   270	        lodsw
+   271	        mov     word ptr [Cursor_X_Increment],ax
+   272	        ret
+   273	;
+   274	; Sets individual X coordinate, Y coordinate, X movement after
+   275	; character is output to the screen,  Y movement, or character
+   276	; attribute depending on function number.
+   277	;
+   278	Set%:
+   279	        shr     bx,1            ;calculate the command number
+   280	        lodsb                   ; get the new value
+   281	        mov     [bx+Text_Out_Data-SetX],al ;store in location
+   282	                                           ; corresponding to
+   283	                                           ; the command number
+   284	Return:
+   285	        ret
+   286	;
+   287	; Displays a string of text on the screen.
+   288	;
+   289	TextUp%:
+   290	GetNextCharacter:
+   291	        lodsb                             ;get next text character
+   292	        or      al,al                     ;see if end of string
+   293	        je      Return                    ;if so, next command
+   294	        call    OutputCharacter           ;else output character
+   295	        jmp     short GetNextCharacter    ;next character
+   296	;
+   297	; Displays a single character on the screen multiple times.
+   298	;
+   299	RepChar%:
+   300	        lodsw                    ;get the character in AL
+   301	                                 ; and the count in AH
+   302	RepCharLoop:
+   303	        push    ax               ;save the character and count
+   304	        call    OutputCharacter  ;output it once
+   305	        pop     ax               ;restore count and character
+   306	        dec     ah               ;decrement count
+   307	        jne     RepCharLoop      ;jump if count not now 0
+   308	        ret
+   309	;
+   310	; Clears the screen and turns off the cursor.
+   311	;
+   312	Cls%:
+   313	        mov     ax,600h          ;BIOS clear screen parameters
+   314	        mov     bh,[Character_Attribute]
+   315	        xor     cx,cx
+   316	        mov     dx,184fh
+   317	        int     10h              ;clear the screen
+   318	        mov     ah,01            ;turn off cursor
+   319	        mov     cx,2000h         ; by setting bit 5 of the
+   320	        int     10h              ; cursor start parameter
+   321	        ret
+   322	;
+   323	; Sets the start coordinates for maze-drawing.
+   324	;
+   325	SetMStart%:
+   326	        lodsw   ;get both X and Y coordinates and store
+   327	        mov     word ptr [Cursor_X_coordinate],ax
+   328	        mov     [Last_Maze_Direction],0ffh  ;indicate no
+   329	        ret                                 ; last direction
+   330	
+   331	;
+   332	; Maze-drawing tables.
+   333	;
+   334	XYincTable      db      0,-1, 1,0, 0,1, -1,0
+   335	                        ;X & Y increment pairs for the 4 directions
+   336	CharacterGivenDirectionTable db 179,196,179,196
+   337	                        ;vertical or horizontal line character to use
+   338	                        ; for a given direction
+   339	FirstCharGivenNewAndOldDirectionTable label byte
+   340	        db      179,218,179,191, 217,196,191,196 ;table of corner
+   341	        db      179,192,179,217, 192,196,218,196 ; characters
+   342	;
+   343	; Outputs a maze line to the screen.
+   344	;
+   345	MOut%:
+   346	        sub     bx,Mup+Mup      ;find new direction word index
+   347	        mov     ax,word ptr [bx+XYincTable]       ;set for new
+   348	        mov     word ptr [Cursor_X_Increment],ax  ; direction
+   349	        shr     bx,1    ;change to byte index from word index
+   350	        mov     al,[bx+CharacterGivenDirectionTable] ;get char for
+   351	                                                     ; this direction
+   352	        mov     ah,al                    ;move horizontal or vert
+   353	        mov     dl,[Last_Maze_Direction] ; character into AH
+   354	        mov     [Last_Maze_Direction],bl ;if last dir is 0ffh then
+   355	        or      dl,dl                    ; just use horiz or vert char
+   356	        js      OutputFirstCharacter     ;look up corner character
+   357	        shl     dl,1                     ; in table using last
+   358	        shl     dl,1                     ; direction*4 + new direction
+   359	        add     bl,dl                    ; as index
+   360	        mov     al,[bx+FirstCharGivenNewAndOldDirectionTable]
+   361	OutputFirstCharacter:
+   362	        push    ax                      ;AL has corner, AH side char
+   363	        call    OutputCharacter         ;put out corner character
+   364	        pop     ax                      ;restore side char to AH
+   365	        lodsb                           ;get count of chars for this
+   366	        dec     al                      ; side, minus 1 for corner
+   367	        xchg    al,ah                   ; already output
+   368	        jmp short RepCharLoop           ;put out side char n times
+   369	;
+   370	; Table of arrow characters pointing in four directions.
+   371	;
+   372	AnimateCharacterTable   db      24,26,25,27
+   373	;
+   374	; Animates an arrow moving in one of four directions.
+   375	;
+   376	Animate%:
+   377	        sub     bx,(Aup+Aup)                    ;get word dir index
+   378	        mov     ax,word ptr [XYIncTable+bx]     ;set move direction
+   379	        mov     word ptr [Cursor_X_Increment],ax
+   380	        lodsb                                   ;get move count
+   381	        shr     bx,1                            ;make into byte
+   382	        mov     ah,[bx+AnimateCharacterTable]   ; index and get
+   383	        xchg    al,ah                           ; char to animate
+   384	NextPosition:                                   ; into AL, AH count
+   385	        mov     dx,[AnimateLastCoordinates]     ;coords of last arrow
+   386	                                        ;move cursor to where last
+   387	                                        ; character was output
+   388	        mov     word ptr [Cursor_X_Coordinate],dx
+   389	        push    ax                      ;save char and count
+   390	        mov     al,20h                  ;output a space there
+   391	        call    OutputCharacter         ; to erase it
+   392	        pop     ax      ;restore char in AL, count in AH
+   393	        push    ax      ;save char and count
+   394	        mov     dx,word ptr [Cursor_X_Coordinate] ;store new coords
+   395	        mov     [AnimateLastCoordinates],dx       ; as last
+   396	        call    OutputCharacter                 ;output in new
+   397	        mov     cx,DELAY_COUNT                  ; location then
+   398	WaitSome:                                       ; wait so doesn't
+   399	        loop    WaitSome                        ; move too fast
+   400	        pop     ax                              ;restore count and
+   401	                                                ; character
+   402	        dec     ah                              ;count down
+   403	        jne     NextPosition                    ; if not done
+   404	        ret                                     ; do again
+   405	;
+   406	; Sets the animation start coordinates.
+   407	;
+   408	SetAStart%:
+   409	        lodsw                                   ;get both X & Y
+   410	        mov     [AnimateLastCoordinates],ax     ; coordinates and
+   411	        ret                                     ; store
+   412	;
+   413	; Repeats the command that follows the count parameter count times.
+   414	;
+   415	DoRep%:
+   416	        lodsb                           ;get count parameter
+   417	NextRep:
+   418	        push    si                      ;save pointer to command
+   419	                                        ; to repeat
+   420	        push    ax                      ;save count
+   421	        lodsb                           ;get command to repeat
+   422	        mov     bl,al                   ;convert command byte to
+   423	        xor     bh,bh                   ; word index in BX
+   424	        shl     bx,1                    ;
+   425	        call    [bx+Function_Table]     ;execute command once
+   426	        pop     ax                      ;get back the count
+   427	        dec     al                      ;see if it's time to stop
+   428	        je      DoneWithRep             ;jump if done all repetitions
+   429	        pop     si                      ;get back the pointer to the
+   430	                                        ; command to repeat, and
+   431	        jmp     NextRep                 ; do it again
+   432	DoneWithRep:
+   433	        pop     ax                      ;clear pointer to command to
+   434	                                        ; repeat from stack, leave
+   435	                                        ; SI pointing to the next
+   436	                                        ; command
+   437	        ret
+   438	;
+   439	Interp  endp
+   440	;
+   441	; Outputs a text character at the present cursor coordinates,
+   442	;  then advances the cursor coordinates according to the
+   443	;  X and Y increments.
+   444	;
+   445	OutputCharacter proc near
+   446	        push    ax              ;save the character to output
+   447	        mov     ah,2            ;set the cursor position
+   448	        mov     dx,word ptr [Cursor_X_Coordinate]
+   449	        xor     bx,bx           ;page 0
+   450	        int     10h             ;use BIOS to set cursor position
+   451	        pop     ax              ;restore character to be output
+   452	        mov     ah,9            ;write character BIOS function
+   453	        mov     bl,[Character_Attribute] ;set attribute
+   454	        mov     cx,1            ;write just one character
+   455	        int     10h             ;use BIOS to output character
+   456	                                ;advance X & Y coordinates
+   457	        mov     ax,word ptr [Cursor_X_Coordinate] ;both x & y Incs
+   458	        add     al,[Cursor_X_Increment]           ; can be negative
+   459	        add     ah,[Cursor_Y_Increment]           ; so must add bytes
+   460	                                                  ; separately
+   461	        mov     word ptr [Cursor_X_Coordinate],ax ;store new  X & Y
+   462	                                                  ; coordinates
+   463	        ret
+   464	OutputCharacter endp
+   465	;
+   466	_TEXT   ends
+   467	        end     Start                   ;start execution at Start
+   468	
+   469	
+   470	
+   471	
+   472	

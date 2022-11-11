@@ -1,0 +1,463 @@
+     1	Q/FAX  a service of Quarterdeck Office Systems
+     2	
+     3	Welcome to Q/FAX!
+     4	
+     5	Q/FAX,  a  service of Quarterdeck Office Systems, allows you  to  receive
+     6	technical  notes,  product information and upgrade information  right  on
+     7	your fax machine.  Using Q/FAX is easy.  Here's what you do:
+     8	
+     9	1.  Read  through the list below and pick out faxes which are of interest
+    10	 to  you.   Then pick up the phone at your fax machine and call (310)314-
+    11	 3214.   Q/FAX  is available 24-hours a day, 7 days a week.  This  number
+    12	 is  for outgoing Q/FAX service only.  If you want to send us a fax, send
+    13	 to (310)314-3217.
+    14	
+    15	2.  When you hear the computer answer, use your touchtone phone to  enter
+    16	 the  code number of the fax you want (from the following list), followed
+    17	 by  the  pound  sign (#).  You may order up to three faxes per  session.
+    18	 To  correct  an error, press the asterisk key (*) and enter  the  number
+    19	 again.
+    20	
+    21	3.  When  prompted by the computer, press the "START/COPY"  or  "RECEIVE"
+    22	 button  on  your  fax machine.  This is often the green button  on  your
+    23	 machine.  You may then hang up and should immediately receive your fax.
+    24	
+    25	
+    26	FAX Subject Index  (Updated September 4, 1992)
+    27	
+    28	MASTER.LST                                                           100
+    29	Complete  list  of all documents available on the Q/FAX  system.   (The
+    30	list you are reading right now.)
+    31	COPIA.DOC                                                            169
+    32	Information on the software and hardware which drives the Q/FAX system.
+    33	                   API (Application Program Interface)
+    34	                             and Programming
+    35	APIBRO.TEC                                                           187
+    36	The  text  of our brochure describing the DESQview API.  Gives  a  full
+    37	description  of  the DESQview API.  Includes a list  of  all  available
+    38	calls.
+    39	APISTART.TEC                                                         135
+    40	How  to  start an API program from the command line with: DV  {xx.DVP}.
+    41	Tells about the default status of DESQview in this mode and basic  info
+    42	about enabling DESQview functions (by default, they are disabled).
+    43	CLIPPER5.TEC                                                         181
+    44	How to  modify the DESQview API Clipper library to run under Clipper 5.
+    45	DVAWARE.TEC                                                          250
+    46	How to make your standard DOS application "DESQview Aware".
+    47	SHARED.TEC                                                           247
+    48	Information  on  DESQview  shared programs -  how  they  work,  how  to
+    49	configure  them and basic information on how to write a shared  program
+    50	in assembler.
+    51	VCPI.TEC                                                             103
+    52	Makers of VCPI compliant DOS Extenders as of 01/01/90
+    53	XDI.TEC                                                              182
+    54	Information  on  DESQview's  XDI  (eXternal  Device  Interface).   This
+    55	interface  allows external device drivers or TSR's to communicate  with
+    56	DESQview.
+    57	                                DESQview
+    58	286.TEC                                                              195
+    59	Information on multitasking with DESQview on machines with 80286,  8086
+    60	and 8088 processors.
+    61	AUTOSCRI.TEC                                                         153
+    62	Info on the DESQview autostart script and autostart script for a window.
+    63	CHOOSDIR.TEC                                                         217
+    64	How  to  configure  programs in DESQview so that the directory  can  be
+    65	chosen on start-up.
+    66	COM3N4.TEC                                                           145
+    67	Tells  how  DESQview handles COM3 and COM4.  Explains why a single  IRQ
+    68	can't  be  shared by a COM port.  Talks about IRQ's that can  be  used.
+    69	Mentions  the use of FOSSIL drivers as a possible solution to the  "COM
+    70	port barrier".
+    71	COMMPROG.TEC                                                         237
+    72	Information  on  running  communications programs  in  background  with
+    73	DESQview.
+    74	DESQMEM.TEC                                                          111
+    75	How much memory does DESQview take up?  The note also briefly discusses
+    76	where DV can put itself and how much overhead a window takes.
+    77	DESQTEMP.TEC                                                         239
+    78	How  to use a little-known feature of DESQview (the DESQTMP?.* files)  to
+    79	transfer  data from one program to another.  In some cases,  this  method
+    80	has advantages over Mark & Transfer.
+    81	DIRECTLY.TEC                                                         109
+    82	Answers the question: "How can I tell if my program writes directly  to
+    83	the screen?"  It also has some discussion on how much memory to give an
+    84	application in DESQview.
+    85	DV386.TEC                                                            231
+    86	Explains the differences between DESQview and DESQview 386.
+    87	DVANSI.TEC                                                           110
+    88	How to run ANSI.SYS programs in DESQview using DVANSI.COM or DEVICE.COM
+    89	(if you have DV 2.2 or above).
+    90	DVFLOPPY.TEC                                                         230
+    91	What  to do if you experience unusually slow floppy drive access  while
+    92	in DESQview.
+    93	DVHERC.TEC                                                           203
+    94	How  to  use  the  DVHERC.COM program to correct  video  problems  when
+    95	running DESQview on Hercules monochrome graphics adapters and  clones.
+    96	DVPALET.DOC                                                          112
+    97	Full  documentation for the DVPALET program which comes  with  DESQview
+    98	2.2 and above.
+    99	EXTEND.TEC                                                           106
+   100	Addresses the question, "Will DESQview use my exTENDed memory?"
+   101	HRAMFONT.TEC                                                         137
+   102	Gives  an  explanation  (the bad news) of why DESQview  does  not,  and
+   103	cannot  support  the Hercules RAMfont card very well.  Suggests  a  few
+   104	work-arounds.
+   105	SYSTKEYS.TEC                                                         196
+   106	How to change your DESQview system keys.
+   107	KEYBCONF.TEC                                                         206
+   108	Discussion  of  the  "Keyboard Conflict" parameter part  of  DESQview's
+   109	advanced, "Change a Program" screen.
+   110	KBMOUSE.TEC                                                          117
+   111	Changing the "Keyboard Mouse" Key
+   112	MAKEADVP.TEC                                                         259
+   113	How to make a DESQview Program information file (DVP), with emphasis on
+   114	flexibility and portability.
+   115	MEMSIZE.TEC                                                          129
+   116	This  file  contains  a  further discussion of Memory  Size  fields  in
+   117	DESQview's Change a Program.
+   118	MEMSTAT.TEC                                                          131
+   119	"What do the numbers in Memory Status mean?"
+   120	MIDNIGHT.TEC                                                         176
+   121	Information  on  a  problem which may be seen while  running  DESQview,
+   122	where  a  program or your DOS version will not update the date properly
+   123	at midnight.
+   124	MOUSE.TEC                                                            140
+   125	A general treatise on DESQview and the mouse.
+   126	MOUSEDRP.TEC                                                         238
+   127	What to do if you encounter unsightly mouse droppings in DESQview.
+   128	MULTI-T.TEC                                                          152
+   129	General notes on the requirements of multi-tasking. Pretty much  covers
+   130	the  question: "Why isn't my program multi-tasking" or "What do I  need
+   131	to do to make it multi-task"?
+   132	OPTCOM.TEC                                                           251
+   133	Info on the "Optimize Communications" feature of DESQview.
+   134	OUTMEM.TEC                                                           114
+   135	Discusses  "Out  of  Memory" messages you might receive  while  running
+   136	DESQview and possible solutions.
+   137	PROTECT.TEC                                                          120
+   138	Explains  what  "Protection level" on Change a Program means,  what  it
+   139	does and what it doesn't do.
+   140	QEXT.TEC                                                             141
+   141	Documentation for the QEXT.SYS driver.
+   142	SER_PRN.TEC                                                          107
+   143	Notes on using a serial printer with DESQview.
+   144	VGA.TEC                                                              148
+   145	Several things about changing video modes and fonts in Desqview.
+   146	VIRTUALI.TEC                                                         229
+   147	Description  of  the  "Virtualize  Text/Graphics"  parameter   on   the
+   148	DESQview  "Change a Program" screen.  What is Virtualization and   what
+   149	is required to achieve it?
+   150	WINSIZE.TEC                                                          161
+   151	Everything we know about how to increase your window memory size inside
+   152	DESQview.
+   153	XDV.TEC                                                              125
+   154	Loading with DV.COM or XDV.COM vs. DV.EXE.  What to do if DV.COM  hangs
+   155	the system but DV.EXE works.
+   156	                               DESQview/X
+   157	DVXIPX.TEC                                                           253
+   158	Troubleshooting remote DESQview/X applications when IPX is in use.
+   159	MAKEXDVP.TEC                                                         260
+   160	How  to make a DESQview/X Program information file (DVP), with emphasis
+   161	on flexibility and portability.
+   162	MAXWINDO.TEC                                                         252
+   163	How  to  determine your current maximum window size in  DESQview/X  and
+   164	ways to increase it.
+   165	XFONTS.TEC                                                           246
+   166	How  to port DESQview/X PC fonts to non-DOS X platforms, to support the
+   167	running of remote DOS programs.
+   168	XVIDEO.TEC                                                           256
+   169	Configuration  of  the video "Display" options in the DESQview/X  Setup
+   170	program and general video issues.
+   171	                           Hardware (General)
+   172	512AT.TEC                                                            139
+   173	Discusses the problem on AT-Clones which cannot be disabled below  512K
+   174	with respect to multi-tasking support.  Talks about the Charge Card and
+   175	386 options.
+   176	BUS-MAST.TEC                                                         121
+   177	Discusses  "Bus-mastering" devices and why they may require a VDS  driver
+   178	on a 386 system in Virtual 86 mode.
+   179	EMS40.TEC                                                            136
+   180	A list of all the factors that must be in place before DV can multitask
+   181	in  expanded  memory.   A  good FAX to consult  when  shopping  for  an
+   182	expanded  memory  board for DESQview.  Discusses  the  question:   "Why
+   183	doesn't my EMS4.0 driver allow me to multi-task?"
+   184	EMSCOMP.TEC                                                          235
+   185	Comparisons of some popular EMS 4 expanded memory boards.
+   186	PS1.TEC                                                              234
+   187	Special considerations when installing or running QEMM or QRAM  on  IBM
+   188	PS/1 machines.
+   189	XGA.TEC                                                              208
+   190	Using IBM's XGA video adapter with Quarterdeck products.
+   191	                      Hardware (Specific 3rd Party)
+   192	AB_PLUS.TEC                                                          150
+   193	Gives  a full description of how to set up the AboveBoard Plus for  use
+   194	with DESQview and QRAM.
+   195	AMSTRAD.TEC                                                          243
+   196	Info on the use of Quarterdeck Products with Amstrad computers.
+   197	AST286.TEC                                                           122
+   198	Info on setting up an AST Premium 286 for use with DESQview.
+   199	EXPAND.TEC                                                           149
+   200	Addresses the question: "Which exPANDed memory card should I buy?"
+   201	NEC_SX.TEC                                                           102
+   202	Describes  the  use of the QEMM "NOSH" parameter with the  NEC  386-SX.
+   203	Without  this  parameter,  the machine will  continuously  reboot  when
+   204	trying to load QEMM.
+   205	TOSH5100.TEC                                                         108
+   206	Notes on running QEMM-386 and DESQview 386 on the Toshiba 386 machines.
+   207	Describes how to disable the built in expanded memory on the Toshiba so
+   208	that QEMM-386 can map the extended memory.
+   209	                              Miscellaneous
+   210	ALL-HELP.TEC                                                         178
+   211	Captured help screens for currently shipping Quarterdeck Products.
+   212	HEX.TEC                                                              190
+   213	An  explanation of the hexadecimal numbering system and how it  relates
+   214	to DESQview, QEMM.
+   215	TROUBLE.TEC                                                          241
+   216	General  guide  for  trouble-shooting computer  problems  that  may  be
+   217	related to the use of Quarterdeck products.
+   218	                                Networks
+   219	BANYAN.TEC                                                           116
+   220	Info on running Banyan network with DV and QEMM.
+   221	DECNET.TEC                                                           220
+   222	Info  on  running  Digital Equipment's Pathworks (also called  DECNET  or
+   223	PCSA) with Quarterdeck products.
+   224	LANMAN.TEC                                                           258
+   225	Information  on  the  use of Microsoft's LAN Manager  with  Quarterdeck
+   226	products.
+   227	LANTASTI.TEC                                                         128
+   228	Tips on running our products in the Lantastic network environment.
+   229	NINSTALL.TEC                                                         158
+   230	Installing  and running DESQview 2.2 files from a Novell  server.  Some
+   231	info on Mapping drives.
+   232	NWORK.TEC                                                            154
+   233	Can I run DESQview on my network ?
+   234	PROTMAN.TEC                                                          227
+   235	How  to  use PROTMAN.DOS, the protocol manager for Microsoft's MS-  DOS
+   236	LAN Manager, with QEMM-386 and QRAM.
+   237	TOKEN.TEC                                                            156
+   238	This file discusses Token Ring Network Cards and QEMM.
+   239	TOPS.TEC                                                             163
+   240	By TOPS Corp.  Information on running TOPS Networks, QEMM and DV386
+   241	                      Other Sources of Information
+   242	BBS.TEC                                                              105
+   243	How to use the Quarterdeck Electronic Bulletin Board System.
+   244	BBSLIST.TEC                                                          165
+   245	Electronic bulletin board systems in the U.S. and around the world that
+   246	carry information on Quarterdeck products.
+   247	BIX.TEC                                                              160
+   248	How to contact Quarterdeck on BIX (Byte Information eXchange).
+   249	BOOKS.TEC                                                            132
+   250	A  list  of  3rd party books on Quarterdeck products, or on  topics  of
+   251	importance to our users - such as memory.
+   252	CIS.TEC                                                              134
+   253	How  to  contact  Quarterdeck  and users  of  Quarterdeck  products  on
+   254	Compuserve.
+   255	CONTACT.TEC                                                          144
+   256	This  document  summarizes  some of the ways to  contact  Quarterdeck's
+   257	Technical Support Department.
+   258	INTERNET.TEC                                                         164
+   259	How to contact Quarterdeck through InterNet.
+   260	SNET.TEC                                                             159
+   261	Info  on the SmartNet system - network of private BBSes, many of  which
+   262	carry information on Quarterdeck products.
+   263	                             Product Patches
+   264	DELAYMS.PAT                                                          201
+   265	DEBUG patch to DESQview to eliminate long delays when starting DESQview
+   266	on some systems with mouse ports.
+   267	NCR.PAT                                                              202
+   268	How  to  patch  Manifest  1.01 to prevent it  failing  on  microchannel
+   269	systems that it doesn't recognize.
+   270	                        Quarterdeck Product Info
+   271	COMPANIO.TEC                                                         124
+   272	Gives  a  short  synopsis  of each of the DESQview  Companions:   Link,
+   273	Datebook, Calculator, and Datebook.
+   274	DES_DV.INF                                                           171
+   275	A  two  page description in Question and Answer format of the  DESQview
+   276	multitasking product.
+   277	DES_DV3.INF                                                          172
+   278	A  two  page description in Question and Answer format of the  DESQview
+   279	386 multitasking product.
+   280	DES_Q386.INF                                                         173
+   281	A  two  page  description in Question and Answer format of  the  QEMM-386
+   282	expanded memory manager.
+   283	DES_5060.INF                                                         174
+   284	A  two  page description in Question and Answer format of the QEMM  50/60
+   285	expanded memory manager.
+   286	DES_QRAM.INF                                                         175
+   287	A  two  page description in Question and Answer format of the QRAM memory
+   288	enhancement tool.
+   289	DES_QWHT.INF                                                         180
+   290	Description  of the Quarterdeck White Papers diskette--a collection  of
+   291	technical notes in ASCII format-- many of which are available  here  on
+   292	Q/FAX.
+   293	DESQAWAY.TEC                                                         232
+   294	Information on Quarterdeck's DESQaway training services.
+   295	DVXPRESS.REL                                                         166
+   296	Quarterdeck's press announcement of DESQview/X.
+   297	ORDERUP.INF                                                          168
+   298	Order  form  for  upgrades  to the latest  versions  of  DESQview  386,
+   299	DESQview, QEMM, QRAM and Manifest..
+   300	PASSPORT.TEC                                                         189
+   301	A description of Quarterdeck's product support services.  Describes our
+   302	various  plans for extended support , developer support and support  to
+   303	corporate users.
+   304	SERNUM.TEC                                                           115
+   305	Describes  where  the  serial number can be found  on  new  Quarterdeck
+   306	products.
+   307	UPGRADE.TEC                                                          210
+   308	Information on the new features of our most recent products and  how to
+   309	upgrade.
+   310	                              QEMM and QRAM
+   311	BUFFERS.TEC                                                          226
+   312	Information on the DOS "BUFFERS" parameter and how it relates to   QEMM
+   313	and QRAM.  Includes information on loading BUFFERS  into high memory.
+   314	EX13FLOW.TEC                                                         232
+   315	Step-by-step,  flowchart-like procedure for  determine  the  cause  and
+   316	solution  of problems which result in QEMM "Exception #13 or  Exception
+   317	#12" error messages.
+   318	EXCEPT13.TEC                                                         142
+   319	This explains what "Exception 13" error messages mean and what the user
+   320	can do about them.
+   321	EXCLUDE.TEC                                                          219
+   322	Using  Manifest's  "Analysis"  procedure,  find  and  eliminate  memory
+   323	conflicts with the QEMM "EXCLUDE" parameter.
+   324	EXEPACK.TEC                                                          255
+   325	Fixing  problems with EXEPACKed files which result in "Packed  File  is
+   326	Corrupt" messages.
+   327	FLPYDISK.TEC                                                         193
+   328	Instructions for installing QEMM-386 on a single floppy system (such as
+   329	a floppy disk workstation on a network.)
+   330	IA.TEC                                                               221
+   331	Discussion   of  the  "sticky  shift  keys"  problem  users   sometimes
+   332	experience under QEMM; what causes it and how the use of the QEMM  "IA"
+   333	parameter may help.
+   334	LARGCONT.TEC                                                         244
+   335	How  to  get  large, continuous regions of High RAM for loading  resident
+   336	programs and drivers.
+   337	LOADHI.TEC                                                           138
+   338	This  file  contains tips about the Loadhi program with  QEMM  versions
+   339	prior to 5.0.
+   340	LOADHI6.TEC                                                          183
+   341	Using the Loadhi programs with versions of QEMM 6.0.
+   342	MCA.TEC                                                              223
+   343	Info  on  QEMM's  MCA.ADL  file.  How to modify  file  to  get  rid  of
+   344	"Unrecognized Microchannel Adapter" messages.
+   345	OPTIMIZE.TEC                                                         191
+   346	Gives  a  summary of what the Optimize program (which is  shipped  with
+   347	QEMM-386, QEMM 50/60 and QRAM) does.  Explains in detail how to  handle
+   348	common problems which may occur when it is run.
+   349	QEMM5060.TEC                                                         186
+   350	Hardware  requirements of QEMM 50/60, Quarterdeck's memory manager  for
+   351	PS/2 Models 50 and 60.
+   352	QEMMERR.TEC                                                          192
+   353	Documents  error  messages that may be produced by QEMM-386  and  gives
+   354	suggestions for correcting problems.
+   355	QRAM.TEC                                                             216
+   356	A  description  of Quarterdeck's QRAM product.  The various   utilities
+   357	included and hardware requirements.
+   358	QRAMC&T.TEC                                                          146
+   359	How  to  get  QRAM to use the Chips & Technology shadow ram while  also
+   360	using the EMS driver.
+   361	QRAMNOTH.TEC                                                         147
+   362	Discusses QRAM's "Nothing useful to do" message, why you might get  it,
+   363	and things to check.
+   364	QTEST.TEC                                                            177
+   365	A  description of the QTEST program, which can be used to tests systems
+   366	to see if they would benefit by using QRAM.   Tells how to get QTEST.
+   367	SHADOWRM.TEC                                                         224
+   368	Info  on  how  QEMM and QRAM use Shadow RAM and an explanation  of  how
+   369	Shadow RAM works.
+   370	STEALTH.TEC                                                          205
+   371	How  to  diagnose and cure problems related to the use of the   Stealth
+   372	feature of QEMM-386, version 6.
+   373	SUSPEND.TEC                                                          254
+   374	Info  on  QEMM's support of the Suspend/Resume features of some laptops
+   375	and how to debug problems.
+   376	TOUR.TEC                                                             228
+   377	A grand-tour of your computer's memory using QEMM and Manifest.
+   378	XBDA.TEC                                                             222
+   379	Explanation of what an Extended BIOS Data Area (XBDA) is and  how  QEMM
+   380	or QEXT deal with it.
+   381	XSTI.TEC                                                             233
+   382	Detailed info on the use of QEMM's XSTI parameter, which can be used if
+   383	QEMM  reports "Disabling Stealth because QEMM could not locate the  ROM
+   384	handler for INT XX"
+   385	                      Software (Specific 3rd Party)
+   386	AS400.TEC                                                            113
+   387	The  IBM AS/400 is a complicated terminal emulation setup, akin to  the
+   388	5250.
+   389	ASTUTIL.TEC                                                          118
+   390	How  to run AST's SuperSpool, Fastdisk and SuperDrive. These require  a
+   391	special setup when running with QEXT due to their tendency to overwrite
+   392	QEXT.
+   393	DBASE.TEC                                                            126
+   394	Info  on  running DBASE III and IV in DESQview.  Describes  a  "colors"
+   395	problem  which  arises as a result of a dBASE bug in  dBASE's  DESQview
+   396	support and gives some suggestions for getting around this.
+   397	DOS4.TEC                                                             143
+   398	Discusses the DOS 4.0 "bug" problem with the "/X" parameter.
+   399	DOS5.TEC                                                             200
+   400	Information on the use of DOS 5.0 with all Quarterdeck products.
+   401	DRDOS6.TEC                                                           215
+   402	Discussion  of  the  use  of Digital Research's  DR-DOS  version  6  with
+   403	Quarterdeck products.
+   404	LOTUS2.TEC                                                           127
+   405	Info on running Lotus version 2 in DESQview.
+   406	LOTUS3.TEC                                                           162
+   407	Info  on running Lotus's 1-2-3 Rel 3 in DESQview on 286 & 386 machines,
+   408	with and without expanded memory.
+   409	PCTOOLS5.TEC                                                         155
+   410	Change A program information for PCTOOLS 5.5 Deluxe.
+   411	PCTOOLS7.TEC                                                         225
+   412	Information  on the use of Central Point's "PC Tools version  7"   with
+   413	Quarterdeck products.
+   414	RAMDRIVE.TEC                                                         123
+   415	Running QEXT.SYS with some versions of Microsoft's RAMDRIVE.SYS,  which
+   416	also shows up as VDISK.SYS in some OEM versions of DOS.
+   417	REMM.TEC                                                             101
+   418	Optimizing your  AST REMM.SYS driver for use with DESQview and QRAM.
+   419	SK-PLUS.TEC                                                          151
+   420	How to run Side Kick Plus with DESQview.
+   421	SMARTDRV.TEC                                                         184
+   422	Using Microsoft's SmartDrive disk cache with QEMM-386 and/or DESQview.
+   423	SSTOR.TEC                                                            249
+   424	Information  on  using AddStor's "SuperStor" disk  compression  utility
+   425	with Quarterdeck products.
+   426	STACKER.TEC                                                          214
+   427	Information  on  using  Stac  Electronics  "Stacker"  disk  compression
+   428	utility with Quarterdeck products.
+   429	VI.TEC                                                               245
+   430	Basic  commands  of the UNIX "VI" editor, which can be  used  to  setup
+   431	DESQview/X related files on UNIX machines.
+   432	WINDOWS.TEC                                                          157
+   433	How to run WINDOWS 2, WINDOWS Runtime, Windows applications and Windows
+   434	386 (WIN86) with DESQview, and QEMM.   Does not cover Windows 3.
+   435	WIN3.TEC                                                             170
+   436	How  to  run  Windows  3  with  QEMM-386, DESQview,  DESQview  386  and
+   437	Manifest.
+   438	WIN31.TEC                                                            242
+   439	Support information which is specific to the Windows 3.1 version.
+   440	WINFLOW.TEC                                                          207
+   441	Step-by-step  procedure,  in flowchart style for  debugging   conflicts
+   442	between QEMM-386 and Microsoft Windows 3.0.
+   443	WIN-TRBL.TEC                                                         179
+   444	Trouble-shooting Windows 3.0/QEMM-368 installations.   What  to  do  if
+   445	Windows  fails  to  start in Enhanced mode or crashes  on  exit.   Some
+   446	information  on  typical Windows problems, not related to  QEMM-386  is
+   447	included.
+   448	
+   449	                       Quarterdeck Office Systems
+   450	                           150 Pico Boulevard
+   451	                         Santa Monica, CA 90405
+   452	         Technical Support (Voice):                310-392-9701
+   453	         Q/FAX Service:                            310-314-3214
+   454	         Inbound Technical Support FAX:            310-314-3217
+   455	         Inbound Sales and Orders FAX              310-314-4219
+   456	         Electronic Bulletin Board System          310-314-3227
+   457	                                    
+   458	If  you  encounter any problems obtaining any of the listed faxes  from
+   459	our  Q/FAX  service,  please drop us a note on  our  Inbound  Technical
+   460	Support FAX number, listed above.
+   461	
+   462	Copyright O 1992, Quarterdeck Office Systems
+   463	

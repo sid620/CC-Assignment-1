@@ -1,0 +1,126 @@
+     1	DOS Level 2:
+     2	
+     3	We have seen that DOS's mission is one of file management.  Every software
+     4	has a purpose and DOS's is for housekeeping of files.  However, we also saw
+     5	that DOS is unique because we can't run the computer without it.  We must
+     6	"boot" the system with the internal DOS files each time we start the computer.
+     7	Finally, most people don't realize that DOS is also the Swedish word for
+     8	toilet.  Which DOS is more important in your life?   Too obvious to comment.
+     9	
+    10	WHEN A COMPUTER IS POWERED-UP
+    11	-----------------------------
+    12	What actually happens when the computer is started?  First, a factory preset
+    13	set of instructions residing in ROM are activated.  ROM stands for Read Only
+    14	Memory.  This set of chips can send instructions TO RAM, but it cannot receive
+    15	them - thus cannot be altered.  The unalterable set of ROM instructions
+    16	performs systems checks to make sure all critical hardware components are
+    17	hooked up properly and in the case of RAM - operating properly.
+    18	
+    19	Once the hardware check is performed, ROM instructs RAM to search the A drive
+    20	for internal DOS files.  If no disk is present in drive A, then ROM directs
+    21	RAM to check the Root directory of the hard drive for the necessary files
+    22	(more on Root directories in Hard Disk DOS lessons).  If the files are found,
+    23	they are automatically loaded into to RAM (booted).
+    24	
+    25	There are 3 files which comprise internal DOS:  IBMDOS.SYS, IBMBIO.SYS and
+    26	COMMAND.COM.  The first 2 files are hidden files.  They cannot be seen in a
+    27	DIR command, nor can they be copied or deleted with conventional DOS commands.
+    28	These files are responsible for the linking of the hardware components.  The
+    29	final file, COMMAND.COM CAN be seen, copied or deleted, and contains the
+    30	frequently used internal DOS file management commands.  Again, the system will
+    31	not boot without these 3 files.
+    32	
+    33	It is from the DOS prompt:       A>
+    34	that we can go forward with
+    35	the task of file management.
+    36	
+    37	We have already seen a handful of the most useful DOS file management
+    38	commands.  Lets expand their abilities with the use of file WILDCARDS.
+    39	
+    40	WILDCARDS
+    41	---------
+    42	Wildcards allow the power of a DOS command to expand.  For example, imagine
+    43	that you need to copy 12 files from a disk containing 100.  The 10 files all
+    44	begin with the word SALES.   Sales.Jan, Sales.Feb, Sales.Mar ...
+    45	
+    46	We could copy each file individually:  A>Copy Sales.Jan B:
+    47	                                       A>Copy Sales.Feb B:
+    48	                                       ......
+    49	
+    50	Or, we could do it in one command with the use of a wildcard:
+    51	
+    52	                                       A>Copy Sales.* B:
+    53	
+    54	The asterisk (*) represents a wildcard.  It is often referred to as a star.
+    55	The above command would read "Copy Sales dot star space B full colon".
+    56	                                                                                
+    57	
+    58	
+    59	
+    60	
+    61	
+    62	Any DOS command that references a filename can make use of wildcards to
+    63	expand the command.  When a Copy command is issued, DOS is instructed which
+    64	single file to copy.  However, when we use a wildcard, DOS is instructed to
+    65	use any files that meet the criteria.  The asterisk expands the criteria for
+    66	qualifying files.
+    67	
+    68	A>Copy Sales.* B:   says "copy any file from drive A to drive B that contains
+    69	                          SALES as the filename, regardless of the extension"
+    70	
+    71	What if we wanted to include the files:   SALES1.DOC, SALES10.DOC and
+    72	                                          SALESMAN.SUM
+    73	
+    74	SALES.* is not broad enough criteria to include these files.  Rather, we would
+    75	state it:
+    76	             A>Copy SALES*.* B:
+    77	
+    78	Now the criteria is to copy ANY file as long as the first 5 characters are S A
+    79	L E S regardless of what other characters come after these first 5 in the
+    80	filename or what exists in the extension.
+    81	
+    82	The asterisk is the broadest and most often used wildcard.  Some other
+    83	examples of its use:
+    84	
+    85	             A>Copy *.DOC B:    (all files with the extension DOC)
+    86	             A>Del S*.*         (any file that begins with the letter S)
+    87	             A>Del B:*.*        (ALL files from the B drive - be careful!)
+    88	             A>Dir B:*.COM      (A list of all files with an extension of COM
+    89	                                 on the B drive)
+    90	
+    91	Anywhere a file specification can be given in DOS, the specification can be
+    92	broadened with a wildcard.  The asterisk is very useful.
+    93	
+    94	Another wildcard is the question mark (?).  It too broadens the criteria for a
+    95	command,  however,  it is "location specific".  For example:
+    96	
+    97	              A>Copy S?.DOC B:
+    98	
+    99	Any file that has S as the first character followed by a single character
+   100	in the second position or not, but NO more characters in the filename plus an
+   101	extension of DOC.
+   102	
+   103	Therefore, these files would make it:   S.DOC    SA.DOC SI.DOC    S5.DOC.
+   104	          And, these files would not:  SALES.DOC   SAT.DOC   S5.EXE
+   105	
+   106	Wildcards can be used together:
+   107	
+   108	              A>Copy S?L*.* B:
+   109	
+   110	This will use the following:     SALES.COM    SAL     S5L.DOC    SL.EXE
+   111	                    But not:    SAM.DOC    BUDGET.SL
+   112	
+   113	                                                                                
+   114	
+   115	
+   116	
+   117	
+   118	
+   119	The wildcard characters,  *  and ?  are used with DOS commands such as DIR,
+   120	COPY and DEL to broaden their application.  An asterisk, or "star" allows up
+   121	to 8 characters at any position in a file name.  A question mark does the
+   122	same, but for only 1 character position.
+   123	
+   124	
+   125	
+   126	*****   END OF FILE:  Press <ESC> to return to Main Menu   *****

@@ -1,0 +1,215 @@
+     1	The following is a text file that was downloaded from the Delphi online 
+     2	service's Tandy SIG
+     3	
+     4	The FCC is considering reregulating the packet-switching networks like Telenet,
+     5	Tymnet, Compuserve, The Source and PC Pursuit.  This could result in additional
+     6	costs to the user.  This is excerpted from Infomat magazine.
+     7	 ====================================
+     8	 COMPUTER AND SOFTWARE NEWS -- PART 1
+     9	 ====================================
+    10	 by Tim Elmer
+    11	 ------------------------------------
+    12	 FREE LOCAL ACCESS TO PACKET
+    13	 SWITCHING NETWORKS MAY BE ELIMINATED
+    14	 ------------------------------------
+    15	 (BPS) -- The Federal Communications Commission (FCC) will vote on a proposal 
+    16	to reregulate packet switching networks that, if approved, would eliminate free
+    17	local telephone access to those networks.
+    18	 "If this occurs, it might eventually double or triple the costs to those using
+    19	packet switching networks to access commercial on-line databases and 
+    20	information services and triple or quadruple the costs to those using Telenet's 
+    21	PC Pursuit," said Philip M. Walker, vice president and regulatory counsel for 
+    22	Telenet Communications Corp.
+    23	
+    24	 Predictably, the initiative to reregulate packet switching networks comes
+    25	primarily from the Bell Operating Companies (BOCs) and secondarily from AT&T.
+    26	These companies provide local telephone service to vast majority of telephone
+    27	customers throughout the U.S. and will benefit the most from FCC reregulation 
+    28	of the packet switching networks.
+    29	
+    30	 Under current FCC rules formulated in 1980 in the FCC's Second Computer
+    31	Inquiry, called Computer II, a distinction is made between "basic services" and
+    32	"enhanced services." "Basic services" are those that don't offer protocol 
+    33	conversion such as local and long-distance voice telephone services.  "Enhanced 
+    34	services" are defined in an open-ended fashion as computer-based services that 
+    35	are more than a "basic service," in other words, services such as packet 
+    36	switching networks, database and on-line type services, and remote computing 
+    37	services that offer protocol conversion, according to Walker.
+    38	
+    39	 Under the 1980 Computer II Inquiry, the FCC ruled that "basic services" would
+    40	continue to be regulated as they had always been.  However, the FCC also ruled
+    41	that "enhanced services" would be deregulated, which opened up the industry to
+    42	competition.  This resulted in numerous companies entering the packet switching
+    43	business, including BOCs, AT&T and at least a dozen others.  The competition
+    44	resulted in significant price reductions for packet switching services.
+    45	 To prevent monopolization of the packet switching industry by the Big Boys 
+    46	(the BOCs and AT&T), the FCC ruled that they had to keep separate accounting 
+    47	figures for their "basic services" and for their "enhanced services," and that 
+    48	they could not use revenues from their lucrative "basic services" to cross- 
+    49	subsidize their "enhanced service" packet switching networks.
+    50	 The FCC also ruled that if the BOCs and AT&T used their "basic service"
+    51	telephone lines for packet switching services, then they must let their
+    52	competitors have access to those lines on the same basis, which would preserve
+    53	true competition in the industry.
+    54	
+    55	 "Now, under the FCC's Computer Inquiry III, the FCC is asking, should we
+    56	redefine protocol conversion services as 'basic services' rather than enhanced
+    57	services?  Should we redefine all those companies as common carriers?  This
+    58	would, in effect, subject them not only to federal regulations but, even worse,
+    59	to state regulations," Walker said.
+    60	 The result would eliminate comparable interconnection requirements currently
+    61	imposed on BOCs and AT&T, allowing them to charge their packet switching
+    62	competitors local dial-in fees to access packet switching long-distance line
+    63	networks. It would also allow BOCs and AT&T to offer their own packet switching 
+    64	services on a non-compensatory basis and, finally, allow them to cross- 
+    65	subsidize those services with revenues from their much more lucrative voice 
+    66	telephone service revenues.  In short, it would allow BOCs and AT&T to 
+    67	monopolize the packet switching industry and probably drive out most 
+    68	competitors. 
+    69	 "In terms of cost impact," Walker said, "if we had to pay local access 
+    70	charges, it would cost us about $3.60 an hour at the originating end, for calls 
+    71	made by users to on-line databases and information services like CompuServe and 
+    72	The Source.
+    73	
+    74	 "And with PC Pursuit, for which we have out-dial modems, we would have to pay
+    75	not only 3.60 per hour access fees at the originating end but also $4.80 at the
+    76	terminating end, a total of about $8 or $9.  Obviously, to survive, we would
+    77	have to add those additional charges to our current fees and pass them on to 
+    78	our consumers," Walker said.
+    79	 That would almost certainly spell the end of PC Pursuit, and it would likely
+    80	put out of business not only many independent packet switching networks but 
+    81	also many on-line databases and information services.
+    82	
+    83	 FCC approval of changes being considered in Computer III, Walker said, "would
+    84	really have a major impact on anyone using a packet switching service to access
+    85	online bulletin boards, databases, or information services aimed at the
+    86	residential user.  They are just going to get creamed if this happens."
+    87	 Walker said that is was not clear exactly when the FCC would vote on the
+    88	proposal, but that it would probably be the latter part of January or early 
+    89	part of February, 1987.  "They are moving very fast on this," he said.
+    90	 For additional information, be sure to read Alan Bechtold's editorial in this
+    91	issue.
+    92	
+    93	 ==========END>>>
+    94	
+    95	 Copyright (C) 1986, by BBS PRESS SERVICE, INC.
+    96	
+    97	 =================
+    98	 THE EDITOR SPEAKS
+    99	 =================
+   100	 "Low-Cost packet switching Service Threatened"
+   101	
+   102	 by Alan R. Bechtold
+   103	
+   104	 As described in our lead news story this issue, the FCC is now considering a
+   105	major change in the way packet switched phone services are defined.  This 
+   106	change
+   107	is likely to lead to the demise of many of these services, and to much higher
+   108	prices for the use of the few that will eventually remain in business.
+   109	
+   110	 At the risk of over-simplification, I think I should first describe just what
+   111	a packet switched networking service is.  These are the services you use to
+   112	access online databases and commercial online services, such as CompuServe and
+   113	The Source, with just a local telephone call.  Once you call the local Telenet
+   114	or Tymnet number, for example, and a connection is made, you are then connected
+   115	with a computer that puts you in communication with the online services with
+   116	which you wish to communicate.
+   117	
+   118	 This computer is handling a number of calls into the main system computer at
+   119	the same time.  It takes information you send and delivers it in "packets" to 
+   120	the proper destination, picks up information from the online service computer 
+   121	you called, and sends it, also in "packets," back to you.  All of this 
+   122	communicating is done in these so-called "packets" because this allows the 
+   123	network's computers to offer protocol conversion and handle several ongoing 
+   124	communications sessions at the same time.
+   125	
+   126	 FCC regulations allow AT&T and Bell Operating Companies (BOCs) to engage in
+   127	packet switching network operations, but they must also maintain completely
+   128	separate accounting of their voice and packet switching operations.  They must
+   129	also offer free local-calling access to their lines to any competitors engaged
+   130	in the packet switching service industry.
+   131	
+   132	 The above regulations have allowed Telenet and Tymnet, among others, to 
+   133	operate at a reasonable cost in a competitive atmosphere.  This is a case of 
+   134	regulation of a business actually RESULTING in increased competition and lower 
+   135	prices to consumers.
+   136	
+   137	 As things stand now, you can call any local Telenet or Tymnet access number 
+   138	and use these services to inexpensively access such online services as 
+   139	CompuServe, The Source, Delphi, and countless others.  In addition, GTE's new 
+   140	PC PURSUIT service now offers you access, through their Telenet packet 
+   141	switching service, to literally hundreds of local bulletin boards in cities all 
+   142	across the country--for a flat charge of $25 per month.
+   143	 But, the FCC is now being asked to REREGULATE this segment of the
+   144	communications industry, eliminating the FCC requirements that AT&T and BOCs
+   145	keep separate accounting records of their voice and packet switching services,
+   146	and eliminating the stipulation that the BOCs and AT&T must offer their
+   147	competitors in the packet switching business free access to their local
+   148	telephone connection lines.
+   149	
+   150	 The idea is patently ridiculous.
+   151	
+   152	 Mark Fowler, Chairman of the FCC, has been hailed by the press as a "fair-
+   153	market zealot."  The chances are very good that he views this proposed
+   154	reregulation as the magic road to increased competition and fairer pricing for
+   155	consumers.
+   156	 Unofficially, the word is out that the FCC advisory committee now considering
+   157	this matter is indeed leaning in favor of the proposed reregulation of the
+   158	packet switching industry.  If the committee recommends these changes, it's
+   159	likely that a majority of the five voting members on the Federal Communications
+   160	Commission will vote in favor of the changes.
+   161	
+   162	 I have talked to sources within the industry who say it is the BOCs who are
+   163	pushing VERY HARD for this reregulation, because they want to get into the
+   164	packet switching service business in a big way, and they would like to rid
+   165	themselves of needless competition on their way to success.
+   166	
+   167	 What's that?  RID themselves of competition?  But--the proposed reregulation 
+   168	is supposed to FOSTER competition!  Why would a group of companies (BOCs) 
+   169	hoping to eliminate their competition PUSH for this reregulation?  I hope the 
+   170	answer to THAT question is entirely clear.
+   171	 Here we have an industry that is currently populated with plenty of 
+   172	competition.  Prices are already reasonable.  Reregulation of the packet
+   173	switching service industry will IMMEDIATELY give giant corporations the upper
+   174	hand, and will allow them to cut off free access to their local access phone
+   175	lines to their competitors, namely Telenet and Tymnet and other similar 
+   176	services that now offer you high-quality service, in a competitive marketplace, 
+   177	at reasonable prices.
+   178	
+   179	 The proposed reregulation, however, would force all packet switching services
+   180	to compete with the BOCs and AT&T, companies that would be able to use the
+   181	enormous profits they earn with their voice telephone services to cross-
+   182	subsidize their packet switching services and offer them on a non-compensatory
+   183	basis, at least until their competitors are eliminated.  When that happens, 
+   184	they are then sure to jack up their fees to any level they want.
+   185	
+   186	 It would also force their packet switching competitors to pay access fees for
+   187	connection to local phone lines.  The access fees alone could add as much as
+   188	$4.00 per hour to the fees packet switching companies would be forced to pass 
+   189	on to their customers. This will be added to your hourly connect-time charges
+   190	for accessing ALL online databases through these services.
+   191	 The proposed reregulation could very well spell the death of PC PURSUIT.
+   192	Because GTE also uses dial-out modems at the other end of their Telenet
+   193	connections for PC PURSUIT service, the company would be forced to pay an 
+   194	hourly charge at BOTH ends of the phone line--totaling up to $8 or $9 per 
+   195	hour.  These fees would have to be added to the flat $25 per month that GTE now 
+   196	charges for access to PC-PURSUIT.  It would simply make the final cost to PC-
+   197	PURSUIT customers too high for the service to remain practical and affordable.
+   198	 So--this is ONE TIME you MUST use your word processor to produce some letters
+   199	opposing this proposed reregulation!  Write to:
+   200	
+   201	 Honorable Mark Fowler
+   202	 Chairman of the Federal Communications Commission
+   203	 Washington D.C. 20554
+   204	
+   205	 Refer to Computer Inquiry III in your letters.  State clearly, in your own
+   206	words, that competitive packet switching services should not be reregulated or
+   207	subjected to carrier access charges, and then explain why not.  Tell Mr. Fowler
+   208	that reregulation of packet switching services will completely destroy the
+   209	existing fair market for these services, and eventually increase costs, not
+   210	DECREASE them.
+   211	
+   212	 And hurry!  I have heard this matter will be going before the FCC for a vote 
+   213	in the latter part of January or early part of February.  Time is running out.
+   214	
+   215	 ==========END>>>

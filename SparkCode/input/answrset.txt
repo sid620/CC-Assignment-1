@@ -1,0 +1,87 @@
+     1	NetWorld '92, Boston -- February 10, 1992 -- Today, AnswerSet Corporation
+     2	announced several enhancements to Version 2 of Clientele, the company's
+     3	top-selling support automation system designed specifically for managing
+     4	customer support departments and internal help desks. This enhanced
+     5	version includes: a variety of new reports, the assignment of default
+     6	values to fields, copying of custom field information, and the archival or
+     7	deletion of volume events including calls, shipments and feedback.
+     8	Additionally, the audit function for calls is improved, and hooks for call
+     9	escalation are added. Version 2.1 will be available in March of this
+    10	year.
+    11	
+    12	In addition to tracking call data, Clientele includes a powerful,
+    13	integrated Answerbook. This function captures call data and assigns it any
+    14	number of keywords, making critical information instantly available to all
+    15	support representatives. Customers are guaranteed quick, consistent, and
+    16	accurate responses. Support managers are guaranteed improved performance
+    17	of their departments.
+    18	
+    19	Clientele is a multi-user application that runs on networked IBM-compatible
+    20	personal computers. It uses the latest database technology to maintain and
+    21	track basic customer information, call records, computer configurations,
+    22	service agreements and follow-ups. Using this software, support personnel
+    23	create a central database of common customer data that can be shared with
+    24	other departments, such as sales and marketing.
+    25	
+    26	Clientele's installed base includes companies that provide a high level of
+    27	support to customers and employees. The product is used with equal success
+    28	in Fortune 500 firms and young, emerging companies. Major customers
+    29	include Digital Equipment Corporation, EDS (a division of General Motors),
+    30	cc:Mail (a division of Lotus); MECA Software; and Walt Disney
+    31	Imagineering.
+    32	
+    33	Clientele captures customer feedback
+    34	
+    35	ExperVision, a leading developer of optical character recognition software,
+    36	uses Clientele to manage technical questions and customer feedback. Bob
+    37	Gibson, Manager of Technical Support, states: "Most of the support
+    38	products we evaluated had cluttered user interfaces. However, Clientele
+    39	has a very clean user interface. This allows our support representatives
+    40	to get into and out of the database very efficiently. They spend less time
+    41	handling the data entry and more time handling additional customers.
+    42	
+    43	Customer opinion is very important to us. Using Clientele, our support
+    44	staff captures technical questions and critical feedback from our
+    45	customers. This feedback communicates to development, marketing, and sales
+    46	actual customer commentary and gives us the input required for further
+    47	strategic direction of our company. Without Clientele, we could not
+    48	respond as quickly to the competitive marketplace we serve."
+    49	
+    50	Managers can customize Clientele's input screens and field names to meet
+    51	their department's specific needs. The product includes many modifiable
+    52	standard reports and a sophisticated, easy-to-use report writer for
+    53	generating custom reports.
+    54	
+    55	Clientele's unique design provides intuitive access to any screen with
+    56	minimal keystrokes. Pull-down menus and context-sensitive help make the
+    57	program easy to learn and use.
+    58	
+    59	Availability and support
+    60	
+    61	Clientele's pricing ranges from $5,995 for a five-user system to $16,995
+    62	for 25 users. This pricing includes support for the first year. The
+    63	support plan guarantees receipt of future product enhancements and
+    64	priority telephone support. Training and consulting services are also
+    65	available.
+    66	
+    67	Company Background
+    68	
+    69	AnswerSet is a leading developer and marketer of high-performance,
+    70	LAN-based departmental support automation systems. The company's
+    71	management has extensive experience in software support, development,
+    72	marketing and sales. AnswerSet is located in Cupertino, California, and
+    73	markets its products throughout North America.
+    74	
+    75	AnswerSet, 21771 Stevens Creek Blvd, Cupertino, CA 95014
+    76	408-996-8683
+    77	
+    78	  +---------------------------------------------------------------+
+    79	  |  From the America On-Line & PC-Link New Product Info Services |
+    80	  +===============================================================+
+    81	  | This information was processed with OmniPage Professional OCR |
+    82	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+    83	  | provided by the above mentioned company. For additional info, |
+    84	  | contact the company at the address or phone# indicated above. |
+    85	  |    All submissions for this service should be addressed to    |
+    86	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+    87	  +---------------------------------------------------------------+

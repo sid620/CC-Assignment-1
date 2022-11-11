@@ -1,0 +1,132 @@
+     1	
+     2	                      DISABLING WRITE CACHING
+     3	
+     4	          To avoid potential write caching problems, you may want to
+     5	          disable the DOS 6 SmartDrive write caching feature. 
+     6	          However, first you will need to know about the DOS 6
+     7	          AUTOEXEC.BAT file.
+     8	          
+     9	          Below is a typical DOS 6 AUTOEXEC.BAT file for an 80286, an
+    10	          80386, or an 80486 machine. 
+    11	          
+    12	          @ECHO OFF
+    13	          PATH C:\DOS;C:\WINDOWS;C:\UTILS
+    14	          PROMPT $P$G
+    15	          SET TEMP=C:\DOS
+    16	          SMARTDRV
+    17	          
+    18	          You can use EDIT, the built-in DOS editor, to make or modify the
+    19	          AUTOEXEC.BAT file or the CONFIG.SYS file.  Both of these
+    20	          files reside on the root directory of your start-up disk.  Remember,
+    21	          the changes you make when you modify an existing
+    22	          AUTOEXEC.BAT or CONFIG.SYS file will not take effect until
+    23	          you restart your computer.  Never make a modification to either
+    24	          the AUTOEXEC.BAT file or the CONFIG.SYS file without first
+    25	          making a backup of these important files on diskette.  If your
+    26	          start-up disk is drive C, you can load the AUTOEXEC.BAT file into
+    27	          EDIT by typing:
+    28	          
+    29	                         edit c:\autoexec.bat <ENTER>
+    30	          
+    31	          When you are in EDIT, you can press <F1> for more help.  If
+    32	          you make changes, don't forget to save the file by pressing:
+    33	
+    34	                         <ALT>
+    35	                         f
+    36	                         s
+    37	
+    38	          Note that the last line in the sample AUTOEXEC.BAT file is
+    39	          SMARTDRV.  SMARTDRV is a disk cache that works with
+    40	          computers that have extended memory.  If you have an 80286 or
+    41	          greater machine with at least 1 megabyte of memory, then you can
+    42	          probably use SMARTDRV.  A disk cache uses a portion of memory
+    43	          to store information that DOS reads from disk.  DOS can read
+    44	          information from the disk cache much faster than it can read
+    45	          information from a drive.  The result is that you will get a big
+    46	          performance boost if you use a disk cache.
+    47	          
+    48	          The DOS 6 SMARTDRV will cache both floppy and hard drives
+    49	          and is faster than the DOS 5 SMARTDRV.  The DOS 6
+    50	          SMARTDRV is very similar to the one that is included with
+    51	          WINDOWS 3.1 and can be loaded in the AUTOEXEC.BAT file. 
+    52	          The DOS 6 version of SMARTDRV will automatically calculate
+    53	          values by determining how much upper memory exists in your
+    54	          machine.  It will also automatically load itself into high
+    55	          memory if it is available.
+    56	          
+    57	          The DOS 6 SMARTDRV will do read caching and write caching
+    58	          for hard drives and read caching for floppies.  With write
+    59	          caching, you could lose data if you turn your computer off
+    60	          immediately after quitting a program.
+    61	
+    62	          IT IS BEST TO WAIT AT LEAST FIVE SECONDS AFTER YOU QUIT AN
+    63	          APPLICATION BEFORE YOU TURN THE MACHINE OFF.
+    64	
+    65	          On drives that are write cached, SMARTDRV waits until the
+    66	          cache is about full, or until there has been about 5 seconds of
+    67	          idle time, before writing the data to your hard drive.  If you
+    68	          want to force the write cache to immediately write the data to
+    69	          the hard drive, type:
+    70	          
+    71	                         smartdrv /c <ENTER>
+    72	
+    73	          ‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹
+    74	
+    75	          To avoid potential write caching problems, you may want to
+    76	          disable the DOS 6 SmartDrive write caching feature.
+    77	
+    78	          ‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹
+    79	
+    80	          You can disable write caching by following the SMARTDRV
+    81	          command with the letters of your hard drives.  Suppose you had
+    82	          hard drives C, D, E, and you wanted to disable write caching on
+    83	          these drives.  Use the DOS EDIT program to change the
+    84	          SMARTDRV line in the AUTOEXEC.BAT file to read the
+    85	          following:
+    86	          
+    87	          SMARTDRV C D E 
+    88	          
+    89	          The above line tells DOS to allow read caching while disabling
+    90	          write caching for drives C, D, and E.  Don't try to cache a
+    91	          DoubleSpaced drive.  SmartDrive will not cache compressed
+    92	          drives (DoubleSpaced drives), CD-ROM drives, network drives,
+    93	          or RAM drives.  If you are running DoubleSpace, you can get
+    94	          information on all your drives by typing:
+    95	          
+    96	                         dblspace /info <ENTER>
+    97	                    
+    98	          If you want to see which drives SMARTDRV is caching, at the
+    99	          system prompt type:
+   100	          
+   101	                         smartdrv <ENTER>
+   102	          
+   103	          For more information on the DOS 6 SMARTDRV command, type:
+   104	          
+   105	                          help smartdrv <ENTER>
+   106	
+   107	
+   108	
+   109	
+   110	     This section is finished.  It is an excerpt from LEARNING DOS FOR
+   111	     THE COMPLETE NOVICE, by Steven Woas, copyright 1993.  When you register
+   112	     this program, you will receive the 336 page book, LEARNING DOS FOR THE
+   113	     COMPLETE NOVICE which covers DOS 3.2 through DOS 6.  To register send
+   114	     $15.95 plus $2.00 for shipping to:
+   115	     
+   116	     
+   117	                    Celestial Press
+   118	                    4424 Dohrcrest Dr.
+   119	                    Suite C
+   120	                    New Port Richey, FL 34652
+   121	                    
+   122	                    Phone (813) 845-8522
+   123	                    US customers can order toll-free 1-800-330-3311
+   124	                    Fax (813) 845-8522
+   125	     
+   126	                    We accept Visa & MasterCard
+   127	    
+   128	     Florida orders add 6% sales tax.
+   129	    
+   130	
+   131	
+   132	

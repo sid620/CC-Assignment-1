@@ -1,0 +1,111 @@
+     1	
+     2	#53  2 20 Jul 86  17:49:12  
+     3	From: David James
+     4	To:   All
+     5	Subj: Upgrade IBM Memory Sidecar to 512K
+     6	
+     7	
+     8	
+     9	
+    10	
+    11	                ALTERING THE IBM PCJR 128 MEMORY MODULE
+    12	
+    13	                              TO 512K
+    14	
+    15	
+    16	
+    17	              The following instructions will show you how to alter
+    18	         your IBM PCJR side mounted 128k memory module to 512k. this
+    19	         of course will give a potent 640k machine providing you have
+    20	         the later release of the 128k and not the 64k original.
+    21	
+    22	              You must be able to use a soldering iron and be able to
+    23	         de-solder connections. I am not an expert with a soldering
+    24	         iron but I found just being careful and taking my time I was
+    25	         able to complete the operation in about four hours without
+    26	         damaging my board or components as I have heard others have
+    27	         done.
+    28	
+    29	              An important factor in my wanting to make this
+    30	         alteration was the obvious cost. total parts cost for me was
+    31	More? 
+    32	         approx. $70.00. I understand that the parts may be purchased
+    33	         cheaper elsewhere so you may want to shop around. If you have
+    34	         been hungry for more memory in your JR and saw the prices for
+    35	         commercial memory expansions you can see that you will save
+    36	         up to $400.00 by doing this operation.
+    37	
+    38	
+    39	
+    40	                                  STEPS
+    41	
+    42	
+    43	         1. REMOVE THE 128K MEMORY BOARD FROM THE MODULE. HOLD THE
+    44	         COMPONENT SIDE TOWARDS YOU AND LOOK FOR 16 CHIPS MOUNTED IN A
+    45	         ROW VERTICALLY ALONG ONE OF THE LONG EDGES OF THE BOARD.
+    46	         THESE CHIPS WILL ALSO HAVE THE SAME NUMBER ON THEM. THESE ARE
+    47	         THE 16 CHIPS YOU WILL REMOVE.
+    48	
+    49	         2. CAREFULLY UNSOLDER AND REMOVE THESE CHIPS. BE VERY CAREFUL
+    50	         NOT TO ALLOW SOLDER TO GET ON OTHER COMPONENTS, IF IT DOES,
+    51	         REMOVE IT. ALSO BE CAREFUL ABOUT SCRATCHING THE BOARD AS YOU
+    52	         MAY DISCONNECT A PRINTED CIRCUT FROM A COMPONENT.
+    53	
+    54	         3. NOW BEFORE YOU REPLACE THE CHIPS YOU JUST REMOVED I HIGHLY
+    55	         RECOMMEND YOU INSTALL 16 PIN SOCKETS WHERE YOU JUST REMOVED
+    56	         EACH CHIP FROM. THESE SOCKETS ARE VERY INEXPENSIVE AND WILL
+    57	         ALLOW YOU TO PLACE THE NEW LARGER CAPACITY CHIPS ON THE BOARD
+    58	         WITHOUT EXPOSING THEM TO THE HEAT OF THE SOLDERING IRON.
+    59	
+    60	         4. BEFORE GOING ANY FURTHER YOU HAVE TO ALTER A JUMPER ON THE
+    61	More? 
+    62	         BOARD SO IT WILL OPERATE WITH THE NEW 256K CHIPS. LOOK IN THE
+    63	         APPROXIMATE CENTER OF THE CIRCUT BOARD FOR A SMALL RECTANGLE
+    64	         OUTLINED WITH WHITE PAINT. IN THE CENTER OF IT ARE THREE
+    65	         SOLDER POINTS.
+    66	
+    67	
+    68	
+    69	
+    70	
+    71	
+    72	
+    73	
+    74	
+    75	                        EXAMPLE
+    76	
+    77	
+    78	                          _______________
+    79	                         |               |
+    80	                         |  O----O    O  |
+    81	                         |_______________|
+    82	
+    83	
+    84	
+    85	         5. YOU WILL NOTICE THAT THE TWO LEFT HOLES ARE CONNECTED BY A
+    86	         JUMPER. THIS SETUP IS SELECTING THE BOARD FOR 64K CHIPS.
+    87	         BECAUSE YOU ARE INSTALLING 256K CHIPS YOU HAVE TO JUMP THE
+    88	         TWO RIGHT MOST HOLES. CUT THE WIRE LEADING TO THE TWO LEFT
+    89	         MOST HOLES AND INSTALL A JUMPER ON THE TWO RIGHT HOLES
+    90	         (SOLDER).
+    91	More? 
+    92	
+    93	         6.PLUG IN YOUR NEW LARGER (MEMORY) CHIPS INTO THE SOCKETS YOU
+    94	         HAVE PREVIOUSLY INSTALLED. THE RECOMMENDED CHIPS ARE:
+    95	                   256Kx1 DRAMS 150ns
+    96	         USE CAUTION WHEN PLUGGING IN YOUR NEW CHIPS SO AS NOT TO BEND
+    97	         ANY PINS. I ACCIDENTALLY DID THIS WITH JUST ONE PIN FROM ONE
+    98	         CHIP AND THE BOARD FAILED TO FUNCTION. BY RECHECKING MY WORK
+    99	         I SAW THAT A LEAD FROM A CHIP BENT UNDERNEATH THE CHIP AND
+   100	         FAILED TO GO INTO THE PLUG SOCKET.
+   101	
+   102	         7. NOW GO TO THE ADDRESS SWITCHES TO THE END OF THE CIRCUT
+   103	         BOARD. THIS IS THE SMALL BOX WITH FOUR SMALL SWITCHES THAT IS
+   104	         VISIBLE TO THE REAR OF THE MODULE. TURN ALL OF THESE SWITCHES
+   105	         ON. THIS ALLOW YOUR BOARD TO ANSWER UP AS 512K. REPLACE THE
+   106	         CIRCUT BOARD INTO THE MODULE AND PLUG IT IN.
+   107	 * Origin: LITTLE BLUE Grand Rapids, Mi. (616) 243-2645 (120/28)
+   108	
+   109	
+   110	
+   111	Read Command [53] 1 - 60, * : ~~ ~~~

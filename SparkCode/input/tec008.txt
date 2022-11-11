@@ -1,0 +1,67 @@
+     1	__________________________________________________________________________
+     2	STACKER NOTE                              Stac Electronics Technical Note
+     3	
+     4	Subject: Stacker coprocessor installation checklist.
+     5	
+     6	Tech008 - 2/20/92
+     7	Page 1 of 1 
+     8	__________________________________________________________________________
+     9	This note provides a checklist for troubleshooting the Stacker version 1.x 
+    10	(8 bit) coprocessor, and the Stacker 2.0 XT/8 (8 bit) and AT/16 (16 bit) 
+    11	coprocessor cards. 
+    12	
+    13	Symptoms:
+    14	A Stacker coprocessor installation exhibiting the following symptoms will merit 
+    15	further investigation:
+    16	   1. During Install, the coprocessor may fail to respond at all the addresses.
+    17	   2. The Stacker.com message: <Coprocessor card not functioning. Invoking 
+    18	      software driver> may appear at boot time.  
+    19	
+    20	Solution: 
+    21	First check the basics.
+    22	   1. Check to ensure the card is properly seated in the slot.
+    23	   2. Check to ensure the /B parameter in the Stacker driver contains a valid 
+    24	      address.  Possible base addresses are listed in the 2.0 manual pgs. 43-47 
+    25	      and on page 17 in the version 1 manual.
+    26	   3. Run Install to test all addresses.
+    27	   4. Try adding each address to the driver in Config.sys and COLD BOOT (Reset 
+    28	      or a power down/up).  A cold boot is necessary to flush addresses.
+    29	   5. Try a different slot.
+    30	   6. Try rearranging the order of the cards in the expansion slots.
+    31	   7. Try disabling SHADOW RAM (Scratch RAM) if present.  This is done in the 
+    32	      BIOS setup at boot time or on some memory manager device lines in 
+    33	      Config.sys.
+    34	   8. If possible, try the card in a 2nd machine to see if the problem is with 
+    35	      the card itself.
+    36	
+    37	Card specific issues:
+    38	  *XT/8: or a Stacker version 1 coprocessor card, 
+    39	   1. Check for address conflicts with a memory management program. Fixing 
+    40	      this problem usually involves adding memory exclude statements to the 
+    41	      memory management driver.  Try starting with the range C400-DFFF to 
+    42	      enable the testing of all possible addresses during Install.
+    43	   2. If the XT/8  card is in a 386 machine, it may be that the motherboard 
+    44	      maps memory over the addresses that Stacker uses to access the card.  
+    45	      Refer to your system user's guide for more information.
+    46	   3. Version 1.11 or prior with 16 bit VGA card, there may be a conflict  
+    47	      between the VGA card and the coprocessor.  Test the card with the VGA 
+    48	      card set to 8 bit mode.  If this eliminates the conflict, call STAC 
+    49	      technical support. 
+    50	  *AT/16
+    51	   1. Something (usually another add-in card) is conflicting with the address 
+    52	      of your AT/16 card. Check the hardware addresses for your other cards 
+    53	      or change the hardware address for the AT/16 card.
+    54	   2. The buss speed may be greater than 8 Mhz.  This value can sometimes be 
+    55	      set in the BIOS.  It is usually set as the clock speed (CLK) divided by 
+    56	      some number.  Try setting the speed to 8 Mhz or less to test. If buss 
+    57	      speed is the issue, call STAC technical support.
+    58	  *MC/16
+    59	   1. You must install and configure the MC/16 card before installing Stacker.
+    60	_________________________________________________________________________________
+    61	1992 STAC ELECTRONICS
+    62	
+    63	
+    64	
+    65	
+    66	
+    67	

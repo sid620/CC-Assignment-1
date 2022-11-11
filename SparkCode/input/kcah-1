@@ -1,0 +1,657 @@
+     1	 
+     2	
+     3	
+     4	
+     5	
+     6	                               ____
+     7	                      º   º  ÚÄ____ÍÍ  ÍÍÛÛÛÛÍÍ   Û    Û
+     8	                      º  ³º  ³         Û      Û   º    º
+     9	                      Û Û³   Û         Û      Û   º    º
+    10	                      ³³³    º         ºÛÛÍÍÛÛº   ÃÄÍÍÄ´
+    11	                      ³³³    º         º      º   ³    ³
+    12	                      Û Û³   Û         Û      Û   º    º
+    13	                      º  ³º  ³ ____    º      º   º    º
+    14	                      º   º  ÀÄ____ÍÍ  º      º   Û    Û
+    15	                                                          (tm)
+    16	
+    17	                             _          _ _   _    ..
+    18	                       |  | | | |  | | | | | |_     |
+    19	                        \/  |_| |_ |_| |   | |_    _|_
+    20	
+    21	
+    22	                                  01-20-90
+    23	
+    24	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ PREFACE ]ÄÄÄÄ[ by The Rebel ]ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    25	
+    26	                     Welcome to TTL's Quad-Annual Magazine
+    27	
+    28	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Table of Contents ]ÄÄÄÄÄ[ by KCAH Staff ]ÄÄÄÄÄÄ
+    29	
+    30	#      LINES                    NAME                   DATE      AUTHOR
+    31	Ä      ÄÄÄÄÄ                    ÄÄÄÄ                   ÄÄÄÄ      ÄÄÄÄÄÄ
+    32	
+    33	I      1-23                oPeNiNg ScReEn             1/09/90   The Rebel
+    34	II     24-27                   PrEfAcE                1/09/90   The Rebel
+    35	III    28-55              tAbLe Of CoNtEnTs           1/17/90   KCAH Staff
+    36	IV     56-67                   MeMbErS                1/20/90   The Rebel
+    37	V      68-101           uNiX cOmMaNd SuMmArY          1/09/90   The Rebel
+    38	VI     102-176          CoMmOn UnIx PaSsWoRdS         1/20/90   The Rebel
+    39	VII    177-208          MCI mAiL rAtEs & InFo         1/19/90   The Rebel
+    40	VIII   209-217        SpRiNt EmPlOyEe NeWsLiNe        1/16/90   The Rebel
+    41	IX     218-225     nEw -:TTL:- eAsT cOaSt Co-HoMe     1/15/90   The Rebel
+    42	X      226-350           AnArChIsT's AbOdE            1/20/90   The Rebel
+    43	XI     351-369          VoIcE mEsSaGe SyStEmS         1/12/90   The Rebel
+    44	XII    270-378           pHrY cOdE pRo 3.01           1/11/90   The Rebel
+    45	XIII   379-429        PhRy CoDe PrO 3.01 hIsToRy      7/04/89   The Exciter
+    46	XIV    430-441        TTL mEmBeRsHiP dOoRs OpEn       1/16/90   The Rebel
+    47	XV     442-447               614 Ac C/nA              1/12/90   The Rebel
+    48	XVI    448-470     SeCrEt SeRvIcE sCaNnEr FrEq.'S     1/10/90   Thanx-Blaster
+    49	XVII   471-483        pHrEaK tOoLs PhIlE ReViEw       1/09/90   The Rebel
+    50	XVIII  484-490    TeRmInAl.TxT - a -:TTL:- tXt FiLe   1/14/90   The Rebel
+    51	XIX    491-508       aUtOmAtEd OpErAtOr SeRvIcE       1/16/90   The Rebel
+    52	XX     509-603               AcRoNyMs                 1/19/90   The Rebel
+    53	XXI    604-628              bRiEf NoTeS               1/20/90   The Rebel
+    54	XXII   629-657             HaPpY hAcKiNg!             1/20/90    -:TTL:-
+    55	
+    56	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Members as of 01-20-90 ]ÄÄÄÄ[ by The Rebel ]ÄÄÄÄÄÄ
+    57	
+    58	   The Rebel - Founder / President / Security Director / Editor of KCAH / IC
+    59	 Mr. Rat - Co-Founder / Vice-President / Consul / Electronics Specialist / IC
+    60	 The Juicer - UnderBoss / Operations Officer / Sierra Contact / Scan-Man / IC
+    61	 Mad Phone Man/Blaster/Marc Blitz - East Coast Minister of Propaganda / SysOp
+    62	Jack Flash/The Archer - Sgt. of Arms / Weapons Specialist / Operations Officer
+    63	              The Captain <716> - Programming Specialist / SysOp
+    64	                Papo Sanchezz - Puerto Rico Operations Officer
+    65	
+    66	                               IC = Inner Circle
+    67	
+    68	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Summary of Unix Commands ]ÄÄÄÄ[ by The Rebel ]ÄÄÄÄÄ
+    69	
+    70	    ÚÄÄÄÄÄÄÄ¿                          ÚÄÄÄÄÄÄÄÄÄÄÄ¿
+    71	    ³Command³                          ³Description³
+    72	    ÀÄÄÄÄÄÄÄÙ                          ÀÄÄÄÄÄÄÄÄÄÄÄÙ
+    73	
+    74	     write ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Used to send a message to another user.
+    75	     uucp ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Unix-Unix execute.
+    76	     spell ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Spellcheck a file.
+    77	     rmdir ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Deletes 1+ directories.
+    78	     help ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ duh!
+    79	     vi ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Full screen editor.
+    80	     f77 ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Fortran Compiler
+    81	     ed ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Text editor.
+    82	     ex ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Another text editor.
+    83	     ln ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Used to link files.
+    84	     du ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Reports on file system usage.
+    85	     kill ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Ends a process.
+    86	     mail ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Get/Send email.
+    87	     date ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Gives date & time
+    88	     cp ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Copies a file.
+    89	     find ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Locates files w/ specified variables.
+    90	     awk ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Search for a pattern w/in a file.
+    91	     cal ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Displays a calendar.
+    92	     cc ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ "C" Compiler.
+    93	     cd ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Change Directory
+    94	     chgrp ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Change file's group ownership.
+    95	     du ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Reports on file system usage.
+    96	     mv ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Move/Rename files.
+    97	     pwd ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Displays name of working directory.
+    98	     who ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Who else is online?
+    99	
+   100	          Not,by far,all of them... But a few....  - TR
+   101	
+   102	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Common Unix Passwords ]ÄÄÄÄ[ by The Rebel ]ÄÄÄÄÄÄ
+   103	
+   104	      aaa                daniel             jester             rascal
+   105	      academia           danny              johnny             really
+   106	      ada                dave               joseph             rebecca
+   107	      adrian             deb                joshua             remote
+   108	      aerobics           debbie             judith             rick
+   109	      airplane           deborah            juggle             reagan
+   110	      albany             december           julia              robot
+   111	      albatross          desperate          kathleen           robotics
+   112	      albert             develop            kermit             rolex
+   113	      alex               diet               kernel             ronald
+   114	      alexander          digital            knight             rosebud
+   115	      algebra            discovery          lambda             rosemary
+   116	      alias              disney             larry              roses
+   117	      alpha              dog                lazarus            ruben
+   118	      alphabet           drought            lee                rules
+   119	      ama                duncan             leroy              ruth
+   120	      amy                easy               lewis              sal
+   121	      analog             eatme              light              saxon
+   122	      anchor             edges              lisa               scheme
+   123	      andy               erenity            angerine           scott
+   124	      arrow              elizabeth          maggot             sex
+   125	      arthur             ellen              magic              shark
+   126	      asshole            emerald            malcolm            sharon
+   127	      athena             engine             mark               shit
+   128	      atmosphere         engineer           markus             shiva
+   129	      bacchus            enterprise         marty              shuttle
+   130	      badass             enzyme             marvin             simon
+   131	      bailey             euclid             master             simple
+   132	      banana             evelyn             maurice            singer
+   133	      bandit             extension          merlin             single
+   134	      banks              fairway            mets               smile
+   135	      bass               felicia            michael            smiles
+   136	      batman             fender             michelle           smooch
+   137	      beauty             fermat             mike               smother
+   138	      beaver             finite             minimum            snatch
+   139	      beethoven          flower             minsky             snoopy
+   140	      beloved            foolproof          mogul              soap
+   141	      benz               football           moose              socrates
+   142	      beowulf            format             mozart             spit
+   143	      berkeley           forsythe           nancy              spring
+   144	      berlin             fourier            napoleon           subway
+   145	      beta               fred               network            success
+   146	      beverly            fuck               newton             summer
+   147	      bumbling           george             osiris             tape
+   148	      cardinal           gertrude           outlaw             target
+   149	      carmen             gibson             oxford             taylor
+   150	      carolina           ginger             pacific            telephone
+   151	      caroline           gnu                painless           temptation
+   152	      castle             golf               pam                tiger
+   153	      cat                golfer             paper              toggle
+   154	      celtics            gorgeous           password           tomato
+   155	      change             graham             pat                toyota
+   156	      charles            gryphon            patricia           trivial
+   157	      charming           guest              penguin            unhappy
+   158	      charon             guitar             pete               unicorn
+   159	      chester            hacker             peter              unknown
+   160	      cigar              harmony            philip             urchin
+   161	      classic            harold             phoenix            utility
+   162	      coffee             harvey             pierre             vicky
+   163	      coke               heinlein           pizza              virginia
+   164	      collins            hello              plover             warren
+   165	      comrade            help               polynomial         water
+   166	      computer           herbert            praise             weenie
+   167	      condo              honey              prelude            whatnot
+   168	      condom             horse              prince             whitney
+   169	      cookie             imperial           protect            will
+   170	      cooper             include            pumpkin            william
+   171	      create             ingres             puppet             willie
+   172	      creation           innocuous          rabbit             winston
+   173	      666                6969               100                zzz
+   174	
+   175	There ya go.... A list of common unix passwords... Have phun -TR
+   176	
+   177	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ MCI Mail Rates & Info ]ÄÄÄÄ[ by The Rebel ]ÄÄÄÄÄÄ
+   178	
+   179	Here's the current MCI Mail Rates & Info... -TR
+   180	
+   181	                            :: Instant Messages ::
+   182	
+   183	                   0-500 Characters                    $ .45
+   184	                   501-2500 Characters                 $ .75
+   185	                   2501-7500 Characters                $1.00
+   186	                   Each Additional 7500 Characters     $1.00
+   187	
+   188	                          :: Domestic Fax Dispatch ::
+   189	
+   190	                   First Half Page                     $ .50
+   191	                   Each Additional Half Page           $ .30
+   192	
+   193	                                  :: Access ::
+   194	
+   195	             800 Access                          No Charge
+   196	             U.S. tymnet Access                  $ .25/ Per Minute
+   197	             International tymnet Access         $ .30/ Per Minute
+   198	
+   199	                         :: MCI Mail's 800 numbers  ::
+   200	
+   201	            Access Speed                        800 Telephone Number
+   202	
+   203	              300, 1200 bps...........................800-234-MAIL
+   204	              2400 bps............................... 800-456-MAIL
+   205	              Lotus Express & Desktop Express.........800-825-1515
+   206	                                (up to 2400 bps)
+   207	
+   208	
+   209	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Sprint Employee Newsline ]ÄÄÄÄ[ by The Rebel ]ÄÄÄÄÄ
+   210	
+   211	There is a Sprint Employee Newsline available at 800-877-4453. It's updated
+   212	every business day with the newest employee news. The best stuff available is
+   213	toward the beginning and end. Most of the time it is just giving information
+   214	about who's been promoted and what new "big-wheels" are runnin' the show, but
+   215	once in a while you'll get something useful. The voice is very clear,so don't
+   216	hang up when you here the guy say "Hello",it's just a recording... -TR
+   217	
+   218	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ New TTL East Coast Co-Home ]ÄÄÄÄ[ by The Rebel ]ÄÄÄÄÄÄÄÄÄÄ
+   219	
+   220	Due to the re-organization of TTL all old members have been "let go" and TTL
+   221	has started anew. The new East Coast Co-Home is The Switchroom,run by
+   222	Blaster,the new East Coast Minister of Propaganda. The Switchroom is running
+   223	Teleguard BBS and can be reached at (716)-285-1883. The Switchroom supports
+   224	3OO through 24OO baud.  -TR
+   225	
+   226	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Anarchist's Abode ]ÄÄÄÄÄ[ by The Rebel ]ÄÄÄÄÄÄÄÄ
+   227	
+   228	This is what you could call a floating column.. I'm writing the first article
+   229	but anyone can write for it and any amount of articles can be submitted by any
+   230	amount of people... If ya want to write an article for it(or,actually,anything
+   231	in this magazine) then write it up and send it to the PO Box given at the end
+   232	of this magazine...(that is where all articles should be sent... Due to the
+   233	fact that that is the phastest way to get them to me... Full credit will be
+   234	given for all articles... Ok, on with the column....
+   235	
+   236	
+   237	                                Nitrocellulose
+   238	                                ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   239	
+   240	Nitrocellulose is usually called "gunpowder" or "guncotton".  It is more
+   241	stable than black powder, and it produces a much greater volume of hot gas.
+   242	It also burns much faster than black powder when it is in a confined space.
+   243	Finally, nitrocellulose is fairly easy to make, as outlined by the following
+   244	procedure:
+   245	
+   246	
+   247	          MATERIALS                    EQUIPMENT
+   248	          ÄÄÄÄÄÄÄÄÄ                    ÄÄÄÄÄÄÄÄÄ
+   249	
+   250	          cotton  (cellulose)          two (2) 200-300 ml beakers
+   251	
+   252	          concentrated                 funnel and filter paper
+   253	          nitric acid
+   254	                                       blue litmus paper
+   255	          concentrated
+   256	          sulfuric acid
+   257	
+   258	          distilled water
+   259	
+   260	
+   261	1) Pour 10 cc of concentrated sulfuric acid into the beaker.  Add to this
+   262	   10 cc of concentrated nitric acid.
+   263	
+   264	2) Immediately add 0.5 gm of cotton, and allow it to soak for exactly 3
+   265	   minutes.
+   266	
+   267	3) Remove the nitrocotton, and transfer it to a beaker of distilled water
+   268	   to wash it in.
+   269	
+   270	4) Allow the material to dry, and then re-wash it.
+   271	
+   272	5) After the cotton is neutral when tested with litmus paper, it is ready to
+   273	   be dried and stored. -TR
+   274	
+   275	
+   276	                                 RDX
+   277	                                 ÄÄÄ
+   278	
+   279	R.D.X., also called cyclonite, or composition C-1 (when mixed with
+   280	plasticisers) is one of the most valuable of all military explosives.  This is
+   281	because it has more than 150% of the power of T.N.T., and is much easier to
+   282	detonate.  It should not be used alone, since it can be set off by a not-too
+   283	severe shock.  It is less sensitive than mercury fulminate, or nitroglycerine,
+   284	but it is still too sensitive to be used alone.  R.D.X. can be made by the
+   285	surprisingly simple method outlined hereafter.  It is much easier to make in
+   286	the home than all other high explosives, with the possible exception of
+   287	ammonium nitrate.
+   288	
+   289	
+   290	          MATERIALS                    EQUIPMENT
+   291	          ÄÄÄÄÄÄÄÄÄ                    ÄÄÄÄÄÄÄÄÄ
+   292	
+   293	           hexamine                    500 ml beaker
+   294	             or
+   295	          methenamine                  glass stirring rod
+   296	          fuel tablets (50 g)
+   297	                                       funnel and filter paper
+   298	          concentrated
+   299	          nitric acid (550 ml)         ice bath container(plastic bucket)
+   300	
+   301	          distilled water
+   302	                                       centigrade thermometer
+   303	          table salt
+   304	                                       blue litmus paper
+   305	          ice
+   306	
+   307	          ammonium nitrate
+   308	
+   309	1) Place the beaker in the ice bath, and carefully pour 550 ml of concentrated
+   310	   nitric acid into the beaker.
+   311	
+   312	2) When the acid has cooled to below 20 degrees centigrade, add small amounts
+   313	   of the crushed fuel tablets to the beaker.  The temperature will rise, and
+   314	   it must be kept below 30 degrees centigrade, or dire consequences could
+   315	   result.  Stir the mixture.
+   316	
+   317	3) Drop the temperature below zero degrees centigrade, either by adding more
+   318	   ice and salt to the old ice bath, or by creating a new ice bath.  Or,
+   319	   ammonium nitrate could be added to the old ice bath, since it becomes cold
+   320	   when it is put in water. Continue stirring the mixture, keeping the
+   321	   temperature below zero degrees centigrade for at least twenty minutes
+   322	
+   323	4) Pour the mixture into a litre of crushed ice.  Shake and stir the mixture,
+   324	   and allow it to melt.  Once it has melted, filter out the crystals, and
+   325	   dispose of the corrosive liquid.
+   326	
+   327	5) Place the crystals into one half a litre of boiling distilled water.
+   328	   Filter the crystals, and test them with the blue litmus paper.  Repeat
+   329	   steps 4 and 5 until the litmus paper remains blue.  This will make the
+   330	   crystals more stable and safe.
+   331	
+   332	6) Store the crystals wet until ready for use. Allow them to dry completely
+   333	   using them. R.D.X. is not stable enough to use alone as an explosive.
+   334	
+   335	7) Composition C-1 can be made by mixing 88.3% R.D.X. (by weight) with 11.1%
+   336	   mineral oil, and 0.6% lecithin. Kneed these material together in a plastic
+   337	   bag. This is a good way to desensitize the explosive.
+   338	
+   339	8) H.M.X. is a mixture of T.N.T. and R.D.X.; the ratio is 50/50, by weight.
+   340	   it is not as sensitive, and is almost as powerful as straight R.D.X.
+   341	
+   342	9) By adding ammonium nitrate to the crystals of R.D.X. after step 5, it
+   343	   should be possible to desensitize the R.D.X. and increase its power, since
+   344	   ammonium nitrate is very insensitive and powerful. Soduim or potassium
+   345	   nitrate could also be added; a small quantity is sufficient to stabilize
+   346	   the R.D.X.
+   347	
+   348	10) R.D.X. detonates at a rate of 8550 meters/second when it is compressed to
+   349	    a density of 1.55 g/cubic cm.
+   350	
+   351	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Voice Message Systems ]ÄÄÄÄ[ by The Rebel ]ÄÄÄÄÄÄ
+   352	
+   353	Due to the recent drop off of VMS hackers I've decided to submit this small,
+   354	but useful, list of Voice Mail Systems.
+   355	
+   356	                         (800)222-4663  VMBS  Box:[4]
+   357	                       (800)333-6245<MAIL>  Phone Mail System
+   358	                         (800)344-1884  VMBS  Box:[6]
+   359	           (800)424-6262  ITT Voice Mail System  Userid:[4], Box:[4]
+   360	                       (800)437-6100  Phone Mail System
+   361	                       (800)477-7800  Phone Mail System
+   362	                         (800)441-3612  VMBS  Box:[3]
+   363	                       (800)445-6245<MAIL>  Phone Mail System
+   364	                     (800)545-6245<MAIL>  VMBS  ID:[7], Pass:[8]
+   365	                              (800)631-1146  VMBS
+   366	
+   367	                     For help on VMS hacking then refer to
+   368	               Phrack XI <-> " VMS Hacking " by Black Night 713
+   369	
+   370	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Phry Code Pro 3.01 ]ÄÄÄÄ[ by The Rebel ]ÄÄÄÄÄÄÄÄ
+   371	
+   372	The Exciter's new version of Phry Code Pro is an excellent improvement to his
+   373	last version. The options available in this version cannot even compare to any
+   374	of his older versions. His multi-plate hacking is a definite help to the
+   375	program, and the added color changes and misc. options definitely make this
+   376	version a "must-get" program. I would recommend this program to any serious
+   377	PCP hacker. -TR
+   378	
+   379	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Phry Code Pro 3.01 History ]ÄÄÄÄ[ by The Exciter ]ÄÄ
+   380	
+   381	10/06/88 - Phry Code Pro was just a REAL generic PCP Hacker used for myself
+   382	           and a few friends.  It didn't have a name yet.
+   383	
+   384	01/30/89 - Well, first official copy was released.  I named it finally.
+   385	           All options have been enabled.  And, then source was not
+   386	           included.  The reason is, the 10/06/88 version was stupid
+   387	           and I didn't care.  This one is a lot better.
+   388	
+   389	02/02/89 - I fixed a few bugs in the source.  Pretty much the same as
+   390	           01/30/89 version.
+   391	
+   392	02/07/89 - Fixed the repeating code bug.  I also added the beeping when
+   393	           contacted, I forgot to put that one in there.
+   394	
+   395	02/26/89 - PCP is now compiled in Turbo Pascal 5.0!  It should be a little
+   396	           faster and will be a little more reliable.  I also made a more
+   397	           detailed documentation.
+   398	
+   399	03/19/89 - Well, Phry Code Pro has gone through some major changes!  Well,
+   400	           first of all, I changed the formats of hacking a lot.  Now,
+   401	           PCP (Phry Code Pro) is user friendly.  You can hack multiple
+   402	           ID's and other neat stuff!  The documentation is now full of
+   403	           all the things you need to know!
+   404	
+   405	03/27/89 - I fixed a few minor bugs.  No external differences.  I also
+   406	           fixed the modem setup.  It was locking up computers because
+   407	           the comport was not set right.  It will now init the modem
+   408	           before hacking.
+   409	
+   410	04/02/89 - Fixed the runtime error that people were receiving if the
+   411	           port was not open.  Not really a big deal but it looks
+   412	           nicer!
+   413	
+   414	04/03/89 - Ooops..  I really boofed..  I forgot to reopen the comport.  You
+   415	           really received a lot of strange return from the modem.  I think
+   416	           this is it for PCP v2.xx..  I think I finally got all the bugs
+   417	           out!!  Hooray!!  My next goal is v3.00..  This one will be
+   418	           totally awesome.  (I hope!!)
+   419	
+   420	06/11/89 - Well, the first realease of the v3.xx series.  I hope you like
+   421	           the changes.  I only changed a few things though.  It is not
+   422	           really what I wanted to begin.  But hey, there are no hackers
+   423	           to hack the new formats.
+   424	
+   425	07/04/89 - This version is just a fix of the bugs in v3.00.  There is
+   426	           nothing new.  The problem people were having was the equation
+   427	           I was using to select a plate with the menu bar was screwed.
+   428	           Understand??  I doubt it.  Keep on CHOPin' guys..
+   429	
+   430	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ TTL Membership Doors Open ]ÄÄÄÄ[ by The Rebel ]ÄÄÄÄ
+   431	
+   432	As you can see,99% of the articles in this magazine are written by myself. For
+   433	a limited time,applications will be taken for people who would like to start
+   434	columns for this magazine. At this moment this magazine is but a Quad-Annual
+   435	magazine,but if enough people start columns it very well might become monthly,
+   436	and possibly bi-monthly. To start an article,get ahold of me on Nightmare BBS
+   437	(614)-885-4004 (19,200 USR) or on The Switchroom(See "New TTL East Coast Co-
+   438	Home" \ This magazine) and explain your idea for the column and your specific
+   439	qualifications. Also leave a number where you can be reached(times to call)
+   440	and a first name. -TR
+   441	
+   442	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ 614 AC C/NA ]ÄÄÄÄ[ by The Rebel ]ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   443	
+   444	                The 614 Area Code C/NA number is 614-464-0519.
+   445	                              Days: Monday-Friday
+   446	                              Times: 8am - 4:50pm
+   447	
+   448	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ SS Scanner Freqs. ]ÄÄÄÄ[ Thanx 2 The Mad Phone Man ]ÄÄÄ
+   449	
+   450	
+   451	                                    162.688
+   452	                                    163.363
+   453	                                    163.400
+   454	                                    163.813
+   455	                                    164.400
+   456	                                    164.650
+   457	                                    165.213
+   458	                                    165.375
+   459	                                    165.675
+   460	                                    165.685
+   461	                                    166.405
+   462	                                    166.615
+   463	                                    168.220
+   464	                                    168.400
+   465	                                    168.450
+   466	                                    168.575
+   467	
+   468	The freqs are NOT exact. If you do not get anything with these exact freqs
+   469	then just round up or down. They are in the general area,though.  -TR
+   470	
+   471	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Phreak Tools File Review ]ÄÄÄÄ[ by The Rebel ]ÄÄÄÄÄ
+   472	
+   473	Professor Falken's Phreak Tools,released on 5/3/89, is a semi-useful program
+   474	that can be used to find the owner of any (800) or (900) exchange. It also has
+   475	the capability to give the C/NA number(s) for any given area code. Due to the
+   476	fact that the same thing could have been accomplished with 3 text files,it is
+   477	quite bulky. But besides that fact it is quite useful. One problem with this
+   478	program is that once an 800/900 exchange or C/NA number is given the program
+   479	turns off and you have to run it again to use it. The documentation for this
+   480	program is quite complete and the program is quite phreak-friendly and the
+   481	documentation doesn't even need to be glanced at,unless your curiosity gets
+   482	the better of you. -TR
+   483	
+   484	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ "TERMINAL.TXT" - TTL TXT File ]ÄÄÄÄ[ by The Rebel ]ÄÄ
+   485	
+   486	For those of you who have seen this file but haven't downloaded it,I'll
+   487	explain it to you. It's the Telenet terminal identifiers list compiled into
+   488	one list written by myself, thanx to Telenet. So if you're into Telenet then
+   489	I'd extremely recommend downloading this piece of TXT. -TR
+   490	
+   491	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Automated Operator Service ]ÄÄÄÄÄ[ by The Rebel ]ÄÄÄ
+   492	
+   493	An automated operator service has been implemented in many area codes, even
+   494	though it is normally only used in ESS cities, from pay phones it provides
+   495	easy scanning of calling cards w/out the operator getting in the way. To use
+   496	this service to get phree calls inside your area code(like from pay phones or
+   497	what not) all you have to do is dial 0+Number then wait for the service to
+   498	implement itself then push in the area-code and number of the phone you want
+   499	to charge the call to and it's all yours... Right now I am only sure that it's
+   500	available in most of Ohio and some of New Jersey, I'm not sure about the rest
+   501	of the world... But if it'll do someone out there any good, then there it is.
+   502	It's the easiest in-area code phreak possible. You can't charge it to a pay
+   503	phone,but you can use this to scan for pay-phones(slow,but sure). You can not
+   504	use this technique from a pay phone, either. The only realy use for this
+   505	technique is for calling anywhere in your area code for phree,but that's good
+   506	enough for an easy-ass way to phreak. A full txt file dedicated to this will
+   507	be available from -:TTL:- in the near future. -TR
+   508	
+   509	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Acronyms ]ÄÄÄÄ[ by The Rebel ]ÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   510	
+   511	Wanna learn everything about the telephone system,huh? Well here's a list of
+   512	acronyms that might help ya with that quest... -TR
+   513	
+   514	
+   515	ISDN - Integrated Services Digital Network:  A planned hierarchy of digital
+   516	       switching and transmission systems.  Final phase of modern day
+   517	       switches.
+   518	
+   519	AIS  - Automatic Intercept System:  System employing an audio-response unit
+   520	       under control of a processor to automatically provide pertinent info to
+   521	       callers routed to intercept.
+   522	
+   523	ESB  - Emergency Service Bureau:  A centralized agency to which 911
+   524	       "Universal" emergency calls are routed.
+   525	
+   526	ADU  - Automatic Dialing Unix:  A device which automatically generates a
+   527	       predetermined set of dialing digits.
+   528	
+   529	FACS - Facility Assignment and Control System:  Mechanizes the service order
+   530	       assignment process.
+   531	
+   532	CAROT- Centralized Automatic Reporting on Trunks:  This takes transmission and
+   533	       trunk measurements.  Does routine tests and forwards results to work
+   534	       control locations.
+   535	
+   536	TASC - Telecommunications Alarm Surveillance and Control:  Provides
+   537	       centralized surveillance of telecom equipment.
+   538	
+   539	EC   - Exchange Carrier:  A company engaged in the business of furnishing
+   540	       access service in a franchised territory.  (ie; US Sprint, MCI, AT&T)
+   541	
+   542	AC   - Access Code:  A uniform set digit code assigned by an Exchange Carrier
+   543	       to an individual customer.
+   544	
+   545	AC   - Area Code:  A geographic area established for the provision and
+   546	       administration of communications service. It encompasses one or more
+   547	       designated exchanges, which are grouped to serve common social,
+   548	       economic and other services. Synonymous with Local Access Transport
+   549	       Area(LATA).
+   550	
+   551	PJ   - Phrase Jitter:  The unwanted phase variations of a signal.  Garble, or
+   552	       Garbage online.
+   553	
+   554	3TS  - 3-Tone Slope:  The difference in loss between 1004 Hz and 404 Hz and
+   555	       2804 Hz (AKA Attenuation Distortion).
+   556	
+   557	PAD  - Packet Assembler/Disassembler:  Information passed though an
+   558	       Information Service, translated to the computer's specifications.  (ie;
+   559	       baud differences, computer emulations, and protocol handshaking).
+   560	
+   561	ROTL -  Remote Office Test Line - A way of remotely testing trunks.
+   562	
+   563	TAP  -  Technical Assistance Program.
+   564	
+   565	ANI  -  Automatic Number Identification.  Automatics means for immediately
+   566	        identifying the directory number of a calling subscriber.
+   567	
+   568	DCL  -  Digital Common Language.  Found on Vax/VMS systems.
+   569	
+   570	TDD  -  Telecommunication devices for the deaf.
+   571	
+   572	DDD  -  Direct distance dialing.  Dialing without operator assistance over
+   573	        nationwide intertoll network.
+   574	
+   575	ACD  -  Automatic Call Distributor.  Switching system designed to acquire
+   576	        and/or distribute a large volume of calls to attendants to the next
+   577	        available answer position.
+   578	
+   579	LATA -  Local Access Transport Area.  A geographic area established for the
+   580	        provision and administration of communications service.  It
+   581	        encompasses one or more designated exchanges, which are grouped to
+   582	        serve common social, economic and other purposes.  Synonymous with
+   583	        area code.
+   584	
+   585	DS    - Digital Switch.  A switch in which connections are established by
+   586	        operations on digital signals without conversion to analog.
+   587	
+   588	DSX   - A digital cross connect field which can be utilized for DS1 (Digital
+   589	        Switch), DS2 or DS3 level cross connections at a digital level
+   590	
+   591	RPOA  - Registered Private Op. Agencies (ID of online system).
+   592	
+   593	SCC   - (or SCCS), Switch Control Center.  SCC has overall responsibility for
+   594	        the administration and maintenance of BOC Central Offices.
+   595	        Responsibilities include installation and maintenance Control Office
+   596	        for FG B, C, and D.  SCC also handles specific trouble reports.
+   597	
+   598	TAMS  - System where NUIs are checked by a central database when you try to
+   599	        connect to an address, on GTE Telenet.
+   600	
+   601	TD    - Terminating Direction.  The use of Access Service for the completion
+   602	        of a  call from an IC (Interexchange Carrier) location to an end user.
+   603	
+   604	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Brief Notes ]ÄÄÄÄ[ by The Rebel ]ÄÄÄÄÄÄÄÄÄÄÄ
+   605	
+   606	                             Sprint News 01/19/90
+   607	                             ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   608	
+   609	Dave King,United Telecom Executive Vice-President, has been named chairman of
+   610	the Kansas Chamber of Commerce & Industry board of directors for 1990. -TR
+   611	
+   612	US Sprint announced, yesterday, that it will reduce Sprint Plus, it's premier
+   613	Dial-One product, by 3.3%, and increase the daytime volume discount to 10%. It
+   614	will also reduce basic Dial-One rates by 2.6%. These reductions are effective
+   615	February 1st,1990. -TR
+   616	
+   617	
+   618	                               TTL News 01/07/90
+   619	                               ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   620	
+   621	Grim Reaper (614) has been discharged from TTL for not doing shit... -TR
+   622	
+   623	                               TTL News 01/17/90
+   624	                               ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   625	The TTL 800 bridge is now open... All members of TTL who do not have the
+   626	number, get ahold of me to get the number and the times of the TTL
+   627	conferences.... -TR
+   628	
+   629	ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Happy Hacking ]ÄÄÄÄ[ From TTL ]ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   630	
+   631	Well... That's the first Quad-Annual issue of Kcah ... If ya have any other
+   632	    suggestions, article, or questions about TTL,Kcah,etc... Then send me a
+   633	                    message on any of the following boards:
+   634	
+   635	                         The Switchroom (info in mag)
+   636	                            Nightmare (info in mag)
+   637	                                      or
+   638	                               The Iron Curtain
+   639	                                (614)-861-IRON
+   640	                                   19.2K BPS
+   641	
+   642	                               or Send Mail to:
+   643	
+   644	                              The Rebel & -:TTL:-
+   645	                                 P.O. Box 297
+   646	                            Worthington,Ohio,43085
+   647	
+   648	                                                The Rebel
+   649	                                                Founder & President of -:TTL:-
+   650	                                                Director of Security
+   651	                                                Kcah Editor
+   652	
+   653	                              " Happy Hacking! "
+   654	
+   655	
+   656	ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+   657	ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ

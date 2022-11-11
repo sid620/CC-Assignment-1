@@ -1,0 +1,478 @@
+     1	
+     2	
+     3	The GNU Manifesto
+     4	
+     5	Copyright (C) 1985 Richard M. Stallman
+     6	  (Copying permission notice at the end.)
+     7	
+     8	What's GNU?  Gnu's Not Unix!
+     9	
+    10	GNU, which stands for Gnu's Not Unix, is the name for the complete
+    11	Unix-compatible software system which I am writing so that I can give it
+    12	away free to everyone who can use it.  Several other volunteers are helping
+    13	me.  Contributions of time, money, programs and equipment are greatly
+    14	needed.
+    15	
+    16	So far we have an Emacs text editor with Lisp for writing editor commands,
+    17	a source level debugger, a yacc-compatible parser generator, a linker, and
+    18	around 35 utilities.  A shell (command interpreter) is nearly completed.  A
+    19	new portable optimizing C compiler has compiled itself and may be released
+    20	this year.  An initial kernel exists but many more features are needed to
+    21	emulate Unix.  When the kernel and compiler are finished, it will be
+    22	possible to distribute a GNU system suitable for program development.  We
+    23	will use @TeX{} as our text formatter, but an nroff is being worked on.  We
+    24	will use the free, portable X window system as well.  After this we will
+    25	add a portable Common Lisp, an Empire game, a spreadsheet, and hundreds of
+    26	other things, plus on-line documentation.  We hope to supply, eventually,
+    27	everything useful that normally comes with a Unix system, and more.
+    28	
+    29	GNU will be able to run Unix programs, but will not be identical to Unix.
+    30	We will make all improvements that are convenient, based on our experience
+    31	with other operating systems.  In particular, we plan to have longer
+    32	filenames, file version numbers, a crashproof file system, filename
+    33	completion perhaps, terminal-independent display support, and perhaps
+    34	eventually a Lisp-based window system through which several Lisp programs
+    35	and ordinary Unix programs can share a screen.  Both C and Lisp will be
+    36	available as system programming languages.  We will try to support UUCP,
+    37	MIT Chaosnet, and Internet protocols for communication.
+    38	
+    39	GNU is aimed initially at machines in the 68000/16000 class with virtual
+    40	memory, because they are the easiest machines to make it run on.  The extra
+    41	effort to make it run on smaller machines will be left to someone who wants
+    42	to use it on them.
+    43	
+    44	To avoid horrible confusion, please pronounce the `G' in the word `GNU'
+    45	when it is the name of this project.
+    46	
+    47	
+    48	Who Am I?
+    49	
+    50	I am Richard Stallman, inventor of the original much-imitated EMACS editor,
+    51	formerly at the Artificial Intelligence Lab at MIT.  I have worked
+    52	extensively on compilers, editors, debuggers, command interpreters, the
+    53	Incompatible Timesharing System and the Lisp Machine operating system.  I
+    54	pioneered terminal-independent display support in ITS.  Since then I have
+    55	implemented one crashproof file system and two window systems for Lisp
+    56	machines, and designed a third window system now being implemented; this
+    57	one will be ported to many systems including use in GNU.  [Historical note:
+    58	The window system project was not completed; GNU now plans to use the
+    59	X window system.]
+    60	
+    61	
+    62	Why I Must Write GNU
+    63	
+    64	I consider that the golden rule requires that if I like a program I must
+    65	share it with other people who like it.  Software sellers want to divide
+    66	the users and conquer them, making each user agree not to share with
+    67	others.  I refuse to break solidarity with other users in this way.  I
+    68	cannot in good conscience sign a nondisclosure agreement or a software
+    69	license agreement.  For years I worked within the Artificial Intelligence
+    70	Lab to resist such tendencies and other inhospitalities, but eventually
+    71	they had gone too far: I could not remain in an institution where such
+    72	things are done for me against my will.
+    73	
+    74	So that I can continue to use computers without dishonor, I have decided to
+    75	put together a sufficient body of free software so that I will be able to
+    76	get along without any software that is not free.  I have resigned from the
+    77	AI lab to deny MIT any legal excuse to prevent me from giving GNU away.
+    78	
+    79	
+    80	Why GNU Will Be Compatible with Unix
+    81	
+    82	Unix is not my ideal system, but it is not too bad.  The essential features
+    83	of Unix seem to be good ones, and I think I can fill in what Unix lacks
+    84	without spoiling them.  And a system compatible with Unix would be
+    85	convenient for many other people to adopt.
+    86	
+    87	
+    88	How GNU Will Be Available
+    89	
+    90	GNU is not in the public domain.  Everyone will be permitted to modify and
+    91	redistribute GNU, but no distributor will be allowed to restrict its
+    92	further redistribution.  That is to say, proprietary modifications will not
+    93	be allowed.  I want to make sure that all versions of GNU remain free.
+    94	
+    95	
+    96	Why Many Other Programmers Want to Help
+    97	
+    98	I have found many other programmers who are excited about GNU and want to
+    99	help.
+   100	
+   101	Many programmers are unhappy about the commercialization of system
+   102	software.  It may enable them to make more money, but it requires them to
+   103	feel in conflict with other programmers in general rather than feel as
+   104	comrades.  The fundamental act of friendship among programmers is the
+   105	sharing of programs; marketing arrangements now typically used essentially
+   106	forbid programmers to treat others as friends.  The purchaser of software
+   107	must choose between friendship and obeying the law.  Naturally, many decide
+   108	that friendship is more important.  But those who believe in law often do
+   109	not feel at ease with either choice.  They become cynical and think that
+   110	programming is just a way of making money.
+   111	
+   112	By working on and using GNU rather than proprietary programs, we can be
+   113	hospitable to everyone and obey the law.  In addition, GNU serves as an
+   114	example to inspire and a banner to rally others to join us in sharing.
+   115	This can give us a feeling of harmony which is impossible if we use
+   116	software that is not free.  For about half the programmers I talk to, this
+   117	is an important happiness that money cannot replace.
+   118	
+   119	
+   120	How You Can Contribute
+   121	
+   122	I am asking computer manufacturers for donations of machines and money.
+   123	I'm asking individuals for donations of programs and work.
+   124	
+   125	One consequence you can expect if you donate machines is that GNU will run
+   126	on them at an early date.  The machines should be complete, ready to use
+   127	systems, approved for use in a residential area, and not in need of
+   128	sophisticated cooling or power.
+   129	
+   130	I have found very many programmers eager to contribute part-time work for
+   131	GNU.  For most projects, such part-time distributed work would be very hard
+   132	to coordinate; the independently-written parts would not work together.
+   133	But for the particular task of replacing Unix, this problem is absent.  A
+   134	complete Unix system contains hundreds of utility programs, each of which
+   135	is documented separately.  Most interface specifications are fixed by Unix
+   136	compatibility.  If each contributor can write a compatible replacement for
+   137	a single Unix utility, and make it work properly in place of the original
+   138	on a Unix system, then these utilities will work right when put together.
+   139	Even allowing for Murphy to create a few unexpected problems, assembling
+   140	these components will be a feasible task.  (The kernel will require closer
+   141	communication and will be worked on by a small, tight group.)
+   142	
+   143	If I get donations of money, I may be able to hire a few people full or
+   144	part time.  The salary won't be high by programmers' standards, but I'm
+   145	looking for people for whom building community spirit is as important as
+   146	making money.  I view this as a way of enabling dedicated people to devote
+   147	their full energies to working on GNU by sparing them the need to make a
+   148	living in another way.
+   149	
+   150	
+   151	Why All Computer Users Will Benefit
+   152	
+   153	Once GNU is written, everyone will be able to obtain good system software
+   154	free, just like air.
+   155	
+   156	This means much more than just saving everyone the price of a Unix license.
+   157	It means that much wasteful duplication of system programming effort will
+   158	be avoided.  This effort can go instead into advancing the state of the
+   159	art.
+   160	
+   161	Complete system sources will be available to everyone.  As a result, a user
+   162	who needs changes in the system will always be free to make them himself,
+   163	or hire any available programmer or company to make them for him.  Users
+   164	will no longer be at the mercy of one programmer or company which owns the
+   165	sources and is in sole position to make changes.
+   166	
+   167	Schools will be able to provide a much more educational environment by
+   168	encouraging all students to study and improve the system code.  Harvard's
+   169	computer lab used to have the policy that no program could be installed on
+   170	the system if its sources were not on public display, and upheld it by
+   171	actually refusing to install certain programs.  I was very much inspired by
+   172	this.
+   173	
+   174	Finally, the overhead of considering who owns the system software and what
+   175	one is or is not entitled to do with it will be lifted.
+   176	
+   177	Arrangements to make people pay for using a program, including licensing of
+   178	copies, always incur a tremendous cost to society through the cumbersome
+   179	mechanisms necessary to figure out how much (that is, which programs) a
+   180	person must pay for.  And only a police state can force everyone to obey
+   181	them.  Consider a space station where air must be manufactured at great
+   182	cost: charging each breather per liter of air may be fair, but wearing the
+   183	metered gas mask all day and all night is intolerable even if everyone can
+   184	afford to pay the air bill.  And the TV cameras everywhere to see if you
+   185	ever take the mask off are outrageous.  It's better to support the air
+   186	plant with a head tax and chuck the masks.
+   187	
+   188	Copying all or parts of a program is as natural to a programmer as
+   189	breathing, and as productive.  It ought to be as free.
+   190	
+   191	
+   192	Some Easily Rebutted Objections to GNU's Goals
+   193	
+   194	  "Nobody will use it if it is free, because that means
+   195	   they can't rely on any support."
+   196	  "You have to charge for the program
+   197	   to pay for providing the support."
+   198	
+   199	If people would rather pay for GNU plus service than get GNU free without
+   200	service, a company to provide just service to people who have obtained GNU
+   201	free ought to be profitable.
+   202	
+   203	We must distinguish between support in the form of real programming work
+   204	and mere handholding.  The former is something one cannot rely on from a
+   205	software vendor.  If your problem is not shared by enough people, the
+   206	vendor will tell you to get lost.
+   207	
+   208	If your business needs to be able to rely on support, the only way is to
+   209	have all the necessary sources and tools.  Then you can hire any available
+   210	person to fix your problem; you are not at the mercy of any individual.
+   211	With Unix, the price of sources puts this out of consideration for most
+   212	businesses.  With GNU this will be easy.  It is still possible for there to
+   213	be no available competent person, but this problem cannot be blamed on
+   214	distribution arrangements.  GNU does not eliminate all the world's problems,
+   215	only some of them.
+   216	
+   217	Meanwhile, the users who know nothing about computers need handholding:
+   218	doing things for them which they could easily do themselves but don't know
+   219	how.
+   220	
+   221	Such services could be provided by companies that sell just hand-holding
+   222	and repair service.  If it is true that users would rather spend money and
+   223	get a product with service, they will also be willing to buy the service
+   224	having got the product free.  The service companies will compete in quality
+   225	and price; users will not be tied to any particular one.  Meanwhile, those
+   226	of us who don't need the service should be able to use the program without
+   227	paying for the service.
+   228	
+   229	  "You cannot reach many people without advertising,
+   230	   and you must charge for the program to support that."
+   231	  "It's no use advertising a program people can get free."
+   232	
+   233	There are various forms of free or very cheap publicity that can be used to
+   234	inform numbers of computer users about something like GNU.  But it may be
+   235	true that one can reach more microcomputer users with advertising.  If this
+   236	is really so, a business which advertises the service of copying and
+   237	mailing GNU for a fee ought to be successful enough to pay for its
+   238	advertising and more.  This way, only the users who benefit from the
+   239	advertising pay for it.
+   240	
+   241	On the other hand, if many people get GNU from their friends, and such
+   242	companies don't succeed, this will show that advertising was not really
+   243	necessary to spread GNU.  Why is it that free market advocates don't want
+   244	to let the free market decide this?
+   245	
+   246	  "My company needs a proprietary operating system
+   247	   to get a competitive edge."
+   248	
+   249	GNU will remove operating system software from the realm of competition.
+   250	You will not be able to get an edge in this area, but neither will your
+   251	competitors be able to get an edge over you.  You and they will compete in
+   252	other areas, while benefitting mutually in this one.  If your business is
+   253	selling an operating system, you will not like GNU, but that's tough on
+   254	you.  If your business is something else, GNU can save you from being
+   255	pushed into the expensive business of selling operating systems.
+   256	
+   257	I would like to see GNU development supported by gifts from many
+   258	manufacturers and users, reducing the cost to each.
+   259	
+   260	  "Don't programmers deserve a reward for their creativity?"
+   261	
+   262	If anything deserves a reward, it is social contribution.  Creativity can
+   263	be a social contribution, but only in so far as society is free to use the
+   264	results.  If programmers deserve to be rewarded for creating innovative
+   265	programs, by the same token they deserve to be punished if they restrict
+   266	the use of these programs.
+   267	
+   268	  "Shouldn't a programmer be able to ask for a reward for his creativity?"
+   269	
+   270	There is nothing wrong with wanting pay for work, or seeking to maximize
+   271	one's income, as long as one does not use means that are destructive.  But
+   272	the means customary in the field of software today are based on
+   273	destruction.
+   274	
+   275	Extracting money from users of a program by restricting their use of it is
+   276	destructive because the restrictions reduce the amount and the ways that
+   277	the program can be used.  This reduces the amount of wealth that humanity
+   278	derives from the program.  When there is a deliberate choice to restrict,
+   279	the harmful consequences are deliberate destruction.
+   280	
+   281	The reason a good citizen does not use such destructive means to become
+   282	wealthier is that, if everyone did so, we would all become poorer from the
+   283	mutual destructiveness.  This is Kantian ethics; or, the Golden Rule.
+   284	Since I do not like the consequences that result if everyone hoards
+   285	information, I am required to consider it wrong for one to do so.
+   286	Specifically, the desire to be rewarded for one's creativity does not
+   287	justify depriving the world in general of all or part of that creativity.
+   288	
+   289	  "Won't programmers starve?"
+   290	
+   291	I could answer that nobody is forced to be a programmer.  Most of us cannot
+   292	manage to get any money for standing on the street and making faces.  But
+   293	we are not, as a result, condemned to spend our lives standing on the
+   294	street making faces, and starving.  We do something else.
+   295	
+   296	But that is the wrong answer because it accepts the questioner's implicit
+   297	assumption: that without ownership of software, programmers cannot possibly
+   298	be paid a cent.  Supposedly it is all or nothing.
+   299	
+   300	The real reason programmers will not starve is that it will still be
+   301	possible for them to get paid for programming; just not paid as much as
+   302	now.
+   303	
+   304	Restricting copying is not the only basis for business in software.  It is
+   305	the most common basis because it brings in the most money.  If it were
+   306	prohibited, or rejected by the customer, software business would move to
+   307	other bases of organization which are now used less often.  There are
+   308	always numerous ways to organize any kind of business.
+   309	
+   310	Probably programming will not be as lucrative on the new basis as it is
+   311	now.  But that is not an argument against the change.  It is not considered
+   312	an injustice that sales clerks make the salaries that they now do.  If
+   313	programmers made the same, that would not be an injustice either.  (In
+   314	practice they would still make considerably more than that.)
+   315	
+   316	  "Don't people have a right to control how their creativity is used?"
+   317	
+   318	"Control over the use of one's ideas" really constitutes control over other
+   319	people's lives; and it is usually used to make their lives more difficult.
+   320	
+   321	People who have studied the issue of intellectual property rights carefully
+   322	(such as lawyers) say that there is no intrinsic right to intellectual
+   323	property.  The kinds of supposed intellectual property rights that the
+   324	government recognizes were created by specific acts of legislation for
+   325	specific purposes.
+   326	
+   327	For example, the patent system was established to encourage inventors to
+   328	disclose the details of their inventions.  Its purpose was to help society
+   329	rather than to help inventors.  At the time, the life span of 17 years for
+   330	a patent was short compared with the rate of advance of the state of the
+   331	art.  Since patents are an issue only among manufacturers, for whom the
+   332	cost and effort of a license agreement are small compared with setting up
+   333	production, the patents often do not do much harm.  They do not obstruct
+   334	most individuals who use patented products.
+   335	
+   336	The idea of copyright did not exist in ancient times, when authors
+   337	frequently copied other authors at length in works of non-fiction.  This
+   338	practice was useful, and is the only way many authors' works have survived
+   339	even in part.  The copyright system was created expressly for the purpose
+   340	of encouraging authorship.  In the domain for which it was invented--books,
+   341	which could be copied economically only on a printing press--it did little
+   342	harm, and did not obstruct most of the individuals who read the books.
+   343	
+   344	All intellectual property rights are just licenses granted by society
+   345	because it was thought, rightly or wrongly, that society as a whole would
+   346	benefit by granting them.  But in any particular situation, we have to ask:
+   347	are we really better off granting such license?  What kind of act are we
+   348	licensing a person to do?
+   349	
+   350	The case of programs today is very different from that of books a hundred
+   351	years ago.  The fact that the easiest way to copy a program is from one
+   352	neighbor to another, the fact that a program has both source code and
+   353	object code which are distinct, and the fact that a program is used rather
+   354	than read and enjoyed, combine to create a situation in which a person who
+   355	enforces a copyright is harming society as a whole both materially and
+   356	spiritually; in which a person should not do so regardless of whether the
+   357	law enables him to.
+   358	
+   359	  "Competition makes things get done better."
+   360	
+   361	The paradigm of competition is a race: by rewarding the winner, we
+   362	encourage everyone to run faster.  When capitalism really works this way,
+   363	it does a good job; but its defenders are wrong in assuming it always works
+   364	this way.  If the runners forget why the reward is offered and become
+   365	intent on winning, no matter how, they may find other strategies--such as,
+   366	attacking other runners.  If the runners get into a fist fight, they will
+   367	all finish late.
+   368	
+   369	Proprietary and secret software is the moral equivalent of runners in a
+   370	fist fight.  Sad to say, the only referee we've got does not seem to
+   371	object to fights; he just regulates them ("For every ten yards you run, you
+   372	are allowed one kick.").  He really ought to break them up, and penalize
+   373	runners for even trying to fight.
+   374	
+   375	  "Won't everyone stop programming without a monetary incentive?"
+   376	
+   377	Actually, many people will program with absolutely no monetary incentive.
+   378	Programming has an irresistible fascination for some people, usually the
+   379	people who are best at it.  There is no shortage of professional musicians
+   380	who keep at it even though they have no hope of making a living that way.
+   381	
+   382	But really this question, though commonly asked, is not appropriate to the
+   383	situation.  Pay for programmers will not disappear, only become less.  So
+   384	the right question is, will anyone program with a reduced monetary
+   385	incentive?  My experience shows that they will.
+   386	
+   387	For more than ten years, many of the world's best programmers worked at the
+   388	Artificial Intelligence Lab for far less money than they could have had
+   389	anywhere else.  They got many kinds of non-monetary rewards: fame and
+   390	appreciation, for example.  And creativity is also fun, a reward in itself.
+   391	
+   392	Then most of them left when offered a chance to do the same interesting
+   393	work for a lot of money.
+   394	
+   395	What the facts show is that people will program for reasons other than
+   396	riches; but if given a chance to make a lot of money as well, they will
+   397	come to expect and demand it.  Low-paying organizations do poorly in
+   398	competition with high-paying ones, but they do not have to do badly if the
+   399	high-paying ones are banned.
+   400	
+   401	  "We need the programmers desperately.  If they demand that we
+   402	   stop helping our neighbors, we have to obey."
+   403	
+   404	You're never so desperate that you have to obey this sort of demand.
+   405	Remember: millions for defense, but not a cent for tribute!
+   406	
+   407	  "Programmers need to make a living somehow."
+   408	
+   409	In the short run, this is true.  However, there are plenty of ways that
+   410	programmers could make a living without selling the right to use a program.
+   411	This way is customary now because it brings programmers and businessmen the
+   412	most money, not because it is the only way to make a living.  It is easy to
+   413	find other ways if you want to find them.  Here are a number of examples.
+   414	
+   415	A manufacturer introducing a new computer will pay for the porting of
+   416	operating systems onto the new hardware.
+   417	
+   418	The sale of teaching, hand-holding and maintenance services could also
+   419	employ programmers.
+   420	
+   421	People with new ideas could distribute programs as freeware, asking for
+   422	donations from satisfied users, or selling hand-holding services.  I have
+   423	met people who are already working this way successfully.
+   424	
+   425	Users with related needs can form users' groups, and pay dues.  A group
+   426	would contract with programming companies to write programs that the
+   427	group's members would like to use.
+   428	
+   429	All sorts of development can be funded with a Software Tax:
+   430	
+   431	 Suppose everyone who buys a computer has to pay x percent of
+   432	 the price as a software tax.  The government gives this to
+   433	 an agency like the NSF to spend on software development.
+   434	
+   435	 But if the computer buyer makes a donation to software development
+   436	 himself, he can take a credit against the tax.  He can donate to
+   437	 the project of his own choosing--often, chosen because he hopes to
+   438	 use the results when it is done.  He can take a credit for any amount
+   439	 of donation up to the total tax he had to pay.
+   440	
+   441	 The total tax rate could be decided by a vote of the payers of
+   442	 the tax, weighted according to the amount they will be taxed on.
+   443	
+   444	 The consequences:
+   445	 * the computer-using community supports software development.
+   446	 * this community decides what level of support is needed.
+   447	 * users who care which projects their share is spent on
+   448	  can choose this for themselves.
+   449	
+   450	In the long run, making programs free is a step toward the post-scarcity
+   451	world, where nobody will have to work very hard just to make a living.
+   452	People will be free to devote themselves to activities that are fun,
+   453	such as programming, after spending the necessary ten hours a week
+   454	on required tasks such as legislation, family counseling, robot
+   455	repair and asteroid prospecting.  There will be no need to be able
+   456	to make a living from programming.
+   457	
+   458	We have already greatly reduced the amount of work that the whole
+   459	society must do for its actual productivity, but only a little of this
+   460	has translated itself into leisure for workers because much
+   461	nonproductive activity is required to accompany productive activity.
+   462	The main causes of this are bureaucracy and isometric struggles
+   463	against competition.  Free software will greatly reduce these
+   464	drains in the area of software production.  We must do this,
+   465	in order for technical gains in productivity to translate into
+   466	less work for us.
+   467	
+   468	Copyright (C) 1985 Richard M. Stallman
+   469	
+   470	   Permission is granted to anyone to make or distribute verbatim copies
+   471	   of this document as received, in any medium, provided that the
+   472	   copyright notice and permission notice are preserved,
+   473	   and that the distributor grants the recipient permission
+   474	   for further redistribution as permitted by this notice.
+   475	
+   476	   Modified versions may not be made.
+   477	
+   478	> 

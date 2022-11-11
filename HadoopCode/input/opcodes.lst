@@ -1,0 +1,1379 @@
+     1	[File provided by Alex V. Potemkin <avk@netserv2.free.net>]
+     2	Last Change 10/23/94
+     3	
+     4	------------------------------------------------------------
+     5	This is DOC about undocumented instructions and documented
+     6	instructions of any last processors
+     7	------------------------------------------------------------
+     8	 (C) (P) Potemkin's Hackers Group 1994
+     9	------------------------------------------------------------
+    10	Revision 1.	1 September 1994
+    11	------------------------------------------------------------
+    12	
+    13	
+    14	--------------------------------------------------
+    15	BSWAP  - Bytes Swap
+    16	---------------------------------------------------
+    17	
+    18	CPU:  I486 +
+    19	
+    20	Type of Instruction: Operation
+    21	
+    22	Instruction: BSWAP dwordr
+    23	
+    24	Description:
+    25	
+    26	             XCHG  BYTE dwordr[31:24], dwordr[7:0]
+    27	             XCHG  BYTE dwordr[23:16], dwordr[15:8]
+    28	
+    29		     ; Need Good Picture to Show It
+    30	
+    31	Notes: This instruction used for converting big-endian
+    32	 (Intel) format to little-endian (Motorolla etc.) format.
+    33	
+    34	
+    35	Flags Affected: None
+    36	CPU mode: RM, PM, VM, SMM
+    37	
+    38	Physical Form:           BSWAP r32
+    39	COP (Code of Operation): 0FH 11001rrr
+    40	Clocks: Cyrix Cx486SLC : 4
+    41	              i486     : 1
+    42		      Pentium  : 1
+    43	
+    44	
+    45	---------------------------------------------------
+    46	CMPXCHG8B  - Compare and exchange 8 bytes
+    47	---------------------------------------------------
+    48	
+    49	CPU:  Pentium (tm)
+    50	
+    51	Type of Instruction: Operation
+    52	
+    53	Instruction: CMPXCHG8B dest
+    54	
+    55	Note: dest is memory operand: QWORD PTR [memory]
+    56	
+    57	Description:
+    58	
+    59		IF (QWORD (EDX:EAX) = dest) THEN
+    60	                     {
+    61	                     ZF <- 1;
+    62	                     dest <- QWORD (ECX:EBX);
+    63	                     }
+    64	               ELSE
+    65	                     {
+    66	                     ZF <- 0;
+    67			     EDX:EAX <- dest
+    68			     }
+    69	          END
+    70	
+    71	Flags Affected:  ZF
+    72	
+    73	CPU mode: RM, PM, VM, SMM
+    74	
+    75	Physical Form:             CMPXCHG8B mem64
+    76	COP (Code of Operation)  : 0FH C7H Postbyte
+    77	Clocks:       Pentium    : 10
+    78	
+    79	Note: Postbyte MMRRRMMM:  MM<>11 if (==) then INT 6
+    80	
+    81	
+    82	---------------------------------------------------
+    83	CMPXCHG  - Compare and exchange
+    84	---------------------------------------------------
+    85	
+    86	CPU:  i486+
+    87	
+    88	Type of Instruction: Operation
+    89	
+    90	Instruction: CMPXCHG dest, src
+    91	
+    92	
+    93	Description:
+    94	
+    95	        Acc = if OperationSize (8)  -> AL
+    96	                 OperationSize (16) -> AX
+    97	                 OperationSize (32) -> EAX
+    98	
+    99		IF (Acc = dest) THEN
+   100	                     {
+   101	                     ZF <- 1;
+   102	                     dest <- sorc;
+   103	                     }
+   104	               ELSE
+   105	                     {
+   106	                     ZF <- 0;
+   107			     Acc <- dest;
+   108			     }
+   109	          END
+   110	
+   111	Note: This instruction used to support semaphores
+   112	
+   113	
+   114	Flags Affected:  ZF (see description)
+   115	                 OF, SF, AF, PF, CF (like CMP instruction) (see description)
+   116	
+   117	CPU mode: RM, PM, VM, SMM
+   118	
+   119	+++++++++++++++++++++++
+   120	Physical Form:             CMPXCHG  r/m8, r8
+   121	COP (Code of Operation)  : 0FH A6H Postbyte    ; i486 (A-B0 step)
+   122	                         : 0FH B0H Postbyte    ; i486 (B1+ step clones
+   123	                                               ;      and upgrades)
+   124	
+   125	Clocks:
+   126	           Intel i486    :  6/7  if compare OK
+   127	                         :  6/10 if compare FAIL
+   128	         Cyrix Cx486SLC  :  5/7
+   129	         Pentium (tm)    :  6
+   130	
+   131	Penalty if cache miss    :
+   132	          Intel i486     : 2
+   133	         Cyrix Cx486SLC  : 1
+   134	+++++++++++++++++++++
+   135	Physical Form:             CMPXCHG  r/m16, r16
+   136	                           CMPXCHG  r/m32, r32
+   137	COP (Code of Operation)  : 0FH A7H Postbyte    ; i486 (A-B0 step)
+   138	                         : 0FH B1H Postbyte    ; i486 (B1+ step clones
+   139	                                               ;      and upgrades)
+   140	
+   141	Clocks:
+   142	           Intel i486    :  6/7  if compare OK
+   143	                         :  6/10 if compare FAIL
+   144	         Cyrix Cx486SLC  :  5/7
+   145	         Pentium (tm)    :  6
+   146	
+   147	Penalty if cache miss    :
+   148	          Intel i486     : 2
+   149	         Cyrix Cx486SLC  : 1
+   150	
+   151	
+   152	
+   153	---------------------------------------------------
+   154	CPUID - CPU Identification
+   155	---------------------------------------------------
+   156	
+   157	CPU:  Intel 486DX/SX/DX2 SL Enhanced and all later
+   158	Intel processors include (IntelDX4, IntelSX2,
+   159	Pentium etc.)
+   160	
+   161	Note: i.e. 1993+ years processors produced by Intel
+   162	Note: To know if your CPU support CPUID instruction
+   163	try to set ID flag (bit 21 of EFLAGS) to 1, and
+   164	if it sets this mean that CPUID support.
+   165	
+   166	Type of Instruction: Operation
+   167	
+   168	Instruction: CPUID
+   169	
+   170	Description:
+   171	
+   172		IF (EAX=0) THEN
+   173	              {
+   174	              EAX <- Maximum value of EAX to CALL CPUID instruction
+   175	                    1 for all processors (date 1 September 1994)
+   176	                    may be >1 in future microprocessors
+   177	              EBX <- 756E6547H i.e. 'Genu'
+   178		      EDX <- 49656E69H i.e. 'ineI'
+   179	              ECX <- 6C65746EH i.e. 'ntel'
+   180	              ;; EBX, EDX and ECX contain a OEM name string
+   181	              ;; for Intel this string is 'GenuineIntel'
+   182	              }
+   183	        ELSEIF (EAX=1) THEN
+   184	              {
+   185	              EAX[3:0]  <- Stepping ID
+   186	              EAX[7:4]  <- Model
+   187		      EAX[11:8] <- Family
+   188	                     ;  4 - i486 family
+   189			     ;  5 - Pentium family
+   190	              EAX[15:12] <- Reserved
+   191	                     ;  set to 0 now
+   192			     ;  but I'm sure that for Pentium OverDrive for P54C
+   193	                     ;this field will be set to 1
+   194	              EAX[31:16] <- Reserved and set to 0s now
+   195	
+   196		      EDX <- Compability flags
+   197	              ;; below all info if bit flag =1
+   198	                 EDX[0] <- FPU on Chip
+   199	                 EDX[1] <- Virtual Mode Extention present
+   200	                 EDX[2] ??
+   201	                 EDX[3] ??
+   202	                 EDX[4] ?? somethere here TSC support
+   203	                 EDX[5] ??
+   204	                 EDX[6] ??
+   205	                 EDX[7] <- Machine Check exception present
+   206			 EDX[8] <- CMPXCHG8B instruction present
+   207	                 EDX[9] <- APIC on Chip
+   208		         EDX[31:10] <- Reserved and set to 0s now
+   209	              }
+   210	        ELSEIF (EAX > 1) THEN
+   211		      {
+   212	              EAX, EBX, ECX, EDX <- Undefined
+   213	              }
+   214	        END.
+   215	
+   216	
+   217	
+   218	
+   219	Global Note:
+   220	           This file contain open i.e nonconfiderential information about
+   221	           CPUID information.
+   222	           If you want MORE try to contact Intel, may be (but I'm sure that not)
+   223	             Intelers give you "Yellow Pages" (i.e Supplement to Pentium (tm)
+   224	             Processor User's Manual) to read inside office if you not a
+   225	             designer of compiler or operation system.
+   226	
+   227	Flags Affected: None
+   228	
+   229	CPU mode: RM, PM, VM, SMM
+   230	
+   231	Physical Form:           CPUID
+   232	COP (Code of Operation): 0FH A2H
+   233	Clocks:   486s & Pentium  (EAX=1)           : 14
+   234		  486s & Pentium  (EAX=0 or EAX>1)  : 9
+   235	
+   236	
+   237	---------------------------------------------------
+   238	F4X4 - FPU: Multiplicate vector on Matrix 4x4
+   239	---------------------------------------------------
+   240	
+   241	FPU:  IIT FPUs.
+   242	
+   243	Type of Instruction: FPU instruction
+   244	
+   245	Instruction: F4X4
+   246	
+   247	Description:
+   248	
+   249		;   This Instruction Multiplicate vector on
+   250	        ; Matrix 4X4
+   251	
+   252	 _  _  	    _	 	       _	_  _
+   253	|    |	   |			|      |    |
+   254	| Xn |     | A00  A01  A02  A03 |      | X0 |
+   255	| Yn |  =  | A10  A11  A12  A13 |  X   | Y0 |
+   256	| Zn |	   | A20  A21  A22  A23 |      | Z0 |
+   257	| Wn |     | A30  A31  A31  A33 |      | W0 |
+   258	|_  _|	   |_		       _|      |_  _|
+   259	
+   260	
+   261	         ; Data fetches/stores from/to FPU registers:
+   262	
+   263		# of      F E T C H E S       STORE
+   264	       Register  Bank0 Bank1 Bank2    Bank0
+   265		ST	  X0    A33   A31      Xn
+   266	 	ST (1)     Y0    A23   A21      Yn
+   267		ST (2)     Z0    A13   A11      Zn
+   268		ST (3)     W0    A03   A01      Wn
+   269		ST (4)           A32   A30
+   270		ST (5)		A22   A20
+   271		ST (6)		A12   A10
+   272		ST (7)		A02   A00
+   273	
+   274	
+   275	
+   276	Note: See FSBP0, FSBP1, FSBP2 for more information
+   277	
+   278	
+   279	FPU Flags Affected:  S
+   280	
+   281	FPU mode: Any
+   282	
+   283	Physical Form:           F4X4
+   284	COP (Code of Operation): DBH F1H
+   285	Clocks:    IIT 2c87    : 242
+   286		   IIT 3c87    : 242
+   287		   IIT 3c87SX  : 242
+   288	
+   289	
+   290	---------------------------------------------------
+   291	FNSTDW - FPU Not wait Store Device Word register
+   292	---------------------------------------------------
+   293	
+   294	FPU:  i387SL Mobile
+   295	
+   296	Type of Instruction: FPU instruction
+   297	
+   298	Instruction: FNSTDW dest
+   299	
+   300	Description:
+   301	
+   302	        dest <- Device Word
+   303	
+   304	Format of Device word:
+   305	        bit (s)  Description
+   306	        0-7     Reserved
+   307	         8      S - Status bit:
+   308	                    if S=1 then FP device is a static design and OS
+   309	                    or APM Bios may set CLK slow to 0 Mhz without
+   310	                    lost any data.
+   311	        9-15    Reserved
+   312	
+   313	
+   314	Note: Device word register valid only after FNINIT
+   315	
+   316	
+   317	FPU Flags Affected: None
+   318	
+   319	CPU mode: Any
+   320	
+   321	Physical Form:           FNSTDW  AX
+   322	COP (Code of Operation): DFH E1H
+   323	Clocks:       i387SL Mobile: 13
+   324	
+   325	
+   326	---------------------------------------------------
+   327	FNSTSG - FPU Not wait Store Signature Word register
+   328	---------------------------------------------------
+   329	
+   330	FPU:  i387SL Mobile
+   331	
+   332	Type of Instruction: FPU instruction
+   333	
+   334	Instruction: FNSTSG dest
+   335	
+   336	Description:
+   337	
+   338	        dest <- Signature Word
+   339	
+   340	Format of Signature word:
+   341	        bit (s)  Description
+   342	         3-0	Revision
+   343	         7-4    Steppin
+   344	        11-8  	Family
+   345	        15-12   Version
+   346	
+   347	Note:
+   348	        For i387 (tm) SL Mobile Signature is:
+   349			Version  = 2
+   350			Family   = 3   ; 387
+   351			Stepping = 1   ; Ax step
+   352			Revision = 0   ; x0 step
+   353	                                i.e i387 (tm) SL is A0 step
+   354	
+   355	Note: This FPU is out of life
+   356	
+   357	
+   358	Note: Signature word register valid only after FNINIT
+   359	
+   360	
+   361	FPU Flags Affected: None
+   362	
+   363	CPU mode: Any
+   364	
+   365	Physical Form:           FNSTSG  AX
+   366	COP (Code of Operation): DFH E2H
+   367	Clocks:       i387SL Mobile: 13
+   368	
+   369	---------------------------------------------------
+   370	FRICHOP - FPU: Round to Integer chop method
+   371	---------------------------------------------------
+   372	
+   373	FPU:  Cyrix FPUs and 486s with FPU on chip
+   374	
+   375	Type of Instruction: FPU instruction
+   376	
+   377	Instruction: FRICHOP
+   378	
+   379	Description:
+   380	
+   381		ST <- ROUND (ST, CHOP)
+   382	
+   383	Note:
+   384		This instruction calculate rounding ST toward zero
+   385	        i.e. ignoring part righter that decimal .
+   386	
+   387	Examples:
+   388	
+   389		 1.2   ->   1.0
+   390	        -1.2   ->  -1.0
+   391		 3.0   ->   3.0
+   392	         0.0   ->   0.0
+   393	         1.5   ->   1.0
+   394	        -2.0   ->  -2.0
+   395	
+   396	
+   397	FPU Flags Affected:  S, P, D, I, C1
+   398	
+   399	FPU mode: Any
+   400	
+   401	Physical Form:           FRICHOP
+   402	COP (Code of Operation): DDH FCH
+   403	Clocks:       Cx83D87  : 15
+   404	              Cx83S87  : 15
+   405	              CxEMC87  : 15
+   406	              Cx487DLC :
+   407	
+   408	
+   409	---------------------------------------------------
+   410	FRINEAR - FPU: Round to Integer Nearest method
+   411	---------------------------------------------------
+   412	
+   413	FPU:  Cyrix FPUs and 486s with FPU on chip
+   414	
+   415	Type of Instruction: FPU instruction
+   416	
+   417	Instruction: FRINEAR
+   418	
+   419	Description:
+   420	
+   421		ST <- ROUND (ST, NEAREST)
+   422	
+   423	Note:
+   424		This instruction calculate rounding ST toward nearest
+   425	
+   426	Examples:
+   427	
+   428		 1.2   ->   1.0
+   429	        -1.2   ->  -1.0
+   430		 3.0   ->   3.0
+   431	         0.0   ->   0.0
+   432	         1.5   ->   1.0
+   433	         1.8   ->   2.0
+   434	        -2.0   ->  -2.0
+   435	
+   436	
+   437	FPU Flags Affected:  S, P, D, I, C1
+   438	
+   439	FPU mode: Any
+   440	
+   441	Physical Form:           FRINEAR
+   442	COP (Code of Operation): DFH FCH
+   443	Clocks:       Cx83D87  : 15
+   444	              Cx83S87  : 15
+   445	              CxEMC87  : 15
+   446	              Cx487DLC :
+   447	
+   448	
+   449	---------------------------------------------------
+   450	FRINT2 - FPU: Round to Integer
+   451	---------------------------------------------------
+   452	
+   453	FPU:  Cyrix FPUs and 486s with FPU on chip
+   454	
+   455	Type of Instruction: FPU instruction
+   456	
+   457	Instruction: FRINT2
+   458	
+   459	Description:
+   460	
+   461	        IF (exact half) THEN
+   462			{
+   463			ST <- SIGN (ST) * ROUND (ABS (ST)+0.5, NEAREST)
+   464	                }
+   465	            ELSE
+   466			{
+   467	        	ST <- ROUND (ST, NEAREST)
+   468			}
+   469		END
+   470	
+   471	Note:
+   472		This instruction calculate rounding ST toward nearest, 
+   473		but if number is exact half then this instruction round
+   474	        it toward signed infinity. Sign of this infinity is same
+   475	        with sign of number.
+   476	
+   477	Examples:
+   478	
+   479		 1.2   ->   1.0
+   480	        -1.2   ->  -1.0
+   481		 3.0   ->   3.0
+   482	         0.0   ->   0.0
+   483	         1.5   ->   2.0
+   484	         1.8   ->   2.0
+   485	        -2.0   ->  -2.0
+   486		-1.5   ->  -2.0
+   487	
+   488	FPU Flags Affected:  S, P, D, I, C1
+   489	
+   490	FPU mode: Any
+   491	
+   492	Physical Form:           FRINT2
+   493	COP (Code of Operation): DBH FCH
+   494	Clocks:       Cx83D87  : 15
+   495	              Cx83S87  : 15
+   496	              CxEMC87  : 15
+   497	              Cx487DLC :
+   498	
+   499	
+   500	---------------------------------------------------
+   501	FRSTPM - FPU Reset Protected Mode
+   502	---------------------------------------------------
+   503	
+   504	FPU:  i287XL i287XLT
+   505	
+   506	Type of Instruction: FPU instruction
+   507	
+   508	Instruction: FRSTPM
+   509	
+   510	Description:
+   511	
+   512	        Reset Cooprocessor from Protected Mode
+   513	        to Real Address mode.
+   514	
+   515	FPU Flags Affected: None
+   516	
+   517	CPU mode:Any ???
+   518	
+   519	Physical Form:           FRSTPM
+   520	COP (Code of Operation): DBH E5H
+   521	Clocks:       i287XL   : 12
+   522		      i287XLT  : 12
+   523	
+   524	---------------------------------------------------
+   525	FSBP0 - FPU: Set Bank pointer to Bank # 0
+   526	---------------------------------------------------
+   527	
+   528	FPU:  IIT FPUs.
+   529	
+   530	Type of Instruction: FPU instruction
+   531	
+   532	Instruction: FSBP0
+   533	
+   534	Description:
+   535	
+   536		;   This Instruction set current bank pointer to
+   537	        ; Bank # 0.
+   538	
+   539		;   Each bank contain eight 80bit registers
+   540	        ;   There are 3 banks (0, 1, 2) in Chip
+   541	
+   542		;   After initialization FPU select bank # 0.
+   543	
+   544	
+   545	FPU Flags Affected:  None
+   546	
+   547	FPU mode: Any
+   548	
+   549	Physical Form:           FSBP0
+   550	COP (Code of Operation): DBH E8H
+   551	Clocks:    IIT 2c87    : 6
+   552		   IIT 3c87    : 6
+   553		   IIT 3c87SX  : 6
+   554	
+   555	
+   556	---------------------------------------------------
+   557	FSBP1 - FPU: Set Bank pointer to Bank # 1
+   558	---------------------------------------------------
+   559	
+   560	FPU:  IIT FPUs.
+   561	
+   562	Type of Instruction: FPU instruction
+   563	
+   564	Instruction: FSBP1
+   565	
+   566	Description:
+   567	
+   568		;   This Instruction set current bank pointer to
+   569	        ; Bank # 1.
+   570	
+   571		;   Each bank contain eight 80bit registers
+   572	        ;   There are 3 banks (0, 1, 2) in Chip
+   573	
+   574		;   After initialization FPU select bank # 0.
+   575	
+   576	
+   577	FPU Flags Affected:  None
+   578	
+   579	FPU mode: Any
+   580	
+   581	Physical Form:           FSBP1
+   582	COP (Code of Operation): DBH EBH
+   583	Clocks:    IIT 2c87    : 6
+   584		   IIT 3c87    : 6
+   585		   IIT 3c87SX  : 6
+   586	
+   587	
+   588	---------------------------------------------------
+   589	FSBP2 - FPU: Set Bank pointer to Bank # 2
+   590	---------------------------------------------------
+   591	
+   592	FPU:  IIT FPUs.
+   593	
+   594	Type of Instruction: FPU instruction
+   595	
+   596	Instruction: FSBP2
+   597	
+   598	Description:
+   599	
+   600		;   This Instruction set current bank pointer to
+   601	        ; Bank # 2.
+   602	
+   603		;   Each bank contain eight 80bit registers
+   604	        ;   There are 3 banks (0, 1, 2) in Chip
+   605	
+   606		;   After initialization FPU select bank # 0.
+   607	
+   608	
+   609	FPU Flags Affected:  None
+   610	
+   611	FPU mode: Any
+   612	
+   613	Physical Form:           FSBP2
+   614	COP (Code of Operation): DBH EAH
+   615	Clocks:    IIT 2c87    : 6
+   616		   IIT 3c87    : 6
+   617		   IIT 3c87SX  : 6
+   618	
+   619	
+   620	---------------------------------------------------
+   621	INVD  - Invalidate Cache Buffer
+   622	---------------------------------------------------
+   623	
+   624	CPU:  I486 +
+   625	
+   626	Type of Instruction: System
+   627	
+   628	Instruction: INVD
+   629	
+   630	Description:
+   631	
+   632	             FLUSH INTERNAL CACHE
+   633	   (It means that all lines of internal caches sets as
+   634	    invalid)
+   635	         SIGNAL EXTERNAL CACHE TO FLUSH
+   636	
+   637	
+   638	Notes: This instruction not work in Real Mode and  in
+   639	Protected mode work only in ring 0 ;
+   640	
+   641	Flags Affected: None
+   642	
+   643	CPU mode: PM0, SMM?
+   644	
+   645	Physical Form:           INVD
+   646	COP (Code of Operation): 0FH 08H
+   647	Clocks: Cyrix Cx486SLC : 4
+   648	              i486     : 4
+   649		      Pentium  : 15
+   650	
+   651	
+   652	---------------------------------------------------
+   653	INVLPG  - Invalidate Page Entry In TLB
+   654	---------------------------------------------------
+   655	
+   656	CPU:  I486 +
+   657	
+   658	Type of Instruction: System
+   659	
+   660	Instruction: INVLPG mem
+   661	
+   662	Description:
+   663	
+   664		IF found in data or code (if both) (or common if single)
+   665	           TLB entry with linear address (page part) same as
+   666	           memory operand <mem> then mark this entry as Invalid;
+   667	
+   668	Notes: This instruction not work in Real Mode and  in
+   669	Protected mode work only in ring 0 ;
+   670	
+   671	Flags Affected: None
+   672	
+   673	CPU mode: RM, PM, VM, SMM
+   674	
+   675	Physical Form:           INVLPG mem
+   676	COP (Code of Operation): 0FH 01H mm111mmm
+   677	Clocks: Cyrix Cx486SLC : 4
+   678	              i486     : 12 if hit
+   679	                       : 11 if not hit
+   680		      Pentium  : 25
+   681	
+   682	
+   683	---------------------------------------------------
+   684	LOADALL  - Load All Registers
+   685	---------------------------------------------------
+   686	
+   687	CPU:  Intel 386+  +all clones
+   688	
+   689	
+   690	Type of Instruction: System Operation
+   691	                    (Work only then CPL=0)
+   692	
+   693	Instruction: LOADALL
+   694	
+   695	Description:
+   696		      Load All Registers (Include Shadow Registers) from Table
+   697	              Which Begin on  place pointed ES:EDI
+   698	
+   699	Format of LOADALL Table:
+   700	
+   701		       Offset  Len  Description
+   702			0H	4	CR0
+   703			4H	4	EFLAGS
+   704			8H	4	EIP
+   705			CH	4	EDI
+   706			10H	4	ESI
+   707			14H	4	EBP
+   708			18H	4	ESP
+   709			1CH	4	EBX
+   710			20H	4	EDX
+   711			24H	4	ESX
+   712			28H	4	EAX
+   713			2CH	4	DR6
+   714			30H	4	DR7
+   715			34H	4	TR       (16 bit, zero filled up)
+   716			38H	4	LDT  ---------
+   717			3CH	4	GS   ---------
+   718			40H	4	FS   ---------
+   719			44H	4	DS   ---------
+   720			48H	4	SS   ---------
+   721			4CH	4	CS   ---------
+   722			50H	4	ES   ---------
+   723			54H	4	TSS.attrib
+   724			58H	4	TSS.base
+   725			5CH	4	TSS.limit
+   726			60H	4	0s
+   727			64H	4	IDT.base
+   728			68H	4	IDT.limit
+   729	                6CH     4       0s
+   730	        	70H     4       GDT.base
+   731			74H     4       GDT.limit
+   732			78H     4       LDT.attrib
+   733	     		7CH     4       LDT.base
+   734			80H     4       LDT.limit
+   735			84H     4       GS.attrib
+   736			88H     4       GS.base
+   737			8CH     4       GS.limit
+   738			90H     4       FS.attrib
+   739			94H     4       FS.base
+   740			98H     4       FS.limit
+   741			9CH     4       DS.attrib
+   742			A0H     4       DS.base
+   743			A4H     4       DS.limit
+   744			A8H     4       SS.attrib
+   745			ACH     4       SS.base
+   746			B0H     4       SS.limit
+   747			B4H     4       CS.attrib
+   748			B8H     4       CS.base
+   749			BCH     4       CS.limit
+   750			C0H     4       ES.attrib
+   751			C4H     4       ES.base
+   752			C8H     4       ES.limit
+   753	
+   754	Format	of Attrib field:
+   755	
+   756		       Byte	Description
+   757		       0	0s
+   758		       1	AR (Access Right) byte in the Descriptor format
+   759	                        Note:
+   760	                           P bit is a valid bit
+   761	                           if valid bit=0 then Shadow Register is invalid and
+   762	                              INT 0DH - General Protection Fault call
+   763	                           DPL of SS, CS det. CPL
+   764		       2-3	0s
+   765	
+   766	
+   767	Flags Affected: All (FLAGS Register Reload)
+   768	
+   769	CPU mode: RM, PM0
+   770	
+   771	Physical Form:           LOADALL
+   772	COP (Code of Operation): 0FH 07H
+   773	Clocks:       i386XX   : n/a
+   774	              i486XX   : n/a
+   775	
+   776	Note: This operation used 102 data transfer cycles on 32bit bus
+   777	      Typical clocks:
+   778	              i386SX: ~350
+   779	              i386DX: ~290
+   780	              i486XX: ~220
+   781	
+   782	
+   783	---------------------------------------------------
+   784	LOADALL  - Load All Registers From Table
+   785	---------------------------------------------------
+   786	
+   787	CPU:  Intel 80286 and all its clones
+   788	
+   789	
+   790	Type of Instruction: System Operation
+   791	                    (Work only then CPL=0)
+   792	
+   793	Instruction: LOADALL
+   794	
+   795	Description:
+   796		      Load All Registers (Include Shadow Registers) from Table
+   797	              Which Begin on  000800H  Address, Len of this table is
+   798		      66H
+   799	
+   800	Format of LOADALL Table:
+   801	
+   802		       Address  Len  Description
+   803			800H	6	None
+   804			806H	2	MSW
+   805			808H	14	None
+   806			816H	2	TR
+   807			818H	2	FLAGS
+   808			81AH	2	IP
+   809			81CH	2	LDTR
+   810			81EH	2	DS
+   811			820H	2	SS
+   812			822H	2	CS
+   813			824H	2	ES
+   814			826H	2	DI
+   815			828H	2	SI
+   816			82AH	2	BP
+   817			82CH	2	SP
+   818			82EH	2	BX
+   819			830H	2	DX
+   820			832H	2	CX
+   821			834H	2	AX
+   822			836H	6	ES Shadow Descriptor
+   823			83CH	6	CS Shadow Descriptor
+   824			842H	6	SS Shadow Descriptor
+   825			848H	6	DS Shadow Descriptor
+   826			84EH	6	GDTR
+   827			854H	6	LDT Shadow Descriptor
+   828			85AH	6	IDTR
+   829			860H	6	TSS Shadow Descriptor
+   830	
+   831	Format	of Shadow Descriptor:
+   832	
+   833		       Byte	Description
+   834		       0-2	24bit Phisical Address
+   835			3	AR (Access Right) byte
+   836		       4-5	16bit Segment Limit
+   837	
+   838	
+   839	Format	of GDTR and IDTR:
+   840	
+   841		       Byte	Description
+   842		       0-2	24bit Phisical Address
+   843			3	0s
+   844		       4-5	16bit Segment Limit
+   845	
+   846	
+   847	Flags Affected: All (FLAGS Register Reload)
+   848	
+   849	CPU mode: RM, PM0
+   850	
+   851	Physical Form:           LOADALL
+   852	COP (Code of Operation): 0FH 05H
+   853	Clocks:       80286    : 195
+   854	
+   855	---------------------------------------------------
+   856	RDMSR  - Read From Model Specified Register
+   857	---------------------------------------------------
+   858	
+   859	CPU:  Pentium (tm)
+   860	
+   861	Type of Instruction: Operation
+   862	
+   863	Instruction: RDMSR
+   864	
+   865	Description:
+   866	
+   867		IF (ECX is valid number of MSR) and (CPL=0)  THEN
+   868	                  {
+   869	                  EDX:EAX <- MSR [ECX];
+   870	                  }
+   871	            ELSE
+   872	                  {
+   873	                  General Protection Fault  INT 0DH (0)
+   874	                  }
+   875	        END
+   876	
+   877	
+   878	
+   879	Flags Affected: None
+   880	
+   881	CPU mode: RM, PM0, SMM
+   882	
+   883	Physical Form:           RDMSR
+   884	COP (Code of Operation): 0FH 32H
+   885	Clocks:      Pentium   : 20-24
+   886	
+   887	
+   888	---------------------------------------------------
+   889	RDTSC  - Read From Time Stamp Counter
+   890	---------------------------------------------------
+   891	
+   892	CPU:  Pentium (tm)
+   893	
+   894	Type of Instruction: Operation
+   895	
+   896	Instruction: RDTSC
+   897	
+   898	Description:
+   899	
+   900		IF (CR4.TSD=0) or ( (CR4.TSD=1) and (CPL=0))  THEN
+   901	                  {
+   902	                  EDX:EAX <- TSC;
+   903	                  }
+   904	            ELSE
+   905	                  {
+   906	                  General Protection Fault  INT 0DH (0)
+   907	                  }
+   908	        END
+   909	
+   910	
+   911	
+   912	Note: TSC is one of MSR and after global hardware reset (not SRESET , but
+   913	RESET) it clear to 0000000000000000H.
+   914	      (But what about frequency ???)
+   915	
+   916	Flags Affected: None
+   917	
+   918	CPU mode: RM, PM0, SMM
+   919	          ; PM, VM if enable
+   920	
+   921	Physical Form:           RDTSC
+   922	COP (Code of Operation): 0FH 31H
+   923	Clocks:      Pentium   : n/a [20-24]
+   924	
+   925	
+   926	---------------------------------------------------
+   927	REPC  - Repeat While Carry Flag
+   928	---------------------------------------------------
+   929	
+   930	CPU:  NEC V20, NEC V30, etc [ Vxx seria ]
+   931	      Sony V20, Sony V30
+   932	
+   933	Type of Instruction: Prefix
+   934	
+   935	Instruction: REPC
+   936	
+   937	Description:
+   938	
+   939		DO
+   940		     CX=CX-1;
+   941		     SERVICE_PENDING_INTERRUPT;
+   942		     STRING_INSTRUCTION;
+   943	       LOOPWHILE ( (CX<>0) AND (CF==1));
+   944	
+   945	
+   946	Flags Affected: None
+   947	
+   948	CPU Mode: RM 8086
+   949	
+   950	Physical Form:           REPC
+   951	COP (Code of Operation): 65H
+   952	Clocks:       NEC V20  : 2
+   953		      NEC V30  : 2
+   954	
+   955	---------------------------------------------------
+   956	REPNC  - Repeat While Not Carry Flag
+   957	---------------------------------------------------
+   958	
+   959	CPU:  NEC V20, NEC V30, etc [ Vxx seria ]
+   960	      Sony V20, Sony V30
+   961	
+   962	Type of Instruction: Prefix
+   963	
+   964	Instruction: REPNC
+   965	
+   966	Description:
+   967	
+   968		DO
+   969		     CX=CX-1;
+   970		     SERVICE_PENDING_INTERRUPT;
+   971		     STRING_INSTRUCTION;
+   972	       LOOPWHILE ( (CX<>0) AND (CF<>1));
+   973	
+   974	
+   975	Flags Affected: None
+   976	
+   977	CPU mode: RM 8086
+   978	
+   979	Physical Form:           REPNC
+   980	COP (Code of Operation): 64H
+   981	Clocks:       NEC V20  : 2
+   982		      NEC V30  : 2
+   983	
+   984	---------------------------------------------------
+   985	RES3  - Restore All  CPU Registers
+   986	---------------------------------------------------
+   987	
+   988	CPU:  AMD Am386SXLV, Am386DXLV
+   989	      also all AMD's 486 which support SMM
+   990	
+   991	
+   992	Type of Instruction: System Operation
+   993	                    (Work only then CPL=0)
+   994	
+   995	Instruction: RES3
+   996	
+   997	Description:
+   998		      Load All Registers (Include Shadow Registers) from Table
+   999	              Which Begin on  place pointed ES:EDI
+  1000	
+  1001	Note:
+  1002	              This instruction is AMD analog Intel's LOADALL instruction
+  1003	              but it's more i.c. return from SMM used this instruction.
+  1004	
+  1005	              Then in SMM table is in SMRAM, then non SMM then table is
+  1006	              in main memory.
+  1007	
+  1008	Format of RES3 Table:
+  1009	
+  1010		       Offset  Len  Description
+  1011			0H	4	CR0
+  1012			4H	4	EFLAGS
+  1013			8H	4	EIP
+  1014			CH	4	EDI
+  1015			10H	4	ESI
+  1016			14H	4	EBP
+  1017			18H	4	ESP
+  1018			1CH	4	EBX
+  1019			20H	4	EDX
+  1020			24H	4	ESX
+  1021			28H	4	EAX
+  1022			2CH	4	DR6
+  1023			30H	4	DR7
+  1024			34H	4	TR       (16 bit, zero filled up)
+  1025			38H	4	LDT  ---------
+  1026			3CH	4	GS   ---------
+  1027			40H	4	FS   ---------
+  1028			44H	4	DS   ---------
+  1029			48H	4	SS   ---------
+  1030			4CH	4	CS   ---------
+  1031			50H	4	ES   ---------
+  1032			54H	4	TSS.attrib
+  1033			58H	4	TSS.base
+  1034			5CH	4	TSS.limit
+  1035			60H	4	Reserved
+  1036			64H	4	IDT.base
+  1037			68H	4	IDT.limit
+  1038	                6CH     4       REP OUTS overrun flag
+  1039	        	70H     4       GDT.base
+  1040			74H     4       GDT.limit
+  1041			78H     4       LDT.attrib
+  1042	     		7CH     4       LDT.base
+  1043			80H     4       LDT.limit
+  1044			84H     4       GS.attrib
+  1045			88H     4       GS.base
+  1046			8CH     4       GS.limit
+  1047			90H     4       FS.attrib
+  1048			94H     4       FS.base
+  1049			98H     4       FS.limit
+  1050			9CH     4       DS.attrib
+  1051			A0H     4       DS.base
+  1052			A4H     4       DS.limit
+  1053			A8H     4       SS.attrib
+  1054			ACH     4       SS.base
+  1055			B0H     4       SS.limit
+  1056			B4H     4       CS.attrib
+  1057			B8H     4       CS.base
+  1058			BCH     4       CS.limit
+  1059			C0H     4       ES.attrib
+  1060			C4H     4       ES.base
+  1061			C8H     4       ES.limit
+  1062	                                Unknown Unusable area
+  1063			100H    4       Temporary register
+  1064			104H    4       -------------
+  1065			108H    4       -------------
+  1066			10CH    4       -------------
+  1067			110H    4       -------------
+  1068			114H    4       -------------
+  1069			118H    4       -------------
+  1070			11CH    4       -------------
+  1071			120H    4       -------------
+  1072			124H    4       Last EIP (Last instruction EIP for Restart)
+  1073	
+  1074	Format	of Attrib field:
+  1075	
+  1076		       Byte	Description
+  1077		       0	0s
+  1078		       1	AR (Access Right) byte in the Descriptor format
+  1079	                        Note:
+  1080	                           P bit is a valid bit
+  1081	                           if valid bit=0 then Shadow Register is invalid and
+  1082	                              INT 0DH - General Protection Fault call
+  1083	                           DPL of SS, CS det. CPL
+  1084		       2-3	0s
+  1085	
+  1086	
+  1087	Flags Affected: All (FLAGS Register Reload)
+  1088	
+  1089	CPU mode: RM, PM0, SMM
+  1090	
+  1091	Physical Form:           RES3
+  1092	COP (Code of Operation): 0FH 07H  Note: Code is same with Intel's LOADALL
+  1093	Clocks:    Am386SXLV   : 366
+  1094	           Am386DXLV   : 291
+  1095	
+  1096	---------------------------------------------------
+  1097	RSM  - Resume from System Managment Mode
+  1098	---------------------------------------------------
+  1099	
+  1100	CPU:  I486 SL Enhanced+, i486SL, i386CX, i386EX
+  1101	
+  1102	Type of Instruction: System
+  1103	
+  1104	Instruction: RSM
+  1105	
+  1106	Description:
+  1107	
+  1108	           Restore execution state from SMRAM and
+  1109	           return to previous CPU mode
+  1110	
+  1111	
+  1112	CPU mode: SMM only
+  1113	         (INT 6 - Undefined Opcode in all other mode)
+  1114	
+  1115	Flags Affected: All
+  1116	
+  1117	Note: CPU state restored from dump created entrance to SMM.
+  1118	      The CPU leave SMM and return to previous mode.
+  1119	      If CPU detect any invalid state it enters shutdown.
+  1120	      This invalid states is:
+  1121	       * The value stored in State Dump Base field is not 32K aligned
+  1122	         address
+  1123	       * Any Reserved bit of CR4 is set to 1 (Pentium only)
+  1124	       * Any  illegal Combination of CR0:
+  1125	           ** (PG=1 and PE=0)
+  1126	           ** (NW=1 and CD=0)
+  1127	
+  1128	Physical Form:            RSM
+  1129	COP (Code of Operation)   : 0FH AAH
+  1130	Clocks:   i386CX          : 338
+  1131	        i486 SL Enhanced  : ???
+  1132		 IntelDX4         : 452     ; SMBASE relocation
+  1133	                          : 456     ; AutoHALT restart
+  1134	                          : 465     ; I/O Trap restart
+  1135	                 Pentium  : 83
+  1136	
+  1137	---------------------------------------------------
+  1138	SETALC  - Set AL to Carry Flag
+  1139	---------------------------------------------------
+  1140	
+  1141	CPU:  Intel 80286 and all its clones and upward
+  1142	    compatibility chips
+  1143	
+  1144	Type of Instruction: Operation
+  1145	
+  1146	Instruction: SETALC
+  1147	
+  1148	Description:
+  1149	
+  1150		IF (CF=0) THEN AL:=0 ELSE AL:=FFH;
+  1151	
+  1152	
+  1153	Flags Affected: None
+  1154	
+  1155	CPU mode: RM, PM, VM, SMM
+  1156	
+  1157	Physical Form:           SETALC
+  1158	COP (Code of Operation): D6H
+  1159	Clocks:       80286    : n/a   [3]
+  1160		      80386    : n/a   [3]
+  1161	             Cx486SLC  : n/a   [2]
+  1162		      i486     : n/a   [3]
+  1163		      Pentium  : n/a   [3]
+  1164	
+  1165	
+  1166	---------------------------------------------------
+  1167	SMI  - System Managment Interrupt
+  1168	---------------------------------------------------
+  1169	
+  1170	CPU:  AMD Am386SXLV, Am386DXLV
+  1171	      AMD 486s
+  1172	
+  1173	Type of Instruction: System
+  1174	
+  1175	Instruction: SMI
+  1176	
+  1177	Description:
+  1178	
+  1179		IF (SMIE=1) THEN
+  1180	               {
+  1181	               SAVE STATUS OF EXECUTION TO SMRAM;
+  1182	               ENTER SMM;
+  1183	               SMMS <- 1;
+  1184		       }
+  1185	           ELSE
+  1186	              {
+  1187	              INT 1;
+  1188	              }
+  1189	       END
+  1190	
+  1191	Notes: SMIE is <Soft SMI Enable> (DR7.bit12)
+  1192	               =1 Enable soft SMI
+  1193	               =0 Disable soft SMI
+  1194	       SMMS is <SMM status bit>  (DR6.bit12)
+  1195	               =1 SMM was entered
+  1196	               =0 SMM status cleared
+  1197	
+  1198	Flags Affected: None
+  1199	
+  1200	CPU mode: RM?, PM0
+  1201	
+  1202	Physical Form:           SMI
+  1203	COP (Code of Operation): F1H
+  1204	Clocks:      Am386SXLV : 357
+  1205	             Am386DXLV : 325
+  1206		     Am486xxxx : Don't know, do you?
+  1207	
+  1208	
+  1209	---------------------------------------------------
+  1210	UMOV  - Mov Data to Main (User) Memory
+  1211	---------------------------------------------------
+  1212	
+  1213	CPU:  AMD Am386SXLV, Am386DXLV
+  1214	      AMD 486s
+  1215	
+  1216	Type of Instruction: Operation
+  1217	
+  1218	Instruction: UMOV dest, sorc
+  1219	
+  1220	
+  1221	Description:
+  1222	
+  1223	          dest <- sorc;
+  1224	
+  1225	Note!!!!!: But all memory operands placed in Main memory only !
+  1226	          (i.e. not in SMRAM then in SMM)
+  1227	
+  1228	
+  1229	Flags Affected:  None
+  1230	
+  1231	CPU mode: RM?, PM?, VM?, SMM
+  1232	
+  1233	+++++++++++++++++++++++
+  1234	Physical Form:             UMOV  r/m8, r8
+  1235	COP (Code of Operation)  : 0FH 10H Postbyte
+  1236	
+  1237	Clocks:
+  1238	          Am386SXLV or AM386DXLV:  2/2
+  1239	
+  1240	+++++++++++++++++++++
+  1241	Physical Form:             UMOV  r/m16, r16
+  1242	                           UMOV  r/m32, r32
+  1243	COP (Code of Operation)  : 0FH 11H Postbyte
+  1244	
+  1245	Clocks:
+  1246	          Am386SXLV or AM386DXLV:  2/2
+  1247	
+  1248	+++++++++++++++++++++++
+  1249	Physical Form:             UMOV  r8, r/m8
+  1250	COP (Code of Operation)  : 0FH 12H Postbyte
+  1251	
+  1252	Clocks:
+  1253	          Am386SXLV or AM386DXLV:  2/4
+  1254	
+  1255	+++++++++++++++++++++
+  1256	Physical Form:             UMOV  r16, r/m16
+  1257	                           UMOV  r32, r/m32
+  1258	COP (Code of Operation)  : 0FH 13H Postbyte
+  1259	
+  1260	Clocks:
+  1261	          Am386SXLV or AM386DXLV:  2/4
+  1262	
+  1263	
+  1264	
+  1265	---------------------------------------------------
+  1266	WBINVD  - Write Back and Invalidate Cache
+  1267	---------------------------------------------------
+  1268	
+  1269	CPU:  I486 +
+  1270	
+  1271	Type of Instruction: System
+  1272	
+  1273	Instruction: WBINVD
+  1274	
+  1275	Description:
+  1276	             IF (internal cache is WB) THEN
+  1277	                      {
+  1278	                      Write Back Internal Cache;
+  1279	                      }
+  1280	             Flush internal cache;
+  1281	             Signal external cache to Write Back;
+  1282	             Signal external cache to Flush;
+  1283	
+  1284	
+  1285	Notes: This instruction not work in Real Mode and  in
+  1286	Protected mode work only in ring 0 ;
+  1287	
+  1288	Flags Affected: None
+  1289	
+  1290	CPU mode: PM0, SMM
+  1291	
+  1292	Physical Form:           INVD
+  1293	COP (Code of Operation): 0FH 09H
+  1294	Clocks: Cyrix Cx486SLC : 4
+  1295	              i486     : 5
+  1296		      Pentium  : 2000+
+  1297	
+  1298	---------------------------------------------------
+  1299	WRMSR  - Write to From Model Specified Register
+  1300	---------------------------------------------------
+  1301	
+  1302	CPU:  Pentium (tm)
+  1303	
+  1304	Type of Instruction: Operation
+  1305	
+  1306	Instruction: WRMSR
+  1307	
+  1308	Description:
+  1309	
+  1310		IF (ECX is valid number of MSR) and (CPL=0)  THEN
+  1311	                  {
+  1312	                  MSR [ECX] <- EDX:EAX;
+  1313	                  }
+  1314	            ELSE
+  1315	                  {
+  1316	                  General Protection Fault  INT 0DH (0)
+  1317	                  }
+  1318	        END
+  1319	
+  1320	
+  1321	
+  1322	Flags Affected: None
+  1323	
+  1324	CPU mode: RM, PM0, SMM
+  1325	
+  1326	Physical Form:           WRMSR
+  1327	COP (Code of Operation): 0FH 30H
+  1328	Clocks:      Pentium   : 30-45
+  1329	
+  1330	---------------------------------------------------
+  1331	XADD  - Exchange and addition
+  1332	---------------------------------------------------
+  1333	
+  1334	CPU:  i486+
+  1335	
+  1336	Type of Instruction: Operation
+  1337	
+  1338	Instruction: XADD dest, sorc
+  1339	
+  1340	
+  1341	Description:
+  1342	
+  1343		  Temporary <- dest;
+  1344	          dest      <- dest + sorc;
+  1345	          sorc      <- Temporary;
+  1346	
+  1347	
+  1348	Flags Affected:  ZF, OF, SF, AF, PF, CF (like ADD instruction) (see description)
+  1349	
+  1350	CPU mode: RM, PM, VM, SMM
+  1351	
+  1352	+++++++++++++++++++++++
+  1353	Physical Form:             XADD  r/m8, r8
+  1354	COP (Code of Operation)  : 0FH C0H Postbyte
+  1355	
+  1356	Clocks:
+  1357	           Intel i486    :  3/4
+  1358	         Cyrix Cx486SLC  :  3/6
+  1359	         Pentium (tm)    :  3/4
+  1360	
+  1361	Penalty if cache miss    :
+  1362	          Intel i486     : 6/2  ; Unlocked/Locked
+  1363	         Cyrix Cx486SLC  : 0    ; N/A
+  1364	+++++++++++++++++++++
+  1365	Physical Form:             XADD  r/m16, r16
+  1366	                           XADD  r/m32, r32
+  1367	COP (Code of Operation)  : 0FH C1H Postbyte
+  1368	
+  1369	Clocks:
+  1370	           Intel i486    :  3/4
+  1371	         Cyrix Cx486SLC  :  3/6
+  1372	         Pentium (tm)    :  3/4
+  1373	
+  1374	Penalty if cache miss    :
+  1375	          Intel i486     : 6/2  ; Unlocked/Locked
+  1376	         Cyrix Cx486SLC  : 1    ; N/A
+  1377	
+  1378	---end of file---end of file---
+  1379	

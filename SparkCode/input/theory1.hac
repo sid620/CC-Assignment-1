@@ -1,0 +1,463 @@
+     1	    WIRELESS TRANSMISSION OF POWER
+     2	    Resonating Planet Earth
+     3	
+     4	    by
+     5	
+     6	    Toby Grotz
+     7	
+     8	    Theoretical Electromagnetic Studies and Learning Association, Inc.
+     9	    522 West Third Street
+    10	    Leadville, CO  80461
+    11	    (719) 486-0133
+    12	
+    13	    Abstract
+    14	
+    15	      Many  researchers have speculated on the meaning of the phrase  "non
+    16	    Hertzian waves" as used by Dr. Nikola Tesla.  Dr. Tesla first began  to
+    17	    use this term in the mid 1890's in order to explain his proposed system
+    18	    for the wireless transmission of electrical power.  In fact, it was not
+    19	   until the distinction between the method that Heinrich Hertz was  using
+    20	
+    21	    and  the  system  Dr. Tesla had designed, that Dr. Tesla  was  able  to
+    22	   receive the endorsement of the renowned physicist, Lord Kelvin.1
+    23	     To  this day, however, there exists a confusion  amongs  researchers,
+    24	   experimentalists, popular authors and laymen as to the meaning of  non
+    25	    Hertzian waves and the method Dr. Tesla was promoting for the  wireless
+    26	    transmission of power.  In this paper, the terms pertinent to  wireless
+    27	    transmission  of power will be explained and the methods being used  by
+    28	    present  researchers  in  a recreation of  the  Tesla's  1899  Colorado
+    29	    Springs experiments will be defined.
+    30	
+    31	    Early Theories of Electromagnetic Propagation
+    32	
+    33	      In  pre-World  War  I  physics, scientists  postulated  a  number  of
+    34	    theories  to explain the propagation of electromagnetic energy  through
+    35	    the ether.  There were three popular theories present in the literature
+    36	    of the late 1800's and early 1900's.  They were:     1. Transmission 
+    37	    through or along the Earth,     2. Propagation as a result of terrestrial
+    38	    resonances,     3. Coupling to the ionosphere using propagation through
+    39	    electrified gases.
+    40	      We  shall  concern  our examination at this time to  the  latter  two
+    41	    theories  as  they  were both used by Dr. Tesla  at  various  times  to
+    42	    explain  his  system of wireless transmission of power.  It  should  be
+    43	    noted,   however,  that  the  first  theory  was  supported  by   Fritz
+    44	    Lowenstein,  the  first  vice-president  of  the  Institute  of   Radio
+    45	    Engineers, a man who had the enviable experience of assisting Dr. Tesla
+    46	    during the Colorado Springs experiments of 1899.  Lowenstein  presented
+    47	    what  came to be known as the "gliding wave" theory of  electromagnetic
+    48	    radiation  and  propagation during a lecture before the  IRE  in  1915.
+    49	    (Fig. 1)
+    50	      Dr.   Tesla   delivered  lectures  to  the  Franklin   Institute   at
+    51	    Philadelphia,  in  February, 1983, and to the National  Electric  Light
+    52	    Association  in St. Louis, in March, 1983,  concerning  electromagnetic
+    53	    wave propagation.  The theory presented in those lectures proposed that
+    54	    the Earth could be considered as a conducting sphere and that it  could
+    55	    support  a large electrical charge.  Dr. Tesla proposed to disturb  the
+    56	    charge  distribution on the surface of the Earth and record the  period
+    57	    of  the resulting oscillations as the charge returned to its  state  of
+    58	    equilibrium.  The problem of a single charged sphere had been  analyzed
+    59	    at  that time by J.J. Thompson and A.G. Webster in a treatise  entitled
+    60	    "The  Spherical Oscillator."  This was the beginning of an  examination
+    61	    of what we may call the science of terrestrial resonances,  culminating
+    62	    in  the 1950's and 60's with the engineering of VLF radio  systems  and    
+    63	    the research and discoveries of W.O. Schumann and J.R. Waite.
+    64	      The  second  method of energy propagation proposed by Dr.  Tesla  was
+    65	    that of the propagation of electrical energy through electrified gases.
+    66	    Dr.  Tesla experimented with the use of high frequency RF  currents  to
+    67	    examine the properties of gases over a wide range of pressures.  It was
+    68	    determined  by Dr. Tesla that air under a partial vacuum could  conduct
+    69	    high frequency electrical currents as well or better than copper wires.
+    70	    If  a transmitter could be elevated to a level where the  air  pressure
+    71	    was on the order of 75 to 130 millimeters in pressure and an excitation
+    72	    of megavolts was applied, it was theorized that;
+    73	     "...the  air will serve as a conductor for the current  produced,  and
+    74	    the  latter will be transmitted through the air with, it may  be,  even
+    75	    less resistance than through an ordinary copper wire".2 (Fig. 2)    
+    76	    Resonating Planet Earth
+    77	      Dr. James T. Corum and Kenneth L. Corum, in chapter two of their soon
+    78	    to be published book, A Tesla Primer, point out a number of  statements
+    79	    made by Dr. Tesla which indicate that he was using resonator fields and
+    80	    transmission line modes.
+    81	    1.  When  he speaks of tuning his apparatus until  Hertzian  radiations
+    82	    have been eliminated, he is referring to using ELF vibrations:  "...the
+    83	    Hertzian  effect  has gradually been reduced through  the  lowering  of
+    84	    frequency."3
+    85	    2.  "...the  energy received does not diminish with the square  of  the
+    86	    distance,  as it should, since the Hertzian radiation propagates  in  a
+    87	    hemisphere."3
+    88	    3.  He  apparently detected resonator or standing  wave  modes:  "...my
+    89	    discovery  of the wonderful law governing the movement  of  electricity
+    90	    through  the globe...the projection of the wavelengths (measured  along
+    91	    the  surface)  on the earth's diameter or axis  of  symmetry...are  all
+    92	    equal."3
+    93	    4.  "We are living on a conducting globe surrounded by a thin layer  of
+    94	    insulating   air,   above   which  is   a   rarefied   and   conducting
+    95	    atmosphere...The  Hertz  waves represent energy which is  radiated  and
+    96	    unrecoverable.  The current energy, on the other hand, is preserved and
+    97	    can be recovered, theoretically at least, in its entirety."4
+    98	      As  Dr. Corum points out, "The last sentence seems to  indicate  that
+    99	    Tesla's  Colorado Springs experiments could be properly interpreted  as
+   100	    characteristic of a wave-guide probe in a cavity resonator."5  This was
+   101	    in fact what led Dr. Tesla to report a measurement which to this day is
+   102	    not  understood  and  has led many to erroneously assume  that  he  was
+   103	    dealing with faster than light velocities.
+   104	
+   105	    The Controversial Measurement;
+   106	
+   107	    It does not indicate faster than light velocity
+   108	      The  mathematical models and experimental data used by  Schumann  and
+   109	    Waite  to  describe ELF transmission and propagation  are  complex  and
+   110	    beyond  the scope of this paper.  Dr. James F. Corum, Kenneth L.  Corum
+   111	    and  Dr.  A-Hamid  Aidinejad  have, however,  in  a  series  of  papers
+   112	    presented  at  the  1984  Tesla  Centennial  Symposium  and  the   1986
+   113	    International Tesla Symposium, applied the experimental values obtained
+   114	    by Dr. Tesla during his Colorado Springs experiments to the models  and
+   115	    equations  used  by Schumann and Waite.  The results of  this  exercise
+   116	    have  proved that the Earth and the surrounding atmosphere can be  used
+   117	    as  a  cavity  resonator for the wireless  transmission  of  electrical
+   118	    power. (Fig. 3)
+   119	      Dr.  Tesla  reported that .08484 seconds was the time  that  a  pulse
+   120	    emitted  from his laboratory took to propagate to the opposite side  of
+   121	    the  planet and to return.  From this statement many have assumed  that    
+   122	    his  transmissions  exceeded the speed of light and many  esoteric  and
+   123	    fallacious theories and publications have been generated.  As Corum and
+   124	    Aidinejad point out, in their 1986 paper, "The Transient Propagation of
+   125	    ELF Pulses in the Earth Ionosphere Cavity", this measurement represents
+   126	    the coherence time of the Earth cavity resonator system.  This is  also
+   127	    known  to  students of radar systems as a determination  of  the  range
+   128	    dependent  parameter.   The  accompanying  diagrams  from  Corum's  and
+   129	    Aidinejad's paper graphically illustrate the point. (Fig. 3 & Fig. 4)
+   130	      We  now turn to a description of the methods to be used to build,  as
+   131	    Dr. Tesla did in 1899, a cavity resonator for the wireless transmission
+   132	    of electrical power.
+   133	
+   134	    PROJECT TESLA:
+   135	
+   136	    The Wireless Transmission of Electrical Energy Using Schumann Resonance
+   137	      It  has been proven that electrical energy can be  propagated  around
+   138	    the  world  between  the surface of the Earth  and  the  ionosphere  at
+   139	    extreme  low frequencies in what is known as the Schumann Cavity.   The
+   140	    Schumann  cavity surrounds the Earth between ground level  and  extends
+   141	    upward to a maximum 80 kilometers.  Experiments to date have shown that
+   142	    electromagnetic waves of extreme low frequencies in the range of 8  Hz,
+   143	    the  fundamental  Schumann Resonance frequency, propagate  with  little
+   144	    attenuation around the planet within the Schumann Cavity.
+   145	      Knowing  that a resonant cavity can be excited and that power can  be
+   146	    delivered to that cavity similar to the methods used in microwave ovens
+   147	    for  home use, it should be possible to resonate and deliver power  via
+   148	    the  Schumann  Cavity  to  any point on Earth.   This  will  result  in
+   149	    practical wireless transmission of electrical power.
+   150	
+   151	    Background
+   152	
+   153	      Although  it was not until 1954-1959 when  experimental  measurements
+   154	    were  made of the frequency that is propagated in the  resonant  cavity
+   155	    surrounding  the Earth, recent analysis shows that it was Nikola  Tesla
+   156	    who,  in 1899, first noticed the existence of stationary waves  in  the
+   157	    Schumann cavity.  Tesla's experimental measurements of the wave  length
+   158	    and   frequency   involved   closely   match   Schumann's   theoretical
+   159	    calculations.  Some of these observations were made in 1899 while Tesla
+   160	    was   monitoring  the  electromagnetic  radiations  due  to   lightning
+   161	    discharges  in  a thunderstorm which passed over his  Colorado  Springs
+   162	    laboratory  and  then  moved more than 200 miles  eastward  across  the
+   163	    plains.   In  his  Colorado  Springs  Notes,  Tesla  noted  that  these
+   164	    stationary waves "... can be produced with an oscillator," and added in
+   165	    parenthesis,  "This is of immense importance."6  The importance of  his
+   166	    observations is due to the support they lend to the prime objective  of
+   167	    the Colorado Springs laboratory.  The intent of the experiments and the
+   168	    laboratory   Tesla   had  constructed  was  to  prove   that   wireless
+   169	    transmission of electrical power was possible.
+   170	      Schumann Resonance is analogous to pushing a pendulum.  The intent of
+   171	    Project Tesla is to create pulses or electrical disturbances that would
+   172	    travel in all directions around the Earth in the thin membrane of  non
+   173	    conductive  air between the ground and the ionosphere.  The  pulses  or
+   174	    waves would follow the surface of the Earth in all directions expanding
+   175	    outward  to  the  maximum circumference of the  Earth  and  contracting
+   176	    inward  until meeting at a point opposite to that of  the  transmitter.
+   177	    This  point  is  called the anti-pode.  The traveling  waves  would  be
+   178	    reflected  back from the anti-pode to the transmitter to be  reinforced
+   179	    and sent out again.      At  the  time of his measurements Tesla was  
+   180	    experimenting  with  and
+   181	    researching  methods  for "...power transmission  and  transmission  of
+   182	    intelligible  messages to any point on the globe."  Although Tesla  was
+   183	    not  able to commercially market a system to transmit power around  the
+   184	    globe,  modern scientific theory and mathematical calculations  support
+   185	    his  contention  that the wireless propagation of electrical  power  is
+   186	    possible and a feasible alternative to the extensive and costly grid of
+   187	    electrical   transmission  lines  used  today  for   electrical   power
+   188	    distribution.
+   189	
+   190	    The Need for a Wireless System of Energy Transmission
+   191	
+   192	      A  great concern has been voiced in recent years over  the  extensive
+   193	    use  of energy, the limited supply of resources, and the  pollution  of
+   194	    the  environment  from the use of present  energy  conversion  systems.
+   195	    Electrical power accounts for much of the energy consumed. Much of this
+   196	    power is wasted during transmission from power plant generators to  the
+   197	    consumer.   The  resistance  of the wire used in  the  electrical  grid
+   198	    distribution  system causes a loss of 26-30% of the  energy  generated.
+   199	    This loss implies that our present system of electrical distribution is
+   200	    only 70-74% efficient.
+   201	      A system of power distribution with little or no loss would  conserve
+   202	    energy. It would reduce pollution and expenses resulting from the  need
+   203	    to generate power to overcome and compensate for losses in the  present
+   204	    grid system.
+   205	      The   proposed   project  would  demonstrate  a  method   of   energy
+   206	    distribution   calculated  to  be  90-94%  efficient.   An   electrical
+   207	    distribution system, based on this method would eliminate the need  for
+   208	    an  inefficient, costly, and capital intensive grid of cables,  towers,
+   209	    and substations.  The system would reduce the cost of electrical energy
+   210	    used  by  the  consumer and rid the landscape  of  wires,  cables,  and
+   211	    transmission towers.
+   212	      There  are  areas of the world where the need  for  electrical  power
+   213	    exists, yet there is no method for delivering power.  Africa is in need
+   214	    of power to run pumps to tap into the vast resources of water under the
+   215	    Sahara  Desert.   Rural  areas, such as those  in  China,  require  the
+   216	    electrical  power necessary to bring them into the 20th century and  to
+   217	    equal standing with western nations.
+   218	      As  first  proposed by Buckminster Fuller, wireless  transmission  of
+   219	    power would enable world wide distribution of off peak demand capacity.
+   220	    This  concept  is based on the fact that some nations,  especially  the
+   221	    United  States, have the capacity to generate much more power  than  is
+   222	    needed.   This situation is accentuated at night.  The greatest  amount
+   223	    of  power  used, the peak demand, is during the day.  The  extra  power
+   224	    available  during  the night could be sold to the side  of  the  planet
+   225	    where it is day time.  Considering the huge capacity of power plants in
+   226	    the  United States, this system would provide a saleable product  which
+   227	    could do much to aid our balance of payments.
+   228	
+   229	    MARKET ANALYSIS
+   230	
+   231	      Of  the  56  billion  dollars  spent for  research  by  the  the  U.S
+   232	    government in 1987, 64% was for military purposes, only 8% was spent on
+   233	    energy  related research.  More efficient energy  distribution  systems
+   234	    and  sources are needed by both developed and under developed  nations.
+   235	    In regards to Project Tesla, the market for wireless power transmission
+   236	    systems  is enormous.  It has the potential to become  a  multi-billion
+   237	    dollar per year market.
+   238	
+   239	    Market Size
+   240	
+   241	       The increasing demand for electrical energy in industrial nations is
+   242	    well  documented.   If we include the demand of  third  world  nations,
+   243	    pushed  by  their increasing rate of growth, we could  expect  an  even
+   244	    faster rise in the demand for electrical power in the near future.
+   245	      In 1971, nine industrialized nations, (with 25 percent of the world's
+   246	    population),  used  690  million kilowatts, 76  percent  of  all  power
+   247	    generated.  The rest of the world used only 218 million kilowatts.   By
+   248	    comparison,  China  generated  only  17  million  kilowatts  and  India
+   249	    generated only 15 million kilowatts (less than two percent each).7   If
+   250	    a conservative assumption was made that the three-quarters of the world
+   251	    which is only using one-quarter of the current power production were to
+   252	    eventually consume as much as the first quarter, then an additional 908
+   253	    million kilowatts will be needed.  The demand for electrical power will
+   254	    continue to increase with the industrialization of the world.
+   255	
+   256	    Market Projections
+   257	
+   258	    The  Energy  Information  Agency  (EIA),  based  in  Washington,  D.C.,
+   259	    reported the 1985 net generation of electric power to be 2,489  billion
+   260	    kilowatt hours.  At a conservative sale price of $.04 per kilowatt hour
+   261	    that  results in a yearly income of 100 billion dollars.  The EIA  also
+   262	    reported  that the 1985 capacity according to generator name plates  to
+   263	    be  656,118  million watts.  This would result in a  yearly  output  of
+   264	    5,740  billion kilowatt hours at 100% utilization.  What this means  is
+   265	    that  we  use only about 40% of the power we can  generate  (an  excess
+   266	    capability of 3,251 billion kilowatt hours).
+   267	    Allowing for down time and maintenance and the fact that the night time
+   268	    off  peak  load is available, it is possible that half  of  the  excess
+   269	    power  generation  capability  could be  utilized.   If  1,625  billion
+   270	    kilowatt  hours were sold yearly at $.06/kilowatt, income  would  total
+   271	    9.7 billion dollars.
+   272	
+   273	    Project Tesla: Objectives
+   274	
+   275	      The  objectives  of  Project Tesla are divided into  three  areas  of
+   276	    investigation.
+   277	      1. Demonstration that the Schumann Cavity can be resonated with an        
+   278	    open air, vertical dipole antenna;      2. Measurement of power insertion 
+   279	    losses;      3. Measurement of power retrieval losses, locally and at a 
+   280	    distance.
+   281	    
+   282	    Methods
+   283	
+   284	      A  full size, 51 foot diameter, air core, radio frequency  resonating
+   285	    coil and a unique 130 foot tower, insulated 30 feet above ground,  have
+   286	    been  constructed and are operational at an elevation of  approximately
+   287	    11,000 feet.  This system was originally built by Robert Golka in 1973
+   288	    1974 and used until 1982 by the United States Air Force at Wendover AFB
+   289	    in  Wendover,  Utah.   The USAF used the coil  for  simulating  natural
+   290	    lightning for testing and hardening fighter aircraft.  The system has a
+   291	    capacity  of over 600  kilowatts.  The coil, which is the largest  part
+   292	    of the system, has already been built, tested, and is operational.
+   293	      A location at a high altitude is initially advantageous for  reducing
+   294	    atmospheric  losses  which work against an efficient  coupling  to  the
+   295	    Schumann  Cavity.  The high frequency, high voltage output of the  coil
+   296	    will be half wave rectified using a uniquely designed single  electrode
+   297	    X-ray  tube.   The X-ray tube will be used to charge a  130  ft.  tall,    
+   298	    vertical  tower  which  will function to  provide  a  vertical  current
+   299	    moment.   The mast is topped by a metal sphere 30 inches  in  diameter.
+   300	    X-rays  emitted  from the tube will ionize the atmosphere  between  the
+   301	    Tesla  coil and the tower.  This will result in a low  resistance  path
+   302	    causing  all  discharges  to  flow  from the  coil  to  the  tower.   A
+   303	    circulating  current  of  1,000 amperes in the system  will  create  an
+   304	    ionization and corona causing a large virtual electrical capacitance in
+   305	    the  medium surrounding the sphere.  The total charge around the  tower
+   306	    will  be  in the range of between 200-600  coulombs.   Discharging  the
+   307	    tower  7-8  times per second through a fixed or rotary spark  gap  will
+   308	    create  electrical  disturbances,  which  will  resonantly  excite  the
+   309	    Schumann Cavity, and propagate around the entire Earth.
+   310	      The propagated wave front will be reflected from the antipode back to
+   311	    the transmitter site.  The reflected wave will be reinforced and  again
+   312	    radiated  when  it  returns  to  the  transmitter.   As  a  result,  an
+   313	    oscillation will be established and maintained in the Schumann  Cavity.
+   314	    The  loss of power in the cavity has been estimated to be about 6%  per
+   315	    round trip.  If the same amount of  power is delivered to the cavity on
+   316	    each  cycle  of  oscillation of the transmitter, there will  be  a  net
+   317	    energy gain which will result in a net voltage, or amplitude  increase.
+   318	    This will result in reactive energy storage in the cavity.  As long  as
+   319	    energy is delivered to the cavity, the process will continue until  the
+   320	    energy  is removed by heating, lightning discharges, or as is  proposed
+   321	    by  this  project, loading by tuned circuits at distant  locations  for
+   322	    power distribution.
+   323	      The resonating cavity field will be detected by stations both in  the
+   324	    United  States  and overseas. These will be staffed  by  engineers  and
+   325	    scientists who have agreed to participate in the experiment.
+   326	      Measurement  of power insertion and retrieval losses will be made  at
+   327	    the  transmitter  site and at distant receiving  locations.   Equipment
+   328	    constructed especially for measurement of low frequency electromagnetic
+   329	    waves  will  be  employed to measure the  effectiveness  of  using  the
+   330	    Schumann  Cavity  as  a means of electrical  power  distribution.   The
+   331	    detection equipment used by project personnel will consist of a pick up
+   332	    coil and industry standard low noise, high gain operational  amplifiers
+   333	    and active band pass filters.
+   334	      In  addition  to  project detection there will be  a  record  of  the
+   335	    experiment recorded by a network of monitoring stations that have  been
+   336	    set up specifically to monitor electromagnetic activity in the Schumann
+   337	    Cavity. 
+   338	
+   339	    Evaluation Procedure
+   340	
+   341	
+   342	      The project will be evaluated by an analysis of the data provided  by
+   343	    local and distant measurement stations.  The output of the  transmitter
+   344	    will produce a 7-8 Hz sine wave as a result of the discharges from  the
+   345	    antenna.   The  recordings  made  by  distant  stations  will  be  time
+   346	    synchronized  to  ensure  that the data received is  a  result  of  the
+   347	    operation of the transmitter.
+   348	      Power  insertion  and  retrieval losses will be  analyzed  after  the
+   349	    measurements taken during the transmission are recorded.   Attenuation,
+   350	    field  strength,  and cavity Q will be calculated using  the  equations
+   351	    presented  in  Dr.  Corum's  papers.  These papers  are  noted  in  the
+   352	    references.   If  recorded results indicate power  can  be  efficiently
+   353	    coupled  into or transmitted in the Schumann Cavity, a second phase  of
+   354	    research involving power reception will be initiated.
+   355	
+   356	    Environmental Considerations
+   357	
+   358	      The  extreme low frequencies (ELF), present in the  environment  have
+   359	    several origins.  The time varying magnetic fields produced as a result
+   360	    of solar and lunar influences on ionospheric currents are on the  order
+   361	    of 30 nanoteslas.  The largest time varying fields are those  generated
+   362	    by  solar  activity and thunderstorms.  These magnetic fields  reach  a
+   363	    maximum  of  0.5 microteslas (uT)  The magnetic fields  produced  as  a
+   364	    result of lightning discharges in the Schumann Cavity peak at 7, 14, 20
+   365	    and 26 Hz.  The magnetic flux densities associated with these  resonant
+   366	    frequencies   vary  from  0.25  to  3.6  picoteslas.  per  root   hertz
+   367	    (pT/Hz1/2).
+   368	      Exposure  to  man made sources of ELF can be up to  1  billion  (1000
+   369	    million  or  1 x 109) times stronger than that of  naturally  occurring
+   370	    fields.   Household appliances operated at 60 Hz can produce fields  as
+   371	    high as 2.5 mT.  The field under a 765 kV, 60 Hz power line carrying  1
+   372	    amp  per  phase  is  15 uT.  ELF antennae systems  that  are  used  for
+   373	    submarine  communication  produce  fields  of  20  uT.   Video  display
+   374	    terminals  produce fields of 2 uT, 1,000,000 times the strength of  the
+   375	    Schumann Resonance frequencies.9
+   376	      Project  Tesla  will use a 150 kw generator to  excite  the  Schumann
+   377	    cavity.   Calculations  predict  that the field strength  due  to  this
+   378	    excitation at 7.8 Hz will be on the order of 46 picoteslas.
+   379	
+   380	    Future Objectives
+   381	
+   382	      The  successful  resonating  of  the  Schumann  Cavity  and  wireless
+   383	    transmission of power on a small scale resulting in proof of  principle
+   384	    will  require  a second phase of engineering, the design  of  receiving
+   385	    stations.   On  completion of the second phase, the  third  and  fourth
+   386	    phases  of the project involving further tests and improvements  and  a
+   387	    large  scale demonstration project will be pursued to prove  commercial
+   388	    feasibility.   Total  cost  from  proof  of  principle  to   commercial
+   389	    prototype  is expected to total $3 million.  Interest in  participation
+   390	    in this project may be directed to the author.
+   391	
+   392	    REFERENCES
+   393	
+   394	      The following four papers were presented at the 1984 Tesla Centennial
+   395	    Symposium and the 1986 International Tesla Symposium.
+   396	      "The  Transient  Propagation of ELF Pulses  in  the  Earth-Ionosphere
+   397	    Cavity", by A-Ahamid Aidinejad and James F. Corum.
+   398	      "Disclosures Concerning the Operation of an ELF Oscillator", by James
+   399	    F. Corum and Kenneth L. Corum.
+   400	      "A Physical Interpretation of the Colorado Springs Data", by James F.
+   401	    Corum and Kenneth L. Corum.
+   402	      "Critical Speculations Concerning Tesla's Invention and  Applications
+   403	    of  Single  Electrode X-Ray Directed Discharges for  Power  Processing,
+   404	    Terrestrial Resonances and Particle Beam Weapons" by James F. Corum and
+   405	    Kenneth L. Corum.
+   406	
+   407	    FOOTNOTES
+   408	
+   409	    1.  Tesla  Said,  Compiled by John T.  Ratzlaff,  Tesla  Book  Company,
+   410	    Millbrae, CA, 1984.
+   411	    2.  Dr.  Nikola Tesla: Selected Patent Wrappers, compiled  by  John  T.
+   412	    Ratzlaff, Tesla Book Company, 1980, Vol. I, Pg. 128.
+   413	    3.  "The  Disturbing  Influence  of Solar  Radiation  on  the  Wireless
+   414	    Transmission  of  Energy", by Nikola Tesla, Electrical Review, July  6,
+   415	    1912, PP. 34, 35.
+   416	    4.  "The Effect of Static on Wireless Transmission", by  Nikola  Tesla,
+   417	    Electrical Experimenter, January 1919, PP. 627, 658.
+   418	    5. Tesla Primer and Handbook, Dr. James T. Corum and Kenneth L.  Corum,
+   419	    unpublished.  Corum and Associates, 8551 ST Rt 534, Windsor, Ohio 44099
+   420	    6.  Colorado  Springs Notes, 1899 - 1900, Nikola  Tesla,  Nikola  Tesla
+   421	    Museum, Beograd, Yugoslavia, 1978, Pg. 62.
+   422	    7. Van Nostrands Scientific Encylopedia, Fith Edition, Pg. 899.
+   423	    8.  "PC Monitors Lightning Worldwide", Davis D. Sentman,  Computers  in
+   424	    Science, Premiere Issue, 1987.
+   425	    9.  "Artificially Stimulated Resonance of the Earth's  Schumann  Cavity
+   426	    Waveguide",  Toby  Grotz, Proceedings of the  Third  International  New
+   427	    Energy  Technology  Symposium/Exhibition, June 25th-28th,  1988,  Hull,
+   428	    Quebec,  Planetary  Association  for Clean  Energy,  191  Promenade  du
+   429	    Portage/600, Hull, Quebec  J8X 2K6 Canada
+   430	
+   431	    FURTHER INFORMATION ABOUT TESLA
+   432	
+   433	    The Tesla Memorial Society        The Tesla Coil Builders Association
+   434	    % Nicholas Kosanovich             % Harry Goldman
+   435	    453 Martin Road                   RD #6 Box 181
+   436	    Lackawanna, NY 14218              Glenns Falls, NY 12801\
+   437	    (716) 822-0281                    (518 792-1003
+   438	
+   439	    The Tesla Book Company            High Voltage Press
+   440	    PO Box 1649                       PO Box 532
+   441	    Greenville, TX 75401              Claremont, CA 91711
+   442	
+   443	    ABOUT THE AUTHOR
+   444	
+   445	      Mr.  Grotz, is an electrical engineer and has 15 years experience  in
+   446	    the field of geophysics, aerospace and industrial research and  design.
+   447	    While   working  for  the  Geophysical  Services  Division   of   Texas
+   448	    Instruments  and  at the University of Texas at Dallas, Mr.  Grotz  was
+   449	    introduced  to  and worked with the geophysical concepts which  are  of
+   450	    importance  to  the proposed project.  As a Senior Engineer  at  Martin
+   451	    Marietta,  Mr.  Grotz  designed  and  supervised  the  construction  of
+   452	    industrial  process control systems and designed and built devices  and
+   453	    equipment  for  use in research and development and for  testing  space
+   454	    flight  hardware.   Mr.  Grotz organized and  chaired  the  1984  Tesla
+   455	    Centennial Symposium and the 1986 International Tesla Symposium and was
+   456	    President  of  the  International  Tesla  Society,  a  not  for  profit
+   457	    corporation formed as a result the first symposium.  As Project Manager
+   458	    for Project Tesla, Mr. Grotz aided in the design and construction of  a
+   459	    recreation of the equipment Nikola Tesla used for wireless transmission
+   460	    of  power experiments in 1899 in Colorado Springs.  Mr. Grotz  received
+   461	    his B.S.E.E. from the University of Connecticut in 1973.
+   462	
+   463	Downloaded From P-80 Systems 304-744-2253

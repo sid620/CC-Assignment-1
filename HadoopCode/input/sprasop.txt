@@ -1,0 +1,125 @@
+     1	[10] From: dgsi!ee.rochester.edu!jerry at Internet-Gateway 2/21/92 5:36PM (6006
+     2	bytes: 119 ln)
+     3	To: VRV at cimage_aa_lan
+     4	Subject: No Subject Given
+     5	------------------------------- Message Contents -------------------------------
+     6	[FILENAME: SPRASOP.TXT]
+     7	
+     8	                   SUPRA'S NEW 9600 MODEMS!!!
+     9	
+    10	   Supra will be releasing 2 new 9600 modems - the 9600 Supra FaxModem
+    11	v.32 and the 14400 Supra FaxModem v.32bis at a retail price of $299.95
+    12	and $399.95 respectively.  The v.32bis will be available in late January
+    13	1992 and the v.32 will be available in February 1992.  Supra will offer
+    14	these two modems at a special price for Sysops.
+    15	
+    16	   Both modems support 300-2400bps (Bell 103/212A, V.21 / 22A&B / 22bis
+    17	/ 23), v.32 (9600bps), MNP 2-5/10, V42bis, 9600 send/receive fax
+    18	(v.27ter/29), class 1/2 (fax software-fax modem communication standard),
+    19	caller ID and voice. (Voice and caller ID can be enabled through low-
+    20	cost, user-installable firmware upgrades available mid-1992.) The
+    21	v.32bis model adds v.32bis (14400bps) and v.17 (14400 fax).  This is all
+    22	packaged in Supra's famous small case (1" high x 4.5" wide x 6.5" long).
+    23	
+    24	   The modems will have 4 lights (RD/SD/OH/TR) and a LED display.  The
+    25	display will show the connection rate, compression protocol, error
+    26	correction protocol, etc. in a rotating fashion.
+    27	
+    28	>>>HOW CAN SUPRA SELL A 9600 MODEM FOR 1/2-1/3 THE PRICE OF
+    29	   CURRENT MODEMS?
+    30	
+    31	   This year the price of v.32/v.32bis technology will tumble to new
+    32	lows.  Supra is continuing its proud tradition of being a leader in
+    33	using new chipsets to lead the modem industry to a new price point.
+    34	
+    35	>>>IF SUPRA IS USING A NEW CHIPSET, HOW CAN I BE SURE THAT THE
+    36	   NEW MODEMS WILL NOT HAVE SOME PROBLEMS WHEN THEY ARE RELEASED?
+    37	
+    38	   Supra is using a new Rockwell chipset which condenses several of
+    39	their older chips into 1 chip.  Rockwell is the leader in building modem
+    40	chipsets.  A majority of current 9600 modems are based upon the older
+    41	Rockwell v.32 technology.  We do not foresee any problems, but if a
+    42	problem does occur, Supra is committed to solving it as quickly as
+    43	possible.  Supra also offers a 30 day Money Back Guarantee for products
+    44	that are purchased directly from Supra.
+    45	
+    46	>>>MY LOCAL USERS USE USR HST MODEMS.  WILL I BE ABLE TO
+    47	   COMMUNICATE AT 9600 BAUD WITH THEM?
+    48	
+    49	   The maximum baud rate you will connect at with a HST modem is 2400.
+    50	Depending on the age of the HST modem, you may also get a v42bis data
+    51	compression connection.  If the user uses the USR Dual Standard modem,
+    52	and it is setup correctly, you will connect at a baud rate of 9600 (or
+    53	14400 if using v.32bis).  We expect that most owners of the HST modems
+    54	will be upgrading to v.32 modems.
+    55	
+    56	>>>I HAVE NEVER HEARD OF SUPRA.  HOW RELIABLE ARE THEIR MODEMS?
+    57	
+    58	     Supra Corporation has been providing personal computer users with
+    59	high-quality, low-cost peripherals since 1985.  In addition to
+    60	manufacturing a very successful line of modems, Supra makes a variety of
+    61	peripherals for Mac, IBM, and Amiga computers.  Supra has excelled
+    62	because of its unique combination of quality products, competitive
+    63	prices, and excellent customer support.
+    64	     Supra has a complete line of modems from a standard 2400 modem to a
+    65	2400 v.42bis, a 2400 FaxModem, a 9600 FaxModem and a 14400 FaxModem.  We
+    66	have internal versions of most of these modems for the IBM and Amiga.
+    67	As with most of our products, every modem that we manufacture is tested
+    68	and burned in on our test machines.
+    69	   To obtain one of the new modems under this Sysop offer, please
+    70	complete the following information and send it to:
+    71	                  Supra Corporation
+    72	                  7101 SW Supra Dr.
+    73	                  Albany, OR  97321
+    74	                  ATTN: Sysop Order
+    75	or FAX the information to 503-967-2401.
+    76	
+    77	If you have any questions, please contact either Supra's Sales
+    78	Department or the Technical Support Department at:
+    79	503-967-2400  (main 8-5pst)
+    80	503-967-2401  (Fax)
+    81	503-967-2410  (Sales 7-5pst)
+    82	800-727-8772  (Sales 7-5pst)
+    83	503-967-2440  (Tech Support 9-4pst)
+    84	503-967-2444  (BBS, 2 line v32bis)
+    85	CompuServe       76004,565
+    86	GEnie            SupraTech
+    87	Bix              SupraCorp
+    88	American Online  SupraCorp2
+    89	
+    90	========================================================================
+    91	SYSOP INFORMATION
+    92	BBS Name:________________________   BBS Software:________________
+    93	BBS Phone:_______________________   Type of System:______________
+    94	No. of Phone Lines:______________   Type of Modem used:__________
+    95	No. Calls per Month:_____________   No. of Modems:_______________
+    96	How long in operation:___________
+    97	
+    98	ORDER INFORMATION
+    99	Date______________
+   100	BILL TO:_________________________________________________________
+   101	Address__________________________________________________________
+   102	City______________   State_____   Zip________   Phone____________
+   103	Contact Name:____________________________________________________
+   104	Circle one of the following:     VISA     MASTERCARD     COD
+   105	Card Numbers__________________________   Expiration Date_________
+   106	SHIP TO:_________________________________________________________
+   107	Address__________________________________________________________
+   108	City______________   State_____   Zip________   Phone____________
+   109	Referred by:_____________________________________________________
+   110	
+   111	PRODUCT
+   112	Model:                    Price:                   Quantity:
+   113	SupraFAXModem V.32        $199.95 (modem only)     _____
+   114	SupraFAXModem V.32bis     $249.95 (modem only)     _____
+   115	SHIPPING
+   116	Route:                    Price:                   Quantity:
+   117	___ Ground                $ 5.00/pc                _____
+   118	___ Blue Label            $ 8.00/pc                _____
+   119	___ Express               $12.00/pc                _____
+   120	
+   121	COMMENTS:_______________________________________________________________
+   122	________________________________________________________________________
+   123	________________________________________________________________________
+   124	________________________________________________________________________
+   125	

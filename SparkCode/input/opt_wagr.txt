@@ -1,0 +1,222 @@
+     1	                         Optimal Wagering
+     2	                     Copyright 1991, Michael Hall
+     3	               Permission to repost, print for own use.
+     4	
+     5	I think I've got some good discoveries here... even if you don't
+     6	follow the math, you can get some useful blackjack information here.
+     7	
+     8	The question of optimal wagering has been brewing on rec.gambling
+     9	for a while.  I rephrase this question as the following:
+    10	
+    11	* What's the optimal win per hand as a portion of bankroll and
+    12	  what is the betting pattern necessary for this?
+    13	
+    14	That is, we want to maximize E/a' where E is the win per hand
+    15	and a' is the required bankroll.
+    16	
+    17	E is simply defined by:
+    18	
+    19	E=sum{WiPiEi}
+    20	
+    21	where i is the situation
+    22	     Wi is the wager for that situation
+    23	     Pi is the probability of that situation
+    24	     Ei is the expected value of that situation
+    25	
+    26	I defined a' in previous articles.  Unfortunately, I made a
+    27	slight error, in that I left out a couple of sqrt's.  I
+    28	hope the following is correct...
+    29	
+    30	         log((1/R) - 1)
+    31	a'= ----------------------------(sqrt(s^2 + E^2))
+    32	        /sqrt(s^2 + E^2) + E\
+    33	    log| ------------------- |
+    34	        \sqrt(s^2 + E^2) - E/
+    35	
+    36	where R is the risk of ruin
+    37	      E is the win per hand
+    38	      s^2 is the variance of E
+    39	      a' is the necessary units of blackjack bankroll
+    40	
+    41	[Incidentally, the Kelly criterion leads to a bankroll formula
+    42	 proportional to the one above, and so Kelly betting produces the
+    43	 same optimal wagering schemes as the ones shown below.]
+    44	
+    45	I tried to maximize E/a' by taking the derivatives wrt Wi and setting
+    46	them to 0.  That got really ugly.  Then I tried to maximize E or minimize
+    47	R using various formulations of Lagrange multipliers.  That got really ugly 
+    48	too.  I did come up with the partial derivatives, which are ugly themselves,
+    49	but solving for the Wi's is where it gets *really* ugly.
+    50	
+    51	So I gave up and just wrote a program to evaluate the function given
+    52	Wi's as input, and then I wrote a program to do a simple hill-climbing
+    53	on this function in the space of integers between 1 and some maximum
+    54	bet like 4 or 8.  My intuition is that hill-climbing should converge to
+    55	the global maximum and not a local maximum of this function, but I don't
+    56	have any proof of this.  BTW: my program does adjust for the basic
+    57	variance of blackjack, increasing the effective bet size by 1.1 and other
+    58	such things.
+    59	
+    60	For a downtown Vegas single deck 75% penetration (Snyder's tables in
+    61	"Fundamentals of Blackjack" by Chambliss and Rogenski), here is the
+    62	optimal betting patterns I found for spreads of 1-2, 1-4 and 1-8:
+    63	
+    64	     SINGLE DECK
+    65	    DOWNTOWN VEGAS
+    66	
+    67	                    1-2   1-4   1-8 
+    68	  ADV  FREQ  HI-LO  BET   BET   BET
+    69	   Ei   Pi          Wi    Wi    Wi
+    70	-.026  .065   -5     1     1     1
+    71	-.021  .030   -4     1     1     1
+    72	-.016  .055   -3     1     1     1
+    73	-.011  .070   -2     1     1     1
+    74	-.006  .100   -1     1     1     1
+    75	-.001  .200    0     1     1     1
+    76	+.004  .095   +1     1     1     1
+    77	+.009  .075   +2     1     1     2
+    78	+.014  .050   +3     2     2     3
+    79	+.019  .045   +4     2     3     5
+    80	+.024  .040   +5     2     4     6
+    81	+.029  .035   +6     2     4     7
+    82	+.034  .030   +7     2     4     8
+    83	+.039  .030   +8     2     4     8
+    84	+.044  .080   +9     2     4     8
+    85	
+    86	The Hi-Lo column shows the approximate High-Low (or Hi-Opt I) count for
+    87	each advantage, though you should adjust for the extra advantage from
+    88	strategy deeper into the deck.  Note that the bet should not be raised
+    89	until a true count of 3, unless you are using a very wide spread. 
+    90	You might fool a few pit critters by your low bet at a true count of 2.
+    91	(Or at least you won't get nailed when you increase your bet at a true
+    92	count of 2, like I did once.)  For the 1-2 and 1-4 spreads, the betting
+    93	pattern is easy to remember - true count minus 1 (minimum of 1, maximum
+    94	of 2 or 4.) [More exact results using simulations for the input data
+    95	showed that the optimal spread for Hi-Lo here is actually to bet equal
+    96	to the true count.]
+    97	
+    98	Here's the same stuff, but for 2 decks:
+    99	
+   100	     DOUBLE DECK
+   101	  (BSE of -0.2% assumed)
+   102	
+   103	                    1-4   1-8   1-16
+   104	  ADV  FREQ  HI-LO  BET   BET   BET
+   105	   Ei   Pi          Wi    Wi    Wi
+   106	-.027  .060   -5     1     1     1
+   107	-.022  .040   -4     1     1     1
+   108	-.017  .060   -3     1     1     1
+   109	-.012  .080   -2     1     1     1
+   110	-.007  .110   -1     1     1     1
+   111	-.002  .200    0     1     1     1
+   112	+.003  .110   +1     1     1     2
+   113	+.008  .085   +2     3     3     5
+   114	+.013  .055   +3     4     5     8
+   115	+.018  .045   +4     4     7    11
+   116	+.023  .040   +5     4     8    14
+   117	+.028  .030   +6     4     8    16
+   118	+.033  .025   +7     4     8    16
+   119	+.038  .020   +8     4     8    16
+   120	+.043  .040   +9     4     8    16
+   121	
+   122	
+   123	
+   124	Here's the same stuff, but for 8 decks:
+   125	
+   126	      EIGHT DECKS
+   127	(NEGATIVE COUNTS PLAYED)
+   128	                    1-8   1-16   1-32
+   129	  ADV  FREQ  HI-LO  BET   BET    BET
+   130	   Ei   Pi          Wi    Wi     Wi
+   131	-.030  .010   -5     1     1      1
+   132	-.025  .010   -4     1     1      1
+   133	-.020  .020   -3     1     1      1
+   134	-.015  .060   -2     1     1      1
+   135	-.010  .130   -1     1     1      1
+   136	-.005  .510    0     1     1      1
+   137	 .000  .130   +1     1     1      1
+   138	+.005  .060   +2     8     8     10
+   139	+.010  .030   +3     8    15     20
+   140	+.015  .015   +4     8    16     30
+   141	+.020  .010   +5     8    16     32
+   142	+.025  .010   +6     8    16     32
+   143	+.030  .005   +7     8    16     32
+   144	
+   145	
+   146	      EIGHT DECKS
+   147	(NEGATIVE COUNTS NOT PLAYED)
+   148	                    0-8   0-16   0-32
+   149	  ADV  FREQ  HI-LO  BET   BET    BET
+   150	   Ei   Pi          Wi    Wi     Wi
+   151	-.030  .010   -5     0     0      0
+   152	-.025  .010   -4     0     0      0
+   153	-.020  .020   -3     0     0      0
+   154	-.015  .060   -2     0     0      0
+   155	-.010  .130   -1     0     0      0
+   156	-.005  .510    0     1     1      1
+   157	 .000  .130   +1     1     1      1
+   158	+.005  .060   +2     4     5      8
+   159	+.010  .030   +3     8    10     16
+   160	+.015  .015   +4     8    15     24
+   161	+.020  .010   +5     8    16     31
+   162	+.025  .010   +6     8    16     32
+   163	+.030  .005   +7     8    16     32
+   164	
+   165	What follows are statistics on all these different optimal spreads.
+   166	The bankroll requirements assume we want to have a 20% chance of
+   167	losing *half* the bankroll before winning *half* the bankroll.
+   168	One you lose half the bankroll, I'd advise cutting the bet size
+   169	in half.  (Note that the desired risk of ruin has absolutely no effect
+   170	on the optimal betting pattern - it just changes the bankroll
+   171	by a constant amount.)
+   172	
+   173	                                       UNIT^2    UNITS
+   174	              % BANK GAIN  UNIT GAIN  VARIANCE  REQUIRED
+   175	               PER HAND     PER HAND  PER HAND  BANKROLL
+   176	 DECKS SPREAD|  E/(2a')        E        s^2       2*a'   
+   177	-------------*--------------------------------------------
+   178	1-Deck FLAT  |.001420%      .0050?      1.27      352
+   179	1-Deck 1-2   |.008027%      .0165       2.47      206
+   180	1-Deck 1-4   |.014170%      .0348       6.16      245
+   181	1-Deck 1-8   |.018132%      .0695      19.19      383
+   182	2-Deck 1-4   |.002765%      .0170       7.55      615
+   183	2-Deck 1-8   |.006787%      .0433      19.92      638
+   184	2-Deck 1-16  |.009916%      .0946      65.16      955
+   185	8-Deck 1-8   |.000251%      .0064      11.77     2550
+   186	8-Deck 1-16  |.000673%      .0162      28.00     2401
+   187	8-Deck 1-32  |.001033%      .0328      75.24     3177
+   188	8-Deck 0-8   |.000675%      .0086       7.82     1263
+   189	8-Deck 0-16  |.001047%      .0169      19.33     1600
+   190	8-Deck 0-32  |.001288%      .0326      59.57     2532
+   191	
+   192	
+   193	Some things to conclude, given the above table:
+   194	
+   195	  * A 1-2 spread on a single deck is more than 6 times more profitable
+   196	    than a 0-32 spread on 8 decks!  Even flat betting a single deck
+   197	    is probably better. 8 decks stink!
+   198	
+   199	  * It takes a 1-16 spread on double decks to beat a 1-2 spread on single
+   200	    decks!  (Can this be true?)
+   201	
+   202	  * A 1-8 spread buys you 29% more income over a 1-4 spread on
+   203	    a single deck, but you'll probably lose more than that from
+   204	    the extra countermeasures.
+   205	
+   206	  * Given a $6,125 bankroll, you could spread $25-$100 on a single
+   207	    deck, making $86.8/hour (.014170%*6125*100).  This is probably
+   208	    overly optimistic, since it rare that you can freely spread
+   209	    1-4 on a 75% penetration downtown Vegas game.
+   210	
+   211	  * You need about a 1-32 spread on 8 decks before you can get away
+   212	    with playing through negative counts.  A 1-8 spread gets killed
+   213	    sitting through negative counts, as the high bankroll requirement
+   214	    shows.
+   215	
+   216	One thing that might be fun is playing around with the above
+   217	betting spreads.  They are optimal, but how weird can you get
+   218	without sacrificing much of the E/a'?
+   219	
+   220	I'd like to acknowledge Blair for getting me to think in terms of
+   221	percent bankroll win.
+   222	

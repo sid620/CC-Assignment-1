@@ -1,0 +1,334 @@
+     1	 
+     2	Not long ago, many data communicators thought that dial-up modem manufacturers
+     3	had pushed transmission speeds to the limit with the introduction of 2400 bit
+     4	per second (bps) modems.  Recently, however, several manufacturers have
+     5	creatively combined  relatively mature techniques of data transmission with
+     6	newer technology and have introduced 9600 bps modems.
+     7	
+     8	Unfortunately, a widely accepted standard for full duplex 9600 bps
+     9	transmission as defined by the International Consultative Committee for
+    10	Telegraphy and Telephony (CCITT) does not yet exist (the CCITT is currently
+    11	considering proposals for a new 9600 bps dial-up standard).  This means that
+    12	today's 9600 bps modems do not offer cross-manufacturer compatibility.  The
+    13	CCITT HAS endorsed a half duplex and a full duplex 9600 bps standard, but to
+    14	date implementations of these relatively flexible standards have been
+    15	proprietary, i.e., even the "standardized" modems from different manufacturers
+    16	are not compatible.
+    17	
+    18	All this means that modem users who want to enjoy the dream speed of 9600 bps
+    19	must weigh the pros and cons of each 9600 bps technique before committing to a
+    20	particular 9600 bps design.  This paper was written in an effort to provide
+    21	typical modem users with enough technical information and insight that they
+    22	will be able to consider the new 9600 bps modems from the position of an
+    23	educated consumer and not have to rely on information gleaned from sales
+    24	brochures and advertisements.  It should be noted that the author, Wes Cowell,
+    25	is an employee of USRobotics.
+    26	
+    27	                              THE ROAD TO 9600
+    28	
+    29	High speed data communications via the dial-up phone network is limited by the
+    30	available phone line bandwidth and by random channel impairments.  Just as the
+    31	diameter of a pipe limits its liquid flow capacity, so does the telephone
+    32	channel bandwidth limit its data flow capacity.
+    33	
+    34	The roughly 3000-Hz available in the telephone bandwidth poses few problems
+    35	for 300 bps modems, which only use about one fifth of the bandwidth.  A full
+    36	duplex 1200 bps modem requires about half the available bandwidth,
+    37	transmitting simultaneously in both directions at 600 baud and using phase
+    38	modulation to signal two data bits per baud.  "Baud rate" is actually a
+    39	measure of signals per second.  Because each signal can represent more than
+    40	one bit, the baud rate and bps rate of a modem are not necessarilly the same.
+    41	In the case of 1200 bps modems, their baud rate is actually 600 (signals per
+    42	second) and each signal represents two data bits.  By multiplying signals per
+    43	second with the number of bits represented by each signal one determines the
+    44	bps rate: 600 signals per second X 2 bits per signal = 1200 bps.
+    45	
+    46	In moving up to 2400 bps, modem designers decided not to use more bandwidth,
+    47	but to increase speed through a new signalling scheme known as quadrature
+    48	amplitude modulation (QAM).
+    49	
+    50	In QAM, each signal represents four data bits.  Both 1200 bps and 2400 bps
+    51	modems use the same 600 baud rate, but each 1200 bps signal carries two data
+    52	bits, while each 2400 bps signal carries four data bits:
+    53	600 signals per second X 4 bits per signal = 2400 bps.
+    54	
+    55	A technique known as adaptive equalization enables 2400 bps modems to adapt to
+    56	phone line impairments call-by-call. Essentially, if the modem is experiencing
+    57	problems with a noisy line, it looks for a "sweet spot" in the bandwidth and
+    58	attempts to avoid troublesome frequencies.  This technique makes 2400 bps
+    59	modems more tolerant of line noise than their 1200 bps counterparts that use
+    60	compromise equalization (a one-size-fits-all approach).
+    61	
+    62	While these advanced modulation and equalization techniques in 2400 bps modems
+    63	provide for double the data rate of 1200 bps modems, they also result in a
+    64	design at least four times more complex than 1200 bps modems.
+    65	
+    66	Which brings us to the problem of designing a 9600 bps modem.
+    67	
+    68	Jumping to 9600 from 2400 bps is several orders of magnitude more complicated
+    69	than going to 2400 from 1200 bps.  Telephone network characteristics make it
+    70	highly unlikely that success will be had in  extending the "data signal
+    71	alphabet" (number of bits represented by each signal) beyond four bits per
+    72	signal.
+    73	
+    74	Instead, modem designers must increase the bandwidth that is to carry the
+    75	signal, and this presents a very big problem.  In fact, at speeds of 4800 bps
+    76	(1200 signals per second), the transmit and receive channels must be expanded
+    77	to the point where they actually begin to overlap. A  9600 bps "band"
+    78	requires roughly 90 percent of the available bandwidth, making it impossible
+    79	to have two-way communication without the bands interfering with each other.
+    80	
+    81	A helpful analogy to the problem might be to consider a two lane highway:
+    82	traffic must flow in both directions simultaneously, but to carry more cars
+    83	per unit of time, highway designers must either increase the number of lanes
+    84	in each direction or widen the two lanes to accommodate driver error with a
+    85	margin of safety.  Unfortunately, these options are not available to modem
+    86	designers as the available bandwidth is of a fixed size.
+    87	
+    88	With these considerations and limitations in mind, let's examine three basic
+    89	ways to accomplish full duplex (two-way) 9600 bps communications:  echo
+    90	cancellation, virtual full duplex (achieved by half duplex systems), and
+    91	asymmetrical frequency division.
+    92	
+    93	                              ECHO-CANCELLATION
+    94	
+    95	This method solves the problem of overlapping transmit and receive channels.
+    96	Each modem's receiver must try to filter out the echo of its own transmitter
+    97	and concentrate on the other modem's transmit signal.  This presents a
+    98	tremendous computational problem that significantly increases the complexity
+    99	-- and cost -- of the modem.  But it offers what other schemes don't:
+   100	simultaneous two-way transmission of data at 9600 bps.
+   101	
+   102	The CCITT "V.32" recommendation for 9600 bps modems includes echo-
+   103	cancellation.  The transmit and receive bands overlap almost completely, each
+   104	occupying 90 percent of the available bandwidth.  Measured by computations per
+   105	second and bits of resolution, a V.32 modem is roughly 64 times more complex
+   106	than a 2400 bps modem.  This translates directly into added development and
+   107	production costs which means that it will be some time before V.32 modems can
+   108	compete in the high- volume modem market.
+   109	
+   110	Despite the fact that V.32 is a recognized standard, it is uneconomical and
+   111	unnecessarily complex for personal computer datacomm applications that simply
+   112	don't require simultaneous two-way 9600 bps transmission.
+   113	
+   114	                              HALF DUPLEX SYSTEMS
+   115	                             (Virtual Full Duplex)
+   116	
+   117	Half duplex solutions devote the entire bandwidth to 9600 bps in one direction
+   118	at a time, and "ping-pong" the data flow back and forth to simulate full
+   119	duplex.  This is potentially the simplest scheme.  Its performance is
+   120	acceptable in data transfer applications that don't involve user interaction,
+   121	i.e. file transfers. Even so, advanced error-control protocols that require
+   122	ACKnowledgments to be sent in response to received data blocks generate a high
+   123	number of "line reversals" which greatly impair overall data throughput.  In
+   124	short, the benefit of higher speed is so significantly compromised by line
+   125	reversals in half duplex sessions that the net gain in data throughput may be
+   126	marginal at best.
+   127	
+   128	If users want to operate in an interactive mode, their data must be sent to
+   129	the remote computer, the data channel must be reversed, and then the data must
+   130	be echoed back.  This process results in significant turn-around delays which
+   131	can be very frustrating to users.
+   132	
+   133	Half duplex modems of this kind are most often based on CCITT recommendation
+   134	V.29 for half duplex 9600 bps transmission on the dial-up network.  V.29 based
+   135	data pumps used in facsimile systems are available as LSI chip sets, providing
+   136	a short-cut to modem manufacturers, particularly to companies that don't
+   137	develop their own modem technologies.  But the major problem is that the V.29
+   138	modulation scheme has been outdated  by the fact that it operates in a half
+   139	duplex mode and doesn't provide good signal to noise performance.  The V.32
+   140	recommendation, which operates in a full duplex mode and employs Trellis
+   141	Coding Modulation offers greater throughput and a greater immunity to channel
+   142	impairments.
+   143	
+   144	To the best of my knowledge, modems employing V.29-based modulation include
+   145	products from Racal-Vadic, Comspec, Develcon, Gamma Technology, Microcomm, and
+   146	Electronic Vaults, Inc.  (EVI).  These modems, however, are NOT mutually
+   147	signal compatible -- cross-manufacturer compatibility does not exist.
+   148	
+   149	Another modem in the half duplex category, but not based on V.29 modulation,
+   150	is the Telebit Trailblazer (R), which uses a proprietary modulation method.
+   151	
+   152	Trailblazer is based on a multi-carrier technique.  Conceptually, the
+   153	transmission channel is divided into many (512), independent, very narrow
+   154	channels (think of our two-lane highway and imagine it as having 512 very
+   155	narrow lanes (say, for bicycles) going in one direction and you've got a fair
+   156	idea of how Trailblazer divides the bandwidth).  The main advantage is that no
+   157	receiver adaptive equalizer is needed because each channel is very narrow
+   158	compared to the overall channel bandwidth.
+   159	
+   160	Further, in the Trailblazer modulation scheme, the modulation rate in each
+   161	narrow channel can be changed somewhat independently.  Trailblazer is
+   162	different from many other modems in that the decision to fall back to lower
+   163	speeds is built into the modem protocol, rather than controlled by the user's
+   164	computer port.  It is claimed that in the face of channel impairments,
+   165	throughput can be adapted gracefully to channel conditions.  Traditional
+   166	modulation systems would have to fall back in larger steps.  But there are
+   167	three inherent MAJOR problems:
+   168	
+   169	1)  The turn-around delay is very long compared to conventional modulation
+   170	techniques because data must be sent in large blocks.   A typed character may
+   171	take several seconds to be echoed back to the system that sent it.  As a
+   172	result, the system fails to achieve the illusion of full duplex and is not
+   173	really suited to interactive online sessions.
+   174	
+   175	2)  The Trailblazer receiver cannot "track" carrier "phase jitter" (phase
+   176	jitter can be thought of in terms of "phase shift": think of how the whine of
+   177	a race car goes from higher to lower as it passes the viewer --  the frequency
+   178	of the sound is said to be "shifted" or "jittered").  Instead of cancelling
+   179	out phase jitter (which is commonly encountered on long distance calls) the
+   180	Trailblazer can only respond by lowering throughput to gain more immunity to
+   181	phase jitter.
+   182	
+   183	3)  The ability to transmit at the maximum rate when subject to channel
+   184	impairment is considerably less than for conventional modems.  There is one
+   185	notable exception:  the multiple channel technique offers extremely good
+   186	immunity to impulse noise because the impulse energy is distributed over
+   187	narrow channels.  While conventional modems can achieve similar results
+   188	through special coding or filtering techniques they rarely implement such
+   189	methods.
+   190	
+   191	                       ASYMMETRICAL FREQUENCY DIVISION
+   192	
+   193	When one considers the nature of most PC datacomm applications, it is realized
+   194	that most applications are interactive, involving manual (typed) data entry
+   195	from one end and data file transmission from the other end.
+   196	
+   197	Few, if any, PC users can justify using an expensive 9600 bps channel to carry
+   198	their typed characters when they realize that 300 bps translates to 360 words
+   199	per minute.  Assuming one could type 100 words per minute, even a 100 bps
+   200	transmission channel would be sufficient.
+   201	
+   202	On the other hand, file transfer should take advantage of the tremendous speed
+   203	of the microprocessor.  Serial ports are often set at data rates in excess of
+   204	19,000 bps.
+   205	
+   206	Considering these inherent characteristics, a communications scheme that
+   207	incorporated a high speed and a low speed channel would be best suited for
+   208	most PC datacomm applications.
+   209	
+   210	Remembering the highway analogy (higher speeds mean wider lanes), one can see
+   211	how such a method would grant modem designers a  large portion of the
+   212	available bandwidth for a 9600 bps channel and still leave enough room to
+   213	accommodate a narrow 300 bps channel without any channel overlap.
+   214	
+   215	By utilizing two discreet channels, such a modem would avoid costly, complex
+   216	echo-cancellation schemes.  And, because the channels carry data in both
+   217	directions simultaneously, the communications link is a true full duplex
+   218	connection.  This means that data entered at one system would be almost
+   219	instantaneously echoed back -- eliminating the frustrating turn-around delay
+   220	experienced in half duplex sessions.
+   221	
+   222	USRobotics has developed just such a modem.  It passes data in one direction
+   223	using the V.32 modulation technique (a very robust method that is very immune
+   224	to phone line impairments) but employs only a 300 bps channel in the opposite
+   225	direction so that the channels do not overlap and echo-cancellation is not
+   226	necessary.
+   227	
+   228	The use of the high-speed channel by the two modems is based on data demand.
+   229	In most applications, however, "channel swapping" will not be required.  For
+   230	interface elegance, the modems employ a 4K buffer that allow them to perform
+   231	data rate conversion: sending and receiving speeds remain constant between the
+   232	modem and the computer -- it is only in between the modems that transmitted
+   233	and received data run at different speeds.
+   234	
+   235	For interactive sessions, users are assigned the low-speed channel while the
+   236	data sent to them (long mail messages, menus, files, etc.) in the 9600 bps
+   237	channel.
+   238	
+   239	For file transfer sessions, the data blocks that make up a file are sent in
+   240	the 9600 bps channel while the corresponding ACKnowledgments are returned in
+   241	the 300 bps channel.  An asymmetric frequency division scheme is ideal for
+   242	file transfer where large data blocks (usually several hundred bytes in
+   243	length) are transmitted in the high-speed channel and the ACKs (usually only
+   244	a few bytes in length) are carried in the low-speed channel.
+   245	
+   246	If a user switches from an interactive mode to file transfer and then back to
+   247	interactive mode, the high speed channel is dynamically and automatically
+   248	assigned to the system with the greatest data demand.
+   249	
+   250	                              A BRIEF COMPARISON
+   251	
+   252	Three options exist for data communicators who desire to operate at 9600 bps:
+   253	
+   254	1)  V.32-type modems offer a full duplex connection but do so by virtue of
+   255	echo-cancellation.  This technique is so complex, and has proven so difficult
+   256	to employ, that the cost for such modems will remain prohibitively high and
+   257	their implementation a delicate task for some time to come.
+   258	
+   259	2)  Half duplex modems (either V.29 or multi-carrier) offer 9600 bps but the
+   260	turn-around delay inherent in half duplex links severely compromise overall
+   261	throughput.  This degradation of throughput, however, can be more than offset
+   262	by data compression techniques assuming the modems in question support
+   263	identical compression protocols and are operating on relatively "clean" phone
+   264	lines.  Both half duplex methods suffer disproportionate degradation on
+   265	"noisy" lines: the V.29 modems must spend more and more time in line reversals
+   266	as detected data errors increase, and the multi-carrier modems must sacrifice
+   267	throughput to gain noise immunity.
+   268	
+   269	3)  Asymmetrical Frequency Division offers 9600 bps communications in a true
+   270	full duplex implementation.  By efficiently utilizing the available bandwidth,
+   271	these modems provide users with high speed file transfer capabilities and fast
+   272	response in interactive sessions.  Because the transmit and receive data
+   273	channels do not overlap, expensive echo-cancelling techniques are unnecessary
+   274	making these modems economically efficient.
+   275	
+   276	                                  IN CONCLUSION
+   277	
+   278	Until a widely recognized standard is agreed upon by the standards community,
+   279	and implemented by several manufacturers, modem buyers must weigh the benefits
+   280	and detriments of each 9600 bps scheme.
+   281	
+   282	V.32 would be best where symmetrical, full duplex, synchronous communication
+   283	is desired (for example, dial-up HDLC links between multiplexers) and where
+   284	the user can modify his software to accommodate non-"AT" command-driven
+   285	modems.
+   286	
+   287	V.29 modems would be likely solutions where absolute lowest price is required
+   288	and conformance to an international standard (in a very limited sense) is
+   289	desired.
+   290	
+   291	Multi-carrier transmission schemes are well-suited to applications that
+   292	require maximum one-way throughput and where circuit conditions are known to
+   293	be good.  This transmission method is also ideally suited for circuits where
+   294	immunity to impulse noise is paramount.
+   295	
+   296	Users who most often work with one-way file transfers (PC-to-PC) or with real-
+   297	time applications may opt for an Asymmetrical Frequency Division scheme, which
+   298	is suited equally well for either application.  The elegant approach to the
+   299	frequency division (avoiding overlapping bandwidths) also allows these modems
+   300	to present a very economical ratio between dollars and bps.
+   301	
+   302	Potential high-speed-modem buyers should also consider the aspects of ease-of-
+   303	use, ease-of-implementation, and downward compatibility with existing
+   304	implemented standards (the CCITT's V.22bis for 2400 bps, Bell 212A for 1200
+   305	bps, and Bell 103 for 200 bps).
+   306	
+   307	                                  POST SCRIPT
+   308	
+   309	Many modem users have voiced confusion and consternation about the lack of
+   310	compatibility between modem manufacturers at speeds greater than 2400 bps.
+   311	
+   312	Modem manufacturers have embraced the Bell 212A and 103 standards for 1200 and
+   313	300 bps.  In these post-divestiture days, however, Bell no longer sets modem
+   314	standards in the U.S. and hence, U.S. modem manufacturers have turned to the
+   315	CCITT as a definitive source for standards.  The industry-wide acceptance of
+   316	the CCITT's V.22bis standard for 2400 bps is the best example of this shift.
+   317	
+   318	The CCITT recommendations V.29 and V.32 for 9600 bps have not resulted in
+   319	compatible implementations.  It is important to remember that V.29 was
+   320	originally developed as a four-wire full duplex leased-line modem and has
+   321	since been adapted by various manufacturers to encompass half duplex dial up
+   322	applications.  Other problems with V.29 are that it compromises transmission
+   323	speed and is poor for interactive sessions.  V.32 is proving to be
+   324	prohibitively complex and exceptionally difficult to implement (driving
+   325	development and production costs up).
+   326	
+   327	Recognizing the need for an alternative to the V.32 recommendation, the CCITT
+   328	has requested proposals from modem manufacturers.
+   329	
+   330	Presently, two proposals are being considered by the CCITT.  One is the multi-
+   331	carrier scheme developed and sponsored by Telebit.  The other is an
+   332	Asymmetrical Frequency Division scheme developed and sponsored by USRobotics.
+   333	
+   334	  and s

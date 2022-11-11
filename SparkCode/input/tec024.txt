@@ -1,0 +1,50 @@
+     1	_______________________________________________________________________
+     2	STACKER NOTE                          Stac Electronics Technical Note
+     3	
+     4	Subject: STACKER 2.0 device driver memory requirements.
+     5	
+     6	Tech024 - 2/20/92
+     7	_______________________________________________________________________
+     8	
+     9	The STACKER device driver, STACKER.COM , requires a modest amount of
+    10	resident conventional memory.  The resident size of the Stacker device
+    11	driver depends on the Stacker product being used, and on the way
+    12	Stacker is configured.  During the initialization phase, as it is
+    13	loading and mounting the STACKER drives, it requires slightly more
+    14	memory than when resident.
+    15	
+    16	Refer to the following tables to determine how much memory the Stacker
+    17	device driver requires.  These numbers should be used as guidelines.
+    18	Once Stacker is installed, observe the STACKER.COM display as the
+    19	system starts to see the exact amount of memory the driver is using.
+    20	
+    21	STACKER 2.0
+    22	This table represents memory required for each Stacker product with a
+    23	single Stacker drive using 8k clusters.  It also shows the requirements
+    24	on a system where Stacker is using EMS memory.  When Stacker is
+    25	configured to use available EMS memory, it will use 64k of EMS for its
+    26	cache and buffers.
+    27	
+    28	       Product                With EMS              Without EMS
+    29	                        (Resident/(Initial))   (Resident/(Initial))
+    30	     2.0 Software            26K/(40K)               41K/(47K)
+    31	  AT/16, MC/16, XT/8         14K/(40K)               30K/(41K)
+    32	
+    33	Additional Stacker Drives:
+    34	If using more than one Stacker drive, the device driver will consume
+    35	slightly more memory to map each additional drive.
+    36	
+    37	       Product                With EMS              Without EMS
+    38	         All                    1.2K                    3 K
+    39	
+    40	4K vs. 8K Clusters:
+    41	A default cluster size of 8k offers better compression than 4k .
+    42	However, the device memory required to achieve the better compression
+    43	is slightly greater than the 4k option.  With 4k clusters, the base
+    44	driver size is reduced by the amount in the table below.
+    45	
+    46	       Product                With EMS             Without EMS
+    47	     2.0 Software                4K                     8K
+    48	  AT/16, MC/16, XT/8                                    4K
+    49	__________________________________________________________________________
+    50	1992 STAC ELECTRONICS

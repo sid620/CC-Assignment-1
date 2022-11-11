@@ -1,0 +1,273 @@
+     1	                  PC Memory Management Overview
+     2	
+     3	
+     4	
+     5	DOS users are faced with a confusing array of memory
+     6	configurations today.  There's conventional memory, upper memory,
+     7	expanded memory, extended memory, and the high memory area to
+     8	name a few.  Plus there are acronyms like UMB (Upper Memory
+     9	Block), EMS (Expanded Memory Specification), XMS (eXtended Memory
+    10	Specification), HMA (High Memory Area), VCPI (Virtual Control
+    11	Program Interface) and DPMI (DOS Protected Mode Interface), which
+    12	confuse matters even further.
+    13	
+    14	In this document, we'll try to explain the PC Memory
+    15	Architecture, as well as popular memory management techniques and
+    16	standards.
+    17	
+    18	The reason for all of these different types of memory has to do
+    19	with the evolution of the Intel 80x86 family of microprocessors
+    20	over the years.  Since the 8086 and 8088 microprocessors, used in
+    21	the original IBM PC and "XT-class" machines, we've seen
+    22	tremendous growth in the speed and capabilities of PC
+    23	microprocessors, yet limitations of the original 8086 design
+    24	still hold us back.  The primary limitation is the ability of the
+    25	8086 and 8088 processors to only address a 1MB range of
+    26	memory...which seemed like a lot for their time, when 64KB was
+    27	the extent of the addressing capability of competing non-Intel
+    28	microprocessors.
+    29	
+    30	When IBM designed the original PC, they reserved the upper 384KB
+    31	of this 1MB for the PC BIOS (Basic Input/Output System), video
+    32	memory, and for adapter boards to install additional RAM,
+    33	allowing applications to write directly to added RAM in order to
+    34	communicate with the adapter.  This left us with 640KB for DOS
+    35	and application programs.
+    36	
+    37	The 80286 microprocessor supports a full 16MB address space,
+    38	however this additional memory is only accessible when the 80286
+    39	operates in what is termed as its protected mode.  The default
+    40	mode of operation for the 80286 is real mode, which is 8086
+    41	compatible.  In real mode, the 80286 is little more than a fast
+    42	8086.
+    43	
+    44	At the time that the 80286 was being designed by Intel, they had
+    45	no idea that the PC and the 8086 would enjoy widespread
+    46	popularity, and hence, the design of 80286 protected mode is very
+    47	incompatible with real mode.  Intel anticipated that since
+    48	protected mode offered so many advantages over real mode, that
+    49	real mode would just "go away".
+    50	
+    51	While there is a processor instruction to put the processor into
+    52	protected mode, there is no way to return!  Applications like
+    53	non-dedicated NetWare 2.x, OS/2 v1.x and the various DOS
+    54	extenders, have to play some real feats of magic in order to
+    55	switch between real and protected modes.
+    56	
+    57	Mostly, the switch from protected mode back to real mode is done
+    58	by performing a hard reset on the microprocessor (CTRL-ALT-DEL
+    59	like).  Before the processor is reset, a command is sent out to
+    60	the keyboard controller.  The response back from the keyboard
+    61	controller is what wakes the processor back up from its reset,
+    62	now in real mode.  This is the reason why people often report
+    63	sluggish keyboard problems with non-dedicated NetWare.  Not all
+    64	keyboard controllers are designed to support this operation.
+    65	
+    66	The 80386 added some exciting new features.  In addition to
+    67	supporting 8086 real mode and 80286 protected mode, the 80386
+    68	supports even more than 16MB, 4GB of physical memory, and 1TB of
+    69	virtual memory.  Thanks to a flat 32-bit address space, all
+    70	physical memory is accessible in one flat address space
+    71	(programmers are often hampered by 64KB at a time addressing
+    72	limits on the 8086 and 80286).
+    73	
+    74	One of the real exciting enhancements of the 80386 is its virtual
+    75	8086 mode.  Through the 80386's hardware features, it is able to
+    76	emulate multiple 8086 microprocessors!  This is how DesqView,
+    77	Windows enhanced mode, and OS/2 v2 perform their magic multi-
+    78	tasking DOS applications (with varying degrees of success).
+    79	
+    80	The 80386 also supports memory paging in its hardware.
+    81	Applications only see a logical view of memory.  When an
+    82	application makes a memory request, the processor redirects the
+    83	access to the actual physical location.  The 80286 also provided
+    84	a limited subset of memory paging support in protected mode only
+    85	(on the 80286, paging is on a per 64KB segment basis, the 80386
+    86	pages on 4KB boundaries), but the 80386 makes this available in
+    87	virtual 8086 mode as well, so that memory management products
+    88	like QEMM, 386-to-the-MAX and MS-DOS 5/DR-DOS 6 EMM386 can
+    89	perform memory management magic for DOS applications.
+    90	
+    91	Since we're talking about microprocessors for a background, I'll
+    92	also mention the 80486.  Effectively, the 80486 is a highly-
+    93	tuned, highly-optimized 80386, which doesn't add many new
+    94	capabilities, mostly just FASTER execution than past designs of
+    95	this family.  The 486 also includes an integrated math
+    96	coprocessor (there is no need for an 80487) that really speeds up
+    97	number crunching.  The 486SX is essentially a crippled 486
+    98	without the built-in math coprocessor.
+    99	
+   100	For the sake of completeness, I'll also mention the 386SX.  The
+   101	386SX is software compatible with the 80386, except that all
+   102	external accesses that it makes to the outside world are made 16
+   103	bits at a time instead of 32 bits, which makes it a tad slower
+   104	than a full blown 386 when it comes to accessing memory and
+   105	devices.  Similarly, the 8088 is an 8086 compatible processor,
+   106	except that it makes its external accesses 8 bits at a time
+   107	instead of 16 bits at a time.  While this type of design makes
+   108	the system a little slower, it allows for lower priced components
+   109	to be used in building the system, making enhanced processor
+   110	capabilities available in machines at lower price points.
+   111	
+   112	With a history of the Intel family of processors in mind, let's
+   113	move on to the different types of memory.
+   114	
+   115	Conventional Memory is the memory range between 0 and 640KB,
+   116	which is directly accessible to DOS applications.  DOS and TSRs
+   117	begin loading at the bottom area of memory and work their way up.
+   118	
+   119	Upper Memory (UMB for upper memory blocks) is memory between
+   120	640KB and 1MB.  This memory begins at segment A000h, and is
+   121	directly accessible from real mode, just "reserved" by the
+   122	original PC design.
+   123	
+   124	Video buffers comprise the first 128KB of memory.  The first 64KB
+   125	(A000-AFFF) is typically used by EGA/VGA graphics modes.  The
+   126	next 32KB is the monochrome video text buffer (B000-B7FF),
+   127	followed by 32KB for the color text video buffer (B800-BFFF).
+   128	(The different buffer addresses were intended to allow color and
+   129	monochrome systems both reside in the same system.)
+   130	
+   131	Other ranges of upper memory are used by other adapters (like
+   132	network cards), and the PC's BIOS.  The BIOS area is normally the
+   133	top 64KB (F000-FFFF), although some systems use a 128KB BIOS
+   134	(like PS/2s) (E000-FFFF).
+   135	
+   136	The left-over memory can be used for various purposes.  On a 386
+   137	system, the 386 processor's paging techniques are used to map
+   138	extended memory (memory beyond the 1MB limit, we'll get to it
+   139	shortly) into the upper memory area, so that it can be addressed
+   140	by the processor in real mode (or really virtual 8086 mode).  On
+   141	a 286 system, an expanded memory board can be installed, which
+   142	installs physically addressable memory into this range of upper
+   143	memory.
+   144	
+   145	Upper Memory blocks, or UMBs, are used for loading TSR programs
+   146	"high", such  as with the MS-DOS 5 LOADHIGH and DR-DOS 6 HILOAD
+   147	commands.  Memory managers for the 80386 can map memory into the
+   148	upper memory area so that TSRs can be loaded outside of the
+   149	standard 640KB.  It is interesting to note that LOADHIGH and
+   150	HILOAD load programs into upper memory, and not the actual area
+   151	of memory known as the High Memory Area (HMA), which we will
+   152	cover shortly.
+   153	
+   154	The memory manager remaps exTENded memory for use as upper
+   155	memory.  On a 286 or 8086 with exPANded memory hardware
+   156	supporting the LIM EMS 4.0 specification, Quarterdeck's (the QEMM
+   157	developers) QRAM product can convert exPANded memory into upper
+   158	memory.
+   159	
+   160	ExPANded memory itself is actually addressed out of upper memory.
+   161	In most implementations, 64KB of the upper memory area is set
+   162	aside as the expanded memory page frame.  Applications can then
+   163	map in 64KB of expanded memory at a time, requesting different
+   164	"pages" of expanded memory.  (The LIM EMS 4.0 specification can
+   165	get a little more flexible than this.)  Usually, the expanded
+   166	memory (EMS) page frame is located at segment D000h.
+   167	
+   168	ExTENded memory is memory that is not addressable by an 80x86
+   169	processor in real mode.  It is memory above the 1MB
+   170	boundary...accessible only from protected mode (or made
+   171	accessible to other applications in virtual 8086 mode on a 386
+   172	through paging), which means it is only of real use to protected
+   173	mode applications like those built with a DOS extender (Lotus
+   174	Release 3.x), non-dedicated NetWare, OS/2, and others.
+   175	
+   176	A memory manager like QEMM or 386-to-the-MAX or MS-DOS 5/DR-DOS 6
+   177	EMM386 can convert extended memory into expanded memory and/or
+   178	upper memory through 80836 memory paging techniques.
+   179	
+   180	Ironically, the VCPI (Virtual Control Program Interface) is used
+   181	by memory managers and DOS Extenders to convert this exPANded
+   182	memory back to exTENded memory, for programs like Lotus 3.x,
+   183	which require exTENded memory instead of exPANded memory.
+   184	Essentially, VCPI (supported by QEMM and 386-to-the-MAX, and
+   185	available only on 80386 and above processors), is intended to
+   186	give the application the type of memory that it wants...exPANded
+   187	memory or exTENded memory.  Rather than setting aside a pre-
+   188	allocated amount of each type of memory, both exPANded and
+   189	exTENded memory are allocated from the same pool.
+   190	
+   191	DPMI (DOS Protected Mode Interface), is similar to VCPI in
+   192	concept, but different in implementation.  DPMI, supported by
+   193	Windows 3.x, updated versions of QEMM and 386-to-the-MAX, and
+   194	several popular DOS extenders, is designed to allow applications
+   195	running in protected mode access to DOS and BIOS services.  As
+   196	DOS is a real mode operating system, it requires extensions to
+   197	allow protected mode applications access to DOS services.
+   198	
+   199	Real mode DOS applications can also access extended memory by
+   200	transferring data in and out of extended memory (which involves
+   201	toggling the processor between real and protected modes with a
+   202	little help from the BIOS).  These days, most applications that
+   203	do this use the XMS specification.  QEMM and 386-to-the-MAX
+   204	provide this support, as does Microsoft HIMEM.SYS.  The XMS
+   205	specification is a specification to provide some sort of memory
+   206	management over extended memory.
+   207	
+   208	There is a special area of exTENded memory, called the High
+   209	Memory Area (HMA), which is the first 64KB of extended memory,
+   210	which can be directly accessed from a DOS without the processor
+   211	being in protected mode.
+   212	
+   213	The HMA is used by MS-DOS 5 when DOS=HIGH is specified in the
+   214	CONFIG.SYS file to load part of DOS into the HMA, making more
+   215	conventional memory available to applications.  Similar support
+   216	is provided in DR-DOS by HIDOS.SYS and/or the EMM386.SYS /B=FFFF
+   217	command-line option and HIDOS=ON in the CONFIG.SYS.
+   218	
+   219	For versions of DOS prior to MS-DOS 5, Novell's XMSNETX shell
+   220	also makes use of the XMS HMA to load part of the NetWare shell
+   221	outside of conventional memory.  With MS-DOS 5 or DR-DOS 6, it is
+   222	typically better to let DOS use the HMA as it will give you
+   223	better performance and more memory.
+   224	
+   225	Here's a memory chart to help you out...
+   226	
+   227	
+   228	
+   229	        +------------------+ 16MB and beyond
+   230	        |                  |
+   231	        |   EXTENDED       |   Addressable in protected mode, not real mode
+   232	        |   MEMORY         |
+   233	        |                  |
+   234	        |------------------| 1MB + 64KB (- 16 bytes if you're picky)
+   235	        | EXTENDED MEMORY  |   first 64KB of exTENded memory
+   236	        |    HMA           |   used by MS-DOS DOS=HIGH or XMSNETX shell
+   237	        |------------------| 1MB
+   238	        | UPPER MEMORY     | (LOADHIGH into unused blocks)
+   239	        | PC BIOS          | (usually F000h-FFFFh, sometimes E000h-FFFFh)
+   240	        | Expanded Memory  | (usually D000h-DFFFh)
+   241	        |  Page Frame      |
+   242	        | Network Cards    | (Varies)
+   243	        |  & other RAM/ROM |
+   244	        | Video Buffer     | (A000h-BFFFh)
+   245	        |------------------| 640KB (segment A000h)
+   246	        |                  |
+   247	        |  CONVENTIONAL    |
+   248	        |  MEMORY          |
+   249	        |                  |
+   250	        |  Applications    |
+   251	        |                  |
+   252	        |  TSRs            |
+   253	        |  DOS             |
+   254	        |  BIOS data area  |
+   255	        +------------------+ 0KB (bottom of memory)
+   256	
+   257	Confused?
+   258	
+   259	Well...the PC memory architecture is confusing.
+   260	
+   261	In real terms, what all of this means is that 80386 memory
+   262	management is your best bet, and why the 80286 and below machines
+   263	are dead-end products for the future...they lack the
+   264	extendibility and flexibility of the 386 architecture.  386 and
+   265	486 computers can turn exTENded memory into exPANded memory and
+   266	Upper memory for applications that use those types of memory, and
+   267	still support applications that use exTENded memory...making
+   268	memory configuration issues far simpler.
+   269	
+   270	
+   271	
+   272	- Brett Warthen, Infinite Technologies
+   273	  (Last Revision: April 15, 1992)

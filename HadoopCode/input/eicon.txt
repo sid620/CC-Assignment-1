@@ -1,0 +1,115 @@
+     1	Montreal, Canada February 17, 1992 Eicon Technology today announced
+     2	shipment of Access for OS/2 and of its latest version of Access for
+     3	Windows 3.11. These are complete 3270 terminal and printer emulation
+     4	packages for OS/2 Presentation Manager and Microsoft Windows 3.0.
+     5	Standalone or LAN-based PCs can connect to multiple IBM hosts at different
+     6	locations to exchange information at the same time as they run other
+     7	OS/2-based or Windows-based applications.
+     8	
+     9	Support for Industry Standard Communications Platforms: Access for Windows
+    10	and Access for OS/2 are workstation-resident emulation software. A
+    11	workstation running either program can connect to an IBM host and
+    12	establish up to 32 simultaneous display and/or printer sessions across
+    13	different SNA platforms:
+    14	
+    15	Access for Windows 
+    16	------------------
+    17	Eicon Technology SNA Gateway 
+    18	Direct Token-Ring 
+    19	IBM PC 3270 Emulation 
+    20	
+    21	Access for OS/2 
+    22	---------------
+    23	Eicon Technology SNA Gateway 
+    24	Direct Token-Ring 
+    25	IBM DFT Coax (or compatibles) 
+    26	
+    27	Unique in the market, Eicon Technology's direct Token-Ring option enables a
+    28	single Access workstation to establish connections with up to three
+    29	different Token-Ring attached hosts.
+    30	
+    31	"Access for OS/2 is the most flexible and easy to use OS/2 emulation
+    32	product I have seen. Also, Eicon Technology's implementation of the mouse
+    33	emulation for the light pen will save Hillcrest Medical thousands of
+    34	dollars this year alone", says John Schmidt, Director, Clinical Systems,
+    35	of Hillcrest Medical Center in Tulsa, Oklahoma.
+    36	
+    37	Enhancements and Features: 
+    38	
+    39	Enhancements and features include new editing features, new keyboard and
+    40	macro functions, and complete Dynamic Data Exchange (DDE) support for
+    41	display and printer sessions.
+    42	
+    43	* New editing features provide users with the ability to select the data
+    44	format (text or bitmap) for copying from host sessions to GUI-based
+    45	applications.
+    46	
+    47	* Keyboard setup enables users to configure the keyboard for PC AT, 101/102
+    48	Enhanced, Keytronic KB 3270 Plus, ICL 122, Toshiba 3200/5200 and others.
+    49	Users can also customize their keyboard maps.
+    50	
+    51	* The numeric keypad to the extreme right can be remapped separately from
+    52	the keyboard with 3270 functions, Access for Windows and Access for OS/2
+    53	macros and desktop functions (e.g.: File & Open), providing the user with
+    54	total keyboard mapping options.
+    55	
+    56	* Macro facility automatically records a sequence of commands and
+    57	keystrokes to a file as it is being performed by the user. To rerun that
+    58	same sequence, the user simply calls up the macro. No programming is
+    59	required to write the macro.
+    60	
+    61	* DDE is now supported under printer sessions. Our current DDE support
+    62	enables GUI-based applications to automatically retrieve data page-by-page
+    63	and examine it before it goes to print. Eight DDE connections per display
+    64	session are supported.
+    65	
+    66	Compatibility: 
+    67	
+    68	Both Access for Windows and Access for OS/2 present the identical graphical
+    69	user interface. Users can run them on the same LAN as Eicon Technology's
+    70	DOS emulations with Eicon Technology SNA Gateways or IBM's Token-Ring
+    71	connections. The family of Access emulation products offers users a single
+    72	solution to meet their 3270 requirements.
+    73	
+    74	LANs Supported:
+    75	
+    76	Access for Windows
+    77	------------------
+    78	NetBIOS-compatible 
+    79	Novell NetWare 
+    80	Microsoft LAN Manager 
+    81	IBM OS/2 LAN Server 
+    82	Banyan VINES 
+    83	
+    84	Access for OS/2
+    85	---------------
+    86	NetBIOS-compatible 
+    87	IBM OS/2 LAN Server 
+    88	Microsoft LAN Manager
+    89	
+    90	Planned availability for Access for Windows (3270) and Access for OS/2
+    91	(3270) versions 3.11 is February 1992 for $395 US per user. Multiple user
+    92	packages are also available: 10-User Pack for $3,000 US and 25-User Pack
+    93	for $5,000 US.
+    94	
+    95	Eicon Technology Corporation provides distributed connectivity solutions
+    96	for corporate information systems. The company is a recognized world
+    97	leader in SNA and X.25 communications for PCs and LANs in DOS, OS/2,
+    98	Windows and UNIX environments. With headquarters in Montreal, Canada,
+    99	Eicon Technology offers worldwide sales and service support. For more
+   100	information, contact Eicon Technology at (214) 239-3270.
+   101	
+   102	Eicon Technology Corp
+   103	2196 - 32nd Ave (Lachine)
+   104	Montreal, Quebec, CANADA H8T 3H7
+   105	
+   106	  +---------------------------------------------------------------+
+   107	  |  From the America On-Line & PC-Link New Product Info Services |
+   108	  +===============================================================+
+   109	  | This information was processed with OmniPage Professional OCR |
+   110	  | software (from Caere Corp) & a Canon IX-30 scanner from data  |
+   111	  | provided by the above mentioned company. For additional info, |
+   112	  | contact the company at the address or phone# indicated above. |
+   113	  |    All submissions for this service should be addressed to    |
+   114	  |   BAKER ENTERPRISES, 20 Ferro Drive, Sewell, NJ 08080 U.S.A.  |
+   115	  +---------------------------------------------------------------+

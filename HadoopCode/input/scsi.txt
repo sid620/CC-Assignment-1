@@ -1,0 +1,199 @@
+     1	BASIC INSTALLATION PRODCEDURE for SCSI Drives
+     2	by Ryan Ramsey   --   June 22, 1992
+     3	
+     4	All Micropolis SCSI drives come pre-formatted from the factory. There is
+     5	very little that needs to be done to this type of drive besides setting up 
+     6	termination and SCSI ID.
+     7	
+     8	SCSI ID SETTINGS
+     9	----------------
+    10	
+    11	    In order for the SCSI bus to be able to tell where it is getting its 
+    12	    information from, it is neccessary for each drive to have a particular
+    13	    identification number. This identification number, known as the SCSI ID
+    14	    is set with jumpers on the back of the drive. All the drives in the SCSI 
+    15	    chain must have a different number. 
+    16	
+    17	    These jumpers are located inside the 24-pin connect located on the back 
+    18	    of the drive (next to the 50-pin cable connector). 
+    19	
+    20	    If you hold the drive with the cable connectors toward your body and
+    21	    the circuit board side facing upwards, you will see the power connector
+    22	    on the left, the 50-pin connector in the middle, and the 24-pin connector
+    23	    on the right. 
+    24	
+    25	    The jumpers for the 24-pin connector are as follows:
+    26	
+    27	    50-Pin Connector                     24-Pin Connector
+    28	    ______________        _________________________________________________
+    29	    . . . . . . . |      | o o o . . . . . . . . . . . . . . . . . . . . . |
+    30	    . . . . . . . |      | o o o . . . . . . . . . . . . . . . . . . . . . |
+    31	    -------------/        \-----------------------------------------------/
+    32	                           | | |
+    33	                           | | ID2 (Value 4)
+    34	                           | |
+    35	                           | ID1 (Value 2)
+    36	                           |
+    37	                           ID0 (Value 1)
+    38	
+    39	    If this is the going to be the only drive in the system, it should be set
+    40	    to SCSI ID 0, which is attained by having NO jumpers in the first 3 pairs
+    41	    of the 24 pin connector. For every additional drive, the SCSI ID should
+    42	    be incremented by 1. So if you have 3 drives in the system, your primary
+    43	    drive should be at SCSI ID 0, your secondary at SCSI ID 1, and your final
+    44	    drive at SCSI id 2.
+    45	
+    46	    SCSI ID can be computed as follows by installing jumpers in the following
+    47	    pairs of pins:
+    48	
+    49	    SCSI ID    ID0  ID1  ID2       SCSI ID    ID0  ID1  ID2
+    50	    ------------------------       ------------------------
+    51	       0    |                         4    |             X
+    52	       1    |   X                     5    |   X         X
+    53	       2    |        X                6    |        X    X
+    54	       3    |   X    X                7    |   X    X    X
+    55	
+    56	
+    57	    Each of the pairs of pins have values (as shown in the diagram). In order
+    58	    to get a certain SCSI id, just jumper the pins as you wish and the sum of
+    59	    the values is your SCSI ID. So if you have ID0 (value of 1) and ID2
+    60	    (value 4) jumpered, your SCSI id will be 5.
+    61	
+    62	    NOTE:   SCSI ID 7, should never be used. This is usually reserved for the
+    63	            host adapter.
+    64	
+    65	
+    66	DRIVE TERMINATION
+    67	-----------------
+    68	
+    69	    Termination is something that causes a lot of undue grief for everyone, but
+    70	    the concept is really simple.
+    71	      
+    72	        "Only the last drive in the SCSI chain must be terminated, 
+    73	         all others should be un-terminated."
+    74	    
+    75	              and
+    76	
+    77	        "The SCSI chain must be terminated on both ends."
+    78	 
+    79	    There are two possible termination configurations.
+    80	    
+    81	    1.  A HOST ADAPTER WITH ONLY INTERNAL OR ONLY EXTERNAL DRIVES
+    82	
+    83	        This is the most common configuration, and this configuration applies
+    84	        to BOTH INTERNAL and EXTERNAL drives. The controller must be terminated
+    85	        (which is the way it comes from 99.99% of the manufacturers) AND the
+    86	        very last drive/component on the CABLE (do not get "the last drive on
+    87	        the cable" confused with the "last drive, which would be the highest
+    88	        SCSI ID"). 
+    89	
+    90	        Therefore, a graphic display would look as follows:
+    91	           ____
+    92	          /    \ External OR Internal 
+    93	         | HOST |=====DEVICE=====DEVICE
+    94	          \____/        |          |
+    95	            |    UN-TERMINATED     |
+    96	            |                      |
+    97	        TERMINATED             TERMINATED
+    98	        (Usually default)
+    99	
+   100	        So once again:
+   101	
+   102	             If you have only one drive, it is to be TERMINATED.
+   103	             If you have more than one drive, all drives must be UN-TERMINATED
+   104	                except for the last PHYSICAL drive on the CABLE which must 
+   105	                be TERMINATED.
+   106	
+   107	    2.  A HOST ADAPTER WITH INTERNAL AND EXTERNAL DRIVES
+   108	
+   109	        This setup is a little bit trickier. If you have a host adapter that
+   110	        connects internal drives as well as external drives, the HOST ADAPTER
+   111	        must be UN-TERMINATED, the LAST drive on the INTERNAL cable must be
+   112	        TERMINATED, and the LAST drive on the EXTERNAL cable must be 
+   113	        TERMINATED also.
+   114	
+   115	        Therefore, your configuration would look like this.
+   116	                                 ____
+   117	                Internal        /    \         External
+   118	           DEVICE====DEVICE====| HOST |====DEVICE====DEVICE
+   119	             |         |        \____/        |         |
+   120	             |         |          |           |         |
+   121	             |         |    UN-TERMINATED     |         |
+   122	         TERMINATED    |                      |     TERMINATED 
+   123	                       |                      |
+   124	                 UN-TERMINATED          UN-TERMINATED
+   125	
+   126	        So once again, if you have drives on both ends of the controller card,
+   127	        the controller card must be UN-TERMINATED, and the last drive on each
+   128	        end of the SCSI BUS (Cable) must be TERMINATED.
+   129	
+   130	
+   131	CABLE INSTALLATION
+   132	------------------
+   133	
+   134	        Once the two above items are checked and configured, all you need to
+   135	        do then is put the drive on the cable (matching the red stripe on the
+   136	        cable to pin one on the controller card) and then power on.
+   137	
+   138	
+   139	TROUBLESHOOTING GUIDE
+   140	---------------------
+   141	
+   142	     PROBLEM
+   143	         2 drives or 7 drives are seen on the SCSI bus when only 1 drive is
+   144	         installed on the controller card.
+   145	     REMEDY
+   146	         Your drive is set to SCSI ID 7, which is what most host adapters are
+   147	         set as the default configuration. Change your SCSI id to anything
+   148	         other than 7 (also, you cannot use the same ID as another drive).
+   149	
+   150	     PROBLEM
+   151	         When booting up the system, the machine gets hung up at the bios
+   152	         banner of the controller card.
+   153	     REMEDY
+   154	         There are a few possibilities for this problem.
+   155	          1.  There is a drive set to the same SCSI ID as the controller card.
+   156	              Change the conflicting drive to a SCSI ID that is not in use.
+   157	          2.  There are two drives with the same SCSI ID.
+   158	              Verify that all drives have different SCSI ID's.
+   159	          3.  There could be a bios conflict.
+   160	              Change the bios address of the controller card to a different
+   161	              memory location.
+   162	          4.  There could be a conflict with add in boards. Check and make sure
+   163	              that there are no memory conflicts with any add in boards or 
+   164	              bios's, check DMA's, IRQ's, and port addresses.
+   165	
+   166	      PROBLEM
+   167	          When you boot up, the computer gives you a message along the lines
+   168	          of "Drive C not found" or "Drive 0 not found".
+   169	      REMEDY
+   170	          Check your system CMOS. Set both drive 0 and drive 1 to 
+   171	          "Not Installed" or 0. CMOS drive settings are for ESDI drives only
+   172	          so if you don't have an ESDI drive, it will cause havoc on your
+   173	          system.
+   174	
+   175	      PROBLEM
+   176	          Drive does not appear to spin up or power-on.
+   177	      REMEDY
+   178	          Check to see if the power cable is connected and if power is actually
+   179	          on. Believe it or not, this is a re-occuring problem.
+   180	          If the drive still fails to spin up, check the self test seqence.
+   181	          Remove the SCSI cable from the drive and power it on. On the front
+   182	          of the drive there is a LED which will blink in a certain sequence.
+   183	          If the drive is 'healthy' the light sequence consist of 1 long blink
+   184	          and 3 short. If you get anything else or you get a repeating pattern,
+   185	          then the drive may be defective and you should call our technical
+   186	          support department for further advice.
+   187	
+   188	      If you are experienceing a problem that is not approached in this 
+   189	      document or you continue to have problems, you may do one of the 
+   190	      following:
+   191	
+   192	          1.  Call our Technical Support Line at (818) 709-3325. 
+   193	          2.  Call our BBS at (818) 709-3310 and leave an email to the Sysop.
+   194	          3.  FAX your request to us at (818) 718-5352.
+   195	          4.  Mail your request to:
+   196	                  Micropolis Corporation
+   197	                  Attn: Technical Support
+   198	                  21211 Nordhoff Street
+   199	                  Chatsworth, CA  91311

@@ -1,0 +1,2179 @@
+     1	Taeis Languages
+     2	---------------
+     3	
+     4	FTP'd from ftp.netcom.com:
+     5	File pub/anton/taeis/language/*.lang
+     6	
+     7	dragon.lang.1
+     8	dragon.lang.2
+     9	kingdoms.lang
+    10	ohs.lang
+    11	petrocea.lang
+    12	
+    13	These are artificial languages for the "Taeis" world,
+    14	as defined in alt.worlds.taeis on Usenet.
+    15	
+    16	::::::::::::::
+    17	dragon.lang.1
+    18	::::::::::::::
+    19	
+    20	From: Geoff Tuffli <tuff@midway.uchicago.edu>
+    21	Date: Fri, 27 Nov 92 23:57:07 CST
+    22	Message-Id: <CMM.0.90.4.722930227.tuff@ellis.uchicago.edu>
+    23	To: adiederi@liberty.uc.wlu.edu
+    24	Subject: dragon.lang.1
+    25	
+    26	PRONUNCIATION
+    27	
+    28	a  - fATHer                  b  - bet
+    29	e  - Elephant                c  - SHeep
+    30	i  - bIt                     d  - Dog
+    31	o  - bOtch                   f  - Father
+    32	u  - lUnch                   g  - Goat
+    33	                             h  - THud
+    34	aa - YAk                     j  - aZure
+    35	ae - JAm                     k  - baCK
+    36	ai - sAY                     l  - Laugh
+    37	ao - JAil                    m  - Mother
+    38	au - lAUrel                  n  - Never
+    39	                             p  - Pet
+    40	ea - YEs                     r  - Rain
+    41	ee - JElly                   s  - Sane
+    42	ei - sEA                     t  - Tap
+    43	eo - EOn                     v  - Very
+    44	eu - EUnuch
+    45	
+    46	ia - YIp
+    47	ie - JIm
+    48	ii - EYE
+    49	io - YIkes
+    50	iu - tissUE
+    51	
+    52	oa - YOlk
+    53	oe - JOlly
+    54	oi - tOE
+    55	oo - mOOn
+    56	ou - cOUgh
+    57	
+    58	ua - YOung
+    59	ue - JUly
+    60	ui - YOU
+    61	uo - tOUgh
+    62	uu - cOW
+    63	
+    64	ya - YEAH (used only in one word, "ya" - thing)
+    65	
+    66	
+    67	PRONOUNS, POSSESSIVES, ETC.
+    68	
+    69	Ieo - (I, masculine)      Iea - (I, feminine)
+    70	Nieo - (You, masculine)   Niea - (You, feminine)
+    71	Aeo - He
+    72	Aea - She
+    73	Ae  - It
+    74	
+    75	Ieon - (We, masculine)    Iean - (We, feminine)   Ien - (We, mixed gender)
+    76	Nieon - (You, masculine)  Niean - (You, feminine) Nien - (You, mixed gender)
+    77	Aeon - (They, masculine)
+    78	Aean - (They, feminine)
+    79	Aen  - (They, mixed gender or neuter)
+    80	
+    81	k'ieo/k'iea - my, mine     k'ieon/k'iean/k'ien - our, ours
+    82	kor nieo/kor niea - your, yours
+    83	k'aeo - his                k'aeon - their, theirs (masculine)
+    84	k'aea - her, hers          k'aean - their, theirs (feminine)
+    85	k'aen - its                k'aen  - their, theirs (mixed gender or neuter)
+    86	
+    87	Examples:
+    88	
+    89	Ois teigat k'aen.          This is their boat.
+    90	                           This boat is theirs.
+    91	                           This boat belongs to them.
+    92	
+    93	Oiten teigat k'ieo.        Those are my boats.
+    94	      or                   Those boats are mine.
+    95	Oiten teigat k'iea.        Those boats belong to me.
+    96	
+    97	The phrase "Teigaten k'iea" is NOT equivalent to the phrase
+    98	"Iea aya teigaten".  Even though both literally mean
+    99	"I have some boats", the first phrase implies OWNERSHIP, while
+   100	the second implies physical POSSESSION.
+   101	
+   102	"Iea aya teigaten k'iea." is a phrase which indicates both ownership
+   103	and physical possession.
+   104	
+   105	INDICATIVES
+   106	
+   107	Ois   - this   Oit   - that
+   108	Oisen - these  Oiten - those
+   109	
+   110	INTERROGATIVES
+   111	
+   112	Toit   - what          Examples:
+   113	Tekeme - who           Taia oisen? = Whose are these?
+   114	Tena   - where         Tekeme oit? = Who is that?
+   115	Taia   - whose         Toit ois?   = What is this?
+   116	Teile  - why
+   117	Teolui - when
+   118	Temaga - how
+   119	
+   120	CONJUNCTIONS AND MISCELLANEOUS WORDS (CONDITIONALS, ETC.)
+   121	
+   122	elg - and (for joining two words or phrases only)
+   123	eln - and (separates words in a spoken series)
+   124	elb - and (used before the last word in a spoken series)
+   125	eli - and (used for joining two numbers only)
+   126	elh - and (separates numbers in a spoken series)
+   127	eld - and (used before the last number in a spoken series of numbers)
+   128	glaa - if
+   129	ouso - or (exculsive)
+   130	ouse - or (inclusive)
+   131	da - not
+   132	d'na - no
+   133	d'naya - nothing
+   134	ber - false
+   135	ana - yes
+   136	rei - true
+   137	verb root + cai = "place" of verb, e.g. geicai = "place of healing"
+   138	pronoun/noun + na = "place" of pronoun/noun = Ieana = "my home"
+   139	kor - possessive "of" (becomes k' before vowels)
+   140	hi - with
+   141	sle - else
+   142	keir - large, great, big
+   143	aor  - small, tiny, insignificant
+   144	
+   145	TIME-RELATED WORDS
+   146	
+   147	loeth - before
+   148	laseth - after
+   149	vrara - forever
+   150	gese - for a short time, brief
+   151	
+   152	PREPOSITIONS
+   153	
+   154	u  - but
+   155	tine - while
+   156	ol - to
+   157	e - from
+   158	ni - on
+   159	na - in
+   160	ra - of (non-possessive)
+   161	
+   162	VERBS AND DERIVED WORDS
+   163	
+   164	Verb root + nne = infinitive form of the verb
+   165	
+   166	Verb root + p (ap)   = gerund
+   167	Verb root + t (at)   = noun derivative
+   168	Verb root + r (ar)   = adjective derivative
+   169	Verb root + s (as)   = adverb derivative
+   170	
+   171	Verb root + re (are) = past tense (Standard/Informal form)
+   172	Verb root + ro (aro) = future tense (Standard/Informal form)
+   173	
+   174	r (ra) + verb root = passive voice
+   175	
+   176	-eo               = flag for masculine "I"
+   177	-ea               = flag for feminine "I"
+   178	-eon              = flag for masculine "We"
+   179	-ean                         feminine  "We"
+   180	-en                          mixed "We"
+   181	-no (-ano)                   masculine "You"
+   182	-na (-ana)                   feminine "You"
+   183	-non (-anon)                 masculine "You" (plural)
+   184	-nan (-anan)                 feminine "You" (plural)
+   185	-nen (-anen)                 mixed "You"
+   186	-ao                          He
+   187	-aa                          She
+   188	-ae                          It
+   189	-aon                         masculine "They"
+   190	-aan                         feminine "They"
+   191	-aen                         mixed "They"
+   192	
+   193	cal    Tense marker for "present"
+   194	recal  Tense marker for "past"
+   195	rocal  Tense marker for "future"
+   196	
+   197	Note:  There are several intermediate tense markers, i.e. before and
+   198	after, but the three markers above are the ONLY ones to determine
+   199	the tense "flavoring" of the entire phrase or sentence.
+   200	
+   201	Sample conjugation:  AIANNE = "to have", "to hold"
+   202	
+   203	verb root: aia
+   204	gerund :   aiap
+   205	noun derivatives: aiat - coin/money (plural: aiaten)
+   206	                  aiart = pet, possession
+   207	                  aiarya = pet, possession (term of endearment)
+   208	                  There are several more derivatives!!!!
+   209	adjective: aiar
+   210	adverb: aias
+   211	
+   212	I.  Standard (Informal)  Conjugation:
+   213	Verbs conjugated in the standard/informal manner are hard coded for tense
+   214	as well as for voice.  The passive voice is RARELY used in standard/informal.
+   215	
+   216	Also, pronouns may or not precede a conjugated verb in standard/informal
+   217	form.  As a general rule, they DO precede in talking or writing to
+   218	non-intimates and DO NOT in talking/writing to intimates.  Conjugated
+   219	verbs without pronoun precedents are hard-coded for person.
+   220	
+   221	    Present Tense:
+   222	
+   223	    a) With pronoun precedent
+   224	
+   225	       Ieo/Ie'aia         I have
+   226	       Ieon/Iean/Ien aia   We have
+   227	       Nieo/Nie'aia        You have
+   228	       Nieon/Niean/Nien aia You (plural) have
+   229	       Aeo/Ae'aia/Ae aia   He/She/It has
+   230	       Aeon/Aean/Aen aia   They have
+   231	
+   232	    b) Without pronoun precedent
+   233	
+   234	       aiaeo/aiaea          I have
+   235	       aiaeon/aiaean/aiaen  We have
+   236	       aiano/aiana          You have
+   237	       aianon/aianan/aianen You (plural) have
+   238	       aiaao/aiaaa/aiaae    He/she/it has
+   239	       Aiaaon/aiaaan/aiaaen They have
+   240	
+   241	    Past Tense:
+   242	
+   243	    a)  With pronoun precedent
+   244	
+   245	       Ieo/Ie'aiare
+   246	       Ieon/Iean/Ien aiare
+   247	       Nieo/Niea aiare
+   248	       Nieon/Niean/Nien aiare
+   249	       Aeo/Ae'aiare/Ae aiare
+   250	       Aeon/Aean/Aen aiare
+   251	
+   252	    b) Without pronoun precedent
+   253	
+   254	       aiareeo/aiareea
+   255	       aiareeon/aiareean/aiareen
+   256	       aiareno/aiarena
+   257	       aiarenon/aiarenan/aiarenen
+   258	       aiareao/aiareaa/aiareae
+   259	       aiareao/aiareaan/aiareaen
+   260	
+   261	    Future Tense:
+   262	
+   263	    a) With pronoun precedent
+   264	
+   265	       Ieo/Ie'aiaro
+   266	       Ieon/Iean/Ien aiaro
+   267	       Nieo/Nie'aiaro
+   268	       Nieon/Niean/Nien aiaro
+   269	       Aeo/Ae'aiaro/Ae aiaro
+   270	       Aeon/Aean/Aen aiaro
+   271	
+   272	    b) Without pronoun precedent
+   273	
+   274	       aiaroeo/aiaroea
+   275	       aiaroeon/aiaroean/aiaroen
+   276	       aiarono/aiarona
+   277	       aiaronon/aiaronan/aiaronen
+   278	       aiaroao/aiaroaa/aiaroae
+   279	       aiaroaon/aiaroaan/aiaroaen
+   280	
+   281	 II.  Non-Standard (Formal) Conjugation
+   282	Verbs conjugated in the non-standard/formal manner are hard coded for ONLY
+   283	voice.  And, voice is ALWAYS passive in this form.
+   284	
+   285	Tense is "soft-coded"; a tense marker is put forth either as part of
+   286	a sentence, or as a statement all to itself.  The first style is
+   287	characteristic of dialogue, while the second is of formal writings and
+   288	decrees.  The presented tense marker 'flavors' all of the conjugated verbs
+   289	which follow it and come before another tense marker (which will ALWAYS
+   290	be one which will change the tense....if it isn't, it's HORRIBLE GRAMMAR)
+   291	
+   292	Pronouns ALWAYS precede a conjugated verb in non-standard/informal form.
+   293	Therefore, verbs conjugated in this form do not require pronoun flags.
+   294	Note:  The following conjugation is "general formal"; used by social
+   295	equals.
+   296	
+   297	"Very formal" or "Ceremonial" would call for the pronouns being
+   298	substituted by titles ("very formal") or by Servant/Master
+   299	("ceremonial")
+   300	
+   301	Ieo/Iea raia                   had by me
+   302	Ieon/Iean/Ien raia             had by us
+   303	Nieo/Niea raia                 had by you
+   304	Nieon/Niean/Nien raia          had by you (plural)
+   305	Aeo/Aea/Ae raia                had by him/her/it
+   306	Aeon/Aean/Aen raia             had by them
+   307	
+   308	
+   309	VERBS AND INTERESTING DERIVATIVES
+   310	
+   311	acinne    - to accept; to take (after being offered)
+   312	          acit - small refreshment offered by host (hors d'oeuvre)
+   313	aianne    - to have; to hold
+   314	aginne    - to hide; to conceal
+   315	alemnne   - to shine (reflect light)
+   316	          alemat - moon
+   317	ateinne   - to enter
+   318	          ateit - door, gate
+   319	buenne    - to multiply (numbers); to reproduce; to give birth
+   320	          buer - pregnant (female); fertile (cropland, pasture)
+   321	danne     - to add (numbers); to increase; to grow
+   322	deinne    - to descend; to fall
+   323	chenne    - to enclose; to encircle;
+   324	          chet - circle
+   325	ecolnne   - to give; to offer
+   326	eilenne   - to be (sentient beings)
+   327	eprinne   - to exchange
+   328	erdonne   - to speak; to talk; to express
+   329	          erdot - word; erdoten - LANGUAGE
+   330	erondenne - (to make/work) magic; to enchant (magically)
+   331	          erondet - magic, enchantment, illusion
+   332	          erondeao/erondeaa - magician, enchanter, illusionist
+   333	          keir erondeao/keir erondeaa - "skillful magician" (wizard)
+   334	          Eronder Daerao/Eronder Daeraa= "Magician" (title)
+   335	          Keis Eronder Daerao/Keis Eronder Daeraa = "Wizard" (title)
+   336	genne     - to heal
+   337	geunne    - to steal
+   338	glinne    - to recognize; to identify (glinne + book, etc =to read)
+   339	gorunne   - to bathe
+   340	isnne     - to bite; to pierce
+   341	          isat - tooth (also spear)
+   342	          isar - sharp; biting; piercing
+   343	jacusenne - to flirt; to banter
+   344	jolernne  - to play; to joke
+   345	kaisenne  - to lead
+   346	          kaiset - path, road
+   347	kedenne   - to scratch
+   348	          kedeteo/kedetea - cat
+   349	kelisenne - to make; to build; to create; to implement; to construct
+   350	          keliset - tool
+   351	kemenne  - to learn; to understand
+   352	kenne    - to cut
+   353	          ket - knife
+   354	maganne   - to do; to work; to toil
+   355	meranne   - to ascend; to climb/scale; to soar
+   356	mesenne   - to see; to visualize
+   357	misanne   - to entangle; to snare; to trap
+   358	          misardat - jungle
+   359	nandanne  - to rule; to govern
+   360	          nandat - law; rule
+   361	nondanne  - to sleep
+   362	oionne    - to rush; to race
+   363	oluinne   - to happen; to occur
+   364	sarnne    - to teach; to instruct
+   365	sebenne   - to love
+   366	sitauaienne - to please; to make happy
+   367	teiganne  - to float; to elude
+   368	ularnne   - to fly
+   369	
+   370	Numbering System
+   371	
+   372	Dragons (shapechangers, at least -- regular dragons don't really have
+   373	much use for a numbering system) believe that the existence of Ea is
+   374	based on numbers.  Therefore, their numbering system is based on
+   375	directional affixes joined to numerical suffixes.
+   376	
+   377	DIRECTIONS           MEANING            DIRECTIONAL AFFIXES
+   378	
+   379	cai                  Here               ca-
+   380	gana                 East               ga-
+   381	meracai              Up                 mera-
+   382	digana               Southeast          diga-
+   383	dina                 South              di-
+   384	diduna               Southwest          didu-
+   385	duna                 West               du-
+   386	aaduna               Northwest          aadu-
+   387	deicai               Down               dei-
+   388	aana                 North              aa-
+   389	aagana               Northeast          aaga-
+   390	
+   391	
+   392	Each digit has both a consonant and a vowel/vowel-preceded representation;
+   393	consonant + vowel/vowel preceded = numerical suffix
+   394	
+   395	DIGIT                CONSONANT          VOWEL/VOWEL PRECEDED
+   396	
+   397	0                     b                 a
+   398	1                     c                 an
+   399	2                     d                 e
+   400	3                     f                 en
+   401	4                     g                 i
+   402	5                     h                 in
+   403	6                     j                 o
+   404	7                     k                 on
+   405	8                     l                 u
+   406	9                     m                 un
+   407	10                    n                 aa
+   408	11                    p                 aan
+   409	
+   410	
+   411	EXAMPLES:
+   412	
+   413	0       ba      11      baan
+   414	1       ban     12      caban
+   415	2       be      13      cabe
+   416	3       ben     14      caben
+   417	4       bi      15      cabi
+   418	5       bin     16      cabin
+   419	6       bo      17      cabo
+   420	7       bon     18      cabon
+   421	8       bu      19      cabu
+   422	9       bun     20      cabun
+   423	10      baa     21      cabaa
+   424	
+   425	30      gabu
+   426	40      merabon
+   427	50      digabo
+   428	60      dibin
+   429	70      didubi
+   430	80      duben
+   431	90      aadube
+   432	100     deiban
+   433	110     deibaan
+   434	200     dicon
+   435	300     cadaan
+   436	400     aaden
+   437	500     didufon
+   438	1,000   cakaan
+   439	1,500   dunun
+   440	
+   441	Numbers after "aagapaan" = 1,666 are expressed by joining numbers in
+   442	equations by the use of either "da" (from "danne" - to add) or
+   443	"bue" (from "buenne" - to multiply).
+   444	
+   445	Examples:  aagapaan da baa = 1,676
+   446	           digapun bue baa = 16,000
+   447	
+   448	Numbers in series are separated by "elh", and the series is terminated by
+   449	"elb".
+   450	
+   451	Example:   Aagapaan da baa elh digapun bue baa elh gaban elb digabaan.
+   452	          "One thousand six hundred and seventy-six, sixteen thousand,
+   453	           twenty-three and fifty-five."
+   454	
+   455	Ordinal numbers are represented by placing a dash "-" between the number
+   456	and the modified word.
+   457	
+   458	Examples:  Ban-Egut = "First Blood"
+   459	           Ben-Alemat = "Second Moon"
+   460	
+   461	
+   462	For anyone who might want a copy of all the numbers from 0 to 1,666,
+   463	worked out and suitable for framing, please give me a yell
+   464	via e-mail.
+   465	
+   466	Yours in virtuality,
+   467	
+   468	Shai Strouse
+   469	sheawyn@glia.biostr.washington.edu
+   470	
+   471	::::::::::::::
+   472	dragon.lang.2
+   473	::::::::::::::
+   474	
+   475	From: Geoff Tuffli <tuff@midway.uchicago.edu>
+   476	Date: Fri, 27 Nov 92 23:57:36 CST
+   477	Message-Id: <CMM.0.90.4.722930256.tuff@ellis.uchicago.edu>
+   478	To: adiederi@liberty.uc.wlu.edu
+   479	Subject: dragon.lang.2
+   480	
+   481	Areilya/Inde	   sheawyn@glia.biostr.washington.edu	   [ D R A G O N S ]
+   482	
+   483	Able     - soinne (v.)
+   484	Accept   - acinne
+   485	Add      - danne
+   486	Addition - dat
+   487	After    - laseth
+   488	And      - elb (used before the last word in a spoken series)
+   489	         - eld (used before the last number in a spoken series)
+   490	         - elg (for joining two words or phrases only)
+   491	         - elh (separates numbers in a spoken series)
+   492	         - eli (used for joining two numbers only)
+   493	         - eln (separates words in a spoken series)
+   494	Animal   - gaurert [plural: gaurerten]
+   495	Ascend   - meranne
+   496	Barter   - eprinne
+   497	Bath     - gorut
+   498	Bathe    - gorunne
+   499	Be       - eilenne (sentient beings)
+   500	           gaurenne (animals/inanimate objects)
+   501	Beach    - serisna
+   502	Become   - loeilenne (sentient beings)
+   503	           loegaurenne (animals/inanimate objects)
+   504	Before   - loeth
+   505	Big      - keir
+   506	Bird     - vot (plural: voten)
+   507	Bite     - isnne (v.); iserna (n.) (plural: isernaten)
+   508	Black    - efinar
+   509	Bleed    - egunne
+   510	Blood    - egut
+   511	Blue     - eir
+   512	Bothark  - boihark
+   513	Breath   - niet
+   514	Breathe  - nienne
+   515	Brief    - gese (brief = for a short time)
+   516	Brown    - selar
+   517	Bruise   - donanne (v.); donat (n.)
+   518	Build    - kelisenne
+   519	Burn     - lernne
+   520	But      - u
+   521	Can      - soir
+   522	Cat      - kedetao/kedetaa (plural: kedetaon/kedetaan/kedetaen)
+   523	Cause    - iue
+   524	Child    - aoretao/aoretaa
+   525	Children - aoretaon/aoretaan/aoreten
+   526	Choke    - chermisanne r'erdotcai (v. - inflicted upon someone)
+   527	           r'erdor (just "happens")
+   528	Circle   - chet
+   529	Cleanse  - gaenne
+   530	Climb    - meranne
+   531	Coin     - aiat (plural: aiaten)
+   532	Come     - coinne
+   533	Conceal  - aginne
+   534	Create   - kelisenne
+   535	Cure     - genne
+   536	Cut      - kenne (v.); ketna (n.)
+   537	Darken   - efinanne
+   538	Day      - oiorcai
+   539	Death    - d'eilet or dagauret
+   540	Delight  - sitauaienne (v.), sitauaiet (n.)
+   541	Descend  - deinne
+   542	Desert   - seriscai
+   543	Die      - d'eilenne or dagaurenne
+   544	Dirt     - aun (no sing. or plural)
+   545	Do       - maganne
+   546	Door     - ateit (plural: ateiten)
+   547	Down     - deicai
+   548	Dragon   - eilert [plural: eilerten]  (sentient being, literally)
+   549	Dream    - veltnne (v), velat  (n.)
+   550	Dry      - serisar
+   551	Dust     - aun (no sing. or plural)
+   552	East     - gana
+   553	Eastern  - ganar
+   554	Eat      - candonne
+   555	Else     - sle
+   556	Elude    - teiganne
+   557	Embrace  - echenne (v.); echet (n.)
+   558	Enchant  - erondenne (v.)
+   559	           erondet (n.) (plural: erondeten)
+   560	Enchanter- erondeao/erondeaa
+   561	           Eronder Daerao/Eronder Daeraa (title)
+   562	Encircle - chenne
+   563	Enclose  - chenne
+   564	Entangle - misanne
+   565	Enter    - ateinne
+   566	Equal    - eileinne (to make equal); eileir (adj.)
+   567	Evening  - efinarna
+   568	Exchange - eprinne
+   569	Eye      - meset (plural: meseten)
+   570	Fade     - apenne (v.)
+   571	Fall     - deinne (v.); deit (n.) (plural: deiten)
+   572	False    - ber
+   573	Fast     - coer
+   574	Fear     - aord'eilet (n.); aord'eilenne (v.)
+   575	Fertile  - buer
+   576	Fire     - lert
+   577	First    - ban-
+   578	Flame    - lert
+   579	Flesh    - agireilet (no sing. or plural) - implies scales on dragons
+   580	Flirt    - jacusenne (v.); jacuerao/jacueraa (n.)
+   581	Float    - teiganne
+   582	Fly      - vonne
+   583	Food     - candot [no singular or plural]
+   584	For      - vi
+   585	Forest   - peaaira [singular or plural]
+   586	Forever  - vrara
+   587	>From     - e
+   588	Game     - jolet
+   589	Gate     - ateit (plural: ateiten)
+   590	Gift     - ecolt
+   591	Give     - ecolnne
+   592	Glance   - garmeset (n.), garmesenne (v.)
+   593	Govern   - nandanne
+   594	Great    - keir
+   595	Green    - ior (emerald green)
+   596	Grow     - danne
+   597	Guide    - kaisenne (v.)
+   598	           kaiserao/kaiseraa (n.)
+   599	           Kaiser Daerao/Kaiser Daeraa (title)
+   600	Happen   - oluinne
+   601	Hard     - tondar
+   602	Harden   - tondanne
+   603	Have     - aianne
+   604	Heal     - genne
+   605	Heat     - ler
+   606	He       - aeo
+   607	Her      - k'aea
+   608	Here     - cai
+   609	Hers     - k'aea
+   610	Hide     - aginne
+   611	His      - k'aeo
+   612	Hold     - aianne
+   613	Home     - (pronoun) + cai   e.g.  Ieocai/Ieacai ("my home")
+   614	Horn     - gaurisart (animal)
+   615	Horse    - scov [plural: scovten]
+   616	How      - temaga
+   617	Hug      - echenne (v); echet (n) (plural: echeten)
+   618	Human    - gaurert (regular dragons)/tander eilert (shapechangers)
+   619	I        - ieo (masculine)/iea (feminine)
+   620	Ice      - tondargaet
+   621	Identify - glinne
+   622	If       - glaa
+   623	In       - na
+   624	Increase - danne
+   625	Instruct - sarnne
+   626	It       - ae
+   627	Its      - k'aen
+   628	Joke     - jolernne (v.); jolererdot (n.)
+   629	Jungle   - misardat
+   630	Kapati   - voreusaut [plural: voreusauten]
+   631	Knife    - ket (plural: keten)
+   632	Language - erdoten
+   633	Large    - keir
+   634	Law      - nandat
+   635	Lead     - kaisenne (v.)
+   636	Leader   - kaiserao/kaiseraa
+   637	           Kaiser Daerao/Kaiser Daeraa (title)
+   638	Learn    - kemenne
+   639	Life     - eilet (sentient beings)
+   640	         - gauret (animals)
+   641	Lips     - sitauaietna (no singular)
+   642	Live     - eilenne (sentient beings)
+   643	           gaurenne (animals)
+   644	Love     - sebenne
+   645	Lung     - niecai [plural: niecaiten]
+   646	Magic    - erondenne (to make magic)
+   647	           erondet (n.) (plural: erondeten)
+   648	Magician - erondeao/erondeaa
+   649	           Eronder Daerao/Eronder Daeraa (title)
+   650	Make     - kelisenne
+   651	Marsh    - misargaet [plural: misargaeten]
+   652	Melt     - loegausgaenne
+   653	Mine     - k'ieo (masculine)/k'iea (feminine)
+   654	Money    - aiat (plural: aiaten)
+   655	Moon     - alemat (plural: alematen)
+   656	Morning  - oiorna
+   657	Mouse    - tue  (plural: tueten)
+   658	Mountain - see [plural: seeten]
+   659	Mouth    - isatcai (plural: isatcaiten)
+   660	Move     - ganne
+   661	Multiplication - buet
+   662	Multiply - buenne
+   663	My       - k'ieo (masculine)/k'iea (feminine)
+   664	Near     - ast
+   665	Net      - chermisanne (v.),chermisat (n.), (plural: chermisaten)
+   666	New      - ateir
+   667	News     - oluiten
+   668	Night    - efinacai
+   669	No       - d'na
+   670	North    - aana
+   671	Northern - aanar
+   672	Northeast- aagana
+   673	Northeastern - aaganar
+   674	Northwest- aaduna
+   675	Northwestern - aadunar
+   676	Not      - da
+   677	Nothing  - d'naya
+   678	Occur    - oluinne
+   679	Ocean    - kaergaet
+   680	Of       - kor (possessive) becomes k' before vowels
+   681	         - ra  (non-possessive) becomes r' before vowels
+   682	Offer    - ecolnne
+   683	On       - ni
+   684	One      - ban
+   685	Or       - ouso (exculsive)
+   686	           ouse (inclusive)
+   687	Pale     - apenne (v.); aper (adj.)
+   688	Path     - kaiset (plural: kaiseten)
+   689	Pet      - aiart (plural: aiarten) refers to animals only
+   690	         - aiarya (plural: aiaryaten)  term of endearment
+   691	Pierce   - isnne
+   692	Piercing - isar
+   693	Play     - jolernne (v.)
+   694	Player   - jolereo/jolerea
+   695	Please   - sitauaienne (to make happy)
+   696	Pleasure - sitauaiet
+   697	Priest   - kaiserao/kaiseraa ("guide"/lowest level)
+   698	           Kaiser Daerao/Kaiser Daeraa ("Sir or Lady Guide"/middle)
+   699	           Keis Kaiser Daerao/Keis Kaiser Daeraa
+   700	                             ("Skillful Sir or Lady Guide"/upper)
+   701	           Ras'eileir Kaiserao/Kaiseraa
+   702	                             ("Guide without Equal"/supreme)
+   703	           Note that a dragon priest would likely equal a human
+   704	           scholar, professor or really good librarian.
+   705	Pregnant - buer
+   706	Preothai - kaer surga [plural: kaer surgaten]
+   707	Property - aiart (plural: aiarten)
+   708	Pure     - oior
+   709	Purple   - donar
+   710	Quicksand- misarseris [no plural or singular]
+   711	Race     - oionne (v.); oiot (n.)
+   712	Rapids   - oiorgaet (no singular or plural)
+   713	Read     - glinne + readable noun
+   714	Recognize- glinne
+   715	Red      - egur
+   716	Reproduce- buenne
+   717	River    - gargaet  [plural: gargaet]
+   718	Road     - kaiset (plural: kaiseten)
+   719	Roast    - selanne (v.)
+   720	Rule     - nandanne (v.), nandat (n.)
+   721	Run      - coinne
+   722	Rush     - oionne (v.)
+   723	Sand     - seris  (no singular or plural)
+   724	Sandstorm- seris oiorerua
+   725	Scale    - meranne (v.)
+   726	Scratch  - kedenne (v.); kedet (n.)(plural: kedeten)
+   727	Seagull  - vot ra kaergaet [plural: voten ra kaergaet]
+   728	Secret   - agir (adj.); agit (n.) [plural: agiten]
+   729	See      - mesenne
+   730	Shape    - autnne (v.); autet (n.)
+   731	Sharp    - isar
+   732	She      - aea
+   733	Shine    - alemnne (reflect light)
+   734	Shore    - serisna
+   735	Sing     - eesenne
+   736	Skillful - keir
+   737	Skin     - agireilet (no sing. or plural) - implies scales on dragons
+   738	Sleep    - nondanne(v.); nondat (n.)
+   739	Slide    - eusaunne
+   740	Slink    - eusaunne
+   741	Slip     - eusaunne
+   742	Slither  - eusaunne
+   743	Small    - aor
+   744	Smile    - sitauaietnanne (v.); sitauaietnat (n.)
+   745	Snack    - acit (small refreshment offered by host)
+   746	Snake    - eusaut (plural: eusauten)
+   747	Snare    - misanne (v), misat (n.)  (plural: misaten)
+   748	Soar     - meranne
+   749	Soil     - aun (no sing. or plural)
+   750	Solve    - genne
+   751	Song     - eeset (plural: esseten) - more like song + poetry
+   752	Soothe   - genne
+   753	South    - dina
+   754	Southern - dinar
+   755	Southeast- digana
+   756	Southeastern - diganar
+   757	Southwest- diduna
+   758	Southwestern - didunar
+   759	Speak    - erdonne
+   760	Spear    - isart (plural: isarten)
+   761	Spider   - surga (plural: surgaten)
+   762	Spring   - iorcai
+   763	Stairs   - merat
+   764	Stairway - meraten
+   765	Steal    - geunne
+   766	Stone    - tond
+   767	Storm    - oiorerua [no singular or plural]
+   768	Sunset   - efinana
+   769	Swamp    - misargaet [plural: misargaeten]
+   770	Swift    - coer
+   771	Sword    - keirket (plural: keirketen)
+   772	Talk     - erdonne
+   773	Take     - acinne
+   774	Tan      - selanne (v.); apesselar (adj.)
+   775	Teach    - sarnne
+   776	Tease    - jacusenne (v.); jacuerao/jacueraa (n.) (sexual connotations)
+   777	         - jolernne (v.); jolerao/joleraa (n.) (non-sexual connotations)
+   778	That     - oit
+   779	Their    - k'aeon (masculine)/k'aean (feminine)/k'aen (mixed or neuter)
+   780	These    - oisen
+   781	Thirst   - serisar isatcai (n.); aianne serisar istacai (v.)
+   782	Thirsty  - serisas isatcair (adj.); aianne serisar isatcai (to be thirsty)
+   783	This     - ois
+   784	They     - aeon (Masculine)/aean (Feminine)/aen (mixed or neuter)
+   785	Those    - oiten
+   786	Throat   - erdotcai
+   787	To       - ol
+   788	Tool     - keliset
+   789	Tooth    - isat (plural: isaten)
+   790	Toy      - jolet
+   791	Trade    - eprinne
+   792	Trap     - misanne (v), misat (n.)  (plural: misaten)
+   793	True     - rei
+   794	Turtle   - tandertondat [plural: tandertondaten]
+   795	Uma      - tandertondat ra kaergaet [also: uma, with a plural of umaten]
+   796	Understand kemenne
+   797	Unicorn  - scov hi gaurisart [also: sund (from xund), plural: sundeten]
+   798	Up       - meracai
+   799	Walk     - tandenne
+   800	Warm     - ler
+   801	         - lererua [weather]
+   802	Wash     - gaenne
+   803	Water    - gaet
+   804	We       - ieon (masculine)/iean (feminine)/ien (mixed or neuter)
+   805	Weave    - rignne
+   806	West     - duna
+   807	Western  - dunar
+   808	Wet      - gaer
+   809	What     - toit
+   810	When     - teolui
+   811	Where    - tena
+   812	While    - tine
+   813	White    - oior
+   814	Who      - tekeme
+   815	Whose    - taia
+   816	Why      - teile
+   817	Wind     - erua  [no singular or plural]
+   818	With     - hi
+   819	Without  - rase
+   820	Witness  - glinne (v.); glit (n.) [plural: gliten]
+   821	Wizard   - keir erondeao/keir erondeaa
+   822	           Keis Eronder Daerao/Keis Eronder Daeraa (title)
+   823	Word     - erdot
+   824	Work     - maganne (v.), magat (n.) (plural: magaten)
+   825	Wound    - ketna
+   826	Voice    - iine
+   827	Yes      - ana
+   828	You      - nieo (masculine singular)/niea (feminine singular)
+   829	           nieon (masculine plural)/niean (feminine plural)
+   830	           nien (mixed or neuter plural)
+   831	Your     - kor nieo (masculine)/kor niea (feminine)
+   832	
+   833	::::::::::::::
+   834	kingdoms.lang
+   835	::::::::::::::
+   836	
+   837	From: Geoff Tuffli <tuff@midway.uchicago.edu>
+   838	Date: Fri, 27 Nov 92 23:57:55 CST
+   839	Message-Id: <CMM.0.90.4.722930275.tuff@ellis.uchicago.edu>
+   840	To: adiederi@liberty.uc.wlu.edu
+   841	Subject: kingdoms.lang
+   842	
+   843	Grenoble      bgmoser@triton.unm.edu	   [ E A S T E R N  K I N G D O M S ]
+   844	
+   845	
+   846	
+   847	=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+   848				-----Se Waerfaest Word-----
+   849	
+   850					LANGUAGE
+   851					   OF
+   852					  THE
+   853					EASTERN
+   854					KINGDOMS
+   855	
+   856	
+   857	**********NOTE***********
+   858	Symbols commonly used to denote symbols that are used in conjunction
+   859	with the letters
+   860	-------------------------------------------------------------
+   861		Explanation			Example		English
+   862	Equivalent
+   863	_o would indicate a long o 		sl_im	 	{slime}
+   864	*p would indicate a silent p		*pis		{this}
+   865	^ae could indicate long e or a		^aec		{oak}
+   866	--------------------------------------------------------------
+   867	unaccented vowels are disregarded.
+   868	ONE VERY IMPORTANT NOTE:
+   869	a lot of the words have ae written as one letter but due to the
+   870	type of keyboard i work with, i can't squeeze them together.
+   871	so if you see [ae], then that's an indication that ae are squeezed
+   872	together.
+   873	***i.e.   				[ae]fter	{after}****
+   874	
+   875	ONE FINAL NOTE:
+   876	In the course of typing/speaking, you may wish to leave out all these
+   877	symbols and etc for simplicity of typing and creating less confusion
+   878	with whom you speak with.
+   879	**********************************************************************
+   880	
+   881	
+   882	I) SPELLING VARIATIONS
+   883	________________________________________
+   884	|format for the following variations:   |
+   885	|present English equivalent=EK variation|
+   886	|					|
+   887	_________________________________________
+   888	
+   889		a=ae,ea			f=w			ps=sp
+   890		ae=a,aeg,e,ea	 	fn=mn			pt=ft
+   891		aei,aeig=aeg		g=h,w,x			qu=cw
+   892		aeo=ea			ge=g			sc=s
+   893		b=f			gg=cg			sce=sc
+   894		c=g,h			gi=g			sci=sc
+   895		ce=c			gu=geo			sp=st
+   896		ch=c,h			h=c,g			t=*p
+   897		ci=c			hs=sc,x			th=*p
+   898		cs=sc,x			i=eo,g,ie,ig,ige,y	u=f,ug,v,w
+   899		ct=ht			ia=eo			uu=-u,w
+   900		d=*p			ig=i			v=f
+   901		dd=*pd			io=eo			weo=wo,wu
+   902		ds=ts			iu=eo,geo		wi=wu
+   903		o=*p			iw=eow			wo=weo
+   904		e=ae,ea,eg,eo,ie,y	k=c			wu=w,weo,wo,wy
+   905		ea=ae,a,eo,gea,i	m=mn,n			wy=weo,wi
+   906		ei=e,eg			nc=c(e)n,ng		x=cs,hs,sc
+   907		eo=e,ea,geo,i,ie,oe(=e)	ng=g(e)n		y=e,i,ie,yg
+   908		eu=eo,eow		o=a,og
+   909		ew=eow			oe=a,ae
+   910		
+   911	II) Pronouns
+   912	
+   913	Nominative(NOM)---designating of or the case of the subject of a verb
+   914			and the words that agree with it.
+   915	
+   916	Accusative(ACC)---designating or in the case of an object of a verb 
+   917			or preposition--the objective pronoun.
+   918	
+   919	Dative(DAT)-------the case expressing an indirect object.
+   920	
+   921	Genitive(GEN)-----designating or in the grammatical case expressing 
+   922			possession,source,etc.
+   923	
+   924	masculine=m
+   925	feminine=f
+   926	neuter=n
+   927	
+   928	Singular 					Plural
+   929	________________________________________________________________________
+   930	
+   931	NOM	ic	*p_u	h_e	hit	h_eo	w_e
+   932	g_e	h_ie
+   933		I	you	he	it	her	we	you	they
+   934	
+   935	ACC	m_e	*p_e	hine	hit	h_ie	_us	_eow	h_ie
+   936		me			it		us	you	they
+   937	
+   938	DAT	m_e	*p_e	him	him	hire	_us	_eow	him
+   939		me	you	him	it(m)	her	us	you	them
+   940	
+   941	GEN	m_in	*p_in	his 	his	hire	_ure	_eower	hira,heora
+   942		mine	your	his	it(m)	her	our
+   943	your	their(m,f)
+   944	________________________________________________________________________
+   945	<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+   946	
+   947	Singular	m&f		neuter
+   948	________________________________________________________________________
+   949	NOM		hw_a		hw[ae]t
+   950			who		what
+   951	
+   952	ACC		hwone		hw[ae]t
+   953			when		what
+   954	
+   955	DAT			hw_[ae]m
+   956				whom
+   957	
+   958	GEN			hw[ae]s
+   959				whose
+   960	________________________________________________________________________
+   961	<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+   962	
+   963	Singular	masc	neut	fem		masc	neut	fem
+   964	________________________________________________________________________
+   965	
+   966	NOM		se	*p[ae]t	s_eo		*pes
+   967	*pis	*p_eos
+   968				<that>				<this>
+   969	
+   970	ACC		*pone	*p[ae]t	*p_a		*pisne	*pis	*p_as
+   971				<that>				<this>
+   972	
+   973	DAT	       *p_[ae]m	*p_[ae]m *p_[ae]re	*pissum
+   974	*pissum	*pisse
+   975	
+   976	GEN		*p[ae]s	*p[ae]s	*p_ere	
+   977	*pisses	*pisses	*pisse
+   978				<this>				
+   979	
+   980	INSTR		*p_y	*p_y	*p[ae]re	*p_ys
+   981	*p_ys	*pisse
+   982	_______________________________________________________________________
+   983	Plural		
+   984	NOM			*p_a				*p_as
+   985				<that>				<these>
+   986	
+   987	DAT			*p_[ae]m			*pissum
+   988								<these>
+   989	
+   990	GEN			*p_ara				*pissa
+   991				<there>				<these>
+   992	_______________________________________________________________________
+   993	
+   994	
+   995	III) VERBS
+   996	
+   997	*****NOTE******
+   998	the words in <> are usually indicative of 
+   999	a third person verb.
+  1000	ie--> he dom
+  1001	
+  1002		Common Eng Equivalents			VERB
+  1003	________________________________________________________________________
+  1004	
+  1005					****A****
+  1006	=========================================================================
+  1007	
+  1008		ate					aet
+  1009		own					agen
+  1010		are					aron
+  1011		ask, demand				ascian
+  1012	
+  1013	
+  1014					****B****
+  1015	==========================================================================
+  1016		become, happen				becuman
+  1017		command, challenge to fight		beodan
+  1018		be					beon
+  1019		bid, urge, demand			biddan
+  1020		blow, breathe				blawan
+  1021		borrow, lend				borgian
+  1022		bring, produce				bringan
+  1023		brought					broht
+  1024		bringing				brungen	
+  1025		buy					bycgan {w/aet}
+  1026	
+  1027	
+  1028					****C****
+  1029	===========================================================================
+  1030		know(s)					cann<cunnon>
+  1031		can, could				canne
+  1032		care, grief				caru
+  1033		choose(s)				ceosan<curon>
+  1034		chew, consume, gnaw, eat		ceowan
+  1035		clean, clear				claen
+  1036		climb					climman, climban
+  1037		call, summon				clipian
+  1038		mumble					clumian
+  1039		chosen					coren
+  1040		knew					cupe
+  1041	
+  1042					****D****
+  1043	============================================================================
+  1044		does					doan
+  1045		do					don<dom>
+  1046		drinks		drinc=drync		drincan
+  1047		drop					dropian
+  1048		drunk					druncen
+  1049		did					dyde
+  1050	
+  1051					****E****
+  1052	============================================================================
+  1053		am					eom
+  1054		eat					etan
+  1055	
+  1056					****F****
+  1057	============================================================================
+  1058		feel					felan
+  1059		fall					fellan
+  1060		fight, attack				feohtan
+  1061		feed					foda
+  1062		forgive, give up			forgiefan
+  1063		forget					forgietian
+  1064		free					frig, freo
+  1065		frees					frige
+  1066	
+  1067					****G****
+  1068	============================================================================
+  1069		play, jest, gamble			gamenian
+  1070		go, going, gone				gan
+  1071		give, give in marriage			giefan
+  1072		yell, scream				giellan
+  1073		greeting				greting
+  1074		grow					growan
+  1075	
+  1076					****H****
+  1077	============================================================================
+  1078		have, possess				habban<haefp>
+  1079		had					haefde<hafap>
+  1080		hold					haldan
+  1081		hail, salute				halettan
+  1082		heal					halian
+  1083		exorcise				halsian
+  1084		command, summon, call			hatan
+  1085		hate					hatian
+  1086		hating					hatung
+  1087		cover, conceal				helian
+  1088		help					helpan
+  1089		hear, obey, follow			hieran
+  1090		laugh					hlaehan, hliehhan
+  1091		listen					hlysnan
+  1092		hide, conceal, bury, sheathe(sword)	hydan
+  1093	
+  1094					****I****
+  1095	==========================================================================
+  1096		is					is
+  1097	
+  1098					****L****
+  1099	==========================================================================
+  1100		lead, carry				laedan
+  1101		leave					laefan
+  1102		lied					laeg
+  1103		lies					lagon
+  1104		life, be alive				libban
+  1105		like, please				lician
+  1106		lie					licgan
+  1107		look, see				locian
+  1108		lose, loss				losian
+  1109		lock, shut up				lucan
+  1110		caress, fondle				lufian
+  1111		love, loving, passion			lufu
+  1112	
+  1113					****M****
+  1114	==========================================================================
+  1115		make, made				macian
+  1116		mark					mearc
+  1117		mourn, be sad				murnan
+  1118	
+  1119					****O, P****
+  1120	==========================================================================
+  1121		open, evident				open
+  1122	
+  1123		play, frolic				plegan
+  1124	
+  1125					****R****
+  1126	==========================================================================
+  1127		read, counsel				raedan (de)
+  1128		reading					raeding
+  1129		roar, bellow, wail			rarian
+  1130		ripan					reap
+  1131		rain					regen, regn, ren
+  1132		arrange					renian
+  1133		conspire				geReonian
+  1134		sleep, rest				rest
+  1135		rule, reign				ricsian
+  1136		ride					ridan
+  1137		catch(as fish)				geRif
+  1138		whisper					runian
+  1139		roar					rynan
+  1140	
+  1141					****S****
+  1142	==========================================================================
+  1143		saw					sawon
+  1144		select, regard				sceawian
+  1145		show(honor)				geSceawaian
+  1146		see, sees				seah
+  1147		sold					sealde
+  1148		sell					sellan
+  1149		seen					seon
+  1150		sat					seten
+  1151		sigh					sican
+  1152		sink					sincan
+  1153		sing, recite				singan
+  1154		sit, perch				sittan
+  1155		smoke					smoca
+  1156		speak					sprecan
+  1157		stand, still, stay, stop		standan
+  1158		steal					stelan
+  1159		stood					stod
+  1160	
+  1161					****T****
+  1162	==========================================================================
+  1163		teach, direct				taecan
+  1164		talk, reckon				talian
+  1165		tear, lacerate, rend			teran
+  1166		think					thencan
+  1167		throw					thrawan
+  1168		annoy, irritate				tienan
+  1169		tickle					tinclian
+  1170		trap					traeppe
+  1171		tread					tredan
+  1172		trample; investigate			treddan
+  1173		separate, divide			togan
+  1174	
+  1175					****W****
+  1176	===========================================================================
+  1177		be born					wacan
+  1178		wake, woke, etc				wacian
+  1179		wash					wacsan, wascan
+  1180		were					waeron
+  1181		was					waes
+  1182		washes					waxan
+  1183		walk, whirl, roll			wealcan
+  1184		work, building				weorc
+  1185		wear, defend				werian
+  1186		been					wesan
+  1187		will					willan, wile
+  1188		toil, suffer, protest			winnan
+  1189		win, gain, take				geWinnan
+  1190		would					wolde
+  1191		washed					wose, weox
+  1192		draw, write				writan
+  1193		wound					wund
+  1194		wonder, miracle				wundor
+  1195	=============================================================================
+  1196	
+  1197	
+  1198	Well, that's the verbs section......
+  1199	next will be prepositions, conjunctions, and interjections
+  1200	and if that's not enough, maybe more.
+  1201	
+  1202	Grenoble
+  1203	
+  1204	::::::::::::::
+  1205	ohs.lang
+  1206	::::::::::::::
+  1207	
+  1208	From: Geoff Tuffli <tuff@midway.uchicago.edu>
+  1209	Date: Fri, 27 Nov 92 23:58:21 CST
+  1210	Message-Id: <CMM.0.90.4.722930301.tuff@ellis.uchicago.edu>
+  1211	To: adiederi@liberty.uc.wlu.edu
+  1212	Subject: ohs.lang
+  1213	
+  1214	LANGUAGE IN THE OHS EMPIRE (v.4)
+  1215	
+  1216	Pronunciation:
+  1217		jh	s as in measure (in standard linguistical terms, it is zh)
+  1218		jn	said as a dipthong
+  1219		lj	said as a dipthong
+  1220		a	ah
+  1221		o	oh
+  1222		e	eh
+  1223		i	ee
+  1224		u	oo
+  1225		oh	said like "ho" except said deeper in your throat, with
+  1226				a stronger "oh" sound, somewhat like huffing the
+  1227				sound
+  1228		ssh	said as a dipthong, start by making an "ss" sound then
+  1229				merge it into a "sh" sound
+  1230		ae	ah-eh, not quite a dipthong, still two distinct sounds
+  1231		eo	eh-oh, not quite a dipthong, still two distinct sounds
+  1232		ie	ee-eh, not quite a dipthong, still two distinct sounds
+  1233		ue	oo-eh, not quite a dipthong, still two distinct sounds
+  1234		x	z, the only word this is used in in modern usage is
+  1235				"xund", or "unicorn"
+  1236		g	g as in goat
+  1237		ts	ts as in cats
+  1238		th	always soft, as in thin (as opposed to the th in there)
+  1239		c	gutteral ch is in the Scottish pronunciation of ch in
+  1240				loch, a very uncommon sound
+  1241		ah	said like "ha" except huffing slightly as you say it,
+  1242				making it softer
+  1243		ih	said like "he" except huffing slightly as you say it,
+  1244				making it softer
+  1245		j	j as in jester
+  1246		
+  1247	
+  1248		NOTE: there is no stress, pitch is used to emphasize or convey
+  1249			subtler emotion
+  1250	
+  1251	
+  1252	Grammar:
+  1253		The language has no real distinction between a noun and an adjective.
+  1254	An -i ending is usually the ending of a word or compound word. So, two words,
+  1255	huni (meaning horse, association with horses, or horse-like) and dasi (meaning
+  1256	soldier, fighter, or warrior) could be combined to hundasi or dashuni (note
+  1257	that "dashuni" would be pronounced das-huni, not dash-uni). Hundasi, thus,
+  1258	means horse-warrior, or a mounted soldier.
+  1259	
+  1260		In addition, there is no real pluralization, so hundasi could mean
+  1261	a single horseman or an army of them, or horsemen in general. Expressing
+  1262	plurals relies on attaching to it a word indicating number, either the exact
+  1263	number, or, more commonly, a general one roughly analogous to English's
+  1264	"few", "some", and "many", though somewhat more precise.
+  1265	
+  1266		Compound words can be made up of more than two parts. So, the word
+  1267	raki (meaning bow) could be added to hundasi to form the word "hunrakdasi"
+  1268	or "rakhundasi" or "hundasraki". In actual practice, it should be noted that
+  1269	only one of these possible combinations is used for a particular word. So,
+  1270	a horseman is always referred to as "hundasi", not as "dashuni", though if
+  1271	you were to use the latter compound, you would be understood, although it
+  1272	would sound odd to the listener.
+  1273	
+  1274		Generally, those words which do not take the -i ending are arranged
+  1275	in a slightly different manner. They are grouped as if they were an adjective
+  1276	in front of a noun. This is also sometimes used to emphasize a particular
+  1277	aspect of the compound word. So, the commander of the horsemen in an army
+  1278	(tarni means lord, approximately) would likely be referred to as the Tarn
+  1279	Hundasi. Note that in this case, the -i ending was stripped from tarn. The
+  1280	most relevant aspect of the compound word, if one exists, is placed near the
+  1281	beginning, so Tarn Hundasi would emphasize that the more important aspect
+  1282	was the Tarn-ishness, and only after that they were of horsemen. One could
+  1283	also call such a person a hundastarni, with this de-emphasizing the fact that
+  1284	they are a commander, and placing more importance on their connection with
+  1285	horseman-ness.
+  1286	
+  1287	
+  1288		Verbs do not have, by themselves, any tense or reference to the
+  1289	subject. There is one form, and the only way you can tell its tense is by
+  1290	context or by the presence of another word that indicates when it happens.
+  1291	Noun/Adjectives can be made into verbs by the addition of an ending "sh",
+  1292	that, if the Noun/Adjective ends in a consonent, is instead "ash". Forming
+  1293	a verb this way usually indicates "the process of". So the word for mask,
+  1294	"sha", could be made into the verb "to mask" by adding -th to form "shash".
+  1295		
+  1296		In important note is that there is no verb "to be", rather in the
+  1297	absence of another verb, it is assumed.
+  1298	
+  1299	
+  1300		All verbs, even those without Noun/Adjective roots, end in -sh.
+  1301	
+  1302	
+  1303		The word order is: subject - (indirect object) - object - verb
+  1304	(Poetry, by the way, is almost always designed so as to rhyme from the
+  1305	_beginning_ of a phrase, rather than the end.) Clauses can be added on
+  1306	one after another with only a short pause seperating them from one another.
+  1307	
+  1308		Adverbs are not used at all. To indicate, for example, that an
+  1309	action is done "quickly", one merely adds the necessary word onto the
+  1310	subject. "Kabi", meaning "quickly", added to "oshash" or "to become
+  1311	civilized", would create the verb "to become civilized quickly", or
+  1312	"kaboshash".
+  1313	
+  1314	
+  1315	Vocabulary:
+  1316		The following is a list of the vocabulary that I have come up with.
+  1317	I intend to update it and expand it as I have time.
+  1318	
+  1319		ANIMALS
+  1320	dubogula - dragon
+  1321	xund - unicorn
+  1322	preothai - a non-poisonous spider about 1 foot in diameter that builds
+  1323			amazingly intricate and extensive webs.
+  1324	uma - a large sea turtle about 12 feet in diameter that has been used as
+  1325			a beast or burden.
+  1326	kapati - a flying, poisonous snake. The poison is paralytic.
+  1327	huni - horse
+  1328	pai - a small bird, somewhat like a sparrow
+  1329	resethi - seagull
+  1330	likai - mouse
+  1331	bothark - a huge, lumbering omnivorous creature about 20 feet long covered
+  1332			by huge bony plates and several lines of spikes on its face.
+  1333			Though not bright, it is exceedly vicious, and very strong.
+  1334			They are sometimes used in much the same way as bulls are in
+  1335			Spain.
+  1336	kedishi - jackal
+  1337	prei - spider
+  1338	kapi - snake
+  1339	manisi - cat
+  1340	tibi - fish
+  1341	jhasi - human
+  1342	kebi - rat
+  1343	sasshai - sheep
+  1344	elenbi - cow/bull
+  1345	nename - goat
+  1346	pochai - pig/hog
+  1347	
+  1348		CLOTHING:
+  1349	kutari - a long-sleeved tunic commonly worn by nobles or on formal occassions.
+  1350			Usually has woven into it stylized representations of animals
+  1351			or other simpler designs. It extends over the hips.
+  1352	panakutari - a short-sleeved kutari that is designed to be worn with a sath.
+  1353	sath - a white dress-like garment worn underneath a panakutari. It extends
+  1354			to the wrists and down to the ankles. While it can be worn
+  1355			by both sexes, it is usually only worn by women. Like a kutari,
+  1356			it is slid over the head.
+  1357	umari - pants. They split on either side for a few inches, and necessitate an
+  1358			underbelt to hold them on. An overbelt is usually worn over
+  1359			the kutari itself.
+  1360	tasmatashi - soft leather boots of a kind commonly worn in the Ohs Empire. The
+  1361			soles of the feet are made of specially hardened leather that
+  1362			is segmented into several overlapping pieces to make the entire
+  1363			footwear easier to walk in. It can go as low as the ankle or
+  1364			as high as just below the knee.
+  1365	
+  1366		NATURE:
+  1367	sejn - cliffs or escarpment
+  1368	marn - sea or ocean
+  1369	separai - swamp, fens, or marshland
+  1370	lebai - water
+  1371	ani lebai - river
+  1372	ani - movement or flow
+  1373	korgo - earth or soil
+  1374	batami - wind
+  1375	shimiasi - sand storm
+  1376	iasi - sand
+  1377	gari - rock
+  1378	ejhakiladani - inferno
+  1379	ejhake - warmth or heat
+  1380	dani - fire
+  1381	potam - fertile soil or loam
+  1382	talati - forest or woodland
+  1383	lati - wood
+  1384	
+  1385		COLORS:
+  1386	soti - rust red or blood red
+  1387	tosoti - orange
+  1388	kosoti - orangish-pink
+  1389	ketina - light blue
+  1390	lei - deep blue
+  1391	paryani - yellow
+  1392	ithilyai - purple
+  1393	gloi - black
+  1394	parai - white
+  1395	shintisayaki - gold
+  1396	kothoi - tan or brown
+  1397	kelji - light green
+  1398	hanalji - forest green
+  1399	
+  1400		MILITARY:
+  1401	raki - longbow
+  1402	mavi - skilled or skillful
+  1403	mavraki - elite longbow soldiers of the Ohs Empire
+  1404	dasi - soldier, warrior, or fighter
+  1405	hundasi - elite dragoons of the Ohs Empire
+  1406	shei - weapon used by the hundasi, it is a double-ended sword-spear with
+  1407			four spikes angling out of a right angle below the blade
+  1408			on one of the ends.
+  1409	losshi - army (100,000 soldiers or 10 daumshi)
+  1410	dalosshi - host (all of the losshi raised for a campaign)
+  1411	losshil - grand host
+  1412	pakimi - battlegroup (10 soldiers)
+  1413	dapakimi - cohort (100 soldiers or 10 pakimi)
+  1414	umshi - legion (1000 soldiers or 10 dapakimi)
+  1415	daumshi - regiment (10,000 soldiers or 10 umshi)
+  1416	imnak - sword (two-handed grip, relatively short lengthed blade)
+  1417	thei - axe used in the Ohs Empire, has a triangular blade, one side of which
+  1418			lays face-on the shaft.
+  1419	panathei - axe the size of a small dagger
+  1420	korojhi - spear, used only in the Imperial armies, not in any of the House
+  1421			forces.
+  1422	yomak - blood
+  1423	
+  1424		ENDINGS:
+  1425	-l/il - the most
+  1426	-ka - lacking or without
+  1427	
+  1428		TIME:
+  1429	atana - year of 320 days
+  1430	mesthia - time it takes for Ea to pass by a particular point on the Jovian
+  1431			planet it circles - works out to about 40 days.
+  1432	para - week of 8 days
+  1433	yundi - day
+  1434	
+  1435		ENTERTAINMENT:
+  1436	radi - dancer or entertainer
+  1437	mavi - skilled
+  1438	mavradi - acrobatic dancer-mimes who wear masks and are noted for their
+  1439			incredible skill at dancing/acrobatics and their habit of
+  1440			never speaking and going masked most of the time.
+  1441	sha - mask
+  1442	jhugoloroiri - travelling jugglers/stage-magicians
+  1443	papadai - the colored rubber balls used by jhugoloroiri in their acts
+  1444	foditei - court bard, serves a respected position, often also a Lord's
+  1445			advisor, and often as well as the historian and even at
+  1446			times as a teacher of ethics and morality.
+  1447	tastraba - drum
+  1448	pelipe - flat-harp
+  1449	
+  1450		SORCERY and the MYSTERIES:
+  1451	shadu - spirit, soul, or animus
+  1452	shaduka - one who is without soul, souless
+  1453	sae - mana, the intangible power omnipresent that sorcery taps as a source
+  1454			of enery
+  1455	saemavi - a sorceror
+  1456	saemavil - the most competent sorceror; the title is usually reserved for
+  1457			the ritual-master of the House of the Unicorn.
+  1458	
+  1459		DESCRIPTIVE NOUNS:
+  1460	panai - short or brief
+  1461	spiristi - tall, high, or proud
+  1462	spiristika - humble
+  1463	sshasi - happy or pleased
+  1464	sshasika - grim
+  1465	chayuli - angry
+  1466	chayulil - enraged
+  1467	chayulika - calm
+  1468	falji - long distance or time
+  1469	kabi - quickness or quickly
+  1470	
+  1471		CONSTRUCTIONS:
+  1472	kohn - home, den, or place-of-retreat
+  1473	vatani - fortified place, castle, or wall
+  1474	amani - road
+  1475	zelati - bridge
+  1476	
+  1477		PARTS of the BODY:
+  1478	eshi - back of head or skull
+  1479	patani - face
+  1480	mei - eyes
+  1481	saspi - ears
+  1482	koton - belly or abdomen
+  1483	garaki - chest or ribs
+  1484	haspiki - fingers or hand
+  1485	temdi - arms
+  1486	karei - tongue
+  1487	listhimiki - legs
+  1488	
+  1489		PRONOUNS:
+  1490	hami - me, I, us, or we
+  1491	tomi - you
+  1492	kari - he, she, it, them, or they
+  1493	
+  1494	   ** To make pronouns possessive, merely integrate them into
+  1495	      object that is being possessed. So "my horse" would be
+  1496	      said, "hunhami" **
+  1497	
+  1498	
+  1499		INDICATIVES:
+  1500	oi - this or these
+  1501	ai - that or those
+  1502	
+  1503	   ** These can be used alone, as in, "I want THAT," or they
+  1504	      can be used in combination with a word. So in the phrase,
+  1505	      "I want THAT TUNIC," the object would be "kutaroi" **
+  1506	
+  1507	
+  1508		INTERROGATIVES:
+  1509	kanaputai - what
+  1510	manaraputai - who
+  1511	tokiputai - where
+  1512	hokonoputai - why
+  1513	patanaputai - when
+  1514	teloijhuputai - how or in what way
+  1515	na - ending after a verb to indicate that the sentence is a query
+  1516	
+  1517	   ** "Whose" would be formed by combining "manaraputai" and 
+  1518	      the appropriate object. So "whose house" would be
+  1519	      "kohnmanaraputai" **
+  1520	
+  1521	   ** "Where is this", for example, would be "tokiputai" and
+  1522	      "oi" for "This is where?" or "Oi tokiputai na?" **
+  1523	
+  1524	
+  1525		CONJUNCTIONS and OTHERS:
+  1526	pa - and
+  1527	ka - or
+  1528	chan - if
+  1529	eba - no or wrong ("nothing" would be "ebai")
+  1530	kaba - yes or correct ("something" would be "kabai")
+  1531	
+  1532		POSTPOSITIONS:
+  1533	kot - while
+  1534	sham - to
+  1535	peloki - from
+  1536	chessh - within
+  1537	ben - on
+  1538	taman - under
+  1539	kras - over
+  1540	yas - around
+  1541	
+  1542	   ** These all function as prepositions, except
+  1543	      for that they all are placed at the end of
+  1544	      a word or clause rather than the beginning
+  1545	      as it is in English **
+  1546	
+  1547	
+  1548		TIME RELATIONS:
+  1549	charn - before or earlier (past)
+  1550	karn - after or later (future)
+  1551	tok - now (present)
+  1552	barana - still
+  1553	
+  1554		CONDITIONS of BEING:
+  1555	lanami - sleep or sleeping
+  1556	gebrani - growing
+  1557	panagebrani - shrinking
+  1558	palari - falling
+  1559	ko - thought or thinking
+  1560	loi - entrance or entering
+  1561	lamani - gift or giving
+  1562	ahsi - glowing
+  1563	ahsika - dampened
+  1564	manai - possessing or holding (implies non-permanence and/or non-ownership)
+  1565	matai - pregnant
+  1566	esatsi - sick
+  1567	elebi - love or loving
+  1568	nalabi - doing
+  1569	dardani - sight or seeing
+  1570	pelebi - play or playing
+  1571	ueni - movement or moving
+  1572	
+  1573	   ** Distinguishing whether someone "is grown" as opposed to
+  1574	      someone "growing" is done by using different sequences.
+  1575	      "Growing" is used as a verb, by adding "-sh" to the root.
+  1576	      That someone "is grown" is done by using the "grown" as
+  1577	      the object and adding a present tensesual marker ("tok").
+  1578	      So, to say that "I am grown" or "I am grown, now" you
+  1579	      would say, "Tok hami gebrani". "I am growing" would be
+  1580	      said, "Hami gebranish". **
+  1581	
+  1582		OTHER WORDS
+  1583	pahn - bowl
+  1584	ohrti - tong-like eating utensil used in the Ohs Empire
+  1585	daparathei - knife (intended mostly for an eating utensil)
+  1586	borga - horns
+  1587	kepichi - saddle
+  1588	hadri - map
+  1589	pohthi - banner
+  1590	
+  1591	
+  1592	More Grammar:
+  1593	
+  1594		Possessives: Possessives can be accomplished in two different ways.
+  1595	The first has already been explained, and is only used with pronouns. Horse,
+  1596	"huni" and me or my, "hami" can be combined in this way to mean "my horse",
+  1597	or "hunhami". The second way is slightly more complex.
+  1598		The expression 'la- is stuck after the possessor and before the
+  1599	object. Furthermore, the -i ending on the possessor is deleted (which is
+  1600	where the ' comes from. So, "my horse" could, in addition to "hunhami", be
+  1601	expressed by saying: ham'la-huni. This can be extended even farther, for
+  1602	example, if you wanted to say "my horse's saddle" you could say either
+  1603	"hunham'la-kepichi" or "ham'la-hun'la-kepichi".
+  1604		In cases where the noun does not end in -i, there are two ways to
+  1605	deal with this, depending upon whether the word ends with "la" already or
+  1606	with some other ending. If the word ends with "la", such as in the word for
+  1607	dragon, or "dubogula", than the 'la- expression is changed to be-. To indicate
+  1608	"the dragon's horns" you would thus say: dubogulabe-borga. Note that the
+  1609	apostraphe is not used, as there is nothing to be replaced.
+  1610		In all other cases where the word ends in something other than -i,
+  1611	the expression becomes merely la-. So the phrase for "the drummer's horse"
+  1612	would be: potastrabala-huni.
+  1613		The expression 'la- is in fact an expression of location, as opposed
+  1614	to expressed ownership. If you wish to make the distinction between owning
+  1615	something as opposed to merely possessing it, use the empression 'za- in place
+  1616	of 'la-. In cases where the word ends in "za" already, the za- is retained,
+  1617	unlike 'la-.
+  1618	
+  1619		Examples: to say "The horse you are riding is mine" in order of
+  1620				most frequently used to least...
+  1621	
+  1622			1) Huntomi ham'za-huni.
+  1623			2) Tom'la-huni ham'za-huni.
+  1624			3) Huntomi hunhami.
+  1625			4) Tom'la-huni hunhami.
+  1626	
+  1627	Vocabulary (continued):
+  1628	
+  1629		CELESTIAL BODIES
+  1630	ea - the name of the world
+  1631	pelava - the name of the yello-green gas giant planet that Ea circles
+  1632	zara - the sun (it appears smaller than our own due to the distance)
+  1633	puloi - the small moon that orbits between Ea and Pelava
+  1634	krasshei - the third moon of Pelava (including Ea)
+  1635	mern - the fourth moon of Pelava (including Ea)
+  1636	merna - the fifth moon of Pelava (including Ea)
+  1637	toarn - a moon
+  1638	
+  1639		NUMBERS
+  1640	ebai - nothing, none, or zero
+  1641	sor - one
+  1642	hak - two
+  1643	be - three
+  1644	nem - four
+  1645	pajhni - five
+  1646	lar - six
+  1647	laman - seven
+  1648	sutei - eight
+  1649	fan - nine
+  1650	osshla - ten
+  1651	pulassha - hundred
+  1652	hinasshra - thousand
+  1653	kloi - (multiplier indicative)
+  1654	
+  1655	    ** Examples: 10 osshla
+  1656			 15 osshla pajhni
+  1657			 32 be-kloi-osshla hak
+  1658			 109 pulassha fan
+  1659			 820 sutei-kloi-pulassha hak-kloi-osshla
+  1660			 3116 be-kloi-hinasshra pulassha osshla lar **
+  1661	
+  1662	    ** Examples of Counting: Four moons.
+  1663			 There are four moons.
+  1664			 (Moons four are.)
+  1665			 Toran nem.
+  1666	
+  1667			 Look at the four moons.
+  1668			 (You moons-four look.)
+  1669			 Tomi torannem meish.
+  1670			     NOTE: "meish" is "mei" (eye) + "sh" (verb-ending) **
+  1671	
+  1672	::::::::::::::
+  1673	petrocea.lang
+  1674	::::::::::::::
+  1675	
+  1676	From: Geoff Tuffli <tuff@midway.uchicago.edu>
+  1677	Date: Fri, 27 Nov 92 23:58:40 CST
+  1678	Message-Id: <CMM.0.90.4.722930320.tuff@ellis.uchicago.edu>
+  1679	To: adiederi@liberty.uc.wlu.edu
+  1680	Subject: petrocea.lang
+  1681	
+  1682	Cather/Rostar	    dwb@krypton.mankato.msus.edu	[ P E T R O C E A ]
+  1683	
+  1684	
+  1685	The Petrocean tongue is a very rich tongue, also very ancient.
+  1686	It is descended directly from the tongue of the Elementals, which
+  1687	are so much a part of life in Petrocea. This is by no means a
+  1688	complete dictionary. I only took random words or words I found
+  1689	I needed to know for MUSH purposes and translated them into
+  1690	Petrocean. More will come out later. As it stands, here is the 
+  1691	structure of this file:
+  1692	
+  1693	I. Alphabet
+  1694	   A. Pronunciation
+  1695	   B. Vowels
+  1696	II. Sentence Structure
+  1697	III. Dictionary
+  1698	     A. Nouns
+  1699	     B. Verbs
+  1700	     C. Descriptive Terms
+  1701	        1) Adjectives/Adverbs
+  1702	        2) Colors
+  1703	        3) Numbers
+  1704	        4) Shapes
+  1705	IV.  Special
+  1706	     A. Clothing
+  1707	     B. Weapons
+  1708	
+  1709	I hope to have the following finished in two days or less:
+  1710	Body parts
+  1711	Weather expressions
+  1712	Greetings
+  1713	Magic-specific words
+  1714	
+  1715	
+  1716	
+  1717	                    Alphabet
+  1718	                    --------
+  1719	
+  1720	a
+  1721	b
+  1722	c
+  1723	d
+  1724	e
+  1725	f
+  1726	g
+  1727	h
+  1728	i
+  1729	j
+  1730	k
+  1731	l
+  1732	m
+  1733	n
+  1734	o
+  1735	p
+  1736	q
+  1737	r
+  1738	s
+  1739	t
+  1740	u
+  1741	v
+  1742	w
+  1743	y
+  1744	fl
+  1745	sh
+  1746	oa
+  1747	
+  1748	Pronunciation:
+  1749	Letter/Combination		English Counterpart
+  1750	---------------------------------------------------
+  1751	fl                              sh - shoe
+  1752	sh                              ss - hiss
+  1753	c                               hard c - cake
+  1754	ee                              long a - make
+  1755	a                               short o - pop
+  1756	o                               always long o - toad
+  1757	oa                              unpronouncable by native 
+  1758	                                English-speakers.
+  1759	ua                              oy - boy
+  1760	e                               long e - teeth
+  1761	ea                              short e - bed
+  1762	ar                              er - helper
+  1763	aa                              short a - cat
+  1764	uh                              oo - foot
+  1765	que                             kay - okay
+  1766	g                               between two vowels, hard - give
+  1767	                                otherwise, soft - gel
+  1768	gh                              z - jazz
+  1769	
+  1770	List of Petrocean Vowels:
+  1771	a,e,i,h,o,u,y,oa
+  1772	
+  1773	                     Sentence Structure
+  1774	                     ------------------
+  1775	
+  1776	Sentence structure is very similar to English:
+  1777	Subject Verb D.O. I.O.
+  1778	
+  1779	
+  1780	Brief listing of Nouns:
+  1781	-----------------------
+  1782	
+  1783	Eastern Kingdoms - Shal'Pafl'Pufer
+  1784	Iniel - Eanual
+  1785	Ohs Empire - ksoafl
+  1786	Petrocea - Shal'Manto'Armekt
+  1787	admiral - armekt'ua
+  1788	air - altist
+  1789	animal - mir-pe'lloute
+  1790	bay - shal'ua
+  1791	beast - llout
+  1792	being(alive) - viv'pekt
+  1793	being(dead) - pek'viv-pe
+  1794	body - ksuh
+  1795	boy - fej'oxta
+  1796	brain - rebma
+  1797	captain - pefl'ua
+  1798	child - pekt'fej
+  1799	conjurer - falist'oxta
+  1800	conjuress - falist'fert
+  1801	country - shalkt
+  1802	district - shal'keep'mir-pe
+  1803	duchess - keep
+  1804	duchy - shal'keep
+  1805	duke - keep
+  1806	element - manto
+  1807	elemental - mantist
+  1808	emperor - armekt
+  1809	empire - shal'armekt
+  1810	empress - armekt
+  1811	female - cur
+  1812	fire - ertist
+  1813	general - kaat'shal
+  1814	girl - fej'fert
+  1815	hill - alt
+  1816	horse - lloute'ak
+  1817	house - cree
+  1818	king - pefl
+  1819	kingdom - shal'pefl
+  1820	lake - mir-pe'uaksuh
+  1821	land - shal
+  1822	lord - kaat
+  1823	mage - isti
+  1824	male - oxta
+  1825	man - cur'oxta
+  1826	merchant - perst
+  1827	monster - lloute'mir
+  1828	mountain - elst
+  1829	ocean - uaksuh
+  1830	person - pekt
+  1831	queen - pefl
+  1832	river - ki'mir'ua
+  1833	rock - rull
+  1834	sailor - pekt'ua
+  1835	sea - mir'uaksuh
+  1836	soldier - kaat'pekt
+  1837	spirit - reest
+  1838	stone - shal'tist
+  1839	stream - ki'ua
+  1840	thing - stu
+  1841	tool - stu'ilte
+  1842	toy - stu'ilte-pe
+  1843	tree - arb
+  1844	wagon - racosh
+  1845	warlock - marist'oxta
+  1846	water - uatist
+  1847	wind - skept
+  1848	witch - marist'fert
+  1849	wizard - parist'oxta
+  1850	wizardress - parist'fert
+  1851	woman - cur'fert
+  1852	
+  1853	Many of these nouns are compound nouns, formed by tacking a modifier
+  1854	onto it. When a noun(or any word) has a modifier, the modifier is
+  1855	added with a ' between it and the word being modified. Also, some of
+  1856	them have the -pe suffix, usually denoting either 'not' or 'opposite'.
+  1857	
+  1858	In formal Petrocean, singular nouns must be accompanied by a -cu prefix.
+  1859	In normal speech, the prefix is not necessary.
+  1860	
+  1861	Plural nouns _always_ require the del- prefix.
+  1862	
+  1863	
+  1864	Brief Listing of Verbs:
+  1865	-----------------------
+  1866	
+  1867	ask - cibelsep
+  1868	banish - peltrek
+  1869	be - chotel
+  1870	be gone/be empty - chokitel
+  1871	be sick/ill - oskitel
+  1872	befriend - fiskatosep
+  1873	build - darotrek
+  1874	burn - kutirek
+  1875	create - mirrek
+  1876	curse/swear - mestlesep
+  1877	destroy - atarsrek
+  1878	die/be dead - wortel
+  1879	dislike - akeltsep
+  1880	do - nitorek
+  1881	drop - telrek
+  1882	fall - quelrek
+  1883	fight - risktsep
+  1884	force - neftarsep
+  1885	forget - stapistel
+  1886	frown - fastrek
+  1887	get/pick up - aspirorek
+  1888	give - barsep
+  1889	go - kirek
+  1890	hate - petairsep
+  1891	hit - faradsep
+  1892	kick - peltarsep
+  1893	kill - trakfrek
+  1894	kneel - tostrek
+  1895	know - kalitel
+  1896	learn - skoiestel
+  1897	like - remasep
+  1898	live/be alive - vivtel
+  1899	lose - takirosep
+  1900	love - dopaltsep
+  1901	order - fagelrek
+  1902	promise/take an oath - parsep
+  1903	receive - tarosep
+  1904	remember - bouritel
+  1905	request - gaspirsep
+  1906	ride - aksep
+  1907	run - akenrek
+  1908	say - sotesep
+  1909	send - karrek
+  1910	sit - aritofrek
+  1911	smile - amonrek
+  1912	speak - auktsep
+  1913	stand - porek
+  1914	stay/be still - belarotel
+  1915	summon - astilrek
+  1916	talk - flatleesep
+  1917	understand - paskittel
+  1918	walk - pirek
+  1919	want - desitel
+  1920	win - astasep
+  1921	wish - minorek
+  1922	write - talsrek
+  1923	
+  1924	There are 3 basic infinitive suffixes in Petrocean:
+  1925	-tel - Usually a state of being something.
+  1926	-sep - Normally a verb describing interaction between two things/people.
+  1927	-rek - Usually involves action and/or change.
+  1928	
+  1929	Verbs can be modified by adverbs, discussed in the next section, in the
+  1930	same way as nouns can be modified by adjectives...tacking the modifier
+  1931	onto the word with an '.
+  1932	
+  1933	Verb Conjugation:
+  1934	Infinitive  Present  Past(recent)  Past(distant)  Future(near) 
+  1935	Future(distant)
+  1936	---------------------------------------------------------------------------
+  1937	-tel        below    -tal          -til           -tol          -tyl
+  1938	-rek        below    -rak          -rik           -rok          -ryk
+  1939	-sep        below    -sap          -sip           -sop          -syk
+  1940	
+  1941	Present conjugations:
+  1942	Infinitive   I     You(s)   He   We   You(p)   They   All   None
+  1943	------------------------------------------------------------------
+  1944	-tel       *drop*  -es      -lu  -no  -esh     -ku    -te   -ne
+  1945	-rek       -j      -es      -li  -nu  -esh     -ke    -te   -ne
+  1946	-sep       *drop*  -es      -ly  -ny  -esh     -ki    -te   -ne
+  1947	
+  1948	
+  1949	
+  1950	Brief listing of Adjectives/Adverbs:
+  1951	------------------------------------
+  1952	
+  1953	alive/live - viv
+  1954	alone - toskep
+  1955	always - temarel
+  1956	angry - kestal
+  1957	apparent - crestal
+  1958	asleep - cembal
+  1959	asleep - cembel
+  1960	awake - ferst
+  1961	bad - narom
+  1962	bare - fantask
+  1963	brave - nelros
+  1964	childish - fejet
+  1965	cold - erst-pe
+  1966	confused - retalp
+  1967	correct - margam
+  1968	courageous - colfe
+  1969	customary - alemsanc
+  1970	dead - viv-pe
+  1971	difficult - bresk
+  1972	disobedient - mistar-pe
+  1973	dry - uast-pe
+  1974	early - sant
+  1975	easy - atil
+  1976	expected - turin
+  1977	fast - rost
+  1978	fat - antok
+  1979	female - fert
+  1980	good - skal
+  1981	grand - lespar
+  1982	great - makt
+  1983	handsome - grella
+  1984	happy - telk
+  1985	heroic - bacor
+  1986	hot - erst
+  1987	imperial - amektal
+  1988	incorrect - margan-pe
+  1989	large - mir
+  1990	late - polst
+  1991	long - relt
+  1992	loud - roist
+  1993	magical - istil
+  1994	male - oxta
+  1995	mandatory - sutme
+  1996	mature - curet
+  1997	merciful - retolk
+  1998	mighty - cather
+  1999	never - peftar
+  2000	noble - pijal
+  2001	noticeable - diphast
+  2002	obedient - mistar
+  2003	obvious - retob
+  2004	often - pretain
+  2005	old - dcur
+  2006	popular - tolnemehar
+  2007	pretty - telsa
+  2008	quick - aresta
+  2009	quiet - falt
+  2010	religious - vlak
+  2011	repulsive - tolk
+  2012	requested - hutmel
+  2013	royal - peflat
+  2014	royal - peflat
+  2015	sad - tel-pe
+  2016	sad - telk-pe
+  2017	scared - pralom
+  2018	seldom - pretain-pe
+  2019	short - relt-pe
+  2020	silent - famen
+  2021	skinny - porast
+  2022	slow - rost-pe
+  2023	small - mir-pe
+  2024	smart - ilt
+  2025	sorry - ceralt
+  2026	stupid - ilt-pe
+  2027	successful - bekare
+  2028	surprised - mastalor
+  2029	terrible - vesarm
+  2030	together - lotok
+  2031	traditional - reestam
+  2032	trustworthy - galtep
+  2033	ugly - comsel
+  2034	unsuccessful - bekare-pe
+  2035	upset - simekta
+  2036	wet - uast
+  2037	young - fej
+  2038	
+  2039	Adverbs are formed quite simply. To form an adverb, you simply add a
+  2040	-ty suffix to the adjective. :)
+  2041	
+  2042	
+  2043	                              Colors
+  2044	                              ------
+  2045	
+  2046	The Petroceans acknowledge only the most basic of colors, with different
+  2047	variations on each, usually using 'dark' or 'light'. The dark/light
+  2048	modifier is 'telpuh'. It goes before the color for light, and after the
+  2049	color for dark.
+  2050	
+  2051	Examples:
+  2052	
+  2053	Red - plok
+  2054	Orange - sur
+  2055	Green - felt
+  2056	Blue - talt
+  2057	Purple - ski
+  2058	Black - skert
+  2059	White - tou
+  2060	
+  2061	Bright red - telpuh'plok
+  2062	Dark purple - ski'telpuh
+  2063	
+  2064	NOTE: Colors always come _after_ the noun they modify.
+  2065	
+  2066	
+  2067	                               Numbers
+  2068	                               -------
+  2069	
+  2070	The Petroceans follow a base ten number system, similar to our own. The
+  2071	fact that it is base ten, however, does not mean it isn't complicated as
+  2072	hell. Only the well educated in Petrocea are able to say a number out
+  2073	loud that is above 100,000 or so. Here is a brief overview of the
+  2074	numbering system, with examples.
+  2075	
+  2076	Numbers:
+  2077	0 - nal
+  2078	1 - fel
+  2079	2 - kiera
+  2080	3 - ney
+  2081	4 - kra
+  2082	5 - eli
+  2083	6 - mei
+  2084	7 - tefl
+  2085	8 - nau
+  2086	9 - prest
+  2087	10 - gou
+  2088	100 - gounal
+  2089	1000 - karpe
+  2090	1,000,000 - toram
+  2091	
+  2092	Examples:
+  2093	13 - gou-ney (10 + 3)
+  2094	20 - kiera`gou (2 * 10)
+  2095	46 - kra`gou-mei [(4 * 10) + 6]
+  2096	105 - gounal-eli (100 + 5)
+  2097	620 - mei`gounal-kiera`gou [(6 * 100) + (2 * 10)]
+  2098	5074 - eli`karpe-tefl`gou-kra [(5 * 1000) + (7 * 10) + 4]
+  2099	408,692 - kra`gounal`karpe-nau`karpe-mei`gounal-prest`gou-kiera
+  2100	          [(4 * 100 * 1000) + (8 * 1000) + (6 * 100) + (9 * 10) + 2]
+  2101	37,329,864 -
+  2102	ney`gou`toram-tefl`toram-ney`karpe-kiera`gou`karpe-prest`karpe-nau`gounal-
+  2103	mei`gou-kra
+  2104	[(3 * 10 * 1,000,000) + (7 * 1,000,000) + (300 * 1000) + (2 * 10 * 1000) +
+  2105	(9 * 1000) + (8 * 100) + 6 * 10) + 4]
+  2106	
+  2107	Yeah, I know it's attrocious. Too bad, this is IT. :)
+  2108	
+  2109	
+  2110	                               Shapes
+  2111	                               ------
+  2112	The word for shape in Petrocean is 'fig'. A shape's name can usually be
+  2113	determined by taking the number of sides the shape has and making it
+  2114	a modifier of the noun 'fig'. Fig'kra...shape with four sides. The word
+  2115	for Square and Rectangle is the same.
+  2116	
+  2117	Examples:
+  2118	
+  2119	Square - fig'kra
+  2120	Rectangle - fig'kra
+  2121	Circle - fig'temar
+  2122	Triangle - fig'ney
+  2123	Octagon - fig'nau
+  2124	Pentagon - fig'eli
+  2125	Hexagon - fig'mei
+  2126	Shape - fig
+  2127	
+  2128	
+  2129	                           Clothing
+  2130	                           --------
+  2131	Following is a brief list of clothing unique to Petrocea, and somewhat
+  2132	popular at this time.
+  2133	
+  2134	Artola - Crown, made of gold for Emperor, silver for Kings.
+  2135	Baskir - Sweeping robes worn by many males of high rank. Usually either
+  2136	         red, blue, or black.
+  2137	Entamokt - Loose fitting tunic worn by men.
+  2138	Pelartan - Hose commonly worn by men.
+  2139	Cormaski - Head dress worn by some Warlocks in place of a hood. It 
+  2140	           completely covers any hair, but the face is much more visible
+  2141	           than when a hood is worn.
+  2142	Dampush - Pants worn by men...not as tight as hose, but not as loose
+  2143	          as retaska.
+  2144	Retaska - Very loose fitting pants for men.
+  2145	Mofler - A commonly worn hooded robe that affords protection from
+  2146	         the elements. Quite popular among sailors.
+  2147	Bask - Multi-purpose, unisex hooded robe.
+  2148	Celtisca - Long flowing dress for women. Usually only worn for 
+  2149	           ceremonial-type occasions.
+  2150	Nekt - Shorter dress, worn among women of the 'common folk'.
+  2151	Tuhma - Loose tunic worn by some women.
+  2152	Roakeshi - Loose pants, normall worn with a tuhma.
+  2153	Peataruh - Black veil worn by women guilty of adultery.
+  2154	
+  2155	
+  2156	                           Weapons
+  2157	                           -------
+  2158	
+  2159	A short list of some weapons used in Petrocea. Obviously there are quite
+  2160	a few other weapons used, these are just a few of them.
+  2161	
+  2162	quetash - Single edged short sword. Not good for much other than
+  2163	          hacking away continually at your opponent's vitals.
+  2164	matergh - Sharp short sword, very popular among sailors.
+  2165	tuhgosh - Dagger, very effective when thrown correctly. Used often
+  2166	          by assassins.
+  2167	yeefor - Deadly, small dagger popular among the few magi who deign
+  2168	         to carry material defenses.
+  2169	gaalpurna - Sword wiith a long, curved blade and a decorative hilt.
+  2170	terque - Light sword, with a long straight blade. Forged perfectly for
+  2171	         use by the Imperial Guard.
+  2172	noktar - Spear carried by foot soldiers of some duchies.
+  2173	noktpuh - Lance popular with cavalry in some duchies.
+  2174	capoflt - Two-handed sword, not widely used by anyone in particular
+  2175	          except perhaps mercenaries.
+  2176	Tenaske - All purpose shield, used almost universally throughout the
+  2177	          empire.
+  2178	
+  2179	

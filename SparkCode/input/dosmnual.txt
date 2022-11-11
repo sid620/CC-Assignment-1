@@ -1,0 +1,1453 @@
+     1	PC/MS-DOS THE ESSENTIALS A Brief Guide for Users
+     2	
+     3	
+     4	
+     5	
+     6	
+     7	            
+     8	            
+     9	            
+    10	            
+    11	            
+    12	            
+    13	            
+    14	            
+    15	            
+    16	            
+    17	            
+    18	            
+    19	            
+    20	            
+    21	            
+    22	            
+    23	            
+    24	            
+    25	                                     PC/MS-DOS
+    26	            
+    27	                                   THE ESSENTIALS
+    28	            
+    29	            
+    30	                              A Brief Guide for Users
+    31	            
+    32	                                         by
+    33	            
+    34	                                  George Campbell
+    35	                                 Computer Services
+    36	                                   (805) 528-1759
+    37	
+    38	
+    39	
+    40	
+    41	
+    42	
+    43	
+    44	
+    45	
+    46	
+    47	
+    48	
+    49	
+    50	
+    51	
+    52	
+    53	
+    54	
+    55	
+    56	
+    57	
+    58	
+    59	
+    60	
+    61	
+    62	
+    63	
+    64	
+    65	
+    66	
+    67	
+    68	
+    69	
+    70	                                       Page 2
+    71	
+    72	
+    73	                                          
+    74	                                          
+    75	                                          
+    76	                                          
+    77	                                          
+    78	                                          
+    79	                                          
+    80	                                          
+    81	                                          
+    82	                                          
+    83	                                          
+    84	                                    INTRODUCTION
+    85	            
+    86	            
+    87	            In order for you to use your computer effectively, there are
+    88	            a few basic commands from PC/MS-DOS you need to learn. In
+    89	            addition, you need to understand your computer's disk drives
+    90	            and the proper care and handling of floppy disks.
+    91	            
+    92	            This brief manual, designed for new computer users, will
+    93	            help you get the most from your computer.  It is organized
+    94	            according to the most frequently used commands.  An index at
+    95	            the back of the manual will help you find the sections you
+    96	            need.
+    97	            
+    98	            For each command, I have provided an explanation of the
+    99	            command, plus information on how to use the command in
+   100	            several situations.  The examples should help you perform
+   101	            the operations you will use every day.
+   102	            
+   103	            There are a few conventions used in this manual which you
+   104	            need to know:
+   105	            
+   106	            1. When you see a word surrounded by <>, that means to press
+   107	            the key marked with that word.  For example, if you see
+   108	            this:  <Enter>,  press the Enter (<__|) key.
+   109	            
+   110	            2. In some cases, spaces are important to a command. In
+   111	            those cases, you will see this: (sp).  When following an
+   112	            example, press the spacebar when you see (sp).
+   113	            
+   114	            3. Otherwise, type the command as it is written in the
+   115	            example.
+   116	
+   117	
+   118	
+   119	
+   120	
+   121	
+   122	
+   123	
+   124	
+   125	
+   126	
+   127	
+   128	
+   129	
+   130	
+   131	
+   132	
+   133	
+   134	
+   135	
+   136	                                       Page 3
+   137	
+   138	
+   139	                            DISK DRIVES AND FLOPPY DISKS
+   140	            
+   141	            There a two basic types of disk drives you are likely to
+   142	            encounter:
+   143	            
+   144	            1. Floppy disk drives.
+   145	            2. Hard disk drives.
+   146	            
+   147	            Your computer will have at least one floppy disk drive.  It
+   148	            may well have two.  These drives have names.  The left or
+   149	            top drive is usually called Drive A:.   The right or lower
+   150	            disk drive (on two-drive systems) is usually called Drive
+   151	            B:.
+   152	            
+   153	            Depending on your system, you may also have one or more hard
+   154	            disk drives.  If you have one hard disk, it will probably be
+   155	            named Drive C:
+   156	            
+   157	            All DOS commands refer to these drive names.  In order for a
+   158	            command to act on a drive, you must specify the correct
+   159	            drive name.  For example, the command  Format b:  acts on
+   160	            Drive B:.  If you supply the wrong drive name, you may
+   161	            destroy data on a drive.
+   162	            
+   163	            IMPORTANT: If you give a command without specifying a drive
+   164	            name, the computer assumes you are referring to the drive
+   165	            name specified at the system prompt.  That prompt looks like
+   166	            this:
+   167	            A>
+   168	            Any command you give while this prompt is on the screen will
+   169	            act on Drive A:.  This can lead to problems.  If you enter
+   170	            the command FORMAT while you are using Drive C:, you may
+   171	            destroy all the files on Drive C:.  Get into the habit of
+   172	            ALWAYS specifying the drive name when entering a command.
+   173	            
+   174	            
+   175	            NOTE: All DOS commands must be given while the system prompt
+   176	            (A> or C>) are on the screen. If you make an error when
+   177	            entering a command, use the backspace key to delete
+   178	            characters, not the left arrow key on the number pad.
+   179	            
+   180	            
+   181	            
+   182	            FLOPPY DISKS
+   183	            
+   184	            Floppy disks are the most common method of storing programs
+   185	            and data for your computer.  There are three basic types:
+   186	            
+   187	            1. 5 1/4" double-sided/double-density floppy disks.
+   188	            2. 5 1/4" double-sided/high-density floppy disks.
+   189	            3. 3 1/2" floppy disks.
+   190	            
+   191	
+   192	
+   193	
+   194	
+   195	
+   196	
+   197	
+   198	
+   199	
+   200	
+   201	
+   202	                                       Page 4
+   203	
+   204	
+   205	            The typical computer uses the first type.  It can store 360
+   206	            Kbytes of data, or about 150 pages of double-spaced type.
+   207	            Most often, these disks are marked DS/DD 48tpi.
+   208	            
+   209	            The second type, used only on IBM PC/AT or compatible
+   210	            computers, can store 4 times as much data.  They are marked
+   211	            DS/HD 96tpi.
+   212	            
+   213	            The third type of floppy disk is used primarily on portable
+   214	            computers.  It can store 720 Kbytes of data, twice as much
+   215	            as the first type of disk.
+   216	            
+   217	            If you have an AT-type computer, its disk drives can read
+   218	            data written on the first type of disk.  However, disks
+   219	            written on the High-density drives cannot be read by other
+   220	            PC-compatible computers.
+   221	            
+   222	            Many times, AT-type computers use a 360 Kbyte disk drive as
+   223	            drive B:.  If this is the case, record all files to be read
+   224	            on other computers on drive B:.
+   225	            
+   226	            INSERTING A FLOPPY DISK
+   227	            
+   228	            Hold the disk with its label up, then insert it into the
+   229	            disk drive.  When it is fully inserted, close the drive door
+   230	            with the lever, or push the drive button.
+   231	            
+   232	            Some computers have their drives in a vertical position.
+   233	            When inserting a disk into this type of drive, the label
+   234	            should face left.
+   235	            
+   236	            CARE FOR FLOPPY DISKS
+   237	            
+   238	            Floppy disks are a very reliable storage device, but they
+   239	            require some care.  Here a some simple rules:
+   240	            
+   241	            1. Never touch the disk surface in the exposed windows.
+   242	            2. Store disks in cool, dry places.  Disk storage boxes are
+   243	            ideal.
+   244	            3. Keep floppy disks away from magnetic fields, such as
+   245	            motors, telephones, and other electrical devices.
+   246	            4. Handle disks with care.  Avoid bending them.
+   247	            5. When writing on disk labels, use a felt-tip pen when the
+   248	            labels are attached to the disk.  Avoid excess pen pressure.
+   249	            6. Keep floppy disks in their protective sleeves whenever
+   250	            they are not in the disk drive.
+   251	            7. Store backup copies of important disks away from your
+   252	            work space.  If problems occur, your programs and data will
+   253	            be in another location, and can be retrieved.
+   254	            8. Avoid spilling anything on a floppy disk.  Keep coffee
+   255	            and other beverages away from your computer and work areas.
+   256	            9. Never remove a disk from its drive while the drive light
+   257	            is on.  This can cause you to lose all data on the disk.
+   258	
+   259	
+   260	
+   261	
+   262	
+   263	
+   264	
+   265	
+   266	
+   267	
+   268	                                       Page 5
+   269	
+   270	
+   271	            10. Avoid subjecting floppy disks to static electricity.
+   272	            Ground yourself by touching a grounded object if you have
+   273	            been walking on carpets or if there is static in the air.
+   274	
+   275	
+   276	
+   277	
+   278	
+   279	
+   280	
+   281	
+   282	
+   283	
+   284	
+   285	
+   286	
+   287	
+   288	
+   289	
+   290	
+   291	
+   292	
+   293	
+   294	
+   295	
+   296	
+   297	
+   298	
+   299	
+   300	
+   301	
+   302	
+   303	
+   304	
+   305	
+   306	
+   307	
+   308	
+   309	
+   310	
+   311	
+   312	
+   313	
+   314	
+   315	
+   316	
+   317	
+   318	
+   319	
+   320	
+   321	
+   322	
+   323	
+   324	
+   325	
+   326	
+   327	
+   328	
+   329	
+   330	
+   331	
+   332	
+   333	
+   334	                                       Page 6
+   335	
+   336	
+   337	            
+   338	            HARD DISK DRIVES
+   339	            
+   340	            Hard disk drives, on the other hand, are more permanent.
+   341	            You do not remove the disk; it remains in the drive at all
+   342	            times.
+   343	            
+   344	            A typical hard disk drive holds from 10 to 40 megabytes of
+   345	            data. This allows you to store the equivalent of up to 100
+   346	            floppy disks or more on a single hard disk drive.
+   347	            
+   348	            Hard disk drives are typically named C: or D:.  Your
+   349	            computer probably starts up with from the hard disk drive if
+   350	            no disks are in drive A: or drive B:
+   351	            
+   352	            Hard disks pretty much take care of themselves, with one
+   353	            exception.  If your hard disk does not have an automatic
+   354	            head parking feature (see the owner's manual), you should
+   355	            use the program supplied with the drive to park the head
+   356	            whenever you turn off your computer.  The owner's manual
+   357	            which came with your drive will provide this information,
+   358	            along with the name of the parking program.
+   359	
+   360	
+   361	
+   362	
+   363	
+   364	
+   365	
+   366	
+   367	
+   368	
+   369	
+   370	
+   371	
+   372	
+   373	
+   374	
+   375	
+   376	
+   377	
+   378	
+   379	
+   380	
+   381	
+   382	
+   383	
+   384	
+   385	
+   386	
+   387	
+   388	
+   389	
+   390	
+   391	
+   392	
+   393	
+   394	
+   395	
+   396	
+   397	
+   398	
+   399	
+   400	                                       Page 7
+   401	
+   402	
+   403	            
+   404	                                FILES AND FILENAMES
+   405	            
+   406	            
+   407	            Every program on your computer, and your data, is stored in
+   408	            files on your disk drives.  There are a few things you need
+   409	            to know about files.
+   410	            
+   411	            Each file must have its own, unique filename.  You may
+   412	            already be familiar with the structure of filenames, but
+   413	            here is a rundown.
+   414	            
+   415	            Each filename is made up of two parts: 1. File Name  2.
+   416	            Extension.  Let's look at a typical file:
+   417	            
+   418	                                    COMMAND.COM
+   419	                                      /      \
+   420	                             File Name        Extension
+   421	            
+   422	            The File Name may be up to 8 characters long, and may
+   423	            contain letters and numbers.  It is separated from the
+   424	            Extension by a period or decimal point.
+   425	            
+   426	            The Extension, which can be up to 3 characters, can also be
+   427	            made up of both letters and numbers.
+   428	            
+   429	            Combined, the two parts of the filename can help you
+   430	            identify a particular file.  Choose a filename for each file
+   431	            carefully, to help you find that file later.
+   432	            
+   433	            Certain extensions are reserved by DOS for specific types of
+   434	            files.  .COM, .EXE, .BAS, and .BAT are reserved extensions,
+   435	            and should not be used for ordinary files.
+   436	            
+   437	            Certain punctuation characters can be used in filenames,
+   438	            while others cannot.  For simplicity's sake, avoid the use
+   439	            of punctuation characters in your filenames.
+   440	            
+   441	                                    DOS COMMANDS
+   442	            
+   443	            Before going on to discuss individual DOS commands, here are
+   444	            a few facts about command structure:
+   445	            
+   446	            There are two basic types of DOS commands:
+   447	            
+   448	            1. Internal commands.
+   449	            
+   450	            These commands, like COPY, DEL, and TYPE, are stored in your
+   451	            computer's memory and can be used anytime you see the system
+   452	            prompt.  Many of the most-used commands fall into this
+   453	            category.
+   454	
+   455	
+   456	
+   457	
+   458	
+   459	
+   460	
+   461	
+   462	
+   463	
+   464	
+   465	
+   466	                                       Page 8
+   467	
+   468	
+   469	            
+   470	            2. External commands.
+   471	            
+   472	            This group of commands are stored on your disk.  To use
+   473	            them, either insert the DOS floppy disk, or change to the
+   474	            directory on your hard disk which contains DOS external
+   475	            commands.  See the directory section of this manual for more
+   476	            details. Examples of external commands include FORMAT,
+   477	            DISKCOPY, and CHKDSK.
+   478	            
+   479	            The section of this manual devoted to each command will tell
+   480	            you whether the command is internal or external.
+   481	            
+   482	            Some commands can take several forms.  These separate forms
+   483	            are used by including various parameters with the command.
+   484	            Parameters, which will be discussed with each command, are
+   485	            indicate by a / mark.  Here is an example of a command with
+   486	            an attached parameter:
+   487	            
+   488	                                       DIR/W
+   489	            
+   490	            All DOS commands must be activated by pressing the <Enter>
+   491	            key after typing the command.
+   492	            
+   493	            NOTE: You can type all DOS commands in either upper or lower
+   494	            case letters.
+   495	            
+   496	            The rest of this manual will present DOS commands in
+   497	            alphabetical order.  Only the most common commands are
+   498	            included.  For information on other commands, see your DOS
+   499	            manual.
+   500	
+   501	
+   502	
+   503	
+   504	
+   505	
+   506	
+   507	
+   508	
+   509	
+   510	
+   511	
+   512	
+   513	
+   514	
+   515	
+   516	
+   517	
+   518	
+   519	
+   520	
+   521	
+   522	
+   523	
+   524	
+   525	
+   526	
+   527	
+   528	
+   529	
+   530	
+   531	
+   532	                                       Page 9
+   533	
+   534	
+   535	                                       CHDIR
+   536	            
+   537	            CHDIR is an internal command.
+   538	            
+   539	            If your computer has a hard disk drive, some of the programs
+   540	            and data on that drive may be stored in sub-directories.  If
+   541	            so, they will be marked as subdirectories.  To check this,
+   542	            type DIR at the C> or D> prompt. Sub-directories will be
+   543	            shown like a filename, but with <DIR> in the place of an
+   544	            extension.
+   545	            
+   546	            The CHDIR command allows you to change to any of the sub-
+   547	            directories.  You need to do this to use the programs in any
+   548	            sub-directory.
+   549	            
+   550	            EXAMPLE:
+   551	            
+   552	            To change to a sub-directory called WP, type the command as
+   553	            shown below:
+   554	            
+   555	            CHDIR(sp)\WP<Enter>
+   556	            
+   557	            The command can be abbreviated to CD:
+   558	            CD(sp)\WP<Enter>
+   559	            
+   560	            After executing this command, you will be in the WP
+   561	            directory.  To go back to the main directory, type the
+   562	            following command:
+   563	            
+   564	            CHDIR(sp)..<Enter> or CHDIR\<Enter>
+   565	                  -or-
+   566	            CD(sp)..<Enter> or CD\<Enter>
+   567	            
+   568	            Commands given while in a sub-directory act on that
+   569	            directory only.
+   570	            
+   571	            
+   572	                                       CHKDSK
+   573	                                          
+   574	            CHKDSK is an external command.
+   575	            
+   576	            The CHKDSK command allows you to check any disk on your
+   577	            computer.  It looks for bad sectors on the disk and also
+   578	            tells you how much memory is available on your computer.
+   579	            
+   580	            Use this command from time to time to check important floppy
+   581	            disks and to check your hard disk drive for problems.  If
+   582	            you begin to see bad sectors on your hard disk drive, and
+   583	            the number of bad sectors starts to increase, the hard disk
+   584	            drive may be developing problems.  Remember: most hard disk
+   585	            drives have some bad sectors, so watch for increases.
+   586	
+   587	
+   588	
+   589	
+   590	
+   591	
+   592	
+   593	
+   594	
+   595	
+   596	
+   597	
+   598	                                       Page 10
+   599	
+   600	
+   601	            
+   602	            Example:
+   603	            
+   604	            To check the disk in drive A:, use the following command:
+   605	            
+   606	            CHKDSK(sp)A:<Enter>
+   607	            
+   608	            To check your hard disk:
+   609	            
+   610	            CHKDSK(sp)C:<Enter>
+   611	            
+   612	            You can substitute any drive name.
+   613	            
+   614	            NOTE: Since this is an external command, you must insert
+   615	            your DOS disk in drive A: or CHDIR to the directory which
+   616	            contains DOS external commands on your hard disk.
+   617	            
+   618	            
+   619	                                        CLS
+   620	            
+   621	            
+   622	            CLS is an internal command.
+   623	            
+   624	            The CLS command clears your computer's screen and moves the
+   625	            system prompt to the top of the screen.
+   626	            
+   627	            Example:
+   628	            
+   629	            To clear the screen, type the following command:
+   630	            
+   631	            CLS<Enter>
+   632	            
+   633	            
+   634	                                        COPY
+   635	            
+   636	            COPY is an internal command.
+   637	            
+   638	            The principal use of the COPY command is to copy files from
+   639	            one disk or directory to another.  It's use is very simple.
+   640	            
+   641	            Example:
+   642	            
+   643	            To copy the file LETTER.DOC from drive A: to drive B:, enter
+   644	            the following command:
+   645	            
+   646	            COPY(sp)A:LETTER.DOC(sp)B:<Enter>
+   647	            
+   648	            To copy LETTER.DOC to Drive B: and change its name on drive
+   649	            B: to LETTER1.DOC, type the following:
+   650	            
+   651	            COPY(sp)A:LETTER.DOC(sp)B:LETTER1.DOC<Enter>
+   652	
+   653	
+   654	
+   655	
+   656	
+   657	
+   658	
+   659	
+   660	
+   661	
+   662	
+   663	
+   664	                                       Page 11
+   665	
+   666	
+   667	            
+   668	            To copy LETTER.DOC from the WP sub-directory on drive C: to
+   669	            drive B:, use this format:
+   670	            
+   671	            COPY(sp)C:\WP\LETTER.DOC(sp)B:<Enter>
+   672	            
+   673	            Wildcards
+   674	            
+   675	            DOS also allows you to copy more than one file at once.  Two
+   676	            symbols, called wildcards, allow you to specify groups of
+   677	            files.  Here are the wildcards:
+   678	            
+   679	            * indicates any group of characters.
+   680	            ? indicates a single character.
+   681	            
+   682	            Examples:
+   683	            
+   684	            To copy all the files with the extension .DOC from drive A:
+   685	            to drive B:, use this command:
+   686	            
+   687	            COPY(sp)A:*.DOC(sp)B:<Enter>
+   688	            
+   689	            To copy ALL files from drive A: to drive B:
+   690	            
+   691	            COPY(sp)A:*.*(sp)B:<Enter>
+   692	            
+   693	            NOTE: Wildcards will not copy files within subdirectories,
+   694	            unless you are in that subdirectory or have a path statement
+   695	            including the subdirectory.
+   696	            
+   697	            To copy LETTER1.DOC, LETTER2.DOC, etc. from drive A: to
+   698	            drive B:
+   699	            
+   700	            COPY(sp)A:LETTER?.DOC(sp)B:<Enter>
+   701	            
+   702	            NOTE: If you are copying to a blank diskette, you must
+   703	            FORMAT the diskette first.(See the FORMAT command)
+   704	            
+   705	            The COPY command, along with most other DOS commands can be
+   706	            used with PATH statements to copy files into subdirectories.
+   707	            See the section on the PATH command for more information.
+   708	            
+   709	            
+   710	                                    DEL or ERASE
+   711	            
+   712	            DEL and ERASE are internal commands.
+   713	            
+   714	            These commands are identical, and can be used
+   715	            interchangeably. The delete files from a disk, so use them
+   716	            carefully.
+   717	            
+   718	            Examples:
+   719	            
+   720	            To delete LETTER.DOC from drive B:
+   721	
+   722	
+   723	
+   724	
+   725	
+   726	
+   727	
+   728	
+   729	
+   730	                                       Page 12
+   731	
+   732	
+   733	            
+   734	            DEL(sp)B:LETTER.DOC<Enter>
+   735	            
+   736	            Similarly, to delete LETTER.DOC from the directory WP on
+   737	            drive C:
+   738	            
+   739	            DEL(sp)C:\WP\LETTER.DOC<Enter>
+   740	            
+   741	            You can use wildcard characters with DEL and ERASE, in the
+   742	            same way you did with the COPY command.
+   743	            
+   744	            Example:
+   745	            
+   746	            To delete all files with the extension .DOC from drive B:
+   747	            
+   748	            DEL(sp)B:*.DOC<Enter>
+   749	            
+   750	            To delete ALL files from drive B:
+   751	            
+   752	            DEL(sp)B:*.*<Enter>
+   753	            
+   754	            Any time you use the *.* wildcard to delete files, the
+   755	            computer will ask you:
+   756	            
+   757	            Are you sure Y/N?
+   758	            
+   759	            Check what you are doing, then, if you are sure you want to
+   760	            delete all files from that disk, type Y, then press the
+   761	            Enter key.
+   762	            
+   763	            As with the COPY command, path information can be added to
+   764	            the drive specification, if needed.
+   765	            
+   766	            CAUTION: Use extreme care when using wildcards with the DEL
+   767	            or ERASE command.  Pay special attention to the drive name
+   768	            you have designated.  It is possible to inadvertently delete
+   769	            all files on your hard disk with a single keystroke.  BE
+   770	            CAREFUL!
+   771	            
+   772	            
+   773	                                        DIR
+   774	            
+   775	            DIR is an internal command.
+   776	            
+   777	            The DIR command allows you to see a list of the files stored
+   778	            on any disk.  Along with the filenames, it also provides
+   779	            other information about the files.
+   780	            
+   781	            Examples:
+   782	            
+   783	            To see a list of files on drive A:
+   784	            
+   785	            DIR(sp)A:<Enter>
+   786	            
+   787	
+   788	
+   789	
+   790	
+   791	
+   792	
+   793	
+   794	
+   795	
+   796	                                       Page 13
+   797	
+   798	
+   799	            You will see a list of files, along with the size of each
+   800	            file in bytes, and the date and time that data was last
+   801	            entered in that file.  In addition, the amount of space left
+   802	            on the disk will be displayed.
+   803	            
+   804	            Sometimes, a disk will have more files than can be displayed
+   805	            on the screen.  Using the DIR command will cause the files
+   806	            to scroll off the top of the screen faster than you can read
+   807	            them.  To avoid this, add the parameter /P.  Here is an
+   808	            example:
+   809	            
+   810	            DIR(sp)B:/P<Enter>
+   811	            
+   812	            DOS will fill the screen with file information, then print
+   813	            at the bottom of the screen:
+   814	            
+   815	            Press a key to continue:
+   816	            
+   817	            After you press ANY key, another screenfull of data will be
+   818	            displayed.  This continues until the entire directory has
+   819	            been presented.
+   820	            
+   821	            There is another option with DIR. To see a list of files on
+   822	            disk A:, arranged in multiple columns, but without file size
+   823	            and other information:
+   824	            
+   825	            DIR(sp)A:/W<Enter>
+   826	            
+   827	            
+   828	            NOTE: Use the DIR command frequently to check on the files
+   829	            on your disks and to keep track of the amount of disk space
+   830	            available.
+   831	            
+   832	            
+   833	                                      DISKCOPY
+   834	            
+   835	            DISKCOPY is an external command.
+   836	            
+   837	            Use DISKCOPY to make exact duplicates of floppy disks.  You
+   838	            can only use this command on floppy disk drives, typically
+   839	            drive A: and drive B:
+   840	            
+   841	            To copy a disk on a single drive computer:
+   842	            
+   843	            DISKCOPY<Enter>
+   844	            
+   845	            The computer will ask you to:
+   846	            
+   847	            Place the SOURCE diskette in Drive A: then press Enter.
+   848	            
+   849	            After pressing the Enter key, the computer will read all the
+   850	            data on the disk, then ask you to:
+   851	            
+   852	            Place the TARGET diskette in Drive A: and press Enter:
+   853	
+   854	
+   855	
+   856	
+   857	
+   858	
+   859	
+   860	
+   861	
+   862	                                       Page 14
+   863	
+   864	
+   865	            
+   866	            Remove the original disk, and replace it with a blank disk.
+   867	            After you press Enter, the data will be copied onto the
+   868	            blank disk.
+   869	            
+   870	            On a computer with two floppy disk drives:
+   871	            
+   872	            DISKCOPY(sp)A:(sp)B:<Enter>
+   873	            
+   874	            You will see the following:
+   875	            
+   876	            Place SOURCE diskette in Drive A:
+   877	            Place TARGET diskette in Drive B:
+   878	            Strike a key when ready:
+   879	            
+   880	            Place the original disk in drive A: and the blank disk in
+   881	            drive B:.  Press a key, and the computer will make a copy
+   882	            for you.
+   883	            
+   884	            When the process is complete, you will see:
+   885	            
+   886	            Make another copy? Y/N?
+   887	            
+   888	            Enter a Y to start the process again, or N to return to the
+   889	            system prompt.
+   890	            
+   891	            Note:  If the new disk is not formatted, DISKCOPY will
+   892	            automatically format it before copying.
+   893	            
+   894	            CAUTION: Make sure the second disk does not contain data,
+   895	            since the DISKCOPY command will destroy any data on the
+   896	            disk.
+   897	            
+   898	            You cannot use the DISKCOPY command with drives other than
+   899	            A: or B:.
+   900	            
+   901	            
+   902	                                       FORMAT
+   903	                                          
+   904	            FORMAT is an external command.
+   905	            
+   906	            Before you can write data onto a floppy disk, it must be
+   907	            formatted to hold the data.  DOS has a command which does
+   908	            this automatically.
+   909	            
+   910	            To format a disk in Drive A:
+   911	            
+   912	            FORMAT(sp)A:<Enter>
+   913	            
+   914	            You will see on the screen:
+   915	            
+   916	            Insert a new diskette for Drive A:
+   917	            Press ENTER when ready.
+   918	            
+   919	
+   920	
+   921	
+   922	
+   923	
+   924	
+   925	
+   926	
+   927	
+   928	                                       Page 15
+   929	
+   930	
+   931	            Place an unformatted disk in Drive A: and press the Enter
+   932	            key.  DOS will format the disk and make it ready to accept
+   933	            data.  When the process is complete, you will see:
+   934	            
+   935	            Format Complete: Format another? Y/N?
+   936	            
+   937	            If you want to format more diskettes, press Y, and the
+   938	            process will repeat. If not, press N and you will return to
+   939	            the system prompt.
+   940	            
+   941	            CAUTION: Like DISKCOPY, FORMAT destroys all data on the
+   942	            disk.  Use caution when formatting disks.
+   943	            
+   944	            WARNING!!!!  In some versions of DOS, FORMAT can act on
+   945	            Drive C: or other hard disk drives.  If it does, all data on
+   946	            your hard disk will be destroyed.  Because of this, ALWAYS
+   947	            indicate the drive to be formatted.  Check your typing
+   948	            carefully when using this command.
+   949	            
+   950	            
+   951	                                       MKDIR
+   952	            
+   953	            
+   954	            MKDIR is an internal command
+   955	            
+   956	            The MKDIR command allows you to create new sub-directories.
+   957	            
+   958	            Examples:
+   959	            
+   960	            To create a new subdirectory, called CHAPTER1 on drive C:
+   961	            
+   962	            MKDIR(sp)C:\CHAPTER1<Enter>
+   963	            
+   964	            To create a subdirectory within a subdirectory, for example
+   965	            to create the subdirectory CHAPTER1 in the directory NOVEL
+   966	            on drive C:
+   967	            
+   968	            MKDIR(sp)C:\NOVEL\CHAPTER1<Enter>
+   969	            
+   970	            If you are already in the directory in which you want to
+   971	            place a subdirectory, you do not need the \ character.  For
+   972	            example, If you had used the CHDIR or CD command to move to
+   973	            the NOVEL subdirectory, create the CHAPTER1 subdirectory
+   974	            like this:
+   975	            
+   976	            MKDIR(sp)CHAPTER1<Enter>
+   977	            
+   978	            Note: You can abbreviate the MKDIR command to MD.
+   979	            
+   980	            Example:
+   981	            
+   982	            MD(sp)CHAPTER1<Enter>
+   983	            
+   984	
+   985	
+   986	
+   987	
+   988	
+   989	
+   990	
+   991	
+   992	
+   993	
+   994	                                       Page 16
+   995	
+   996	
+   997	            CAUTION: Be certain you know which directory you are in
+   998	            before using the simplified form of this command.  Otherwise
+   999	            you may create a subdirectory in an unwanted place.  To
+  1000	            avoid confusion, use the full format, including drive name,
+  1001	            as in the first and second examples.
+  1002	            
+  1003	            
+  1004	                                        PATH
+  1005	            
+  1006	            PATH is an internal command.
+  1007	            
+  1008	            If your computer has a hard disk drive, many of the programs
+  1009	            you use, along with data files, will be stored in
+  1010	            subdirectories.  Normally, you have to change directories
+  1011	            with the CHDIR (CD) command to get access to files.
+  1012	            
+  1013	            DOS provides another method with the PATH command.  This
+  1014	            command allows you to tell DOS where to look for your files.
+  1015	            You can instruct the computer to look in several places for
+  1016	            any file you name in another command, or from a program.
+  1017	            
+  1018	            Examples:
+  1019	            
+  1020	            To tell DOS to look for your wordprocessing programs and
+  1021	            files for the NOVEL subdirectory, as used as an example in
+  1022	            other parts of this manual:
+  1023	            
+  1024	            PATH(sp)\WP\NOVEL<Enter>
+  1025	            
+  1026	            Using this format, DOS will automatically search the \WP
+  1027	            directory and the \NOVEL subdirectory for files when you
+  1028	            give a command from any other directory.
+  1029	            
+  1030	            Now, suppose you have a number of programs you use
+  1031	            frequently.  They are in different subdirectories with the
+  1032	            following names: \DB   \WP   \123   \MAIL   &  \SALES.
+  1033	            
+  1034	            In addition, there are further subdirectories, such as
+  1035	            \NOVEL in the \WP directory and \BUSINESS and \PERSONAL in
+  1036	            the \MAIL directory.
+  1037	            
+  1038	            The following command will allow you access to all the
+  1039	            programs listed above:
+  1040	            
+  1041	            PATH(sp)\DB;\WP\NOVEL;\123;\MAIL\BUSINESS\PERSONAL;\SALES<Enter>
+  1042	            
+  1043	            Notice that the main directories are separated with semi-
+  1044	            colons, while subdirectories of these directories are
+  1045	            specified with the backslash (\) character.
+  1046	            
+  1047	            NOTE: If a path you specify does not exist, DOS will give
+  1048	            the following message:
+  1049	            
+  1050	            No Path
+  1051	
+  1052	
+  1053	
+  1054	
+  1055	
+  1056	
+  1057	
+  1058	
+  1059	
+  1060	                                       Page 17
+  1061	
+  1062	
+  1063	            
+  1064	            If DOS cannot find the file you specify in any of the
+  1065	            subdirectories, this message will appear:
+  1066	            
+  1067	            Bad command or filename
+  1068	            
+  1069	            In either case, check your path command to make certain it
+  1070	            is correct.  If you type PATH<Enter> without any other
+  1071	            information, DOS will display your current path designation.
+  1072	            
+  1073	            NOTE: Along with the directory names, you can also include
+  1074	            drive names in a PATH command.  Use this feature to make DOS
+  1075	            look on your floppy drives for files.
+  1076	            
+  1077	            
+  1078	                                        REN
+  1079	            
+  1080	            
+  1081	            REN is an internal command.
+  1082	            
+  1083	            Use the REN command to change the name of a file.
+  1084	            
+  1085	            Example:
+  1086	            
+  1087	            To change the file LETTER.DOC to LETTER2.DOC:
+  1088	            
+  1089	            REN(sp)LETTER.DOC(sp)LETTER2.DOC<Enter>
+  1090	            
+  1091	            
+  1092	                                       RMDIR
+  1093	            
+  1094	            
+  1095	            RMDIR is an internal command.
+  1096	            
+  1097	            RMDIR, or its abbreviated form RD, removes a subdirectory
+  1098	            from a disk.  Before removing the directory, however, all
+  1099	            files in that directory must be deleted with the DEL or
+  1100	            ERASE commands.
+  1101	            
+  1102	            Example:
+  1103	            
+  1104	            To remove the \WP directory from your hard disk:
+  1105	            
+  1106	            Enter the following series of commands.
+  1107	            
+  1108	            CD(sp)\WP<Enter>
+  1109	            
+  1110	            DEL(sp)*.*<Enter>
+  1111	            
+  1112	            CD(sp)..<Enter>
+  1113	            
+  1114	            RMDIR(sp)\WP<Enter>
+  1115	            
+  1116	
+  1117	
+  1118	
+  1119	
+  1120	
+  1121	
+  1122	
+  1123	
+  1124	
+  1125	
+  1126	                                       Page 18
+  1127	
+  1128	
+  1129	            CAUTION: Be certain that you really want to delete all the
+  1130	            files in that directory.  If there are files you wish to
+  1131	            save, COPY them to another directory, or to a floppy disk
+  1132	            before deleting them.
+  1133	            
+  1134	            
+  1135	                                        TYPE
+  1136	            
+  1137	            
+  1138	            TYPE is an internal command.
+  1139	            
+  1140	            Use the TYPE command to view the contents of a file on your
+  1141	            monitor.  This command is useful only on ASCII files,
+  1142	            meaning files which contain only text.  This excludes all
+  1143	            program files, as well as most files created by your word
+  1144	            processing program.
+  1145	            
+  1146	            Example:
+  1147	            
+  1148	            To see the file AUTOEXEC.BAT on drive A:
+  1149	            
+  1150	            TYPE(sp)A:AUTOEXEC.BAT<Enter>
+  1151	            
+  1152	            You can also specify a path for this command.  To see the
+  1153	            file LETTER.DOC in the \WP directory on drive C:
+  1154	            
+  1155	            TYPE(sp)C:\WP\LETTER.DOC<Enter>
+  1156	            
+  1157	            NOTE:This command will scroll the file on the screen, too
+  1158	            fast for you to read.  Special utility programs are
+  1159	            available which will let you see the file one screen at a
+  1160	            time.  Most of these files are Public Domain programs and
+  1161	            are available without charge from Public Domain software
+  1162	            suppliers.
+  1163	
+  1164	
+  1165	
+  1166	
+  1167	
+  1168	
+  1169	
+  1170	
+  1171	
+  1172	
+  1173	
+  1174	
+  1175	
+  1176	
+  1177	
+  1178	
+  1179	
+  1180	
+  1181	
+  1182	
+  1183	
+  1184	
+  1185	
+  1186	
+  1187	
+  1188	
+  1189	
+  1190	
+  1191	
+  1192	                                       Page 19
+  1193	
+  1194	
+  1195	                                   ERROR MESSAGES
+  1196	            
+  1197	            
+  1198	            When you make a mistake when entering a command, or if
+  1199	            another type of problem occurs, DOS will place an error
+  1200	            message on the screen.  The following are the most common
+  1201	            messages you will see.  Suggestions for correcting the error
+  1202	            are provided following the message.
+  1203	            
+  1204	            
+  1205	            Bad command or file name
+  1206	            
+  1207	            DOS cannot find the file or command you entered.  Check your
+  1208	            typing and the PATH you have specified for errors.
+  1209	            
+  1210	            
+  1211	            Disk Drive Error: Abort, Ignore, Retry?
+  1212	            
+  1213	            DOS has detected an error on a disk drive.  Most often, this
+  1214	            message appears when you have forgotten to insert a floppy
+  1215	            disk into the drive, or have failed to close the door.
+  1216	            Correct the problem, then press R for retry.  Pressing A
+  1217	            returns you to the system prompt.
+  1218	            
+  1219	            If this message should appear when you are trying to access
+  1220	            your hard disk drive...STOP.  Get help from someone who
+  1221	            knows the system well.
+  1222	            
+  1223	            
+  1224	            File cannot be copied onto itself
+  1225	            
+  1226	            You have tried to copy a file to the same filename on the
+  1227	            same drive.  Check your command.
+  1228	            
+  1229	            
+  1230	            File not found
+  1231	            
+  1232	            DOS can't find the file you specified.  Check your typing
+  1233	            and make sure you have given the correct path.
+  1234	            
+  1235	            
+  1236	            Format failure
+  1237	            
+  1238	            An error has occured when using the FORMAT command.  DOS
+  1239	            will provide an explanation with this error message.  Take
+  1240	            the appropriate corrective measures.
+  1241	            
+  1242	            
+  1243	            Insufficient disk space
+  1244	            
+  1245	            The disk you are working with does not have enough space to
+  1246	            hold the data.  Replace with a new, formatted disk and
+  1247	            repeat the operation.
+  1248	            
+  1249	
+  1250	
+  1251	
+  1252	
+  1253	
+  1254	
+  1255	
+  1256	
+  1257	
+  1258	                                       Page 20
+  1259	
+  1260	
+  1261	            
+  1262	            Insufficient memory
+  1263	            
+  1264	            Your computer does not have enough memory for the operation
+  1265	            you have named.  Consider expanding your system's memory
+  1266	            size.  Memory expansion is relatively inexpensive.
+  1267	            
+  1268	            
+  1269	            Invalid Disk Drive
+  1270	            
+  1271	            The drive name you specified does not exist on your
+  1272	            computer. Check your typing.
+  1273	            
+  1274	            
+  1275	            Invalid number of parameters
+  1276	            
+  1277	            You have mis-typed the command or specified information not
+  1278	            acceptable to DOS.  Check the command for errors.
+  1279	            
+  1280	            
+  1281	            There are many other error messages you may see on your
+  1282	            screen.  For information on these errors, consult your DOS
+  1283	            manual.
+  1284	
+  1285	
+  1286	
+  1287	
+  1288	
+  1289	
+  1290	
+  1291	
+  1292	
+  1293	
+  1294	
+  1295	
+  1296	
+  1297	
+  1298	
+  1299	
+  1300	
+  1301	
+  1302	
+  1303	
+  1304	
+  1305	
+  1306	
+  1307	
+  1308	
+  1309	
+  1310	
+  1311	
+  1312	
+  1313	
+  1314	
+  1315	
+  1316	
+  1317	
+  1318	
+  1319	
+  1320	
+  1321	
+  1322	
+  1323	
+  1324	                                       Page 21
+  1325	
+  1326	
+  1327	            
+  1328	                             WHEN YOUR COMPUTER CRASHES
+  1329	                                          
+  1330	            No matter how careful you are, there will be times when your
+  1331	            computer gets confused.  Usually, when this happens, the
+  1332	            keyboard will lock up and nothing you type will have any
+  1333	            effect.  Other problems sometimes occur, including a drive
+  1334	            that won't stop running.
+  1335	            
+  1336	            When using commercial software, these problems are
+  1337	            infrequent, but do happen from time to time.  Most often,
+  1338	            you will lock your system up when experimenting with public
+  1339	            domain software, which is less bug-free than most commercial
+  1340	            programs.
+  1341	            
+  1342	            There are four ways to get out of a locked system.  Try
+  1343	            these in the order shown below.
+  1344	            
+  1345	            1. Hold down the <Ctrl> key while you press the <Scroll
+  1346	            Lock/Break> key.  This will often get you out of the program
+  1347	            and return you to the system prompt.  If it does, you're
+  1348	            back in business.
+  1349	            
+  1350	            2. Press the <Ctrl>, <Alt>, and <Del> keys at the same time.
+  1351	            Hold each key down as you press the others. This is called a
+  1352	            "warm boot."  It usually does the trick, but wipes out
+  1353	            whatever information is stored in your computer's memory.
+  1354	            
+  1355	            3. Press the <Reset> switch, if your computer has one. This
+  1356	            will reboot the computer, wiping out all data in current
+  1357	            memory.
+  1358	            
+  1359	            4. Finally, if none of the other methods work, turn off the
+  1360	            computer, wait a few seconds, then turn it back on.  As
+  1361	            before, data stored in memory will be lost.  This last
+  1362	            method is absolutely guaranteed, however, to restart your
+  1363	            system.
+  1364	
+  1365	
+  1366	
+  1367	
+  1368	
+  1369	
+  1370	
+  1371	
+  1372	
+  1373	
+  1374	
+  1375	
+  1376	
+  1377	
+  1378	
+  1379	
+  1380	
+  1381	
+  1382	
+  1383	
+  1384	
+  1385	
+  1386	
+  1387	
+  1388	
+  1389	
+  1390	
+  1391	
+  1392	
+  1393	                                          
+  1394	                                          
+  1395	                                          
+  1396	                                          
+  1397	                                          
+  1398	                                          
+  1399	                                          
+  1400	                                       INDEX
+  1401	                                          
+  1402	                 SUBJECT                                       PAGE
+  1403	                                          
+  1404	                 ASCII...........................................17
+  1405	                 CARE FOR FLOPPY DISKS............................4
+  1406	                 CHDIR............................................8
+  1407	                 CHKDSK..........................................8
+  1408	                 CLS..............................................9
+  1409	                 COPY.............................................9
+  1410	                 DEL or ERASE....................................10
+  1411	                 DIR.............................................11
+  1412	                 DISK DRIVES AND FLOPPY DISKS.....................3
+  1413	                 DISKCOPY........................................13
+  1414	                 DOS COMMANDS.....................................6
+  1415	                 ERROR MESSAGES..................................19
+  1416	                 EXTERNAL COMMANDS................................7
+  1417	                 FILES AND FILENAMES..............................6
+  1418	                 FLOPPY DISKS.....................................3
+  1419	                 FORMAT..........................................13
+  1420	                 HARD DISK DRIVES.................................5
+  1421	                 INSERTING A FLOPPY DISK..........................4
+  1422	                 INTERNAL COMMANDS................................6
+  1423	                 INTRODUCTION.....................................2
+  1424	                 MKDIR...........................................14
+  1425	                 PATH............................................15
+  1426	                 REN.............................................16
+  1427	                 RMDIR...........................................16
+  1428	                 TYPE............................................17
+  1429	                 WHEN YOUR SYSTEM CRASHES........................20
+  1430	                 WILDCARDS.......................................10
+  1431	            
+  1432	
+  1433	
+  1434	
+  1435	
+  1436	
+  1437	
+  1438	
+  1439	
+  1440	
+  1441	
+  1442	
+  1443	
+  1444	
+  1445	
+  1446	
+  1447	
+  1448	
+  1449	
+  1450	
+  1451	
+  1452	
+  1453	
