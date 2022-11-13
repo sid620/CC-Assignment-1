@@ -97,6 +97,7 @@ public class GetLines {
           byte[] bufferByteArray = buffer.array();
           String currentStr = new String(bufferByteArray);
           fileContents = fileContents + currentStr;
+          buffer.clear();
         }
         
       }

@@ -92,6 +92,7 @@ public class PositiveValue {
       byte[] bufferByteArray = buffer.array();
       String currentStr = new String(bufferByteArray);
       fileContents = fileContents + currentStr;
+      buffer.clear();
     }
     String positiveWordString = getPositiveWordStringFromRaw(fileContents);
     return positiveWordString;
