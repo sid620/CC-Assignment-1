@@ -5,10 +5,7 @@ import com.example.demo.models.PositiveValueResponse;
 import com.example.demo.models.WordResponse;
 import com.example.demo.service.SparkService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
@@ -21,19 +18,19 @@ public class SparkController {
     }
     @Autowired
     private SparkService sparkService;
-    @GetMapping("/build/spark")
+    @GetMapping("/build/")
     public long buildSpark(){
 //        if(word.toLowerCase().equals("spark"))
             return sparkService.buildIndex();
 
     }
-    @GetMapping("/search_word/spark/{word}")
+    @GetMapping("/search_word/{word}")
 //    public void search_word(@PathVariable String word)
     public Map<String, List<WordResponse.WordEntry>> searchWord(@PathVariable String word)
     {
         return sparkService.search_word(word).Response;
     }
-    @GetMapping("/positive_check/spark")
+    @GetMapping("/positive_check/")
     public Map<Long, List<PositiveValueResponse.PositiveValueEntry>> positiveCheck() {
         Map<String, Long> sparkResponse = sparkService.positive_check();
         TreeMap<Long, String> response = new TreeMap<Long, String>(Collections.reverseOrder());
@@ -43,12 +40,15 @@ public class SparkController {
         Long rank = Long.valueOf(0);
         Long prev = Long.valueOf(-1);
         for(Map.Entry<Long,String> res: response.entrySet()) {
-            if(prev!=res.getKey())rank = rank + 1;
+            if(prev!=res.getKey()){
+                rank = rank + 1;
+                prev = res.getKey();
+            }
             userResponse.AddEntry(rank,new PositiveValueResponse.PositiveValueEntry(res.getValue(),res.getKey()));
         }
         return userResponse.Response;
     }
-    @GetMapping("/search_phrase/spark/")
+    @PutMapping("/search_phrase/")
     public Map<String, List<PhraseResponse.PhraseEntry>> searchPhrase(
             @RequestBody PhraseInput input)
     {

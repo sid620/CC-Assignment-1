@@ -54,6 +54,6 @@ WORKDIR usr/src/SparkApp
 ENV SPARK_APP /usr/src/SparkApp/SparkCode
 COPY . .
 #RUN /bin/bash -c 'mvn clean package'
-#ENTRYPOINT ["java","-jar","target/demo-0.0.1-SNAPSHOT.jar"]
-EXPOSE 8080:8080
+#EXPOSE 8080:8080
+ENTRYPOINT ["java","-jar","target/demo-0.0.1-SNAPSHOT.jar"]
 #ENTRYPOINT ["java","-jar","target/spring-boot-0.0.1-SNAPSHOT.jar"]

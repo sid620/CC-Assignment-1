@@ -1,1 +1,0 @@
-hadoop jar /home/tushar/Downloads/HadoopFiles/GetPhraseLines.jar GetPhraseLines /home/tushar/Downloads/HadoopFiles/input /home/tushar/Downloads/HadoopFiles/GetPhraseLinesOutput "hadoop jar /home/tushar/Downloads/HadoopFiles/GetPhraseLines.jar GetPhraseLines /home/tushar/Downloads/HadoopFiles/input /home/tushar/Downloads/HadoopFiles/GetPhraseLinesOutput"

@@ -42,7 +42,7 @@ The request is sent as <http://localhost:8080/build/> with the following json bo
     }
     ```
 2. Search a Word
-The request is sent as <http://localhost:8080/search_word/wordToBeSearched> with the following json request body:
+The request is sent as <http://localhost:8080/search_word/{wordToBeSearched}> with the following json request body:
     ```json
     {
         "Service":"Spark"
